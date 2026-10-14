@@ -1,0 +1,4109 @@
+                         PANDUAN PRODUKSI
+                              TKP SKD CPNS
+
+Panduan bagi Guru dan Kontributor Akademik dalam Menyusun Latihan Soal dan Tryout
+Tes Karakteristik Pribadi (TKP) Seleksi Kompetensi Dasar (SKD) Calon Pegawai Negeri
+                                   Sipil (CPNS)
+
+
+
+
+             PT CEREBRUM EDUKANESIA NUSANTARA
+                                      2026
+                                                                DAFTAR ISI
+
+DAFTAR ISI.......................................................................................................................................... ii
+TAKSONOMI BLOOM ....................................................................................................................... 1
+PELAYANAN PUBLIK ....................................................................................................................... 1
+   1.1.       Konsep Dasar dan Ruang Lingkup ..................................................................................... 2
+   1.2.       Prinsip dan Standar .............................................................................................................. 6
+   1.3.       Pelayanan Prima dan Kepuasan .......................................................................................... 8
+   1.4.       Adil, Inklusif, dan Tidak Diskriminatif ............................................................................ 12
+   1.5.       Pengambilan Keputusan..................................................................................................... 15
+JEJARING KERJA ............................................................................................................................ 19
+   2.1.       Konsep Dasar dan Prinsip .................................................................................................. 21
+   2.2.       Komunikasi, Koordinasi, dan Berbagi Informasi ............................................................ 22
+   2.3.       Kolaborasi dan Penyelesaian Masalah dalam Tim .......................................................... 25
+   2.4.       Pengembangan Hubungan Kerja dan Kemitraan Produktif .......................................... 28
+SOSIAL BUDAYA .............................................................................................................................. 33
+   3.1.       Konsep Dasar, Unsur, dan Struktur Sosial Budaya ........................................................ 33
+   3.2.       Adaptasi dalam Masyarakat Majemuk ............................................................................ 37
+   3.3.       Empati, Kepedulian, dan Harmoni Sosial ........................................................................ 40
+   3.4.       Perubahan Sosial Budaya dan Penyelesaian Konflik ...................................................... 43
+TEKNOLOGI INFORMASI DAN KOMUNIKASI (TIK) ............................................................. 47
+   4.1.       Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan ................................................. 47
+   4.2.       Adaptasi terhadap Perubahan Teknologi ......................................................................... 52
+   4.3.       Etika, Keamanan, dan Tanggung Jawab Digital ............................................................. 56
+PROFESIONALISME ....................................................................................................................... 61
+   5.1.       Konsep Dasar, Ciri, dan Etika Profesional ....................................................................... 62
+   5.2.       Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja ...................................................... 67
+   5.3.       Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi ................. 70
+ANTI RADIKALISME ...................................................................................................................... 76
+   6.1.       Konsep Dasar Anti Radikalisme ........................................................................................ 78
+   6.2.       Ciri-Ciri dan Bentuk Paparan Radikalisme ..................................................................... 81
+   6.3.       Sikap Pencegahan dan Penolakan terhadap Radikalisme .............................................. 84
+   6.4.       Respons terhadap Radikalisme di Lingkungan Kerja, Sosial, dan Digital.................... 88
+
+
+
+
+                                                                                                                                                     ii
+                                                 TAKSONOMI BLOOM
+
+
+
+                       Tingkat
+Level     Proses                                                                            Kata Kerja         Catatan Produksi
+                     Kesulitan di       Definisi Umum           Karakteristik Soal
+Bloom     Berpikir                                                                          Operasional               Soal
+                      Aplikasi
+ C1     Mengingat      Mudah        Peserta diminta          Soal bersifat langsung,     menyebutkan,        Cocok untuk soal
+                                    mengenali, mengingat,    informasi yang              mengenali,          dasar. Hindari
+                                    atau menyebutkan         ditanyakan eksplisit,       mengidentifikasi,   kosakata atau konsep
+                                    kembali informasi dasar tidak memerlukan             menentukan,         yang terlalu asing
+                                    yang sudah umum          penalaran bertingkat, dan   memilih,            karena dapat membuat
+                                    diketahui.               dapat dijawab dengan        mengingat           soal C1 terasa sulit
+                                                             pengetahuan dasar.                              secara tidak
+                                                                                                             proporsional
+ C2     Memahami       Sedang       Peserta diminta          Soal menuntut               menjelaskan,        Cocok untuk menguji
+                                    memahami makna,          pemahaman konsep,           mengartikan,        pemahaman awal.
+                                    konsep, hubungan, atau   bukan sekadar hafalan.      mengklasifikasikan, Pengecoh boleh mulai
+                                    maksud dari informasi    Peserta perlu               membedakan,         dibuat mirip, tetapi
+                                    yang diberikan.          menjelaskan makna,          mencontohkan,       jangan terlalu
+                                                             menangkap hubungan,         menyimpulkan        menjebak.
+                                                                                         sederhana
+
+
+                                                                                                                                    1
+                                                     atau memahami konteks
+                                                     sederhana.
+C3   Menerapkan     Sulit   Peserta diminta          Soal memerlukan             menerapkan,          Cocok untuk soal yang
+                            menggunakan konsep,      penerapan langkah,          menggunakan,         membutuhkan proses.
+                            rumus, pola, atau        aturan, pola, atau konsep   menghitung,          Pastikan data cukup
+                            prinsip tertentu untuk   pada konteks yang           menyelesaikan,       dan tidak
+                            menyelesaikan masalah    berbeda dari contoh         menentukan           menimbulkan lebih
+                            baru.                    langsung.                   berdasarkan pola,    dari satu jawaban
+                                                                                 mengoperasikan       benar.
+C4   Menganalisis   HOTS    Peserta diminta          Soal menuntut analisis      menganalisis,        Cocok untuk HOTS
+                            menguraikan informasi,   terhadap struktur, pola,    membandingkan,       utama. Pengecoh
+                            membandingkan unsur,     hubungan sebab-akibat,      menghubungkan,       dibuat kuat, tetapi
+                            menemukan pola           perbedaan halus, atau       menguraikan,         tetap harus dapat
+                            tersembunyi, atau        keterkaitan beberapa        menelaah,            dieliminasi dengan
+                            menentukan hubungan      informasi.                  membedakan           alasan logis yang jelas.
+                            antarbagian.
+C5   Mengevaluasi   HOTS    Peserta diminta menilai, Beberapa opsi dapat         mengevaluasi,        Cocok untuk soal
+                            memilih, atau            terlihat benar, tetapi      menilai, memilih     dengan pengecoh kuat.
+                            menentukan opsi yang     hanya satu yang paling      yang paling tepat,   Hindari opsi yang
+                            paling tepat             tepat. Peserta perlu        menentukan yang      sama-sama benar tanpa
+                                                     menimbang kualitas,         paling sesuai,       pembeda yang jelas.
+
+
+                                                                                                                                 2
+                                            berdasarkan kriteria       ketepatan, kelengkapan,     mengkritisi,
+                                            tertentu.                  atau konsistensi jawaban.   memverifikasi
+   C6      Menciptakan         HOTS         Peserta diminta            Dalam soal pilihan          menyusun,              Gunakan secara
+                                            menyusun, merancang,       ganda, C6 biasanya          merancang,             selektif. Untuk soal
+                                            membentuk, atau            muncul sebagai              membentuk,             pilihan ganda, C6 tidak
+                                            merekonstruksi             kemampuan memilih           mengembangkan,         selalu berarti peserta
+                                            solusi/pola baru           rancangan, strategi,        merekonstruksi,        membuat jawaban
+                                            berdasarkan informasi      susunan, pola, atau solusi merumuskan              bebas, tetapi memilih
+                                            yang tersedia.             terbaik yang dibangun                              hasil konstruksi yang
+                                                                       dari beberapa informasi.                           paling tepat.
+
+
+
+
+Catatan Penting untuk Penyusun Soal
+     Pemetaan C1 sampai C6 tidak boleh dipahami sebagai satu-satunya penentu tingkat kesulitan. Tingkat kesulitan soal juga dipengaruhi oleh
+panjang stimulus, kejelasan perintah, kompleksitas data, jumlah langkah penyelesaian, tingkat keabstrakan konsep, dan kualitas pengecoh.
+      Soal C1 dapat menjadi sulit jika menggunakan istilah yang terlalu asing. Sebaliknya, soal C4 atau C5 dapat menjadi terlalu mudah jika pola
+jawabannya terlalu terlihat. Oleh karena itu, penulis soal perlu menyesuaikan level Bloom dengan bentuk soal, target peserta, dan standar kesulitan
+aplikasi.
+
+
+
+
+                                                                                                                                                    3
+                                 PELAYANAN PUBLIK
+
+       Soal Pelayanan Publik mengukur orientasi peserta dalam memberikan layanan yang
+dapat diakses, adil, jelas, cepat, aman, akuntabel, dan berorientasi pada kebutuhan masyarakat.
+Kompetensi yang diuji tidak terbatas pada keramahan. Petugas yang ramah tetapi memberikan
+informasi salah, melanggar prosedur, atau memperlakukan pengguna secara tidak adil tetap
+menunjukkan kualitas pelayanan yang rendah.
+
+
+Hierarki Penilaian Respons
+  Urutan Filter              Pertanyaan Penguji                 Implikasi pada Skor
+
+ 1. Legalitas dan   Apakah tindakan sesuai aturan, Pelanggaran serius tidak boleh
+ integritas         kewenangan, keamanan data, dan menjadi skor 5 meskipun tampak
+                    etika?                               membantu.
+
+ 2. Hak,            Apakah tindakan melindungi hak Pilih kasih, manipulasi antrean, atau
+ keselamatan, dan pengguna dan tidak merugikan diskriminasi menurunkan skor.
+ keadilan           kelompok lain?
+
+ 3. Orientasi pada Apakah kebutuhan layanan benar- Respons solutif mendapat skor lebih
+ kebutuhan          benar ditangani, bukan sekadar tinggi daripada respons pasif.
+                    dialihkan?
+
+ 4. Empati dan      Apakah       petugas    mendengar, Komunikasi baik memperkuat skor,
+ komunikasi         menjelaskan, meminta maaf bila tetapi tidak menggantikan solusi.
+                    perlu, dan memberi kepastian?
+
+ 5. Efektivitas     Apakah tindakan menyelesaikan Perbaikan akar masalah lebih tinggi
+ dan                masalah saat ini serta mencegah daripada tindakan kosmetik.
+ keberlanjutan      pengulangan?
+
+ 6. Akuntabilitas   Apakah                    keputusan Eskalasi      atau   koordinasi   tepat
+ dan tindak lanjut terdokumentasi,         terkoordinasi, menaikkan     skor   bila   memang
+                    dan                           dapat diperlukan.
+                    dipertanggungjawabkan?
+
+
+
+
+                                                                                                  1
+ Prinsip Kunci
+ Respons terbaik hampir selalu memadukan dua sisi: tetap patuh dan adil, tetapi aktif
+ membantu. Hindari pasangan semu "taat aturan tetapi tidak peduli" versus "peduli tetapi
+ melanggar aturan". Opsi skor 5 harus menunjukkan cara membantu tanpa mengorbankan
+ integritas.
+
+
+
+Lima Materi Pokok
+     Materi Pokok                    Fokus Utama                          Contoh Konflik
+
+ Konsep Dasar dan        Tujuan      layanan,      pihak   yang Target        internal      versus
+ Ruang Lingkup           dilayani, partisipasi, pengaduan, kebutuhan masyarakat.
+                         perbaikan berkelanjutan.
+
+ Prinsip dan Standar     SOP,      syarat,   waktu,        biaya, Kepatuhan prosedur versus
+                         transparansi,             akuntabilitas, kemudahan layanan.
+                         kepastian proses.
+
+ Pelayanan Prima dan     Empati,      komunikasi,       respons Warga marah, sistem lambat,
+ Kepuasan                cepat,       service         recovery, atau informasi tidak jelas.
+                         pengelolaan emosi.
+
+ Adil, Inklusif, dan     Kesetaraan, akomodasi layak, Loket                 prioritas,    hambatan
+ Tidak Diskriminatif     akses kelompok rentan, anti- disabilitas, atau kesenjangan
+                         favoritisme.                            digital.
+
+ Pengambilan             Analisis        risiko,       urgensi, Situasi        darurat,     aturan
+ Keputusan               kewenangan, koordinasi, diskresi berubah,              atau      dokumen
+                         yang sah.                               bermasalah.
+
+
+1.1. Konsep Dasar dan Ruang Lingkup
+          Materi ini menguji pemahaman peserta mengenai tujuan, aktor, proses, dan hasil
+    pelayanan publik. Soal tidak perlu menanyakan definisi secara hafalan. Konsep sebaiknya
+    disajikan melalui situasi yang menuntut peserta melihat bahwa pelayanan mencakup
+    penyediaan informasi, akses layanan, pengaduan, partisipasi masyarakat, evaluasi, serta
+    perbaikan sistem.
+
+
+
+                                                                                                     2
+Ruang Lingkup Materi
+•   Tujuan pelayanan: memenuhi kebutuhan, memberikan kepastian, melindungi hak, dan
+    membangun kepercayaan.
+•   Pihak terkait: pengguna layanan, petugas, pimpinan, unit teknis, mitra, dan kelompok
+    masyarakat.
+•   Siklus layanan: informasi awal, pengajuan, verifikasi, proses, hasil, pengaduan, dan
+    evaluasi.
+•   Partisipasi masyarakat: survei, konsultasi, umpan balik, pengaduan, dan pelibatan
+    komunitas.
+•   Perbaikan berkelanjutan: menggunakan data keluhan dan pengalaman pengguna
+    untuk memperbaiki desain layanan.
+
+
+Indikator yang Diukur
+    Indikator           Ciri Opsi Skor Tinggi              Ciri Opsi Skor Rendah
+
+Orientasi         Memahami kebutuhan nyata dan         Hanya mengejar target internal,
+pengguna          dampak kebijakan pada pengguna.      citra, atau kenyamanan
+                                                       organisasi.
+
+Partisipasi       Mendidik, membuka kanal,             Sekadar mengumpulkan
+                  menindaklanjuti, dan memberi         laporan tanpa tindak lanjut.
+                  umpan balik.
+
+Keberlanjutan     Membangun sistem yang dapat          Tindakan sesaat, reaktif, atau
+                  diterapkan konsisten dan dievaluasi. hanya dilakukan setelah viral.
+
+Keterhubungan Menghubungkan pengguna ke unit           Melempar pengguna dari satu
+layanan           yang tepat tanpa membebani ulang.    meja ke meja lain.
+
+
+Rentang Bloom yang wajar: C2-C5
+Tingkat Kesulitan: Sedang-HOTS
+
+
+
+
+                                                                                        3
+                              Tingkat
+ Level     Proses Berpikir                          Karakteristik Soal TKP
+                             Kesulitan
+
+                                         Peserta mengenali prinsip pelayanan yang
+  C2           Memahami        Sedang    tercermin dalam situasi sederhana. Konflik
+                                         nilai masih minimal.
+
+                                         Peserta menerapkan satu atau dua prinsip pada
+  C3          Menerapkan        Sulit    kendala operasional, misalnya keluhan,
+                                         antrean, atau berkas kurang lengkap.
+
+                                         Peserta menganalisis penyebab, pihak
+  C4          Menganalisis     HOTS      terdampak, aturan, risiko, dan konsekuensi
+                                         beberapa tindakan.
+
+                                         Beberapa opsi tampak benar. Peserta menilai
+                                         opsi paling proporsional berdasarkan legalitas,
+  C5          Mengevaluasi     HOTS
+                                         keadilan, efektivitas, empati, dan
+                                         akuntabilitas.
+
+
+ Contoh Soal 1 – Konsep Dasar dan Ruang Lingkup Pelayanan Publik
+ Level Bloom: C5 - Mengevaluasi
+ Tingkat Kesulitan: HOTS
+
+
+Sebuah unit layanan memiliki kanal pengaduan resmi, tetapi partisipasi masyarakat masih
+rendah meskipun keluhan tentang layanan cukup banyak. Pimpinan meminta Anda
+meningkatkan penggunaan kanal tersebut tanpa sekadar mengejar angka laporan.
+Tindakan yang paling tepat adalah ...
+
+
+A. Menyelenggarakan edukasi singkat tentang cara menyampaikan dan memantau aduan,
+bekerja sama dengan perwakilan komunitas, serta memastikan ada umpan balik atas setiap
+laporan.
+B. Mengirim pesan massal agar masyarakat lebih sering melapor dan membentuk tim
+pencatat, meskipun tidak semua laporan dapat segera ditindaklanjuti.
+C. Memprioritaskan hanya laporan yang dianggap berdampak besar agar beban kerja tetap
+terkendali.
+
+                                                                                       4
+D. Membuka jalur komunikasi khusus untuk tokoh masyarakat yang dinilai paling
+kooperatif.
+E. Menunda peningkatan partisipasi agar tidak menimbulkan ekspektasi baru dari
+masyarakat.
+
+
+Jawaban: A
+Pembahasan:
+
+
+Konsep yang digunakan: Partisipasi masyarakat, pengelolaan pengaduan, orientasi
+pengguna, dan perbaikan berkelanjutan.
+Kata kunci: edukasi, kanal pengaduan, tindak lanjut, umpan balik, partisipasi setara
+
+
+Opsi A paling lengkap karena tidak hanya menaikkan jumlah laporan, tetapi membangun
+kemampuan masyarakat menggunakan kanal, memperluas akses secara setara, dan
+menjaga kepercayaan melalui umpan balik. Tindakan tersebut memperlakukan pengaduan
+sebagai bagian dari siklus perbaikan layanan, bukan sekadar indikator administratif.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                     Alasan
+
+                   Paling partisipatif, edukatif, setara, dan berorientasi pada tindak
+A (5 poin)
+                   lanjut.
+
+                   Meningkatkan akses dan pencatatan, tetapi berisiko menurunkan
+B (4 poin)
+                   kepercayaan jika tindak lanjut tidak jelas.
+
+                   Efisien bagi organisasi, tetapi mengabaikan kesetaraan dan dapat
+C (2 poin)
+                   mengecilkan keluhan yang dianggap tidak penting.
+
+                   Menciptakan jalur istimewa dan bertentangan dengan prinsip akses
+D (1 poin)
+                   yang setara.
+
+                   Menjaga stabilitas operasional, tetapi pasif dan tidak menjawab
+E (3 poin)
+                   kebutuhan masyarakat.
+
+
+
+
+                                                                                         5
+    Cara cepat: Untuk isu partisipasi, pilih respons yang membuka akses, mendidik
+    pengguna, dan menjamin tindak lanjut; bukan sekadar menambah saluran atau mengejar
+    angka.
+
+
+1.2. Prinsip dan Standar
+         Materi ini menguji kemampuan peserta menerapkan prinsip pelayanan dan menjaga
+    kepastian proses. Standar pelayanan tidak hanya berarti mengikuti SOP. Standar juga
+    mencakup kejelasan persyaratan, alur, waktu, biaya, hasil layanan, sarana, kompetensi
+    petugas, dan mekanisme pengaduan.
+
+
+    Prinsip yang Menjadi Dasar Penilaian
+               Prinsip                        Makna Operasional dalam Soal
+                                   Petugas bekerja sesuai aturan, batas kewenangan, dan
+     Kepastian dan legalitas
+                                   bukti yang dapat diverifikasi.
+                                   Pengguna memperoleh informasi yang benar tentang
+     Keterbukaan
+                                   syarat, proses, gangguan, dan waktu penyelesaian.
+                                   Kesalahan diakui, diperbaiki, didokumentasikan, dan
+     Akuntabilitas
+                                   tidak dibebankan kepada pengguna.
+                                   Aturan diterapkan konsisten; perbedaan perlakuan
+     Kesetaraan
+                                   hanya didasarkan pada kebutuhan yang sah.
+                                   Petugas memberi estimasi realistis, alternatif, atau
+     Ketepatan waktu
+                                   tindak lanjut saat terjadi keterlambatan.
+                                   Pengguna dibantu memahami dan mengakses layanan
+     Kemudahan akses
+                                   tanpa dipingpong.
+                                   Transparansi tidak berarti membuka data internal atau
+     Keamanan dan kerahasiaan
+                                   data pribadi yang tidak perlu.
+
+
+    Pola Konflik yang Layak
+    • Bukti antrean digital tidak terbaca sistem, sementara antrean manual sudah panjang.
+    • Persyaratan berubah dan belum tersosialisasi secara merata.
+    • Petugas informasi menerima pertanyaan yang berada di luar kewenangannya.
+    • Kesalahan input berasal dari internal dan merugikan pengguna.
+    • Dokumen tidak sah atau kedaluwarsa, tetapi pengguna memiliki alasan mendesak.
+
+                                                                                            6
+Rentang Bloom yang wajar: C3-C5
+Tingkat Kesulitan: Sedang-HOTS
+                              Tingkat
+ Level      Proses Berpikir                          Karakteristik Soal TKP
+                              Kesulitan
+
+                                          Peserta menerapkan satu atau dua prinsip pada
+  C3         Menerapkan         Sulit     kendala operasional, misalnya keluhan,
+                                          antrean, atau berkas kurang lengkap.
+
+                                          Peserta menganalisis penyebab, pihak
+  C4         Menganalisis      HOTS       terdampak, aturan, risiko, dan konsekuensi
+                                          beberapa tindakan.
+
+                                          Beberapa opsi tampak benar. Peserta menilai
+                                          opsi paling proporsional berdasarkan legalitas,
+  C5         Mengevaluasi      HOTS
+                                          keadilan, efektivitas, empati, dan
+                                          akuntabilitas.
+
+
+ Contoh Soal 2 – Prinsip dan Standar Pelayanan Publik
+ Level Bloom: C4 - Menganalisis
+ Tingkat Kesulitan: HOTS
+
+
+Sistem antrean daring mengalami keterlambatan sinkronisasi. Beberapa warga yang sudah
+mengambil nomor daring tidak muncul dalam daftar ketika tiba di kantor. Mereka khawatir
+dianggap tidak hadir, sementara antrean manual sudah mengular. Tindakan yang paling
+tepat adalah ...
+
+
+A. Meminta seluruh warga mengulang antrean secara manual agar data ditata kembali dari
+awal.
+B. Memasukkan warga ke antrean manual berdasarkan perkiraan nomor yang mereka
+sebutkan.
+C. Menjelaskan gangguan secara terbuka, memverifikasi bukti nomor antrean daring, lalu
+menempatkan mereka sesuai urutan bukti tersebut.
+D. Meminta warga menunggu sampai sistem pulih sambil tetap mengambil nomor antrean
+manual.
+
+
+                                                                                        7
+   E. Mengutamakan antrean manual karena sistem daring sedang bermasalah.
+
+
+   Jawaban: C
+   Pembahasan:
+
+
+   Konsep yang digunakan: Keterbukaan, verifikasi, kepastian proses, keadilan antrean,
+   dan kontinuitas layanan.
+   Kata kunci: gangguan sinkronisasi, bukti antrean, transparansi, urutan, adil
+
+
+   Opsi C menjaga hak warga yang telah mengikuti prosedur daring tanpa merugikan warga
+   lain. Verifikasi bukti mencegah manipulasi, penjelasan terbuka mengurangi kecurigaan,
+   dan penempatan sesuai urutan mempertahankan keadilan proses.
+
+
+   Pembahasan setiap opsi:
+    Opsi dan Skor                                    Alasan
+
+    A (1 poin)        Menghapus hak antrean yang telah diperoleh dan berpotensi memicu
+                      konflik.
+
+    B (3 poin)        Memberi solusi cepat, tetapi perkiraan tanpa bukti rawan tidak akurat
+                      dan tidak akuntabel.
+
+    C (5 poin)        Paling transparan, dapat diverifikasi, adil, dan menjaga pelayanan
+                      tetap berjalan.
+
+    D (2 poin)        Pasif, menggandakan beban warga, dan tidak memberi kepastian.
+
+    E (4 poin)        Praktis untuk menjaga alur manual, tetapi mengabaikan hak
+                      pengguna kanal daring.
+
+
+   Cara cepat: Jika tersedia bukti proses, respons terbaik mengakui bukti tersebut,
+   menjelaskan gangguan, dan menjaga urutan secara adil.
+
+
+1.3. Pelayanan Prima dan Kepuasan
+        Pelayanan prima menggabungkan sikap dan hasil. Keramahan tanpa penyelesaian
+   hanya menghasilkan pengalaman yang menyenangkan tetapi tidak efektif. Sebaliknya,
+
+
+                                                                                           8
+penyelesaian teknis tanpa empati dapat memicu konflik dan menurunkan kepercayaan.
+Soal harus menilai keseimbangan keduanya.
+
+
+Unsur Pelayanan Prima
+                       Unsur                         Perilaku yang Diharapkan
+                                              Mendengar, mengakui ketidaknyamanan,
+                                              dan memahami kebutuhan tanpa
+    Empati
+                                              menjanjikan hal yang tidak dapat
+                                              dipenuhi.
+                                              Menjelaskan dengan bahasa sederhana,
+    Komunikasi                                nada tenang, informasi konsisten, dan
+                                              kepastian langkah berikutnya.
+                                              Segera mengambil tindakan yang berada
+    Responsivitas                             dalam kewenangan dan tidak membiarkan
+                                              pengguna tanpa arah.
+                                              Memberikan informasi benar, meminta
+    Kompetensi                                bantuan pihak tepat, dan tidak
+                                              berspekulasi.
+                                              Mengakui kesalahan internal,
+    Service recovery                          memperbaiki kerugian prosedural, dan
+                                              memulihkan kepercayaan.
+                                              Memberi estimasi realistis dan
+    Manajemen ekspektasi                      memperbarui informasi bila kondisi
+                                              berubah.
+
+
+Skenario yang Efektif
+•      Pengguna berbicara dengan nada tinggi akibat keterlambatan.
+•      Sistem lambat dan pengguna membutuhkan kepastian waktu.
+•      Petugas lain salah memberi informasi atau salah memasukkan data.
+•      Antrean kacau dan masyarakat mulai gelisah.
+•      Pengguna kesulitan memahami bahasa teknis atau layanan digital.
+
+
+Kesalahan Umum Penyusun
+
+
+                                                                                      9
+•     Menjadikan "meminta maaf" otomatis sebagai skor 5 meskipun tidak ada solusi.
+•     Menilai ketegasan sebagai tindakan kasar, padahal ketegasan dapat tepat jika tetap
+      sopan dan berdasar aturan.
+•     Memberi skor tinggi pada janji yang tidak realistis.
+•     Menganggap semua keluhan harus langsung dikabulkan.
+
+
+Rentang Bloom yang wajar: C3-C5
+Tingkat Kesulitan: Sedang-HOTS
+                                Tingkat
+    Level   Proses Berpikir                            Karakteristik Soal TKP
+                               Kesulitan
+
+                                            Peserta menerapkan satu atau dua prinsip pada
+     C3      Menerapkan            Sulit    kendala operasional, misalnya keluhan,
+                                            antrean, atau berkas kurang lengkap.
+
+                                            Peserta menganalisis penyebab, pihak
+     C4      Menganalisis          HOTS     terdampak, aturan, risiko, dan konsekuensi
+                                            beberapa tindakan.
+
+                                            Beberapa opsi tampak benar. Peserta menilai
+                                            opsi paling proporsional berdasarkan legalitas,
+     C5      Mengevaluasi          HOTS
+                                            keadilan, efektivitas, empati, dan
+                                            akuntabilitas.
+
+
+    Contoh Soal 3 – Sikap Pelayanan Prima dan Kepuasan Masyarakat
+    Level Bloom: C4 - Menganalisis
+    Tingkat Kesulitan: HOTS
+
+
+Anda sedang memproses permohonan yang mendesak. Aplikasi layanan tiba-tiba sangat
+lambat sehingga penyelesaian satu dokumen memerlukan waktu lebih lama. Pengguna
+mulai gelisah dan terus menanyakan kapan proses selesai. Sikap Anda adalah ...
+
+
+A. Meminta pengguna tidak banyak bertanya karena pertanyaan tersebut menambah
+tekanan kerja.
+
+
+
+                                                                                           10
+B. Menunjukkan seluruh layar sistem agar pengguna melihat sendiri bahwa aplikasi
+sedang bermasalah.
+C. Mengalihkan pembicaraan ke topik lain agar pengguna tidak terlalu memikirkan
+keterlambatan.
+D. Meminta pengguna meninggalkan berkas dan berjanji menghubungi setelah sistem
+kembali lancar.
+E. Tetap tenang, meminta maaf atas kendala, menjelaskan situasi seperlunya, dan
+memberikan estimasi waktu tunggu yang realistis.
+
+
+Jawaban: E
+Pembahasan:
+
+
+Konsep yang digunakan: Pelayanan prima, manajemen ekspektasi, komunikasi, dan
+keamanan informasi.
+Kata kunci: sistem lambat, pengguna gelisah, permintaan maaf, estimasi realistis
+
+
+Opsi E memenuhi kebutuhan emosional dan informasional pengguna sekaligus menjaga
+profesionalisme. Petugas tidak menyalahkan pengguna, tidak membuka data yang tidak
+perlu, dan tidak memberikan janji pasti yang belum dapat dijamin.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                     Alasan
+
+A (1 poin)        Tidak empatik dan berpotensi memperburuk konflik.
+
+B (4 poin)        Transparan, tetapi memperlihatkan layar internal dapat menimbulkan
+                  risiko keamanan atau kerahasiaan.
+
+C (2 poin)        Menghindari inti masalah dan tidak memberikan kepastian.
+
+D (3 poin)        Praktis, tetapi memindahkan beban dan belum tentu sesuai kebutuhan
+                  pengguna.
+
+E (5 poin)        Paling seimbang dalam empati, informasi, kepastian, dan
+                  profesionalisme.
+
+
+
+
+                                                                                   11
+    Cara cepat: Pada gangguan layanan, cari opsi yang memadukan permintaan maaf,
+    penjelasan yang cukup, estimasi realistis, dan perlindungan informasi.
+
+
+1.4. Adil, Inklusif, dan Tidak Diskriminatif
+          Keadilan dalam pelayanan tidak selalu berarti memperlakukan setiap orang secara
+    identik. Pelayanan yang adil memberikan hak yang sama sekaligus akomodasi yang
+    proporsional bagi pengguna yang menghadapi hambatan. Akomodasi tidak boleh berubah
+    menjadi perlakuan istimewa berdasarkan kedekatan, tekanan, jabatan, atau kemampuan
+    ekonomi.
+
+
+    Kelompok dan Hambatan yang Dapat Digunakan
+        Kelompok/
+                           Contoh Kebutuhan Layanan                Kontrol Mutu Soal
+         Hambatan
+
+                         Pendampingan formulir,
+                                                             Jangan menggambarkan lansia
+     Lansia              penjelasan lebih perlahan, jalur
+                                                             selalu tidak mampu.
+                         prioritas yang sah.
+
+                         Akses fisik, komunikasi
+     Penyandang                                              Hindari belas kasihan;
+                         alternatif, bantuan navigasi,
+     disabilitas                                             tekankan hak dan kemandirian.
+                         akomodasi layak.
+
+     Ibu hamil atau      Prioritas, tempat duduk,
+                                                             Pastikan prioritas didasarkan
+     pengguna dengan     keamanan, waktu tunggu yang
+                                                             pada kebutuhan yang jelas.
+     kondisi khusus      proporsional.
+
+                         Layanan jemput bola, kanal
+     Hambatan                                                Jangan langsung membenarkan
+                         alternatif, informasi yang dapat
+     geografis/ekonomi                                       pelanggaran syarat.
+                         dijangkau.
+
+     Hambatan            Bahasa sederhana,                   Jangan menyamakan
+     bahasa/literasi     pendampingan, kanal non-digital     keterbatasan akses dengan
+     digital             bila tersedia.                      ketidakmauan.
+
+
+
+
+                                                                                             12
+Pembeda Konsep
+   Konsep                        Benar                             Keliru
+
+                  Aturan dasar berlaku konsisten    Memberi keistimewaan karena
+Kesetaraan
+                  untuk semua.                      hubungan pribadi.
+
+                                                    Memperlakukan semua orang
+                  Memberi dukungan sesuai
+Keadilan                                            identik meski hambatannya
+                  hambatan agar akses setara.
+                                                    berbeda.
+
+                  Didukung aturan atau kebutuhan    Diberikan karena ancaman, status,
+Prioritas
+                  objektif.                         kedekatan, atau tekanan.
+
+                  Layanan dapat digunakan oleh      Membuat jalur terpisah yang
+Inklusivitas
+                  beragam kelompok.                 merendahkan atau mengecualikan.
+
+
+Rentang Bloom yang wajar: C3-C5
+Tingkat Kesulitan: Sedang-HOTS
+                              Tingkat
+Level       Proses Berpikir                          Karakteristik Soal TKP
+                              Kesulitan
+
+                                          Peserta menerapkan satu atau dua prinsip pada
+  C3         Menerapkan           Sulit   kendala operasional, misalnya keluhan,
+                                          antrean, atau berkas kurang lengkap.
+
+                                          Peserta menganalisis penyebab, pihak
+  C4         Menganalisis        HOTS     terdampak, aturan, risiko, dan konsekuensi
+                                          beberapa tindakan.
+
+                                          Beberapa opsi tampak benar. Peserta menilai
+                                          opsi paling proporsional berdasarkan legalitas,
+  C5         Mengevaluasi        HOTS
+                                          keadilan, efektivitas, empati, dan
+                                          akuntabilitas.
+
+
+Contoh Soal 4 – Pelayanan yang Adil, Inklusif, dan Tidak Diskriminatif
+Level Bloom: C4 - Menganalisis
+Tingkat Kesulitan: HOTS
+
+
+
+                                                                                        13
+Anda bertugas di loket prioritas untuk lansia, ibu hamil, dan penyandang disabilitas.
+Seorang warga yang tidak termasuk kategori prioritas meminta dilayani di loket tersebut
+karena sedang terburu-buru. Ia mengancam akan mengajukan laporan jika permintaannya
+ditolak. Tindakan paling tepat adalah ...
+
+
+A. Menjelaskan tujuan loket prioritas, meminta pengertian, dan menawarkan bantuan
+pengecekan awal tanpa memotong antrean.
+B. Meminta warga tetap menggunakan jalur reguler dan menegaskan aturan secara singkat.
+C. Melayani warga tersebut di loket prioritas agar konflik tidak membesar.
+D. Mengarahkan warga kepada petugas lain agar Anda tidak menghadapi komplain.
+E. Meminta warga menulis keluhan terlebih dahulu sebelum diarahkan ke jalur reguler.
+
+
+Jawaban: A
+Pembahasan:
+
+
+Konsep yang digunakan: Kesetaraan, keadilan, loket prioritas, komunikasi persuasif, dan
+anti-favoritisme.
+Kata kunci: bukan kategori prioritas, ancaman laporan, aturan, solusi alternatif
+
+
+Opsi A mempertahankan fungsi loket prioritas dan tidak mengorbankan hak kelompok
+rentan. Pada saat yang sama, petugas tidak bersikap kaku karena tetap menawarkan
+bantuan yang tidak mengubah urutan antrean. Respons ini membedakan akomodasi yang
+sah dari perlakuan istimewa karena tekanan.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                     Alasan
+
+A (5 poin)          Paling adil, empatik, dan tetap konsisten dengan tujuan loket
+                    prioritas.
+
+B (4 poin)          Sesuai aturan, tetapi kurang membantu dan dapat terasa kaku.
+
+C (1 poin)          Mengorbankan hak pengguna prioritas dan memberi insentif pada
+                    ancaman.
+
+D (2 poin)          Menghindari tanggung jawab serta memindahkan konflik.
+
+
+                                                                                       14
+    Opsi dan Skor                                     Alasan
+
+    E (3 poin)         Menjaga prosedur, tetapi menambah langkah yang tidak perlu dan
+                       belum menyelesaikan kebutuhan.
+
+
+   Cara cepat: Untuk konflik jalur prioritas, pilih opsi yang melindungi hak kelompok
+   sasaran dan menawarkan bantuan lain tanpa memotong antrean.
+
+
+1.5. Pengambilan Keputusan
+         Materi ini merupakan bentuk paling kuat untuk soal TKP karena menguji
+   pertimbangan ketika beberapa nilai bersaing. Peserta harus menilai urgensi, risiko, batas
+   kewenangan, dampak terhadap pengguna lain, dan alternatif yang sah. Soal yang baik tidak
+   memiliki jawaban hitam-putih; semua opsi dapat tampak masuk akal, tetapi hanya satu
+   yang paling lengkap dan proporsional.
+   Kerangka Pengambilan Keputusan
+   1. Identifikasi kebutuhan utama dan pihak yang terdampak.
+   2. Periksa aturan, batas kewenangan, keamanan, serta risiko hukum atau data.
+   3. Bedakan kondisi mendesak dari sekadar permintaan dipercepat.
+   4. Cari alternatif yang sah dan paling sedikit merugikan pihak lain.
+   5. Koordinasikan pihak berwenang jika keputusan berada di luar kompetensi petugas.
+   6. Komunikasikan alasan, pilihan, estimasi, dan tindak lanjut secara jelas.
+   7. Dokumentasikan atau evaluasi bila keputusan berpotensi berulang atau berdampak luas.
+
+
+   Jenis Dilema
+      Jenis Dilema              Pilihan Lemah                      Pilihan Kuat
+
+                         Mengabaikan aturan karena
+                                                         Mencari jalan keluar yang sah
+    Empati vs aturan     kasihan atau menolak tanpa
+                                                         melalui koordinasi atau alternatif.
+                         bantuan.
+
+    Kecepatan vs         Melewati verifikasi atau        Menentukan langkah cepat yang
+    ketelitian           memperlambat tanpa alasan.      tetap menjaga bukti dan akurasi.
+
+                                                         Menilai urgensi objektif dan
+    Urgensi individu     Memotong antrean karena
+                                                         menyediakan solusi tanpa
+    vs keadilan umum tekanan.
+                                                         merugikan orang lain.
+
+
+                                                                                            15
+   Jenis Dilema                 Pilihan Lemah                          Pilihan Kuat
+
+                                                          Menjelaskan batas kewenangan
+Kewenangan              Berspekulasi atau melempar
+                                                          dan memfasilitasi akses ke pihak
+terbatas                pengguna.
+                                                          tepat.
+
+                        Menunggu pasif atau               Menjaga layanan minimum,
+Krisis operasional      mengambil tindakan di luar        memberi informasi, dan
+                        kompetensi.                       melakukan eskalasi tepat.
+
+
+
+ Diskresi dalam Soal
+ Jangan menggambarkan diskresi sebagai kebebasan mengabaikan aturan. Diskresi
+ yang layak harus memiliki tujuan pelayanan yang jelas, alasan objektif, kewenangan
+ atau      koordinasi    yang    tepat,    dampak       yang       proporsional,   dan   dapat
+ dipertanggungjawabkan.
+
+
+
+Rentang Bloom yang wajar: C4-C6
+Tingkat Kesulitan: Sulit-HOTS
+                                 Tingkat
+ Level     Proses Berpikir                               Karakteristik Soal TKP
+                                Kesulitan
+
+                                            Peserta menganalisis penyebab, pihak
+  C4         Menganalisis         HOTS      terdampak, aturan, risiko, dan konsekuensi
+                                            beberapa tindakan.
+
+                                            Beberapa opsi tampak benar. Peserta menilai
+                                            opsi paling proporsional berdasarkan legalitas,
+  C5         Mengevaluasi         HOTS
+                                            keadilan, efektivitas, empati, dan
+                                            akuntabilitas.
+
+                                            Peserta memilih rancangan perbaikan sistem,
+                                            strategi implementasi, atau desain layanan
+  C6         Menciptakan          HOTS
+                                            terbaik dari beberapa alternatif. Digunakan
+                                            selektif.
+
+
+
+
+                                                                                             16
+ Contoh Soal 5 – Pengambilan Keputusan dalam Skenario Pelayanan Publik
+ Level Bloom: C5 – Mengevaluasi
+ Tingkat Kesulitan: HOTS
+
+
+Petugas layanan perjalanan menemukan dokumen identitas seorang pengguna sedikit
+rusak pada bagian sudut, tetapi data utama masih terbaca. Aturan menyatakan dokumen
+rusak dapat ditolak oleh otoritas tujuan. Pengguna memohon karena harus menghadiri
+pemakaman orang tuanya dan tidak memiliki waktu mengurus dokumen baru. Tindakan
+yang sebaiknya dilakukan adalah ...
+
+
+A. Mengizinkan pengguna melanjutkan proses karena kondisi kedukaan merupakan alasan
+kemanusiaan.
+B. Menolak secara tegas tanpa penjelasan tambahan karena aturan harus dipatuhi.
+C. Membantu pengguna berkoordinasi dengan otoritas dokumen dan penyedia layanan
+untuk memastikan apakah tingkat kerusakan masih dapat diterima.
+D. Menyarankan pengguna memperbaiki bagian yang rusak secara mandiri agar tidak
+terlihat.
+E. Langsung meminta pimpinan membuat pengecualian khusus agar pengguna dapat
+berangkat.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Konsep yang digunakan: Kepatuhan, empati, batas kewenangan, koordinasi, risiko, dan
+solusi sah.
+Kata kunci: dokumen rusak, keadaan mendesak, otoritas berwenang, koordinasi
+
+
+Opsi C paling proporsional. Petugas tidak mengambil risiko dengan mengizinkan atau
+menolak secara sepihak. Koordinasi dengan pihak yang memiliki kewenangan memberi
+peluang solusi yang sah, melindungi pengguna dari masalah di tujuan, dan tetap
+menunjukkan empati terhadap kondisi mendesak.
+
+
+
+
+                                                                                     17
+Pembahasan setiap opsi:
+ Opsi dan Skor                                   Alasan
+
+A (2 poin)        Empatik, tetapi melampaui kewenangan dan dapat menimbulkan
+                  risiko lebih besar bagi pengguna.
+
+B (3 poin)        Patuh aturan, tetapi terlalu kaku dan tidak mencoba mencari solusi.
+
+C (5 poin)        Paling legal, empatik, solutif, dan sesuai batas kewenangan.
+
+D (1 poin)        Mendorong manipulasi dokumen dan bertentangan dengan integritas.
+
+E (4 poin)        Berusaha membantu melalui eskalasi, tetapi melewati koordinasi
+                  teknis yang seharusnya dilakukan terlebih dahulu.
+
+
+Cara cepat: Ketika aturan dan kondisi kemanusiaan bertentangan, cari opsi yang tidak
+melanggar aturan tetapi aktif menghubungkan pengguna dengan pihak berwenang.
+
+
+
+
+                                                                                        18
+                                  JEJARING KERJA
+
+     Jejaring Kerja adalah kemampuan membangun dan memelihara hubungan profesional
+yang dilandasi tujuan bersama, kepercayaan, komunikasi terbuka, saling menghargai,
+pertukaran informasi atau sumber daya yang tepat, serta komitmen tindak lanjut. Kompetensi
+ini mencakup hubungan di dalam tim maupun hubungan lintas unit, organisasi, sektor,
+komunitas, dan pemangku kepentingan lainnya.
+
+
+Hierarki Penilaian Respons
+   Urutan Filter           Pertanyaan Penguji                 Implikasi pada Skor
+
+                    Apakah hubungan, data, dan
+                                                        Pelanggaran etika atau
+1. Integritas dan   koneksi digunakan secara sah,
+                                                        penyalahgunaan relasi tidak dapat
+batas etis          transparan, dan tanpa konflik
+                                                        menjadi skor tinggi.
+                    kepentingan?
+
+                    Apakah tindakan mengarahkan
+2. Tujuan dan                                           Respons yang terlalu
+                    para pihak pada hasil bersama,
+kepentingan                                             individualistis atau berpihak
+                    bukan hanya keuntungan salah
+bersama                                                 menurunkan skor.
+                    satu pihak?
+
+                    Apakah tindakan menjaga
+                                                        Mempermalukan, menekan, atau
+3. Kepercayaan      martabat, mendengar pihak lain,
+                                                        mengabaikan pihak lain
+dan penghargaan     dan membangun rasa saling
+                                                        menurunkan skor.
+                    percaya?
+
+                    Apakah informasi akurat, relevan,   Menahan, menyebarkan secara
+4. Komunikasi
+                    dibagikan kepada pihak yang         selektif, atau membagikan data
+dan informasi
+                    tepat, melalui saluran yang sesuai? tanpa verifikasi menurunkan skor.
+
+                    Apakah pihak, peran, batas          Kolaborasi tanpa pembagian peran
+5. Koordinasi dan
+                    kewenangan, jadwal, dan             mudah menjadi simbolik dan tidak
+kejelasan peran
+                    mekanisme tindak lanjut jelas?      produktif.
+
+
+
+
+                                                                                         19
+  Urutan Filter             Pertanyaan Penguji                     Implikasi pada Skor
+
+                      Apakah tindakan menyelesaikan
+                                                             Solusi bersama dan mekanisme
+6. Efektivitas dan    masalah saat ini serta memperkuat
+                                                             evaluasi lebih tinggi daripada
+keberlanjutan         hubungan untuk kerja sama
+                                                             tindakan sesaat.
+                      berikutnya?
+
+
+
+ Prinsip Kunci
+ Respons terbaik bukan selalu yang paling formal atau paling akrab. Nilai tinggi muncul
+ ketika peserta memilih cara yang tepat untuk pihak, masalah, waktu, dan risiko: langsung
+ tetapi sopan, terbuka tetapi menjaga kerahasiaan, kolaboratif tetapi tetap jelas peran dan
+ tanggung jawabnya.
+
+
+
+Empat Materi Pokok
+   Materi Pokok                     Fokus Utama                        Contoh Konflik
+
+                        Tujuan bersama, kepercayaan,          Pihak belum percaya, hubungan
+Konsep Dasar dan
+                        kesetaraan, timbal balik,             terlalu formal, atau kerja sama
+Prinsip
+                        keterbukaan, etika, akuntabilitas. berat sebelah.
+
+                        Komunikasi langsung,
+Komunikasi,                                                   Data terlambat, informasi tidak
+                        mendengar aktif, akses
+Koordinasi, dan                                               merata, rapat tidak efektif, atau
+                        informasi, verifikasi data, kanal,
+Berbagi Informasi                                             salah koordinasi.
+                        waktu, dan kejelasan peran.
+
+                        Partisipasi, pembagian tugas,
+Kolaborasi dan                                                Konflik, anggota pasif, dominasi,
+                        mediasi, keputusan bersama,
+Penyelesaian                                                  beban tidak seimbang, atau target
+                        dukungan, umpan balik, dan
+Masalah dalam Tim                                             terlambat.
+                        tanggung jawab kolektif.
+
+                        Pemetaan mitra, manfaat timbal        Mencari mitra, menggunakan
+Pengembangan
+                        balik, pemanfaatan jejaring           koneksi, merancang kemitraan,
+Hubungan Kerja dan
+                        secara etis, pemeliharaan relasi,     atau menjaga kepercayaan
+Kemitraan Produktif
+                        evaluasi, dan keberlanjutan.          jangka panjang.
+
+
+
+
+                                                                                                  20
+2.1. Konsep Dasar dan Prinsip
+         Materi ini mengukur pemahaman peserta bahwa jejaring kerja merupakan hubungan
+   profesional yang diarahkan pada tujuan bersama. Hubungan yang baik dibangun melalui
+   kepercayaan, kesetaraan, keterbukaan, tanggung jawab, manfaat yang wajar bagi para
+   pihak, dan konsistensi tindakan.
+
+
+   Indikator Perilaku
+   •   Membangun pendekatan secara proaktif dan menghargai karakter pihak yang diajak
+       bekerja sama.
+   •   Mencari kesamaan tujuan sebelum menawarkan bentuk kerja sama.
+   •   Menjaga kejujuran, konsistensi, komitmen, dan batas profesional.
+   •   Menghindari relasi yang manipulatif, transaksional sepihak, atau bergantung pada
+       kedekatan pribadi.
+   •   Menjaga kesetaraan posisi dan tidak memaksakan kewenangan formal sebagai satu-
+       satunya dasar kerja sama.
+   •   Memandang jejaring sebagai proses yang perlu dipelihara, bukan kontak sekali pakai.
+
+
+   Pola Stimulus
+         Pola               Konflik yang Diuji            Ciri Respons Skor Tinggi
+
+                                                       Pendekatan langsung, mendengar
+    Kepercayaan      Pihak pernah kecewa, ragu, atau
+                                                       kebutuhan, transparan, konsisten,
+    rendah           tidak percaya pada organisasi.
+                                                       dan tidak defensif.
+
+                     Surat atau prosedur ada, tetapi
+    Hubungan                                           Mengombinasikan kanal formal
+                     komunikasi personal dan
+    terlalu formal                                     dengan dialog yang tepat.
+                     pemahaman konteks lemah.
+
+                                                       Menggali kepentingan,
+    Tujuan belum     Setiap pihak memiliki
+                                                       menemukan irisan tujuan, dan
+    selaras          kepentingan berbeda.
+                                                       merumuskan manfaat bersama.
+
+                     Satu pihak lebih berkuasa,        Menjaga penghargaan dan
+    Relasi tidak
+                     berpengalaman, atau memiliki      partisipasi tanpa mengabaikan
+    seimbang
+                     akses lebih besar.                akuntabilitas.
+
+
+
+                                                                                           21
+   Rentang Bloom yang wajar: C2-C5
+   Tingkat Kesulitan: Sedang-HOTS
+                                  Tingkat
+       Level    Proses Berpikir                          Karakteristik Soal TKP
+                                  Kesulitan
+
+                                              Peserta mengenali prinsip pelayanan yang
+        C2          Memahami       Sedang     tercermin dalam situasi sederhana. Konflik
+                                              nilai masih minimal.
+
+                                              Peserta menerapkan satu atau dua prinsip pada
+        C3         Menerapkan       Sulit     kendala operasional, misalnya keluhan,
+                                              antrean, atau berkas kurang lengkap.
+
+                                              Peserta menganalisis penyebab, pihak
+        C4         Menganalisis    HOTS       terdampak, aturan, risiko, dan konsekuensi
+                                              beberapa tindakan.
+
+                                              Beberapa opsi tampak benar. Peserta menilai
+                                              opsi paling proporsional berdasarkan legalitas,
+        C5         Mengevaluasi    HOTS
+                                              keadilan, efektivitas, empati, dan
+                                              akuntabilitas.
+
+
+2.2. Komunikasi, Koordinasi, dan Berbagi Informasi
+             Materi ini mengukur kemampuan menjaga arus komunikasi dan informasi agar
+   pihak yang berkepentingan dapat bekerja secara sinkron. Nilai tinggi tidak diberikan
+   kepada tindakan yang sekadar banyak berbicara, tetapi kepada komunikasi yang akurat,
+   relevan, tepat waktu, inklusif, dan tetap menjaga kerahasiaan serta kewenangan.
+
+
+   Indikator Perilaku
+   •     Menyampaikan informasi penting secara proaktif kepada pihak yang membutuhkan.
+   •     Memilih saluran, waktu, dan tingkat formalitas yang sesuai dengan urgensi dan
+         risiko.
+   •     Memastikan data lengkap, akurat, terverifikasi, dan tidak menyesatkan.
+   •     Menjaga kerahasiaan data dan membatasi akses berdasarkan kebutuhan serta
+         kewenangan.
+   •     Mengklarifikasi pesan, merangkum kesepakatan, dan mengonfirmasi tindak lanjut.
+
+                                                                                           22
+•     Mengatasi silo informasi tanpa menyebarkan data secara berlebihan.
+•     Mendorong partisipasi dan memberi ruang bicara yang seimbang dalam forum.
+
+
+Pembeda Utama Skor 5 dan Skor 4
+          Kondisi                      Skor 5                           Skor 4
+
+                       Dibagikan melalui kanal
+                                                             Dibagikan kepada beberapa
+                       bersama kepada seluruh pihak
+    Informasi tim                                            pihak yang dianggap penting,
+                       relevan dan tersedia ruang
+                                                             tetapi akses belum merata.
+                       klarifikasi.
+
+                       Konfirmasi ke sumber, jelaskan        Menunda pengiriman untuk
+    Data belum
+                       status kepada penerima, dan           menjaga akurasi, tetapi belum
+    lengkap
+                       sepakati waktu pembaruan.             memberi kepastian.
+
+                                                             Menyampaikan bahwa semua
+    Rapat              Memfasilitasi giliran,
+                                                             pihak perlu didengar, tetapi
+    didominasi satu    mengarahkan pada agenda, dan
+                                                             belum mengelola proses
+    pihak              merangkum keputusan bersama.
+                                                             diskusi.
+
+                       Menghubungi pihak terkait,            Mengusulkan perbaikan
+    Koordinasi         mencari kendala, menawarkan           pembagian tugas secara
+    lambat             dukungan, dan menetapkan              formal, tetapi responsnya
+                       tindak lanjut.                        tidak langsung.
+
+
+Rentang Bloom yang wajar: C3-C5
+Tingkat Kesulitan: Sedang-HOTS
+                                 Tingkat
+    Level     Proses Berpikir                             Karakteristik Soal TKP
+                                Kesulitan
+
+                                                Peserta menerapkan satu atau dua prinsip pada
+     C3        Menerapkan             Sulit     kendala operasional, misalnya keluhan,
+                                                antrean, atau berkas kurang lengkap.
+
+                                                Peserta menganalisis penyebab, pihak
+     C4        Menganalisis       HOTS          terdampak, aturan, risiko, dan konsekuensi
+                                                beberapa tindakan.
+
+
+                                                                                             23
+                               Tingkat
+ Level    Proses Berpikir                             Karakteristik Soal TKP
+                              Kesulitan
+
+                                           Beberapa opsi tampak benar. Peserta menilai
+                                           opsi paling proporsional berdasarkan legalitas,
+  C5       Mengevaluasi          HOTS
+                                           keadilan, efektivitas, empati, dan
+                                           akuntabilitas.
+
+
+ Contoh Soal 2 – Komunikasi, Koordinasi, dan Berbagi Informasi
+ Level Bloom: C4 – Menganalisis
+ Tingkat Kesulitan: HOTS
+
+
+Koordinasi lintas bagian sering terlambat karena informasi penting hanya diketahui
+sebagian pegawai atau baru dibagikan setelah diminta. Sikap yang paling tepat untuk
+mendukung kerja tim adalah ...
+
+
+A. Membagikan informasi hanya sejauh berkaitan langsung dengan tugas pribadi.
+B. Menyampaikan informasi kepada beberapa rekan yang dianggap paling membutuhkan
+tanpa menunggu permintaan.
+C. Menyebarkan informasi yang dibutuhkan melalui saluran internal yang sesuai dan
+membuka ruang klarifikasi bagi pihak terkait.
+D. Menyimpan informasi sampai atasan atau rekan meminta secara eksplisit.
+E. Menunggu rapat formal berikutnya agar seluruh informasi disampaikan dalam satu
+forum.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Konsep yang digunakan: Keterbukaan informasi, koordinasi proaktif, akurasi, dan akses
+pihak relevan
+Kata kunci: silo informasi, saluran internal, proaktif, klarifikasi, kebutuhan akses
+
+
+Opsi C paling tepat karena memastikan informasi tersedia bagi seluruh pihak relevan,
+tidak bergantung pada kedekatan personal, dan tetap menggunakan saluran internal yang
+
+                                                                                        24
+   dapat dipertanggungjawabkan. Ruang klarifikasi juga mengurangi risiko salah tafsir dan
+   mempercepat koordinasi.
+
+
+   Pembahasan setiap opsi:
+     Opsi dan Skor                                   Alasan
+
+    A (2 poin)        Berbagi secara sangat terbatas sehingga kebutuhan lintas bagian dan
+                      tujuan bersama dapat terabaikan.
+
+    B (4 poin)        Proaktif dan membantu, tetapi masih selektif sehingga belum
+                      menjamin akses informasi yang merata.
+
+    C (5 poin)        Proaktif, inklusif, menggunakan kanal yang tepat, dan menyediakan
+                      ruang untuk memastikan pemahaman.
+
+    D (1 poin)        Pasif dan menciptakan hambatan informasi yang dapat
+                      memperlambat pekerjaan.
+
+    E (3 poin)        Menjaga keteraturan, tetapi terlalu lambat untuk kebutuhan informasi
+                      yang memengaruhi pekerjaan berjalan.
+
+
+   Cara cepat: Pilih respons yang membuat informasi akurat tersedia bagi semua pihak
+   relevan melalui jalur yang tepat, bukan hanya kepada orang tertentu atau setelah diminta.
+
+
+2.3. Kolaborasi dan Penyelesaian Masalah dalam Tim
+   Materi ini mengukur kemampuan bekerja bersama dalam menghadapi perbedaan, konflik,
+   keterlambatan, dan keterbatasan sumber daya. Kolaborasi tidak berarti menghindari
+   ketegangan atau selalu mengikuti mayoritas. Respons terbaik membantu tim memahami
+   akar masalah, membagi tanggung jawab, menyepakati solusi, dan menjaga hubungan kerja
+   tetap sehat.
+
+
+   Indikator Perilaku
+   • Melibatkan pihak yang terdampak dalam pembahasan dan keputusan.
+   • Membedakan masalah proses, tugas, dan hubungan interpersonal.
+   • Melakukan mediasi secara objektif tanpa mempermalukan pihak mana pun.
+   • Mendorong pembagian tugas sesuai kapasitas, peran, dan target yang jelas.
+
+
+                                                                                          25
+• Memberikan dukungan dan umpan balik tanpa mengambil alih seluruh tanggung jawab
+pihak lain.
+• Mengarahkan diskusi pada data, tujuan, alternatif, dan komitmen tindak lanjut.
+• Menggunakan eskalasi kepada pimpinan setelah upaya penyelesaian pada tingkat yang
+tepat dilakukan atau ketika risikonya melampaui kewenangan.
+
+
+Pola Konflik Tim
+   Pola Konflik               Risiko Pengecoh               Respons Skor Tinggi
+
+Saling               Mengabaikan,                     Mediasi privat, dengarkan kedua
+menyalahkan          mempermalukan, atau              pihak, identifikasi akar, dan
+                     menghukum tanpa menggali         sepakati solusi.
+                     fakta.
+
+Anggota kurang       Mengambil alih tugas atau        Cari kendala, perjelas peran,
+aktif                langsung mengganti anggota.      dukung, tetapkan target dan
+                                                      evaluasi.
+
+Pendapat berbeda     Memaksakan keputusan             Fasilitasi penilaian opsi secara
+                     sendiri atau membiarkan          terbuka dan arahkan keputusan
+                     diskusi tanpa arah.              bersama.
+
+Beban tidak          Membagi rata tanpa melihat       Tinjau kapasitas, prioritas, dan
+seimbang             kapasitas atau membiarkan        tanggung jawab secara transparan.
+                     anggota tertentu terus
+                     menanggung beban.
+
+
+Rentang Bloom yang wajar: C3-C5
+Tingkat Kesulitan: Sedang-HOTS
+                               Tingkat
+ Level    Proses Berpikir                            Karakteristik Soal TKP
+                               Kesulitan
+
+                                           Peserta menerapkan satu atau dua prinsip pada
+  C3          Menerapkan         Sulit     kendala operasional, misalnya keluhan,
+                                           antrean, atau berkas kurang lengkap.
+
+
+
+
+                                                                                         26
+                             Tingkat
+ Level    Proses Berpikir                           Karakteristik Soal TKP
+                             Kesulitan
+
+                                         Peserta menganalisis penyebab, pihak
+  C4        Menganalisis      HOTS       terdampak, aturan, risiko, dan konsekuensi
+                                         beberapa tindakan.
+
+                                         Beberapa opsi tampak benar. Peserta menilai
+                                         opsi paling proporsional berdasarkan legalitas,
+  C5        Mengevaluasi      HOTS
+                                         keadilan, efektivitas, empati, dan
+                                         akuntabilitas.
+
+
+ Contoh Soal 3 – Kolaborasi dan Penyelesaian Masalah dalam Tim
+ Level Bloom: C5 – Mengevaluasi
+ Tingkat Kesulitan: HOTS
+
+
+Dua anggota tim memiliki cara kerja berbeda dan mulai saling menyalahkan atas
+keterlambatan target. Ketegangan mulai memengaruhi anggota lain. Tindakan yang paling
+tepat adalah ...
+
+
+A. Meminta keduanya menyelesaikan masalah sendiri agar anggota lain tidak terlibat.
+B. Menegur keduanya di depan tim agar menjadi pelajaran bersama.
+C. Mengundang keduanya berdiskusi secara pribadi untuk menggali akar masalah dan
+merumuskan solusi bersama.
+D. Menunda pembahasan konflik agar tim berfokus dahulu pada pekerjaan yang
+mendesak.
+E. Mengganti salah satu anggota yang dianggap paling banyak menimbulkan masalah.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Konsep yang digunakan: Mediasi konflik, komunikasi terbuka, objektivitas, dan
+tanggung jawab bersama
+Kata kunci: saling menyalahkan, mediasi privat, akar masalah, solusi bersama, tindak
+lanjut
+
+                                                                                      27
+   Opsi C paling tepat karena menyediakan ruang aman untuk mendengar fakta dan
+   perspektif kedua pihak tanpa mempermalukan mereka. Penyelesaian tidak berhenti pada
+   meredakan emosi, tetapi mengarah pada akar masalah, kesepakatan kerja, serta tanggung
+   jawab atas tindak lanjut.
+
+
+   Pembahasan setiap opsi:
+    Opsi dan Skor                                    Alasan
+
+    A (2 poin)        Memberi ruang mandiri, tetapi terlalu pasif ketika konflik sudah
+                      memengaruhi tim dan membutuhkan fasilitasi.
+
+    B (1 poin)        Mempermalukan pihak di depan umum, meningkatkan defensif, dan
+                      dapat merusak kepercayaan tim.
+
+    C (5 poin)        Empatik, objektif, langsung menangani akar masalah, dan melibatkan
+                      kedua pihak dalam solusi.
+
+    D (3 poin)        Menjaga fokus jangka pendek, tetapi membiarkan konflik berlarut
+                      dan mengganggu produktivitas berikutnya.
+
+    E (4 poin)        Tegas dan dapat menghentikan gangguan, tetapi terlalu drastis tanpa
+                      pemeriksaan menyeluruh dan upaya perbaikan.
+
+
+   Cara cepat: Saat konflik interpersonal muncul, pilih mediasi yang objektif dan privat,
+   gali akar masalah, susun solusi bersama, lalu pastikan komitmen tindak lanjut.
+
+
+2.4. Pengembangan Hubungan Kerja dan Kemitraan Produktif
+         Materi ini mengukur kemampuan mengidentifikasi, membangun, memanfaatkan,
+   dan memelihara hubungan dengan pihak yang dapat mendukung tujuan bersama.
+   Kemitraan produktif harus menghasilkan nilai nyata, pembagian peran yang jelas,
+   hubungan yang saling menghargai, serta manfaat yang dapat dipertanggungjawabkan.
+
+
+   Indikator Perilaku
+   • Memetakan pihak berdasarkan kepentingan, sumber daya, keahlian, pengaruh, dan
+   kontribusi yang relevan.
+
+
+                                                                                            28
+• Menjelaskan tujuan, kebutuhan, manfaat, risiko, dan batas kerja sama secara
+transparan.
+• Menggunakan koneksi atau akses mitra secara etis dan tidak mengeksploitasi hubungan
+personal.
+• Menyusun pembagian peran, sumber daya, jadwal, keluaran, serta mekanisme
+komunikasi yang jelas.
+• Menjaga hubungan melalui komunikasi berkala, pemenuhan komitmen, apresiasi, dan
+penyelesaian masalah yang adil.
+• Mengevaluasi manfaat, kualitas kontribusi, risiko ketergantungan, dan kelanjutan
+kemitraan.
+• Mengakhiri atau menyesuaikan kemitraan secara profesional jika tujuan, etika, atau
+kualitas tidak lagi terpenuhi.
+
+
+Tahap Kemitraan Produktif
+     Tahap               Pertanyaan Kunci                    Bukti Perilaku
+
+Pemetaan           Siapa yang relevan dan         Pemilihan mitra berdasarkan
+                   mengapa?                       kebutuhan, bukan kedekatan.
+
+Pendekatan         Bagaimana membangun            Dialog terbuka, penghargaan, dan
+                   kepercayaan dan kesamaan       transparansi konteks.
+                   tujuan?
+
+Perancangan        Apa peran, manfaat, batas,     Kesepakatan yang jelas dan
+                   sumber daya, dan risiko tiap   proporsional.
+                   pihak?
+
+Pelaksanaan        Bagaimana koordinasi,          Kanal komunikasi, penanggung
+                   keputusan, data, dan kendala   jawab, jadwal, dan pelaporan.
+                   dikelola?
+
+Pemeliharaan       Bagaimana komitmen dan         Tindak lanjut, umpan balik, apresiasi,
+                   kepercayaan dijaga?            serta penyelesaian konflik.
+
+Evaluasi           Apakah kemitraan efektif,      Pengukuran hasil, perbaikan,
+                   adil, dan perlu dilanjutkan?   penyesuaian, atau pengakhiran
+                                                  profesional.
+
+
+                                                                                      29
+Rentang Bloom yang wajar: C3-C5
+Tingkat Kesulitan: Sedang-HOTS
+                             Tingkat
+ Level   Proses Berpikir                              Karakteristik Soal TKP
+                             Kesulitan
+
+                                         Peserta menerapkan satu atau dua prinsip pada
+  C3       Menerapkan          Sulit     kendala operasional, misalnya keluhan,
+                                         antrean, atau berkas kurang lengkap.
+
+                                         Peserta menganalisis penyebab, pihak
+  C4       Menganalisis       HOTS       terdampak, aturan, risiko, dan konsekuensi
+                                         beberapa tindakan.
+
+                                         Beberapa opsi tampak benar. Peserta menilai
+                                         opsi paling proporsional berdasarkan legalitas,
+  C5      Mengevaluasi        HOTS
+                                         keadilan, efektivitas, empati, dan
+                                         akuntabilitas.
+
+                                         Peserta memilih rancangan perbaikan sistem,
+                                         strategi implementasi, atau desain layanan
+  C6       Menciptakan        HOTS
+                                         terbaik dari beberapa alternatif. Digunakan
+                                         selektif.
+
+
+ Contoh Soal 4 – Pengembangan Hubungan Kerja dan Kemitraan Produktif
+ Level Bloom: C5 – Mengevaluasi
+ Tingkat Kesulitan: HOTS
+Dalam proyek lintas organisasi, seorang rekan memiliki koneksi luas dengan pihak
+eksternal yang relevan. Dukungan koneksi tersebut dapat mempercepat proyek, tetapi
+pendekatan yang terlalu langsung dapat menimbulkan kesan bahwa hubungan itu hanya
+dimanfaatkan. Tindakan yang paling tepat adalah ...
+
+
+A. Segera meminta rekan mengenalkan Anda kepada semua pihak yang relevan.
+B. Mendiskusikan tujuan dan kebutuhan proyek secara terbuka, kemudian meminta
+dukungan koneksinya secara proporsional dengan tetap menjaga hubungan profesional.
+
+                                                                                       30
+C. Mengandalkan jalur formal antarorganisasi agar hubungan pribadi tidak pernah
+digunakan.
+D. Menunggu sampai rekan tersebut menawarkan bantuan koneksi atas inisiatifnya sendiri.
+E. Menggunakan jalur lain dan tidak melibatkan rekan tersebut untuk menghindari
+kemungkinan salah paham.
+
+
+Jawaban: B
+Pembahasan:
+
+
+Konsep yang digunakan: Etika pemanfaatan jejaring, transparansi tujuan, kepercayaan,
+dan profesionalisme hubungan
+Kata kunci: koneksi eksternal, tujuan proyek, manfaat, batas profesional, kepercayaan
+
+
+Opsi B paling tepat karena tidak memperlakukan koneksi rekan sebagai sumber daya yang
+dapat diambil begitu saja. Pembicaraan terbuka memberi konteks, memungkinkan rekan
+menilai relevansi dan risiko, serta menjaga kesukarelaan dan kepercayaan. Dukungan
+jejaring tetap dimanfaatkan, tetapi secara etis dan proporsional.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                      Alasan
+
+A (2 poin)         Proaktif, tetapi terlalu langsung dan berisiko menimbulkan kesan
+                   memanfaatkan hubungan pribadi.
+
+B (5 poin)         Transparan, strategis, menghargai rekan, dan memanfaatkan jejaring
+                   secara etis untuk tujuan bersama.
+
+C (4 poin)         Menjaga profesionalisme, tetapi terlalu membatasi potensi sinergi
+                   yang sebenarnya dapat digunakan secara sah.
+
+D (3 poin)         Menghargai kenyamanan rekan, tetapi terlalu pasif dan dapat
+                   membuat peluang kerja sama hilang.
+
+E (1 poin)         Menghindari kolaborasi tanpa mencoba komunikasi, sehingga sumber
+                   daya relevan tidak dimanfaatkan.
+
+
+
+
+                                                                                        31
+Cara cepat: Ketika menggunakan koneksi pihak lain, jelaskan tujuan dan konteks terlebih
+dahulu, minta dukungan secara wajar, serta jaga kesukarelaan dan batas profesional.
+
+
+
+
+                                                                                      32
+                                  SOSIAL BUDAYA
+
+     Sosial Budaya adalah kompetensi untuk memahami dan merespons keragaman nilai,
+norma, identitas, kebiasaan, kelompok, dan perubahan sosial secara terbuka, adil, empatik,
+serta konstruktif. Kompetensi ini terlihat dari tindakan nyata dalam interaksi, bukan dari
+pernyataan bahwa seseorang toleran atau menghargai budaya.
+
+
+Empat Materi Pokok
+    Materi Pokok                 Fokus Utama                       Contoh Konflik
+
+Konsep Dasar,          Nilai, norma, adat, kebiasaan,      Salah memahami norma lokal,
+Unsur, dan Struktur    identitas, peran sosial, lembaga    benturan peran formal dan
+Sosial Budaya          sosial, struktur sosial, dan        informal, perbedaan adat, atau
+                       hubungan antarkelompok.             pertentangan identitas kelompok.
+
+Adaptasi dalam         Keterbukaan, toleransi,             Masuk ke lingkungan baru,
+Masyarakat             penyesuaian komunikasi, bahasa, kesulitan memahami bahasa
+Majemuk                tata krama, kebiasaan,              lokal, perbedaan kebiasaan, atau
+                       fleksibilitas, dan penghormatan     tuntutan mengikuti tata cara
+                       terhadap perbedaan.                 setempat.
+
+Empati, Kepedulian,    Empati, kepedulian, dukungan        Kelompok minoritas tersisih,
+dan Harmoni Sosial     sosial, inklusivitas, partisipasi   rekan mengalami diskriminasi,
+                       setara, nondiskriminasi, dan        muncul stereotip, atau anggota
+                       perlindungan martabat.              kelompok kurang diterima.
+
+Perubahan Sosial       Perubahan nilai, modernisasi,       Konflik antargenerasi, penolakan
+Budaya dan             pelestarian budaya, dialog,         perubahan, pembangunan
+Penyelesaian Konflik musyawarah, mediasi, integrasi        berbenturan dengan nilai lokal,
+                       sosial, dan penyelesaian konflik.   atau perselisihan antara
+                                                           pendatang dan masyarakat
+                                                           setempat.
+
+
+3.1. Konsep Dasar, Unsur, dan Struktur Sosial Budaya
+         Materi ini mengukur pemahaman fungsional tentang bagaimana nilai, norma, peran,
+    status, kelompok, lembaga sosial, simbol, bahasa, tradisi, dan identitas membentuk
+
+                                                                                             33
+perilaku masyarakat. Soal tidak diarahkan menjadi hafalan istilah sosiologi, tetapi menilai
+kemampuan membaca struktur sosial sebelum bertindak.
+
+
+Konsep Inti
+     Unsur                 Makna dalam Soal TKP                  Kesalahan Umum
+
+Nilai             Hal yang dianggap penting, baik, Menganggap nilai sendiri
+                  pantas, atau sakral oleh kelompok.        berlaku sama pada semua
+                                                            kelompok.
+
+Norma             Aturan tertulis atau tidak tertulis yang Mengabaikan norma lokal
+                  mengarahkan perilaku.                     atau menerapkannya tanpa
+                                                            melihat hak dan keselamatan.
+
+Peran dan         Harapan        terhadap        seseorang Memaksakan         kewenangan
+status            berdasarkan posisi sosial atau tanggung tanpa       memahami        makna
+                  jawab.                                    simbolik peran.
+
+Kelompok dan      Rasa memiliki berdasarkan komunitas, Membuat            stereotip     dan
+identitas         suku, agama, profesi, generasi, atau memperlakukan              kelompok
+                  wilayah.                                  sebagai satu suara tunggal.
+
+Lembaga sosial Keluarga, pendidikan, adat, agama, Mengabaikan                 pihak    yang
+                  ekonomi, organisasi, dan pemerintahan. memiliki legitimasi sosial
+                                                            dalam penyelesaian.
+
+Simbol dan        Bahasa, pakaian, artefak, ruang, ritual, Menganggap simbol hanya
+budaya            dan karya budaya.                         formalitas    tanpa       makna
+material                                                    sosial.
+
+
+Indikator Perilaku
+•   Mengidentifikasi nilai, norma, peran, kelompok, dan lembaga yang memengaruhi
+    situasi.
+•   Membedakan penghormatan budaya dari kepatuhan buta terhadap kebiasaan.
+•   Menghindari generalisasi bahwa semua anggota kelompok memiliki pandangan yang
+    sama.
+
+
+
+                                                                                          34
+•     Memahami makna simbolik suatu tindakan sebelum menilai efisiensi atau
+      kepentingannya.
+•     Melibatkan pihak yang memiliki legitimasi sosial tanpa menyerahkan seluruh
+      tanggung jawab kepadanya.
+•     Menjaga keseimbangan antara identitas bersama, keberagaman, aturan, dan
+      kepentingan umum.
+
+
+Rentang Bloom yang wajar: C2-C4
+Tingkat Kesulitan: Sedang-HOTS
+                              Tingkat
+    Level   Proses Berpikir                          Karakteristik Soal TKP
+                              Kesulitan
+
+                                          Mengenali makna toleransi, norma, peran,
+     C2        Memahami        Sedang
+                                          atau keberagaman pada situasi sederhana.
+
+                                          Peserta menerapkan satu atau dua prinsip pada
+     C3      Menerapkan           Sulit   kendala operasional, misalnya keluhan,
+                                          antrean, atau berkas kurang lengkap.
+
+                                          Peserta menganalisis penyebab, pihak
+     C4      Menganalisis      HOTS       terdampak, aturan, risiko, dan konsekuensi
+                                          beberapa tindakan.
+
+
+    Contoh Soal 1 – Konsep Dasar, Unsur, dan Struktur Sosial Budaya
+    Level Bloom: C4 – Menganalisis
+    Tingkat Kesulitan: HOTS
+
+
+Sebagian warga menganggap kegiatan budaya daerah tidak lagi relevan bagi generasi
+muda dan mengusulkan agar kegiatan tersebut diganti sepenuhnya dengan acara modern.
+Sebagai koordinator kegiatan, tindakan yang paling tepat adalah ...
+
+
+A. Mengganti seluruh kegiatan budaya dengan acara modern agar partisipasi meningkat.
+B. Mempertahankan kegiatan budaya tanpa perubahan karena tradisi tidak boleh
+disesuaikan.
+
+
+
+                                                                                       35
+C. Mengajak warga dan generasi muda berdialog, menjelaskan fungsi budaya sebagai
+identitas bersama, lalu merancang format yang lebih relevan tanpa menghilangkan unsur
+utamanya.
+D. Menyerahkan keputusan sepenuhnya kepada tokoh budaya karena mereka paling
+memahami tradisi.
+E. Menjalankan dua kegiatan secara terpisah agar kelompok tradisional dan modern tidak
+perlu berinteraksi.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Konsep yang digunakan: Nilai budaya, identitas bersama, partisipasi, dan adaptasi
+bentuk kegiatan
+Kata kunci: identitas, generasi muda, dialog, pelestarian, relevansi, partisipasi
+
+
+Opsi C paling tepat karena memahami bahwa budaya berfungsi sebagai identitas dan
+sumber kebersamaan, tetapi bentuk penyajiannya dapat berkembang. Dialog membantu
+menghindari pemaksaan dari kelompok tradisional maupun modern, sedangkan
+penyesuaian format menjaga keberlanjutan tanpa menghilangkan substansi budaya.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                      Alasan
+
+A (1 poin)            Responsif terhadap minat baru, tetapi menghapus fungsi identitas dan
+                      mengabaikan kelompok yang masih memaknai tradisi.
+
+B (3 poin)            Menjaga budaya, tetapi terlalu kaku dan tidak membuka ruang
+                      adaptasi maupun partisipasi generasi muda.
+
+C (5 poin)            Memahami fungsi budaya, melibatkan pihak terkait, dan
+                      menyeimbangkan pelestarian dengan perubahan.
+
+D (4 poin)            Menghormati legitimasi tokoh budaya, tetapi terlalu menyerahkan
+                      keputusan dan belum melibatkan kelompok terdampak secara luas.
+
+
+
+
+                                                                                        36
+       Opsi dan Skor                                   Alasan
+
+    E (2 poin)           Menghindari konflik jangka pendek, tetapi memperlebar jarak sosial
+                         dan tidak membangun identitas bersama.
+
+
+   Cara cepat: Pilih tindakan yang menjaga makna budaya, melibatkan kelompok terkait,
+   dan menyesuaikan bentuk secara wajar; bukan menghapus tradisi atau membekukannya.
+
+
+3.2. Adaptasi dalam Masyarakat Majemuk
+          Materi ini mengukur kemampuan menyesuaikan komunikasi dan perilaku ketika
+   berada di lingkungan dengan bahasa, adat, agama, generasi, kebiasaan, atau cara interaksi
+   yang berbeda. Adaptasi yang baik dilakukan tanpa merendahkan budaya setempat, tanpa
+   memaksakan keseragaman, dan tanpa menghilangkan batas profesional atau identitas
+   pribadi.
+
+
+   Indikator Perilaku
+   •     Mencari informasi mengenai norma, bahasa, kebiasaan, dan sensitivitas lokal sebelum
+         bertindak.
+   •     Menyesuaikan cara komunikasi, waktu, pakaian, tata krama, atau pendekatan secara
+         proporsional.
+   •     Bertanya atau meminta klarifikasi dengan sopan ketika tidak memahami kebiasaan
+         tertentu.
+   •     Membangun komunikasi dua arah dan tidak menuntut seluruh lingkungan
+         menyesuaikan diri kepadanya.
+   •     Menghindari sikap eksklusif, menghindar, memaksa, mengejek, atau menghakimi
+         perbedaan.
+   •     Menjaga aturan, keselamatan, dan kepentingan umum ketika suatu kebiasaan tidak
+         dapat diikuti sepenuhnya.
+   •     Menerjemahkan atau menjembatani perbedaan agar tidak menimbulkan salah paham.
+
+
+
+
+                                                                                          37
+Pembeda Adaptasi dan Penyeragaman
+         Situasi             Adaptasi Skor Tinggi           Penyeragaman/Kesalahan
+
+                      Mempelajari ungkapan dasar,
+                                                           Meminta semua pihak selalu
+Bahasa lokal          meminta penjelasan, dan
+                                                           meninggalkan bahasa lokal
+digunakan             menyepakati bahasa bersama
+                                                           demi kenyamanan pribadi.
+                      saat diperlukan.
+
+                      Mengonfirmasi makna dan              Mengabaikan, menuntut
+Aturan pakaian adat mencari alternatif yang sopan          aturan diubah, atau menolak
+                      serta sesuai.                        tanpa komunikasi.
+
+                      Menyesuaikan pendekatan              Memaksakan cara sendiri atau
+Ritme dan tata cara
+                      sambil menjaga tujuan dan            mengikuti semua kebiasaan
+berbeda
+                      jadwal secara komunikatif.           tanpa batas.
+
+                      Mendengar alasan, mencari            Menganggap perbedaan
+Perbedaan nilai       titik temu, dan menjelaskan          sebagai ketidakmajuan atau
+                      batas aturan secara hormat.          ancaman.
+
+
+Rentang Bloom yang wajar: C3-C5
+Tingkat Kesulitan: Sulit-HOTS
+                               Tingkat
+ Level     Proses Berpikir                           Karakteristik Soal TKP
+                              Kesulitan
+
+                                          Peserta menerapkan satu atau dua prinsip pada
+  C3         Menerapkan          Sulit    kendala operasional, misalnya keluhan,
+                                          antrean, atau berkas kurang lengkap.
+
+                                          Peserta menganalisis penyebab, pihak
+  C4        Menganalisis        HOTS      terdampak, aturan, risiko, dan konsekuensi
+                                          beberapa tindakan.
+
+                                          Beberapa opsi tampak benar. Peserta menilai
+                                          opsi paling proporsional berdasarkan legalitas,
+  C5        Mengevaluasi        HOTS
+                                          keadilan, efektivitas, empati, dan
+                                          akuntabilitas.
+
+                                                                                         38
+ Contoh Soal 2 – Adaptasi dalam Masyarakat Majemuk
+ Level Bloom: C4 – Menganalisis
+ Tingkat Kesulitan: HOTS
+
+
+Anda ditugaskan di daerah yang memiliki tradisi kuat. Anda diundang menghadiri acara
+yang mengharuskan tamu mengenakan pakaian tradisional, tetapi Anda tidak memiliki
+pakaian tersebut. Tindakan yang paling tepat adalah ...
+
+
+A. Datang dengan pakaian kasual karena kehadiran lebih penting daripada aturan pakaian.
+B. Menolak undangan agar tidak dianggap tidak menghormati aturan pakaian.
+C. Meminta panitia mengubah aturan pakaian karena tidak semua tamu memilikinya.
+D. Menghubungi panitia untuk menjelaskan kondisi, memahami ketentuan, dan mencari
+alternatif pakaian yang sopan serta sesuai.
+E. Meminta rekan lain menggantikan kehadiran Anda agar tidak menimbulkan masalah.
+
+
+Jawaban: D
+Pembahasan:
+
+
+Konsep yang digunakan: Adaptasi, komunikasi lintas budaya, penghormatan simbol, dan
+solusi proporsional
+Kata kunci: pakaian tradisional, undangan, komunikasi, alternatif, menghargai tradisi
+
+
+Opsi D paling tepat karena tidak mengabaikan simbol budaya dan tidak pula menghindari
+interaksi. Komunikasi dengan panitia memberi kesempatan memahami makna ketentuan
+serta menemukan alternatif yang tetap menghormati acara. Respons ini adaptif, realistis,
+dan menjaga hubungan sosial.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                     Alasan
+
+A (1 poin)            Tetap hadir, tetapi mengutamakan kenyamanan pribadi dan berisiko
+                      dianggap mengabaikan makna simbolik acara.
+
+
+
+                                                                                         39
+       Opsi dan Skor                                   Alasan
+
+    B (3 poin)           Menghindari pelanggaran, tetapi memilih mundur sebelum mencari
+                         solusi atau berkomunikasi.
+
+    C (2 poin)           Mengusulkan perubahan demi akses, tetapi tidak proporsional karena
+                         meminta seluruh acara menyesuaikan kondisi pribadi.
+
+    D (5 poin)           Terbuka, menghormati ketentuan, mencari pemahaman, dan
+                         menemukan penyesuaian yang realistis.
+
+    E (4 poin)           Menjaga keterwakilan dan menghindari kesalahan, tetapi
+                         mengalihkan tanggung jawab serta kehilangan kesempatan
+                         beradaptasi langsung.
+
+
+   Cara cepat: Saat menghadapi kebiasaan yang belum dipahami, jangan langsung menolak
+   atau mengabaikan. Klarifikasi, pahami maknanya, lalu cari penyesuaian yang sopan dan
+   proporsional.
+
+
+3.3. Empati, Kepedulian, dan Harmoni Sosial
+          Materi ini mengukur kemampuan memahami pengalaman pihak lain, mengenali
+   ketidakadilan atau eksklusi, memberi dukungan yang tepat, serta menciptakan interaksi
+   yang aman dan setara. Empati bukan hanya merasa iba. Empati bernilai tinggi ketika
+   diterjemahkan menjadi tindakan yang melindungi martabat, membuka partisipasi, dan
+   memperbaiki hubungan sosial.
+
+
+   Indikator Perilaku
+   •     Mendengarkan pengalaman pihak yang terdampak tanpa langsung menyalahkan atau
+         meremehkan.
+   •     Mengenali eksklusi, prasangka, stereotip, diskriminasi, dan hambatan partisipasi.
+   •     Memberi dukungan personal sekaligus mendorong perbaikan pada kelompok atau
+         sistem.
+   •     Menciptakan ruang aman agar semua pihak dapat menyampaikan pendapat tanpa
+         dipermalukan.
+   •     Mengajak pihak lain menghargai keberagaman dengan komunikasi yang tidak
+         konfrontatif.
+
+                                                                                             40
+•     Menjaga keseimbangan antara perlindungan kelompok rentan dan hubungan sosial
+      seluruh pihak.
+•     Mengubah kepedulian menjadi langkah nyata, tindak lanjut, dan pencegahan
+      pengulangan.
+
+
+Tingkatan Respons Empatik
+      Tingkat                      Ciri Respons                          Kualitas
+
+                       Memahami atau merasa prihatin, tetapi Belum cukup untuk skor
+Empati pasif
+                       tidak melakukan tindakan.               tinggi.
+
+Dukungan               Mendampingi individu atau               Baik, tetapi dampaknya
+personal               mendengar keluhan secara langsung.      dapat terbatas.
+
+                                                               Lebih kuat karena
+Intervensi             Mengajak kelompok memperbaiki
+                                                               menyentuh lingkungan
+kelompok               sikap dan membuka partisipasi.
+                                                               sosial.
+
+Perbaikan              Menyusun mekanisme inklusif,            Cocok untuk skenario
+sistem                 pencegahan, dan pemantauan.             pimpinan atau kebijakan.
+
+
+Rentang Bloom yang wajar: C3-C5
+Tingkat Kesulitan: Sulit-HOTS
+                                  Tingkat
+    Level   Proses Berpikir                             Karakteristik Soal TKP
+                                 Kesulitan
+
+                                             Peserta menerapkan satu atau dua prinsip pada
+     C3      Menerapkan             Sulit    kendala operasional, misalnya keluhan,
+                                             antrean, atau berkas kurang lengkap.
+
+                                             Peserta menganalisis penyebab, pihak
+     C4      Menganalisis          HOTS      terdampak, aturan, risiko, dan konsekuensi
+                                             beberapa tindakan.
+
+                                             Beberapa opsi tampak benar. Peserta menilai
+                                             opsi paling proporsional berdasarkan legalitas,
+     C5      Mengevaluasi          HOTS
+                                             keadilan, efektivitas, empati, dan
+                                             akuntabilitas.
+
+
+                                                                                          41
+ Contoh Soal 3 – Empati, Kepedulian, dan Harmoni Sosial
+ Level Bloom: C5 – Mengevaluasi
+ Tingkat Kesulitan: HOTS
+
+
+Dalam kelompok diskusi, seorang anggota dari latar belakang suku yang berbeda tampak
+kurang diterima oleh sebagian anggota lain dan jarang diberi kesempatan berbicara.
+Respons yang paling tepat adalah ...
+
+
+A. Fokus menyelesaikan tugas agar perbedaan tidak menghambat target kelompok.
+B. Membiarkan anggota tersebut menyesuaikan diri sendiri agar tidak memperbesar
+masalah.
+C. Menjaga jarak agar Anda tidak ikut dianggap berbeda oleh anggota lain.
+D. Mendekati anggota tersebut secara personal dan menunjukkan dukungan saat diskusi.
+E. Mengajak seluruh anggota menghargai keberagaman dan mengatur diskusi agar semua
+orang mendapat ruang berkontribusi.
+
+
+Jawaban: E
+Pembahasan:
+
+
+Konsep yang digunakan: Inklusivitas, empati aktif, kesetaraan partisipasi, dan harmoni
+kelompok
+Kata kunci: eksklusi, suku, ruang bicara, dukungan, kelompok, kesetaraan
+
+
+Opsi E paling tepat karena tidak hanya mendukung individu yang terdampak, tetapi
+memperbaiki dinamika kelompok. Ajakan menghargai keberagaman disertai pengaturan
+kesempatan berbicara membuat perubahan dapat diamati dan mencegah eksklusi berulang.
+Tindakan ini menjaga martabat tanpa mempermalukan pihak tertentu.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                   Alasan
+
+A (3 poin)         Menjaga fokus tugas, tetapi mengabaikan masalah sosial yang dapat
+                   terus merusak kerja sama.
+
+
+                                                                                   42
+       Opsi dan Skor                                  Alasan
+
+    B (2 poin)          Menghindari konfrontasi, tetapi membebankan seluruh proses
+                        adaptasi kepada pihak yang sudah kurang diterima.
+
+    C (1 poin)          Memperkuat eksklusi dan menunjukkan kepedulian yang rendah
+                        terhadap ketidakadilan.
+
+    D (4 poin)          Memberi dukungan nyata dan positif, tetapi belum memperbaiki
+                        perilaku kelompok secara keseluruhan.
+
+    E (5 poin)          Empatik, inklusif, menyentuh akar dinamika kelompok, dan
+                        menciptakan kesempatan partisipasi yang setara.
+
+
+3.4. Perubahan Sosial Budaya dan Penyelesaian Konflik
+          Materi ini mengukur kemampuan merespons modernisasi, pembangunan, teknologi,
+   perubahan generasi, atau konflik budaya secara terencana dan damai. Respons terbaik
+   tidak menolak atau memaksakan perubahan. Perubahan perlu dipahami, dikomunikasikan,
+   dan disepakati dengan mempertimbangkan dampak sosial.
+
+
+   Indikator Perilaku
+   •     Mengidentifikasi penyebab perubahan, pihak terdampak, manfaat, risiko, dan sumber
+         resistensi.
+   •     Membedakan konflik fakta, kepentingan, nilai, identitas, dan kesalahpahaman
+         komunikasi.
+   •     Meredakan emosi dan menjaga keselamatan sebelum membahas substansi konflik.
+   •     Memverifikasi informasi dan tidak mengambil keputusan berdasarkan rumor,
+         tekanan, atau stereotip.
+   •     Membuka dialog atau musyawarah yang representatif dan memberi ruang pada pihak
+         yang terdampak.
+   •     Menyusun alternatif yang mengintegrasikan tujuan perubahan dengan pelestarian nilai
+         penting.
+   •     Menetapkan keputusan, pembagian peran, komunikasi, dan tindak lanjut yang dapat
+         dipantau.
+   •     Menggunakan tokoh adat, mediator, atau pimpinan secara tepat tanpa sekadar
+         memindahkan tanggung jawab.
+
+                                                                                         43
+Urutan Penyelesaian Konflik
+   Tahap                      Tujuan                          Contoh Tindakan
+
+                                                Menenangkan pihak, menghentikan
+                 Mencegah eskalasi dan
+Stabilisasi                                     tindakan provokatif, menjelaskan bahwa
+                 menjaga keamanan.
+                                                masalah akan ditangani.
+
+                 Memahami fakta, nilai,         Mendengar semua pihak, memverifikasi
+Klarifikasi
+                 kebutuhan, dan pihak.          informasi, memetakan akar konflik.
+
+                 Membangun pengertian           Musyawarah, mediasi, forum kecil, atau
+Dialog
+                 dan pilihan solusi.            konsultasi tokoh relevan.
+
+                 Menetapkan solusi adil dan Kesepakatan, alternatif lokasi, penyesuaian
+Keputusan
+                 realistis.                     metode, atau aturan pelaksanaan.
+
+                 Memulihkan kepercayaan
+Tindak                                          Komunikasi hasil, pembagian peran,
+                 dan mencegah
+lanjut                                          evaluasi, edukasi, dan pemantauan.
+                 pengulangan.
+
+
+Rentang Bloom yang wajar: C4-C6
+Tingkat Kesulitan: HOTS
+                                 Tingkat
+ Level   Proses Berpikir                                Karakteristik Soal TKP
+                                 Kesulitan
+
+                                             Peserta menganalisis penyebab, pihak
+  C4          Menganalisis        HOTS       terdampak, aturan, risiko, dan konsekuensi
+                                             beberapa tindakan.
+
+                                             Beberapa opsi tampak benar. Peserta menilai
+                                             opsi paling proporsional berdasarkan legalitas,
+  C5       Mengevaluasi           HOTS
+                                             keadilan, efektivitas, empati, dan
+                                             akuntabilitas.
+
+
+
+
+                                                                                          44
+                              Tingkat
+ Level    Proses Berpikir                             Karakteristik Soal TKP
+                             Kesulitan
+
+                                          Peserta memilih rancangan perbaikan sistem,
+                                          strategi implementasi, atau desain layanan
+  C6        Menciptakan        HOTS
+                                          terbaik dari beberapa alternatif. Digunakan
+                                          selektif.
+
+
+ Contoh Soal 4 – Perubahan Sosial Budaya dan Penyelesaian Konflik
+ Level Bloom: C5 – Mengevaluasi
+ Tingkat Kesulitan: HOTS
+
+
+Sebagian warga menolak rencana pembangunan fasilitas umum karena lokasinya dianggap
+terlalu dekat dengan tempat yang memiliki nilai sakral. Izin administratif sudah tersedia
+dan jadwal proyek terbatas. Langkah yang paling tepat adalah ...
+
+
+A. Melanjutkan pembangunan karena seluruh izin sudah terpenuhi.
+B. Mengajak warga, tokoh terkait, dan tim proyek berdialog untuk memetakan nilai yang
+dipersoalkan serta mencari alternatif lokasi atau rancangan yang dapat diterima.
+C. Membiarkan penolakan karena perbedaan pendapat merupakan hal biasa dalam
+pembangunan.
+D. Menghentikan proyek dan menyerahkan keputusan sepenuhnya kepada atasan.
+E. Memperkecil bangunan agar terlihat tidak terlalu mengganggu tanpa membahas
+persoalan dengan warga.
+
+
+Jawaban: B
+Pembahasan:
+
+
+Konsep yang digunakan: Perubahan sosial, partisipasi masyarakat, nilai sakral, mediasi,
+dan solusi integratif
+Kata kunci: pembangunan, penolakan, lokasi sakral, dialog, alternatif, kesepakatan
+
+
+Opsi B paling tepat karena mengakui bahwa izin administratif belum otomatis
+menyelesaikan legitimasi sosial. Dialog representatif membantu memahami nilai sakral,
+
+                                                                                        45
+memeriksa ruang kompromi, dan mencari alternatif yang tetap memenuhi tujuan
+pembangunan. Pendekatan ini mencegah pemaksaan sekaligus tidak menghentikan
+perubahan tanpa upaya solusi.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                      Alasan
+
+A (1 poin)         Patuh prosedur, tetapi mengabaikan dampak sosial dan berpotensi
+                   memperbesar konflik.
+
+B (5 poin)         Partisipatif, menghargai nilai lokal, tetap berorientasi solusi, dan
+                   menyeimbangkan pembangunan dengan harmoni.
+
+C (2 poin)         Tidak memperkeruh secara langsung, tetapi pasif dan mengabaikan
+                   tanggung jawab menyelesaikan konflik.
+
+D (4 poin)         Berhati-hati dan mencegah eskalasi, tetapi mengalihkan tanggung
+                   jawab serta belum membangun solusi bersama.
+
+E (3 poin)         Memberi penyesuaian teknis, tetapi belum menyentuh akar persoalan
+                   dan berisiko dianggap sepihak.
+
+
+Cara cepat: Dalam konflik perubahan dan budaya, jangan hanya melihat izin atau solusi
+teknis. Pahami nilai yang dipersoalkan, libatkan pihak terdampak, lalu cari solusi integratif
+dan dapat ditindaklanjuti.
+
+
+
+
+                                                                                          46
+           TEKNOLOGI INFORMASI DAN KOMUNIKASI (TIK)
+
+     Kompetensi TIK adalah kemampuan menggunakan, mempelajari, dan mengelola
+teknologi secara produktif, aman, etis, adaptif, dan bertanggung jawab. Kompetensi ini terlihat
+dari kualitas keputusan ketika teknologi memberi peluang sekaligus risiko, bukan dari
+banyaknya aplikasi yang dikuasai.
+
+
+Tiga Materi Pokok
+    Materi Pokok                  Fokus Utama                         Contoh Konflik
+
+ Konsep Dasar dan       Efisiensi, produktivitas, akurasi,   Memilih cara manual atau
+ Pemanfaatan TIK        pemilihan teknologi, kolaborasi      digital, menggunakan aplikasi
+ dalam Pekerjaan        digital, otomatisasi, validasi       yang belum teruji, hasil
+                        hasil, dan kesinambungan             otomatisasi tidak akurat, atau
+                        pekerjaan.                           sistem antarunit tidak
+                                                             terintegrasi.
+
+ Adaptasi terhadap      Pembelajaran mandiri, kesiapan       Pegawai menolak sistem baru,
+ Perubahan Teknologi berubah, penerapan bertahap,            kemampuan digital tidak merata,
+                        pendampingan, berbagi                perubahan diterapkan tanpa
+                        pengetahuan, pengelolaan             pelatihan, atau sistem lama akan
+                        resistensi, dan evaluasi             segera dihentikan.
+                        penggunaan.
+
+ Etika, Keamanan,       Privasi, kerahasiaan, keamanan       Phishing, pembagian kata sandi,
+ dan Tanggung Jawab akses, verifikasi informasi, etika       penggunaan aplikasi tidak resmi,
+ Digital                bermedia, perlindungan data,         penyebaran data sensitif,
+                        pelaporan insiden, dan               kebocoran informasi, atau
+                        akuntabilitas digital.               penggunaan AI tanpa verifikasi.
+
+
+4.1. Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan
+           Materi ini mengukur kemampuan memilih dan memanfaatkan TIK untuk
+    meningkatkan mutu pekerjaan. Peserta tidak diuji mengenai langkah teknis suatu aplikasi,
+    tetapi mengenai ketepatan memilih alat, mengintegrasikan informasi, memvalidasi hasil,
+    berkoordinasi, dan menjaga kesinambungan proses.
+
+
+                                                                                              47
+Konsep Inti
+    Konsep                  Makna dalam Soal TKP                Kesalahan Umum
+
+                                                            Menggunakan alat paling
+                   Teknologi dipilih berdasarkan
+Kesesuaian alat                                             baru hanya karena terlihat
+                   kebutuhan, pengguna, data, dan tujuan.
+                                                            canggih.
+
+                   Teknologi mempercepat proses tanpa       Mengejar kecepatan
+Efisiensi
+                   mengurangi akurasi dan tanggung          dengan mengabaikan
+bermutu
+                   jawab.                                   verifikasi hasil.
+
+                                                            Menambah banyak grup
+Kolaborasi         Informasi, tugas, dan keputusan
+                                                            atau rapat tanpa integrasi
+digital            tersinkron melalui kanal yang tepat.
+                                                            informasi.
+
+                                                            Menerima keluaran
+Otomatisasi        Tugas berulang atau data besar dibantu
+                                                            aplikasi atau AI tanpa
+dan analisis       alat yang aman dan dapat diperiksa.
+                                                            validasi.
+
+                   Gangguan diantisipasi dengan             Menganggap cara manual
+Kontinuitas
+                   prosedur cadangan yang sah dan           selalu buruk atau selalu
+layanan
+                   terdokumentasi.                          aman.
+
+                   Teknologi dapat digunakan oleh pihak     Memaksakan kanal digital
+Aksesibilitas      dengan kemampuan dan akses yang          tanpa pendampingan atau
+                   berbeda.                                 alternatif.
+
+
+Indikator Perilaku
+•   Mengidentifikasi kebutuhan pekerjaan sebelum memilih perangkat, aplikasi, atau
+    kanal komunikasi.
+•   Menggunakan alat resmi atau yang telah dinilai aman serta sesuai dengan tingkat
+    sensitivitas data.
+•   Memeriksa akurasi, sumber, kelengkapan, dan konsistensi hasil sebelum digunakan
+    atau diserahkan.
+•   Mengintegrasikan informasi agar tidak terjadi duplikasi, versi berbeda, atau
+    kehilangan jejak perubahan.
+
+
+
+                                                                                         48
+•      Menggunakan teknologi untuk memperkuat koordinasi, bukan sekadar memindahkan
+       proses lama ke media digital.
+•      Menyiapkan alternatif yang sah ketika sistem terganggu dan menyinkronkan kembali
+       data setelah layanan pulih.
+•      Mempertimbangkan kebutuhan pengguna yang memiliki keterbatasan perangkat,
+       jaringan, atau literasi digital.
+
+
+Rentang Bloom yang wajar: C2-C6
+Tingkat Kesulitan: Sedang-HOTS
+                                    Tingkat
+    Level   Proses Berpikir                                 Karakteristik Soal
+                                   Kesulitan
+
+                                               Mengenali perilaku digital aman, etis, atau
+     C2        Memahami              Sedang
+                                               produktif pada situasi sederhana.
+
+                                               Memilih cara menggunakan alat atau prosedur
+     C3        Menerapkan             Sulit
+                                               digital pada satu masalah yang jelas.
+
+                                               Menghubungkan tujuan kerja, data, pengguna,
+     C4       Menganalisis           HOTS
+                                               risiko, dan konsekuensi beberapa tindakan.
+
+                                               Menimbang opsi yang sama-sama baik dan
+     C5       Mengevaluasi           HOTS      memilih tindakan paling efektif, aman, serta
+                                               bertanggung jawab.
+
+                                               Memilih strategi transformasi, tata kelola,
+     C6        Menciptakan           HOTS      migrasi, pengamanan, atau adopsi teknologi
+                                               terbaik.
+
+
+    Contoh Soal 1 – Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan
+    Level Bloom: C3 – Menerapkan
+    Tingkat Kesulitan: Sulit
+
+
+Anda harus menganalisis data interaksi pelanggan dalam jumlah besar dan menyelesaikan
+laporan dalam dua hari. Anda telah terbiasa menggunakan aplikasi analisis yang resmi,
+aman, dan sesuai kebutuhan. Tindakan paling tepat adalah ...
+
+
+                                                                                              49
+A. Meminta perpanjangan waktu sebelum mencoba mengolah data karena jumlahnya
+sangat besar.
+B. Mengolah seluruh data secara manual agar proses sepenuhnya berada dalam kendali
+Anda.
+C. Menggunakan aplikasi tersebut, memeriksa sampel dan hasil akhirnya, lalu
+mendokumentasikan proses sebelum menyerahkan laporan.
+D. Mencoba aplikasi lain yang lebih baru tanpa memeriksa keamanan dan keandalannya.
+E. Membagi data secara acak kepada beberapa rekan agar cepat selesai tanpa menyamakan
+metode pengolahan.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Konsep yang digunakan: Pemanfaatan TIK yang produktif, aman, dan akurat
+Kata kunci: alat resmi, data besar, efisiensi, validasi, dokumentasi
+
+
+Opsi C paling tepat karena teknologi digunakan untuk menjawab kebutuhan nyata, tetapi
+hasilnya tidak diterima secara otomatis. Pemeriksaan sampel, validasi akhir, dan
+dokumentasi menjaga akurasi serta membuat proses dapat ditelusuri. Tindakan ini
+menyeimbangkan kecepatan, mutu, dan akuntabilitas.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                     Alasan
+
+A (3 poin)         Berhati-hati dan komunikatif, tetapi meminta tambahan waktu
+                   sebelum mencoba solusi yang tersedia menunjukkan pemecahan
+                   masalah yang belum optimal.
+
+B (4 poin)         Aman dan dapat dikendalikan, tetapi sangat tidak efisien serta rawan
+                   kesalahan ketika alat resmi yang tepat sudah tersedia.
+
+C (5 poin)         Memanfaatkan alat yang sesuai, memvalidasi hasil, dan menjaga
+                   keterlacakan proses.
+
+
+
+
+                                                                                      50
+ Opsi dan Skor                                    Alasan
+
+ D (1 poin)         Menggunakan alat yang belum dinilai aman dan andal dapat
+                    membahayakan data serta kualitas hasil.
+
+ E (2 poin)         Pembagian tanpa metode dan koordinasi yang sama berisiko
+                    menghasilkan data tidak konsisten dan sulit dipertanggungjawabkan.
+
+
+Cara cepat: Pilih tindakan yang memakai alat yang tepat sekaligus memeriksa hasil.
+Cepat tanpa validasi bukan pemanfaatan TIK yang bertanggung jawab.
+
+
+ Contoh Soal 2 – Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan
+ Level Bloom: C5 – Mengevaluasi
+ Tingkat Kesulitan: HOTS
+
+
+Sebuah proyek melibatkan beberapa tim di lokasi berbeda. Revisi dokumen sering
+terlambat diterima, laporan progres tidak sinkron, dan sebagian anggota belum terbiasa
+menggunakan perangkat kolaborasi. Langkah strategis paling tepat adalah ...
+
+
+A. Menunjuk satu penghubung di setiap lokasi untuk mengirim pembaruan secara manual
+setiap hari.
+B. Menyusun panduan kerja digital dan meminta setiap tim mempelajarinya secara
+mandiri.
+C. Menambah rapat video secara rutin agar setiap tim dapat melaporkan perkembangan.
+D. Menerapkan platform kolaborasi resmi secara bertahap, menetapkan alur pembaruan,
+dan mendampingi pengguna sampai informasi terintegrasi.
+E. Mengirim tim pemantau ke setiap lokasi untuk mengumpulkan seluruh laporan sebelum
+dikonsolidasikan.
+
+
+Jawaban: D
+Pembahasan:
+
+
+Konsep yang digunakan: Integrasi informasi dan kolaborasi digital
+Kata kunci: platform resmi, sinkronisasi, pendampingan, perubahan bertahap,
+keterlacakan
+
+                                                                                     51
+   Opsi D paling tepat karena menyelesaikan akar masalah berupa informasi yang terpencar
+   dan kesiapan pengguna yang tidak sama. Platform resmi membentuk satu sumber
+   informasi, sedangkan alur pembaruan dan pendampingan memastikan sistem benar-benar
+   digunakan. Penerapan bertahap mengurangi resistensi serta menjaga pekerjaan tetap
+   berjalan.
+
+
+   Pembahasan setiap opsi:
+     Opsi dan Skor                                   Alasan
+
+    A (3 poin)        Membantu komunikasi dasar, tetapi proses manual tetap rentan
+                      terlambat, tidak konsisten, dan bergantung pada individu.
+
+    B (2 poin)        Panduan berguna, tetapi tanpa sistem dan pendampingan tidak
+                      menjamin perubahan praktik.
+
+    C (4 poin)        Rapat video mempercepat komunikasi, tetapi tidak cukup
+                      membangun satu sumber data dan pembaruan waktu nyata.
+
+    D (5 poin)        Menggabungkan integrasi sistem, alur kerja, penerapan bertahap, dan
+                      pendampingan pengguna.
+
+    E (1 poin)        Pengumpulan fisik menambah beban dan tidak menyelesaikan
+                      keterlambatan serta ketidaksinkronan informasi.
+
+
+   Cara cepat: Untuk masalah informasi yang terpecah, pilih solusi yang membangun satu
+   sistem, aturan penggunaan, dan pendampingan, bukan hanya menambah komunikasi.
+
+
+4.2. Adaptasi terhadap Perubahan Teknologi
+         Materi ini mengukur kesiapan belajar, keterbukaan terhadap perubahan, kemampuan
+   mengelola resistensi, dan kontribusi peserta dalam membantu adopsi teknologi. Adaptasi
+   yang baik tidak berarti menerima semua perubahan tanpa kritik, tetapi mempelajari
+   manfaat dan risiko, mencoba secara terkontrol, serta membantu proses transisi.
+
+
+
+
+                                                                                       52
+Spektrum Adaptasi
+     Tahap               Perilaku yang Diharapkan             Risiko jika Lemah
+
+Memahami          Mencari tujuan, manfaat, dampak, dan    Menolak atau menerima
+perubahan         batas penggunaan sistem baru.           tanpa alasan yang cukup.
+
+                                                          Menunggu sampai
+                  Menggunakan panduan, pelatihan,
+Belajar                                                   diwajibkan atau
+                  praktik, dan bantuan yang tersedia.
+                                                          menyerahkan tugas.
+
+                                                          Menggunakan langsung
+Mencoba           Melakukan uji coba pada ruang yang
+                                                          pada data penting tanpa
+terkontrol        aman dan mencatat kendala.
+                                                          evaluasi.
+
+Berbagi dan       Menjelaskan praktik, membantu rekan,    Adaptasi hanya terjadi pada
+mendampingi       dan menerima umpan balik.               individu tertentu.
+
+                                                          Perubahan mengganggu
+Mengelola         Menetapkan tahapan, dukungan, sistem
+                                                          pekerjaan atau
+transisi          cadangan, dan ukuran keberhasilan.
+                                                          menimbulkan resistensi.
+
+                                                          Sistem dipertahankan
+                  Memperbaiki proses berdasarkan hasil,
+Mengevaluasi                                              meskipun tidak efektif atau
+                  risiko, dan pengalaman pengguna.
+                                                          aman.
+
+
+Indikator Perilaku
+•   Mencari informasi dan mempelajari sistem baru tanpa menunggu seluruh proses
+    diarahkan orang lain.
+•   Meminta bantuan pada bagian yang memang membutuhkan kewenangan atau
+    keahlian khusus.
+•   Mencoba teknologi dalam ruang yang aman sebelum digunakan pada data atau proses
+    penting.
+•   Membagikan pengetahuan dengan cara yang tidak menggurui dan menyesuaikan
+    tingkat kemampuan rekan.
+•   Mengidentifikasi hambatan pengguna, bukan langsung memberi label bahwa mereka
+    menolak perubahan.
+
+
+
+                                                                                     53
+•     Mengusulkan penerapan bertahap, pendampingan, dan evaluasi jika perubahan
+      berdampak luas.
+•     Tetap kritis terhadap risiko keamanan, akurasi, akses, dan ketergantungan pada
+      penyedia teknologi.
+
+
+Pola Pengecoh
+                Pola                               Mengapa Kurang Tepat
+
+Menunggu instruksi sampai           Pasif dan dapat membuat individu atau organisasi
+sistem diwajibkan                   tidak siap.
+
+Menolak karena cara lama masih Mengabaikan           arah   perubahan     dan     peluang
+berjalan                            peningkatan.
+
+Menggunakan sendiri tanpa           Ada inisiatif, tetapi manfaat tidak menjadi kesiapan
+berbagi                             kolektif.
+
+Memaksa semua orang segera          Mengabaikan kesiapan, risiko, dan kebutuhan
+beralih                             pendampingan.
+
+Mencoba pada data penting           Adaptif secara semu, tetapi berisiko dan tidak
+tanpa izin                          bertanggung jawab.
+
+Hanya mengikuti pelatihan tanpa Pengetahuan tidak berubah menjadi perilaku atau
+penerapan                           hasil kerja.
+
+
+Rentang Bloom yang wajar: C3-C6
+Tingkat Kesulitan: Sulit-HOTS
+                              Tingkat
+    Level   Proses Berpikir                            Karakteristik Soal
+                              Kesulitan
+
+                                          Memilih cara menggunakan alat atau prosedur
+     C3      Menerapkan         Sulit
+                                          digital pada satu masalah yang jelas.
+
+                                          Menghubungkan tujuan kerja, data, pengguna,
+     C4      Menganalisis      HOTS
+                                          risiko, dan konsekuensi beberapa tindakan.
+
+
+
+
+                                                                                       54
+                               Tingkat
+ Level    Proses Berpikir                              Karakteristik Soal
+                              Kesulitan
+
+                                          Menimbang opsi yang sama-sama baik dan
+  C5       Mengevaluasi         HOTS      memilih tindakan paling efektif, aman, serta
+                                          bertanggung jawab.
+
+                                          Memilih strategi transformasi, tata kelola,
+  C6       Menciptakan          HOTS      migrasi, pengamanan, atau adopsi teknologi
+                                          terbaik.
+
+
+ Contoh Soal 3 – Adaptasi terhadap Perubahan Teknologi
+ Level Bloom: C5 – Mengevaluasi
+ Tingkat Kesulitan: HOTS
+
+
+Organisasi Anda memperoleh akses awal ke sistem pelaporan yang diperkirakan akan
+menjadi standar dalam waktu dekat. Sistem tersebut belum diwajibkan. Sebagian rekan
+memilih bertahan dengan cara manual, sedangkan pimpinan belum memberi arahan
+khusus. Sikap paling tepat adalah ...
+
+
+A. Mengajak rekan mendiskusikan apakah sistem perlu digunakan sekarang atau
+menunggu arahan resmi.
+B. Mempelajari sistem untuk kepentingan sendiri tanpa membahasnya dengan rekan agar
+tidak dianggap memaksakan.
+C. Mulai menggunakan sistem pada tugas sendiri dan membiarkan rekan menentukan
+pilihannya masing-masing.
+D. Mempelajari dan menguji sistem pada pekerjaan yang sesuai, mencatat hasilnya, lalu
+mengusulkan sesi berbagi dan penerapan bertahap kepada pimpinan.
+E. Menunggu sampai sistem diwajibkan agar tidak menimbulkan kebingungan bagi tim.
+
+
+Jawaban: D
+Pembahasan:
+
+
+Konsep yang digunakan: Adaptasi proaktif dan pengelolaan perubahan
+
+
+                                                                                         55
+   Kata kunci: pembelajaran mandiri, uji coba, bukti, berbagi praktik, koordinasi, penerapan
+   bertahap
+
+
+   Opsi D paling tepat karena menunjukkan inisiatif tanpa melampaui kewenangan. Peserta
+   belajar dan mencoba pada ruang yang sesuai, menghasilkan bukti, berbagi pengetahuan,
+   serta mengoordinasikan penerapan dengan pimpinan. Perubahan tidak dipaksakan, tetapi
+   dipersiapkan agar tim tidak tertinggal ketika sistem benar-benar digunakan.
+
+
+   Pembahasan setiap opsi:
+     Opsi dan Skor                                   Alasan
+
+    A (3 poin)        Diskusi dapat mengurangi resistensi, tetapi tanpa pembelajaran dan
+                      uji coba perubahan mudah berhenti sebagai wacana.
+
+    B (2 poin)        Belajar sendiri adalah langkah awal yang baik, tetapi manfaatnya
+                      tidak membantu kesiapan tim.
+
+    C (4 poin)        Sudah menunjukkan inisiatif dan memberi contoh, tetapi perubahan
+                      dibiarkan berjalan sendiri tanpa pengelolaan kolektif.
+
+    D (5 poin)        Menggabungkan belajar, uji coba terkontrol, bukti, berbagi praktik,
+                      dan koordinasi penerapan.
+
+    E (1 poin)        Menunggu sampai diwajibkan membuat tim berpotensi tidak siap dan
+                      menunjukkan sikap pasif terhadap perubahan yang sudah jelas
+                      arahnya.
+
+
+   Cara cepat: Adaptasi terbaik bukan sekadar memakai sistem baru. Pelajari, uji dengan
+   aman, buktikan manfaatnya, berbagi, lalu koordinasikan penerapannya.
+
+
+4.3. Etika, Keamanan, dan Tanggung Jawab Digital
+        Materi ini mengukur kemampuan menjaga kerahasiaan, integritas, ketersediaan,
+   privasi, dan penggunaan informasi yang bertanggung jawab. Fokusnya bukan menguji
+   teknik keamanan siber, tetapi menilai apakah peserta mampu mengenali risiko, membatasi
+   tindakan, melapor melalui jalur yang tepat, menjaga bukti, serta mencegah masalah
+   berulang.
+
+
+                                                                                            56
+Dimensi Etika dan Keamanan Digital
+    Dimensi                Fokus Penilaian                         Contoh Konflik
+
+Kerahasiaan      Data hanya diakses dan dibagikan Tautan publik, aplikasi tidak
+                 kepada pihak berwenang.                   teruji, salah kirim dokumen.
+
+Integritas       Data dan keluaran tidak diubah, Hasil AI, informasi palsu, data
+                 dimanipulasi, atau digunakan tanpa tidak sinkron.
+                 verifikasi.
+
+Ketersediaan     Informasi dan layanan tetap dapat Gangguan             sistem,   cadangan
+                 digunakan      secara       wajar   saat data, pemulihan layanan.
+                 dibutuhkan.
+
+Privasi dan      Data yang dikumpulkan hanya yang Permintaan             tangkapan    layar,
+minimalisasi     diperlukan dan memiliki tujuan survei             berlebihan,    pelacakan
+                 jelas.                                    pengguna.
+
+Jejak dan        Tindakan penting dicatat, dapat Penghapusan bukti, perubahan
+akuntabilitas    ditelusuri, dan dilaporkan.               tanpa log, akun bersama.
+
+Etika            Konten digital akurat, sopan, tidak Hoaks, respons akun resmi,
+komunikasi       menyesatkan, dan menghormati hak konten pribadi, deepfake.
+                 pihak lain.
+
+Penggunaan       Manusia       tetap       memverifikasi, Bias, keputusan otomatis, data
+AI/otomatisasi   menjelaskan,        dan     bertanggung sensitif, halusinasi informasi.
+                 jawab atas hasil.
+
+
+Indikator Perilaku
+•   Memverifikasi identitas, alamat, sumber, penerima, dan kewenangan sebelum
+    membuka atau membagikan informasi.
+•   Tidak memasukkan data sensitif ke aplikasi atau layanan yang belum disetujui dan
+    belum dinilai aman.
+•   Menggunakan kanal resmi, pengendalian akses, kata sandi pribadi, serta prinsip
+    kebutuhan untuk mengetahui.
+•   Melaporkan insiden atau dugaan ancaman secara cepat kepada pihak yang berwenang
+    dan tidak menyebarkan risiko.
+
+                                                                                           57
+•     Menjaga bukti serta tidak mengubah, menghapus, atau memublikasikan informasi
+      secara sembarangan.
+•     Memeriksa kebenaran informasi dan keluaran AI sebelum digunakan untuk keputusan
+      atau komunikasi.
+•     Memberikan respons digital yang sopan dan proporsional tanpa membuat janji di luar
+      kewenangan.
+•     Mendorong pencegahan melalui edukasi, pembaruan prosedur, audit, dan evaluasi,
+      bukan hanya menangani satu kejadian.
+
+
+Rentang Bloom yang wajar: C2-C6
+Tingkat Kesulitan: Sedang-HOTS
+                               Tingkat
+    Level   Proses Berpikir                            Karakteristik Soal
+                              Kesulitan
+
+                                          Mengenali perilaku digital aman, etis, atau
+     C2       Memahami         Sedang
+                                          produktif pada situasi sederhana.
+
+                                          Memilih cara menggunakan alat atau prosedur
+     C3      Menerapkan         Sulit
+                                          digital pada satu masalah yang jelas.
+
+                                          Menghubungkan tujuan kerja, data, pengguna,
+     C4      Menganalisis      HOTS
+                                          risiko, dan konsekuensi beberapa tindakan.
+
+                                          Menimbang opsi yang sama-sama baik dan
+     C5      Mengevaluasi      HOTS       memilih tindakan paling efektif, aman, serta
+                                          bertanggung jawab.
+
+                                          Memilih strategi transformasi, tata kelola,
+     C6      Menciptakan       HOTS       migrasi, pengamanan, atau adopsi teknologi
+                                          terbaik.
+
+
+    Contoh Soal 4 – Etika, Keamanan, dan Tanggung Jawab Digital
+    Level Bloom: C4 – Menganalisis
+    Tingkat Kesulitan: HOTS
+
+
+
+
+                                                                                         58
+Anda menerima e-mail dari alamat yang sangat mirip dengan alamat resmi organisasi.
+Pesan tersebut meminta dokumen berisi data pribadi melalui sebuah tautan. Beberapa
+rekan hampir membuka tautan itu, sedangkan Anda menduga pesan tersebut merupakan
+phishing. Tindakan paling tepat adalah ...
+
+
+A. Membuka tautan pada perangkat kerja untuk memastikan apakah permintaan tersebut
+benar.
+B. Tidak membuka atau meneruskan tautan, menyimpan pesan sebagai bukti,
+mengingatkan rekan, dan melaporkannya melalui kanal keamanan yang ditetapkan.
+C. Menghapus e-mail tersebut dari kotak masuk agar Anda tidak salah membukanya.
+D. Meneruskan e-mail kepada seluruh rekan dengan pesan agar mereka berhati-hati.
+E. Menghubungi pengirim melalui nomor atau alamat resmi yang sudah dikenal untuk
+memverifikasi permintaan, lalu melaporkan jika terbukti palsu.
+
+
+Jawaban: B
+Pembahasan:
+Konsep yang digunakan: Pencegahan phishing dan penanganan insiden
+Kata kunci: verifikasi, tidak membuka tautan, bukti, peringatan, pelaporan, kanal resmi
+
+
+Opsi B paling tepat karena menghentikan risiko langsung, melindungi rekan,
+mempertahankan bukti, dan meneruskan penanganan kepada pihak yang berwenang.
+Tindakan tersebut tidak mencoba membuktikan ancaman dengan cara berbahaya dan tidak
+menyebarkan tautan ke lebih banyak orang.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                   Alasan
+
+A (1 poin)         Membuka tautan untuk menguji kebenaran dapat mengaktifkan
+                   malware atau mencuri kredensial.
+
+B (5 poin)         Mengendalikan risiko, menjaga bukti, memberi peringatan aman, dan
+                   mengikuti jalur penanganan resmi.
+
+
+
+
+                                                                                     59
+ Opsi dan Skor                                    Alasan
+
+C (3 poin)         Mengurangi risiko pribadi, tetapi tidak melindungi rekan,
+                   menghilangkan jejak, dan tidak memungkinkan penanganan
+                   organisasi.
+
+D (2 poin)         Niatnya memperingatkan, tetapi meneruskan tautan memperluas
+                   paparan dan meningkatkan kemungkinan ada yang membukanya.
+
+E (4 poin)         Verifikasi melalui kanal terpisah merupakan tindakan aman dan
+                   cermat, tetapi laporan serta peringatan dapat terlambat ketika rekan
+                   sudah berisiko.
+
+
+Cara cepat: Pada pesan mencurigakan: jangan klik, jangan teruskan, jaga bukti, lindungi
+orang lain, dan laporkan melalui kanal resmi.
+
+
+
+
+                                                                                          60
+                               PROFESIONALISME
+
+     Profesionalisme adalah kemampuan menjalankan peran berdasarkan kompetensi,
+standar, etika, tanggung jawab, dan orientasi mutu. Profesional tidak hanya mencapai hasil,
+tetapi juga memastikan cara mencapainya dapat dipertanggungjawabkan, menghormati pihak
+lain, menjaga kepentingan organisasi, dan terus memperbaiki kemampuan serta sistem kerja.
+
+
+Komponen Penilaian Utama
+
+Komponen                 Pertanyaan Penilaian
+
+                         Apakah tindakan sesuai aturan, nilai profesi, kerahasiaan, dan
+Standar dan etika
+                         kepentingan yang sah?
+
+                         Apakah peserta mengambil kepemilikan atas tugas dan tidak
+Tanggung jawab
+                         melempar masalah?
+
+                         Apakah keputusan berbasis fakta, terdokumentasi, dapat dilacak,
+Akuntabilitas
+                         dan dapat dijelaskan?
+
+                         Apakah waktu, komitmen, prosedur, dan penggunaan sumber daya
+Disiplin
+                         dijaga secara konsisten?
+
+                         Apakah hasil akurat, tuntas, relevan, tepat waktu, dan memenuhi
+Mutu kinerja
+                         standar?
+
+                         Apakah tindakan menangani akar masalah, risiko, dan dampak,
+Penyelesaian masalah
+                         bukan hanya gejala?
+
+Pengembangan             Apakah peserta belajar, meminta umpan balik, menerapkan, dan
+kompetensi               berbagi pengetahuan?
+
+
+Profesionalisme Bukan...
+•   Kepatuhan buta kepada atasan ketika instruksi bertentangan dengan standar atau
+    kepentingan organisasi.
+•   Mengejar kesempurnaan sampai pekerjaan terlambat dan tidak proporsional dengan
+    kebutuhan.
+•   Mengambil semua tugas sendiri agar terlihat mampu, tetapi membuat tim tidak
+    berkembang dan risiko kegagalan meningkat.
+
+                                                                                        61
+•   Melaporkan setiap kesalahan kecil secara formal tanpa klarifikasi atau upaya perbaikan
+    yang wajar.
+•   Menjaga citra dengan menutup-nutupi masalah, mengubah data, atau menghindari
+    dokumentasi.
+•   Menilai kinerja hanya dari kesibukan, jam kerja panjang, atau kecepatan tanpa
+    memperhatikan kualitas dan dampak.
+
+Tiga Materi Pokok
+    Materi Pokok                 Fokus Utama                        Contoh Konflik
+
+Konsep Dasar, Ciri,    Integritas kerja, objektivitas,      Diminta menyetujui dokumen
+dan Etika Profesional ketelitian, etika komunikasi,         yang belum diperiksa,
+                       batas kewenangan, kerahasiaan,       menemukan kesalahan rekan
+                       kepatuhan terhadap standar, dan      senior, menghadapi konflik
+                       kepercayaan profesional.             kepentingan, atau diminta
+                                                            membagikan informasi rahasia.
+
+Tanggung Jawab,        Komitmen, disiplin, ketepatan        Tenggat pekerjaan terancam,
+Akuntabilitas, dan     waktu, prioritas, transparansi,      rekan melanggar disiplin, terjadi
+Disiplin Kerja         pertanggungjawaban, kepatuhan        kesalahan kerja, muncul
+                       prosedur, delegasi, dan tindak       beberapa tugas mendesak, atau
+                       lanjut.                              tanggung jawab dialihkan tanpa
+                                                            koordinasi.
+
+Kualitas Kinerja,      Orientasi mutu, pemecahan            Perangkat kerja bermasalah,
+Penyelesaian           masalah, adaptabilitas, efisiensi,   sumber daya terbatas, kualitas
+Masalah, dan           pemanfaatan sumber daya,             hendak dikurangi, tugas baru
+Pengembangan           pembelajaran, umpan balik,           belum dikuasai, atau kesalahan
+Kompetensi             pembinaan, dan perbaikan             yang sama terus berulang.
+                       berkelanjutan.
+
+
+5.1. Konsep Dasar, Ciri, dan Etika Profesional
+         Materi ini mengukur kemampuan mengenali standar perilaku profesional dan
+    menerapkannya ketika terdapat tekanan target, hubungan senioritas, loyalitas pribadi,
+
+
+
+
+                                                                                             62
+kerahasiaan, konflik kepentingan, atau tuntutan menjaga reputasi. Inti penilaian adalah
+konsistensi antara nilai, proses, dan hasil.
+
+
+Konsep Inti
+
+Konsep                  Makna dalam Soal TKP                Kesalahan Umum
+
+                        Memiliki pengetahuan dan
+                        keterampilan yang memadai           Menganggap percaya diri sama
+Kompetensi
+                        serta mengetahui kapan perlu        dengan kompeten.
+                        meminta bantuan.
+
+                        Konsisten pada fakta, standar,      Mengutamakan relasi, citra,
+Integritas
+                        dan kepentingan yang sah            atau keuntungan jangka
+profesional
+                        meskipun ada tekanan.               pendek.
+
+                        Menjaga martabat, kerahasiaan,      Menganggap selama hasil
+Etika profesi
+                        objektivitas, dan batas perilaku.   tercapai, cara tidak penting.
+
+                        Menggunakan data dan kriteria,
+                                                            Mengikuti pendapat pihak
+Objektivitas            bukan kedekatan, senioritas,
+                                                            dominan tanpa verifikasi.
+                        atau prasangka.
+
+                        Bertindak aktif dalam batas         Pasif karena takut salah atau
+Kewenangan              peran dan mengeskalasi ketika       terlalu jauh mengambil
+                        diperlukan.                         keputusan.
+
+                        Menunjukkan perilaku yang           Hanya menuntut orang lain
+Keteladanan             dapat dijadikan standar oleh        tanpa konsisten pada diri
+                        orang lain.                         sendiri.
+
+
+Indikator Perilaku
+•   Memeriksa fakta, dokumen, dan konsekuensi sebelum menyetujui atau mengambil
+    keputusan.
+•   Menolak konflik kepentingan, hadiah, manipulasi, atau permintaan yang tidak
+    memiliki dasar yang sah.
+•   Menjaga informasi terbatas dan mengarahkan pihak lain ke sumber resmi yang boleh
+    diakses.
+
+                                                                                            63
+•     Menyampaikan koreksi secara sopan, berbasis bukti, dan tidak mempermalukan pihak
+      lain.
+•     Menggunakan kanal formal ketika pelanggaran serius, berulang, atau berisiko tinggi.
+•     Membedakan loyalitas profesional kepada organisasi dari loyalitas pribadi kepada
+      atasan atau rekan.
+•     Menangani kesalahan dengan perbaikan dan pembelajaran, bukan sekadar
+      menyalahkan atau menutupi.
+
+
+Rentang Bloom yang wajar: C2-C5
+Tingkat Kesulitan: Sedang-HOTS
+                                Tingkat
+    Level     Proses Berpikir                            Karakteristik Soal
+                                Kesulitan
+
+                                            Mengenali aturan, standar, atau kewajiban
+     C2         Memahami         Sedang
+                                            dasar yang dinyatakan langsung.
+
+                                            Membedakan perilaku profesional dan tidak
+     C3        Menerapkan         Sulit
+                                            profesional pada situasi sederhana.
+
+                                            Menggunakan standar, prosedur, atau prioritas
+     C4        Menganalisis      HOTS
+                                            kerja pada satu masalah konkret.
+
+                                            Mengurai penyebab, risiko, pihak terdampak,
+     C5        Mengevaluasi      HOTS
+                                            kewenangan, dan hubungan antar tindakan.
+
+
+    Contoh Soal 1 – Konsep Dasar, Ciri, dan Etika Profesional
+    Level Bloom: C4 – Menganalisis
+    Tingkat Kesulitan: HOTS
+
+
+Sebagai anggota baru dalam tim, Anda menemukan kesalahan angka pada laporan yang
+disusun oleh rekan senior. Jika dibiarkan, kesalahan tersebut dapat memengaruhi
+keputusan berikutnya, tetapi koreksi akan membuat sebagian laporan perlu direvisi. Apa
+tindakan paling tepat?
+
+
+A. Menegur rekan senior di depan tim agar semua orang mengetahui kesalahan tersebut.
+B. Membiarkan kesalahan karena menghormati pengalaman dan posisi rekan senior.
+
+                                                                                        64
+C. Memeriksa kembali temuan, menyampaikan bukti dan dampaknya secara sopan kepada
+pihak terkait, serta mengusulkan langkah revisi.
+D. Menunggu sampai atasan menemukan kesalahan tersebut agar Anda tidak dianggap
+mencampuri pekerjaan orang lain.
+E. Memperbaiki angka secara diam-diam agar laporan segera selesai tanpa
+mempermalukan rekan senior.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Konsep yang digunakan: Objektivitas, etika komunikasi, akurasi, dan perbaikan berbasis
+bukti
+Kata kunci: kesalahan data, senioritas, verifikasi, komunikasi sopan, revisi
+
+
+Opsi C paling tepat karena menggabungkan verifikasi, keberanian menyampaikan
+masalah, penghormatan kepada pihak lain, serta orientasi pada solusi. Profesionalisme
+tidak berarti diam demi senioritas dan tidak pula membenarkan perubahan tanpa
+koordinasi. Temuan perlu dipastikan, dikomunikasikan melalui cara yang tepat, dan diikuti
+rencana perbaikan yang dapat dipertanggungjawabkan.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                     Alasan
+
+A - Skor 1         Menjaga akurasi, tetapi mempermalukan pihak lain dan dapat
+                   membuat komunikasi defensif.
+
+B - Skor 2         Menghormati senioritas, tetapi membiarkan risiko dan mengabaikan
+                   tanggung jawab atas kualitas.
+
+C - Skor 5         Memverifikasi, berkomunikasi etis, dan menawarkan solusi yang
+                   menjaga akurasi serta hubungan kerja.
+
+D - Skor 3         Menghindari kesalahan tindakan, tetapi terlalu pasif dan membiarkan
+                   dampak berkembang.
+
+
+
+
+                                                                                      65
+ Opsi dan Skor                                     Alasan
+
+E - Skor 4         Berorientasi perbaikan, tetapi tidak transparan dan mengubah
+                   dokumen tanpa koordinasi.
+
+
+Cara cepat: Ketika menemukan kesalahan, pilih respons yang memeriksa bukti,
+menyampaikan dengan hormat, dan membawa solusi; bukan diam, mempermalukan, atau
+mengubah diam-diam.
+
+
+ Contoh Soal 2 – Konsep Dasar, Ciri, dan Etika Profesional
+ Level Bloom: C5 – Mengevaluasi
+ Tingkat Kesulitan: HOTS
+
+
+Tim Anda mendapat tekanan untuk memublikasikan laporan secepat mungkin. Beberapa
+bagian belum diverifikasi sepenuhnya dan pimpinan meminta agar laporan tetap
+diterbitkan demi menjaga citra bahwa target telah tercapai. Tindakan Anda adalah...
+
+
+A. Menerbitkan laporan sesuai arahan karena pimpinan bertanggung jawab atas keputusan
+akhir.
+B. Menolak seluruh pekerjaan dan meminta nama Anda dihapus dari tim.
+C. Menjelaskan risiko secara berbasis data, mengusulkan verifikasi minimum pada bagian
+kritis, dan menyepakati waktu publikasi yang realistis.
+D. Menerbitkan laporan lalu memperbaiki kesalahan setelah ada tanggapan pembaca.
+E. Menunda publikasi tanpa memberi penjelasan kepada pihak yang menunggu.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Konsep yang digunakan: Etika profesional, keberanian menyampaikan risiko, dan
+keseimbangan mutu-waktu
+Kata kunci: tekanan target, verifikasi, publikasi, risiko, komunikasi
+
+
+Opsi C mempertahankan standar tanpa mengabaikan kebutuhan waktu. Tindakan ini tidak
+sekadar menolak arahan, tetapi menunjukkan bagian yang berisiko, menawarkan langkah
+
+                                                                                      66
+    minimum yang dapat menjaga keandalan, dan membangun kesepakatan yang jelas.
+    Profesionalisme menuntut keberanian menyampaikan fakta sekaligus kemampuan
+    mencari jalan keluar yang operasional.
+
+
+    Pembahasan setiap opsi:
+     Opsi dan Skor                                    Alasan
+
+    A - Skor 2        Patuh pada arahan, tetapi melepaskan tanggung jawab profesional
+                      atas kualitas informasi.
+
+    B - Skor 1        Menolak risiko, tetapi tidak menyelesaikan tugas dan tidak
+                      menawarkan perbaikan.
+
+    C - Skor 5        Menjaga akurasi, berkomunikasi berbasis bukti, dan menawarkan
+                      solusi proporsional.
+
+    D - Skor 3        Memenuhi target, tetapi menjadikan publik sebagai penguji dan
+                      berisiko merusak kepercayaan.
+
+    E - Skor 4        Melindungi mutu, tetapi kurang akuntabel karena menunda tanpa
+                      komunikasi dan rencana.
+
+
+    Cara cepat: Jika target berbenturan dengan standar, jangan hanya patuh atau menolak.
+    Jelaskan risiko dan tawarkan cara paling aman untuk tetap bergerak.
+
+
+5.2. Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja
+         Materi ini mengukur kesediaan mengambil kepemilikan atas tugas, memenuhi
+    komitmen, menggunakan waktu dan sumber daya secara tertib, serta memastikan setiap
+    keputusan dan hasil dapat dijelaskan. Tanggung jawab berfokus pada “siapa yang harus
+    bertindak”, akuntabilitas pada “bagaimana keputusan dapat dibuktikan”, sedangkan
+    disiplin pada “konsistensi menjalankan kewajiban dan aturan”.
+
+
+          Dimensi             Perilaku yang Diharapkan              Risiko jika Lemah
+
+                         Tidak melempar tanggung jawab dan Masalah terlantar atau
+    Kepemilikan tugas segera mengidentifikasi langkah           bergantung pada pihak
+                         berikutnya.                            lain.
+
+
+                                                                                        67
+       Dimensi               Perilaku yang Diharapkan             Risiko jika Lemah
+
+                      Memeriksa data sebelum
+                                                              Kesalahan menjadi
+Verifikasi            menandatangani, menyetujui, atau
+                                                              keputusan resmi.
+                      menyerahkan.
+
+                      Mencatat keputusan, perubahan,          Sulit dilacak dan
+Dokumentasi
+                      delegasi, dan tindak lanjut penting.    dipertanggungjawabkan.
+
+                      Membuat prioritas, checkpoint, dan      Tenggat terlewat atau
+Ketepatan waktu
+                      komunikasi progres.                     pihak lain tidak siap.
+
+                      Mengikuti prosedur penting tanpa
+                                                              Risiko hukum, kualitas,
+Disiplin prosedur     menjadi kaku terhadap solusi yang
+                                                              dan ketidakadilan.
+                      sah.
+
+                                                              Pemborosan, konflik
+Penggunaan            Menggunakan waktu, data, fasilitas,
+                                                              kepentingan, atau
+sumber daya           dan anggaran sesuai tujuan.
+                                                              penyalahgunaan.
+
+                      Memastikan koreksi, pelaporan, atau     Respons berhenti pada niat
+Tindak lanjut
+                      delegasi benar-benar selesai.           atau komunikasi awal.
+
+
+Rentang Bloom yang wajar: C3-C5
+Tingkat Kesulitan: Sedang-HOTS
+                                Tingkat
+Level    Proses Berpikir                                Karakteristik Soal
+                               Kesulitan
+
+                                           Membedakan perilaku profesional dan tidak
+  C3         Menerapkan          Sulit
+                                           profesional pada situasi sederhana.
+
+                                           Menggunakan standar, prosedur, atau prioritas
+  C4         Menganalisis        HOTS
+                                           kerja pada satu masalah konkret.
+
+                                           Mengurai penyebab, risiko, pihak terdampak,
+  C5         Mengevaluasi        HOTS
+                                           kewenangan, dan hubungan antar tindakan.
+
+
+
+
+                                                                                        68
+ Contoh Soal 3 – Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja
+ Level Bloom: C3 – Menerapkan
+ Tingkat Kesulitan: Sulit
+
+
+Anda diminta menandatangani laporan yang disusun oleh rekan kerja. Waktu penyerahan
+hampir tiba, tetapi Anda belum memeriksa seluruh data dan rekan tersebut meyakinkan
+bahwa semuanya sudah benar. Apa tindakan paling tepat?
+
+
+A. Menandatangani laporan karena rekan kerja sudah memberikan jaminan.
+B. Menunda tanda tangan tanpa menjelaskan alasan atau rencana pemeriksaan.
+C. Melakukan pemeriksaan terarah pada data kritis dan bukti pendukung sebelum
+menandatangani, lalu mencatat koreksi jika ditemukan.
+D. Menolak menandatangani dan menyerahkan seluruh tanggung jawab kepada atasan.
+E. Meminta rekan lain menyatakan bahwa laporan benar tanpa melakukan pemeriksaan
+sendiri.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Konsep yang digunakan: Akuntabilitas dokumen, verifikasi, dan tanggung jawab
+penandatangan
+Kata kunci: tanda tangan, laporan, verifikasi, bukti, akuntabilitas
+
+
+Opsi C paling tepat karena tanda tangan menunjukkan penerimaan tanggung jawab.
+Pemeriksaan tidak harus mengulang seluruh pekerjaan secara tidak efisien, tetapi harus
+cukup untuk memastikan bagian kritis, sumber data, dan konsistensi laporan. Koreksi perlu
+dicatat agar proses dapat ditelusuri.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                     Alasan
+
+ A - Skor 3         Menjaga hubungan dan kecepatan, tetapi mengandalkan kepercayaan
+                    tanpa verifikasi.
+
+
+
+                                                                                      69
+     Opsi dan Skor                                     Alasan
+
+    B - Skor 4        Berhati-hati, tetapi tidak akuntabel karena tidak menjelaskan alasan,
+                      prioritas, atau tindak lanjut.
+
+    C - Skor 5        Melakukan verifikasi proporsional dan menjaga jejak koreksi
+                      sebelum menerima tanggung jawab.
+
+    D - Skor 1        Menghindari risiko dengan melepaskan tugas yang telah
+                      diamanatkan.
+
+    E - Skor 2        Mencari konfirmasi, tetapi tetap tidak menjalankan tanggung jawab
+                      verifikasi sendiri.
+
+
+   Cara cepat: Sebelum menandatangani, cari tindakan yang memberi keyakinan berbasis
+   bukti dan jejak pemeriksaan; bukan sekadar percaya, menunda, atau melempar tugas.
+
+
+5.3. Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi
+         Materi ini mengukur kemampuan menghasilkan pekerjaan yang akurat, tuntas, tepat
+   waktu, dan bernilai; mengatasi hambatan secara sistematis; serta meningkatkan
+   kemampuan agar dapat menghadapi perubahan dan tanggung jawab yang lebih kompleks.
+   Profesional yang baik tidak hanya “menyelesaikan”, tetapi memilih prioritas,
+   memanfaatkan sumber daya, menjaga kualitas, dan belajar dari hasil.
+
+
+   Dimensi Kualitas Kinerja
+
+        Dimensi             Pertanyaan Penilaian                     Contoh Bukti
+
+                      Apakah data, fakta, dan hasil        Pemeriksaan silang, sampel,
+    Akurasi
+                      telah diverifikasi?                  review, daftar koreksi.
+
+                      Apakah semua bagian penting          Checklist, status selesai, serah
+    Ketuntasan
+                      dan tindak lanjut selesai?           terima.
+
+                      Apakah prioritas dan milestone       Rencana waktu, checkpoint,
+    Ketepatan waktu
+                      sesuai kebutuhan?                    update progres.
+
+                      Apakah sumber daya digunakan         Delegasi tepat, alat sesuai, alur
+    Efisiensi
+                      secara proporsional?                 sederhana.
+
+
+                                                                                               70
+    Dimensi               Pertanyaan Penilaian                     Contoh Bukti
+
+                     Apakah hasil menjawab tujuan         Kriteria keluaran, umpan balik,
+Relevansi
+                     dan kebutuhan pengguna?              indikator manfaat.
+
+                     Apakah solusi mencegah masalah SOP, pelatihan, sistem
+Keberlanjutan
+                     berulang?                            monitoring, evaluasi.
+
+
+Siklus Penyelesaian Masalah Profesional
+
+    Tahap                   Fokus                            Pertanyaan Kunci
+
+                 Tujuan, fakta, tenggat,       Apa yang benar-benar harus selesai dan
+1. Klarifikasi
+                 pihak, kewenangan             mengapa?
+
+                 Akar masalah, risiko,         Apa penyebab utama dan dampak jika
+2. Analisis
+                 keterkaitan tugas             dibiarkan?
+
+                                               Mana yang harus dikerjakan,
+                 Urgensi, kepentingan,
+3. Prioritas                                   dikomunikasikan, atau didelegasikan
+                 ketergantungan
+                                               lebih dulu?
+
+                 Solusi, pembagian peran,      Apa tindakan paling aman dan efektif
+4. Tindakan
+                 sumber daya                   dalam kewenangan?
+
+                 Checkpoint, verifikasi,       Bagaimana memastikan kualitas dan
+5. Kendali
+                 dokumentasi                   progres?
+
+                 Evaluasi, umpan balik,        Apa yang harus diperbaiki agar tidak
+6. Belajar
+                 pencegahan                    berulang?
+
+
+Pengembangan Kompetensi
+•   Mengidentifikasi kesenjangan kemampuan berdasarkan tuntutan tugas, bukan hanya
+    minat pribadi.
+•   Menetapkan target belajar yang spesifik, realistis, dan terkait langsung dengan
+    pekerjaan.
+•   Memilih sumber belajar yang kredibel: pelatihan, mentor, panduan, simulasi,
+    praktik, atau komunitas profesional.
+•   Mengatur waktu belajar tanpa menjadikan pekerjaan utama terbengkalai.
+
+                                                                                            71
+•     Mencoba pengetahuan baru secara terkontrol, meminta umpan balik, dan
+      memperbaiki kesalahan.
+•     Mendokumentasikan pembelajaran dan membagikan praktik baik kepada rekan bila
+      relevan.
+•     Mengukur dampak pembelajaran pada kualitas, waktu, keamanan, atau layanan.
+
+
+Rentang Bloom yang wajar: C3-C6
+Tingkat Kesulitan: Sedang-HOTS
+                               Tingkat
+    Level   Proses Berpikir                             Karakteristik Soal
+                               Kesulitan
+
+                                           Membedakan perilaku profesional dan tidak
+     C3      Menerapkan          Sulit
+                                           profesional pada situasi sederhana.
+
+                                           Menggunakan standar, prosedur, atau prioritas
+     C4      Menganalisis       HOTS
+                                           kerja pada satu masalah konkret.
+
+                                           Mengurai penyebab, risiko, pihak terdampak,
+     C5      Mengevaluasi       HOTS
+                                           kewenangan, dan hubungan antar tindakan.
+
+                                           Memilih tindakan paling tepat ketika beberapa
+     C6      Menciptakan        HOTS       opsi sama-sama baik tetapi berbeda
+                                           kelengkapan dan dampak.
+
+
+    Contoh Soal 4 – Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan
+    Kompetensi
+    Level Bloom: C5 – Mengevaluasi
+    Tingkat Kesulitan: HOTS
+
+
+Pukul 10.00 Anda sedang menyusun laporan audit yang harus diunggah paling lambat
+pukul 17.00. Beberapa menit kemudian, atasan meminta bahan presentasi untuk rapat
+pukul 12.00. Seorang rekan yang kompeten sedang tersedia untuk membantu bagian rutin
+laporan. Apa langkah paling tepat?
+
+
+A. Menghentikan laporan dan mengerjakan presentasi tanpa menyusun rencana untuk
+laporan audit.
+
+                                                                                       72
+B. Meminta atasan menunda presentasi karena laporan audit memiliki batas sistem.
+C. Mengonfirmasi prioritas, menyusun rencana waktu, mengerjakan bagian presentasi
+yang mendesak, mendelegasikan bagian rutin laporan dengan instruksi dan checkpoint
+yang jelas, lalu memverifikasi hasil.
+D. Mengerjakan kedua tugas secara paralel tanpa komunikasi agar tidak terlihat kesulitan.
+E. Mengalihkan seluruh presentasi kepada rekan dan tetap mengerjakan laporan audit.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Konsep yang digunakan: Prioritisasi strategis, delegasi, koordinasi, dan akuntabilitas
+hasil
+Kata kunci: dua tenggat, urgensi, delegasi, checkpoint, verifikasi
+
+
+Opsi C paling tepat karena tidak memilih salah satu tugas secara impulsif. Respons
+tersebut memastikan kejelasan prioritas, membagi pekerjaan berdasarkan kompetensi,
+menjaga komunikasi, dan tetap menempatkan tanggung jawab akhir pada pemilik tugas.
+Delegasi menjadi profesional ketika instruksi, batas, waktu, dan verifikasi hasil jelas.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                      Alasan
+
+A - Skor 3         Responsif terhadap tugas mendesak, tetapi tidak mengelola risiko
+                   laporan yang memiliki tenggat pasti.
+
+B - Skor 2         Menjaga laporan, tetapi terlalu kaku dan belum mencoba mengelola
+                   sumber daya yang tersedia.
+
+C - Skor 5         Menggabungkan prioritas, komunikasi, delegasi terkontrol, dan
+                   verifikasi hasil.
+
+D - Skor 1         Terlihat bekerja keras, tetapi tanpa rencana dan komunikasi berisiko
+                   menurunkan kualitas keduanya.
+
+E - Skor 4         Memanfaatkan rekan, tetapi sepenuhnya mengalihkan instruksi
+                   langsung dan lemah pada koordinasi tanggung jawab.
+
+
+
+                                                                                           73
+Cara cepat: Pada konflik banyak tugas, pilih opsi yang mengklarifikasi prioritas,
+membagi pekerjaan secara tepat, dan tetap memantau mutu serta tenggat.
+
+
+ Contoh Soal 5 – Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan
+ Kompetensi
+ Level Bloom: C5 – Mengevaluasi
+ Tingkat Kesulitan: HOTS
+
+
+Organisasi mulai menerapkan sistem administrasi digital, sedangkan kemampuan Anda
+dalam pengelolaan dokumen digital masih terbatas. Pekerjaan utama juga cukup padat.
+Tindakan yang paling tepat adalah...
+
+
+A. Menyusun jadwal belajar singkat, mengikuti pelatihan yang relevan, mempraktikkan
+pada tugas berisiko rendah, dan meminta umpan balik tanpa mengabaikan pekerjaan
+utama.
+B. Menunggu sampai organisasi memberikan pelatihan resmi kepada seluruh pegawai.
+C. Tetap menggunakan cara lama karena hasilnya selama ini sudah diterima.
+D. Meminta rekan yang lebih mahir mengerjakan seluruh bagian digital untuk Anda.
+E. Menunda belajar sampai beban kerja benar-benar kosong.
+
+
+Jawaban: A
+Pembahasan:
+
+
+Konsep yang digunakan: Pengembangan kompetensi, manajemen belajar, praktik
+terkontrol, dan umpan balik
+Kata kunci: kesenjangan kompetensi, sistem baru, pelatihan, praktik, waktu belajar
+
+
+Opsi A paling tepat karena mengubah kesenjangan kemampuan menjadi rencana belajar
+yang terukur dan terkait pekerjaan. Belajar tidak dilakukan secara abstrak atau menunggu
+kondisi sempurna, tetapi dijadwalkan, diterapkan bertahap, dan dievaluasi melalui umpan
+balik. Pekerjaan utama tetap dijaga sehingga pengembangan diri tidak menjadi alasan
+mengabaikan tanggung jawab.
+
+
+
+
+                                                                                     74
+Pembahasan setiap opsi:
+ Opsi dan Skor                                   Alasan
+
+A - Skor 5        Proaktif, realistis, langsung diterapkan, dan tetap menjaga pekerjaan
+                  utama.
+
+B - Skor 3        Mengandalkan dukungan organisasi yang mungkin bermanfaat, tetapi
+                  terlalu pasif.
+
+C - Skor 2        Menjaga kelancaran jangka pendek, tetapi menolak tuntutan
+                  perubahan dan membatasi kinerja.
+
+D - Skor 1        Menyelesaikan tugas sementara, tetapi melepaskan tanggung jawab
+                  belajar dan membangun ketergantungan.
+
+E - Skor 4        Mempertimbangkan beban kerja, tetapi menunggu waktu kosong
+                  membuat pengembangan terus tertunda.
+
+
+Cara cepat: Jika ada kesenjangan kemampuan, pilih respons yang membuat rencana
+belajar, mencoba secara aman, meminta umpan balik, dan tetap memenuhi tugas.
+
+
+
+
+                                                                                      75
+                                  ANTI RADIKALISME
+
+      Anti radikalisme dalam panduan ini adalah kemampuan menjaga kehidupan bersama
+yang damai, setara, plural, dan taat pada aturan melalui pencegahan serta respons terhadap
+intoleransi sistematis, dehumanisasi, propaganda kebencian, pemaksaan, pembenaran
+kekerasan, perekrutan, dan tindakan yang mengancam hak atau keselamatan orang lain.
+
+
+Komponen Penilaian Utama
+
+    Komponen                                 Pertanyaan Penilaian
+
+Ketepatan             Apakah respons membedakan fakta, dugaan, kritik, intoleransi,
+identifikasi          propaganda, dan ancaman?
+
+Proporsionalitas      Apakah tindakan sebanding dengan tingkat risiko dan tidak
+                      berlebihan?
+
+Keselamatan           Apakah respons melindungi peserta, korban, saksi, dan lingkungan dari
+                      eskalasi?
+
+Non-diskriminasi      Apakah tindakan tidak menggeneralisasi atau menyudutkan identitas
+                      tertentu?
+
+Kewenangan            Apakah peserta bertindak sesuai peran dan menggunakan kanal yang
+                      tepat?
+
+Pencegahan            Apakah respons menghentikan penyebaran dan mengurangi peluang
+                      masalah berulang?
+
+Komunikasi            Apakah penyampaian tegas, sopan, jelas, dan tidak mempermalukan
+                      pihak lain?
+
+
+Anti Radikalisme Bukan...
+•   Membungkam perbedaan pendapat, kritik, debat kebijakan, atau diskusi akademik yang
+    berlangsung damai dan berbasis alasan.
+•   Menyimpulkan seseorang berbahaya hanya dari agama, suku, ras, pakaian, nama,
+    komunitas, atau latar pendidikan.
+
+
+
+
+                                                                                          76
+•   Menyebarkan ulang konten provokatif dengan alasan memperingatkan orang lain, tanpa
+    mempertimbangkan risiko amplifikasi.
+•   Menghadapi kelompok atau akun berisiko seorang diri untuk membuktikan keberanian.
+•   Melaporkan setiap pernyataan yang tidak disukai tanpa verifikasi, konteks, atau
+    pertimbangan proporsional.
+•   Mengandalkan tindakan represif ketika dialog dan koreksi masih aman serta memadai.
+•   Memaksakan dialog ketika terdapat ancaman nyata atau risiko keselamatan yang
+    membutuhkan penanganan resmi.
+
+
+
+Empat Materi Pokok
+    Materi Pokok                  Fokus Utama                       Contoh Konflik
+
+Konsep Dasar Anti       Toleransi, persatuan,              Kritik dianggap sebagai
+Radikalisme             penghormatan hak,                  radikalisme, kebebasan
+                        nondiskriminasi, penolakan         berpendapat berbenturan dengan
+                        kekerasan, moderasi, keadilan,     hak kelompok lain, atau
+                        dan pembedaan kritik dari          kebijakan hanya menguntungkan
+                        intoleransi.                       kelompok tertentu.
+
+Ciri-Ciri dan Bentuk    Ujaran kebencian, dehumanisasi, Pesan kebencian dalam grup,
+Paparan Radikalisme propaganda, intoleransi,               ajakan mengikuti komunitas
+                        pembenaran kekerasan,              intoleran, konten provokatif
+                        perekrutan, tekanan kelompok,      berulang, atau narasumber
+                        dan penyebaran konten              menyebarkan pandangan
+                        provokatif.                        diskriminatif.
+
+Sikap Pencegahan        Klarifikasi, edukasi, dialog,      Rekan mulai terpengaruh
+dan Penolakan           penolakan tegas, perlindungan      propaganda, muncul usulan
+terhadap Radikalisme pihak terdampak, penghentian          diskriminatif, konten intoleran
+                        penyebaran, dokumentasi, dan       disebarkan, atau forum
+                        pelaporan yang proporsional.       digunakan untuk membenarkan
+                                                           kekerasan.
+
+
+
+
+                                                                                             77
+   Materi Pokok                   Fokus Utama                         Contoh Konflik
+
+Respons terhadap         Penilaian risiko, kekuatan bukti,    Unggahan pertama yang masih
+Radikalisme di           tingkat pengulangan,                 ambigu, konten berulang, tautan
+Lingkungan Kerja,        keselamatan, kewenangan,             propaganda, ajakan diskriminatif
+Sosial, dan Digital      koordinasi, moderasi digital,        di lingkungan sosial, intimidasi,
+                         perlindungan pelapor, dan            atau ancaman nyata.
+                         eskalasi resmi.
+
+
+6.1. Konsep Dasar Anti Radikalisme
+         Membahas sikap menolak intoleransi, diskriminasi, pemaksaan kehendak,
+   kebencian, dan kekerasan dengan tetap menjunjung persatuan, keadilan, toleransi, serta
+   penghormatan terhadap hak setiap orang.
+
+
+   Konsep Inti
+                Konsep              Makna dalam Soal TKP               Kesalahan Umum
+                                    Mengakui hak pihak lain
+                                    untuk hidup, beribadah,
+                                                                   Menyamakan toleransi
+                                    berpendapat, dan
+    Toleransi                                                      dengan menyetujui semua
+                                    berpartisipasi secara setara
+                                                                   pandangan.
+                                    sepanjang tidak melanggar
+                                    hak orang lain.
+                                    Menerima kenyataan
+                                                                   Menjadikan mayoritas atau
+                                    masyarakat yang beragam
+    Pluralisme sosial                                              senioritas sebagai dasar
+                                    dan mencari aturan
+                                                                   hak istimewa.
+                                    bersama yang adil.
+                                    Keputusan didasarkan pada
+                                                                   Menggeneralisasi satu
+                                    kebutuhan, aturan,
+    Non-diskriminasi                                               tindakan kepada seluruh
+                                    perilaku, dan bukti, bukan
+                                                                   kelompok.
+                                    identitas kelompok.
+                                    Menolak pemaksaan,             Menganggap tindakan
+    Non-kekerasan                   intimidasi, ancaman, dan       keras selalu tegas dan
+                                    pembenaran kekerasan           efektif.
+
+
+
+                                                                                              78
+              Konsep             Makna dalam Soal TKP             Kesalahan Umum
+                                sebagai cara mencapai
+                                tujuan.
+                                Menjaga persatuan, hak
+    Wawasan kebangsaan dan                                   Menilai loyalitas hanya
+                                warga, aturan bersama, dan
+    kewargaan                                                dari simbol atau slogan.
+                                penyelesaian damai.
+                                Memeriksa sumber,
+                                                             Menganggap semua konten
+                                konteks, tujuan, dan
+    Berpikir kritis                                          yang emosional pasti benar
+                                dampak sebelum percaya
+                                                             atau pasti radikal.
+                                atau bertindak.
+
+
+Indikator Pelaku
+•      Menegaskan bahwa kebijakan dan layanan harus adil bagi semua pihak.
+•      Menolak pembenaran pengucilan, penghinaan, pemaksaan, atau kekerasan berbasis
+       identitas.
+•      Menggunakan bahasa yang menenangkan, faktual, dan tidak memperbesar polarisasi.
+•      Mencari solusi yang menjaga hak, keamanan, dan kerukunan secara bersamaan.
+•      Membedakan kritik terhadap tindakan atau kebijakan dari serangan terhadap identitas
+       kelompok.
+
+
+Rentang Bloom yang wajar: C2-C5
+Tingkat Kesulitan: Sedang-HOTS
+                                Tingkat
+    Level    Proses Berpikir                             Karakteristik Soal
+                               Kesulitan
+
+                                           Mengenali nilai dasar toleransi, non-
+     C2         Memahami        Sedang     diskriminasi, penolakan kebencian, dan
+                                           pentingnya hidup damai.
+
+                                           Memilih tindakan langsung pada kasus yang
+     C3        Menerapkan         Sulit
+                                           informasinya jelas dan risikonya rendah.
+
+                                           Membedakan kritik, konflik biasa, intoleransi,
+     C4       Menganalisis       HOTS      propaganda, dan ancaman berdasarkan bukti
+                                           stimulus.
+
+
+                                                                                        79
+                             Tingkat
+ Level   Proses Berpikir                              Karakteristik Soal
+                             Kesulitan
+
+                                         Menimbang dialog, edukasi, moderasi,
+  C5      Mengevaluasi        HOTS       penghapusan, pelaporan, dan perlindungan
+                                         berdasarkan risiko dan kewenangan.
+
+
+ Contoh Soal 1 – Konsep Dasar Anti Radikalisme
+ Level Bloom: C4 – Menganalisis
+ Tingkat Kesulitan: HOTS
+
+
+Dalam rapat penentuan penerima bantuan, seorang anggota mengusulkan agar warga dari
+kelompok tertentu tidak diprioritaskan karena dianggap “tidak sejalan” dengan lingkungan
+mayoritas. Data kebutuhan menunjukkan beberapa warga dari kelompok tersebut justru
+termasuk yang paling membutuhkan. Sikap Anda adalah ...
+
+
+A. Menolak usulan tersebut secara tegas tanpa memberikan penjelasan agar rapat segera
+kembali ke agenda.
+B. Meminta pembahasan ditunda sampai situasi lebih tenang agar tidak terjadi perdebatan.
+C. Menegaskan bahwa bantuan harus diberikan berdasarkan kriteria objektif, menjelaskan
+risiko diskriminasi, dan mengarahkan rapat menilai data kebutuhan seluruh warga.
+D. Menerima sebagian usulan agar keputusan dapat disepakati oleh mayoritas anggota
+rapat.
+E. Mencatat keberatan pribadi, tetapi mengikuti keputusan mayoritas karena forum
+memiliki kewenangan.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Konsep yang digunakan: Non-diskriminasi, keadilan sosial, komunikasi asertif, dan
+keputusan berbasis bukti
+Kata kunci: bantuan, kelompok berbeda, mayoritas, kriteria objektif, diskriminasi
+
+
+
+
+                                                                                     80
+   Opsi C paling tepat karena tidak sekadar menolak, tetapi mengembalikan keputusan pada
+   kriteria yang sah dan kebutuhan nyata. Respons ini mencegah pengucilan berbasis
+   identitas, menjaga wibawa forum, dan memberi dasar yang dapat dipertanggungjawabkan.
+
+
+   Pembahasan setiap opsi:
+     Opsi dan Skor                                    Alasan
+
+    A - Skor 4       Tegas dan menolak diskriminasi, tetapi tanpa penjelasan dapat
+                     menimbulkan resistensi dan tidak memperbaiki cara berpikir forum.
+
+    B - Skor 3       Menunda dapat meredakan ketegangan, tetapi belum menyelesaikan
+                     inti diskriminasi dan berisiko menunda hak warga.
+
+    C - Skor 5       Adil, berbasis data, komunikatif, dan langsung mengarahkan forum
+                     pada keputusan yang objektif.
+
+    D - Skor 1       Mengompromikan hak warga dan melegitimasi diskriminasi demi
+                     kesepakatan.
+
+    E - Skor 2       Menghindari tanggung jawab moral dan membiarkan keputusan tidak
+                     adil terjadi.
+
+
+   Cara cepat: Pada usulan yang mendiskriminasi, pilih respons yang mengembalikan
+   keputusan pada kriteria objektif, menjelaskan prinsip keadilan, dan mengarahkan tindakan
+   nyata.
+
+
+6.2. Ciri-Ciri dan Bentuk Paparan Radikalisme
+         Membahas ciri paparan berupa ujaran kebencian, propaganda, pembenaran
+   kekerasan, tekanan kelompok, perekrutan, dan ajakan diskriminatif yang dapat muncul
+   secara langsung maupun melalui media digital.
+
+
+   Prinsip Identifikasi
+    Dimensi               Indikator yang Relevan               Bukan Bukti yang Cukup
+                          Dehumanisasi, kebencian              Kritik keras,
+    Isi pesan
+                          sistematis, penolakan hak            ketidaksetujuan politik,
+
+
+
+
+                                                                                          81
+Dimensi              Indikator yang Relevan                Bukan Bukti yang Cukup
+                     kelompok lain, pembenaran             atau pendapat tidak populer
+                     pemaksaan atau kekerasan.             yang disampaikan damai.
+                     Pesan berulang, propaganda satu
+                                                           Satu unggahan ambigu atau
+                     arah, larangan bertanya, klaim
+Pola komunikasi                                            candaan tanpa konteks yang
+                     bahwa semua pihak di luar
+                                                           belum diklarifikasi.
+                     kelompok adalah musuh.
+                     Pemaksaan loyalitas, pengucilan,      Keanggotaan komunitas,
+                     intimidasi, atau tuntutan             kegiatan keagamaan, atau
+Tekanan kelompok
+                     merahasiakan kegiatan yang            pertemuan tertutup yang
+                     berisiko.                             sah.
+                     Menyebarkan propaganda                Mengikuti akun, menerima
+                     kebencian, mengajak serangan,         pesan, atau melihat konten
+Perilaku digital
+                     merekrut, atau mengarahkan ke         tanpa bukti dukungan dan
+                     materi berbahaya.                     penyebaran.
+                     Muncul ketakutan, diskriminasi,       Perdebatan yang masih
+Dampak               ancaman, konflik, atau gangguan       tertib dan tidak meniadakan
+                     keselamatan.                          hak pihak lain.
+
+
+Rentang Bloom yang wajar: C2-C5
+Tingkat Kesulitan: Sedang-HOTS
+                            Tingkat
+Level    Proses Berpikir                               Karakteristik Soal
+                           Kesulitan
+
+                                         Mengenali nilai dasar toleransi, non-
+  C2       Memahami          Sedang      diskriminasi, penolakan kebencian, dan
+                                         pentingnya hidup damai.
+
+                                         Memilih tindakan langsung pada kasus yang
+  C3       Menerapkan            Sulit
+                                         informasinya jelas dan risikonya rendah.
+
+                                         Membedakan kritik, konflik biasa, intoleransi,
+  C4      Menganalisis       HOTS        propaganda, dan ancaman berdasarkan bukti
+                                         stimulus.
+
+
+
+
+                                                                                        82
+                              Tingkat
+ Level    Proses Berpikir                              Karakteristik Soal
+                             Kesulitan
+
+                                          Menimbang dialog, edukasi, moderasi,
+  C5         Mengevaluasi      HOTS       penghapusan, pelaporan, dan perlindungan
+                                          berdasarkan risiko dan kewenangan.
+
+
+ Contoh Soal 2 – Ciri-Ciri dan Bentuk Paparan Radikalisme
+ Level Bloom: C5 – Mengevaluasi
+ Tingkat Kesulitan: HOTS
+
+
+Anda menerima undangan webinar dari akun yang tidak dikenal. Deskripsinya
+menggunakan bahasa perubahan yang umum, tetapi lampiran promosi memuat ajakan
+merendahkan kelompok tertentu, melarang peserta mempertanyakan materi, dan
+mengarahkan ke kanal lain yang tidak terverifikasi. Beberapa rekan berniat mengikuti
+karena penasaran. Tindakan Anda adalah ...
+
+
+A. Mengikuti webinar untuk memastikan sendiri apakah materinya benar-benar
+berbahaya.
+B. Meneruskan undangan kepada rekan lain dengan pesan agar mereka berhati-hati.
+C. Mengabaikan undangan karena Anda tidak berniat mengikutinya.
+D. Menyimpan informasi yang diperlukan, mengingatkan rekan agar tidak mengaksesnya,
+dan melaporkan akun atau tautan melalui kanal keamanan yang sesuai.
+E. Menulis komentar publik yang menuduh penyelenggara sebagai kelompok radikal agar
+orang lain tidak ikut.
+
+
+Jawaban: D
+Pembahasan:
+
+
+Konsep yang digunakan: Identifikasi propaganda, keselamatan digital, pencegahan
+amplifikasi, dan pelaporan proporsional
+Kata kunci: akun tidak dikenal, propaganda, larangan bertanya, kanal tidak terverifikasi,
+keamanan
+
+
+
+                                                                                      83
+   Opsi D paling tepat karena bukti dalam stimulus sudah menunjukkan risiko yang lebih dari
+   sekadar pendapat kontroversial. Respons tersebut tidak menambah paparan, melindungi
+   rekan, menjaga bukti minimum yang diperlukan, dan menyerahkan penanganan kepada
+   kanal yang berwenang.
+
+
+   Pembahasan setiap opsi:
+     Opsi dan Skor                                   Alasan
+
+    A - Skor 1        Meningkatkan paparan dan risiko tanpa kewenangan investigasi.
+
+    B - Skor 2        Berniat memperingatkan, tetapi justru memperluas jangkauan tautan
+                      dan kemungkinan akses.
+
+    C - Skor 3        Menghindari risiko pribadi, tetapi tidak melindungi rekan atau
+                      mencegah penyebaran.
+
+    D - Skor 5        Aman, proporsional, mencegah amplifikasi, dan menggunakan kanal
+                      yang tepat.
+
+    E - Skor 4        Berupaya memperingatkan publik, tetapi tuduhan terbuka dapat
+                      memicu konflik, salah informasi, atau eskalasi.
+
+
+   Cara cepat: Jika konten berisiko sudah cukup jelas, jangan menguji sendiri atau
+   meneruskan. Hentikan penyebaran, lindungi orang lain, dan gunakan kanal resmi.
+
+
+6.3. Sikap Pencegahan dan Penolakan terhadap Radikalisme
+        Membahas tindakan pencegahan melalui klarifikasi, edukasi, dialog, penolakan
+   tegas, penghentian penyebaran konten, perlindungan pihak terdampak, serta pelaporan
+   secara proporsional.
+
+
+   Lapisan Pencegahan
+       Lapisan                  Fokus                         Contoh Perilaku
+                                                   Memeriksa sumber, tidak meneruskan,
+                     Literasi, kontrol emosi,
+    Pribadi                                        menolak ajakan, dan tidak terlibat
+                     dan keberanian menolak.
+                                                   dalam konfrontasi berisiko.
+
+
+
+
+                                                                                         84
+   Lapisan                   Fokus                            Contoh Perilaku
+                                                 Mengajak bicara pribadi,
+                   Koreksi dan dukungan
+Interpersonal                                    mendengarkan, menjelaskan dampak,
+                   pada orang terdekat.
+                                                 dan menawarkan sumber tepercaya.
+                   Aturan, moderasi,             Pedoman grup, admin aktif, pelatihan,
+Kelompok/
+                   pembinaan, dan kanal          pelaporan internal, dan perlindungan
+Organisasi
+                   aman.                         saksi.
+                                                 Musyawarah, edukasi publik,
+                   Dialog, keterlibatan tokoh,
+Komunitas                                        narasumber moderat, dan pencegahan
+                   dan kegiatan inklusif.
+                                                 diskriminasi.
+                                                 Blokir/lapor akun sesuai platform,
+                   Mengurangi amplifikasi
+Digital                                          simpan bukti minimum, klarifikasi
+                   dan menjaga keamanan.
+                                                 resmi, dan literasi media.
+
+
+Urutan Respons Pencegahan
+     Tahap                  Fokus                         Pertanyaan Kunci
+                                             Apa yang benar-benar terjadi? Apakah
+1. Cermati          Fakta dan konteks        informasi berasal dari sumber yang dapat
+                                             diverifikasi?
+                                             Siapa yang berisiko? Apakah perlu
+2. Lindungi         Keselamatan dan hak      menghentikan akses, menjauh, atau
+                                             meminta bantuan?
+                                             Apakah klarifikasi, dialog, moderasi,
+3. Pilih cara       Proporsionalitas         pelaporan, atau tindakan darurat yang
+                                             paling sesuai?
+                                             Apa yang perlu dilakukan agar konten,
+4. Tindak lanjut    Pencegahan
+                                             perilaku, atau konflik tidak berulang?
+                                             Apakah tindakan mengurangi risiko tanpa
+5. Evaluasi         Dampak                   diskriminasi atau eskalasi yang tidak
+                                             perlu?
+
+
+
+
+                                                                                         85
+Penolakan yang Efektif
+•     Tegas terhadap isi atau perilaku, tetapi tidak menghina identitas atau martabat orang.
+•     Menjelaskan alasan berdasarkan hak, keselamatan, aturan, dan dampak, bukan
+      sekadar “karena tidak boleh”.
+•     Memberikan alternatif yang aman, misalnya mengganti narasumber, menggunakan
+      kanal resmi, atau mengadakan edukasi.
+•     Tidak menantang, mempermalukan, atau memancing perdebatan terbuka yang dapat
+      memperbesar propaganda.
+•     Meningkatkan tingkat eskalasi jika terdapat pengulangan, penolakan koreksi,
+      ancaman, atau risiko yang meningkat.
+
+
+Rentang Bloom yang wajar: C3-C5
+Tingkat Kesulitan: Sulit-HOTS
+                                Tingkat
+    Level   Proses Berpikir                               Karakteristik Soal
+                               Kesulitan
+
+                                            Memilih tindakan langsung pada kasus yang
+     C3      Menerapkan           Sulit
+                                            informasinya jelas dan risikonya rendah.
+
+                                            Membedakan kritik, konflik biasa, intoleransi,
+     C4      Menganalisis        HOTS       propaganda, dan ancaman berdasarkan bukti
+                                            stimulus.
+
+                                            Menimbang dialog, edukasi, moderasi,
+     C5      Mengevaluasi        HOTS       penghapusan, pelaporan, dan perlindungan
+                                            berdasarkan risiko dan kewenangan.
+
+
+    Contoh Soal 3 – Sikap Pencegahan dan Penolakan terhadap Radikalisme
+    Level Bloom: C5 – Mengevaluasi
+    Tingkat Kesulitan: HOTS
+
+
+Panitia kegiatan komunitas berencana mengundang pembicara yang pernah beberapa kali
+menyampaikan ujaran kebencian terhadap kelompok tertentu. Kegiatan belum diumumkan
+dan panitia masih terbuka terhadap masukan. Langkah Anda adalah ...
+
+
+
+                                                                                         86
+A. Meminta aparat mengawasi kegiatan sejak awal agar panitia merasa jera.
+B. Mengimbau masyarakat untuk tidak hadir tanpa menghubungi panitia.
+C. Menghubungi panitia, menyampaikan rekam jejak dan risikonya secara objektif, serta
+mengusulkan narasumber lain yang lebih kredibel dan inklusif.
+D. Membiarkan kegiatan berjalan dengan menghadirkan pembicara penyeimbang agar
+semua pandangan terwakili.
+E. Menyarankan kegiatan dibatalkan sepenuhnya tanpa menawarkan alternatif.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Konsep yang digunakan: Pencegahan dini, komunikasi persuasif, solusi alternatif, dan
+proporsionalitas
+Kata kunci: pembicara, ujaran kebencian, kegiatan belum diumumkan, alternatif
+narasumber
+
+
+Opsi C paling tepat karena masalah masih dapat dicegah melalui komunikasi langsung dan
+solusi konkret. Tindakan ini menutup ruang penyebaran kebencian tanpa mempermalukan
+panitia atau menimbulkan konflik yang tidak perlu.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                   Alasan
+
+A - Skor 2         Terlalu cepat melibatkan aparat pada situasi yang masih dapat
+                   ditangani secara persuasif.
+
+B - Skor 3         Mengurangi audiens, tetapi tidak menyelesaikan sumber masalah dan
+                   berpotensi menimbulkan rumor.
+
+C - Skor 5         Preventif, berbasis bukti, komunikatif, dan menawarkan solusi yang
+                   dapat diterapkan.
+
+D - Skor 1         Tetap memberi ruang pada ujaran kebencian dan menganggapnya
+                   setara dengan perbedaan pendapat biasa.
+
+
+
+
+                                                                                        87
+     Opsi dan Skor                                    Alasan
+
+    E - Skor 4         Tegas mencegah risiko, tetapi tidak memberi alternatif dan dapat
+                       memicu resistensi panitia.
+
+
+    Cara cepat: Pada tahap awal, utamakan pencegahan yang langsung menyasar sumber
+    risiko dan menyediakan alternatif yang aman.
+
+
+6.4. Respons terhadap Radikalisme di Lingkungan Kerja, Sosial, dan Digital
+         Membahas pemilihan respons berdasarkan bukti, tingkat risiko, pengulangan,
+    keselamatan, dan kewenangan, mulai dari dialog dan pembinaan hingga koordinasi serta
+    pelaporan melalui jalur resmi.
+
+
+    Matriks Respons Kontekstual
+        Konteks                 Risiko Umum                    Respons Skor Tinggi
+                      Grup internal, unggahan         Jaga bukti minimum, lindungi pihak
+     Lingkungan       pegawai, tekanan rekan,         terdampak, gunakan komunikasi
+     kerja            diskriminasi, dan penggunaan    personal bila aman, dan kanal
+                      fasilitas organisasi.           internal bila berulang atau serius.
+                                                      Libatkan tokoh yang dipercaya,
+                      Ajakan diskriminatif, konflik
+     Lingkungan                                       buka dialog, luruskan informasi, dan
+                      warga, pembicara provokatif,
+     sosial                                           pastikan keputusan adil serta tidak
+                      dan penolakan fasilitas.
+                                                      diskriminatif.
+                      Konten provokatif, tekanan      Pembinaan kritis, komunikasi
+     Lingkungan
+                      teman sebaya, dan ruang         edukatif, moderasi forum, dukungan
+     pendidikan
+                      belajar yang tertutup.          konselor/pimpinan bila perlu.
+                                                      Jangan klik atau teruskan, laporkan
+                      Tautan, akun anonim,
+                                                      ke platform/kanal keamanan,
+                      propaganda, ujaran
+     Ruang digital                                    klarifikasi melalui sumber resmi,
+                      kebencian, dan penyebaran
+                                                      dan hindari debat yang
+                      cepat.
+                                                      mengamplifikasi.
+                      Ancaman spesifik, target
+     Ancaman                                          Utamakan keselamatan, jauhi
+                      jelas, atau potensi tindakan
+     keselamatan                                      lokasi/akun, jangan melakukan
+                      segera.
+
+                                                                                            88
+    Konteks                Risiko Umum                     Respons Skor Tinggi
+                                                  konfrontasi, dan hubungi pihak
+                                                  berwenang sesuai prosedur.
+
+
+Menentukan Dialog atau Pelaporan
+  Dialog/Klarifikasi Lebih Tepat Jika...      Pelaporan/Eskalasi Lebih Tepat Jika...
+                                             Terdapat ancaman, ajakan
+ Informasi masih ambigu dan tidak ada
+                                             pemaksaan/kekerasan, target, atau risiko
+ ancaman langsung.
+                                             keselamatan.
+                                             Perilaku berulang, terorganisasi,
+ Perilaku baru terjadi sekali dan pihak
+                                             menyebar luas, atau tidak berhenti setelah
+ masih terbuka menerima koreksi.
+                                             diingatkan.
+                                             Peserta tidak memiliki kewenangan atau
+ Peserta memiliki hubungan, kemampuan,
+                                             berisiko menghadapi
+ dan ruang yang aman untuk berbicara.
+                                             pembalasan/konfrontasi.
+ Tujuan utama adalah memahami konteks        Diperlukan investigasi, perlindungan,
+ dan memperbaiki perilaku.                   pembatasan akses, atau keputusan formal.
+
+
+Rentang Bloom yang wajar: C3-C6
+Tingkat Kesulitan: Sulit-HOTS
+                              Tingkat
+ Level   Proses Berpikir                               Karakteristik Soal
+                             Kesulitan
+
+                                          Memilih tindakan langsung pada kasus yang
+  C3       Menerapkan           Sulit
+                                          informasinya jelas dan risikonya rendah.
+
+                                          Membedakan kritik, konflik biasa, intoleransi,
+  C4       Menganalisis        HOTS       propaganda, dan ancaman berdasarkan bukti
+                                          stimulus.
+
+                                          Menimbang dialog, edukasi, moderasi,
+  C5       Mengevaluasi        HOTS       penghapusan, pelaporan, dan perlindungan
+                                          berdasarkan risiko dan kewenangan.
+
+
+
+
+                                                                                        89
+                             Tingkat
+ Level    Proses Berpikir                             Karakteristik Soal
+                            Kesulitan
+
+                                         Menyusun strategi pencegahan organisasi atau
+  C6       Menciptakan        HOTS       komunitas yang mencakup edukasi, kanal
+                                         pelaporan, moderasi, dan evaluasi.
+
+
+ Contoh Soal 4 – Respons di Lingkungan Kerja dan Digital
+ Level Bloom: C5 – Mengevaluasi
+ Tingkat Kesulitan: HOTS
+
+
+Seorang rekan memberi tahu bahwa dalam grup percakapan internal kantor berulang kali
+muncul pesan yang merendahkan kelompok tertentu dan mengajak anggota menolak
+bekerja sama dengan mereka. Beberapa anggota merasa tidak nyaman, tetapi takut
+menanggapi. Anda tidak menjadi anggota grup tersebut. Tindakan Anda adalah ...
+A. Meminta rekan meneruskan seluruh pesan ke grup lain agar lebih banyak orang
+mengetahui masalahnya.
+B. Bergabung ke grup untuk memantau percakapan dan mencari siapa yang paling aktif.
+C. Mengabaikan karena Anda tidak melihat pesan tersebut secara langsung.
+D. Meminta rekan menyimpan bukti yang relevan, mendukung pihak yang terdampak, dan
+menggunakan kanal internal yang berwenang untuk pemeriksaan serta tindak lanjut.
+E. Menghubungi pengirim pesan secara pribadi dan menuntut mereka meminta maaf di
+grup.
+
+
+Jawaban: D
+Pembahasan:
+
+
+Konsep yang digunakan: Ujaran kebencian berulang, perlindungan pelapor, bukti, dan
+kanal internal
+Kata kunci: grup internal, pesan berulang, diskriminasi, takut menanggapi, kanal resmi
+
+
+Opsi D paling tepat karena peserta tidak perlu menyusup atau berkonfrontasi sendiri.
+Informasi sudah menunjukkan pola berulang dan dampak pada lingkungan kerja, sehingga
+penanganan formal yang menjaga bukti serta perlindungan pihak terdampak lebih tepat.
+
+                                                                                     90
+Pembahasan setiap opsi:
+ Opsi dan Skor                                    Alasan
+
+A - Skor 1        Memperluas penyebaran konten dan meningkatkan risiko bagi pihak
+                  terdampak.
+
+B - Skor 2        Menambah paparan dan melampaui peran peserta tanpa
+                  menyelesaikan masalah.
+
+C - Skor 3        Berhati-hati terhadap informasi tidak langsung, tetapi terlalu pasif
+                  ketika terdapat pola dan pihak terdampak.
+
+D - Skor 5        Melindungi pihak terdampak, menjaga bukti, dan menggunakan
+                  kewenangan organisasi.
+
+E - Skor 4        Menunjukkan keberanian dan koreksi, tetapi berisiko memicu
+                  konfrontasi dan pembalasan tanpa perlindungan.
+
+
+Cara cepat: Pada pola berulang di lingkungan kerja, jangan menyebarkan atau menyusup.
+Lindungi pelapor, jaga bukti minimum, dan gunakan kanal organisasi.
+
+
+ Contoh Soal 5 – Respons di Lingkungan Sosial dan Digital
+ Level Bloom: C4 – Menganalisis
+ Tingkat Kesulitan: HOTS
+
+
+Anda melihat rekan mengunggah komentar yang menyinggung kelompok agama tertentu.
+Unggahan belum menyebar luas, tidak mengandung ancaman, dan sebelumnya rekan
+tersebut tidak pernah melakukan hal serupa. Respons Anda adalah ...
+
+
+A. Mengajak rekan berbicara secara pribadi, menjelaskan dampak unggahan, meminta
+klarifikasi, dan mendorongnya memperbaiki atau menghapus konten.
+B. Melaporkan langsung kepada pihak berwenang agar ada efek jera.
+C. Menegur keras di kolom komentar agar publik mengetahui bahwa Anda tidak setuju.
+D. Menyampaikan unggahan tersebut kepada banyak rekan agar mereka ikut menasihati.
+E. Membiarkan karena unggahan dibuat melalui akun pribadi.
+
+
+                                                                                         91
+Jawaban: A
+Pembahasan:
+
+
+Konsep yang digunakan: Komunikasi personal, klarifikasi, koreksi proporsional, dan
+etika digital
+Kata kunci: unggahan pertama, belum meluas, tanpa ancaman, pembicaraan pribadi
+
+
+Opsi A paling tepat karena tingkat risiko masih memungkinkan koreksi personal yang
+aman. Respons tersebut menjaga martabat, membuka ruang klarifikasi, dan langsung
+mengurangi dampak melalui perbaikan atau penghapusan konten. Eskalasi dapat
+dilakukan jika perilaku berulang atau memburuk.
+
+
+Pembahasan setiap opsi:
+ Opsi dan Skor                                    Alasan
+
+ A - Skor 5       Proporsional, edukatif, menjaga martabat, dan berorientasi pada
+                  perbaikan langsung.
+
+ B - Skor 3       Menunjukkan kepedulian, tetapi terlalu cepat untuk kejadian pertama
+                  tanpa ancaman dan tanpa upaya klarifikasi.
+
+ C - Skor 2       Menolak ujaran, tetapi mempermalukan rekan dan berpotensi
+                  memperluas konflik.
+
+ D - Skor 1       Menyebarkan konten dan membuka peluang gosip atau perundungan.
+
+ E - Skor 4       Menghormati ruang pribadi, tetapi mengabaikan dampak publik dari
+                  unggahan; masih kurang aktif dibanding komunikasi personal.
+
+
+Cara cepat: Risiko rendah dan kejadian pertama biasanya ditangani dengan klarifikasi
+personal yang tegas dan edukatif; eskalasi dilakukan bila ada pengulangan atau ancaman.
+
+
+
+
+                                                                                     92
+

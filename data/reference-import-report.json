@@ -1,0 +1,34 @@
+{
+  "imported": {
+    "twk": 37,
+    "tkp": 26
+  },
+  "excluded": [
+    {
+      "id": "twk-ref-1-6",
+      "reason": "Duplikasi, konteks sejarah yang perlu verifikasi, atau klasifikasi analogi kalimat."
+    },
+    {
+      "id": "twk-ref-2-5",
+      "reason": "Duplikasi, konteks sejarah yang perlu verifikasi, atau klasifikasi analogi kalimat."
+    },
+    {
+      "id": "twk-ref-4-6",
+      "reason": "Duplikasi, konteks sejarah yang perlu verifikasi, atau klasifikasi analogi kalimat."
+    }
+  ],
+  "corrections": [
+    {
+      "id": "twk-ref-0-4",
+      "change": "Melengkapi pembahasan yang kosong."
+    },
+    {
+      "id": "twk-ref-2-3",
+      "change": "Mencocokkan label pengecoh B–E dengan daftar opsi."
+    },
+    {
+      "id": "twk-ref-4-5",
+      "change": "Melengkapi pembahasan yang kosong."
+    }
+  ]
+}

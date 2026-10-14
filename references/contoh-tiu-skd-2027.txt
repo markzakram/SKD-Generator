@@ -1,0 +1,2562 @@
+Tes Intelegensia Umum
+
+
+1. Verbal
+a. Silogisme
+• 3 Premis
+Soal 1
+Lampu lalu lintas berwarna merah membuat kendaraan harus berhenti. Di saat kendaraan harus
+berhenti maka pejalan kaki boleh melintas. Saat ini lampu lalu lintas berwarna merah.
+
+
+Kesimpulan yang tepat adalah …
+A. Pejalan kaki sedang menunggu
+B. Kendaraan melaju kencang
+C. Pejalan kaki boleh melintas
+D. Kendaraan tidak berhenti
+E. Lampu lalu lintas akan segera hijau
+
+
+Jawaban: C
+Pembahasan:
+Premis 1: Lampu lalu lintas berwarna merah membuat kendaraan harus berhenti.
+Premis 2: Di saat kendaraan harus berhenti maka pejalan kaki boleh melintas
+Premis 3: Saat ini lampu lalu lintas berwarna merah.
+
+
+𝑝: Lampu berwarna merah
+𝑞: Kendaraan berhenti
+𝑟: Pejalan kaki melintas
+
+
+Langkah 1 (Premis 1 + 2):
+Premis 1: 𝑝 → 𝑞
+Premis 2: 𝑞 → 𝑟
+Gunakan hukum Silogisme
+Kesimpulan (Premis 4): 𝒑 → 𝒓
+
+
+Langkah 2 (Premis 4 + 3):
+Premis 4: 𝑝 → 𝑟
+Premis 3: 𝑝
+Gunakan Modus Ponens
+Kesimpulan: 𝒓
+
+
+Jawaban: Pejalan kaki boleh melintas
+
+
+• 2 Premis – Narasi
+Soal 1
+Manajemen sebuah perusahaan teknologi menetapkan bahwa setiap karyawan divisi
+pengembangan produk berhak mendapatkan bonus akhir tahun dan cuti tambahan selama tiga
+hari harus berhasil merilis aplikasi dengan rating di atas 4.5. Siska adalah staf di divisi
+pengembangan produk yang baru saja merilis aplikasi baru dengan rating 4.2.
+
+
+Kesimpulan yang paling tepat berdasarkan pernyataan tersebut adalah ...
+A. Siska pasti mendapatkan bonus akhir tahun dan cuti tambahan.
+B. Siska belum memnuhi syarat minimum rating aplikasi untuk mendapatkan bonus dan cuti
+tambahan tersebut.
+C. Siska berkerja di divisi keuangan perusahaan teknologi.
+D. Semua karyawan di perusahaan tersebut wajib merilis aplikasi setiap bulan.
+E. Aplikasi dengan rating 4.2 otomatis ditarik dari pasaran.
+
+
+Jawaban: B
+Pembahasan:
+
+
+Premis 1: Setiap karyawan divisi pengembangan produk berhak mendapatkan bonus akhir
+tahun dan cuti tambahan selama tiga hari harus berhasil merilis aplikasi dengan rating di
+atas 4.5.
+Premis 2: Siska adalah staf di divisi pengembangan produk yang baru saja merilis aplikasi baru
+dengan rating 4.2.
+
+
+𝑝: Mendapatkan bonus akhir tahun dan cuti tambahan selama tiga hari
+𝑞: Merilis aplikasi dengan rating di atas 4.5
+Premis 1: 𝑝 → 𝑞
+Premis 2: ¬𝑞
+Gunakan Modus Tollens
+Kesimpulan: ¬𝑝
+Jawaban: Tidak mendapatkan bonus akhir tahun dan cuti tambahan selama tiga hari.
+
+
+Analisis setiap opsi:
+A. Siska pasti mendapatkan bonus akhir tahun dan cuti tambahan.
+→ 𝑝 (bukan kesimpulan yang dicari)
+
+
+B. Siska belum memnuhi syarat minimum rating aplikasi untuk mendapatkan bonus dan cuti
+tambahan tersebut.
+→ ¬𝑝 (kesimpulan yang dicari)
+
+
+C. Siska berkerja di divisi keuangan perusahaan teknologi.
+→ Bukan 𝑝 dan maupun 𝑞 (bukan kesimpulan yang dicari)
+
+
+D. Semua karyawan di perusahaan tersebut wajib merilis aplikasi setiap bulan.
+→ Bukan 𝑝 dan maupun 𝑞 (bukan kesimpulan yang dicari)
+
+
+E. Aplikasi dengan rating 4.2 otomatis ditarik dari pasaran.
+→ Bukan 𝑝 dan maupun 𝑞 (bukan kesimpulan yang dicari)
+
+
+Soal 2
+Dalam proses pengelolaan sebuah toko roti, produk yang telah lolos pemeriksaan kualitas akan
+ditempatkan pada rak penjualan utama agar mudah ditemukan oleh pelanggan. Produk yang
+ditempatkan pada rak penjualan utama akan memperoleh label promosi khusus selama masa
+penjualan berlangsung. Toko tersebut menggunakan rak kayu berwarna cokelat yang
+dibersihkan setiap pagi sebelum toko dibuka.
+
+
+Kesimpulan yang paling tepat berdasarkan pernyataan tersebut adalah ...
+A. Produk yang memperoleh label promosi khusus pasti telah melalui seluruh pemeriksaan
+kualitas tanpa pengecualian.
+B. Produk yang belum lolos pemeriksaan kualitas tetap dapat ditempatkan pada rak penjualan
+utama selama persediaan produk sedang terbatas.
+C. Produk yang telah lolos pemeriksaan kualitas akan memperoleh label promosi khusus
+selama masa penjualan berlangsung.
+D. Seluruh produk yang berada di dalam toko akan mendapatkan label promosi khusus tanpa
+mempertimbangkan hasil pemeriksaan kualitas.
+E. Produk yang diletakkan pada rak kayu berwarna cokelat selalu menjadi produk dengan
+penjualan paling tinggi pada hari tersebut.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Premis 1: Produk yang telah lolos pemeriksaan kualitas akan ditempatkan pada rak
+penjualan utama agar mudah ditemukan oleh pelanggan.
+Premis 2: Produk yang ditempatkan pada rak penjualan utama akan memperoleh label
+promosi khusus selama masa penjualan berlangsung.
+
+
+Kalimat “Toko tersebut menggunakan rak kayu berwarna cokelat yang dibersihkan setiap pagi
+sebelum toko dibuka” merupakan informasi pengecoh karena tidak memiliki hubungan logis
+dengan proses pemeriksaan kualitas, penempatan produk, maupun pemberian label promosi.
+
+
+p: Produk lolos pemeriksaan kualitas
+q: Produk ditempatkan pada rak penjualan utama
+r: Produk memperoleh label promosi khusus
+
+
+Premis 1: p → q
+Premis 2: q → r
+Gunakan hukum Silogisme
+Kesimpulan: p → r
+Jawaban: Produk yang telah lolos pemeriksaan kualitas akan memperoleh label promosi
+khusus selama masa penjualan berlangsung.
+Analisis setiap opsi:
+A. Produk yang memperoleh label promosi khusus pasti telah melalui seluruh
+pemeriksaan kualitas tanpa pengecualian.
+→ r → p, yaitu membalik hubungan kesimpulan p → r (bukan kesimpulan yang dicari)
+
+
+B. Produk yang belum lolos pemeriksaan kualitas tetap dapat ditempatkan pada rak
+penjualan utama selama persediaan produk sedang terbatas.
+→ ¬p → q, tidak sesuai dengan hubungan yang diberikan (bukan kesimpulan yang dicari)
+
+
+C. Produk yang telah lolos pemeriksaan kualitas akan memperoleh label promosi khusus
+selama masa penjualan berlangsung.
+→ p → r (kesimpulan yang dicari)
+
+
+D. Seluruh produk yang berada di dalam toko akan mendapatkan label promosi khusus
+tanpa mempertimbangkan hasil pemeriksaan kualitas.
+→ Bukan p → r karena cakupannya diperluas menjadi seluruh produk di toko (bukan
+kesimpulan yang dicari)
+
+
+E. Produk yang diletakkan pada rak kayu berwarna cokelat selalu menjadi produk
+dengan penjualan paling tinggi pada hari tersebut.
+→ Bukan p, q, maupun r dan berasal dari informasi pengecoh mengenai rak (bukan
+kesimpulan yang dicari)
+
+
+• 3 Premis – Narasi
+Soal 1
+Dalam proses produksi roti, sebuah dapur produksi menetapkan bahwa adonan yang telah
+mencapai tingkat elastisitas sesuai standar harus dihentikan dari proses pengadukan agar
+teksturnya tidak berubah terlalu jauh. Adonan yang proses pengadukannya telah dihentikan
+pada tahap tersebut perlu diistirahatkan selama dua puluh menit sebelum memasuki proses
+pembentukan. Rafi sedang mengerjakan satu adonan yang berdasarkan pemeriksaan terakhir
+telah mencapai tingkat elastisitas sesuai standar.
+
+
+Kesimpulan yang paling tepat berdasarkan pernyataan tersebut adalah ...
+A. Rafi perlu melanjutkan proses pengadukan selama beberapa menit agar adonan benar-benar
+siap memasuki tahap pembentukan.
+B. Adonan yang dikerjakan Rafi dapat langsung memasuki proses pembentukan karena tingkat
+elastisitas yang ditentukan sudah tercapai.
+C. Adonan yang sedang dikerjakan Rafi perlu diistirahatkan selama dua puluh menit sebelum
+memasuki proses pembentukan.
+D. Rafi perlu menambahkan bahan lain ke dalam adonan sebelum proses pengadukan dapat
+dihentikan sesuai prosedur produksi.
+E. Adonan yang dikerjakan Rafi belum dapat memasuki tahap berikutnya karena tingkat
+elastisitasnya masih berada di bawah standar produksi.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Premis 1: Adonan yang telah mencapai tingkat elastisitas sesuai standar harus dihentikan
+dari proses pengadukan agar teksturnya tetap terjaga.
+Premis 2: Adonan yang proses pengadukannya telah dihentikan perlu diistirahatkan
+selama dua puluh menit sebelum memasuki proses pembentukan.
+Premis 3: Adonan yang sedang dikerjakan Rafi telah mencapai tingkat elastisitas sesuai
+standar.
+
+
+p: Adonan mencapai tingkat elastisitas sesuai standar
+q: Proses pengadukan dihentikan
+r: Adonan diistirahatkan selama dua puluh menit
+
+
+Langkah 1 (Premis 1 + 2):
+Premis 1: p → q
+Premis 2: q → r
+Gunakan hukum Silogisme
+Kesimpulan (Premis 4): p → r
+
+
+Langkah 2 (Premis 4 + 3):
+Premis 4: p → r
+Premis 3: p
+Gunakan Modus Ponens
+Kesimpulan: r
+
+
+Jawaban: Adonan yang sedang dikerjakan Rafi perlu diistirahatkan selama dua puluh menit
+sebelum memasuki proses pembentukan.
+
+
+Analisis setiap opsi:
+A. Rafi perlu melanjutkan proses pengadukan selama beberapa menit agar adonan benar-
+benar siap memasuki tahap pembentukan.
+→ Pernyataan ini bertentangan dengan q. Adonan yang telah mencapai tingkat elastisitas sesuai
+standar justru harus dihentikan dari proses pengadukan, bukan terus diaduk. Bukan
+kesimpulan yang dicari.
+
+
+B. Adonan yang dikerjakan Rafi dapat langsung memasuki proses pembentukan karena
+tingkat elastisitas yang ditentukan sudah tercapai.
+→ Pernyataan ini melewati r. Setelah proses pengadukan dihentikan, adonan masih harus
+menjalani tahap pengistirahatan selama dua puluh menit sebelum pembentukan. Bukan
+kesimpulan yang dicari.
+
+
+C. Adonan yang sedang dikerjakan Rafi perlu diistirahatkan selama dua puluh menit
+sebelum memasuki proses pembentukan.
+→ r, yaitu hasil akhir yang diperoleh dari Silogisme pada langkah pertama dan Modus Ponens
+pada langkah kedua. Kesimpulan yang dicari.
+
+
+D. Rafi perlu menambahkan bahan lain ke dalam adonan sebelum proses pengadukan
+dapat dihentikan sesuai prosedur produksi.
+→ Bukan p, q, maupun r. Tidak terdapat informasi mengenai penambahan bahan lain dalam
+ketiga premis. Bukan kesimpulan yang dicari.
+
+
+E. Adonan yang dikerjakan Rafi belum dapat memasuki tahap berikutnya karena tingkat
+elastisitasnya masih berada di bawah standar produksi.
+→ Bertentangan dengan p karena pada pernyataan ketiga telah disebutkan bahwa adonan Rafi
+sudah mencapai tingkat elastisitas sesuai standar. Bukan kesimpulan yang dicari.
+Soal 2
+Dalam sebuah kegiatan pendakian, Mira terbiasa menggunakan tongkat pendakian ketika
+permukaan jalur yang dilaluinya berada dalam kondisi licin akibat tanah yang basah.
+Penggunaan tongkat pendakian pada kondisi tersebut membuat laju perjalanan Mira menjadi
+lebih lambat karena setiap langkah harus dilakukan dengan lebih hati-hati. Pada pendakian kali
+ini, laju perjalanan Mira tidak menjadi lebih lambat dibandingkan kecepatan berjalannya dalam
+kondisi normal. Mira juga membawa jaket berwarna biru yang disimpan di bagian luar tas
+pendakiannya agar mudah diambil saat diperlukan.
+
+
+Kesimpulan yang paling tepat berdasarkan pernyataan tersebut adalah ...
+A. Jalur pendakian yang sedang dilalui Mira tidak berada dalam kondisi licin akibat permukaan
+tanah yang basah.
+B. Mira tetap menggunakan tongkat pendakian selama perjalanan meskipun laju berjalannya
+tidak mengalami perlambatan seperti biasanya.
+C. Kondisi jalur yang dilewati Mira cukup aman sehingga ia dapat menempuh perjalanan tanpa
+membawa perlengkapan pendakian tambahan.
+D. Mira memilih jalur pendakian yang lebih pendek sehingga kecepatan perjalanannya dapat
+dipertahankan seperti dalam kondisi normal.
+E. Kondisi cuaca selama pendakian sedang cerah sehingga permukaan tanah pada jalur yang
+dilalui Mira tidak mengalami perubahan.
+
+
+Jawaban: A
+Pembahasan:
+
+
+Premis 1: Permukaan jalur yang berada dalam kondisi licin akibat tanah yang basah membuat
+Mira menggunakan tongkat pendakian selama perjalanan.
+Premis 2: Mira yang menggunakan tongkat pendakian pada kondisi tersebut memiliki laju
+perjalanan yang menjadi lebih lambat.
+Premis 3: Pada pendakian kali ini, laju perjalanan Mira tidak menjadi lebih lambat
+dibandingkan kondisi normal.
+
+
+Kalimat “Mira juga membawa jaket berwarna biru yang disimpan di bagian luar tas
+pendakiannya agar mudah diambil saat diperlukan” merupakan informasi pengecoh karena
+tidak memiliki hubungan logis dengan kondisi jalur, penggunaan tongkat pendakian, maupun
+laju perjalanan Mira.
+
+
+p: Permukaan jalur pendakian licin akibat tanah yang basah
+q: Mira menggunakan tongkat pendakian
+r: Laju perjalanan Mira menjadi lebih lambat
+
+
+Langkah 1 (Premis 1 + 2):
+Premis 1: p → q
+Premis 2: q → r
+Gunakan hukum Silogisme
+Kesimpulan (Premis 4): p → r
+
+
+Langkah 2 (Premis 4 + 3):
+Premis 4: p → r
+Premis 3: ¬r
+Gunakan Modus Tollens
+Kesimpulan: ¬p
+
+
+Jawaban: Jalur pendakian yang sedang dilalui Mira tidak berada dalam kondisi licin akibat
+permukaan tanah yang basah.
+
+
+Analisis setiap opsi:
+A. Jalur pendakian yang sedang dilalui Mira tidak berada dalam kondisi licin akibat
+permukaan tanah yang basah.
+→ ¬p (kesimpulan yang dicari)
+
+
+B. Mira tetap menggunakan tongkat pendakian selama perjalanan meskipun laju berjalannya
+tidak mengalami perlambatan seperti biasanya.
+→ q (bukan kesimpulan yang dicari)
+
+
+C. Kondisi jalur yang dilewati Mira cukup aman sehingga ia dapat menempuh perjalanan
+tanpa membawa perlengkapan pendakian tambahan.
+→ Bukan p, q, maupun r (bukan kesimpulan yang dicari)
+D. Mira memilih jalur pendakian yang lebih pendek sehingga kecepatan perjalanannya
+dapat dipertahankan seperti dalam kondisi normal.
+→ Bukan p, q, maupun r (bukan kesimpulan yang dicari)
+
+
+E. Kondisi cuaca selama pendakian sedang cerah sehingga permukaan tanah pada jalur yang
+dilalui Mira tidak mengalami perubahan.
+→ Bukan p, q, maupun r (bukan kesimpulan yang dicari)
+
+
+b. Analogi
+• 2 Kata
+Soal 1
+Cepat : Lambat = ... : ...
+
+
+A. Awal : Akhir
+B. Keras : Batu
+C. Panjang : Jalan
+D. Tinggi : Gedung
+E. Manis : Gula
+
+
+Jawaban: A
+Pembahasan:
+Kata "cepat" dan "lambat" memiliki hubungan antonim atau berlawanan makna. Pola yang
+sama terdapat pada opsi A, yaitu "awal" dan "akhir" yang juga merupakan pasangan kata
+berlawanan makna.
+
+
+c. Analitis
+• Memperkuat/Memperlemah
+Soal 1
+Penggunaan transportasi umum dapat mengurangi kemacetan karena mampu mengangkut
+banyak orang dalam satu kendaraan. Oleh karena itu, semakin banyak masyarakat beralih ke
+transportasi umum, semakin berkurang kemacetan di kota.
+
+
+Manakah pernyataan berikut yang MEMPERLEMAH pernyataan di atas?
+A. Transportasi umum memiliki kapasitas penumpang yang lebih besar daripada kendaraan
+pribadi.
+B. Banyak transportasi umum memiliki jadwal keberangkatan yang tidak menentu sehingga
+masyarakattetap memilih kendaraan pribadi.
+C. Sebagian besar masyarakat menggunakan transportasi umum untuk pergi bekerja.
+D. Pemerintah terus menambah jumlah armada transportasi umum di perkotaan.
+E. Penggunaan transportasi umum dapat mengurangi jumlah kendaraan pribadi di jalan.
+
+
+Jawaban: B
+Pembahasan:
+
+
+Berdasarkan pernyataan yang diberikan, kita perlu mencari informasi yang dapat
+memperlemah hubungan antara penggunaan transportasi umum dan berkurangnya
+kemacetan.
+
+
+Analisis Logika: Transportasi Umum dan Kemacetan
+Argumen pada soal menyatakan bahwa transportasi umum dapat mengangkut banyak orang
+dalam satu kendaraan. Jika masyarakat beralih dari kendaraan pribadi ke transportasi umum,
+jumlah kendaraan di jalan akan berkurang sehingga kemacetan juga dapat berkurang.
+Jadi, untuk memperlemah argumen tersebut, kita perlu mencari pernyataan yang menunjukkan
+bahwa masyarakat belum tentu beralih ke transportasi umum atau bahwa penggunaan
+kendaraan pribadi masih tetap tinggi.
+
+
+Kata Kunci (Keyword)
+Transportasi umum → mengangkut banyak orang → kendaraan pribadi berkurang →
+kemacetan berkurang.
+
+
+Jawaban Benar B. Banyak transportasi umum memiliki jadwal keberangkatan yang
+tidak menentu sehingga masyarakat tetap memilih kendaraan pribadi.
+
+
+Pembahasan Jawaban Benar:
+Pilihan B memperlemah argumen karena menunjukkan adanya alasan masyarakat tetap
+menggunakan kendaraan pribadi, yaitu jadwal transportasi umum yang tidak menentu.
+Jika masyarakat tetap menggunakan kendaraan pribadi, jumlah kendaraan di jalan tidak banyak
+berkurang. Akibatnya, anggapan bahwa semakin banyak penggunaan transportasi umum akan
+mengurangi kemacetan menjadi kurang kuat.
+
+
+Pembahasan Setiap Opsi yang Salah
+A. Transportasi umum memiliki kapasitas penumpang yang lebih besar daripada
+kendaraan pribadi.
+Salah. Pernyataan ini justru mendukung argumen karena menunjukkan bahwa satu kendaraan
+umum dapat mengangkut lebih banyak orang.
+
+
+C. Sebagian besar masyarakat menggunakan transportasi umum untuk pergi bekerja.
+Salah. Pernyataan ini cenderung memperkuat argumen karena menunjukkan bahwa banyak
+masyarakat sudah menggunakan transportasi umum.
+
+
+D. Pemerintah terus menambah jumlah armada transportasi umum di perkotaan.
+Salah. Penambahan armada membuat transportasi umum semakin tersedia sehingga dapat
+mendorong masyarakat menggunakannya.
+
+
+E. Penggunaan transportasi umum dapat mengurangi jumlah kendaraan pribadi di
+jalan.
+Salah. Pernyataan ini langsung mendukung alasan utama bahwa transportasi umum dapat
+membantu mengurangi kemacetan.
+
+
+Soal 2
+Penggunaan ruang terbuka hijau di kawasan perkotaan dapat membantu menurunkan suhu
+lingkungan karena pepohonan mampu memberikan keteduhan dan menyerap panas. Oleh
+karena itu, semakin luas ruang terbuka hijau di suatu kota, semakin rendah suhu udara di
+kawasan tersebut.
+
+
+Manakah pernyataan berikut yang MEMPERKUAT pernyataan di atas?
+A. Sebagian masyarakat lebih memilih beraktivitas di dalam ruangan saat cuaca panas.
+B. Pembangunan gedung bertingkat terus meningkat di beberapa wilayah perkotaan.
+C. Kawasan kota yang memiliki lebih banyak pepohonan tercatat memiliki suhu rata-rata lebih
+rendah        dibandingkan          kawasan         yang         minim         pepohonan.
+D. Ruang terbuka hijau membutuhkan biaya perawatan yang cukup besar setiap tahun.
+E. Beberapa taman kota digunakan masyarakat sebagai tempat berolahraga pada pagi hari.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Berdasarkan pernyataan yang diberikan, kita perlu mencari informasi yang dapat memperkuat
+hubungan antara keberadaan ruang terbuka hijau dan penurunan suhu lingkungan.
+
+
+Analisis Logika: Ruang Terbuka Hijau dan Suhu Kota
+Argumen pada soal menyatakan bahwa pepohonan pada ruang terbuka hijau dapat memberikan
+keteduhan dan menyerap panas. Oleh karena itu, semakin banyak ruang terbuka hijau, suhu
+lingkungan seharusnya semakin rendah.
+Jadi, pernyataan yang memperkuat harus memberikan bukti atau informasi yang
+mendukung bahwa kawasan dengan lebih banyak ruang hijau memang memiliki suhu
+yang lebih rendah.
+
+
+Kata Kunci (Keyword)
+Ruang terbuka hijau → lebih banyak pepohonan → panas berkurang → suhu lingkungan lebih
+rendah.
+
+
+Jawaban Benar C. Kawasan kota yang memiliki lebih banyak pepohonan tercatat
+memiliki suhu rata-rata lebih rendah dibandingkan kawasan yang minim pepohonan.
+
+
+Pembahasan Jawaban Benar:
+Pilihan C memperkuat argumen karena memberikan bukti bahwa kawasan dengan lebih banyak
+pepohonan memang memiliki suhu rata-rata yang lebih rendah.
+Hal tersebut sesuai dengan hubungan yang dijelaskan pada soal, yaitu bahwa keberadaan ruang
+terbuka hijau dapat membantu mengurangi panas di kawasan perkotaan. Dengan demikian,
+kesimpulan bahwa semakin luas ruang terbuka hijau maka suhu lingkungan dapat semakin
+rendah menjadi lebih kuat.
+
+
+Pembahasan Setiap Opsi yang Salah
+A. Sebagian masyarakat lebih memilih beraktivitas di dalam ruangan saat cuaca panas.
+Salah. Pernyataan ini membahas pilihan aktivitas masyarakat, bukan hubungan antara ruang
+terbuka hijau dan suhu lingkungan.
+
+
+B. Pembangunan gedung bertingkat terus meningkat di beberapa wilayah perkotaan.
+Salah. Informasi tersebut tidak menunjukkan bahwa ruang terbuka hijau dapat menurunkan
+suhu.
+
+
+D. Ruang terbuka hijau membutuhkan biaya perawatan yang cukup besar setiap tahun.
+Salah. Biaya perawatan tidak berkaitan dengan kemampuan ruang terbuka hijau dalam
+mengurangi suhu lingkungan.
+
+
+E. Beberapa taman kota digunakan masyarakat sebagai tempat berolahraga pada pagi
+hari.
+Salah. Pernyataan ini menunjukkan fungsi taman sebagai tempat aktivitas, tetapi tidak
+membuktikan bahwa keberadaan taman dapat menurunkan suhu.
+
+
+• Susunan & Posisi
+Soal 1
+
+
+Terdapat lima orang (A, B, C, D, dan E) berdiri berjejer dari kiri ke kanan. A tidak berada di
+posisi paling kiri maupun paling kanan. B berdiri di sebelah kiri C. D berdiri tepat di tengah. E
+tidak berdiri di samping C dan tidak berada di antara tiga posisi pertama.
+
+
+Siapakah yang berdiri di posisi paling kanan?
+A. A
+B. B
+C. C
+D. D
+E. E
+
+
+Jawaban: E
+Pembahasan:
+Posisi tengah dari lima tempat adalah posisi ke-3, sehingga D berada di posisi ke-3.
+E tidak berada di antara tiga posisi pertama, sehingga E hanya mungkin berada di posisi ke-4
+atau ke-5.
+
+
+Jika E berada di posisi ke-4, maka susunan menjadi tidak sesuai karena A berpotensi berada di
+ujung, padahal A tidak boleh berada di posisi paling kiri maupun paling kanan.
+
+
+Dengan demikian, E harus berada di posisi ke-5 atau posisi paling kanan.
+Jadi, jawaban yang benar adalah E.
+
+
+  1      2   3   4     5
+
+ B C D A E
+
+Soal 2
+
+
+Delapan kepala keluarga, yaitu Angga, Bima, Candra, Dika, Endang, Faisal, Gilang, dan
+Hasan, duduk melingkar saling berhadapan dalam sebuah rapat. Dika duduk berhadapan
+dengan Angga. Hasan duduk di sebelah kiri Dika dan berhadapan dengan Endang. Endang
+duduk di antara Angga dan Bima. Faisal duduk berhadapan dengan Gilang. Gilang tidak duduk
+di samping Hasan.
+
+
+Di manakah posisi Candra duduk?
+A. Di antara Gilang dan Faisal
+B. Di antara Gilang dan Hasan
+C. Tepat di samping kiri Bima
+D. Tepat di samping kanan Dika
+E. Tepat di samping kiri Angga
+
+
+Jawaban: B
+Pembahasan:
+Petunjuk utama yang harus dipasang terlebih dahulu adalah pasangan berhadapan: Dika dengan
+Angga, Hasan dengan Endang, dan Faisal dengan Gilang.
+Hasan berada di sebelah kiri Dika. Endang berada di antara Angga dan Bima. Gilang tidak
+boleh berada di samping Hasan.
+
+
+Setelah posisi pasangan berhadapan dan larangan duduk di samping Hasan dipenuhi, posisi
+kosong yang tersisa untuk Candra berada di antara Gilang dan Hasan.
+
+
+Jadi, jawaban yang benar adalah B.
+
+
+
+
+Soal 3
+
+
+Delapan siswa duduk pada wahana yang tersusun dalam 5 baris dan 2 kursi pada setiap baris.
+Siswa tersebut adalah Rina, Santi, Tono, Uli, Vina, Wawan, Yudi, dan Zaki.
+Rina dan Santi duduk di baris 1. Tono duduk tepat di belakang Rina. Uli duduk di samping
+Tono. Vina dan Wawan duduk bersama pada satu baris, tetapi bukan baris 1. Yudi tidak duduk
+di baris 1.
+
+
+Di baris berapakah posisi Zaki?
+A. Baris 1
+B. Baris 2
+C. Baris 3
+D. Baris 4
+E. Tidak cukup data
+
+
+Jawaban: E
+Pembahasan:
+
+
+Baris 1 sudah ditempati Rina dan Santi.
+Tono duduk tepat di belakang Rina, dan Uli duduk di samping Tono, sehingga satu baris
+berikutnya ditempati Tono dan Uli.
+
+
+Vina dan Wawan harus berada pada satu baris yang sama dan bukan baris 1. Yudi tidak berada
+di baris 1.
+
+
+Informasi yang tersedia belum menentukan secara pasti baris yang ditempati Zaki karena masih
+ada beberapa kemungkinan penempatan yang valid.
+Jadi, jawaban yang benar adalah E.
+
+
+              Kursi Kiri    Kursi Kanan
+ Baris 1        Rina             Santi
+ Baris 2        Tono              Uli
+ Baris 3          ?                ?
+ Baris 4        Vina            Wawan
+ Baris 5          ?                ?
+
+
+• Urutan & Peringkat
+Soal 1
+
+
+Sekolah Sukamaju mengadakan lomba lari yang diikuti enam siswa, yaitu Anisah, Bobi, Helmi,
+Intan, Jonathan, dan Yasmin. Yasmin berada di posisi ketiga. Helmi memasuki garis finis tepat
+sebelum Yasmin. Helmi lebih lambat daripada Bobi. Anisah lebih cepat daripada Intan tetapi
+lebih lambat daripada Yasmin. Jonathan berada di urutan terakhir.
+
+
+Urutan pelari yang benar dari posisi pertama hingga terakhir adalah ...
+A. Bobi - Helmi - Yasmin - Jonathan - Anisah - Intan
+B. Bobi - Helmi - Yasmin - Intan - Anisah - Jonathan
+C. Bobi - Helmi - Yasmin - Anisah - Intan - Jonathan
+D. Bobi - Anisah - Yasmin - Helmi - Intan - Jonathan
+E. Bobi - Anisah - Intan - Yasmin - Helmi - Jonathan
+
+
+Jawaban: C
+Pembahasan:
+Yasmin berada di posisi ketiga.
+
+
+Helmi tepat sebelum Yasmin, sehingga Helmi berada di posisi kedua.
+
+
+Helmi lebih lambat daripada Bobi, sehingga Bobi berada sebelum Helmi. Posisi yang tersedia
+sebelum Helmi adalah posisi pertama, maka Bobi berada di posisi pertama.
+
+
+Anisah lebih cepat daripada Intan tetapi lebih lambat daripada Yasmin. Karena Yasmin berada
+di posisi ketiga, Anisah berada setelah Yasmin dan sebelum Intan.
+
+
+Jonathan berada di urutan terakhir.
+
+
+Urutan yang terbentuk adalah Bobi - Helmi - Yasmin - Anisah - Intan - Jonathan.
+Jadi, jawaban yang benar adalah C.
+
+
+     1            2            3           4            5            6
+   Bobi         Helmi       Yasmin      Anisah         Intan    Jonathan
+
+
+• Jadwal
+Soal 1
+
+
+Toko Berkah Bergizi adalah sebuah toko yang menjual beberapa kebutuhan pokok yaitu beras,
+gula, minyak goreng, daging ayam, telur, bawang dan garam. Toko tersebut bekerjasama
+dengan tujuh distributor yang disebut sebagai distributor A, B, C, D, E, F dan G. Diketahui
+bahwa setiap bahan pokok yang dikirim ke Toko Berkah Bergizi berasal dari distributor yang
+berbeda dan masing-masing dikirim sekali dalam seminggu di hari yang berbeda pula. Terdapat
+beberapa informasi sebagai berikut:
+
+
+1. Beras dikirim dari distributor D pada hari Rabu.
+2. Minyak goreng tidak dikirim dari distributor A ataupun C.
+3. Bawang dikirim pada hari Jumat oleh distributor E.
+4. Minyak goreng dikirim keesokan hari dari pengiriman daging ayam oleh distributor F 5 pada
+hari Sabtu.
+5. Garam dikirim pada hari Senin, tetapi tidak dikirim dari distributor C ataupun G.
+6. Telur dikirim pada hari Kamis oleh distributor A.
+
+
+Berdasarkan informasi tersebut, gula dikirim pada hari....
+A. Selasa
+B. Rabu
+C. Kamis
+D. Sabtu
+E. Minggu
+
+
+Jawaban: C
+Pembahasan:
+
+
+Berdasarkan informasi pada soal, dapat dipastikan setiap bahan pokok dikirim dihari yang
+berbeda dalam hari Senin - Jumat oleh distributor yang berbeda pula.
+
+
+Berdasarkan informasi 1, 3, 4, 5 dan 6, didapatkan:
+       Hari           Bahan Pokok          Distributor
+      Senin               Garam
+      Selasa
+       Rabu                Beras                 D
+      Kamis                Telur                 A
+      Jumat              Bawang                  E
+      Sabtu           Daging Ayam                F
+     Minggu          Minyak Goreng
+Dengan demikian, gula pasti dikirim pada hari Selasa.
+
+
+• Logika Pernyataan
+Soal 1
+
+
+Katia menyusun lima sepatu pada rak bertingkat lima. Lima sepatu tersebut adalah sepatu
+olahraga biru, sepatu olahraga merah, sepatu pantofel, sepatu gunung, dan sepatu berhak.
+Terdapat beberapa informasi sebagai berikut:
+1. Sepatu olahraga biru tidak ditempatkan pada rak paling atas.
+2. Sepatu berhak dan sepatu pantofel diposisikan berurutan pada rak.
+3. Terdapat satu jenis sepatu yang memisahkan sepatu berhak dan sepatu olahraga merah.
+
+
+Jika sepatu berhak ditempatkan pada rak urutan ketiga dari atas, manakah pernyataan di bawah
+ini yang PASTI benar?
+A. Sepatu pantofel tidak ditempatkan pada rak kelima dari atas.
+B. Sepatu olahraga biru tidak ditempatkan pada rak keempat dari atas.
+C. Sepatu pantofel ditempatkan pada rak paling atas.
+D. Sepatu gunung ditempatkan pada paling bawah.
+E. Sepatu olahraga merah ditempatkan pada rak kedua dari atas.
+
+
+Jawaban: A
+Pembahasan:
+Sepatu berhak berada di rak ke-3.
+Sepatu pantofel harus berurutan dengan sepatu berhak, sehingga sepatu pantofel hanya
+mungkin berada di rak ke-2 atau ke-4.
+Dengan demikian, sepatu pantofel pasti tidak berada di rak ke-5.
+
+
+Opsi B, C, D, dan E belum tentu benar karena masih bergantung pada susunan sepatu lainnya.
+Jadi, jawaban yang benar adalah A.
+
+
+ 1 Sepatu olahraga merah (mungkin)
+ 2 Sepatu pantofel (mungkin)
+ 3 Sepatu berhak (pasti)
+ 4 Sepatu pantofel (mungkin)
+ 5 Sepatu olahraga merah (mungkin)
+
+
+Soal 2
+
+
+Lima kue, yaitu A, B, C, D, dan E, dipajang pada etalase bernomor 1 sampai 5 dari kiri ke
+kanan. Ketentuannya sebagai berikut:
+1. B harus tepat di sebelah C.
+2. D tidak boleh berada di petak 1 atau petak 5.
+3. A berada di petak 3.
+4. E tidak boleh berada di sebelah B.
+
+
+Jika C berada di petak 1, maka pernyataan di bawah ini mungkin benar, kecuali ...
+A. B berada di petak 2.
+B. D berada di petak 4.
+C. E berada di petak 5.
+D. A berada di petak 3.
+E. D berada di petak 5.
+
+
+Jawaban: E
+Pembahasan:
+Jika C berada di petak 1, maka B harus berada tepat di sebelah C, yaitu di petak 2.
+A sudah ditentukan berada di petak 3.
+D tidak boleh berada di petak 1 atau petak 5. Petak 1 sudah ditempati C dan petak 3 sudah
+ditempati A, sehingga D berada di petak 4.
+Sisa petak untuk E adalah petak 5. Posisi ini juga sesuai karena E tidak berada di sebelah B.
+Maka susunan yang terbentuk adalah C - B - A - D - E.
+D tidak mungkin berada di petak 5. Jadi, jawaban yang benar adalah E.
+
+
+  1      2   3    4       5
+
+ C B A D E
+• Distribusi & Kategori
+Soal 1
+
+
+Sukma, Bayu, dan Alya bersekolah di SMA yang sama. Masing-masing dari mereka mengikuti
+dua jenis ekstrakurikuler di sekolahnya. Terdapat beberapa informasi sebagai berikut:
+1. Hanya salah satu di antara mereka yang tidak mengikuti ekstrakurikuler basket.
+2. Bayu adalah satu-satunya di antara mereka yang mengikuti ekstrakurikuler paduan suara.
+3. Alya mengikuti ekstrakurikuler basket.
+4. Sukma dan Bayu sama-sama mengikuti ekstrakurikuler teater.
+
+
+Di antara mereka bertiga, siapakah yang mengikuti ekstrakurikuler fotografi?
+A. Hanya Alya
+B. Hanya Bayu
+C. Hanya Sukma
+D. Sukma dan Bayu
+E. Sukma dan Alya
+
+
+Jawaban: A
+Pembahasan:
+Bayu mengikuti paduan suara dan teater. Karena setiap siswa mengikuti dua ekstrakurikuler,
+Bayu tidak mengikuti basket.
+
+
+Hanya satu siswa yang tidak mengikuti basket. Karena Bayu tidak mengikuti basket, maka
+Sukma dan Alya mengikuti basket.
+
+
+Sukma dan Bayu sama-sama mengikuti teater. Maka Sukma mengikuti basket dan teater.
+
+
+Alya sudah diketahui mengikuti basket. Karena fotografi belum dimiliki oleh Sukma maupun
+Bayu, maka fotografi diikuti oleh Alya.
+Jadi, jawaban yang benar adalah A.
+
+
+     Sukma                Bayu               Alya
+      Basket         Paduan Suara           Basket
+      Teater            Teater            Fotografi
+
+
+Soal 2
+
+
+Gina membutuhkan berbagai jenis bunga untuk kado pernikahan orang tuanya. Terdapat lima
+toko bunga di kota tersebut, yaitu Toko A, Toko B, Toko C, Toko D, dan Toko E. Bunga mawar
+dapat ditemukan di Toko A, B, C, dan E. Semua toko menjual bunga lili. Hanya Toko B yang
+tidak menjual bunga anggrek. Toko B dan Toko E tidak menjual bunga tulip. Bunga dahlia
+dapat ditemukan di Toko B, C, dan E.
+
+
+Toko apa yang akan dikunjungi Gina jika Gina membutuhkan bunga mawar, lili, anggrek, tulip,
+dan dahlia?
+A. Toko A
+B. Toko B
+C. Toko C
+D. Toko D
+E. Toko E
+
+
+Jawaban: C
+Pembahasan:
+Gina membutuhkan mawar, lili, anggrek, tulip, dan dahlia.
+
+
+   Toko          A        B         C         D             E
+ Mawar           x        x         x          ?            x
+    Lili         ✓       ✓          ✓         ✓             ✓
+ Anggrek         ?        x         ?          ?            ?
+   Tulip         ?        x         ?          ?            x
+  Dahlia         ?       ✓          ✓          ?            ✓
+
+
+Toko A, B, C, dan E gugur karena masing-masing memiliki setidaknya satu tanda x pada jenis
+bunga yang dibutuhkan Gina. Tanda x menunjukkan bahwa bunga tersebut tidak tersedia di
+toko tersebut.
+Sementara itu, Toko D tidak memiliki tanda x pada semua jenis bunga yang dibutuhkan.
+Artinya, Toko D masih mungkin menyediakan mawar, lili, anggrek, tulip, dan dahlia.
+
+
+Jadi, toko yang akan dikunjungi Gina adalah Toko D.
+
+
+• Rute & Jalur
+Soal 1
+
+
+Risa pergi ke festival makanan. Di dekat pintu masuk, ia melihat gerai A. Dari gerai A dapat
+pergi ke gerai B dan C. Dari gerai B dapat pergi ke gerai D dan E. Gerai D dan gerai E saling
+terhubung. Dari gerai D dapat menuju gerai I. Dari gerai E dapat menuju gerai I dan H. Dari
+gerai C dapat menuju gerai G. Gerai G terhubung dengan gerai H. Dari gerai H dan I langsung
+terhubung dengan gerai J yang berada di dekat pintu keluar.
+
+
+Berapa banyak rute yang dapat dilewati Risa dari pintu masuk hingga pintu keluar jika tidak
+diperbolehkan mengunjungi gerai sebelumnya?
+A. 3 rute
+B. 4 rute
+C. 5 rute
+D. 6 rute
+E. 7 rute
+
+
+Jawaban: E
+Pembahasan:
+Daftar rute yang mungkin adalah sebagai berikut:
+1. A - B - D - I - J
+2. A - B - D - E - I - J
+3. A - B - D - E - H - J
+4. A - B - E - I - J
+5. A - B - E - H - J
+6. A - B - E - D - I - J
+7. A - C - G - H - J
+
+
+Jadi, terdapat 7 rute yang dapat dilewati.
+Jadi, jawaban yang benar adalah E.
+
+
+2. Numerik
+a. Berhitung
+• Operasi Hitung – Dasar
+Soal 1
+             3 1 7
+Hasil dari    + −   adalah …
+             5 5 10
+
+
+A. 0,1
+B. 0,3
+C. 0,55
+D. 0,7
+E. 1
+
+
+Jawaban: A
+Pembahasan:
+3 1 7
+  + −
+5 5 10
+  3+1 7
+=       −
+     5    10
+  4 7
+= −
+  5 10
+   8    7
+=     −
+  10 10
+   1
+=
+  10
+= 0,1
+
+
+Soal 2
+                         1
+Hasil dari 18 + 0,75 ×     adalah …
+                         2
+
+
+      1
+A. 18
+      8
+      3
+B. 18
+      8
+      5
+C. 18
+      8
+      7
+D. 18
+      8
+      1
+E. 19
+      8
+
+
+Jawaban: B
+Pembahasan:
+
+
+              1
+18 + 0,75 ×
+              2
+Gunakan tabel pecahan istimewa berikut.
+
+
+
+
+       3 1
+= 18 + ×
+       4 2
+       3×1
+= 18 +
+       4×2
+       3
+= 18 +
+       8
+     3
+= 18
+     8
+
+
+Soal 3
+            1        3
+Hasil dari 2 + 0,75 ÷ − 1 adalah …
+            2        4
+
+
+A. 2,5
+B. 3,0
+C. 3,5
+D. 4,0
+E. 4,5
+
+
+Jawaban: A
+Pembahasan:
+ 1        3
+2 + 0,75 ÷ − 1
+ 2        4
+Gunakan tabel pecahan istimewa berikut.
+
+
+
+
+   1 3 3
+=2 + ÷ −1
+   2 4 4
+   1 3 4
+=2 + × −1
+   2 4 3
+   1
+=2 +1−1
+   2
+   1
+=2
+   2
+= 2,5
+
+
+
+
+• Perkalian Setara
+Soal 1
+Sebuah percetakan sedang menentukan kombinasi jumlah paket dan banyaknya brosur dalam
+setiap paket. Kombinasi yang menghasilkan jumlah brosur keseluruhan yang sama adalah...
+A. 18 × 800 sama dengan 24 × 650
+B. 20 × 720 sama dengan 30 × 500
+C. 24 × 750 sama dengan 30 × 600
+D. 32 × 450 sama dengan 36 × 420
+E. 40 × 360 sama dengan 45 × 300
+
+
+Jawaban: C
+Pembahasan:
+
+
+Eliminasi 0 secara bersebrangan di setiap opsi:
+A. 18 × 800 sama dengan 24 × 650 → 18 × 80 sama dengan 24 × 65
+B. 20 × 720 sama dengan 30 × 500 → 2 × 72 sama dengan 3 × 50
+C. 24 × 750 sama dengan 30 × 600 → 24 × 75 sama dengan 30 × 60
+D. 32 × 450 sama dengan 36 × 420 → 32 × 45 sama dengan 36 × 42
+E. 40 × 360 sama dengan 45 × 300 → 4 × 36 sama dengan 45 × 3
+
+
+Periksa digit terakhir dari perkalian digit terakhir.
+Jika hasil digit terakhirnya sama, maka lanjutkan pengerjaan. Jika tidak sama, maka lanjutkan
+ke opsi berikutnya.
+
+
+A. 18 × 80 sama dengan 24 × 65
+18 × 80 → 8 × 0 = 0 (Digit terakhir adalah 0)
+24 × 65 → 4 × 5 = 20 (Digit terakhir adalah 0)
+Karena digit terakhirnya sama, maka lakukan perkalian penuhnya.
+18 × 80 = 1440
+24 × 65 = 1560
+Hasil berbeda. Lanjutkan ke opsi selanjutnya.
+
+
+B. 2 × 72 sama dengan 3 × 50
+2 × 72 → 2 × 2 = 4 (Digit terakhir adalah 4)
+3 × 50 → 3 × 0 = 0 (Digit terakhir adalah 0)
+Karena digit terakhirnya berbeda, maka lanjutkan ke opsi selanjutnya.
+
+
+C. 24 × 75 sama dengan 30 × 60
+24 × 75 → 4 × 5 = 20 (Digit terakhir adalah 0)
+30 × 60 → 0 × 0 = 0 (Digit terakhir adalah 0)
+Karena digit terakhirnya sama, maka lakukan perkalian penuhnya.
+24 × 75 = 1800
+30 × 60 = 1800
+Hasilnya sama. Jadi, jawabannya adalah C.
+
+
+• Pembagian Setara
+Soal 1
+Sebuah gudang akan membagi sejumlah kotak makanan secara merata ke beberapa rak.
+Kombinasi yang menghasilkan jumlah kotak makanan pada setiap rak yang sama adalah...
+
+
+A. 840 ÷ 20 sama dengan 960 ÷ 24
+B. 900 ÷ 25 sama dengan 1080 ÷ 27
+C. 1260 ÷ 30 sama dengan 1320 ÷ 33
+D. 1120 ÷ 28 sama dengan 1440 ÷ 36
+E. 1500 ÷ 50 sama dengan 1600 ÷ 40
+
+
+Jawaban: D
+Pembahasan:
+
+
+Ubah setiap pembagian menjadi perkalian setara dengan perkalian silang:
+A. 840 ÷ 20 sama dengan 960 ÷ 24
+840   960
+    =
+ 20    24
+⇔ 840 × 24 = 960 × 20
+→ 840 × 24 sama dengan 960 × 20
+
+
+B. 900 ÷ 25 sama dengan 1080 ÷ 27
+900   1080
+    =
+ 25    27
+⇔ 900 × 27 = 1080 × 25
+→ 900 × 27 sama dengan 1080 × 25
+
+
+C. 1260 ÷ 30 sama dengan 1320 ÷ 33
+1260   1320
+     =
+ 30     33
+⇔ 1260 × 33 = 1320 × 30
+→ 1260 × 33 sama dengan 1320 × 30
+
+
+D. 1120 ÷ 28 sama dengan 1440 ÷ 36
+1120   1440
+     =
+ 28     36
+⇔ 1120 × 36 = 1440 × 28
+→ 1120 × 36 sama dengan 1440 × 28
+
+
+E. 1500 ÷ 50 sama dengan 1600 ÷ 40
+1500   1600
+     =
+ 50     40
+⇔ 1500 × 40 = 1600 × 50
+→ 1500 × 40 sama dengan 1600 × 50
+
+
+Eliminasi 0 secara bersebrangan di setiap opsi:
+A. 840 × 24 sama dengan 960 × 20 → 84 × 24 sama dengan 96 × 20
+B. 900 × 27 sama dengan 1080 × 25 → 90 × 27 sama dengan 108 × 25
+C. 1260 × 33 sama dengan 1320 × 30 → 126 × 33 sama dengan 132 × 30
+D. 1120 × 36 sama dengan 1440 × 28 → 112 × 36 sama dengan 144 × 28
+E. 1500 × 40 sama dengan 1600 × 50 → 15 × 4 sama dengan 16 × 5
+
+
+Periksa digit terakhir dari perkalian digit terakhir.
+Jika hasil digit terakhirnya sama, maka lanjutkan pengerjaan. Jika tidak sama, maka lanjutkan
+ke opsi berikutnya.
+
+
+A. 84 × 24 sama dengan 96 × 20
+84 × 24 → 4 × 4 = 16 (Digit terakhir adalah 6)
+96 × 20 → 6 × 0 = 0 (Digit terakhir adalah 0)
+Karena digit terakhirnya berbeda, maka lanjutkan ke opsi selanjutnya.
+
+
+B. 90 × 27 sama dengan 108 × 25
+90 × 27 → 0 × 7 = 0 (Digit terakhir adalah 0)
+108 × 25 → 8 × 5 = 40 (Digit terakhir adalah 0)
+Karena digit terakhirnya sama, maka lakukan perkalian penuhnya.
+90 × 27 = 2430
+108 × 25 = 2700
+Hasil berbeda. Lanjutkan ke opsi selanjutnya.
+
+
+C. 126 × 33 sama dengan 132 × 30
+126 × 33 → 6 × 3 = 18 (Digit terakhir adalah 8)
+132 × 30 → 2 × 0 = 0 (Digit terakhir adalah 0)
+Karena digit terakhirnya berbeda, maka lanjutkan ke opsi selanjutnya.
+
+
+D. 112 × 36 sama dengan 144 × 28
+112 × 36 → 2 × 6 = 12 (Digit terakhir adalah 2)
+144 × 28 → 4 × 8 = 32 (Digit terakhir adalah 2)
+Karena digit terakhirnya sama, maka lakukan perkalian penuhnya.
+112 × 36 = 4032
+144 × 28 = 4032
+Hasilnya sama. Jadi, jawabannya adalah D.
+
+
+b. Deret Angka
+• Deret Angka - 1 Towew
+Soal 1
+
+
+2, 4, 6, 8, 10, ...
+
+
+A. 11
+B. 12
+C. 13
+D. 14
+E. 16
+
+
+Jawaban: B
+Pembahasan:
+ ↑ ↑ ↑ atau ↓ ↓ ↓ 1 Towew
+ ↑ ↓ ↑ atau ↓ ↑ ↓ 2 Towew
+ ↑ ↑ ↓ atau ↓ ↓ ↑ 3 Towew
+
+
+↑ ↑ ↑ artinya 1 towew
+
+
+Pola yang terlihat:
+
+
+
+
+Pola tambahannya tetap, yaitu +2. Maka suku berikutnya adalah 10 + 2 = 12.
+Jadi, jawaban yang benar adalah B.
+
+
+• Deret Angka - 2 Towew
+Soal 3
+
+
+22, 18, 26, 22, 30, 26, ..., ...
+
+
+A. 30, 34
+B. 34, 30
+C. 34, 38
+D. 38, 34
+E. 40, 36
+
+
+Jawaban: B
+Pembahasan:
+ ↑ ↑ ↑ atau ↓ ↓ ↓ 1 Towew
+ ↑ ↓ ↑ atau ↓ ↑ ↓ 2 Towew
+ ↑ ↑ ↓ atau ↓ ↓ ↑ 3 Towew
+
+
+↑ ↓ ↑ artinya 2 towew
+
+
+Pola yang terlihat:
+
+
+
+
+Pada larik ganjil, suku berikutnya adalah 30 + 4 = 34.
+Pada larik genap, suku berikutnya adalah 26 + 4 = 30.
+Jadi, dua bilangan berikutnya adalah 34 dan 30. Jawaban yang benar adalah B.
+
+
+• Deret Angka - 3 Towew
+Soal 2
+
+
+5, 8, 7, 5, 11, 8, 5, 14, 9, ...
+
+
+A. 5
+B. 7
+C. 10
+D. 14
+E. 17
+
+
+Jawaban: A
+Pembahasan:
+ ↑ ↑ ↑ atau ↓ ↓ ↓ 1 Towew
+ ↑ ↓ ↑ atau ↓ ↑ ↓ 2 Towew
+ ↑ ↑ ↓ atau ↓ ↓ ↑ 3 Towew
+
+
+↓ ↓ ↑ artinya 3 towew
+
+
+Pola yang terlihat:
+
+
+
+
+Suku yang ditanyakan berada pada larik ke-1. Larik ke-1 memiliki pola tetap, yaitu 5, 5, 5,
+sehingga suku berikutnya adalah 5.
+Jadi, jawaban yang benar adalah A.
+
+
+• Deret Angka - Hijab
+Soal 1
+Perhatikan tabel berikut!
+                      Suku ke-                                      Nilai
+                         1                                           15
+                         2                                           21
+                         3                                           27
+                         4                                            ?
+                         5                                           39
+                         6                                            ?
+                         7                                           51
+Selisih nilai pada suku ke-6 dan suku ke-4 adalah…
+A. 3
+B. 6
+C. 9
+D. 12
+E. 18
+Jawaban: D
+Pembahasan:
+Perhatikan pola bilangannya: 15, 21, 27, ?, 39, ?, 51
+Beda antarsuku: 21 − 15 = 6, berarti polanya bertambah 6 setiap suku.
+Maka:
+U₄ = 27 + 6 = 33
+U₆ = 39 + 6 = 45
+U₆ − U₄ = 45 − 33 = 12
+Jawaban: D
+
+
+• Deret Angka - Template
+Soal 5
+
+
+3, 11, ..., 29, ..., 55, 69
+
+
+A. 15, 35
+B. 17, 37
+C. 17, 39
+D. 19, 39
+E. 21, 41
+
+
+Jawaban: C
+Pembahasan:
+
+
+Pola yang terlihat:
+𝑈1 = (1 × 4) − 1 = 3
+𝑈2 = (2 × 5) + 1 = 11
+𝑈3 = (3 × 6) − 1 = 17
+𝑈4 = (4 × 7) + 1 = 29
+𝑈5 = (5 × 8) − 1 = 39
+𝑈6 = (6 × 9) + 1 = 55
+𝑈7 = (7 × 10) − 1 = 55
+𝑈𝑛 = [𝑛(𝑛 + 3)] ∓ 1
+dengan (−) untuk suku ganjil dan (+) untuk suku genap
+
+
+
+
+• Deret Angka - Campuran
+Soal 4
+
+
+2, 7, 22, ..., 202
+
+
+A. 56
+B. 61
+C. 67
+D. 72
+E. 81
+
+
+Jawaban: C
+Pembahasan:
+
+
+Pola yang terlihat:
+
+
+
+
+2×3+1=7
+7 × 3 + 1 = 22
+22 × 3 + 1 = 67
+67 × 3 + 1 = 202
+Jadi, bilangan yang rumpang adalah 67. Jawaban yang benar adalah C.
+
+
+• Deret Angka - Fibonacci
+
+
+• Matriks Deret
+Soal 1
+Tentukan nilai x.
+                 2                           −3                              0
+                 6                            9                              8
+                 4                            3                              x
+Pilihan jawaban:
+A. −8
+B. −4
+C. 0
+D. 4
+E. 6
+Jawaban: D
+Pembahasan:
+Perhatikan bilangan pada tabel, bilangan tersebut memiliki pola sebagai berikut.
+Maka, diperoleh nilai x = 4.
+Jawaban: D
+
+
+• Pola Bilangan Tabel
+Soal 1
+Perhatikan tabel berikut!
+                     Urutan ke-                                    Nilai
+                         1                                           0
+                         2                                           3
+                         9                                           24
+                        18                                           ?
+                       25                                           72
+Jika perubahan nilai mengikuti pola yang sama, nilai pada urutan ke-18 adalah...
+A. 23
+B. 29
+C. 30
+D. 31
+E. 51
+Jawaban: E
+Pembahasan:
+Perhatikan hubungan antara urutan dan nilainya.
+• Urutan ke-1 → 3(1) − 3 = 0
+• Urutan ke-2 → 3(2) − 3 = 3
+• Urutan ke-9 → 3(9) − 3 = 24
+• Urutan ke-25 → 3(25) − 3 = 72
+Maka pola yang digunakan adalah:
+Nilai = 3 × urutan−3
+Untuk urutan ke-18 → 3(18) − 3 = 54 − 3 = 51
+Jadi, nilai pada urutan ke-18 adalah 51.
+Jawaban: E
+
+
+c. Soal Cerita
+• Tabel Pernyataan - Kombinasi Pernyataan
+Soal 1
+Daftar harga di sebuah toko alat tulis:
+                    Barang                                        Harga
+                    Pulpen                                       Rp4.500
+                   Buku tulis                                    Rp6.000
+                     Pensil                                      Rp3.000
+                  Penghapus                                      Rp2.500
+
+
+Pernyataan:
+(1) Rani membeli 2 pulpen dan 1 buku tulis seharga Rp15.000.
+(2) Sinta membeli 3 pensil dan 2 penghapus seharga Rp13.000.
+(3) Doni membeli 1 buku tulis, 1 pensil, dan 1 penghapus seharga Rp11.500.
+(4) Eka membeli 4 pulpen seharga Rp17.000.
+
+
+Kombinasi pernyataan yang benar adalah ....
+A. 1 dan 2
+B. 1 dan 3
+C. 2 dan 4
+D. 1, 2, dan 3
+E. 1, 2, 3, dan 4
+
+
+Jawaban: B
+Pembahasan:
+(1) 9.000 + 6.000 = 15.000 ✓
+(2) 9.000 + 5.000 = 14.000 ≠ 13.000 ✗ coret A, C, D, E
+(3) 6.000 + 3.000 + 2.500 = 11.500 ✓
+(4) 4 × 4.500 = 18.000 ≠ 17.000 ✗
+Benar: 1 dan 3
+
+
+Soal 2
+Peserta kegiatan ekstrakurikuler di sebuah sekolah:
+         Kegiatan              Kelas VII               Kelas VIII            Kelas IX
+         Pramuka                   12                      9                    7
+          Futsal                    8                      10                   6
+           Tari                     5                      8                   11
+         Robotik                    6                      4                    8
+
+
+Pernyataan:
+(1) Kelas VII memiliki peserta pramuka terbanyak.
+(2) Total peserta futsal sama dengan total peserta tari.
+(3) Kelas IX memiliki peserta robotik terbanyak.
+(4) Total peserta kelas VIII adalah 32 orang.
+
+
+Kombinasi pernyataan yang benar adalah ....
+A. 1 dan 4
+B. 2 dan 3
+C. 1, 3, dan 4
+D. 2, 3, dan 4
+E. 1, 2, dan 3
+
+
+Jawaban: E
+Pembahasan:
+(1) pramuka: 12 > 9 > 7 kelas VII ✓
+(2) futsal 8+10+6 = 24 ; tari 5+8+11 = 24 ✓ sama
+(3) robotik: 8 > 6 > 4   kelas IX ✓
+(4) kelas VIII: 9+10+8+4 = 31, bukan 32 ✗
+Benar: 1, 2, dan 3
+
+
+• Tabel Pernyataan - Kombinasi Optimal
+Soal 1
+Sebanyak 480 pegawai sebuah perusahaan akan mengikuti kegiatan pelatihan di luar kota.
+Untuk menuju lokasi kegiatan, perusahaan menyediakan tiga jenis bus dengan kapasitas
+sebagai berikut:
+                     Jenis Bus                                  Kapasitas
+                      Bus A                                      40 orang
+                      Bus B                                      60 orang
+                      Bus C                                      80 orang
+
+
+Dengan ketentuan:
+(1) Seluruh pegawai harus dapat terangkut.
+(2) Jumlah kursi kosong dari seluruh bus yang digunakan tidak boleh lebih dari 20 kursi.
+
+
+Kombinasi bus yang memenuhi ketentuan tersebut adalah...
+A. 2 Bus A dan 3 Bus C
+B. 5 Bus B dan 3 Bus C
+C. 3 Bus A, 2 Bus B, dan 3 Bus C
+D. 2 Bus A, 2 Bus B, dan 3 Bus C
+E. 4 Bus A, 2 Bus B, dan 2 Bus C
+
+
+Jawaban: C
+Pembahasan:
+Periksa total kapasitas setiap pilihan.
+A. 2 Bus A dan 3 Bus C = 2(40) + 3(80) = 320
+Kapasitas tidak cukup untuk 480 pegawai.
+
+
+B. 5 Bus B dan 3 Bus C = 5(60) + 3(80)
+= 300 + 240
+= 540
+Kursi kosong: 540 − 480 = 60 kursi
+Oleh karena 60 > 20, pilihan ini tidak memenuhi ketentuan.
+
+
+C. 3 Bus A, 2 Bus B, dan 3 Bus C = 3(40) + 2(60) + 3(80)
+= 120 + 120 + 240
+= 480
+Seluruh pegawai dapat terangkut dan tidak ada kursi kosong.
+
+
+D. 2 Bus A, 2 Bus B, dan 3 Bus C=2(40)+2(60)+3(80)
+= 80+120+240
+= 440
+Kapasitas tidak cukup.
+
+
+E. 4 Bus A, 2 Bus B, dan 2 Bus C =4(40)+ 2(60)+ 2(80)
+= 160+120+160
+= 440
+Kapasitas tidak cukup.
+
+
+Jadi, kombinasi bus yang memenuhi seluruh ketentuan adalah 3 Bus A, 2 Bus B, dan 3 Bus C.
+
+
+Soal 2
+Sekolah menyewa bus untuk mengangkut peserta studi wisata.
+               Bus                           Kapasitas                  Biaya
+                A                            20 orang                 Rp950.000
+                B                            35 orang                Rp1.400.000
+                C                            50 orang                Rp1.900.000
+Pernyataan:
+(1) Peserta berjumlah 120 orang.
+(2) Semua peserta harus memperoleh tempat duduk.
+(3) Bus dapat dipilih lebih dari satu.
+(4) Sekolah ingin biaya paling rendah.
+
+
+Kombinasi bus yang paling hemat adalah ....
+A. 6 bus A
+B. 1 bus A dan 2 bus C
+C. 2 bus B dan 1 bus C
+D. 1 bus B dan 2 bus C
+E. 4 bus B
+
+
+Jawaban: C
+Pembahasan:
+Harga per kursi: A 47.500 · B 40.000 · C 38.000
+Cari kombinasi yang kursinya PAS 120 dan murah:
+C. 2B + 1C = 70 + 50 = 120       2,8 jt + 1,9 jt = Rp4.700.000
+B. 1A + 2C = 20 + 100 = 120        Rp4.750.000 (beda tipis!)
+A 5,7 jt · D 5,2 jt (135 kursi) · E 5,6 jt
+Paling hemat: C
+
+
+d. Kecukupan Data
+• Aljabar - Operasi Aljabar
+Soal 1
+Diketahui dua bilangan positif A dan B. Tentukan apakah A lebih besar daripada B!
+(1). 𝐴 + 𝐵 = 420
+(2). 𝐴 − 𝐵 = 60
+A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU
+pernyataan SAJA tidak cukup.
+D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup
+E. Pertanyaan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+
+
+Jawaban: B
+Pembahasan:
+Diketahui A dan B merupakan bilangan positif.
+Pernyataan (1):
+                                         𝐴 + 𝐵 = 420
+Informasi tersebut belum dapat menentukan hubungan A dan B.
+Misalnya: 𝐴 = 220, 𝐵 = 200, maka 𝐴 > 𝐵.
+Namun, bisa juga: 𝐴 = 200, 𝐵 = 220, maka 𝐴 < 𝐵.
+Jadi, pernyataan (1) saja tidak cukup.
+
+
+Pernyataan (2):
+                                         𝐴 − 𝐵 = 60
+Karena: 60 > 0, maka
+                                          𝐴−𝐵 >0
+                                           𝐴>𝐵
+Hubungan A dan B dapat diketahui secara pasti. Jadi, pernyataan (2) saja cukup.
+
+
+• Aljabar - Persamaan
+Soal 1
+Diketahui 𝑥 merupakan bilangan real. Berapakah nilai 𝑥?
+(1) 3𝑥 − 5 = 16
+(2) 𝑥² = 49
+
+
+A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU
+pernyataan SAJA tidak cukup.
+D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup
+E. Pertanyaan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+
+
+Jawaban: A
+Pembahasan:
+Pernyataan (1):
+                                      3𝑥 − 5 = 16
+                                        3𝑥 = 21
+                                          𝑥=7
+Pernyataan (1) menghasilkan satu nilai 𝑥 yang unik. Pernyataan (1) SAJA cukup.
+
+
+Pernyataan (2):
+                                         𝑥² = 49
+                                         𝑥 = ±7
+Masih terdapat dua kemungkinan nilai 𝑥, yaitu 7 atau −7. Pernyataan (2) SAJA tidak cukup.
+
+
+• Aljabar - Sistem Persamaan
+Soal 1
+Diketahui bahwa variabel 𝑥 dan 𝑦 merupakan bilangan real yang memenuhi persamaan 𝑥 + 𝑦 =
+7. Berapakah nilai dari 2𝑥 + 𝑦?
+Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+(1) 𝑥 − 𝑦 = 1
+(2) 2𝑥 − 𝑦 = 5
+
+
+A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU
+pernyataan SAJA tidak cukup.
+D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup
+E. Pertanyaan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+
+
+Jawaban: D
+Pembahasan:
+Nilai yang ditanyakan: 2𝑥 + 𝑦 = ...
+Diketahui: 𝑥 dan 𝑦 merupakan bilangan real, 𝑥 + 𝑦 = 7
+(1) Diketahui 𝑥 − 𝑦 = 1
+                                          𝑥+𝑦=7
+                                          𝑥−𝑦=1
+Jumlahkan kedua persamaan:
+(𝑥 + 𝑦) + (𝑥 − 𝑦) = 7 + 1
+                                           2𝑥 = 8
+                                            𝑥=4
+Nilai 𝑥 = 4, subtitusi ke salah satu persamaan
+                                          𝑥−𝑦=1
+                                          4−𝑦 =1
+                                          4−1=𝑦
+                                            3=𝑦
+Maka nilai 2𝑥 + 𝑦 = 8 + 3 = 11
+Pernyataan (1) saja cukup untuk menjawab pertanyaan.
+
+
+(2) Diketahui 2𝑥 − 𝑦 = 5
+                                          𝑥+𝑦=7
+                                         2𝑥 − 𝑦 = 5
+Jumlahkan kedua persamaan:
+(𝑥 + 𝑦) + (2𝑥 − 𝑦) = 7 + 5
+                                           3𝑥 = 12
+                                            𝑥=4
+                                          𝑥+𝑦=7
+                                          4+𝑦 =7
+                                          𝑦 =7−4
+                                            𝑦=3
+Maka: 2𝑥 + 𝑦 = 2(4) + 3 = 11
+Pernyataan (2) saja cukup untuk menjawab pertanyaan.
+Salah satu pernyataan cukup untuk menjawab pertanyaan.
+
+
+• Bilangan - Jenis dan Sifat Bilangan
+Soal 1
+Diketahui 𝑛 merupakan bilangan bulat positif. Apakah 𝑛 merupakan bilangan prima?
+(1) 𝑛 merupakan bilangan ganjil yang lebih besar dari 2.
+(2) 𝑛 memiliki tepat dua faktor positif, yaitu 1 dan 𝑛.
+
+
+A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU
+pernyataan SAJA tidak cukup.
+D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup
+E. Pertanyaan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+
+
+Jawaban: B
+Pembahasan:
+Pernyataan (1):
+Bilangan ganjil yang lebih besar dari 2 belum tentu prima. Contoh: 𝑛 = 9 bukan prima,
+sedangkan 𝑛 = 11 prima. Pernyataan (1) SAJA tidak cukup.
+
+
+Pernyataan (2):
+Bilangan bulat positif yang memiliki tepat dua faktor positif, yaitu 1 dan dirinya sendiri,
+merupakan bilangan prima. Maka 𝑛 pasti prima. Pernyataan (2) SAJA cukup.
+
+
+• Bilangan - Keterbagian Bilangan
+Soal 1
+Diketahui 𝑛 merupakan bilangan bulat. Apakah 𝑛 habis dibagi 4?
+(1) 𝑛 = 6𝑘 + 2, untuk suatu bilangan bulat 𝑘.
+(2) 𝑛 = 12𝑚, untuk suatu bilangan bulat 𝑚.
+
+
+A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU
+pernyataan SAJA tidak cukup.
+D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup
+E. Pertanyaan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+Jawaban: B
+Pembahasan:
+Pernyataan (1):
+Jika 𝑘 = 1, maka 𝑛 = 8 dan habis dibagi 4. Jika 𝑘 = 2, maka 𝑛 = 14 dan tidak habis dibagi
+4. Pernyataan (1) SAJA tidak cukup.
+
+
+Pernyataan (2):
+                                       𝑛 = 12𝑚 = 4(3𝑚)
+Karena 𝑛 selalu dapat dinyatakan sebagai 4 dikali bilangan bulat, maka 𝑛 pasti habis dibagi 4.
+Pernyataan (2) SAJA cukup.
+
+
+• Bilangan - Faktor dan Kelipatan
+Soal 1
+Berapakah nilai 𝑥?
+(1) 𝑥² = 49
+(2) 𝑥 merupakan faktor prima dari 21 yang lebih besar dari 5
+
+
+A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU
+pernyataan SAJA tidak cukup.
+D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup
+E. Pertanyaan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+
+
+Jawaban: B
+Pembahasan:
+Pernyataan (1):
+                                           𝑥² = 49
+                                          𝑥 = ±√49
+𝑥 = 7 atau 𝑥 = −7
+Terdapat dua kemungkinan nilai 𝑥, sehingga pernyataan (1) saja tidak cukup.
+
+
+Pernyataan (2):
+Faktor prima dari 21 adalah: 3 dan 7
+Karena 𝑥 merupakan faktor prima yang lebih besar dari 5, maka 𝑥 = 7
+Nilai 𝑥 dapat diketahui secara pasti, sehingga pernyataan (2) saja cukup.
+
+
+• Soal Cerita - Aljabar
+Soal 1
+Sebuah pusat workshop menyediakan dua jenis layanan, yaitu Workshop Offline dan Akses
+Streaming. Setiap tiket hanya berlaku untuk satu peserta. Perhatikan tabel berikut.
+          Jenis Peserta                  Harga/Tiket               Jumlah Tiket Terjual
+         Workshop Offline                 Rp150.000                           𝑚
+
+         Akses Streaming                  Rp75.000                            𝑛
+
+
+Berapakah total pendapatan yang diperoleh dari pendaftaran seluruh peserta workshop?
+Pilihlah informasi yang dapat digunakan untuk menjawab pertanyaan tersebut!
+(1) Jumlah peserta workshop offline dan akses streaming adalah 180 peserta.
+(2) Jumlah peserta akses streaming 60 peserta lebih banyak daripada peserta workshop offline.
+
+
+A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU
+pernyataan SAJA tidak cukup.
+D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup
+E. Pertanyaan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+
+
+Jawaban: C
+Pembahasan:
+Diketahui:
+Total pendapatan: 150.000𝑚 + 75.000𝑛
+Pernyataan (1):
+Jumlah peserta workshop offline dan akses streaming adalah 180 peserta.
+                                         𝑚 + 𝑛 = 180
+Pernyataan ini belum cukup karena terdapat banyak kemungkinan nilai 𝑚 dan 𝑛.
+Pernyataan (1) SAJA tidak cukup.
+Pernyataan (2):
+Jumlah peserta akses streaming 60 peserta lebih banyak daripada peserta workshop offline.
+                                          𝑛 = 𝑚 + 60
+Pernyataan ini juga belum cukup karena nilai 𝑚 dan 𝑛 belum diketahui secara pasti
+Pernyataan (2) SAJA tidak cukup.
+Pernyataan (1) dan (2) bersama-sama:
+Diketahui:
+                                          𝑚 + 𝑛 = 180
+                                          𝑛 = 𝑚 + 60
+Substitusi:
+                                     𝑚 + (𝑚 + 60) = 180
+                                         2𝑚 + 60 = 180
+                                           2𝑚 = 120
+                                            𝑚 = 60
+Maka:
+                                          𝑛 = 𝑚 + 60
+                                      𝑛 = 60 + 60 = 120
+Pendapatan total:
+                             = (150.000)(60) + (75.000)(120)
+                                    = 9.000.000 + 9.000.000
+                                         = 18.000.000
+Jadi, kedua pernyataan bersama-sama cukup untuk menentukan total pendapatan.
+Jawaban: C
+
+
+• Soal Cerita - Aritmatika Sosial
+Soal 1
+Seorang penjual memperoleh keuntungan dari penjualan secangkir kopi. Berapakah modal
+penjual untuk secangkir kopi tersebut?
+(1) Harga jual secangkir kopi adalah Rp25.000.
+(2) Penjual memperoleh keuntungan sebesar 25% dari modal.
+
+
+A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU
+pernyataan SAJA tidak cukup.
+D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup
+E. Pertanyaan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+
+
+Jawaban: C
+Pembahasan:
+
+
+Ingat rumus:
+ 𝐻𝐽 = 𝑀(1 + 𝑢) → 𝐇𝐚𝐉𝐢 𝐌𝐈𝐮
+ dengan
+ •    𝐻𝐽 = harga jual / harga akhir / nilai akhir
+ •    𝑀 = modal / harga beli / harga awal / nilai awal
+ •    𝑢 = persentase perubahan dalam bentuk desimal
+
+
+Pernyataan (1):
+Harga jual secangkir kopi adalah Rp25.000.
+                                         𝐻𝐽 = 𝑅𝑝25.000
+Gunakan rumus:
+                                         𝐻𝐽 = 𝑀(1 + 𝑢)
+Nilai u atau persentase keuntungan belum diketahui. Oleh karena itu, modal belum dapat
+ditentukan secara pasti.
+Pernyataan (1) SAJA tidak cukup.
+
+
+Pernyataan (2):
+Penjual memperoleh keuntungan sebesar 25% dari modal.
+                                            𝑢 = 25%
+Harga jual belum diketahui. Dengan hanya mengetahui persentase keuntungan, modal belum
+dapat ditentukan secara pasti.
+Pernyataan (2) SAJA tidak cukup.
+
+
+Pernyataan (1) dan (2) bersama-sama:
+Diketahui:
+                                         𝐻𝐽 = 𝑅𝑝25.000
+                                            𝑢 = 25%
+                                         𝐻𝐽 = 𝑀(1 + 𝑢)
+                                    𝑅𝑝25.000 = 𝑀(1 + 25%)
+                                             𝑅𝑝25.000
+                                          𝑀=
+                                             1 + 25%
+                                             𝑅𝑝25.000
+                                          𝑀=
+                                             1 + 0,25
+                                               𝑅𝑝25.000
+                                          𝑀=
+                                                 1,25
+                                          𝑀 = 𝑅𝑝20.000
+Jadi, kedua pernyataan bersama-sama cukup untuk menentukan modal penjual, tetapi masing-
+masing pernyataan saja tidak cukup.
+
+
+• Soal Cerita - Geometri
+Soal 1
+Sebuah aula berbentuk persegi akan dipasangi keramik. Berapakah luas lantai aula tersebut?
+(1) Panjang salah satu sisi aula adalah 15 meter
+(2) Lebar aula tersebut adalah 15 meter
+Pilihlah informasi yang dapat digunakan untuk menjawab pertanyaan
+
+
+A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU
+pernyataan SAJA tidak cukup.
+D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup
+E. Pertanyaan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+
+
+Jawaban: D
+Pembahasan:
+Diketahui aula berbentuk persegi. Luas persegi dapat dihitung dengan rumus
+                                            𝐿 =𝑠×𝑠
+dengan 𝑠 adalah panjang sisi persegi
+
+
+Pernyataan (1):
+Panjang salah satu sisi aula adalah 15 meter
+                                             𝑠 = 15
+Maka luas aula:
+                                            𝐿 =𝑠×𝑠
+                                       𝐿 = 15 × 15
+𝐿 = 225 𝑚²
+Pernyataan (1) SAJA cukup.
+
+
+Pernyataan (2):
+Lebar aula tersebut adalah 15 meter
+Pada bangun persegi, seluruh sisinya memiliki panjang yang sama, sehingga
+                                           𝑠 = 15
+Maka luas aula:
+                                        𝐿 =𝑠×𝑠
+                                       𝐿 = 15 × 15
+𝐿 = 225 𝑚²
+Pernyataan (2) SAJA cukup.
+
+
+• Soal Cerita - JKW (Jarak, Kecepatan, Waktu)
+Soal 1
+Perhatikan tabel berikut!
+              Jenis                      Waktu                       Kecepatan
+             Mobil X                         𝑝                       70 km/jam
+             Mobil Y                         𝑞                       50 km/jam
+Berapa jarak yang ditempuh oleh Mobil Y?
+Pilihlah informasi yang dapat digunakan untuk menjawab pertanyaan
+(1) Mobil Y menempuh jarak yang sama dengan Mobil X
+(2) Mobil Y menempuh perjalanan selama 5 jam
+
+
+A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU
+pernyataan SAJA tidak cukup.
+D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup
+E. Pertanyaan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+
+
+Jawaban: B
+Pembahasan:
+Jarak tempuh diperoleh dengan mengalikan kecepatan dan waktu:
+INGAT:
+
+
+
+
+𝐽 =𝐾×𝑊
+
+
+Pernyataan (1): Mobil Y menempuh jarak yang sama dengan Mobil X.
+𝐽𝑥 = 70 × 𝑝
+Karena 𝑝 tidak diketahui, jarak Mobil X juga belum dapat diketahui secara numerik. Maka,
+pernyataan (1) SAJA tidak cukup untuk menjawab pertanyaan.
+
+
+Pernyataan (2): Mobil Y menempuh perjalanan selama 5 jam.
+𝐽𝑦 = 50 × 5 = 250 km
+Jadi, pernyataan (2) SAJA cukup
+
+
+• Soal Cerita - Perbandingan Senilai dan Berbalik
+Soal 1
+Perhatikan tabel berikut.
+Kelompok mesin A dan kelompok mesin B digunakan untuk menyelesaikan target pesanan
+masing-masing.
+         Kelompok Mesin              Jumlah Mesin                 Waktu Produksi
+      Kelompok mesin A                   6 mesin                       18 jam
+      Kelompok mesin B                   𝑥 mesin                        𝑡 jam
+
+
+Jika laju produksi setiap mesin sama, apakah kelompok mesin B dapat menyelesaikan target
+pesanannya dalam waktu maksimal 9 jam?
+Pilihlah informasi yang dapat digunakan untuk menjawab pertanyaan tersebut!
+(1) Kelompok mesin B terdiri dari 12 mesin
+(2) Kelompok mesin B terdiri dari 12 mesin dan target pesanannya sama dengan kelompok
+mesin A
+A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU
+pernyataan SAJA tidak cukup.
+D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup
+E. Pertanyaan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+
+
+Jawaban: B
+Pembahasan:
+Pernyataan (1):
+Kelompok mesin B terdiri dari 12 mesin, tetapi jumlah pesanan tidak diketahui. Oleh karena
+itu, waktu yang diperlukan untuk menyelesaikan pesanan belum dapat ditentukan.
+Jadi, pernyataan (1) saja tidak cukup.
+
+
+Pernyataan (2):
+Kelompok mesin B terdiri dari 12 mesin dan target pesanannya sama dengan kelompok mesin
+A
+Diketahui:
+Karena target pesanan sama, maka dapat diselesakan dengan cara perbandingan berbalik nilai.
+                                           6 × 18
+                                         𝑡=
+                                             12
+                                             18
+                                          𝑡=
+                                             2
+                                          𝑡=9
+Karena 9 ≤ 9, maka kelompok mesin B dapat menyelesaikan pesanan dalam waktu maksimal
+9 jam.
+Jadi, pernyataan (2) saja cukup.
+
+
+• Soal Cerita - VDW (Volume, Debit, Waktu)
+Soal 1
+Sebuah bak air memiliki dua lubang pembuangan dengan diameter berbeda. Kedua lubang
+dibuka secara bersamaan sehingga air keluar dengan debit yang berbeda. Berapa waktu yang
+diperlukan hingga bak tersebut kosong?
+(1) Volume air dalam bak adalah 𝑉 = 9.000 liter.
+(2) Lubang pertama memiliki debit 𝐷1 = 150 liter/menit dan lubang kedua 𝐷2 = 50
+liter/menit.
+
+
+A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU
+pernyataan SAJA tidak cukup.
+D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup
+E. Pertanyaan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+
+
+Jawaban: C
+Pembahasan:
+Diketahui:
+𝑉 = 9.000 liter
+𝐷1 = 150 liter/menit
+𝐷2 = 50 liter/menit
+Ditanyakan:
+                                          𝑊 =?
+INGAT:
+
+ Vas DeWi
+
+
+
+
+Hubungan pada segitiga Vas DeWi:
+                                       𝑉 =𝐷×𝑊
+                                            𝑉
+                                         𝐷=
+                                            𝑊
+                                            𝑉
+                                         𝑊=
+                                            𝐷
+Evaluasi Pernyataan (1)
+Pernyataan (1) hanya memberikan volume air dalam bak.
+                                                𝑉
+                                        𝑊=
+                                             𝐷𝑡𝑜𝑡𝑎𝑙
+Nilai debit total belum diketahui, sehingga waktu pengosongan belum dapat ditentukan secara
+tunggal.
+Kesimpulan: Pernyataan (1) SAJA tidak cukup.
+
+
+Evaluasi Pernyataan (2)
+Karena kedua lubang dibuka secara bersamaan, debit total adalah jumlah debit kedua lubang.
+                                     𝐷𝑡𝑜𝑡𝑎𝑙 = 𝐷1 + 𝐷2
+                                    𝐷𝑡𝑜𝑡𝑎𝑙 = 150 + 50
+𝐷𝑡𝑜𝑡𝑎𝑙 = 200 liter/menit
+Namun, volume air belum diketahui, sehingga waktu pengosongan belum dapat ditentukan
+secara tunggal.
+Kesimpulan: Pernyataan (2) SAJA tidak cukup.
+
+
+Evaluasi Pernyataan (1) dan (2) Bersama-sama
+Jika kedua pernyataan digabungkan, volume dan debit total telah diketahui.
+                                                𝑉
+                                        𝑊=
+                                             𝐷𝑡𝑜𝑡𝑎𝑙
+                                              9000
+                                        𝑊=
+                                              200
+𝑊 = 45 menit
+Jadi, kedua pernyataan bersama-sama cukup untuk menentukan waktu pengosongan bak, tetapi
+masing-masing pernyataan secara terpisah tidak cukup.
+
+
+3. Figural
+a. Figural Analogi
+Soal 1
+
+
+Tentukanlah gambar yang tepat untuk menggantikan tanda tanya "?", sehingga kedua pasangan
+gambar di bawah ini memiliki hubungan yang serupa.
+A.
+
+
+
+
+B.
+
+
+
+
+C.
+
+
+
+
+D.
+
+
+
+
+ E.
+
+
+
+
+Jawaban: D
+Pembahasan:
+Berdasarkan pasangan gambar yang diketahui, didapatkan hubungan sebagai berikut:
+
+
+
+
+Dengan mengaplikasikan hubungan yang sama, didapatkan:
+
+
+
+
+b. Figural Ketidaksamaan
+Soal 1
+
+
+Manakah gambar yang memiliki prinsip, pola, atau karakteristik yang berbeda dibandingkan
+gambar lainnya?
+
+
+
+
+ A. A
+ B. B
+ C. C
+ D. D
+ E. E
+
+
+Jawaban: C
+Pembahasan:
+
+
+Kita perhatikan keseluruhan gambar. Perhatikan:
+
+
+
+
+Objek diputar-putar dan urutan objek-objek sama. Bisa lihat urutan objek searah jarum jam
+yaitu kotak, bulan, lingkaran, segitiga. Maka yang berbeda adalah
+
+
+
+
+Soal 2
+
+
+Manakah gambar yang memiliki prinsip, pola, atau karakteristik yang berbeda dibandingkan
+gambar lainnya?
+
+
+
+
+ A. A
+ B. B
+ C. C
+ D. D
+ E. E
+
+
+Jawaban: C
+Pembahasan:
+Perhatikanlah perbedaan di bawah ini:
+Soal 3
+
+
+Manakah gambar yang memiliki prinsip, pola, atau karakteristik yang berbeda dibandingkan
+gambar lainnya?
+
+
+
+
+ A. A
+ B. B
+ C. C
+ D. D
+ E. E
+
+
+
+
+Jawaban: B
+Pembahasan:
+
+
+Pada susunan gambar tersebut, terlihat pola paritas (ganjil–genap) pada jumlah bidang
+berwarna hitam. Opsi B memiliki jumlah bidang hitam genap, sedangkan keempat opsi
+lainnya memiliki jumlah bidang hitam ganjil.
+
+
+Karena pola yang konsisten pada matriks mengharuskan gambar yang melengkapi susunan
+memiliki jumlah bidang hitam genap, maka pilihan yang sesuai hanyalah opsi B.
+
+
+Soal 4
+
+
+Manakah gambar yang memiliki prinsip, pola, atau karakteristik yang berbeda dibandingkan
+gambar lainnya?
+ A. A
+ B. B
+ C. C
+ D. D
+ E. E
+
+
+Jawaban: E
+Pembahasan:
+
+
+
+
+Berdasarkan jumlah sisinya, gambar A berpasangan dengan gambar C dan gambar B
+berpasangan dengan gambar D. Sedangkan gambar E tidak berpasangan.
+Jadi yang berbeda adalah gambar E.
+
+
+c. Figural Serial
+Soal 1
+
+
+Tentukanlah gambar berikutnya dari seri gambar di bawah ini!
+A.
+
+
+
+
+B.
+
+
+
+
+C.
+
+
+
+
+D.
+
+
+
+
+ E.
+
+
+
+
+Jawaban: A
+Pembahasan:
+1.         Berputar 90 derajat searah jarum jam
+
+
+2.         Berputar 90 derajat berlawanan arah jarum jam
+3. Objek lingkaran dan objek lingkarang berubah warna dari putih ke hitam, dari hitam ke putih
+
+
+Maka jawabanya A
+Soal 2
+
+
+Tentukanlah gambar berikutnya dari seri gambar di bawah ini!
+
+
+
+
+ A.
+
+
+
+
+ B.
+
+
+
+
+ C.
+ D.
+
+
+
+
+ E.
+
+
+
+
+Jawaban: A
+Pembahasan:
+Terdapat dua pola jumlah objek yang berjalan secara bersamaan.
+Jumlah bintang berkurang satu pada setiap kotak: 4, 3, 2, 1, sehingga kotak kelima tidak
+memiliki bintang.
+Jumlah bulan sabit bertambah dua pada setiap kotak: 0, 2, 4, 6, sehingga kotak kelima memiliki
+8 bulan sabit.
+
+
+Opsi A menampilkan 8 bulan sabit tanpa bintang. Jadi, jawaban yang benar adalah A.
+Soal 3
+
+
+Tentukanlah gambar berikutnya dari seri gambar di bawah ini!
+
+
+
+
+ A.
+ B.
+
+
+
+
+ C.
+
+
+
+
+ D.
+
+
+
+
+ E.
+
+
+
+
+Jawaban: B
+Pembahasan:
+Berlaku pola sebagai berikut:
+
+
+
+
+d. Figural Matriks
+Soal 1
+A.
+
+
+
+
+B.
+
+
+
+
+C.
+
+
+
+
+D.
+ E.
+
+
+
+
+Jawaban: B
+Pembahasan:
+Setiap baris dan kolom memiliki bangun datar bintang, lingkaran besar, lingkaran kecil,
+segitiga, dan persegi panjang. Masing-masing bangun datar bergesar searah jarum jam. Bangun
+datar yang berwarna hitam pada masing-masing kotak mengikuti pola berikut:
+Lingkaran kecil → Segitiga → Persegi panjang → Bintang → Lingkaran besar
+
+
+Soal 2
+
+
+
+
+ A.
+ B.
+
+
+
+
+ C.
+
+
+
+
+ D.
+
+
+
+
+ E.
+
+
+
+
+Jawaban: A
+Pembahasan:
+Perhatikan bahwa jumlah unsur merupakan bilangan- bilangan prima berurutan, sebagai
+berikut:
+Soal 3
+A.
+
+
+
+
+B.
+
+
+
+
+C.
+
+
+
+
+D.
+
+
+
+
+ E.
+
+
+
+
+Jawaban: A
+Pembahasan:
+Perhatikan bagian bangun datar di tengah masing-masing kotak terlebih dahulu (yang
+dilingkari merah). Setiap baris memiliki aturan sebagai berikut:
+• Setiap baris gambar terdiri atas masing-masing 1 dari 3 macam, yaitu segitiga, lingkaran, dan
+persegi.
+• Setiap baris gambar terdiri atas masing-masing 1 dari 3 warna, yaitu putih, abu-abu, dan
+hitam.
+
+
+
+
+Maka pilihan yang memungkinkan setelah eliminasi opsi adalah A dan B.
+
+
+
+
+Sekarang perhatikan bagian bangun datar di kiri atas masing-masing kotak (yang dilingkari
+merah). Setiap baris memiliki aturan yang sama seperti sebelumnya yaitu:
+• Setiap baris gambar terdiri atas masing-masing 1 dari 3 macam, yaitu segitiga, lingkaran, dan
+persegi.
+• Setiap baris gambar terdiri atas masing-masing 1 dari 3 warna, yaitu putih, abu-abu, dan
+hitam.
+
+
+
+
+Sehingga jika dikombinasikan adalah segitiga hitam di bagian tengah kotak dan lingkaran
+hitam di bagian kiri atas hitam. Opsi yang memiliki kombinasi ini adalah opsi A
+Soal 4
+
+
+
+
+ A.
+
+
+
+
+ B.
+
+
+
+
+ C.
+
+
+
+
+ D.
+ E.
+
+
+
+
+Jawaban: D
+Pembahasan:
+Perhatikan baris pertama:
+
+
+
+
+Perhatikan baris kedua:
+
+
+
+
+Maka baris ketiga:
+

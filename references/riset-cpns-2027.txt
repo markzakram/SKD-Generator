@@ -1,0 +1,1493 @@
+RISET SKD CPNS 2027
+Disusun untuk memberikan pengetahuan dan pembelajaran mengenai Seleksi Kompetensi Dasar (SKD) Calon Pegawai Negeri Sipil (CPNS)
+PRODUCT MANAGEMENT
+PT CEREBRUM EDUKANESIA NUSANTARA
+OKTOBER
+2026
+BAB IPENDAHULUAN
+
+Aparatur Sipil Negara (ASN) memiliki peran strategis dalam penyelenggaraan pemerintahan dan pelayanan publik di Indonesia. ASN tidak hanya berfungsi sebagai pelaksana kebijakan publik, tetapi juga sebagai perekat dan pemersatu bangsa serta pelayan masyarakat secara profesional dan berintegritas. Oleh karena itu, proses rekrutmen ASN harus dilakukan secara terencana, objektif, dan berbasis kompetensi agar mampu menghasilkan sumber daya manusia aparatur yang sesuai dengan kebutuhan organisasi pemerintahan. Prinsip tersebut ditegaskan dalam Undang-Undang Nomor 20 Tahun 2023 tentang Aparatur Sipil Negara yang menempatkan sistem merit sebagai dasar utama dalam pengelolaan ASN, termasuk dalam proses pengadaan atau seleksi Calon Aparatur Sipil Negara (CASN).
+
+Seleksi Calon Aparatur Sipil Negara (CASN) merupakan mekanisme resmi yang digunakan pemerintah untuk menjaring warga negara Indonesia yang memenuhi syarat menjadi ASN. Seleksi ini mencakup dua jalur utama, yaitu Pegawai Negeri Sipil (PNS) dan Pegawai Pemerintah dengan Perjanjian Kerja (PPPK), yang masing-masing memiliki karakteristik, tujuan, dan pola seleksi yang berbeda. Dalam praktiknya, masih banyak pihak, baik calon peserta maupun pemangku kepentingan di instansi yang belum memiliki pemahaman utuh mengenai gambaran umum seleksi CASN, khususnya terkait perbedaan jalur PNS dan PPPK serta alur seleksi yang berlaku.
+
+Berdasarkan kondisi tersebut, diperlukan suatu riset singkat yang memberikan gambaran umum mengenai seleksi CASN secara menyeluruh dan mudah dipahami. Riset ini tidak dimaksudkan sebagai kajian hukum yang mendalam, melainkan sebagai pengantar yang menjelaskan konteks, kerangka, dan mekanisme dasar seleksi CASN. Dengan adanya gambaran umum ini, diharapkan pembaca memiliki pemahaman awal yang memadai sebelum memasuki pembahasan yang lebih teknis UU Nomor 20 Tahun 2023.pdf.
+
+
+1.1. Gambaran Umum ASN
+Aparatur Sipil Negara (ASN) adalah pegawai yang bekerja pada instansi pemerintah pusat dan daerah untuk melaksanakan tugas pemerintahan dan pelayanan publik. ASN berperan sebagai pelaksana kebijakan publik, pelayan masyarakat, serta perekat dan pemersatu bangsa. Dalam menjalankan tugasnya, ASN dituntut untuk bekerja secara profesional, netral, dan berintegritas sesuai dengan prinsip sistem merit. 
+
+Berdasarkan ketentuan peraturan perundang-undangan, ASN terdiri atas dua jenis, yaitu:
+Pegawai Negeri Sipil (PNS)
+PNS adalah warga negara Indonesia yang diangkat sebagai pegawai ASN secara tetap oleh pejabat yang berwenang dan memiliki Nomor Induk Pegawai (NIP) secara nasional. PNS menjalankan tugas pemerintahan dan pelayanan publik dengan status kepegawaian permanen UU Nomor 20 Tahun 2023.pdf.
+Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)
+PPPK adalah warga negara Indonesia yang diangkat sebagai pegawai ASN berdasarkan perjanjian kerja untuk jangka waktu tertentu guna melaksanakan tugas pemerintahan sesuai kebutuhan instansi. PPPK memiliki kedudukan sebagai ASN, namun hubungan kerjanya bersifat kontraktual UU Nomor 20 Tahun 2023.pdf.
+
+Pembagian ASN ke dalam PNS dan PPPK memberikan fleksibilitas bagi pemerintah dalam memenuhi kebutuhan aparatur sesuai dengan karakteristik jabatan. Pemahaman mengenai pengertian dan jenis ASN ini menjadi dasar untuk memahami perbedaan jalur seleksi CPNS dan PPPK dalam seleksi Calon Aparatur Sipil Negara (CASN).
+
+1.2. Perbedaan CPNS dan PPPK
+Seleksi Calon Aparatur Sipil Negara (CASN) dilaksanakan melalui dua jalur utama, yaitu Calon Pegawai Negeri Sipil (CPNS) dan Pegawai Pemerintah dengan Perjanjian Kerja (PPPK). Meskipun keduanya sama-sama merupakan bagian dari ASN, CPNS dan PPPK memiliki perbedaan mendasar dalam beberapa aspek utama yang perlu dipahami sejak awal.
+
+Perbedaan CPNS dan PPPK dapat dilihat dari sisi berikut.
+Aspek
+CPNS
+PPPK
+Status kepegawaian
+Merupakan tahap awal sebelum seseorang diangkat menjadi Pegawai Negeri Sipil (PNS) dengan status kepegawaian tetap.
+Memiliki status sebagai pegawai ASN dengan hubungan kerja berdasarkan perjanjian kerja untuk jangka waktu tertentu.
+Pola pengangkatan
+Diangkat melalui tahapan seleksi dan masa percobaan sebelum ditetapkan sebagai PNS.
+Diangkat langsung sebagai ASN berdasarkan kontrak kerja sesuai kebutuhan instansi tanpa melalui masa CPNS.
+Sistem seleksi
+Seleksi CPNS bersifat kompetitif dan menggunakan sistem peringkat dengan nilai ambang batas tertentu.
+Seleksi PPPK lebih menekankan pemenuhan kompetensi sesuai jabatan yang dilamar dan disesuaikan dengan kebutuhan instansi.
+Karakter jabatan
+Umumnya mengisi jabatan yang bersifat berjenjang dan memiliki jalur pengembangan karier jangka panjang.
+Lebih diarahkan untuk mengisi jabatan fungsional atau jabatan tertentu yang membutuhkan keahlian spesifik.
+
+Pemahaman mengenai perbedaan CPNS dan PPPK ini penting agar calon peserta seleksi CASN dapat menentukan jalur yang sesuai dengan latar belakang, kompetensi, dan tujuan karirnya sejak awal UU Nomor 20 Tahun 2023.pdf,PERMENPANRB No. 6 Tahun 2024.pdf.
+
+
+1.3. Gambaran Umum Seleksi ASN
+Sistem penilaian dalam seleksi Calon Aparatur Sipil Negara (CASN) dirancang untuk mengukur kemampuan peserta secara objektif dan adil sesuai dengan kompetensi yang dibutuhkan oleh jabatan. Penilaian tidak hanya menitikberatkan pada penguasaan pengetahuan, tetapi juga pada kesesuaian kompetensi peserta dengan tuntutan tugas dan fungsi jabatan yang dilamar Peraturan BKN Nomor 5 Tahun 2024 tentang Pedoman CAT.pdf.
+
+Secara umum, sistem penilaian seleksi CASN didasarkan pada prinsip berikut:
+Penilaian Berbasis Kompetensi
+Penilaian dilakukan untuk mengukur kompetensi yang relevan dengan jabatan, baik kompetensi teknis maupun kompetensi pendukung lainnya. Hasil penilaian mencerminkan tingkat kesiapan peserta dalam menjalankan tugas jabatan yang dilamar.
+Penggunaan Computer Assisted Test (CAT)
+Seleksi kompetensi dilaksanakan menggunakan sistem Computer Assisted Test (CAT) yang memungkinkan proses penilaian dilakukan secara langsung, objektif, dan transparan. Penggunaan CAT meminimalkan intervensi manual serta memastikan hasil tes dapat dipantau secara real time.
+Nilai Ambang Batas dan Peringkat
+Dalam seleksi CASN, digunakan nilai ambang batas sebagai batas minimal kelulusan pada tahapan tertentu. Selain itu, penetapan kelulusan juga mempertimbangkan peringkat peserta berdasarkan hasil nilai yang diperoleh, sesuai dengan ketentuan yang berlaku.
+
+Penerapan sistem penilaian berbasis kompetensi melalui CAT, serta penggunaan nilai ambang batas dan peringkat, diharapkan dapat menjamin bahwa peserta yang dinyatakan lulus seleksi CASN merupakan calon ASN yang memiliki kompetensi dan kualifikasi sesuai dengan kebutuhan instansi pemerintah
+Peraturan BKN Nomor 5 Tahun 2024 tentang Pedoman CAT.pdf.
+
+Secara umum, seleksi Calon Aparatur Sipil Negara (CASN) dilaksanakan melalui tahapan yang berbeda antara jalur CPNS dan PPPK, meskipun keduanya sama-sama diawali dengan seleksi administrasi.
+
+Untuk seleksi Calon Pegawai Negeri Sipil (CPNS), tahapan seleksi secara umum meliputi:
+Seleksi Administrasi, yaitu pemeriksaan kesesuaian persyaratan dan dokumen pendaftaran dengan ketentuan yang berlaku.
+Seleksi Kompetensi Dasar (SKD), yang bertujuan menilai kompetensi dasar peserta sesuai standar nasional.
+Seleksi Kompetensi Bidang (SKB), yang bertujuan menilai kompetensi peserta sesuai dengan jabatan atau bidang yang dilamar.
+
+Sementara itu, untuk seleksi Pegawai Pemerintah dengan Perjanjian Kerja (PPPK), tahapan seleksi secara umum meliputi:
+Seleksi Administrasi, yaitu pemeriksaan kelengkapan dan kesesuaian persyaratan administrasi peserta.
+Seleksi Kompetensi, yang menilai kompetensi peserta sesuai dengan kebutuhan jabatan, meliputi kompetensi teknis dan kompetensi pendukung lainnya.
+
+Perbedaan tahapan seleksi tersebut menunjukkan bahwa CPNS dan PPPK memiliki karakter seleksi yang berbeda. Oleh karena itu, pembahasan mengenai kurikulum CPNS dan kurikulum PPPK disusun secara terpisah pada bagian selanjutnya agar materi pembelajaran dapat disesuaikan dengan tahapan dan karakter masing-masing jalur seleksi.
+
+Sebagai tindak lanjut dari gambaran umum seleksi CASN ini, pembahasan mengenai kurikulum CPNS dan kurikulum PPPK disajikan secara terpisah dalam tab/dokumen berbeda dalam satu Google Docs. Pemisahan ini dilakukan agar materi pembelajaran CPNS dan PPPK dapat disusun lebih fokus, teknis, dan mendalam sesuai dengan karakter masing-masing jalur seleksi.
+
+
+
+BAB II SELEKSI KOMPETENSI DASAR
+
+2.1. Latar Belakang
+Seleksi Kompetensi Dasar (SKD) dalam rekrutmen Calon Pegawai Negeri Sipil (CPNS) merupakan tahap awal yang krusial dalam menjaring individu-individu berkualitas untuk mengisi jabatan di lingkungan pemerintahan. SKD bertujuan untuk mengukur kompetensi dasar calon peserta, meliputi pengetahuan umum (TWK), tes intelegensi umum (TIU), dan tes karakteristik pribadi (TKP). Melalui SKD, diharapkan diperoleh calon pegawai yang memiliki integritas, profesionalisme, loyalitas, dan komitmen yang tinggi terhadap negara dan bangsa.
+
+Landasan hukum pelaksanaan SKD tertuang dalam berbagai peraturan perundang-undangan, di antaranya Undang-Undang Nomor 20 Tahun 2023 tentang Aparatur Sipil Negara (ASN). Undang-undang ini menjadi payung hukum bagi seluruh penyelenggaraan manajemen ASN, termasuk rekrutmen. Ketentuan lebih lanjut mengenai mekanisme seleksi, materi yang diujikan, nilai ambang batas, serta tata cara pelaksanaan SKD diatur melalui peraturan menteri dan keputusan menteri yang bersifat teknis, serta pedoman pelaksanaan seleksi yang ditetapkan oleh instansi pembina kepegawaian secara nasional Dasar Hukum - RnD Cere.
+
+Pelaksanaan SKD secara umum dilakukan dengan menggunakan sistem Computer Assisted Test (CAT). Hal ini bertujuan untuk meningkatkan objektivitas, efisiensi, dan transparansi dalam proses seleksi. Peserta akan diberikan sejumlah soal yang harus dijawab dalam waktu yang terbatas. Hasil SKD kemudian akan menjadi dasar untuk menentukan peserta yang berhak mengikuti tahap seleksi berikutnya, yaitu Seleksi Kompetensi Bidang (SKB). Dengan demikian, SKD berperan penting dalam membangun birokrasi yang bersih, profesional, dan akuntabel.
+
+2.2. Peserta
+Kategori Pelamar/Jabatan
+Rentang Usia
+Dasar Hukum
+
+Min
+Max
+
+Pelamar CPNS Umum
+18
+35
+KEPMENPANRB No. 320 Tahun 2024, Diktum KETIGA KEPMENPANRB Nomor 320 Tahun 2024.pdf
+Dokter dan dokter gigi dengan kualifikasi dokter gigi spesialis
+18
+40
+KEPMENPANRB No. 320 Tahun 2024, Diktum KEEMPAT KEPMENPANRB Nomor 320 Tahun 2024.pdf
+Dokter pendidik klinis
+18
+40
+KEPMENPANRB No. 320 Tahun 2024, Diktum KEEMPAT KEPMENPANRB Nomor 320 Tahun 2024.pdf
+Dosen, peneliti, dan perekayasa dengan kualifikasi pendidikan doktor
+18
+40
+KEPMENPANRB No. 320 Tahun 2024, Diktum KEEMPAT KEPMENPANRB Nomor 320 Tahun 2024.pdf
+Pelamar CPNS di Wilayah Papua & Daerah Otonomi Baru (DOP) Papua
+18
+48
+KEPMENPANRB No. 350 Tahun 2024, Diktum KEENAM KEPMENPANRB Nomor 350 Tahun 2024.pdf
+Eks Tenaga Honorer Kategori II (THK-II) Orang Asli Papua (OAP)
+18
+50
+KEPMENPANRB No. 350 Tahun 2024, Diktum KEENAM KEPMENPANRB Nomor 350 Tahun 2024.pdf
+
+2.3. Persyaratan Umum
+Sesuai dengan PERMENPANRB No. 6 Tahun 2024.pdf Pasal 23, setiap warga negara Indonesia mempunyai kesempatan yang sama untuk melamar menjadi ASN dengan memenuhi persyaratan dan prosedur sebagai berikut:
+Usia sesuai dengan ketentuan yang dijabarkan pada sub bab 1.2. Peserta
+Tidak pernah dipidana dengan pidana penjara berdasarkan putusan pengadilan yang telah memiliki kekuatan hukum tetap karena melakukan tindak pidana dengan pidana penjara 2 tahun atau lebih
+Tidak pernah diberhentikan dengan hormat tidak atas permintaan sendiri atau tidak dengan hormat sebagai PNS, PPPK, prajurit Tentara Nasional Indonesia, anggota Kepolisian Negara Republik Indonesia, atau diberhentikan tidak dengan hormat sebagai pegawai swasta
+Tidak berkedudukan sebagai calon PNS, PNS, prajurit Tentara Nasional Indonesia, atau anggota Kepolisian Negara Republik Indonesia;
+Tidak menjadi anggota atau pengurus partai politik atau terlibat politik praktis
+Memiliki kualifikasi pendidikan sesuai dengan persyaratan Jabatan
+Memiliki kompetensi yang dibuktikan dengan sertifikasi keahlian tertentu yang masih berlaku dari lembaga profesi yang berwenang untuk Jabatan yang mempersyaratkan
+Sehat jasmani dan rohani sesuai dengan persyaratan Jabatan yang dilamar
+Bersedia ditempatkan di seluruh wilayah Negara Kesatuan Republik Indonesia atau negara lain yang ditentukan oleh Instansi Pemerintah
+Persyaratan lain sesuai kebutuhan Jabatan yang ditetapkan oleh Pejabat Pembina Kepegawaian (PPK)
+
+2.4. Tujuan Pembelajaran
+2.4.1. Tujuan Pembelajaran Umum:
+Peserta mampu memahami, menganalisis, dan mengaplikasikan konsep-konsep kunci yang diujikan dalam Seleksi Kompetensi Dasar 2026 untuk memenuhi Nilai Ambang Batas setiap subtes (TWK, TIU, dan TKP) dan bersaing secara peringkat dalam simulasi CAT SKD.
+
+2.4.2. Tujuan Pembelajaran Khusus:
+Peserta mampu mengidentifikasi kompetensi inti pada Tes Wawasan Kebangsaan (TWK), Tes Intelegensia Umum (TIU), dan Tes Karakteristik Pribadi (TKP).
+Peserta mampu menganalisis pola-pola soal CAT SKD berdasarkan tingkat kesulitan dan kategori yang diujikan.
+Peserta mampu mengaplikasikan strategi pengerjaan soal secara efektif untuk mengoptimalkan waktu dalam simulasi CAT SKD.
+Peserta mampu mengevaluasi hasil simulasi sebelumnya untuk mengembangkan pendekatan belajar yang lebih efektif.
+
+
+BAB IIIPEMBELAJARAN
+
+
+3.1. Materi Pembelajaran
+Berdasarkan KEPMENPANRB Nomor 321 Tahun 2024.pdf, materi pembelajaran Seleksi Kompetensi Dasar - CPNS 2026 terdiri atas:
+Tes Wawasan Kebangsaan (TWK)
+Tes Intelegensia Umum (TIU)
+Tes Karakteristik Pribadi (TKP)
+
+No
+Sub Tes/Jenis Tes
+Materi
+1
+Tes Wawasan Kebangsaan (TWK) 
+Nasionalisme
+Tipe soal yang muncul berkaitan dengan peran warga Negara, sikap kita, cara penerapan/aplikasi saat ini untuk mewujudkan kepentingan nasional melalui cita-cita dan tujuan yang sama dengan tetap mempertahankan identitas nasional. Seperti:
+Meneladani sikap nasionalisme dari peristiwa sejarah, tokoh pemuda dan tokoh pahlawan
+Ciri dan sikap dalam mempertahankan persatuan dan kesatuan bangsa
+Sikap semangat kebangsaan dan persatuan
+Toleransi antar suku, agama, ras, dan golongan
+
+
+Integritas
+Tipe soal yang muncul berkaitan dengan peran warga negara & sikap seseorang, agar mampu menjunjung tinggi kejujuran, ketangguhan, komitmen dan konsistensi sebagai satu kesatuan sikap untuk mencapai tujuan nasional.
+
+
+Bela Negara
+Mengukur kemampuan peserta dalam mempertahankan eksistensi bangsa dan negara. Materi ini mencakup beberapa aspek, seperti: 
+Kesadaran berbangsa dan bernegara
+Penghayatan nilai-nilai Pancasila
+Komitmen terhadap Negara Kesatuan Republik Indonesia (NKRI)
+Peran aktif dalam menjaga kedaulatan negara
+
+
+Pilar Negara 
+Soal-soal yang keluar berupa pemahaman kita terhadap isi dan semangat UUD 1945, Bhineka tunggal ika, dan penerapan sila-sila pancasila pada kasus/peristiwa yang relevan saat ini. Misalnya pemilu, demo buruh dll.
+
+
+Bahasa Negara
+Menguji kemampuan peserta dalam menggunakan bahasa Indonesia secara baik dan benar. Seperti:
+Penentuan ide pokok
+Kesimpulan
+Pernyataan yang benar/salah
+Makna kata pada penggalan kalimat
+Perbaikan kalimat dan kata
+Tata Tulis (huruf miring, titik dan koma, kutipan, dsb)
+2
+Tes Intelegensia Umum (TIU)
+Verbal
+Analogi
+Silogisme
+Analitis 
+
+
+Numerik
+Berhitung
+Deret Angka
+Soal Cerita
+Kecukupan Data
+
+
+Figural
+Analogi
+Ketidaksamaan
+Serial
+Matriks
+3
+Tes Karakteristik Pribadi (TKP)
+Semua materi mengacu pada nilai-nilai dasar Aparatur Sipil Negara (ASN) di Indonesia yaitu Elemen BerAKHLAK (Berorientasi Pelayanan, Akuntabel, Kompeten, Harmonis, Loyal, Adaptif, dan Kolaboratif).
+Pelayanan Publik
+
+
+Jejaring Kerja
+
+
+Sosial Budaya
+
+
+Teknologi Informasi dan Komunikasi
+
+
+Profesionalisme
+
+
+Anti Radikalisme
+
+Perubahan dari SKD CPNS 2024 ke SKD CPNS 2027 berdasarkan SKD Sekdin 2026
+TIU SKD 2024
+TIU SKD 2027
+Verbal Analogi:
+2 Kata
+Kalimat
+Verbal Analogi:
+2 Kata
+Verbal Silogisme:
+2 Premis
+Verbal Silogisme:
+3 Premis
+2 Premis - Narasi
+3 Premis - Narasi
+Verbal Analitis:
+Susunan & Posisi
+Urutan & Peringkat
+Jadwal
+Logika Pernyataan
+Distribusi & Kategori
+Rute & Jalur
+Verbal Analitis:
+Memperkuat/Memperlemah Argumen
+Susunan & Posisi
+Urutan & Peringkat
+Jadwal
+Logika Pernyataan
+Distribusi & Kategori
+Rute & Jalur
+Numerik Deret Angka:
+Deret Angka - 1 Towew
+Deret Angka - 2 Towew
+Deret Angka - 3 Towew
+Deret Angka - Hijab
+Deret Angka - Template
+Deret Angka - Campuran
+Deret Angka - Fibonacci
+Numerik Deret Angka:
+Deret Angka - 1 Towew
+Deret Angka - 2 Towew
+Deret Angka - 3 Towew
+Deret Angka - Hijab
+Deret Angka - Template
+Deret Angka - Campuran
+Deret Angka - Fibonacci
+Matriks Deret
+Pola Bilangan Tabel
+Numerik Berhitung:
+Operasi Hitung - Pecahan Sederhana
+Numerik Berhitung:
+Operasi Hitung - Pecahan Sederhana
+Perkalian Setara
+Pembagian Setara
+Numerik Soal Cerita:
+Rata-rata
+Perbandingan Senilai dan Berbalik
+Polemik Proyek
+JKW (Jarak, Kecepatran, Waktu)
+VDW (Volume, Debit, Waktu)
+Tabel
+Aritmatika Sosial
+Numerik Soal Cerita:
+Tabel Pernyataan - Kombinasi Pernyataan
+Tabel Pernyataan - Kombinasi Optimal
+Numerik Perbandingan Kuantitatif:
+Hubungan 2 Variabel dan Tabel - Berhitung
+Hubungan 2 Variabel dan Tabel - Soal Cerita
+Numerik Perbandingan Kuantitatif:
+Kecukupan Data - Aljabar
+Kecukupan Data - Bilangan
+Kecukupan Data - Soal Cerita
+Figural:
+Analogi
+Ketidaksamaan
+Serial
+Matriks (9 Kotak)
+Tetap sama
+
+
+Adapun jumlah soal, distribusi subtes, dan waktu pengerjaan SKD sesuai dengan KEPMENPANRB Nomor 321 Tahun 2024.pdf:
+No
+Subtes
+Jumlah Soal
+Poin per Soal dan Skor Maksimal
+Waktu pengerjaan
+1
+Tes Wawasan Kebangsaan (TWK)
+30
+Bobot benar: 5 poin
+Bobot salah atau tidak menjawab: 0 poin
+Skor Maksimal: 150
+100 menit untuk peserta umum dan
+130 menit untuk penyandang disabilitas sensorik netra.
+
+(Pengerjaan 3 subtes dilakukan secara serentak sehingga 110 soal harus diselesaikan dalam rentang waktu tersebut)
+2
+Tes Intelegensia Umum (TIU)
+35
+Bobot benar: 5 poin
+Bobot salah atau tidak menjawab: 0 poin
+Skor Maksimal: 175
+
+3
+Tes Karakteristik Pribadi (TKP)
+45
+Bobot benar: paling rendah 1 dan paling tinggi 5
+Bobot tidak menjawab: 0
+Skor Maksimal: 225
+
+
+Selain itu, nilai ambang batas (passing grade) SKD CPNS sesuai yang diatur dalam KEPMENPANRB Nomor 321 Tahun 2024.pdf:
+No
+Jenus Kebutuhan
+Nilai Ambang Batas
+1
+Ketentuan umum
+TWK: 65, TIU: 80, TKP: 166
+2
+Cumlaude dan Diaspora
+Nilai kumulatif SKD: 311, TIU: 85
+3
+Penyandang disabilitas
+Nilai kumulatif SKD: 286, TIU: 60
+4
+Putra/Putri Papua dan Daerah Tertinggal
+Nilai kumulatif SKD: 286, TIU: 60
+
+Simulasi CAT SKD CPNS:
+Simulasi CAT BKN 
+Simulasi CAT FIGMA 
+
+3.2. Metode Pembelajaran
+Pembelajaran yang digunakan dengan menggunakan dua pendekatan, yaitu:
+Synchronous, Pembelajaran dengan pendekatan ini dilakukan dengan secara langsung atau waktu nyata (Real-time) dengan menggunakan video konferensi seperti Zoom/Google Meet. Adapun metode pembelajaran yang dilakukan dengan ceramah, latihan, dan diskusi.
+Asynchronous, Pembelajaran dengan pendekatan ini dilakukan dengan tidak langsung dengan menggunakan video pembelajaran. Adapun metode pembelajaran yang dilakukan dengan ceramah.
+
+
+BAB IVEVALUASI
+
+Evaluasi yang dilakukan dengan dibagi dalam tiga sasaran yaitu program, pengajar dan peserta, yang meliputi:
+
+4.1. Evaluasi Program
+Evaluasi program pembelajaran adalah proses yang bertujuan untuk mengukur keberhasilan dan efektivitas suatu program pembelajaran. Dengan melakukan evaluasi, kita dapat mengetahui sejauh mana tujuan pembelajaran tercapai, mengidentifikasi area yang perlu diperbaiki, dan membuat keputusan yang lebih baik untuk meningkatkan kualitas pembelajaran kedepannya. Evaluasi program pembelajaran dilakukan dengan menggunakan kuesioner yang dibagikan pada saat diakhir pembelajaran yang diisi oleh peserta dan pengajar.
+
+4.2. Evaluasi Pengajar
+Evaluasi pengajar adalah proses penting untuk meningkatkan kualitas pembelajaran. Tujuannya adalah untuk mengidentifikasi kekuatan dan kelemahan pengajar, serta memberikan masukan untuk pengembangan profesional. Evaluasi pengajar dilakukan dengan menggunakan kuesioner yang dibagikan pada saat diakhir pembelajaran yang diisi oleh peserta.
+
+4.3. Evaluasi Peserta
+Evaluasi peserta adalah proses sistematis untuk mengukur sejauh mana peserta telah mencapai tujuan pembelajaran yang ditetapkan dalam suatu program atau pelatihan. Evaluasi ini sangat penting untuk mengetahui efektivitas program, mengidentifikasi area yang perlu diperbaiki, dan memberikan umpan balik kepada peserta. Evaluasi peserta dilakukan dengan melakukan latihan soal dan try out untuk menguji pemahaman yang sudah didapatkan selama pembelajaran. Berikut terdapat tipe soal SKD dan contoh soal yang disesuaikan dengan yang asli untuk memberikan pengalaman langsung kepada peserta dengan simulasi.
+
+BAB VCONTOH SOAL
+
+5.1. Tes Wawasan Kebangsaan (TWK)
+
+Materi
+Contoh Soal
+Nasionalisme
+Tipe Soal yang muncul:
+Meneladani sikap nasionalisme dari peristiwa sejarah, tokoh pemuda dan tokoh pahlawan
+Ciri dan sikap dalam mempertahankan persatuan dan kesatuan bangsa
+Sikap semangat kebangsaan dan persatuan
+Toleransi antar suku, agama, ras, dan golongan
+SOAL 1
+Tingkat Kesulitan: Mudah
+Pada awal abad ke-20, muncul berbagai organisasi pergerakan di Indonesia seperti Budi Utomo, Sarekat Islam, dan Perhimpunan Indonesia. Puncak dari kesadaran untuk bersatu sebagai satu bangsa, satu tanah air, dan satu bahasa diwujudkan melalui sebuah peristiwa penting yang menjadi simbol kebangkitan nasionalisme Indonesia. Berdasarkan uraian tersebut, peristiwa yang menjadi tonggak lahirnya nasionalisme Indonesia adalah…
+
+A. Proklamasi Kemerdekaan
+B. Kongres Pemuda II dan Sumpah Pemuda 1928
+C. Reformasi 1998
+D. Pembentukan BPUPKI
+E. Gerakan Non-Blok
+
+Jawaban: B 
+Pembahasan: 
+Konsep: Kebangkitan nasional dan Sumpah Pemuda 1928
+Kata Kunci: Kongres Pemuda II, Sumpah Pemuda, persatuan bangsa, nasionalisme, kebangkitan nasional
+
+Pada awal abad ke-20, muncul berbagai organisasi pergerakan nasional seperti Budi Utomo, Sarekat Islam, dan Perhimpunan Indonesia yang menandai kebangkitan kesadaran nasional. Puncak dari kesadaran untuk bersatu sebagai satu bangsa, satu tanah air, dan satu bahasa diwujudkan dalam Kongres Pemuda II pada tahun 1928, yang melahirkan Sumpah Pemuda. Peristiwa ini menjadi tonggak penting lahirnya nasionalisme Indonesia, karena mempersatukan berbagai suku, agama, dan daerah dalam semangat kebangsaan yang sama. 
+
+Pembahasan Opsi Salah:
+Opsi A salah, karena Proklamasi Kemerdekaan merupakan puncak perjuangan nasionalisme, bukan awal kebangkitannya.
+Opsi C salah, karena Reformasi 1998 berhubungan dengan pembaruan sistem pemerintahan, bukan lahirnya nasionalisme.
+Opsi D salah, karena BPUPKI dibentuk menjelang kemerdekaan untuk menyusun dasar negara, bukan simbol awal nasionalisme.
+Opsi E salah, karena Gerakan Non-Blok adalah kerja sama internasional, bukan peristiwa kebangkitan nasional Indonesia.
+
+Carcep:
+Kongres Pemuda II tahun 1928 yang menghasilkan Sumpah Pemuda menjadi tonggak lahirnya nasionalisme Indonesia, karena menegaskan tekad persatuan dalam satu bangsa, satu tanah air, dan satu bahasa Indonesia.
+
+SOAL 2
+Tingkat Kesulitan: Mudah
+Penghargaan terhadap jasa pahlawan mencerminkan sikap nasionalisme yang menempatkan sejarah dan pengorbanan para pendahulu sebagai teladan dalam membangun bangsa. Sikap ini tidak hanya mengenang masa lalu, tetapi juga membentuk identitas dan karakter bangsa. Pernyataan “Bangsa yang besar adalah bangsa yang menghargai jasa Pahlawannya” memiliki makna bahwa…
+
+A. Pahlawan harus dijadikan panutan semata
+B. Penghargaan terhadap sejarah memperkuat nasionalisme
+C. Penghargaan pahlawan hanya tugas pemerintah
+D. Setiap generasi wajib mengulang perjuangan fisik
+E. Peringatan hari pahlawan bersifat simbolis
+
+Jawaban: B
+Pembahasan: 
+Konsep: Nasionalisme
+Kata Kunci: penghargaan, jasa pahlawan, identitas bangsa, nasionalisme
+
+Pembahasan:
+Penghargaan terhadap jasa pahlawan memperkuat rasa nasionalisme karena menempatkan sejarah dan pengorbanan para pendahulu sebagai teladan dalam membangun bangsa. Dengan menghargai pahlawan, masyarakat belajar menghormati nilai perjuangan dan menumbuhkan identitas serta karakter kebangsaan.
+
+Pembahasan Opsi Salah:
+Opsi A salah karena pahlawan bukan sekadar panutan, tetapi juga penguat nilai nasionalisme.
+Opsi C salah karena penghargaan terhadap pahlawan bukan hanya tugas pemerintah, tetapi tanggung jawab seluruh warga.
+Opsi D salah karena bukan berarti generasi sekarang harus mengulang perjuangan fisik, melainkan meneladani semangatnya.
+Opsi E salah karena peringatan hari pahlawan lebih dari simbol, memiliki fungsi edukatif dan pembentukan karakter.
+
+Cara cepat: Menghargai jasa pahlawan berarti menjaga ingatan kolektif bangsa dan memperkuat jati diri nasional, sehingga generasi berikutnya memiliki arah dan nilai dalam membangun Indonesia.
+
+SOAL 3
+Tingkat Kesulitan: Sedang
+Indonesia dikenal sebagai negara multikultural dengan ratusan suku, agama, dan bahasa daerah. Tantangan nasionalisme di era modern adalah menjaga persatuan di tengah keberagaman tersebut. Cara paling tepat untuk memperkuat nasionalisme multikultural di lingkungan masyarakat adalah…
+
+A. Mengutamakan budaya suku mayoritas sebagai identitas nasional
+B. Menyeragamkan seluruh budaya daerah agar tidak ada perbedaan mencolok
+C. Menghargai dan melestarikan perbedaan sebagai kekayaan bangsa yang memperkuat persatuan
+D. Membatasi interaksi antar etnis agar menghindari konflik
+E. Menghapus bahasa daerah demi mempermudah komunikasi nasional
+
+Jawaban: C
+Pembahasan: 
+Konsep yang digunakan: Nasionalisme multikultural
+Kata Kunci: Keberagaman, Toleransi, Persatuan
+
+Nasionalisme di negara multikultural diwujudkan melalui penghargaan terhadap perbedaan yang ada. Menghormati keberagaman dan menjadikannya sumber kekuatan bangsa merupakan kunci menjaga persatuan Indonesia.
+
+Alasan opsi lain salah:
+Opsi A salah karena menimbulkan diskriminasi.
+Opsi B salah karena menyeragamkan berarti meniadakan keragaman.
+Opsi D salah karena justru memperlebar jarak sosial.
+Opsi E salah karena bahasa daerah adalah identitas budaya.
+
+Tips & Trick :
+Nasionalisme multikultural sama dengan Bhinneka Tunggal Ika, berbeda tapi tetap satu.
+
+SOAL 4
+Tingkat Kesulitan: Sedang
+Beberapa konten viral menunjukkan bahwa media sosial kerap menjadi arena konflik SARA (Suku, Agama, Ras dan Antar‐golongan) yang diduga akan melemahkan persatuan bangsa. Tindakan yang paling tepat untuk memperkuat nasionalisme dalam situasi ini adalah…
+
+A. Mengabaikan semua konten yang memicu konflik agar tidak muncul di timeline
+B. Membalas konten provokatif dengan konten sejenis agar tingkatan engagement naik
+C. Membuat sensor ketat terhadap seluruh media sosial agar bebas konflik
+D. Menoleransi komentar kebencian sebagai bagian dari kebebasan berekspresi
+E. Mengedukasi diri agar memahami dampak negatif ujaran kebencian terhadap persatuan
+
+Jawaban: E
+Pembahasan: 
+
+
+SOAL 5
+Tingkat Kesulitan: Sulit
+Sebuah survei sekolah menemukan: 40% siswa bangga memakai batik saat acara resmi; 65% aktif ikut upacara; 72% mampu menulis bahasa Indonesia baku; namun 58% pernah menyebarkan tautan berita yang kemudian terbukti hoaks. Intervensi paling prioritas untuk memperkuat identitas nasional sekaligus menutup celah utama pada data adalah …
+
+A. Kelas etika bermedia dan cek fakta terintegrasi dalam pelajaran bahasa Indonesia.
+B. Wajib batik harian untuk seluruh siswa selama sebulan.
+C. Penambahan jam upacara bendera menjadi dua kali seminggu.
+D. Lomba pidato bahasa daerah agar siswa mencintai budaya lokal.
+E. Sosialisasi seremonial tentang sejarah Sumpah Pemuda.
+
+Jawaban: A
+Pembahasan: 
+Dari data survei, tiga aspek identitas nasional sudah relatif kuat: penggunaan batik (40%), keikutsertaan upacara (65%), dan kemampuan menulis bahasa Indonesia baku (72%). Celah terbesar justru ada pada perilaku digital: 58% siswa pernah menyebarkan hoaks. Untuk memperkuat identitas nasional secara relevan dan solutif, intervensi harus diarahkan pada penguatan literasi digital dan etika bermedia.
+
+Mengintegrasikan cek fakta dan etika bermedia dalam pelajaran bahasa Indonesia tidak hanya memperbaiki kelemahan terbesar, tetapi juga memperkuat fungsi bahasa Indonesia dalam konteks modern.
+
+Konsep: Identitas nasional dan literasi digital
+Kata Kunci: hoaks, etika bermedia, bahasa Indonesia, intervensi relevan
+
+Pembahasan Opsi Salah:
+Opsi B salah karena masalah utama bukan pada frekuensi memakai batik, melainkan perilaku bermedia.
+Opsi C salah karena upacara sudah tinggi partisipasinya dan tidak berkaitan langsung dengan penyebaran hoaks.
+Opsi D salah karena kampanye budaya lokal tidak menyelesaikan persoalan literasi digital.
+Opsi E salah karena sosialisasi seremonial bersifat pasif dan tidak menyentuh perilaku faktual.
+
+Carcep: Penguatan identitas nasional di era digital bukan hanya soal simbol, tetapi kemampuan menyaring informasi agar tidak menjadi penyebar hoaks.
+
+SOAL 6
+Tingkat Kesulitan: Sulit
+Bangsa Indonesia memiliki karateristik kebersamaan budaya, etnis, agama, adat istiadat, dan bahasa yang tersebar dari Sabang sampai Merauke. Perilaku yang sesuai dengan upaya menjaga kebhinekaan dalam bingkai persatuan dan kesatuan untuk menghadapi karateristik tersebut adalah …
+
+A. Menggunakan bahasa dari daerah masing-masing
+B. Bangga menggunakan pakaian-pakaian adat dari daerahnya
+C. Menghormati adat istiadat budaya masyarakat di daerah
+D. Menghindari kerja sama dengan orang lain yang berbeda etnis
+E. Bersikap sopan terhadap orang lain yang berasal dari daerah yang sama
+
+Jawaban: C
+Pembahasan: 
+Konsep Soal: Pemahaman tentang perilaku menjaga kebhinekaan dalam bingkai persatuan dan kesatuan di tengah keberagaman budaya, etnis, agama, adat, dan bahasa di Indonesia
+Kata Kunci : Kebhinekaan, Persatuan dan Kesatuan, Toleransi, Menghormati adat dan budaya lain
+
+Menghormati adat istiadat budaya masyarakat di daerah. Pilihan ini mencerminkan sikap toleransi dan penghormatan terhadap keberagaman yang ada di Indonesia. Dengan menghormati adat istiadat dan budaya masyarakat di berbagai daerah, kita menunjukkan penghargaan terhadap kebhinekaan dan memperkuat persatuan dalam bingkai NKRI. Sikap ini membantu membangun kerukunan di tengah perbedaan, yang merupakan fondasi penting dalam menjaga persatuan bangsa.
+
+Alasan Opsi Lain Yang Salah :
+A. Menggunakan bahasa dari daerah masing-masing. Menggunakan bahasa daerah merupakan bentuk pelestarian budaya lokal, namun perilaku ini tidak secara langsung mencerminkan upaya menjaga persatuan dan kebhinekaan di tengah keberagaman. Lebih relevan jika bahasa tersebut digunakan bersama dengan Bahasa Indonesia sebagai bahasa pemersatu.
+B. Bangga menggunakan pakaian-pakaian adat dari daerahnya. Kebanggaan terhadap pakaian adat menunjukkan rasa cinta terhadap budaya sendiri, tetapi ini tidak mencakup sikap menghargai perbedaan atau kebersamaan dengan orang lain dari budaya yang berbeda. Jadi, ini belum menunjukkan usaha menjaga kebhinekaan dalam bingkai persatuan.
+D. Menghindari kerja sama dengan orang lain yang berbeda etnis. Pilihan ini bertentangan dengan semangat kebhinekaan dan persatuan. Menghindari kerja sama hanya karena perbedaan etnis menunjukkan sikap eksklusif dan diskriminatif yang dapat merusak persatuan bangsa.
+E. Bersikap sopan terhadap orang lain yang berasal dari daerah yang sama. Sikap sopan kepada orang dari daerah yang sama adalah hal baik, tetapi tidak relevan dalam konteks menjaga kebhinekaan. Sikap menjaga kebhinekaan harus mencakup toleransi dan penghargaan terhadap orang-orang dari berbagai daerah, etnis, dan budaya yang berbeda.
+
+Tips & Trik:
+Jika soal membahas perbedaan budaya, agama, atau etnis, pilih jawaban yang mengandung kata “menghormati”, “menghargai”, atau “toleransi.” Ingat semboyan Bhinneka Tunggal Ika = Berbeda-beda tetapi tetap satu. Hindari pilihan yang bersifat eksklusif atau membeda-bedakan.
+
+SOAL 7
+Tingkat Kesulitan: HOTS
+Sebuah pemerintah daerah merancang kampanye “Cinta Produk Nusantara” dengan 4 kebijakan berikut:
+
+(1) Kuota minimal 60% pengadaan pemda berasal dari UMKM lokal, dengan pengecualian jika mutu tak memenuhi standar nasional.
+(2) Larangan total penggunaan istilah serapan asing pada materi promosi daerah.
+(3) Inkubasi desain batik daerah bekerja sama dengan kampus untuk ekspor.
+(4) Pelatihan cek fakta dan literasi digital bagi pelaku UMKM.
+
+Kebijakan yang paling benar dengan nasionalisme rasional dan modern sekaligus adalah …
+
+A. (1) saja
+B. (1) dan (3)
+C. (2) dan (3)
+D. (1), (3), dan (4)
+E. (2), (3), dan (4)
+
+Jawaban: D
+Pembahasan: 
+Nasionalisme rasional-modern berarti mencintai produk dan budaya bangsa tanpa menutup diri dari inovasi, standar mutu, dan perkembangan global. Setiap kebijakan berikut diuji dengan kriteria itu:
+
+(1) Mendukung UMKM lokal tetapi tetap membuka ruang jika mutu belum memenuhi standar nasional. Ini mencerminkan nasionalisme rasional karena tidak memaksakan produk lokal tanpa kualitas.
+(2) Larangan total istilah asing menunjukkan sikap kaku dan tertutup, tidak sesuai dengan nasionalisme modern yang selektif dan adaptif.
+(3) Kolaborasi desain batik dengan kampus untuk ekspor mencerminkan inovasi, pengembangan budaya, dan keterbukaan global.
+(4) Literasi digital dan cek fakta memperkuat daya saing dan mencegah manipulasi di era global.
+
+Kebijakan yang memenuhi prinsip nasionalisme rasional dan modern adalah (1), (3), dan (4).
+
+Konsep: Nasionalisme rasional-modern
+Kata Kunci: mutu, inovasi, literasi digital, ekspor, keterbukaan
+
+Pembahasan Opsi Salah:
+Opsi A salah karena hanya memasukkan aspek mutu, tidak menyentuh inovasi dan modernisasi.
+Opsi B salah karena belum mencakup penguatan kapasitas digital UMKM.
+Opsi C salah karena poin (2) bersifat tertutup dan tidak rasional.
+Opsi E salah karena memasukkan poin (2) yang bertentangan dengan keterbukaan modern.
+
+Carcep: Nasionalisme saat ini bukan soal menolak asing, tetapi memastikan produk lokal naik kelas lewat mutu, inovasi, dan kesiapan menghadapi dunia global.
+
+SOAL 8
+Tingkat Kesulitan: HOTS
+Pada masa pergerakan nasional, organisasi Jong Sumatera Bond turut berperan dalam memperkuat rasa persatuan di antara para pemuda dari berbagai daerah di Sumatera. Nilai nasionalisme yang dapat diteladani dari semangat para anggotanya untuk diterapkan oleh generasi muda masa kini adalah …
+
+A. Menonjolkan identitas daerah masing-masing sebagai bentuk kebanggaan lokal
+B. Mengutamakan kerja sama lintas suku dan budaya demi kemajuan bangsa
+C. Memperjuangkan kepentingan kelompok sendiri agar lebih dikenal secara nasional
+D. Menghindari keterlibatan dalam kegiatan sosial yang bersifat lintas daerah
+E. Membangun organisasi yang hanya berfokus pada kebudayaan daerah tertentu
+
+Jawaban: B
+Pembahasan: 
+Organisasi Jong Sumatera Bond menunjukkan semangat persatuan dan kerja sama antarpemuda dari berbagai daerah. Nilai nasionalisme yang dapat diteladani adalah kemampuan mengutamakan kepentingan bangsa dan kerja sama lintas suku atau budaya untuk mencapai tujuan bersama, bukan sekadar menonjolkan kepentingan daerah sendiri. Opsi B mencerminkan sikap ini, yang relevan diterapkan oleh generasi muda masa kini untuk memperkuat persatuan dan kemajuan bangsa.
+
+Konsep: Nasionalisme dan Persatuan Bangsa
+Kata Kunci: kerja sama, lintas suku, lintas budaya, kepentingan bangsa, persatuan
+
+Pembahasan Opsi Salah:
+Opsi A salah karena menonjolkan identitas daerah saja dapat menimbulkan fragmentasi dan mengurangi rasa persatuan nasional.
+Opsi C salah karena memperjuangkan kepentingan kelompok sendiri mengabaikan nilai kebersamaan dan nasionalisme.
+Opsi D salah karena menghindari keterlibatan sosial lintas daerah menunjukkan sikap apatis, bukan nasionalisme.
+Opsi E salah karena fokus hanya pada kebudayaan daerah tertentu dapat menimbulkan eksklusivitas dan mengurangi semangat persatuan.
+
+Carcep: Nasionalisme generasi muda ditunjukkan melalui kerja sama lintas suku dan budaya, mengutamakan kepentingan bangsa di atas kepentingan daerah atau kelompok.
+
+Integritas
+Tipe soal yang muncul berkaitan dengan peran warga negara & sikap seseorang, agar mampu menjunjung tinggi kejujuran, ketangguhan, komitmen dan konsistensi sebagai satu kesatuan sikap untuk mencapai tujuan nasional.
+SOAL 1
+Tingkat Kesulitan: Mudah
+Dalam pertemuan pertama TKR tanggal 12 November 1945, Jenderal Soedirman terpilih menjadi Panglima Angkatan Perang. Jenderal Soedirman unggul dari seniornya Oerip Soemohardjo. Namun, sebagai bentuk hormatnya, Jenderal Soedirman menyerahkan jabatan tersebut kepada Oerip Soemohardjo. Selain tidak disetujui oleh peserta pertemuan, Oerip Soemohardjo juga tidak ingin menerima jabatan tersebut. Ia menyetujui Jenderal Soedirman sebagai pucuk pimpinan pasukan perang Indonesia sesuai hasil pertemuan tersebut. Ia berpendirian bahwa keharmonisan kalangan tentara lebih utama dari jabatan yang diemban. Wujud sikap integritas kedua tokoh militer tersebut terlihat pada …
+
+A. Penghormatan terhadap jasa dan perjuangan yang dilakukan oleh kalangan senior.
+B. Menghargai dan menjunjung tinggi hasil musyawarah sesuai mufakat.
+C. Mengedepankan kepentingan bangsa dan negara dengan mendukung keharmonisan internal perangkat negara.
+D. Mendukung pimpinan yang bijak dan kharismatik dalam organisasi perang.
+E. Semangat kebersamaan dalam membangun bangsa dan tetap menjaga persatuan dan kesatuan bangsa.
+
+Jawaban: C
+Pembahasan: 
+Konsep Soal : Soal ini menguji pemahaman tentang nilai integritas dalam konteks perjuangan tokoh bangsa. Integritas bukan sekadar kejujuran, tetapi juga konsistensi antara ucapan, hati, dan tindakan yang berpihak pada kepentingan bangsa di atas kepentingan pribadi.
+
+Kata Kunci : Tidak ingin menerima jabatan, Keharmonisan kalangan tentara lebih utama, Sebagai bentuk hormat, Menunjukkan bahwa keduanya menomorsatukan kepentingan bersama (bangsa dan persatuan) daripada ambisi pribadi terhadap jabatan.
+
+Jenderal Soedirman tidak ambisi terhadap jabatan dan menghormati seniornya. Oerip Soemohardjo tidak ingin menyalahi hasil keputusan musyawarah dan lebih mementingkan keharmonisan dalam tubuh tentara. Keduanya menunjukkan integritas tinggi, yakni mengutamakan kepentingan bangsa dan keharmonisan organisasi militer di atas ego pribadi.
+
+Alasan Opsi Lain Salah:
+Opsi A salah karena Penghormatan terhadap jasa dan perjuangan yang dilakukan oleh kalangan senior tidak mencakup sikap Oerip Soemohardjo. Jadi belum mewakili “kedua tokoh”.
+Opsi B salah karena Menghargai dan menjunjung tinggi hasil musyawarah sesuai mufakat lebih menggambarkan Oerip Soemohardjo saja, bukan keduanya.
+Opsi D salah karena Mendukung pimpinan yang bijak dan kharismatik dalam organisasi perang terlalu menekankan pada karakter pemimpin, bukan pada nilai integritas pribadi.
+Opsi E salah karena Semangat kebersamaan dalam membangun bangsa dan tetap menjaga persatuan dan kesatuan bangsa tidak menonjolkan aspek integritas dalam konteks pengambilan keputusan dan moralitas individu.
+
+Tips & Trick :
+Cari kata kunci : Biasanya soal integritas mengandung kata seperti:“menolak jabatan”, “tidak mementingkan diri”, “konsisten”, “jujur”, “setia pada hasil keputusan”, atau “demi kepentingan bangsa” Artinya integritas.
+
+Rumus cepat mengenali soal integritas : Konsistensi + Kejujuran + Kepentingan umum di atas kepentingan pribadi
+
+SOAL 2
+Tingkat Kesulitan: Mudah
+Pada tahun 1945, Ir. Soekarno dengan tegas menyampaikan pidato “Lahirnya Pancasila” yang menjadi dasar negara Indonesia. Dalam pidatonya, beliau menunjukkan keberanian dan integritas tinggi dalam memimpin bangsa menuju kemerdekaan meskipun menghadapi berbagai tantangan besar, baik dari dalam maupun luar negeri.
+Nilai integritas yang dapat diambil dan diterapkan dalam kehidupan berbangsa dan bernegara adalah…
+
+A. Menyerahkan segala tanggung jawab kepada pihak yang lebih berwenang
+B. Berani bersikap tegas meskipun di bawah tekanan demi kebenaran
+C. Mengedepankan emosi untuk memperjuangkan keadilan
+D. Menunggu arahan dari pihak lain sebelum bertindak
+E. Melakukan kompromi dengan pihak yang merugikan bangsa demi keamanan
+
+Jawaban: B
+Pembahasan: 
+Konsep yang digunakan : Nilai integritas dan keteguhan sikap dalam perjuangan kemerdekaan
+Kata Kunci : Keberanian, Ketegasan, Kebenaran, Konsistensi
+Ir. Soekarno menunjukkan integritas tinggi dengan tetap teguh memperjuangkan kemerdekaan meskipun berada di bawah tekanan penjajah dan tantangan politik. Integritas berarti kesesuaian antara pikiran, perkataan, dan perbuatan yang berpihak pada kebenaran dan nilai moral, meskipun berisiko.
+
+Alasan opsi lain salah :
+Opsi A salah karena menyerahkan tanggung jawab kepada pihak lain menunjukkan sikap pasif, bukan integritas.
+Opsi C salah karena integritas menuntut rasionalitas, bukan tindakan emosional.
+Opsi D salah karena menunggu arahan bertentangan dengan sifat tegas dan berani.
+Opsi E salah karena kompromi terhadap hal yang merugikan bangsa berarti mengorbankan prinsip kebenaran.
+
+Tips & Trick :
+Ingat, integritas berarti berani memegang kebenaran dan nilai moral meskipun dalam tekanan besar.
+
+SOAL 3
+Tingkat Kesulitan: Sedang
+Ketika R.A. Kartini memperjuangkan hak pendidikan bagi perempuan pada masa penjajahan, ia menghadapi banyak penolakan dari lingkungan yang masih berpandangan sempit tentang peran wanita. Namun, ia tetap teguh memperjuangkan cita-citanya dengan cara yang santun dan penuh tanggung jawab.
+
+Nilai yang dapat diteladani dari perjuangan R.A. Kartini tersebut adalah…
+
+A. Berjuang hanya jika mendapat dukungan dari masyarakat luas
+B. Konsisten memperjuangkan kebenaran meskipun menghadapi tekanan dan penolakan
+C. Menyesuaikan prinsip agar diterima oleh semua kalangan
+D. Mengutamakan kepentingan pribadi agar tetap dihormati
+E. Menghindari perdebatan dengan cara meninggalkan perjuangan
+
+Jawaban: B
+Pembahasan: 
+R.A. Kartini menunjukkan integritas dan keteguhan prinsip dalam memperjuangkan hak pendidikan bagi perempuan di tengah masyarakat yang masih berpandangan sempit. Ia tidak menyerah meskipun menghadapi tekanan sosial dan penolakan dari lingkungan sekitarnya. Tindakannya mencerminkan keberanian moral, konsistensi terhadap kebenaran, serta komitmen terhadap nilai keadilan dan kesetaraan. Integritas dalam perjuangan Kartini tampak dari kemampuannya memegang teguh keyakinan tanpa kehilangan kesantunan dan tanggung jawab moral, sehingga perjuangannya menjadi inspirasi bagi kemajuan bangsa, terutama dalam bidang pendidikan dan emansipasi wanita.
+
+Konsep: Integritas dan Keteguhan dalam Memperjuangkan Kebenaran
+Kata Kunci: konsisten, keberanian moral, keadilan, kesetaraan, tanggung jawab
+
+Pembahasan Opsi Salah:
+Opsi A salah karena perjuangan sejati tidak menunggu dukungan luas, melainkan berawal dari keyakinan pribadi terhadap kebenaran.
+Opsi C salah karena menyesuaikan prinsip demi penerimaan umum menunjukkan ketidakteguhan moral dan lemahnya integritas.
+Opsi D salah karena mengutamakan kepentingan pribadi justru bertentangan dengan semangat perjuangan Kartini yang berorientasi pada kemaslahatan masyarakat.
+Opsi E salah karena meninggalkan perjuangan berarti mengabaikan tanggung jawab moral terhadap perubahan sosial yang diperjuangkan.
+
+Carcep: Integritas tercermin dari keberanian untuk konsisten memperjuangkan nilai kebenaran dan keadilan, meskipun harus menghadapi tekanan dan penolakan dari lingkungan sekitar.
+
+SOAL 4
+Tingkat Kesulitan: Sedang
+Pada masa awal kemerdekaan, Sutan Sjahrir dikenal sebagai sosok pemimpin yang menjunjung tinggi integritas dalam diplomasi, terutama saat menghadapi Belanda di meja perundingan. Sikap integritas yang dapat diteladani dari beliau adalah…
+
+A. Menyembunyikan fakta agar posisi Indonesia tidak melemah di hadapan Belanda
+B. Tetap jujur dan konsisten menyuarakan kebenaran meskipun posisinya sulit
+C. Mengalah demi menjaga hubungan baik dengan pihak Belanda
+D. Mengutamakan kepentingan kelompok politiknya
+E. Menyerahkan seluruh keputusan pada pihak militer
+
+Jawaban: B
+Pembahasan: 
+Konsep yang digunakan : Integritas dalam diplomasi dan kepemimpinan moral
+Kata Kunci : Kejujuran, Konsistensi, Keberanian Moral
+
+Sjahrir dikenal sebagai tokoh yang berintegritas tinggi karena tetap berpegang pada nilai kejujuran dan idealisme bangsa Indonesia dalam diplomasi internasional. Ia menolak politik tipu daya, dan lebih memilih jalur diplomasi yang bermartabat untuk menunjukkan karakter bangsa yang beradab.
+
+Alasan opsi lain salah :
+Opsi A salah karena menyembunyikan fakta melanggar kejujuran.
+Opsi C salah karena mengalah tanpa prinsip bukan bentuk integritas.
+Opsi D salah karena integritas mendahulukan bangsa, bukan golongan.
+Opsi E salah karena tanggung jawab pemimpin diplomasi tidak bisa dilepaskan.
+
+Tips & Trick :
+Diplomasi berintegritas berlandaskan moral dan kebenaran, bukan kepentingan jangka pendek.
+
+SOAL 5
+Tingkat Kesulitan: Sulit
+Pada masa pendudukan Jepang, Ir. Soekarno menunjukkan integritasnya dengan tetap memperjuangkan kepentingan bangsa Indonesia melalui berbagai organisasi bentukan Jepang, seperti Putera dan BPUPKI. Tindakan Soekarno tersebut mencerminkan bahwa…
+
+A. Integritas pemimpin ditunjukkan dengan mengikuti semua kebijakan pemerintah penjajah demi keselamatan bangsa
+B. Kepemimpinan yang berintegritas berarti mampu memanfaatkan setiap peluang untuk kepentingan rakyat, tanpa mengkhianati tujuan kemerdekaan
+C. Perjuangan kemerdekaan hanya bisa dilakukan melalui perlawanan bersenjata terhadap penjajah
+D. Kerja sama dengan penjajah merupakan bentuk pengkhianatan terhadap bangsa sendiri
+E. Pemimpin yang baik adalah yang menolak semua bentuk kerja sama dengan pihak asing
+
+Jawaban: B
+Pembahasan: 
+Konsep Soal : Menilai makna integritas nasional yang ditunjukkan oleh tokoh bangsa dalam menjaga komitmen terhadap tujuan kemerdekaan, meskipun berada dalam tekanan atau situasi sulit.
+
+Kata Kunci : Ir. Soekarno, pendudukan Jepang, organisasi Putera dan BPUPKI, perjuangan kemerdekaan, konsistensi dan tanggung jawab.
+
+Ir. Soekarno menunjukkan integritasnya melalui kemampuan menyesuaikan strategi perjuangan tanpa meninggalkan tujuan utama yaitu kemerdekaan Indonesia. Walaupun Jepang berusaha memanfaatkan pengaruh Soekarno untuk kepentingannya, beliau tetap menggunakan posisi tersebut untuk mempersiapkan kemerdekaan melalui wadah seperti BPUPKI yang kemudian melahirkan dasar negara.
+Tindakan ini menunjukkan bahwa seorang pemimpin berintegritas mampu bersikap realistis, menggunakan peluang yang ada, namun tetap setia pada nilai dan tujuan bangsa.
+
+Pilihan B paling tepat karena mencerminkan bahwa integritas berarti memanfaatkan setiap peluang untuk kepentingan rakyat tanpa mengkhianati prinsip perjuangan.
+
+Alasan Opsi Lain yang Salah :
+Opsi A Salah, karena Soekarno tidak sekadar mengikuti kebijakan penjajah, melainkan menggunakannya untuk kepentingan bangsa.
+Opsi C Salah, karena perjuangan tidak selalu harus bersenjata; strategi diplomasi dan politik juga merupakan bentuk perjuangan yang berintegritas.
+Opsi D Salah, karena kerja sama tidak selalu berarti pengkhianatan jika tujuannya untuk kemerdekaan.
+Opsi E Salah, karena menolak semua bentuk kerja sama justru dapat menghambat strategi perjuangan yang cerdas dan adaptif.
+
+Tips & Trick :
+Jika soal menyinggung tokoh bangsa seperti Soekarno, Hatta, Ki Hajar Dewantara, atau Soetomo, perhatikan konteks perjuangannya.
+Kata “integritas” berarti konsistensi antara nilai, prinsip, dan tindakan, meskipun dalam kondisi sulit.
+
+SOAL 6
+Tingkat Kesulitan: Sulit
+Pada 1948, Jenderal Sudirman dalam keadaan sakit paru-paru stadium lanjut ditawari Belanda perawatan terbaik di Eropa dengan syarat menghentikan perang gerilya dan mengakui Negara Indonesia Timur. Beliau menolak keras sambil tetap memimpin pasukan dari tandu. Integritas luar biasa ini paling mencerminkan pengamalan pilar negara berupa…
+
+A. Sila ke-2 Pancasila dan integritas total demi martabat serta kedaulatan NKRI
+B. Kepentingan kesehatan pribadi di atas perjuangan kemerdekaan bangsa
+C. Penerimaan tawaran Belanda demi kedamaian sementara di Jawa
+D. Kesediaan berkhianat demi perawatan medis modern
+E. Pengutamaan kenyamanan pribadi daripada tugas panglima
+
+Jawaban: A
+Pembahasan: 
+Konsep yang digunakan:
+Integritas moral, martabat manusia, kedaulatan negara, komitmen pada kemerdekaan, nilai kemanusiaan. 
+
+Kata Kunci:
+Integritas, martabat, kedaulatan, kemanusiaan, keteguhan perjuangan.
+
+Penolakan Jenderal Sudirman terhadap tawaran Belanda, meski dalam keadaan sakit berat, menunjukkan integritas moral dan komitmen total terhadap martabat bangsa serta kedaulatan negara. Sikapnya mencerminkan pengamalan sila ke-2 Pancasila, yaitu menjunjung nilai kemanusiaan yang adil dan beradab, sekaligus menjaga kehormatan bangsa dengan tidak tunduk pada tawaran yang mengancam kemerdekaan. Keteguhannya memimpin perang dari tandu menunjukkan bahwa kepentingan bangsa dan nilai kemanusiaan ditempatkan di atas kepentingan pribadi.
+
+Pembahasan opsi yang salah:
+B. Mengutamakan kesehatan pribadi bertentangan dengan tindakan Sudirman yang justru mengutamakan bangsa.
+C. Menerima tawaran Belanda tidak sejalan dengan perjuangannya mempertahankan kedaulatan.
+D. Berkhianat demi perawatan medis modern berlawanan dengan integritas dan komitmen Sudirman.
+E. Mengutamakan kenyamanan pribadi tidak sesuai dengan kenyataannya yang tetap memimpin perang dari tandu.
+
+SOAL 7
+Tingkat Kesulitan: HOTS
+Pasal 33 ayat (4) UUD 1945 menegaskan bahwa perekonomian nasional diselenggarakan berdasarkan demokrasi ekonomi dengan prinsip kebersamaan, efisiensi berkeadilan, berkelanjutan, berwawasan lingkungan, serta menjaga keseimbangan kemajuan dan kesatuan ekonomi nasional. Nilai integritas yang terkandung dalam pasal tersebut adalah…
+
+A. Negara wajib mengelola perekonomian dengan jujur, adil, dan bebas dari praktik korupsi.
+B. Perekonomian dijalankan secara mandiri tanpa campur tangan negara lain.
+C. Negara memberikan peluang yang sama bagi semua rakyat untuk berusaha.
+D. Rakyat didorong untuk bekerja keras dan pantang menyerah dalam berwirausaha.
+E. Pemerintah bertanggung jawab penuh atas keberhasilan usaha rakyat tanpa melibatkan pihak swasta.
+
+Jawaban: A
+Pembahasan: 
+Konsep: Integritas dalam pengelolaan negara = kejujuran, keadilan, bebas dari KKN, demi tercapainya demokrasi ekonomi sesuai UUD 1945.
+Kata kunci: demokrasi ekonomi, efisiensi berkeadilan, berkelanjutan, integritas dalam pengelolaan ekonomi.
+
+Pembahasan
+Pasal ini menuntut pengelolaan ekonomi nasional dengan prinsip kebersamaan & keadilan → integritas tercermin dalam kejujuran & bebas KKN.
+
+Opsi salah:
+B: Kemandirian ekonomi penting, tapi bukan inti integritas.
+C: Kesetaraan peluang benar, tapi lebih ke asas keadilan sosial.
+D: Kerja keras = etos individu, bukan integritas negara.
+E: Usaha rakyat tetap bisa melibatkan swasta, tidak hanya pemerintah.
+
+Cara cepat: Cari opsi yang memuat “jujur, adil, bebas KKN” → inti nilai integritas.
+
+SOAL 8
+Tingkat Kesulitan: HOTS
+Pada tanggal 20 Mei 1908, Soetomo mendirikan organisasi "Budi Utomo" dan menjadi organisasi modern pertama yang ada di Indonesia. Budi Utomo bertujuan memajukan bangsa Indonesia menjadi bangsa yang bermartabat dan mempertinggi cita-cita kemanusiaan. Perjuangan yang dilakukan Soetomo melalui Budi Utomo dalam kerangka integritas menunjukan makna bahwa…
+
+A. Organisasi modern menjadi faktor utama yang paling penting dan efektif untuk melakukan perlawanan terhadap penjajah
+B. Perjuangan mencapai kemerdekaan dan cita-cita bersama lebih mudah dicapai jika terorganisir dengan baik dan terarah
+C. Organisasi Budi Utomo merupakan organisasi modern pertama khusus untuk para bangsawan dan berpendidikan
+D. Perlawanan terhadap pemerintah penjajahan Belanda tidak cukup hanya dengan menjalankan organisasi modern
+E. Budi Utomo merupakan organisasi yang diinisiasi dan menjadi fokus oleh para dokter untuk kepentingan rakyat
+
+Jawaban: B
+Pembahasan: 
+Konsep Soal: Soal ini menguji pemahaman tentang nilai integritas dan semangat kebangsaan dalam perjuangan organisasi Budi Utomo sebagai tonggak lahirnya pergerakan nasional Indonesia.
+Kata Kunci: Budi Utomo (1908), Organisasi modern pertama, Integritas & kebersamaan, Perjuangan terarah dan terorganisir
+
+Organisasi Budi Utomo didirikan oleh Soetomo dan rekan-rekannya pada tanggal 20 Mei 1908 dengan tujuan untuk memajukan pendidikan, meningkatkan kesejahteraan, serta memperjuangkan hak-hak rakyat Indonesia di bawah penjajahan Belanda. Budi Utomo merupakan organisasi modern pertama di Indonesia yang berusaha mempersatukan kaum terpelajar untuk memperjuangkan cita-cita bersama dalam satu kerangka organisasi yang terstruktur.
+Melalui organisasi ini, Soetomo dan anggota lainnya ingin menunjukkan bahwa perjuangan yang dilakukan dengan terorganisir akan lebih efektif dan terarah, memungkinkan mereka untuk mencapai tujuan bersama dengan lebih baik. Ini menunjukkan bahwa adanya suatu organisasi memungkinkan adanya pembagian tugas, struktur yang jelas, serta fokus yang terarah, sehingga perjuangan mereka dapat dilaksanakan dengan lebih efisien.
+Pilihan B mencerminkan konsep ini, yaitu bahwa perjuangan mencapai kemerdekaan dan cita-cita bersama lebih mudah dicapai jika terorganisir dengan baik dan terarah. 
+
+Alasan Opsi Lain Yang Salah :
+A. Menyatakan bahwa organisasi modern adalah faktor utama untuk melawan penjajah, namun Budi Utomo tidak secara langsung berjuang dengan cara melawan fisik atau kekuatan militer terhadap penjajah, melainkan berfokus pada pendidikan dan pengembangan masyarakat sehingga opsi A kurang tepat. 
+C. Menyatakan bahwa Budi Utomo hanya untuk para bangsawan dan berpendidikan. Meskipun pada awalnya didirikan oleh kaum terpelajar, tujuannya lebih luas untuk masyarakat sehingga opsi C kurang tepat.
+D. Menyatakan bahwa perlawanan tidak cukup hanya dengan organisasi modern, namun ini kurang sesuai karena pertanyaan berfokus pada makna integritas Budi Utomo.
+E. Menyatakan bahwa Budi Utomo difokuskan oleh para dokter untuk kepentingan rakyat, namun pada kenyataannya organisasi ini tidak hanya diisi oleh para dokter, tetapi juga kaum intelektual dari berbagai bidang.
+
+Tips & Trik:
+1. Jika soal menyinggung organisasi pergerakan nasional, perhatikan tujuan dan cara perjuangan bukan sekadar siapa pendirinya. 
+2. Kata kunci seperti “integritas”, “terorganisir”, dan “cita-cita bersama” biasanya mengarah pada nilai kebersamaan dan tanggung jawab kolektif. 
+3. Bedakan antara organisasi sosial-edukatif (seperti Budi Utomo) dan organisasi perjuangan bersenjata karena pendekatan dan maknanya berbeda.
+Bela Negara
+Mengukur kemampuan peserta dalam mempertahankan eksistensi bangsa dan negara.
+Materi ini mencakup beberapa aspek, seperti: 
+Kesadaran berbangsa dan bernegara
+Penghayatan nilai-nilai Pancasila
+Komitmen terhadap Negara Kesatuan Republik Indonesia (NKRI)
+Peran aktif dalam menjaga kedaulatan negara
+
+SOAL 1
+Tingkat Kesulitan: Mudah
+Indonesia mencapai kemerdekaan pada 17 Agustus 1945 telah melewati perjuangan yang sangat panjang. Meskipun demikian, persoalan dan tantangan masih banyak baik dalam hal kedaulatan negara dan kemajuan bangsa. Tentu saja dibutuhkan semangat dan keyakinan yang kuat. Keyakinan dan tidak putus asa dalam menghadapi persoalan bangsa dan negara merupakan cerminan salah satu bentuk bela negara, yaitu …
+
+A. Rela berkorban untuk kepentingan bangsa dan negara
+B. Semangat dalam mewujudkan kehidupan negara yang berdaulat, adil, dan makmur
+C. Kesadaran dan toleransi dalam kehidupan berbangsa dan bernegara
+D. Kesetiaan kepada Pancasila dan UUD 1945
+E. Rasa cinta tanah air
+
+Jawaban: B
+Pembahasan: 
+Konsep Soal: Soal ini menguji pemahaman mengenai nilai-nilai bela negara, yaitu sikap, semangat, dan perilaku warga negara dalam mempertahankan dan memajukan bangsa.
+
+Kata Kunci : Keyakinan, Tidak putus asa, Menghadapi persoalan bangsa dan negara
+
+Kalimat dalam soal menekankan keyakinan, semangat, dan keteguhan menghadapi tantangan bangsa. Sikap tersebut mencerminkan semangat bela negara yang berorientasi pada mewujudkan kehidupan bangsa yang berdaulat dan sejahtera. Dengan kata lain, tidak hanya membela dalam arti fisik, tetapi juga berjuang secara moral dan mental agar negara tetap maju.
+
+Alasan Opsi Lain Salah:
+A. Rela berkorban untuk kepentingan bangsa dan negara, salah karena ini menekankan pengorbanan pribadi (nyawa, waktu, tenaga), bukan semangat pantang menyerah seperti yang disebut dalam soal.
+C. Kesadaran dan toleransi dalam kehidupan berbangsa dan bernegara, salah karena lebih menekankan sikap sosial dan harmoni antarwarga, bukan semangat perjuangan menghadapi tantangan nasional.
+D. Kesetiaan kepada Pancasila dan UUD 1945, salah karena menunjukkan komitmen ideologis dan konstitusional, tetapi bukan sikap pantang menyerah atau semangat juang.
+E. Rasa cinta tanah air, salah karena cinta tanah air lebih mengacu pada perasaan dan loyalitas terhadap negara, bukan semangat pantang menyerah dalam menghadapi tantangan.
+
+Tips & Trick :
+1. Ingat 5 Nilai Dasar Bela Negara (UU No. 23 Tahun 2019)
+2. Hindari jawaban yang hanya bersifat “emosional” tanpa tindakan nyata.
+Biasanya, jawaban yang benar mengandung makna aktif, seperti semangat, berjuang, berkontribusi, atau membangun bangsa.
+
+SOAL 2
+Tingkat Kesulitan: Mudah
+Sekelompok pelajar di Kabupaten Malang membuat proyek dokumenter tentang sejarah perjuangan rakyat di daerah mereka untuk menumbuhkan rasa cinta tanah air. Kegiatan tersebut merupakan bentuk penerapan unsur bela negara yaitu …
+
+A. Kesadaran berbangsa dan bernegara
+B. Cinta tanah air
+C. Yakin akan ideologi Pancasila
+D. Rela berkorban untuk bangsa dan negara
+E. Memiliki kemampuan awal bela negara
+
+Jawaban: B
+Pembahasan: 
+Konsep : Bela negara non-fisik, cinta tanah air, penguatan wawasan kebangsaan
+Kata Kunci : Dokumenter sejarah, perjuangan rakyat, cinta tanah air, bela negara 
+
+Pembahasan :
+Proyek dokumenter tentang sejarah perjuangan rakyat di daerah mereka bertujuan menumbuhkan rasa cinta tanah air melalui pemahaman sejarah lokal dan penghayatan nilai perjuangan. Kegiatan ini termasuk bentuk bela negara non-fisik karena menumbuhkan kebanggaan, rasa memiliki, dan kepedulian terhadap bangsa melalui penelusuran sejarah dan budaya. 
+
+Pembahasan Opsi Salah :
+Opsi A salah karena kesadaran berbangsa dan bernegara berkaitan dengan pemahaman hak dan kewajiban sebagai warga negara, bukan fokus pada penguatan kecintaan terhadap sejarah lokal.
+Opsi C salah karena yakin akan ideologi Pancasila mencerminkan keyakinan ideologis, bukan aktivitas yang berbasis sejarah perjuangan daerah.
+Opsi D salah karena rela berkorban menekankan kesiapan mengorbankan tenaga, waktu, atau bahkan jiwa demi bangsa.
+Opsi E salah karena kemampuan awal bela negara berkaitan dengan kemampuan fisik dan pengetahuan awal pertahanan, bukan aktivitas dokumenter.
+
+Cara cepat : Menggali dan mendokumentasikan sejarah perjuangan daerah membantu menumbuhkan kecintaan pada tanah air, yang merupakan salah satu unsur utama bela negara.
+
+SOAL 3
+Tingkat Kesulitan: Sedang
+Pada tanggal 10 November 1945 seluruh rakyat Surabaya menolak menyerahkan diri dan memutuskan perang melawan Sekutu yang kemudian diperingati sebagai Hari Pahlawan. Peristiwa tersebut memberikan inspirasi agar kita ...
+
+A. Dapat mewarisi semangat kepahlawanan dalam mempertahankan NKRI
+B. Terus bersemangat membangun dan mengisi kemerdekaan
+C. Mengambil hikmah dari peristiwa 10 November 1945
+D. Meneladani semangat Bung Tomo sebagai pahlawan nasional
+E. Mampu menangkap pesan heroik pada peristiwa 10 November 1945
+
+Jawaban: A
+Pembahasan: 
+Konsep Soal : Soal ini menguji pemahaman nilai-nilai perjuangan dan semangat nasionalisme yang lahir dari peristiwa bersejarah (10 November 1945) dalam konteks membangun karakter bangsa masa kini.
+
+Kata Kunci : Hari Pahlawan, Semangat kepahlawanan, Mempertahankan NKRI
+
+Hari Pahlawan setiap 10 November bukan sekadar memperingati peristiwa sejarah, tetapi juga menanamkan nilai-nilai nasionalisme dan semangat perjuangan kepada generasi penerus agar terus menjaga keutuhan NKRI, mencerminkan semangat kepahlawanan yang diwarisi dan diterapkan dalam menjaga serta mempertahankan keutuhan Negara Kesatuan Republik Indonesia (NKRI). Semangat ini menjadi dasar pembentukan karakter nasional yang kuat dan cinta tanah air.
+
+Alasan Opsi Lain Salah:
+Opsi A salah karena Terus bersemangat membangun dan mengisi kemerdekaan hanya menekankan semangat membangun, tidak menyinggung semangat kepahlawanan dan mempertahankan NKRI.
+Opsi B salah karena Mengambil hikmah dari peristiwa 10 November 1945 terlalu umum, hanya “mengambil hikmah” tanpa implementasi nyata dari semangat perjuangan
+Opsi C salah karena Meneladani semangat Bung Tomo sebagai pahlawan nasional terlalu spesifik pada sosok Bung Tomo, padahal peristiwa ini merupakan perjuangan seluruh rakyat.
+Opsi D Mampu menangkap pesan heroik pada peristiwa 10 November 1945 terlalu pasif, hanya “menangkap pesan heroik” tanpa makna tindakan nyata untuk mempertahankan NKRI.
+
+Tips & Trick :
+1. Perhatikan kata kunci historis, seperti tanggal, peristiwa, atau tokoh nasional.
+2. Jika soal menyinggung perjuangan rakyat atau kemerdekaan, maka jawaban biasanya berkaitan dengan nasionalisme, semangat bela negara, atau mempertahankan NKRI.
+3. Hindari jawaban yang hanya bersifat pasif (seperti “mengambil hikmah” atau “menangkap pesan”) karena soal jenis ini menekankan pada aksi nyata dan nilai perjuangan.
+
+SOAL 4
+Tingkat Kesulitan: Sedang
+Pada pelatihan Bela Negara yang digelar di Lanud Adisutjipto Agustus 2025, mahasiswa diajarkan nilai-nilai Pancasila seperti cinta tanah air, disiplin, dan penguatan identitas kebangsaan. Di saat yang sama, berita menyebutkan bahwa TNI AD memiliki program “Pendidikan Karakter, Disiplin, dan Bela Negara” bersama Pemprov Jawa Barat untuk anak-anak tertentu. Berdasarkan dua kegiatan tersebut, nilai Pancasila yang paling erat kaitannya dengan semangat berkorban demi pertahanan dan keutuhan NKRI yang ditanamkan dalam program bela negara adalah ...
+
+A. Ketuhanan Yang Maha Esa
+B. Kemanusiaan yang Adil dan Beradab
+C. Persatuan Indonesia
+D. Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan
+E. Keadilan Sosial bagi Seluruh Rakyat Indonesia
+
+Jawaban: C
+Pembahasan: 
+Konsep: Pancasila, Bela Negara, Persatuan dan Keutuhan NKRI
+Kata Kunci: persatuan, keutuhan, bela negara, identitas kebangsaan
+
+Pembahasan:
+Program bela negara baik untuk mahasiswa maupun peserta didik lain, bertujuan menanamkan sikap rela berkorban, cinta tanah air, disiplin, dan kesiapan menjaga keutuhan NKRI. Nilai Pancasila yang paling erat dengan semangat mempertahankan negara adalah Sila Ketiga: Persatuan Indonesia, karena sila ini menekankan pentingnya menjaga integrasi, solidaritas kebangsaan, dan kesediaan membela tanah air dari berbagai ancaman. Itulah nilai inti yang menjadi landasan moral bela negara.
+
+Pembahasan Opsi Salah:
+Opsi A menekankan nilai ketuhanan, tidak spesifik terkait bela negara
+Opsi B terkait kemanusiaan, tetapi bukan inti dari semangat pertahanan negara.
+Opsi D menekankan prinsip musyawarah, tidak berkaitan langsung dengan keutuhan NKRI.
+Opsi E terkait pemerataan dan keadilan sosial, bukan aspek pertahanan dan kesatuan.
+
+Cara cepat: Semangat bela negara berpijak pada Sila Ketiga yakni Persatuan Indonesia, karena pertahanan negara berdiri di atas komitmen menjaga keutuhan bangsa.
+
+SOAL 5
+Tingkat Kesulitan: Sulit
+Indonesia mencapai kemerdekaan pada 17 Agustus 1945 telah melewati perjuangan yang sangat panjang. Meskipun demikian, persoalan dan tantangan masih banyak baik dalam hal kedaulatan negara dan kemajuan bangsa. Tentu saja dibutuhkan semangat dan keyakinan yang kuat. Keyakinan dan tidak putus asa dalam menghadapi persoalan bangsa dan negara merupakan cerminan salah satu bela negara, yaitu .......
+
+A. Rela berkorban untuk kepentingan bangsa dan negara
+B. Semangat dalam mewujudkan kehidupan negara yang berdualat, adil, dan makmur
+C. Kesadaran dan toleransi dalam kehidupan berbangsa dan bernegara
+D. Kesetiaan kepada Pancasila dan UUD 1945
+E. Rasa cinta tanah air
+
+Jawaban: B
+Pembahasan: 
+Konsep Soal : Soal ini menguji pemahaman makna bela negara dalam konteks semangat juang, pantang menyerah, dan optimisme terhadap masa depan bangsa.
+
+Kata Kunci : Keyakinan dan tidak putus asa, Persoalan bangsa dan negara, Semangat juang dan keuletan
+
+Bela negara tidak hanya berarti angkat senjata, tetapi juga mencakup sikap mental dan moral warga negara dalam membangun bangsa. Berdasarkan UU No. 23 Tahun 2019 tentang Pengelolaan Sumber Daya Nasional untuk Pertahanan Negara, elemen bela negara meliputi : Cinta tanah air, Kesadaran berbangsa dan bernegara, Yakin pada ideologi Pancasila, Rela berkorban untuk bangsa dan negara, Kemampuan awal bela negara. Dalam konteks soal ini, sikap pantang menyerah, optimis, dan berkeyakinan kuat menunjukkan semangat dalam mewujudkan cita-cita nasional : “Masyarakat adil dan makmur berdasarkan Pancasila dan UUD 1945.”
+
+Alasan Opsi Lain Salah:
+Opsi A salah karena Rela berkorban untuk kepentingan bangsa dan negara berfokus pada pengorbanan diri, bukan semangat dan keyakinan.
+Opsi C salah karena Kesadaran dan toleransi dalam kehidupan berbangsa lebih menekankan aspek sosial dan persatuan, bukan keteguhan dalam menghadapi tantangan.
+Opsi D salah karena Kesetiaan kepada Pancasila dan UUD 1945 menunjukkan loyalitas ideologis, tetapi tidak menggambarkan semangat juang yang dimaksud dalam soal.
+Opsi E salah karena Rasa cinta tanah air merupakan dasar dari bela negara, namun soal menekankan pada semangat pantang menyerah, bukan sekadar rasa cinta.
+
+Tips & Trick :
+Perhatikan kata emosional seperti “tidak putus asa”, “optimis”, “semangat”. Biasanya jawabannya berkaitan dengan semangat juang atau pembangunan nasional.
+Jika soal menyinggung perjuangan, cita-cita, atau kemajuan bangsa, arahkan jawaban ke semangat mewujudkan negara berdaulat, adil, dan makmur.
+Ingat bahwa bela negara bersifat dinamis, bisa dalam bidang pendidikan, ekonomi, sosial, hingga teknologi.
+
+SOAL 6
+Tingkat Kesulitan: Sulit
+Dalam proses menuju Perundingan Roem–Royen (1949), delegasi Indonesia tetap bersedia berunding meskipun mendapat tekanan diplomatik dari negara lain dan adanya ketidakpuasan sebagian kelompok di dalam negeri. Namun, keputusan tetap dilakukan demi memulihkan integritas pemerintahan Republik Indonesia secara internasional. Sikap ini mencerminkan nilai bela negara pada aspek …
+
+A. Setia pada Pancasila dengan menjunjung tinggi nilai kemanusiaan universal dalam diplomasi
+B. Kesadaran berbangsa dan bernegara melalui upaya mengakomodasi semua kelompok politik
+C. Cinta tanah air melalui sikap menerima tekanan demi menjaga hubungan internasional
+D. Rela berkorban untuk bangsa dan negara melalui penempatan kepentingan nasional di atas kepentingan golongan
+E. Kemampuan awal bela negara melalui kecermatan membaca peta diplomasi global
+
+Jawaban: D
+Pembahasan: 
+Konsep yang digunakan:
+Bela negara, pengorbanan untuk bangsa, kepentingan nasional, integritas pemerintahan, diplomasi internasional.
+
+Kata kunci:
+Perundingan Roem–Royen, kepentingan nasional, pengorbanan, integritas, diplomasi.
+
+Delegasi Indonesia dalam Perundingan Roem–Royen menunjukkan rela berkorban untuk bangsa dan negara dengan menempatkan kepentingan nasional di atas kepentingan golongan. Meskipun ada tekanan diplomatik dari negara lain dan ketidakpuasan internal, keputusan tetap diambil untuk memulihkan integritas pemerintahan Republik Indonesia di mata internasional, mencerminkan pengabdian total dan pengutamaan kepentingan negara.
+
+Pembahasan opsi yang salah:
+A. Menekankan Pancasila dan kemanusiaan universal, tetapi tidak spesifik pada pengorbanan demi kepentingan negara.
+B. Mengakomodasi semua kelompok politik relevan, tetapi inti bela negara adalah menempatkan kepentingan nasional di atas golongan.
+C. Cinta tanah air melalui penerimaan tekanan internasional kurang menekankan pengorbanan internal untuk kepentingan negara.
+E. Kecermatan membaca peta diplomasi global hanya aspek kemampuan, bukan inti pengorbanan dan kepentingan nasional.
+
+SOAL 7
+Tingkat Kesulitan: HOTS
+Bangsa Indonesia menghadapi tantangan globalisasi yang dapat melemahkan ketahanan ideologi nasional. Berikut ini yang tidak termasuk strategi tepat untuk mengatasi ancaman di bidang ideologi adalah ….
+
+A. Menjadikan Pancasila sebagai pedoman hidup bangsa dalam menghadapi pengaruh luar
+B. Mengaktualisasikan nilai Pancasila dalam seluruh aspek penyelenggaraan negara
+C. Mengembangkan pemahaman ideologi secara terbuka dan dinamis agar sesuai zaman
+D. Menanamkan nilai Pancasila melalui pendidikan formal maupun nonformal bagi seluruh warga
+E. Menerapkan ideologi negara secara kaku dan absolut tanpa menyesuaikan dengan perkembangan masyarakat
+
+Jawaban: E
+Pembahasan: 
+Konsep yang digunakan:
+Bela negara nonmiliter di bidang ideologi, yaitu menjaga agar Pancasila tetap hidup, kontekstual, dan mampu menjadi filter nilai dari luar. Strategi menghadapi ancaman ideologi bukan dengan memaksakan secara kaku, melainkan melalui aktualisasi, pendidikan, dan relevansi nilai Pancasila.
+
+Kata kunci: ancaman ideologi, ketahanan nasional, aktualisasi Pancasila, pendidikan, dinamis, fleksibel.
+
+Pembahasan jawaban benar:
+Opsi E paling tepat sebagai jawaban salah, karena menerapkan ideologi secara kaku dan absolut justru berisiko membuat ideologi negara kehilangan relevansi dengan perkembangan masyarakat. Pancasila perlu dikontekstualisasikan agar tetap mampu menjawab tantangan zaman.
+
+Pembahasan opsi salah:
+Opsi A benar, Pancasila harus menjadi pedoman menghadapi pengaruh global. Opsi B benar, nilai Pancasila wajib hadir dalam setiap bidang penyelenggaraan negara. Opsi C benar, karena ideologi negara perlu aktual agar tidak usang. Opsi D benar, pendidikan adalah cara utama menanamkan Pancasila sejak dini.
+
+Carcep:
+Kalau soal menyinggung “strategi menghadapi ancaman ideologi”, langsung cari opsi yang terasa ekstrem/kaku/tertutup, karena strategi yang tepat selalu menekankan aktualisasi, relevansi, dan pendidikan ideologi, bukan penerapan absolut yang statis.
+
+SOAL 8
+Tingkat Kesulitan: HOTS
+Dalam beberapa tahun terakhir, sejumlah daerah di Indonesia mengalami krisis air bersih akibat alih fungsi hutan dan pencemaran sungai oleh aktivitas industri. Kondisi ini tidak hanya mengganggu kesehatan masyarakat, tetapi juga memicu konflik sosial dan mengancam keberlanjutan ekonomi lokal. Pemerintah pusat dan daerah kemudian menegaskan bahwa perlindungan lingkungan hidup merupakan bagian dari kepentingan strategis nasional. Jika dikaitkan dengan konsep bela negara di bidang lingkungan, makna utama dari perlindungan lingkungan dalam kasus tersebut adalah…
+
+A. Menjadikan pelestarian lingkungan sebagai tanggung jawab eksklusif pemerintah karena warga negara tidak memiliki kewenangan hukum.
+B. Mengalihkan isu kerusakan lingkungan menjadi persoalan teknis semata tanpa keterkaitan dengan ketahanan nasional.
+C. Memahami lingkungan hidup sebagai aset strategis bangsa yang harus dijaga untuk menjamin keberlangsungan hidup dan kedaulatan negara.
+D. Membatasi aktivitas ekonomi masyarakat demi menjaga lingkungan tanpa mempertimbangkan kebutuhan pembangunan nasional.
+E. Menempatkan kepentingan ekologis di atas kepentingan sosial dan ekonomi secara mutlak dalam setiap kebijakan publik.
+
+Jawaban: C
+Pembahasan: 
+Konsep: Bela Negara di Bidang Lingkungan
+Kata Kunci: Perlindungan lingkungan, kepentingan strategis nasional, ketahanan nasional, aset strategis bangsa, keberlanjutan 
+
+Pembahasan:
+Kasus krisis air bersih akibat alih fungsi hutan dan pencemaran sungai menunjukkan bahwa kerusakan lingkungan tidak hanya berdampak pada aspek ekologis, tetapi juga kesehatan masyarakat, stabilitas sosial, dan keberlanjutan ekonomi lokal. Oleh karena itu, dalam konteks bela negara di bidang lingkungan, perlindungan lingkungan dimaknai sebagai upaya menjaga lingkungan hidup sebagai aset strategis bangsa. Lingkungan yang lestari menjadi prasyarat bagi keberlangsungan hidup masyarakat, ketahanan nasional, serta kedaulatan negara. Pernyataan ini sejalan dengan pandangan bahwa bela negara tidak selalu berbentuk fisik atau militer, tetapi juga melalui tindakan menjaga sumber daya alam demi kepentingan nasional jangka panjang.
+
+Pembahasan Opsi Salah:
+Opsi A: Keliru, karena bela negara di bidang lingkungan menuntut peran aktif seluruh warga negara, bukan hanya pemerintah.
+Opsi B: Tidak tepat, sebab kerusakan lingkungan berkaitan langsung dengan ketahanan nasional dan tidak dapat dipersempit menjadi persoalan teknis semata.
+Opsi D: Kurang tepat, karena perlindungan lingkungan dalam bela negara tidak berarti meniadakan aktivitas ekonomi, melainkan menyeimbangkannya dengan prinsip keberlanjutan pembangunan nasional.
+Opsi E: Keliru, karena kebijakan publik harus menyeimbangkan kepentingan ekologis, sosial, dan ekonomi, bukan mengutamakan salah satunya secara mutlak.
+
+Cara cepat: Bela negara di bidang lingkungan menegaskan bahwa lingkungan hidup adalah aset strategis bangsa yang harus dilindungi bersama demi menjamin keberlangsungan hidup, stabilitas nasional, dan kedaulatan negara.
+Pilar Negara 
+Soal-soal yang keluar berupa: 
+Menguji pemahaman kita terhadap isi dan semangat UUD 1945
+Bhineka tunggal ika
+Penerapan sila-sila pancasila pada kasus/peristiwa yang relevan saat ini. Misalnya pemilu, demo buruh dll)
+
+SOAL 1
+Tingkat Kesulitan: Mudah
+Semenjak Indonesia merdeka, berbagai upaya dilakukan untuk menegakkan supremasi hukum dan perlindungan HAM. Namun, terdapat kasus-kasus yang menimbulkan pelanggaran terhadap hak warga negara, termasuk hak atas pendidikan, pekerjaan, dan perlindungan diri.
+
+Berikut ini yang termasuk pelanggaran HAM karena membatasi hak warga negara untuk memperoleh pekerjaan adalah…
+
+A. Larangan seorang warga mengakses sekolah negeri karena latar belakang sosial
+B. Pemecatan seorang pegawai karena menyuarakan kritik terhadap kebijakan pemerintah
+C. Kewajiban mengikuti pendidikan dasar tanpa biaya
+D. Larangan mengikuti upacara bendera di sekolah
+E. Pemerintah menyediakan beasiswa bagi warga kurang mampu
+
+Jawaban: B
+Pembahasan: 
+Pelanggaran HAM yang membatasi hak warga negara untuk memperoleh pekerjaan tercermin pada kasus pemecatan seorang pegawai karena menyuarakan kritik terhadap kebijakan pemerintah. Hak atas pekerjaan termasuk dalam hak ekonomi, sosial, dan budaya yang dijamin oleh HAM, yaitu setiap orang berhak atas pekerjaan dan mendapatkan perlakuan adil di tempat kerja. Pemecatan yang bersifat diskriminatif atau represif terhadap kebebasan berpendapat melanggar prinsip perlindungan hak warga negara.
+
+Konsep: Hak Asasi Manusia dan Hak atas Pekerjaan
+Kata Kunci: hak atas pekerjaan, diskriminasi, kebebasan berpendapat, perlindungan HAM
+
+Pembahasan Opsi Salah:
+Opsi A salah karena larangan mengakses sekolah terkait pendidikan, bukan pekerjaan.
+Opsi C salah karena kewajiban pendidikan dasar tanpa biaya justru mendukung hak pendidikan, bukan membatasi pekerjaan.
+Opsi D salah karena larangan mengikuti upacara bendera berkaitan dengan hak berpartisipasi, bukan hak atas pekerjaan.
+Opsi E salah karena pemberian beasiswa mendukung hak warga, bukan pelanggaran HAM.
+
+Carcep: Hak atas pekerjaan termasuk hak dasar yang dilindungi HAM, dan pembatasan atau diskriminasi terhadap hak ini, misalnya pemecatan karena kritik, merupakan pelanggaran yang nyata.
+
+SOAL 2
+Tingkat Kesulitan: Mudah
+Pasal 31 UUD 1945 mengatur tentang …
+
+A. Hak hidup
+B. Kebebasan beragama
+C. Pendidikan
+D. Persamaan di depan hukum
+E. Kebebasan informasi
+
+Jawaban: C
+Pembahasan: 
+Pasal 31 UUD 1945 mengatur tentang hak warga negara atas pendidikan dan kewajiban negara dalam menyelenggarakan sistem pendidikan nasional. Pasal ini menegaskan bahwa setiap warga negara berhak mendapat pendidikan dan pemerintah wajib membiayai pendidikan dasar serta memajukan ilmu pengetahuan dan teknologi.
+
+Konsep: Hak konstitusional atas pendidikan
+Kata Kunci: pendidikan, hak warga negara, kewajiban negara
+
+Pembahasan Opsi Salah:
+Opsi A salah karena hak hidup diatur dalam Pasal 28A.
+Opsi B salah karena kebebasan beragama diatur dalam Pasal 29.
+Opsi D salah karena persamaan di depan hukum diatur dalam Pasal 27 ayat (1).
+Opsi E salah karena kebebasan informasi lebih terkait dengan Pasal 28F.
+
+Carcep: Memahami pasal pendidikan penting agar kita tahu bahwa negara wajib menjamin akses belajar bagi seluruh warga tanpa kecuali.
+
+SOAL 3
+Tingkat Kesulitan: Sedang
+Ir. Soekarno adalah proklamator kemerdekaan Indonesia yang merumuskan Pancasila pada 1 Juni 1945. Beliau berhasil mempersatukan golongan nasionalis, agama, dan sosialis dalam satu ideologi negara. Nilai yang paling mencerminkan sila ke-3 “Persatuan Indonesia” dari perjuangan Soekarno adalah…
+
+A. Memaksa semua golongan menerima hanya satu aliran ideologi tanpa kompromi
+B. Menyatukan berbagai aliran politik dan agama dalam rumusan Pancasila yang inklusif
+C. Memberikan kedudukan istimewa hanya kepada kelompok nasionalis sekuler
+D. Menghapus identitas agama dan suku demi satu identitas buatan
+E. Mengutamakan kelompok tertentu untuk menguasai pemerintahan baru
+
+Jawaban: B
+Pembahasan: 
+Konsep yang digunakan:
+Persatuan Indonesia, inklusivitas, integrasi nasional, penyatuan berbagai golongan.
+
+Kata Kunci:
+Persatuan, inklusif, integrasi, keberagaman, Pancasila.
+
+Soekarno mampu menyatukan berbagai perbedaan ideologi seperti nasionalis, agamis, dan sosialis ke dalam satu dasar negara yang dapat diterima seluruh golongan. Rumusan Pancasila yang ia ajukan bersifat inklusif sehingga menjadi landasan pemersatu bangsa. Hal ini paling mencerminkan sila ke-3 yaitu Persatuan Indonesia, yang menekankan pentingnya persatuan dalam keberagaman.
+
+Pembahasan opsi yang salah:
+A. Memaksa satu aliran tanpa kompromi tidak mencerminkan persatuan karena menolak keberagaman pandangan.
+C. Memberikan kedudukan istimewa kepada satu golongan akan menimbulkan perpecahan dan tidak sesuai dengan nilai persatuan.
+D. Menghapus identitas agama dan suku berarti meniadakan keberagaman yang justru menjadi bagian dari kekuatan persatuan bangsa.
+E. Mengutamakan kelompok tertentu untuk menguasai pemerintahan dapat menciptakan ketidakadilan dan memperlemah persatuan nasional.
+
+SOAL 4
+Tingkat Kesulitan: Sedang
+Seorang kepala daerah ingin menerapkan kebijakan berbasis hukum dan konstitusi tetapi tetap menghormati aspirasi masyarakat. Langkah ini merupakan penerapan pilar negara…
+
+A. Pancasila
+B. UUD 1945
+C. NKRI
+D. Bhinneka Tunggal Ika
+E. Ketetapan MPR
+
+Jawaban: B
+Pembahasan: 
+Konsep yang digunakan : Fungsi UUD 1945 sebagai landasan hukum tertinggi dalam penyelenggaraan negara.
+Kata Kunci : Kebijakan, konstitusi, dasar hukum.
+
+UUD 1945 sebagai pilar negara mengatur semua aktivitas penyelenggaraan negara, termasuk kebijakan pemerintah daerah. Kepala daerah yang menyusun kebijakan berdasarkan hukum dan konstitusi secara langsung menerapkan pilar UUD 1945, karena ini menjamin legitimasi hukum dan kepatuhan terhadap norma negara.
+
+Alasan opsi lain salah :
+Opsi A salah karena Pancasila adalah dasar nilai, bukan aturan hukum operasional.
+Opsi C salah karena NKRI menekankan kesatuan wilayah, bukan legalitas kebijakan.
+Opsi D salah karena Bhinneka Tunggal Ika terkait persatuan dalam keberagaman, bukan landasan hukum.
+Opsi E salah karena Ketetapan MPR adalah produk hukum, bukan pilar utama.
+
+Tips & Trick :
+Jika soal menekankan “kebijakan berbasis hukum dan konstitusi”, jawabannya pasti UUD 1945.
+
+SOAL 5
+Tingkat Kesulitan: Sulit
+Pasal 29 ayat (2) UUD 1945 menjamin kemerdekaan beragama bagi setiap penduduk. Pasal ini merupakan pengejawantahan langsung dari pilar…
+
+A. Bentuk Negara Kesatuan Republik Indonesia
+B. Sila ke-3 Persatuan Indonesia saja
+C. Sila ke-5 Keadilan Sosial
+D. Bhinneka Tunggal Ika dan sila ke-1 Pancasila
+E. Sistem ekonomi kerakyatan
+
+Jawaban: D
+Pembahasan: 
+Konsep yang digunakan:
+Ketuhanan Yang Maha Esa, kebebasan beragama, toleransi, Bhinneka Tunggal Ika.
+ 
+Kata Kunci:
+Kebebasan beragama, ketuhanan, keberagaman, toleransi.
+
+Pasal 29 ayat (2) UUD 1945 menjamin kebebasan setiap penduduk untuk memeluk agama dan beribadah menurut keyakinannya. Jaminan ini merupakan perwujudan langsung dari sila ke-1 "Ketuhanan Yang Maha Esa" yang menegaskan bahwa negara menghormati dan melindungi kehidupan beragama. Selain itu, penghormatan terhadap perbedaan keyakinan juga sejalan dengan prinsip Bhinneka Tunggal Ika yang menekankan persatuan dalam keberagaman.
+
+Pembahasan opsi yang salah:
+A. Bentuk NKRI tidak secara langsung membahas kebebasan beragama.
+B. Sila ke-3 lebih terkait persatuan, bukan jaminan kemerdekaan beragama.
+C. Sila ke-5 berhubungan dengan keadilan sosial, bukan kebebasan beragama.
+E. Sistem ekonomi kerakyatan tidak relevan dengan isu kemerdekaan beragama.
+
+SOAL 6
+Tingkat Kesulitan: Sulit
+Dalam situasi konflik antarumat beragama, pemerintah pusat menerapkan pendekatan mediasi dan dialog antar komunitas untuk mencegah eskalasi. Strategi ini menunjukkan penerapan pilar negara…
+
+A. Pancasila
+B. UUD 1945
+C. NKRI
+D. Bhinneka Tunggal Ika
+E. Ketetapan MPR
+
+Jawaban: D
+Pembahasan: 
+Konsep yang digunakan : Pelaksanaan nilai persatuan dan toleransi antarumat beragama dalam kehidupan berbangsa.
+Kata Kunci : Konflik agama, mediasi, persatuan, toleransi.
+
+Bhinneka Tunggal Ika menekankan bahwa perbedaan agama, suku, dan budaya harus dipandang sebagai kekayaan, bukan sumber konflik. Pendekatan mediasi dan dialog mencerminkan semangat menghormati keberagaman sambil menjaga persatuan nasional.
+
+Alasan opsi lain salah :
+Opsi A salah karena Pancasila lebih luas, bukan fokus pada konflik agama secara spesifik.
+Opsi B salah karena UUD 1945 mengatur hukum, bukan langsung mediasi sosial.
+Opsi C salah karena NKRI menekankan kesatuan wilayah, bukan hubungan sosial.
+Opsi E salah karena Ketetapan MPR bukan pilar utama.
+
+Tips & Trick :
+Kalau soal menyebut perbedaan agama dan upaya menjaga persatuan, jawaban tepat selalu Bhinneka Tunggal Ika.
+
+SOAL 7
+Tingkat Kesulitan: HOTS
+Menjelang Pemilu Daerah 2025, beberapa lembaga mencatat meningkatnya polarisasi masyarakat akibat penyebaran narasi provokatif di media sosial. Sejumlah ahli menilai kondisi ini mengancam persatuan nasional dan melemahkan pemerataan akses informasi yang adil. Mereka menekankan bahwa negara harus bertindak sesuai pokok pikiran dalam Pembukaan UUD 1945. Langkah yang paling sesuai dengan pokok pikiran persatuan dan keadilan sosial adalah…
+
+A. Membentuk tim sensor digital nasional yang memiliki kewenangan penuh untuk menghapus seluruh konten politik yang dianggap sensitif tanpa mekanisme keberatan
+B. Mengembangkan ekosistem literasi digital yang terintegrasi meliputi verifikasi informasi berbasis AI, pelatihan literasi di sekolah dan desa, serta keterlibatan publik dalam melaporkan konten provokatif
+C. Memberikan fasilitas promosi digital hanya kepada kelompok masyarakat yang dianggap dapat menjaga stabilitas politik demi mengurangi konflik
+D. Membiarkan arus informasi berjalan secara bebas tanpa regulasi, dengan asumsi masyarakat akan membentuk “keseimbangan narasi” secara alami
+E. Menunda penyelenggaraan Pemilu Daerah sampai kondisi polarisasi mereda untuk mencegah konflik yang lebih besar
+
+Jawaban: B
+Pembahasan: 
+Konsep: Pokok pikiran Pembukaan UUD 1945 (persatuan dan keadilan sosial)
+Kata Kunci: persatuan nasional, keadilan sosial, literasi digital, pemerataan akses informasi, peran negara dan masyarakat
+
+Pembahasan:
+Pokok pikiran dalam Pembukaan UUD 1945 menegaskan bahwa negara berkewajiban melindungi seluruh bangsa Indonesia, memajukan kesejahteraan umum, serta mewujudkan keadilan sosial bagi seluruh rakyat. Dalam konteks meningkatnya polarisasi akibat narasi provokatif di media sosial, langkah yang sesuai dengan prinsip persatuan dan keadilan sosial bukanlah pembatasan sepihak atau diskriminatif, melainkan penguatan kapasitas masyarakat secara merata. Pengembangan ekosistem literasi digital yang terintegrasi, melalui verifikasi informasi, pendidikan literasi di berbagai lapisan masyarakat, serta pelibatan publik mencerminkan upaya negara menjaga persatuan sekaligus menjamin akses informasi yang adil dan bertanggung jawab bagi seluruh warga.
+
+Pembahasan Opsi Salah:
+Opsi A: Sensor tanpa mekanisme keberatan berpotensi melanggar keadilan dan hak warga negara.
+Opsi C: Pemberian fasilitas hanya kepada kelompok tertentu bertentangan dengan prinsip keadilan sosial dan kesetaraan.
+Opsi D: Pembiaran tanpa regulasi mengabaikan tanggung jawab negara dalam menjaga persatuan bangsa.
+Opsi E: Penundaan pemilu bertentangan dengan prinsip kedaulatan rakyat dan demokrasi.
+
+Cara cepat: Persatuan dan keadilan sosial diwujudkan melalui kebijakan inklusif yang memperkuat literasi dan akses informasi masyarakat secara merata, bukan melalui pembatasan sepihak atau diskriminasi.
+
+SOAL 8
+Tingkat Kesulitan: HOTS
+Dalam sidang PPKI disepakati siapa yang berhak menjadi warga negara Indonesia yang tertulis dalam pasal 26 ayat (1) dan (2) . Tidak hanya bangsa Indonesia asli, bangsa lain yang disahkan UU juga berhak menjadi warga negara. Bagaimana nilai persatuan tergambar pada perumusan hal tersebut?
+A. Bangsa yang diakomodasi sebagai warga terbatas pada yang ikut berjuang pada periode kemerdekaan
+B. Perumus UUD 1945 memikirkan secara seksama untuk melibatkan seluruh komponen perjuangan
+C. Pasal mengenai warga negara dibebas dalam tataran hukum internasional
+D. Persyaratan menjadi warga negara ditetapkan dengan UU
+E. Persatuan diantara orang Indonesia asli bersifat fundamental pada perumusan tersebut
+
+Jawaban: B
+Pembahasan: 
+Soal ini membahas nilai persatuan dalam perumusan Pasal 26 ayat (1) dan (2) UUD 1945, yang mengatur tentang warga negara Indonesia (WNI). Nilai ini tercermin dari semangat menyatukan berbagai golongan dan etnis dalam satu kesatuan bangsa.
+Kata Kunci: Pasal 26 UUD 1945, Warga negara dan penduduk, Nilai persatuan, Perumus UUD 1945, Keterlibatan semua komponen bangsa.
+
+Pasal 26 ayat (1) dan (2) UUD 1945 menyatakan bahwa yang menjadi warga negara Indonesia adalah orang-orang Indonesia asli dan orang-orang dari bangsa lain yang disahkan dengan undang-undang. Ketentuan ini menunjukkan bahwa Indonesia sebagai negara yang baru merdeka tidak hanya mengakui orang Indonesia asli sebagai warga negara, tetapi juga memberikan kesempatan kepada orang-orang dari bangsa lain yang telah berperan dalam perjuangan dan pembangunan Indonesia, asalkan memenuhi persyaratan yang ditetapkan.
+Ketentuan ini mencerminkan nilai persatuan karena para perumus UUD 1945 mempertimbangkan pentingnya melibatkan semua pihak yang turut berkontribusi bagi bangsa, terlepas dari asal-usul etnis mereka. Dengan mengakui mereka sebagai warga negara, UUD 1945 menekankan pentingnya menyatukan semua komponen masyarakat yang berada di wilayah Indonesia dalam kerangka persatuan nasional.
+
+Perumus UUD 1945 memikirkan secara seksama untuk melibatkan seluruh komponen perjuangan
+Pernyataan ini tepat karena para perumus UUD 1945 mempertimbangkan keterlibatan berbagai komponen bangsa, termasuk dari kelompok etnis non-pribumi yang turut berkontribusi dalam kehidupan bangsa. Hal ini mencerminkan upaya untuk mewujudkan persatuan nasional yang melibatkan seluruh elemen masyarakat Indonesia.
+
+Alasan Opsi Lain Salah:
+A. Bangsa yang diakomodasi sebagai warga terbatas pada yang ikut berjuang pada periode kemerdekaan Pernyataan ini terlalu sempit. UUD 1945 tidak secara eksplisit membatasi hak menjadi warga negara hanya pada mereka yang ikut berjuang di masa kemerdekaan. Sebaliknya, hal ini diatur lebih lanjut dalam undang-undang yang mempertimbangkan kontribusi dan integrasi ke dalam masyarakat Indonesia.
+C. Pasal mengenai warga negara dibebas dalam tataran hukum internasional. Pernyataan ini tidak relevan, karena pasal tersebut tidak berhubungan dengan hukum internasional, melainkan dengan prinsip kedaulatan dan persatuan nasional di dalam negeri.
+C. Persyaratan menjadi warga negara ditetapkan dengan UU. Pernyataan ini benar secara prosedural, namun tidak menggambarkan nilai persatuan yang tercermin dalam kebijakan ini. Undang-Undang memang menetapkan persyaratan, tetapi bukan itulah aspek yang menonjol dalam hal persatuan.
+E. Persatuan di antara orang Indonesia asli bersifat fundamental pada perumusan tersebut. Pernyataan ini tidak mencerminkan pandangan yang luas mengenai persatuan dalam keberagaman. Pasal ini bukan hanya tentang persatuan orang Indonesia asli, tetapi juga melibatkan warga negara dari berbagai latar belakang etnis untuk membentuk bangsa yang bersatu.
+
+Tips & Trik:
+Ingat rumus singkat: “Pasal 26 = Persatuan dalam Keberagaman.” Artinya, UUD 1945 mengakui bahwa warga negara tidak hanya pribumi, tapi juga bangsa lain yang disahkan oleh UU.
+Bahasa Negara
+Menguji kemampuan peserta dalam menggunakan bahasa Indonesia secara baik dan benar. Seperti:
+Penentuan ide pokok
+Kesimpulan
+Pernyataan yang benar/salah
+Makna kata pada penggalan kalimat (biasanya kata-kata ilmiah, bahkan yang jarang diketahui)
+Perbaikan kalimat dan kata
+Tata Tulis (huruf miring, titik dan koma, kutipan, dsb)
+
+SOAL 1
+Tingkat Kesulitan: Mudah
+Contoh kalimat efektif adalah …
+
+A. Para peserta-peserta dimohon untuk segera berkumpul bersama
+B. Rapat tersebut akan segera dilaksanakan dalam waktu dekat
+C. Diadakan pelatihan yang mana tujuannya untuk meningkatkan mutu
+D. Panitia membagikan formulir kepada seluruh peserta
+E. Kami akan mencoba untuk dapat menyelesaikan tugas ini
+
+Jawaban: D
+Pembahasan: 
+Kalimat efektif harus memenuhi kaidah kehematan, kelogisan, kejelasan, dan tidak ada pemborosan kata. Kalimat “Panitia membagikan formulir kepada seluruh peserta” jelas, ringkas, dan langsung menunjukkan subjek, predikat, dan objek tanpa kata mubazir.
+
+Konsep: Kalimat efektif
+Kata Kunci: jelas, logis, hemat kata
+
+Pembahasan Opsi Salah:
+Opsi A salah karena terjadi pengulangan kata (para peserta-peserta) dan frasa berlebihan (segera berkumpul bersama).
+Opsi B salah karena frasa akan segera dilaksanakan dalam waktu dekat tidak hemat dan mengandung pengulangan makna.
+Opsi C salah karena penggunaan frasa yang mana tidak diperlukan dan membuat kalimat kurang lugas.
+Opsi E salah karena frasa akan mencoba untuk dapat menyelesaikan terlalu panjang dan tidak efisien.
+
+Carcep: Kalimat efektif menyampaikan pesan secara langsung, jelas, dan tanpa kata yang tidak perlu.
+
+SOAL 2
+Tingkat Kesulitan: Mudah
+Tingkat kemiskinan di Indonesia mengalami penurunan secara bertahap dalam beberapa tahun terakhir. Pemerintah melalui program-program bantuan sosial, seperti Program Keluarga Harapan (PKH) dan Bantuan Pangan Non-Tunai (BPNT), berupaya meningkatkan kesejahteraan masyarakat miskin. Selain itu, peningkatan akses pendidikan dan lapangan kerja juga menjadi faktor penting dalam menurunkan angka kemiskinan.
+
+Makna kata “kesejahteraan” dalam paragraf di atas adalah…
+
+A. Keadaan masyarakat yang hidup layak dan terpenuhi kebutuhannya
+B. Bantuan finansial yang diberikan pemerintah kepada masyarakat
+C. Jumlah pendapatan yang diperoleh individu dalam satu bulan
+D. Tingkat pendidikan masyarakat di suatu wilayah
+E. Program bantuan sosial dari pemerintah untuk kelompok tertentu
+
+Jawaban: A
+Pembahasan: 
+Dalam konteks paragraf, kata “kesejahteraan” merujuk pada keadaan masyarakat yang hidup layak dan terpenuhi kebutuhannya, termasuk akses terhadap pendidikan, pekerjaan, dan kebutuhan dasar. Program bantuan sosial seperti PKH dan BPNT disebut sebagai upaya pemerintah untuk meningkatkan kesejahteraan, tetapi kesejahteraan itu sendiri mencakup kondisi hidup yang lebih luas, bukan hanya bantuan finansial atau program tertentu.
+
+Konsep: Kesejahteraan Masyarakat
+Kata Kunci: kesejahteraan, hidup layak, terpenuhi kebutuhan, bantuan sosial, pendidikan
+
+Pembahasan Opsi Salah:
+Opsi B salah karena bantuan finansial hanyalah salah satu upaya meningkatkan kesejahteraan, bukan makna kesejahteraan itu sendiri.
+Opsi C salah karena jumlah pendapatan hanya salah satu indikator, bukan keseluruhan makna kesejahteraan.
+Opsi D salah karena pendidikan hanyalah salah satu aspek kesejahteraan, bukan pengertian utamanya.
+Opsi E salah karena program bantuan sosial adalah sarana, bukan definisi kesejahteraan.
+
+Carcep: Kesejahteraan masyarakat berarti kondisi hidup yang layak, terpenuhi kebutuhan dasar, dan memiliki kesempatan untuk meningkatkan kualitas hidup, sementara program pemerintah merupakan upaya untuk mencapainya.
+
+SOAL 3
+Tingkat Kesulitan: Sedang
+Kalimat berikut digunakan dalam laporan resmi pemerintah:
+
+“Panitia akan segera menyelesaikan dan mengerjakan penyusunan laporan kegiatan yang sudah dilaksanakan.”
+
+Kalimat di atas tidak efektif. Perbaikannya yang paling tepat adalah…
+
+A. Panitia segera menyelesaikan laporan kegiatan.
+B. Panitia akan menyusun dan mengerjakan laporan kegiatan.
+C. Panitia sudah melaksanakan penyusunan laporan kegiatan.
+D. Laporan kegiatan segera dikerjakan panitia.
+E. Panitia akan mengerjakan laporan yang sudah dilaksanakan.
+
+Jawaban: A
+Pembahasan: 
+Kalimat asli tidak efektif karena mengandung pengulangan dan kata-kata yang berlebihan seperti “menyelesaikan dan mengerjakan” serta “penyusunan laporan kegiatan yang sudah dilaksanakan.” Kalimat efektif harus hemat, jelas, dan memiliki struktur subjek–predikat–objek yang tepat. Opsi A “Panitia segera menyelesaikan laporan kegiatan” memenuhi kriteria tersebut karena singkat, lugas, dan tidak mengubah makna utama dari kalimat asli.
+
+Konsep: Kalimat Efektif dalam Bahasa Indonesia
+Kata Kunci: kehematan, kejelasan makna, struktur S–P–O
+
+Pembahasan Opsi Salah:
+Opsi B salah karena mengandung pengulangan makna “menyusun dan mengerjakan” yang membuat kalimat boros.
+Opsi C salah karena mengubah makna waktu, seolah kegiatan sudah selesai padahal konteksnya masih akan dilakukan.
+Opsi D salah karena menggunakan bentuk pasif, sementara kalimat laporan resmi lebih baik menggunakan bentuk aktif agar jelas siapa pelakunya.
+Opsi E salah karena tidak logis, sebab “laporan” tidak bisa “dilaksanakan.”
+
+Carcep: Kalimat efektif harus menghindari kata yang berlebihan dan mempertahankan makna utama dengan struktur yang ringkas serta jelas.
+
+SOAL 4
+Tingkat Kesulitan: Sedang
+Di beberapa kota besar, masyarakat semakin bergantung pada transportasi daring. Layanan ini mempermudah mobilitas, tetapi juga menimbulkan masalah baru, seperti kemacetan dan persaingan tidak sehat dengan transportasi konvensional. Pemerintah dituntut mencari regulasi yang adil agar kedua moda transportasi dapat berjalan berdampingan.
+
+Kesimpulan yang paling tepat dari teks tersebut adalah…
+
+A. Transportasi daring lebih bermanfaat daripada transportasi konvensional.
+B. Pemerintah perlu membuat regulasi yang adil agar transportasi berjalan seimbang.
+C. Kemacetan dan persaingan tidak sehat adalah dampak dari transportasi daring.
+D. Masyarakat kota besar semakin bergantung pada transportasi daring.
+E. Transportasi konvensional harus digantikan oleh transportasi daring.
+
+Jawaban: B
+Pembahasan: 
+Konsep: Kesimpulan harus sesuai isi, tidak menyimpang atau menyempitkan.
+Kata Kunci: regulasi adil – pemerintah – transportasi berjalan berdampingan.
+
+Pembahasan Jawaban Benar: Opsi B paling tepat karena sesuai inti paragraf: solusi yang dibutuhkan adalah regulasi adil, bukan sekadar masalah atau perbandingan transportasi.
+
+Pembahasan Opsi Lainnya:
+A dan E terlalu berpihak; C hanya detail; D hanya data, bukan kesimpulan.
+
+Carcep: Jika paragraf berakhir dengan “pemerintah dituntut…” → biasanya kesimpulan = peran/solusi pemerintah.
+
+SOAL 5
+Tingkat Kesulitan: Sulit
+Bacalah teks berikut:
+
+Banyak sekolah di daerah pedalaman Indonesia masih kekurangan guru dan fasilitas belajar. Kondisi ini berakibat pada rendahnya mutu pendidikan dan memperlebar kesenjangan kualitas sumber daya manusia dengan daerah perkotaan. Untuk mengatasi hal tersebut, pemerintah meluncurkan program pengiriman guru ke daerah 3T (terdepan, terluar, tertinggal). Namun, program ini belum sepenuhnya efektif karena keterbatasan anggaran dan minimnya insentif bagi tenaga pendidik.
+
+Jika Anda diminta memberikan kesimpulan kritis dari paragraf tersebut, pernyataan yang paling tepat adalah…
+
+A. Pemerintah gagal meningkatkan mutu pendidikan di daerah 3T.
+B. Program pengiriman guru 3T tidak efektif karena anggaran terlalu kecil.
+C. Kesenjangan pendidikan masih menjadi tantangan besar meskipun ada program pemerintah.
+D. Sekolah di perkotaan lebih maju daripada sekolah di pedalaman.
+E. Mutu pendidikan rendah disebabkan kekurangan guru di semua daerah.
+
+Jawaban: C
+Pembahasan: 
+
+
+SOAL 6
+Tingkat Kesulitan: Sulit
+Hubungan objek pada kalimat "Seorang petugas pemadam kebakaran pergi menggunakan mobil pemadam dan selang air digunakan untuk memadamkan titik api" setara dengan ...
+
+A. Seorang pemain basket akan pergi bertanding dengan menaiki bus tim dan lapangan pertandingannya sudah disiapkan oleh panitia
+B. Seorang nelayan akan berlayar dengan perahu dan jala untuk menangkap ikan di laut
+C. Seorang guru terbiasa menggunakan spidol dan papan tulis untuk mengajar di kelas
+D. Sebuah kipas angin menghasilkan angin dan remote digunakan untuk mempercepat laju anginnya
+E. Seorang polisi memakai senjata api dan borgol digunakan untuk menangkap penjahat
+
+Jawaban: B
+Pembahasan: 
+Konsep Soal : Soal ini termasuk analogi hubungan objek (alat dan fungsi). Tujuannya adalah mengidentifikasi hubungan logis antara dua alat atau benda yang digunakan dalam pekerjaan atau aktivitas tertentu.
+
+Kata Kunci : Mobil pemadam = alat transportasi, Selang air = alat utama menjalankan tugas, Petugas pemadam kebakaran = profesi yang menggunakan kedua alat tersebut untuk satu tujuan, yaitu memadamkan api
+
+Pada kalimat “Seorang petugas pemadam kebakaran pergi menggunakan mobil pemadam dan selang air digunakan untuk memadamkan titik api,” terdapat dua alat utama yang digunakan untuk menjalankan tugas:
+1. Mobil pemadam yaitu alat transportasi untuk menuju lokasi kebakaran.
+2. Selang air yaitu alat utama untuk memadamkan api.
+
+Hubungan yang serupa adalah nelayan dengan perahu dan jala, yaitu:
+3. Perahu yaitu alat transportasi menuju laut.
+4. Jala yaitu alat utama untuk menjalankan tugas menangkap ikan.
+
+Alasan opsi lain salah :
+Opsi A salah karena Bus memang alat transportasi, tapi lapangan bukan alat yang digunakan oleh pemain, melainkan tempat pertandingan. Hubungannya tidak setara.
+Opsi C salah karena Keduanya adalah alat kerja, tidak ada unsur alat transportasi, jadi pola hubungannya berbeda.
+Opsi D salah karena Kedua benda ini saling berkaitan secara fungsi, tapi tidak menunjukkan hubungan profesi dan alat kerja.
+Opsi E salah karena Kedua alat digunakan dalam satu aktivitas, tapi tidak ada alat transportasi seperti pada kalimat soal.
+
+Tips & Trick :
+1. Identifikasi hubungan dasar pada kalimat pertama (misalnya: alat & fungsinya, sebab & akibat, tempat & kegiatan, profesi & alat kerja).
+2. Tentukan pola hubungan, misalnya: alat transportasi + alat utama tugas.
+3. Cari pasangan yang memiliki struktur hubungan yang sama.
+4. Eliminasi pilihan yang hanya memiliki kemiripan kata tetapi tidak sepadan secara logis.
+
+SOAL 7
+Tingkat Kesulitan: HOTS
+Dalam era globalisasi, arus budaya asing semakin mudah masuk ke Indonesia melalui media sosial, film, dan musik. Walaupun memberi manfaat berupa wawasan baru, masuknya budaya asing juga menimbulkan tantangan bagi generasi muda dalam menjaga identitas nasional. Oleh karena itu, peran pendidikan sangat penting untuk memperkuat jati diri bangsa di tengah derasnya pengaruh global.
+
+Kesimpulan yang paling tepat adalah…
+
+A. Budaya asing sebaiknya dilarang masuk ke Indonesia.
+B. Generasi muda harus menolak semua bentuk budaya asing.
+C. Pendidikan berperan penting menjaga identitas bangsa di tengah globalisasi.
+D. Globalisasi hanya membawa dampak negatif bagi Indonesia.
+E. Media sosial menjadi penyebab utama lunturnya identitas bangsa.
+
+Jawaban: C
+Pembahasan: 
+Konsep: Kesimpulan harus mencerminkan solusi utama yang ditawarkan teks.
+Kata Kunci: identitas bangsa – pendidikan – globalisasi.
+
+Pembahasan Jawaban Benar: Opsi C paling tepat karena sesuai dengan bagian akhir paragraf yang menekankan pentingnya pendidikan sebagai solusi.
+
+Pembahasan Opsi Lainnya:
+A & B bersifat ekstrem (melarang/menolak semua).
+D bertentangan dengan teks karena globalisasi juga memberi manfaat.
+E hanya mengambil satu detail, bukan kesimpulan utama.
+Carcep: Kalau paragraf ditutup dengan “oleh karena itu…” → biasanya jawaban ada pada kalimat terakhir.
+
+SOAL 8
+Tingkat Kesulitan: HOTS
+Perhatikan kalimat berikut:
+“Setiap warga negara Indonesia wajib menjunjung tinggi bahasa Indonesia sebagai bahasa nasional.”
+
+Fungsi kata menjunjung tinggi pada kalimat tersebut bermakna …
+
+A. Menghormati dan menggunakan bahasa Indonesia secara konsisten.
+B. Mengutamakan bahasa daerah daripada bahasa Indonesia.
+C. Meningkatkan jumlah kosakata bahasa Indonesia dalam kehidupan sehari-hari.
+D. Mengembangkan bahasa Indonesia menjadi bahasa internasional.
+E. Menghapus penggunaan bahasa asing di media sosial.
+
+Jawaban: A
+Pembahasan: 
+Konsep yang digunakan : Ungkapan idiomatik dalam bahasa Indonesia.
+Kata Kunci : Menjunjung tinggi = menghormati dan mematuhi.
+
+Ungkapan menjunjung tinggi bermakna menghormati dan melaksanakan sesuatu dengan sungguh-sungguh. Dalam konteks ini, berarti menghormati bahasa Indonesia dengan cara menggunakan dan melestarikannya sesuai fungsinya sebagai bahasa nasional.
+
+Alasan opsi lain salah:
+Opsi B salah, karena bertentangan dengan semangat penggunaan bahasa Indonesia.
+Opsi C salah, karena makna menjunjung tinggi tidak berarti memperbanyak kosakata.
+Opsi D salah, karena bukan berarti menjadikannya internasional.
+Opsi E salah, karena maknanya terlalu sempit.
+
+Tips & Trick :
+Menjunjung tinggi yaitu menghormati dan mengamalkan nilai atau aturan yang berlaku.
+
+
+5.2. Tes Intelegensia Umum (TIU)
+Contoh-contoh soal lengkap di Contoh Soal TIU SKD 2027.pdf
+
+5.3. Tes Karakteristik Pribadi (TKP)
+Contoh-contoh soal lengkap di Panduan Produksi Soal TKP JadiASN.pdf

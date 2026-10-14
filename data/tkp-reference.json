@@ -1,0 +1,1016 @@
+[
+  {
+    "id": "tkp-ref-1",
+    "subtest": "TKP",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Konsep Dasar dan Ruang Lingkup",
+    "bloom": "C5",
+    "difficulty": "hots",
+    "stem": "Sebuah unit layanan memiliki kanal pengaduan resmi, tetapi partisipasi masyarakat masih rendah meskipun keluhan tentang layanan cukup banyak. Pimpinan meminta Anda meningkatkan penggunaan kanal tersebut tanpa sekadar mengejar angka laporan. Tindakan yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menyelenggarakan edukasi singkat tentang cara menyampaikan dan memantau aduan, bekerja sama dengan perwakilan komunitas, serta memastikan ada umpan balik atas setiap laporan.",
+        "score": 5,
+        "reason": "Paling partisipatif, edukatif, setara, dan berorientasi pada tindak lanjut."
+      },
+      {
+        "text": "Mengirim pesan massal agar masyarakat lebih sering melapor dan membentuk tim pencatat, meskipun tidak semua laporan dapat segera ditindaklanjuti.",
+        "score": 4,
+        "reason": "Meningkatkan akses dan pencatatan, tetapi berisiko menurunkan kepercayaan jika tindak lanjut tidak jelas."
+      },
+      {
+        "text": "Memprioritaskan hanya laporan yang dianggap berdampak besar agar beban kerja tetap terkendali.",
+        "score": 2,
+        "reason": "Efisien bagi organisasi, tetapi mengabaikan kesetaraan dan dapat mengecilkan keluhan yang dianggap tidak penting."
+      },
+      {
+        "text": "Membuka jalur komunikasi khusus untuk tokoh masyarakat yang dinilai paling kooperatif.",
+        "score": 1,
+        "reason": "Menciptakan jalur istimewa dan bertentangan dengan prinsip akses yang setara."
+      },
+      {
+        "text": "Menunda peningkatan partisipasi agar tidak menimbulkan ekspektasi baru dari masyarakat.",
+        "score": 3,
+        "reason": "Menjaga stabilitas operasional, tetapi pasif dan tidak menjawab kebutuhan masyarakat. Kesulitan Contoh Soal 2 – Prinsip dan Standar Pelayanan Publik Level Bloom: C4 - Menganalisis Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang digunakan: Partisipasi masyarakat, pengelolaan pengaduan, orientasi pengguna, dan perbaikan berkelanjutan. Kata kunci: edukasi, kanal pengaduan, tindak lanjut, umpan balik, partisipasi setara Opsi A paling lengkap karena tidak hanya menaikkan jumlah laporan, tetapi membangun kemampuan masyarakat menggunakan kanal, memperluas akses secara setara, dan menjaga kepercayaan melalui umpan balik. Tindakan tersebut memperlakukan pengaduan sebagai bagian dari siklus perbaikan layanan, bukan sekadar indikator administratif.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Pelayanan Publik, contoh 1"
+  },
+  {
+    "id": "tkp-ref-2",
+    "subtest": "TKP",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Prinsip dan Standar",
+    "bloom": "C4",
+    "difficulty": "hots",
+    "stem": "Sistem antrean daring mengalami keterlambatan sinkronisasi. Beberapa warga yang sudah mengambil nomor daring tidak muncul dalam daftar ketika tiba di kantor. Mereka khawatir dianggap tidak hadir, sementara antrean manual sudah mengular. Tindakan yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Meminta seluruh warga mengulang antrean secara manual agar data ditata kembali dari awal.",
+        "score": 1,
+        "reason": "Menghapus hak antrean yang telah diperoleh dan berpotensi memicu konflik."
+      },
+      {
+        "text": "Memasukkan warga ke antrean manual berdasarkan perkiraan nomor yang mereka sebutkan.",
+        "score": 3,
+        "reason": "Memberi solusi cepat, tetapi perkiraan tanpa bukti rawan tidak akurat dan tidak akuntabel."
+      },
+      {
+        "text": "Menjelaskan gangguan secara terbuka, memverifikasi bukti nomor antrean daring, lalu menempatkan mereka sesuai urutan bukti tersebut.",
+        "score": 5,
+        "reason": "Paling transparan, dapat diverifikasi, adil, dan menjaga pelayanan tetap berjalan."
+      },
+      {
+        "text": "Meminta warga menunggu sampai sistem pulih sambil tetap mengambil nomor antrean manual.",
+        "score": 2,
+        "reason": "Pasif, menggandakan beban warga, dan tidak memberi kepastian."
+      },
+      {
+        "text": "Mengutamakan antrean manual karena sistem daring sedang bermasalah.",
+        "score": 4,
+        "reason": "Praktis untuk menjaga alur manual, tetapi mengabaikan hak pengguna kanal daring. Kesulitan Contoh Soal 3 – Sikap Pelayanan Prima dan Kepuasan Masyarakat Level Bloom: C4 - Menganalisis Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang digunakan: Keterbukaan, verifikasi, kepastian proses, keadilan antrean, dan kontinuitas layanan. Kata kunci: gangguan sinkronisasi, bukti antrean, transparansi, urutan, adil Opsi C menjaga hak warga yang telah mengikuti prosedur daring tanpa merugikan warga lain. Verifikasi bukti mencegah manipulasi, penjelasan terbuka mengurangi kecurigaan, dan penempatan sesuai urutan mempertahankan keadilan proses.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Pelayanan Publik, contoh 2"
+  },
+  {
+    "id": "tkp-ref-3",
+    "subtest": "TKP",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Pelayanan Prima dan Kepuasan",
+    "bloom": "C4",
+    "difficulty": "hots",
+    "stem": "Anda sedang memproses permohonan yang mendesak. Aplikasi layanan tiba-tiba sangat lambat sehingga penyelesaian satu dokumen memerlukan waktu lebih lama. Pengguna mulai gelisah dan terus menanyakan kapan proses selesai. Sikap Anda adalah ...",
+    "options": [
+      {
+        "text": "Meminta pengguna tidak banyak bertanya karena pertanyaan tersebut menambah tekanan kerja.",
+        "score": 1,
+        "reason": "Tidak empatik dan berpotensi memperburuk konflik."
+      },
+      {
+        "text": "Menunjukkan seluruh layar sistem agar pengguna melihat sendiri bahwa aplikasi sedang bermasalah.",
+        "score": 4,
+        "reason": "Transparan, tetapi memperlihatkan layar internal dapat menimbulkan risiko keamanan atau kerahasiaan."
+      },
+      {
+        "text": "Mengalihkan pembicaraan ke topik lain agar pengguna tidak terlalu memikirkan keterlambatan.",
+        "score": 2,
+        "reason": "Menghindari inti masalah dan tidak memberikan kepastian."
+      },
+      {
+        "text": "Meminta pengguna meninggalkan berkas dan berjanji menghubungi setelah sistem kembali lancar.",
+        "score": 3,
+        "reason": "Praktis, tetapi memindahkan beban dan belum tentu sesuai kebutuhan pengguna."
+      },
+      {
+        "text": "Tetap tenang, meminta maaf atas kendala, menjelaskan situasi seperlunya, dan memberikan estimasi waktu tunggu yang realistis.",
+        "score": 5,
+        "reason": "Paling seimbang dalam empati, informasi, kepastian, dan profesionalisme. Hambatan Kesulitan Contoh Soal 4 – Pelayanan yang Adil, Inklusif, dan Tidak Diskriminatif Level Bloom: C4 - Menganalisis Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang digunakan: Pelayanan prima, manajemen ekspektasi, komunikasi, dan keamanan informasi. Kata kunci: sistem lambat, pengguna gelisah, permintaan maaf, estimasi realistis Opsi E memenuhi kebutuhan emosional dan informasional pengguna sekaligus menjaga profesionalisme. Petugas tidak menyalahkan pengguna, tidak membuka data yang tidak perlu, dan tidak memberikan janji pasti yang belum dapat dijamin.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Pelayanan Publik, contoh 3"
+  },
+  {
+    "id": "tkp-ref-4",
+    "subtest": "TKP",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Adil, Inklusif, dan Tidak Diskriminatif",
+    "bloom": "C4",
+    "difficulty": "hots",
+    "stem": "Anda bertugas di loket prioritas untuk lansia, ibu hamil, dan penyandang disabilitas. Seorang warga yang tidak termasuk kategori prioritas meminta dilayani di loket tersebut karena sedang terburu-buru. Ia mengancam akan mengajukan laporan jika permintaannya ditolak. Tindakan paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menjelaskan tujuan loket prioritas, meminta pengertian, dan menawarkan bantuan pengecekan awal tanpa memotong antrean.",
+        "score": 5,
+        "reason": "Paling adil, empatik, dan tetap konsisten dengan tujuan loket prioritas."
+      },
+      {
+        "text": "Meminta warga tetap menggunakan jalur reguler dan menegaskan aturan secara singkat.",
+        "score": 4,
+        "reason": "Sesuai aturan, tetapi kurang membantu dan dapat terasa kaku."
+      },
+      {
+        "text": "Melayani warga tersebut di loket prioritas agar konflik tidak membesar.",
+        "score": 1,
+        "reason": "Mengorbankan hak pengguna prioritas dan memberi insentif pada ancaman."
+      },
+      {
+        "text": "Mengarahkan warga kepada petugas lain agar Anda tidak menghadapi komplain.",
+        "score": 2,
+        "reason": "Menghindari tanggung jawab serta memindahkan konflik."
+      },
+      {
+        "text": "Meminta warga menulis keluhan terlebih dahulu sebelum diarahkan ke jalur reguler.",
+        "score": 3,
+        "reason": "Menjaga prosedur, tetapi menambah langkah yang tidak perlu dan belum menyelesaikan kebutuhan. Diskresi dalam Soal Jangan menggambarkan diskresi sebagai kebebasan mengabaikan aturan. Diskresi yang layak harus memiliki tujuan pelayanan yang jelas, alasan objektif, kewenangan atau koordinasi yang tepat, dampak yang proporsional, dan dapat dipertanggungjawabkan. Kesulitan Contoh Soal 5 – Pengambilan Keputusan dalam Skenario Pelayanan Publik Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang digunakan: Kesetaraan, keadilan, loket prioritas, komunikasi persuasif, dan anti-favoritisme. Kata kunci: bukan kategori prioritas, ancaman laporan, aturan, solusi alternatif Opsi A mempertahankan fungsi loket prioritas dan tidak mengorbankan hak kelompok rentan. Pada saat yang sama, petugas tidak bersikap kaku karena tetap menawarkan bantuan yang tidak mengubah urutan antrean. Respons ini membedakan akomodasi yang sah dari perlakuan istimewa karena tekanan.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Pelayanan Publik, contoh 4"
+  },
+  {
+    "id": "tkp-ref-5",
+    "subtest": "TKP",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Pengambilan Keputusan",
+    "bloom": "C5",
+    "difficulty": "hots",
+    "stem": "Petugas layanan perjalanan menemukan dokumen identitas seorang pengguna sedikit rusak pada bagian sudut, tetapi data utama masih terbaca. Aturan menyatakan dokumen rusak dapat ditolak oleh otoritas tujuan. Pengguna memohon karena harus menghadiri pemakaman orang tuanya dan tidak memiliki waktu mengurus dokumen baru. Tindakan yang sebaiknya dilakukan adalah ...",
+    "options": [
+      {
+        "text": "Mengizinkan pengguna melanjutkan proses karena kondisi kedukaan merupakan alasan kemanusiaan.",
+        "score": 2,
+        "reason": "Empatik, tetapi melampaui kewenangan dan dapat menimbulkan risiko lebih besar bagi pengguna."
+      },
+      {
+        "text": "Menolak secara tegas tanpa penjelasan tambahan karena aturan harus dipatuhi.",
+        "score": 3,
+        "reason": "Patuh aturan, tetapi terlalu kaku dan tidak mencoba mencari solusi."
+      },
+      {
+        "text": "Membantu pengguna berkoordinasi dengan otoritas dokumen dan penyedia layanan untuk memastikan apakah tingkat kerusakan masih dapat diterima.",
+        "score": 5,
+        "reason": "Paling legal, empatik, solutif, dan sesuai batas kewenangan."
+      },
+      {
+        "text": "Menyarankan pengguna memperbaiki bagian yang rusak secara mandiri agar tidak terlihat.",
+        "score": 1,
+        "reason": "Mendorong manipulasi dokumen dan bertentangan dengan integritas."
+      },
+      {
+        "text": "Langsung meminta pimpinan membuat pengecualian khusus agar pengguna dapat berangkat.",
+        "score": 4,
+        "reason": "Berusaha membantu melalui eskalasi, tetapi melewati koordinasi teknis yang seharusnya dilakukan terlebih dahulu. Prinsip Kunci Respons terbaik bukan selalu yang paling formal atau paling akrab. Nilai tinggi muncul ketika peserta memilih cara yang tepat untuk pihak, masalah, waktu, dan risiko: langsung tetapi sopan, terbuka tetapi menjaga kerahasiaan, kolaboratif tetapi tetap jelas peran dan tanggung jawabnya. Kesulitan Kesulitan Kesulitan Contoh Soal 2 – Komunikasi, Koordinasi, dan Berbagi Informasi Level Bloom: C4 – Menganalisis Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang digunakan: Kepatuhan, empati, batas kewenangan, koordinasi, risiko, dan solusi sah. Kata kunci: dokumen rusak, keadaan mendesak, otoritas berwenang, koordinasi Opsi C paling proporsional. Petugas tidak mengambil risiko dengan mengizinkan atau menolak secara sepihak. Koordinasi dengan pihak yang memiliki kewenangan memberi peluang solusi yang sah, melindungi pengguna dari masalah di tujuan, dan tetap menunjukkan empati terhadap kondisi mendesak.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Pelayanan Publik, contoh 5"
+  },
+  {
+    "id": "tkp-ref-6",
+    "subtest": "TKP",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Komunikasi, Koordinasi, dan Berbagi Informasi",
+    "bloom": "C4",
+    "difficulty": "hots",
+    "stem": "Koordinasi lintas bagian sering terlambat karena informasi penting hanya diketahui sebagian pegawai atau baru dibagikan setelah diminta. Sikap yang paling tepat untuk mendukung kerja tim adalah ...",
+    "options": [
+      {
+        "text": "Membagikan informasi hanya sejauh berkaitan langsung dengan tugas pribadi.",
+        "score": 2,
+        "reason": "Berbagi secara sangat terbatas sehingga kebutuhan lintas bagian dan tujuan bersama dapat terabaikan."
+      },
+      {
+        "text": "Menyampaikan informasi kepada beberapa rekan yang dianggap paling membutuhkan tanpa menunggu permintaan.",
+        "score": 4,
+        "reason": "Proaktif dan membantu, tetapi masih selektif sehingga belum menjamin akses informasi yang merata."
+      },
+      {
+        "text": "Menyebarkan informasi yang dibutuhkan melalui saluran internal yang sesuai dan membuka ruang klarifikasi bagi pihak terkait.",
+        "score": 5,
+        "reason": "Proaktif, inklusif, menggunakan kanal yang tepat, dan menyediakan ruang untuk memastikan pemahaman."
+      },
+      {
+        "text": "Menyimpan informasi sampai atasan atau rekan meminta secara eksplisit.",
+        "score": 1,
+        "reason": "Pasif dan menciptakan hambatan informasi yang dapat memperlambat pekerjaan."
+      },
+      {
+        "text": "Menunggu rapat formal berikutnya agar seluruh informasi disampaikan dalam satu forum.",
+        "score": 3,
+        "reason": "Menjaga keteraturan, tetapi terlalu lambat untuk kebutuhan informasi yang memengaruhi pekerjaan berjalan. Kesulitan Kesulitan Contoh Soal 3 – Kolaborasi dan Penyelesaian Masalah dalam Tim Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang digunakan: Keterbukaan informasi, koordinasi proaktif, akurasi, dan akses pihak relevan Kata kunci: silo informasi, saluran internal, proaktif, klarifikasi, kebutuhan akses Opsi C paling tepat karena memastikan informasi tersedia bagi seluruh pihak relevan, tidak bergantung pada kedekatan personal, dan tetap menggunakan saluran internal yang dapat dipertanggungjawabkan. Ruang klarifikasi juga mengurangi risiko salah tafsir dan mempercepat koordinasi.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Jejaring Kerja, contoh 6"
+  },
+  {
+    "id": "tkp-ref-7",
+    "subtest": "TKP",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Kolaborasi dan Penyelesaian Masalah dalam Tim",
+    "bloom": "C5",
+    "difficulty": "hots",
+    "stem": "Dua anggota tim memiliki cara kerja berbeda dan mulai saling menyalahkan atas keterlambatan target. Ketegangan mulai memengaruhi anggota lain. Tindakan yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Meminta keduanya menyelesaikan masalah sendiri agar anggota lain tidak terlibat.",
+        "score": 2,
+        "reason": "Memberi ruang mandiri, tetapi terlalu pasif ketika konflik sudah memengaruhi tim dan membutuhkan fasilitasi."
+      },
+      {
+        "text": "Menegur keduanya di depan tim agar menjadi pelajaran bersama.",
+        "score": 1,
+        "reason": "Mempermalukan pihak di depan umum, meningkatkan defensif, dan dapat merusak kepercayaan tim."
+      },
+      {
+        "text": "Mengundang keduanya berdiskusi secara pribadi untuk menggali akar masalah dan merumuskan solusi bersama.",
+        "score": 5,
+        "reason": "Empatik, objektif, langsung menangani akar masalah, dan melibatkan kedua pihak dalam solusi."
+      },
+      {
+        "text": "Menunda pembahasan konflik agar tim berfokus dahulu pada pekerjaan yang mendesak.",
+        "score": 3,
+        "reason": "Menjaga fokus jangka pendek, tetapi membiarkan konflik berlarut dan mengganggu produktivitas berikutnya."
+      },
+      {
+        "text": "Mengganti salah satu anggota yang dianggap paling banyak menimbulkan masalah.",
+        "score": 4,
+        "reason": "Tegas dan dapat menghentikan gangguan, tetapi terlalu drastis tanpa pemeriksaan menyeluruh dan upaya perbaikan. Kesulitan Contoh Soal 4 – Pengembangan Hubungan Kerja dan Kemitraan Produktif Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang digunakan: Mediasi konflik, komunikasi terbuka, objektivitas, dan tanggung jawab bersama Kata kunci: saling menyalahkan, mediasi privat, akar masalah, solusi bersama, tindak lanjut Opsi C paling tepat karena menyediakan ruang aman untuk mendengar fakta dan perspektif kedua pihak tanpa mempermalukan mereka. Penyelesaian tidak berhenti pada meredakan emosi, tetapi mengarah pada akar masalah, kesepakatan kerja, serta tanggung jawab atas tindak lanjut.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Jejaring Kerja, contoh 7"
+  },
+  {
+    "id": "tkp-ref-8",
+    "subtest": "TKP",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Pengembangan Hubungan Kerja dan Kemitraan Produktif",
+    "bloom": "C5",
+    "difficulty": "hots",
+    "stem": "Dalam proyek lintas organisasi, seorang rekan memiliki koneksi luas dengan pihak eksternal yang relevan. Dukungan koneksi tersebut dapat mempercepat proyek, tetapi pendekatan yang terlalu langsung dapat menimbulkan kesan bahwa hubungan itu hanya dimanfaatkan. Tindakan yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Segera meminta rekan mengenalkan Anda kepada semua pihak yang relevan.",
+        "score": 2,
+        "reason": "Proaktif, tetapi terlalu langsung dan berisiko menimbulkan kesan memanfaatkan hubungan pribadi."
+      },
+      {
+        "text": "Mendiskusikan tujuan dan kebutuhan proyek secara terbuka, kemudian meminta dukungan koneksinya secara proporsional dengan tetap menjaga hubungan profesional.",
+        "score": 5,
+        "reason": "Transparan, strategis, menghargai rekan, dan memanfaatkan jejaring secara etis untuk tujuan bersama."
+      },
+      {
+        "text": "Mengandalkan jalur formal antarorganisasi agar hubungan pribadi tidak pernah digunakan.",
+        "score": 4,
+        "reason": "Menjaga profesionalisme, tetapi terlalu membatasi potensi sinergi yang sebenarnya dapat digunakan secara sah."
+      },
+      {
+        "text": "Menunggu sampai rekan tersebut menawarkan bantuan koneksi atas inisiatifnya sendiri.",
+        "score": 3,
+        "reason": "Menghargai kenyamanan rekan, tetapi terlalu pasif dan dapat membuat peluang kerja sama hilang."
+      },
+      {
+        "text": "Menggunakan jalur lain dan tidak melibatkan rekan tersebut untuk menghindari kemungkinan salah paham.",
+        "score": 1,
+        "reason": "Menghindari kolaborasi tanpa mencoba komunikasi, sehingga sumber daya relevan tidak dimanfaatkan. Kesulitan Contoh Soal 1 – Konsep Dasar, Unsur, dan Struktur Sosial Budaya Level Bloom: C4 – Menganalisis Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang digunakan: Etika pemanfaatan jejaring, transparansi tujuan, kepercayaan, dan profesionalisme hubungan Kata kunci: koneksi eksternal, tujuan proyek, manfaat, batas profesional, kepercayaan Opsi B paling tepat karena tidak memperlakukan koneksi rekan sebagai sumber daya yang dapat diambil begitu saja. Pembicaraan terbuka memberi konteks, memungkinkan rekan menilai relevansi dan risiko, serta menjaga kesukarelaan dan kepercayaan. Dukungan jejaring tetap dimanfaatkan, tetapi secara etis dan proporsional.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Jejaring Kerja, contoh 8"
+  },
+  {
+    "id": "tkp-ref-9",
+    "subtest": "TKP",
+    "topic": "Sosial Budaya",
+    "subtopic": "Konsep Dasar, Unsur, dan Struktur Sosial Budaya",
+    "bloom": "C4",
+    "difficulty": "hots",
+    "stem": "Sebagian warga menganggap kegiatan budaya daerah tidak lagi relevan bagi generasi muda dan mengusulkan agar kegiatan tersebut diganti sepenuhnya dengan acara modern. Sebagai koordinator kegiatan, tindakan yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mengganti seluruh kegiatan budaya dengan acara modern agar partisipasi meningkat.",
+        "score": 1,
+        "reason": "Responsif terhadap minat baru, tetapi menghapus fungsi identitas dan mengabaikan kelompok yang masih memaknai tradisi."
+      },
+      {
+        "text": "Mempertahankan kegiatan budaya tanpa perubahan karena tradisi tidak boleh disesuaikan.",
+        "score": 3,
+        "reason": "Menjaga budaya, tetapi terlalu kaku dan tidak membuka ruang adaptasi maupun partisipasi generasi muda."
+      },
+      {
+        "text": "Mengajak warga dan generasi muda berdialog, menjelaskan fungsi budaya sebagai identitas bersama, lalu merancang format yang lebih relevan tanpa menghilangkan unsur utamanya.",
+        "score": 5,
+        "reason": "Memahami fungsi budaya, melibatkan pihak terkait, dan menyeimbangkan pelestarian dengan perubahan."
+      },
+      {
+        "text": "Menyerahkan keputusan sepenuhnya kepada tokoh budaya karena mereka paling memahami tradisi.",
+        "score": 4,
+        "reason": "Menghormati legitimasi tokoh budaya, tetapi terlalu menyerahkan keputusan dan belum melibatkan kelompok terdampak secara luas."
+      },
+      {
+        "text": "Menjalankan dua kegiatan secara terpisah agar kelompok tradisional dan modern tidak perlu berinteraksi.",
+        "score": 2,
+        "reason": "Menghindari konflik jangka pendek, tetapi memperlebar jarak sosial dan tidak membangun identitas bersama. Kesulitan Contoh Soal 2 – Adaptasi dalam Masyarakat Majemuk Level Bloom: C4 – Menganalisis Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang digunakan: Nilai budaya, identitas bersama, partisipasi, dan adaptasi bentuk kegiatan Kata kunci: identitas, generasi muda, dialog, pelestarian, relevansi, partisipasi Opsi C paling tepat karena memahami bahwa budaya berfungsi sebagai identitas dan sumber kebersamaan, tetapi bentuk penyajiannya dapat berkembang. Dialog membantu menghindari pemaksaan dari kelompok tradisional maupun modern, sedangkan penyesuaian format menjaga keberlanjutan tanpa menghilangkan substansi budaya.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Sosial Budaya, contoh 9"
+  },
+  {
+    "id": "tkp-ref-10",
+    "subtest": "TKP",
+    "topic": "Sosial Budaya",
+    "subtopic": "Adaptasi dalam Masyarakat Majemuk",
+    "bloom": "C4",
+    "difficulty": "hots",
+    "stem": "Anda ditugaskan di daerah yang memiliki tradisi kuat. Anda diundang menghadiri acara yang mengharuskan tamu mengenakan pakaian tradisional, tetapi Anda tidak memiliki pakaian tersebut. Tindakan yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Datang dengan pakaian kasual karena kehadiran lebih penting daripada aturan pakaian.",
+        "score": 1,
+        "reason": "Tetap hadir, tetapi mengutamakan kenyamanan pribadi dan berisiko dianggap mengabaikan makna simbolik acara."
+      },
+      {
+        "text": "Menolak undangan agar tidak dianggap tidak menghormati aturan pakaian.",
+        "score": 3,
+        "reason": "Menghindari pelanggaran, tetapi memilih mundur sebelum mencari solusi atau berkomunikasi."
+      },
+      {
+        "text": "Meminta panitia mengubah aturan pakaian karena tidak semua tamu memilikinya.",
+        "score": 2,
+        "reason": "Mengusulkan perubahan demi akses, tetapi tidak proporsional karena meminta seluruh acara menyesuaikan kondisi pribadi."
+      },
+      {
+        "text": "Menghubungi panitia untuk menjelaskan kondisi, memahami ketentuan, dan mencari alternatif pakaian yang sopan serta sesuai.",
+        "score": 5,
+        "reason": "Terbuka, menghormati ketentuan, mencari pemahaman, dan menemukan penyesuaian yang realistis."
+      },
+      {
+        "text": "Meminta rekan lain menggantikan kehadiran Anda agar tidak menimbulkan masalah.",
+        "score": 4,
+        "reason": "Menjaga keterwakilan dan menghindari kesalahan, tetapi mengalihkan tanggung jawab serta kehilangan kesempatan beradaptasi langsung. Kesulitan Contoh Soal 3 – Empati, Kepedulian, dan Harmoni Sosial Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang digunakan: Adaptasi, komunikasi lintas budaya, penghormatan simbol, dan solusi proporsional Kata kunci: pakaian tradisional, undangan, komunikasi, alternatif, menghargai tradisi Opsi D paling tepat karena tidak mengabaikan simbol budaya dan tidak pula menghindari interaksi. Komunikasi dengan panitia memberi kesempatan memahami makna ketentuan serta menemukan alternatif yang tetap menghormati acara. Respons ini adaptif, realistis, dan menjaga hubungan sosial.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Sosial Budaya, contoh 10"
+  },
+  {
+    "id": "tkp-ref-11",
+    "subtest": "TKP",
+    "topic": "Sosial Budaya",
+    "subtopic": "Empati, Kepedulian, dan Harmoni Sosial",
+    "bloom": "C5",
+    "difficulty": "hots",
+    "stem": "Dalam kelompok diskusi, seorang anggota dari latar belakang suku yang berbeda tampak kurang diterima oleh sebagian anggota lain dan jarang diberi kesempatan berbicara. Respons yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Fokus menyelesaikan tugas agar perbedaan tidak menghambat target kelompok.",
+        "score": 3,
+        "reason": "Menjaga fokus tugas, tetapi mengabaikan masalah sosial yang dapat terus merusak kerja sama."
+      },
+      {
+        "text": "Membiarkan anggota tersebut menyesuaikan diri sendiri agar tidak memperbesar masalah.",
+        "score": 2,
+        "reason": "Menghindari konfrontasi, tetapi membebankan seluruh proses adaptasi kepada pihak yang sudah kurang diterima."
+      },
+      {
+        "text": "Menjaga jarak agar Anda tidak ikut dianggap berbeda oleh anggota lain.",
+        "score": 1,
+        "reason": "Memperkuat eksklusi dan menunjukkan kepedulian yang rendah terhadap ketidakadilan."
+      },
+      {
+        "text": "Mendekati anggota tersebut secara personal dan menunjukkan dukungan saat diskusi.",
+        "score": 4,
+        "reason": "Memberi dukungan nyata dan positif, tetapi belum memperbaiki perilaku kelompok secara keseluruhan."
+      },
+      {
+        "text": "Mengajak seluruh anggota menghargai keberagaman dan mengatur diskusi agar semua orang mendapat ruang berkontribusi.",
+        "score": 5,
+        "reason": "Empatik, inklusif, menyentuh akar dinamika kelompok, dan menciptakan kesempatan partisipasi yang setara. Kesulitan Kesulitan Contoh Soal 4 – Perubahan Sosial Budaya dan Penyelesaian Konflik Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang digunakan: Inklusivitas, empati aktif, kesetaraan partisipasi, dan harmoni kelompok Kata kunci: eksklusi, suku, ruang bicara, dukungan, kelompok, kesetaraan Opsi E paling tepat karena tidak hanya mendukung individu yang terdampak, tetapi memperbaiki dinamika kelompok. Ajakan menghargai keberagaman disertai pengaturan kesempatan berbicara membuat perubahan dapat diamati dan mencegah eksklusi berulang. Tindakan ini menjaga martabat tanpa mempermalukan pihak tertentu.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Sosial Budaya, contoh 11"
+  },
+  {
+    "id": "tkp-ref-12",
+    "subtest": "TKP",
+    "topic": "Sosial Budaya",
+    "subtopic": "Perubahan Sosial Budaya dan Penyelesaian Konflik",
+    "bloom": "C5",
+    "difficulty": "hots",
+    "stem": "Sebagian warga menolak rencana pembangunan fasilitas umum karena lokasinya dianggap terlalu dekat dengan tempat yang memiliki nilai sakral. Izin administratif sudah tersedia dan jadwal proyek terbatas. Langkah yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Melanjutkan pembangunan karena seluruh izin sudah terpenuhi.",
+        "score": 1,
+        "reason": "Patuh prosedur, tetapi mengabaikan dampak sosial dan berpotensi memperbesar konflik."
+      },
+      {
+        "text": "Mengajak warga, tokoh terkait, dan tim proyek berdialog untuk memetakan nilai yang dipersoalkan serta mencari alternatif lokasi atau rancangan yang dapat diterima.",
+        "score": 5,
+        "reason": "Partisipatif, menghargai nilai lokal, tetap berorientasi solusi, dan menyeimbangkan pembangunan dengan harmoni."
+      },
+      {
+        "text": "Membiarkan penolakan karena perbedaan pendapat merupakan hal biasa dalam pembangunan.",
+        "score": 2,
+        "reason": "Tidak memperkeruh secara langsung, tetapi pasif dan mengabaikan tanggung jawab menyelesaikan konflik."
+      },
+      {
+        "text": "Menghentikan proyek dan menyerahkan keputusan sepenuhnya kepada atasan.",
+        "score": 4,
+        "reason": "Berhati-hati dan mencegah eskalasi, tetapi mengalihkan tanggung jawab serta belum membangun solusi bersama."
+      },
+      {
+        "text": "Memperkecil bangunan agar terlihat tidak terlalu mengganggu tanpa membahas persoalan dengan warga.",
+        "score": 3,
+        "reason": "Memberi penyesuaian teknis, tetapi belum menyentuh akar persoalan dan berisiko dianggap sepihak. Kesulitan Contoh Soal 1 – Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan Level Bloom: C3 – Menerapkan Tingkat Kesulitan: Sulit"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang digunakan: Perubahan sosial, partisipasi masyarakat, nilai sakral, mediasi, dan solusi integratif Kata kunci: pembangunan, penolakan, lokasi sakral, dialog, alternatif, kesepakatan Opsi B paling tepat karena mengakui bahwa izin administratif belum otomatis menyelesaikan legitimasi sosial. Dialog representatif membantu memahami nilai sakral, memeriksa ruang kompromi, dan mencari alternatif yang tetap memenuhi tujuan pembangunan. Pendekatan ini mencegah pemaksaan sekaligus tidak menghentikan perubahan tanpa upaya solusi.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Sosial Budaya, contoh 12"
+  },
+  {
+    "id": "tkp-ref-13",
+    "subtest": "TKP",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan",
+    "bloom": "C3",
+    "difficulty": "sulit",
+    "stem": "Anda harus menganalisis data interaksi pelanggan dalam jumlah besar dan menyelesaikan laporan dalam dua hari. Anda telah terbiasa menggunakan aplikasi analisis yang resmi, aman, dan sesuai kebutuhan. Tindakan paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Meminta perpanjangan waktu sebelum mencoba mengolah data karena jumlahnya sangat besar.",
+        "score": 3,
+        "reason": "Berhati-hati dan komunikatif, tetapi meminta tambahan waktu sebelum mencoba solusi yang tersedia menunjukkan pemecahan masalah yang belum optimal."
+      },
+      {
+        "text": "Mengolah seluruh data secara manual agar proses sepenuhnya berada dalam kendali Anda.",
+        "score": 4,
+        "reason": "Aman dan dapat dikendalikan, tetapi sangat tidak efisien serta rawan kesalahan ketika alat resmi yang tepat sudah tersedia."
+      },
+      {
+        "text": "Menggunakan aplikasi tersebut, memeriksa sampel dan hasil akhirnya, lalu mendokumentasikan proses sebelum menyerahkan laporan.",
+        "score": 5,
+        "reason": "Memanfaatkan alat yang sesuai, memvalidasi hasil, dan menjaga keterlacakan proses."
+      },
+      {
+        "text": "Mencoba aplikasi lain yang lebih baru tanpa memeriksa keamanan dan keandalannya.",
+        "score": 1,
+        "reason": "Menggunakan alat yang belum dinilai aman dan andal dapat membahayakan data serta kualitas hasil."
+      },
+      {
+        "text": "Membagi data secara acak kepada beberapa rekan agar cepat selesai tanpa menyamakan metode pengolahan.",
+        "score": 2,
+        "reason": "Pembagian tanpa metode dan koordinasi yang sama berisiko menghasilkan data tidak konsisten dan sulit dipertanggungjawabkan. Contoh Soal 2 – Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang digunakan: Pemanfaatan TIK yang produktif, aman, dan akurat Kata kunci: alat resmi, data besar, efisiensi, validasi, dokumentasi Opsi C paling tepat karena teknologi digunakan untuk menjawab kebutuhan nyata, tetapi hasilnya tidak diterima secara otomatis. Pemeriksaan sampel, validasi akhir, dan dokumentasi menjaga akurasi serta membuat proses dapat ditelusuri. Tindakan ini menyeimbangkan kecepatan, mutu, dan akuntabilitas.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Teknologi Informasi dan Komunikasi, contoh 13"
+  },
+  {
+    "id": "tkp-ref-14",
+    "subtest": "TKP",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan",
+    "bloom": "C5",
+    "difficulty": "hots",
+    "stem": "Sebuah proyek melibatkan beberapa tim di lokasi berbeda. Revisi dokumen sering terlambat diterima, laporan progres tidak sinkron, dan sebagian anggota belum terbiasa menggunakan perangkat kolaborasi. Langkah strategis paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menunjuk satu penghubung di setiap lokasi untuk mengirim pembaruan secara manual setiap hari.",
+        "score": 3,
+        "reason": "Membantu komunikasi dasar, tetapi proses manual tetap rentan terlambat, tidak konsisten, dan bergantung pada individu."
+      },
+      {
+        "text": "Menyusun panduan kerja digital dan meminta setiap tim mempelajarinya secara mandiri.",
+        "score": 2,
+        "reason": "Panduan berguna, tetapi tanpa sistem dan pendampingan tidak menjamin perubahan praktik."
+      },
+      {
+        "text": "Menambah rapat video secara rutin agar setiap tim dapat melaporkan perkembangan.",
+        "score": 4,
+        "reason": "Rapat video mempercepat komunikasi, tetapi tidak cukup membangun satu sumber data dan pembaruan waktu nyata."
+      },
+      {
+        "text": "Menerapkan platform kolaborasi resmi secara bertahap, menetapkan alur pembaruan, dan mendampingi pengguna sampai informasi terintegrasi.",
+        "score": 5,
+        "reason": "Menggabungkan integrasi sistem, alur kerja, penerapan bertahap, dan pendampingan pengguna."
+      },
+      {
+        "text": "Mengirim tim pemantau ke setiap lokasi untuk mengumpulkan seluruh laporan sebelum dikonsolidasikan.",
+        "score": 1,
+        "reason": "Pengumpulan fisik menambah beban dan tidak menyelesaikan keterlambatan serta ketidaksinkronan informasi. Kesulitan Kesulitan Contoh Soal 3 – Adaptasi terhadap Perubahan Teknologi Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang digunakan: Integrasi informasi dan kolaborasi digital Kata kunci: platform resmi, sinkronisasi, pendampingan, perubahan bertahap, keterlacakan Opsi D paling tepat karena menyelesaikan akar masalah berupa informasi yang terpencar dan kesiapan pengguna yang tidak sama. Platform resmi membentuk satu sumber informasi, sedangkan alur pembaruan dan pendampingan memastikan sistem benar-benar digunakan. Penerapan bertahap mengurangi resistensi serta menjaga pekerjaan tetap berjalan.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Teknologi Informasi dan Komunikasi, contoh 14"
+  },
+  {
+    "id": "tkp-ref-15",
+    "subtest": "TKP",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Adaptasi terhadap Perubahan Teknologi",
+    "bloom": "C5",
+    "difficulty": "hots",
+    "stem": "Organisasi Anda memperoleh akses awal ke sistem pelaporan yang diperkirakan akan menjadi standar dalam waktu dekat. Sistem tersebut belum diwajibkan. Sebagian rekan memilih bertahan dengan cara manual, sedangkan pimpinan belum memberi arahan khusus. Sikap paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mengajak rekan mendiskusikan apakah sistem perlu digunakan sekarang atau menunggu arahan resmi.",
+        "score": 3,
+        "reason": "Diskusi dapat mengurangi resistensi, tetapi tanpa pembelajaran dan uji coba perubahan mudah berhenti sebagai wacana."
+      },
+      {
+        "text": "Mempelajari sistem untuk kepentingan sendiri tanpa membahasnya dengan rekan agar tidak dianggap memaksakan.",
+        "score": 2,
+        "reason": "Belajar sendiri adalah langkah awal yang baik, tetapi manfaatnya tidak membantu kesiapan tim."
+      },
+      {
+        "text": "Mulai menggunakan sistem pada tugas sendiri dan membiarkan rekan menentukan pilihannya masing-masing.",
+        "score": 4,
+        "reason": "Sudah menunjukkan inisiatif dan memberi contoh, tetapi perubahan dibiarkan berjalan sendiri tanpa pengelolaan kolektif."
+      },
+      {
+        "text": "Mempelajari dan menguji sistem pada pekerjaan yang sesuai, mencatat hasilnya, lalu mengusulkan sesi berbagi dan penerapan bertahap kepada pimpinan.",
+        "score": 5,
+        "reason": "Menggabungkan belajar, uji coba terkontrol, bukti, berbagi praktik, dan koordinasi penerapan."
+      },
+      {
+        "text": "Menunggu sampai sistem diwajibkan agar tidak menimbulkan kebingungan bagi tim.",
+        "score": 1,
+        "reason": "Menunggu sampai diwajibkan membuat tim berpotensi tidak siap dan menunjukkan sikap pasif terhadap perubahan yang sudah jelas arahnya. Kesulitan Contoh Soal 4 – Etika, Keamanan, dan Tanggung Jawab Digital Level Bloom: C4 – Menganalisis Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang digunakan: Adaptasi proaktif dan pengelolaan perubahan Kata kunci: pembelajaran mandiri, uji coba, bukti, berbagi praktik, koordinasi, penerapan bertahap Opsi D paling tepat karena menunjukkan inisiatif tanpa melampaui kewenangan. Peserta belajar dan mencoba pada ruang yang sesuai, menghasilkan bukti, berbagi pengetahuan, serta mengoordinasikan penerapan dengan pimpinan. Perubahan tidak dipaksakan, tetapi dipersiapkan agar tim tidak tertinggal ketika sistem benar-benar digunakan.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Teknologi Informasi dan Komunikasi, contoh 15"
+  },
+  {
+    "id": "tkp-ref-16",
+    "subtest": "TKP",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Etika, Keamanan, dan Tanggung Jawab Digital",
+    "bloom": "C4",
+    "difficulty": "hots",
+    "stem": "Anda menerima e-mail dari alamat yang sangat mirip dengan alamat resmi organisasi. Pesan tersebut meminta dokumen berisi data pribadi melalui sebuah tautan. Beberapa rekan hampir membuka tautan itu, sedangkan Anda menduga pesan tersebut merupakan phishing. Tindakan paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Membuka tautan pada perangkat kerja untuk memastikan apakah permintaan tersebut benar.",
+        "score": 1,
+        "reason": "Membuka tautan untuk menguji kebenaran dapat mengaktifkan malware atau mencuri kredensial."
+      },
+      {
+        "text": "Tidak membuka atau meneruskan tautan, menyimpan pesan sebagai bukti, mengingatkan rekan, dan melaporkannya melalui kanal keamanan yang ditetapkan.",
+        "score": 5,
+        "reason": "Mengendalikan risiko, menjaga bukti, memberi peringatan aman, dan mengikuti jalur penanganan resmi."
+      },
+      {
+        "text": "Menghapus e-mail tersebut dari kotak masuk agar Anda tidak salah membukanya.",
+        "score": 3,
+        "reason": "Mengurangi risiko pribadi, tetapi tidak melindungi rekan, menghilangkan jejak, dan tidak memungkinkan penanganan organisasi."
+      },
+      {
+        "text": "Meneruskan e-mail kepada seluruh rekan dengan pesan agar mereka berhati-hati.",
+        "score": 2,
+        "reason": "Niatnya memperingatkan, tetapi meneruskan tautan memperluas paparan dan meningkatkan kemungkinan ada yang membukanya."
+      },
+      {
+        "text": "Menghubungi pengirim melalui nomor atau alamat resmi yang sudah dikenal untuk memverifikasi permintaan, lalu melaporkan jika terbukti palsu.",
+        "score": 4,
+        "reason": "Verifikasi melalui kanal terpisah merupakan tindakan aman dan cermat, tetapi laporan serta peringatan dapat terlambat ketika rekan sudah berisiko. Kesulitan Contoh Soal 1 – Konsep Dasar, Ciri, dan Etika Profesional Level Bloom: C4 – Menganalisis Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang digunakan: Pencegahan phishing dan penanganan insiden Kata kunci: verifikasi, tidak membuka tautan, bukti, peringatan, pelaporan, kanal resmi Opsi B paling tepat karena menghentikan risiko langsung, melindungi rekan, mempertahankan bukti, dan meneruskan penanganan kepada pihak yang berwenang. Tindakan tersebut tidak mencoba membuktikan ancaman dengan cara berbahaya dan tidak menyebarkan tautan ke lebih banyak orang.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Teknologi Informasi dan Komunikasi, contoh 16"
+  },
+  {
+    "id": "tkp-ref-17",
+    "subtest": "TKP",
+    "topic": "Profesionalisme",
+    "subtopic": "Konsep Dasar, Ciri, dan Etika Profesional",
+    "bloom": "C4",
+    "difficulty": "hots",
+    "stem": "Sebagai anggota baru dalam tim, Anda menemukan kesalahan angka pada laporan yang disusun oleh rekan senior. Jika dibiarkan, kesalahan tersebut dapat memengaruhi keputusan berikutnya, tetapi koreksi akan membuat sebagian laporan perlu direvisi. Apa tindakan paling tepat?",
+    "options": [
+      {
+        "text": "Menegur rekan senior di depan tim agar semua orang mengetahui kesalahan tersebut.",
+        "score": 1,
+        "reason": "Menjaga akurasi, tetapi mempermalukan pihak lain dan dapat membuat komunikasi defensif."
+      },
+      {
+        "text": "Membiarkan kesalahan karena menghormati pengalaman dan posisi rekan senior.",
+        "score": 2,
+        "reason": "Menghormati senioritas, tetapi membiarkan risiko dan mengabaikan tanggung jawab atas kualitas."
+      },
+      {
+        "text": "Memeriksa kembali temuan, menyampaikan bukti dan dampaknya secara sopan kepada pihak terkait, serta mengusulkan langkah revisi.",
+        "score": 5,
+        "reason": "Memverifikasi, berkomunikasi etis, dan menawarkan solusi yang menjaga akurasi serta hubungan kerja."
+      },
+      {
+        "text": "Menunggu sampai atasan menemukan kesalahan tersebut agar Anda tidak dianggap mencampuri pekerjaan orang lain.",
+        "score": 3,
+        "reason": "Menghindari kesalahan tindakan, tetapi terlalu pasif dan membiarkan dampak berkembang."
+      },
+      {
+        "text": "Memperbaiki angka secara diam-diam agar laporan segera selesai tanpa mempermalukan rekan senior.",
+        "score": 4,
+        "reason": "Berorientasi perbaikan, tetapi tidak transparan dan mengubah dokumen tanpa koordinasi. Contoh Soal 2 – Konsep Dasar, Ciri, dan Etika Profesional Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang digunakan: Objektivitas, etika komunikasi, akurasi, dan perbaikan berbasis bukti Kata kunci: kesalahan data, senioritas, verifikasi, komunikasi sopan, revisi Opsi C paling tepat karena menggabungkan verifikasi, keberanian menyampaikan masalah, penghormatan kepada pihak lain, serta orientasi pada solusi. Profesionalisme tidak berarti diam demi senioritas dan tidak pula membenarkan perubahan tanpa koordinasi. Temuan perlu dipastikan, dikomunikasikan melalui cara yang tepat, dan diikuti rencana perbaikan yang dapat dipertanggungjawabkan.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Profesionalisme, contoh 17"
+  },
+  {
+    "id": "tkp-ref-18",
+    "subtest": "TKP",
+    "topic": "Profesionalisme",
+    "subtopic": "Konsep Dasar, Ciri, dan Etika Profesional",
+    "bloom": "C5",
+    "difficulty": "hots",
+    "stem": "Tim Anda mendapat tekanan untuk memublikasikan laporan secepat mungkin. Beberapa bagian belum diverifikasi sepenuhnya dan pimpinan meminta agar laporan tetap diterbitkan demi menjaga citra bahwa target telah tercapai. Tindakan Anda adalah...",
+    "options": [
+      {
+        "text": "Menerbitkan laporan sesuai arahan karena pimpinan bertanggung jawab atas keputusan akhir.",
+        "score": 2,
+        "reason": "Patuh pada arahan, tetapi melepaskan tanggung jawab profesional atas kualitas informasi."
+      },
+      {
+        "text": "Menolak seluruh pekerjaan dan meminta nama Anda dihapus dari tim.",
+        "score": 1,
+        "reason": "Menolak risiko, tetapi tidak menyelesaikan tugas dan tidak menawarkan perbaikan."
+      },
+      {
+        "text": "Menjelaskan risiko secara berbasis data, mengusulkan verifikasi minimum pada bagian kritis, dan menyepakati waktu publikasi yang realistis.",
+        "score": 5,
+        "reason": "Menjaga akurasi, berkomunikasi berbasis bukti, dan menawarkan solusi proporsional."
+      },
+      {
+        "text": "Menerbitkan laporan lalu memperbaiki kesalahan setelah ada tanggapan pembaca.",
+        "score": 3,
+        "reason": "Memenuhi target, tetapi menjadikan publik sebagai penguji dan berisiko merusak kepercayaan."
+      },
+      {
+        "text": "Menunda publikasi tanpa memberi penjelasan kepada pihak yang menunggu.",
+        "score": 4,
+        "reason": "Melindungi mutu, tetapi kurang akuntabel karena menunda tanpa komunikasi dan rencana. Kesulitan Contoh Soal 3 – Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja Level Bloom: C3 – Menerapkan Tingkat Kesulitan: Sulit"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang digunakan: Etika profesional, keberanian menyampaikan risiko, dan keseimbangan mutu-waktu Kata kunci: tekanan target, verifikasi, publikasi, risiko, komunikasi Opsi C mempertahankan standar tanpa mengabaikan kebutuhan waktu. Tindakan ini tidak sekadar menolak arahan, tetapi menunjukkan bagian yang berisiko, menawarkan langkah minimum yang dapat menjaga keandalan, dan membangun kesepakatan yang jelas. Profesionalisme menuntut keberanian menyampaikan fakta sekaligus kemampuan mencari jalan keluar yang operasional.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Profesionalisme, contoh 18"
+  },
+  {
+    "id": "tkp-ref-19",
+    "subtest": "TKP",
+    "topic": "Profesionalisme",
+    "subtopic": "Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja",
+    "bloom": "C3",
+    "difficulty": "sulit",
+    "stem": "Anda diminta menandatangani laporan yang disusun oleh rekan kerja. Waktu penyerahan hampir tiba, tetapi Anda belum memeriksa seluruh data dan rekan tersebut meyakinkan bahwa semuanya sudah benar. Apa tindakan paling tepat?",
+    "options": [
+      {
+        "text": "Menandatangani laporan karena rekan kerja sudah memberikan jaminan.",
+        "score": 3,
+        "reason": "Menjaga hubungan dan kecepatan, tetapi mengandalkan kepercayaan tanpa verifikasi."
+      },
+      {
+        "text": "Menunda tanda tangan tanpa menjelaskan alasan atau rencana pemeriksaan.",
+        "score": 4,
+        "reason": "Berhati-hati, tetapi tidak akuntabel karena tidak menjelaskan alasan, prioritas, atau tindak lanjut."
+      },
+      {
+        "text": "Melakukan pemeriksaan terarah pada data kritis dan bukti pendukung sebelum menandatangani, lalu mencatat koreksi jika ditemukan.",
+        "score": 5,
+        "reason": "Melakukan verifikasi proporsional dan menjaga jejak koreksi sebelum menerima tanggung jawab."
+      },
+      {
+        "text": "Menolak menandatangani dan menyerahkan seluruh tanggung jawab kepada atasan.",
+        "score": 1,
+        "reason": "Menghindari risiko dengan melepaskan tugas yang telah diamanatkan."
+      },
+      {
+        "text": "Meminta rekan lain menyatakan bahwa laporan benar tanpa melakukan pemeriksaan sendiri.",
+        "score": 2,
+        "reason": "Mencari konfirmasi, tetapi tetap tidak menjalankan tanggung jawab verifikasi sendiri. Kesulitan Contoh Soal 4 – Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang digunakan: Akuntabilitas dokumen, verifikasi, dan tanggung jawab penandatangan Kata kunci: tanda tangan, laporan, verifikasi, bukti, akuntabilitas Opsi C paling tepat karena tanda tangan menunjukkan penerimaan tanggung jawab. Pemeriksaan tidak harus mengulang seluruh pekerjaan secara tidak efisien, tetapi harus cukup untuk memastikan bagian kritis, sumber data, dan konsistensi laporan. Koreksi perlu dicatat agar proses dapat ditelusuri.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Profesionalisme, contoh 19"
+  },
+  {
+    "id": "tkp-ref-20",
+    "subtest": "TKP",
+    "topic": "Profesionalisme",
+    "subtopic": "Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi",
+    "bloom": "C5",
+    "difficulty": "hots",
+    "stem": "Pukul 10.00 Anda sedang menyusun laporan audit yang harus diunggah paling lambat pukul 17.00. Beberapa menit kemudian, atasan meminta bahan presentasi untuk rapat pukul 12.00. Seorang rekan yang kompeten sedang tersedia untuk membantu bagian rutin laporan. Apa langkah paling tepat?",
+    "options": [
+      {
+        "text": "Menghentikan laporan dan mengerjakan presentasi tanpa menyusun rencana untuk laporan audit.",
+        "score": 3,
+        "reason": "Responsif terhadap tugas mendesak, tetapi tidak mengelola risiko laporan yang memiliki tenggat pasti."
+      },
+      {
+        "text": "Meminta atasan menunda presentasi karena laporan audit memiliki batas sistem.",
+        "score": 2,
+        "reason": "Menjaga laporan, tetapi terlalu kaku dan belum mencoba mengelola sumber daya yang tersedia."
+      },
+      {
+        "text": "Mengonfirmasi prioritas, menyusun rencana waktu, mengerjakan bagian presentasi yang mendesak, mendelegasikan bagian rutin laporan dengan instruksi dan checkpoint yang jelas, lalu memverifikasi hasil.",
+        "score": 5,
+        "reason": "Menggabungkan prioritas, komunikasi, delegasi terkontrol, dan verifikasi hasil."
+      },
+      {
+        "text": "Mengerjakan kedua tugas secara paralel tanpa komunikasi agar tidak terlihat kesulitan.",
+        "score": 1,
+        "reason": "Terlihat bekerja keras, tetapi tanpa rencana dan komunikasi berisiko menurunkan kualitas keduanya."
+      },
+      {
+        "text": "Mengalihkan seluruh presentasi kepada rekan dan tetap mengerjakan laporan audit.",
+        "score": 4,
+        "reason": "Memanfaatkan rekan, tetapi sepenuhnya mengalihkan instruksi langsung dan lemah pada koordinasi tanggung jawab. Contoh Soal 5 – Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang digunakan: Prioritisasi strategis, delegasi, koordinasi, dan akuntabilitas hasil Kata kunci: dua tenggat, urgensi, delegasi, checkpoint, verifikasi Opsi C paling tepat karena tidak memilih salah satu tugas secara impulsif. Respons tersebut memastikan kejelasan prioritas, membagi pekerjaan berdasarkan kompetensi, menjaga komunikasi, dan tetap menempatkan tanggung jawab akhir pada pemilik tugas. Delegasi menjadi profesional ketika instruksi, batas, waktu, dan verifikasi hasil jelas.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Profesionalisme, contoh 20"
+  },
+  {
+    "id": "tkp-ref-21",
+    "subtest": "TKP",
+    "topic": "Profesionalisme",
+    "subtopic": "Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi",
+    "bloom": "C5",
+    "difficulty": "hots",
+    "stem": "Organisasi mulai menerapkan sistem administrasi digital, sedangkan kemampuan Anda dalam pengelolaan dokumen digital masih terbatas. Pekerjaan utama juga cukup padat. Tindakan yang paling tepat adalah...",
+    "options": [
+      {
+        "text": "Menyusun jadwal belajar singkat, mengikuti pelatihan yang relevan, mempraktikkan pada tugas berisiko rendah, dan meminta umpan balik tanpa mengabaikan pekerjaan utama.",
+        "score": 5,
+        "reason": "Proaktif, realistis, langsung diterapkan, dan tetap menjaga pekerjaan utama."
+      },
+      {
+        "text": "Menunggu sampai organisasi memberikan pelatihan resmi kepada seluruh pegawai.",
+        "score": 3,
+        "reason": "Mengandalkan dukungan organisasi yang mungkin bermanfaat, tetapi terlalu pasif."
+      },
+      {
+        "text": "Tetap menggunakan cara lama karena hasilnya selama ini sudah diterima.",
+        "score": 2,
+        "reason": "Menjaga kelancaran jangka pendek, tetapi menolak tuntutan perubahan dan membatasi kinerja."
+      },
+      {
+        "text": "Meminta rekan yang lebih mahir mengerjakan seluruh bagian digital untuk Anda.",
+        "score": 1,
+        "reason": "Menyelesaikan tugas sementara, tetapi melepaskan tanggung jawab belajar dan membangun ketergantungan."
+      },
+      {
+        "text": "Menunda belajar sampai beban kerja benar-benar kosong.",
+        "score": 4,
+        "reason": "Mempertimbangkan beban kerja, tetapi menunggu waktu kosong membuat pengembangan terus tertunda. sebagai cara mencapai tujuan. Kesulitan Kesulitan Contoh Soal 1 – Konsep Dasar Anti Radikalisme Level Bloom: C4 – Menganalisis Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang digunakan: Pengembangan kompetensi, manajemen belajar, praktik terkontrol, dan umpan balik Kata kunci: kesenjangan kompetensi, sistem baru, pelatihan, praktik, waktu belajar Opsi A paling tepat karena mengubah kesenjangan kemampuan menjadi rencana belajar yang terukur dan terkait pekerjaan. Belajar tidak dilakukan secara abstrak atau menunggu kondisi sempurna, tetapi dijadwalkan, diterapkan bertahap, dan dievaluasi melalui umpan balik. Pekerjaan utama tetap dijaga sehingga pengembangan diri tidak menjadi alasan mengabaikan tanggung jawab.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Profesionalisme, contoh 21"
+  },
+  {
+    "id": "tkp-ref-22",
+    "subtest": "TKP",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Konsep Dasar Anti Radikalisme",
+    "bloom": "C4",
+    "difficulty": "hots",
+    "stem": "Dalam rapat penentuan penerima bantuan, seorang anggota mengusulkan agar warga dari kelompok tertentu tidak diprioritaskan karena dianggap “tidak sejalan” dengan lingkungan mayoritas. Data kebutuhan menunjukkan beberapa warga dari kelompok tersebut justru termasuk yang paling membutuhkan. Sikap Anda adalah ...",
+    "options": [
+      {
+        "text": "Menolak usulan tersebut secara tegas tanpa memberikan penjelasan agar rapat segera kembali ke agenda.",
+        "score": 4,
+        "reason": "Tegas dan menolak diskriminasi, tetapi tanpa penjelasan dapat menimbulkan resistensi dan tidak memperbaiki cara berpikir forum."
+      },
+      {
+        "text": "Meminta pembahasan ditunda sampai situasi lebih tenang agar tidak terjadi perdebatan.",
+        "score": 3,
+        "reason": "Menunda dapat meredakan ketegangan, tetapi belum menyelesaikan inti diskriminasi dan berisiko menunda hak warga."
+      },
+      {
+        "text": "Menegaskan bahwa bantuan harus diberikan berdasarkan kriteria objektif, menjelaskan risiko diskriminasi, dan mengarahkan rapat menilai data kebutuhan seluruh warga.",
+        "score": 5,
+        "reason": "Adil, berbasis data, komunikatif, dan langsung mengarahkan forum pada keputusan yang objektif."
+      },
+      {
+        "text": "Menerima sebagian usulan agar keputusan dapat disepakati oleh mayoritas anggota rapat.",
+        "score": 1,
+        "reason": "Mengompromikan hak warga dan melegitimasi diskriminasi demi kesepakatan."
+      },
+      {
+        "text": "Mencatat keberatan pribadi, tetapi mengikuti keputusan mayoritas karena forum memiliki kewenangan.",
+        "score": 2,
+        "reason": "Menghindari tanggung jawab moral dan membiarkan keputusan tidak adil terjadi. Kesulitan Kesulitan Contoh Soal 2 – Ciri-Ciri dan Bentuk Paparan Radikalisme Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang digunakan: Non-diskriminasi, keadilan sosial, komunikasi asertif, dan keputusan berbasis bukti Kata kunci: bantuan, kelompok berbeda, mayoritas, kriteria objektif, diskriminasi Opsi C paling tepat karena tidak sekadar menolak, tetapi mengembalikan keputusan pada kriteria yang sah dan kebutuhan nyata. Respons ini mencegah pengucilan berbasis identitas, menjaga wibawa forum, dan memberi dasar yang dapat dipertanggungjawabkan.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Anti Radikalisme, contoh 22"
+  },
+  {
+    "id": "tkp-ref-23",
+    "subtest": "TKP",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Ciri-Ciri dan Bentuk Paparan Radikalisme",
+    "bloom": "C5",
+    "difficulty": "hots",
+    "stem": "Anda menerima undangan webinar dari akun yang tidak dikenal. Deskripsinya menggunakan bahasa perubahan yang umum, tetapi lampiran promosi memuat ajakan merendahkan kelompok tertentu, melarang peserta mempertanyakan materi, dan mengarahkan ke kanal lain yang tidak terverifikasi. Beberapa rekan berniat mengikuti karena penasaran. Tindakan Anda adalah ...",
+    "options": [
+      {
+        "text": "Mengikuti webinar untuk memastikan sendiri apakah materinya benar-benar berbahaya.",
+        "score": 1,
+        "reason": "Meningkatkan paparan dan risiko tanpa kewenangan investigasi."
+      },
+      {
+        "text": "Meneruskan undangan kepada rekan lain dengan pesan agar mereka berhati-hati.",
+        "score": 2,
+        "reason": "Berniat memperingatkan, tetapi justru memperluas jangkauan tautan dan kemungkinan akses."
+      },
+      {
+        "text": "Mengabaikan undangan karena Anda tidak berniat mengikutinya.",
+        "score": 3,
+        "reason": "Menghindari risiko pribadi, tetapi tidak melindungi rekan atau mencegah penyebaran."
+      },
+      {
+        "text": "Menyimpan informasi yang diperlukan, mengingatkan rekan agar tidak mengaksesnya, dan melaporkan akun atau tautan melalui kanal keamanan yang sesuai.",
+        "score": 5,
+        "reason": "Aman, proporsional, mencegah amplifikasi, dan menggunakan kanal yang tepat."
+      },
+      {
+        "text": "Menulis komentar publik yang menuduh penyelenggara sebagai kelompok radikal agar orang lain tidak ikut.",
+        "score": 4,
+        "reason": "Berupaya memperingatkan publik, tetapi tuduhan terbuka dapat memicu konflik, salah informasi, atau eskalasi. Kesulitan Contoh Soal 3 – Sikap Pencegahan dan Penolakan terhadap Radikalisme Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang digunakan: Identifikasi propaganda, keselamatan digital, pencegahan amplifikasi, dan pelaporan proporsional Kata kunci: akun tidak dikenal, propaganda, larangan bertanya, kanal tidak terverifikasi, keamanan Opsi D paling tepat karena bukti dalam stimulus sudah menunjukkan risiko yang lebih dari sekadar pendapat kontroversial. Respons tersebut tidak menambah paparan, melindungi rekan, menjaga bukti minimum yang diperlukan, dan menyerahkan penanganan kepada kanal yang berwenang.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Anti Radikalisme, contoh 23"
+  },
+  {
+    "id": "tkp-ref-24",
+    "subtest": "TKP",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Sikap Pencegahan dan Penolakan terhadap Radikalisme",
+    "bloom": "C5",
+    "difficulty": "hots",
+    "stem": "Panitia kegiatan komunitas berencana mengundang pembicara yang pernah beberapa kali menyampaikan ujaran kebencian terhadap kelompok tertentu. Kegiatan belum diumumkan dan panitia masih terbuka terhadap masukan. Langkah Anda adalah ...",
+    "options": [
+      {
+        "text": "Meminta aparat mengawasi kegiatan sejak awal agar panitia merasa jera.",
+        "score": 2,
+        "reason": "Terlalu cepat melibatkan aparat pada situasi yang masih dapat ditangani secara persuasif."
+      },
+      {
+        "text": "Mengimbau masyarakat untuk tidak hadir tanpa menghubungi panitia.",
+        "score": 3,
+        "reason": "Mengurangi audiens, tetapi tidak menyelesaikan sumber masalah dan berpotensi menimbulkan rumor."
+      },
+      {
+        "text": "Menghubungi panitia, menyampaikan rekam jejak dan risikonya secara objektif, serta mengusulkan narasumber lain yang lebih kredibel dan inklusif.",
+        "score": 5,
+        "reason": "Preventif, berbasis bukti, komunikatif, dan menawarkan solusi yang dapat diterapkan."
+      },
+      {
+        "text": "Membiarkan kegiatan berjalan dengan menghadirkan pembicara penyeimbang agar semua pandangan terwakili.",
+        "score": 1,
+        "reason": "Tetap memberi ruang pada ujaran kebencian dan menganggapnya setara dengan perbedaan pendapat biasa."
+      },
+      {
+        "text": "Menyarankan kegiatan dibatalkan sepenuhnya tanpa menawarkan alternatif.",
+        "score": 4,
+        "reason": "Tegas mencegah risiko, tetapi tidak memberi alternatif dan dapat memicu resistensi panitia. konfrontasi, dan hubungi pihak berwenang sesuai prosedur. Kesulitan Kesulitan Contoh Soal 4 – Respons di Lingkungan Kerja dan Digital Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang digunakan: Pencegahan dini, komunikasi persuasif, solusi alternatif, dan proporsionalitas Kata kunci: pembicara, ujaran kebencian, kegiatan belum diumumkan, alternatif narasumber Opsi C paling tepat karena masalah masih dapat dicegah melalui komunikasi langsung dan solusi konkret. Tindakan ini menutup ruang penyebaran kebencian tanpa mempermalukan panitia atau menimbulkan konflik yang tidak perlu.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Anti Radikalisme, contoh 24"
+  },
+  {
+    "id": "tkp-ref-25",
+    "subtest": "TKP",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Respons terhadap Radikalisme di Lingkungan Kerja, Sosial, dan Digital",
+    "bloom": "C5",
+    "difficulty": "hots",
+    "stem": "Seorang rekan memberi tahu bahwa dalam grup percakapan internal kantor berulang kali muncul pesan yang merendahkan kelompok tertentu dan mengajak anggota menolak bekerja sama dengan mereka. Beberapa anggota merasa tidak nyaman, tetapi takut menanggapi. Anda tidak menjadi anggota grup tersebut. Tindakan Anda adalah ...",
+    "options": [
+      {
+        "text": "Meminta rekan meneruskan seluruh pesan ke grup lain agar lebih banyak orang mengetahui masalahnya.",
+        "score": 1,
+        "reason": "Memperluas penyebaran konten dan meningkatkan risiko bagi pihak terdampak."
+      },
+      {
+        "text": "Bergabung ke grup untuk memantau percakapan dan mencari siapa yang paling aktif.",
+        "score": 2,
+        "reason": "Menambah paparan dan melampaui peran peserta tanpa menyelesaikan masalah."
+      },
+      {
+        "text": "Mengabaikan karena Anda tidak melihat pesan tersebut secara langsung.",
+        "score": 3,
+        "reason": "Berhati-hati terhadap informasi tidak langsung, tetapi terlalu pasif ketika terdapat pola dan pihak terdampak."
+      },
+      {
+        "text": "Meminta rekan menyimpan bukti yang relevan, mendukung pihak yang terdampak, dan menggunakan kanal internal yang berwenang untuk pemeriksaan serta tindak lanjut.",
+        "score": 5,
+        "reason": "Melindungi pihak terdampak, menjaga bukti, dan menggunakan kewenangan organisasi."
+      },
+      {
+        "text": "Menghubungi pengirim pesan secara pribadi dan menuntut mereka meminta maaf di grup.",
+        "score": 4,
+        "reason": "Menunjukkan keberanian dan koreksi, tetapi berisiko memicu konfrontasi dan pembalasan tanpa perlindungan. Contoh Soal 5 – Respons di Lingkungan Sosial dan Digital Level Bloom: C4 – Menganalisis Tingkat Kesulitan: HOTS"
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang digunakan: Ujaran kebencian berulang, perlindungan pelapor, bukti, dan kanal internal Kata kunci: grup internal, pesan berulang, diskriminasi, takut menanggapi, kanal resmi Opsi D paling tepat karena peserta tidak perlu menyusup atau berkonfrontasi sendiri. Informasi sudah menunjukkan pola berulang dan dampak pada lingkungan kerja, sehingga penanganan formal yang menjaga bukti serta perlindungan pihak terdampak lebih tepat.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Anti Radikalisme, contoh 25"
+  },
+  {
+    "id": "tkp-ref-26",
+    "subtest": "TKP",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Respons terhadap Radikalisme di Lingkungan Kerja, Sosial, dan Digital",
+    "bloom": "C4",
+    "difficulty": "hots",
+    "stem": "Anda melihat rekan mengunggah komentar yang menyinggung kelompok agama tertentu. Unggahan belum menyebar luas, tidak mengandung ancaman, dan sebelumnya rekan tersebut tidak pernah melakukan hal serupa. Respons Anda adalah ...",
+    "options": [
+      {
+        "text": "Mengajak rekan berbicara secara pribadi, menjelaskan dampak unggahan, meminta klarifikasi, dan mendorongnya memperbaiki atau menghapus konten.",
+        "score": 5,
+        "reason": "Proporsional, edukatif, menjaga martabat, dan berorientasi pada perbaikan langsung."
+      },
+      {
+        "text": "Melaporkan langsung kepada pihak berwenang agar ada efek jera.",
+        "score": 3,
+        "reason": "Menunjukkan kepedulian, tetapi terlalu cepat untuk kejadian pertama tanpa ancaman dan tanpa upaya klarifikasi."
+      },
+      {
+        "text": "Menegur keras di kolom komentar agar publik mengetahui bahwa Anda tidak setuju.",
+        "score": 2,
+        "reason": "Menolak ujaran, tetapi mempermalukan rekan dan berpotensi memperluas konflik."
+      },
+      {
+        "text": "Menyampaikan unggahan tersebut kepada banyak rekan agar mereka ikut menasihati.",
+        "score": 1,
+        "reason": "Menyebarkan konten dan membuka peluang gosip atau perundungan."
+      },
+      {
+        "text": "Membiarkan karena unggahan dibuat melalui akun pribadi.",
+        "score": 4,
+        "reason": "Menghormati ruang pribadi, tetapi mengabaikan dampak publik dari unggahan; masih kurang aktif dibanding komunikasi personal."
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang digunakan: Komunikasi personal, klarifikasi, koreksi proporsional, dan etika digital Kata kunci: unggahan pertama, belum meluas, tanpa ancaman, pembicaraan pribadi Opsi A paling tepat karena tingkat risiko masih memungkinkan koreksi personal yang aman. Respons tersebut menjaga martabat, membuka ruang klarifikasi, dan langsung mengurangi dampak melalui perbaikan atau penghapusan konten. Eskalasi dapat dilakukan jika perilaku berulang atau memburuk.",
+    "source": "Panduan Produksi Soal TKP JadiASN — Anti Radikalisme, contoh 26"
+  }
+]

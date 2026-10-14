@@ -1,0 +1,73 @@
+{
+  "reviewed_on": "2026-10-14",
+  "timezone": "Asia/Jakarta",
+  "purpose": "Referensi konten dan pemetaan proyek untuk rencana generator SKD TWK TIU TKP",
+  "implementation_status": "reference_review",
+  "sources": [
+    {
+      "id": "riset-cpns-2027",
+      "name": "JadiASN - Riset Seleksi CPNS 2027.docx",
+      "original_path": "G:/Downloads/JadiASN - Riset Seleksi CPNS 2027.docx",
+      "extracted_text": "references/riset-cpns-2027.txt",
+      "status": "readable",
+      "role": "Kerangka materi SKD dan contoh TWK Bab 5.1",
+      "twk_examples": {
+        "Nasionalisme": 8,
+        "Integritas": 8,
+        "Bela Negara": 8,
+        "Pilar Negara": 8,
+        "Bahasa Negara": 8
+      },
+      "baseline_rules_year": 2024,
+      "rules_for_2027_independently_verified": false
+    },
+    {
+      "id": "tiu-skd-2027",
+      "name": "Contoh Soal TIU SKD 2027.pdf",
+      "url": "https://drive.google.com/file/d/1tzx3GR5GSYtkuTkR1kXfDqyUsao2jXiP/view",
+      "local_pdf": "references/contoh-tiu-skd-2027.pdf",
+      "extracted_text": "references/contoh-tiu-skd-2027.txt",
+      "status": "downloaded_and_read",
+      "pages": 74,
+      "bytes": 2169297,
+      "sha256": "3a7b31f6bd71a371baf27db9e805ff332aa8bfa7485420c480539acb7f3e2838",
+      "visual_sample_pages": [
+        43,
+        57,
+        71
+      ],
+      "text_extraction_limitations": [
+        "Gambar figural dan sebagian rumus atau tabel perlu dibaca dari PDF asli"
+      ]
+    },
+    {
+      "id": "tkp-jadiasn",
+      "name": "Panduan Produksi Soal TKP JadiASN.pdf",
+      "url": "https://drive.google.com/file/d/1NgyWaSFh7oL_Sfjkw37LvxiZCOFQw7P_/view",
+      "local_pdf": "references/panduan-tkp-jadiasn.pdf",
+      "extracted_text": "references/panduan-tkp-jadiasn.txt",
+      "status": "downloaded_and_read",
+      "pages": 97,
+      "bytes": 820290,
+      "sha256": "a145be0012ef08c5f22f784993f5152a718ee15d6376b1d4e33c23b4666d4a1c",
+      "main_topics": 6,
+      "subtopics": 23,
+      "example_headings": 26,
+      "visual_sample_pages": [
+        10
+      ]
+    }
+  ],
+  "reference_projects": [
+    "Kepribadian generator",
+    "Tes Hitung Generator",
+    "Tes Ketelitian Generator",
+    "KBBI Generator",
+    "Tahap2Generator",
+    "tka-generator",
+    "Figural Kesesuaian Generator",
+    "figural dadu",
+    "diagrammatical",
+    "ICON Aplikasi generator"
+  ]
+}
