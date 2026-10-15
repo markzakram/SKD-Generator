@@ -10,7 +10,7 @@ export function download(blob: Blob, filename: string) {
   setTimeout(() => URL.revokeObjectURL(url), 3000);
 }
 export function exportJson(packages: Package[], settings: Settings) {
-  download(new Blob([JSON.stringify({ version: 1, settings, packages }, null, 2)], { type: 'application/json' }), name(settings.title) + '.json');
+  download(new Blob([JSON.stringify({ version: 2, settings, packages }, null, 2)], { type: 'application/json' }), name(settings.title) + '.json');
 }
 function csvCell(text: unknown): string {
   const original = String(text ?? '');
@@ -20,11 +20,12 @@ function csvCell(text: unknown): string {
 }
 export function exportCsv(packages: Package[], settings: Settings) {
   const headers = ['Paket', 'Nomor', 'Subtes', 'Materi', 'Submateri', 'Kesulitan', 'Bloom', 'Soal', 'A', 'B', 'C', 'D', 'E',
-    'Kunci', 'Poin A', 'Poin B', 'Poin C', 'Poin D', 'Poin E', 'Pembahasan', 'Alasan A', 'Alasan B', 'Alasan C', 'Alasan D', 'Alasan E', 'Stimulus JSON', 'Sumber'];
+    'Kunci', 'Poin A', 'Poin B', 'Poin C', 'Poin D', 'Poin E', 'Pembahasan', 'Alasan A', 'Alasan B', 'Alasan C', 'Alasan D', 'Alasan E', 'Stimulus JSON', 'Sumber', 'Status', 'Revisi', 'Penelaah', 'Catatan kurasi', 'Alasan kesulitan', 'Rubrik JSON'];
   const rows = packages.flatMap((pack) => pack.questions.map((q) => [pack.id, q.no, q.subtest, q.topic, q.subtopic, LABELS[q.difficulty],
     q.bloom ?? '', q.stem, ...q.options.map((option) => option.text), letter(q.answer), ...q.options.map((option) => option.score),
     q.explanation, ...q.options.map((option) => option.reason),
-    q.visual || q.table ? JSON.stringify({ visual: q.visual, table: q.table, figures: q.options.map((option) => option.figure) }) : '', q.source]));
+    q.visual || q.table ? JSON.stringify({ visual: q.visual, table: q.table, figures: q.options.map((option) => option.figure) }) : '', q.source,
+    q.review?.status ?? 'draft', q.review?.revision ?? 1, q.review?.reviewer ?? '', q.review?.note ?? '', q.difficultyReason ?? '', q.rubric ? JSON.stringify(q.rubric) : '']));
   download(new Blob(['\ufeff' + [headers, ...rows].map((row) => row.map(csvCell).join(',')).join('\r\n')], { type: 'text/csv;charset=utf-8' }),
     name(settings.title) + '.csv');
 }
@@ -65,6 +66,7 @@ export async function pdfBlob(packages: Package[], settings: Settings, content: 
     if (!first) page(); first = false;
     text(settings.title, 17, true, 3);
     text(pack.id + ' · ' + pack.questions.length + ' soal · ' + pack.duration + ' menit', 10, false, 2);
+    if (pack.questions.some((q) => q.review?.status !== 'approved')) text('DRAF KURASI — belum disetujui seluruhnya', 9, true, 2);
     text('Seed: ' + pack.seed + ' | ' + (content === 'soal' ? 'Naskah soal' : content === 'kunci' ? 'Kunci jawaban' : 'Soal dan pembahasan'), 9, false, 7);
     for (const q of pack.questions) {
       if (content === 'kunci') {
@@ -120,6 +122,7 @@ export async function wordBlob(packages: Package[], settings: Settings, content:
       children: [new TextRun({ text: settings.title, bold: true, size: 32, color: '000000' })] }),
       paragraph(pack.id + ' · ' + pack.questions.length + ' soal · ' + pack.duration + ' menit'),
       paragraph('Seed: ' + pack.seed, false, 18));
+    if (pack.questions.some((q) => q.review?.status !== 'approved')) children.push(paragraph('DRAF KURASI — belum disetujui seluruhnya', true, 18));
     for (const q of pack.questions) {
       if (content === 'kunci') {
         children.push(paragraph(q.no + '. ' + q.subtest + ' — ' + letter(q.answer) +

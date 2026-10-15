@@ -1,201 +1,126 @@
 'use client';
-
 import { useEffect, useMemo, useRef, useState } from 'react';
-import Icon from '@/components/Icon';
-import QuestionCard from '@/components/QuestionCard';
+import GeneratorForm from '@/components/GeneratorForm';
+import Workbench from '@/components/Workbench';
 import ExportDialog from '@/components/ExportDialog';
+import AnalysisPanel from '@/components/AnalysisPanel';
+import PilotRunner from '@/components/PilotRunner';
+import Icon from '@/components/Icon';
 import { BANK, bankStats } from '@/lib/bank';
-import { BASELINE, DEFAULT_SETTINGS, DESCRIPTIONS, LABELS, PRESET, TOPICS } from '@/lib/config';
-import { capacity, distribution, generate, normalizeSettings } from '@/lib/generate';
+import { DEFAULT_SETTINGS, LABELS } from '@/lib/config';
+import { fingerprint, generate, normalizeSettings } from '@/lib/generate';
 import { auditPackages } from '@/lib/validate';
+import { createWorkspace, exportPackages, reviseWorkspace } from '@/lib/quality';
+import { analyzePilots, validatePilot } from '@/lib/pilot';
+import { exportPilot } from '@/lib/pilot-export';
+import { download } from '@/lib/export';
+import { readBackup } from '@/lib/backup';
+import { deleteWorkspace, getWorkspace, listPilots, listWorkspaces, savePilot, saveWorkspace } from '@/lib/storage';
 import { TIU_FAMILIES } from '@/lib/tiu';
-import type { DifficultyFilter, Mode, Result, Settings, Subtest } from '@/lib/types';
+import type { PilotSession, Question, Settings, Workspace } from '@/lib/types';
 
-const storageKey = 'jadiasn-skd-settings-v1';
-const modes: Mode[] = ['SKD', 'TWK', 'TIU', 'TKP'];
-const names: Record<Mode, string> = { SKD: 'SKD lengkap', TWK: 'TWK', TIU: 'TIU', TKP: 'TKP' };
-
+type Tab = 'generator' | 'review' | 'history' | 'analysis' | 'bank' | 'guide';
+const tabs: { id: Tab; label: string; icon: 'grid' | 'book' | 'clock' | 'sliders' | 'guide' | 'file' }[] = [
+  { id: 'generator', label: 'Buat paket', icon: 'grid' }, { id: 'review', label: 'Ruang kurasi', icon: 'book' },
+  { id: 'history', label: 'Riwayat paket', icon: 'clock' }, { id: 'analysis', label: 'Evaluasi peserta', icon: 'sliders' },
+  { id: 'bank', label: 'Pustaka soal', icon: 'file' }, { id: 'guide', label: 'Panduan', icon: 'guide' },
+];
+const titles: Record<Tab, [string, string]> = {
+  generator: ['Rancang latihan yang lebih terarah.', 'Susun blueprint, buat soal, lalu tinjau kualitasnya sebelum digunakan.'],
+  review: ['Dari draf menjadi soal yang siap dipakai.', 'Periksa satu soal pada satu waktu. Simpan revisi dan keputusan penelaah.'],
+  history: ['Lanjutkan pekerjaan dari versi terakhir.', 'Paket dan riwayat kurasi tersimpan di browser ini. Cadangkan untuk memindahkan perangkat.'],
+  analysis: ['Lihat bagaimana soal bekerja pada peserta.', 'Evaluasi berdasarkan hasil pengerjaan yang cocok dengan versi soal.'],
+  bank: ['Kenali materi dan pola dalam pustaka.', 'Referensi riset, kasus orisinal, dan pola TIU dengan pembuktian terstruktur.'],
+  guide: ['Alur penyusunan yang dapat ditelusuri.', 'Dari riset dan blueprint sampai kurasi, uji peserta, dan ekspor.'],
+};
 export default function Page() {
-  const [settings, setSettings] = useState<Settings>(DEFAULT_SETTINGS);
-  const [result, setResult] = useState<Result | null>(null);
-  const [tab, setTab] = useState<'generator' | 'bank' | 'guide'>('generator');
-  const [busy, setBusy] = useState(false), [error, setError] = useState('');
-  const [active, setActive] = useState(0), [showAnswers, setShowAnswers] = useState(false);
-  const [search, setSearch] = useState(''), [filter, setFilter] = useState('all');
-  const [exportOpen, setExportOpen] = useState(false);
-  const initialized = useRef(false);
-  const update = (patch: Partial<Settings>) => setSettings((previous) => ({ ...previous, ...patch }));
-
-  async function run(value: Settings) {
-    setBusy(true); setError('');
-    await new Promise((resolve) => setTimeout(resolve, 25));
-    try {
-      const normalized = normalizeSettings(value);
-      const started = performance.now();
-      const packages = generate(normalized);
-      const audit = auditPackages(packages, normalized);
-      setResult({ settings: normalized, packages, audit, elapsed: Math.round(performance.now() - started) });
-      setActive(0); setSearch(''); setFilter('all');
-      try { localStorage.setItem(storageKey, JSON.stringify(normalized)); } catch { /* Generation remains usable when storage is blocked. */ }
-    } catch (e) { setError(e instanceof Error ? e.message : 'Paket tidak dapat dibuat.'); }
-    finally { setBusy(false); }
-  }
+  const [tab, setTab] = useState<Tab>('generator'), [settings, setSettings] = useState<Settings>(DEFAULT_SETTINGS), [workspace, setWorkspace] = useState<Workspace | null>(null), [history, setHistory] = useState<Workspace[]>([]), [sessions, setSessions] = useState<PilotSession[]>([]);
+  const [active, setActive] = useState(0), [busy, setBusy] = useState(false), [ready, setReady] = useState(false), [saved, setSaved] = useState('Memuat penyimpanan…'), [error, setError] = useState(''), [notice, setNotice] = useState(''), [reviewer, setReviewer] = useState('');
+  const [exporting, setExporting] = useState(false), [testing, setTesting] = useState(false), [bankFilter, setBankFilter] = useState('TWK'), [bankTopic, setBankTopic] = useState(''), [bankSearch, setBankSearch] = useState(''), [bankPage, setBankPage] = useState(0);
+  const backupInput = useRef<HTMLInputElement>(null), pilotInput = useRef<HTMLInputElement>(null), initialized = useRef(false), saveSequence = useRef(0);
+  const pack = workspace?.result.packages[active] ?? workspace?.result.packages[0];
   useEffect(() => {
-    if (initialized.current) return;
-    initialized.current = true;
-    let initial = DEFAULT_SETTINGS;
-    try {
-      const saved = localStorage.getItem(storageKey);
-      if (saved) initial = normalizeSettings(JSON.parse(saved));
-    } catch { /* Fall back to the documented preset. */ }
-    setSettings(initial); void run(initial);
+    if (initialized.current) return; initialized.current = true;
+    try { const prefs = localStorage.getItem('jadiasn-skd-settings-v1'); if (prefs) setSettings(normalizeSettings({ ...JSON.parse(prefs), blueprint: undefined })); setReviewer(localStorage.getItem('jadiasn-skd-reviewer') ?? ''); } catch { /* old preferences may be incompatible */ }
+    Promise.all([listWorkspaces(), listPilots()]).then(([rows, pilots]) => {
+      setHistory(rows); setSessions(pilots); if (rows[0]) { setWorkspace(rows[0]); setTab('review'); } setSaved('Tersimpan di perangkat ini');
+    }).catch((e) => { setSaved('Penyimpanan belum tersedia'); setError(e.message); }).finally(() => setReady(true));
   }, []);
-
-  const requested = useMemo(() => distribution(settings.mode, settings.count), [settings.mode, settings.count]);
-  const stock = useMemo(() => capacity(settings), [settings]);
-  const availableTopics = settings.mode === 'SKD' ? Object.values(TOPICS).flat() : TOPICS[settings.mode];
-  const availableSubtopics = [...new Set([
-    ...BANK.filter((item) => (settings.mode === 'SKD' || item.subtest === settings.mode) &&
-      (!settings.topics.length || settings.topics.includes(item.topic))).map((item) => item.topic + '::' + item.subtopic),
-    ...(settings.mode === 'SKD' || settings.mode === 'TIU' ? TIU_FAMILIES.filter((family) =>
-      !settings.topics.length || settings.topics.includes(family.topic)).map((family) => family.topic + '::' + family.name) : []),
-  ])];
-  const current = result?.packages[active];
-  const visible = current?.questions.filter((q) => (filter === 'all' || q.subtest === filter) &&
-    (q.stem + ' ' + q.topic + ' ' + q.subtopic).toLowerCase().includes(search.toLowerCase())) ?? [];
-  const dirty = result ? JSON.stringify(settings) !== JSON.stringify(result.settings) : false;
-  const total = result?.audit.checked ?? 0;
-  const maximum = current?.questions.reduce((sum, q) => sum + Math.max(...q.options.map((option) => option.score)), 0) ?? 0;
-
-  const setMode = (mode: Mode) => update({ mode, count: PRESET[mode], topics: [], subtopics: [], duration: mode === 'SKD' ? 100 : mode === 'TKP' ? 35 : 30 });
-  const toggleTopic = (topic: string) => {
-    const selected = settings.topics.length ? settings.topics : availableTopics;
-    const next = selected.includes(topic) ? selected.filter((item) => item !== topic) : [...selected, topic];
-    if (next.length) update({ topics: next.length === availableTopics.length ? [] : next, subtopics: [] });
+  useEffect(() => { if (ready) { try { localStorage.setItem('jadiasn-skd-settings-v1', JSON.stringify(settings)); localStorage.setItem('jadiasn-skd-reviewer', reviewer); } catch { /* workspace save reports its own error */ } } }, [settings, reviewer, ready]);
+  useEffect(() => {
+    if (!workspace || !ready) return;
+    const seq = ++saveSequence.current; setSaved('Menyimpan…');
+    saveWorkspace(workspace).then(async () => { if (seq !== saveSequence.current) return; setSaved('Tersimpan di perangkat ini'); setHistory(await listWorkspaces()); }).catch((e) => { if (seq === saveSequence.current) { setSaved('Belum tersimpan'); setError(e.message); } });
+  }, [workspace, ready]);
+  const handleError = (e: unknown) => setError(e instanceof Error ? e.message : 'Proses belum berhasil.');
+  const create = (input: Settings) => {
+    setBusy(true); setError(''); setNotice('');
+    setTimeout(() => { try { const settings = normalizeSettings(input), started = performance.now(), packages = generate(settings), audit = auditPackages(packages, settings); const next = createWorkspace({ settings, packages, audit, elapsed: performance.now() - started }); setWorkspace(next); setActive(0); setTab('review'); setNotice('Paket tersusun. Semua soal berstatus draf dan siap ditinjau.'); } catch (e) { handleError(e); } finally { setBusy(false); } }, 30);
   };
-
-  return <div className="app-shell">
-    <aside className="sidebar">
-      <a className="brand" href="/" aria-label="JadiASN SKD Studio">
-        <span className="brand-symbol"><Icon name="grid" size={25}/></span>
-        <span><strong>JadiASN<span className="brand-dot">.</span></strong><small>SKD STUDIO</small></span>
-      </a>
-      <div className="sidebar-section-label">RUANG KERJA</div>
-      <nav className="main-nav" aria-label="Navigasi utama">
-        <button className={tab === 'generator' ? 'nav-item active' : 'nav-item'} onClick={() => setTab('generator')}><Icon name="sliders"/><span>Generator soal</span><span className="nav-mark"/></button>
-        <button className={tab === 'bank' ? 'nav-item active' : 'nav-item'} onClick={() => setTab('bank')}><Icon name="book"/><span>Bank & cakupan</span></button>
-        <button className={tab === 'guide' ? 'nav-item active' : 'nav-item'} onClick={() => setTab('guide')}><Icon name="guide"/><span>Panduan penggunaan</span></button>
-      </nav>
-      <div className="sidebar-bottom">
-        <div className="sidebar-illustration" aria-hidden="true"><span>TWK</span><span>TIU</span><span>TKP</span></div>
-        <strong>Satu studio, tiga kompetensi.</strong><p>Susun latihan dengan materi dan pembahasan yang terarah.</p>
-        <div className="sidebar-footer"><span className="status-dot"/>Riset CPNS 2027<span className="version">v1.0</span></div>
-      </div>
-    </aside>
-    <div className="workspace">
-      <header className="topbar"><div className="breadcrumb">JadiASN <span>/</span> SKD Studio <span>/</span><strong>{tab === 'generator' ? 'Generator' : tab === 'bank' ? 'Bank soal' : 'Panduan'}</strong></div>
-        <div className="topbar-right"><span className="research-badge">BERBASIS RISET</span><span className="avatar">JA</span></div></header>
-      <main className="main-content">
-        <div className="page-heading">
-          <div><div className="eyebrow">GENERATOR SOAL · CPNS 2027</div><h1>{tab === 'generator' ? 'Susun paket soal SKD.' : tab === 'bank' ? 'Kenali isi bank soal.' : 'Dari pengaturan ke naskah.'}</h1>
-            <p>{tab === 'generator' ? 'Pilih kompetensi, atur paket, lalu tinjau hasilnya sebelum digunakan.' : tab === 'bank' ? 'Lihat sumber, persediaan kasus, dan pola yang tersedia.' : 'Buat latihan yang sesuai, lengkap dengan kunci dan pembahasan.'}</p></div>
-          {tab === 'generator' && <button className="secondary-button" disabled={!result || busy} onClick={() => setExportOpen(true)}><Icon name="download"/>Unduh paket</button>}
-        </div>
-        {tab === 'generator' ? <>
-          <div className="competency-strip" aria-label="Pilih jenis paket">
-            {modes.map((mode) => <button key={mode} className={'competency-card ' + (settings.mode === mode ? 'selected' : '')} onClick={() => setMode(mode)} aria-pressed={settings.mode === mode}>
-              <span className={'competency-icon mode-' + mode.toLowerCase()}><Icon name={mode === 'SKD' ? 'grid' : mode === 'TWK' ? 'book' : mode === 'TIU' ? 'spark' : 'guide'}/></span>
-              <span><strong>{names[mode]}</strong><small>{mode === 'SKD' ? 'Tiga subtes dalam satu paket' : mode === 'TWK' ? 'Wawasan kebangsaan' : mode === 'TIU' ? 'Intelegensia umum' : 'Karakteristik pribadi'}</small></span>
-              <span className="radio-indicator">{settings.mode === mode && <span/>}</span>
-            </button>)}
-          </div>
-          <div className="generator-layout">
-            <section className="control-panel" aria-label="Pengaturan generator">
-              <div className="panel-heading"><span className="section-icon"><Icon name="sliders"/></span><div><h2>Pengaturan paket</h2><p>Sesuaikan dengan kebutuhan latihan.</p></div></div>
-              <form onSubmit={(e) => { e.preventDefault(); void run(settings); }}>
-                <div className="field"><label htmlFor="title">Judul naskah</label><input id="title" value={settings.title} maxLength={150} onChange={(e) => update({ title: e.target.value })} required/></div>
-                <div className="field-pair">
-                  <div className="field"><label htmlFor="packages">Jumlah paket</label><input id="packages" type="number" min="1" max="50" value={settings.packages} onChange={(e) => update({ packages: Number(e.target.value) })} required/></div>
-                  <div className="field"><label htmlFor="count">Soal per paket</label><input id="count" type="number" min={settings.mode === 'SKD' ? 3 : 1} max="200" value={settings.count} onChange={(e) => update({ count: Number(e.target.value) })} required/></div>
-                </div>
-                <div className="field-pair">
-                  <div className="field"><label htmlFor="difficulty">Kesulitan</label><select id="difficulty" value={settings.difficulty} onChange={(e) => update({ difficulty: e.target.value as DifficultyFilter })}>
-                    <option value="campuran">Campuran</option>{Object.entries(LABELS).map(([key, label]) => <option key={key} value={key}>{label}</option>)}</select></div>
-                  <div className="field"><label htmlFor="duration">Durasi <span>(menit)</span></label><input id="duration" type="number" min="1" max="300" value={settings.duration} onChange={(e) => update({ duration: Number(e.target.value) })} required/></div>
-                </div>
-                <div className="field"><div className="label-line"><label htmlFor="seed">Seed paket</label><span>Naskah dapat dibuat ulang</span></div>
-                  <div className="input-with-button"><input id="seed" value={settings.seed} maxLength={100} onChange={(e) => update({ seed: e.target.value })} required/>
-                    <button type="button" aria-label="Buat seed baru" title="Buat seed baru" onClick={() => update({ seed: 'SKD-' + crypto.randomUUID().slice(0, 8).toUpperCase() })}><Icon name="refresh" size={16}/></button></div>
-                </div>
-                <div className="materials-heading"><label>Materi yang digunakan</label><button type="button" onClick={() => update({ topics: [], subtopics: [] })}>Pilih semua</button></div>
-                <div className="material-list">{availableTopics.map((topic) => <label className="material-check" key={topic}>
-                  <input type="checkbox" checked={!settings.topics.length || settings.topics.includes(topic)} onChange={() => toggleTopic(topic)}/><span>{topic === 'Teknologi Informasi dan Komunikasi' ? 'Teknologi informasi & komunikasi' : topic}</span>
-                </label>)}</div>
-                <details className="subtopic-control"><summary>Filter submateri<span>{settings.subtopics.length ? settings.subtopics.length + ' dipilih' : 'Semua'}</span><Icon name="chevron" size={13}/></summary>
-                  <button type="button" className="clear-subtopics" onClick={() => update({ subtopics: [] })}>Gunakan semua submateri</button>
-                  <div className="subtopic-list">{availableSubtopics.map((key) => <label className="material-check" key={key}>
-                    <input type="checkbox" checked={settings.subtopics.includes(key)} onChange={() => update({ subtopics: settings.subtopics.includes(key) ?
-                      settings.subtopics.filter((item) => item !== key) : [...settings.subtopics, key] })}/><span><small>{key.split('::')[0]}</small>{key.split('::')[1]}</span>
-                  </label>)}</div>
-                </details>
-                <label className="check-row unique-setting"><input type="checkbox" checked={settings.uniqueAcross} onChange={(e) => update({ uniqueAcross: e.target.checked })}/>
-                  <span><strong>Tanpa soal berulang antarpaket</strong><small>Pengulangan dalam satu paket selalu dicegah.</small></span></label>
-                <div className="request-summary"><span>Komposisi per paket</span><div>{Object.entries(requested).filter(([, count]) => count > 0).map(([subtest, count]) =>
-                  <span key={subtest}><i className={'color-dot dot-' + subtest.toLowerCase()}/>{subtest}<strong>{count}</strong></span>)}</div></div>
-                <button className="primary-button full-width" type="submit" disabled={busy}><Icon name={busy ? 'refresh' : 'spark'}/>{busy ? 'Menyusun paket…' : 'Buat paket soal'}<Icon name="arrow" size={17}/></button>
-                <p className="control-footnote">{stock.length ? stock.map((entry) => entry.subtest + ': ' + entry.available + ' butir tersedia').join(' · ') : 'TIU dirakit dari pola berparameter.'}</p>
-              </form>
-            </section>
-            <div className="results-column">
-              {error && <div className="error-message" role="alert"><strong>Paket belum dapat dibuat</strong><p>{error}</p>{result && <small>Pratinjau di bawah masih menampilkan hasil terakhir.</small>}</div>}
-              {result && current ? <>
-                <div className="metrics-grid">
-                  <div className="metric"><span>Total soal</span><div><strong>{total}</strong><small>dalam {result.packages.length} paket</small></div><Icon name="file" size={19}/></div>
-                  <div className="metric"><span>Skor maksimal</span><div><strong>{maximum}</strong><small>per paket aktif</small></div><Icon name="spark" size={19}/></div>
-                  <div className="metric"><span>Durasi latihan</span><div><strong>{current.duration}<em>menit</em></strong><small>{current.questions.length} soal per paket</small></div><Icon name="clock" size={19}/></div>
-                </div>
-                <div className="validation-line"><span><span className="validated-icon"><Icon name="check" size={12}/></span>{result.audit.checked} soal lolos pemeriksaan struktur & pola</span>
-                  <span>{result.audit.duplicateCount} duplikat · {result.elapsed} ms</span></div>
-                {dirty && <p className="pending-settings">Pengaturan berubah. Klik “Buat paket soal” untuk menerapkannya pada hasil.</p>}
-                <section className="preview-panel">
-                  <div className="preview-heading"><div><span className="eyebrow">HASIL GENERATE</span><h2>Pratinjau paket</h2></div>
-                    <label className="answer-toggle"><input type="checkbox" checked={showAnswers} onChange={(e) => setShowAnswers(e.target.checked)}/><span className="toggle-track"/><span>Tampilkan kunci</span></label></div>
-                  <div className="package-tabs" aria-label="Paket hasil">{result.packages.map((pack, index) => <button key={pack.id} className={active === index ? 'active' : ''}
-                    onClick={() => setActive(index)} aria-pressed={active === index}>Paket {String(index + 1).padStart(2, '0')}<span>{pack.questions.length}</span></button>)}</div>
-                  <div className="preview-toolbar"><div className="search-field"><Icon name="search" size={17}/><input aria-label="Cari soal dalam paket" placeholder="Cari soal atau materi…" value={search} onChange={(e) => setSearch(e.target.value)}/></div>
-                    <select aria-label="Filter subtes pratinjau" value={filter} onChange={(e) => setFilter(e.target.value)}><option value="all">Semua subtes</option>
-                      {(['TWK', 'TIU', 'TKP'] as const).filter((subtest) => current.questions.some((q) => q.subtest === subtest)).map((subtest) => <option key={subtest}>{subtest}</option>)}</select>
-                  </div>
-                  <div className="preview-meta"><span>{visible.length} soal ditampilkan</span><span>Seed <code>{current.seed}</code></span></div>
-                  <div className="question-list">{visible.map((question) => <QuestionCard key={question.id} question={question} showAnswers={showAnswers}/>)}
-                    {!visible.length && <div className="empty-state"><Icon name="search" size={30}/><h3>Tidak ada soal yang cocok.</h3><p>Coba kata kunci lain atau ubah filter subtes.</p></div>}</div>
-                </section>
-                <div className="result-footer"><span>Sebaran kunci {result.audit.keyDistribution.map((n, i) => String.fromCharCode(65 + i) + ': ' + n).join(' · ')}</span>
-                  <button onClick={() => setExportOpen(true)}>Unduh hasil <Icon name="arrow" size={15}/></button></div>
-              </> : <div className="empty-state preparing"><span className="empty-symbol"><Icon name="grid" size={30}/></span><h2>{busy ? 'Paket sedang disusun.' : 'Paketmu dimulai dari sini.'}</h2>
-                <p>{busy ? 'Menyiapkan soal dan memeriksa hasilnya.' : 'Atur materi di sebelah kiri, lalu buat paket pertama.'}</p></div>}
-            </div>
-          </div>
-        </> : tab === 'bank' ? <section className="information-panel">
-          <div className="bank-overview">{bankStats().map((item) => <div key={item.subtest}><span className={'tag tag-' + item.subtest.toLowerCase()}>{item.subtest}</span><strong>{item.count}</strong><p>butir dalam bank</p><small>{item.reference} contoh referensi + {item.count - item.reference} variasi kasus latihan</small></div>)}
-            <div><span className="tag tag-tiu">TIU</span><strong>{TIU_FAMILIES.length}</strong><p>famili pola berparameter</p><small>Verbal, numerik, dan gambar figural</small></div></div>
-          <h2>Cakupan materi</h2><p className="muted">Kasus dengan konteks berbeda dapat mengikuti kerangka yang sama. Angka persediaan adalah jumlah butir, bukan jumlah kompetensi atau kerangka unik.</p>
-          <div className="coverage-grid">{(['TWK', 'TIU', 'TKP'] as const).map((subtest) => <div key={subtest}><h3>{subtest}</h3>
-            {TOPICS[subtest].map((topic) => <div className="coverage-row" key={topic}><span>{topic}</span><strong>{subtest === 'TIU' ? TIU_FAMILIES.filter((family) => family.topic === topic).length + ' pola' : BANK.filter((item) => item.topic === topic).length + ' butir'}</strong></div>)}</div>)}</div>
-          <h2>Sumber dan pemeriksaan konten</h2><p>TWK mengikuti Bab 5 riset JadiASN. TKP memakai panduan produksi dengan 23 submateri dan poin setiap alternatif. TIU mengikuti contoh verbal, numerik, kecukupan data, tabel, dan figural.</p>
-          <p>Beberapa contoh TWK dikecualikan karena berulang, perlu verifikasi sejarah, atau berada pada klasifikasi berbeda. Pembahasan yang kosong dilengkapi dan label opsi yang bergeser diperbaiki.</p>
-          <p>Pemeriksaan otomatis memeriksa struktur, skor, kunci, hitungan/logika yang dimodelkan, pola gambar, dan pengulangan. Ketepatan akademik setiap narasi tetap perlu ditinjau sebelum dipublikasikan sebagai bank produksi.</p>
-          <p className="source-note">Preset {BASELINE.counts.TWK}/{BASELINE.counts.TIU}/{BASELINE.counts.TKP} soal dan {BASELINE.duration} menit berasal dari riset dengan acuan aturan {BASELINE.rulesYear}. Sesuaikan konfigurasi ketika ketentuan resmi CPNS 2027 tersedia.</p>
-        </section> : <section className="information-panel guide-panel">
-          <div className="guide-step"><span>01</span><div><h2>Pilih jenis dan materi latihan</h2><p>Pilih SKD lengkap, TWK, TIU, atau TKP. Materi dapat dipilih satu atau beberapa. Jumlah paket, soal, tingkat kesulitan, dan durasi dapat diubah.</p></div></div>
-          <div className="guide-step"><span>02</span><div><h2>Buat dan periksa paket</h2><p>Seed yang sama dengan pengaturan yang sama menghasilkan naskah yang sama. Gunakan pencarian, filter subtes, serta kunci dan pembahasan untuk meninjau hasilnya.</p></div></div>
-          <div className="guide-step"><span>03</span><div><h2>Simpan dalam format yang sesuai</h2><p>PDF untuk cetak, Word untuk penyuntingan, CSV untuk bank soal, dan JSON untuk data lengkap. Word dan PDF dapat berisi soal, kunci, atau pembahasan, serta dipisahkan per paket dalam ZIP.</p></div></div>
-          <div className="guide-step"><span>04</span><div><h2>Perhatikan persediaan bank</h2><p>TWK dan TKP memakai bank terbatas. Jika permintaan melebihi persediaan, kurangi jumlah atau perluas filter. Mematikan pilihan unik antarpaket mengizinkan suatu soal muncul di paket berbeda; satu paket tetap bebas pengulangan.</p></div></div>
-          <p className="source-note">Kesulitan dan level Bloom merupakan metadata berbeda. Filter tertentu dapat mempunyai persediaan lebih kecil. Generator menyusun naskah latihan dan belum menyediakan sesi pengerjaan CAT.</p>
-        </section>}
-        <footer className="workspace-footer"><span>JadiASN · SKD Studio</span><span>Latihan berdasarkan riset seleksi CPNS 2027</span></footer>
-      </main>
+  const changeQuestion = (updated: Question, label: string) => {
+    if (!workspace || !pack) return;
+    const result = { ...workspace.result, packages: workspace.result.packages.map((p) => p.id === pack.id ? { ...p, questions: p.questions.map((q) => q.id === updated.id ? updated : q) } : p) };
+    setWorkspace(reviseWorkspace(workspace, result, label)); setError(''); setNotice(label + ' tersimpan dalam riwayat versi.');
+  };
+  const replace = (q: Question) => {
+    if (!workspace) return; setError('');
+    try {
+      const peers = workspace.result.packages.flatMap((p) => p.questions).filter((other) => other.id !== q.id);
+      let candidate: Question | undefined;
+      for (let i = 0; i < 80; i++) {
+        const next = generate({ ...DEFAULT_SETTINGS, mode: q.subtest, count: 1, difficulty: q.difficulty === 'hots' ? 'sulit' : q.difficulty, topics: [q.topic], subtopics: workspace.result.settings.subtopics.filter((s) => s.startsWith(q.topic + '::')), seed: workspace.id + '-replace-' + workspace.version + '-' + i })[0].questions[0];
+        if (fingerprint(next) !== fingerprint(q) && !peers.some((other) => fingerprint(other) === fingerprint(next))) { candidate = next; break; }
+      }
+      if (!candidate) throw new Error('Tidak ada pengganti unik untuk submateri dan tingkat ini. Perluas blueprint atau sunting soal yang ada.');
+      changeQuestion({ ...candidate, id: q.id, no: q.no, review: { status: 'draft', excluded: false, note: '', revision: (q.review?.revision ?? 1) + 1, updatedAt: new Date().toISOString() } }, 'Mengganti soal ' + q.no);
+    } catch (e) { handleError(e); }
+  };
+  const backup = () => { if (workspace) download(new Blob([JSON.stringify({ ...workspace, pilotSessions: sessions.filter((s) => s.workspaceId === workspace.id) }, null, 2)], { type: 'application/json' }), 'cadangan-jadiasn-v' + workspace.version + '.json'); };
+  const importBackup = async (file?: File) => {
+    if (!file) return; setError('');
+    try {
+      if (file.size > 30 * 1024 * 1024) throw new Error('Cadangan maksimal 30 MB.');
+      const text = await file.text(), imported = readBackup(text), current = await getWorkspace(imported.id);
+      const next = current ? reviseWorkspace(current, imported.result, 'Memulihkan cadangan v' + imported.version) : imported;
+      const raw = JSON.parse(text); const pilots = (Array.isArray(raw.pilotSessions) ? raw.pilotSessions : []).map((s: unknown) => validatePilot(s, next));
+      await saveWorkspace(next); for (const s of pilots) await savePilot(s);
+      setWorkspace(next); setActive(0); setTab('review'); setHistory(await listWorkspaces()); setSessions(await listPilots()); setNotice('Cadangan berhasil dimuat.');
+    } catch (e) { handleError(e); } finally { if (backupInput.current) backupInput.current.value = ''; }
+  };
+  const importPilots = async (files: FileList | null) => {
+    if (!files || !workspace) return; setError('');
+    try {
+      const validated: PilotSession[] = [];
+      for (const file of Array.from(files)) { if (file.size > 5 * 1024 * 1024) throw new Error('Berkas hasil maksimal 5 MB.'); const data = JSON.parse(await file.text()); const records = Array.isArray(data) ? data : Array.isArray(data.sessions) ? data.sessions : [data]; if (records.length > 5000) throw new Error('Maksimal 5.000 sesi per impor.'); validated.push(...records.map((r: unknown) => validatePilot(r, workspace))); }
+      const existing = new Set(sessions.map((s) => s.id)); for (const session of validated) if (!existing.has(session.id)) { await savePilot(session); existing.add(session.id); }
+      setSessions(await listPilots()); setNotice('Hasil peserta diimpor; ID sesi yang sama tidak dihitung ulang.');
+    } catch (e) { handleError(e); } finally { if (pilotInput.current) pilotInput.current.value = ''; }
+  };
+  const finishPilot = async (session: PilotSession) => {
+    try { await savePilot(session); setSessions(await listPilots()); setTesting(false); setTab('analysis'); setNotice('Sesi selesai dan hasil tersimpan.'); }
+    catch (e) { download(new Blob([JSON.stringify(session, null, 2)], { type: 'application/json' }), 'hasil-uji-' + session.id + '.json'); setTesting(false); handleError(e); }
+  };
+  const filteredBank = useMemo(() => BANK.filter((q) => q.subtest === bankFilter && (!bankTopic || q.topic === bankTopic) && (q.stem + q.subtopic).toLowerCase().includes(bankSearch.toLowerCase())), [bankFilter, bankTopic, bankSearch]);
+  const stats = bankStats();
+  return <div className="app-shell"><aside className="sidebar"><a href="#" className="brand" onClick={(e) => { e.preventDefault(); if (!testing) setTab('generator'); }} aria-label="JadiASN SKD Studio"><span className="brand-mark">J<span>A</span></span><div><strong>JadiASN<span>SKD Studio</span></strong><small>Ruang kerja penyusun soal</small></div></a>
+    <span className="nav-label">RUANG KERJA</span><nav>{tabs.map((item) => <button key={item.id} disabled={testing} className={tab === item.id ? 'nav-item active' : 'nav-item'} onClick={() => { setTab(item.id); setError(''); setNotice(''); }}><Icon name={item.icon}/><span>{item.label}</span>{item.id === 'review' && workspace && <span className="nav-count">{workspace.result.packages.flatMap((p) => p.questions).filter((q) => q.review?.status === 'approved').length}</span>}</button>)}</nav>
+    <div className="sidebar-bottom"><span className="brand-dot"/><strong>Workspace lokal</strong><p>Paket dan hasil peserta tersimpan di browser ini. Unduh cadangan untuk memindahkannya.</p><button className="sidebar-link" disabled={!workspace || testing} onClick={backup}><Icon name="download" size={16}/>Cadangkan paket aktif</button></div>
+  </aside><main className="main-content"><header className="topbar"><div className="breadcrumb">Workspace <span>/</span> {tabs.find((t) => t.id === tab)?.label}</div><div className="save-status" role="status"><span className={saved.startsWith('Tersimpan') ? 'online-dot' : 'pending-dot'}/>{saved}</div></header>
+    <div className="page-content"><div className="page-heading"><div><span className="eyebrow">JADIASN · PENYUSUNAN SOAL SKD</span><h1>{testing ? 'Sesi pengerjaan peserta' : titles[tab][0]}</h1><p>{testing ? 'Pilihan dan waktu dicatat untuk evaluasi paket.' : titles[tab][1]}</p></div>{workspace && !testing && ['review', 'analysis'].includes(tab) && <div className="header-actions"><button className="secondary-button" onClick={backup}><Icon name="download"/>Cadangan</button><button className="primary-button" onClick={() => setExporting(true)}><Icon name="file"/>Ekspor paket</button></div>}</div>
+      {error && <div className="error-message global-message" role="alert"><p>{error}</p><button className="icon-button" aria-label="Tutup pesan kesalahan" onClick={() => setError('')}><Icon name="close"/></button></div>}{notice && <div className="notice-message global-message" role="status"><Icon name="check"/><p>{notice}</p><button className="icon-button" aria-label="Tutup pemberitahuan" onClick={() => setNotice('')}><Icon name="close"/></button></div>}
+      {!ready && <p className="help">Memuat paket tersimpan…</p>}
+      {testing && workspace && pack ? <PilotRunner workspace={workspace} pack={exportPackages(workspace.result, 'approved', active)[0]} onClose={() => setTesting(false)} onFinish={finishPilot}/> : <>
+      {tab === 'generator' && <GeneratorForm settings={settings} onSettings={setSettings} onGenerate={create} busy={busy}/>}
+      {['review', 'analysis'].includes(tab) && (!workspace || !pack) && <section className="empty-state"><div className="empty-icon"><Icon name="book" size={36}/></div><h2>Mulai dengan satu paket latihan.</h2><p>Susun blueprint baru atau impor paket yang pernah dikerjakan.</p><div className="dialog-actions"><button className="secondary-button" onClick={() => backupInput.current?.click()}>Impor cadangan</button><button className="primary-button" onClick={() => setTab('generator')}>Buat paket pertama</button></div></section>}
+      {['review', 'analysis'].includes(tab) && workspace && pack && <div className="package-strip"><div><strong>{workspace.name}</strong><span>v{workspace.version} · {pack.questions.length} soal · {pack.duration} menit</span></div><label> Paket<select aria-label="Paket aktif" value={active} onChange={(e) => setActive(Number(e.target.value))}>{workspace.result.packages.map((p, i) => <option key={p.id} value={i}>{p.id}</option>)}</select></label></div>}
+      {tab === 'review' && workspace && pack && <Workbench key={workspace.id + ':' + pack.id} pack={pack} blueprint={workspace.result.settings.blueprint} reviewer={reviewer} onReviewer={setReviewer} onChange={changeQuestion} onReplace={replace}/>}
+      {tab === 'analysis' && workspace && pack && <AnalysisPanel workspace={workspace} pack={pack} sessions={sessions} onStart={() => { try { exportPackages(workspace.result, 'approved', active); setTesting(true); } catch (e) { handleError(e); } }} onShare={() => { try { exportPilot(workspace, pack); } catch (e) { handleError(e); } }} onImport={() => pilotInput.current?.click()} onDownload={() => download(new Blob([JSON.stringify({ sessions: sessions.filter((s) => s.workspaceId === workspace.id && s.packageId === pack.id), analysis: analyzePilots(workspace, pack, sessions) }, null, 2)], { type: 'application/json' }), 'evaluasi-' + pack.id + '.json')}/>}
+      {tab === 'history' && <><div className="history-toolbar"><p className="help">{history.length} paket tersimpan di perangkat ini.</p><button className="secondary-button" onClick={() => backupInput.current?.click()}>Impor cadangan JSON</button></div><div className="history-grid">{history.map((w) => <article className="panel history-card" key={w.id}><span className="eyebrow">{w.result.settings.mode} · VERSI {w.version}</span><h2>{w.name}</h2><p>{w.result.packages.length} paket · {w.result.packages.flatMap((p) => p.questions).length} soal</p><span className="help">Terakhir disimpan {new Date(w.updatedAt).toLocaleString('id-ID')}</span><button className="primary-button" onClick={() => { setWorkspace(w); setActive(0); setTab('review'); }}>Lanjutkan kurasi<Icon name="arrow"/></button><details><summary>Riwayat versi ({w.snapshots.length})</summary><div className="version-list">{[...w.snapshots].reverse().map((s, i) => <div key={s.version + ':' + i}><p><strong>v{s.version}</strong> · {s.label}<small>{new Date(s.at).toLocaleString('id-ID')}</small></p><button className="text-button" onClick={() => { setWorkspace(reviseWorkspace(w, s.result, 'Memulihkan versi ' + s.version)); setActive(0); setTab('review'); setNotice('Versi lama dipulihkan sebagai versi baru.'); }}>Pulihkan</button></div>)}</div></details><button className="text-button danger" onClick={async () => { try { download(new Blob([JSON.stringify({ ...w, pilotSessions: sessions.filter((s) => s.workspaceId === w.id) }, null, 2)], { type: 'application/json' }), 'arsip-sebelum-hapus-' + w.id + '.json'); await deleteWorkspace(w.id); if (workspace?.id === w.id) setWorkspace(null); setHistory(await listWorkspaces()); setNotice('Paket dihapus dari riwayat; cadangan diunduh terlebih dahulu.'); } catch (e) { handleError(e); } }}>Hapus & unduh cadangan</button></article>)}</div>{!history.length && <section className="empty-state small"><h2>Belum ada paket tersimpan.</h2><p>Buat paket pertama untuk memulai riwayat kurasi.</p><button className="primary-button" onClick={() => setTab('generator')}>Buat paket</button></section>}</>}
+      {tab === 'bank' && <><div className="bank-stats">{stats.map((s) => <article className="panel" key={s.subtest}><span className="eyebrow">{s.subtest}</span><strong>{s.count} butir</strong><p>{s.reference} referensi · {s.count - s.reference} soal orisinal</p></article>)}<article className="panel"><span className="eyebrow">TIU</span><strong>{TIU_FAMILIES.length} pola</strong><p>Verbal · Numerik · Figural</p></article></div><section className="panel"><div className="bank-toolbar"><select aria-label="Subtes pustaka" value={bankFilter} onChange={(e) => { setBankFilter(e.target.value); setBankTopic(''); setBankPage(0); }}>{['TWK', 'TIU', 'TKP'].map((s) => <option key={s}>{s}</option>)}</select><select aria-label="Materi pustaka" value={bankTopic} onChange={(e) => { setBankTopic(e.target.value); setBankPage(0); }}><option value="">Semua materi</option>{[...new Set(BANK.filter((q) => q.subtest === bankFilter).map((q) => q.topic))].map((t) => <option key={t}>{t}</option>)}</select><input aria-label="Cari pustaka" placeholder="Cari contoh atau submateri" value={bankSearch} onChange={(e) => { setBankSearch(e.target.value); setBankPage(0); }}/></div>
+        {bankFilter === 'TIU' ? <div className="family-grid">{TIU_FAMILIES.map((f) => <div key={f.id}><span>{f.topic}</span><h3>{f.name}</h3><p>{f.levels.map((l) => LABELS[l]).join(' · ')}</p></div>)}</div> : <><div className="bank-list">{filteredBank.slice(bankPage * 10, (bankPage + 1) * 10).map((q) => <details key={q.id}><summary><span className={'tag tag-' + q.subtest.toLowerCase()}>{q.topic}</span><strong>{q.subtopic}</strong><span>{LABELS[q.difficulty]}</span></summary><p className="question-stem">{q.stem}</p><ol className="bank-options" type="A">{q.options.map((o, i) => <li key={i}>{o.text}{q.subtest === 'TKP' ? ' · ' + o.score + ' poin' : i === q.answer ? ' · Kunci' : ''}</li>)}</ol><p>{q.explanation}</p><p className="source-note">{q.source}</p></details>)}</div><div className="pagination"><button disabled={!bankPage} onClick={() => setBankPage(bankPage - 1)}>Sebelumnya</button><span>{filteredBank.length} butir · Halaman {bankPage + 1}</span><button disabled={(bankPage + 1) * 10 >= filteredBank.length} onClick={() => setBankPage(bankPage + 1)}>Berikutnya</button></div></>}</section><p className="help">Pustaka dan hasil solver merupakan bahan kurasi. Status disetujui diberikan oleh penelaah pada paket, bukan oleh generator.</p></>}
+      {tab === 'guide' && <div className="guide-layout"><section className="panel"><h2>Enam langkah menyusun paket</h2>{['Pilih subtes, materi, jumlah, dan kesulitan. Tinjau atau sunting kuota blueprint.', 'Buat paket. Soal draf diperiksa dari struktur, skor, duplikasi, dan model pembuktian yang tersedia.', 'Tinjau stimulus, pengecoh, kunci, pembahasan, sumber, dan rubrik. Sunting, ganti, tandai, atau keluarkan soal.', 'Isi identitas penelaah dan catatan. Setujui per soal setelah pemeriksaan; suntingan konten membatalkan persetujuan.', 'Uji soal disetujui pada peserta. Bagikan HTML tanpa kunci, lalu impor hasil JSON. Periksa statistik berdasarkan versi soal.', 'Ekspor soal disetujui atau draf berlabel. Cadangkan paket beserta riwayat versi dan hasil peserta secara berkala.'].map((text, i) => <div className="guide-step" key={i}><span className="step-dot">{i + 1}</span><p>{text}</p></div>)}</section><section className="panel"><h2>Dasar kualitas soal</h2><p>Kesulitan menilai kompleksitas tugas, sementara Bloom menggambarkan proses berpikir. Label HOTS dari versi lama dinormalisasi menjadi sulit dan perlu ditelaah.</p><p>Soal TWK memakai prinsip atau fakta yang relevan, TIU menggunakan pengecoh dari kesalahan penalaran dan perhitungan, TKP membandingkan tindakan melalui kewenangan, urgensi, efektivitas, risiko, dan tindak lanjut.</p><p>Solver membuktikan model terstruktur, bukan seluruh penafsiran bahasa alami. Soal hasil suntingan harus diverifikasi ulang oleh penelaah. Persetujuan dicatat atas nama penelaah yang mengerjakannya.</p><h3>Referensi</h3><ul><li>Riset Seleksi CPNS 2027 JadiASN, khususnya bab 5.</li><li><a href="https://drive.google.com/file/d/1tzx3GR5GSYtkuTkR1kXfDqyUsao2jXiP/view" target="_blank" rel="noreferrer">Contoh TIU dari riset</a></li><li><a href="https://drive.google.com/file/d/1NgyWaSFh7oL_Sfjkw37LvxiZCOFQw7P_/view" target="_blank" rel="noreferrer">Panduan TKP JadiASN</a></li><li><a href="https://www.dpr.go.id/dokumen/jdih/undang-undang-dasar" target="_blank" rel="noreferrer">UUD NRI 1945 — DPR RI</a></li><li><a href="https://ejaan.kemendikdasmen.go.id/eyd/" target="_blank" rel="noreferrer">EYD V — Badan Bahasa</a></li></ul><p className="help">Baseline riset tidak menyatakan aturan resmi CPNS 2027. Skor kasus TKP orisinal adalah rubrik latihan, bukan kunci resmi BKN.</p></section><section className="panel"><h2>Penyimpanan dan penggunaan</h2><p>Aplikasi dapat dijalankan di Vercel tanpa API key. Riwayat paket dan hasil peserta disimpan dengan IndexedDB pada browser dan domain yang sama. Data tidak tersinkron antarperangkat atau pengguna.</p><p>Berkas cadangan JSON menyertakan versi dan hasil uji. Impor memeriksa struktur, skor, dan model soal. Simpan cadangan sebelum membersihkan data browser atau berpindah domain.</p><p>Berkas uji HTML dapat dibuka peserta tanpa instalasi. Hasil peserta dikirim sebagai JSON untuk diimpor penyusun; pengumpulan belum menggunakan basis data bersama.</p></section></div>}
+      </>}
+      <footer className="page-footer"><span>JadiASN SKD Studio</span><span>Susun · Tinjau · Uji</span></footer>
     </div>
-    {exportOpen && result && <ExportDialog result={result} active={active} onClose={() => setExportOpen(false)}/>}
-  </div>;
+  </main><input type="file" ref={backupInput} accept=".json,application/json" hidden onChange={(e) => importBackup(e.target.files?.[0])}/><input type="file" ref={pilotInput} accept=".json,application/json" multiple hidden onChange={(e) => importPilots(e.target.files)}/>{exporting && workspace && <ExportDialog result={workspace.result} active={active} onClose={() => setExporting(false)}/>}</div>;
 }

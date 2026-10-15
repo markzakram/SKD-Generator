@@ -1,7 +1,8 @@
 import type { Rng } from './rng';
 import type { Difficulty, Figure, Question } from './types';
-import { calculate, entails, implies, not, variable } from './solver';
+import { calculate, entails, implies, not, variable, type Logic } from './solver';
 import { figureSignature, mod } from './figures';
+import { DATA_LABELS, dataCategory, orders, type Model, type Constraint } from './models';
 
 type Draft = Omit<Question, 'id' | 'no'>;
 type Family = { id: string; topic: string; name: string; levels: Difficulty[] };
@@ -31,24 +32,47 @@ export const TIU_FAMILIES: Family[] = [
   { id: 'fig-odd', topic: 'Figural', name: 'Ketidaksamaan', levels: ['mudah', 'sedang', 'sulit'] },
   { id: 'fig-serial', topic: 'Figural', name: 'Serial', levels: ['mudah', 'sedang', 'sulit'] },
   { id: 'fig-matrix', topic: 'Figural', name: 'Matriks 3 × 3', levels: ['sulit', 'hots'] },
-];
+].map((family) => ({ ...family, levels: [...new Set(family.levels.map((level) => level === 'hots' ? 'sulit' : level))] as Difficulty[] }))
+  .map((family) => ['analogi', 'kategori', 'fibonacci', 'setara', 'selang-seling', 'pernyataan-tabel'].includes(family.id) ? { ...family, levels: (family.id === 'analogi' ? ['mudah'] : ['sedang']) as Difficulty[] } : family)
+  .map((family) => family.id === 'pecahan' ? { ...family, levels: ['mudah', 'sedang'] as Difficulty[] } : family);
 const format = (value: number) => String(Math.round(value * 10000) / 10000).replace('.', ',');
 const base = (family: Family, difficulty: Difficulty): Draft => ({
   subtest: 'TIU', topic: family.topic, subtopic: family.name, difficulty, family: family.id,
   stem: '', options: [], answer: 0, explanation: '', origin: 'pola',
   source: 'Pola latihan berdasarkan Contoh Soal TIU SKD 2027.',
   proof: { kind: 'logic', valid: [true, false, false, false, false] },
+  bloom: family.topic === 'Figural' ? 'C4' : 'C3',
+  difficultyReason: difficulty === 'mudah' ? 'Satu hubungan atau satu operasi utama.' : difficulty === 'sedang' ? 'Menghubungkan dua informasi atau beberapa operasi berurutan.' : 'Menggabungkan beberapa batasan atau perubahan untuk memilih hasil yang konsisten.',
 });
-const numeric = (q: Draft, answer: number, r: Rng, expression?: string): Draft => {
-  const values = new Set<number>([Math.round(answer * 10000) / 10000]);
-  const step = Number.isInteger(answer) ? 1 : 0.1;
-  while (values.size < 5) values.add(Math.round((answer + r.int(-8, 8) * step) * 10000) / 10000);
-  const choices = [...values];
-  q.options = choices.map((value, i) => ({
-    text: format(value), score: i === 0 ? 5 : 0,
-    reason: i === 0 ? 'Nilai ini sesuai hasil perhitungan.' : 'Nilai ini berbeda dari hasil perhitungan yang ditunjukkan.',
-  }));
-  q.proof = { kind: 'numeric', values: choices, answer: choices[0], expression };
+type Mistake = [number, string];
+const numeric = (q: Draft, answer: number, r: Rng, expression?: string, mistakes: Mistake[] = []): Draft => {
+  void r;
+  const choices: Mistake[] = [[answer, q.explanation]];
+  const add = (value: number, reason: string) => {
+    const rounded = Math.round(value * 10000) / 10000;
+    if (Number.isFinite(rounded) && !choices.some(([v]) => Math.abs(v - rounded) < 0.000051)) choices.push([rounded, reason]);
+  };
+  mistakes.forEach(([value, reason]) => add(value, reason));
+  if (expression) {
+    const wrong = [
+      [expression.replace(/[()]/g, ''), 'Mengabaikan pengelompokan dalam tanda kurung mengubah urutan operasi.'],
+      [expression.replace('*', '+'), 'Perkalian terbaca sebagai penjumlahan; hubungan antarbesaran berubah.'],
+      [expression.replace('/', '*'), 'Pembagian diganti perkalian; satuan atau perbandingan tidak lagi sesuai.'],
+      [expression.replace('-', '+'), 'Pengurangan terbaca sebagai penambahan; arah perubahan keliru.'],
+      [expression.replace('+', '-'), 'Penambahan terbaca sebagai pengurangan; jumlah tidak sesuai informasi.'],
+    ];
+    wrong.forEach(([e, reason]) => { try { add(calculate(e), reason); } catch { /* invalid mistaken expression */ } });
+  }
+  const terms = expression?.match(/\d+(?:\.\d+)?/g)?.map(Number) ?? [answer];
+  for (const term of terms) {
+    add(answer + term, 'Menambahkan kembali komponen yang sudah masuk dalam hasil menghitungnya dua kali.');
+    add(answer - term, 'Mengurangi komponen sekali lagi menghilangkan bagian yang sudah diperhitungkan.');
+    add(answer + 2 * term, 'Menerapkan tambahan komponen sebanyak dua kali mengubah jumlah yang diminta.');
+    add(answer - 2 * term, 'Menerapkan pengurangan komponen sebanyak dua kali mengubah jumlah yang diminta.');
+  }
+  if (choices.length < 5) throw new Error('Pengecoh numerik belum cukup; perbaiki model keluarga ' + q.family + '.');
+  q.options = choices.slice(0, 5).map(([value, reason], i) => ({ text: format(value), reason, score: i === 0 ? 5 : 0 }));
+  q.proof = { kind: 'numeric', values: choices.slice(0, 5).map(([v]) => v), answer: choices[0][0], expression };
   return q;
 };
 const logicChoices = (q: Draft, texts: string[], reasons: string[], valid = [true, false, false, false, false]) => {
@@ -69,7 +93,8 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
     const answer = calculate(expression);
     q.stem = 'Hasil dari ' + expression.replaceAll('*', ' × ').replaceAll('/', ' ÷ ').replaceAll('+', ' + ').replaceAll('-', ' − ') + ' adalah ...';
     q.explanation = 'Kerjakan tanda kurung terlebih dahulu, kemudian perkalian/pembagian, lalu penjumlahan/pengurangan. Hasil perhitungan adalah ' + format(answer) + '.';
-    return numeric(q, answer, r, expression);
+    const errors: Mistake[] = difficulty === 'mudah' ? [[(a + b) * c, 'Menjumlahkan dahulu mengabaikan prioritas perkalian.'], [a * b + c, 'Menukar posisi operator mengubah ekspresi.'], [b * c, 'Suku awal belum ditambahkan.'], [a + b + c, 'Perkalian terbaca sebagai penjumlahan.']] : difficulty === 'sedang' ? [[(a + b) / 2 - d, 'Penjumlahan dikerjakan sebelum pembagian.'], [a + b / 2 + d, 'Pengurangan suku terakhir berubah menjadi penambahan.'], [a + b - d, 'Pembagian dua diabaikan.'], [(a + b - d) / 2, 'Seluruh jumlah dibagi dua, padahal hanya suku tengah.']] : [[a + b * c / 2 - d, 'Kurung diabaikan sehingga hanya b yang dikalikan.'], [(a + b) * c - d, 'Pembagian dua diabaikan.'], [(a + b) * c / 2 + d, 'Tanda suku terakhir keliru.'], [(a + b) * c / (2 - d), 'Pengurangan d dimasukkan ke penyebut.']];
+    return numeric(q, answer, r, expression, errors);
   }
   if (family.id === 'setara') {
     const a = r.int(12, 70), b = r.int(3, 12);
@@ -86,7 +111,7 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
     }
     q.stem = 'Manakah pasangan ' + (division ? 'pembagian' : 'perkalian') + ' yang menghasilkan nilai sama?';
     q.explanation = 'Hitung kedua ruas tiap pilihan atau gunakan perkalian silang. Hanya satu pasangan menghasilkan nilai sama.';
-    return logicChoices(q, texts, reasons);
+    q = logicChoices(q, texts, reasons); q.proof = { kind: 'model', model: { kind: 'equality' } }; return q;
   }
   if (family.id === 'deret' || family.id === 'fibonacci') {
     const start = r.int(2, 20), step = r.int(2, 9);
@@ -101,21 +126,23 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
       answer = start + step * 6; expression = start + '+' + step + '*6';
       q.explanation = 'Selisih antar-suku tetap sebesar ' + step + '. Suku berikutnya adalah ' + answer + '.';
     } else {
-      const other = r.int(30, 60), otherStep = r.int(2, 8);
-      values = Array.from({ length: 8 }, (_, i) => i % 2 ? other + Math.floor(i / 2) * otherStep : start + Math.floor(i / 2) * step);
-      answer = start + 4 * step; expression = start + '+4*' + step;
-      q.explanation = 'Pisahkan suku pada posisi ganjil dan genap. Posisi ganjil bertambah ' + step + ', posisi genap bertambah ' + otherStep + '. Posisi ke-9 mengikuti jalur ganjil: ' + answer + '.';
+      const other = r.int(30, 60), otherStep = r.int(2, 8), factor = r.int(2, 3);
+      values = Array.from({ length: 8 }, (_, i) => i % 2 ? other + Math.floor(i / 2) * otherStep : difficulty === 'sulit' ? start * factor ** Math.floor(i / 2) : start + Math.floor(i / 2) * step);
+      answer = difficulty === 'sulit' ? start * factor ** 4 : start + 4 * step;
+      expression = difficulty === 'sulit' ? start + '*' + [factor, factor, factor, factor].join('*') : start + '+4*' + step;
+      q.explanation = 'Pisahkan suku pada posisi ganjil dan genap. Posisi ganjil ' + (difficulty === 'sulit' ? 'dikalikan ' + factor : 'bertambah ' + step) + ', posisi genap bertambah ' + otherStep + '. Posisi ke-9 mengikuti jalur ganjil: ' + answer + '.';
     }
     q.stem = 'Tentukan bilangan berikutnya berdasarkan pola deret: ' + values.join(', ') + ', ...';
     return numeric(q, answer, r, expression);
   }
   if (family.id === 'tabel') {
     const slope = r.int(2, 8), offset = r.int(1, 12), target = r.int(8, 18);
-    q.table = { headers: ['Urutan n', 'Nilai'], rows: [1, 2, 4, target, target + 5].map((n) => [String(n), n === target ? '?' : String(slope * n + offset)]) };
-    q.stem = 'Nilai dalam tabel mengikuti hubungan linear yang sama. Berapakah nilai pada urutan ke-' + target + '?';
-    const answer = slope * target + offset;
-    q.explanation = 'Hubungan linear: nilai = ' + slope + ' × n + ' + offset + '. Pada n = ' + target + ', nilainya ' + answer + '.';
-    return numeric(q, answer, r, slope + '*' + target + '+' + offset);
+    const power = difficulty === 'sedang' ? 1 : 2;
+    q.table = { headers: ['Urutan n', 'Nilai'], rows: [1, 2, 4, target, target + 5].map((n) => [String(n), n === target ? '?' : String(slope * n ** power + offset)]) };
+    q.stem = 'Nilai dalam tabel mengikuti hubungan ' + (power === 1 ? 'linear y = a × n + b' : 'kuadratik y = a × n² + b') + ' dengan a dan b konstan. Berapakah nilai pada urutan ke-' + target + '?';
+    const answer = slope * target ** power + offset;
+    q.explanation = 'Selisih nilai pada n=1 dan n=2 adalah ' + (slope * (2 ** power - 1)) + ', sehingga a = ' + slope + '. Substitusi n=1 memberikan b = ' + offset + '. Nilai pada urutan ' + target + ' adalah ' + answer + '.';
+    return numeric(q, answer, r, slope + '*' + target + (power === 2 ? '*' + target : '') + '+' + offset, [[slope * target + offset, 'Menggunakan n, padahal pola sulit memakai n².'], [slope * target ** power, 'Konstanta b tidak ditambahkan.'], [target ** power + offset, 'Koefisien a tidak diterapkan.'], [slope * (target + offset) ** power, 'Konstanta dimasukkan ke dalam operasi pada n.']]);
   }
   if (family.id === 'cerita') {
     const target = r.int(4, 10) * 20, capA = 20, capB = 40, capC = 60;
@@ -132,38 +159,41 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
     q.table = { headers: ['Bus', 'Kapasitas', 'Biaya'], rows: [['A', '20', 'Rp' + priceA], ['B', '40', 'Rp' + priceB], ['C', '60', 'Rp' + priceC]] };
     q.stem = 'Sebanyak ' + target + ' peserta harus memperoleh tempat duduk. Bus dapat dipilih lebih dari satu dan kursi kosong paling banyak 20. Di antara pilihan berikut, kombinasi manakah yang paling murah?';
     q.explanation = 'Hitung kapasitas dan total biaya setiap kombinasi yang ditawarkan. Pilih kapasitas yang cukup dengan kursi kosong paling banyak 20, kemudian biaya paling rendah. Biaya terbaik dari pilihan adalah Rp' + best.price + '.';
-    return logicChoices(q, [best, ...rest].map((item) => item.a + ' bus A, ' + item.b + ' bus B, ' + item.c + ' bus C'),
+    q = logicChoices(q, [best, ...rest].map((item) => item.a + ' bus A, ' + item.b + ' bus B, ' + item.c + ' bus C'),
       [best, ...rest].map((item) => 'Kapasitas ' + item.seats + ', kursi kosong ' + (item.seats - target) + ', biaya Rp' + item.price + '.'));
+    q.proof = { kind: 'model', model: { kind: 'cost', capacities: [20, 40, 60], prices: [priceA, priceB, priceC], target, spare: 20 } };
+    return q;
   }
   if (family.id === 'data') {
-    const x = r.int(3, 12), y = r.int(2, 8);
+    const x = r.int(3, 10), y = r.int(2, 9);
+    const model: Extract<Model, { kind: 'data' }> = { kind: 'data', domain: 20, target: difficulty === 'sedang' ? 'x' : r.pick(['x', 'sum', 'product']), first: [], second: [] };
     const pattern = r.int(0, 4);
-    const questions = [
-      ['Berapakah nilai x?', '(1) x = ' + x + '.', '(2) x + y = ' + (x + y) + '.', 'Pernyataan (1) memberi nilai x langsung. Pernyataan (2) belum menentukan x karena y tidak diketahui.'],
-      ['Berapakah nilai x?', '(1) x + y = ' + (x + y) + '.', '(2) x = ' + x + '.', 'Pernyataan (2) memberi nilai x langsung. Pernyataan (1) belum menentukan x karena y tidak diketahui.'],
-      ['Berapakah nilai x?', '(1) x + y = ' + (x + y) + '.', '(2) x - y = ' + (x - y) + '.', 'Masing-masing persamaan memiliki dua variabel. Keduanya bersama-sama menghasilkan 2x = ' + (2 * x) + ', sehingga x = ' + x + '.'],
-      ['Berapakah nilai x?', '(1) 2x = ' + (2 * x) + '.', '(2) 3x = ' + (3 * x) + '.', 'Setiap pernyataan secara terpisah memberikan nilai x yang tunggal, yaitu ' + x + '.'],
-      ['Berapakah nilai x?', '(1) x > ' + x + '.', '(2) x < ' + (x + 5) + '.', 'Gabungan pernyataan hanya memberi interval dan tidak menetapkan satu nilai x.'],
-    ][pattern];
-    q.stem = 'x dan y adalah bilangan real. ' + questions[0] + '\n' + questions[1] + '\n' + questions[2];
-    q.explanation = 'Periksa setiap pernyataan secara terpisah, kemudian gabungannya bila diperlukan. ' + questions[3];
-    const texts = ['(1) saja cukup, (2) saja tidak cukup.', '(2) saja cukup, (1) saja tidak cukup.',
-      'Keduanya bersama cukup, masing-masing tidak cukup.', 'Masing-masing pernyataan cukup.', 'Keduanya bersama tetap tidak cukup.'];
-    return logicChoices(q, texts, texts.map((_, i) => i === pattern ? questions[3] : 'Kategori kecukupan ini tidak sesuai evaluasi kedua pernyataan.'), texts.map((_, i) => i === pattern));
+    model.first = pattern === 0 ? [{ op: 'x', value: x }] : pattern === 3 ? [{ op: 'sum', value: x + y }] : [{ op: 'product', value: x * y }];
+    model.second = pattern === 1 ? [{ op: 'x', value: x }] : pattern === 3 ? [{ op: 'sum', value: x + y }] : pattern === 4 ? [{ op: 'xGt', value: 1 }] : [{ op: 'difference', value: x - y }];
+    const describe = (c: typeof model.first[number]) => (c.op === 'xGt' ? 'x > ' : c.op === 'x' ? 'x = ' : c.op === 'sum' ? 'x + y = ' : c.op === 'difference' ? 'x − y = ' : 'xy = ') + c.value;
+    q.stem = 'x dan y adalah bilangan bulat positif paling besar 20. Tentukan ' + (model.target === 'x' ? 'nilai x' : model.target === 'sum' ? 'nilai x + y' : 'nilai xy') + '.\n(1) ' + model.first.map(describe).join('; ') + '.\n(2) ' + model.second.map(describe).join('; ') + '.\nKategori kecukupan data yang tepat adalah ...';
+    const answer = dataCategory(model);
+    q.explanation = 'Uji seluruh pasangan bilangan dalam domain yang dinyatakan, terlebih dahulu untuk (1), lalu (2), kemudian gabungannya. Cukup berarti semua pasangan yang memenuhi pernyataan memberikan nilai target yang sama. Hasil: ' + DATA_LABELS[answer];
+    q = logicChoices(q, DATA_LABELS, DATA_LABELS.map((_, i) => i === answer ? q.explanation : 'Kategori ini berbeda dari banyaknya nilai target yang mungkin; satu contoh pasangan belum membuktikan kecukupan.'), DATA_LABELS.map((_, i) => i === answer));
+    q.bloom = 'C4'; q.proof = { kind: 'model', model }; return q;
   }
   if (family.id === 'analogi') {
     const pairs = [
-      ['Termometer', 'Suhu', 'Barometer', 'Tekanan udara'], ['Mikroskop', 'Objek kecil', 'Teleskop', 'Objek jauh'],
-      ['Dokter', 'Pasien', 'Guru', 'Murid'], ['Penulis', 'Buku', 'Pelukis', 'Lukisan'],
-      ['Kompas', 'Arah', 'Jam', 'Waktu'], ['Kunci', 'Pintu', 'Kata sandi', 'Akun'],
-      ['Akar', 'Pohon', 'Fondasi', 'Bangunan'], ['Pustakawan', 'Perpustakaan', 'Apoteker', 'Apotek'],
-      ['Benih', 'Tanaman', 'Telur', 'Anak ayam'], ['Nelayan', 'Jala', 'Petani', 'Cangkul'],
+      ['Termometer', 'Suhu', 'Barometer', 'Tekanan udara', 'Kecepatan angin', 'Kelembapan udara', 'Curah hujan', 'Suhu udara', 'alat dan besaran yang diukur secara langsung'],
+      ['Penulis', 'Novel', 'Pelukis', 'Lukisan', 'Kuas', 'Kanvas', 'Galeri', 'Pameran', 'profesi dan karya yang dihasilkan'],
+      ['Kompas', 'Arah', 'Jam', 'Waktu', 'Jarum', 'Putaran', 'Alarm', 'Angka', 'alat dan informasi utama yang ditunjukkan'],
+      ['Kunci', 'Pintu', 'Kata sandi', 'Akun', 'Papan ketik', 'Jaringan', 'Layar', 'Aplikasi pengolah kata', 'alat autentikasi dan akses yang dibukanya'],
+      ['Akar', 'Pohon', 'Fondasi', 'Bangunan', 'Semen', 'Arsitek', 'Lantai', 'Atap', 'bagian penopang dan keseluruhan yang ditopang'],
+      ['Pustakawan', 'Perpustakaan', 'Apoteker', 'Apotek', 'Obat', 'Resep', 'Pasien', 'Etalase', 'profesi dan tempat utama pelayanannya'],
+      ['Benih', 'Tanaman', 'Telur ayam', 'Anak ayam', 'Sarang ayam', 'Pakan ayam', 'Cangkang', 'Bulu ayam', 'asal biologis dan hasil perkembangan'],
+      ['Nelayan', 'Jala', 'Petani', 'Cangkul', 'Sawah', 'Gabah', 'Lumbung', 'Pupuk', 'pekerja dan alat kerja khas yang digunakan'],
+      ['Paru-paru', 'Pernapasan', 'Lambung', 'Pencernaan', 'Peredaran darah', 'Pergerakan', 'Penglihatan', 'Pendengaran', 'organ dan fungsi utama'],
+      ['Buku', 'Halaman', 'Kalung', 'Manik-manik', 'Leher', 'Perhiasan', 'Toko', 'Pemakai', 'keseluruhan dan bagian penyusunnya'],
     ];
     const pair = r.pick(pairs);
-    const distractors = r.shuffle(['Ukuran', 'Kecepatan', 'Arah', 'Waktu', 'Buku', 'Bangunan', 'Rumah', 'Pasien', 'Warna'].filter((value) => value !== pair[3])).slice(0, 4);
     q.stem = pair[0] + ' : ' + pair[1] + ' = ' + pair[2] + ' : ...';
-    q.explanation = 'Pertahankan hubungan pasangan pertama. Hubungan ' + pair[0] + ' dengan ' + pair[1] + ' setara dengan hubungan ' + pair[2] + ' dengan ' + pair[3] + '.';
-    return logicChoices(q, [pair[3], ...distractors], [q.explanation, ...distractors.map(() => 'Pilihan ini tidak mempertahankan hubungan pasangan pertama.')]);
+    q.explanation = 'Hubungannya adalah ' + pair[8] + '. Hubungan ini dipertahankan oleh ' + pair[2] + ' dengan ' + pair[3] + '.';
+    q.bloom = 'C2'; return logicChoices(q, pair.slice(3, 8), [q.explanation, ...pair.slice(4, 8).map((text) => text + ' terkait konteksnya, tetapi bukan pasangan dengan hubungan ' + pair[8] + '.')]);
   }
   if (family.id === 'silogisme') {
     const person = r.pick(NAMES);
@@ -175,6 +205,17 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
       ['dokumen lengkap', 'permohonan diterima', 'nomor permohonan diterbitkan'],
     ]);
     const negative = r.next() < 0.5, [a, b, c] = context;
+    if (difficulty !== 'sedang') {
+      const p = variable('p'), s = variable('s'), t = variable('t'), u = variable('u');
+      const extra = 'proses memasuki tahap akhir', premise: Logic = { op: 'and', left: p, right: s };
+      const premises = [implies(premise, t), implies(t, u), p, not(u)], conclusions = [not(s), s, t, u, implies(not(s), t)];
+      const valid = entails(premises, conclusions);
+      q.stem = 'Dalam soal ini berlaku ketentuan berikut. Jika ' + a + ' dan ' + b + ', maka ' + c + '. Jika ' + c + ', maka ' + extra + '. Dalam kasus ini, ' + a + ', tetapi tidak benar bahwa ' + extra + '. Kesimpulan yang pasti benar adalah ...';
+      q.explanation = 'Dari t → u dan ¬u diperoleh ¬t. Karena p ∧ s → t, maka ¬(p ∧ s). Diketahui p benar, sehingga s harus salah. Kesimpulan tidak membalik implikasi.';
+      const texts = ['Tidak benar bahwa ' + b + '.', b + '.', c + '.', extra + '.', 'Jika tidak benar bahwa ' + b + ', maka ' + c + '.'];
+      q = logicChoices(q, texts, texts.map((_, i) => valid[i] ? q.explanation : 'Kesimpulan tidak berlaku pada setiap kemungkinan yang memenuhi seluruh premis.'), valid);
+      q.proof = { kind: 'logic', valid, entailment: { premises, conclusions } }; q.bloom = 'C4'; return q;
+    }
     const p = variable('p'), s = variable('q'), t = variable('r');
     const premises = [implies(p, s), implies(s, t), negative ? not(t) : p];
     const conclusions = negative ? [not(p), p, s, t, implies(not(p), t)] : [t, not(t), not(s), not(p), implies(t, not(s))];
@@ -189,16 +230,33 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
     q.proof = { kind: 'logic', valid, entailment: { premises, conclusions } };
     return q;
   }
-  if (family.id === 'posisi') {
-    const names = r.shuffle(NAMES).slice(0, difficulty === 'sedang' ? 4 : difficulty === 'sulit' ? 5 : 6);
-    const order = r.shuffle(names), position = r.int(2, names.length - 1);
-    const clues = r.shuffle(order.slice(0, -1).map((name, i) => name + ' tepat di sebelah kiri ' + order[i + 1] + '.'));
-    q.stem = names.join(', ') + ' duduk pada satu baris dari kiri ke kanan. ' + clues.join(' ') + '\nSiapa yang berada pada posisi ke-' + position + ' dari kiri?';
-    const answer = order[position - 1];
-    const texts = [answer, ...r.shuffle(names.filter((name) => name !== answer)).slice(0, 3)];
-    while (texts.length < 5) texts.push('Tidak dapat ditentukan');
-    q.explanation = 'Gabungkan pasangan yang harus berdampingan sesuai arah kiri–kanan. Susunan tunggal adalah ' + order.join(' – ') + '. Posisi ke-' + position + ' adalah ' + answer + '.';
-    return logicChoices(q, texts, texts.map((text) => text === answer ? q.explanation : 'Tidak sesuai posisi pada susunan yang memenuhi seluruh petunjuk.'));
+  if (['posisi', 'peringkat', 'jadwal'].includes(family.id)) {
+    const order = r.shuffle(NAMES).slice(0, difficulty === 'sedang' ? 5 : 6), position = r.int(2, order.length - 1);
+    const constraints: Constraint[] = [{ a: order[0], op: 'at', value: 1 }];
+    for (let i = 0; i < order.length - 1; i++) constraints.push({ a: order[i], b: order[i + 1], op: difficulty === 'sedang' ? 'adjacent' : 'before' });
+    if (difficulty !== 'sedang') {
+      constraints.splice(2, 1, { a: order[1], b: order[3], op: 'distance', value: 2 });
+      constraints.push({ a: order[2], op: 'notAt', value: order.length });
+      constraints.push({ a: order[2], b: order[3], op: 'before' });
+    }
+    const labels = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'].slice(0, order.length);
+    const model: Extract<Model, { kind: 'ordering' }> = { kind: 'ordering', names: r.shuffle(order), constraints,
+      query: family.id === 'jadwal' ? { person: order[position - 1] } : { position }, ...(family.id === 'jadwal' ? { labels } : {}) };
+    const possible = orders(model);
+    const outputs = new Set(possible.map((o) => family.id === 'jadwal' ? labels[o.indexOf(order[position - 1])] : o[position - 1]));
+    const answer = outputs.size === 1 ? [...outputs][0] : 'Tidak dapat ditentukan';
+    const relation = family.id === 'posisi' ? 'di sebelah kiri' : family.id === 'peringkat' ? 'di atas' : 'sebelum';
+    const clues = r.shuffle(constraints).map((c) => c.op === 'at' ? c.a + ' menempati urutan ' + c.value + '.' :
+      c.op === 'notAt' ? c.a + ' bukan pada urutan ' + c.value + '.' : c.op === 'distance' ? c.a + ' berada ' + c.value + ' urutan ' + relation + ' ' + c.b + '.' :
+        c.a + ' ' + (c.op === 'adjacent' ? 'tepat satu urutan ' : '') + relation + ' ' + c.b + '.');
+    q.stem = model.names.join(', ') + (family.id === 'jadwal' ? ' presentasi satu orang per hari pada ' + labels.join(', ') : family.id === 'peringkat' ? ' memiliki nilai berbeda dan diurutkan dari tertinggi ke terendah' : ' duduk dalam satu baris dari kiri ke kanan') + '. ' + clues.join(' ') + '\n' +
+      (family.id === 'jadwal' ? 'Pada hari apa ' + order[position - 1] + ' presentasi?' : 'Siapa yang menempati urutan ke-' + position + '?');
+    const candidates = family.id === 'jadwal' ? labels : order;
+    const texts = [answer, ...r.shuffle(candidates.filter((v) => v !== answer)).slice(0, 4)];
+    q.explanation = 'Bedakan hubungan sebelum dengan tepat sebelum. Uji seluruh petunjuk bersama; ' + possible.length + ' susunan memenuhi batasan. ' +
+      (outputs.size === 1 ? 'Semua susunan tersebut memberi jawaban ' + answer + '.' : 'Ada lebih dari satu hasil untuk posisi yang ditanyakan.');
+    q = logicChoices(q, texts, texts.map((t) => t === answer ? q.explanation : 'Pilihan ini tidak konsisten dengan seluruh batasan, meskipun dapat cocok dengan salah satu petunjuk.'));
+    q.bloom = 'C4'; q.proof = { kind: 'model', model }; return q;
   }
   if (family.id === 'argumen') {
     const examples = [
@@ -211,9 +269,12 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
     q.stem = 'Seorang peneliti berpendapat: "' + claim + '" Pernyataan manakah yang paling ' + (negative ? 'memperlemah' : 'memperkuat') + ' argumen tersebut?';
     q.explanation = 'Uji hubungan antara tindakan dan hasil yang diklaim. Bukti yang ' + (negative ? 'menunjukkan hasil tidak terjadi meskipun tindakan diterapkan' : 'menunjukkan hasil terjadi setelah tindakan, dengan kondisi pembanding yang relevan') + ' paling langsung memengaruhi argumen.';
     const texts = [negative ? weaken : strengthen, negative ? strengthen : weaken,
-      'Program tersebut banyak diberitakan dalam beberapa bulan terakhir.', 'Pelaksana program mempunyai pengalaman kerja yang panjang.', 'Jumlah peserta kegiatan berubah setiap tahun.'];
+      'Hasil membaik, tetapi kelompok penerima program juga mendapat tambahan sumber daya pada saat yang sama.',
+      'Sebagian penerima mengaku menyukai program, sedangkan perubahan hasil belum diukur dengan kriteria yang sama.',
+      'Kondisi awal kelompok penerima lebih baik daripada kelompok pembanding dan belum dikendalikan dalam analisis.'];
     return logicChoices(q, texts, [q.explanation, 'Pernyataan ini justru mengarah pada pengaruh yang berlawanan.',
-      'Popularitas berita tidak menguji hubungan sebab dan hasil.', 'Pengalaman pelaksana bukan bukti langsung hubungan yang diklaim.', 'Perubahan jumlah saja tidak menjelaskan hasil yang diklaim.']);
+      'Tambahan sumber daya adalah penjelasan alternatif; lebih tidak langsung daripada pengukuran hasil pada kondisi sebanding.',
+      'Kesukaan terhadap program belum membuktikan perubahan hasil yang diklaim.', 'Ketidakseimbangan awal membatasi perbandingan; bukti hasil setelah pengendalian faktor lebih langsung.']);
   }
   if (family.id === 'peringkat' || family.id === 'jadwal') {
     const order = r.shuffle(NAMES).slice(0, 5), target = r.int(1, 5);
@@ -237,12 +298,17 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
       names[0] + ' mengikuti ' + activities[0] + ', sedangkan ' + names[2] + ' tidak mengikutinya. Hanya ' + names[2] +
       ' yang mengikuti ' + activities[1] + '. Kesimpulan yang pasti benar adalah ...';
     q.explanation = 'Karena tepat dua peserta mengikuti ' + activities[0] + ', peserta kedua adalah ' + names[1] + '. Informasi tentang ' + activities[1] + ' tidak mengubah penghitungan tersebut.';
-    return logicChoices(q, [
+    const texts = [
       names[1] + ' mengikuti ' + activities[0] + ' dan tidak mengikuti ' + activities[1] + '.',
       names[0] + ' mengikuti kedua kegiatan.', names[1] + ' mengikuti kedua kegiatan.',
       names[2] + ' mengikuti kedua kegiatan.', 'Tidak ada peserta yang mengikuti ' + activities[0] + '.',
-    ], [q.explanation, 'Kegiatan kedua hanya diikuti peserta ketiga.', 'Kegiatan kedua hanya diikuti peserta ketiga.',
+    ];
+    q = logicChoices(q, texts, [q.explanation, 'Kegiatan kedua hanya diikuti peserta ketiga.', 'Kegiatan kedua hanya diikuti peserta ketiga.',
       'Peserta ketiga tidak mengikuti kegiatan pertama.', 'Ada tepat dua peserta yang mengikuti kegiatan pertama.']);
+    q.proof = { kind: 'model', model: { kind: 'category', names, total: 2, yes: [names[0]], no: [names[2]], second: [names[2]], claims: [
+      { text: texts[0], person: names[1], first: true, second: false }, { text: texts[1], person: names[0], first: true, second: true },
+      { text: texts[2], person: names[1], first: true, second: true }, { text: texts[3], person: names[2], first: true, second: true },
+    ] } }; return q;
   }
   if (family.id === 'rute') {
     const size = difficulty === 'sedang' ? 5 : 6;
@@ -258,7 +324,12 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
     q.stem = 'Jalur pada tabel hanya dapat dilalui sesuai arah yang ditunjukkan. Berapa banyak rute berbeda dari ' + nodes[0] + ' menuju ' + nodes[size - 1] + '?';
     q.explanation = 'Hitung dari tujuan ke belakang. Banyak rute dari suatu simpul adalah jumlah rute dari semua simpul yang dapat dituju langsung. ' +
       nodes.map((node, i) => node + ': ' + paths[i]).join('; ') + '. Jadi terdapat ' + paths[0] + ' rute.';
-    return numeric(q, paths[0], r, edges.filter(([from]) => from === 0).map(([, to]) => paths[to]).join('+'));
+    q = numeric(q, paths[0], r, edges.filter(([from]) => from === 0).map(([, to]) => paths[to]).join('+'), [
+      [edges.length, 'Menghitung ruas jalan, bukan rute lengkap dari awal sampai tujuan.'],
+      [edges.filter(([from]) => from === 0).length, 'Menghitung cabang awal saja mengabaikan percabangan setelahnya.'],
+      [size - 1, 'Menghitung ruas pada jalur berantai saja mengabaikan rute alternatif.'],
+    ]);
+    q.proof = { kind: 'model', model: { kind: 'route', nodes, edges: edges.map(([from, to]) => [nodes[from], nodes[to]]) } }; return q;
   }
   if (family.id === 'pecahan') {
     const a = r.int(1, 9), b = r.int(1, 4), c = r.int(1, 5), whole = difficulty === 'mudah' ? 0 : r.int(2, 12);
@@ -275,7 +346,12 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
     const answer = starts[0] + 3 * steps[0];
     q.explanation = 'Pisahkan posisi 1–4–7, 2–5–8, dan 3–6–9. Masing-masing jalur mempunyai selisih tetap ' + steps.join(', ') +
       '. Posisi ke-10 meneruskan jalur pertama: ' + values[6] + ' + ' + steps[0] + ' = ' + answer + '.';
-    return numeric(q, answer, r, starts[0] + '+3*' + steps[0]);
+    return numeric(q, answer, r, starts[0] + '+3*' + steps[0], [
+      [values[8] + steps[2], 'Meneruskan jalur ketiga, padahal posisi ke-10 termasuk jalur pertama.'],
+      [values[6] + steps[1], 'Menggunakan selisih jalur kedua untuk suku jalur pertama.'],
+      [values[6], 'Mengulang suku terakhir jalur pertama tanpa menambahkan selisihnya.'],
+      [answer + steps[0], 'Maju dua langkah pada jalur pertama, bukan satu langkah.'],
+    ]);
   }
   if (family.id === 'selang-seling') {
     const add = r.int(3, 9), subtract = r.int(1, add - 1), values = [r.int(15, 40)];
@@ -290,7 +366,7 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
     const factor = difficulty === 'sedang' ? 2 : r.int(3, 6);
     const middle = top.map((value, i) => factor * value + bottom[i]);
     q.table = { headers: ['Kolom 1', 'Kolom 2', 'Kolom 3'], rows: [top.map(String), middle.map(String), [String(bottom[0]), String(bottom[1]), '?']] };
-    q.stem = 'Pada setiap kolom, bilangan tengah = ' + factor + ' × bilangan atas + bilangan bawah. Nilai yang menggantikan tanda tanya adalah ...';
+    q.stem = 'Pada setiap kolom, bilangan tengah = a × bilangan atas + bilangan bawah, dengan a bilangan bulat positif yang sama.' + (difficulty === 'sedang' ? ' Diketahui a = ' + factor + '.' : ' Tentukan a dari dua kolom yang lengkap.') + ' Nilai yang menggantikan tanda tanya adalah ...';
     q.explanation = 'Balikkan hubungan: bilangan bawah = bilangan tengah − ' + factor + ' × bilangan atas. Pada kolom ketiga: ' +
       middle[2] + ' − ' + factor + ' × ' + top[2] + ' = ' + bottom[2] + '.';
     return numeric(q, bottom[2], r, middle[2] + '-' + factor + '*' + top[2]);
@@ -298,10 +374,11 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
   if (family.id === 'pernyataan-tabel') {
     const products = ['Pulpen', 'Buku', 'Pensil'], prices = [r.int(3, 7) * 1000, r.int(8, 15) * 1000, r.int(2, 5) * 1000];
     const trueStatements = r.shuffle([1, 2, 3, 4]).slice(0, 2).sort();
-    const statements: string[] = [], reasons: string[] = [];
+    const statements: string[] = [], reasons: string[] = [], allAmounts: number[][] = [], allOffered: number[] = [];
     for (let i = 0; i < 4; i++) {
       const amounts = products.map(() => r.int(1, 4)), total = amounts.reduce((sum, n, j) => sum + n * prices[j], 0);
       const offered = trueStatements.includes(i + 1) ? total : total + r.int(1, 3) * 1000;
+      allAmounts.push(amounts); allOffered.push(offered);
       statements.push('(' + (i + 1) + ') ' + amounts.map((n, j) => n + ' ' + products[j].toLowerCase()).join(', ') + ' berharga Rp' + offered + '.');
       reasons.push('Pernyataan ' + (i + 1) + ': harga sebenarnya Rp' + total + ', sehingga ' + (total === offered ? 'benar' : 'salah') + '.');
     }
@@ -310,9 +387,35 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
     q.table = { headers: ['Barang', 'Harga satuan'], rows: products.map((product, i) => [product, 'Rp' + prices[i]]) };
     q.stem = statements.join('\n') + '\nKombinasi dua pernyataan yang benar adalah ...';
     q.explanation = reasons.join(' ');
-    return logicChoices(q, [correct, ...r.shuffle(combinations).slice(0, 4)], [q.explanation, ...Array(4).fill('Setidaknya satu pernyataan dalam kombinasi ini salah menurut perhitungan harga.')]);
+    q = logicChoices(q, [correct, ...r.shuffle(combinations).slice(0, 4)], [q.explanation, ...Array(4).fill('Setidaknya satu pernyataan dalam kombinasi ini salah menurut perhitungan harga.')]);
+    q.proof = { kind: 'model', model: { kind: 'statements', prices, amounts: allAmounts, offered: allOffered } }; return q;
   }
   if (family.id === 'cerita-hitung') {
+    if (difficulty === 'sulit') {
+      const variant = r.int(0, 2), a = r.int(3, 9), b = r.int(2, 5);
+      let expression: string; let mistakes: Mistake[];
+      if (variant === 0) {
+        const price = a * 50000, discount = b * 5, tax = 10;
+        expression = price + '*(100-' + discount + ')/100*(100+' + tax + ')/100';
+        q.stem = 'Barang berharga Rp' + price + ' mendapat diskon ' + discount + '%. Setelah diskon, pajak 10% dikenakan atas harga yang sudah didiskon. Berapa total yang dibayar?';
+        q.explanation = 'Tentukan harga setelah diskon terlebih dahulu; pajak dihitung dari dasar harga tersebut, bukan harga awal.';
+        mistakes = [[price * (100 - discount + tax) / 100, 'Diskon dan pajak digabung pada harga awal, padahal dasar pajak berubah.'], [price * (100 - discount) / 100, 'Pajak setelah diskon belum dimasukkan.'], [price * 1.1, 'Diskon belum diterapkan.'], [price * (100 - discount) / 100 - price * .1, 'Pajak dikurangi dan memakai dasar harga awal.']];
+      } else if (variant === 1) {
+        const old = 70, added = 90, total = a * old + b * added;
+        expression = '(' + a + '*' + old + '+' + b + '*' + added + ')/(' + a + '+' + b + ')';
+        q.stem = 'Rata-rata nilai ' + a + ' peserta adalah 70. Sebanyak ' + b + ' peserta lain dengan rata-rata 90 bergabung. Berapa rata-rata gabungan?';
+        q.explanation = 'Gunakan jumlah nilai tiap kelompok sebagai bobot; rata-rata kelompok tidak dijumlahkan lalu dibagi dua kecuali ukurannya sama.';
+        mistakes = [[80, 'Rata-rata kelompok diberi bobot sama meskipun banyak peserta berbeda.'], [total / a, 'Jumlah nilai gabungan dibagi hanya peserta kelompok awal.'], [total / b, 'Jumlah nilai gabungan dibagi hanya peserta tambahan.'], [(70 + 90) / (a + b), 'Rata-rata dianggap sebagai jumlah nilai kelompok.']];
+      } else {
+        const workers = a * 2, days = b * 8, elapsed = b * 2, extra = a;
+        expression = '(' + workers + '*' + days + '-' + workers + '*' + elapsed + ')/(' + workers + '+' + extra + ')';
+        q.stem = 'Pekerjaan dapat selesai oleh ' + workers + ' pekerja dalam ' + days + ' hari. Setelah ' + elapsed + ' hari bekerja, ditambah ' + extra + ' pekerja dengan produktivitas sama. Berapa hari lagi yang diperlukan?';
+        q.explanation = 'Hitung sisa beban dalam satuan orang-hari setelah pekerjaan awal, kemudian bagi dengan jumlah pekerja baru.';
+        mistakes = [[workers * days / (workers + extra), 'Beban yang sudah dikerjakan belum dikurangi.'], [days - elapsed, 'Tambahan pekerja belum diperhitungkan.'], [(workers + extra) * (days - elapsed) / workers, 'Perbandingan pekerja dan waktu dibalik.'], [(days - elapsed) / extra, 'Jumlah pekerja tambahan dianggap seluruh tenaga kerja.']];
+      }
+      const answer = calculate(expression); q.explanation += ' Hasil = ' + format(answer) + '.';
+      return numeric(q, answer, r, expression, mistakes);
+    }
     const variant = r.int(0, 5), a = r.int(3, 12), b = r.int(2, 6);
     let expression: string;
     if (variant === 0) {
@@ -356,8 +459,24 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
   const turn = difficulty === 'mudah' ? 90 : r.pick([45, 90, 135, 180, 225]);
   const step = difficulty === 'mudah' ? 0 : 1;
   const colorStep = difficulty === 'sulit' || difficulty === 'hots' ? 1 : 0;
+  const shapeStep = difficulty === 'sulit' || difficulty === 'hots' ? 1 : 0;
+  const shiftedShape = (value: Figure['shape'], amount: number) => shapes[mod(shapes.indexOf(value) + amount, 4)];
   let answer: Figure;
   if (family.id === 'fig-odd') {
+    if (difficulty !== 'mudah') {
+      const rule = difficulty === 'sedang' ? 'count-fill' : 'turn-count';
+      const shift = r.int(0, rule === 'count-fill' ? 2 : 7);
+      const figures = [1, 2, 3, 4, 5].map((count) => ({ shape: r.pick(shapes), count, angle: mod((count + shift) * 45), fill: mod(count - shift, 3) }));
+      const odd = r.int(0, 4);
+      if (rule === 'count-fill') figures[odd].fill = mod(figures[odd].fill + 1, 3); else figures[odd].angle = mod(figures[odd].angle + 45);
+      q.visual = { kind: 'ketidaksamaan', columns: 5, figures: [], oddRule: rule };
+      q.stem = rule === 'count-fill' ? 'Empat gambar mempunyai hubungan yang sama antara jumlah titik dan siklus warna putih → gelap → abu → putih. Pilih satu gambar yang tidak mengikuti hubungan tersebut. Jenis bangun dan arah panah tidak menentukan kelompok.' :
+        'Empat gambar mempunyai hubungan yang sama antara arah panah (langkah 45° searah jarum jam dari atas) dan jumlah titik. Pilih gambar yang tidak mengikuti hubungan itu. Jenis bangun dan warna tidak menentukan kelompok.';
+      q.explanation = rule === 'count-fill' ? 'Pada empat gambar, jumlah titik dikurangi indeks warna (putih 0, gelap 1, abu 2) mempunyai sisa pembagian 3 yang sama, yaitu ' + shift + '. Satu gambar melanggar hubungan tersebut.' :
+        'Pada empat gambar, indeks arah panah dikurangi jumlah titik mempunyai sisa pembagian 8 yang sama, yaitu ' + shift + '. Satu gambar bergeser satu langkah dari hubungan ini.';
+      q.answer = odd; q.options = figures.map((figure, i) => ({ text: 'Gambar ' + (i + 1), figure, score: i === odd ? 5 : 0, reason: i === odd ? q.explanation : 'Hubungan kedua ciri sesuai dengan empat anggota kelompok.' }));
+      q.proof = { kind: 'figure', answer: figures[odd], odd: true }; return q;
+    }
     const choices = [0, 1, 2, 3].map((i) => ({ ...first, angle: mod(angle + i * 90) }));
     answer = { ...first, count: count + 1, angle: mod(angle + 45) };
     q.visual = { kind: 'ketidaksamaan', columns: 5, figures: [] };
@@ -369,23 +488,23 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
     return q;
   }
   if (family.id === 'fig-analogi') {
-    const second = { ...first, angle: mod(angle + turn), count: count + step, fill: mod(fill + colorStep, 3) };
+    const second = { ...first, shape: shiftedShape(shape, shapeStep), angle: mod(angle + turn), count: count + step, fill: mod(fill + colorStep, 3) };
     const third: Figure = { shape: r.pick(shapes), angle: r.int(0, 7) * 45, count: r.int(1, 4), fill: r.int(0, 2) };
-    answer = { ...third, angle: mod(third.angle + turn), count: third.count + step, fill: mod(third.fill + colorStep, 3) };
+    answer = { ...third, shape: shiftedShape(third.shape, shapeStep), angle: mod(third.angle + turn), count: third.count + step, fill: mod(third.fill + colorStep, 3) };
     q.visual = { kind: 'analogi', columns: 4, figures: [first, second, third, null] };
     q.stem = 'Hubungan gambar 1 terhadap gambar 2 diterapkan pada gambar 3. Pilih gambar pengganti tanda tanya. Warna mengikuti urutan putih → gelap → abu → putih.';
   } else if (family.id === 'fig-serial') {
-    const figures = Array.from({ length: 4 }, (_, i) => ({ ...first, angle: mod(angle + i * turn), count: count + i * step, fill: mod(fill + i * colorStep, 3) }));
-    answer = { ...first, angle: mod(angle + 4 * turn), count: count + 4 * step, fill: mod(fill + 4 * colorStep, 3) };
+    const figures = Array.from({ length: 4 }, (_, i) => ({ ...first, shape: shiftedShape(shape, i * shapeStep), angle: mod(angle + i * turn), count: count + i * step, fill: mod(fill + i * colorStep, 3) }));
+    answer = { ...first, shape: shiftedShape(shape, 4 * shapeStep), angle: mod(angle + 4 * turn), count: count + 4 * step, fill: mod(fill + 4 * colorStep, 3) };
     q.visual = { kind: 'serial', columns: 5, figures: [...figures, null] };
     q.stem = 'Pilih gambar yang melanjutkan urutan. Warna mengikuti siklus putih → gelap → abu → putih.';
   } else {
     const figures = Array.from({ length: 8 }, (_, i) => {
       const row = Math.floor(i / 3), col = i % 3;
-      return { shape: shapes[(shapes.indexOf(shape) + row) % shapes.length], angle: mod(angle + row * 45 + col * turn),
+      return { shape: shiftedShape(shape, row + col * shapeStep), angle: mod(angle + row * 45 + col * turn),
         count: count + row + col, fill: mod(fill + row + col * colorStep, 3) };
     });
-    answer = { shape: shapes[(shapes.indexOf(shape) + 2) % shapes.length], angle: mod(angle + 90 + 2 * turn),
+    answer = { shape: shiftedShape(shape, 2 + 2 * shapeStep), angle: mod(angle + 90 + 2 * turn),
       count: count + 4, fill: mod(fill + 2 + 2 * colorStep, 3) };
     q.visual = { kind: 'matriks', columns: 3, figures: [...figures, null] };
     q.stem = 'Perubahan di setiap baris mengikuti aturan yang sama. Pilih gambar untuk kotak kanan bawah. Warna mengikuti siklus putih → gelap → abu → putih.';
@@ -394,7 +513,8 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
   const seen = new Set([figureSignature(answer)]);
   while (candidates.length < 5) {
     const candidate = { ...answer };
-    const feature = r.pick(['angle', 'count', 'fill'] as const);
+    const feature = r.pick(['angle', 'count', 'fill', 'shape'] as const);
+    if (feature === 'shape') candidate.shape = shiftedShape(answer.shape, r.int(1, 3));
     if (feature === 'angle') candidate.angle = mod(answer.angle + r.int(1, 7) * 45);
     if (feature === 'count') candidate.count = mod(answer.count + r.int(1, 3), 8) + 1;
     if (feature === 'fill') candidate.fill = mod(answer.fill + r.int(1, 2), 3);
@@ -402,11 +522,12 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
     if (!seen.has(signature)) { candidates.push(candidate); seen.add(signature); }
   }
   q.options = candidates.map((figure, index) => ({ text: 'Gambar ' + (index + 1), figure, score: index === 0 ? 5 : 0,
-    reason: index === 0 ? 'Seluruh ciri sesuai pola perubahan.' : 'Setidaknya satu ciri orientasi, warna, atau jumlah titik tidak sesuai pola.' }));
+    reason: index === 0 ? 'Seluruh ciri sesuai pola perubahan.' : [figure.angle !== answer.angle ? 'Rotasi tidak sesuai perubahan arah panah.' : '', figure.count !== answer.count ? 'Jumlah titik mengikuti langkah yang keliru.' : '', figure.fill !== answer.fill ? 'Warna tidak mengikuti siklus yang sama.' : '', figure.shape !== answer.shape ? 'Jenis bangun tidak mengikuti perubahan bentuk.' : ''].filter(Boolean).join(' ') }));
   q.explanation = 'Periksa arah panah, jumlah titik, dan warna secara terpisah. ' +
     (family.id === 'fig-matrix' ? 'Lanjutkan perubahan dua kotak pertama pada baris terakhir.' :
       'Arah berubah ' + turn + '°, titik berubah ' + step + ', dan warna bergeser ' + colorStep + ' langkah pada siklus.') +
-    ' Gambar jawaban mempunyai ' + answer.count + ' titik dan panah pada sudut ' + answer.angle + '°.';
+    ' Bentuk mengikuti siklus segitiga → persegi → lingkaran → belah ketupat; pergeseran bentuk per kolom/langkah ' + shapeStep + '. Gambar jawaban mempunyai ' + answer.count + ' titik dan panah pada sudut ' + answer.angle + '°.';
+  if (shapeStep) q.stem += ' Siklus bentuk: segitiga → persegi → lingkaran → belah ketupat → segitiga.';
   q.proof = { kind: 'figure', answer };
   return q;
 }

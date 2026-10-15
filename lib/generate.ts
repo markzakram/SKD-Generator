@@ -5,9 +5,12 @@ import { rng, type Rng } from './rng';
 import { TIU_FAMILIES, makeTiu } from './tiu';
 import type { BankItem, DifficultyFilter, Mode, Package, Question, Settings, Subtest } from './types';
 import { auditPackages } from './validate';
+import { buildBlueprint, checkBlueprint } from './blueprint';
+import { validationBinding } from './binding';
 
 export function normalizeSettings(input: Partial<Settings>): Settings {
   const value = { ...DEFAULT_SETTINGS, ...input };
+  if (value.difficulty === 'hots') value.difficulty = 'sulit';
   if (!['SKD', 'TWK', 'TIU', 'TKP'].includes(value.mode)) throw new Error('Subtes tidak dikenal.');
   if (!['campuran', 'mudah', 'sedang', 'sulit', 'hots'].includes(value.difficulty)) throw new Error('Tingkat kesulitan tidak dikenal.');
   for (const [key, maximum] of [['packages', 50], ['count', 200], ['duration', 300]] as const) {
@@ -25,6 +28,12 @@ export function normalizeSettings(input: Partial<Settings>): Settings {
     .filter((item) => available.includes(item.topic)).map((item) => item.topic + '::' + item.subtopic);
   if (value.subtopics.some((topic) => !eligibleSubtopics.includes(topic))) throw new Error('Submateri tidak sesuai subtes yang dipilih.');
   if (value.mode === 'SKD' && value.count < 3) throw new Error('Paket gabungan memerlukan minimal tiga soal.');
+  if (value.composition) {
+    const values = ['mudah', 'sedang', 'sulit'].map((level) => value.composition![level as keyof NonNullable<Settings['composition']>]);
+    if (values.some((n) => !Number.isInteger(n) || n < 0 || n > 100) || values.reduce((a, b) => a + b, 0) !== 100) throw new Error('Komposisi kesulitan harus berjumlah 100%.');
+  }
+  if (value.blueprint && (!Array.isArray(value.blueprint) || value.blueprint.length > 100)) throw new Error('Blueprint tidak valid.');
+  if (value.blueprint) { const errors = checkBlueprint(value.blueprint, value); if (errors.length) throw new Error(errors.join(' ')); }
   return { ...value, seed: value.seed.trim(), title: value.title.trim(), topics: [...new Set(value.topics)] };
 }
 export function distribution(mode: Mode, count: number): Record<Subtest, number> {
@@ -43,7 +52,7 @@ export function fingerprint(question: Question): string {
   const options = question.options.map((option) => option.figure ? figureSignature(option.figure) : normalizeText(option.text)).sort().join('|');
   return normalizeText(question.stem) + '|' + JSON.stringify(question.table ?? '') + '|' + visual + '|' + options;
 }
-const familyFor = (item: BankItem) => item.id.includes('-case-') ? item.id.replace(/-\d+$/, '') : item.id;
+const familyFor = (item: BankItem) => item.id.startsWith('twk-case-v2-') ? item.id : item.id.includes('-case-') ? item.id.replace(/-\d+$/, '') : item.id;
 function fromBank(item: BankItem): Question {
   return {
     ...item, no: 0, options: item.options.map((option) => ({ ...option })), family: familyFor(item),
@@ -78,6 +87,7 @@ export function capacity(settings: Settings) {
 export function generate(settingsInput: Partial<Settings>): Package[] {
   const settings = normalizeSettings(settingsInput);
   const counts = distribution(settings.mode, settings.count);
+  const blueprint = buildBlueprint(settings);
   for (const entry of capacity(settings)) if (entry.required > entry.available) {
     throw new Error('Persediaan ' + entry.subtest + ' untuk filter ini ' + entry.available + ' butir, sedangkan permintaan ' +
       entry.required + '. Kurangi jumlah, perluas materi/kesulitan, atau izinkan soal dipakai kembali di paket berbeda.');
@@ -100,22 +110,22 @@ export function generate(settingsInput: Partial<Settings>): Package[] {
       const availableTopics = subtest === 'TIU' ? topics.filter((topic) => familyPool.some((family) => family.topic === topic)) :
         topics.filter((topic) => pool.some((item) => item.topic === topic));
       if (!availableTopics.length) throw new Error('Tidak ada soal ' + subtest + ' pada filter kesulitan ini.');
-      const plan = planTopics(availableTopics, counts[subtest], random);
+      const plan = random.shuffle(blueprint.filter((row) => row.subtest === subtest).flatMap((row) => Array.from({ length: row.count }, () => ({ topic: row.topic, difficulty: row.difficulty }))));
       for (let index = 0; index < plan.length; index++) {
         let question: Question | undefined;
-        const target = plan[index];
+        const target = plan[index].topic, targetLevel = plan[index].difficulty;
         if (subtest !== 'TIU') {
           const candidates = pool.filter((item) => !localBankUsed.has(item.id) && (!settings.uniqueAcross || !globalBankUsed.has(item.id)));
           const choose = (items: BankItem[]) => items.find((item) => !usedFamilies.has(familyFor(item))) ?? items[0];
-          const item = choose(candidates.filter((item) => item.topic === target)) ?? choose(candidates);
-          if (!item) throw new Error('Bahan ' + subtest + ' habis. Kurangi paket atau perluas filter.');
+          const item = choose(candidates.filter((item) => item.topic === target && item.difficulty === targetLevel));
+          if (!item) throw new Error('Kuota ' + target + ' / ' + targetLevel + ' tidak dapat dipenuhi. Materi tidak diganti otomatis.');
           localBankUsed.add(item.id); globalBankUsed.add(item.id); usedFamilies.add(familyFor(item));
           question = fromBank(item);
         } else {
-          const families = familyPool.filter((family) => family.topic === target);
+          const families = familyPool.filter((family) => family.topic === target && family.levels.includes(targetLevel));
           for (let attempt = 0; attempt < 600; attempt++) {
             const family = families[(index + attempt) % families.length];
-            const level = settings.difficulty === 'campuran' ? random.pick(family.levels) : settings.difficulty;
+            const level = targetLevel;
             const draft = makeTiu(family, level, random);
             const candidate: Question = { ...draft, id: 'tiu-' + family.id + '-' + p + '-' + index + '-' + attempt, no: 0 };
             const signature = fingerprint(candidate);
@@ -129,7 +139,8 @@ export function generate(settingsInput: Partial<Settings>): Package[] {
           throw new Error('Butir berulang ditemukan. Kurangi jumlah paket atau perluas filter.');
         }
         localUsed.add(signature); globalUsed.add(signature);
-        questions.push({ ...shuffled(question, random), no: questions.length + 1 });
+        const final = { ...shuffled(question, random), no: questions.length + 1 };
+        questions.push({ ...final, binding: validationBinding(final) });
       }
     }
     packages.push({ id: 'SKD-' + String(p + 1).padStart(2, '0'), mode: settings.mode, seed: settings.seed + '|' + p,

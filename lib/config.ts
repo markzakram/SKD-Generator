@@ -5,7 +5,7 @@ export const TOPICS: Record<Subtest, string[]> = {
   TIU: ['Verbal', 'Numerik', 'Figural'],
   TKP: ['Pelayanan Publik', 'Jejaring Kerja', 'Sosial Budaya', 'Teknologi Informasi dan Komunikasi', 'Profesionalisme', 'Anti Radikalisme'],
 };
-export const LABELS: Record<Difficulty, string> = { mudah: 'Mudah', sedang: 'Sedang', sulit: 'Sulit', hots: 'HOTS' };
+export const LABELS: Record<Difficulty, string> = { mudah: 'Mudah', sedang: 'Sedang', sulit: 'Sulit', hots: 'Sulit (label lama)' };
 export const PRESET = { TWK: 30, TIU: 35, TKP: 45, SKD: 110 };
 export const DESCRIPTIONS: Record<Mode, string> = {
   SKD: 'Paket gabungan TWK, TIU, dan TKP',

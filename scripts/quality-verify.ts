@@ -1,0 +1,67 @@
+import assert from 'node:assert/strict';
+import { mkdirSync, writeFileSync } from 'node:fs';
+import anchors from '../data/benchmark.json';
+import { BANK, BANK_MAP } from '../lib/bank';
+import { tkpCases } from '../lib/bank/cases';
+import { DEFAULT_SETTINGS } from '../lib/config';
+import { buildBlueprint, actualBlueprint } from '../lib/blueprint';
+import { generate, normalizeSettings } from '../lib/generate';
+import { auditPackages, auditQuestion } from '../lib/validate';
+import { createWorkspace, editQuestion, exportPackages, reviseWorkspace, setReview, questionIssues } from '../lib/quality';
+import { analyzePilots, blankAnswers, contentHash, validatePilot } from '../lib/pilot';
+import { readBackup } from '../lib/backup';
+import type { Proof, Question, PilotSession } from '../lib/types';
+
+let checks = 0;
+const ok = (condition: unknown, message: string) => { assert.ok(condition, message); checks++; };
+for (const fixture of anchors.cases) {
+  if ('bankId' in fixture) {
+    const item = BANK_MAP.get(fixture.bankId!); ok(item, fixture.id); assert.equal(item!.options[item!.answer].text, fixture.expected); checks++;
+    continue;
+  }
+  const answer = fixture.choices!.indexOf(fixture.expected);
+  const q: Question = { id: fixture.id, no: 1, subtest: 'TIU', topic: 'Numerik', subtopic: 'Benchmark', family: 'benchmark', difficulty: 'sedang', stem: fixture.stem!, options: fixture.choices!.map((text, i) => ({ text, score: i === answer ? 5 : 0, reason: fixture.explanation })), answer, explanation: fixture.explanation, source: 'Anchor regresi; menunggu telaah ahli', origin: 'pola', proof: fixture.proof as Proof };
+  ok(!auditQuestion(q).length, fixture.id + ': ' + auditQuestion(q));
+  const corrupt = structuredClone(q); corrupt.answer = (answer + 1) % 5; corrupt.options.forEach((o, i) => o.score = i === corrupt.answer ? 5 : 0);
+  ok(auditQuestion(corrupt).length, 'Solver menolak kunci salah: ' + fixture.id);
+}
+const settings = normalizeSettings({ ...DEFAULT_SETTINGS, count: 110, composition: { mudah: 25, sedang: 50, sulit: 25 } });
+const blueprint = buildBlueprint(settings), packages = generate({ ...settings, blueprint });
+ok(auditPackages(packages, { ...settings, blueprint }).ok, 'Kuota eksplisit harus dipenuhi.');
+assert.deepEqual(actualBlueprint(packages[0].questions).sort((a,b) => (a.topic+a.difficulty).localeCompare(b.topic+b.difficulty)), blueprint.sort((a,b) => (a.topic+a.difficulty).localeCompare(b.topic+b.difficulty))); checks++;
+assert.throws(() => generate({ ...settings, blueprint: [{ subtest: 'TWK', topic: 'Nasionalisme', difficulty: 'mudah', count: 110 }] }), /kuota|Jumlah|tersedia/); checks++;
+assert.throws(() => normalizeSettings({ composition: { mudah: 20, sedang: 20, sulit: 20 } }), /100/); checks++;
+const result = { settings, packages, audit: auditPackages(packages, settings), elapsed: 0 };
+let workspace = createWorkspace(result), q = workspace.result.packages[0].questions[0];
+assert.throws(() => setReview(q, 'approved', '', ''), /penelaah/); checks++;
+assert.throws(() => exportPackages(workspace.result, 'approved'), /Belum/); checks++;
+const approved = setReview(q, 'approved', 'Telah ditinjau dalam pengujian.', 'QA');
+const next = structuredClone(workspace.result); next.packages[0].questions[0] = approved;
+workspace = reviseWorkspace(workspace, next, 'Setuju');
+ok(exportPackages(workspace.result, 'approved')[0].questions.length === 1, 'Ekspor hanya persetujuan.');
+ok(readBackup(JSON.stringify(workspace)).result.packages[0].questions[0].review?.reviewer === 'QA', 'Cadangan mempertahankan jejak penelaah.');
+const edited = editQuestion(approved, { ...approved, stem: approved.stem + ' Perhatikan seluruh informasi.' });
+ok(edited.review?.status === 'revision' && edited.proof.kind === 'manual', 'Suntingan membatalkan persetujuan dan bukti model.');
+assert.throws(() => setReview(edited, 'approved', '', 'QA'), /catatan/); checks++;
+const badFigure = structuredClone(packages[0].questions.find((q) => q.visual)!); badFigure.options[0].figure!.fill = 9;
+ok(auditQuestion(badFigure).length, 'Atribut visual rusak ditolak.');
+const badTable = { ...edited, table: { headers: ['A'], rows: [['1','2']] } }; ok(auditQuestion(badTable).length, 'Tabel rusak ditolak.');
+const badStem = structuredClone(packages[0].questions.find((q) => q.proof.kind === 'numeric')!); badStem.stem += ' Angka pada stimulus telah diubah.'; ok(auditQuestion(badStem).length, 'Stimulus yang terpisah dari model ditolak.');
+const excluded = structuredClone(workspace.result); excluded.packages[0].questions[0].review!.excluded = true;
+assert.throws(() => exportPackages(excluded, 'approved'), /Belum/); checks++;
+ok(questionIssues({ ...edited, options: edited.options.map((o,i) => i === edited.answer ? { ...o, text: o.text + ' tambahan'.repeat(100) } : o) }).some((i) => i.code === 'length'), 'Petunjuk panjang kunci ditandai.');
+const pack = workspace.result.packages[0];
+const session: PilotSession = { id: 'fixture-1', workspaceId: workspace.id, version: workspace.version, packageId: pack.id, participant: 'DATA UJI', finishedAt: new Date().toISOString(), answers: blankAnswers(pack).map((a,i) => ({ ...a, choice: i === 0 ? pack.questions[i].answer : null, seconds: 12 })) };
+validatePilot(session, workspace); checks++;
+const analysis = analyzePilots(workspace, pack, [session]); ok(analysis[0].bestRate === 1 && analysis[0].meanScore === 5 && !analysis[0].empirical, 'N kecil tidak diberi label empiris.');
+const badSession = { ...session, answers: [{ ...session.answers[0], choice: 8 }] }; assert.throws(() => validatePilot(badSession, workspace), /tidak valid/); checks++;
+const changed = structuredClone(workspace); changed.result.packages[0].questions[0] = edited;
+ok(contentHash(edited) !== contentHash(approved) && analyzePilots(changed, changed.result.packages[0], [session])[0].count === 0, 'Respons revisi lama tidak dicampur.');
+const many: PilotSession[] = Array.from({ length: 40 }, (_, n) => ({ ...session, id: 'fixture-' + n, answers: blankAnswers(pack).map((a, i) => ({ ...a, choice: n < 20 ? pack.questions[i].answer : (pack.questions[i].answer + 1) % 5, seconds: 10 + n })) }));
+const stats = analyzePilots(workspace, pack, many); ok(stats[0].empirical === 'Sedang' && stats[0].discrimination !== null && stats[0].discrimination > .99, 'Kalibrasi dan korelasi memakai respons yang cocok.');
+const longest = tkpCases.filter((q) => q.options[0].text.length > Math.max(...q.options.slice(1).map((o) => o.text.length))).length;
+ok(longest / tkpCases.length <= .35, 'Kunci TKP tidak sistematis menjadi pilihan terpanjang.');
+ok(new Set(tkpCases.map((q) => q.options.map((o) => o.text).sort().join('|'))).size === tkpCases.length, 'Set opsi berbeda pada setiap kasus TKP.');
+ok(BANK.filter((q) => q.id.startsWith('twk-case-v2')).every((q) => new Set(q.options.map((o) => o.reason)).size === 5), 'Alasan tiap pengecoh TWK berbeda.');
+const report = { status: 'PASS', checks, benchmarkAnchors: anchors.cases.length, academicReview: anchors.status, tkpCases: tkpCases.length, tkpUniqueOptionSets: tkpCases.length, tkpBestStrictlyLongest: longest, participantData: 'Hanya fixture pengujian; tidak dimasukkan ke aplikasi.' };
+mkdirSync('test-results', { recursive: true }); writeFileSync('test-results/quality-report-v2.json', JSON.stringify(report, null, 2)); console.log(JSON.stringify(report, null, 2));

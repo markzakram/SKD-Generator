@@ -17,7 +17,7 @@ export async function POST(request: Request) {
     const settings = normalizeSettings(input);
     if (settings.packages * settings.count > 1000) throw new Error('API dibatasi 1.000 soal per permintaan. Gunakan generator di halaman atau CLI untuk batch lebih besar.');
     const packages = generate(settings);
-    return Response.json({ version: 1, settings, packages, audit: auditPackages(packages, settings) });
+    return Response.json({ version: 2, settings, packages, audit: auditPackages(packages, settings), reviewStatus: 'draft' });
   } catch (error) {
     return Response.json({ error: error instanceof Error ? error.message : 'Permintaan tidak valid.' }, { status: 400 });
   }

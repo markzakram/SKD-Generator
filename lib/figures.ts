@@ -1,20 +1,22 @@
 import type { Figure, Question } from './types';
 export const mod = (value: number, divisor = 360) => ((value % divisor) + divisor) % divisor;
+export const SHAPES: Figure['shape'][] = ['triangle', 'square', 'circle', 'diamond'];
+const shiftShape = (shape: Figure['shape'], a: Figure, b: Figure) => SHAPES[mod(SHAPES.indexOf(shape) + SHAPES.indexOf(b.shape) - SHAPES.indexOf(a.shape), 4)];
 export const figureSignature = (figure: Figure, rotation = true) =>
   [figure.shape, figure.count, rotation ? mod(figure.angle) : 0, figure.fill].join(':');
-const colors = ['#ffffff', '#173f3b', '#99b6ad'];
+const colors = ['#ffffff', '#052c5f', '#91acc4'];
 
 export function figureMarkup(figure: Figure): string {
   const fill = colors[figure.fill];
-  const style = ' fill="' + fill + '" stroke="#173f3b" stroke-width="2.5"';
+  const style = ' fill="' + fill + '" stroke="#052c5f" stroke-width="2.5"';
   const shape = figure.shape === 'circle' ? '<circle cx="50" cy="45" r="20"' + style + '/>' :
     figure.shape === 'triangle' ? '<path d="M50 23 L73 64 L27 64 Z"' + style + '/>' :
     figure.shape === 'diamond' ? '<path d="M50 20 L73 45 L50 70 L27 45 Z"' + style + '/>' :
     '<rect x="29" y="24" width="42" height="42" rx="1"' + style + '/>';
   // Arrow supplies a visible orientation even for symmetric shapes.
-  const arrow = '<path d="M50 16 L50 5 M45 10 L50 5 L55 10" fill="none" stroke="#173f3b" stroke-width="3" stroke-linecap="round"/>';
+  const arrow = '<path d="M50 16 L50 5 M45 10 L50 5 L55 10" fill="none" stroke="#052c5f" stroke-width="3" stroke-linecap="round"/>';
   const dots = Array.from({ length: figure.count }, (_, i) =>
-    '<circle cx="' + (20 + i * 9) + '" cy="94" r="2.6" fill="#173f3b"/>').join('');
+    '<circle cx="' + (20 + i * 9) + '" cy="94" r="2.6" fill="#052c5f"/>').join('');
   return '<g transform="rotate(' + figure.angle + ' 50 45)">' + shape + arrow + '</g>' + dots;
 }
 export function figureSvg(figure: Figure): string {
@@ -52,7 +54,10 @@ export function solveFigure(question: Question): number {
   if (!visual) throw new Error('Stimulus figural tidak tersedia.');
   const figures = visual.figures.filter((figure): figure is Figure => figure !== null);
   if (visual.kind === 'ketidaksamaan') {
-    const signatures = question.options.map((option) => option.figure ? figureSignature(option.figure, false) : '');
+    const signatures = question.options.map((option) => {
+      const f = option.figure; if (!f) return '';
+      return visual.oddRule === 'count-fill' ? String(mod(f.count - f.fill, 3)) : visual.oddRule === 'turn-count' ? String(mod(f.angle / 45 - f.count, 8)) : figureSignature(f, false);
+    });
     const unique = signatures.map((signature, index) => ({ signature, index }))
       .filter(({ signature }) => signatures.filter((other) => other === signature).length === 1);
     if (unique.length !== 1 || new Set(signatures).size !== 2) throw new Error('Pola ketidaksamaan ambigu.');
@@ -61,11 +66,11 @@ export function solveFigure(question: Question): number {
   let expected: Figure;
   if (visual.kind === 'analogi') {
     const [a, b, c] = figures;
-    expected = { ...c, angle: mod(c.angle + b.angle - a.angle), count: c.count + b.count - a.count,
+    expected = { ...c, shape: shiftShape(c.shape, a, b), angle: mod(c.angle + b.angle - a.angle), count: c.count + b.count - a.count,
       fill: mod(c.fill + b.fill - a.fill, 3) };
   } else {
     const a = figures[figures.length - 2], b = figures[figures.length - 1];
-    expected = { ...b, count: 2 * b.count - a.count, angle: mod(2 * b.angle - a.angle),
+    expected = { ...b, shape: shiftShape(b.shape, a, b), count: 2 * b.count - a.count, angle: mod(2 * b.angle - a.angle),
       fill: mod(2 * b.fill - a.fill, 3) };
   }
   const matches = question.options.map((option, index) => ({ option, index }))

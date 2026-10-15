@@ -3,27 +3,32 @@ import { useEffect, useRef, useState } from 'react';
 import { exportCsv, exportFile, exportJson } from '@/lib/export';
 import type { ExportContent, Result } from '@/lib/types';
 import Icon from './Icon';
+import { exportPackages } from '@/lib/quality';
 
 export default function ExportDialog({ result, active, onClose }: { result: Result; active: number; onClose: () => void }) {
   const [format, setFormat] = useState<'pdf' | 'docx' | 'csv' | 'json'>('pdf');
   const [content, setContent] = useState<ExportContent>('pembahasan');
   const [all, setAll] = useState(true), [zip, setZip] = useState(false), [busy, setBusy] = useState(false), [error, setError] = useState('');
+  const [reviewScope, setReviewScope] = useState<'approved' | 'draft'>('approved');
   const dialog = useRef<HTMLDialogElement>(null);
   useEffect(() => { dialog.current?.showModal(); }, []);
   const run = async () => {
     setBusy(true); setError('');
     try {
-      const packages = all ? result.packages : [result.packages[active]];
-      if (format === 'csv') exportCsv(packages, result.settings);
-      else if (format === 'json') exportJson(packages, result.settings);
-      else await exportFile(format, content, packages, result.settings, zip);
+      const packages = exportPackages(result, reviewScope, all ? undefined : active);
+      const settings = { ...result.settings, title: result.settings.title + (reviewScope === 'draft' ? ' — Draf kurasi' : '') };
+      if (format === 'csv') exportCsv(packages, settings);
+      else if (format === 'json') exportJson(packages, settings);
+      else await exportFile(format, content, packages, settings, zip);
     } catch (e) { setError(e instanceof Error ? e.message : 'Ekspor gagal.'); }
     finally { setBusy(false); }
   };
   return <dialog ref={dialog} className="export-dialog" onCancel={(e) => { if (busy) e.preventDefault(); else onClose(); }}>
-    <div className="dialog-heading"><div><span className="eyebrow">SIAP DIGUNAKAN</span><h2>Unduh paket soal</h2></div>
+    <div className="dialog-heading"><div><span className="eyebrow">EKSPOR PAKET</span><h2>Unduh paket soal</h2></div>
       <button className="icon-button" aria-label="Tutup dialog ekspor" onClick={onClose} disabled={busy}><Icon name="close"/></button></div>
     <p className="muted">Pilih format dan isi berkas yang ingin kamu simpan.</p>
+    <label className="field">Status soal yang disertakan<select value={reviewScope} onChange={(e) => setReviewScope(e.target.value as 'approved' | 'draft')}><option value="approved">Hanya soal disetujui</option><option value="draft">Semua soal aktif · draf untuk kurasi</option></select></label>
+    <p className="help">Soal yang dikeluarkan selalu dilewati. Nomor di berkas diurutkan kembali; jumlah soal mengikuti lingkup ini. CSV dan JSON menyertakan kunci serta metadata kurasi.</p>
     <label className="field-label">Format berkas</label>
     <div className="format-grid">{(['pdf', 'docx', 'csv', 'json'] as const).map((value) => <button key={value}
       className={format === value ? 'format-button selected' : 'format-button'} onClick={() => setFormat(value)} disabled={busy} aria-pressed={format === value}>

@@ -1,81 +1,123 @@
-# JadiASN SKD Studio
+# JadiASN SKD Studio v2
 
-Aplikasi untuk menyusun paket latihan **TWK, TIU, TKP, atau SKD gabungan**, berdasarkan riset dan contoh soal JadiASN yang disertakan. Generator, pratinjau, dan ekspor berjalan di browser. Tidak memerlukan API key, database, atau environment variable.
+Ruang kerja untuk menyusun, menelaah, menguji, dan mengekspor paket latihan TWK, TIU, TKP, atau SKD gabungan. Tampilan menggunakan biru #3D6E99, biru tua #052C5F, dan emas #E8B41E dari identitas JadiASN.
 
-## Jalankan lokal
+Generator dan ekspor berjalan di browser. Aplikasi tidak memerlukan API key atau layanan basis data eksternal. Paket, versi, dan hasil peserta tersimpan dengan IndexedDB di browser yang digunakan.
 
-Memerlukan Node.js 20.9 atau lebih baru. Gunakan Node.js 22 LTS atau 24 LTS.
+## Menjalankan dan deploy
+
+Memerlukan Node.js ≥20.9. Gunakan Node.js 22 atau 24 untuk deployment.
 
 ~~~powershell
 npm install
 npm run dev
 ~~~
 
-Buka `http://localhost:3000`. Halaman langsung membuat contoh paket SKD 110 soal.
+Buka http://localhost:3000. Pilih **Buat paket** untuk menyusun latihan pertama. Jika sudah ada paket tersimpan, aplikasi membuka ruang kurasi terakhir.
 
 ~~~powershell
 npm run verify
+npm run verify:quality
+npm run typecheck
 npm run build
 npm start
 ~~~
 
-## Deploy ke Vercel
+Untuk Vercel:
 
-1. Masukkan isi folder proyek ini ke repositori GitHub.
-2. Di Vercel, pilih **Add New → Project**, lalu impor repositori tersebut.
-3. Pilih **Framework Preset: Next.js**. Jika repositori hanya memuat proyek ini, Root Directory adalah root repositori. Jika digabung dengan proyek lain, pilih folder `SKD Generator`.
-4. Gunakan Build Command `npm run build`, Install Command `npm install`, dan Output Directory bawaan Next.js.
-5. Pilih Node.js 22.x atau 24.x, lalu deploy. Tidak perlu menambahkan environment variable.
+1. Masukkan proyek ke repositori GitHub dan impor sebagai proyek Vercel.
+2. Framework: **Next.js**. Root Directory: folder proyek ini; bila repositorinya khusus proyek ini, gunakan root repositori.
+3. Install: **npm install**. Build: **npm run build**. Output Directory: bawaan Next.js.
+4. Gunakan Node.js 22.x atau 24.x. Tidak perlu environment variable.
+5. Sertakan **data/**, **package-lock.json**, dan seluruh kode aplikasi. Folder references/, output/, dan test-results/ tidak diperlukan di deployment.
 
-Konfigurasi framework sudah tersedia di `vercel.json`. **Sertakan `data/` dan `package-lock.json`**; bank JSON dipakai langsung oleh aplikasi saat build. Folder `references/` tidak diperlukan untuk deployment dan dikecualikan melalui `.vercelignore`.
+Konfigurasi tersedia pada vercel.json. Dokumentasi: [Next.js di Vercel](https://vercel.com/docs/frameworks/full-stack/nextjs).
 
-Dokumentasi resmi: [Next.js di Vercel](https://vercel.com/docs/frameworks/full-stack/nextjs).
+Next.js telah diperbarui ke 16.3.8. Setelah memasang dependensi baru, restart server dev yang masih memakai versi sebelumnya. Pemeriksaan npm audit dilakukan terpisah dari pengujian aplikasi.
 
-## Cara menggunakan
+## Alur penggunaan
 
-- Pilih SKD lengkap, TWK, TIU, atau TKP.
-- Atur judul, jumlah paket, soal per paket, kesulitan, durasi, materi, dan submateri.
-- Klik **Buat paket soal**. Cari soal atau filter subtes dalam pratinjau.
-- Buka pembahasan per soal atau aktifkan **Tampilkan kunci**.
-- Klik **Unduh paket** untuk PDF, Word, CSV, atau JSON. Word/PDF dapat berisi naskah soal tanpa kunci, kunci saja, atau soal beserta pembahasan; dokumen dapat dipisahkan per paket dalam ZIP.
+1. **Buat paket:** pilih subtes, materi, jumlah soal, dan tingkat kesulitan. Pengaturan seed, durasi, paket tambahan, dan submateri berada di bagian lanjutan.
+2. **Blueprint:** tinjau kuota tiap materi dan kesulitan. Persentase kesulitan dapat ditentukan sendiri; kuota dapat disunting secara manual. Persediaan yang kurang menghasilkan pesan kesalahan, tanpa penggantian materi diam-diam.
+3. **Ruang kurasi:** gunakan daftar nomor dan filter untuk meninjau satu soal. Periksa pertanyaan, tabel/gambar, seluruh pilihan, kunci, alasan pengecoh, pembahasan, sumber, dan rubrik.
+4. **Sunting / ganti / tandai / keluarkan:** suntingan konten membuat revisi baru dan membatalkan persetujuan. Penggantian mempertahankan subtes, materi, dan kesulitan blueprint serta menghindari soal identik. Soal yang dikeluarkan tidak diekspor atau dianalisis.
+5. **Persetujuan:** isi nama penelaah dan konfirmasi pemeriksaan per soal. Soal dengan kegagalan struktur/skor tidak bisa disetujui. Soal hasil suntingan juga memerlukan catatan verifikasi substansi.
+6. **Evaluasi peserta:** uji soal yang telah disetujui, periksa respons, kemudian gunakan hasilnya untuk revisi berikutnya.
+7. **Ekspor:** pilih soal disetujui atau seluruh soal aktif untuk draf kurasi. Soal yang dikeluarkan dilewati dan nomor diurutkan kembali.
 
-Pengaturan hasil terakhir disimpan di browser. Seed dan pengaturan yang sama menghasilkan paket identik. Perubahan kontrol baru diterapkan setelah tombol generate ditekan; ekspor selalu memakai pengaturan yang melekat pada hasil yang sedang ditinjau.
+Status: **Draf → Perlu revisi → Disetujui**. Penelaah dapat mengembalikan status ke draf. Nama penelaah adalah catatan kurasi yang diisi pengguna; aplikasi tidak memiliki akun atau pengesahan dari lembaga eksternal.
 
-## Isi generator
+## Konten dan kesulitan
 
-| Bagian | Isi awal |
+| Bagian | Pustaka v2 |
 | --- | --- |
-| TWK | 117 butir: 37 contoh riset dan 80 variasi latihan dari 20 kerangka |
-| TKP | 118 butir: 26 contoh panduan dan 92 variasi kasus dari 23 kerangka submateri |
-| TIU | 25 famili berparameter: 8 verbal, 13 numerik, dan 4 figural |
+| TWK | 77 butir: 37 contoh riset dan 40 soal orisinal dengan kumpulan opsi berbeda |
+| TKP | 118 butir: 26 contoh panduan dan 92 kasus orisinal |
+| TIU | 25 keluarga pola: 8 verbal, 13 numerik, 4 figural |
 
-Variasi kasus dapat menggunakan kerangka dan alternatif respons yang sama dalam konteks berbeda. Angka butir bukan jumlah kerangka unik. Tidak ada janji bank tak terbatas.
+TWK tambahan versi lama memakai 80 variasi dari 20 kerangka. Versi ini menggantinya dengan 40 soal yang berbeda beserta alasan spesifik tiap pengecoh.
 
-TWK mencakup Nasionalisme, Integritas, Bela Negara, Pilar Negara, dan Bahasa Negara. TKP mencakup Pelayanan Publik, Jejaring Kerja, Sosial Budaya, TIK, Profesionalisme, dan Anti Radikalisme. TIU mencakup analogi, silogisme, posisi/peringkat/jadwal, argumen, kategori, rute, berhitung/pecahan, deret, tabel, kecukupan data, cerita numerik, kombinasi optimal, serta analogi/ketidaksamaan/serial/matriks figural.
+TKP memakai 23 konteks dengan empat kondisi keputusan: kewenangan jelas, tenggat dan kewenangan terbatas, bukti bertentangan, serta masalah yang berulang. Setiap kondisi mempunyai kumpulan respons berbeda. Rubrik meliputi kewenangan, urgensi, efektivitas, risiko, dan tindak lanjut. Skor kasus orisinal merupakan rubrik latihan yang perlu telaah, bukan kunci resmi BKN.
 
-Dalam paket gabungan, jumlah soal dibagi mengikuti rasio 30 TWK : 35 TIU : 45 TKP. Bila jumlah diubah, rasio diskalakan dengan pembagian sisa sehingga total selalu tepat. Durasi dapat diubah di halaman.
+TIU menggunakan pengecoh dari salah prioritas operasi, salah dasar persentase, bobot rata-rata, salah jalur deret, pembalikan hubungan logika, dan perubahan fitur gambar. Beberapa keluarga sederhana hanya tersedia pada tingkat yang sesuai; label sulit tidak diberikan hanya karena angka atau narasi lebih panjang.
 
-Baseline jumlah soal dan durasi berasal dari riset pengguna dengan acuan aturan 2024. Ini bukan penetapan ketentuan resmi CPNS 2027. Pembaruan baseline dilakukan di `lib/config.ts`.
+Kesulitan memakai **mudah / sedang / sulit**, dengan alasan kompleksitas pada setiap soal. Bloom dicatat terpisah. Input lama HOTS dinormalisasi menjadi sulit; ini tidak menyatakan bahwa setiap soal tersebut telah memenuhi tuntutan analisis tinggi.
 
-## Persediaan dan validasi
+Pada SKD, rasio 30 TWK : 35 TIU : 45 TKP diskalakan sesuai jumlah yang diminta. Durasi bawaan 100 menit. Baseline berasal dari riset pengguna dengan acuan aturan 2024, bukan penetapan aturan resmi CPNS 2027.
 
-- Soal identik selalu dicegah dalam satu paket, termasuk soal yang hanya berbeda urutan opsi.
-- Pilihan **Tanpa soal berulang antarpaket** juga mencegah pengulangan di seluruh batch. Jika bahan tidak cukup, generator menjelaskan batasnya dan menghentikan permintaan.
-- Saat pilihan tersebut dimatikan, suatu butir boleh dipakai pada paket berbeda. Tidak ada pengulangan diam-diam dalam paket yang sama.
-- Pembatasan umum: 50 paket, 200 soal per paket, dan 4.000 soal per proses. Filter serta persediaan bank dapat membatasi lebih rendah.
-- Opsi diacak bersama skor dan alasan; label dalam pembahasan contoh sumber ikut dipetakan ke posisi baru.
-- TWK/TIU memakai satu kunci bernilai 5 dan pengecoh bernilai 0. TKP menyimpan poin 1–5 pada setiap alternatif.
-- Validator mencocokkan soal bank dengan sumber terstruktur, menghitung ekspresi numerik, memeriksa model silogisme melalui tabel kebenaran, dan menentukan kunci figural dari stimulus.
+## Pemeriksaan mutu
 
-Validasi otomatis memastikan struktur dan aturan yang dimodelkan; validasi ini tidak menggantikan peninjauan akademik fakta, bahasa, kualitas pengecoh, atau rubrik setiap kasus. Tingkat kesulitan adalah label konten, bukan hasil kalibrasi psikometrik pada peserta nyata.
+- Validasi struktur, lima opsi berbeda, satu kunci terbaik, dan rentang skor.
+- TWK/TIU: kunci 5, pengecoh 0. TKP: setiap respons 1–5 dan satu respons tertinggi.
+- Ekspresi numerik dihitung dengan parser tanpa eval.
+- Silogisme diperiksa dengan enumerasi tabel kebenaran.
+- Susunan/peringkat/jadwal diperiksa dari seluruh permutasi yang memenuhi batasan.
+- Rute dihitung ulang dari graf; kombinasi biaya dan pernyataan harga diperiksa dari model.
+- Kecukupan data mengevaluasi seluruh pasangan dalam domain bilangan yang dinyatakan.
+- Figural diperiksa dari rotasi, jumlah titik, warna, perubahan bentuk, atau hubungan ciri kelompok.
+- Checksum konten mendeteksi stimulus, pembahasan, atau model yang berubah terpisah dari bukti awal. Ini pemeriksaan konsistensi, bukan tanda tangan keamanan.
+- Butir bank dicocokkan dengan sumber; analogi kata dan penilaian argumen tetap membutuhkan pemeriksaan bahasa/substansi.
+- Pemeriksaan mutu menandai panjang kunci, pengecoh dengan klaim mutlak, kumpulan opsi berulang, dan kemiripan teks. Penanda adalah heuristik untuk ditinjau.
+
+Hasil solver membuktikan model yang dituliskan, bukan seluruh penafsiran bahasa alami. **Status disetujui hanya diberikan setelah telaah pengguna.**
+
+**data/benchmark.json** berisi 12 contoh acuan regresi dengan kunci dan pembahasan eksplisit. Contoh tersebut menunggu telaah ahli materi; tidak diberi klaim sebagai standar akademik yang sudah disahkan.
+
+## Uji peserta dan statistik
+
+- **Uji di perangkat ini:** mencatat pilihan dan waktu tiap soal, lalu menyimpan sesi selesai ke IndexedDB.
+- **Berkas uji HTML:** penyusun mengunduh soal disetujui untuk dibagikan kepada peserta. Berkas tidak menyertakan kunci, poin, atau pembahasan. Peserta mengunduh hasil JSON dan menyerahkannya kepada penyusun.
+- **Impor hasil JSON:** mendukung satu atau beberapa berkas, objek sesi, array sesi, atau berkas dengan properti sessions. ID sesi yang sudah ada tidak dihitung ulang.
+- Respons dipadankan dengan ID soal, revisi, dan checksum stimulus/kunci. Respons versi lama tetap tersimpan, tetapi tidak dicampur ke analisis soal yang berubah.
+- Statistik: N, frekuensi A–E, jawaban kosong, proporsi benar/terbaik, rerata poin, rerata waktu, pengecoh yang jarang dipilih, dan korelasi skor soal dengan total soal lain.
+- Jawaban kosong diberi 0 poin. TWK/TIU memakai proporsi benar; TKP memakai distribusi poin, bukan klasifikasi benar/salah saja.
+- Label empiris TWK/TIU baru ditampilkan pada ≥30 respons: proporsi benar ≥0,80 mudah, 0,40–0,79 sedang, <0,40 sulit. Batas ini adalah aturan awal proyek, bukan keputusan psikometrik final.
+- Daya pembeda hanya dihitung pada ≥30 sesi lengkap yang cocok dengan isi seluruh soal pembanding; nilai kosong jika variasi skor tidak tersedia.
+
+Tidak ada data peserta buatan pada dashboard. Fixture sintetis hanya dipakai oleh script pengujian dan tidak dimasukkan ke IndexedDB pengguna.
+
+Pengumpulan hasil belum memakai basis data bersama atau tautan akun peserta. Vercel menyediakan aplikasi, sementara perpindahan hasil antarperangkat dilakukan melalui berkas.
+
+## Riwayat dan cadangan
+
+- Riwayat menyimpan seluruh paket saat ini dan **20 snapshot terakhir** sebelum perubahan.
+- Memulihkan versi lama membuat versi baru, sehingga riwayat saat ini tetap dapat ditelusuri.
+- Cadangan JSON mencakup paket, status, penelaah, revisi, snapshot, dan hasil peserta pada workspace itu.
+- Impor memeriksa struktur, model, skor, dan metadata. Saat memulihkan ID workspace yang sama, hasil cadangan menjadi versi baru di riwayat yang ada.
+- Cadangan versi lama tetap dapat dimuat; butir dari bank lama yang tidak tersedia menjadi soal yang memerlukan verifikasi manual.
+- Penyimpanan terikat pada browser dan domain. Membersihkan data situs dapat menghapusnya; unduh cadangan sebelum membersihkan browser atau berpindah domain.
 
 ## Ekspor
 
-PDF dan Word menyertakan gambar figural yang dirender dari SVG. CSV menyimpan kolom soal, opsi, kunci, poin, alasan tiap opsi, sumber, dan stimulus terstruktur. JSON menyimpan seluruh data, termasuk model gambar serta metadata pemeriksaan.
+PDF dan Word: naskah tanpa kunci, kunci saja, atau soal + pembahasan; dapat dipisahkan per paket dalam ZIP. Draf diberi label. Gambar figural disertakan sebagai gambar di dokumen.
 
-Ekspor browser memakai `docx`, `jspdf`, dan `fflate` yang dibundel oleh aplikasi; tidak mengambil library dari CDN. PDF menggunakan font Helvetica dan menyederhanakan beberapa simbol menjadi bentuk teks yang kompatibel.
+CSV: soal, opsi, skor, pembahasan, alasan, sumber, status, revisi, penelaah, catatan, alasan kesulitan, rubrik, dan stimulus. JSON: data terstruktur beserta bukti model. CSV dan JSON menyertakan kunci; gunakan naskah PDF/Word atau berkas uji HTML untuk peserta.
 
-## CLI dan API
+Ekspor memuat jumlah aktual setelah pemilihan status dan pengecualian, bukan otomatis seluruh jumlah blueprint. Komposisi aktual dapat diperiksa di ruang kurasi.
+
+## Batas, CLI, dan API
+
+Maksimal 50 paket, 200 soal per paket, 4.000 soal per proses. Persediaan per materi/kesulitan dapat membatasi lebih rendah. Analogi dua kata mempunyai 10 pasangan; pola berparameter lain juga tidak dijanjikan tak terbatas.
 
 ~~~powershell
 npm run generate -- --mode SKD --paket 1 --seed LATIHAN-01 --out output
@@ -83,11 +125,9 @@ npm run generate -- --mode TIU --soal 35 --paket 5 --seed TIU-01
 npm run generate -- --mode TKP --paket 5 --boleh-ulang
 ~~~
 
-CLI menulis `paket.json` dan `validasi.json`. PDF/Word dibuat dari halaman browser.
+CLI menulis paket.json dan validasi.json sebagai bahan draf. PDF/Word dibuat di browser.
 
-`GET /api/generate` mengembalikan metadata bank, famili, dan batas API.
-
-`POST /api/generate` menerima pengaturan JSON:
+GET /api/generate mengembalikan metadata. POST menerima pengaturan JSON, dengan batas 1.000 soal per permintaan:
 
 ~~~json
 {
@@ -98,41 +138,26 @@ CLI menulis `paket.json` dan `validasi.json`. PDF/Word dibuat dari halaman brows
   "difficulty": "campuran",
   "topics": ["Numerik"],
   "subtopics": [],
-  "uniqueAcross": true
+  "uniqueAcross": true,
+  "composition": { "mudah": 25, "sedang": 50, "sulit": 25 }
 }
 ~~~
 
-Format filter submateri adalah `Materi::Submateri`, misalnya `Figural::Matriks 3 × 3`. API dibatasi 1.000 soal per permintaan dan mengembalikan error 400 untuk pengaturan yang tidak valid.
+Filter submateri memakai format Materi::Submateri, misalnya Figural::Matriks 3 × 3. Kuota eksplisit dapat dikirim sebagai blueprint berisi baris subtest, topic, difficulty, dan count. Jumlahnya harus sesuai distribusi subtes; kekurangan stok menghasilkan error 400.
 
-## Menambah konten
+## Pengujian dan sumber
 
-- `lib/bank/twk.ts`: kerangka TWK dan variasi pertanyaan.
-- `lib/bank/cases.ts`: kasus TKP, skor, serta alasan setiap tindakan.
-- `lib/config.ts`: materi, submateri TKP, preset, dan baseline.
-- `lib/tiu.ts`: famili serta pembangkit TIU.
-- `lib/solver.ts`: parser hitungan dan pemeriksa logika.
-- `lib/figures.ts`: model, render SVG, dan pemeriksa pola gambar.
-- `data/twk-reference.json` dan `data/tkp-reference.json`: contoh sumber yang diimpor.
-- `data/tkp-score-rows.json`: alasan/skor dari sel tabel PDF asli.
+**npm run verify** menguji determinisme, rasio, filter, stok, duplikasi, dan setiap keluarga TIU pada beberapa seed serta tingkat yang tersedia.
 
-Saat menambah soal, berikan lima opsi yang berbeda, satu kunci terbaik, pembahasan, alasan per opsi, dan sumber. Jalankan `npm run verify` setelah perubahan.
+**npm run verify:quality** menguji contoh acuan, kuota eksplisit, suntingan dan pembatalan persetujuan, ekspor, cadangan, pencocokan revisi peserta, statistik, dan petunjuk panjang kunci. Laporan ditulis ke test-results/quality-report-v2.json.
 
-## Memperbarui sumber riset
+**scripts/browser-smoke.mjs** memerlukan Playwright di lingkungan QA. Memeriksa alur kurasi, IndexedDB/reload, snapshot, impor cadangan, uji lokal/HTML, impor respons, enam ekspor, mobile, dan API. Playwright tidak diperlukan di deployment.
 
-Ekstraksi sumber tersimpan di `references/`; aplikasi tidak membacanya saat runtime. `npm run references` menyusun ulang bank contoh dari ekstraksi teks dan skor tabel yang sudah disimpan.
+Sumber penelitian disimpan di references/ dan tidak dibaca saat runtime. Bank contoh berada di data/twk-reference.json dan data/tkp-reference.json. Alasan TKP berasal dari sel tabel PDF, bukan pencocokan baris teks.
 
-Jika PDF TKP diganti, ekstrak kembali sel tabel dengan Python yang memiliki `pdfplumber`, kemudian impor ulang:
+- [TIU dalam riset JadiASN](https://drive.google.com/file/d/1tzx3GR5GSYtkuTkR1kXfDqyUsao2jXiP/view)
+- [Panduan TKP JadiASN](https://drive.google.com/file/d/1NgyWaSFh7oL_Sfjkw37LvxiZCOFQw7P_/view)
+- [UUD NRI 1945 — DPR RI](https://www.dpr.go.id/dokumen/jdih/undang-undang-dasar)
+- [EYD V — Badan Bahasa](https://ejaan.kemendikdasmen.go.id/eyd/)
 
-~~~powershell
-python scripts/extract-tkp-tables.py
-npm run references
-npm run verify
-~~~
-
-Ekstraksi tabel sengaja dipisahkan dari teks agar alasan skor tidak bergeser ketika label opsi berada di tengah tinggi baris PDF. Tiga contoh TWK dikecualikan dan tiga pembahasan dikoreksi; rincian tersedia di `data/reference-import-report.json`.
-
-## Pemeriksaan
-
-`npm run verify` menguji determinisme, distribusi, filter materi/submateri, pengulangan, setiap famili TIU pada beberapa seed, serta penolakan kunci/angka/gambar/skor yang diubah.
-
-`scripts/browser-smoke.mjs` menguji antarmuka, pengaturan tersimpan, gambar figural, pencarian, lima jenis unduhan, layout mobile, dan API. Script ini memerlukan Playwright pada lingkungan pengujian; Playwright tidak diperlukan untuk build atau deployment.
+Untuk memperbarui contoh dari ekstraksi sumber: npm run references. Jika PDF TKP berubah, ekstrak tabel kembali dengan scripts/extract-tkp-tables.py (memerlukan pdfplumber), lalu impor dan jalankan verifikasi. Koreksi sumber tercatat dalam data/reference-import-report.json.

@@ -1,6 +1,6 @@
 {
   "name": "skd-generator",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "description": "Generator paket soal TWK, TIU, dan TKP berbasis riset JadiASN.",
   "scripts": {
@@ -10,14 +10,17 @@
     "typecheck": "tsc --noEmit",
     "references": "node scripts/import-references.mjs",
     "verify": "tsx scripts/verify.ts",
+    "verify:quality": "tsx scripts/quality-verify.ts",
     "generate": "tsx scripts/generate.ts"
   },
-  "engines": { "node": ">=20.9.0" },
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "dependencies": {
     "docx": "^9.5.0",
     "fflate": "^0.8.3",
     "jspdf": "^4.2.1",
-    "next": "16.3.4",
+    "next": "16.3.8",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },

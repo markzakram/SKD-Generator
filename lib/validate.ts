@@ -1,6 +1,9 @@
 import { BANK_MAP } from './bank';
 import { calculate, entails } from './solver';
 import { solveFigure } from './figures';
+import { solveModel } from './models';
+import { checkBlueprint, actualBlueprint } from './blueprint';
+import { validationBinding } from './binding';
 import { distribution, fingerprint } from './generate';
 import type { Audit, Package, Question, Settings } from './types';
 
@@ -8,9 +11,15 @@ export function auditQuestion(question: Question): string[] {
   const errors: string[] = [];
   const fail = (text: string) => errors.push(question.no + ': ' + text);
   if (!question.stem.trim() || !question.explanation.trim()) fail('pertanyaan atau pembahasan kosong');
+  if (question.binding && question.binding !== validationBinding(question)) fail('stimulus, model, atau pembahasan berubah; verifikasi ulang diperlukan');
+  if (question.table && (!Array.isArray(question.table.headers) || !question.table.headers.length || question.table.headers.length > 12 || question.table.headers.some((h) => typeof h !== 'string') || !Array.isArray(question.table.rows) || question.table.rows.length > 30 || question.table.rows.some((row) => !Array.isArray(row) || row.length !== question.table!.headers.length || row.some((cell) => typeof cell !== 'string')))) fail('struktur tabel tidak valid');
+  if (question.visual && (!['analogi', 'serial', 'ketidaksamaan', 'matriks'].includes(question.visual.kind) || !Number.isInteger(question.visual.columns) || question.visual.columns < 1 || question.visual.columns > 5 || !Array.isArray(question.visual.figures) || question.visual.figures.length > 16)) { fail('struktur stimulus gambar tidak valid'); return errors; }
+  if (question.visual?.oddRule && !['attribute', 'count-fill', 'turn-count'].includes(question.visual.oddRule)) fail('aturan kelompok gambar tidak valid');
   if (question.options.length !== 5) { fail('jumlah opsi harus lima'); return errors; }
   if (!Number.isInteger(question.answer) || question.answer < 0 || question.answer > 4) { fail('kunci di luar opsi'); return errors; }
   if (question.options.some((option) => !option.text.trim() || !option.reason.trim())) fail('teks/alasan opsi kosong');
+  const figures = [...(question.visual?.figures ?? []), ...question.options.map((o) => o.figure)].filter(Boolean);
+  if (figures.some((f) => !['triangle', 'square', 'circle', 'diamond'].includes(f!.shape) || !Number.isInteger(f!.count) || f!.count < 0 || f!.count > 8 || ![0, 1, 2].includes(f!.fill) || !Number.isFinite(f!.angle))) fail('atribut gambar tidak valid');
   if (new Set(question.options.map((option) => option.figure ? JSON.stringify(option.figure) : option.text.trim())).size !== 5) fail('opsi berulang');
   const high = Math.max(...question.options.map((option) => option.score));
   if (high !== 5 || question.options[question.answer].score !== high ||
@@ -21,15 +30,24 @@ export function auditQuestion(question: Question): string[] {
   const proof = question.proof;
   try {
     if (proof.kind === 'numeric') {
-      const computed = proof.expression ? calculate(proof.expression) : proof.answer;
+      if (!proof.expression) fail('ekspresi untuk verifikasi numerik belum tersedia');
+      const computed = proof.expression ? calculate(proof.expression) : NaN;
       const matches = proof.values.map((value, index) => ({ value, index })).filter(({ value }) => Math.abs(value - computed) < 0.000051);
       if (matches.length !== 1 || matches[0].index !== question.answer) fail('hasil hitung ulang tidak sesuai kunci');
-      if (question.options.some((option, index) => Math.abs(Number(option.text.replace(',', '.')) - proof.values[index]) > 0.000051)) fail('nilai opsi berubah');
+      if (question.options.some((option, index) => !Number.isFinite(Number(option.text.replace(',', '.'))) || Math.abs(Number(option.text.replace(',', '.')) - proof.values[index]) > 0.000051)) fail('nilai opsi berubah');
     } else if (proof.kind === 'logic') {
       const valid = proof.entailment ? entails(proof.entailment.premises, proof.entailment.conclusions) : proof.valid;
       if (valid.filter(Boolean).length !== 1 || !valid[question.answer]) fail('kesimpulan logika tidak tunggal atau salah');
     } else if (proof.kind === 'figure') {
       if (solveFigure(question) !== question.answer) fail('gambar jawaban tidak sesuai pola stimulus');
+    } else if (proof.kind === 'model') {
+      const model = proof.model;
+      if (model.kind === 'data' && (!Number.isInteger(model.domain) || model.domain < 1 || model.domain > 30)) throw new Error('domain solver di luar batas');
+      if (model.kind === 'route' && model.nodes.length > 12) throw new Error('jumlah simpul di luar batas');
+      const valid = solveModel(question);
+      if (valid.filter(Boolean).length !== 1 || !valid[question.answer]) fail('hasil solver model berbeda dari kunci');
+    } else if (proof.kind === 'manual') {
+      if (!proof.note.trim()) fail('catatan verifikasi manual diperlukan');
     } else {
       const bank = BANK_MAP.get(proof.id);
       if (!bank) fail('sumber bank tidak ditemukan');
@@ -51,6 +69,10 @@ export function auditPackages(packages: Package[], settings: Settings): Audit {
   const expected = distribution(settings.mode, settings.count);
   if (packages.length !== settings.packages) errors.push('Jumlah paket berbeda dari permintaan.');
   packages.forEach((pack) => {
+    if (settings.blueprint) errors.push(...checkBlueprint(actualBlueprint(pack.questions), { ...settings, uniqueAcross: false }).map((error) => pack.id + ': ' + error));
+    if (settings.blueprint) for (const row of settings.blueprint) {
+      if (pack.questions.filter((q) => q.subtest === row.subtest && q.topic === row.topic && q.difficulty === row.difficulty).length !== row.count) errors.push(pack.id + ': kuota blueprint berbeda untuk ' + row.topic + '/' + row.difficulty);
+    }
     const local = new Set<string>();
     if (pack.questions.length !== settings.count) errors.push(pack.id + ': jumlah soal berbeda.');
     for (const subtest of ['TWK', 'TIU', 'TKP'] as const) {
