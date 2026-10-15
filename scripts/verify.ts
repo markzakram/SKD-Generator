@@ -7,6 +7,7 @@ import { TIU_FAMILIES, makeTiu } from '../lib/tiu';
 import { auditPackages, auditQuestion } from '../lib/validate';
 import { calculate, entails, implies, not, variable } from '../lib/solver';
 import type { Question, Settings, Subtest } from '../lib/types';
+import { runFiguralChecks } from './figural-checks';
 
 let checks = 0, questions = 0;
 const check = (condition: unknown, message: string) => { assert.ok(condition, message); checks++; };
@@ -59,7 +60,8 @@ const badLogic = structuredClone(logic); badLogic.answer = (badLogic.answer + 1)
 check(auditQuestion(badLogic).length > 0, 'Validator harus menolak kunci logika yang diubah.');
 const visual = baseline[0].questions.find((item) => item.visual?.kind === 'matriks') ??
   { ...makeTiu(TIU_FAMILIES.find((item) => item.id === 'fig-matrix')!, 'hots', rng('matrix')), no: 1, id: 'matrix' };
-const badFigure = structuredClone(visual); badFigure.options[badFigure.answer].figure!.count += 1;
+const badFigure = structuredClone(visual), keyScene = badFigure.options[badFigure.answer].scene!;
+keyScene.parts[0].f = ((keyScene.parts[0].f + 1) % 3) as never;
 check(auditQuestion(badFigure).length > 0, 'Validator harus menghitung ulang jawaban gambar dari stimulus.');
 const bank = baseline[0].questions.find((item) => item.subtest === 'TKP')!;
 const badScore = structuredClone(bank); badScore.options[badScore.answer].score = 4;
@@ -75,4 +77,6 @@ generated({ ...DEFAULT_SETTINGS, mode: 'TKP', count: 4, subtopics: ['Pelayanan P
 generated({ ...DEFAULT_SETTINGS, mode: 'TIU', count: 5, subtopics: ['Figural::Matriks 3 × 3'] });
 check(BANK.find((item) => item.id === 'tkp-ref-1')?.options[0].reason ===
   'Paling partisipatif, edukatif, setara, dan berorientasi pada tindak lanjut.', 'Alasan TKP harus mengikuti sel tabel PDF, bukan letak baris teks.');
-console.log(JSON.stringify({ status: 'PASS', checks, auditedQuestions: questions, bank: BANK.length, families: TIU_FAMILIES.length }, null, 2));
+runFiguralChecks(check).then((figural) => {
+  console.log(JSON.stringify({ status: 'PASS', checks, auditedQuestions: questions, bank: BANK.length, families: TIU_FAMILIES.length, figural }, null, 2));
+}).catch((error) => { console.error(error); process.exit(1); });

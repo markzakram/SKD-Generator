@@ -6,12 +6,12 @@ import Icon from './Icon';
 
 export default function QuestionEditor({ question, onSave, onClose }: { question: Question; onSave: (q: Question) => void; onClose: () => void }) {
   const [draft, setDraft] = useState(structuredClone(question)), [error, setError] = useState('');
-  const [stimulus, setStimulus] = useState(JSON.stringify({ table: question.table, visual: question.visual, figures: question.options.map((o) => o.figure ?? null) }, null, 2));
+  const [stimulus, setStimulus] = useState(JSON.stringify({ table: question.table, visual: question.visual, figures: question.options.map((o) => o.figure ?? null), scenes: question.options.map((o) => o.scene ?? null) }, null, 2));
   const ref = useRef<HTMLDialogElement>(null); useEffect(() => { ref.current?.showModal(); }, []);
   const save = () => {
     try {
       const data = JSON.parse(stimulus);
-      const q = { ...draft, table: data.table, visual: data.visual, options: draft.options.map((o, i) => ({ ...o, figure: data.figures?.[i] ?? undefined })) };
+      const q = { ...draft, table: data.table, visual: data.visual, options: draft.options.map((o, i) => ({ ...o, figure: data.figures?.[i] ?? undefined, scene: data.scenes?.[i] ?? undefined })) };
       onSave(editQuestion(question, q));
     } catch (e) { setError(e instanceof Error ? e.message : 'Isi soal belum valid.'); }
   };

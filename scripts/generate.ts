@@ -21,3 +21,5 @@ fs.writeFileSync(path.join(output, 'paket.json'), JSON.stringify({ version: 1, s
 const audit = auditPackages(packages, settings);
 fs.writeFileSync(path.join(output, 'validasi.json'), JSON.stringify(audit, null, 2));
 console.log(JSON.stringify({ output, packages: packages.length, questions: audit.checked, valid: audit.ok }));
+console.log(`RINGKASAN -> ${packages.length} paket, ${audit.checked} soal, ${audit.ok ? 'valid' : 'TIDAK valid (lihat validasi.json)'}`);
+for (const file of ['paket.json', 'validasi.json']) console.log(`BERKAS -> ${path.join(output, file)}`);

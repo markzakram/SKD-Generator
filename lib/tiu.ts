@@ -1,7 +1,7 @@
 import type { Rng } from './rng';
-import type { Difficulty, Figure, Question } from './types';
+import type { Difficulty, Question } from './types';
 import { calculate, entails, implies, not, variable, type Logic } from './solver';
-import { figureSignature, mod } from './figures';
+import { makeFigural } from './figural';
 import { DATA_LABELS, dataCategory, orders, type Model, type Constraint } from './models';
 
 type Draft = Omit<Question, 'id' | 'no'>;
@@ -31,7 +31,7 @@ export const TIU_FAMILIES: Family[] = [
   { id: 'fig-analogi', topic: 'Figural', name: 'Analogi', levels: ['mudah', 'sedang', 'sulit', 'hots'] },
   { id: 'fig-odd', topic: 'Figural', name: 'Ketidaksamaan', levels: ['mudah', 'sedang', 'sulit'] },
   { id: 'fig-serial', topic: 'Figural', name: 'Serial', levels: ['mudah', 'sedang', 'sulit'] },
-  { id: 'fig-matrix', topic: 'Figural', name: 'Matriks 3 × 3', levels: ['sulit', 'hots'] },
+  { id: 'fig-matrix', topic: 'Figural', name: 'Matriks 3 × 3', levels: ['mudah', 'sedang', 'sulit', 'hots'] },
 ].map((family) => ({ ...family, levels: [...new Set(family.levels.map((level) => level === 'hots' ? 'sulit' : level))] as Difficulty[] }))
   .map((family) => ['analogi', 'kategori', 'fibonacci', 'setara', 'selang-seling', 'pernyataan-tabel'].includes(family.id) ? { ...family, levels: (family.id === 'analogi' ? ['mudah'] : ['sedang']) as Difficulty[] } : family)
   .map((family) => family.id === 'pecahan' ? { ...family, levels: ['mudah', 'sedang'] as Difficulty[] } : family);
@@ -453,81 +453,8 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
     q.explanation += ' Hasil perhitungan = ' + format(answer) + '.';
     return numeric(q, answer, r, expression);
   }
-  const shapes: Figure['shape'][] = ['triangle', 'square', 'circle', 'diamond'];
-  const shape = r.pick(shapes), angle = r.int(0, 7) * 45, count = r.int(1, 3), fill = r.int(0, 2);
-  const first: Figure = { shape, angle, count, fill };
-  const turn = difficulty === 'mudah' ? 90 : r.pick([45, 90, 135, 180, 225]);
-  const step = difficulty === 'mudah' ? 0 : 1;
-  const colorStep = difficulty === 'sulit' || difficulty === 'hots' ? 1 : 0;
-  const shapeStep = difficulty === 'sulit' || difficulty === 'hots' ? 1 : 0;
-  const shiftedShape = (value: Figure['shape'], amount: number) => shapes[mod(shapes.indexOf(value) + amount, 4)];
-  let answer: Figure;
-  if (family.id === 'fig-odd') {
-    if (difficulty !== 'mudah') {
-      const rule = difficulty === 'sedang' ? 'count-fill' : 'turn-count';
-      const shift = r.int(0, rule === 'count-fill' ? 2 : 7);
-      const figures = [1, 2, 3, 4, 5].map((count) => ({ shape: r.pick(shapes), count, angle: mod((count + shift) * 45), fill: mod(count - shift, 3) }));
-      const odd = r.int(0, 4);
-      if (rule === 'count-fill') figures[odd].fill = mod(figures[odd].fill + 1, 3); else figures[odd].angle = mod(figures[odd].angle + 45);
-      q.visual = { kind: 'ketidaksamaan', columns: 5, figures: [], oddRule: rule };
-      q.stem = rule === 'count-fill' ? 'Empat gambar mempunyai hubungan yang sama antara jumlah titik dan siklus warna putih → gelap → abu → putih. Pilih satu gambar yang tidak mengikuti hubungan tersebut. Jenis bangun dan arah panah tidak menentukan kelompok.' :
-        'Empat gambar mempunyai hubungan yang sama antara arah panah (langkah 45° searah jarum jam dari atas) dan jumlah titik. Pilih gambar yang tidak mengikuti hubungan itu. Jenis bangun dan warna tidak menentukan kelompok.';
-      q.explanation = rule === 'count-fill' ? 'Pada empat gambar, jumlah titik dikurangi indeks warna (putih 0, gelap 1, abu 2) mempunyai sisa pembagian 3 yang sama, yaitu ' + shift + '. Satu gambar melanggar hubungan tersebut.' :
-        'Pada empat gambar, indeks arah panah dikurangi jumlah titik mempunyai sisa pembagian 8 yang sama, yaitu ' + shift + '. Satu gambar bergeser satu langkah dari hubungan ini.';
-      q.answer = odd; q.options = figures.map((figure, i) => ({ text: 'Gambar ' + (i + 1), figure, score: i === odd ? 5 : 0, reason: i === odd ? q.explanation : 'Hubungan kedua ciri sesuai dengan empat anggota kelompok.' }));
-      q.proof = { kind: 'figure', answer: figures[odd], odd: true }; return q;
-    }
-    const choices = [0, 1, 2, 3].map((i) => ({ ...first, angle: mod(angle + i * 90) }));
-    answer = { ...first, count: count + 1, angle: mod(angle + 45) };
-    q.visual = { kind: 'ketidaksamaan', columns: 5, figures: [] };
-    q.stem = 'Pilih satu gambar yang berbeda. Orientasi panah boleh berbeda; perhatikan jenis bangun, warna, dan jumlah titik.';
-    q.explanation = 'Empat gambar memiliki jenis bangun, warna, dan jumlah titik yang sama. Satu gambar mempunyai jumlah titik berbeda.';
-    q.options = [answer, ...choices].map((figure, i) => ({ text: 'Gambar ' + (i + 1), figure, score: i === 0 ? 5 : 0,
-      reason: i === 0 ? 'Jumlah titik berbeda dari empat gambar lainnya.' : 'Ciri bangun, warna, dan jumlah titik sama dengan kelompok mayoritas.' }));
-    q.proof = { kind: 'figure', answer, odd: true };
-    return q;
-  }
-  if (family.id === 'fig-analogi') {
-    const second = { ...first, shape: shiftedShape(shape, shapeStep), angle: mod(angle + turn), count: count + step, fill: mod(fill + colorStep, 3) };
-    const third: Figure = { shape: r.pick(shapes), angle: r.int(0, 7) * 45, count: r.int(1, 4), fill: r.int(0, 2) };
-    answer = { ...third, shape: shiftedShape(third.shape, shapeStep), angle: mod(third.angle + turn), count: third.count + step, fill: mod(third.fill + colorStep, 3) };
-    q.visual = { kind: 'analogi', columns: 4, figures: [first, second, third, null] };
-    q.stem = 'Hubungan gambar 1 terhadap gambar 2 diterapkan pada gambar 3. Pilih gambar pengganti tanda tanya. Warna mengikuti urutan putih → gelap → abu → putih.';
-  } else if (family.id === 'fig-serial') {
-    const figures = Array.from({ length: 4 }, (_, i) => ({ ...first, shape: shiftedShape(shape, i * shapeStep), angle: mod(angle + i * turn), count: count + i * step, fill: mod(fill + i * colorStep, 3) }));
-    answer = { ...first, shape: shiftedShape(shape, 4 * shapeStep), angle: mod(angle + 4 * turn), count: count + 4 * step, fill: mod(fill + 4 * colorStep, 3) };
-    q.visual = { kind: 'serial', columns: 5, figures: [...figures, null] };
-    q.stem = 'Pilih gambar yang melanjutkan urutan. Warna mengikuti siklus putih → gelap → abu → putih.';
-  } else {
-    const figures = Array.from({ length: 8 }, (_, i) => {
-      const row = Math.floor(i / 3), col = i % 3;
-      return { shape: shiftedShape(shape, row + col * shapeStep), angle: mod(angle + row * 45 + col * turn),
-        count: count + row + col, fill: mod(fill + row + col * colorStep, 3) };
-    });
-    answer = { shape: shiftedShape(shape, 2 + 2 * shapeStep), angle: mod(angle + 90 + 2 * turn),
-      count: count + 4, fill: mod(fill + 2 + 2 * colorStep, 3) };
-    q.visual = { kind: 'matriks', columns: 3, figures: [...figures, null] };
-    q.stem = 'Perubahan di setiap baris mengikuti aturan yang sama. Pilih gambar untuk kotak kanan bawah. Warna mengikuti siklus putih → gelap → abu → putih.';
-  }
-  const candidates: Figure[] = [answer];
-  const seen = new Set([figureSignature(answer)]);
-  while (candidates.length < 5) {
-    const candidate = { ...answer };
-    const feature = r.pick(['angle', 'count', 'fill', 'shape'] as const);
-    if (feature === 'shape') candidate.shape = shiftedShape(answer.shape, r.int(1, 3));
-    if (feature === 'angle') candidate.angle = mod(answer.angle + r.int(1, 7) * 45);
-    if (feature === 'count') candidate.count = mod(answer.count + r.int(1, 3), 8) + 1;
-    if (feature === 'fill') candidate.fill = mod(answer.fill + r.int(1, 2), 3);
-    const signature = figureSignature(candidate);
-    if (!seen.has(signature)) { candidates.push(candidate); seen.add(signature); }
-  }
-  q.options = candidates.map((figure, index) => ({ text: 'Gambar ' + (index + 1), figure, score: index === 0 ? 5 : 0,
-    reason: index === 0 ? 'Seluruh ciri sesuai pola perubahan.' : [figure.angle !== answer.angle ? 'Rotasi tidak sesuai perubahan arah panah.' : '', figure.count !== answer.count ? 'Jumlah titik mengikuti langkah yang keliru.' : '', figure.fill !== answer.fill ? 'Warna tidak mengikuti siklus yang sama.' : '', figure.shape !== answer.shape ? 'Jenis bangun tidak mengikuti perubahan bentuk.' : ''].filter(Boolean).join(' ') }));
-  q.explanation = 'Periksa arah panah, jumlah titik, dan warna secara terpisah. ' +
-    (family.id === 'fig-matrix' ? 'Lanjutkan perubahan dua kotak pertama pada baris terakhir.' :
-      'Arah berubah ' + turn + '°, titik berubah ' + step + ', dan warna bergeser ' + colorStep + ' langkah pada siklus.') +
-    ' Bentuk mengikuti siklus segitiga → persegi → lingkaran → belah ketupat; pergeseran bentuk per kolom/langkah ' + shapeStep + '. Gambar jawaban mempunyai ' + answer.count + ' titik dan panah pada sudut ' + answer.angle + '°.';
-  if (shapeStep) q.stem += ' Siklus bentuk: segitiga → persegi → lingkaran → belah ketupat → segitiga.';
-  q.proof = { kind: 'figure', answer };
-  return q;
+  // Soal figural dibangun oleh mesin figural (lib/figural): bentuk kaya, aturan tidak bocor di kalimat soal,
+  // dan kuncinya dibuktikan ulang dari gambar oleh validator.
+  const figural = makeFigural(family.id, difficulty, r);
+  return { ...q, ...figural };
 }

@@ -36,7 +36,7 @@ export function qualitySummary(questions: Question[]) {
     revision: included.filter((q) => q.review?.status === 'revision').length,
     flagged: issues.filter((list) => list.some((i) => i.level !== 'info')).length,
     errors: issues.filter((list) => list.some((i) => i.level === 'error')).length,
-    verified: included.filter((q) => ['numeric', 'figure', 'model'].includes(q.proof.kind) || q.proof.kind === 'logic' && q.proof.entailment).length,
+    verified: included.filter((q) => ['numeric', 'figure', 'scene', 'model'].includes(q.proof.kind) || q.proof.kind === 'logic' && q.proof.entailment).length,
   };
 }
 const now = () => new Date().toISOString();

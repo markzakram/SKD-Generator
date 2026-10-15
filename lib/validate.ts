@@ -1,6 +1,7 @@
 import { BANK_MAP } from './bank';
 import { calculate, entails } from './solver';
 import { solveFigure } from './figures';
+import { checkScene, solveScene } from './figural/solve';
 import { solveModel } from './models';
 import { checkBlueprint, actualBlueprint } from './blueprint';
 import { validationBinding } from './binding';
@@ -13,14 +14,20 @@ export function auditQuestion(question: Question): string[] {
   if (!question.stem.trim() || !question.explanation.trim()) fail('pertanyaan atau pembahasan kosong');
   if (question.binding && question.binding !== validationBinding(question)) fail('stimulus, model, atau pembahasan berubah; verifikasi ulang diperlukan');
   if (question.table && (!Array.isArray(question.table.headers) || !question.table.headers.length || question.table.headers.length > 12 || question.table.headers.some((h) => typeof h !== 'string') || !Array.isArray(question.table.rows) || question.table.rows.length > 30 || question.table.rows.some((row) => !Array.isArray(row) || row.length !== question.table!.headers.length || row.some((cell) => typeof cell !== 'string')))) fail('struktur tabel tidak valid');
-  if (question.visual && (!['analogi', 'serial', 'ketidaksamaan', 'matriks'].includes(question.visual.kind) || !Number.isInteger(question.visual.columns) || question.visual.columns < 1 || question.visual.columns > 5 || !Array.isArray(question.visual.figures) || question.visual.figures.length > 16)) { fail('struktur stimulus gambar tidak valid'); return errors; }
+  if (question.visual && (!['analogi', 'serial', 'ketidaksamaan', 'matriks'].includes(question.visual.kind) || !Number.isInteger(question.visual.columns) || question.visual.columns < 1 || question.visual.columns > 8 || !Array.isArray(question.visual.figures) || question.visual.figures.length > 16 ||
+    (question.visual.scenes !== undefined && (!Array.isArray(question.visual.scenes) || question.visual.scenes.length > 16)))) { fail('struktur stimulus gambar tidak valid'); return errors; }
   if (question.visual?.oddRule && !['attribute', 'count-fill', 'turn-count'].includes(question.visual.oddRule)) fail('aturan kelompok gambar tidak valid');
   if (question.options.length !== 5) { fail('jumlah opsi harus lima'); return errors; }
   if (!Number.isInteger(question.answer) || question.answer < 0 || question.answer > 4) { fail('kunci di luar opsi'); return errors; }
   if (question.options.some((option) => !option.text.trim() || !option.reason.trim())) fail('teks/alasan opsi kosong');
+  // Gambar mesin baru: struktur setiap kotak diperiksa walau soalnya sudah disunting manual, agar tampilan tidak rusak.
+  const sceneErrors: string[] = [];
+  (question.visual?.scenes ?? []).forEach((s, i) => { if (s) checkScene(s, 'kotak ' + (i + 1), sceneErrors); });
+  question.options.forEach((o, i) => { if (o.scene) checkScene(o.scene, 'opsi ' + String.fromCharCode(65 + i), sceneErrors); });
+  sceneErrors.forEach(fail);
   const figures = [...(question.visual?.figures ?? []), ...question.options.map((o) => o.figure)].filter(Boolean);
   if (figures.some((f) => !['triangle', 'square', 'circle', 'diamond'].includes(f!.shape) || !Number.isInteger(f!.count) || f!.count < 0 || f!.count > 8 || ![0, 1, 2].includes(f!.fill) || !Number.isFinite(f!.angle))) fail('atribut gambar tidak valid');
-  if (new Set(question.options.map((option) => option.figure ? JSON.stringify(option.figure) : option.text.trim())).size !== 5) fail('opsi berulang');
+  if (new Set(question.options.map((option) => option.scene ? JSON.stringify(option.scene) : option.figure ? JSON.stringify(option.figure) : option.text.trim())).size !== 5) fail('opsi berulang');
   const high = Math.max(...question.options.map((option) => option.score));
   if (high !== 5 || question.options[question.answer].score !== high ||
     question.options.filter((option) => option.score === high).length !== 1) fail('kunci terbaik tidak tunggal');
@@ -40,6 +47,11 @@ export function auditQuestion(question: Question): string[] {
       if (valid.filter(Boolean).length !== 1 || !valid[question.answer]) fail('kesimpulan logika tidak tunggal atau salah');
     } else if (proof.kind === 'figure') {
       if (solveFigure(question) !== question.answer) fail('gambar jawaban tidak sesuai pola stimulus');
+    } else if (proof.kind === 'scene') {
+      // Aturan disimpulkan ulang dari stimulus; tepat satu opsi boleh memenuhi seluruh ramalan.
+      const result = solveScene(question);
+      result.errors.forEach(fail);
+      if (!result.errors.length && result.answer !== question.answer) fail('gambar jawaban tidak sesuai aturan yang dibuktikan dari stimulus');
     } else if (proof.kind === 'model') {
       const model = proof.model;
       if (model.kind === 'data' && (!Number.isInteger(model.domain) || model.domain < 1 || model.domain > 30)) throw new Error('domain solver di luar batas');

@@ -1,9 +1,9 @@
-import { figureSignature } from './figures';
+import { figureSignature, sceneSignature } from './figures';
 import type { Package, PilotAnswer, PilotSession, Question, Workspace } from './types';
 
 // Content identity is for version matching, not cryptographic authentication.
 export function contentHash(q: Question): string {
-  const value = JSON.stringify([q.stem, q.table, q.visual, q.options.map((o) => [o.text, o.score, o.figure && figureSignature(o.figure)]), q.answer]);
+  const value = JSON.stringify([q.stem, q.table, q.visual, q.options.map((o) => [o.text, o.score, o.figure && figureSignature(o.figure), o.scene && sceneSignature(o.scene)]), q.answer]);
   let a = 2166136261, b = 5381;
   for (let i = 0; i < value.length; i++) { a = Math.imul(a ^ value.charCodeAt(i), 16777619); b = Math.imul(b, 33) ^ value.charCodeAt(i); }
   return (a >>> 0).toString(16).padStart(8, '0') + (b >>> 0).toString(16).padStart(8, '0');

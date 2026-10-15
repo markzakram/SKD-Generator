@@ -1,4 +1,7 @@
-import type { Figure, Question } from './types';
+import type { Figure, Option, Question } from './types';
+import { sceneSvg, visualSvg } from './figural/render';
+
+export { sceneSignature } from './figural/scene';
 export const mod = (value: number, divisor = 360) => ((value % divisor) + divisor) % divisor;
 export const SHAPES: Figure['shape'][] = ['triangle', 'square', 'circle', 'diamond'];
 const shiftShape = (shape: Figure['shape'], a: Figure, b: Figure) => SHAPES[mod(SHAPES.indexOf(shape) + SHAPES.indexOf(b.shape) - SHAPES.indexOf(a.shape), 4)];
@@ -23,7 +26,12 @@ export function figureSvg(figure: Figure): string {
   return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120">' +
     '<rect width="100" height="100" fill="white"/>' + figureMarkup(figure) + '</svg>';
 }
+// Soal figural mesin baru memakai `scenes`/`scene`; paket lama dari versi sebelumnya memakai `figures`/`figure`.
+export const usesScenes = (question: Question) => Boolean(question.visual?.scenes) || question.options.some((option) => option.scene);
+export const hasStimulus = (question: Question) => Boolean(question.visual?.scenes?.length || question.visual?.figures.length);
+export const optionSvg = (option: Option) => option.scene ? sceneSvg(option.scene) : option.figure ? figureSvg(option.figure) : '';
 export function questionSvg(question: Question, includeOptions = true): string {
+  if (usesScenes(question)) return visualSvg(question, includeOptions);
   const figures = question.visual?.figures ?? [];
   const columns = question.visual?.columns ?? 4;
   const cell = 110;

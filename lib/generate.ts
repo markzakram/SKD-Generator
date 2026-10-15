@@ -1,6 +1,6 @@
 import { BANK, BANK_MAP, bankFor } from './bank';
 import { BASELINE, DEFAULT_SETTINGS, TOPICS } from './config';
-import { figureSignature } from './figures';
+import { figureSignature, sceneSignature } from './figures';
 import { rng, type Rng } from './rng';
 import { TIU_FAMILIES, makeTiu } from './tiu';
 import type { BankItem, DifficultyFilter, Mode, Package, Question, Settings, Subtest } from './types';
@@ -48,8 +48,8 @@ export function distribution(mode: Mode, count: number): Record<Subtest, number>
 }
 export const normalizeText = (text: string) => text.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
 export function fingerprint(question: Question): string {
-  const visual = question.visual ? question.visual.figures.map((figure) => figure ? figureSignature(figure) : '?').join(';') : '';
-  const options = question.options.map((option) => option.figure ? figureSignature(option.figure) : normalizeText(option.text)).sort().join('|');
+  const visual = question.visual ? [...question.visual.figures.map((figure) => figure ? figureSignature(figure) : '?'), ...(question.visual.scenes ?? []).map((scene) => scene ? sceneSignature(scene) : '?')].join(';') : '';
+  const options = question.options.map((option) => option.scene ? sceneSignature(option.scene) : option.figure ? figureSignature(option.figure) : normalizeText(option.text)).sort().join('|');
   return normalizeText(question.stem) + '|' + JSON.stringify(question.table ?? '') + '|' + visual + '|' + options;
 }
 const familyFor = (item: BankItem) => item.id.startsWith('twk-case-v2-') ? item.id : item.id.includes('-case-') ? item.id.replace(/-\d+$/, '') : item.id;
@@ -66,7 +66,9 @@ function shuffled(question: Question, random: Rng): Question {
   const remapLabels = (text: string) => question.origin === 'referensi' ?
     text.replace(/\b[A-E]\b/g, (letter) => String.fromCharCode(65 + order.indexOf(letter.charCodeAt(0) - 65))) : text;
   return {
-    ...question, options: order.map((i) => ({ ...question.options[i], reason: remapLabels(question.options[i].reason) })),
+    // Opsi bergambar diberi nama menurut hurufnya setelah diacak ("Gambar C"), bukan menurut urutan susun.
+    ...question, options: order.map((i, position) => ({ ...question.options[i], reason: remapLabels(question.options[i].reason),
+      ...(question.options[i].scene || question.options[i].figure ? { text: 'Gambar ' + String.fromCharCode(65 + position) } : {}) })),
     answer: order.indexOf(question.answer), explanation: remapLabels(question.explanation),
     proof: proof.kind === 'numeric' ? { ...proof, values: order.map((i) => proof.values[i]) } :
       proof.kind === 'logic' ? { ...proof, valid: order.map((i) => proof.valid[i]),

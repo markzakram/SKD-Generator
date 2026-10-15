@@ -24,7 +24,7 @@ export function exportCsv(packages: Package[], settings: Settings) {
   const rows = packages.flatMap((pack) => pack.questions.map((q) => [pack.id, q.no, q.subtest, q.topic, q.subtopic, LABELS[q.difficulty],
     q.bloom ?? '', q.stem, ...q.options.map((option) => option.text), letter(q.answer), ...q.options.map((option) => option.score),
     q.explanation, ...q.options.map((option) => option.reason),
-    q.visual || q.table ? JSON.stringify({ visual: q.visual, table: q.table, figures: q.options.map((option) => option.figure) }) : '', q.source,
+    q.visual || q.table ? JSON.stringify({ visual: q.visual, table: q.table, figures: q.options.map((option) => option.figure), scenes: q.options.map((option) => option.scene) }) : '', q.source,
     q.review?.status ?? 'draft', q.review?.revision ?? 1, q.review?.reviewer ?? '', q.review?.note ?? '', q.difficultyReason ?? '', q.rubric ? JSON.stringify(q.rubric) : '']));
   download(new Blob(['\ufeff' + [headers, ...rows].map((row) => row.map(csvCell).join(',')).join('\r\n')], { type: 'text/csv;charset=utf-8' }),
     name(settings.title) + '.csv');

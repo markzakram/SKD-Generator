@@ -10,17 +10,35 @@ export type Figure = {
   angle: number;
   fill: number;
 };
+// Mesin figural v3: gambar disusun dari bagian (glyph) yang bisa diputar, dicerminkan, diwarnai, dan dihitung.
+// `Figure` lama tetap dipakai agar paket tersimpan dari versi sebelumnya masih terbaca dan terverifikasi.
+export type Fill = 0 | 1 | 2 | 3; // putih, abu-abu, hitam, tanpa isi (hanya garis)
+export type Part = {
+  id: string; // nama peran, stabil antarkotak (gambar acuan, deret, matriks); kelompok memakai "nama@nomor"
+  g: string; // id bentuk dasar; "poligon" (tertutup) dan "garis" (terbuka) memakai titik `p`
+  x: number; y: number; // pusat bagian pada kotak 100 × 100 berpusat di (0, 0); y ke bawah
+  s: number; r: number; // skala dan putaran searah jarum jam (derajat)
+  f: Fill;
+  m?: 1; // tercermin terhadap sumbu tegak sebelum diputar
+  p?: number[]; // titik x1,y1,x2,y2,... (hanya g = "poligon" atau "garis")
+  h?: 1 | 2; // kepala ujung garis terbuka: 1 mata panah, 2 kait
+};
+export type Scene = { parts: Part[] };
+export type FiguralRule = { mekanisme: string; aturan: string[]; ops?: Record<string, unknown>[] };
 export type Visual = {
   kind: 'analogi' | 'serial' | 'ketidaksamaan' | 'matriks';
   columns: number;
   figures: (Figure | null)[];
   oddRule?: 'attribute' | 'count-fill' | 'turn-count';
+  scenes?: (Scene | null)[]; // mesin v3; null = kotak tanda tanya
+  rule?: FiguralRule; // aturan yang diuraikan di pembahasan; kunci tetap dibuktikan ulang dari gambar
 };
-export type Option = { text: string; score: number; reason: string; figure?: Figure };
+export type Option = { text: string; score: number; reason: string; figure?: Figure; scene?: Scene };
 export type Proof =
   | { kind: 'numeric'; values: number[]; answer: number; expression?: string }
   | { kind: 'logic'; valid: boolean[]; entailment?: { premises: import('./solver').Logic[]; conclusions: import('./solver').Logic[] } }
   | { kind: 'figure'; answer: Figure; odd?: boolean }
+  | { kind: 'scene'; mekanisme: string }
   | { kind: 'bank'; id: string; answerText: string }
   | { kind: 'model'; model: import('./models').Model }
   | { kind: 'manual'; note: string };

@@ -11,7 +11,8 @@
     "references": "node scripts/import-references.mjs",
     "verify": "tsx scripts/verify.ts",
     "verify:quality": "tsx scripts/quality-verify.ts",
-    "generate": "tsx scripts/generate.ts"
+    "generate": "tsx scripts/generate.ts",
+    "figural:preview": "tsx scripts/figural-preview.ts"
   },
   "engines": {
     "node": ">=20.9.0"

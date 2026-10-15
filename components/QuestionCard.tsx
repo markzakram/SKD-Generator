@@ -1,5 +1,5 @@
 import { LABELS } from '@/lib/config';
-import { figureSvg, questionSvg } from '@/lib/figures';
+import { hasStimulus, optionSvg, questionSvg } from '@/lib/figures';
 import type { Question } from '@/lib/types';
 import Icon from './Icon';
 
@@ -14,14 +14,14 @@ export default function QuestionCard({ question: q, showAnswers, hideExplanation
     {q.table && <div className="table-scroll"><table><thead><tr>{q.table.headers.map((header) => <th key={header}>{header}</th>)}</tr></thead><tbody>
       {q.table.rows.map((row, index) => <tr key={index}>{row.map((cell, i) => <td key={i}>{cell}</td>)}</tr>)}
     </tbody></table></div>}
-    {!!q.visual?.figures.length && <div className={'visual-stimulus visual-' + q.visual.kind} role="img" aria-label="Stimulus gambar figural"
+    {hasStimulus(q) && q.visual && <div className={'visual-stimulus visual-' + q.visual.kind} role="img" aria-label="Stimulus gambar figural"
       dangerouslySetInnerHTML={{ __html: questionSvg(q, false) }}/>}
     <ol className={q.visual ? 'options visual-options' : 'options'}>
       {q.options.map((option, index) => <li key={index} className={(showAnswers && index === q.answer ? 'correct-option ' : '') + (choice === index ? 'selected-option' : '')}>
-        {onChoose ? <button className="option-choice" aria-pressed={choice === index} onClick={() => onChoose(index)}><span className="option-letter">{String.fromCharCode(65 + index)}</span>{option.figure ? <span role="img" aria-label={'Gambar opsi ' + String.fromCharCode(65 + index)} dangerouslySetInnerHTML={{ __html: figureSvg(option.figure) }}/> : <span>{option.text}</span>}</button> : <>
+        {onChoose ? <button className="option-choice" aria-pressed={choice === index} onClick={() => onChoose(index)}><span className="option-letter">{String.fromCharCode(65 + index)}</span>{optionSvg(option) ? <span role="img" aria-label={'Gambar opsi ' + String.fromCharCode(65 + index)} dangerouslySetInnerHTML={{ __html: optionSvg(option) }}/> : <span>{option.text}</span>}</button> : <>
         <span className="option-letter">{String.fromCharCode(65 + index)}</span>
-        {option.figure ? <div role="img" aria-label={'Gambar opsi ' + String.fromCharCode(65 + index)}
-          dangerouslySetInnerHTML={{ __html: figureSvg(option.figure) }}/> : <span>{option.text}</span>}
+        {optionSvg(option) ? <div role="img" aria-label={'Gambar opsi ' + String.fromCharCode(65 + index)}
+          dangerouslySetInnerHTML={{ __html: optionSvg(option) }}/> : <span>{option.text}</span>}
         {showAnswers && q.subtest === 'TKP' && <span className="option-score">{option.score} poin</span>}
         </>}
       </li>)}
