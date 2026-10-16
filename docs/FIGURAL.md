@@ -170,6 +170,7 @@ Karena validator memakai logika yang terpisah dari pembuat soal, kesalahan di pe
 
 - `lib/figural/render.ts` menggambar bagian menjadi SVG: kotak 100 × 100 per gambar; analogi dengan tanda `:` `=` `:` di antara kotak, deret satu baris, matriks 3 × 3, dan lima opsi berhuruf A sampai E di bawahnya.
 - `questionSvg` di `lib/figures.ts` memakai render baru bila soal memuat `scenes` atau `scene`, dan tetap memakai render lama untuk data lama. `QuestionCard`, ekspor Word dan PDF (`lib/export.ts`), dan lembar pilot (`lib/pilot-export.ts`) memakai `hasStimulus` dan `optionSvg` sehingga kedua bentuk data tampil.
+- `questionSvg(question, includeOptions = true, includeStimulus = true)` menghasilkan stimulus saja (`false`), stimulus dan opsi (bawaan; dipakai PDF, Word, dan PNG), atau deret opsi saja (`true, false`). Fitur ambil soal (`lib/take.ts`, README bagian "Ambil soal satuan atau terpilih") memakai ketiganya untuk salinan ke Word dan Google Docs, dan `optionSvg` untuk tombol "Salin gambar" per opsi; semuanya dirasterkan ke PNG oleh `rasterizeSvg` di `lib/export.ts`.
 - Ekspor CSV memuat kolom `scenes` pada JSON stimulus. `QuestionEditor` menyertakan `scenes` dan `scene` per opsi pada JSON stimulus yang disunting.
 - Kotak stimulus dan opsi dipaskan ke kotak 100 × 100 dengan batas jangkauan 49 satuan, sehingga tidak ada bagian yang terpotong atau saling menimpa (kecuali bagian bersusun yang memang sepusat, yaitu bangun inti, batang, dan jari-jari pusat).
 

@@ -39,7 +39,7 @@ Next.js telah diperbarui ke 16.3.8. Setelah memasang dependensi baru, restart se
 
 1. **Buat paket:** pilih subtes, materi, jumlah soal, dan tingkat kesulitan. Pengaturan seed, durasi, paket tambahan, dan submateri berada di bagian lanjutan.
 2. **Blueprint:** tinjau kuota tiap materi dan kesulitan. Persentase kesulitan dapat ditentukan sendiri; kuota dapat disunting secara manual. Persediaan yang kurang menghasilkan pesan kesalahan, tanpa penggantian materi diam-diam.
-3. **Ruang kurasi:** gunakan daftar nomor dan filter untuk meninjau satu soal. Periksa pertanyaan, tabel/gambar, seluruh pilihan, kunci, alasan pengecoh, pembahasan, sumber, dan rubrik.
+3. **Ruang kurasi:** gunakan daftar nomor dan filter untuk meninjau satu soal. Periksa pertanyaan, tabel/gambar, seluruh pilihan, kunci, alasan pengecoh, pembahasan, sumber, dan rubrik. Panel **Ambil soal** di atas kartu soal menyalin atau mengunduh soal itu saja, atau beberapa soal terpilih (lihat bagian Ambil soal satuan atau terpilih).
 4. **Sunting / ganti / tandai / keluarkan:** suntingan konten membuat revisi baru dan membatalkan persetujuan. Penggantian mempertahankan subtes, materi, dan kesulitan blueprint serta menghindari soal identik. Soal yang dikeluarkan tidak diekspor atau dianalisis.
 5. **Persetujuan:** isi nama penelaah dan konfirmasi pemeriksaan per soal. Soal dengan kegagalan struktur/skor tidak bisa disetujui. Soal hasil suntingan juga memerlukan catatan verifikasi substansi.
 6. **Evaluasi peserta:** uji soal yang telah disetujui, periksa respons, kemudian gunakan hasilnya untuk revisi berikutnya.
@@ -114,6 +114,17 @@ PDF dan Word: naskah tanpa kunci, kunci saja, atau soal + pembahasan; dapat dipi
 CSV: soal, opsi, skor, pembahasan, alasan, sumber, status, revisi, penelaah, catatan, alasan kesulitan, rubrik, dan stimulus. JSON: data terstruktur beserta bukti model. CSV dan JSON menyertakan kunci; gunakan naskah PDF/Word atau berkas uji HTML untuk peserta.
 
 Ekspor memuat jumlah aktual setelah pemilihan status dan pengecualian, bukan otomatis seluruh jumlah blueprint. Komposisi aktual dapat diperiksa di ruang kurasi.
+
+## Ambil soal satuan atau terpilih
+
+Untuk tim akademik yang hanya butuh satu atau beberapa soal, tanpa membuat ekspor paket. Panel **Ambil soal** ada di ruang kurasi, di atas kartu soal.
+
+- **Salin** (menu): soal (pertanyaan, tabel, gambar stimulus), pilihan A sampai E, jawaban (TKP: skor tiap pilihan), pembahasan beserta alasan tiap pilihan, atau semua. Hasilnya langsung bisa ditempel ke Word atau Google Docs: `text/html` dengan gambar PNG tertanam (gambar SVG dirasterkan di browser) dan `text/plain` sebagai cadangan.
+- **Salin gambar:** tombol kecil di bawah gambar stimulus dan di bawah tiap gambar pilihan menyalin gambar itu sebagai `image/png`.
+- **Unduh PNG** dan **Unduh PDF** untuk soal yang sedang dibuka. Kotak **Sertakan kunci & pembahasan** menentukan isinya. Huruf, tata letak TWK/TIU/TKP, dan gambar figural sama dengan PDF ekspor paket (satu model tata letak di `lib/export.ts` dilukis oleh PDF dan PNG). Soal yang belum disetujui diberi label draf.
+- **Pilih beberapa soal:** nomor di daftar menjadi kotak centang. **Pilih semua** mengikuti filter daftar dan melewati soal yang dikeluarkan; pilihan bertahan saat pindah halaman. Aksinya **Ekspor PDF** (satu berkas), **Ekspor PNG** (satu PNG per soal, dibungkus ZIP bila lebih dari satu), dan **Salin terpilih**. Urutan mengikuti paket dan nomor soal tidak diubah.
+
+Hasil salin dan unduh diumumkan lewat toast. Salinan kaya memakai Async Clipboard API (`ClipboardItem`), yang butuh HTTPS atau localhost. Bila browser tidak mendukung atau menolak akses clipboard, yang tersalin hanya teks dan toast memberi tahu; tombol salin gambar menampilkan galat dan menyarankan Unduh PNG. Pengujian UI dilakukan di Edge (Chromium); Chrome memakai mesin yang sama. Safari dan Firefox belum diuji di sini.
 
 ## Batas, CLI, dan API
 

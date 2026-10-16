@@ -56,8 +56,9 @@ export function stimulusLayout(question: Question): { body: string; width: numbe
   return { body: scenes.map((s, i) => cell(s, i * (100 + gap), 0)).join(''), width: scenes.length * 100 + (scenes.length - 1) * gap, height: 100 };
 }
 // Stimulus beserta (bila diminta) kelima opsi berhuruf, untuk layar, PDF, dan Word.
-export function visualSvg(question: Question, includeOptions: boolean): string {
-  const stimulus = stimulusLayout(question);
+// `includeStimulus = false` menghasilkan deret opsi saja (dipakai untuk menyalin pilihan gambar).
+export function visualSvg(question: Question, includeOptions: boolean, includeStimulus = true): string {
+  const stimulus = includeStimulus ? stimulusLayout(question) : { body: '', width: 0, height: 0 };
   const optionsY = stimulus.height ? stimulus.height + 22 : 0;
   const width = Math.max(stimulus.width, includeOptions ? LAYOUT.optionsWidth : 0) + 2;
   const height = optionsY + (includeOptions ? 100 + 28 : 0) + 2;

@@ -30,9 +30,10 @@ export function figureSvg(figure: Figure): string {
 export const usesScenes = (question: Question) => Boolean(question.visual?.scenes) || question.options.some((option) => option.scene);
 export const hasStimulus = (question: Question) => Boolean(question.visual?.scenes?.length || question.visual?.figures.length);
 export const optionSvg = (option: Option) => option.scene ? sceneSvg(option.scene) : option.figure ? figureSvg(option.figure) : '';
-export function questionSvg(question: Question, includeOptions = true): string {
-  if (usesScenes(question)) return visualSvg(question, includeOptions);
-  const figures = question.visual?.figures ?? [];
+// `includeStimulus = false` menghasilkan deret opsi saja, tanpa gambar stimulus.
+export function questionSvg(question: Question, includeOptions = true, includeStimulus = true): string {
+  if (usesScenes(question)) return visualSvg(question, includeOptions, includeStimulus);
+  const figures = includeStimulus ? question.visual?.figures ?? [] : [];
   const columns = question.visual?.columns ?? 4;
   const cell = 110;
   const topRows = Math.ceil(figures.length / columns);

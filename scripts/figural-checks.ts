@@ -50,7 +50,7 @@ const pngBody = new Map<string, Uint8Array>();
 const fnv = (text: string) => { let h = 2166136261; for (let i = 0; i < text.length; i++) h = Math.imul(h ^ text.charCodeAt(i), 16777619); return (h >>> 0).toString(16); };
 // PNG putih polos berukuran w x h, diberi penanda unik agar tiap gambar berbeda; cukup untuk memeriksa jalur penyisipan
 // gambar di Word dan PDF tanpa peramban (pustaka docx membuang gambar yang isinya persis sama).
-function solidPng(width: number, height: number, tag: string): Uint8Array {
+export function solidPng(width: number, height: number, tag: string): Uint8Array {
   const chunk = (type: string, data: Uint8Array) => {
     const out = new Uint8Array(12 + data.length), view = new DataView(out.buffer);
     view.setUint32(0, data.length); for (let i = 0; i < 4; i++) out[4 + i] = type.charCodeAt(i);

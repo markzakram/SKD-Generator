@@ -3,14 +3,18 @@ import { useEffect, useMemo, useState } from 'react';
 import { actualBlueprint } from '@/lib/blueprint';
 import { LABELS } from '@/lib/config';
 import { questionIssues, qualitySummary, setReview, STATUS_LABELS } from '@/lib/quality';
+import { copyQuestionImage } from '@/lib/take-actions';
+import { togglePick } from '@/lib/take';
 import type { BlueprintRow, Package, Question, ReviewStatus } from '@/lib/types';
 import Icon from './Icon';
 import QuestionCard from './QuestionCard';
 import QuestionEditor from './QuestionEditor';
+import TakePanel, { Toast, useToast } from './TakeTools';
 
-export default function Workbench({ pack, blueprint, reviewer, onReviewer, onChange, onReplace }: { pack: Package; blueprint?: BlueprintRow[]; reviewer: string; onReviewer: (s: string) => void; onChange: (q: Question, label: string) => void; onReplace: (q: Question) => void }) {
+export default function Workbench({ pack, blueprint, title = '', reviewer, onReviewer, onChange, onReplace }: { pack: Package; blueprint?: BlueprintRow[]; title?: string; reviewer: string; onReviewer: (s: string) => void; onChange: (q: Question, label: string) => void; onReplace: (q: Question) => void }) {
   const [selected, setSelected] = useState(pack.questions[0]?.id), [search, setSearch] = useState(''), [subtest, setSubtest] = useState('all'), [status, setStatus] = useState('all'), [page, setPage] = useState(0);
   const [editing, setEditing] = useState(false), [showAnswers, setShowAnswers] = useState(true), [note, setNote] = useState(''), [ack, setAck] = useState(false), [error, setError] = useState('');
+  const [pick, setPick] = useState(false), [picked, setPicked] = useState<Set<string>>(() => new Set()), { toast, notify } = useToast();
   const summary = useMemo(() => qualitySummary(pack.questions), [pack.questions]);
   const filtered = useMemo(() => pack.questions.filter((q) => (subtest === 'all' || q.subtest === subtest) && (status === 'all' || status === 'excluded' ? status === 'all' || q.review?.excluded : !q.review?.excluded && q.review?.status === status) &&
     (q.stem + ' ' + q.subtopic + ' ' + q.no).toLowerCase().includes(search.toLowerCase())), [pack.questions, subtest, status, search]);
@@ -22,17 +26,28 @@ export default function Workbench({ pack, blueprint, reviewer, onReviewer, onCha
   const review = (state: ReviewStatus) => { try { onChange(setReview(q, state, note, reviewer), 'Soal ' + q.no + ': ' + STATUS_LABELS[state]); } catch (e) { setError(e instanceof Error ? e.message : 'Persetujuan gagal.'); } };
   const navigate = (offset: number) => { const index = pack.questions.findIndex((item) => item.id === q.id), next = pack.questions[index + offset]; if (next) { setSelected(next.id); setPage(Math.floor(filtered.findIndex((item) => item.id === next.id) / 20)); } };
   if (!q) return null;
+  // Dipanggil langsung dari klik tombol gambar supaya izin clipboard dari klik tetap berlaku.
+  const copyImage = (target: 'stimulus' | number) => {
+    copyQuestionImage(q, target).then(() => notify({ kind: 'ok', text: 'Tersalin: gambar ' + (target === 'stimulus' ? 'soal ' : 'opsi ' + String.fromCharCode(65 + target) + ' soal ') + q.no + ' sebagai PNG.' }))
+      .catch((e) => notify({ kind: 'error', text: e instanceof Error ? e.message : 'Gambar gagal disalin.' }));
+  };
   return <><div className="review-summary"><div><strong>{summary.approved}<span> / {summary.included}</span></strong><p>Soal disetujui</p></div><div><strong>{summary.revision}</strong><p>Perlu revisi</p></div><div><strong>{summary.flagged}</strong><p>Perlu perhatian mutu</p></div><div><strong>{summary.verified}</strong><p>Memiliki solver</p></div><div><strong>{summary.excluded}</strong><p>Dikeluarkan</p></div></div>
     <div className="approval-track"><div style={{ width: (summary.included ? summary.approved / summary.included * 100 : 0) + '%' }}/></div>
     <div className="workbench"><aside className="panel question-navigator"><div className="navigator-title"><h2>Daftar soal</h2><span>{pack.questions.length}</span></div><label className="search-field"><Icon name="search"/><input aria-label="Cari soal" placeholder="Cari soal atau nomor" value={search} onChange={(e) => setSearch(e.target.value)}/></label>
       <label className="field">Subtes<select value={subtest} onChange={(e) => setSubtest(e.target.value)}><option value="all">Semua subtes</option>{['TWK', 'TIU', 'TKP'].map((s) => <option key={s}>{s}</option>)}</select></label>
       <label className="field">Status<select value={status} onChange={(e) => setStatus(e.target.value)}><option value="all">Semua status</option>{Object.entries(STATUS_LABELS).map(([key, label]) => <option key={key} value={key}>{label}</option>)}<option value="excluded">Dikeluarkan</option></select></label>
-      <div className="question-grid">{filtered.slice(Math.max(0, page) * 20, (Math.max(0, page) + 1) * 20).map((item) => <button key={item.id} aria-label={'Soal ' + item.no + ' ' + item.subtest + ' ' + (item.review?.excluded ? 'Dikeluarkan' : STATUS_LABELS[item.review?.status ?? 'draft'])} aria-current={q.id === item.id ? 'true' : undefined}
-        className={'number-button ' + (q.id === item.id ? 'active ' : '') + (item.review?.excluded ? 'excluded' : item.review?.status ?? 'draft')} onClick={() => setSelected(item.id)}>{item.no}<span/></button>)}</div>
+      <div className={pick ? 'question-grid picking' : 'question-grid'}>{filtered.slice(Math.max(0, page) * 20, (Math.max(0, page) + 1) * 20).map((item) => {
+        const state = item.review?.excluded ? 'Dikeluarkan' : STATUS_LABELS[item.review?.status ?? 'draft'], tone = (q.id === item.id ? 'active ' : '') + (item.review?.excluded ? 'excluded' : item.review?.status ?? 'draft');
+        // Mode pilih beberapa soal: nomor menjadi kotak centang; soal yang diklik juga tampil di tengah supaya isinya bisa dibaca.
+        return pick ? <label key={item.id} className={'number-button pick ' + tone + (picked.has(item.id) ? ' picked' : '')}>
+          <input type="checkbox" aria-label={'Pilih soal ' + item.no + ' ' + item.subtest + ' ' + state} checked={picked.has(item.id)} onChange={() => { setPicked(togglePick(picked, item.id)); setSelected(item.id); }}/>{item.no}<span/></label> :
+          <button key={item.id} aria-label={'Soal ' + item.no + ' ' + item.subtest + ' ' + state} aria-current={q.id === item.id ? 'true' : undefined} className={'number-button ' + tone} onClick={() => setSelected(item.id)}>{item.no}<span/></button>;
+      })}</div>
       {!filtered.length && <p className="help">Tidak ada soal sesuai filter.</p>}<div className="pagination"><button aria-label="Halaman soal sebelumnya" disabled={page <= 0} onClick={() => setPage(page - 1)}>‹</button><span>{filtered.length ? Math.max(0, page) + 1 : 0} / {Math.ceil(filtered.length / 20)}</span><button aria-label="Halaman soal berikutnya" disabled={(page + 1) * 20 >= filtered.length} onClick={() => setPage(page + 1)}>›</button></div>
       <div className="status-legend"><span><i className="draft"/>Draf</span><span><i className="revision"/>Revisi</span><span><i className="approved"/>Disetujui</span></div>
     </aside><section className="question-column"><div className="question-toolbar"><div><span className={'status-badge ' + (q.review?.excluded ? 'excluded' : q.review?.status)}>{q.review?.excluded ? 'Dikeluarkan' : STATUS_LABELS[q.review?.status ?? 'draft']}</span><span className="muted">Revisi {q.review?.revision ?? 1}</span></div><label className="check-row"><input type="checkbox" checked={showAnswers} onChange={(e) => setShowAnswers(e.target.checked)}/><span>Tampilkan pembahasan</span></label></div>
-      <QuestionCard key={q.id + ':' + showAnswers} question={q} showAnswers={showAnswers}/>
+      <TakePanel question={q} pack={pack} title={title} visible={filtered} pick={pick} onPick={setPick} picked={picked} onPicked={setPicked} notify={notify}/>
+      <QuestionCard key={q.id + ':' + showAnswers} question={q} showAnswers={showAnswers} onCopyImage={copyImage}/>
       <div className="question-actions"><button className="secondary-button" onClick={() => setEditing(true)}><Icon name="file"/>Sunting soal</button><button className="secondary-button" onClick={() => onReplace(q)}><Icon name="refresh"/>Ganti soal</button><button className="text-button danger" onClick={() => onChange({ ...q, review: { ...q.review!, excluded: !q.review?.excluded, status: 'draft', reviewer: undefined, reviewedAt: undefined, updatedAt: new Date().toISOString() } }, 'Soal ' + q.no + (q.review?.excluded ? ' dikembalikan' : ' dikeluarkan'))}>{q.review?.excluded ? 'Kembalikan ke paket' : 'Keluarkan dari paket'}</button></div>
       <div className="prev-next"><button className="text-button" disabled={q.no === 1} onClick={() => navigate(-1)}>← Soal sebelumnya</button><button className="text-button" disabled={q.no === pack.questions.length} onClick={() => navigate(1)}>Soal berikutnya →</button></div>
     </section><aside className="panel quality-panel"><span className="eyebrow">KURASI SOAL</span><h2>Catatan penelaah</h2>
@@ -47,5 +62,5 @@ export default function Workbench({ pack, blueprint, reviewer, onReviewer, onCha
       {q.review?.reviewer && <p className="help">Disetujui oleh {q.review.reviewer} pada {new Date(q.review.reviewedAt!).toLocaleString('id-ID')}.</p>}{error && <p className="error-message" role="alert">{error}</p>}
       <p className="source-note">{q.source}</p>
     </aside></div><details className="panel coverage"><summary>Komposisi aktual setelah kurasi<Icon name="chevron"/></summary><p className="help">Mengeluarkan soal atau mengubah kesulitannya dapat mengubah blueprint. Bandingkan kuota rencana dengan jumlah aktif dan disetujui sebelum ekspor.</p><div className="table-scroll"><table><thead><tr><th>Materi</th><th>Tingkat</th><th>Rencana</th><th>Aktif</th><th>Disetujui</th></tr></thead><tbody>{coverage.map((row) => <tr key={row.subtest + row.topic + row.difficulty}><td>{row.subtest} · {row.topic}</td><td>{LABELS[row.difficulty]}</td><td>{blueprint?.find((r) => r.subtest === row.subtest && r.topic === row.topic && r.difficulty === row.difficulty)?.count ?? '—'}</td><td>{pack.questions.filter((q) => q.subtest === row.subtest && q.topic === row.topic && q.difficulty === row.difficulty && !q.review?.excluded).length}</td><td>{pack.questions.filter((q) => q.subtest === row.subtest && q.topic === row.topic && q.difficulty === row.difficulty && !q.review?.excluded && q.review?.status === 'approved').length}</td></tr>)}</tbody></table></div></details>
-    {editing && <QuestionEditor question={q} onClose={() => setEditing(false)} onSave={(updated) => { onChange(updated, 'Revisi konten soal ' + q.no); setEditing(false); }}/>}</>;
+    {editing && <QuestionEditor question={q} onClose={() => setEditing(false)} onSave={(updated) => { onChange(updated, 'Revisi konten soal ' + q.no); setEditing(false); }}/>}<Toast toast={toast} onClose={() => notify(null)}/></>;
 }

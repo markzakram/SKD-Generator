@@ -8,6 +8,7 @@ import { auditPackages, auditQuestion } from '../lib/validate';
 import { calculate, entails, implies, not, variable } from '../lib/solver';
 import type { Question, Settings, Subtest } from '../lib/types';
 import { runFiguralChecks } from './figural-checks';
+import { runTakeChecks } from './take-checks';
 
 let checks = 0, questions = 0;
 const check = (condition: unknown, message: string) => { assert.ok(condition, message); checks++; };
@@ -77,6 +78,7 @@ generated({ ...DEFAULT_SETTINGS, mode: 'TKP', count: 4, subtopics: ['Pelayanan P
 generated({ ...DEFAULT_SETTINGS, mode: 'TIU', count: 5, subtopics: ['Figural::Matriks 3 × 3'] });
 check(BANK.find((item) => item.id === 'tkp-ref-1')?.options[0].reason ===
   'Paling partisipatif, edukatif, setara, dan berorientasi pada tindak lanjut.', 'Alasan TKP harus mengikuti sel tabel PDF, bukan letak baris teks.');
-runFiguralChecks(check).then((figural) => {
-  console.log(JSON.stringify({ status: 'PASS', checks, auditedQuestions: questions, bank: BANK.length, families: TIU_FAMILIES.length, figural }, null, 2));
+runFiguralChecks(check).then(async (figural) => {
+  const take = await runTakeChecks(check);
+  console.log(JSON.stringify({ status: 'PASS', checks, auditedQuestions: questions, bank: BANK.length, families: TIU_FAMILIES.length, figural, take }, null, 2));
 }).catch((error) => { console.error(error); process.exit(1); });
