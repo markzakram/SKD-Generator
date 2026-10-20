@@ -6,6 +6,7 @@ export const STATUS_LABELS: Record<ReviewStatus, string> = { draft: 'Draf', revi
 export type Issue = { code: string; level: 'error' | 'warning' | 'info'; text: string };
 export function questionIssues(q: Question, peers: Question[] = []): Issue[] {
   const issues: Issue[] = auditQuestion(q).map((text) => ({ code: 'structure', level: 'error', text }));
+  if(q.provenance?.file==='Nynda - TKP 1_Done Input.docx'&&q.provenance.question===1)issues.push({code:'source-note',level:'warning',text:'Catatan sumber: alasan opsi D menyebut prioritas mendesak, sedangkan teks opsi D menekankan kedatangan ulang dan kanal konsultasi. Cocokkan penjelasannya saat kurasi; teks dan poin asli dipertahankan.'});
   if (!q.visual) {
     const lengths = q.options.map((o) => o.text.split(/\s+/).length), answer = lengths[q.answer];
     if (answer > Math.max(...lengths.filter((_, i) => i !== q.answer)) && answer > lengths.reduce((a, b) => a + b, 0) / 5 * 1.5)
@@ -25,6 +26,7 @@ export function questionIssues(q: Question, peers: Question[] = []): Issue[] {
   })) issues.push({ code: 'similar', level: 'warning', text: 'Teks sangat mirip dengan soal lain; bandingkan tuntutan penalarannya.' });
   if (q.proof.kind === 'manual' || (q.proof.kind === 'logic' && !q.proof.entailment)) issues.push({ code: 'human', level: 'info', text: 'Memerlukan verifikasi substansi oleh penelaah; belum diverifikasi solver independen.' });
   if (q.proof.kind === 'bank') issues.push({ code: 'bank', level: 'info', text: 'Isi cocok dengan bank sumber; kecocokan ini belum membuktikan mutu akademik.' });
+  if (q.proof.kind === 'local') issues.push({code:'local',level:'info',text:'Soal baru dari model lokal. Konsistensi kondisi, kunci, dan alasan diperiksa; ketepatan substansi serta peringkat TKP tetap perlu ditelaah.'});
   if (q.difficulty === 'hots') issues.push({ code: 'legacy', level: 'warning', text: 'Label HOTS lama perlu ditinjau. Pilih kesulitan dan Bloom secara terpisah.' });
   return issues;
 }
@@ -58,11 +60,12 @@ export function setReview(q: Question, status: ReviewStatus, note: string, revie
   if (status === 'approved' && errors.length) throw new Error('Perbaiki kegagalan validasi sebelum persetujuan: ' + errors[0]);
   if (status === 'approved' && q.review?.excluded) throw new Error('Kembalikan soal ke paket sebelum menyetujuinya.');
   if (status === 'approved' && !reviewer.trim()) throw new Error('Isi nama penelaah untuk mencatat persetujuan.');
-  if (status === 'approved' && q.proof.kind === 'manual' && !note.trim()) throw new Error('Soal hasil suntingan memerlukan catatan pemeriksaan substansi.');
+  if (status === 'approved' && ['manual','local'].includes(q.proof.kind) && !note.trim()) throw new Error('Soal baru atau hasil suntingan memerlukan catatan pemeriksaan substansi.');
   return { ...q, review: { ...q.review!, status, note, updatedAt: now(), ...(status === 'approved' ? { reviewer: reviewer.trim(), reviewedAt: now() } : { reviewedAt: undefined, reviewer: undefined }) } };
 }
 export function editQuestion(original: Question, draft: Question): Question {
   const q = { ...draft, id: original.id, no: original.no, subtest: original.subtest, topic: original.topic,
+    ...(original.provenance?{provenance:{...original.provenance,status:'adapted' as const}}:{}),
     binding: undefined,
     proof: { kind: 'manual' as const, note: 'Konten disunting; model sumber tidak lagi digunakan sebagai bukti. Penelaah harus memeriksa stimulus, kunci, skor, dan pembahasan.' },
     review: { status: 'revision' as const, excluded: original.review?.excluded ?? false, revision: (original.review?.revision ?? 1) + 1, note: original.review?.note ?? '', updatedAt: now() } };

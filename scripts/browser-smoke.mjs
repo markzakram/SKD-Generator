@@ -18,6 +18,7 @@ try {
   await page.getByRole('button', { name: 'Buat paket untuk dikurasi' }).waitFor();
   await page.waitForFunction(() => document.querySelector('.save-status')?.textContent.includes('Tersimpan'));
   await page.screenshot({ path: path.join(directory, 'generator-desktop-v2.png'), fullPage: true });
+  await page.getByRole('button',{name:/Latihan bebas/}).click();
   await page.getByRole('button', { name: /^TIU/ }).click();
   await page.getByLabel('Soal per paket', { exact: true }).fill('8');
   await page.getByRole('button', { name: 'Figural', exact: true }).click();
@@ -53,7 +54,7 @@ try {
   const pdf = await download(() => page.locator('.export-dialog .primary-button').click(), 'soal-figural-v2.pdf'); assert.equal(pdf.subarray(0, 5).toString(), '%PDF-');
   await page.locator('.format-button').nth(1).click(); await page.getByLabel('Isi dokumen').selectOption('pembahasan');
   const word = await download(() => page.locator('.export-dialog .primary-button').click(), 'pembahasan-figural-v2.docx'); const parts = unzipSync(word);
-  assert.ok(parts['word/document.xml']); assert.equal(Object.keys(parts).filter((n) => n.startsWith('word/media/') && n.endsWith('.png')).length, 8);
+  assert.ok(parts['word/document.xml']); assert.equal((new TextDecoder().decode(parts['word/document.xml']).match(/name="figural-/g)??[]).length,8);
   await page.locator('.format-button').nth(2).click(); const csv = await download(() => page.locator('.export-dialog .primary-button').click(), 'bank-v2.csv'); assert.ok(csv.toString().includes('Catatan kurasi'));
   await page.locator('.format-button').nth(3).click(); data = JSON.parse((await download(() => page.locator('.export-dialog .primary-button').click(), 'draft-v2.json')).toString()); assert.equal(data.packages[0].questions.length, 8);
   await page.locator('.format-button').nth(0).click(); await page.getByLabel('Pisahkan per paket dalam ZIP').check(); const zip = await download(() => page.locator('.export-dialog .primary-button').click(), 'paket-v2.zip'); assert.equal(Object.keys(unzipSync(zip)).length, 1);
@@ -84,7 +85,7 @@ try {
   await page.screenshot({ path: path.join(directory, 'review-mobile-v2.png'), fullPage: true });
   await page.getByRole('button', { name: 'Buat paket', exact: true }).click(); assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'Generator mobile overflow');
   await page.screenshot({ path: path.join(directory, 'generator-mobile-v2.png'), fullPage: true });
-  await page.getByRole('button', { name: 'Pustaka soal', exact: true }).click(); assert.ok((await page.locator('.bank-stats').textContent()).includes('77 butir')); assert.ok((await page.locator('.bank-stats').textContent()).includes('118 butir'));
+  await page.getByRole('button', { name: 'Pustaka soal', exact: true }).click(); assert.ok((await page.locator('.bank-stats').textContent()).includes('167 butir')); assert.ok((await page.locator('.bank-stats').textContent()).includes('253 butir'));
   await page.getByRole('button', { name: 'Panduan', exact: true }).click(); assert.equal(await page.locator('.guide-step').count(), 6);
   const valid = await context.request.post(base + '/api/generate', { data: { mode: 'TWK', count: 5, packages: 1 } }); assert.equal(valid.status(), 200); assert.equal((await valid.json()).audit.checked, 5);
   assert.equal((await context.request.post(base + '/api/generate', { data: { mode: 'INVALID' } })).status(), 400);

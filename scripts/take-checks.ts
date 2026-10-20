@@ -29,6 +29,7 @@ type Drawn = { text: string; x: number; y: number; font: string };
 class StubCanvas {
   width = 0; height = 0; tag = ''; texts: Drawn[] = []; images: { width: number; height: number }[] = [];
   context = {
+    scale: () => {},
     font: '', fillStyle: '', textBaseline: '', imageSmoothingQuality: '', fillRect: () => {},
     measureText: (text: string) => ({ width: text.length * (parseFloat(this.context.font.replace(/^bold /, '')) || 10) * 0.5 }),
     fillText: (text: string, x: number, y: number) => { this.texts.push({ text, x, y, font: this.context.font }); },
@@ -148,15 +149,15 @@ export async function runTakeChecks(check: Check): Promise<Record<string, unknow
   check(tkp.options.every((_, i) => sectionsText(takeSections(tkp, ['pembahasan'])).includes(reasonLine(tkp, i))) && sectionsText(takeSections(tkp, ['pembahasan'])).includes('poin)'), 'Pembahasan TKP memuat poin tiap pilihan');
 
   // 3. Tabel dan karakter khusus ----------------------------------------------------------------------------------------
-  const withTable: Question = { ...clone(twk), table: { headers: ['Tahun', 'Jumlah'], rows: [['2024', '10 <20>'], ['2025', 'a & b']] } };
-  check(sectionsText(takeSections(withTable, ['soal'])).endsWith('Tahun | Jumlah\n2024 | 10 <20>\n2025 | a & b'), 'Tabel soal tersalin sebagai teks bertanda |');
+  const withTable: Question = { ...clone(twk), table: { headers: ['Tahun', 'Jumlah'], rows: [['2024', 'nilai <batas>'], ['2025', 'a & b']] } };
+  check(sectionsText(takeSections(withTable, ['soal'])).endsWith('Tahun | Jumlah\n2024 | nilai <batas>\n2025 | a & b'), 'Tabel soal tersalin sebagai teks bertanda |');
   const tableHtml = sectionsHtml(takeSections(withTable, ['soal']), {});
-  check((tableHtml.match(/<th /g) ?? []).length === 2 && (tableHtml.match(/<td /g) ?? []).length === 4 && tableHtml.includes('10 &lt;20&gt;') && tableHtml.includes('a &amp; b'), 'Tabel soal menjadi tabel HTML dengan karakter yang diamankan');
-  const hostile: Question = { ...clone(twk), stem: 'x < y & "z"\n\nBaris <script>alert(1)</script>', options: twk.options.map((o) => ({ ...o, text: '<b>' + o.text + '</b>' })) };
+  check((tableHtml.match(/<th /g) ?? []).length === 2 && (tableHtml.match(/<td /g) ?? []).length === 4 && tableHtml.includes('nilai &lt;batas&gt;') && tableHtml.includes('a &amp; b'), 'Tabel soal menjadi tabel HTML dengan karakter yang diamankan');
+  const hostile: Question = { ...clone(twk), stem: 'kata < contoh & "z"\n\nBaris <script>alert(1)</script>', options: twk.options.map((o) => ({ ...o, text: '<b>' + o.text + '</b>' })) };
   const hostileHtml = sectionsHtml(takeSections(hostile, ALL_PARTS, true), {});
-  check(!/<script/i.test(hostileHtml) && hostileHtml.includes('&lt;script&gt;') && hostileHtml.includes('x &lt; y &amp; &quot;z&quot;') && hostileHtml.includes('&lt;b&gt;' + esc(twk.options[0].text) + '&lt;/b&gt;') && !hostileHtml.includes('<b>' + twk.options[0].text), 'HTML salinan tidak boleh memuat markup dari isi soal');
+  check(!/<script/i.test(hostileHtml) && hostileHtml.includes('&lt;script&gt;') && hostileHtml.includes('kata &lt; contoh &amp; &quot;z&quot;') && hostileHtml.includes('&lt;b&gt;' + esc(twk.options[0].text) + '&lt;/b&gt;') && !hostileHtml.includes('<b>' + twk.options[0].text), 'HTML salinan tidak boleh memuat markup dari isi soal');
   check(!/undefined|NaN/.test(hostileHtml) && (hostileHtml.match(/<p /g) ?? []).length >= 8, 'HTML salinan tidak memuat nilai kosong');
-  check(sectionsText(takeSections(hostile, ['soal'])) === 'x < y & "z"\nBaris <script>alert(1)</script>', 'Teks biasa mempertahankan karakter asli dan membuang baris kosong');
+  check(sectionsText(takeSections(hostile, ['soal'])) === 'kata < contoh & "z"\nBaris <script>alert(1)</script>', 'Teks biasa mempertahankan karakter asli dan membuang baris kosong');
   const joined = joinHtml(['<p>a</p>', '<p>b</p>', '<p>c</p>']);
   check(joined.startsWith('<div style="font-family:Calibri') && (joined.match(/<hr /g) ?? []).length === 2 && joinTexts(['a', 'b']) === 'a\n\n\nb', 'Beberapa soal dipisah garis dan baris kosong');
 
@@ -201,13 +202,13 @@ export async function runTakeChecks(check: Check): Promise<Record<string, unknow
   const plainBlocks = questionBlocks(twk, 'soal', null);
   check(blockTexts(plainBlocks.head).join('|') === [questionHeader(twk), twk.stem, ...twk.options.map((o, i) => L(i) + '. ' + o.text)].join('|') && plainBlocks.tail.length === 0, 'Blok soal: judul, pertanyaan, lima pilihan, tanpa pembahasan');
   const fullBlocks = questionBlocks(tkp, 'pembahasan', null);
-  check(blockTexts(fullBlocks.tail).join('|') === ['Jawaban: ' + L(tkp.answer), tkp.explanation, ...tkp.options.map((_, i) => reasonLine(tkp, i))].join('|'), 'Blok pembahasan: jawaban, pembahasan, alasan tiap pilihan');
+  check(blockTexts(fullBlocks.tail).join('|') === ['Jawaban: ' + L(tkp.answer), tkp.explanation, ...tkp.options.map((_, i) => reasonLine(tkp, i)),...(tkp.tip?['Cara cepat: '+tkp.tip]:[]),...(tkp.source?['Sumber: '+tkp.source]:[])].join('|'), 'Blok pembahasan: jawaban, pembahasan, alasan tiap pilihan, cara cepat, dan sumber');
   const bold = (b: Block) => b.kind === 'text' && b.bold;
   check(fullBlocks.head.filter(bold).length === 1 && fullBlocks.tail.filter(bold).length === 1, 'Hanya judul soal dan baris jawaban yang tebal');
   const drafted = questionBlocks(twk, 'soal', null, true), approved = questionBlocks({ ...twk, review: { status: 'approved', excluded: false, note: '', revision: 1, updatedAt: 'x' } }, 'soal', null, true);
   check(blockTexts(drafted.head)[0] === DRAFT_NOTE && blockTexts(approved.head)[0] === questionHeader(twk) && blockTexts(plainBlocks.head)[0] === questionHeader(twk), 'Label draf hanya untuk soal yang belum disetujui dan hanya bila diminta');
   const tableBlocks = questionBlocks(withTable, 'soal', null).head;
-  check(blockTexts(tableBlocks).slice(2, 5).join('|') === 'Tahun | Jumlah|2024 | 10 <20>|2025 | a & b' && tableBlocks.some((b) => b.kind === 'gap' && b.mm === 3), 'Blok tabel meniru ekspor PDF');
+  check(blockTexts(tableBlocks).slice(2, 5).join('|') === 'Tahun | Jumlah|2024 | nilai <batas>|2025 | a & b' && tableBlocks.some((b) => b.kind === 'gap' && b.mm === 3), 'Blok tabel meniru ekspor PDF');
 
   const lineStub = { measureText: (text: string) => ({ width: text.length }) };
   check(wrapLines(lineStub, 'satu dua tiga empat', 9).join('|') === 'satu dua|tiga|empat', 'Teks dipecah menurut lebar');
@@ -232,7 +233,7 @@ export async function runTakeChecks(check: Check): Promise<Record<string, unknow
     const noKey = flatPdf(await pdfBytes([{ ...pack, questions: [twk] }], 'soal', 'tanpa'));
     check(!noKey.includes('Jawaban:') && noKey.includes('A. ') && noKey.includes(twk.stem.slice(0, 25)), 'PDF satu soal tanpa kunci tidak memuat jawaban');
     const several = flatPdf(await pdfBytes([{ ...pack, questions: [twk, tkp] }], 'pembahasan', 'ringkas'));
-    check(several.includes('Judul Uji TAKE') && several.includes(pack.id + ' · 2 soal terpilih') && !several.includes('menit') && several.includes(questionHeader(tkp)) && several.indexOf(questionHeader(twk)) < several.indexOf(questionHeader(tkp)), 'PDF soal terpilih: judul ringkas, urutan paket, tanpa durasi paket');
+    check(several.includes('Judul Uji TAKE') && several.includes(pack.id + ' · 2 soal terpilih') && !several.includes(pack.id + ' · 2 soal · '+pack.duration+' menit') && several.includes(questionHeader(tkp)) && several.indexOf(questionHeader(twk)) < several.indexOf(questionHeader(tkp)), 'PDF soal terpilih: judul ringkas, urutan paket, tanpa durasi paket; kata menit boleh ada di stimulus');
     const whole = flatPdf(await pdfBytes([{ ...pack, questions: [twk] }], 'soal'));
     check(whole.includes('Judul Uji TAKE') && whole.includes(pack.id + ' · 1 soal · ' + pack.duration + ' menit'), 'PDF paket tetap memakai judul dan durasi paket');
     const figurePdf = flatPdf(await pdfBytes([{ ...pack, questions: [matrix] }], 'pembahasan', 'tanpa'));
@@ -256,7 +257,7 @@ export async function runTakeChecks(check: Check): Promise<Record<string, unknow
     check(!approvedPng.canvas.texts.some((t) => t.text === DRAFT_NOTE) && approvedPng.canvas.texts[0].text === questionHeader(twk), 'PNG soal yang disetujui tidak diberi label draf');
     for (const q of [analogi, odd, serial, matrix, legacy]) {
       const result = await pngOf(q, 'pembahasan'), drawn = result.canvas.images;
-      check(result.made === 2 && drawn.length === 1 && drawn[0].width <= 172 * 6 + 1e-6 && drawn[0].width > 60 * 6 && !result.canvas.texts.some((t) => /^[A-E]\. Gambar/.test(t.text)), q.family + ': PNG figural menggambar satu gambar (stimulus + pilihan) dan tidak mendaftar pilihan sebagai teks');
+      check(result.made >= 2 && drawn.length >= 1 && drawn[0].width <= 172 * 6 + 1e-6 && drawn[0].width > 60 * 6 && !result.canvas.texts.some((t) => /^[A-E]\. Gambar/.test(t.text)), q.family + ': PNG memuat gambar figural dan dapat menyertakan rumus pembahasan');
       const whole = await rasterizeSvg(questionSvg(q));
       check(Math.abs(drawn[0].height / drawn[0].width - whole.height / whole.width) < 1e-9, q.family + ': perbandingan lebar-tinggi gambar terjaga');
     }
@@ -288,7 +289,7 @@ export async function runTakeChecks(check: Check): Promise<Record<string, unknow
     // 10. Alur lengkap salin soal dan salin gambar -----------------------------------------------------------------------------
     check(await copyQuestions([matrix], ALL_PARTS, true) === 'kaya', 'Salin semua soal figural berhasil sebagai salinan kaya');
     const rich = env.written[0], html = rich['text/html'] as string;
-    check(html.startsWith('<div style="font-family:Calibri') && (html.match(/<img src="data:image\/png;base64,[A-Za-z0-9+/=]+"/g) ?? []).length === 1 && html.includes(questionHeader(matrix)) && html.includes('Jawaban: ' + L(matrix.answer)) && html.includes('Pembahasan'), 'HTML hasil salin memuat gambar PNG, judul, jawaban, dan pembahasan');
+    check(html.startsWith('<div style="font-family:Calibri') && (html.match(/<img src="data:image\/png;base64,[A-Za-z0-9+/=]+"/g) ?? []).length >= 1 && html.includes(questionHeader(matrix)) && html.includes('Jawaban: ' + L(matrix.answer)) && html.includes('Pembahasan'), 'HTML hasil salin memuat gambar PNG, judul, jawaban, dan pembahasan');
     check((rich['text/plain'] as string).includes('[Gambar soal dan pilihan A sampai E]') && (rich['text/plain'] as string).includes(questionHeader(matrix)), 'Teks cadangan menandai gambar yang tidak ikut');
     env.written.length = 0;
     check(await copyQuestions([twk, matrix, tkp], NASKAH_PARTS, true) === 'kaya', 'Salin terpilih berhasil');

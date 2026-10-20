@@ -1,0 +1,389 @@
+FILE: Uma - Verbal Analitis_Done Input.docx
+[0] Soal 1
+[1] Category: Penalaran Verbal
+[2] Lesson: Analitis
+[3] Chapter: Susunan & Posisi
+[4] Tingkat Kesulitan: HOTS
+[5] Bentuk Soal: Option New
+[6] Enam berkas milik Ardi, Beni, Caca, Dini, Ega, dan Fina disusun berjajar pada rak bernomor 1 sampai 6 dari kiri ke kanan. Caca berada di posisi keempat. Beni berada tepat di sebelah kiri Caca. Fina berada tepat di sebelah kanan Caca. Ardi berada di sebelah kiri Beni. Dini berada tepat di sebelah kanan Ardi. Ega berada di sebelah kanan Fina.
+[7] Siapakah yang berada pada posisi kedua?
+[8] A. Ardi
+[9] B. Beni
+[10] C. Dini
+[11] D. Fina
+[12] E. Ega
+[13] Jawaban: C
+[14] Pembahasan:
+[15] Caca diketahui berada di posisi keempat dari kiri. Informasi ini menjadi patokan karena posisi Caca sudah pasti dan tidak bergantung pada berkas lain. Beni berada tepat di sebelah kiri Caca. Kata “tepat” berarti tidak ada berkas di antara keduanya, sehingga Beni harus menempati posisi ketiga. Dengan alasan yang sama, Fina yang tepat di sebelah kanan Caca harus berada di posisi kelima.
+[16] Ega berada di sebelah kanan Fina. Karena Fina sudah menempati posisi kelima dan rak hanya memiliki enam tempat, satu-satunya tempat di sebelah kanan Fina adalah posisi keenam. Maka posisi keenam ditempati Ega.
+ Empat tempat terakhir yang sudah terisi adalah Beni pada posisi ketiga, Caca pada posisi keempat, Fina pada posisi kelima, dan Ega pada posisi keenam. Posisi yang tersisa adalah posisi pertama dan kedua untuk Ardi dan Dini. Diketahui Ardi berada di sebelah kiri Beni dan Dini tepat di sebelah kanan Ardi. Jika Ardi ditempatkan di posisi kedua, Dini harus berada di posisi ketiga yang sudah diisi Beni. Karena itu Ardi harus berada di posisi pertama dan Dini di posisi kedua.
+[17] Susunan lengkap dari kiri ke kanan adalah Ardi, Dini, Beni, Caca, Fina, dan Ega. Dengan demikian, berkas yang menempati posisi kedua adalah Dini.
+[18] Posisi 1 | Posisi 2 | Posisi 3 | Posisi 4 | Posisi 5 | Posisi 6
+Ardi | Dini | Beni | Caca | Fina | Ega
+[19] Jadi, jawaban yang benar adalah C.
+[20] Soal 2
+[21] Category: Penalaran Verbal
+[22] Lesson: Analitis
+[23] Chapter: Susunan & Posisi
+[24] Tingkat Kesulitan: HOTS
+[25] Bentuk Soal: Option New
+[26] Delapan peserta, yaitu Gani, Hira, Intan, Joko, Kila, Luki, Mira, dan Nando, duduk pada empat baris. Setiap baris terdiri atas kursi kiri dan kanan. Gani dan Hira duduk di baris pertama. Intan duduk tepat di belakang Gani. Joko duduk di samping Intan. Kila dan Luki duduk bersama pada baris ketiga. Mira tidak duduk di baris pertama, kedua, maupun ketiga.
+[27] Siapakah yang duduk satu baris dengan Mira?
+[28] A. Kila
+[29] B. Joko
+[30] C. Luki
+[31] D. Intan
+[32] E. Nando
+[33] Jawaban: E
+[34] Pembahasan:
+[35] Setiap baris terdiri atas dua kursi, yaitu kursi kiri dan kursi kanan. Karena Gani dan Hira duduk di baris pertama, kedua kursi baris pertama telah terisi dan tidak dapat ditempati peserta lain.
+[36] Intan duduk tepat di belakang Gani. Artinya, Intan berada di baris kedua pada kolom kursi yang sama dengan Gani. Joko duduk di samping Intan, sehingga Joko menempati satu kursi lain di baris kedua. Dengan demikian, baris kedua juga sudah penuh.
+[37] Kila dan Luki duduk bersama di baris ketiga. Karena terdapat tepat dua kursi dalam setiap baris, baris ketiga diisi oleh Kila dan Luki tanpa menyisakan kursi kosong.
+[38] Mira tidak duduk pada baris pertama, kedua, maupun ketiga. Dari empat baris yang tersedia, pilihan satu-satunya bagi Mira adalah baris keempat. Peserta yang telah ditempatkan adalah Gani, Hira, Intan, Joko, Kila, Luki, dan Mira. Satu-satunya peserta yang belum ditempatkan adalah Nando. Kursi kedua di baris keempat harus ditempati Nando.
+[39] Susunan tersebut juga memenuhi jumlah keseluruhan delapan peserta dalam empat baris. Jadi, orang yang pasti satu baris dengan Mira adalah Nando.
+[40] Baris | Kiri | Kanan
+1 | Gani | Hira
+2 | Intan | Joko
+3 | Kila | Luki
+4 | Mira | Nando
+[41] Jadi, jawaban yang benar adalah E.
+[42] Soal 3
+[43] Category: Penalaran Verbal
+[44] Lesson: Analitis
+[45] Chapter: Susunan & Posisi
+[46] Tingkat Kesulitan: HOTS
+[47] Bentuk Soal: Option New
+[48] Delapan anggota tim, yaitu Adit, Bima, Citra, Deni, Eka, Fani, Gita, dan Hani, duduk melingkar menghadap pusat meja. Dalam soal ini, kiri seseorang berarti kursi tepat setelahnya searah jarum jam. Adit berhadapan dengan Eka. Bima duduk tepat di kiri Adit. Fani berhadapan dengan Bima. Citra duduk tepat di kiri Bima. Gita berhadapan dengan Citra. Deni duduk tepat di kiri Citra.
+[49] Siapakah yang duduk tepat di kanan Adit?
+[50] A. Fani
+[51] B. Hani
+[52] C. Eka
+[53] D. Gita
+[54] E. Deni
+[55] Jawaban: B
+[56] Pembahasan:
+[57] Untuk membaca susunan melingkar, Adit dapat dijadikan patokan pada salah satu kursi. Soal memberikan definisi khusus bahwa kursi di sebelah kiri seseorang adalah kursi tepat setelahnya jika bergerak searah jarum jam. Definisi ini harus digunakan secara konsisten dan tidak boleh diganti dengan kiri menurut sudut pandang gambar.
+[58] Bima duduk tepat di kiri Adit, sehingga Bima ditempatkan satu kursi setelah Adit searah jarum jam. Citra tepat di kiri Bima, sehingga Citra berada pada kursi berikutnya. Deni tepat di kiri Citra, sehingga empat kursi berurutan yang sudah diketahui adalah Adit, Bima, Citra, dan Deni.
+[59] Pada meja dengan delapan kursi yang jaraknya sama, posisi berhadapan berselisih empat kursi. Eka yang berhadapan dengan Adit harus menempati kursi kelima jika Adit dianggap kursi pertama. Fani yang berhadapan dengan Bima berada pada kursi keenam. Gita yang berhadapan dengan Citra berada pada kursi ketujuh.
+[60] Setelah tujuh peserta tersebut ditempatkan, hanya satu kursi kosong yang tersisa, yaitu kursi kedelapan. Kursi itu ditempati Hani. Urutan searah jarum jam menjadi Adit, Bima, Citra, Deni, Eka, Fani, Gita, dan Hani.
+[61] Karena kiri didefinisikan sebagai arah setelah seseorang searah jarum jam, kanan adalah satu kursi sebelumnya dalam arah yang sama. Tepat sebelum Adit terdapat Hani. Jadi, peserta yang duduk tepat di kanan Adit adalah Hani.
+[62]  [IMAGES ['rId6']]
+[63] Arah searah jarum jam: Adit > Bima > Citra > Deni > Eka > Fani > Gita > Hani > Adit.
+[64] Jadi, jawaban yang benar adalah B.
+[65] Soal 4
+[66] Category: Penalaran Verbal
+[67] Lesson: Analitis
+[68] Chapter: Urutan & Peringkat
+[69] Tingkat Kesulitan: HOTS
+[70] Bentuk Soal: Option New
+[71] Enam peserta, yaitu Uli, Tio, Sinta, Rani, Vina, dan Wawan, memperoleh peringkat dari nilai tertinggi sampai terendah. Rani berada di peringkat keempat. Sinta berada tepat di atas Rani. Tio memperoleh nilai lebih tinggi daripada Sinta. Uli memperoleh nilai lebih tinggi daripada Tio. Vina berada tepat di bawah Rani. Wawan berada di peringkat terakhir.
+[72] Urutan peringkat yang benar adalah ...
+[73] A. Uli - Tio - Sinta - Rani - Vina - Wawan
+[74] B. Tio - Uli - Sinta - Rani - Vina - Wawan
+[75] C. Uli - Sinta - Tio - Rani - Vina - Wawan
+[76] D. Uli - Tio - Sinta - Vina - Rani - Wawan
+[77] E. Tio - Sinta - Uli - Rani - Vina - Wawan
+[78] Jawaban: A
+[79] Pembahasan:
+[80] Peringkat diurutkan dari nilai tertinggi pada posisi pertama sampai nilai terendah pada posisi keenam. Rani sudah diketahui berada pada peringkat keempat, sehingga posisi tersebut dapat langsung ditandai.
+[81] Sinta berada tepat di atas Rani. Artinya, peringkat Sinta tepat satu tingkat lebih baik daripada Rani, yaitu peringkat ketiga. Vina berada tepat di bawah Rani sehingga Vina harus berada pada peringkat kelima. Wawan berada di peringkat terakhir dan karena ada enam peserta, Wawan menempati peringkat keenam.
+[82] Setelah Rani, Sinta, Vina, dan Wawan ditentukan, hanya peringkat pertama dan kedua yang belum terisi. Dua peserta yang tersisa adalah Uli dan Tio. Uli memiliki nilai lebih tinggi daripada Tio, sehingga Uli harus berada di peringkat pertama dan Tio di peringkat kedua. Menukar keduanya akan melanggar ketentuan bahwa Uli lebih tinggi daripada Tio.
+[83] Susunan lengkapnya adalah Uli, Tio, Sinta, Rani, Vina, dan Wawan. Pilihan lain salah karena setidaknya membalik hubungan nilai yang diwajibkan atau memindahkan peserta dari peringkat yang sudah pasti.
+[84] Posisi 1 | Posisi 2 | Posisi 3 | Posisi 4 | Posisi 5 | Posisi 6
+Uli | Tio | Sinta | Rani | Vina | Wawan
+[85] Jadi, jawaban yang benar adalah A.
+[86] Soal 5
+[87] Category: Penalaran Verbal
+[88] Lesson: Analitis
+[89] Chapter: Jadwal
+[90] Tingkat Kesulitan: HOTS
+[91] Bentuk Soal: Option New
+[92] Panitia menyusun enam agenda kegiatan, yaitu Pendaftaran (P), Verifikasi (V), Briefing (B), Simulasi (S), Diskusi (D), dan Penutup (T). Ketentuannya sebagai berikut:
+[93] 1. Pendaftaran harus dilakukan pertama.
+[94] 2. Verifikasi harus dilakukan tepat setelah Pendaftaran.
+[95] 3. Briefing harus dilakukan sebelum Simulasi.
+[96] 4. Diskusi dilakukan tepat setelah Simulasi.
+[97] 5. Penutup harus menjadi agenda terakhir.
+[98] Urutan yang memenuhi seluruh ketentuan adalah ...
+[99] A. P, V, S, D, B, T
+[100] B. P, B, V, S, D, T
+[101] C. P, V, B, D, S, T
+[102] D. P, V, B, S, D, T
+[103] E. V, P, B, S, D, T
+[104] Jawaban: D
+[105] Pembahasan:
+[106] Agenda pertama sudah ditetapkan sebagai Pendaftaran (P). Karena Verifikasi (V) harus dilakukan tepat setelah Pendaftaran, Verifikasi wajib berada di posisi kedua, bukan sekadar dilakukan beberapa waktu sesudahnya. Kedua posisi awal dengan demikian terkunci sebagai P dan V.
+[107] Penutup (T) diwajibkan menjadi kegiatan terakhir. Karena ada enam kegiatan, Penutup harus berada pada posisi keenam. Posisi yang belum diisi hanya posisi ketiga, keempat, dan kelima.
+[108] Tiga agenda yang tersisa adalah Briefing (B), Simulasi (S), dan Diskusi (D). Briefing harus mendahului Simulasi. Selain itu, Diskusi harus berlangsung tepat setelah Simulasi, sehingga kedua kegiatan ini merupakan pasangan berurutan S lalu D.
+[109] Apabila Simulasi berada pada posisi ketiga, Diskusi berada di posisi keempat, sedangkan Briefing hanya dapat berada di posisi kelima. Susunan tersebut tidak sah karena Briefing seharusnya sebelum Simulasi. Oleh sebab itu, Briefing harus menempati posisi ketiga, Simulasi posisi keempat, dan Diskusi posisi kelima.
+[110] Rangkaian akhirnya adalah Pendaftaran, Verifikasi, Briefing, Simulasi, Diskusi, dan Penutup atau P, V, B, S, D, T. Semua ketentuan awal, ketentuan mendahului, pasangan kegiatan, dan kegiatan terakhir telah terpenuhi.
+[111] Posisi 1 | Posisi 2 | Posisi 3 | Posisi 4 | Posisi 5 | Posisi 6
+Pendaftaran | Verifikasi | Briefing | Simulasi | Diskusi | Penutup
+[112] Jadi, jawaban yang benar adalah D.
+[113] Soal 6
+[114] Category: Penalaran Verbal
+[115] Lesson: Analitis
+[116] Chapter: Urutan & Peringkat
+[117] Tingkat Kesulitan: HOTS
+[118] Bentuk Soal: Option New
+[119] Enam peserta, yaitu Kiki, Lala, Miko, Nara, Odi, dan Putri, memperoleh peringkat dari yang tertinggi sampai terendah. Lala memperoleh peringkat lebih tinggi daripada Miko. Miko lebih tinggi daripada Nara. Nara lebih tinggi daripada Odi. Odi lebih tinggi daripada Putri. Tidak terdapat informasi mengenai posisi Kiki dibandingkan peserta lainnya.
+[120] Pernyataan manakah yang PASTI benar?
+[121] A. Kiki berada di peringkat pertama.
+[122] B. Lala berada di peringkat pertama.
+[123] C. Miko memperoleh peringkat lebih tinggi daripada Odi.
+[124] D. Putri berada di peringkat keenam.
+[125] E. Nara berada di peringkat ketiga.
+[126] Jawaban: C
+[127] Pembahasan:
+[128] Pernyataan “lebih tinggi daripada” menunjukkan hubungan peringkat yang dapat dirangkai secara transitif. Lala lebih tinggi daripada Miko, Miko lebih tinggi daripada Nara, Nara lebih tinggi daripada Odi, dan Odi lebih tinggi daripada Putri. Dengan demikian, hubungan yang pasti adalah Lala > Miko > Nara > Odi > Putri, dengan tanda > berarti memperoleh peringkat lebih tinggi.
+[129] Kiki tidak memiliki aturan perbandingan terhadap lima peserta lainnya. Karena ada enam peserta, Kiki dapat berada di atas Lala, di antara dua peserta pada rantai tersebut, atau di bawah Putri. Setiap kemungkinan tetap mempertahankan urutan relatif lima peserta yang disebutkan.
+[130] Jika Kiki berada di peringkat pertama, Lala berada di peringkat kedua dan Putri di peringkat keenam. Akan tetapi, jika Kiki berada di peringkat terakhir, Lala berada di peringkat pertama dan Putri di peringkat kelima. Dua contoh ini membuktikan bahwa Kiki tidak selalu pertama, Lala tidak selalu pertama, dan Putri tidak selalu keenam. Posisi Nara juga dapat berubah dari peringkat ketiga menjadi peringkat keempat bergantung pada letak Kiki.
+[131] Berbeda dari posisi absolut tersebut, hubungan Miko dan Odi tidak dipengaruhi oleh penyisipan Kiki. Miko berada di atas Nara dan Nara berada di atas Odi, sehingga Miko selalu berada di atas Odi. Karena itu, hanya pernyataan bahwa Miko memiliki peringkat lebih tinggi daripada Odi yang pasti benar.
+[132]  [IMAGES ['rId7']]
+[133] Kiki: posisi belum pasti
+[134] Jadi, jawaban yang benar adalah C.
+[135] Soal 7
+[136] Category: Penalaran Verbal
+[137] Lesson: Analitis
+[138] Chapter: Rute & Jalur
+[139] Tingkat Kesulitan: HOTS
+[140] Bentuk Soal: Option New
+[141] Seorang peserta memulai perjalanan dari titik S dan harus berakhir di titik H. Dari S, peserta dapat menuju A atau B. Dari A, peserta dapat menuju C atau D. Dari B, peserta dapat menuju D atau E. Dari C, peserta hanya dapat menuju F. Dari D, peserta dapat menuju F atau G. Dari E, peserta hanya dapat menuju G. Dari F dan G, peserta dapat langsung menuju H.
+[142] Berapa banyak rute berbeda dari S menuju H?
+[143] A. 2 rute
+[144] B. 3 rute
+[145] C. 4 rute
+[146] D. 5 rute
+[147] E. 6 rute
+[148] Jawaban: E
+[149] Pembahasan:
+[150] Rute perlu dihitung berdasarkan arah perjalanan yang diizinkan, bukan hanya jumlah titik yang tersedia. Dari titik awal S terdapat dua pilihan pertama, yaitu menuju A atau menuju B. Setiap cabang dihitung secara terpisah agar tidak ada jalur yang terlewat atau dihitung dua kali.
+[151] Jika peserta memilih S menuju A, dari A ada dua pilihan, yaitu C dan D. Melalui C, perjalanan hanya dapat diteruskan ke F kemudian H sehingga terbentuk S-A-C-F-H. Melalui D, terdapat dua kemungkinan lanjutan, yaitu F lalu H atau G lalu H. Dengan demikian, cabang S-A menghasilkan S-A-C-F-H, S-A-D-F-H, dan S-A-D-G-H, sebanyak tiga rute.
+[152] Jika peserta memilih S menuju B, dari B tersedia pilihan D atau E. Melalui D, perjalanan dapat berlanjut ke F-H atau G-H, sehingga diperoleh S-B-D-F-H dan S-B-D-G-H. Melalui E, peserta harus ke G kemudian H, sehingga diperoleh S-B-E-G-H. Cabang S-B juga menghasilkan tiga rute.
+[153] Tidak terdapat sambungan tambahan dari C ke G atau dari E ke F, sehingga kemungkinan lain yang menggunakan sambungan tersebut tidak sah. Semua rute yang tercatat berakhir di H dan mematuhi arah perpindahan yang diberikan. Jumlah seluruh rute adalah tiga dari cabang A dan tiga dari cabang B, yaitu enam rute berbeda.
+[154]  [IMAGES ['rId8']]
+[155] No. | Lintasan dari awal ke tujuan
+1 | S - A - C - F - H
+2 | S - A - D - F - H
+3 | S - A - D - G - H
+4 | S - B - D - F - H
+5 | S - B - D - G - H
+6 | S - B - E - G - H
+[156] Total: 6 rute berbeda.
+[157] Jadi, jawaban yang benar adalah E.
+[158] Soal 8
+[159] Category: Penalaran Verbal
+[160] Lesson: Analitis
+[161] Chapter: Rute & Jalur
+[162] Tingkat Kesulitan: HOTS
+[163] Bentuk Soal: Option New
+[164] Seorang pengunjung bergerak dari titik P menuju titik W. Dari P, pengunjung dapat menuju Q atau R. Dari Q, pengunjung dapat menuju S atau T. Dari R, pengunjung hanya dapat menuju T. Dari S, pengunjung menuju U. Dari T, pengunjung dapat menuju U atau V. Dari U dan V, pengunjung dapat langsung menuju W.
+[165] Berapa banyak rute berbeda yang dapat dilalui?
+[166] A. 4 rute
+[167] B. 5 rute
+[168] C. 6 rute
+[169] D. 7 rute
+[170] E. 8 rute
+[171] Jawaban: B
+[172] Pembahasan:
+[173] Titik awal P mempunyai dua cabang, yaitu menuju Q atau menuju R. Untuk menghitung jumlah rute, semua kelanjutan yang sah dari setiap cabang perlu didaftarkan sampai mencapai W.
+[174] Pada cabang P-Q, dari Q peserta dapat memilih S atau T. Bila memilih S, jalur berikutnya hanya S-U-W, sehingga terbentuk rute P-Q-S-U-W. Bila memilih T, tersedia dua pilihan, yaitu T-U-W dan T-V-W, sehingga terbentuk P-Q-T-U-W dan P-Q-T-V-W. Karena itu cabang melalui Q menyumbang tiga rute.
+[175] Pada cabang P-R, pengunjung harus menuju T karena tidak ada sambungan lain dari R. Dari T tersedia dua pilihan, yaitu U atau V. Kedua pilihan langsung mengarah ke W, sehingga diperoleh P-R-T-U-W dan P-R-T-V-W. Cabang melalui R menyumbang dua rute.
+[176] Rute melalui Q dan R tidak sama karena berbeda pada perpindahan pertama setelah P. Semua rute tersebut mengikuti sambungan yang tersedia dan berakhir di W. Totalnya adalah tiga ditambah dua, sehingga terdapat lima rute berbeda.
+[177]  [IMAGES ['rId8']]
+[178] No. | Lintasan dari awal ke tujuan
+1 | P - Q - S - U - W
+2 | P - Q - T - U - W
+3 | P - Q - T - V - W
+4 | P - R - T - U - W
+5 | P - R - T - V - W
+[179] Total: 5 rute berbeda.
+[180] Jadi, jawaban yang benar adalah B.
+[181] Soal 9
+[182] Category: Penalaran Verbal
+[183] Lesson: Analitis
+[184] Chapter: Rute & Jalur
+[185] Tingkat Kesulitan: HOTS
+[186] Bentuk Soal: Option New
+[187] Seorang petugas harus bergerak dari ruang K menuju ruang R. Dari K, petugas dapat menuju L atau M. Dari L, petugas dapat menuju N atau O. Dari M, petugas juga dapat menuju N atau O. Dari N, petugas harus menuju P. Dari O, petugas harus menuju Q. Dari P dan Q, petugas dapat langsung menuju R.
+[188] Berapa banyak rute berbeda yang tersedia?
+[189] A. 4 rute
+[190] B. 3 rute
+[191] C. 5 rute
+[192] D. 6 rute
+[193] E. 2 rute
+[194] Jawaban: A
+[195] Pembahasan:
+[196] Dari titik K terdapat dua kemungkinan perjalanan pertama, yaitu menuju L atau menuju M. Baik L maupun M masing-masing terhubung ke N dan O. Karena itu setiap pilihan pertama masih memiliki dua pilihan pada tahap berikutnya.
+[197] Jika memilih K-L dan dilanjutkan ke N, petugas wajib menuju P kemudian R, sehingga terbentuk K-L-N-P-R. Jika dari L memilih O, perjalanan harus menuju Q kemudian R, sehingga terbentuk K-L-O-Q-R.
+[198] Jika memilih K-M dan dilanjutkan ke N, kelanjutannya tetap N-P-R, sehingga terbentuk K-M-N-P-R. Jika dari M memilih O, kelanjutannya O-Q-R, sehingga terbentuk K-M-O-Q-R.
+[199] Meskipun dua rute dapat bergabung kembali di N atau O, rute tersebut tetap berbeda karena melewati L atau M sebelumnya. Sebaliknya, tidak ada pilihan tambahan dari N selain ke P atau dari O selain ke Q. Dengan demikian, ada dua pilihan pertama dan masing-masing mempunyai dua pilihan lanjutan, sehingga jumlahnya empat rute berbeda.
+[200]  [IMAGES ['rId8']]
+[201] No. | Lintasan dari awal ke tujuan
+1 | K - L - N - P - R
+2 | K - L - O - Q - R
+3 | K - M - N - P - R
+4 | K - M - O - Q - R
+[202] Total: 4 rute berbeda.
+[203] Jadi, jawaban yang benar adalah A.
+[204] Soal 10
+[205] Category: Penalaran Verbal
+[206] Lesson: Analitis
+[207] Chapter: Logika Pernyataan
+[208] Tingkat Kesulitan: HOTS
+[209] Bentuk Soal: Option New
+[210] Lima dokumen, yaitu P, Q, R, S, dan T, disusun pada rak bernomor 1 sampai 5 dari atas ke bawah. R berada di rak ke-3. Q harus berada pada rak tepat di atas atau tepat di bawah R. S berada di bawah T. P tidak berada di rak pertama.
+[211] Pernyataan manakah yang PASTI benar?
+[212] A. Q berada di rak ke-2.
+[213] B. P berada di rak ke-4.
+[214] C. S berada di rak ke-5.
+[215] D. T tidak berada di rak ke-5.
+[216] E. Q berada di rak ke-4.
+[217] Jawaban: D
+[218] Pembahasan:
+[219] Rak diberi nomor dari atas ke bawah, sehingga rak pertama adalah yang tertinggi dan rak kelima adalah yang terendah. R telah ditentukan berada pada rak ketiga. Q wajib tepat bersebelahan dengan R, sehingga Q hanya mungkin berada pada rak kedua atau keempat. Q tidak mungkin menempati rak pertama atau kelima karena keduanya tidak langsung bersebelahan dengan rak ketiga.
+[220] Selain aturan tersebut, S harus berada di bawah T. Ini berarti nomor rak S harus lebih besar daripada nomor rak T. Agar aturan itu terpenuhi, setidaknya harus tersedia satu rak yang lebih rendah dari rak T untuk ditempati S.
+[221] Rak kelima merupakan rak paling bawah. Jika T diletakkan pada rak kelima, tidak ada rak dengan nomor lebih besar yang dapat ditempati S. Akibatnya aturan S di bawah T tidak mungkin dipenuhi. Oleh karena itu, T pasti tidak berada di rak kelima.
+[222] Informasi lain tidak cukup untuk menetapkan bahwa Q selalu di rak kedua atau keempat, atau bahwa P dan S selalu pada satu rak tertentu. Pernyataan pasti harus berlaku dalam setiap susunan yang sah, bukan hanya satu contoh. Kesimpulan yang memenuhi syarat ini adalah T tidak berada di rak ke-5.
+[223]  [IMAGES ['rId9']]
+[224] Kondisi | Dampak logis
+1 | Q dapat berada pada rak 2 atau 4
+2 | S harus lebih rendah daripada T
+3 | T tidak mungkin pada rak 5
+[225] Jadi, jawaban yang benar adalah D.
+[226] Soal 11
+[227] Category: Penalaran Verbal
+[228] Lesson: Analitis
+[229] Chapter: Logika Pernyataan
+[230] Tingkat Kesulitan: HOTS
+[231] Bentuk Soal: Option New
+[232] Lima berkas, yaitu J, K, L, M, dan N, ditempatkan pada petak bernomor 1 sampai 5 dari kiri ke kanan. Ketentuannya sebagai berikut:
+[233] 1. L berada di petak ke-3.
+[234] 2. J harus berada tepat di sebelah K.
+[235] 3. M tidak berada di petak ke-1.
+[236] 4. N tidak boleh berada tepat di sebelah L.
+[237] Jika K berada di petak ke-4, seluruh pernyataan berikut benar, kecuali ...
+[238] A. J berada di petak ke-5.
+[239] B. N berada di petak ke-1.
+[240] C. M berada di petak ke-1.
+[241] D. L berada di petak ke-3.
+[242] E. M berada di petak ke-2.
+[243] Jawaban: C
+[244] Pembahasan:
+[245] Soal menambahkan ketentuan bahwa K berada pada petak keempat, sementara L sudah berada pada petak ketiga. Kedua petak tersebut langsung dapat ditandai karena posisinya pasti.
+[246] J harus tepat bersebelahan dengan K. Tetangga langsung petak keempat adalah petak ketiga dan petak kelima. Petak ketiga sudah ditempati L sehingga tidak tersedia untuk J. Karena itu J harus menempati petak kelima.
+[247] Setelah L, K, dan J ditempatkan, hanya petak pertama dan kedua yang masih kosong. Dua berkas yang tersisa adalah M dan N. N tidak boleh berada tepat di sebelah L yang menempati petak ketiga. Jika N berada di petak kedua, N tepat bersebelahan dengan L dan ketentuan dilanggar. Dengan demikian, N harus berada di petak pertama, sedangkan M berada di petak kedua.
+[248] Susunan tunggal yang memenuhi seluruh kondisi adalah N-M-L-K-J. Susunan ini juga memenuhi ketentuan M tidak berada di petak pertama. Karena M justru harus berada di petak kedua, pernyataan bahwa M berada di petak pertama adalah pernyataan yang tidak mungkin benar.
+[249] Posisi 1 | Posisi 2 | Posisi 3 | Posisi 4 | Posisi 5
+N | M | L | K | J
+[250] Jadi, jawaban yang benar adalah C.
+[251] Soal 12
+[252] Category: Penalaran Verbal
+[253] Lesson: Analitis
+[254] Chapter: Logika Pernyataan
+[255] Tingkat Kesulitan: HOTS
+[256] Bentuk Soal: Option New
+[257] Lima proposal, yaitu A, B, C, D, dan E, ditempatkan pada lima petak dari kiri ke kanan. C berada di petak ke-3. A harus berada tepat di sebelah B. D harus berada di sebelah kiri E. B tidak boleh berada di petak ke-5.
+[258] Pernyataan berikut mungkin benar, kecuali ...
+[259] A. A berada di petak ke-1.
+[260] B. B berada di petak ke-1.
+[261] C. D berada di petak ke-4.
+[262] D. E berada di petak ke-2.
+[263] E. A berada di petak ke-4.
+[264] Jawaban: E
+[265] Pembahasan:
+[266] C selalu berada pada petak ketiga. Selain itu, A harus bersebelahan langsung dengan B, B tidak boleh berada di petak kelima, dan D harus berada di kiri E. Kata “kecuali” dalam pertanyaan berarti kita mencari pernyataan yang tidak dapat terjadi pada susunan mana pun yang memenuhi seluruh ketentuan.
+[267] Periksa kemungkinan A berada di petak keempat. Karena A dan B harus bersebelahan, B harus menempati petak ketiga atau kelima. Petak ketiga sudah diisi C, sedangkan petak kelima dilarang bagi B. Kedua pilihan tersebut tidak tersedia, sehingga A tidak mungkin berada di petak keempat.
+[268] Untuk memastikan pilihan lain memang mungkin, gunakan contoh susunan yang sah. Susunan A-B-C-D-E menunjukkan A dapat berada di petak pertama dan D dapat berada di petak keempat. Susunan B-A-C-D-E menunjukkan B dapat berada di petak pertama. Susunan D-E-C-B-A menunjukkan E dapat berada di petak kedua. Dalam ketiga contoh, C tetap di petak ketiga, A dan B bersebelahan, B tidak di petak kelima, serta D berada di kiri E.
+[269] Karena pilihan A, B, C, dan D masing-masing mempunyai setidaknya satu contoh susunan yang memenuhi ketentuan, keempat pernyataan itu mungkin benar. Satu-satunya pernyataan yang mustahil adalah A berada di petak keempat.
+[270]  [IMAGES ['rId9']]
+[271] Contoh susunan valid | 1 | 2 | 3 | 4 | 5
+1 | A | B | C | D | E
+2 | B | A | C | D | E
+3 | D | E | C | B | A
+[272] Jadi, jawaban yang benar adalah E.
+[273] Soal 13
+[274] Category: Penalaran Verbal
+[275] Lesson: Analitis
+[276] Chapter: Distribusi & Kategori
+[277] Tingkat Kesulitan: HOTS
+[278] Bentuk Soal: Option New
+[279] Empat karyawan, yaitu Adit, Bunga, Celi, dan Danu, masing-masing mengikuti tepat dua kegiatan dari Mentoring, Training, Riset, dan Fasilitasi. Diketahui bahwa:
+[280] 1. Adit mengikuti Mentoring.
+[281] 2. Bunga mengikuti Riset.
+[282] 3. Celi tidak mengikuti Fasilitasi.
+[283] 4. Danu mengikuti Training.
+[284] 5. Tepat dua orang mengikuti Mentoring.
+[285] 6. Tepat dua orang mengikuti Training.
+[286] 7. Hanya Bunga dan Danu yang mengikuti Riset.
+[287] Siapakah yang mengikuti Mentoring dan Training sekaligus?
+[288] A. Adit
+[289] B. Celi
+[290] C. Bunga
+[291] D. Danu
+[292] E. Adit dan Bunga
+[293] Jawaban: B
+[294] Pembahasan:
+[295] Setiap karyawan mengikuti tepat dua dari empat kegiatan. Informasi bahwa hanya Bunga dan Danu mengikuti Riset berarti keduanya mengikuti Riset, sedangkan Adit dan Celi tidak mengikuti Riset. Aturan ini penting karena langsung menghilangkan satu kemungkinan kegiatan bagi Celi.
+[296] Danu diketahui mengikuti Training dan juga termasuk dua peserta Riset. Karena setiap orang hanya dapat mengikuti dua kegiatan, pilihan Danu sudah lengkap, yaitu Training dan Riset. Dengan demikian, Danu tidak mengikuti Mentoring atau Fasilitasi.
+[297] Celi tidak mengikuti Fasilitasi. Celi juga tidak mengikuti Riset karena kegiatan tersebut hanya untuk Bunga dan Danu. Dari empat kegiatan yang tersedia, dua kegiatan yang masih mungkin bagi Celi hanya Mentoring dan Training. Karena Celi harus mengikuti tepat dua kegiatan, Celi pasti mengikuti keduanya sekaligus.
+[298] Ketentuan jumlah peserta dapat digunakan untuk memeriksa hasil. Tepat dua orang mengikuti Mentoring, yaitu Adit yang sudah diketahui mengikuti Mentoring dan Celi. Tepat dua orang mengikuti Training, yaitu Danu dan Celi. Maka Adit tidak mengikuti Training atau Riset, sehingga kegiatan keduanya adalah Fasilitasi. Bunga tidak mengikuti Mentoring atau Training karena kuota keduanya sudah terpenuhi; bersama Riset, kegiatan kedua Bunga adalah Fasilitasi.
+[299] Seluruh karyawan kini mengikuti tepat dua kegiatan dan ketentuan jumlah peserta terpenuhi. Dengan demikian, peserta Mentoring sekaligus Training adalah Celi.
+[300] Kegiatan | Adit | Bunga | Celi | Danu
+Mentoring | YA | - | YA | -
+Training | - | - | YA | YA
+Riset | - | YA | - | YA
+Fasilitasi | YA | YA | - | -
+[301] Jadi, jawaban yang benar adalah B.
+[302] Soal 14
+[303] Category: Penalaran Verbal
+[304] Lesson: Analitis
+[305] Chapter: Distribusi & Kategori
+[306] Tingkat Kesulitan: HOTS
+[307] Bentuk Soal: Option New
+[308] Sebuah tim membutuhkan ruang yang memiliki proyektor, internet, AC, papan tulis, dan fasilitas rekaman. Terdapat lima ruang, yaitu Ruang A, B, C, D, dan E. Proyektor tersedia di Ruang A, C, dan D. Internet tersedia di Ruang A, B, D, dan E. Semua ruang memiliki papan tulis. Semua ruang memiliki AC kecuali Ruang C. Fasilitas rekaman hanya tersedia di Ruang B dan D.
+[309] Ruang manakah yang memenuhi seluruh kebutuhan tim?
+[310] A. Ruang D
+[311] B. Ruang A
+[312] C. Ruang B
+[313] D. Ruang C
+[314] E. Ruang E
+[315] Jawaban: A
+[316] Pembahasan:
+[317] Tim membutuhkan lima fasilitas secara bersamaan, yaitu proyektor, internet, AC, papan tulis, dan rekaman. Karena semua fasilitas wajib tersedia, sebuah ruang harus dieliminasi begitu diketahui tidak memiliki satu saja fasilitas tersebut.
+[318] Proyektor hanya tersedia di Ruang A, C, dan D. Dengan demikian, Ruang B dan E langsung tidak memenuhi persyaratan, meskipun keduanya memiliki fasilitas lain. Pemeriksaan dapat difokuskan pada tiga kandidat tersisa.
+[319] Ruang A mempunyai proyektor, internet, AC, dan papan tulis. Namun fasilitas rekaman hanya tersedia di Ruang B dan D sehingga Ruang A gugur. Ruang C mempunyai proyektor dan papan tulis, tetapi internet tidak tersedia di Ruang C dan AC juga tidak tersedia di sana. Selain itu, Ruang C tidak termasuk ruang dengan fasilitas rekaman.
+[320] Ruang D termasuk ruang dengan proyektor, termasuk ruang yang memiliki internet, dan memiliki AC karena satu-satunya ruang yang tidak memiliki AC adalah Ruang C. C, mempunyai papan tulis karena semua ruang memilikinya, serta termasuk ruang dengan fasilitas rekaman. Artinya, kelima kebutuhan tersedia sekaligus di Ruang D.
+[321] Jadi, Ruang D merupakan satu-satunya pilihan yang memenuhi seluruh kebutuhan tim. Memilih ruang lain hanya karena memiliki sebagian besar fasilitas akan keliru karena pertanyaan meminta seluruh fasilitas.
+[322] Fasilitas | Ruang A | Ruang B | Ruang C | Ruang D | Ruang E
+Proyektor | YA | - | YA | YA | -
+Internet | YA | YA | - | YA | YA
+AC | YA | YA | - | YA | YA
+Papan tulis | YA | YA | YA | YA | YA
+Rekaman | - | YA | - | YA | -
+[323] Jadi, jawaban yang benar adalah A.
+[324] Soal 15
+[325] Category: Penalaran Verbal
+[326] Lesson: Analitis
+[327] Chapter: Distribusi & Kategori
+[328] Tingkat Kesulitan: HOTS
+[329] Bentuk Soal: Option New
+[330] Enam peserta, yaitu Andi, Beni, Citra, Dela, Eko, dan Fani, dibagi ke dalam tiga kelompok, yaitu Kelompok X, Kelompok Y, dan Kelompok Z. Setiap kelompok terdiri atas tepat dua orang. Andi berada di Kelompok X. Beni berada di Kelompok Y. Citra berada di Kelompok Z. Dela berada satu kelompok dengan Andi. Eko tidak berada di Kelompok Y. Fani tidak berada di Kelompok Z.
+[331] Siapakah yang berada satu kelompok dengan Beni?
+[332] A. Dela
+[333] B. Eko
+[334] C. Citra
+[335] D. Fani
+[336] E. Andi
+[337] Jawaban: D
+[338] Pembahasan:
+[339] Terdapat enam peserta yang harus dibagi menjadi tiga kelompok, masing-masing berisi tepat dua orang. Andi sudah berada di Kelompok X. Dela juga harus berada satu kelompok dengan Andi, sehingga dua tempat di Kelompok X terisi oleh Andi dan Dela. Kelompok X sudah penuh dan tidak dapat menerima Eko ataupun Fani.
+[340] Beni diketahui berada di Kelompok Y, sedangkan Citra berada di Kelompok Z. Setelah Andi, Dela, Beni, dan Citra ditempatkan, dua peserta yang belum masuk kelompok adalah Eko dan Fani. Masing-masing hanya dapat mengisi satu kursi kosong di Kelompok Y atau Kelompok Z.
+[341] Eko tidak boleh berada di Kelompok Y. Karena Kelompok X telah penuh, Eko harus ditempatkan di Kelompok Z bersama Citra. Setelah Eko ditempatkan, Kelompok Z juga penuh.
+[342] Fani harus mengisi satu-satunya posisi yang tersisa, yaitu di Kelompok Y bersama Beni. Penempatan ini sekaligus sesuai dengan ketentuan bahwa Fani tidak berada di Kelompok Z.
+[343] Susunan akhirnya adalah Kelompok X berisi Andi dan Dela, Kelompok Y berisi Beni dan Fani, serta Kelompok Z berisi Citra dan Eko. Setiap kelompok beranggotakan tepat dua peserta dan seluruh batasan dipenuhi. Jadi, peserta yang satu kelompok dengan Beni adalah Fani.
+[344] Kelompok | Anggota 1 | Anggota 2
+Kelompok X | Andi | Dela
+Kelompok Y | Beni | Fani
+Kelompok Z | Citra | Eko
+[345] Jadi, jawaban yang benar adalah D.

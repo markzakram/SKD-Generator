@@ -4,7 +4,6 @@ import { MARK_GLYPHS } from './glyphs';
 import { LIMIT, layoutOk, packPositions, polar, tierOf, type Built } from './compose';
 import { flipScene, mk, norm, polygonPart, rotateScene, rotationBetween, scene, worldPoints } from './scene';
 import { panel, singled, sidesOf } from './solve';
-import { buildLineOdd } from './garis-soal';
 import { STEMS } from './stems';
 import { dirWord, fillWord, glyphName, listText } from './text';
 
@@ -174,5 +173,5 @@ function buildSides(a: Rng, tier: number): Built | null {
 
 export function buildOdd(a: Rng, level: Difficulty): Built | null {
   const tier = Math.min(2, tierOf(level)), roll = a.next();
-  return roll < 0.3 ? buildOrder(a, tier) : roll < 0.45 ? buildParity(a, tier) : roll < 0.6 ? buildSides(a, tier) : buildLineOdd(a, level);
+  return roll < 0.5 ? buildOrder(a, tier) : roll < 0.75 ? buildParity(a, tier) : buildSides(a, tier);
 }

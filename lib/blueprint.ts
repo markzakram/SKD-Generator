@@ -3,12 +3,14 @@ import { TOPICS } from './config';
 import { distribution } from './generate';
 import { TIU_FAMILIES } from './tiu';
 import type { BlueprintRow, Difficulty, Settings, Subtest } from './types';
+import { localRecipes, usesLocal } from './local';
 
 export const LEVELS: Difficulty[] = ['mudah', 'sedang', 'sulit'];
 export function rowCapacity(settings: Settings, row: BlueprintRow): number {
+  if(usesLocal(settings,row.subtest))return localRecipes(row.subtest,[row.topic],row.difficulty,settings.subtopics).length;
   if (row.subtest === 'TIU') {
     const families = TIU_FAMILIES.filter((f) => f.topic === row.topic && f.levels.includes(row.difficulty) && (!settings.subtopics.length || settings.subtopics.includes(f.topic + '::' + f.name)));
-    return !families.length ? 0 : families.every((f) => f.id === 'analogi') ? 10 : 10000;
+    return !families.length ? bankFor('TIU',[row.topic],row.difficulty,settings.subtopics).length : families.every((f) => f.id === 'analogi') ? 10 : 10000;
   }
   return bankFor(row.subtest, [row.topic], row.difficulty, settings.subtopics).length;
 }

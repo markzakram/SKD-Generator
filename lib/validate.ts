@@ -5,15 +5,17 @@ import { checkScene, solveScene } from './figural/solve';
 import { solveModel } from './models';
 import { checkBlueprint, actualBlueprint } from './blueprint';
 import { validationBinding } from './binding';
+import { profilePlan, mappingMatch } from './mapping';
 import { distribution, fingerprint } from './generate';
 import type { Audit, Package, Question, Settings } from './types';
+import { auditLocal } from './local';
 
 export function auditQuestion(question: Question): string[] {
   const errors: string[] = [];
   const fail = (text: string) => errors.push(question.no + ': ' + text);
   if (!question.stem.trim() || !question.explanation.trim()) fail('pertanyaan atau pembahasan kosong');
   if (question.binding && question.binding !== validationBinding(question)) fail('stimulus, model, atau pembahasan berubah; verifikasi ulang diperlukan');
-  if (question.table && (!Array.isArray(question.table.headers) || !question.table.headers.length || question.table.headers.length > 12 || question.table.headers.some((h) => typeof h !== 'string') || !Array.isArray(question.table.rows) || question.table.rows.length > 30 || question.table.rows.some((row) => !Array.isArray(row) || row.length !== question.table!.headers.length || row.some((cell) => typeof cell !== 'string')))) fail('struktur tabel tidak valid');
+  if (question.table && (!Array.isArray(question.table.headers) || question.table.headers.length > 12 || question.table.headers.some((h) => typeof h !== 'string') || !Array.isArray(question.table.rows) || !question.table.rows.length || question.table.rows.length > 30 || !(question.table.headers.length || question.table.rows[0]?.length) || (question.table.rows[0]?.length ?? 0) > 12 || question.table.rows.some((row) => !Array.isArray(row) || row.length !== (question.table!.headers.length || question.table!.rows[0]?.length) || row.some((cell) => typeof cell !== 'string')))) fail('struktur tabel tidak valid');
   if (question.visual && (!['analogi', 'serial', 'ketidaksamaan', 'matriks'].includes(question.visual.kind) || !Number.isInteger(question.visual.columns) || question.visual.columns < 1 || question.visual.columns > 8 || !Array.isArray(question.visual.figures) || question.visual.figures.length > 16 ||
     (question.visual.scenes !== undefined && (!Array.isArray(question.visual.scenes) || question.visual.scenes.length > 16)))) { fail('struktur stimulus gambar tidak valid'); return errors; }
   if (question.visual?.oddRule && !['attribute', 'count-fill', 'turn-count'].includes(question.visual.oddRule)) fail('aturan kelompok gambar tidak valid');
@@ -58,6 +60,8 @@ export function auditQuestion(question: Question): string[] {
       if (model.kind === 'route' && model.nodes.length > 12) throw new Error('jumlah simpul di luar batas');
       const valid = solveModel(question);
       if (valid.filter(Boolean).length !== 1 || !valid[question.answer]) fail('hasil solver model berbeda dari kunci');
+    } else if (proof.kind === 'local') {
+      auditLocal(question).forEach(fail);
     } else if (proof.kind === 'manual') {
       if (!proof.note.trim()) fail('catatan verifikasi manual diperlukan');
     } else {
@@ -78,9 +82,13 @@ export function auditQuestion(question: Question): string[] {
 export function auditPackages(packages: Package[], settings: Settings): Audit {
   const errors: string[] = [], global = new Set<string>(), keyDistribution = [0, 0, 0, 0, 0];
   let checked = 0, duplicateCount = 0;
-  const expected = distribution(settings.mode, settings.count);
+  const expected = settings.profile==='tryout-2027' ? Object.fromEntries((['TWK','TIU','TKP'] as const).map((subtest)=>[subtest,profilePlan(settings).filter((row)=>row.subtest===subtest).reduce((n,row)=>n+row.count,0)])) as Record<'TWK'|'TIU'|'TKP',number> : distribution(settings.mode, settings.count);
   if (packages.length !== settings.packages) errors.push('Jumlah paket berbeda dari permintaan.');
-  packages.forEach((pack) => {
+  packages.forEach((pack,packageIndex) => {
+    if (settings.profile==='tryout-2027') for (const row of profilePlan(settings)) {
+      const matches=pack.questions.filter((q)=>q.mappingId===row.id);
+      if (matches.length!==row.count || matches.some((q)=>!mappingMatch(q,row,packageIndex) && !(q.origin==='pola' && q.subtopic===row.chapter))) errors.push(pack.id+': chapter/kuota mapping berbeda: '+row.chapter);
+    }
     if (settings.blueprint) errors.push(...checkBlueprint(actualBlueprint(pack.questions), { ...settings, uniqueAcross: false }).map((error) => pack.id + ': ' + error));
     if (settings.blueprint) for (const row of settings.blueprint) {
       if (pack.questions.filter((q) => q.subtest === row.subtest && q.topic === row.topic && q.difficulty === row.difficulty).length !== row.count) errors.push(pack.id + ': kuota blueprint berbeda untuk ' + row.topic + '/' + row.difficulty);
@@ -95,7 +103,7 @@ export function auditPackages(packages: Package[], settings: Settings): Audit {
       if (question.no !== index + 1) errors.push(pack.id + ': nomor soal tidak berurutan.');
       if (settings.difficulty !== 'campuran' && question.difficulty !== settings.difficulty) errors.push(pack.id + ': kesulitan di luar filter.');
       if (settings.topics.length && !settings.topics.includes(question.topic)) errors.push(pack.id + ': materi di luar filter.');
-      if (settings.subtopics.length && !settings.subtopics.includes(question.topic + '::' + question.subtopic)) errors.push(pack.id + ': submateri di luar filter.');
+      if (settings.profile!=='tryout-2027'&&settings.subtopics.length && !settings.subtopics.includes(question.topic + '::' + question.subtopic)) errors.push(pack.id + ': submateri di luar filter.');
       const signature = fingerprint(question);
       if (local.has(signature) || (settings.uniqueAcross && global.has(signature))) {
         duplicateCount++; errors.push(pack.id + ': soal berulang.');

@@ -71,11 +71,14 @@ export function solidPng(width: number, height: number, tag: string): Uint8Array
 function installBrowserStub() {
   const g = globalThis as Record<string, unknown>;
   g.Image = class { onload: (() => void) | null = null; onerror: ((e: unknown) => void) | null = null; width = 0; height = 0; tag = '';
-    set src(url: string) { void (async () => { try { const text = await resolveObjectURL(url)!.text(), size = text.match(/width="([\d.]+)" height="([\d.]+)"/)!; this.width = Number(size[1]); this.height = Number(size[2]); this.tag = fnv(text); this.onload?.(); } catch (error) { this.onerror?.(error); } })(); } };
+    set src(url: string) { void (async () => { try {
+      if(url.startsWith('data:image/png;base64,')){const data=Buffer.from(url.slice(22),'base64');this.width=data.readUInt32BE(16);this.height=data.readUInt32BE(20);this.tag='math';}
+      else {const text = await resolveObjectURL(url)!.text(), size = text.match(/width="([\d.]+)" height="([\d.]+)"/)!; this.width = Number(size[1]); this.height = Number(size[2]); this.tag = fnv(text);}
+      this.onload?.(); } catch (error) { this.onerror?.(error); } })(); } };
   g.document = { createElement: (name: string) => {
     assert.equal(name, 'canvas');
     let drawn = '';
-    const canvas = { width: 0, height: 0, getContext: () => ({ fillStyle: '', fillRect() {}, drawImage(image: { tag: string }) { drawn = image.tag; } }), toDataURL() { return 'data:image/png;base64,' + Buffer.from(solidPng(canvas.width, canvas.height, drawn)).toString('base64'); } };
+    const canvas = { width: 0, height: 0, getContext: () => ({ fillStyle: '', font:'', textBaseline:'', scale(){}, fillRect() {}, fillText(){}, measureText(text:string){return {width:text.length*7};}, drawImage(image: { tag: string }) { drawn = image.tag; } }), toDataURL() { return 'data:image/png;base64,' + Buffer.from(solidPng(canvas.width, canvas.height, drawn)).toString('base64'); } };
     return canvas;
   } };
 }
@@ -271,8 +274,9 @@ export async function runFiguralChecks(check: Check): Promise<Record<string, unk
   const exportPacks = generate(settingsExport), figuralCount = exportPacks.flatMap((p) => p.questions).filter((q) => q.visual).length;
   const word = new Uint8Array(await (await wordBlob(exportPacks, settingsExport, 'pembahasan')).arrayBuffer()), parts = unzipSync(word);
   const media = Object.keys(parts).filter((name) => name.startsWith('word/media/') && name.endsWith('.png'));
-  check(media.length === figuralCount && media.every((name) => parts[name][0] === 137 && parts[name][1] === 80), 'Word: setiap soal figural harus memuat satu gambar PNG (' + media.length + ' dari ' + figuralCount + ')');
+  check(media.length >= figuralCount && media.every((name) => parts[name][0] === 137 && parts[name][1] === 80), 'Word: gambar figural dan rumus merupakan PNG yang sah');
   const documentXml = new TextDecoder().decode(parts['word/document.xml']);
+  check((documentXml.match(/name="figural-/g)??[]).length===figuralCount,'Word: satu gambar berlabel figural per soal; rumus terpisah');
   check(documentXml.includes('Soal figural') && documentXml.includes('Jawaban:') && !documentXml.includes('undefined'), 'Word: dokumen harus memuat teks soal dan pembahasan');
   const pdf = Buffer.from(await (await pdfBlob(exportPacks, settingsExport, 'soal')).arrayBuffer()).toString('latin1');
   check(pdf.startsWith('%PDF-') && (pdf.match(/\/Type\s*\/Page[^s]/g) ?? []).length >= 2, 'PDF: berkas harus sah dan berhalaman');

@@ -5,13 +5,14 @@ import { LABELS } from '@/lib/config';
 import { questionIssues, qualitySummary, setReview, STATUS_LABELS } from '@/lib/quality';
 import { copyQuestionImage } from '@/lib/take-actions';
 import { togglePick } from '@/lib/take';
-import type { BlueprintRow, Package, Question, ReviewStatus } from '@/lib/types';
+import type { BlueprintRow, Package, Question, ReviewStatus, Settings } from '@/lib/types';
+import { profileCoverage } from '@/lib/mapping';
 import Icon from './Icon';
 import QuestionCard from './QuestionCard';
 import QuestionEditor from './QuestionEditor';
 import TakePanel, { Toast, useToast } from './TakeTools';
 
-export default function Workbench({ pack, blueprint, title = '', reviewer, onReviewer, onChange, onReplace }: { pack: Package; blueprint?: BlueprintRow[]; title?: string; reviewer: string; onReviewer: (s: string) => void; onChange: (q: Question, label: string) => void; onReplace: (q: Question) => void }) {
+export default function Workbench({ pack, blueprint, settings, title = '', reviewer, onReviewer, onChange, onReplace }: { pack: Package; blueprint?: BlueprintRow[]; settings?: Settings; title?: string; reviewer: string; onReviewer: (s: string) => void; onChange: (q: Question, label: string) => void; onReplace: (q: Question) => void }) {
   const [selected, setSelected] = useState(pack.questions[0]?.id), [search, setSearch] = useState(''), [subtest, setSubtest] = useState('all'), [status, setStatus] = useState('all'), [page, setPage] = useState(0);
   const [editing, setEditing] = useState(false), [showAnswers, setShowAnswers] = useState(true), [note, setNote] = useState(''), [ack, setAck] = useState(false), [error, setError] = useState('');
   const [pick, setPick] = useState(false), [picked, setPicked] = useState<Set<string>>(() => new Set()), { toast, notify } = useToast();
@@ -26,6 +27,7 @@ export default function Workbench({ pack, blueprint, title = '', reviewer, onRev
   const review = (state: ReviewStatus) => { try { onChange(setReview(q, state, note, reviewer), 'Soal ' + q.no + ': ' + STATUS_LABELS[state]); } catch (e) { setError(e instanceof Error ? e.message : 'Persetujuan gagal.'); } };
   const navigate = (offset: number) => { const index = pack.questions.findIndex((item) => item.id === q.id), next = pack.questions[index + offset]; if (next) { setSelected(next.id); setPage(Math.floor(filtered.findIndex((item) => item.id === next.id) / 20)); } };
   if (!q) return null;
+  const mapped=settings?.profile==='tryout-2027'?profileCoverage(pack.questions,settings):[];
   // Dipanggil langsung dari klik tombol gambar supaya izin clipboard dari klik tetap berlaku.
   const copyImage = (target: 'stimulus' | number) => {
     copyQuestionImage(q, target).then(() => notify({ kind: 'ok', text: 'Tersalin: gambar ' + (target === 'stimulus' ? 'soal ' : 'opsi ' + String.fromCharCode(65 + target) + ' soal ') + q.no + ' sebagai PNG.' }))
@@ -62,5 +64,6 @@ export default function Workbench({ pack, blueprint, title = '', reviewer, onRev
       {q.review?.reviewer && <p className="help">Disetujui oleh {q.review.reviewer} pada {new Date(q.review.reviewedAt!).toLocaleString('id-ID')}.</p>}{error && <p className="error-message" role="alert">{error}</p>}
       <p className="source-note">{q.source}</p>
     </aside></div><details className="panel coverage"><summary>Komposisi aktual setelah kurasi<Icon name="chevron"/></summary><p className="help">Mengeluarkan soal atau mengubah kesulitannya dapat mengubah blueprint. Bandingkan kuota rencana dengan jumlah aktif dan disetujui sebelum ekspor.</p><div className="table-scroll"><table><thead><tr><th>Materi</th><th>Tingkat</th><th>Rencana</th><th>Aktif</th><th>Disetujui</th></tr></thead><tbody>{coverage.map((row) => <tr key={row.subtest + row.topic + row.difficulty}><td>{row.subtest} · {row.topic}</td><td>{LABELS[row.difficulty]}</td><td>{blueprint?.find((r) => r.subtest === row.subtest && r.topic === row.topic && r.difficulty === row.difficulty)?.count ?? '—'}</td><td>{pack.questions.filter((q) => q.subtest === row.subtest && q.topic === row.topic && q.difficulty === row.difficulty && !q.review?.excluded).length}</td><td>{pack.questions.filter((q) => q.subtest === row.subtest && q.topic === row.topic && q.difficulty === row.difficulty && !q.review?.excluded && q.review?.status === 'approved').length}</td></tr>)}</tbody></table></div></details>
+    {!!mapped.length&&<details className="panel coverage mapping-coverage" open><summary>Kesesuaian mapping tryout 2027<Icon name="chevron"/></summary><p className="help">Kuota mengikuti chapter. Periksa selisih setelah mengeluarkan atau menyunting soal.</p><div className="table-scroll"><table><thead><tr><th>Chapter</th><th>Rencana</th><th>Aktif</th><th>Disetujui</th></tr></thead><tbody>{mapped.map((row)=><tr key={row.id}><td><small>{row.subtest} · {row.lesson}</small>{row.chapter}</td><td>{row.count}</td><td className={row.included!==row.count?'coverage-gap':''}>{row.included}</td><td>{row.approved}</td></tr>)}</tbody></table></div></details>}
     {editing && <QuestionEditor question={q} onClose={() => setEditing(false)} onSave={(updated) => { onChange(updated, 'Revisi konten soal ' + q.no); setEditing(false); }}/>}<Toast toast={toast} onClose={() => notify(null)}/></>;
 }

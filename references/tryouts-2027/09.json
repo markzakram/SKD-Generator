@@ -1,0 +1,4361 @@
+{
+  "file": "Andika - Verbal Silogisme SKD 2027_Ready to Input.docx",
+  "sha256": "71b18437fba6c926b76ea6a73e516e86ee74e1b321b934eea3917a3208a25123",
+  "blocks": [
+    {
+      "kind": "p",
+      "text": "Soal 1",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 2 Premis - Narasi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Untuk menyusun penawaran keramik kepada pembeli luar negeri, pengelola bengkel memasukkan ke dalam katalog ekspor setiap produk yang telah lolos pemeriksaan ketahanan, sebagai bagian dari pendataan produk yang ditawarkan melalui layanan penjualan ekspor bengkel tersebut. Petugas pengelola pesanan kemudian memberikan kode pelacakan khusus kepada setiap produk yang masuk katalog ekspor, agar pencatatan produk dalam penawaran kepada pembeli luar negeri dapat dilakukan dengan menggunakan pengenal produk pada sistem pesanan bengkel.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Kepemilikan kode pelacakan khusus menjamin produk keramik telah lolos pemeriksaan ketahanan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Tidak lolosnya produk keramik dalam pemeriksaan ketahanan menjamin produk tersebut tidak memperoleh kode pelacakan khusus.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Kelulusan produk keramik dalam pemeriksaan ketahanan menjamin perolehan kode pelacakan khusus.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Masuknya produk keramik ke katalog ekspor menunjukkan bahwa produk tersebut telah lolos pemeriksaan ketahanan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Pemberian kode pelacakan khusus menjamin produk keramik telah dimasukkan ke dalam katalog ekspor.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: C",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Untuk menyusun penawaran keramik kepada pembeli luar negeri, pengelola bengkel memasukkan ke dalam katalog ekspor setiap produk yang telah lolos pemeriksaan ketahanan, sebagai bagian dari pendataan produk yang ditawarkan melalui layanan penjualan ekspor bengkel tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Petugas pengelola pesanan kemudian memberikan kode pelacakan khusus kepada setiap produk yang masuk katalog ekspor, agar pencatatan produk dalam penawaran kepada pembeli luar negeri dapat dilakukan dengan menggunakan pengenal produk pada sistem pesanan bengkel.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Produk keramik lolos pemeriksaan ketahanan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Produk keramik masuk katalog ekspor.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Produk keramik memperoleh kode pelacakan khusus.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme. Terpenuhinya p menjamin q, sedangkan q menjamin r; hubungan ini berlaku untuk subjek yang sama.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Kelulusan produk keramik dalam pemeriksaan ketahanan menjamin perolehan kode pelacakan khusus.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Kepemilikan kode pelacakan khusus menjamin produk keramik telah lolos pemeriksaan ketahanan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r → p. Hubungan r → p membalik arah hasil silogisme; terpenuhinya r tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Tidak lolosnya produk keramik dalam pemeriksaan ketahanan menjamin produk tersebut tidak memperoleh kode pelacakan khusus.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p → ¬r. Hubungan ¬p → ¬r menolak anteseden. Tanpa p, r tetap mungkin terpenuhi melalui keadaan lain. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Kelulusan produk keramik dalam pemeriksaan ketahanan menjamin perolehan kode pelacakan khusus.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ p → r. Hubungan ini diperoleh melalui kedua premis yang relevan. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Masuknya produk keramik ke katalog ekspor menunjukkan bahwa produk tersebut telah lolos pemeriksaan ketahanan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Pemberian kode pelacakan khusus menjamin produk keramik telah dimasukkan ke dalam katalog ekspor.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r → q. Hubungan r → q membalik Premis 2. Terpenuhinya r tidak membuktikan q. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 2",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 2 Premis - Narasi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Dalam mengatur peserta perjalanan menyusuri sungai, petugas layanan mengikutsertakan setiap wisatawan yang memesan perjalanan menyusuri sungai dalam pengarahan keselamatan, sebagai bagian dari persiapan peserta untuk mengikuti kegiatan wisata sungai melalui layanan perjalanan tersebut. Untuk mengatur akses peserta menuju dermaga keberangkatan, petugas memberikan kartu akses dermaga kepada setiap wisatawan yang mengikuti pengarahan keselamatan, sehingga peserta dalam kelompok pengarahan tersebut mendapatkan kartu yang dimaksud dalam prosedur akses layanan wisata sungai.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Pemesanan perjalanan menyusuri sungai menjamin wisatawan menerima kartu akses dermaga.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Kartu akses dermaga hanya diterima oleh wisatawan yang memesan perjalanan menyusuri sungai.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Keikutsertaan dalam pengarahan keselamatan menunjukkan bahwa wisatawan telah memesan perjalanan menyusuri sungai.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Ketiadaan pemesanan perjalanan menyusuri sungai menjamin wisatawan tidak menerima kartu akses dermaga.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Penerimaan kartu akses dermaga menunjukkan bahwa wisatawan telah mengikuti pengarahan keselamatan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: A",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Dalam mengatur peserta perjalanan menyusuri sungai, petugas layanan mengikutsertakan setiap wisatawan yang memesan perjalanan menyusuri sungai dalam pengarahan keselamatan, sebagai bagian dari persiapan peserta untuk mengikuti kegiatan wisata sungai melalui layanan perjalanan tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Untuk mengatur akses peserta menuju dermaga keberangkatan, petugas memberikan kartu akses dermaga kepada setiap wisatawan yang mengikuti pengarahan keselamatan, sehingga peserta dalam kelompok pengarahan tersebut mendapatkan kartu yang dimaksud dalam prosedur akses layanan wisata sungai.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Wisatawan memesan perjalanan menyusuri sungai.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Wisatawan mengikuti pengarahan keselamatan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Wisatawan menerima kartu akses dermaga.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme. Terpenuhinya p menjamin q, sedangkan q menjamin r; hubungan ini berlaku untuk subjek yang sama.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Pemesanan perjalanan menyusuri sungai menjamin wisatawan menerima kartu akses dermaga.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Pemesanan perjalanan menyusuri sungai menjamin wisatawan menerima kartu akses dermaga.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ p → r. Hubungan ini diperoleh melalui kedua premis yang relevan. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Kartu akses dermaga hanya diterima oleh wisatawan yang memesan perjalanan menyusuri sungai.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r → p. Hubungan r → p membalik arah hasil silogisme; terpenuhinya r tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Keikutsertaan dalam pengarahan keselamatan menunjukkan bahwa wisatawan telah memesan perjalanan menyusuri sungai.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Ketiadaan pemesanan perjalanan menyusuri sungai menjamin wisatawan tidak menerima kartu akses dermaga.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p → ¬r. Hubungan ¬p → ¬r menolak anteseden. Tanpa p, r tetap mungkin terpenuhi melalui keadaan lain. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Penerimaan kartu akses dermaga menunjukkan bahwa wisatawan telah mengikuti pengarahan keselamatan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r → q. Hubungan r → q membalik Premis 2. Terpenuhinya r tidak membuktikan q. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 3",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 2 Premis - Narasi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pada usaha pengolahan pangan, petugas menata persediaan yang menunggu pengiriman kepada pelanggan dengan menempatkan di gudang kering setiap olahan yang tidak memerlukan penyimpanan dingin, sesuai pengaturan tempat penyimpanan bagi kelompok olahan tersebut. Dalam pengemasan persediaan yang disimpan pada tempat itu, petugas menggunakan kemasan berlapis penghalang uap air untuk setiap olahan yang ditempatkan di gudang kering, sebagai bentuk pengemasan yang diterapkan usaha tersebut pada produk dalam kelompok penyimpanan itu.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Penggunaan kemasan berlapis penghalang uap air menjamin olahan tersebut tidak memerlukan penyimpanan dingin.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Penempatan olahan di gudang kering menunjukkan bahwa penyimpanan dingin tidak diperlukan untuk olahan tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Kebutuhan penyimpanan dingin menjamin olahan tersebut tidak menggunakan kemasan berlapis penghalang uap air.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Kemasan berlapis penghalang uap air hanya digunakan oleh olahan yang ditempatkan di gudang kering.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Olahan tanpa kebutuhan penyimpanan dingin dipastikan menggunakan kemasan berlapis penghalang uap air.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: E",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Pada usaha pengolahan pangan, petugas menata persediaan yang menunggu pengiriman kepada pelanggan dengan menempatkan di gudang kering setiap olahan yang tidak memerlukan penyimpanan dingin, sesuai pengaturan tempat penyimpanan bagi kelompok olahan tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Dalam pengemasan persediaan yang disimpan pada tempat itu, petugas menggunakan kemasan berlapis penghalang uap air untuk setiap olahan yang ditempatkan di gudang kering, sebagai bentuk pengemasan yang diterapkan usaha tersebut pada produk dalam kelompok penyimpanan itu.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Olahan pangan tidak memerlukan penyimpanan dingin.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Olahan pangan ditempatkan di gudang kering.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Olahan pangan menggunakan kemasan berlapis penghalang uap air.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme. Terpenuhinya p menjamin q, sedangkan q menjamin r; hubungan ini berlaku untuk subjek yang sama.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Olahan tanpa kebutuhan penyimpanan dingin dipastikan menggunakan kemasan berlapis penghalang uap air.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Penggunaan kemasan berlapis penghalang uap air menjamin olahan tersebut tidak memerlukan penyimpanan dingin.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r → p. Hubungan r → p membalik arah hasil silogisme; terpenuhinya r tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Penempatan olahan di gudang kering menunjukkan bahwa penyimpanan dingin tidak diperlukan untuk olahan tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Kebutuhan penyimpanan dingin menjamin olahan tersebut tidak menggunakan kemasan berlapis penghalang uap air.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p → ¬r. Hubungan ¬p → ¬r menolak anteseden. Tanpa p, r tetap mungkin terpenuhi melalui keadaan lain. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Kemasan berlapis penghalang uap air hanya digunakan oleh olahan yang ditempatkan di gudang kering.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r → q. Hubungan r → q membalik Premis 2. Terpenuhinya r tidak membuktikan q. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Olahan tanpa kebutuhan penyimpanan dingin dipastikan menggunakan kemasan berlapis penghalang uap air.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ p → r. Hubungan ini diperoleh melalui kedua premis yang relevan. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 4",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 2 Premis - Narasi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Untuk mengelola pengerjaan pengalihan koleksi ke bentuk digital, petugas perpustakaan memasukkan ke dalam antrean digitalisasi setiap naskah yang memiliki izin penggandaan, sehingga naskah dengan izin tersebut menjadi bagian dari antrean pengerjaan koleksi perpustakaan. Ruang digitalisasi berada di sisi ruang baca yang menghadap taman. Pada pencatatan layanan digitalisasi koleksi, petugas memberikan nomor arsip digital kepada setiap naskah yang masuk antrean digitalisasi, sebagai nomor identitas naskah dalam pencatatan arsip yang dikelola perpustakaan melalui layanan pengolahan koleksi tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Nomor arsip digital hanya diperoleh oleh naskah yang memiliki izin penggandaan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Izin penggandaan yang dimiliki naskah menjamin perolehan nomor arsip digital bagi naskah tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Ketiadaan izin penggandaan menjamin naskah tidak memperoleh nomor dalam pencatatan arsip digital.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Keberadaan naskah dalam antrean digitalisasi menjamin tersedianya izin penggandaan untuk naskah tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Pemberian nomor arsip digital menunjukkan bahwa naskah tersebut masuk ke antrean digitalisasi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: B",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Untuk mengelola pengerjaan pengalihan koleksi ke bentuk digital, petugas perpustakaan memasukkan ke dalam antrean digitalisasi setiap naskah yang memiliki izin penggandaan, sehingga naskah dengan izin tersebut menjadi bagian dari antrean pengerjaan koleksi perpustakaan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Pada pencatatan layanan digitalisasi koleksi, petugas memberikan nomor arsip digital kepada setiap naskah yang masuk antrean digitalisasi, sebagai nomor identitas naskah dalam pencatatan arsip yang dikelola perpustakaan melalui layanan pengolahan koleksi tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kalimat “Ruang digitalisasi berada di sisi ruang baca yang menghadap taman.” merupakan informasi pengecoh karena letak ruang tidak menentukan hubungan antara izin penggandaan, antrean digitalisasi, dan pemberian nomor arsip. Kalimat ini tidak dijadikan variabel logis dan tidak digunakan dalam penarikan kesimpulan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Naskah memiliki izin penggandaan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Naskah masuk antrean digitalisasi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Naskah memperoleh nomor arsip digital.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme. Terpenuhinya p menjamin q, sedangkan q menjamin r; hubungan ini berlaku untuk subjek yang sama.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Izin penggandaan yang dimiliki naskah menjamin perolehan nomor arsip digital bagi naskah tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Nomor arsip digital hanya diperoleh oleh naskah yang memiliki izin penggandaan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r → p. Hubungan r → p membalik arah hasil silogisme; terpenuhinya r tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Izin penggandaan yang dimiliki naskah menjamin perolehan nomor arsip digital bagi naskah tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ p → r. Hubungan ini diperoleh melalui kedua premis yang relevan. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Ketiadaan izin penggandaan menjamin naskah tidak memperoleh nomor dalam pencatatan arsip digital.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p → ¬r. Hubungan ¬p → ¬r menolak anteseden. Tanpa p, r tetap mungkin terpenuhi melalui keadaan lain. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Keberadaan naskah dalam antrean digitalisasi menjamin tersedianya izin penggandaan untuk naskah tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Pemberian nomor arsip digital menunjukkan bahwa naskah tersebut masuk ke antrean digitalisasi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r → q. Hubungan r → q membalik Premis 2. Terpenuhinya r tidak membuktikan q. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 5",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 2 Premis - Narasi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Dalam mengatur bibit untuk kegiatan pembesaran, pengelola kebun menempatkan setiap bibit yang memenuhi standar kesehatan di petak pembesaran, sebagai bagian dari penataan bibit pada tempat yang digunakan kebun untuk pengelolaan tahap pembesaran. Petak pembesaran terletak di dekat jalur yang biasa dilewati pengunjung kebun. Untuk pencatatan persediaan bibit pada tahap tersebut, petugas memberikan penanda varietas kepada setiap bibit yang ditempatkan di petak pembesaran, sehingga varietas bibit pada kelompok penempatan itu dinyatakan melalui penanda dalam pengelolaan persediaan kebun.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Penanda varietas hanya diberikan kepada bibit yang memenuhi standar kesehatan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Petak pembesaran hanya ditempati oleh bibit yang memenuhi standar kesehatan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Kegagalan bibit memenuhi standar kesehatan menjamin bibit tidak mendapat penanda varietas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Pemenuhan standar kesehatan oleh bibit menjamin perolehan penanda varietas bagi bibit tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Kepemilikan penanda varietas menunjukkan bahwa bibit tersebut ditempatkan di petak pembesaran.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: D",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Dalam mengatur bibit untuk kegiatan pembesaran, pengelola kebun menempatkan setiap bibit yang memenuhi standar kesehatan di petak pembesaran, sebagai bagian dari penataan bibit pada tempat yang digunakan kebun untuk pengelolaan tahap pembesaran.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Untuk pencatatan persediaan bibit pada tahap tersebut, petugas memberikan penanda varietas kepada setiap bibit yang ditempatkan di petak pembesaran, sehingga varietas bibit pada kelompok penempatan itu dinyatakan melalui penanda dalam pengelolaan persediaan kebun.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kalimat “Petak pembesaran terletak di dekat jalur yang biasa dilewati pengunjung kebun.” merupakan informasi pengecoh karena kedekatan petak dengan jalur pengunjung tidak menentukan standar kesehatan maupun pemberian penanda varietas. Kalimat ini tidak dijadikan variabel logis dan tidak digunakan dalam penarikan kesimpulan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Bibit memenuhi standar kesehatan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Bibit ditempatkan di petak pembesaran.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Bibit mendapat penanda varietas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme. Terpenuhinya p menjamin q, sedangkan q menjamin r; hubungan ini berlaku untuk subjek yang sama.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Pemenuhan standar kesehatan oleh bibit menjamin perolehan penanda varietas bagi bibit tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Penanda varietas hanya diberikan kepada bibit yang memenuhi standar kesehatan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r → p. Hubungan r → p membalik arah hasil silogisme; terpenuhinya r tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Petak pembesaran hanya ditempati oleh bibit yang memenuhi standar kesehatan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Kegagalan bibit memenuhi standar kesehatan menjamin bibit tidak mendapat penanda varietas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p → ¬r. Hubungan ¬p → ¬r menolak anteseden. Tanpa p, r tetap mungkin terpenuhi melalui keadaan lain. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Pemenuhan standar kesehatan oleh bibit menjamin perolehan penanda varietas bagi bibit tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ p → r. Hubungan ini diperoleh melalui kedua premis yang relevan. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Kepemilikan penanda varietas menunjukkan bahwa bibit tersebut ditempatkan di petak pembesaran.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r → q. Hubungan r → q membalik Premis 2. Terpenuhinya r tidak membuktikan q. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 6",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 2 Premis - Narasi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Melalui pengaturan keamanan pada aplikasi penyimpanan foto, sistem memasukkan setiap akun yang mengaktifkan verifikasi dua langkah ke dalam kelompok perlindungan tambahan, sebagai kelompok akun yang dikelola melalui pengaturan perlindungan tambahan pada layanan aplikasi tersebut. Halaman pengaturan keamanan menggunakan ikon perisai berwarna biru. Untuk layanan pemberitahuan aktivitas masuk, sistem mengirimkan pemberitahuan masuk melalui surel kepada setiap akun yang masuk kelompok perlindungan tambahan, sehingga akun dalam kelompok tersebut mendapatkan pemberitahuan melalui saluran surel sebagaimana diatur pada layanan keamanan aplikasi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Verifikasi dua langkah yang diaktifkan pada akun menjamin perolehan pemberitahuan masuk melalui surel.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Pemberitahuan masuk melalui surel hanya diperoleh oleh akun yang mengaktifkan verifikasi dua langkah.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Keanggotaan dalam kelompok perlindungan tambahan menunjukkan bahwa akun telah mengaktifkan verifikasi dua langkah.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Tanpa pengaktifan verifikasi dua langkah, akun dipastikan tidak memperoleh pemberitahuan masuk melalui surel.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Akun penerima pemberitahuan masuk melalui surel dipastikan masuk ke kelompok perlindungan tambahan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: A",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Melalui pengaturan keamanan pada aplikasi penyimpanan foto, sistem memasukkan setiap akun yang mengaktifkan verifikasi dua langkah ke dalam kelompok perlindungan tambahan, sebagai kelompok akun yang dikelola melalui pengaturan perlindungan tambahan pada layanan aplikasi tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Untuk layanan pemberitahuan aktivitas masuk, sistem mengirimkan pemberitahuan masuk melalui surel kepada setiap akun yang masuk kelompok perlindungan tambahan, sehingga akun dalam kelompok tersebut mendapatkan pemberitahuan melalui saluran surel sebagaimana diatur pada layanan keamanan aplikasi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kalimat “Halaman pengaturan keamanan menggunakan ikon perisai berwarna biru.” merupakan informasi pengecoh karena bentuk dan warna ikon tidak menentukan pengelompokan akun atau layanan pemberitahuan masuk. Kalimat ini tidak dijadikan variabel logis dan tidak digunakan dalam penarikan kesimpulan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Akun mengaktifkan verifikasi dua langkah.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Akun masuk kelompok perlindungan tambahan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Akun memperoleh pemberitahuan masuk melalui surel.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme. Terpenuhinya p menjamin q, sedangkan q menjamin r; hubungan ini berlaku untuk subjek yang sama.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Verifikasi dua langkah yang diaktifkan pada akun menjamin perolehan pemberitahuan masuk melalui surel.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Verifikasi dua langkah yang diaktifkan pada akun menjamin perolehan pemberitahuan masuk melalui surel.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ p → r. Hubungan ini diperoleh melalui kedua premis yang relevan. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Pemberitahuan masuk melalui surel hanya diperoleh oleh akun yang mengaktifkan verifikasi dua langkah.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r → p. Hubungan r → p membalik arah hasil silogisme; terpenuhinya r tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Keanggotaan dalam kelompok perlindungan tambahan menunjukkan bahwa akun telah mengaktifkan verifikasi dua langkah.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Tanpa pengaktifan verifikasi dua langkah, akun dipastikan tidak memperoleh pemberitahuan masuk melalui surel.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p → ¬r. Hubungan ¬p → ¬r menolak anteseden. Tanpa p, r tetap mungkin terpenuhi melalui keadaan lain. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Akun penerima pemberitahuan masuk melalui surel dipastikan masuk ke kelompok perlindungan tambahan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r → q. Hubungan r → q membalik Premis 2. Terpenuhinya r tidak membuktikan q. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 7",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 3 Premis - Narasi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Dalam mengatur pemakaian taman bersama untuk acara komunitas, pengurus mencantumkan dalam agenda kawasan setiap kegiatan yang memperoleh persetujuan penggunaan taman, sebagai bagian dari pencatatan kegiatan komunitas yang diselenggarakan melalui layanan penggunaan taman tersebut. Pada pengaturan pemakaian panggung untuk acara komunitas, pengurus memberikan jadwal penggunaan panggung kepada setiap kegiatan yang masuk agenda kawasan, sehingga kegiatan dalam agenda itu mendapatkan alokasi jadwal pemakaian panggung pada pengelolaan fasilitas taman. Untuk pengelolaan fasilitas listrik pada pelaksanaan acara, pengurus menyediakan akses listrik panggung bagi setiap kegiatan yang mendapat jadwal penggunaan panggung, sebagai akses pemakaian listrik yang diberikan melalui layanan fasilitas panggung di taman bersama tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Akses listrik panggung hanya diperoleh oleh kegiatan yang mendapat persetujuan penggunaan taman.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Ketiadaan persetujuan penggunaan taman menjamin kegiatan tersebut tidak memperoleh akses listrik panggung.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Pencantuman kegiatan dalam agenda kawasan menunjukkan bahwa persetujuan penggunaan taman telah diperoleh.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Persetujuan penggunaan taman yang diperoleh kegiatan menjamin perolehan akses listrik panggung bagi kegiatan tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Perolehan akses listrik panggung menunjukkan bahwa kegiatan telah mendapat jadwal penggunaan panggung.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: D",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Dalam mengatur pemakaian taman bersama untuk acara komunitas, pengurus mencantumkan dalam agenda kawasan setiap kegiatan yang memperoleh persetujuan penggunaan taman, sebagai bagian dari pencatatan kegiatan komunitas yang diselenggarakan melalui layanan penggunaan taman tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Pada pengaturan pemakaian panggung untuk acara komunitas, pengurus memberikan jadwal penggunaan panggung kepada setiap kegiatan yang masuk agenda kawasan, sehingga kegiatan dalam agenda itu mendapatkan alokasi jadwal pemakaian panggung pada pengelolaan fasilitas taman.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: Untuk pengelolaan fasilitas listrik pada pelaksanaan acara, pengurus menyediakan akses listrik panggung bagi setiap kegiatan yang mendapat jadwal penggunaan panggung, sebagai akses pemakaian listrik yang diberikan melalui layanan fasilitas panggung di taman bersama tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Kegiatan komunitas memperoleh persetujuan penggunaan taman.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Kegiatan komunitas masuk agenda kawasan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Kegiatan komunitas mendapat jadwal penggunaan panggung.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "s: Kegiatan komunitas memperoleh akses listrik panggung.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 1 (Premis 1 + 2):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan (Premis 4): p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 2 (Premis 4 + 3):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 4: p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: r → s",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme. Terpenuhinya p menjamin r, sedangkan r menjamin s.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: p → s",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Persetujuan penggunaan taman yang diperoleh kegiatan menjamin perolehan akses listrik panggung bagi kegiatan tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Akses listrik panggung hanya diperoleh oleh kegiatan yang mendapat persetujuan penggunaan taman.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ s → p. Hubungan s → p membalik arah rangkaian implikasi. Terpenuhinya s tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Ketiadaan persetujuan penggunaan taman menjamin kegiatan tersebut tidak memperoleh akses listrik panggung.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p → ¬s. Hubungan ¬p → ¬s menolak anteseden. Ketiadaan p tidak mengharuskan ketiadaan s. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Pencantuman kegiatan dalam agenda kawasan menunjukkan bahwa persetujuan penggunaan taman telah diperoleh.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Persetujuan penggunaan taman yang diperoleh kegiatan menjamin perolehan akses listrik panggung bagi kegiatan tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ p → s. Hasil ini diperoleh melalui dua langkah penalaran di atas. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Perolehan akses listrik panggung menunjukkan bahwa kegiatan telah mendapat jadwal penggunaan panggung.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ s → r. Hubungan s → r membalik Premis 3. Terpenuhinya s tidak membuktikan r. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 8",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 3 Premis - Narasi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Dalam mendampingi peserta program latihan pemulihan, pusat latihan olahraga mengatur agar setiap peserta yang mengikuti program latihan pemulihan menjalani pemeriksaan kebugaran, sebagai bagian dari pemeriksaan kondisi peserta pada rangkaian kegiatan program latihan tersebut. Pada pengelolaan kegiatan latihan peserta, pendamping memberikan rencana latihan individual kepada setiap peserta yang menjalani pemeriksaan kebugaran, sehingga peserta dalam kelompok pemeriksaan itu mendapatkan rencana latihan masing-masing melalui layanan pendampingan di pusat latihan. Di pusat latihan yang menerapkan ketentuan tersebut, Nara mengikuti program latihan pemulihan, sehingga keikutsertaan Nara berada dalam lingkup program yang dimaksud pada uraian pelayanan peserta di atas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Pemeriksaan kebugaran tidak dijalani oleh Nara dalam program latihan di pusat tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Rencana latihan individual diperoleh Nara melalui program latihan di pusat tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Latihan pemulihan dalam program di pusat tersebut tidak diikuti oleh Nara.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Perolehan rencana latihan individual oleh Nara tidak terjadi dalam program di pusat tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Tanpa menjalani pemeriksaan kebugaran, Nara memperoleh rencana latihan individual di pusat tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: B",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Dalam mendampingi peserta program latihan pemulihan, pusat latihan olahraga mengatur agar setiap peserta yang mengikuti program latihan pemulihan menjalani pemeriksaan kebugaran, sebagai bagian dari pemeriksaan kondisi peserta pada rangkaian kegiatan program latihan tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Pada pengelolaan kegiatan latihan peserta, pendamping memberikan rencana latihan individual kepada setiap peserta yang menjalani pemeriksaan kebugaran, sehingga peserta dalam kelompok pemeriksaan itu mendapatkan rencana latihan masing-masing melalui layanan pendampingan di pusat latihan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: Di pusat latihan yang menerapkan ketentuan tersebut, Nara mengikuti program latihan pemulihan, sehingga keikutsertaan Nara berada dalam lingkup program yang dimaksud pada uraian pelayanan peserta di atas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Untuk menerapkan aturan umum pada Nara, p, q, dan r berikut merujuk pada subjek tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Nara mengikuti program latihan pemulihan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Nara menjalani pemeriksaan kebugaran.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Nara memperoleh rencana latihan individual.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 1 (Premis 1 + 2):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan (Premis 4): p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 2 (Premis 4 + 3):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 4: p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: p",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan Modus Ponens. Karena p terpenuhi, konsekuensinya, yaitu r, juga terpenuhi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Rencana latihan individual diperoleh Nara melalui program latihan di pusat tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Pemeriksaan kebugaran tidak dijalani oleh Nara dalam program latihan di pusat tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬q. Premis 1 dan fakta p menghasilkan q, sehingga ¬q bertentangan dengan hasil penalaran. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Rencana latihan individual diperoleh Nara melalui program latihan di pusat tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r. Hasil ini diperoleh melalui dua langkah penalaran di atas. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Latihan pemulihan dalam program di pusat tersebut tidak diikuti oleh Nara.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p. Premis 3 menyatakan p, sehingga ¬p bertentangan dengan fakta tersebut. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Perolehan rencana latihan individual oleh Nara tidak terjadi dalam program di pusat tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬r. Rangkaian implikasi dan fakta p menghasilkan r, sehingga ¬r bertentangan dengan kesimpulan. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Tanpa menjalani pemeriksaan kebugaran, Nara memperoleh rencana latihan individual di pusat tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r ∧ ¬q. Pernyataan ini menggabungkan r dengan ¬q, padahal q juga diperoleh dari Premis 1 dan Premis 3. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 9",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 3 Premis - Narasi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Dalam menata muatan pada layanan angkutan antarkota, petugas mencantumkan ke dalam daftar muatan khusus setiap paket yang dikirim menggunakan layanan angkutan malam, sebagai bagian dari pencatatan paket untuk pengelolaan muatan pengiriman pada layanan malam tersebut. Pada pengelolaan paket dalam pencatatan muatan, petugas memasang segel bernomor pada setiap paket yang masuk daftar muatan khusus, sehingga paket dalam daftar tersebut mendapatkan segel dengan nomor sebagai penanda pada layanan angkutan antarkota. Untuk pencatatan penyerahan muatan antara petugas pengiriman dan penerima muatan, petugas mencantumkan dalam laporan serah terima setiap paket yang memperoleh segel bernomor, sesuai pengelolaan pencatatan paket pada proses serah terima dalam layanan tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Pencatatan paket dalam laporan serah terima menjamin pengirimannya menggunakan layanan angkutan malam.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Daftar muatan khusus hanya memuat paket yang dikirim menggunakan layanan angkutan malam.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Tidak digunakannya layanan angkutan malam untuk mengirim paket menjamin paket tidak tercatat dalam laporan serah terima.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Segel bernomor pasti diperoleh oleh paket yang tercatat dalam laporan serah terima.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Layanan angkutan malam yang digunakan untuk mengirim paket menjamin paket tercatat dalam laporan serah terima.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: E",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Dalam menata muatan pada layanan angkutan antarkota, petugas mencantumkan ke dalam daftar muatan khusus setiap paket yang dikirim menggunakan layanan angkutan malam, sebagai bagian dari pencatatan paket untuk pengelolaan muatan pengiriman pada layanan malam tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Pada pengelolaan paket dalam pencatatan muatan, petugas memasang segel bernomor pada setiap paket yang masuk daftar muatan khusus, sehingga paket dalam daftar tersebut mendapatkan segel dengan nomor sebagai penanda pada layanan angkutan antarkota.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: Untuk pencatatan penyerahan muatan antara petugas pengiriman dan penerima muatan, petugas mencantumkan dalam laporan serah terima setiap paket yang memperoleh segel bernomor, sesuai pengelolaan pencatatan paket pada proses serah terima dalam layanan tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Paket dikirim menggunakan layanan angkutan malam.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Paket masuk daftar muatan khusus.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Paket memperoleh segel bernomor.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "s: Paket tercatat dalam laporan serah terima.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 1 (Premis 1 + 2):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan (Premis 4): p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 2 (Premis 4 + 3):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 4: p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: r → s",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme. Terpenuhinya p menjamin r, sedangkan r menjamin s.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: p → s",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Layanan angkutan malam yang digunakan untuk mengirim paket menjamin paket tercatat dalam laporan serah terima.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Pencatatan paket dalam laporan serah terima menjamin pengirimannya menggunakan layanan angkutan malam.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ s → p. Hubungan s → p membalik arah rangkaian implikasi. Terpenuhinya s tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Daftar muatan khusus hanya memuat paket yang dikirim menggunakan layanan angkutan malam.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Tidak digunakannya layanan angkutan malam untuk mengirim paket menjamin paket tidak tercatat dalam laporan serah terima.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p → ¬s. Hubungan ¬p → ¬s menolak anteseden. Ketiadaan p tidak mengharuskan ketiadaan s. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Segel bernomor pasti diperoleh oleh paket yang tercatat dalam laporan serah terima.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ s → r. Hubungan s → r membalik Premis 3. Terpenuhinya s tidak membuktikan r. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Layanan angkutan malam yang digunakan untuk mengirim paket menjamin paket tercatat dalam laporan serah terima.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ p → s. Hasil ini diperoleh melalui dua langkah penalaran di atas. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 10",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 3 Premis - Narasi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Dalam menyiapkan pendataan karya untuk pameran seni, pengelola memasukkan ke dalam daftar pameran setiap karya yang lolos seleksi kuratorial, sebagai bagian dari pencatatan karya yang digunakan dalam pengelolaan penyelenggaraan pameran seni tersebut. Meja pembagian panduan pengunjung ditempatkan di dekat pintu masuk ruang pamer. Untuk menyusun katalog karya pada pameran itu, pengelola memberikan nomor katalog kepada setiap karya yang masuk daftar pameran, sehingga karya dalam daftar tersebut mendapatkan nomor identitas pada pencatatan katalog yang digunakan dalam penyelenggaraan pameran. Pada penyusunan bahan bacaan untuk pengunjung, pengelola mencantumkan dalam panduan pengunjung setiap karya yang mendapat nomor katalog, sehingga karya dengan nomor tersebut dimuat dalam panduan yang digunakan pengunjung selama mengikuti pameran seni.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Panduan pengunjung hanya mencantumkan karya yang dinyatakan lolos seleksi kuratorial.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Ketidaklulusan dalam seleksi kuratorial menjamin karya tidak dicantumkan dalam panduan pengunjung.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Keberhasilan karya melewati seleksi kuratorial menjamin pencantumannya dalam panduan pengunjung.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Daftar pameran hanya memuat karya yang telah dinyatakan lolos seleksi kuratorial.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Nomor katalog dipastikan dimiliki oleh karya yang dicantumkan dalam panduan pengunjung.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: C",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Dalam menyiapkan pendataan karya untuk pameran seni, pengelola memasukkan ke dalam daftar pameran setiap karya yang lolos seleksi kuratorial, sebagai bagian dari pencatatan karya yang digunakan dalam pengelolaan penyelenggaraan pameran seni tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Untuk menyusun katalog karya pada pameran itu, pengelola memberikan nomor katalog kepada setiap karya yang masuk daftar pameran, sehingga karya dalam daftar tersebut mendapatkan nomor identitas pada pencatatan katalog yang digunakan dalam penyelenggaraan pameran.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: Pada penyusunan bahan bacaan untuk pengunjung, pengelola mencantumkan dalam panduan pengunjung setiap karya yang mendapat nomor katalog, sehingga karya dengan nomor tersebut dimuat dalam panduan yang digunakan pengunjung selama mengikuti pameran seni.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kalimat “Meja pembagian panduan pengunjung ditempatkan di dekat pintu masuk ruang pamer.” merupakan informasi pengecoh karena letak meja pembagian tidak menentukan seleksi, pendataan, atau pencantuman karya dalam panduan. Kalimat ini tidak dijadikan variabel logis dan tidak digunakan dalam penarikan kesimpulan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Karya lolos seleksi kuratorial.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Karya masuk daftar pameran.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Karya mendapat nomor katalog.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "s: Karya dicantumkan dalam panduan pengunjung.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 1 (Premis 1 + 2):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan (Premis 4): p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 2 (Premis 4 + 3):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 4: p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: r → s",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme. Terpenuhinya p menjamin r, sedangkan r menjamin s.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: p → s",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Keberhasilan karya melewati seleksi kuratorial menjamin pencantumannya dalam panduan pengunjung.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Panduan pengunjung hanya mencantumkan karya yang dinyatakan lolos seleksi kuratorial.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ s → p. Hubungan s → p membalik arah rangkaian implikasi. Terpenuhinya s tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Ketidaklulusan dalam seleksi kuratorial menjamin karya tidak dicantumkan dalam panduan pengunjung.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p → ¬s. Hubungan ¬p → ¬s menolak anteseden. Ketiadaan p tidak mengharuskan ketiadaan s. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Keberhasilan karya melewati seleksi kuratorial menjamin pencantumannya dalam panduan pengunjung.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ p → s. Hasil ini diperoleh melalui dua langkah penalaran di atas. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Daftar pameran hanya memuat karya yang telah dinyatakan lolos seleksi kuratorial.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Nomor katalog dipastikan dimiliki oleh karya yang dicantumkan dalam panduan pengunjung.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ s → r. Hubungan s → r membalik Premis 3. Terpenuhinya s tidak membuktikan r. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 11",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 3 Premis - Narasi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Dalam mengatur pengerjaan perangkat pada layanan bengkel elektronik, petugas memasukkan ke dalam antrean pengerjaan setiap perangkat yang memperoleh persetujuan perbaikan dari pemilik, sebagai bagian dari penataan perangkat untuk pengerjaan perbaikan pada sistem layanan bengkel. Salinan laporan teknisi disimpan dalam map berwarna abu-abu di meja layanan. Untuk pencatatan pekerjaan perbaikan perangkat, petugas memberikan nomor pekerjaan kepada setiap perangkat yang masuk antrean pengerjaan, sehingga perangkat dalam antrean tersebut mendapatkan nomor identitas pekerjaan melalui sistem pencatatan layanan bengkel kepada pemilik perangkat. Pada penyusunan pencatatan pekerjaan oleh teknisi, setiap perangkat yang mendapat nomor pekerjaan akan tercantum dalam laporan teknisi, sebagai bagian dari laporan perangkat yang dikelola dalam penanganan pekerjaan perbaikan pada layanan bengkel elektronik tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Persetujuan perbaikan dari pemilik menjamin perangkat dicantumkan dalam laporan teknisi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Laporan teknisi hanya mencantumkan perangkat yang mendapat persetujuan perbaikan dari pemilik.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Antrean pengerjaan hanya memuat perangkat yang mendapat persetujuan perbaikan dari pemilik.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Tanpa persetujuan perbaikan dari pemilik, perangkat dipastikan tidak dicantumkan dalam laporan teknisi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Nomor pekerjaan dipastikan dimiliki oleh perangkat yang dicantumkan dalam laporan teknisi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: A",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Dalam mengatur pengerjaan perangkat pada layanan bengkel elektronik, petugas memasukkan ke dalam antrean pengerjaan setiap perangkat yang memperoleh persetujuan perbaikan dari pemilik, sebagai bagian dari penataan perangkat untuk pengerjaan perbaikan pada sistem layanan bengkel.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Untuk pencatatan pekerjaan perbaikan perangkat, petugas memberikan nomor pekerjaan kepada setiap perangkat yang masuk antrean pengerjaan, sehingga perangkat dalam antrean tersebut mendapatkan nomor identitas pekerjaan melalui sistem pencatatan layanan bengkel kepada pemilik perangkat.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: Pada penyusunan pencatatan pekerjaan oleh teknisi, setiap perangkat yang mendapat nomor pekerjaan akan tercantum dalam laporan teknisi, sebagai bagian dari laporan perangkat yang dikelola dalam penanganan pekerjaan perbaikan pada layanan bengkel elektronik tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kalimat “Salinan laporan teknisi disimpan dalam map berwarna abu-abu di meja layanan.” merupakan informasi pengecoh karena warna dan tempat penyimpanan map tidak menentukan hubungan persetujuan, antrean, nomor pekerjaan, dan laporan. Kalimat ini tidak dijadikan variabel logis dan tidak digunakan dalam penarikan kesimpulan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Perangkat memperoleh persetujuan perbaikan dari pemilik.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Perangkat masuk antrean pengerjaan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Perangkat mendapat nomor pekerjaan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "s: Perangkat tercantum dalam laporan teknisi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 1 (Premis 1 + 2):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan (Premis 4): p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 2 (Premis 4 + 3):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 4: p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: r → s",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme. Terpenuhinya p menjamin r, sedangkan r menjamin s.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: p → s",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Persetujuan perbaikan dari pemilik menjamin perangkat dicantumkan dalam laporan teknisi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Persetujuan perbaikan dari pemilik menjamin perangkat dicantumkan dalam laporan teknisi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ p → s. Hasil ini diperoleh melalui dua langkah penalaran di atas. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Laporan teknisi hanya mencantumkan perangkat yang mendapat persetujuan perbaikan dari pemilik.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ s → p. Hubungan s → p membalik arah rangkaian implikasi. Terpenuhinya s tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Antrean pengerjaan hanya memuat perangkat yang mendapat persetujuan perbaikan dari pemilik.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Tanpa persetujuan perbaikan dari pemilik, perangkat dipastikan tidak dicantumkan dalam laporan teknisi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p → ¬s. Hubungan ¬p → ¬s menolak anteseden. Ketiadaan p tidak mengharuskan ketiadaan s. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Nomor pekerjaan dipastikan dimiliki oleh perangkat yang dicantumkan dalam laporan teknisi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ s → r. Hubungan s → r membalik Premis 3. Terpenuhinya s tidak membuktikan r. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 12",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 3 Premis - Narasi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Dalam menilai kualitas air untuk kolam pembibitan ikan, pengelola memberikan status layak untuk kolam pembibitan kepada setiap sampel air yang memenuhi standar kejernihan, sebagai penetapan kelayakan air untuk penggunaan pada kegiatan pembibitan tersebut. Wadah sampel dari bak timur memiliki tutup berwarna hijau. Pada pencatatan hasil penilaian kualitas air, pengelola memberikan tanda persetujuan penggunaan kepada setiap sampel air yang memperoleh status layak untuk kolam pembibitan, sehingga sampel dengan status itu mendapatkan tanda persetujuan penggunaan air untuk kegiatan pembibitan. Pada hasil penilaian kualitas air yang menggunakan ketentuan tersebut, sampel air dari bak timur tidak mendapat tanda persetujuan penggunaan, yaitu tanda persetujuan penggunaan air untuk kolam pembibitan yang dimaksud dalam penilaian itu.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Standar kejernihan air dipenuhi oleh sampel yang berasal dari bak timur.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Status layak untuk kolam pembibitan ikan diperoleh sampel air dari bak timur.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Tanda persetujuan penggunaan dimiliki oleh sampel air yang berasal dari bak timur.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Pemenuhan standar kejernihan air tidak tercapai pada sampel yang berasal dari bak timur.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Meskipun tidak berstatus layak, sampel air dari bak timur memiliki tanda persetujuan penggunaan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: D",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Dalam menilai kualitas air untuk kolam pembibitan ikan, pengelola memberikan status layak untuk kolam pembibitan kepada setiap sampel air yang memenuhi standar kejernihan, sebagai penetapan kelayakan air untuk penggunaan pada kegiatan pembibitan tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Pada pencatatan hasil penilaian kualitas air, pengelola memberikan tanda persetujuan penggunaan kepada setiap sampel air yang memperoleh status layak untuk kolam pembibitan, sehingga sampel dengan status itu mendapatkan tanda persetujuan penggunaan air untuk kegiatan pembibitan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: Pada hasil penilaian kualitas air yang menggunakan ketentuan tersebut, sampel air dari bak timur tidak mendapat tanda persetujuan penggunaan, yaitu tanda persetujuan penggunaan air untuk kolam pembibitan yang dimaksud dalam penilaian itu.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kalimat “Wadah sampel dari bak timur memiliki tutup berwarna hijau.” merupakan informasi pengecoh karena warna tutup wadah tidak menentukan kejernihan, status kelayakan, atau tanda persetujuan penggunaan. Kalimat ini tidak dijadikan variabel logis dan tidak digunakan dalam penarikan kesimpulan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Untuk menerapkan aturan umum pada sampel air dari bak timur, p, q, dan r berikut merujuk pada subjek tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Sampel air dari bak timur memenuhi standar kejernihan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Sampel air dari bak timur memperoleh status layak untuk kolam pembibitan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Sampel air dari bak timur mendapat tanda persetujuan penggunaan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 1 (Premis 1 + 2):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan (Premis 4): p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 2 (Premis 4 + 3):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 4: p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: ¬r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan Modus Tollens. Karena r tidak terpenuhi, p tidak mungkin terpenuhi; p akan mengharuskan r.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: ¬p",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Pemenuhan standar kejernihan air tidak tercapai pada sampel yang berasal dari bak timur.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Standar kejernihan air dipenuhi oleh sampel yang berasal dari bak timur.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ p. Modus Tollens menghasilkan ¬p, sehingga p bertentangan dengan hasil penalaran. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Status layak untuk kolam pembibitan ikan diperoleh sampel air dari bak timur.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ q. Premis 2 dan fakta ¬r menghasilkan ¬q, sehingga q tidak dapat dibenarkan. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Tanda persetujuan penggunaan dimiliki oleh sampel air yang berasal dari bak timur.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r. Premis 3 menyatakan ¬r, sehingga r bertentangan dengan fakta tersebut. (Bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Pemenuhan standar kejernihan air tidak tercapai pada sampel yang berasal dari bak timur.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p. Hasil ini diperoleh melalui dua langkah penalaran di atas. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Meskipun tidak berstatus layak, sampel air dari bak timur memiliki tanda persetujuan penggunaan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬q ∧ r. Meskipun ¬q dapat diturunkan, bagian r bertentangan dengan Premis 3. Konjungsi ini tidak benar. (Bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 13",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 3 Premis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kelulusan unit pompa dalam uji ketahanan menjamin perolehan izin penggunaan operasional. Perolehan izin penggunaan operasional membebaskan unit pompa dari kewajiban pengujian ulang. Unit pompa K lolos uji ketahanan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan yang pasti benar berdasarkan ketiga pernyataan tersebut adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Kewajiban mengikuti pengujian ulang masih berlaku bagi unit pompa K.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Izin penggunaan operasional tidak diperoleh oleh unit pompa K.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Pengujian ulang bukan merupakan kewajiban yang harus dijalani unit pompa K.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Meskipun memperoleh izin operasional, unit pompa K tetap wajib menjalani pengujian ulang.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Kelulusan dalam uji ketahanan tidak terpenuhi pada unit pompa K.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: C",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Kelulusan unit pompa dalam uji ketahanan menjamin perolehan izin penggunaan operasional.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Perolehan izin penggunaan operasional membebaskan unit pompa dari kewajiban pengujian ulang.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: Unit pompa K lolos uji ketahanan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Aturan pada dua pernyataan pertama diterapkan pada unit pompa K. Semua variabel berikut merujuk pada unit tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Unit pompa K lolos uji ketahanan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Unit pompa K memperoleh izin penggunaan operasional.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Unit pompa K wajib mengikuti pengujian ulang.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembebasan dari kewajiban pengujian ulang berarti ¬r. Pernyataan tersebut tidak menyatakan bahwa pengujian ulang dilarang atau bahwa pengujian ulang tidak pernah dilakukan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 1 (Premis 1 + 3):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: p",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan Modus Ponens.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan (Premis 4): q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 2 (Premis 2 + 4):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → ¬r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 4: q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan Modus Ponens.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: ¬r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Pengujian ulang bukan merupakan kewajiban yang harus dijalani unit pompa K.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Kewajiban mengikuti pengujian ulang masih berlaku bagi unit pompa K.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r. Opsi ini menyatakan adanya kewajiban, sedangkan hasil penalaran menyatakan pembebasan dari kewajiban tersebut. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Izin penggunaan operasional tidak diperoleh oleh unit pompa K.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬q. Premis 1 dan Premis 3 menghasilkan q, sehingga penyangkalan izin operasional bertentangan dengan hasil langkah pertama. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Pengujian ulang bukan merupakan kewajiban yang harus dijalani unit pompa K.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬r. Tidak memiliki kewajiban pengujian ulang bermakna sama dengan dibebaskan dari kewajiban tersebut, sesuai hasil dua penerapan Modus Ponens. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Meskipun memperoleh izin operasional, unit pompa K tetap wajib menjalani pengujian ulang.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ q ∧ r. Bagian q benar, tetapi bagian r bertentangan dengan ¬r. Kata “tetapi” tetap menghubungkan dua proposisi yang keduanya harus benar. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Kelulusan dalam uji ketahanan tidak terpenuhi pada unit pompa K.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p. Pernyataan ini menyangkal kelulusan unit pompa K yang telah dinyatakan pada Premis 3. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 14",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 3 Premis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Terpenuhinya standar kandungan kimia menjamin perolehan status aman untuk saluran pembuangan bagi cairan olahan. Perolehan status aman untuk saluran pembuangan menjamin pemberian izin pelepasan bagi cairan olahan. Cairan olahan dari tangki M tidak mendapat izin pelepasan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan yang pasti benar berdasarkan ketiga pernyataan tersebut adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Standar kandungan kimia yang ditetapkan telah dipenuhi oleh cairan olahan dari tangki M.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Status aman untuk saluran pembuangan diperoleh oleh cairan olahan dari tangki M.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Izin pelepasan ke saluran pembuangan diberikan kepada cairan olahan dari tangki M.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Meskipun memenuhi standar kandungan kimia, cairan olahan dari tangki M tidak berstatus aman.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Kandungan kimia cairan olahan dari tangki M tidak memenuhi standar yang ditetapkan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: E",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Terpenuhinya standar kandungan kimia menjamin perolehan status aman untuk saluran pembuangan bagi cairan olahan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Perolehan status aman untuk saluran pembuangan menjamin pemberian izin pelepasan bagi cairan olahan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: Cairan olahan dari tangki M tidak mendapat izin pelepasan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Aturan pada dua pernyataan pertama diterapkan pada cairan olahan dari tangki M. Semua variabel berikut merujuk pada cairan tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Cairan olahan dari tangki M memenuhi standar kandungan kimia.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Status aman untuk saluran pembuangan diperoleh oleh cairan olahan dari tangki M.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Cairan olahan dari tangki M mendapat izin pelepasan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 1 (Premis 2 + 3):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: ¬r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan Modus Tollens.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan (Premis 4): ¬q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 2 (Premis 1 + 4):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 4: ¬q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan Modus Tollens.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: ¬p",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Kandungan kimia cairan olahan dari tangki M tidak memenuhi standar yang ditetapkan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Standar kandungan kimia yang ditetapkan telah dipenuhi oleh cairan olahan dari tangki M.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ p. Hasil langkah kedua adalah ¬p, sehingga pernyataan terpenuhinya standar kandungan kimia bertentangan dengan kesimpulan. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Status aman untuk saluran pembuangan diperoleh oleh cairan olahan dari tangki M.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ q. Hasil langkah pertama adalah ¬q. Status aman akan mengharuskan adanya izin pelepasan, sedangkan izin itu tidak diperoleh. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Izin pelepasan ke saluran pembuangan diberikan kepada cairan olahan dari tangki M.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ r. Premis 3 secara langsung menyatakan ¬r, sehingga opsi ini bertentangan dengan fakta yang diberikan. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Meskipun memenuhi standar kandungan kimia, cairan olahan dari tangki M tidak berstatus aman.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ p ∧ ¬q. Bagian ¬q dapat diturunkan, tetapi bagian p bertentangan dengan ¬p. Selain itu, Premis 1 tidak mengizinkan p benar bersamaan dengan ¬q. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Kandungan kimia cairan olahan dari tangki M tidak memenuhi standar yang ditetapkan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p. Opsi ini merupakan hasil dua penerapan Modus Tollens, dari ketiadaan izin menuju ketiadaan status aman, kemudian menuju tidak terpenuhinya standar kandungan kimia. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 15",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Silogisme",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: 3 Premis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Setiap pesanan yang pembayarannya tuntas masuk daftar pengambilan barang. Masuknya pesanan ke daftar pengambilan barang menjamin perolehan nomor pengiriman. Perolehan nomor pengiriman menjamin pesanan mendapat layanan pengiriman prioritas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan yang pasti benar berdasarkan ketiga pernyataan tersebut adalah ....",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Layanan pengiriman prioritas hanya diberikan kepada pesanan yang pembayarannya tuntas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Pesanan tanpa layanan pengiriman prioritas memiliki pembayaran yang tidak tuntas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Ketidaktuntasan pembayaran menjamin pesanan tidak mendapat layanan pengiriman prioritas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Masuknya pesanan ke daftar pengambilan barang menjamin ketuntasan pembayarannya.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Ketuntasan pembayaran menjamin pesanan tidak mendapat layanan pengiriman prioritas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: B",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: Setiap pesanan yang pembayarannya tuntas masuk daftar pengambilan barang.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: Masuknya pesanan ke daftar pengambilan barang menjamin perolehan nomor pengiriman.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: Perolehan nomor pengiriman menjamin pesanan mendapat layanan pengiriman prioritas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Variabel berikut menyatakan kondisi pada pesanan yang sama. Implikasi berlaku untuk setiap pesanan yang dibicarakan dalam ketiga pernyataan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "p: Pembayaran pesanan tuntas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "q: Pesanan masuk daftar pengambilan barang.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "r: Pesanan memperoleh nomor pengiriman.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "s: Pesanan mendapat layanan pengiriman prioritas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 1 (Premis 1 + 2):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 1: p → q",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 2: q → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan (Premis 4): p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "• Langkah 2 (Premis 4 + 3):",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 4: p → r",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Premis 3: r → s",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Gunakan hukum Silogisme.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan: p → s",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Hasil silogisme kemudian dinyatakan dalam bentuk ekuivalensi kontraposisi. Suatu implikasi p → s ekuivalen dengan ¬s → ¬p: ketiadaan konsekuen mengharuskan ketiadaan anteseden.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kesimpulan ekuivalen: ¬s → ¬p",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: Pesanan tanpa layanan pengiriman prioritas memiliki pembayaran yang tidak tuntas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Analisis setiap opsi:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Layanan pengiriman prioritas hanya diberikan kepada pesanan yang pembayarannya tuntas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ s → p. Ini merupakan konvers dari p → s. Mendapat layanan prioritas tidak membuktikan ketuntasan pembayaran berdasarkan arah implikasi yang diberikan. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Pesanan tanpa layanan pengiriman prioritas memiliki pembayaran yang tidak tuntas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬s → ¬p. Ini adalah kontraposisi yang ekuivalen dengan p → s, sehingga tetap menyatakan hubungan logis yang diperoleh melalui silogisme. (kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Ketidaktuntasan pembayaran menjamin pesanan tidak mendapat layanan pengiriman prioritas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ ¬p → ¬s. Ini merupakan invers dari p → s. Pembayaran yang tidak tuntas tidak cukup untuk menyimpulkan ketiadaan layanan pengiriman prioritas. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Masuknya pesanan ke daftar pengambilan barang menjamin ketuntasan pembayarannya.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ q → p. Ini membalik Premis 1. Keberadaan pesanan dalam daftar pengambilan tidak membuktikan ketuntasan pembayarannya. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Ketuntasan pembayaran menjamin pesanan tidak mendapat layanan pengiriman prioritas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "→ p → ¬s. Opsi ini mengganti konsekuen s dengan ¬s, padahal rangkaian silogisme menjamin s untuk pesanan dengan p. Hubungan ini tidak dapat diturunkan dari ketiga premis. (bukan kesimpulan yang dicari)",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    }
+  ],
+  "media": []
+}

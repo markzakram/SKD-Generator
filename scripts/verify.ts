@@ -70,7 +70,7 @@ check(auditQuestion(badScore).length > 0, 'Validator harus menolak skor TKP yang
 const reordered = structuredClone(numeric);
 [reordered.options[0], reordered.options[1]] = [reordered.options[1], reordered.options[0]];
 check(fingerprint(reordered) === fingerprint(numeric), 'Pengacakan opsi tidak boleh dianggap soal baru.');
-assert.throws(() => generate({ ...DEFAULT_SETTINGS, packages: 5 }), /Persediaan/); checks++;
+assert.throws(() => generate({ ...DEFAULT_SETTINGS, packages: 10 }), /Persediaan/); checks++;
 assert.throws(() => normalizeSettings({ mode: 'INVALID' as never }), /Subtes/); checks++;
 assert.throws(() => normalizeSettings({ count: -1 }), /count/); checks++;
 check(BANK.every((item) => item.options.length === 5 && item.options[item.answer].score === 5), 'Setiap sumber bank harus lengkap.');

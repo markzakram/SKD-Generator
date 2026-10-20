@@ -1,0 +1,2732 @@
+{
+  "file": "Uma - Verbal Analitis_Done Input.docx",
+  "sha256": "90d7b4e38fbc7250208e2ddf7a8440b3a999425099a0f689ac8ddd5a1f59f9b3",
+  "blocks": [
+    {
+      "kind": "p",
+      "text": "Soal 1",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Susunan & Posisi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Enam berkas milik Ardi, Beni, Caca, Dini, Ega, dan Fina disusun berjajar pada rak bernomor 1 sampai 6 dari kiri ke kanan. Caca berada di posisi keempat. Beni berada tepat di sebelah kiri Caca. Fina berada tepat di sebelah kanan Caca. Ardi berada di sebelah kiri Beni. Dini berada tepat di sebelah kanan Ardi. Ega berada di sebelah kanan Fina.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Siapakah yang berada pada posisi kedua?",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Ardi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Beni",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Dini",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Fina",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Ega",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: C",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Caca diketahui berada di posisi keempat dari kiri. Informasi ini menjadi patokan karena posisi Caca sudah pasti dan tidak bergantung pada berkas lain. Beni berada tepat di sebelah kiri Caca. Kata “tepat” berarti tidak ada berkas di antara keduanya, sehingga Beni harus menempati posisi ketiga. Dengan alasan yang sama, Fina yang tepat di sebelah kanan Caca harus berada di posisi kelima.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Ega berada di sebelah kanan Fina. Karena Fina sudah menempati posisi kelima dan rak hanya memiliki enam tempat, satu-satunya tempat di sebelah kanan Fina adalah posisi keenam. Maka posisi keenam ditempati Ega.\n Empat tempat terakhir yang sudah terisi adalah Beni pada posisi ketiga, Caca pada posisi keempat, Fina pada posisi kelima, dan Ega pada posisi keenam. Posisi yang tersisa adalah posisi pertama dan kedua untuk Ardi dan Dini. Diketahui Ardi berada di sebelah kiri Beni dan Dini tepat di sebelah kanan Ardi. Jika Ardi ditempatkan di posisi kedua, Dini harus berada di posisi ketiga yang sudah diisi Beni. Karena itu Ardi harus berada di posisi pertama dan Dini di posisi kedua.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Susunan lengkap dari kiri ke kanan adalah Ardi, Dini, Beni, Caca, Fina, dan Ega. Dengan demikian, berkas yang menempati posisi kedua adalah Dini.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Posisi 1",
+          "Posisi 2",
+          "Posisi 3",
+          "Posisi 4",
+          "Posisi 5",
+          "Posisi 6"
+        ],
+        [
+          "Ardi",
+          "Dini",
+          "Beni",
+          "Caca",
+          "Fina",
+          "Ega"
+        ]
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah C.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 2",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Susunan & Posisi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Delapan peserta, yaitu Gani, Hira, Intan, Joko, Kila, Luki, Mira, dan Nando, duduk pada empat baris. Setiap baris terdiri atas kursi kiri dan kanan. Gani dan Hira duduk di baris pertama. Intan duduk tepat di belakang Gani. Joko duduk di samping Intan. Kila dan Luki duduk bersama pada baris ketiga. Mira tidak duduk di baris pertama, kedua, maupun ketiga.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Siapakah yang duduk satu baris dengan Mira?",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Kila",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Joko",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Luki",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Intan",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Nando",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: E",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Setiap baris terdiri atas dua kursi, yaitu kursi kiri dan kursi kanan. Karena Gani dan Hira duduk di baris pertama, kedua kursi baris pertama telah terisi dan tidak dapat ditempati peserta lain.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Intan duduk tepat di belakang Gani. Artinya, Intan berada di baris kedua pada kolom kursi yang sama dengan Gani. Joko duduk di samping Intan, sehingga Joko menempati satu kursi lain di baris kedua. Dengan demikian, baris kedua juga sudah penuh.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kila dan Luki duduk bersama di baris ketiga. Karena terdapat tepat dua kursi dalam setiap baris, baris ketiga diisi oleh Kila dan Luki tanpa menyisakan kursi kosong.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Mira tidak duduk pada baris pertama, kedua, maupun ketiga. Dari empat baris yang tersedia, pilihan satu-satunya bagi Mira adalah baris keempat. Peserta yang telah ditempatkan adalah Gani, Hira, Intan, Joko, Kila, Luki, dan Mira. Satu-satunya peserta yang belum ditempatkan adalah Nando. Kursi kedua di baris keempat harus ditempati Nando.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Susunan tersebut juga memenuhi jumlah keseluruhan delapan peserta dalam empat baris. Jadi, orang yang pasti satu baris dengan Mira adalah Nando.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Baris",
+          "Kiri",
+          "Kanan"
+        ],
+        [
+          "1",
+          "Gani",
+          "Hira"
+        ],
+        [
+          "2",
+          "Intan",
+          "Joko"
+        ],
+        [
+          "3",
+          "Kila",
+          "Luki"
+        ],
+        [
+          "4",
+          "Mira",
+          "Nando"
+        ]
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah E.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 3",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Susunan & Posisi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Delapan anggota tim, yaitu Adit, Bima, Citra, Deni, Eka, Fani, Gita, dan Hani, duduk melingkar menghadap pusat meja. Dalam soal ini, kiri seseorang berarti kursi tepat setelahnya searah jarum jam. Adit berhadapan dengan Eka. Bima duduk tepat di kiri Adit. Fani berhadapan dengan Bima. Citra duduk tepat di kiri Bima. Gita berhadapan dengan Citra. Deni duduk tepat di kiri Citra.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Siapakah yang duduk tepat di kanan Adit?",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Fani",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Hani",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Eka",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Gita",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Deni",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: B",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Untuk membaca susunan melingkar, Adit dapat dijadikan patokan pada salah satu kursi. Soal memberikan definisi khusus bahwa kursi di sebelah kiri seseorang adalah kursi tepat setelahnya jika bergerak searah jarum jam. Definisi ini harus digunakan secara konsisten dan tidak boleh diganti dengan kiri menurut sudut pandang gambar.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bima duduk tepat di kiri Adit, sehingga Bima ditempatkan satu kursi setelah Adit searah jarum jam. Citra tepat di kiri Bima, sehingga Citra berada pada kursi berikutnya. Deni tepat di kiri Citra, sehingga empat kursi berurutan yang sudah diketahui adalah Adit, Bima, Citra, dan Deni.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pada meja dengan delapan kursi yang jaraknya sama, posisi berhadapan berselisih empat kursi. Eka yang berhadapan dengan Adit harus menempati kursi kelima jika Adit dianggap kursi pertama. Fani yang berhadapan dengan Bima berada pada kursi keenam. Gita yang berhadapan dengan Citra berada pada kursi ketujuh.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Setelah tujuh peserta tersebut ditempatkan, hanya satu kursi kosong yang tersisa, yaitu kursi kedelapan. Kursi itu ditempati Hani. Urutan searah jarum jam menjadi Adit, Bima, Citra, Deni, Eka, Fani, Gita, dan Hani.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Karena kiri didefinisikan sebagai arah setelah seseorang searah jarum jam, kanan adalah satu kursi sebelumnya dalam arah yang sama. Tepat sebelum Adit terdapat Hani. Jadi, peserta yang duduk tepat di kanan Adit adalah Hani.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "",
+      "images": [
+        "rId6"
+      ],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Arah searah jarum jam: Adit > Bima > Citra > Deni > Eka > Fani > Gita > Hani > Adit.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah B.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 4",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Urutan & Peringkat",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Enam peserta, yaitu Uli, Tio, Sinta, Rani, Vina, dan Wawan, memperoleh peringkat dari nilai tertinggi sampai terendah. Rani berada di peringkat keempat. Sinta berada tepat di atas Rani. Tio memperoleh nilai lebih tinggi daripada Sinta. Uli memperoleh nilai lebih tinggi daripada Tio. Vina berada tepat di bawah Rani. Wawan berada di peringkat terakhir.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Urutan peringkat yang benar adalah ...",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Uli - Tio - Sinta - Rani - Vina - Wawan",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Tio - Uli - Sinta - Rani - Vina - Wawan",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Uli - Sinta - Tio - Rani - Vina - Wawan",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Uli - Tio - Sinta - Vina - Rani - Wawan",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Tio - Sinta - Uli - Rani - Vina - Wawan",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: A",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Peringkat diurutkan dari nilai tertinggi pada posisi pertama sampai nilai terendah pada posisi keenam. Rani sudah diketahui berada pada peringkat keempat, sehingga posisi tersebut dapat langsung ditandai.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Sinta berada tepat di atas Rani. Artinya, peringkat Sinta tepat satu tingkat lebih baik daripada Rani, yaitu peringkat ketiga. Vina berada tepat di bawah Rani sehingga Vina harus berada pada peringkat kelima. Wawan berada di peringkat terakhir dan karena ada enam peserta, Wawan menempati peringkat keenam.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Setelah Rani, Sinta, Vina, dan Wawan ditentukan, hanya peringkat pertama dan kedua yang belum terisi. Dua peserta yang tersisa adalah Uli dan Tio. Uli memiliki nilai lebih tinggi daripada Tio, sehingga Uli harus berada di peringkat pertama dan Tio di peringkat kedua. Menukar keduanya akan melanggar ketentuan bahwa Uli lebih tinggi daripada Tio.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Susunan lengkapnya adalah Uli, Tio, Sinta, Rani, Vina, dan Wawan. Pilihan lain salah karena setidaknya membalik hubungan nilai yang diwajibkan atau memindahkan peserta dari peringkat yang sudah pasti.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Posisi 1",
+          "Posisi 2",
+          "Posisi 3",
+          "Posisi 4",
+          "Posisi 5",
+          "Posisi 6"
+        ],
+        [
+          "Uli",
+          "Tio",
+          "Sinta",
+          "Rani",
+          "Vina",
+          "Wawan"
+        ]
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah A.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 5",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Jadwal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Panitia menyusun enam agenda kegiatan, yaitu Pendaftaran (P), Verifikasi (V), Briefing (B), Simulasi (S), Diskusi (D), dan Penutup (T). Ketentuannya sebagai berikut:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "1. Pendaftaran harus dilakukan pertama.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "2. Verifikasi harus dilakukan tepat setelah Pendaftaran.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "3. Briefing harus dilakukan sebelum Simulasi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "4. Diskusi dilakukan tepat setelah Simulasi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "5. Penutup harus menjadi agenda terakhir.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Urutan yang memenuhi seluruh ketentuan adalah ...",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. P, V, S, D, B, T",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. P, B, V, S, D, T",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. P, V, B, D, S, T",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. P, V, B, S, D, T",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. V, P, B, S, D, T",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: D",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Agenda pertama sudah ditetapkan sebagai Pendaftaran (P). Karena Verifikasi (V) harus dilakukan tepat setelah Pendaftaran, Verifikasi wajib berada di posisi kedua, bukan sekadar dilakukan beberapa waktu sesudahnya. Kedua posisi awal dengan demikian terkunci sebagai P dan V.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Penutup (T) diwajibkan menjadi kegiatan terakhir. Karena ada enam kegiatan, Penutup harus berada pada posisi keenam. Posisi yang belum diisi hanya posisi ketiga, keempat, dan kelima.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tiga agenda yang tersisa adalah Briefing (B), Simulasi (S), dan Diskusi (D). Briefing harus mendahului Simulasi. Selain itu, Diskusi harus berlangsung tepat setelah Simulasi, sehingga kedua kegiatan ini merupakan pasangan berurutan S lalu D.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Apabila Simulasi berada pada posisi ketiga, Diskusi berada di posisi keempat, sedangkan Briefing hanya dapat berada di posisi kelima. Susunan tersebut tidak sah karena Briefing seharusnya sebelum Simulasi. Oleh sebab itu, Briefing harus menempati posisi ketiga, Simulasi posisi keempat, dan Diskusi posisi kelima.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Rangkaian akhirnya adalah Pendaftaran, Verifikasi, Briefing, Simulasi, Diskusi, dan Penutup atau P, V, B, S, D, T. Semua ketentuan awal, ketentuan mendahului, pasangan kegiatan, dan kegiatan terakhir telah terpenuhi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Posisi 1",
+          "Posisi 2",
+          "Posisi 3",
+          "Posisi 4",
+          "Posisi 5",
+          "Posisi 6"
+        ],
+        [
+          "Pendaftaran",
+          "Verifikasi",
+          "Briefing",
+          "Simulasi",
+          "Diskusi",
+          "Penutup"
+        ]
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah D.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 6",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Urutan & Peringkat",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Enam peserta, yaitu Kiki, Lala, Miko, Nara, Odi, dan Putri, memperoleh peringkat dari yang tertinggi sampai terendah. Lala memperoleh peringkat lebih tinggi daripada Miko. Miko lebih tinggi daripada Nara. Nara lebih tinggi daripada Odi. Odi lebih tinggi daripada Putri. Tidak terdapat informasi mengenai posisi Kiki dibandingkan peserta lainnya.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pernyataan manakah yang PASTI benar?",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Kiki berada di peringkat pertama.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Lala berada di peringkat pertama.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Miko memperoleh peringkat lebih tinggi daripada Odi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Putri berada di peringkat keenam.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Nara berada di peringkat ketiga.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: C",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pernyataan “lebih tinggi daripada” menunjukkan hubungan peringkat yang dapat dirangkai secara transitif. Lala lebih tinggi daripada Miko, Miko lebih tinggi daripada Nara, Nara lebih tinggi daripada Odi, dan Odi lebih tinggi daripada Putri. Dengan demikian, hubungan yang pasti adalah Lala > Miko > Nara > Odi > Putri, dengan tanda > berarti memperoleh peringkat lebih tinggi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kiki tidak memiliki aturan perbandingan terhadap lima peserta lainnya. Karena ada enam peserta, Kiki dapat berada di atas Lala, di antara dua peserta pada rantai tersebut, atau di bawah Putri. Setiap kemungkinan tetap mempertahankan urutan relatif lima peserta yang disebutkan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jika Kiki berada di peringkat pertama, Lala berada di peringkat kedua dan Putri di peringkat keenam. Akan tetapi, jika Kiki berada di peringkat terakhir, Lala berada di peringkat pertama dan Putri di peringkat kelima. Dua contoh ini membuktikan bahwa Kiki tidak selalu pertama, Lala tidak selalu pertama, dan Putri tidak selalu keenam. Posisi Nara juga dapat berubah dari peringkat ketiga menjadi peringkat keempat bergantung pada letak Kiki.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berbeda dari posisi absolut tersebut, hubungan Miko dan Odi tidak dipengaruhi oleh penyisipan Kiki. Miko berada di atas Nara dan Nara berada di atas Odi, sehingga Miko selalu berada di atas Odi. Karena itu, hanya pernyataan bahwa Miko memiliki peringkat lebih tinggi daripada Odi yang pasti benar.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "",
+      "images": [
+        "rId7"
+      ],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Kiki: posisi belum pasti",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah C.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 7",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Rute & Jalur",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Seorang peserta memulai perjalanan dari titik S dan harus berakhir di titik H. Dari S, peserta dapat menuju A atau B. Dari A, peserta dapat menuju C atau D. Dari B, peserta dapat menuju D atau E. Dari C, peserta hanya dapat menuju F. Dari D, peserta dapat menuju F atau G. Dari E, peserta hanya dapat menuju G. Dari F dan G, peserta dapat langsung menuju H.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berapa banyak rute berbeda dari S menuju H?",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. 2 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. 3 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. 4 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. 5 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. 6 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: E",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Rute perlu dihitung berdasarkan arah perjalanan yang diizinkan, bukan hanya jumlah titik yang tersedia. Dari titik awal S terdapat dua pilihan pertama, yaitu menuju A atau menuju B. Setiap cabang dihitung secara terpisah agar tidak ada jalur yang terlewat atau dihitung dua kali.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jika peserta memilih S menuju A, dari A ada dua pilihan, yaitu C dan D. Melalui C, perjalanan hanya dapat diteruskan ke F kemudian H sehingga terbentuk S-A-C-F-H. Melalui D, terdapat dua kemungkinan lanjutan, yaitu F lalu H atau G lalu H. Dengan demikian, cabang S-A menghasilkan S-A-C-F-H, S-A-D-F-H, dan S-A-D-G-H, sebanyak tiga rute.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jika peserta memilih S menuju B, dari B tersedia pilihan D atau E. Melalui D, perjalanan dapat berlanjut ke F-H atau G-H, sehingga diperoleh S-B-D-F-H dan S-B-D-G-H. Melalui E, peserta harus ke G kemudian H, sehingga diperoleh S-B-E-G-H. Cabang S-B juga menghasilkan tiga rute.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tidak terdapat sambungan tambahan dari C ke G atau dari E ke F, sehingga kemungkinan lain yang menggunakan sambungan tersebut tidak sah. Semua rute yang tercatat berakhir di H dan mematuhi arah perpindahan yang diberikan. Jumlah seluruh rute adalah tiga dari cabang A dan tiga dari cabang B, yaitu enam rute berbeda.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "",
+      "images": [
+        "rId8"
+      ],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "No.",
+          "Lintasan dari awal ke tujuan"
+        ],
+        [
+          "1",
+          "S - A - C - F - H"
+        ],
+        [
+          "2",
+          "S - A - D - F - H"
+        ],
+        [
+          "3",
+          "S - A - D - G - H"
+        ],
+        [
+          "4",
+          "S - B - D - F - H"
+        ],
+        [
+          "5",
+          "S - B - D - G - H"
+        ],
+        [
+          "6",
+          "S - B - E - G - H"
+        ]
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "Total: 6 rute berbeda.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah E.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 8",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Rute & Jalur",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Seorang pengunjung bergerak dari titik P menuju titik W. Dari P, pengunjung dapat menuju Q atau R. Dari Q, pengunjung dapat menuju S atau T. Dari R, pengunjung hanya dapat menuju T. Dari S, pengunjung menuju U. Dari T, pengunjung dapat menuju U atau V. Dari U dan V, pengunjung dapat langsung menuju W.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berapa banyak rute berbeda yang dapat dilalui?",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. 4 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. 5 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. 6 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. 7 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. 8 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: B",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Titik awal P mempunyai dua cabang, yaitu menuju Q atau menuju R. Untuk menghitung jumlah rute, semua kelanjutan yang sah dari setiap cabang perlu didaftarkan sampai mencapai W.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pada cabang P-Q, dari Q peserta dapat memilih S atau T. Bila memilih S, jalur berikutnya hanya S-U-W, sehingga terbentuk rute P-Q-S-U-W. Bila memilih T, tersedia dua pilihan, yaitu T-U-W dan T-V-W, sehingga terbentuk P-Q-T-U-W dan P-Q-T-V-W. Karena itu cabang melalui Q menyumbang tiga rute.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pada cabang P-R, pengunjung harus menuju T karena tidak ada sambungan lain dari R. Dari T tersedia dua pilihan, yaitu U atau V. Kedua pilihan langsung mengarah ke W, sehingga diperoleh P-R-T-U-W dan P-R-T-V-W. Cabang melalui R menyumbang dua rute.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Rute melalui Q dan R tidak sama karena berbeda pada perpindahan pertama setelah P. Semua rute tersebut mengikuti sambungan yang tersedia dan berakhir di W. Totalnya adalah tiga ditambah dua, sehingga terdapat lima rute berbeda.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "",
+      "images": [
+        "rId8"
+      ],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "No.",
+          "Lintasan dari awal ke tujuan"
+        ],
+        [
+          "1",
+          "P - Q - S - U - W"
+        ],
+        [
+          "2",
+          "P - Q - T - U - W"
+        ],
+        [
+          "3",
+          "P - Q - T - V - W"
+        ],
+        [
+          "4",
+          "P - R - T - U - W"
+        ],
+        [
+          "5",
+          "P - R - T - V - W"
+        ]
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "Total: 5 rute berbeda.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah B.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 9",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Rute & Jalur",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Seorang petugas harus bergerak dari ruang K menuju ruang R. Dari K, petugas dapat menuju L atau M. Dari L, petugas dapat menuju N atau O. Dari M, petugas juga dapat menuju N atau O. Dari N, petugas harus menuju P. Dari O, petugas harus menuju Q. Dari P dan Q, petugas dapat langsung menuju R.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Berapa banyak rute berbeda yang tersedia?",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. 4 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. 3 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. 5 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. 6 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. 2 rute",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: A",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Dari titik K terdapat dua kemungkinan perjalanan pertama, yaitu menuju L atau menuju M. Baik L maupun M masing-masing terhubung ke N dan O. Karena itu setiap pilihan pertama masih memiliki dua pilihan pada tahap berikutnya.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jika memilih K-L dan dilanjutkan ke N, petugas wajib menuju P kemudian R, sehingga terbentuk K-L-N-P-R. Jika dari L memilih O, perjalanan harus menuju Q kemudian R, sehingga terbentuk K-L-O-Q-R.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jika memilih K-M dan dilanjutkan ke N, kelanjutannya tetap N-P-R, sehingga terbentuk K-M-N-P-R. Jika dari M memilih O, kelanjutannya O-Q-R, sehingga terbentuk K-M-O-Q-R.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Meskipun dua rute dapat bergabung kembali di N atau O, rute tersebut tetap berbeda karena melewati L atau M sebelumnya. Sebaliknya, tidak ada pilihan tambahan dari N selain ke P atau dari O selain ke Q. Dengan demikian, ada dua pilihan pertama dan masing-masing mempunyai dua pilihan lanjutan, sehingga jumlahnya empat rute berbeda.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "",
+      "images": [
+        "rId8"
+      ],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "No.",
+          "Lintasan dari awal ke tujuan"
+        ],
+        [
+          "1",
+          "K - L - N - P - R"
+        ],
+        [
+          "2",
+          "K - L - O - Q - R"
+        ],
+        [
+          "3",
+          "K - M - N - P - R"
+        ],
+        [
+          "4",
+          "K - M - O - Q - R"
+        ]
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "Total: 4 rute berbeda.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah A.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 10",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Logika Pernyataan",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lima dokumen, yaitu P, Q, R, S, dan T, disusun pada rak bernomor 1 sampai 5 dari atas ke bawah. R berada di rak ke-3. Q harus berada pada rak tepat di atas atau tepat di bawah R. S berada di bawah T. P tidak berada di rak pertama.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pernyataan manakah yang PASTI benar?",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Q berada di rak ke-2.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. P berada di rak ke-4.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. S berada di rak ke-5.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. T tidak berada di rak ke-5.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Q berada di rak ke-4.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: D",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Rak diberi nomor dari atas ke bawah, sehingga rak pertama adalah yang tertinggi dan rak kelima adalah yang terendah. R telah ditentukan berada pada rak ketiga. Q wajib tepat bersebelahan dengan R, sehingga Q hanya mungkin berada pada rak kedua atau keempat. Q tidak mungkin menempati rak pertama atau kelima karena keduanya tidak langsung bersebelahan dengan rak ketiga.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Selain aturan tersebut, S harus berada di bawah T. Ini berarti nomor rak S harus lebih besar daripada nomor rak T. Agar aturan itu terpenuhi, setidaknya harus tersedia satu rak yang lebih rendah dari rak T untuk ditempati S.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Rak kelima merupakan rak paling bawah. Jika T diletakkan pada rak kelima, tidak ada rak dengan nomor lebih besar yang dapat ditempati S. Akibatnya aturan S di bawah T tidak mungkin dipenuhi. Oleh karena itu, T pasti tidak berada di rak kelima.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Informasi lain tidak cukup untuk menetapkan bahwa Q selalu di rak kedua atau keempat, atau bahwa P dan S selalu pada satu rak tertentu. Pernyataan pasti harus berlaku dalam setiap susunan yang sah, bukan hanya satu contoh. Kesimpulan yang memenuhi syarat ini adalah T tidak berada di rak ke-5.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "",
+      "images": [
+        "rId9"
+      ],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Kondisi",
+          "Dampak logis"
+        ],
+        [
+          "1",
+          "Q dapat berada pada rak 2 atau 4"
+        ],
+        [
+          "2",
+          "S harus lebih rendah daripada T"
+        ],
+        [
+          "3",
+          "T tidak mungkin pada rak 5"
+        ]
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah D.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 11",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Logika Pernyataan",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lima berkas, yaitu J, K, L, M, dan N, ditempatkan pada petak bernomor 1 sampai 5 dari kiri ke kanan. Ketentuannya sebagai berikut:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "1. L berada di petak ke-3.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "2. J harus berada tepat di sebelah K.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "3. M tidak berada di petak ke-1.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "4. N tidak boleh berada tepat di sebelah L.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jika K berada di petak ke-4, seluruh pernyataan berikut benar, kecuali ...",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. J berada di petak ke-5.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. N berada di petak ke-1.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. M berada di petak ke-1.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. L berada di petak ke-3.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. M berada di petak ke-2.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: C",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal menambahkan ketentuan bahwa K berada pada petak keempat, sementara L sudah berada pada petak ketiga. Kedua petak tersebut langsung dapat ditandai karena posisinya pasti.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "J harus tepat bersebelahan dengan K. Tetangga langsung petak keempat adalah petak ketiga dan petak kelima. Petak ketiga sudah ditempati L sehingga tidak tersedia untuk J. Karena itu J harus menempati petak kelima.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Setelah L, K, dan J ditempatkan, hanya petak pertama dan kedua yang masih kosong. Dua berkas yang tersisa adalah M dan N. N tidak boleh berada tepat di sebelah L yang menempati petak ketiga. Jika N berada di petak kedua, N tepat bersebelahan dengan L dan ketentuan dilanggar. Dengan demikian, N harus berada di petak pertama, sedangkan M berada di petak kedua.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Susunan tunggal yang memenuhi seluruh kondisi adalah N-M-L-K-J. Susunan ini juga memenuhi ketentuan M tidak berada di petak pertama. Karena M justru harus berada di petak kedua, pernyataan bahwa M berada di petak pertama adalah pernyataan yang tidak mungkin benar.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Posisi 1",
+          "Posisi 2",
+          "Posisi 3",
+          "Posisi 4",
+          "Posisi 5"
+        ],
+        [
+          "N",
+          "M",
+          "L",
+          "K",
+          "J"
+        ]
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah C.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 12",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Logika Pernyataan",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lima proposal, yaitu A, B, C, D, dan E, ditempatkan pada lima petak dari kiri ke kanan. C berada di petak ke-3. A harus berada tepat di sebelah B. D harus berada di sebelah kiri E. B tidak boleh berada di petak ke-5.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pernyataan berikut mungkin benar, kecuali ...",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. A berada di petak ke-1.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. B berada di petak ke-1.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. D berada di petak ke-4.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. E berada di petak ke-2.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. A berada di petak ke-4.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: E",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C selalu berada pada petak ketiga. Selain itu, A harus bersebelahan langsung dengan B, B tidak boleh berada di petak kelima, dan D harus berada di kiri E. Kata “kecuali” dalam pertanyaan berarti kita mencari pernyataan yang tidak dapat terjadi pada susunan mana pun yang memenuhi seluruh ketentuan.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Periksa kemungkinan A berada di petak keempat. Karena A dan B harus bersebelahan, B harus menempati petak ketiga atau kelima. Petak ketiga sudah diisi C, sedangkan petak kelima dilarang bagi B. Kedua pilihan tersebut tidak tersedia, sehingga A tidak mungkin berada di petak keempat.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Untuk memastikan pilihan lain memang mungkin, gunakan contoh susunan yang sah. Susunan A-B-C-D-E menunjukkan A dapat berada di petak pertama dan D dapat berada di petak keempat. Susunan B-A-C-D-E menunjukkan B dapat berada di petak pertama. Susunan D-E-C-B-A menunjukkan E dapat berada di petak kedua. Dalam ketiga contoh, C tetap di petak ketiga, A dan B bersebelahan, B tidak di petak kelima, serta D berada di kiri E.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Karena pilihan A, B, C, dan D masing-masing mempunyai setidaknya satu contoh susunan yang memenuhi ketentuan, keempat pernyataan itu mungkin benar. Satu-satunya pernyataan yang mustahil adalah A berada di petak keempat.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "",
+      "images": [
+        "rId9"
+      ],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Contoh susunan valid",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        [
+          "1",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        [
+          "2",
+          "B",
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        [
+          "3",
+          "D",
+          "E",
+          "C",
+          "B",
+          "A"
+        ]
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah E.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 13",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Distribusi & Kategori",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Empat karyawan, yaitu Adit, Bunga, Celi, dan Danu, masing-masing mengikuti tepat dua kegiatan dari Mentoring, Training, Riset, dan Fasilitasi. Diketahui bahwa:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "1. Adit mengikuti Mentoring.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "2. Bunga mengikuti Riset.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "3. Celi tidak mengikuti Fasilitasi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "4. Danu mengikuti Training.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "5. Tepat dua orang mengikuti Mentoring.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "6. Tepat dua orang mengikuti Training.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "7. Hanya Bunga dan Danu yang mengikuti Riset.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Siapakah yang mengikuti Mentoring dan Training sekaligus?",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Adit",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Celi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Bunga",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Danu",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Adit dan Bunga",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: B",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Setiap karyawan mengikuti tepat dua dari empat kegiatan. Informasi bahwa hanya Bunga dan Danu mengikuti Riset berarti keduanya mengikuti Riset, sedangkan Adit dan Celi tidak mengikuti Riset. Aturan ini penting karena langsung menghilangkan satu kemungkinan kegiatan bagi Celi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Danu diketahui mengikuti Training dan juga termasuk dua peserta Riset. Karena setiap orang hanya dapat mengikuti dua kegiatan, pilihan Danu sudah lengkap, yaitu Training dan Riset. Dengan demikian, Danu tidak mengikuti Mentoring atau Fasilitasi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Celi tidak mengikuti Fasilitasi. Celi juga tidak mengikuti Riset karena kegiatan tersebut hanya untuk Bunga dan Danu. Dari empat kegiatan yang tersedia, dua kegiatan yang masih mungkin bagi Celi hanya Mentoring dan Training. Karena Celi harus mengikuti tepat dua kegiatan, Celi pasti mengikuti keduanya sekaligus.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Ketentuan jumlah peserta dapat digunakan untuk memeriksa hasil. Tepat dua orang mengikuti Mentoring, yaitu Adit yang sudah diketahui mengikuti Mentoring dan Celi. Tepat dua orang mengikuti Training, yaitu Danu dan Celi. Maka Adit tidak mengikuti Training atau Riset, sehingga kegiatan keduanya adalah Fasilitasi. Bunga tidak mengikuti Mentoring atau Training karena kuota keduanya sudah terpenuhi; bersama Riset, kegiatan kedua Bunga adalah Fasilitasi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Seluruh karyawan kini mengikuti tepat dua kegiatan dan ketentuan jumlah peserta terpenuhi. Dengan demikian, peserta Mentoring sekaligus Training adalah Celi.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Kegiatan",
+          "Adit",
+          "Bunga",
+          "Celi",
+          "Danu"
+        ],
+        [
+          "Mentoring",
+          "YA",
+          "-",
+          "YA",
+          "-"
+        ],
+        [
+          "Training",
+          "-",
+          "-",
+          "YA",
+          "YA"
+        ],
+        [
+          "Riset",
+          "-",
+          "YA",
+          "-",
+          "YA"
+        ],
+        [
+          "Fasilitasi",
+          "YA",
+          "YA",
+          "-",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah B.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 14",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Distribusi & Kategori",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Sebuah tim membutuhkan ruang yang memiliki proyektor, internet, AC, papan tulis, dan fasilitas rekaman. Terdapat lima ruang, yaitu Ruang A, B, C, D, dan E. Proyektor tersedia di Ruang A, C, dan D. Internet tersedia di Ruang A, B, D, dan E. Semua ruang memiliki papan tulis. Semua ruang memiliki AC kecuali Ruang C. Fasilitas rekaman hanya tersedia di Ruang B dan D.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Ruang manakah yang memenuhi seluruh kebutuhan tim?",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Ruang D",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Ruang A",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Ruang B",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Ruang C",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Ruang E",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: A",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tim membutuhkan lima fasilitas secara bersamaan, yaitu proyektor, internet, AC, papan tulis, dan rekaman. Karena semua fasilitas wajib tersedia, sebuah ruang harus dieliminasi begitu diketahui tidak memiliki satu saja fasilitas tersebut.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Proyektor hanya tersedia di Ruang A, C, dan D. Dengan demikian, Ruang B dan E langsung tidak memenuhi persyaratan, meskipun keduanya memiliki fasilitas lain. Pemeriksaan dapat difokuskan pada tiga kandidat tersisa.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Ruang A mempunyai proyektor, internet, AC, dan papan tulis. Namun fasilitas rekaman hanya tersedia di Ruang B dan D sehingga Ruang A gugur. Ruang C mempunyai proyektor dan papan tulis, tetapi internet tidak tersedia di Ruang C dan AC juga tidak tersedia di sana. Selain itu, Ruang C tidak termasuk ruang dengan fasilitas rekaman.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Ruang D termasuk ruang dengan proyektor, termasuk ruang yang memiliki internet, dan memiliki AC karena satu-satunya ruang yang tidak memiliki AC adalah Ruang C. C, mempunyai papan tulis karena semua ruang memilikinya, serta termasuk ruang dengan fasilitas rekaman. Artinya, kelima kebutuhan tersedia sekaligus di Ruang D.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, Ruang D merupakan satu-satunya pilihan yang memenuhi seluruh kebutuhan tim. Memilih ruang lain hanya karena memiliki sebagian besar fasilitas akan keliru karena pertanyaan meminta seluruh fasilitas.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Fasilitas",
+          "Ruang A",
+          "Ruang B",
+          "Ruang C",
+          "Ruang D",
+          "Ruang E"
+        ],
+        [
+          "Proyektor",
+          "YA",
+          "-",
+          "YA",
+          "YA",
+          "-"
+        ],
+        [
+          "Internet",
+          "YA",
+          "YA",
+          "-",
+          "YA",
+          "YA"
+        ],
+        [
+          "AC",
+          "YA",
+          "YA",
+          "-",
+          "YA",
+          "YA"
+        ],
+        [
+          "Papan tulis",
+          "YA",
+          "YA",
+          "YA",
+          "YA",
+          "YA"
+        ],
+        [
+          "Rekaman",
+          "-",
+          "YA",
+          "-",
+          "YA",
+          "-"
+        ]
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah A.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Soal 15",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Category: Penalaran Verbal",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Lesson: Analitis",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Chapter: Distribusi & Kategori",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Tingkat Kesulitan: HOTS",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Bentuk Soal: Option New",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Enam peserta, yaitu Andi, Beni, Citra, Dela, Eko, dan Fani, dibagi ke dalam tiga kelompok, yaitu Kelompok X, Kelompok Y, dan Kelompok Z. Setiap kelompok terdiri atas tepat dua orang. Andi berada di Kelompok X. Beni berada di Kelompok Y. Citra berada di Kelompok Z. Dela berada satu kelompok dengan Andi. Eko tidak berada di Kelompok Y. Fani tidak berada di Kelompok Z.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Siapakah yang berada satu kelompok dengan Beni?",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "A. Dela",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "B. Eko",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "C. Citra",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "D. Fani",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "E. Andi",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Jawaban: D",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Pembahasan:",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Terdapat enam peserta yang harus dibagi menjadi tiga kelompok, masing-masing berisi tepat dua orang. Andi sudah berada di Kelompok X. Dela juga harus berada satu kelompok dengan Andi, sehingga dua tempat di Kelompok X terisi oleh Andi dan Dela. Kelompok X sudah penuh dan tidak dapat menerima Eko ataupun Fani.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Beni diketahui berada di Kelompok Y, sedangkan Citra berada di Kelompok Z. Setelah Andi, Dela, Beni, dan Citra ditempatkan, dua peserta yang belum masuk kelompok adalah Eko dan Fani. Masing-masing hanya dapat mengisi satu kursi kosong di Kelompok Y atau Kelompok Z.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Eko tidak boleh berada di Kelompok Y. Karena Kelompok X telah penuh, Eko harus ditempatkan di Kelompok Z bersama Citra. Setelah Eko ditempatkan, Kelompok Z juga penuh.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Fani harus mengisi satu-satunya posisi yang tersisa, yaitu di Kelompok Y bersama Beni. Penempatan ini sekaligus sesuai dengan ketentuan bahwa Fani tidak berada di Kelompok Z.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "p",
+      "text": "Susunan akhirnya adalah Kelompok X berisi Andi dan Dela, Kelompok Y berisi Beni dan Fani, serta Kelompok Z berisi Citra dan Eko. Setiap kelompok beranggotakan tepat dua peserta dan seluruh batasan dipenuhi. Jadi, peserta yang satu kelompok dengan Beni adalah Fani.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Kelompok",
+          "Anggota 1",
+          "Anggota 2"
+        ],
+        [
+          "Kelompok X",
+          "Andi",
+          "Dela"
+        ],
+        [
+          "Kelompok Y",
+          "Beni",
+          "Fani"
+        ],
+        [
+          "Kelompok Z",
+          "Citra",
+          "Eko"
+        ]
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "Jadi, jawaban yang benar adalah D.",
+      "images": [],
+      "numbering": null,
+      "math": 0
+    }
+  ],
+  "media": [
+    "word/media/image2.png",
+    "word/media/image1.png",
+    "word/media/image5.png",
+    "word/media/image4.png"
+  ]
+}

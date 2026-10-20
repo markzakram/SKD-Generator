@@ -3,6 +3,8 @@
 // rasterisasi gambar dan clipboard ada di lib/take-actions.ts dan lib/clipboard.ts.
 import { docImageSize, fileSlug, letter, questionHeader, reasonLine, scoreLine } from './export';
 import { hasStimulus, optionSvg, questionSvg } from './figures';
+import { questionTable } from './table';
+import { mathHtml, latexText } from './math';
 import type { Question } from './types';
 
 export type TakePart = 'soal' | 'pilihan' | 'jawaban' | 'pembahasan';
@@ -40,7 +42,8 @@ export function takeSections(q: Question, parts: readonly TakePart[], heading = 
   const merged = has('soal') && has('pilihan') && stimulus && optionImages;
   if (has('soal')) {
     const section: TakeNode[] = lines(q.stem).map((text) => ({ k: 'text', text }));
-    if (q.table) section.push({ k: 'table', headers: q.table.headers, rows: q.table.rows });
+    const table=questionTable(q);
+    if (table) section.push({ k: 'table', ...table });
     if (merged) section.push({ k: 'image', slot: 'gabungan', alt: 'Gambar soal ' + q.no + ' beserta pilihan A sampai E' });
     else if (stimulus) section.push({ k: 'image', slot: 'stimulus', alt: 'Gambar soal ' + q.no });
     sections.push(section);
@@ -56,7 +59,7 @@ export function takeSections(q: Question, parts: readonly TakePart[], heading = 
   }
   if (has('pembahasan')) {
     sections.push([{ k: 'text', bold: true, text: 'Pembahasan' }, ...lines(q.explanation).map((text): TakeNode => ({ k: 'text', text })),
-      ...q.options.map((_, i): TakeNode => ({ k: 'text', small: true, text: reasonLine(q, i) }))]);
+      ...q.options.map((_, i): TakeNode => ({ k: 'text', small: true, text: reasonLine(q, i) })),...(q.tip?[{k:'text' as const,text:'Cara cepat: '+q.tip}]:[])]);
   }
   return sections;
 }
@@ -65,9 +68,9 @@ export const sectionSlots = (sections: TakeNode[][]): ImageSlot[] =>
 
 // ---- Teks biasa (cadangan bila browser tidak mengizinkan salinan kaya) ----------------------------------------------------
 const IMAGE_TEXT: Record<ImageSlot, string> = { stimulus: 'Gambar soal', pilihan: 'Gambar pilihan A sampai E', gabungan: 'Gambar soal dan pilihan A sampai E' };
-const nodeText = (node: TakeNode): string => node.k === 'table' ? [node.headers, ...node.rows].map((row) => row.join(' | ')).join('\n') :
-  node.k === 'option' ? node.letter + '. ' + node.text : node.k === 'image' ? '[' + IMAGE_TEXT[node.slot] + ']' : node.text;
-export const sectionsText = (sections: TakeNode[][]) => sections.map((section) => section.map(nodeText).join('\n')).join('\n\n');
+const nodeText = (node: TakeNode): string => node.k === 'table' ? [...(node.headers.length?[node.headers]:[]), ...node.rows].map((row) => row.join(' | ')).join('\n') :
+  node.k === 'option' ? node.letter + '. ' + latexText(node.text) : node.k === 'image' ? '[' + IMAGE_TEXT[node.slot] + ']' : node.text;
+export const sectionsText = (sections: TakeNode[][]) => sections.map((section) => section.map(node=>node.k==='heading'?node.text:latexText(nodeText(node))).join('\n')).join('\n\n');
 export const joinTexts = (texts: string[]) => texts.join('\n\n\n');
 
 // ---- HTML untuk Word dan Google Docs --------------------------------------------------------------------------------------
@@ -76,14 +79,14 @@ export type TakeImage = { url: string; width: number; height: number };
 export type TakeImages = Partial<Record<ImageSlot, TakeImage>>;
 export const esc = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const cell = 'border:1px solid #bfbfbf;padding:3pt 6pt;text-align:left;';
-function nodeHtml(node: TakeNode, images: TakeImages): string {
+function nodeHtml(node: TakeNode, images: TakeImages, renderText:(text:string)=>string): string {
   switch (node.k) {
     case 'heading': return '<p style="margin:0 0 6pt;font-size:10pt"><b>' + esc(node.text) + '</b></p>';
-    case 'text': return '<p style="margin:0 0 ' + (node.small ? 3 : 6) + 'pt' + (node.small ? ';font-size:10pt' : '') + '">' + (node.bold ? '<b>' + esc(node.text) + '</b>' : esc(node.text)) + '</p>';
-    case 'option': return '<p style="margin:0 0 3pt"><b>' + node.letter + '.</b> ' + esc(node.text) + '</p>';
+    case 'text': return '<p style="margin:0 0 ' + (node.small ? 3 : 6) + 'pt' + (node.small ? ';font-size:10pt' : '') + '">' + (node.bold ? '<b>' + renderText(node.text) + '</b>' : renderText(node.text)) + '</p>';
+    case 'option': return '<p style="margin:0 0 3pt"><b>' + node.letter + '.</b> ' + renderText(node.text) + '</p>';
     case 'table': return '<table border="1" cellspacing="0" cellpadding="4" style="border-collapse:collapse;margin:0 0 8pt">' +
-      '<tr>' + node.headers.map((header) => '<th style="' + cell + 'background:#f2f2f2">' + esc(header) + '</th>').join('') + '</tr>' +
-      node.rows.map((row) => '<tr>' + row.map((value) => '<td style="' + cell + '">' + esc(value) + '</td>').join('') + '</tr>').join('') + '</table>';
+      (node.headers.length ? '<tr>' + node.headers.map((header) => '<th style="' + cell + 'background:#f2f2f2">' + renderText(header) + '</th>').join('') + '</tr>' : '') +
+      node.rows.map((row) => '<tr>' + row.map((value) => '<td style="' + cell + '">' + renderText(value) + '</td>').join('') + '</tr>').join('') + '</table>';
     case 'image': {
       const image = images[node.slot];
       if (!image) return '<p style="margin:0 0 6pt"><i>[' + IMAGE_TEXT[node.slot] + ']</i></p>';
@@ -92,7 +95,7 @@ function nodeHtml(node: TakeNode, images: TakeImages): string {
     }
   }
 }
-export const sectionsHtml = (sections: TakeNode[][], images: TakeImages) => sections.flat().map((node) => nodeHtml(node, images)).join('');
+export const sectionsHtml = (sections: TakeNode[][], images: TakeImages, renderText=mathHtml) => sections.flat().map((node) => nodeHtml(node, images, renderText)).join('');
 // Beberapa soal dipisah garis tipis; satu pembungkus memberi huruf Calibri 11 pt seperti ekspor Word.
 export const joinHtml = (items: string[]) => '<div style="font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#000000">' +
   items.join('<hr style="border:0;border-top:1px solid #bfbfbf;margin:12pt 0">') + '</div>';

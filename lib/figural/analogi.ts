@@ -1,6 +1,5 @@
 import type { Rng } from '../rng';
 import type { Difficulty, Fill, Part, Scene } from '../types';
-import { buildLineAnalogi } from './garis-soal';
 import { MARK_GLYPHS } from './glyphs';
 import { chooseWrong, layoutOk, polar, tierOf, type Built } from './compose';
 import { applyOps, type Op } from './ops';
@@ -62,8 +61,6 @@ function altOps(op: Op, others: string[]): Op[] {
 }
 
 export function buildAnalogi(a: Rng, level: Difficulty): Built | null {
-  // Sebagian soal memakai gambar garis dari benih (hubungan putaran/pencerminan), sisanya gambar bagian berwarna.
-  if (a.next() < 0.3) return buildLineAnalogi(a, level);
   const tier = tierOf(level), ops = pickOps(a, tier);
   const thetas = a.shuffle([0, 45, 90, 135, 180, 225, 270, 315]).slice(0, 3);
   const [frameA, frameC] = a.shuffle(FRAMES).slice(0, 2), [coreA, coreC] = a.shuffle(CORES).slice(0, 2), [markA, markC] = a.shuffle(MARK_GLYPHS).slice(0, 2);

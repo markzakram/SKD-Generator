@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "file": "Andika - Numerik SKD 2027_Ready to Input.docx",
+      "questionsFound": 48,
+      "imported": 48
+    },
+    {
+      "file": "Dhea_TWK (Bahasa Negara)_Done Input.docx",
+      "questionsFound": 12,
+      "imported": 12
+    },
+    {
+      "file": "Nynda_Paket 1 TWK SKD 2027_Done Input.docx",
+      "questionsFound": 30,
+      "imported": 30
+    },
+    {
+      "file": "Tri_Paket 2 TWK SKD 2027_Done Input.docx",
+      "questionsFound": 24,
+      "imported": 24
+    },
+    {
+      "file": "Tri_Paket 3 TWK SKD 2027_Done Input.docx",
+      "questionsFound": 24,
+      "imported": 24
+    },
+    {
+      "file": "Nynda - TKP 1_Done Input.docx",
+      "questionsFound": 45,
+      "imported": 45
+    },
+    {
+      "file": "Wil - TKP 1_Done Input.docx",
+      "questionsFound": 45,
+      "imported": 45
+    },
+    {
+      "file": "Wil - TKP 2_Done Input.docx",
+      "questionsFound": 45,
+      "imported": 45
+    },
+    {
+      "file": "Andika - Verbal Silogisme SKD 2027_Ready to Input.docx",
+      "questionsFound": 15,
+      "imported": 15
+    },
+    {
+      "file": "Andika_Verbal Analitis - Memperkuat_Memperlemah_Ready to Input.docx",
+      "questionsFound": 9,
+      "imported": 9
+    },
+    {
+      "file": "Uma - Verbal Analitis_Done Input.docx",
+      "questionsFound": 15,
+      "imported": 15
+    }
+  ],
+  "duplicates": [
+    {
+      "file": "Dhea_TWK - Bahasa Negara.docx",
+      "count": 12,
+      "canonical": "Dhea_TWK (Bahasa Negara)_Done Input.docx",
+      "reason": "Versi awal; gunakan versi Done Input dengan metadata lengkap."
+    }
+  ],
+  "issues": [],
+  "corrections": [
+    {
+      "id": "tryout-ref-00-02",
+      "change": "Pecahan campuran ditulis dengan tanda tambah eksplisit; nilai tidak berubah."
+    },
+    {
+      "id": "tryout-ref-00-03",
+      "change": "Pecahan campuran ditulis dengan tanda tambah eksplisit; nilai tidak berubah."
+    }
+  ],
+  "counts": {
+    "TIU": 87,
+    "TWK": 90,
+    "TKP": 135
+  },
+  "pendingImages": []
+}

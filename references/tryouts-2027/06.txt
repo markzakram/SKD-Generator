@@ -1,0 +1,1081 @@
+FILE: Nynda - TKP 1_Done Input.docx
+[0] Soal 1
+[1] Category: Kepribadian
+[2] Lesson: TKP SKD
+[3] Chapter: Pelayanan Publik
+[4] Tingkat Kesulitan: HOTS
+[5] Bentuk Soal: Option New
+[6] Asap kebakaran hutan memburuk sehingga pimpinan menerapkan kerja fleksibel dan membatasi petugas di kantor. Beberapa warga tetap datang untuk mengurus izin yang harus selesai sebelum penyaluran bantuan esok hari. Anda bertugas mengoordinasikan layanan pada shift tersebut. Tindakan yang paling tepat adalah ... (Pelayanan Publik)
+[7] A. Mengalihkan semua permohonan ke kanal daring serta membantu warga mengunggah berkas dari ruang tunggu kantor secara bergantian.
+[8] B. Mencatat identitas warga yang datang dan meminta mereka menunggu keputusan pimpinan mengenai pembukaan layanan tatap muka penuh.
+[9] C. Melayani seluruh warga yang hadir seperti biasa dan meminta petugas WFH kembali ke kantor agar target penyelesaian hari itu terpenuhi.
+[10] D. Mendata kebutuhan seluruh pemohon, mengatur jadwal kedatangan ulang, dan menambah kanal konsultasi agar kerumunan di kantor segera berkurang.
+[11] E. Membuka layanan terbatas berdasarkan tingkat urgensi, dengan petugas piket yang ditetapkan dan jadwal penyelesaian bagi setiap permohonan.
+[12] Jawaban: E
+[13] Pembahasan:
+[14] Konsep yang digunakan: Keberlanjutan pelayanan dalam kondisi darurat melalui prioritas yang sah, pembagian tugas aman, dan kepastian layanan
+[15] Kata kunci: asap, kerja fleksibel, SOP darurat, petugas piket, layanan mendesak, kepastian waktu
+[16] Opsi E (5 Poin) paling tepat karena kebutuhan mendesak tetap dilayani melalui mekanisme darurat yang sah tanpa mengabaikan keselamatan petugas. Pemilahan permohonan, pembagian piket, dan kepastian waktu membuat layanan tetap responsif serta dapat dipertanggungjawabkan.
+[17] Fleksibilitas kerja tidak dimaknai sebagai penutupan otomatis, tetapi sebagai penyesuaian sumber daya sesuai risiko dan kebutuhan warga.
+[18] Pembahasan opsi lain:
+[19] A (3 Poin) Kanal daring mengurangi kontak langsung, tetapi mengalihkan semua permohonan belum mempertimbangkan gangguan akses dan urgensi setiap warga.
+[20] B (1 Poin) Pencatatan identitas memberi data awal, tetapi menunggu keputusan tanpa tindakan membuat kebutuhan mendesak tidak tertangani.
+[21] C (2 Poin) Menjaga layanan tetap berjalan merupakan niat baik, tetapi memanggil seluruh petugas kembali mengabaikan kebijakan keselamatan dan kebutuhan pembatasan paparan.
+[22] D (4 Poin) Mendahulukan permohonan mendesak sudah tepat, tetapi belum mengatur pembagian tugas, dasar prioritas, dan kepastian bagi pemohon lain.
+[23] Cara cepat: Dalam keadaan darurat, pertahankan layanan penting melalui SOP khusus, pembagian tugas yang aman, dan kepastian tindak lanjut.
+[24] Soal 2
+[25] Category: Kepribadian
+[26] Lesson: TKP SKD
+[27] Chapter: Pelayanan Publik
+[28] Tingkat Kesulitan: HOTS
+[29] Bentuk Soal: Option New
+[30] Pada hari pelayanan puncak, portal terpadu mengalami gangguan sehingga verifikasi digital tidak dapat dilakukan. Puluhan warga telah menunggu dan sebagian harus menggunakan dokumennya pada hari yang sama. Tim teknis belum dapat memastikan kapan sistem pulih. Langkah Anda yang paling tepat adalah ... (Pelayanan Publik)
+[31] A. Menyarankan warga mencoba portal melalui perangkat pribadi karena gangguan mungkin hanya terjadi pada jaringan kantor pelayanan.
+[32] B. Mengaktifkan prosedur cadangan, memilah kebutuhan mendesak, dan memberi warga akses pembaruan selama portal belum berfungsi.
+[33] C. Menjelaskan gangguan, menerima berkas untuk pemeriksaan manual, mencatat nomor kontak, dan mengabari warga setelah tim teknis memberi perkembangan.
+[34] D. Meminta warga tetap menunggu di ruang layanan sampai tim teknis menyatakan portal dapat digunakan kembali untuk memproses permohonan.
+[35] E. Mengumumkan gangguan dan meminta warga kembali esok hari dengan membawa nomor antrean lama agar tidak perlu mendaftar ulang.
+[36] Jawaban: B
+[37] Pembahasan:
+[38] Konsep yang digunakan: Pemulihan layanan saat sistem digital terganggu melalui keterbukaan, prosedur cadangan, prioritas, dan komunikasi perkembangan
+[39] Kata kunci: portal terganggu, prosedur cadangan, verifikasi awal, prioritas, kanal pembaruan
+[40] Opsi B (5 Poin) paling tepat karena warga memperoleh penjelasan jujur sekaligus jalur pelayanan yang tetap berjalan. Prosedur cadangan menjaga pencatatan, prioritas berbasis kebutuhan melindungi kepentingan mendesak, dan kanal pembaruan mencegah warga menunggu tanpa kepastian.
+[41] Solusi tidak menjanjikan waktu pemulihan yang belum diketahui, tetapi memberikan kepastian mengenai proses yang berada dalam kendali petugas.
+[42] Pembahasan opsi lain:
+[43] A (1 Poin) Mencoba perangkat lain dapat menjadi pemeriksaan awal, tetapi menggeser beban kepada warga dan tidak menyelesaikan gangguan portal pusat.
+[44] C (4 Poin) Pemeriksaan manual merupakan alternatif yang baik, tetapi tanpa estimasi proses atau kanal pembaruan warga tetap tidak memiliki kepastian.
+[45] D (2 Poin) Menunggu sistem pulih menjaga alur normal, tetapi membuat warga tertahan tanpa alternatif atau kepastian.
+[46] E (3 Poin) Nomor antrean lama mencegah pendaftaran ulang, tetapi menunda semua layanan tanpa memilah kebutuhan yang mendesak.
+[47] Cara cepat: Ketika sistem gagal, jelaskan keadaan, aktifkan prosedur cadangan, dan beri kepastian proses yang dapat dikendalikan.
+[48] Soal 3
+[49] Category: Kepribadian
+[50] Lesson: TKP SKD
+[51] Chapter: Pelayanan Publik
+[52] Tingkat Kesulitan: HOTS
+[53] Bentuk Soal: Option New
+[54] Menjelang loket tutup, seorang lansia dari desa terpencil datang mengurus dokumen bantuan. Satu surat pendukung belum tercetak, tetapi datanya tersedia pada sistem instansi dan petugas berwenang masih berada di kantor. Pemohon mengatakan sulit kembali dalam waktu dekat. Sikap Anda adalah ... (Pelayanan Publik)
+[55] A. Meminta petugas yang menguasai data memverifikasi surat tersebut dan mencetaknya agar permohonan dapat dituntaskan hari itu.
+[56] B. Mencatat permohonan, memeriksa data bersama petugas terkait, dan memberikan layanan prioritas ketika lansia itu datang pada hari kerja berikutnya.
+[57] C. Meminta pemohon mencari tempat pencetakan terdekat sebelum loket tutup agar petugas tidak mengakses data di luar tugasnya.
+[58] D. Memberikan nomor antrean prioritas untuk hari berikutnya serta menjelaskan bahwa kelengkapan berkas tetap menjadi tanggung jawab pemohon.
+[59] E. Menerima berkas yang ada dan meminta lansia mengirimkan surat pendukung melalui pesan pribadi setelah kembali ke desanya.
+[60] Jawaban: A
+[61] Pembahasan:
+[62] Konsep yang digunakan: Akomodasi yang wajar bagi kelompok rentan tanpa mengurangi kelengkapan dan kewenangan verifikasi
+[63] Kata kunci: lansia, desa terpencil, berkas kurang, data internal, petugas berwenang, SOP
+[64] Opsi A (5 Poin) paling tepat karena hambatan pemohon diatasi menggunakan data dan petugas yang sah, sementara persyaratan tetap dipenuhi. Bantuan pencetakan merupakan akomodasi yang wajar, bukan penghapusan syarat atau perlakuan istimewa yang melanggar aturan.
+[65] Tindakan tersebut mempertimbangkan jarak, usia, dan waktu tanpa mengorbankan akurasi dokumen.
+[66] Pembahasan opsi lain:
+[67] B (4 Poin) Verifikasi melalui petugas berwenang sudah tepat, tetapi penundaan pencetakan tidak diperlukan karena sumber daya masih tersedia.
+[68] C (1 Poin) Meminta pencetakan di luar menjaga batas tugas secara kaku, tetapi memindahkan beban kepada lansia dan mengabaikan akses internal yang sah.
+[69] D (3 Poin) Antrean prioritas mengurangi waktu tunggu berikutnya, tetapi pemohon tetap harus menempuh perjalanan lagi padahal solusi sah tersedia saat itu.
+[70] E (2 Poin) Menerima pengiriman melalui pesan pribadi tampak memudahkan, tetapi berisiko pada keamanan data dan tidak mengikuti kanal resmi.
+[71] Cara cepat: Berikan akomodasi yang wajar kepada kelompok rentan tanpa menghapus persyaratan atau melampaui kewenangan.
+[72] Soal 4
+[73] Category: Kepribadian
+[74] Lesson: TKP SKD
+[75] Chapter: Pelayanan Publik
+[76] Tingkat Kesulitan: HOTS
+[77] Bentuk Soal: Option New
+[78] Seorang warga mengeluhkan antrean pelayanan administrasi yang bergerak lambat dengan nada tinggi. Ia harus meninggalkan kantor dalam 30 menit, sementara masih terdapat sejumlah pemohon yang datang lebih dahulu. Kantor menyediakan loket penitipan berkas resmi yang memungkinkan warga menyerahkan dokumen tanpa menunggu pemeriksaan, memperoleh bukti penerimaan, dan memantau status pengajuan. Namun, seluruh berkas tetap diproses sesuai urutan antrean. Sebagai petugas, tindakan Anda adalah ... (Pelayanan Publik)
+[79] A. Mendengarkan keluhan warga dan meminta maaf atas keterlambatan, kemudian menjelaskan perkiraan waktu antrean agar warga dapat mempertimbangkan apakah akan tetap menunggu.
+[80] B. Memprioritaskan pemeriksaan berkas warga tersebut agar ia dapat meninggalkan kantor tepat waktu, setelah menjelaskan kepada pemohon lain alasan pemberian pelayanan lebih dahulu.
+[81] C. Menanggapi keluhan dengan tenang dan menawarkan penitipan berkas melalui loket resmi, sambil memastikan warga memperoleh bukti penerimaan serta memahami cara memantau status pengajuan.
+[82] D. Meminta warga menyampaikan keluhan dengan lebih tenang, kemudian menjelaskan keterbatasan jumlah petugas dan pentingnya menjaga ketertiban antrean bagi seluruh pemohon.
+[83] E. Mengarahkan warga menggunakan loket penitipan berkas yang tersedia dan menjelaskan bahwa dokumennya tetap diproses sesuai antrean, lalu melanjutkan pelayanan pemohon berikutnya.
+[84] Jawaban: C
+[85] Pembahasan:
+[86] Konsep yang digunakan: Pelayanan prima, empati, manajemen antrean, kepastian pelayanan, dan penyelesaian keluhan.
+[87] Kata kunci: Keluhan warga, keterbatasan waktu, loket penitipan resmi, keadilan antrean, kepastian tindak lanjut.
+[88] Opsi C (5 poin) paling tepat karena memberikan solusi yang sesuai dengan kebutuhan warga tanpa merugikan pemohon lainnya. Penitipan berkas melalui loket resmi memungkinkan warga meninggalkan kantor tepat waktu, sementara pemeriksaan tetap mengikuti urutan antrean. Petugas juga memastikan warga menerima bukti penerimaan dan memahami cara memantau status pengajuan sehingga memperoleh kepastian pelayanan tanpa harus menunggu di kantor.
+[89] Empati tidak berarti mendahulukan warga yang paling keras. Pelayanan tetap adil dan profesional.
+[90] Pembahasan opsi lain:
+[91] A (3 poin) karena menunjukkan empati melalui permintaan maaf dan penjelasan perkiraan waktu antrean, tetapi belum menawarkan mekanisme penitipan yang sebenarnya dapat menyelesaikan keterbatasan waktu warga.
+[92] B (1 poin) karena berusaha membantu warga memenuhi kebutuhan waktunya, tetapi mendahulukan pemeriksaan berkas tanpa dasar prioritas yang sah dapat merugikan pemohon lain yang telah menunggu lebih dahulu.
+[93] D (2 poin) karena berupaya menjaga ketertiban dan menjelaskan kondisi pelayanan secara transparan, tetapi lebih berfokus pada perilaku warga daripada memberikan solusi atas kendala waktu yang dihadapinya.
+[94] E (4 poin) karena telah menawarkan mekanisme penitipan yang sah dan menjaga keadilan antrean, tetapi belum memastikan warga memahami bukti penerimaan serta cara memantau status sehingga kepastian tindak lanjut kurang terjamin.
+[95] Cara cepat: Hadapi keluhan dengan tenang, berikan kepastian dan alternatif, tetapi jangan mengorbankan keadilan antrean.
+[96] Soal 5
+[97] Category: Kepribadian
+[98] Lesson: TKP SKD
+[99] Chapter: Pelayanan Publik
+[100] Tingkat Kesulitan: HOTS
+[101] Bentuk Soal: Option New
+[102] Saat Anda sedang menjelaskan koreksi berkas kepada seorang warga, atasan menelepon dan meminta laporan penting segera dibawa ke ruangannya. Di loket sebelah terdapat rekan yang dapat melanjutkan pelayanan, tetapi ia juga sedang menyelesaikan satu permohonan. Tindakan Anda adalah ... (Pelayanan Publik)
+[103] A. Meminta izin kepada warga, memberi tahu perkiraan waktu, menyelesaikan urusan atasan, dan kembali melanjutkan layanan tanpa pergantian petugas.
+[104] B. Mengabaikan panggilan sementara sampai pelayanan warga selesai agar urutan komunikasi tidak terputus oleh urusan kedinasan lain.
+[105] C. Mengirim pesan kepada atasan bahwa laporan akan diserahkan setelah antrean selesai, tanpa menanyakan batas waktu yang sebenarnya dibutuhkan.
+[106] D. Memastikan urgensi panggilan, menuntaskan bagian kritis penjelasan, dan menyerahkan layanan kepada rekan dengan informasi utuh.
+[107] E. Mengakhiri penjelasan kepada warga dan segera menemui atasan, kemudian kembali ke loket untuk melanjutkan pelayanan dari awal.
+[108] Jawaban: D
+[109] Pembahasan:
+[110] Konsep yang digunakan: Menjaga kesinambungan pelayanan ketika muncul tugas kedinasan mendesak melalui klarifikasi dan serah terima yang akuntabel
+[111] Kata kunci: panggilan atasan, warga sedang dilayani, urgensi, bagian kritis, serah terima
+[112] Opsi D (5 Poin) paling tepat karena petugas memastikan tingkat urgensi perintah, tidak memutus penjelasan pada bagian yang dapat menimbulkan kesalahan, dan melakukan serah terima yang jelas. Kepentingan atasan ditangani tanpa membiarkan warga mengulang proses.
+[113] Koordinasi dengan rekan dilakukan setelah permohonan yang sedang ditanganinya selesai atau pada titik yang aman, sehingga tidak memindahkan gangguan kepada pemohon lain.
+[114] Pembahasan opsi lain:
+[115] A (4 Poin) Meminta izin dan menjaga satu petugas menangani kasus merupakan langkah baik, tetapi membuat warga menunggu walaupun serah terima dapat dilakukan.
+[116] B (3 Poin) Menyelesaikan pelayanan menjaga fokus kepada warga, tetapi mengabaikan panggilan tanpa memastikan urgensinya dapat menghambat tugas penting.
+[117] C (1 Poin) Memberi kabar kepada atasan lebih baik daripada diam, tetapi menetapkan penundaan tanpa klarifikasi urgensi tidak cukup akuntabel.
+[118] E (2 Poin) Segera memenuhi panggilan menunjukkan kepatuhan, tetapi memutus pelayanan dan membuat warga mengulang proses tanpa kepastian.
+[119] Cara cepat: Klarifikasi urgensi, tuntaskan bagian kritis, dan lakukan serah terima lengkap agar kedua tugas tetap berjalan.
+[120] Soal 6
+[121] Category: Kepribadian
+[122] Lesson: TKP SKD
+[123] Chapter: Pelayanan Publik
+[124] Tingkat Kesulitan: HOTS
+[125] Bentuk Soal: Option New
+[126] Listrik padam ketika antrean sedang padat sehingga layar nomor dan komputer loket tidak berfungsi. Formulir kertas serta daftar antrean cadangan tersedia, sementara transaksi yang memerlukan verifikasi pusat tidak dapat diselesaikan. Sejumlah warga mulai mempertanyakan kepastian layanan. Langkah Anda adalah ... (Pelayanan Publik)
+[127] A. Membagikan formulir kertas kepada seluruh warga agar mereka tetap memiliki kegiatan sambil menunggu pasokan listrik kembali normal.
+[128] B. Menutup sementara loket untuk mencegah kesalahan pencatatan dan meminta warga memantau pengumuman pembukaan melalui media sosial.
+[129] C. Mengaktifkan antrean manual dan memproses layanan yang aman dilakukan, disertai pencatatan untuk verifikasi lanjutan.
+[130] D. Memprioritaskan warga yang urusannya tidak membutuhkan pembayaran, lalu meminta warga lain mengambil nomor antrean baru setelah listrik menyala.
+[131] E. Mengumumkan gangguan, memanggil antrean secara manual, memeriksa seluruh berkas, dan menyimpan hasilnya sampai sistem dapat digunakan kembali.
+[132] Jawaban: C
+[133] Pembahasan:
+[134] Konsep yang digunakan: Keandalan layanan saat infrastruktur terganggu melalui komunikasi, antrean cadangan, pemilahan proses, dan pencatatan tindak lanjut
+[135] Kata kunci: listrik padam, antrean manual, layanan dasar, verifikasi pusat, pencatatan
+[136] Opsi C (5 Poin) paling tepat karena layanan yang tidak bergantung pada listrik tetap berjalan, sedangkan proses yang tertunda dicatat agar dapat dilanjutkan dengan tertib. Pengumuman kondisi dan penggunaan antrean manual menjaga kepastian serta urutan warga.
+[137] Petugas tidak memaksakan transaksi yang membutuhkan verifikasi pusat dan tidak menghentikan seluruh layanan hanya karena sebagian sistem tidak tersedia.
+[138] Pembahasan opsi lain:
+[139] A (2 Poin) Formulir kertas memanfaatkan waktu tunggu, tetapi tanpa pengaturan antrean dan pemilahan proses belum menjamin layanan berjalan.
+[140] B (1 Poin) Penutupan mencegah kesalahan, tetapi terlalu luas karena sejumlah layanan masih dapat dilakukan secara manual.
+[141] D (3 Poin) Memilah layanan yang tidak membutuhkan pembayaran cukup membantu, tetapi nomor antrean baru dapat menghilangkan urutan dan membebani warga.
+[142] E (4 Poin) Antrean manual dan pemeriksaan berkas merupakan langkah baik, tetapi menahan semua hasil mengurangi manfaat prosedur cadangan.
+[143] Cara cepat: Saat fasilitas utama gagal, jalankan fungsi yang masih aman, jaga urutan, dan catat proses yang harus ditindaklanjuti.
+[144] Soal 7
+[145] Category: Kepribadian
+[146] Lesson: TKP SKD
+[147] Chapter: Pelayanan Publik
+[148] Tingkat Kesulitan: HOTS
+[149] Bentuk Soal: Option New
+[150] Ketika antrean padat, seorang tokoh masyarakat meminta kerabatnya didahulukan karena harus segera menghadiri rapat desa. Kerabat tersebut tidak termasuk kelompok prioritas dan beberapa warga telah menunggu cukup lama. Tokoh itu dikenal sering membantu kegiatan instansi. Sikap Anda yang paling tepat adalah ... (Pelayanan Publik)
+[151] A. Menanyakan persetujuan warga yang sedang antre sebelum memutuskan apakah kerabat tokoh dapat memperoleh giliran lebih awal.
+[152] B. Meminta penanggung jawab loket menangani permintaan tokoh agar keputusan memiliki dasar kewenangan yang lebih tinggi.
+[153] C. Menjelaskan kriteria prioritas dan mengarahkan kerabat tokoh mengikuti urutan yang berlaku tanpa menawarkan pilihan layanan lainnya.
+[154] D. Mendahulukan kerabat tokoh tersebut sebagai bentuk penghargaan, lalu menjelaskan kepada warga lain bahwa ia memiliki agenda desa.
+[155] E. Menjelaskan bahwa agenda rapat bukan kriteria prioritas dan menawarkan kanal layanan lain tanpa mengubah urutan antrean.
+[156] Jawaban: E
+[157] Pembahasan:
+[158] Konsep yang digunakan: Kesetaraan layanan dengan menolak favoritisme secara santun dan menawarkan solusi yang berlaku bagi semua pengguna
+[159] Kata kunci: tokoh masyarakat, kerabat, antrean, kelompok prioritas, kesetaraan, alternatif layanan
+[160] Opsi E (5 Poin) paling tepat karena urutan dan kriteria prioritas tetap diberlakukan secara konsisten. Penjelasan santun menjaga hubungan, sedangkan pilihan layanan lain membantu kebutuhan waktu tanpa mengambil hak warga yang lebih dahulu antre.
+[161] Kontribusi sosial seseorang tidak dapat dijadikan dasar memperoleh perlakuan khusus dalam pelayanan publik.
+[162] Pembahasan opsi lain:
+[163] A (2 Poin) Meminta persetujuan warga terlihat demokratis, tetapi menempatkan mereka dalam tekanan sosial dan tetap menyimpang dari aturan prioritas.
+[164] B (3 Poin) Melibatkan penanggung jawab menunjukkan kehati-hatian, tetapi aturan sudah jelas sehingga eskalasi hanya menunda antrean.
+[165] C (4 Poin) Menjelaskan kriteria dan mempertahankan antrean merupakan tindakan yang benar, tetapi belum membantu kebutuhan waktu melalui alternatif yang tersedia.
+[166] D (1 Poin) Menghargai kontribusi tokoh tampak menjaga hubungan, tetapi mendahulukan kerabatnya merupakan favoritisme dan merugikan warga lain.
+[167] Cara cepat: Tolak perlakuan khusus berdasarkan kedekatan, jelaskan aturan, dan tawarkan alternatif yang tersedia bagi semua warga.
+[168] Soal 8
+[169] Category: Kepribadian
+[170] Lesson: TKP SKD
+[171] Chapter: Pelayanan Publik
+[172] Tingkat Kesulitan: HOTS
+[173] Bentuk Soal: Option New
+[174] Seorang warga datang dengan panik karena berkas asli yang diserahkannya kemarin tidak ditemukan di tempat penyimpanan. Tanda terima menunjukkan berkas memang diterima unit Anda. Dokumen itu sulit diterbitkan ulang dan warga membutuhkannya pekan ini. Tindakan Anda yang paling tepat adalah ... (Pelayanan Publik)
+[175] A. Meminta warga menunggu hasil pencarian internal sebelum membicarakan bentuk tanggung jawab atau kemungkinan pemrosesan ulang.
+[176] B. Mengamankan jejak penerimaan dan memimpin pencarian berkas, sekaligus menyiapkan pemulihan bila dokumen tetap tidak ditemukan.
+[177] C. Melaporkan kehilangan kepada atasan dan menyerahkan penanganan selanjutnya kepada petugas arsip yang menerima berkas kemarin.
+[178] D. Meminta maaf kepada warga, memeriksa seluruh tempat penyimpanan bersama petugas arsip, dan memberi jadwal pasti untuk perkembangan pencarian.
+[179] E. Menyarankan warga mulai mengurus dokumen pengganti agar proses permohonannya tidak semakin tertunda oleh pencarian arsip.
+[180] Jawaban: B
+[181] Pembahasan:
+[182] Konsep yang digunakan: Pemulihan layanan atas kehilangan dokumen melalui pengakuan, pelestarian jejak, pencarian, komunikasi, dan rencana pemulihan
+[183] Kata kunci: berkas hilang, tanda terima, pencarian arsip, tanggung jawab, pemulihan proses
+[184] Opsi B (5 Poin) paling tepat karena unit mengakui dampak, menjaga bukti penerimaan, dan segera mencari dokumen secara terkoordinasi. Rencana pemulihan disiapkan sejak awal agar warga tidak kembali dibebani bila kelalaian unit terkonfirmasi.
+[185] Tindakan ini tidak menyimpulkan penyebab sebelum pemeriksaan selesai, tetapi tetap menunjukkan kepemilikan masalah dan kepastian penanganan.
+[186] Pembahasan opsi lain:
+[187] A (2 Poin) Menunggu hasil pencarian menghindari janji prematur, tetapi warga tidak memperoleh kepastian langkah atau bentuk tanggung jawab unit.
+[188] C (3 Poin) Pelaporan kepada atasan dan petugas arsip diperlukan, tetapi menyerahkan seluruh penanganan mengurangi tanggung jawab petugas terhadap pemulihan layanan.
+[189] D (4 Poin) Pencarian langsung dan jadwal pembaruan merupakan tindakan sangat baik, tetapi belum mengamankan jejak penerimaan atau menyiapkan pemulihan jika berkas tetap hilang.
+[190] E (1 Poin) Mengurus dokumen pengganti dapat menghemat waktu, tetapi langsung memindahkan beban kepada warga sebelum unit menelusuri kelalaiannya.
+[191] Cara cepat: Jika berkas warga hilang, jaga bukti penerimaan, cari secara terkoordinasi, dan siapkan pemulihan tanpa membebani warga.
+[192] Soal 9
+[193] Category: Kepribadian
+[194] Lesson: TKP SKD
+[195] Chapter: Jejaring Kerja
+[196] Tingkat Kesulitan: HOTS
+[197] Bentuk Soal: Option New
+[198] Dalam tim penanganan kebakaran hutan, satu instansi mitra tidak membagikan data posko dan menyalurkan logistik secara terpisah agar capaian lembaganya terlihat menonjol. Akibatnya, dua desa menerima bantuan ganda sementara desa lain belum terjangkau. Anda menjadi penghubung antarinstansi. Tindakan Anda adalah ... (Jejaring Kerja)
+[199] A. Menggabungkan data yang tersedia dari instansi lain dan memasukkan perkiraan kebutuhan desa yang belum melapor agar distribusi segera merata.
+[200] B. Menghubungi petugas lapangan mitra untuk bertukar data secara informal tanpa membahas kebijakan lembaganya agar konflik tidak membesar.
+[201] C. Mengirim rekap distribusi tim Anda kepada seluruh mitra serta meminta masing-masing instansi memperbarui data pada akhir kegiatan harian.
+[202] D. Menyatukan data kebutuhan dalam pusat informasi bersama dan menetapkan wilayah distribusi bagi setiap instansi yang terlibat.
+[203] E. Melaporkan ketidakterbukaan mitra kepada koordinator pusat dan meminta keputusan pembagian logistik sebelum penyaluran dilanjutkan.
+[204] Jawaban: D
+[205] Pembahasan:
+[206] Konsep yang digunakan: Konsolidasi data dan pembagian peran lintas instansi untuk mencegah tumpang tindih penanganan darurat
+[207] Kata kunci: ego sektoral, data posko, distribusi logistik, pusat informasi, pembagian wilayah
+[208] Opsi D (5 Poin) paling tepat karena masalah diselesaikan bersama pemilik data melalui pencocokan kebutuhan, pusat informasi yang sama, dan pembagian wilayah yang jelas. Langkah tersebut mengalihkan fokus dari klaim lembaga menuju keselamatan warga.
+[209] Koordinasi menghasilkan dasar kerja yang dapat dipakai seluruh instansi, bukan sekadar pertukaran informasi sesaat.
+[210] Pembahasan opsi lain:
+[211] A (2 Poin) Menggabungkan data mempercepat tindakan, tetapi memakai perkiraan tanpa konfirmasi dapat menghasilkan distribusi yang kembali keliru.
+[212] B (1 Poin) Pertukaran informal mungkin memperoleh data, tetapi tidak mengubah pola kerja lembaga dan tidak menjamin informasi dipakai bersama.
+[213] C (4 Poin) Rekap terbuka merupakan langkah baik, tetapi pembaruan pada akhir hari belum mencegah tumpang tindih saat distribusi sedang berlangsung.
+[214] E (3 Poin) Eskalasi kepada koordinator dapat diperlukan, tetapi dilakukan sebelum mencoba menyelesaikan perbedaan langsung dengan mitra.
+[215] Cara cepat: Dalam kerja lintas instansi, satukan sumber data dan perjelas pembagian peran sebelum memperluas eskalasi.
+[216] Soal 10
+[217] Category: Kepribadian
+[218] Lesson: TKP SKD
+[219] Chapter: Jejaring Kerja
+[220] Tingkat Kesulitan: HOTS
+[221] Bentuk Soal: Option New
+[222] Instansi Anda akan menjalankan program penguatan industri yang memerlukan partisipasi asosiasi usaha. Asosiasi mendukung tujuan program, tetapi khawatir jadwal penerapan aturan baru mengganggu kontrak yang sedang berjalan. Target pemerintah tidak dapat diubah, sedangkan cara penerapannya masih dapat disesuaikan. Usulan Anda adalah ... (Jejaring Kerja)
+[223] A. Mengirim penjelasan tertulis tentang manfaat program dan meminta asosiasi menyosialisasikan aturan kepada seluruh anggotanya.
+[224] B. Mengundang perwakilan asosiasi memberi masukan, lalu menyerahkan rancangan akhir kepada instansi sesuai kewenangan pemerintah.
+[225] C. Membentuk forum kerja untuk memetakan dampak kontrak, menyepakati tahapan penerapan, dan menetapkan evaluasi tanpa mengubah target program.
+[226] D. Menerapkan aturan sesuai jadwal sambil menyediakan kanal pengaduan agar kendala pelaku usaha dapat ditangani setelah program berjalan.
+[227] E. Menunda pembahasan teknis sampai asosiasi menyatakan dukungan penuh agar perbedaan kepentingan tidak menghambat peluncuran program.
+[228] Jawaban: C
+[229] Pembahasan:
+[230] Konsep yang digunakan: Kemitraan produktif melalui pelibatan pemangku kepentingan dalam cara penerapan tanpa mengorbankan tujuan kebijakan
+[231] Kata kunci: asosiasi usaha, kontrak berjalan, forum kerja, tahapan penerapan, evaluasi
+[232] Opsi C (5 Poin) paling tepat karena pemerintah dan asosiasi bekerja pada ruang yang memang masih dapat disesuaikan, yaitu tahapan penerapan. Dampak operasional dipetakan dan hasilnya dievaluasi tanpa mengurangi target kebijakan.
+[233] Kemitraan tidak berarti menyerahkan keputusan pemerintah, tetapi menggunakan pengetahuan pelaku usaha untuk menghasilkan pelaksanaan yang lebih efektif.
+[234] Pembahasan opsi lain:
+[235] A (3 Poin) Penjelasan tertulis mendukung pemahaman, tetapi komunikasinya satu arah dan belum menjawab dampak pada kontrak berjalan.
+[236] B (4 Poin) Mendengar masukan merupakan langkah baik, tetapi asosiasi belum terlibat dalam merumuskan tahapan dan evaluasi penerapan.
+[237] D (2 Poin) Kanal pengaduan memberi ruang perbaikan, tetapi masalah yang sudah diketahui baru ditangani setelah menimbulkan dampak.
+[238] E (1 Poin) Menunggu dukungan penuh menghindari perbedaan terbuka, tetapi menunda kerja bersama dan menjadikan persetujuan sebagai prasyarat dialog.
+[239] Cara cepat: Kemitraan yang sehat melibatkan pihak terkait pada ruang keputusan yang dapat disesuaikan tanpa kehilangan tujuan utama.
+[240] Soal 11
+[241] Category: Kepribadian
+[242] Lesson: TKP SKD
+[243] Chapter: Jejaring Kerja
+[244] Tingkat Kesulitan: HOTS
+[245] Bentuk Soal: Option New
+[246] Proyek integrasi data memerlukan akses terbatas ke data unit lain. Kepala unit tersebut menolak karena data memuat informasi rahasia dan prosedur akses belum mengatur penggunaan lintas unit. Tenggat rancangan sistem tinggal dua minggu, sedangkan pimpinan meminta solusi yang tetap menjaga keamanan. Langkah Anda adalah ... (Jejaring Kerja)
+[247] A. Meminta contoh data yang sudah disamarkan agar tim dapat melanjutkan rancangan sementara aturan akses lintas unit disusun.
+[248] B. Menjelaskan manfaat integrasi kepada kepala unit dan meminta akses penuh hanya untuk anggota tim yang telah menandatangani kerahasiaan.
+[249] C. Membuat rancangan sistem tanpa data unit tersebut dan menambahkan integrasinya setelah prosedur keamanan resmi diselesaikan.
+[250] D. Mengusulkan akses berbasis peran untuk kebutuhan data yang disepakati bersama unit pemilik dan memperoleh persetujuan pejabat berwenang.
+[251] E. Melaporkan penolakan kepada pimpinan proyek agar kewajiban berbagi data ditegaskan kepada seluruh kepala unit yang terlibat.
+[252] Jawaban: D
+[253] Pembahasan:
+[254] Konsep yang digunakan: Berbagi data lintas unit dengan kebutuhan minimum, pengendalian akses, dan persetujuan sesuai kewenangan
+[255] Kata kunci: integrasi data, kerahasiaan, kebutuhan minimum, akses berbasis peran, persetujuan
+[256] Opsi D (5 Poin) paling tepat karena kolaborasi dimulai dengan menentukan data yang benar-benar diperlukan, kemudian membatasi akses berdasarkan peran dan memperoleh persetujuan yang sah. Kekhawatiran unit pemilik data ditangani sebagai risiko bersama, bukan sebagai hambatan.
+[257] Solusi memungkinkan proyek bergerak sambil menjaga prinsip kerahasiaan dan kepemilikan data.
+[258] Pembahasan opsi lain:
+[259] A (4 Poin) Data tersamarkan membantu rancangan awal dan cukup aman, tetapi belum menyelesaikan kebutuhan integrasi maupun tata kelola akses sebenarnya.
+[260] B (3 Poin) Perjanjian kerahasiaan meningkatkan tanggung jawab, tetapi akses penuh tidak mengikuti prinsip kebutuhan minimum.
+[261] C (1 Poin) Menunda integrasi mengurangi risiko saat ini, tetapi tidak menyelesaikan masalah dan dapat menghasilkan desain yang tidak sesuai.
+[262] E (2 Poin) Eskalasi dapat memperjelas kewajiban, tetapi berisiko memaksa pembukaan data sebelum pengamanan dan kewenangannya disepakati.
+[263] Cara cepat: Dalam berbagi data, sepakati kebutuhan minimum, batas akses, dan kewenangan sebelum meminta pembukaan informasi.
+[264] Soal 12
+[265] Category: Kepribadian
+[266] Lesson: TKP SKD
+[267] Chapter: Jejaring Kerja
+[268] Tingkat Kesulitan: HOTS
+[269] Bentuk Soal: Option New
+[270] Sebagai ketua tim lintas divisi, Anda melihat seorang anggota dua kali terlambat menyerahkan pekerjaan dan jarang merespons grup. Bagian tugasnya menjadi penghambat pekerjaan anggota lain. Dalam percakapan singkat, ia mengaku belum memahami perangkat analisis yang baru digunakan tim. Tindakan Anda adalah ... (Jejaring Kerja)
+[271] A. Memberi pendampingan dengan target perbaikan terukur sebelum mengevaluasi kebutuhan penyesuaian peran anggota tersebut.
+[272] B. Membahas keterlambatan dalam rapat tim agar anggota lain memahami penyebab hambatan dan dapat menawarkan bantuan sesuai kapasitas.
+[273] C. Memberikan panduan penggunaan perangkat dan meminta anggota tersebut melaporkan kemajuannya langsung kepada Anda setiap hari.
+[274] D. Mengalihkan seluruh tugasnya kepada anggota yang sudah menguasai perangkat dan memberinya pekerjaan administratif sampai proyek selesai.
+[275] E. Menyampaikan catatan kinerjanya kepada atasan divisi agar pembinaan dilakukan oleh pihak yang memiliki kewenangan kepegawaian.
+[276] Jawaban: A
+[277] Pembahasan:
+[278] Konsep yang digunakan: Pembinaan anggota tim melalui target terukur, dukungan kompetensi, pemantauan, dan penyesuaian berbasis hasil
+[279] Kata kunci: anggota pasif, perangkat baru, target perbaikan, pendampingan, pemantauan
+[280] Opsi A (5 Poin) paling tepat karena ketua menangani akar keterlambatan melalui dukungan kompetensi sekaligus menetapkan tanggung jawab yang terukur. Pemantauan memberi bukti untuk menilai apakah peran perlu disesuaikan.
+[281] Anggota memperoleh kesempatan memperbaiki kontribusi tanpa membuat pekerjaan tim terus bergantung pada harapan yang tidak terpantau.
+[282] Pembahasan opsi lain:
+[283] B (3 Poin) Bantuan tim dapat mempercepat pemulihan, tetapi membahas kelemahan individu di forum terbuka berisiko mengurangi rasa aman.
+[284] C (4 Poin) Panduan dan laporan harian membantu pembelajaran, tetapi target hasil dan evaluasi penyesuaian peran belum disepakati bersama.
+[285] D (2 Poin) Pengalihan tugas melindungi tenggat, tetapi terlalu cepat mengurangi peran anggota dan tidak mengembangkan kemampuan yang dibutuhkan.
+[286] E (1 Poin) Atasan divisi memiliki kewenangan pembinaan, tetapi eskalasi dilakukan sebelum ketua mencoba dukungan dan pengelolaan kinerja langsung.
+[287] Cara cepat: Hadapi kontribusi yang lemah dengan mencari penyebab, menetapkan target, memberi dukungan, dan menilai hasilnya.
+[288] Soal 13
+[289] Category: Kepribadian
+[290] Lesson: TKP SKD
+[291] Chapter: Jejaring Kerja
+[292] Tingkat Kesulitan: HOTS
+[293] Bentuk Soal: Option New
+[294] Dalam penyusunan skema efisiensi, pegawai senior mempertahankan pemeriksaan manual karena mudah diaudit, sedangkan pegawai junior mengusulkan aplikasi yang lebih cepat tetapi belum pernah diuji. Perdebatan mulai beralih menjadi penilaian terhadap usia dan cara kerja masing-masing. Anda memimpin rapat tersebut. Sikap Anda adalah ... (Jejaring Kerja)
+[295] A. Menghentikan perdebatan dan memilih proses manual untuk periode ini karena prosedurnya telah terbukti serta lebih mudah dipertanggungjawabkan.
+[296] B. Mengembalikan pembahasan pada kriteria audit dan efisiensi, lalu menyepakati uji terbatas aplikasi dengan kontrol manual sebagai pembanding.
+[297] C. Meminta kedua kelompok menuliskan kelebihan usulnya, kemudian menyerahkan pilihan akhir kepada pimpinan agar rapat tidak berlarut.
+[298] D. Memberi kesempatan yang sama kepada senior dan junior untuk mempresentasikan usul, kemudian meminta anggota tim melakukan pemungutan suara.
+[299] E. Memilih aplikasi untuk pekerjaan berisiko rendah dan mempertahankan proses manual untuk pekerjaan penting tanpa melakukan pengujian terlebih dahulu.
+[300] Jawaban: B
+[301] Pembahasan:
+[302] Konsep yang digunakan: Penyelesaian konflik gagasan melalui kriteria objektif dan uji terukur yang menggabungkan kepatuhan dengan inovasi
+[303] Kata kunci: senior, junior, audit, efisiensi, uji terbatas, kontrol pembanding
+[304] Opsi B (5 Poin) paling tepat karena pembahasan dikembalikan dari identitas pribadi menuju kriteria pekerjaan. Uji terbatas menghasilkan bukti tentang efisiensi, sedangkan kontrol manual menjaga keterlacakan hasil.
+[305] Solusi tidak memaksa kompromi tanpa dasar, tetapi menguji gagasan kedua pihak melalui cara yang dapat dievaluasi.
+[306] Pembahasan opsi lain:
+[307] A (2 Poin) Proses manual lebih mudah diaudit, tetapi keputusan langsung menutup peluang inovasi tanpa menguji manfaat dan risikonya.
+[308] C (1 Poin) Dokumentasi kelebihan usul membantu pimpinan, tetapi mengalihkan penyelesaian sebelum tim menguji perbedaan secara objektif.
+[309] D (3 Poin) Kesempatan bicara yang setara meredakan dominasi, tetapi pemungutan suara belum menjamin pilihan memenuhi kebutuhan audit dan efisiensi.
+[310] E (4 Poin) Pembagian berdasarkan risiko merupakan rancangan yang cukup baik, tetapi penerapan tanpa uji dapat membawa masalah yang belum diketahui.
+[311] Cara cepat: Jika konflik berpusat pada gagasan, tetapkan kriteria bersama dan gunakan uji terbatas untuk menghasilkan bukti.
+[312] Soal 14
+[313] Category: Kepribadian
+[314] Lesson: TKP SKD
+[315] Chapter: Jejaring Kerja
+[316] Tingkat Kesulitan: HOTS
+[317] Bentuk Soal: Option New
+[318] Unit Anda memiliki metode analisis otomatis yang mempercepat laporan. Cabang lain meminta modul dan pelatihan, sementara tim Anda sedang menghadapi tenggat rutin. Metode tersebut menggunakan data contoh yang harus disamarkan sebelum dibagikan. Kepala unit mendukung transfer pengetahuan selama pekerjaan utama tidak terganggu. Langkah Anda adalah ... (Jejaring Kerja)
+[319] A. Mengirim modul yang sudah ada dan meminta cabang mempelajarinya sendiri, kemudian menjawab pertanyaan jika tim Anda memiliki waktu.
+[320] B. Menolak sementara permintaan pelatihan dan menyarankan cabang mengajukannya kembali setelah periode pelaporan unit Anda selesai.
+[321] C. Membagi penyusunan materi kepada tim sekarang dan menjalankan pelatihan segera agar cabang dapat menikmati manfaat metode lebih cepat.
+[322] D. Memberikan akses rekaman penggunaan metode serta membuka forum pertanyaan tertulis agar cabang dapat belajar tanpa sesi langsung.
+[323] E. Menjadwalkan sesi setelah tenggat, menyiapkan data contoh yang aman, dan menunjuk kontak pendamping untuk tahap penerapan awal.
+[324] Jawaban: E
+[325] Pembahasan:
+[326] Konsep yang digunakan: Transfer pengetahuan yang terencana dengan perlindungan data, dukungan penerapan, dan pengelolaan beban kerja
+[327] Kata kunci: modul, pelatihan, tenggat, data samaran, pendampingan
+[328] Opsi E (5 Poin) paling tepat karena pengetahuan dibagikan pada waktu yang tidak mengganggu pekerjaan utama, menggunakan data yang aman, dan disertai pendampingan penerapan. Cabang memperoleh dukungan sampai tahap penggunaan awal, bukan hanya materi pasif.
+[329] Jadwal yang jelas juga lebih kolaboratif daripada menunda tanpa kepastian atau memaksakan pelatihan saat kapasitas tim terbatas.
+[330] Pembahasan opsi lain:
+[331] A (3 Poin) Modul memungkinkan belajar mandiri, tetapi dukungan bergantung pada waktu luang dan keamanan data contoh belum dipastikan.
+[332] B (1 Poin) Penundaan melindungi tenggat unit, tetapi cabang tidak memperoleh jadwal atau persiapan yang dapat segera dimulai.
+[333] C (2 Poin) Pelatihan segera mempercepat manfaat, tetapi berisiko mengganggu tenggat dan membebani tim pada saat yang tidak tepat.
+[334] D (4 Poin) Rekaman dan forum tertulis efisien serta cukup membantu, tetapi belum menyediakan pendampingan pada tahap penerapan nyata.
+[335] Cara cepat: Berbagi pengetahuan harus memiliki jadwal, materi yang aman, dan dukungan penerapan tanpa mengorbankan tugas utama.
+[336] Soal 15
+[337] Category: Kepribadian
+[338] Lesson: TKP SKD
+[339] Chapter: Jejaring Kerja
+[340] Tingkat Kesulitan: HOTS
+[341] Bentuk Soal: Option New
+[342] Tim gabungan berisi ahli hukum, teknisi sistem, dan analis keuangan. Rapat awal berjalan lambat karena setiap pihak memakai istilah teknis berbeda; dua keputusan bahkan dipahami secara tidak sama dalam notulen. Anda bertanggung jawab menyusun bahan rapat berikutnya. Tindakan Anda yang paling tepat adalah ... (Jejaring Kerja)
+[343] A. Memisahkan pembahasan per bidang terlebih dahulu, lalu menggabungkan hasilnya dalam rapat pleno setelah setiap kelompok mencapai kesepakatan.
+[344] B. Menyusun ringkasan keputusan dengan bahasa umum, memvalidasinya kepada tiap bidang, dan membuat daftar istilah yang dipakai bersama.
+[345] C. Mengusulkan agar satu perwakilan setiap bidang berbicara dalam rapat sehingga istilah teknis dapat dijelaskan oleh orang yang sama.
+[346] D. Mengirim notulen kepada seluruh anggota dan meminta koreksi tertulis atas bagian yang berbeda dipahami sebelum batas waktu tertentu.
+[347] E. Meminta setiap ahli membuat lampiran istilah bidangnya agar anggota lain dapat mempelajarinya sebelum rapat berikutnya dimulai.
+[348] Jawaban: B
+[349] Pembahasan:
+[350] Konsep yang digunakan: Komunikasi multidisiplin melalui bahasa bersama, validasi pemahaman, dan standardisasi istilah kerja
+[351] Kata kunci: tim multidisiplin, istilah teknis, notulen, bahasa umum, validasi, glosarium
+[352] Opsi B (5 Poin) paling tepat karena perbedaan pemahaman diperbaiki pada hasil rapat dan dicegah berulang melalui bahasa serta daftar istilah bersama. Validasi tiap bidang memastikan penyederhanaan tidak mengubah makna teknis.
+[353] Tim memperoleh satu rujukan lintas disiplin yang dapat digunakan pada rapat berikutnya dan dokumen selanjutnya.
+[354] Pembahasan opsi lain:
+[355] A (1 Poin) Diskusi per bidang memudahkan pembahasan teknis, tetapi memperkuat pemisahan dan menunda pemahaman lintas disiplin.
+[356] C (2 Poin) Perwakilan dapat membuat penjelasan lebih konsisten, tetapi membatasi partisipasi dan tidak membangun rujukan bersama yang terdokumentasi.
+[357] D (4 Poin) Koreksi notulen menyelesaikan perbedaan saat ini, tetapi belum mencegah istilah yang sama kembali menimbulkan tafsir berbeda.
+[358] E (3 Poin) Lampiran istilah membantu pembelajaran, tetapi tetap memisahkan bahasa tiap bidang dan belum memastikan keputusan dipahami sama.
+[359] Cara cepat: Untuk tim multidisiplin, sederhanakan bahasa, validasi makna, dan buat rujukan istilah yang disepakati bersama.
+[360] Soal 16
+[361] Category: Kepribadian
+[362] Lesson: TKP SKD
+[363] Chapter: Jejaring Kerja
+[364] Tingkat Kesulitan: HOTS
+[365] Bentuk Soal: Option New
+[366] Anda mewakili instansi dalam forum nasional tentang layanan digital. Pada sesi istirahat, hadir peserta dari lembaga yang memiliki proyek serupa dengan instansi Anda. Anda belum memiliki mandat untuk menjanjikan kerja sama, tetapi boleh menjajaki pertukaran informasi. Sikap Anda adalah ... (Jejaring Kerja)
+[367] A. Mengikuti diskusi informal kelompok peserta lain, kemudian mencatat lembaga yang berpotensi dihubungi melalui surat resmi instansi.
+[368] B. Meminta panitia memperkenalkan Anda kepada pimpinan lembaga terkait agar pembicaraan awal memiliki dukungan protokoler yang memadai.
+[369] C. Bertukar kartu nama dengan sebanyak mungkin peserta dan mengirimkan profil program instansi kepada mereka setelah forum berakhir.
+[370] D. Membahas rancangan kegiatan bersama secara rinci dan menyampaikan bahwa persetujuan akhir akan dimintakan kepada pimpinan setelah forum.
+[371] E. Menjajaki kepentingan bersama dengan peserta yang relevan dan menyepakati tindak lanjut dalam batas mandat yang dimiliki.
+[372] Jawaban: E
+[373] Pembahasan:
+[374] Konsep yang digunakan: Penjajakan jejaring eksternal secara proaktif dengan tujuan jelas dan batas kewenangan yang terjaga
+[375] Kata kunci: forum nasional, peserta terkait, kepentingan bersama, tindak lanjut, batas mandat
+[376] Opsi E (5 Poin) paling tepat karena kontak dibangun secara terarah dengan lembaga yang relevan, kebutuhan bersama digali, dan tindak lanjut disepakati dalam batas mandat. Percakapan menghasilkan langkah berikutnya tanpa menciptakan janji atas nama instansi.
+[377] Jejaring yang produktif mengutamakan relevansi dan tindak lanjut, bukan sekadar banyaknya kontak.
+[378] Pembahasan opsi lain:
+[379] A (4 Poin) Mengamati diskusi dan mencatat calon mitra merupakan persiapan yang baik, tetapi melewatkan kesempatan membangun hubungan langsung.
+[380] B (2 Poin) Perkenalan protokoler dapat membantu akses, tetapi tidak diperlukan untuk penjajakan informasi dan membuat langkah awal bergantung pada panitia.
+[381] C (3 Poin) Banyak kontak memperluas jangkauan, tetapi belum memastikan relevansi atau percakapan yang menghasilkan tindak lanjut nyata.
+[382] D (1 Poin) Pembahasan rinci menunjukkan inisiatif, tetapi melampaui mandat karena memberi kesan rencana kerja sama sudah terbentuk.
+[383] Cara cepat: Bangun kontak yang relevan, gali kepentingan bersama, dan tetapkan tindak lanjut tanpa menjanjikan hal di luar mandat.
+[384] Soal 17
+[385] Category: Kepribadian
+[386] Lesson: TKP SKD
+[387] Chapter: Sosial Budaya
+[388] Tingkat Kesulitan: HOTS
+[389] Bentuk Soal: Option New
+[390] Anda dipindahtugaskan ke kantor cabang di daerah terpencil. Dalam pertemuan resmi, warga menggunakan tata cara penyambutan adat yang belum Anda pahami, sedangkan beberapa agenda kerja harus segera dibahas. Rekan menyarankan Anda melewati rangkaian tersebut agar rapat lebih efisien. Sikap Anda adalah ... (Sosial Budaya)
+[391] A. Mengikuti seluruh tata cara tanpa bertanya dan menyesuaikan agenda kerja setelah mengetahui berapa lama kegiatan adat berlangsung.
+[392] B. Meminta rekan lokal menjelaskan tata krama utama, mengikuti bagian yang relevan, dan mengatur agenda bersama tokoh setempat.
+[393] C. Menjelaskan keterbatasan waktu kepada warga dan meminta rangkaian adat dipersingkat khusus selama masa penugasan Anda.
+[394] D. Mempelajari kebiasaan melalui bahan tertulis terlebih dahulu dan menunda keterlibatan langsung sampai benar-benar memahami tradisi.
+[395] E. Menghadiri penyambutan sebagai pengamat, lalu meminta rekan lokal mewakili Anda berinteraksi agar tidak melakukan kesalahan budaya.
+[396] Jawaban: B
+[397] Pembahasan:
+[398] Konsep yang digunakan: Adaptasi budaya melalui pembelajaran dari pihak lokal, keterlibatan langsung, dan penyesuaian kerja yang disepakati
+[399] Kata kunci: daerah terpencil, tata cara adat, rekan lokal, tokoh setempat, penyesuaian agenda
+[400] Opsi B (5 Poin) paling tepat karena peserta mencari pemahaman dari orang yang mengenal adat, tetap terlibat secara langsung, dan mengatur agenda kerja melalui kesepakatan. Tradisi dihormati tanpa menghilangkan tujuan kedinasan.
+[401] Adaptasi tidak mengharuskan seseorang meniru semua kebiasaan secara buta, melainkan memahami batas yang relevan dan berinteraksi dengan hormat.
+[402] Pembahasan opsi lain:
+[403] A (4 Poin) Mengikuti tata cara menunjukkan penghormatan, tetapi sikap tanpa bertanya berisiko menimbulkan salah pemahaman dan membuat penyesuaian kerja sepihak.
+[404] C (2 Poin) Menjelaskan keterbatasan waktu bersifat terbuka, tetapi meminta adat dipersingkat sebelum memahaminya dapat dianggap meremehkan warga.
+[405] D (1 Poin) Bahan tertulis membantu persiapan, tetapi menunda keterlibatan membuat peserta sulit memahami praktik dan membangun kepercayaan.
+[406] E (3 Poin) Pengamatan mengurangi risiko kesalahan, tetapi menyerahkan interaksi kepada rekan menghambat hubungan dan proses belajar langsung.
+[407] Cara cepat: Pelajari kebiasaan melalui pihak lokal, terlibat dengan hormat, dan sepakati penyesuaian tanpa kehilangan tujuan tugas.
+[408] Soal 18
+[409] Category: Kepribadian
+[410] Lesson: TKP SKD
+[411] Chapter: Sosial Budaya
+[412] Tingkat Kesulitan: HOTS
+[413] Bentuk Soal: Option New
+[414] Dua kelompok warga berbeda latar belakang berselisih mengenai jadwal penggunaan balai desa. Pesan bernada saling menyalahkan mulai beredar di grup warga, padahal kedua kelompok memiliki izin kegiatan pada hari yang sama akibat kesalahan pencatatan perangkat desa. Anda diminta membantu penyelesaian. Langkah Anda adalah ... (Sosial Budaya)
+[415] A. Menemui tokoh dari kelompok yang lebih dahulu mengajukan izin dan menyarankan kelompok lain memilih hari berbeda.
+[416] B. Meminta kedua kelompok menghentikan pesan di grup dan menyerahkan penentuan jadwal sepenuhnya kepada kepala desa.
+[417] C. Mengumumkan kesalahan pencatatan kepada warga serta menerapkan pembagian waktu sementara untuk kemudian disahkan melalui keputusan resmi.
+[418] D. Memfasilitasi kesepakatan jadwal kedua kelompok berdasarkan riwayat izin yang telah diverifikasi bersama perangkat desa.
+[419] E. Memisahkan komunikasi kedua kelompok dan meminta perangkat desa berunding dengan masing-masing pihak agar ketegangan mereda.
+[420] Jawaban: D
+[421] Pembahasan:
+[422] Konsep yang digunakan: Penyelesaian konflik secara netral melalui verifikasi fakta, dialog perwakilan, dan kesepakatan yang adil
+[423] Kata kunci: fasilitas umum, kesalahan pencatatan, verifikasi izin, dialog, kesepakatan jadwal
+[424] Opsi D (5 Poin) paling tepat karena sumber konflik diperiksa terlebih dahulu dan kedua pihak dilibatkan dalam mencari pengaturan yang dapat diterima. Proses tersebut mencegah keputusan berdasarkan identitas kelompok atau tekanan di ruang publik.
+[425] Kesalahan administrasi ditangani tanpa menyalahkan warga, sementara dialog langsung mengurangi ruang bagi kabar yang memperuncing ketegangan.
+[426] Pembahasan opsi lain:
+[427] A (1 Poin) Urutan pengajuan dapat menjadi pertimbangan, tetapi belum diverifikasi dan langsung menempatkan satu kelompok sebagai pihak yang harus mengalah.
+[428] B (2 Poin) Menghentikan pesan dapat meredakan situasi, tetapi menyerahkan seluruh keputusan belum memberi ruang kepada kedua pihak untuk membangun kesepakatan.
+[429] C (4 Poin) Keterbukaan dan pembagian waktu sementara cukup membantu, tetapi keputusan dibuat sebelum kedua kelompok membahas kebutuhan masing-masing.
+[430] E (3 Poin) Komunikasi terpisah menurunkan ketegangan awal, tetapi dapat memperpanjang salah paham karena pihak tidak bertemu dalam forum bersama.
+[431] Cara cepat: Pada konflik antarkelompok, periksa fakta, hadirkan kedua pihak, dan arahkan dialog pada kebutuhan serta kesepakatan.
+[432] Soal 19
+[433] Category: Kepribadian
+[434] Lesson: TKP SKD
+[435] Chapter: Sosial Budaya
+[436] Tingkat Kesulitan: HOTS
+[437] Bentuk Soal: Option New
+[438] Tim Anda menghadapi tenggat laporan pada hari yang sama dengan perayaan keagamaan seorang rekan. Ia telah meminta izin jauh hari, tetapi satu anggota lain mendadak sakit sehingga jadwal piket menjadi kosong. Bagian rekan tersebut sudah selesai dan hanya diperlukan petugas untuk memantau pengiriman laporan. Sikap Anda adalah ... (Sosial Budaya)
+[439] A. Meminta rekan tersebut tetap piket sampai laporan terkirim, kemudian memberinya waktu pengganti untuk menjalankan kegiatan keagamaan lain.
+[440] B. Mengizinkan rekan pergi dan membagi pemantauan kepada seluruh anggota tanpa mengubah pembagian tugas lain yang sudah ditetapkan.
+[441] C. Mengatur pengganti piket secara sukarela dan memastikan panduan pemantauan tersedia agar izin rekan tetap dapat digunakan.
+[442] D. Menyampaikan kondisi tim kepada rekan tersebut dan membiarkannya menentukan sendiri apakah akan membatalkan izin atau tidak.
+[443] E. Meminta atasan menetapkan petugas pengganti agar keputusan tidak menimbulkan keberatan di antara anggota tim lainnya.
+[444] Jawaban: C
+[445] Pembahasan:
+[446] Konsep yang digunakan: Penghormatan hak beribadah melalui pengaturan kerja yang sukarela, jelas, dan menjaga kesinambungan tugas
+[447] Kata kunci: hari besar keagamaan, izin, piket kosong, pengganti sukarela, panduan pemantauan
+[448] Opsi C (5 Poin) paling tepat karena izin yang telah direncanakan tetap dihormati dan kebutuhan tim dipenuhi melalui penggantian yang disepakati. Panduan kerja mencegah petugas pengganti kehilangan informasi penting.
+[449] Solusi tidak menempatkan rekan pada tekanan untuk memilih antara keyakinan dan tugas yang sebenarnya dapat dialihkan secara wajar.
+[450] Pembahasan opsi lain:
+[451] A (1 Poin) Tugas tetap terjaga, tetapi waktu pengganti tidak selalu setara dengan kesempatan menjalankan perayaan pada hari yang telah ditentukan.
+[452] B (4 Poin) Membagi pemantauan menjaga izin rekan, tetapi penambahan tugas tanpa kesepakatan dapat membebani anggota lain secara tidak adil.
+[453] D (3 Poin) Memberi pilihan tampak menghargai rekan, tetapi kondisi tim dapat membuatnya merasa terpaksa membatalkan haknya sendiri.
+[454] E (2 Poin) Keputusan atasan memberi dasar formal, tetapi eskalasi dilakukan sebelum tim mencoba pengaturan sukarela yang sederhana.
+[455] Cara cepat: Hormati kebutuhan ibadah dengan penggantian yang disepakati dan serah terima yang membuat pekerjaan tetap berjalan.
+[456] Soal 20
+[457] Category: Kepribadian
+[458] Lesson: TKP SKD
+[459] Chapter: Sosial Budaya
+[460] Tingkat Kesulitan: HOTS
+[461] Bentuk Soal: Option New
+[462] Dalam rapat seleksi mitra, seorang pegawai senior mengatakan calon dari suku tertentu biasanya sulit bekerja sama. Beberapa anggota tampak tidak nyaman, sedangkan dokumen penilaian menunjukkan calon tersebut memenuhi persyaratan. Ketua rapat belum menanggapi pernyataan itu. Tindakan Anda yang paling tepat adalah ... (Sosial Budaya)
+[463] A. Meminta pegawai senior menjelaskan pengalaman yang mendasari pendapatnya sebelum tim menilai apakah kekhawatiran itu relevan.
+[464] B. Menyampaikan bahwa setiap suku memiliki karakter berbeda dan meminta anggota lain tidak menjadikan perbedaan itu sebagai masalah.
+[465] C. Mencatat pernyataan tersebut dalam notulen dan mengusulkan pedoman anti-diskriminasi dibahas setelah proses seleksi selesai.
+[466] D. Menunggu ketua rapat menanggapi agar koreksi terhadap pegawai senior disampaikan oleh pihak yang memiliki kewenangan lebih tinggi.
+[467] E. Mengembalikan penilaian kepada rekam kompetensi calon karena asal suku tidak berkaitan dengan kelayakan kemitraan.
+[468] Jawaban: E
+[469] Pembahasan:
+[470] Konsep yang digunakan: Pencegahan diskriminasi dengan mengembalikan keputusan pada bukti objektif dan mengoreksi stereotip secara profesional
+[471] Kata kunci: stereotip suku, calon mitra, kompetensi, rekam kerja, keputusan objektif
+[472] Opsi E (5 Poin) paling tepat karena peserta menghentikan pengaruh stereotip pada saat keputusan dibuat dan mengembalikan penilaian kepada bukti yang relevan. Koreksi disampaikan pada gagasan, bukan menyerang pribadi senior.
+[473] Sikap tersebut melindungi calon dari perlakuan diskriminatif sekaligus menjaga rapat tetap fokus pada kualitas kemitraan.
+[474] Pembahasan opsi lain:
+[475] A (3 Poin) Meminta dasar pendapat membuka klarifikasi, tetapi pengalaman pribadi tidak dapat dijadikan bukti karakter seluruh kelompok.
+[476] B (1 Poin) Ajakan menerima perbedaan terdengar damai, tetapi tetap menggeneralisasi karakter berdasarkan suku dan tidak menolak dasar penilaian yang keliru.
+[477] C (4 Poin) Pencatatan dan pedoman mendukung perbaikan sistem, tetapi tidak mencegah bias memengaruhi keputusan seleksi yang sedang berlangsung.
+[478] D (2 Poin) Menghormati kewenangan ketua rapat penting, tetapi menunggu membuat stereotip berpotensi memengaruhi penilaian tanpa koreksi.
+[479] Cara cepat: Jika muncul stereotip, arahkan pembahasan kembali pada bukti individu dan jelaskan bahwa identitas kelompok bukan kriteria penilaian.
+[480] Soal 21
+[481] Category: Kepribadian
+[482] Lesson: TKP SKD
+[483] Chapter: Sosial Budaya
+[484] Tingkat Kesulitan: HOTS
+[485] Bentuk Soal: Option New
+[486] Dalam rapat tim multietnis, tiga anggota beberapa kali menggunakan bahasa daerah saat membahas rincian pekerjaan. Anggota lain tidak memahami percakapan dan melewatkan satu perubahan pembagian tugas. Ketiga anggota tersebut mengaku terbawa kebiasaan, bukan bermaksud menutup informasi. Sebagai moderator, Anda ... (Sosial Budaya)
+[487] A. Mengingatkan penggunaan Bahasa Indonesia untuk pembahasan kerja dan mengulang perubahan tugas agar seluruh anggota memberi konfirmasi.
+[488] B. Membahas masalah itu secara pribadi setelah rapat dan mengirim ringkasan tertulis kepada anggota yang tidak memahami bahasa daerah.
+[489] C. Meminta salah satu anggota yang memahami kedua bahasa menjadi penerjemah selama rapat agar percakapan tetap terasa alami.
+[490] D. Meminta mereka menerjemahkan setiap percakapan daerah setelah selesai agar anggota lain dapat mengikuti pembahasan yang telah berlangsung.
+[491] E. Mencatat aturan penggunaan bahasa dalam notulen dan membiarkan rapat berlanjut supaya teguran tidak mengganggu suasana tim.
+[492] Jawaban: A
+[493] Pembahasan:
+[494] Konsep yang digunakan: Komunikasi inklusif dalam forum resmi melalui bahasa bersama dan konfirmasi pemahaman seluruh anggota
+[495] Kata kunci: tim multietnis, bahasa daerah, informasi kerja, Bahasa Indonesia, konfirmasi tugas
+[496] Opsi A (5 Poin) paling tepat karena hambatan komunikasi dihentikan pada saat terjadi dan informasi penting diulang untuk memastikan kesamaan pemahaman. Pengingat berlaku pada forum kerja, bukan melarang penggunaan bahasa daerah di luar konteks tersebut.
+[497] Konfirmasi anggota diperlukan karena satu perubahan tugas sudah terlewat, sehingga sekadar mengubah bahasa untuk pembahasan berikutnya belum cukup.
+[498] Pembahasan opsi lain:
+[499] B (2 Poin) Pendekatan pribadi menjaga perasaan anggota, tetapi koreksi setelah rapat terlambat untuk mencegah salah pemahaman saat keputusan dibuat.
+[500] C (3 Poin) Penerjemah membuat isi dapat dipahami, tetapi menciptakan ketergantungan padahal seluruh anggota dapat memakai bahasa bersama.
+[501] D (4 Poin) Terjemahan membantu anggota lain, tetapi informasi baru diterima setelah percakapan berlangsung dan partisipasi tetap tidak setara.
+[502] E (1 Poin) Pencatatan aturan memberi rujukan, tetapi membiarkan rapat berjalan mempertahankan hambatan yang sudah menimbulkan kesalahan informasi.
+[503] Cara cepat: Dalam forum resmi, gunakan bahasa yang dipahami semua pihak dan ulangi keputusan bila ada anggota yang sempat tertinggal.
+[504] Soal 22
+[505] Category: Kepribadian
+[506] Lesson: TKP SKD
+[507] Chapter: Sosial Budaya
+[508] Tingkat Kesulitan: HOTS
+[509] Bentuk Soal: Option New
+[510] Kantor menerima pegawai pengguna kursi roda. Ruang kerjanya berada di lantai dua tanpa lift, tetapi terdapat ruang kosong di lantai dasar yang dapat dipakai setelah penataan ringan. Sebagian rekan menyarankan pegawai tersebut bekerja dari rumah sampai renovasi besar dilakukan. Anda diminta memberi usulan. Usulan Anda adalah ... (Sosial Budaya)
+[511] A. Mengusulkan audit aksesibilitas seluruh gedung sebelum membuat penyesuaian agar setiap perubahan mengikuti rencana yang menyeluruh.
+[512] B. Mengizinkan kerja dari rumah penuh dan mengundang pegawai hadir hanya untuk kegiatan yang dapat dipindahkan ke lantai dasar.
+[513] C. Menyediakan bantuan rekan untuk mendampingi akses tangga setiap hari sambil menunggu anggaran pembangunan fasilitas permanen.
+[514] D. Memindahkan sementara ruang kerja tim terkait ke lantai dasar dan menanyakan langsung penyesuaian lain yang dibutuhkan pegawai.
+[515] E. Menata ruang kosong sebagai tempat kerja khusus pegawai tersebut tanpa memindahkan anggota tim lain dari lantai dua.
+[516] Jawaban: D
+[517] Pembahasan:
+[518] Konsep yang digunakan: Akomodasi yang wajar melalui penataan lingkungan, pelibatan pengguna, dan pemeliharaan partisipasi setara dalam tim
+[519] Kata kunci: kursi roda, lantai dua, ruang kosong, akomodasi wajar, kebutuhan pengguna
+[520] Opsi D (5 Poin) paling tepat karena hambatan fisik segera dikurangi dan pegawai tetap bekerja bersama timnya. Menanyakan kebutuhan langsung mencegah asumsi tentang bantuan yang sebenarnya diperlukan.
+[521] Penyesuaian sementara dapat dilakukan tanpa menunggu renovasi besar, sekaligus menjadi dasar untuk perbaikan fasilitas jangka panjang.
+[522] Pembahasan opsi lain:
+[523] A (2 Poin) Audit aksesibilitas berguna untuk perbaikan menyeluruh, tetapi kebutuhan langsung pegawai tidak boleh menunggu seluruh kajian selesai.
+[524] B (3 Poin) Kerja dari rumah menghindari hambatan fisik, tetapi dapat membatasi keterlibatan pegawai dalam kegiatan tim dan bukan satu-satunya solusi.
+[525] C (1 Poin) Pendampingan tampak membantu, tetapi akses tangga dengan kursi roda tidak aman dan membuat pegawai bergantung pada orang lain.
+[526] E (4 Poin) Ruang khusus di lantai dasar memberi akses kerja, tetapi memisahkan pegawai dari anggota tim dan belum menanyakan kebutuhannya.
+[527] Cara cepat: Hilangkan hambatan dengan penyesuaian yang aman, libatkan pengguna, dan pertahankan partisipasinya bersama tim.
+[528] Soal 23
+[529] Category: Kepribadian
+[530] Lesson: TKP SKD
+[531] Chapter: Sosial Budaya
+[532] Tingkat Kesulitan: HOTS
+[533] Bentuk Soal: Option New
+[534] Seorang warga dari daerah pelosok datang ke loket dan kurang lancar berbahasa Indonesia. Ia membawa berkas lengkap, tetapi kesulitan memahami pertanyaan verifikasi. Seorang petugas keamanan memahami bahasa warga tersebut, sedangkan antrean mulai padat. Tindakan Anda adalah ... (Sosial Budaya)
+[535] A. Memproses bagian berkas yang sudah jelas dan menunda pertanyaan verifikasi sampai loket lebih sepi agar komunikasi dapat dilakukan perlahan.
+[536] B. Memberikan nomor antrean baru serta menyarankan warga kembali bersama anggota keluarga yang dapat menerjemahkan dengan tepat.
+[537] C. Menggunakan bantuan penerjemahan yang tersedia dengan persetujuan pemohon tanpa mengubah giliran maupun ketelitian pemeriksaan.
+[538] D. Menggunakan pertanyaan tertulis sederhana dan meminta warga menandai jawaban agar antrean dapat bergerak lebih cepat.
+[539] E. Menggunakan media gambar untuk membantu penjelasan sambil petugas lain melayani antrean, kemudian menyelesaikan verifikasi warga tersebut.
+[540] Jawaban: C
+[541] Pembahasan:
+[542] Konsep yang digunakan: Pelayanan lintas bahasa dengan bantuan penerjemahan yang disetujui, verifikasi utuh, dan urutan layanan yang adil
+[543] Kata kunci: kendala bahasa, petugas penerjemah, persetujuan warga, verifikasi, urutan layanan
+[544] Opsi C (5 Poin) paling tepat karena sumber bantuan tersedia di tempat dan digunakan dengan persetujuan warga. Petugas loket tetap memegang tanggung jawab verifikasi, sedangkan urutan pelayanan tidak diubah karena hambatan bahasa.
+[545] Bantuan komunikasi diberikan tanpa memindahkan beban kepada keluarga atau menunda hak warga memperoleh layanan.
+[546] Pembahasan opsi lain:
+[547] A (2 Poin) Pemrosesan sebagian menjaga kemajuan, tetapi menunda verifikasi dapat memisahkan tahapan yang seharusnya diselesaikan bersama.
+[548] B (1 Poin) Penerjemah keluarga mungkin membantu, tetapi warga dibebani untuk datang kembali padahal bantuan yang memadai sudah tersedia.
+[549] D (3 Poin) Pertanyaan tertulis dapat membantu, tetapi belum tentu dipahami dan penandaan jawaban berisiko mengurangi ketepatan verifikasi.
+[550] E (4 Poin) Media visual merupakan alternatif yang baik, tetapi membuat warga kehilangan giliran meskipun penerjemahan langsung tersedia.
+[551] Cara cepat: Gunakan bantuan komunikasi yang tersedia dengan persetujuan warga tanpa mengurangi verifikasi atau hak antreannya.
+[552] Soal 24
+[553] Category: Kepribadian
+[554] Lesson: TKP SKD
+[555] Chapter: Sosial Budaya
+[556] Tingkat Kesulitan: HOTS
+[557] Bentuk Soal: Option New
+[558] Warga desa menolak program pengelolaan sampah karena jadwal pengangkutan yang dirancang pemerintah bertepatan dengan hari pasar adat. Tujuan kesehatan lingkungan wajib tercapai, tetapi jadwal dan cara sosialisasi masih dapat disesuaikan. Anda bertanggung jawab memperkenalkan program tersebut. Langkah Anda adalah ... (Sosial Budaya)
+[559] A. Menyusun jadwal alternatif yang tetap memenuhi target program berdasarkan masukan tokoh adat dan pengelola pasar setempat.
+[560] B. Menunda pelaksanaan sampai warga menyampaikan jadwal yang disepakati bersama agar program tidak dianggap mengganggu tradisi setempat.
+[561] C. Menjalankan jadwal awal untuk wilayah lain dan mengecualikan kawasan pasar adat sampai pemerintah menetapkan petunjuk khusus.
+[562] D. Menjelaskan manfaat kesehatan dalam pertemuan desa dan meminta warga mencoba jadwal pemerintah selama satu bulan sebelum mengevaluasinya.
+[563] E. Menyebarkan materi melalui tokoh adat serta mempertahankan jadwal awal karena perubahan dapat menghambat keseragaman pelaksanaan.
+[564] Jawaban: A
+[565] Pembahasan:
+[566] Konsep yang digunakan: Penerapan program melalui kearifan lokal dengan menyesuaikan cara pelaksanaan tanpa mengurangi tujuan kebijakan
+[567] Kata kunci: pasar adat, pengelolaan sampah, tokoh adat, jadwal alternatif, target program
+[568] Opsi A (5 Poin) paling tepat karena tokoh yang memahami kebiasaan setempat dilibatkan untuk menemukan jadwal yang dapat dijalankan warga. Penyesuaian dilakukan pada cara pelaksanaan, sedangkan tujuan kesehatan lingkungan tetap dipertahankan.
+[569] Pendekatan tersebut mengubah penolakan menjadi pembahasan kebutuhan nyata tanpa memaksa warga menerima rancangan yang tidak sesuai konteks.
+[570] Pembahasan opsi lain:
+[571] B (3 Poin) Menunggu kesepakatan warga menghormati partisipasi, tetapi menyerahkan jadwal sepenuhnya dapat menunda tujuan yang wajib dicapai.
+[572] C (1 Poin) Pengecualian sementara menghindari benturan langsung, tetapi membuat kawasan pasar tidak memperoleh manfaat program dan menunda solusi.
+[573] D (4 Poin) Penjelasan manfaat dan masa uji cukup konstruktif, tetapi jadwal yang diketahui bermasalah tetap diterapkan sebelum penyesuaian dibahas.
+[574] E (2 Poin) Tokoh adat membantu penyampaian, tetapi mempertahankan jadwal awal tidak menjawab alasan utama penolakan warga.
+[575] Cara cepat: Libatkan pemilik pengetahuan lokal untuk menyesuaikan cara pelaksanaan sambil menjaga tujuan kebijakan tetap utuh.
+[576] Soal 25
+[577] Category: Kepribadian
+[578] Lesson: TKP SKD
+[579] Chapter: Teknologi Informasi dan Komunikasi
+[580] Tingkat Kesulitan: HOTS
+[581] Bentuk Soal: Option New
+[582] Instansi mulai memakai aplikasi terpadu dan menghentikan pencatatan manual dalam dua minggu. Beberapa pegawai senior masih kesulitan melakukan migrasi data, sedangkan panduan resmi hanya berupa video panjang. Anda telah memahami fungsi dasar aplikasi, tetapi juga memiliki target kerja harian. Tindakan Anda adalah ... (Teknologi Informasi dan Komunikasi)
+[583] A. Membantu memasukkan data milik pegawai senior sampai masa transisi selesai agar pekerjaan unit tidak mengalami keterlambatan.
+[584] B. Menyarankan pegawai senior menonton kembali video resmi serta mencatat bagian yang belum dipahami untuk ditanyakan kepada unit TIK.
+[585] C. Mengumpulkan pertanyaan rekan dan meneruskannya kepada pengelola aplikasi supaya jawaban teknis tersedia bagi seluruh pegawai.
+[586] D. Membuat panduan singkat dari fungsi yang sering digunakan dan mengadakan sesi latihan terjadwal tanpa mengabaikan target kerja tim.
+[587] E. Meminta pimpinan memperpanjang penggunaan cara manual bagi pegawai yang belum mahir sampai pelatihan resmi diselenggarakan.
+[588] Jawaban: D
+[589] Pembahasan:
+[590] Konsep yang digunakan: Adaptasi sistem baru melalui pembelajaran mandiri, penyederhanaan panduan, dan pendampingan yang membangun kemandirian
+[591] Kata kunci: aplikasi terpadu, migrasi data, pegawai senior, panduan singkat, sesi latihan
+[592] Opsi D (5 Poin) paling tepat karena bantuan disusun berdasarkan kebutuhan nyata dan diberikan secara terjadwal sehingga rekan belajar menggunakan sistem sendiri. Target kerja tetap dijaga melalui pengaturan waktu.
+[593] Pendampingan tidak berubah menjadi pengambilalihan pekerjaan, sementara transisi digital tetap mengikuti batas waktu instansi.
+[594] Pembahasan opsi lain:
+[595] A (2 Poin) Mengambil alih input menjaga kecepatan sementara, tetapi membuat rekan bergantung dan tidak meningkatkan kemampuan penggunaan aplikasi.
+[596] B (3 Poin) Video dan pencatatan pertanyaan mendukung belajar mandiri, tetapi belum mengatasi kesulitan penggunaan yang membutuhkan praktik langsung.
+[597] C (4 Poin) Pengumpulan pertanyaan menghasilkan informasi bersama, tetapi belum memastikan rekan mampu menerapkan jawaban pada pekerjaannya.
+[598] E (1 Poin) Perpanjangan cara manual memberi waktu belajar, tetapi menghambat integrasi dan membuat proses ganda yang tidak diperlukan.
+[599] Cara cepat: Dukung transisi teknologi dengan latihan praktis yang membuat pengguna mandiri tanpa mengabaikan pekerjaan utama.
+[600] Soal 26
+[601] Category: Kepribadian
+[602] Lesson: TKP SKD
+[603] Chapter: Teknologi Informasi dan Komunikasi
+[604] Tingkat Kesulitan: HOTS
+[605] Bentuk Soal: Option New
+[606] Akibat kabut asap, tim bekerja dari rumah dan menggunakan rapat virtual serta aplikasi manajemen proyek. Beberapa anggota menghadapi koneksi tidak stabil sehingga pembaruan tugas terlambat. Tenggat tetap berlaku, tetapi rapat langsung tidak memungkinkan. Anda menjadi koordinator pekerjaan harian. Langkah Anda adalah ... (Teknologi Informasi dan Komunikasi)
+[607] A. Membebaskan cara pelaporan setiap anggota selama hasil akhir diserahkan tepat waktu sesuai target yang telah ditetapkan.
+[608] B. Menggunakan pembaruan asinkron dengan format seragam dan berkas terpusat sambil membatasi rapat pada keputusan penting.
+[609] C. Menambah rapat virtual pada pagi dan sore hari agar seluruh anggota tetap melaporkan perkembangan secara langsung kepada tim.
+[610] D. Meminta anggota dengan koneksi lemah mengirim laporan melalui pesan pribadi agar koordinator dapat memperbarui aplikasi atas nama mereka.
+[611] E. Membagi tugas berdasarkan kualitas koneksi anggota dan memberikan pekerjaan utama kepada mereka yang memiliki akses internet paling stabil.
+[612] Jawaban: B
+[613] Pembahasan:
+[614] Konsep yang digunakan: Kerja jarak jauh melalui komunikasi asinkron, penyimpanan bersama, dan penggunaan rapat yang sesuai kebutuhan
+[615] Kata kunci: WFH, koneksi tidak stabil, pembaruan asinkron, berkas terpusat, rapat virtual
+[616] Opsi B (5 Poin) paling tepat karena pola kerja disesuaikan dengan keterbatasan koneksi tanpa mengurangi visibilitas pekerjaan. Berkas terpusat menjaga versi dokumen, sedangkan rapat digunakan hanya ketika interaksi langsung memang diperlukan.
+[617] Semua anggota tetap dapat berkontribusi dan target dapat dipantau tanpa membebani jaringan dengan pertemuan berulang.
+[618] Pembahasan opsi lain:
+[619] A (3 Poin) Fleksibilitas cara pelaporan memudahkan anggota, tetapi format yang berbeda dapat menyulitkan pemantauan dan konsolidasi.
+[620] C (2 Poin) Rapat rutin memberi kendali, tetapi meningkatkan kebutuhan koneksi dan dapat memperparah hambatan anggota yang aksesnya tidak stabil.
+[621] D (4 Poin) Pesan pribadi menyediakan jalur cadangan, tetapi informasi bergantung pada koordinator dan kurang terlihat oleh seluruh tim.
+[622] E (1 Poin) Pembagian berdasarkan koneksi menjaga kelancaran, tetapi tidak adil dan tidak mempertimbangkan kompetensi maupun beban kerja.
+[623] Cara cepat: Dalam kerja jarak jauh, gunakan komunikasi asinkron yang seragam dan simpan informasi pada tempat yang dapat diakses tim.
+[624] Soal 27
+[625] Category: Kepribadian
+[626] Lesson: TKP SKD
+[627] Chapter: Teknologi Informasi dan Komunikasi
+[628] Tingkat Kesulitan: HOTS
+[629] Bentuk Soal: Option New
+[630] Server pelayanan mengalami gangguan ketika antrean sedang padat. Tim TIK meminta contoh waktu kejadian dan pesan galat untuk penelusuran. SOP menyediakan formulir cadangan, tetapi transaksi baru boleh disahkan setelah sistem pulih. Warga membutuhkan kepastian mengenai berkas yang sudah diserahkan. Tindakan Anda adalah ... (Teknologi Informasi dan Komunikasi)
+[631] A. Memprioritaskan pencatatan warga dengan kebutuhan mendesak dan meminta pemohon lain kembali setelah sistem dinyatakan normal.
+[632] B. Mengumumkan gangguan kepada warga serta membagikan nomor kontak layanan agar mereka dapat menanyakan perkembangan secara berkala.
+[633] C. Mengirim laporan gangguan kepada tim TIK dan meminta warga menunggu sampai tersedia perkiraan waktu pemulihan sistem.
+[634] D. Menerima seluruh berkas secara manual dan mengesahkan transaksi berdasarkan kelengkapan dokumen agar antrean tetap bergerak.
+[635] E. Mencatat detail galat untuk tim TIK sambil memakai formulir cadangan dan tanda terima sebagai jejak tindak lanjut.
+[636] Jawaban: E
+[637] Pembahasan:
+[638] Konsep yang digunakan: Penanganan gangguan sistem melalui pelaporan teknis terstruktur, prosedur cadangan, dan jejak tindak lanjut
+[639] Kata kunci: server down, pesan galat, tim TIK, formulir cadangan, tanda terima
+[640] Opsi E (5 Poin) paling tepat karena tim TIK memperoleh informasi yang diperlukan untuk diagnosis dan layanan tetap berjalan melalui mekanisme cadangan. Tanda terima memberi bukti bahwa berkas telah diterima serta akan dilanjutkan setelah sistem pulih.
+[641] Petugas tidak mengesahkan transaksi di luar sistem, sehingga kesinambungan layanan tetap sejalan dengan batas kewenangan.
+[642] Pembahasan opsi lain:
+[643] A (2 Poin) Prioritas kebutuhan mendesak cukup responsif, tetapi pemohon lain dibebani untuk kembali padahal formulir cadangan tersedia.
+[644] B (4 Poin) Pengumuman dan nomor kontak memberi informasi, tetapi belum mencatat berkas atau menyediakan jejak tindak lanjut individual.
+[645] C (3 Poin) Pelaporan kepada tim TIK sudah tepat, tetapi warga dibiarkan menunggu tanpa pencatatan cadangan atau bukti penerimaan.
+[646] D (1 Poin) Pengesahan manual mempercepat antrean, tetapi melampaui SOP karena transaksi harus menunggu sistem kembali berfungsi.
+[647] Cara cepat: Saat sistem gagal, kirim detail teknis, aktifkan prosedur cadangan, dan berikan bukti tindak lanjut kepada pengguna.
+[648] Soal 28
+[649] Category: Kepribadian
+[650] Lesson: TKP SKD
+[651] Chapter: Teknologi Informasi dan Komunikasi
+[652] Tingkat Kesulitan: HOTS
+[653] Bentuk Soal: Option New
+[654] Anda menerima surel yang menyerupai pesan pengelola sistem dan meminta verifikasi kata sandi melalui tautan. Pada saat yang sama, seorang rekan hendak memakai flashdisk pribadi pada komputer pelayanan tanpa pemindaian. Prosedur keamanan mengatur pelaporan pesan mencurigakan dan pemeriksaan media eksternal. Tindakan Anda adalah ... (Teknologi Informasi dan Komunikasi)
+[655] A. Menghubungi pengirim surel untuk meminta konfirmasi dan mengingatkan rekan agar memindai flashdisk setelah pekerjaannya selesai.
+[656] B. Memeriksa alamat pengirim melalui mesin pencari dan mencoba membuka tautan dari perangkat pribadi untuk memastikan tingkat risikonya.
+[657] C. Melaporkan surel melalui kanal keamanan dan meminta flashdisk diperiksa dengan prosedur resmi sebelum digunakan pada perangkat dinas.
+[658] D. Meneruskan surel kepada rekan lain sebagai peringatan serta meminta mereka tidak memakai flashdisk pada komputer dinas untuk sementara.
+[659] E. Menghapus surel tanpa membuka tautan dan menyarankan rekan menggunakan komputer lain yang tidak terhubung ke sistem pelayanan.
+[660] Jawaban: C
+[661] Pembahasan:
+[662] Konsep yang digunakan: Respons keamanan siber melalui penghindaran interaksi dengan konten mencurigakan, pelaporan resmi, dan pemeriksaan media eksternal
+[663] Kata kunci: phishing, kata sandi, tautan, flashdisk pribadi, pelaporan keamanan, pemindaian
+[664] Opsi C (5 Poin) paling tepat karena kedua risiko ditangani melalui jalur yang telah ditetapkan. Pesan mencurigakan tidak diuji sendiri, sedangkan media eksternal baru digunakan setelah pemeriksaan.
+[665] Pelaporan memungkinkan pengelola melindungi pengguna lain dan menyelidiki apakah serangan yang sama ditujukan kepada seluruh instansi.
+[666] Pembahasan opsi lain:
+[667] A (4 Poin) Konfirmasi dan pemindaian menunjukkan kehati-hatian, tetapi berinteraksi dengan pengirim serta memakai media sebelum diperiksa menambah risiko.
+[668] B (1 Poin) Pemeriksaan mandiri bertujuan memastikan risiko, tetapi membuka tautan tetap dapat membahayakan perangkat dan data pribadi.
+[669] D (2 Poin) Peringatan kepada rekan berguna, tetapi meneruskan surel memperluas paparan dan larangan sementara tidak mengikuti prosedur pemeriksaan.
+[670] E (3 Poin) Menghapus pesan mengurangi risiko pribadi, tetapi tidak memberi peringatan kepada pengelola dan komputer lain tetap dapat terpapar media yang sama.
+[671] Cara cepat: Jangan menguji konten mencurigakan sendiri; laporkan melalui kanal resmi dan periksa media eksternal sebelum digunakan.
+[672] Soal 29
+[673] Category: Kepribadian
+[674] Lesson: TKP SKD
+[675] Chapter: Teknologi Informasi dan Komunikasi
+[676] Tingkat Kesulitan: HOTS
+[677] Bentuk Soal: Option New
+[678] Pendaftaran bantuan diwajibkan melalui aplikasi ponsel. Seorang lansia datang ke meja bantuan karena belum pernah membuat akun. Ia membawa ponsel sendiri dan dokumen lengkap, tetapi beberapa kali hendak menyebutkan kata sandi kepada Anda. Antrean pendampingan masih cukup panjang. Cara Anda melayani adalah ... (Teknologi Informasi dan Komunikasi)
+[679] A. Meminta persetujuan lansia untuk dibantu petugas lain sambil Anda melayani antrean agar proses pendampingan lebih cepat.
+[680] B. Membuatkan akun dengan kata sandi sementara, kemudian menuliskannya pada lembar petunjuk untuk dibawa pulang oleh lansia.
+[681] C. Menjelaskan langkah utama secara lisan dan meminta lansia mencoba sendiri di kursi tunggu agar petugas dapat membantu warga berikutnya.
+[682] D. Memandu setiap tahap pada ponselnya, meminta ia mengetik data rahasia sendiri, dan memberikan petunjuk ringkas untuk penggunaan berikutnya.
+[683] E. Mengisikan seluruh formulir agar proses cepat dan meminta lansia mengganti kata sandi setelah pendaftaran berhasil dilakukan.
+[684] Jawaban: D
+[685] Pembahasan:
+[686] Konsep yang digunakan: Pendampingan literasi digital yang membangun kemandirian sekaligus menjaga kendali pengguna atas data rahasia
+[687] Kata kunci: lansia, aplikasi ponsel, akun, kata sandi, panduan langkah, data rahasia
+[688] Opsi D (5 Poin) paling tepat karena warga melakukan sendiri tindakan yang berkaitan dengan data rahasia sementara petugas memberi arahan. Petunjuk ringkas membantu penggunaan berikutnya sehingga pendampingan menghasilkan kemandirian.
+[689] Kecepatan antrean tetap penting, tetapi tidak boleh dicapai dengan mengambil alih akun atau mengabaikan keamanan informasi warga.
+[690] Pembahasan opsi lain:
+[691] A (4 Poin) Pelimpahan dengan persetujuan menjaga antrean dan cukup membantu, tetapi belum memastikan pola pendampingan melindungi data rahasia serta membangun kemandirian.
+[692] B (1 Poin) Kata sandi sementara memudahkan pendaftaran, tetapi penulisan kata sandi menimbulkan risiko keamanan dan tetap mengambil alih pembuatan akun.
+[693] C (3 Poin) Percobaan mandiri membangun kemampuan, tetapi lansia belum memperoleh pendampingan memadai dan dapat melakukan kesalahan pada data penting.
+[694] E (2 Poin) Pengisian oleh petugas mempercepat proses, tetapi mengambil alih kendali akun dan membuat warga tetap bergantung.
+[695] Cara cepat: Pandu pengguna tanpa mengambil alih data rahasianya dan berikan bekal agar ia mampu mengulang proses sendiri.
+[696] Soal 30
+[697] Category: Kepribadian
+[698] Lesson: TKP SKD
+[699] Chapter: Teknologi Informasi dan Komunikasi
+[700] Tingkat Kesulitan: HOTS
+[701] Bentuk Soal: Option New
+[702] Laporan bulanan menumpuk dan Anda ingin memakai alat kecerdasan buatan untuk membuat ringkasan awal. Data laporan memuat identitas warga, sedangkan unit baru menyetujui alat internal untuk data nonrahasia. Tenggat besok pagi dan hasil otomatis tetap harus diperiksa manusia. Langkah Anda adalah ... (Teknologi Informasi dan Komunikasi)
+[703] A. Memakai alat publik pada beberapa contoh data untuk menilai kualitas ringkasan sebelum meminta persetujuan penggunaan secara resmi.
+[704] B. Memproses data nonrahasia dengan alat internal sambil menangani bagian sensitif secara aman serta memeriksa ringkasan terhadap sumber.
+[705] C. Meminta unit TIK menjalankan alat tersebut atas nama Anda karena mereka memiliki tanggung jawab atas keamanan sistem instansi.
+[706] D. Menyusun laporan secara manual untuk tenggat kali ini serta mengusulkan kajian alat otomatis setelah seluruh pekerjaan selesai.
+[707] E. Menghapus kolom identitas lalu mengunggah seluruh isi laporan ke alat internal karena data yang tersisa tidak lagi menyebut nama warga.
+[708] Jawaban: B
+[709] Pembahasan:
+[710] Konsep yang digunakan: Pemanfaatan otomatisasi secara proporsional melalui klasifikasi data, penggunaan alat resmi, dan verifikasi keluaran
+[711] Kata kunci: AI, data warga, alat internal, data nonrahasia, verifikasi ringkasan
+[712] Opsi B (5 Poin) paling tepat karena alat digunakan hanya untuk data yang diizinkan, sementara bagian sensitif tetap berada pada proses aman. Pemeriksaan terhadap sumber mencegah kesalahan otomatis masuk ke laporan akhir.
+[713] Pendekatan tersebut memperoleh manfaat efisiensi tanpa memperluas akses terhadap data rahasia atau menyerahkan tanggung jawab penilaian kepada sistem.
+[714] Pembahasan opsi lain:
+[715] A (1 Poin) Pengujian contoh membantu menilai kemampuan alat, tetapi penggunaan layanan publik tanpa persetujuan tetap berisiko terhadap data.
+[716] C (2 Poin) Pelibatan unit TIK dapat memberi dukungan teknis, tetapi tidak mengubah batas penggunaan alat atau tanggung jawab pemilik laporan.
+[717] D (4 Poin) Pengerjaan manual aman dan bertanggung jawab, tetapi belum memanfaatkan alat resmi untuk bagian data yang memang diizinkan.
+[718] E (3 Poin) Penghapusan nama mengurangi risiko, tetapi isi lain dapat tetap mengidentifikasi warga dan belum tentu memenuhi klasifikasi nonrahasia.
+[719] Cara cepat: Gunakan alat otomatis hanya pada data yang diizinkan dan selalu cocokkan hasilnya dengan sumber sebelum diserahkan.
+[720] Soal 31
+[721] Category: Kepribadian
+[722] Lesson: TKP SKD
+[723] Chapter: Teknologi Informasi dan Komunikasi
+[724] Tingkat Kesulitan: HOTS
+[725] Bentuk Soal: Option New
+[726] Internet kantor melambat saat petugas mengakses aplikasi pelayanan. Pemeriksaan awal menunjukkan beberapa rekan mengunduh berkas pribadi berukuran besar dan menonton video pada jaringan dinas. Aturan penggunaan jaringan sudah tersedia, tetapi pembatasan teknis belum diterapkan. Anda membutuhkan koneksi stabil untuk melayani antrean. Tindakan Anda adalah ... (Teknologi Informasi dan Komunikasi)
+[727] A. Meminta aktivitas pribadi dihentikan berdasarkan aturan dan mengusulkan pengaturan prioritas jaringan untuk mencegah gangguan berulang.
+[728] B. Menghentikan unduhan pada perangkat rekan tanpa pemberitahuan karena jaringan pelayanan harus memperoleh prioritas selama jam kerja.
+[729] C. Melaporkan nama pengguna kepada atasan agar teguran resmi diberikan dan pelanggaran yang sama tidak berulang pada hari berikutnya.
+[730] D. Memindahkan pelayanan ke koneksi seluler sementara dan membahas penggunaan jaringan dalam rapat evaluasi unit berikutnya.
+[731] E. Mengirimkan salinan aturan melalui grup kerja serta meminta seluruh rekan mengurangi penggunaan internet sampai antrean selesai.
+[732] Jawaban: A
+[733] Pembahasan:
+[734] Konsep yang digunakan: Penggunaan jaringan dinas secara bertanggung jawab melalui koreksi langsung, pemulihan layanan, dan pencegahan teknis
+[735] Kata kunci: internet lambat, berkas pribadi, aturan jaringan, pelayanan, prioritas bandwidth
+[736] Opsi A (5 Poin) paling tepat karena gangguan dihentikan melalui komunikasi langsung dan dasar aturan yang jelas. Usulan pengaturan prioritas jaringan juga mencegah layanan kembali terganggu hanya karena bergantung pada kedisiplinan pengguna.
+[737] Tindakan dilakukan secara proporsional sebelum eskalasi personal, sementara kebutuhan pelayanan dipulihkan pada saat itu juga.
+[738] Pembahasan opsi lain:
+[739] B (2 Poin) Menghentikan unduhan memulihkan koneksi, tetapi mengubah aktivitas perangkat orang lain tanpa komunikasi bukan langkah yang tepat.
+[740] C (1 Poin) Teguran resmi dapat mencegah pengulangan, tetapi eskalasi dilakukan sebelum koreksi langsung dan kebutuhan layanan saat ini belum diselesaikan.
+[741] D (3 Poin) Koneksi seluler menjaga layanan sementara, tetapi tidak menghentikan penyalahgunaan jaringan atau mencegah masalah berulang.
+[742] E (4 Poin) Pengingat melalui grup cukup baik dan menjaga hubungan, tetapi kata mengurangi tidak memastikan aktivitas penyebab gangguan benar-benar berhenti.
+[743] Cara cepat: Pulihkan penggunaan jaringan untuk tugas dinas, koreksi secara langsung, dan usulkan pengendalian teknis agar masalah tidak berulang.
+[744] Soal 32
+[745] Category: Kepribadian
+[746] Lesson: TKP SKD
+[747] Chapter: Profesionalisme
+[748] Tingkat Kesulitan: HOTS
+[749] Bentuk Soal: Option New
+[750] Anda telah merencanakan acara keluarga pada akhir pekan. Jumat sore, atasan menugaskan laporan evaluasi yang harus dikirim Senin pagi. Sebagian data sudah tersedia, tetapi penyusunan memerlukan sekitar enam jam dan seorang rekan memahami bagian teknisnya. Tindakan Anda adalah ... (Profesionalisme)
+[751] A. Mengatur pekerjaan bersama rekan sesuai kompetensi dan menyesuaikan jadwal keluarga agar laporan selesai dengan waktu pemeriksaan.
+[752] B. Menyelesaikan bagian utama pada Jumat malam dan menyerahkan penyempurnaan kepada rekan agar acara keluarga tetap berjalan penuh.
+[753] C. Membatalkan seluruh acara keluarga dan mengerjakan laporan sendiri sampai selesai agar tanggung jawab tidak bergantung pada orang lain.
+[754] D. Menghadiri acara sesuai rencana lalu mengerjakan laporan pada Minggu malam karena seluruh data yang diperlukan sudah tersedia.
+[755] E. Meminta atasan mengalihkan tugas kepada pegawai yang tidak memiliki agenda akhir pekan karena penugasan diberikan secara mendadak.
+[756] Jawaban: A
+[757] Pembahasan:
+[758] Konsep yang digunakan: Prioritas tugas mendesak melalui perencanaan, koordinasi sesuai kompetensi, dan penyesuaian urusan pribadi secara proporsional
+[759] Kata kunci: acara keluarga, laporan mendesak, tenggat, pembagian bagian teknis, penyesuaian jadwal
+[760] Opsi A (5 Poin) paling tepat karena tugas diatur berdasarkan kebutuhan dan kompetensi tanpa mengabaikan komunikasi dengan keluarga. Koordinasi teknis mempercepat penyelesaian, sedangkan tanggung jawab utama tetap berada pada penerima tugas.
+[761] Profesionalisme tidak selalu berarti mengorbankan seluruh urusan pribadi, tetapi memastikan kewajiban dinas selesai melalui pengelolaan yang dapat dipertanggungjawabkan.
+[762] Pembahasan opsi lain:
+[763] B (3 Poin) Mengerjakan bagian utama menjaga kontribusi, tetapi menyerahkan penyempurnaan tanpa kesepakatan dapat memindahkan tanggung jawab kepada rekan.
+[764] C (4 Poin) Menyelesaikan sendiri menunjukkan komitmen tinggi, tetapi mengabaikan sumber daya tim dan mengorbankan urusan pribadi lebih dari yang diperlukan.
+[765] D (2 Poin) Pengerjaan Minggu malam masih mungkin memenuhi tenggat, tetapi menyisakan risiko besar bila terdapat koreksi atau kendala data.
+[766] E (1 Poin) Pengalihan dapat melindungi agenda pribadi, tetapi menjadikan keadaan pribadi sebagai dasar menolak tugas mendesak sebelum mencoba pengaturan kerja.
+[767] Cara cepat: Hadapi benturan pribadi dan tugas dengan memetakan pekerjaan, berkoordinasi, serta menyisakan waktu untuk pemeriksaan.
+[768] Soal 33
+[769] Category: Kepribadian
+[770] Lesson: TKP SKD
+[771] Chapter: Profesionalisme
+[772] Tingkat Kesulitan: HOTS
+[773] Bentuk Soal: Option New
+[774] Setelah mengirim laporan kinerja bulanan, Anda menemukan rumus yang salah sehingga capaian unit terlihat lebih tinggi dari kondisi sebenarnya. Atasan belum menyadarinya dan laporan akan digunakan dalam rapat dua jam lagi. Anda telah menghitung angka yang benar dan mengetahui bagian yang terdampak. Langkah Anda adalah ... (Profesionalisme)
+[775] A. Mengirim versi baru kepada atasan dengan catatan bahwa terdapat pembaruan data tanpa menjelaskan sumber perubahan perhitungan.
+[776] B. Menunggu rapat selesai untuk memastikan apakah angka tersebut benar-benar dipakai sebelum mengakui kesalahan perhitungan.
+[777] C. Memperbaiki file pada penyimpanan bersama tanpa pemberitahuan agar atasan menggunakan angka terbaru saat rapat dimulai.
+[778] D. Memberi tahu atasan tentang kesalahan dan dampaknya sambil menyerahkan versi koreksi yang telah diperiksa sebelum rapat.
+[779] E. Menghubungi rekan penyedia data untuk mengonfirmasi angka lalu meminta atasan menunda pembahasan sampai pemeriksaan lengkap selesai.
+[780] Jawaban: D
+[781] Pembahasan:
+[782] Konsep yang digunakan: Pertanggungjawaban kesalahan melalui pengungkapan segera, penjelasan dampak, koreksi, dan pemeriksaan sebelum penggunaan
+[783] Kata kunci: rumus salah, capaian unit, rapat, pengakuan, versi koreksi
+[784] Opsi D (5 Poin) paling tepat karena kesalahan disampaikan sebelum memengaruhi keputusan dan disertai solusi yang siap digunakan. Penjelasan dampak membantu atasan memahami perubahan angka serta menentukan tindakan pada rapat.
+[785] Mengakui kekeliruan secara terbuka menjaga keterlacakan dokumen dan mencegah koreksi diam-diam menimbulkan kebingungan versi.
+[786] Pembahasan opsi lain:
+[787] A (2 Poin) Versi baru memperbaiki angka, tetapi penjelasan yang tidak lengkap mengaburkan kesalahan serta dampaknya.
+[788] B (1 Poin) Menunggu memastikan dampak aktual, tetapi membiarkan informasi yang diketahui salah berpotensi dipakai dalam rapat.
+[789] C (3 Poin) Koreksi cepat mencegah penggunaan angka salah, tetapi perubahan tanpa pemberitahuan menghilangkan jejak dan dapat membingungkan pengguna dokumen.
+[790] E (4 Poin) Konfirmasi tambahan menunjukkan kehati-hatian, tetapi sumber kesalahan sudah ditemukan dan penundaan rapat belum tentu diperlukan.
+[791] Cara cepat: Jika menemukan kesalahan penting, laporkan sebelum dipakai dan sertakan koreksi yang sudah diperiksa.
+[792] Soal 34
+[793] Category: Kepribadian
+[794] Lesson: TKP SKD
+[795] Chapter: Profesionalisme
+[796] Tingkat Kesulitan: HOTS
+[797] Bentuk Soal: Option New
+[798] Atasan menjalani perjalanan dinas selama dua minggu. Beberapa rekan mulai datang terlambat dan menunda pekerjaan rutin karena merasa pengawasan berkurang. Tugas Anda bergantung pada data harian mereka, sedangkan laporan mingguan harus tetap selesai sesuai jadwal. Sikap Anda adalah ... (Profesionalisme)
+[799] A. Mengambil alih pengumpulan data rekan untuk sementara agar laporan selesai tanpa menimbulkan konflik selama atasan tidak berada di kantor.
+[800] B. Menjaga disiplin pribadi, mengingatkan tenggat data kepada rekan, dan mengoordinasikan pembaruan pekerjaan melalui kanal tim.
+[801] C. Mengikuti ritme kerja rekan selama target mingguan masih mungkin diselesaikan menjelang batas waktu penyerahan.
+[802] D. Melaporkan pola keterlambatan kepada atasan melalui pesan pribadi agar ketertiban segera dipulihkan dari jarak jauh.
+[803] E. Tetap bekerja sesuai jadwal dan menyelesaikan bagian sendiri, kemudian mencatat data yang belum diberikan rekan sebagai kendala laporan.
+[804] Jawaban: B
+[805] Pembahasan:
+[806] Konsep yang digunakan: Disiplin tanpa pengawasan melalui konsistensi pribadi, koordinasi langsung, dan keterbukaan kemajuan kerja
+[807] Kata kunci: atasan dinas, terlambat, data harian, disiplin mandiri, kanal tim
+[808] Opsi B (5 Poin) paling tepat karena peserta mempertahankan standar diri sekaligus menangani ketergantungan pekerjaan melalui pengingat dan koordinasi terbuka. Kanal tim membuat kemajuan dapat dipantau tanpa bergantung pada kehadiran atasan.
+[809] Tindakan dilakukan pada tingkat yang sesuai sebelum memilih eskalasi, sehingga tanggung jawab setiap anggota tetap terjaga.
+[810] Pembahasan opsi lain:
+[811] A (2 Poin) Pengambilalihan menjaga laporan selesai, tetapi menutupi ketidakdisiplinan serta menambah ketergantungan rekan.
+[812] C (1 Poin) Fokus pada target akhir memberi fleksibilitas, tetapi menormalisasi penundaan dan meningkatkan risiko pekerjaan menumpuk.
+[813] D (3 Poin) Pelaporan dapat memulihkan disiplin, tetapi eskalasi dilakukan sebelum rekan diingatkan dan dikoordinasikan secara langsung.
+[814] E (4 Poin) Disiplin pribadi dan pencatatan kendala sudah baik, tetapi belum mencoba memperoleh data yang dibutuhkan melalui koordinasi langsung.
+[815] Cara cepat: Disiplin profesional tetap berlaku tanpa pengawasan dan perlu didukung koordinasi yang membuat tanggung jawab terlihat.
+[816] Soal 35
+[817] Category: Kepribadian
+[818] Lesson: TKP SKD
+[819] Chapter: Profesionalisme
+[820] Tingkat Kesulitan: HOTS
+[821] Bentuk Soal: Option New
+[822] Menjelang akhir tahun, pekerjaan rutin Anda padat. Seorang rekan harus dirawat sehingga atasan memberikan sebagian tugasnya kepada Anda. Dua pekerjaan memiliki tenggat yang sama, tetapi satu laporan dapat dibagi dengan anggota tim lain yang masih memiliki kapasitas. Tindakan Anda adalah ... (Profesionalisme)
+[823] A. Mengatur prioritas berbasis tenggat dan dampak sambil membagi pekerjaan sesuai kapasitas serta memantau seluruh hasilnya.
+[824] B. Menerima seluruh tugas dan menambah jam kerja sampai semuanya selesai agar beban rekan lain tidak ikut bertambah.
+[825] C. Meminta atasan menentukan ulang seluruh prioritas karena penambahan tugas membuat rencana kerja sebelumnya tidak lagi berlaku.
+[826] D. Menyelesaikan pekerjaan rutin terlebih dahulu lalu mengerjakan tugas tambahan sesuai sisa waktu yang tersedia menjelang tenggat.
+[827] E. Menyerahkan laporan yang dapat dibagi kepada anggota lain dan berfokus pada tugas tambahan tanpa memantau hasil pekerjaan tersebut.
+[828] Jawaban: A
+[829] Pembahasan:
+[830] Konsep yang digunakan: Pengelolaan beban tinggi melalui prioritas berbasis dampak, pembagian kapasitas, dan pemantauan kemajuan
+[831] Kata kunci: akhir tahun, tugas tambahan, dua tenggat, kapasitas tim, kemajuan
+[832] Opsi A (5 Poin) paling tepat karena pekerjaan diprioritaskan berdasarkan tenggat dan dampak, sedangkan kapasitas tim digunakan pada bagian yang memang dapat dibagi. Pelaporan kemajuan memberi atasan kesempatan menyesuaikan keputusan bila muncul hambatan.
+[833] Menerima tanggung jawab tidak berarti mengerjakan semuanya sendiri, tetapi memastikan seluruh hasil tetap berkualitas melalui pengaturan yang jelas.
+[834] Pembahasan opsi lain:
+[835] B (4 Poin) Komitmen menyelesaikan semua tugas sangat baik, tetapi jam kerja berlebihan meningkatkan risiko kesalahan dan mengabaikan kapasitas tim yang tersedia.
+[836] C (2 Poin) Penentuan atasan memberi dasar prioritas, tetapi peserta belum melakukan analisis awal yang diperlukan untuk mengajukan pilihan.
+[837] D (1 Poin) Urutan pekerjaan memberi fokus, tetapi mengabaikan kesamaan tenggat dan dapat membuat tugas tambahan terlambat.
+[838] E (3 Poin) Pembagian pekerjaan memanfaatkan kapasitas tim, tetapi tanpa pemantauan tanggung jawab atas hasil bersama menjadi lemah.
+[839] Cara cepat: Saat beban bertambah, petakan dampak dan tenggat, gunakan kapasitas tim, lalu pantau seluruh hasil.
+[840] Soal 36
+[841] Category: Kepribadian
+[842] Lesson: TKP SKD
+[843] Chapter: Profesionalisme
+[844] Tingkat Kesulitan: HOTS
+[845] Bentuk Soal: Option New
+[846] Instansi menetapkan format analisis baru berbasis perangkat lunak yang belum Anda kuasai. Draf pertama Anda mendapat kritik tajam karena kurang mendalam, sedangkan pelatihan resmi belum tersedia. Revisi harus selesai dalam lima hari dan seorang analis dari unit lain bersedia memberi arahan singkat. Langkah Anda adalah ... (Profesionalisme)
+[847] A. Membagi revisi dengan rekan yang lebih menguasai perangkat lunak sambil mempelajari langkah yang mereka gunakan pada pekerjaan tersebut.
+[848] B. Menjelaskan kepada pimpinan bahwa kualitas draf dipengaruhi belum adanya pelatihan lalu meminta tambahan waktu untuk belajar.
+[849] C. Mengubah kritik menjadi rencana belajar mandiri dengan arahan analis dan pengujian hasil revisi sebelum diserahkan.
+[850] D. Meminta contoh laporan analis tersebut dan menyesuaikan isi draf Anda dengan formatnya agar revisi selesai lebih cepat.
+[851] E. Memperbaiki bagian yang dikritik berdasarkan petunjuk pimpinan dan menunda pembelajaran perangkat lunak sampai pelatihan tersedia.
+[852] Jawaban: C
+[853] Pembahasan:
+[854] Konsep yang digunakan: Respons profesional terhadap kritik melalui identifikasi kekurangan, pembelajaran mandiri, konsultasi, dan pemeriksaan kualitas
+[855] Kata kunci: format baru, kritik, modul, konsultasi ahli, uji hasil
+[856] Opsi C (5 Poin) paling tepat karena kritik diterjemahkan menjadi kebutuhan perbaikan yang jelas dan diikuti pembelajaran dari beberapa sumber. Pengujian hasil memastikan revisi tidak hanya tampak sesuai format, tetapi juga lebih akurat.
+[857] Peserta menerima evaluasi tanpa defensif sekaligus membangun kemampuan yang dapat digunakan pada pekerjaan berikutnya.
+[858] Pembahasan opsi lain:
+[859] A (4 Poin) Kolaborasi dan pengamatan langkah rekan mendukung pembelajaran, tetapi tanggung jawab revisi terbagi dan pemeriksaan mandiri belum jelas.
+[860] B (1 Poin) Keterbatasan pelatihan merupakan konteks yang benar, tetapi fokus pada alasan belum menunjukkan upaya belajar yang tersedia.
+[861] D (2 Poin) Contoh laporan mempercepat pemahaman, tetapi meniru format belum memastikan peserta menguasai metode atau menghasilkan analisis yang sesuai data.
+[862] E (3 Poin) Perbaikan sesuai petunjuk menyelesaikan kebutuhan saat ini, tetapi ketergantungan pada arahan akan berulang karena kompetensi tidak dikembangkan.
+[863] Cara cepat: Terima kritik sebagai data perbaikan, pelajari kesenjangan kemampuan, dan uji hasil sebelum menyerahkan ulang.
+[864] Soal 37
+[865] Category: Kepribadian
+[866] Lesson: TKP SKD
+[867] Chapter: Profesionalisme
+[868] Tingkat Kesulitan: HOTS
+[869] Bentuk Soal: Option New
+[870] Seorang teman dekat di luar instansi meminta informasi mengenai peserta yang lolos tahap awal pengadaan sebelum pengumuman resmi. Ia mengaku hanya ingin menyiapkan dokumen dan berjanji tidak menyebarkannya. Anda memiliki akses ke data tersebut karena menjadi anggota sekretariat seleksi. Respons Anda adalah ... (Profesionalisme)
+[871] A. Menjelaskan bahwa informasi belum dapat dibagikan, tetapi memberi petunjuk apakah posisi temannya cukup aman berdasarkan hasil sementara.
+[872] B. Meminta teman mengirim pertanyaan tertulis ke instansi sehingga Anda dapat menjawabnya setelah memperoleh persetujuan ketua tim.
+[873] C. Memberikan penjelasan umum tentang tahapan berikutnya tanpa menyebut nama peserta agar teman dapat melakukan persiapan awal.
+[874] D. Menegaskan batas kerahasiaan dan menyarankan penggunaan sumber publik yang dapat diakses setara oleh calon penyedia.
+[875] E. Tidak menanggapi permintaan tersebut dan mengurangi komunikasi dengan teman sampai pengumuman resmi selesai dilakukan.
+[876] Jawaban: D
+[877] Pembahasan:
+[878] Konsep yang digunakan: Kerahasiaan jabatan melalui penolakan yang jelas dan penggunaan kanal informasi resmi yang setara
+[879] Kata kunci: teman dekat, data seleksi, belum diumumkan, rahasia, kanal resmi
+[880] Opsi D (5 Poin) paling tepat karena informasi yang belum diumumkan tidak dibagikan dalam bentuk apa pun dan teman tetap memperoleh rujukan yang sah. Kedekatan pribadi tidak mengubah hak akses terhadap data seleksi.
+[881] Respons tegas dan santun menjaga kerahasiaan tanpa memutus hubungan pribadi atau memberikan sinyal yang dapat dimanfaatkan.
+[882] Pembahasan opsi lain:
+[883] A (1 Poin) Tidak menyebut data langsung tampak berhati-hati, tetapi petunjuk hasil sementara tetap membocorkan informasi rahasia.
+[884] B (3 Poin) Pertanyaan tertulis menciptakan jejak dan meminta persetujuan, tetapi peserta tetap diarahkan melalui hubungan pribadi alih-alih kanal resmi yang setara.
+[885] C (4 Poin) Informasi umum relatif aman dan cukup membantu, tetapi perlu dipastikan benar-benar sudah tersedia untuk publik sebelum disampaikan secara pribadi.
+[886] E (2 Poin) Tidak memberi informasi menjaga kerahasiaan, tetapi menghindari komunikasi tidak menjelaskan batas etika atau kanal yang benar.
+[887] Cara cepat: Jaga informasi belum publik dan arahkan semua pihak pada kanal resmi tanpa memberi petunjuk pribadi.
+[888] Soal 38
+[889] Category: Kepribadian
+[890] Lesson: TKP SKD
+[891] Chapter: Profesionalisme
+[892] Tingkat Kesulitan: HOTS
+[893] Bentuk Soal: Option New
+[894] Setelah izin warga selesai tepat waktu sesuai SOP, ia menyodorkan amplop berisi uang sebagai ucapan terima kasih. Warga mengatakan pemberian itu sukarela dan tidak meminta perlakuan lain. Di ruang layanan tersedia informasi larangan pemberian serta kanal pelaporan internal. Tindakan Anda adalah ... (Profesionalisme)
+[895] A. Menerima amplop untuk menghindari warga tersinggung lalu menyerahkannya kepada atasan agar diputuskan penggunaannya.
+[896] B. Meminta warga mengambil kembali amplop dan mengakhiri percakapan agar antrean berikutnya tidak tertunda oleh penjelasan panjang.
+[897] C. Menolak amplop serta meminta warga menyumbangkan uang tersebut kepada kegiatan sosial yang tidak berkaitan dengan kantor.
+[898] D. Menolak pemberian dan menunjukkan informasi larangan di ruang layanan tanpa melakukan pencatatan karena uang belum diterima.
+[899] E. Menolak pemberian secara sopan sesuai prosedur pencatatan sambil menjelaskan bahwa layanan tidak dikenai biaya tambahan.
+[900] Jawaban: E
+[901] Pembahasan:
+[902] Konsep yang digunakan: Penolakan gratifikasi melalui komunikasi yang menghormati pemberi dan tindak lanjut sesuai prosedur instansi
+[903] Kata kunci: amplop, ucapan terima kasih, layanan sesuai SOP, penolakan, pelaporan
+[904] Opsi E (5 Poin) paling tepat karena petugas tidak menerima pemberian, menjelaskan dasar penolakan, dan menjaga jejak penanganan sesuai prosedur. Niat baik warga dihargai tanpa mengubah batas etika pelayanan.
+[905] Tindak lanjut administratif diperlukan sesuai ketentuan instansi agar kejadian dapat dipantau dan petugas terlindungi dari salah tafsir.
+[906] Pembahasan opsi lain:
+[907] A (1 Poin) Penyerahan kepada atasan menciptakan pengawasan, tetapi menerima amplop terlebih dahulu tetap menimbulkan risiko dan persepsi yang keliru.
+[908] B (2 Poin) Mengembalikan amplop menghentikan pemberian, tetapi tanpa penjelasan warga tidak memperoleh pemahaman dan kejadian tidak ditangani sesuai prosedur.
+[909] C (3 Poin) Penolakan sudah benar dan alternatif sosial terdengar positif, tetapi petugas tidak perlu mengarahkan penggunaan uang pribadi warga.
+[910] D (4 Poin) Penolakan dan penjelasan larangan merupakan tindakan sangat baik, tetapi prosedur internal mungkin tetap memerlukan pencatatan upaya pemberian.
+[911] Cara cepat: Tolak pemberian dengan sopan, jelaskan bahwa layanan adalah kewajiban, dan ikuti prosedur pencatatan yang berlaku.
+[912] Soal 39
+[913] Category: Kepribadian
+[914] Lesson: TKP SKD
+[915] Chapter: Anti Radikalisme
+[916] Tingkat Kesulitan: HOTS
+[917] Bentuk Soal: Option New
+[918] Seorang pegawai senior membagikan video di grup kantor yang menyebut kelompok tertentu sebagai musuh dan mengajak anggota menyebarkannya. Admin telah menghapus unggahan, tetapi pegawai tersebut kembali mengirim konten serupa dari sumber berbeda. Beberapa anggota mulai memberi dukungan. Tindakan Anda adalah ... (Anti Radikalisme)
+[919] A. Menghubungi pegawai senior secara pribadi untuk meminta penjelasan dan menyarankannya berhenti membagikan konten yang menimbulkan perdebatan.
+[920] B. Membalas di grup dengan uraian panjang tentang kesalahan isi video agar anggota lain mengetahui kelemahan pandangan tersebut.
+[921] C. Menegaskan larangan konten kebencian sesuai aturan grup sambil menyimpan bukti minimum untuk pelaporan pengawasan internal.
+[922] D. Meminta admin menutup grup sementara dan menghapus seluruh percakapan terkait supaya ketegangan antarpegawai segera mereda.
+[923] E. Meneruskan video kepada atasan disertai daftar anggota yang mendukung agar semua pihak dapat dimintai klarifikasi sekaligus.
+[924] Jawaban: C
+[925] Pembahasan:
+[926] Konsep yang digunakan: Respons proporsional terhadap penyebaran berulang konten kebencian melalui penghentian paparan, bukti minimum, dan pelaporan resmi
+[927] Kata kunci: konten berulang, ajakan kebencian, aturan grup, bukti minimum, pengawasan internal
+[928] Opsi C (5 Poin) paling tepat karena konten sudah berulang dan memuat ajakan permusuhan, sehingga tidak cukup ditangani sebagai perbedaan pendapat biasa. Penyebaran dihentikan, bukti dijaga secukupnya, dan penanganan diteruskan melalui pihak yang berwenang.
+[929] Peserta tidak memperluas jangkauan video atau menuduh seluruh pendukung sebagai pelaku, sehingga respons tetap terukur.
+[930] Pembahasan opsi lain:
+[931] A (4 Poin) Pendekatan pribadi baik untuk kejadian awal yang ambigu, tetapi konten ini berulang dan sudah memperoleh dukungan sehingga perlu penanganan resmi.
+[932] B (2 Poin) Klarifikasi isi menunjukkan penolakan, tetapi debat panjang di grup memperpanjang paparan serta dapat memperuncing suasana.
+[933] D (3 Poin) Penutupan grup meredakan percakapan, tetapi penghapusan seluruh bukti menghambat penanganan dan tidak menyelesaikan perilaku berulang.
+[934] E (1 Poin) Pelaporan kepada atasan diperlukan, tetapi meneruskan video serta mencantumkan semua pendukung memperluas konten dan berisiko menghakimi tanpa pemeriksaan.
+[935] Cara cepat: Untuk konten kebencian yang berulang, hentikan penyebaran, simpan bukti secukupnya, dan gunakan jalur pelaporan resmi.
+[936] Soal 40
+[937] Category: Kepribadian
+[938] Lesson: TKP SKD
+[939] Chapter: Anti Radikalisme
+[940] Tingkat Kesulitan: HOTS
+[941] Bentuk Soal: Option New
+[942] Dalam percakapan santai, seorang rekan mengatakan Pancasila tidak lagi relevan dan sistem negara sebaiknya diganti. Ia tidak mengajak kekerasan, tetapi pernyataan serupa muncul beberapa kali dan mulai memengaruhi diskusi tim. Anda belum pernah membicarakannya secara langsung. Sikap Anda adalah ... (Anti Radikalisme)
+[943] A. Menghindari diskusi politik dengannya dan meminta anggota lain membatasi percakapan agar pekerjaan tidak terpengaruh.
+[944] B. Mencatat setiap pernyataan dan langsung melaporkannya sebagai radikalisme kepada bagian kepegawaian tanpa berbicara dengannya.
+[945] C. Mengajak rekan berdialog secara tenang untuk memahami maksudnya dan menjelaskan dasar konstitusional serta ruang kritik yang sah.
+[946] D. Berdialog secara pribadi lalu berkonsultasi dengan bagian kepegawaian mengenai pembinaan bila pandangan penolakan konstitusional tetap berulang.
+[947] E. Membantah pandangannya di depan tim agar anggota lain mengetahui bahwa gagasan mengganti sistem negara tidak dapat diterima.
+[948] Jawaban: D
+[949] Pembahasan:
+[950] Konsep yang digunakan: Pencegahan dini melalui dialog persuasif dan pembinaan proporsional tanpa menyamakan setiap kritik dengan ancaman
+[951] Kata kunci: Pancasila, dialog pribadi, kritik sah, pernyataan berulang, pembinaan
+[952] Opsi D (5 Poin) paling tepat karena tahap pertama tetap berupa dialog untuk memahami konteks dan meluruskan pandangan. Konsultasi pembinaan dilakukan bila penolakan terhadap dasar konstitusional terus berulang, bukan sebagai hukuman otomatis atas satu ucapan.
+[953] Cara ini mempertahankan ketegasan terhadap komitmen bernegara sekaligus menjaga ruang diskusi yang wajar.
+[954] Pembahasan opsi lain:
+[955] A (3 Poin) Pembatasan percakapan menjaga pekerjaan, tetapi menghindari persoalan dan tidak membantu rekan memahami dampak pandangannya.
+[956] B (1 Poin) Pencatatan memberi informasi, tetapi pelabelan dan pelaporan langsung dilakukan sebelum klarifikasi serta upaya pembinaan awal.
+[957] C (4 Poin) Dialog dan penjelasan merupakan langkah awal yang sangat baik, tetapi belum memuat tindak lanjut bila pola pernyataan terus berulang.
+[958] E (2 Poin) Bantahan terbuka menunjukkan ketegasan, tetapi dapat mempermalukan rekan dan mengubah diskusi menjadi pertentangan personal.
+[959] Cara cepat: Bedakan kritik yang sah dari penolakan konstitusional; mulai dengan dialog dan gunakan pembinaan bila pola berlanjut.
+[960] Soal 41
+[961] Category: Kepribadian
+[962] Lesson: TKP SKD
+[963] Chapter: Anti Radikalisme
+[964] Tingkat Kesulitan: HOTS
+[965] Bentuk Soal: Option New
+[966] Di media sosial beredar ajakan kepada ASN untuk membangkang terhadap hasil proses demokrasi yang sah dan mengganggu layanan publik. Unggahan mencampurkan kritik kebijakan dengan informasi palsu. Seorang teman meminta Anda ikut menyebarkan ajakan itu sebagai bentuk keberanian. Tindakan Anda adalah ... (Anti Radikalisme)
+[967] A. Tidak menanggapi permintaan teman dan berhenti mengikuti akun tersebut agar Anda tidak terseret dalam perdebatan politik.
+[968] B. Menyimpan tangkapan layar dan melaporkan unggahan melalui kanal platform tanpa memberikan klarifikasi kepada lingkungan terdekat.
+[969] C. Menolak ajakan dengan membagikan informasi resmi mengenai fakta maupun saluran penyampaian keberatan yang sah.
+[970] D. Membagikan unggahan dengan tambahan catatan bahwa Anda tidak menyetujui ajakan pembangkangan di dalamnya.
+[971] E. Membalas unggahan dengan pernyataan dukungan kepada pemerintah dan meminta pengguna lain melaporkan semua akun yang mengkritik kebijakan.
+[972] Jawaban: C
+[973] Pembahasan:
+[974] Konsep yang digunakan: Penolakan provokasi melalui penghentian penyebaran, koreksi informasi, dan penguatan saluran partisipasi yang sah
+[975] Kata kunci: pembangkangan, proses demokrasi, informasi palsu, informasi resmi, saluran keberatan
+[976] Opsi C (5 Poin) paling tepat karena peserta tidak memperluas provokasi dan menggantinya dengan informasi yang dapat diverifikasi. Ruang kritik tetap diakui melalui saluran yang sah, sehingga kesetiaan kepada pemerintahan tidak diartikan sebagai larangan menyampaikan keberatan.
+[977] Respons ini menjaga ketertiban sekaligus membantu lingkungan memahami pilihan tindakan yang konstitusional.
+[978] Pembahasan opsi lain:
+[979] A (3 Poin) Menghindari konten melindungi diri, tetapi tidak membantu teman yang telah meminta dukungan memahami risiko ajakan tersebut.
+[980] B (4 Poin) Pelaporan platform mengurangi penyebaran dan merupakan langkah baik, tetapi lingkungan terdekat belum memperoleh koreksi informasi.
+[981] D (1 Poin) Catatan penolakan menunjukkan sikap, tetapi membagikan ulang tetap memperluas jangkauan provokasi dan informasi palsu.
+[982] E (2 Poin) Dukungan pada pemerintah sah, tetapi menganggap semua kritik perlu dilaporkan mengabaikan hak menyampaikan pendapat secara wajar.
+[983] Cara cepat: Tolak provokasi tanpa menutup kritik yang sah; gunakan fakta resmi dan arahkan keberatan melalui saluran konstitusional.
+[984] Soal 42
+[985] Category: Kepribadian
+[986] Lesson: TKP SKD
+[987] Chapter: Anti Radikalisme
+[988] Tingkat Kesulitan: HOTS
+[989] Bentuk Soal: Option New
+[990] Pesan berantai mengklaim satu kelompok agama menyerang kelompok lain di wilayah tugas Anda. Foto yang digunakan ternyata berasal dari peristiwa lama di daerah berbeda, tetapi pesan sudah menyebar dan warga mulai berkumpul. Akun resmi pemerintah daerah belum memberi penjelasan. Langkah Anda adalah ... (Anti Radikalisme)
+[991] A. Meneruskan pesan kepada aparat setempat agar mereka dapat menilai situasi tanpa menambahkan penjelasan yang belum dipastikan.
+[992] B. Menghubungi penyebar pertama agar menghapus pesan serta meminta maaf kepada kelompok yang disebut dalam informasi tersebut.
+[993] C. Melaporkan pesan kepada platform dan menonaktifkan percakapan grup sampai pemerintah daerah menerbitkan pernyataan resmi.
+[994] D. Menyampaikan koreksi faktual kepada pengurus warga setelah memverifikasi sumber tanpa meneruskan pesan provokatif.
+[995] E. Mengirim foto pembanding kepada grup warga dan meminta mereka menahan tindakan sampai informasi resmi tersedia.
+[996] Jawaban: D
+[997] Pembahasan:
+[998] Konsep yang digunakan: Pemutusan hoaks provokatif melalui verifikasi sumber, pembatasan penyebaran, dan koreksi faktual kepada pihak yang dapat menenangkan warga
+[999] Kata kunci: hoaks SARA, foto lama, verifikasi sumber, koreksi fakta, pengurus warga
+[1000] Opsi D (5 Poin) paling tepat karena informasi diperiksa sebelum direspons dan koreksi diarahkan kepada pengurus yang dapat menjangkau warga. Pesan asli tidak diteruskan sehingga paparan tidak bertambah.
+[1001] Koreksi berbasis fakta membantu meredakan ketegangan sambil memberi ruang bagi aparat dan pemerintah daerah menangani situasi sesuai kewenangan.
+[1002] Pembahasan opsi lain:
+[1003] A (1 Poin) Menghubungi aparat dapat dibenarkan, tetapi meneruskan pesan tanpa konteks memperluas materi provokatif dan tidak memberi koreksi kepada warga.
+[1004] B (3 Poin) Penghapusan pesan mengurangi paparan, tetapi fokus pada penyebar pertama belum mengoreksi informasi yang sudah tersebar luas.
+[1005] C (2 Poin) Pelaporan dan penghentian percakapan membatasi penyebaran, tetapi kekosongan informasi dapat mempertahankan kecurigaan warga.
+[1006] E (4 Poin) Foto pembanding membantu menunjukkan kejanggalan, tetapi permintaan menunggu belum melibatkan pihak yang dapat mengelola kerumunan.
+[1007] Cara cepat: Untuk hoaks yang memicu ketegangan, verifikasi sumber, jangan teruskan konten, dan sebarkan koreksi melalui pihak tepercaya.
+[1008] Soal 43
+[1009] Category: Kepribadian
+[1010] Lesson: TKP SKD
+[1011] Chapter: Anti Radikalisme
+[1012] Tingkat Kesulitan: HOTS
+[1013] Bentuk Soal: Option New
+[1014] Di lingkungan tempat tinggal, sebuah kelompok mengadakan pertemuan tertutup. Seorang tetangga yang pernah hadir mengatakan materi pertemuan menolak simbol negara dan mendorong permusuhan terhadap kelompok lain. Anda tidak pernah mengikuti pertemuan dan belum memiliki bukti selain cerita tersebut. Sikap Anda adalah ... (Anti Radikalisme)
+[1015] A. Menyampaikan peringatan di grup lingkungan agar warga menghindari kelompok tersebut sampai aparat melakukan pemeriksaan.
+[1016] B. Memeriksa informasi awal melalui sumber yang wajar sebelum berkonsultasi secara rahasia dengan pihak berwenang setempat.
+[1017] C. Mendatangi pertemuan dengan alasan ingin bergabung agar dapat merekam materi dan memperoleh bukti yang lebih kuat.
+[1018] D. Mengajak pengurus lingkungan berdialog terbuka dengan pimpinan kelompok untuk menanyakan tujuan kegiatan mereka.
+[1019] E. Mengabaikan cerita sampai ada tindakan nyata karena pertemuan tertutup dan pandangan berbeda belum membuktikan pelanggaran.
+[1020] Jawaban: B
+[1021] Pembahasan:
+[1022] Konsep yang digunakan: Deteksi dini yang aman melalui verifikasi terbatas dan konsultasi rahasia tanpa penyusupan atau tuduhan publik
+[1023] Kata kunci: pertemuan tertutup, informasi awal, verifikasi wajar, konsultasi rahasia, pihak berwenang
+[1024] Opsi B (5 Poin) paling tepat karena informasi awal tidak langsung dianggap sebagai fakta, tetapi juga tidak diabaikan. Verifikasi dilakukan sebatas sumber yang wajar dan konsultasi diserahkan kepada pihak yang memiliki kewenangan menilai risiko.
+[1025] Peserta menghindari penyusupan, penyebaran tuduhan, dan tindakan yang dapat membahayakan diri atau warga lain.
+[1026] Pembahasan opsi lain:
+[1027] A (2 Poin) Peringatan bermaksud melindungi lingkungan, tetapi tuduhan publik berdasarkan satu cerita dapat memicu stigma dan konflik.
+[1028] C (1 Poin) Rekaman dapat menjadi bukti, tetapi penyusupan berisiko bagi keselamatan dan melampaui peran warga biasa.
+[1029] D (4 Poin) Dialog terbuka dapat memberi klarifikasi dan cukup konstruktif, tetapi berisiko bila dugaan permusuhan benar serta belum melibatkan penilaian pihak berwenang.
+[1030] E (3 Poin) Kehati-hatian terhadap kabar belum terverifikasi itu penting, tetapi pola yang dilaporkan cukup serius untuk dikonsultasikan secara aman.
+[1031] Cara cepat: Pada indikasi awal, verifikasi secara terbatas dan konsultasikan secara rahasia tanpa menyusup atau menuduh di ruang publik.
+[1032] Soal 44
+[1033] Category: Kepribadian
+[1034] Lesson: TKP SKD
+[1035] Chapter: Anti Radikalisme
+[1036] Tingkat Kesulitan: HOTS
+[1037] Bentuk Soal: Option New
+[1038] Seorang kerabat mulai menarik diri, menyebut kelompok yang berbeda sebagai musuh, dan hanya mengikuti kanal daring yang mendorong permusuhan. Ia masih bersedia berbicara dengan Anda, tetapi menolak hadir dalam kegiatan keluarga besar. Belum ada ancaman atau rencana kekerasan yang disampaikan. Langkah Anda adalah ... (Anti Radikalisme)
+[1039] A. Melaporkan perilakunya kepada aparat agar pemeriksaan dapat dilakukan sebelum muncul rencana yang membahayakan orang lain.
+[1040] B. Memberikan bahan bacaan moderat melalui pesan pribadi dan menawarkan waktu khusus untuk mendiskusikannya lebih lanjut.
+[1041] C. Mengajak kerabat menghadiri kegiatan kebangsaan bersama lalu menghindari pembicaraan tentang pandangannya agar hubungan tetap baik.
+[1042] D. Meminta keluarga membatasi akses internetnya dan menghapus kanal yang diikuti agar paparan segera berhenti.
+[1043] E. Menjaga komunikasi sambil menolak narasi kebencian dan melibatkan tokoh tepercaya dalam pendampingan bertahap.
+[1044] Jawaban: E
+[1045] Pembahasan:
+[1046] Konsep yang digunakan: Pendampingan keluarga secara persuasif melalui hubungan yang terjaga, batas terhadap kebencian, dan bantuan tokoh tepercaya
+[1047] Kata kunci: kerabat, menarik diri, permusuhan, komunikasi pribadi, tokoh tepercaya
+[1048] Opsi E (5 Poin) paling tepat karena komunikasi tetap terbuka dan pandangan kebencian tidak dibiarkan tanpa tanggapan. Tokoh tepercaya dapat membantu pendampingan tanpa langsung mengkriminalkan perilaku yang belum mengandung ancaman.
+[1049] Pendekatan bertahap memperbesar peluang kerabat mau mendengar perspektif lain dan kembali berinteraksi secara sehat.
+[1050] Pembahasan opsi lain:
+[1051] A (1 Poin) Pelaporan diperlukan bila ada ancaman nyata, tetapi pada kondisi ini langkah tersebut terlalu dini dan dapat memutus hubungan pendampingan.
+[1052] B (4 Poin) Bahan moderat memberi alternatif informasi dan cukup baik, tetapi pendampingan menjadi pasif serta tidak melibatkan dukungan orang yang dipercaya.
+[1053] C (3 Poin) Kegiatan bersama membantu hubungan sosial, tetapi menghindari pembicaraan membiarkan narasi permusuhan tidak ditangani.
+[1054] D (2 Poin) Pembatasan akses dapat mengurangi paparan, tetapi tindakan sepihak berisiko merusak kepercayaan dan mendorong kerabat mencari saluran tersembunyi.
+[1055] Cara cepat: Untuk indikasi tanpa ancaman, jaga hubungan, tolak narasi kebencian secara tenang, dan libatkan pendamping tepercaya.
+[1056] Soal 45
+[1057] Category: Kepribadian
+[1058] Lesson: TKP SKD
+[1059] Chapter: Anti Radikalisme
+[1060] Tingkat Kesulitan: HOTS
+[1061] Bentuk Soal: Option New
+[1062] Sebuah organisasi mengajukan peminjaman aula kantor untuk seminar sosial. Hasil verifikasi menunjukkan pembicara pernah mengajak pengusiran kelompok tertentu dan materi terbaru memuat seruan menolak dasar negara. Ketentuan penggunaan aula melarang kegiatan diskriminatif serta propaganda anti-konstitusi. Tindakan Anda adalah ... (Anti Radikalisme)
+[1063] A. Menolak permohonan berdasarkan ketentuan tertulis dan melaporkan hasil verifikasi melalui hierarki pengelolaan fasilitas.
+[1064] B. Memberikan izin dengan syarat petugas menghadiri acara dan menghentikannya bila pembicara menyampaikan materi yang dilarang.
+[1065] C. Menunda keputusan sampai organisasi lain memberikan penilaian mengenai rekam jejak pembicara dan tujuan kegiatan tersebut.
+[1066] D. Meminta organisasi mengganti pembicara serta menyerahkan materi baru sebelum permohonan dipertimbangkan kembali oleh pengelola.
+[1067] E. Menolak secara lisan agar proses cepat, kemudian menyimpan hasil verifikasi untuk digunakan bila organisasi mengajukan keberatan.
+[1068] Jawaban: A
+[1069] Pembahasan:
+[1070] Konsep yang digunakan: Perlindungan fasilitas negara melalui verifikasi materi, keputusan berbasis ketentuan, dokumentasi, dan pelaporan hierarkis
+[1071] Kata kunci: aula kantor, pembicara, diskriminasi, anti-konstitusi, ketentuan tertulis, hierarki
+[1072] Opsi A (5 Poin) paling tepat karena keputusan didasarkan pada materi terverifikasi dan aturan penggunaan fasilitas, bukan pada identitas organisasi. Pelaporan hierarkis menjaga dokumentasi serta konsistensi pengelolaan aset negara.
+[1073] Penolakan diberikan untuk kegiatan yang terbukti melanggar ketentuan, sambil mempertahankan proses administratif yang dapat ditinjau.
+[1074] Pembahasan opsi lain:
+[1075] B (1 Poin) Pengawasan acara memberi kontrol, tetapi fasilitas negara tetap dipakai untuk kegiatan yang sejak awal diketahui melanggar ketentuan.
+[1076] C (2 Poin) Penilaian tambahan menunjukkan kehati-hatian, tetapi bukti materi dan aturan sudah cukup untuk mengambil keputusan administratif.
+[1077] D (4 Poin) Pergantian pembicara dan materi dapat menghilangkan unsur terlarang serta merupakan alternatif baik, tetapi risiko rekam agenda tetap memerlukan keputusan pengelola berdasarkan verifikasi menyeluruh.
+[1078] E (3 Poin) Penolakan mencegah kegiatan, tetapi keputusan lisan tanpa dokumentasi dan pelaporan melemahkan akuntabilitas bila muncul keberatan.
+[1079] Cara cepat: Nilai materi dan perilaku berdasarkan bukti, terapkan aturan fasilitas secara konsisten, serta dokumentasikan keputusan.

@@ -1,0 +1,1596 @@
+FILE: Andika - Numerik SKD 2027_Ready to Input.docx
+[0] Soal 1
+[1] Category: Numerik/Kuantitatif
+[2] Lesson: Berhitung
+[3] Chapter: Operasi Hitung - Pecahan Sederhana
+[4] Tingkat Kesulitan: Mudah
+[5] Bentuk Soal: Option New
+[6] Hasil dari (3)/(8)+(1)/(8)−(3)/(10) adalah …
+[7] A. 0,2
+[8] B. 0,1
+[9] C. 0,4
+[10] D. 0,5
+[11] E. 0,8
+[12] Jawaban: A
+[13] Pembahasan:
+[14] (3)/(8)+(1)/(8)−(3)/(10)
+[15] =(3×5)/(8×5)+(1×5)/(8×5)−(3×4)/(10×4)
+[16] =(15)/(40)+(5)/(40)−(12)/(40)
+[17] =(8)/(40)
+[18] =(1)/(5)
+[19] =0,2
+[20] Soal 2
+[21] Category: Numerik/Kuantitatif
+[22] Lesson: Berhitung
+[23] Chapter: Operasi Hitung - Pecahan Sederhana
+[24] Tingkat Kesulitan: Mudah
+[25] Bentuk Soal: Option New
+[26] Hasil dari 16+0,75×(1)/(2) adalah …
+[27] A. 16(1)/(8)
+[28] B. 16(5)/(8)
+[29] C. 17(1)/(8)
+[30] D. 16(3)/(8)
+[31] E. 16(7)/(8)
+[32] Jawaban: D
+[33] Pembahasan:
+[34] 16+0,75×(1)/(2)
+[35] Pecahan istimewa yang digunakan: 0,75 = 3/4. Ubah desimal 0,75 menjadi pecahan 3/4 sebelum melakukan perkalian.
+[36] =16+(3)/(4)×(1)/(2)
+[37] =16+(3×1)/(4×2)
+[38] =16+(3)/(8)
+[39] =16(3)/(8)
+[40] Soal 3
+[41] Category: Numerik/Kuantitatif
+[42] Lesson: Berhitung
+[43] Chapter: Operasi Hitung - Pecahan Sederhana
+[44] Tingkat Kesulitan: Sedang
+[45] Bentuk Soal: Option New
+[46] Hasil dari 4(1)/(2)+0,75÷(3)/(4)−2 adalah …
+[47] A. 3,0
+[48] B. 2,5
+[49] C. 4,0
+[50] D. 4,5
+[51] E. 3,5
+[52] Jawaban: E
+[53] Pembahasan:
+[54] 4(1)/(2)+0,75÷(3)/(4)−2
+[55] Pecahan istimewa yang digunakan: 0,75 = 3/4 dan 1/2 = 0,5. Kesetaraan pertama digunakan untuk mengubah desimal menjadi pecahan, sedangkan kesetaraan kedua digunakan pada hasil akhir: 3 1/2 = 3 + 0,5 = 3,5.
+[56] =(9)/(2)+(3)/(4)÷(3)/(4)−2
+[57] =(9)/(2)+(3)/(4)×(4)/(3)−2
+[58] =(9)/(2)+1−2
+[59] =3(1)/(2)
+[60] =3,5
+[61] Soal 4
+[62] Category: Numerik/Kuantitatif
+[63] Lesson: Berhitung
+[64] Chapter: Perkalian Setara
+[65] Tingkat Kesulitan: Sedang
+[66] Bentuk Soal: Option New
+[67] Penyedia katering membandingkan jumlah kotak dan banyaknya porsi makanan per kotak. Pasangan susunan yang menghasilkan jumlah porsi keseluruhan yang sama adalah …
+[68] A. 24×730 sama dengan 35×460
+[69] B. 27×540 sama dengan 36×410
+[70] C. 28×600 sama dengan 24×700
+[71] D. 32×450 sama dengan 36×430
+[72] E. 44×360 sama dengan 48×340
+[73] Jawaban: C
+[74] Pembahasan:
+[75] Eliminasi 0 secara berseberangan di setiap opsi:
+[76] Yang dimaksud dengan “berseberangan” adalah pada dua hasil perkalian yang sedang dibandingkan. Hilangkan satu nol di akhir salah satu faktor pada sisi kiri dan satu nol di akhir salah satu faktor pada sisi kanan secara berpasangan. Secara matematis, langkah ini membagi kedua hasil perkalian dengan 10, sehingga kesetaraan keduanya tetap terjaga. Untuk dua pasang nol, kedua hasil dibagi dengan 100. Hanya nol di akhir bilangan yang boleh dihilangkan, dengan jumlah yang sama pada kedua sisi.
+[77] Contoh: 28 × 600 dibandingkan dengan 24 × 700 dapat disederhanakan menjadi 28 × 6 dibandingkan dengan 24 × 7 dengan membagi kedua hasil perkalian dengan 100.
+[78] Penyederhanaan setiap opsi:
+[79] A. 24×730̶ sama dengan 35×460̶→24×73 sama dengan 35×46
+[80] B. 27×540̶ sama dengan 36×410̶→27×54 sama dengan 36×41
+[81] C. 28×60̶0̶ sama dengan 24×70̶0̶→28×6 sama dengan 24×7
+[82] D. 32×450̶ sama dengan 36×430̶→32×45 sama dengan 36×43
+[83] E. 44×360̶ sama dengan 48×340̶→44×36 sama dengan 48×34
+[84] Periksa digit terakhir dari perkalian digit terakhir.
+[85] Jika hasil digit terakhirnya sama, maka lanjutkan pengerjaan. Jika tidak sama, maka lanjutkan ke opsi berikutnya.
+[86] A. 𝟐𝟒×𝟕𝟑 sama dengan 𝟑𝟓×𝟒𝟔
+[87] 2𝟒×7𝟑→4×3=12 (Digit terakhir adalah 2)
+[88] 3𝟓×4𝟔→5×6=30 (Digit terakhir adalah 0)
+[89] Karena digit terakhirnya berbeda, maka lanjutkan ke opsi selanjutnya.
+[90] B. 𝟐𝟕×𝟓𝟒 sama dengan 𝟑𝟔×𝟒𝟏
+[91] 2𝟕×5𝟒→7×4=28 (Digit terakhir adalah 8)
+[92] 3𝟔×4𝟏→6×1=6 (Digit terakhir adalah 6)
+[93] Karena digit terakhirnya berbeda, maka lanjutkan ke opsi selanjutnya.
+[94] C. 𝟐𝟖×𝟔 sama dengan 𝟐𝟒×𝟕
+[95] 2𝟖×𝟔→8×6=48 (Digit terakhir adalah 8)
+[96] 2𝟒×𝟕→4×7=28 (Digit terakhir adalah 8)
+[97] Karena digit terakhirnya sama, maka lakukan perkalian penuhnya.
+[98] 28×6=168
+[99] 24×7=168
+[100] Hasilnya sama. Jadi, jawabannya adalah C.
+[101] Soal 5
+[102] Category: Numerik/Kuantitatif
+[103] Lesson: Berhitung
+[104] Chapter: Perkalian Setara
+[105] Tingkat Kesulitan: Sulit
+[106] Bentuk Soal: Option New
+[107] Pengelola gudang menyusun dua rencana pengemasan. Jumlah barang pada setiap rencana dihitung dari banyaknya paket dikalikan isi setiap paket. Manakah pasangan rencana yang memuat jumlah barang yang sama?
+[108] A. 36×1200 sama dengan 48×1400
+[109] B. 28×1350 sama dengan 35×1260
+[110] C. 44×1230 sama dengan 33×1630
+[111] D. 42×1600 sama dengan 56×1170
+[112] E. 32×1470 sama dengan 42×1120
+[113] Jawaban: E
+[114] Pembahasan:
+[115] Eliminasi 0 secara berseberangan di setiap opsi:
+[116] Yang dimaksud dengan “berseberangan” adalah pada dua hasil perkalian yang sedang dibandingkan. Hilangkan satu nol di akhir salah satu faktor pada sisi kiri dan satu nol di akhir salah satu faktor pada sisi kanan secara berpasangan. Secara matematis, langkah ini membagi kedua hasil perkalian dengan 10, sehingga kesetaraan keduanya tetap terjaga. Untuk dua pasang nol, kedua hasil dibagi dengan 100. Hanya nol di akhir bilangan yang boleh dihilangkan, dengan jumlah yang sama pada kedua sisi.
+[117] Contoh: 32 × 1470 dibandingkan dengan 42 × 1120 dapat disederhanakan menjadi 32 × 147 dibandingkan dengan 42 × 112 dengan membagi kedua hasil perkalian dengan 10.
+[118] Penyederhanaan setiap opsi:
+[119] A. 36×120̶0̶ sama dengan 48×140̶0̶→36×12 sama dengan 48×14
+[120] B. 28×1350̶ sama dengan 35×1260̶→28×135 sama dengan 35×126
+[121] C. 44×1230̶ sama dengan 33×1630̶→44×123 sama dengan 33×163
+[122] D. 42×1600̶ sama dengan 56×1170̶→42×160 sama dengan 56×117
+[123] E. 32×1470̶ sama dengan 42×1120̶→32×147 sama dengan 42×112
+[124] Periksa digit terakhir dari perkalian digit terakhir.
+[125] Jika hasil digit terakhirnya sama, maka lanjutkan pengerjaan. Jika tidak sama, maka lanjutkan ke opsi berikutnya.
+[126] A. 𝟑𝟔×𝟏𝟐 sama dengan 𝟒𝟖×𝟏𝟒
+[127] 3𝟔×1𝟐→6×2=12 (Digit terakhir adalah 2)
+[128] 4𝟖×1𝟒→8×4=32 (Digit terakhir adalah 2)
+[129] Karena digit terakhirnya sama, maka lakukan perkalian penuhnya.
+[130] 36×12=432
+[131] 48×14=672
+[132] Hasil berbeda. Lanjutkan ke opsi selanjutnya.
+[133] B. 𝟐𝟖×𝟏𝟑𝟓 sama dengan 𝟑𝟓×𝟏𝟐𝟔
+[134] 2𝟖×13𝟓→8×5=40 (Digit terakhir adalah 0)
+[135] 3𝟓×12𝟔→5×6=30 (Digit terakhir adalah 0)
+[136] Karena digit terakhirnya sama, maka lakukan perkalian penuhnya.
+[137] 28×135=3780
+[138] 35×126=4410
+[139] Hasil berbeda. Lanjutkan ke opsi selanjutnya.
+[140] C. 𝟒𝟒×𝟏𝟐𝟑 sama dengan 𝟑𝟑×𝟏𝟔𝟑
+[141] 4𝟒×12𝟑→4×3=12 (Digit terakhir adalah 2)
+[142] 3𝟑×16𝟑→3×3=9 (Digit terakhir adalah 9)
+[143] Karena digit terakhirnya berbeda, maka lanjutkan ke opsi selanjutnya.
+[144] D. 𝟒𝟐×𝟏𝟔𝟎 sama dengan 𝟓𝟔×𝟏𝟏𝟕
+[145] 4𝟐×16𝟎→2×0=0 (Digit terakhir adalah 0)
+[146] 5𝟔×11𝟕→6×7=42 (Digit terakhir adalah 2)
+[147] Karena digit terakhirnya berbeda, maka lanjutkan ke opsi selanjutnya.
+[148] E. 𝟑𝟐×𝟏𝟒𝟕 sama dengan 𝟒𝟐×𝟏𝟏𝟐
+[149] 3𝟐×14𝟕→2×7=14 (Digit terakhir adalah 4)
+[150] 4𝟐×11𝟐→2×2=4 (Digit terakhir adalah 4)
+[151] Karena digit terakhirnya sama, maka lakukan perkalian penuhnya.
+[152] 32×147=4704
+[153] 42×112=4704
+[154] Hasilnya sama. Jadi, jawabannya adalah E.
+[155] Soal 6
+[156] Category: Numerik/Kuantitatif
+[157] Lesson: Berhitung
+[158] Chapter: Perkalian Setara
+[159] Tingkat Kesulitan: Sedang
+[160] Bentuk Soal: Option New
+[161] Dua susunan mesin dinilai memiliki kapasitas produksi yang setara apabila hasil perkalian jumlah mesin dan produksi per mesin bernilai sama. Pilihlah pasangan susunan yang memenuhi ketentuan tersebut.
+[162] A. 24×910 sama dengan 35×640
+[163] B. 36×750 sama dengan 45×600
+[164] C. 28×570 sama dengan 42×390
+[165] D. 33×480 sama dengan 44×370
+[166] E. 52×630 sama dengan 39×830
+[167] Jawaban: B
+[168] Pembahasan:
+[169] Eliminasi 0 secara berseberangan di setiap opsi:
+[170] Yang dimaksud dengan “berseberangan” adalah pada dua hasil perkalian yang sedang dibandingkan. Hilangkan satu nol di akhir salah satu faktor pada sisi kiri dan satu nol di akhir salah satu faktor pada sisi kanan secara berpasangan. Secara matematis, langkah ini membagi kedua hasil perkalian dengan 10, sehingga kesetaraan keduanya tetap terjaga. Untuk dua pasang nol, kedua hasil dibagi dengan 100. Hanya nol di akhir bilangan yang boleh dihilangkan, dengan jumlah yang sama pada kedua sisi.
+[171] Contoh: 36 × 750 dibandingkan dengan 45 × 600 dapat disederhanakan menjadi 36 × 75 dibandingkan dengan 45 × 60 dengan membagi kedua hasil perkalian dengan 10. Nol yang tersisa pada 60 tetap dipertahankan karena pasangannya tidak lagi memiliki nol di akhir.
+[172] Penyederhanaan setiap opsi:
+[173] A. 24×910̶ sama dengan 35×640̶→24×91 sama dengan 35×64
+[174] B. 36×750̶ sama dengan 45×600̶→36×75 sama dengan 45×60
+[175] C. 28×570̶ sama dengan 42×390̶→28×57 sama dengan 42×39
+[176] D. 33×480̶ sama dengan 44×370̶→33×48 sama dengan 44×37
+[177] E. 52×630̶ sama dengan 39×830̶→52×63 sama dengan 39×83
+[178] Periksa digit terakhir dari perkalian digit terakhir.
+[179] Jika hasil digit terakhirnya sama, maka lanjutkan pengerjaan. Jika tidak sama, maka lanjutkan ke opsi berikutnya.
+[180] A. 𝟐𝟒×𝟗𝟏 sama dengan 𝟑𝟓×𝟔𝟒
+[181] 2𝟒×9𝟏→4×1=4 (Digit terakhir adalah 4)
+[182] 3𝟓×6𝟒→5×4=20 (Digit terakhir adalah 0)
+[183] Karena digit terakhirnya berbeda, maka lanjutkan ke opsi selanjutnya.
+[184] B. 𝟑𝟔×𝟕𝟓 sama dengan 𝟒𝟓×𝟔𝟎
+[185] 3𝟔×7𝟓→6×5=30 (Digit terakhir adalah 0)
+[186] 4𝟓×6𝟎→5×0=0 (Digit terakhir adalah 0)
+[187] Karena digit terakhirnya sama, maka lakukan perkalian penuhnya.
+[188] 36×75=2700
+[189] 45×60=2700
+[190] Hasilnya sama. Jadi, jawabannya adalah B.
+[191] Soal 7
+[192] Category: Numerik/Kuantitatif
+[193] Lesson: Berhitung
+[194] Chapter: Pembagian Setara
+[195] Tingkat Kesulitan: Sedang
+[196] Bentuk Soal: Option New
+[197] Minyak akan dibagikan secara merata ke sejumlah drum. Volume minyak per drum diperoleh dengan membagi volume total minyak dengan jumlah drum. Pasangan pembagian yang menghasilkan volume per drum yang sama adalah …
+[198] A. 900÷24 sama dengan 1280÷32
+[199] B. 1470÷35 sama dengan 1600÷42
+[200] C. 1260÷25 sama dengan 1540÷35
+[201] D. 1260÷28 sama dengan 1980÷44
+[202] E. 1820÷26 sama dengan 2340÷39
+[203] Jawaban: D
+[204] Pembahasan:
+[205] Ubah setiap pembagian menjadi perkalian setara dengan perkalian silang:
+[206] A. 900÷24 sama dengan 1280÷32
+[207] (900)/(24)=(1280)/(32)
+[208] ⇔900×32=1280×24
+[209] →900×32 sama dengan 1280×24
+[210] B. 1470÷35 sama dengan 1600÷42
+[211] (1470)/(35)=(1600)/(42)
+[212] ⇔1470×42=1600×35
+[213] →1470×42 sama dengan 1600×35
+[214] C. 1260÷25 sama dengan 1540÷35
+[215] (1260)/(25)=(1540)/(35)
+[216] ⇔1260×35=1540×25
+[217] →1260×35 sama dengan 1540×25
+[218] D. 1260÷28 sama dengan 1980÷44
+[219] (1260)/(28)=(1980)/(44)
+[220] ⇔1260×44=1980×28
+[221] →1260×44 sama dengan 1980×28
+[222] E. 1820÷26 sama dengan 2340÷39
+[223] (1820)/(26)=(2340)/(39)
+[224] ⇔1820×39=2340×26
+[225] →1820×39 sama dengan 2340×26
+[226] Eliminasi 0 secara berseberangan di setiap opsi:
+[227] Yang dimaksud dengan “berseberangan” adalah pada dua hasil perkalian yang sedang dibandingkan. Hilangkan satu nol di akhir salah satu faktor pada sisi kiri dan satu nol di akhir salah satu faktor pada sisi kanan secara berpasangan. Secara matematis, langkah ini membagi kedua hasil perkalian dengan 10, sehingga kesetaraan keduanya tetap terjaga. Untuk dua pasang nol, kedua hasil dibagi dengan 100. Hanya nol di akhir bilangan yang boleh dihilangkan, dengan jumlah yang sama pada kedua sisi.
+[228] Contoh setelah perkalian silang: 1260 × 44 dibandingkan dengan 1980 × 28 menjadi 126 × 44 dibandingkan dengan 198 × 28; kedua hasil perkalian dibagi dengan 10.
+[229] Pada soal pembagian, penyederhanaan ini dilakukan terhadap hasil perkalian silang yang sudah dibentuk di atas.
+[230] Penyederhanaan setiap opsi:
+[231] A. 900̶×32 sama dengan 1280̶×24→90×32 sama dengan 128×24
+[232] B. 1470̶×42 sama dengan 1600̶×35→147×42 sama dengan 160×35
+[233] C. 1260̶×35 sama dengan 1540̶×25→126×35 sama dengan 154×25
+[234] D. 1260̶×44 sama dengan 1980̶×28→126×44 sama dengan 198×28
+[235] E. 1820̶×39 sama dengan 2340̶×26→182×39 sama dengan 234×26
+[236] Periksa digit terakhir dari perkalian digit terakhir.
+[237] Jika hasil digit terakhirnya sama, maka lanjutkan pengerjaan. Jika tidak sama, maka lanjutkan ke opsi berikutnya.
+[238] A. 𝟗𝟎×𝟑𝟐 sama dengan 𝟏𝟐𝟖×𝟐𝟒
+[239] 9𝟎×3𝟐→0×2=0 (Digit terakhir adalah 0)
+[240] 12𝟖×2𝟒→8×4=32 (Digit terakhir adalah 2)
+[241] Karena digit terakhirnya berbeda, maka lanjutkan ke opsi selanjutnya.
+[242] B. 𝟏𝟒𝟕×𝟒𝟐 sama dengan 𝟏𝟔𝟎×𝟑𝟓
+[243] 14𝟕×4𝟐→7×2=14 (Digit terakhir adalah 4)
+[244] 16𝟎×3𝟓→0×5=0 (Digit terakhir adalah 0)
+[245] Karena digit terakhirnya berbeda, maka lanjutkan ke opsi selanjutnya.
+[246] C. 𝟏𝟐𝟔×𝟑𝟓 sama dengan 𝟏𝟓𝟒×𝟐𝟓
+[247] 12𝟔×3𝟓→6×5=30 (Digit terakhir adalah 0)
+[248] 15𝟒×2𝟓→4×5=20 (Digit terakhir adalah 0)
+[249] Karena digit terakhirnya sama, maka lakukan perkalian penuhnya.
+[250] 126×35=4410
+[251] 154×25=3850
+[252] Hasil berbeda. Lanjutkan ke opsi selanjutnya.
+[253] D. 𝟏𝟐𝟔×𝟒𝟒 sama dengan 𝟏𝟗𝟖×𝟐𝟖
+[254] 12𝟔×4𝟒→6×4=24 (Digit terakhir adalah 4)
+[255] 19𝟖×2𝟖→8×8=64 (Digit terakhir adalah 4)
+[256] Karena digit terakhirnya sama, maka lakukan perkalian penuhnya.
+[257] 126×44=5544
+[258] 198×28=5544
+[259] Hasilnya sama. Jadi, jawabannya adalah D.
+[260] Soal 8
+[261] Category: Numerik/Kuantitatif
+[262] Lesson: Berhitung
+[263] Chapter: Pembagian Setara
+[264] Tingkat Kesulitan: Sedang
+[265] Bentuk Soal: Option New
+[266] Dari lima pasangan operasi di bawah ini, tentukan pasangan yang kedua hasil pembagiannya bernilai sama.
+[267] A. 2430÷35 sama dengan 1680÷25
+[268] B. 1800÷45 sama dengan 1200÷30
+[269] C. 1540÷28 sama dengan 2340÷39
+[270] D. 1890÷42 sama dengan 1740÷36
+[271] E. 2160÷54 sama dengan 2730÷63
+[272] Jawaban: B
+[273] Pembahasan:
+[274] Ubah setiap pembagian menjadi perkalian setara dengan perkalian silang:
+[275] A. 2430÷35 sama dengan 1680÷25
+[276] (2430)/(35)=(1680)/(25)
+[277] ⇔2430×25=1680×35
+[278] →2430×25 sama dengan 1680×35
+[279] B. 1800÷45 sama dengan 1200÷30
+[280] (1800)/(45)=(1200)/(30)
+[281] ⇔1800×30=1200×45
+[282] →1800×30 sama dengan 1200×45
+[283] C. 1540÷28 sama dengan 2340÷39
+[284] (1540)/(28)=(2340)/(39)
+[285] ⇔1540×39=2340×28
+[286] →1540×39 sama dengan 2340×28
+[287] D. 1890÷42 sama dengan 1740÷36
+[288] (1890)/(42)=(1740)/(36)
+[289] ⇔1890×36=1740×42
+[290] →1890×36 sama dengan 1740×42
+[291] E. 2160÷54 sama dengan 2730÷63
+[292] (2160)/(54)=(2730)/(63)
+[293] ⇔2160×63=2730×54
+[294] →2160×63 sama dengan 2730×54
+[295] Eliminasi 0 secara berseberangan di setiap opsi:
+[296] Yang dimaksud dengan “berseberangan” adalah pada dua hasil perkalian yang sedang dibandingkan. Hilangkan satu nol di akhir salah satu faktor pada sisi kiri dan satu nol di akhir salah satu faktor pada sisi kanan secara berpasangan. Secara matematis, langkah ini membagi kedua hasil perkalian dengan 10, sehingga kesetaraan keduanya tetap terjaga. Untuk dua pasang nol, kedua hasil dibagi dengan 100. Hanya nol di akhir bilangan yang boleh dihilangkan, dengan jumlah yang sama pada kedua sisi.
+[297] Contoh setelah perkalian silang: 1800 × 30 dibandingkan dengan 1200 × 45 menjadi 18 × 30 dibandingkan dengan 12 × 45; kedua hasil perkalian dibagi dengan 100.
+[298] Pada soal pembagian, penyederhanaan ini dilakukan terhadap hasil perkalian silang yang sudah dibentuk di atas.
+[299] Penyederhanaan setiap opsi:
+[300] A. 2430̶×25 sama dengan 1680̶×35→243×25 sama dengan 168×35
+[301] B. 180̶0̶×30 sama dengan 120̶0̶×45→18×30 sama dengan 12×45
+[302] C. 1540̶×39 sama dengan 2340̶×28→154×39 sama dengan 234×28
+[303] D. 1890̶×36 sama dengan 1740̶×42→189×36 sama dengan 174×42
+[304] E. 2160̶×63 sama dengan 2730̶×54→216×63 sama dengan 273×54
+[305] Periksa digit terakhir dari perkalian digit terakhir.
+[306] Jika hasil digit terakhirnya sama, maka lanjutkan pengerjaan. Jika tidak sama, maka lanjutkan ke opsi berikutnya.
+[307] A. 𝟐𝟒𝟑×𝟐𝟓 sama dengan 𝟏𝟔𝟖×𝟑𝟓
+[308] 24𝟑×2𝟓→3×5=15 (Digit terakhir adalah 5)
+[309] 16𝟖×3𝟓→8×5=40 (Digit terakhir adalah 0)
+[310] Karena digit terakhirnya berbeda, maka lanjutkan ke opsi selanjutnya.
+[311] B. 𝟏𝟖×𝟑𝟎 sama dengan 𝟏𝟐×𝟒𝟓
+[312] 1𝟖×3𝟎→8×0=0 (Digit terakhir adalah 0)
+[313] 1𝟐×4𝟓→2×5=10 (Digit terakhir adalah 0)
+[314] Karena digit terakhirnya sama, maka lakukan perkalian penuhnya.
+[315] 18×30=540
+[316] 12×45=540
+[317] Hasilnya sama. Jadi, jawabannya adalah B.
+[318] Soal 9
+[319] Category: Numerik/Kuantitatif
+[320] Lesson: Berhitung
+[321] Chapter: Pembagian Setara
+[322] Tingkat Kesulitan: Sulit
+[323] Bentuk Soal: Option New
+[324] Sebuah penyedia transportasi membandingkan kecepatan rata-rata beberapa perjalanan. Kecepatan dihitung dari jarak tempuh dibagi lama perjalanan. Pasangan perhitungan yang menunjukkan kecepatan rata-rata yang sama adalah …
+[325] A. 1750÷25 sama dengan 2550÷36
+[326] B. 2100÷35 sama dengan 2560÷42
+[327] C. 1980÷33 sama dengan 2240÷37
+[328] D. 2500÷42 sama dengan 2800÷45
+[329] E. 2640÷48 sama dengan 2310÷42
+[330] Jawaban: E
+[331] Pembahasan:
+[332] Ubah setiap pembagian menjadi perkalian setara dengan perkalian silang:
+[333] A. 1750÷25 sama dengan 2550÷36
+[334] (1750)/(25)=(2550)/(36)
+[335] ⇔1750×36=2550×25
+[336] →1750×36 sama dengan 2550×25
+[337] B. 2100÷35 sama dengan 2560÷42
+[338] (2100)/(35)=(2560)/(42)
+[339] ⇔2100×42=2560×35
+[340] →2100×42 sama dengan 2560×35
+[341] C. 1980÷33 sama dengan 2240÷37
+[342] (1980)/(33)=(2240)/(37)
+[343] ⇔1980×37=2240×33
+[344] →1980×37 sama dengan 2240×33
+[345] D. 2500÷42 sama dengan 2800÷45
+[346] (2500)/(42)=(2800)/(45)
+[347] ⇔2500×45=2800×42
+[348] →2500×45 sama dengan 2800×42
+[349] E. 2640÷48 sama dengan 2310÷42
+[350] (2640)/(48)=(2310)/(42)
+[351] ⇔2640×42=2310×48
+[352] →2640×42 sama dengan 2310×48
+[353] Eliminasi 0 secara berseberangan di setiap opsi:
+[354] Yang dimaksud dengan “berseberangan” adalah pada dua hasil perkalian yang sedang dibandingkan. Hilangkan satu nol di akhir salah satu faktor pada sisi kiri dan satu nol di akhir salah satu faktor pada sisi kanan secara berpasangan. Secara matematis, langkah ini membagi kedua hasil perkalian dengan 10, sehingga kesetaraan keduanya tetap terjaga. Untuk dua pasang nol, kedua hasil dibagi dengan 100. Hanya nol di akhir bilangan yang boleh dihilangkan, dengan jumlah yang sama pada kedua sisi.
+[355] Contoh setelah perkalian silang: 2640 × 42 dibandingkan dengan 2310 × 48 menjadi 264 × 42 dibandingkan dengan 231 × 48; kedua hasil perkalian dibagi dengan 10.
+[356] Pada soal pembagian, penyederhanaan ini dilakukan terhadap hasil perkalian silang yang sudah dibentuk di atas.
+[357] Penyederhanaan setiap opsi:
+[358] A. 1750̶×36 sama dengan 2550̶×25→175×36 sama dengan 255×25
+[359] B. 2100̶×42 sama dengan 2560̶×35→210×42 sama dengan 256×35
+[360] C. 1980̶×37 sama dengan 2240̶×33→198×37 sama dengan 224×33
+[361] D. 250̶0̶×45 sama dengan 280̶0̶×42→25×45 sama dengan 28×42
+[362] E. 2640̶×42 sama dengan 2310̶×48→264×42 sama dengan 231×48
+[363] Periksa digit terakhir dari perkalian digit terakhir.
+[364] Jika hasil digit terakhirnya sama, maka lanjutkan pengerjaan. Jika tidak sama, maka lanjutkan ke opsi berikutnya.
+[365] A. 𝟏𝟕𝟓×𝟑𝟔 sama dengan 𝟐𝟓𝟓×𝟐𝟓
+[366] 17𝟓×3𝟔→5×6=30 (Digit terakhir adalah 0)
+[367] 25𝟓×2𝟓→5×5=25 (Digit terakhir adalah 5)
+[368] Karena digit terakhirnya berbeda, maka lanjutkan ke opsi selanjutnya.
+[369] B. 𝟐𝟏𝟎×𝟒𝟐 sama dengan 𝟐𝟓𝟔×𝟑𝟓
+[370] 21𝟎×4𝟐→0×2=0 (Digit terakhir adalah 0)
+[371] 25𝟔×3𝟓→6×5=30 (Digit terakhir adalah 0)
+[372] Karena digit terakhirnya sama, maka lakukan perkalian penuhnya.
+[373] 210×42=8820
+[374] 256×35=8960
+[375] Hasil berbeda. Lanjutkan ke opsi selanjutnya.
+[376] C. 𝟏𝟗𝟖×𝟑𝟕 sama dengan 𝟐𝟐𝟒×𝟑𝟑
+[377] 19𝟖×3𝟕→8×7=56 (Digit terakhir adalah 6)
+[378] 22𝟒×3𝟑→4×3=12 (Digit terakhir adalah 2)
+[379] Karena digit terakhirnya berbeda, maka lanjutkan ke opsi selanjutnya.
+[380] D. 𝟐𝟓×𝟒𝟓 sama dengan 𝟐𝟖×𝟒𝟐
+[381] 2𝟓×4𝟓→5×5=25 (Digit terakhir adalah 5)
+[382] 2𝟖×4𝟐→8×2=16 (Digit terakhir adalah 6)
+[383] Karena digit terakhirnya berbeda, maka lanjutkan ke opsi selanjutnya.
+[384] E. 𝟐𝟔𝟒×𝟒𝟐 sama dengan 𝟐𝟑𝟏×𝟒𝟖
+[385] 26𝟒×4𝟐→4×2=8 (Digit terakhir adalah 8)
+[386] 23𝟏×4𝟖→1×8=8 (Digit terakhir adalah 8)
+[387] Karena digit terakhirnya sama, maka lakukan perkalian penuhnya.
+[388] 264×42=11088
+[389] 231×48=11088
+[390] Hasilnya sama. Jadi, jawabannya adalah E.
+[391] Soal 10
+[392] Category: Numerik/Kuantitatif
+[393] Lesson: Kecukupan Data
+[394] Chapter: Aljabar - Operasi Aljabar
+[395] Tingkat Kesulitan: Mudah
+[396] Bentuk Soal: Option New
+[397] Diketahui dua bilangan positif A dan B. Tentukan apakah A lebih besar daripada B!
+[398] (1) A+B=480.
+[399] (2) A−B=80.
+[400] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[401] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[402] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[403] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[404] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[405] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[406] Jawaban: B
+[407] Pembahasan:
+[408] Diketahui A dan B merupakan bilangan positif.
+[409] Pernyataan (1):
+[410] A+B=480
+[411] Informasi tersebut belum dapat menentukan hubungan A dan B.
+[412] Misalnya, A=280 dan B=200, sehingga A>B. Namun, A=200 dan B=280 juga memenuhi pernyataan tersebut dan menghasilkan A<B.
+[413] Jadi, pernyataan (1) SAJA tidak cukup.
+[414] Pernyataan (2):
+[415] A−B=80
+[416] Karena 80>0, diperoleh:
+[417] A−B>0
+[418] A>B
+[419] Hubungan A dan B dapat diketahui secara pasti. Jadi, pernyataan (2) SAJA cukup.
+[420] Jadi, jawaban yang benar adalah B.
+[421] Soal 11
+[422] Category: Numerik/Kuantitatif
+[423] Lesson: Kecukupan Data
+[424] Chapter: Aljabar - Operasi Aljabar
+[425] Tingkat Kesulitan: Sedang
+[426] Bentuk Soal: Option New
+[427] Diketahui P dan Q merupakan bilangan positif. Apakah P lebih besar daripada Q?
+[428] (1) P+Q=60.
+[429] (2) PQ=800.
+[430] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[431] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[432] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[433] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[434] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[435] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[436] Jawaban: E
+[437] Pembahasan:
+[438] Pernyataan (1):
+[439] P+Q=60
+[440] Pasangan P=40 dan Q=20 menghasilkan P>Q, sedangkan pasangan P=20 dan Q=40 menghasilkan P<Q. Keduanya memenuhi jumlah yang diberikan.
+[441] Pernyataan (1) SAJA tidak cukup.
+[442] Pernyataan (2):
+[443] PQ=800
+[444] Pasangan P=40 dan Q=20 maupun pasangan P=20 dan Q=40 sama-sama menghasilkan perkalian sebesar 800. Hubungan lebih besar atau lebih kecil belum dapat dipastikan.
+[445] Pernyataan (2) SAJA tidak cukup.
+[446] Pernyataan (1) dan (2) bersama-sama:
+[447] 40+20=60
+[448] 40×20=800
+[449] Urutan P=40, Q=20 dan urutan P=20, Q=40 tetap memenuhi kedua pernyataan sekaligus. Jawaban terhadap pertanyaan masih dapat berupa ya atau tidak.
+[450] Jadi, kedua pernyataan bersama-sama TIDAK CUKUP. Jawaban yang benar adalah E.
+[451] Soal 12
+[452] Category: Numerik/Kuantitatif
+[453] Lesson: Kecukupan Data
+[454] Chapter: Aljabar - Persamaan
+[455] Tingkat Kesulitan: Mudah
+[456] Bentuk Soal: Option New
+[457] Diketahui x merupakan bilangan real. Berapakah nilai x?
+[458] (1) 5x−8=47.
+[459] (2) x^(2)=121.
+[460] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[461] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[462] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[463] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[464] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[465] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[466] Jawaban: A
+[467] Pembahasan:
+[468] Pernyataan (1):
+[469] 5x−8=47
+[470] 5x=55
+[471] x=11
+[472] Pernyataan (1) menghasilkan satu nilai x yang unik. Pernyataan (1) SAJA cukup.
+[473] Pernyataan (2):
+[474] x^(2)=121
+[475] x=±11
+[476] Masih terdapat dua kemungkinan nilai x, yaitu 11 atau −11. Pernyataan (2) SAJA tidak cukup.
+[477] Jadi, jawaban yang benar adalah A.
+[478] Soal 13
+[479] Category: Numerik/Kuantitatif
+[480] Lesson: Kecukupan Data
+[481] Chapter: Aljabar - Persamaan
+[482] Tingkat Kesulitan: Sedang
+[483] Bentuk Soal: Option New
+[484] Diketahui x merupakan bilangan real. Tentukan nilai x!
+[485] (1) x^(2)=64.
+[486] (2) x<0.
+[487] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[488] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[489] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[490] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[491] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[492] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[493] Jawaban: C
+[494] Pembahasan:
+[495] Pernyataan (1):
+[496] x^(2)=64
+[497] x=±8
+[498] Terdapat dua kemungkinan nilai x, yaitu 8 atau −8, sehingga pernyataan (1) SAJA tidak cukup.
+[499] Pernyataan (2):
+[500] x<0
+[501] Pernyataan ini hanya menunjukkan bahwa x negatif. Nilai x dapat berupa −8, −3, atau bilangan negatif lainnya. Pernyataan (2) SAJA tidak cukup.
+[502] Pernyataan (1) dan (2) bersama-sama:
+[503] x=±8
+[504] x<0
+[505] x=−8
+[506] Kedua informasi menghasilkan satu nilai x yang unik. Jadi, kedua pernyataan BERSAMA-SAMA cukup, tetapi masing-masing pernyataan SAJA tidak cukup. Jawaban yang benar adalah C.
+[507] Soal 14
+[508] Category: Numerik/Kuantitatif
+[509] Lesson: Kecukupan Data
+[510] Chapter: Aljabar - Sistem Persamaan
+[511] Tingkat Kesulitan: Sedang
+[512] Bentuk Soal: Option New
+[513] Diketahui variabel x dan y merupakan bilangan real yang memenuhi persamaan x+y=13. Berapakah nilai 2x+y?
+[514] (1) x−y=3.
+[515] (2) 2x−y=11.
+[516] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[517] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[518] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[519] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[520] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[521] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[522] Jawaban: D
+[523] Pembahasan:
+[524] Nilai yang ditanyakan adalah 2x+y. Diketahui x+y=13.
+[525] Pernyataan (1):
+[526] x+y=13
+[527] x−y=3
+[528] Jumlahkan kedua persamaan:
+[529] (x+y)+(x−y)=13+3
+[530] 2x=16
+[531] x=8
+[532] Substitusi nilai x ke persamaan yang diketahui:
+[533] 8+y=13
+[534] y=5
+[535] 2x+y=2(8)+5=21
+[536] Pernyataan (1) SAJA cukup untuk menjawab pertanyaan.
+[537] Pernyataan (2):
+[538] x+y=13
+[539] 2x−y=11
+[540] Jumlahkan kedua persamaan:
+[541] (x+y)+(2x−y)=13+11
+[542] 3x=24
+[543] x=8
+[544] Substitusi ke persamaan awal:
+[545] 8+y=13
+[546] y=5
+[547] 2x+y=2(8)+5=21
+[548] Pernyataan (2) SAJA cukup untuk menjawab pertanyaan.
+[549] Masing-masing pernyataan secara terpisah cukup. Jadi, jawaban yang benar adalah D.
+[550] Soal 15
+[551] Category: Numerik/Kuantitatif
+[552] Lesson: Kecukupan Data
+[553] Chapter: Aljabar - Sistem Persamaan
+[554] Tingkat Kesulitan: Sedang
+[555] Bentuk Soal: Option New
+[556] Diketahui x dan y merupakan bilangan real dengan x+y=16. Berapakah nilai 3x−y?
+[557] (1) x−y=4.
+[558] (2) 2x+2y=32.
+[559] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[560] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[561] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[562] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[563] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[564] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[565] Jawaban: A
+[566] Pembahasan:
+[567] Nilai yang ditanyakan adalah 3x−y. Diketahui x+y=16.
+[568] Pernyataan (1):
+[569] x+y=16
+[570] x−y=4
+[571] Jumlahkan kedua persamaan:
+[572] 2x=20
+[573] x=10
+[574] Substitusi ke persamaan awal:
+[575] 10+y=16
+[576] y=6
+[577] 3x−y=3(10)−6=24
+[578] Pernyataan (1) SAJA cukup.
+[579] Pernyataan (2):
+[580] 2x+2y=32
+[581] x+y=16
+[582] Persamaan pada pernyataan (2) hanya merupakan dua kali persamaan yang sudah diketahui, sehingga tidak memberikan hubungan baru.
+[583] Pasangan x=10, y=6 menghasilkan 3x−y=24, sedangkan pasangan x=9, y=7 menghasilkan 3x−y=20. Kedua pasangan memenuhi persamaan yang diketahui dan pernyataan (2).
+[584] Pernyataan (2) SAJA tidak cukup.
+[585] Jadi, jawaban yang benar adalah A.
+[586] Soal 16
+[587] Category: Numerik/Kuantitatif
+[588] Lesson: Kecukupan Data
+[589] Chapter: Bilangan - Jenis dan Sifat Bilangan
+[590] Tingkat Kesulitan: Mudah
+[591] Bentuk Soal: Option New
+[592] Diketahui n merupakan bilangan bulat positif. Apakah n merupakan bilangan prima?
+[593] (1) n merupakan bilangan ganjil yang lebih besar dari 14.
+[594] (2) n memiliki tepat dua faktor positif, yaitu 1 dan n.
+[595] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[596] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[597] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[598] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[599] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[600] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[601] Jawaban: B
+[602] Pembahasan:
+[603] Pernyataan (1):
+[604] Bilangan ganjil yang lebih besar dari 14 belum tentu prima. Contohnya, n=17 merupakan bilangan prima, sedangkan n=21 bukan bilangan prima.
+[605] Pernyataan (1) SAJA tidak cukup.
+[606] Pernyataan (2):
+[607] Bilangan bulat positif yang memiliki tepat dua faktor positif, yaitu 1 dan dirinya sendiri, merupakan bilangan prima. Dengan demikian, n pasti prima.
+[608] Pernyataan (2) SAJA cukup.
+[609] Jadi, jawaban yang benar adalah B.
+[610] Soal 17
+[611] Category: Numerik/Kuantitatif
+[612] Lesson: Kecukupan Data
+[613] Chapter: Bilangan - Keterbagian Bilangan
+[614] Tingkat Kesulitan: Sedang
+[615] Bentuk Soal: Option New
+[616] Diketahui n merupakan bilangan bulat. Apakah n habis dibagi 8?
+[617] (1) n=24m, untuk suatu bilangan bulat m.
+[618] (2) n=10k+6, untuk suatu bilangan bulat k.
+[619] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[620] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[621] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[622] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[623] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[624] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[625] Jawaban: A
+[626] Pembahasan:
+[627] Pernyataan (1):
+[628] n=24m
+[629] n=8(3m)
+[630] Karena 3m merupakan bilangan bulat, n selalu dapat dinyatakan sebagai 8 dikali bilangan bulat. Jadi, n pasti habis dibagi 8.
+[631] Pernyataan (1) SAJA cukup.
+[632] Pernyataan (2):
+[633] n=10k+6
+[634] Untuk k=1, diperoleh n=16 yang habis dibagi 8. Untuk k=2, diperoleh n=26 yang tidak habis dibagi 8.
+[635] Pernyataan (2) SAJA tidak cukup.
+[636] Jadi, jawaban yang benar adalah A.
+[637] Soal 18
+[638] Category: Numerik/Kuantitatif
+[639] Lesson: Kecukupan Data
+[640] Chapter: Bilangan - Faktor dan Kelipatan
+[641] Tingkat Kesulitan: Mudah
+[642] Bentuk Soal: Option New
+[643] Diketahui x merupakan bilangan real. Berapakah nilai x?
+[644] (1) x^(2)=169.
+[645] (2) x merupakan faktor prima dari 91 yang lebih besar dari 10.
+[646] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[647] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[648] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[649] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[650] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[651] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[652] Jawaban: B
+[653] Pembahasan:
+[654] Pernyataan (1):
+[655] x^(2)=169
+[656] x=±13
+[657] Nilai x dapat berupa 13 atau −13. Terdapat dua kemungkinan, sehingga pernyataan (1) SAJA tidak cukup.
+[658] Pernyataan (2):
+[659] 91=7×13
+[660] Faktor prima dari 91 adalah 7 dan 13. Faktor prima yang lebih besar dari 10 hanya 13.
+[661] x=13
+[662] Nilai x diketahui secara pasti. Pernyataan (2) SAJA cukup.
+[663] Jadi, jawaban yang benar adalah B.
+[664] Soal 19
+[665] Category: Numerik/Kuantitatif
+[666] Lesson: Kecukupan Data
+[667] Chapter: Soal Cerita - Aljabar
+[668] Tingkat Kesulitan: Sulit
+[669] Bentuk Soal: Option New
+[670] Sebuah pusat pelatihan menyediakan dua jenis layanan, yaitu Kelas Tatap Muka dan Kelas Daring. Setiap tiket berlaku untuk satu peserta. Perhatikan tabel berikut.
+[671] Jenis Peserta | Harga/Tiket | Jumlah Tiket Terjual
+Kelas Tatap Muka | Rp120.000 | m
+Kelas Daring | Rp60.000 | n
+[672] Berapakah total pendapatan dari pendaftaran seluruh peserta pelatihan?
+[673] (1) Jumlah peserta kelas tatap muka dan kelas daring adalah 220 peserta.
+[674] (2) Jumlah peserta kelas daring 60 peserta lebih banyak daripada peserta kelas tatap muka.
+[675] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[676] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[677] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[678] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[679] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[680] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[681] Jawaban: C
+[682] Pembahasan:
+[683] Diketahui:
+[684] Total pendapatan: P=120.000m+60.000n.
+[685] Pernyataan (1):
+[686] m+n=220
+[687] Pernyataan ini belum cukup karena terdapat banyak kemungkinan jumlah peserta pada setiap jenis layanan. Harga kedua layanan berbeda, sehingga total pendapatan juga dapat berbeda.
+[688] Pernyataan (1) SAJA tidak cukup.
+[689] Pernyataan (2):
+[690] n=m+60
+[691] Selisih jumlah peserta diketahui, tetapi jumlah peserta masing-masing layanan belum diketahui secara pasti.
+[692] Pernyataan (2) SAJA tidak cukup.
+[693] Pernyataan (1) dan (2) bersama-sama:
+[694] m+n=220
+[695] n=m+60
+[696] Substitusi:
+[697] m+(m+60)=220
+[698] 2m+60=220
+[699] 2m=160
+[700] m=80
+[701] Maka:
+[702] n=80+60=140
+[703] Pendapatan total:
+[704] P=120.000(80)+60.000(140)
+[705] P=9.600.000+8.400.000
+[706] P=18.000.000
+[707] Jadi, kedua pernyataan bersama-sama cukup untuk menentukan total pendapatan sebesar Rp18.000.000, tetapi masing-masing pernyataan saja tidak cukup. Jawaban yang benar adalah C.
+[708] Soal 20
+[709] Category: Numerik/Kuantitatif
+[710] Lesson: Kecukupan Data
+[711] Chapter: Soal Cerita - Aritmatika Sosial
+[712] Tingkat Kesulitan: Sedang
+[713] Bentuk Soal: Option New
+[714] Seorang penjual memperoleh keuntungan dari penjualan satu kotak roti. Berapakah modal penjual untuk satu kotak roti tersebut?
+[715] (1) Harga jual satu kotak roti adalah Rp27.000.
+[716] (2) Penjual memperoleh keuntungan sebesar 35% dari modal.
+[717] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[718] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[719] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[720] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[721] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[722] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[723] Jawaban: C
+[724] Pembahasan:
+[725] Ingat rumus:
+[726] HJ=M1+u→HaJiMIu
+dengan
+HJ = harga jual / harga akhir / nilai akhir
+M = modal / harga beli / harga awal / nilai awal
+u = persentase perubahan dalam bentuk desimal
+[727] Pernyataan (1):
+[728] Harga jual satu kotak roti adalah Rp27.000.
+[729] HJ=27.000
+[730] Gunakan rumus:
+[731] HJ=M(1+u)
+[732] Nilai u atau persentase keuntungan belum diketahui. Modal belum dapat ditentukan secara pasti.
+[733] Pernyataan (1) SAJA tidak cukup.
+[734] Pernyataan (2):
+[735] u=35%
+[736] Harga jual belum diketahui. Mengetahui persentase keuntungan saja belum dapat menentukan modal.
+[737] Pernyataan (2) SAJA tidak cukup.
+[738] Pernyataan (1) dan (2) bersama-sama:
+[739] HJ=27.000
+[740] u=35%
+[741] HJ=M(1+u)
+[742] 27.000=M(1+35%)
+[743] M=(27.000)/(1+35%)
+[744] M=(27.000)/(1+0,35)
+[745] M=(27.000)/(1,35)
+[746] M=20.000
+[747] Jadi, kedua pernyataan bersama-sama cukup untuk menentukan modal sebesar Rp20.000, tetapi masing-masing pernyataan saja tidak cukup. Jawaban yang benar adalah C.
+[748] Soal 21
+[749] Category: Numerik/Kuantitatif
+[750] Lesson: Kecukupan Data
+[751] Chapter: Soal Cerita - Geometri
+[752] Tingkat Kesulitan: Mudah
+[753] Bentuk Soal: Option New
+[754] Sebuah ruang pamer berbentuk persegi akan dipasangi karpet. Berapakah luas lantai ruang pamer tersebut?
+[755] (1) Panjang salah satu sisi ruang pamer adalah 14 meter.
+[756] (2) Lebar ruang pamer tersebut adalah 14 meter.
+[757] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[758] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[759] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[760] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[761] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[762] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[763] Jawaban: D
+[764] Pembahasan:
+[765] Diketahui ruang pamer berbentuk persegi. Luas persegi dihitung dengan rumus:
+[766] L=s×s
+[767] dengan s merupakan panjang sisi persegi.
+[768] Pernyataan (1):
+[769] Panjang salah satu sisi ruang pamer adalah 14 meter.
+[770] s=14
+[771] L=s×s
+[772] L=14×14
+[773] L=196 m²
+[774] Pernyataan (1) SAJA cukup.
+[775] Pernyataan (2):
+[776] Lebar ruang pamer adalah 14 meter. Pada persegi, seluruh sisinya sama panjang, sehingga:
+[777] s=14
+[778] L=s×s
+[779] L=14×14
+[780] L=196 m²
+[781] Pernyataan (2) SAJA cukup.
+[782] Masing-masing pernyataan secara terpisah cukup. Jadi, jawaban yang benar adalah D.
+[783] Soal 22
+[784] Category: Numerik/Kuantitatif
+[785] Lesson: Kecukupan Data
+[786] Chapter: Soal Cerita - Geometri
+[787] Tingkat Kesulitan: Sedang
+[788] Bentuk Soal: Option New
+[789] Sebuah taman berbentuk persegi panjang memiliki panjang lebih besar daripada lebarnya. Berapakah luas taman tersebut?
+[790] (1) Keliling taman adalah 64 meter.
+[791] (2) Panjang taman 8 meter lebih besar daripada lebarnya.
+[792] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[793] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[794] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[795] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[796] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[797] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[798] Jawaban: C
+[799] Pembahasan:
+[800] Misalkan panjang taman p dan lebarnya l, dengan p>l>0. Luas taman adalah L=p×l.
+[801] Pernyataan (1):
+[802] 2(p+l)=64
+[803] p+l=32
+[804] Pasangan p=20, l=12 menghasilkan luas 240 m², sedangkan p=18, l=14 menghasilkan luas 252 m². Keduanya memiliki keliling 64 meter.
+[805] Pernyataan (1) SAJA tidak cukup.
+[806] Pernyataan (2):
+[807] p−l=8
+[808] Pasangan p=20, l=12 menghasilkan luas 240 m², sedangkan p=16, l=8 menghasilkan luas 128 m². Keduanya memiliki selisih panjang dan lebar sebesar 8 meter.
+[809] Pernyataan (2) SAJA tidak cukup.
+[810] Pernyataan (1) dan (2) bersama-sama:
+[811] p+l=32
+[812] p−l=8
+[813] Jumlahkan kedua persamaan:
+[814] 2p=40
+[815] p=20
+[816] l=32−20=12
+[817] L=20×12=240 m²
+[818] Luas taman diketahui secara tunggal. Jadi, kedua pernyataan BERSAMA-SAMA cukup, tetapi masing-masing pernyataan SAJA tidak cukup. Jawaban yang benar adalah C.
+[819] Soal 23
+[820] Category: Numerik/Kuantitatif
+[821] Lesson: Kecukupan Data
+[822] Chapter: Soal Cerita - JKW (Jarak, Kecepatan, Waktu)
+[823] Tingkat Kesulitan: Mudah
+[824] Bentuk Soal: Option New
+[825] Perhatikan tabel berikut!
+[826] Jenis | Waktu | Kecepatan
+Mobil P | p | 80 km/jam
+Mobil Q | q | 60 km/jam
+[827] Kedua mobil bergerak dengan kecepatan tetap sesuai tabel. Berapa jarak yang ditempuh Mobil Q?
+[828] (1) Mobil Q menempuh jarak yang sama dengan Mobil P.
+[829] (2) Mobil Q menempuh perjalanan selama 4 jam.
+[830] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[831] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[832] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[833] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[834] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[835] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[836] Jawaban: B
+[837] Pembahasan:
+[838] Jarak tempuh diperoleh dengan mengalikan kecepatan dan waktu.
+[839] INGAT:
+[840] J=K×W
+[841] Pernyataan (1):
+[842] Mobil Q menempuh jarak yang sama dengan Mobil P.
+[843] JP=80p
+[844] JQ=JP
+[845] Karena p tidak diketahui, jarak Mobil P belum dapat diketahui secara numerik. Kesamaan jarak belum menentukan jarak Mobil Q.
+[846] Pernyataan (1) SAJA tidak cukup.
+[847] Pernyataan (2):
+[848] Mobil Q menempuh perjalanan selama 4 jam.
+[849] JQ=60×4
+[850] JQ=240 km
+[851] Pernyataan (2) SAJA cukup.
+[852] Jadi, jawaban yang benar adalah B.
+[853] Soal 24
+[854] Category: Numerik/Kuantitatif
+[855] Lesson: Kecukupan Data
+[856] Chapter: Soal Cerita - JKW (Jarak, Kecepatan, Waktu)
+[857] Tingkat Kesulitan: Mudah
+[858] Bentuk Soal: Option New
+[859] Perhatikan tabel berikut!
+[860] Jenis | Waktu | Kecepatan
+Bus R | p | 72 km/jam
+Bus S | q | 48 km/jam
+[861] Kecepatan kedua bus tetap selama perjalanan. Berapakah jarak yang ditempuh Bus S?
+[862] (1) Bus S menempuh perjalanan selama 3 jam.
+[863] (2) Bus S menempuh jarak yang sama dengan Bus R.
+[864] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[865] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[866] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[867] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[868] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[869] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[870] Jawaban: A
+[871] Pembahasan:
+[872] INGAT:
+[873] J=K×W
+[874] Pernyataan (1):
+[875] Waktu perjalanan Bus S adalah 3 jam.
+[876] JS=48×3
+[877] JS=144 km
+[878] Pernyataan (1) SAJA cukup.
+[879] Pernyataan (2):
+[880] Bus S menempuh jarak yang sama dengan Bus R.
+[881] JR=72p
+[882] JS=JR
+[883] Waktu perjalanan Bus R belum diketahui, sehingga jaraknya belum dapat ditentukan secara numerik. Akibatnya, jarak Bus S juga belum dapat diketahui.
+[884] Pernyataan (2) SAJA tidak cukup.
+[885] Jadi, jawaban yang benar adalah A.
+[886] Soal 25
+[887] Category: Numerik/Kuantitatif
+[888] Lesson: Kecukupan Data
+[889] Chapter: Soal Cerita - Perbandingan Senilai dan Berbalik
+[890] Tingkat Kesulitan: Sedang
+[891] Bentuk Soal: Option New
+[892] Perhatikan tabel berikut. Kelompok mesin A dan kelompok mesin B digunakan untuk menyelesaikan target pesanan masing-masing.
+[893] Kelompok Mesin | Jumlah Mesin | Waktu Produksi
+Kelompok mesin A | 8 mesin | 20 jam
+Kelompok mesin B | x mesin | t jam
+[894] Laju produksi setiap mesin sama dan tetap. Apakah kelompok mesin B dapat menyelesaikan target pesanannya dalam waktu maksimal 10 jam?
+[895] (1) Kelompok mesin B terdiri dari 16 mesin.
+[896] (2) Target pesanan kelompok B sama dengan target pesanan kelompok mesin A.
+[897] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[898] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[899] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[900] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[901] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[902] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[903] Jawaban: C
+[904] Pembahasan:
+[905] Pernyataan (1):
+[906] Kelompok mesin B terdiri dari 16 mesin, tetapi target pesanannya belum diketahui. Jumlah mesin saja belum menentukan waktu penyelesaian target tersebut.
+[907] Sebagai contoh, target yang sama dengan A dapat diselesaikan dalam 10 jam, sedangkan target dua kali target A memerlukan 20 jam. Jawaban terhadap batas waktu dapat berbeda.
+[908] Pernyataan (1) SAJA tidak cukup.
+[909] Pernyataan (2):
+[910] Target pesanan kelompok B sama dengan target pesanan kelompok mesin A, tetapi jumlah mesin B belum diketahui. Karena laju produksi setiap mesin sama dan targetnya sama, jumlah mesin dikalikan waktu produksi harus tetap: x × t = 8 × 20 = 160, sehingga t = 160/x jam.
+[911] Jika kelompok B memiliki 8 mesin, waktu yang diperlukan adalah 160/8 = 20 jam, sehingga batas maksimal 10 jam tidak terpenuhi. Jika kelompok B memiliki 16 mesin, waktunya 160/16 = 10 jam, sehingga batas waktu terpenuhi. Pernyataan (2) saja memungkinkan jawaban ya maupun tidak.
+[912] Pernyataan (2) SAJA tidak cukup.
+[913] Pernyataan (1) dan (2) bersama-sama:
+[914] Pernyataan (1) memberikan jumlah mesin B, yaitu 16 mesin. Pernyataan (2) menyatakan bahwa target pesanan kedua kelompok sama. Gunakan perbandingan berbalik nilai:
+[915] t=(8×20)/(16)
+[916] t=(160)/(16)
+[917] t=10
+[918] Karena 10≤10, kelompok mesin B dapat menyelesaikan target dalam waktu maksimal 10 jam. Pernyataan (1) dan (2) BERSAMA-SAMA cukup, tetapi masing-masing pernyataan SAJA tidak cukup. Jadi, jawaban yang benar adalah C.
+[919] Soal 26
+[920] Category: Numerik/Kuantitatif
+[921] Lesson: Kecukupan Data
+[922] Chapter: Soal Cerita - Perbandingan Senilai dan Berbalik
+[923] Tingkat Kesulitan: Sulit
+[924] Bentuk Soal: Option New
+[925] Sebuah posko bantuan menugaskan tim relawan P dan Q untuk mengemas paket kebutuhan pokok. Semua paket memiliki isi yang sama. Data pekerjaan kedua tim tercantum pada tabel berikut.
+[926] Tim Relawan | Jumlah Relawan | Waktu Pengemasan
+Tim P | 6 orang | 24 jam
+Tim Q | x orang | t jam
+[927] Setiap relawan mengemas paket dengan kemampuan yang sama dan tetap. Mereka bekerja bersamaan tanpa saling menghambat. Apakah seluruh paket yang ditugaskan kepada tim Q dapat selesai dikemas dalam waktu paling lama 8 jam?
+[928] (1) Tim Q beranggotakan 18 orang relawan.
+[929] (2) Jumlah paket yang menjadi tanggung jawab tim Q sama banyak dengan paket yang harus disiapkan tim P.
+[930] Tentukan kecukupan kedua informasi tersebut untuk memastikan jawaban atas pertanyaan di atas.
+[931] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[932] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[933] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[934] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[935] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[936] Jawaban: C
+[937] Pembahasan:
+[938] Pernyataan (1):
+[939] Dari pernyataan ini, diketahui bahwa tim Q memiliki 18 orang relawan. Namun, jumlah paket yang harus mereka kemas belum disebutkan.
+[940] Jika jumlah paketnya sama dengan tanggung jawab tim P, tim Q memerlukan 8 jam. Apabila jumlah paket tersebut dua kali lipat, pengemasannya membutuhkan 16 jam. Kedua kemungkinan ini menunjukkan bahwa banyaknya relawan saja belum memastikan pemenuhan tenggat.
+[941] Dengan demikian, informasi pada pernyataan (1) belum memadai untuk menjawab pertanyaan.
+[942] Pernyataan (2):
+[943] Pernyataan ini menyamakan jumlah paket yang harus dikemas oleh kedua tim. Akan tetapi, banyaknya anggota tim Q belum diketahui. Misalkan x adalah jumlah relawan tim Q dan t adalah waktu pengemasannya. Untuk pekerjaan yang sama, hubungan jumlah relawan dan waktu kerja adalah:
+[944] t=(6×24)/(x)
+[945] Sebagai pembanding, jika x=12, waktu pengemasan yang dibutuhkan t=12, sehingga melewati tenggat. Namun, jika x=24, pekerjaan selesai dalam t=6, sehingga tenggat dapat dipenuhi.
+[946] Karena kedua kemungkinan tersebut masih terbuka, pernyataan (2) secara terpisah belum memberikan jawaban yang pasti.
+[947] Pernyataan (1) dan (2) bersama-sama:
+[948] Pernyataan (1) menetapkan jumlah anggota tim Q sebanyak 18 orang, sedangkan pernyataan (2) memastikan bahwa jumlah paket kedua tim sama. Untuk pekerjaan yang tetap, jumlah relawan dan waktu pengemasan berbanding terbalik. Dengan demikian:
+[949] t=(6×24)/(18)
+[950] t=(144)/(18)
+[951] t=8
+[952] Waktu ini memenuhi 8≤8, sehingga tim Q dapat menuntaskan pengemasan tepat pada batas 8 jam yang ditentukan.
+[953] Waktu pengerjaan baru dapat dipastikan setelah kedua informasi digunakan sekaligus. Tidak satu pun pernyataan cukup jika digunakan sendiri. Oleh karena itu, pilihan yang tepat adalah C.
+[954] Soal 27
+[955] Category: Numerik/Kuantitatif
+[956] Lesson: Kecukupan Data
+[957] Chapter: Soal Cerita - VDW (Volume, Debit, Waktu)
+[958] Tingkat Kesulitan: Sedang
+[959] Bentuk Soal: Option New
+[960] Sebuah bak air dikosongkan melalui dua lubang pembuangan yang dibuka bersamaan. Debit kedua lubang tetap dan tidak ada air yang masuk. Berapa waktu yang diperlukan hingga bak kosong?
+[961] (1) Volume air dalam bak adalah V=12.000 liter.
+[962] (2) Debit lubang pertama adalah D1=200 liter/menit dan debit lubang kedua D2=100 liter/menit.
+[963] Pilihlah informasi yang cukup untuk menjawab pertanyaan tersebut.
+[964] A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi (2) saja tidak cukup.
+[965] B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi (1) saja tidak cukup.
+[966] C. KEDUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.
+[967] D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan (2) SAJA cukup.
+[968] E. Pernyataan (1) dan (2) TIDAK CUKUP untuk menjawab pertanyaan.
+[969] Jawaban: C
+[970] Pembahasan:
+[971] Diketahui:
+[972] Volume air V=12.000 liter, dengan debit D1=200 dan D2=100 liter/menit.
+[973] Ditanyakan:
+[974] W=?
+[975] INGAT:
+[976] Vas DeWi
+[977] V=D×W
+[978] D=(V)/(W)
+[979] W=(V)/(D)
+[980] Evaluasi Pernyataan (1):
+[981] Pernyataan (1) hanya memberikan volume air dalam bak.
+[982] W=(V)/(Dtotal)
+[983] Nilai debit total belum diketahui, sehingga waktu pengosongan belum dapat ditentukan secara tunggal.
+[984] Kesimpulan: Pernyataan (1) SAJA tidak cukup.
+[985] Evaluasi Pernyataan (2):
+[986] Kedua lubang dibuka bersamaan, sehingga debit total merupakan jumlah debit kedua lubang.
+[987] Dtotal=D1+D2=200+100
+[988] Dtotal=300 liter/menit
+[989] Volume air belum diketahui dari pernyataan (2) saja, sehingga waktu pengosongan belum dapat ditentukan secara tunggal.
+[990] Kesimpulan: Pernyataan (2) SAJA tidak cukup.
+[991] Evaluasi Pernyataan (1) dan (2) bersama-sama:
+[992] Dengan menggabungkan kedua pernyataan, volume dan debit total diketahui.
+[993] W=(V)/(Dtotal)
+[994] W=(12.000)/(300)
+[995] W=40 menit
+[996] Jadi, kedua pernyataan bersama-sama cukup untuk menentukan waktu pengosongan bak, tetapi masing-masing pernyataan secara terpisah tidak cukup. Jawaban yang benar adalah C.
+[997] Soal 28
+[998] Category: Numerik/Kuantitatif
+[999] Lesson: Deret Bilangan
+[1000] Chapter: Deret Angka - 2 Towew
+[1001] Tingkat Kesulitan: Sedang
+[1002] Bentuk Soal: Option New
+[1003] 24,19,28,23,32,27,…,…
+[1004] A. 31,36
+[1005] B. 36,35
+[1006] C. 32,31
+[1007] D. 36,31
+[1008] E. 40,35
+[1009] Jawaban: D
+[1010] Pembahasan:
+[1011]  [IMAGES ['rId6']]
+[1012] ↓ ↑ ↓ artinya 2 towew
+[1013] Pola yang terlihat:
+[1014]  [IMAGES ['rId7']]
+[1015] Pada larik ganjil, suku berikutnya adalah 32+4=36.
+[1016] Pada larik genap, suku berikutnya adalah 27+4=31.
+[1017] Jadi, dua bilangan berikutnya adalah 36 dan 31. Jawaban yang benar adalah D.
+[1018] Soal 29
+[1019] Category: Numerik/Kuantitatif
+[1020] Lesson: Deret Bilangan
+[1021] Chapter: Deret Angka - 2 Towew
+[1022] Tingkat Kesulitan: Sedang
+[1023] Bentuk Soal: Option New
+[1024] 48,62,43,57,38,52,…,…
+[1025] A. 38,47
+[1026] B. 33,47
+[1027] C. 33,52
+[1028] D. 43,47
+[1029] E. 47,33
+[1030] Jawaban: B
+[1031] Pembahasan:
+[1032]  [IMAGES ['rId8']]
+[1033] ↑ ↓ ↑ artinya 2 towew
+[1034] Pola yang terlihat:
+[1035]  [IMAGES ['rId9']]
+[1036] Pada larik ganjil, suku berikutnya adalah 38−5=33.
+[1037] Pada larik genap, suku berikutnya adalah 52−5=47.
+[1038] Jadi, dua bilangan berikutnya adalah 33 dan 47. Jawaban yang benar adalah B.
+[1039] Soal 30
+[1040] Category: Numerik/Kuantitatif
+[1041] Lesson: Deret Bilangan
+[1042] Chapter: Deret Angka - 3 Towew
+[1043] Tingkat Kesulitan: Mudah
+[1044] Bentuk Soal: Option New
+[1045] 6,9,8,6,12,9,6,15,10,…
+[1046] A. 5
+[1047] B. 9
+[1048] C. 12
+[1049] D. 18
+[1050] E. 6
+[1051] Jawaban: E
+[1052] Pembahasan:
+[1053]  [IMAGES ['rId10']]
+[1054] ↓ ↓ ↑ artinya 3 towew
+[1055] Pola yang terlihat:
+[1056]  [IMAGES ['rId11']]
+[1057] Suku yang ditanyakan berada pada larik ke-1. Larik ke-1 memiliki pola tetap, yaitu 6, 6, 6, sehingga suku berikutnya adalah 6.
+[1058] Jadi, jawaban yang benar adalah E.
+[1059] Soal 31
+[1060] Category: Numerik/Kuantitatif
+[1061] Lesson: Deret Bilangan
+[1062] Chapter: Matriks Deret
+[1063] Tingkat Kesulitan: Mudah
+[1064] Bentuk Soal: Option New
+[1065] Tentukan nilai x yang melengkapi pola bilangan pada tabel berikut.
+[1066] 7 | 18 | 31
+12 | 25 | 40
+17 | 32 | x
+[1067] A. 45
+[1068] B. 47
+[1069] C. 49
+[1070] D. 51
+[1071] E. 53
+[1072] Jawaban: C
+[1073] Pembahasan:
+[1074] Perhatikan bilangan pada tabel, bilangan tersebut memiliki pola sebagai berikut.
+[1075] Bilangan pada setiap kolom bertambah dengan selisih tetap dari atas ke bawah.
+[1076] Kolom pertama: 7+5=12;12+5=17.
+[1077] Kolom kedua: 18+7=25;25+7=32.
+[1078] Kolom ketiga: 31+9=40;40+9=x.
+[1079] Maka, diperoleh x=40+9=49.
+[1080] Soal 32
+[1081] Category: Numerik/Kuantitatif
+[1082] Lesson: Deret Bilangan
+[1083] Chapter: Matriks Deret
+[1084] Tingkat Kesulitan: Mudah
+[1085] Bentuk Soal: Option New
+[1086] Bilangan berapakah yang tepat untuk menggantikan x pada tabel berikut?
+[1087] −18 | 9 | 28
+−11 | 5 | 22
+−4 | x | 16
+[1088] A. 1
+[1089] B. −1
+[1090] C. 3
+[1091] D. 5
+[1092] E. 9
+[1093] Jawaban: A
+[1094] Pembahasan:
+[1095] Perhatikan bilangan pada tabel, bilangan tersebut memiliki pola sebagai berikut.
+[1096] Setiap kolom mengikuti perubahan yang tetap dari atas ke bawah: bertambah pada kolom pertama dan berkurang pada dua kolom lainnya.
+[1097] Kolom pertama: −18+7=−11;−11+7=−4.
+[1098] Kolom ketiga: 28−6=22;22−6=16.
+[1099] Kolom kedua: 9−4=5;5−4=x.
+[1100] Maka, diperoleh x=5−4=1.
+[1101] Soal 33
+[1102] Category: Numerik/Kuantitatif
+[1103] Lesson: Deret Bilangan
+[1104] Chapter: Matriks Deret
+[1105] Tingkat Kesulitan: Sedang
+[1106] Bentuk Soal: Option New
+[1107] Tentukan bilangan pengganti x berdasarkan hubungan antarbilangan pada tiap baris.
+[1108] 4 | 6 | 28
+7 | 3 | 28
+5 | 8 | x
+[1109] A. 40
+[1110] B. 41
+[1111] C. 44
+[1112] D. 48
+[1113] E. 45
+[1114] Jawaban: E
+[1115] Pembahasan:
+[1116] Perhatikan bilangan pada tabel, bilangan tersebut memiliki pola sebagai berikut.
+[1117] Pada setiap baris, bilangan ketiga diperoleh dengan mengalikan bilangan pertama dan kedua, lalu menambahkan bilangan pertama.
+[1118] Baris pertama: 4×6+4=24+4=28.
+[1119] Baris kedua: 7×3+7=21+7=28.
+[1120] Baris ketiga: 5×8+5=40+5=x.
+[1121] Maka, diperoleh x=45.
+[1122] Soal 34
+[1123] Category: Numerik/Kuantitatif
+[1124] Lesson: Deret Bilangan
+[1125] Chapter: Matriks Deret
+[1126] Tingkat Kesulitan: Sedang
+[1127] Bentuk Soal: Option New
+[1128] Nilai x harus membuat baris ketiga mengikuti pola yang sama dengan dua baris di atasnya. Tentukan nilai tersebut.
+[1129] 6 | 4 | 30
+8 | 2 | 24
+7 | x | 42
+[1130] A. 4
+[1131] B. 5
+[1132] C. 6
+[1133] D. 7
+[1134] E. 8
+[1135] Jawaban: B
+[1136] Pembahasan:
+[1137] Perhatikan bilangan pada tabel, bilangan tersebut memiliki pola sebagai berikut.
+[1138] Bilangan ketiga pada setiap baris sama dengan hasil kali dua bilangan sebelumnya ditambah bilangan pertama.
+[1139] Baris pertama: 6×4+6=24+6=30.
+[1140] Baris kedua: 8×2+8=16+8=24.
+[1141] Baris ketiga: 7×x+7=42.
+[1142] Maka, diperoleh 7x=42−7=35;x=35÷7=5.
+[1143] Soal 35
+[1144] Category: Numerik/Kuantitatif
+[1145] Lesson: Deret Bilangan
+[1146] Chapter: Matriks Deret
+[1147] Tingkat Kesulitan: Sulit
+[1148] Bentuk Soal: Option New
+[1149] Dengan menerapkan pola yang konsisten pada setiap baris, tentukan nilai x dalam tabel berikut.
+[1150] 7 | 16 | 33
+9 | 23 | 58
+8 | 19 | x
+[1151] A. 41
+[1152] B. 43
+[1153] C. 44
+[1154] D. 45
+[1155] E. 47
+[1156] Jawaban: D
+[1157] Pembahasan:
+[1158] Perhatikan bilangan pada tabel, bilangan tersebut memiliki pola sebagai berikut.
+[1159] Pada setiap baris, bilangan ketiga merupakan kuadrat bilangan pertama dikurangi bilangan kedua.
+[1160] Baris pertama: 7^(2)−16=49−16=33.
+[1161] Baris kedua: 9^(2)−23=81−23=58.
+[1162] Baris ketiga: 8^(2)−19=64−19=x.
+[1163] Maka, diperoleh x=64−19=45.
+[1164] Soal 36
+[1165] Category: Numerik/Kuantitatif
+[1166] Lesson: Deret Bilangan
+[1167] Chapter: Matriks Deret
+[1168] Tingkat Kesulitan: Sulit
+[1169] Bentuk Soal: Option New
+[1170] Angka pada setiap baris memiliki hubungan yang sama. Berapakah nilai yang harus mengisi x?
+[1171] 5 | 9 | 16
+8 | 21 | 43
+7 | x | 31
+[1172] A. 18
+[1173] B. 16
+[1174] C. 17
+[1175] D. 20
+[1176] E. 22
+[1177] Jawaban: A
+[1178] Pembahasan:
+[1179] Perhatikan bilangan pada tabel, bilangan tersebut memiliki pola sebagai berikut.
+[1180] Bilangan ketiga diperoleh dari kuadrat bilangan pertama, kemudian dikurangi bilangan kedua pada baris yang sama.
+[1181] Baris pertama: 5^(2)−9=25−9=16.
+[1182] Baris kedua: 8^(2)−21=64−21=43.
+[1183] Baris ketiga: 7^(2)−x=31.
+[1184] Maka, diperoleh 49−x=31;x=49−31=18.
+[1185] Soal 37
+[1186] Category: Numerik/Kuantitatif
+[1187] Lesson: Deret Bilangan
+[1188] Chapter: Pola Bilangan Tabel
+[1189] Tingkat Kesulitan: Mudah
+[1190] Bentuk Soal: Option New
+[1191] Perhatikan tabel berikut!
+[1192] Urutan ke- | Nilai
+1 | 2
+4 | 14
+9 | 34
+17 | ?
+23 | 90
+[1193] Perubahan nilai mengikuti pola yang sama. Nilai pada urutan ke-17 adalah ....
+[1194] A. 62
+[1195] B. 64
+[1196] C. 68
+[1197] D. 66
+[1198] E. 70
+[1199] Jawaban: D
+[1200] Pembahasan:
+[1201] Misalkan Un adalah nilai pada urutan ke-n, dengan n menyatakan nomor urutan.
+[1202] Perhatikan hubungan antara urutan dan nilainya.
+[1203] • U1=4(1)−2=4−2=2
+[1204] • U4=4(4)−2=16−2=14
+[1205] • U9=4(9)−2=36−2=34
+[1206] • U23=4(23)−2=92−2=90
+[1207] Maka pola yang digunakan adalah:
+[1208] Un=4×n−2
+[1209] U17=4(17)−2=68−2=66
+[1210] Jadi, U17=66.
+[1211] Soal 38
+[1212] Category: Numerik/Kuantitatif
+[1213] Lesson: Deret Bilangan
+[1214] Chapter: Pola Bilangan Tabel
+[1215] Tingkat Kesulitan: Mudah
+[1216] Bentuk Soal: Option New
+[1217] Perhatikan tabel berikut!
+[1218] Urutan ke- | Nilai
+1 | 10
+3 | 24
+8 | 59
+14 | ?
+20 | 143
+[1219] Berdasarkan pola hubungan pada tabel, bilangan yang tepat untuk mengisi nilai pada urutan ke-14 adalah ....
+[1220] A. 98
+[1221] B. 101
+[1222] C. 104
+[1223] D. 108
+[1224] E. 115
+[1225] Jawaban: B
+[1226] Pembahasan:
+[1227] Misalkan Un adalah nilai pada urutan ke-n, dengan n menyatakan nomor urutan.
+[1228] Perhatikan hubungan antara urutan dan nilainya.
+[1229] • U1=7(1)+3=7+3=10
+[1230] • U3=7(3)+3=21+3=24
+[1231] • U8=7(8)+3=56+3=59
+[1232] • U20=7(20)+3=140+3=143
+[1233] Maka pola yang digunakan adalah:
+[1234] Un=7×n+3
+[1235] U14=7(14)+3=98+3=101
+[1236] Jadi, U14=101.
+[1237] Soal 39
+[1238] Category: Numerik/Kuantitatif
+[1239] Lesson: Deret Bilangan
+[1240] Chapter: Pola Bilangan Tabel
+[1241] Tingkat Kesulitan: Sedang
+[1242] Bentuk Soal: Option New
+[1243] Perhatikan tabel berikut!
+[1244] Urutan ke- | Nilai
+1 | 3
+3 | 15
+7 | 63
+12 | ?
+16 | 288
+[1245] Nilai pada urutan ke-12 yang sesuai dengan pola tabel tersebut adalah ....
+[1246] A. 144
+[1247] B. 156
+[1248] C. 160
+[1249] D. 166
+[1250] E. 168
+[1251] Jawaban: E
+[1252] Pembahasan:
+[1253] Misalkan Un adalah nilai pada urutan ke-n, dengan n menyatakan nomor urutan.
+[1254] Perhatikan hubungan antara urutan dan nilainya.
+[1255] • U1=1^(2)+2(1)=1+2=3
+[1256] • U3=3^(2)+2(3)=9+6=15
+[1257] • U7=7^(2)+2(7)=49+14=63
+[1258] • U16=16^(2)+2(16)=256+32=288
+[1259] Maka pola yang digunakan adalah:
+[1260] Un=n^(2)+2×n
+[1261] U12=12^(2)+2(12)=144+24=168
+[1262] Jadi, U12=168.
+[1263] Soal 40
+[1264] Category: Numerik/Kuantitatif
+[1265] Lesson: Deret Bilangan
+[1266] Chapter: Pola Bilangan Tabel
+[1267] Tingkat Kesulitan: Sedang
+[1268] Bentuk Soal: Option New
+[1269] Perhatikan tabel berikut!
+[1270] Urutan ke- | Nilai
+2 | 2
+5 | 20
+9 | 72
+15 | ?
+21 | 420
+[1271] Tanda tanya pada urutan ke-15 harus diganti dengan bilangan ....
+[1272] A. 196
+[1273] B. 200
+[1274] C. 210
+[1275] D. 225
+[1276] E. 240
+[1277] Jawaban: C
+[1278] Pembahasan:
+[1279] Misalkan Un adalah nilai pada urutan ke-n, dengan n menyatakan nomor urutan.
+[1280] Perhatikan hubungan antara urutan dan nilainya.
+[1281] • U2=2^(2)−2=4−2=2
+[1282] • U5=5^(2)−5=25−5=20
+[1283] • U9=9^(2)−9=81−9=72
+[1284] • U21=21^(2)−21=441−21=420
+[1285] Maka pola yang digunakan adalah:
+[1286] Un=n^(2)−n
+[1287] U15=15^(2)−15=225−15=210
+[1288] Jadi, U15=210.
+[1289] Soal 41
+[1290] Category: Numerik/Kuantitatif
+[1291] Lesson: Deret Bilangan
+[1292] Chapter: Pola Bilangan Tabel
+[1293] Tingkat Kesulitan: Sulit
+[1294] Bentuk Soal: Option New
+[1295] Perhatikan tabel berikut!
+[1296] Urutan ke- | Nilai
+1 | 3
+3 | 12
+5 | 48
+8 | ?
+10 | 1536
+[1297] Dengan mempertahankan pola perubahan yang sama, nilai yang diperoleh pada urutan ke-8 adalah ....
+[1298] A. 384
+[1299] B. 192
+[1300] C. 256
+[1301] D. 512
+[1302] E. 768
+[1303] Jawaban: A
+[1304] Pembahasan:
+[1305] Misalkan Un adalah nilai pada urutan ke-n, dengan n menyatakan nomor urutan.
+[1306] Perhatikan hubungan antara urutan dan nilainya.
+[1307] • U1=3×2^(1−1)=3×1=3
+[1308] • U3=3×2^(3−1)=3×4=12
+[1309] • U5=3×2^(5−1)=3×16=48
+[1310] • U10=3×2^(10−1)=3×512=1536
+[1311] Maka pola yang digunakan adalah:
+[1312] Un=3×2^(n−1)
+[1313] U8=3×2^(8−1)=3×128=384
+[1314] Jadi, U8=384.
+[1315] Soal 42
+[1316] Category: Numerik/Kuantitatif
+[1317] Lesson: Deret Bilangan
+[1318] Chapter: Pola Bilangan Tabel
+[1319] Tingkat Kesulitan: Sulit
+[1320] Bentuk Soal: Option New
+[1321] Perhatikan tabel berikut!
+[1322] Urutan ke- | Nilai
+1 | 2
+2 | 6
+4 | 54
+6 | ?
+7 | 1458
+[1323] Bilangan manakah yang melengkapi nilai pada urutan ke-6 sesuai pola hubungan dalam tabel?
+[1324] A. 162
+[1325] B. 324
+[1326] C. 432
+[1327] D. 486
+[1328] E. 1458
+[1329] Jawaban: D
+[1330] Pembahasan:
+[1331] Misalkan Un adalah nilai pada urutan ke-n, dengan n menyatakan nomor urutan.
+[1332] Perhatikan hubungan antara urutan dan nilainya.
+[1333] • U1=2×3^(1−1)=2×1=2
+[1334] • U2=2×3^(2−1)=2×3=6
+[1335] • U4=2×3^(4−1)=2×27=54
+[1336] • U7=2×3^(7−1)=2×729=1458
+[1337] Maka pola yang digunakan adalah:
+[1338] Un=2×3^(n−1)
+[1339] U6=2×3^(6−1)=2×243=486
+[1340] Jadi, U6=486.
+[1341] Soal 43
+[1342] Category: Numerik/Kuantitatif
+[1343] Lesson: Soal Cerita
+[1344] Chapter: Tabel Pernyataan - Kombinasi Pernyataan
+[1345] Tingkat Kesulitan: Mudah
+[1346] Bentuk Soal: Option New
+[1347] Daftar harga satuan menu di sebuah kedai adalah sebagai berikut. Seluruh pembelian dikenai harga sesuai tabel tanpa biaya tambahan.
+[1348] Menu | Harga
+Teh | Rp8.000
+Kopi | Rp12.000
+Roti | Rp10.000
+Puding | Rp7.000
+[1349] Pernyataan:
+[1350] (1) Nara membeli 2 teh dan 1 roti dengan total harga Rp26.000.
+[1351] (2) Aldi membeli 1 kopi dan 2 puding dengan total harga Rp25.000.
+[1352] (3) Mira membeli 2 roti dan 1 puding dengan total harga Rp27.000.
+[1353] (4) Danu membeli 3 teh dan 1 kopi dengan total harga Rp35.000.
+[1354] Kombinasi yang memuat seluruh pernyataan benar adalah ....
+[1355] A. 1 dan 2
+[1356] B. 2 dan 3
+[1357] C. 1 dan 4
+[1358] D. 1 dan 3
+[1359] E. 1, 3, dan 4
+[1360] Jawaban: D
+[1361] Pembahasan:
+[1362] (1) 2(8.000)+10.000=16.000+10.000=26.000, benar
+[1363] (2) 12.000+2(7.000)=26.000≠25.000, salah; coret A dan B.
+[1364] (3) 2(10.000)+7.000=27.000, benar
+[1365] (4) 3(8.000)+12.000=36.000≠35.000, salah; coret C dan E.
+[1366] Benar: 1 dan 3. Kombinasi tersebut terdapat pada opsi D.
+[1367] Soal 44
+[1368] Category: Numerik/Kuantitatif
+[1369] Lesson: Soal Cerita
+[1370] Chapter: Tabel Pernyataan - Kombinasi Pernyataan
+[1371] Tingkat Kesulitan: Sedang
+[1372] Bentuk Soal: Option New
+[1373] Data peserta kegiatan lingkungan di tiga RW tercatat pada tabel berikut. Setiap peserta hanya terdaftar pada satu kegiatan.
+[1374] Kegiatan | RW 01 | RW 02 | RW 03
+Bank sampah | 18 | 15 | 12
+Kebun warga | 9 | 12 | 14
+Daur ulang | 11 | 8 | 9
+Kerajinan | 7 | 10 | 9
+[1375] Pernyataan:
+[1376] (1) Total peserta RW 01 sama dengan total peserta RW 02.
+[1377] (2) Jumlah peserta daur ulang dari ketiga RW adalah 28 orang.
+[1378] (3) RW 03 memiliki peserta kebun warga terbanyak.
+[1379] (4) Selisih total peserta RW 02 dan RW 03 adalah 2 orang.
+[1380] Kombinasi yang memuat seluruh pernyataan benar adalah ....
+[1381] A. 1 dan 2
+[1382] B. 1, 2, dan 3
+[1383] C. 2, 3, dan 4
+[1384] D. 1, 3, dan 4
+[1385] E. 1, 2, 3, dan 4
+[1386] Jawaban: B
+[1387] Pembahasan:
+[1388] (1) RW 01: 18+9+11+7=45 orang.
+[1389] RW 02: 15+12+8+10=45 orang. Kedua total sama, benar.
+[1390] (2) Daur ulang: 11+8+9=28 orang, benar.
+[1391] (3) Kebun warga: 14>12>9; RW 03 terbanyak, benar.
+[1392] (4) RW 03: 12+14+9+9=44 orang.
+[1393] Selisih: 45−44=1≠2 orang, salah; coret C, D, dan E.
+[1394] Benar: 1, 2, dan 3. Opsi A tidak memuat pernyataan (3), sehingga kombinasi lengkap terdapat pada opsi B.
+[1395] Soal 45
+[1396] Category: Numerik/Kuantitatif
+[1397] Lesson: Soal Cerita
+[1398] Chapter: Tabel Pernyataan - Kombinasi Pernyataan
+[1399] Tingkat Kesulitan: Sedang
+[1400] Bentuk Soal: Option New
+[1401] Sebuah gudang mencatat persediaan barang dalam satuan karton. Stok akhir dihitung dari stok awal ditambah barang masuk, kemudian dikurangi barang keluar.
+[1402] Barang | Stok awal | Masuk | Keluar
+Beras | 40 | 15 | 22
+Gula | 30 | 12 | 18
+Minyak | 25 | 20 | 16
+Tepung | 35 | 10 | 24
+[1403] Pernyataan:
+[1404] (1) Stok akhir beras adalah 32 karton.
+[1405] (2) Stok akhir minyak adalah 29 karton.
+[1406] (3) Stok akhir gula lebih banyak 8 karton daripada stok akhir tepung.
+[1407] (4) Jumlah stok akhir seluruh barang adalah 107 karton.
+[1408] Kombinasi yang memuat seluruh pernyataan benar adalah ....
+[1409] A. 2 dan 4
+[1410] B. 1 dan 3
+[1411] C. 1, 2, dan 4
+[1412] D. 2, 3, dan 4
+[1413] E. 1, 2, 3, dan 4
+[1414] Jawaban: A
+[1415] Pembahasan:
+[1416] (1) Beras: 40+15−22=33≠32 karton, salah; coret B, C, dan E.
+[1417] (2) Minyak: 25+20−16=29 karton, benar.
+[1418] (3) Gula: 30+12−18=24 karton; tepung:
+[1419] 35+10−24=21
+[1420] Selisih: 24−21=3≠8 karton, salah; coret D.
+[1421] (4) Jumlah stok akhir: 33+24+29+21=107 karton, benar.
+[1422] Benar: 2 dan 4. Kombinasi tersebut terdapat pada opsi A.
+[1423] Soal 46
+[1424] Category: Numerik/Kuantitatif
+[1425] Lesson: Soal Cerita
+[1426] Chapter: Tabel Pernyataan - Kombinasi Optimal
+[1427] Tingkat Kesulitan: Sedang
+[1428] Bentuk Soal: Option New
+[1429] Sebanyak 264 peserta akan mengikuti kunjungan edukasi. Panitia dapat menggunakan lebih dari satu bus untuk setiap jenis berikut.
+[1430] Jenis Bus | Kapasitas
+Bus A | 32 orang
+Bus B | 44 orang
+Bus C | 60 orang
+[1431] Dengan ketentuan:
+[1432] (1) Seluruh peserta memperoleh tempat duduk.
+[1433] (2) Jumlah kursi kosong dari seluruh bus yang digunakan tidak lebih dari 12 kursi.
+[1434] Kombinasi bus yang memenuhi kedua ketentuan tersebut adalah ....
+[1435] A. 2 bus A dan 3 bus C
+[1436] B. 3 bus A dan 3 bus C
+[1437] C. 3 bus A, 2 bus B, dan 2 bus C
+[1438] D. 3 bus A, 1 bus B, dan 2 bus C
+[1439] E. 2 bus A, 1 bus B, dan 3 bus C
+[1440] Jawaban: B
+[1441] Pembahasan:
+[1442] Periksa total kapasitas setiap pilihan.
+[1443] A. 2(32)+3(60)=244 kursi.
+[1444] Kapasitas tidak cukup untuk 264 peserta.
+[1445] B. 3(32)+3(60)=276 kursi.
+[1446] Kursi kosong: 276−264=12 kursi. Memenuhi batas 12 kursi kosong.
+[1447] C. 3(32)+2(44)+2(60)=304 kursi.
+[1448] Kursi kosong: 304−264=40 kursi. Melebihi batas 12 kursi kosong.
+[1449] D. 3(32)+1(44)+2(60)=260 kursi.
+[1450] Kapasitas tidak cukup untuk 264 peserta.
+[1451] E. 2(32)+1(44)+3(60)=288 kursi.
+[1452] Kursi kosong: 288−264=24 kursi. Melebihi batas 12 kursi kosong.
+[1453] Jadi, kombinasi yang memenuhi seluruh ketentuan adalah 3 bus A dan 3 bus C pada opsi B.
+[1454] Soal 47
+[1455] Category: Numerik/Kuantitatif
+[1456] Lesson: Soal Cerita
+[1457] Chapter: Tabel Pernyataan - Kombinasi Optimal
+[1458] Tingkat Kesulitan: Sulit
+[1459] Bentuk Soal: Option New
+[1460] Panitia akan mengangkut 130 peserta wisata menggunakan bus sewaan. Setiap jenis bus tersedia lebih dari satu dengan kapasitas dan biaya sewa berikut.
+[1461] Bus | Kapasitas | Biaya
+A | 20 orang | Rp900.000
+B | 35 orang | Rp1.330.000
+C | 50 orang | Rp1.800.000
+[1462] Dengan ketentuan:
+[1463] (1) Seluruh peserta harus memperoleh tempat duduk.
+[1464] (2) Panitia memilih total biaya sewa paling rendah.
+[1465] Di antara pilihan berikut, kombinasi bus yang paling hemat adalah ....
+[1466] A. 7 bus A
+[1467] B. 4 bus B
+[1468] C. 4 bus A dan 1 bus C
+[1469] D. 3 bus C
+[1470] E. 1 bus B dan 2 bus C
+[1471] Jawaban: E
+[1472] Pembahasan:
+[1473] Harga per kursi: A 900.000÷20=45.000; B 1.330.000÷35=38.000; C 1.800.000÷50=36.000.
+[1474] Periksa kapasitas dan biaya setiap kombinasi.
+[1475] A. Kapasitas: 7(20)=140 kursi.
+[1476] Biaya: 7(900.000)=6.300.000 rupiah.
+[1477] B. Kapasitas: 4(35)=140 kursi.
+[1478] Biaya: 4(1.330.000)=5.320.000 rupiah.
+[1479] C. Kapasitas: 4(20)+1(50)=130 kursi.
+[1480] Biaya: 4(900.000)+1(1.800.000)=5.400.000 rupiah.
+[1481] D. Kapasitas: 3(50)=150 kursi.
+[1482] Biaya: 3(1.800.000)=5.400.000 rupiah.
+[1483] E. Kapasitas: 1(35)+2(50)=135 kursi.
+[1484] Biaya: 1(1.330.000)+2(1.800.000)=4.930.000 rupiah.
+[1485] Seluruh pilihan memiliki kapasitas yang cukup. Biaya terendah adalah Rp4.930.000 untuk 1 bus B dan 2 bus C, dengan kapasitas 135 kursi. Jadi, pilihan paling hemat adalah opsi E.
+[1486] Soal 48
+[1487] Category: Numerik/Kuantitatif
+[1488] Lesson: Soal Cerita
+[1489] Chapter: Tabel Pernyataan - Kombinasi Optimal
+[1490] Tingkat Kesulitan: HOTS
+[1491] Bentuk Soal: Option New
+[1492] Sebuah persemaian akan membeli baki untuk menempatkan bibit. Tersedia tiga jenis baki dengan kapasitas dan harga berikut.
+[1493] Jenis Baki | Kapasitas | Biaya
+A | 12 bibit | Rp7.000
+B | 20 bibit | Rp11.000
+C | 30 bibit | Rp16.000
+[1494] Dengan ketentuan:
+[1495] (1) Total biaya pembelian tidak melebihi Rp70.000.
+[1496] (2) Jumlah baki yang dibeli paling banyak 6 buah.
+[1497] (3) Baki C tersedia paling banyak 2 buah; baki A dan B tersedia sesuai kebutuhan.
+[1498] Di antara pilihan berikut, kombinasi yang menampung bibit terbanyak dan memenuhi seluruh ketentuan adalah ....
+[1499] A. 6 baki B
+[1500] B. 1 baki A, 4 baki B, dan 1 baki C
+[1501] C. 2 baki A, 2 baki B, dan 2 baki C
+[1502] D. 1 baki A, 3 baki B, dan 2 baki C
+[1503] E. 3 baki A dan 3 baki C
+[1504] Jawaban: C
+[1505] Pembahasan:
+[1506] Periksa jumlah baki, biaya, dan total kapasitas setiap pilihan.
+[1507] A. Jumlah baki 6 buah; kapasitas: 6(20)=120 bibit.
+[1508] Biaya: 6(11.000)=66.000 rupiah. Memenuhi seluruh ketentuan.
+[1509] B. Jumlah baki 6 buah; kapasitas: 1(12)+4(20)+1(30)=122 bibit.
+[1510] Biaya: 1(7.000)+4(11.000)+1(16.000)=67.000 rupiah. Memenuhi seluruh ketentuan.
+[1511] C. Jumlah baki 6 buah; kapasitas: 2(12)+2(20)+2(30)=124 bibit.
+[1512] Biaya: 2(7.000)+2(11.000)+2(16.000)=68.000 rupiah. Memenuhi seluruh ketentuan.
+[1513] D. Jumlah baki 6 buah; kapasitas: 1(12)+3(20)+2(30)=132 bibit.
+[1514] Biaya: 1(7.000)+3(11.000)+2(16.000)=72.000 rupiah. Melebihi anggaran Rp70.000.
+[1515] E. Jumlah baki 6 buah; kapasitas: 3(12)+3(30)=126 bibit.
+[1516] Biaya: 3(7.000)+3(16.000)=69.000 rupiah. Memerlukan 3 baki C, padahal hanya tersedia 2 buah.
+[1517] Pilihan A, B, dan C memenuhi ketentuan. Kapasitas terbesar di antara ketiganya adalah 124 bibit pada pilihan C. Jadi, kombinasi yang dipilih adalah 2 baki A, 2 baki B, dan 2 baki C.

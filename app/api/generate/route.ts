@@ -2,11 +2,12 @@ import { bankStats } from '@/lib/bank';
 import { generate, normalizeSettings } from '@/lib/generate';
 import { TIU_FAMILIES } from '@/lib/tiu';
 import { auditPackages } from '@/lib/validate';
+import { LOCAL_MODELS, LOCAL_RECIPES } from '@/lib/local';
 export const runtime = 'nodejs';
 export const maxDuration = 30;
 
 export async function GET() {
-  return Response.json({ bank: bankStats(), families: TIU_FAMILIES, limits: { packages: 50, count: 200, apiTotal: 1000 } });
+  return Response.json({ bank: bankStats(), families: TIU_FAMILIES, local:{models:LOCAL_MODELS.length,TWK:LOCAL_RECIPES.filter(r=>r.subtest==='TWK').length,TKP:LOCAL_RECIPES.filter(r=>r.subtest==='TKP').length,sources:['accepted','new']}, limits: { packages: 50, count: 200, apiTotal: 1000 } });
 }
 export async function POST(request: Request) {
   try {

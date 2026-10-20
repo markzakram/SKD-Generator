@@ -365,7 +365,7 @@ export function makeTiu(family: Family, difficulty: Difficulty, r: Rng): Draft {
     const top = Array.from({ length: 3 }, () => r.int(2, 12)), bottom = Array.from({ length: 3 }, () => r.int(2, 15));
     const factor = difficulty === 'sedang' ? 2 : r.int(3, 6);
     const middle = top.map((value, i) => factor * value + bottom[i]);
-    q.table = { headers: ['Kolom 1', 'Kolom 2', 'Kolom 3'], rows: [top.map(String), middle.map(String), [String(bottom[0]), String(bottom[1]), '?']] };
+    q.table = { headers: [], rows: [top.map(String), middle.map(String), [String(bottom[0]), String(bottom[1]), '?']] };
     q.stem = 'Pada setiap kolom, bilangan tengah = a × bilangan atas + bilangan bawah, dengan a bilangan bulat positif yang sama.' + (difficulty === 'sedang' ? ' Diketahui a = ' + factor + '.' : ' Tentukan a dari dua kolom yang lengkap.') + ' Nilai yang menggantikan tanda tanya adalah ...';
     q.explanation = 'Balikkan hubungan: bilangan bawah = bilangan tengah − ' + factor + ' × bilangan atas. Pada kolom ketiga: ' +
       middle[2] + ' − ' + factor + ' × ' + top[2] + ' = ' + bottom[2] + '.';

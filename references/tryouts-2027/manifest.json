@@ -1,0 +1,108 @@
+{
+  "documents": [
+    {
+      "file": "Andika - Numerik SKD 2027_Ready to Input.docx",
+      "sha256": "e1091c2e2d4dabe8b6ea92b4443b2fde9c8c290f24ddd8636759d43d33e3eff0",
+      "media": [
+        "word/media/image2.png",
+        "word/media/image3.png",
+        "word/media/image1.png",
+        "word/media/image5.png",
+        "word/media/image4.png",
+        "word/media/image6.png"
+      ],
+      "index": 0,
+      "blocks": 1518
+    },
+    {
+      "file": "Dhea_TWK - Bahasa Negara.docx",
+      "sha256": "bac270fce74c722c31a2b7ec35d855609a633634a276c2d143e30154a81fa2aa",
+      "media": [],
+      "index": 1,
+      "blocks": 105
+    },
+    {
+      "file": "Dhea_TWK (Bahasa Negara)_Done Input.docx",
+      "sha256": "8e4753a9a820d28d042cdb132281c12e44cdcc39954a3ffc0a52459358b5bc03",
+      "media": [],
+      "index": 2,
+      "blocks": 249
+    },
+    {
+      "file": "Nynda_Paket 1 TWK SKD 2027_Done Input.docx",
+      "sha256": "4b7dcad4db3fe96ef09516fd25497149fdf0ac751120f0f73ffba825b620bd7f",
+      "media": [],
+      "index": 3,
+      "blocks": 701
+    },
+    {
+      "file": "Tri_Paket 2 TWK SKD 2027_Done Input.docx",
+      "sha256": "ecff23c3457dae505a8235761e2764a360dd61601de30abaaa24789db77328bb",
+      "media": [],
+      "index": 4,
+      "blocks": 644
+    },
+    {
+      "file": "Tri_Paket 3 TWK SKD 2027_Done Input.docx",
+      "sha256": "496bb5c9cc5f27a0851f35e34213aef0c317efb259bb6355143b2f18235578a7",
+      "media": [],
+      "index": 5,
+      "blocks": 621
+    },
+    {
+      "file": "Nynda - TKP 1_Done Input.docx",
+      "sha256": "d7183d055190bb392388e40cb7a58f66bd5b483b688e11112f0b68192ec7de5a",
+      "media": [],
+      "index": 6,
+      "blocks": 1080
+    },
+    {
+      "file": "Wil - TKP 1_Done Input.docx",
+      "sha256": "96507cce2e63102bc3ed0a85f7657abe9a1ddf7bf27c3247071257f1cbe86259",
+      "media": [],
+      "index": 7,
+      "blocks": 1035
+    },
+    {
+      "file": "Wil - TKP 2_Done Input.docx",
+      "sha256": "410f0033f195d688547685d708440b8918cb32e13015d6258e6d7784c4025008",
+      "media": [],
+      "index": 8,
+      "blocks": 1035
+    },
+    {
+      "file": "Andika - Verbal Silogisme SKD 2027_Ready to Input.docx",
+      "sha256": "71b18437fba6c926b76ea6a73e516e86ee74e1b321b934eea3917a3208a25123",
+      "media": [],
+      "index": 9,
+      "blocks": 622
+    },
+    {
+      "file": "Andika_Verbal Analitis - Memperkuat_Memperlemah_Ready to Input.docx",
+      "sha256": "0467c9e9ae8e2dc43a4f7e9e9bdad90da39e12a7943fb262008a91603c431111",
+      "media": [],
+      "index": 10,
+      "blocks": 207
+    },
+    {
+      "file": "Uma - Verbal Analitis_Done Input.docx",
+      "sha256": "90d7b4e38fbc7250208e2ddf7a8440b3a999425099a0f689ac8ddd5a1f59f9b3",
+      "media": [
+        "word/media/image2.png",
+        "word/media/image1.png",
+        "word/media/image5.png",
+        "word/media/image4.png"
+      ],
+      "index": 11,
+      "blocks": 346
+    }
+  ],
+  "mapping": {
+    "file": "Mapping SKD 2027.xlsx",
+    "sha256": "e8025740c98aa1bfed0dd3fbb250b4e2e6d01500f31beee65b584d842b5d2209",
+    "sheets": [
+      "1 TO 0 Latsol",
+      "3 TO 0 Latsol"
+    ]
+  }
+}

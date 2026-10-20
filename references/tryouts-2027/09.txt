@@ -1,0 +1,623 @@
+FILE: Andika - Verbal Silogisme SKD 2027_Ready to Input.docx
+[0] Soal 1
+[1] Category: Penalaran Verbal
+[2] Lesson: Silogisme
+[3] Chapter: 2 Premis - Narasi
+[4] Tingkat Kesulitan: HOTS
+[5] Bentuk Soal: Option New
+[6] Untuk menyusun penawaran keramik kepada pembeli luar negeri, pengelola bengkel memasukkan ke dalam katalog ekspor setiap produk yang telah lolos pemeriksaan ketahanan, sebagai bagian dari pendataan produk yang ditawarkan melalui layanan penjualan ekspor bengkel tersebut. Petugas pengelola pesanan kemudian memberikan kode pelacakan khusus kepada setiap produk yang masuk katalog ekspor, agar pencatatan produk dalam penawaran kepada pembeli luar negeri dapat dilakukan dengan menggunakan pengenal produk pada sistem pesanan bengkel.
+[7] Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....
+[8] A. Kepemilikan kode pelacakan khusus menjamin produk keramik telah lolos pemeriksaan ketahanan.
+[9] B. Tidak lolosnya produk keramik dalam pemeriksaan ketahanan menjamin produk tersebut tidak memperoleh kode pelacakan khusus.
+[10] C. Kelulusan produk keramik dalam pemeriksaan ketahanan menjamin perolehan kode pelacakan khusus.
+[11] D. Masuknya produk keramik ke katalog ekspor menunjukkan bahwa produk tersebut telah lolos pemeriksaan ketahanan.
+[12] E. Pemberian kode pelacakan khusus menjamin produk keramik telah dimasukkan ke dalam katalog ekspor.
+[13] Jawaban: C
+[14] Pembahasan:
+[15] Premis 1: Untuk menyusun penawaran keramik kepada pembeli luar negeri, pengelola bengkel memasukkan ke dalam katalog ekspor setiap produk yang telah lolos pemeriksaan ketahanan, sebagai bagian dari pendataan produk yang ditawarkan melalui layanan penjualan ekspor bengkel tersebut.
+[16] Premis 2: Petugas pengelola pesanan kemudian memberikan kode pelacakan khusus kepada setiap produk yang masuk katalog ekspor, agar pencatatan produk dalam penawaran kepada pembeli luar negeri dapat dilakukan dengan menggunakan pengenal produk pada sistem pesanan bengkel.
+[17] p: Produk keramik lolos pemeriksaan ketahanan.
+[18] q: Produk keramik masuk katalog ekspor.
+[19] r: Produk keramik memperoleh kode pelacakan khusus.
+[20] Premis 1: p → q
+[21] Premis 2: q → r
+[22] Gunakan hukum Silogisme. Terpenuhinya p menjamin q, sedangkan q menjamin r; hubungan ini berlaku untuk subjek yang sama.
+[23] Kesimpulan: p → r
+[24] Jawaban: Kelulusan produk keramik dalam pemeriksaan ketahanan menjamin perolehan kode pelacakan khusus.
+[25] Analisis setiap opsi:
+[26] A. Kepemilikan kode pelacakan khusus menjamin produk keramik telah lolos pemeriksaan ketahanan.
+[27] → r → p. Hubungan r → p membalik arah hasil silogisme; terpenuhinya r tidak membuktikan p. (bukan kesimpulan yang dicari)
+[28] B. Tidak lolosnya produk keramik dalam pemeriksaan ketahanan menjamin produk tersebut tidak memperoleh kode pelacakan khusus.
+[29] → ¬p → ¬r. Hubungan ¬p → ¬r menolak anteseden. Tanpa p, r tetap mungkin terpenuhi melalui keadaan lain. (bukan kesimpulan yang dicari)
+[30] C. Kelulusan produk keramik dalam pemeriksaan ketahanan menjamin perolehan kode pelacakan khusus.
+[31] → p → r. Hubungan ini diperoleh melalui kedua premis yang relevan. (kesimpulan yang dicari)
+[32] D. Masuknya produk keramik ke katalog ekspor menunjukkan bahwa produk tersebut telah lolos pemeriksaan ketahanan.
+[33] → q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)
+[34] E. Pemberian kode pelacakan khusus menjamin produk keramik telah dimasukkan ke dalam katalog ekspor.
+[35] → r → q. Hubungan r → q membalik Premis 2. Terpenuhinya r tidak membuktikan q. (bukan kesimpulan yang dicari)
+[36] Soal 2
+[37] Category: Penalaran Verbal
+[38] Lesson: Silogisme
+[39] Chapter: 2 Premis - Narasi
+[40] Tingkat Kesulitan: HOTS
+[41] Bentuk Soal: Option New
+[42] Dalam mengatur peserta perjalanan menyusuri sungai, petugas layanan mengikutsertakan setiap wisatawan yang memesan perjalanan menyusuri sungai dalam pengarahan keselamatan, sebagai bagian dari persiapan peserta untuk mengikuti kegiatan wisata sungai melalui layanan perjalanan tersebut. Untuk mengatur akses peserta menuju dermaga keberangkatan, petugas memberikan kartu akses dermaga kepada setiap wisatawan yang mengikuti pengarahan keselamatan, sehingga peserta dalam kelompok pengarahan tersebut mendapatkan kartu yang dimaksud dalam prosedur akses layanan wisata sungai.
+[43] Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....
+[44] A. Pemesanan perjalanan menyusuri sungai menjamin wisatawan menerima kartu akses dermaga.
+[45] B. Kartu akses dermaga hanya diterima oleh wisatawan yang memesan perjalanan menyusuri sungai.
+[46] C. Keikutsertaan dalam pengarahan keselamatan menunjukkan bahwa wisatawan telah memesan perjalanan menyusuri sungai.
+[47] D. Ketiadaan pemesanan perjalanan menyusuri sungai menjamin wisatawan tidak menerima kartu akses dermaga.
+[48] E. Penerimaan kartu akses dermaga menunjukkan bahwa wisatawan telah mengikuti pengarahan keselamatan.
+[49] Jawaban: A
+[50] Pembahasan:
+[51] Premis 1: Dalam mengatur peserta perjalanan menyusuri sungai, petugas layanan mengikutsertakan setiap wisatawan yang memesan perjalanan menyusuri sungai dalam pengarahan keselamatan, sebagai bagian dari persiapan peserta untuk mengikuti kegiatan wisata sungai melalui layanan perjalanan tersebut.
+[52] Premis 2: Untuk mengatur akses peserta menuju dermaga keberangkatan, petugas memberikan kartu akses dermaga kepada setiap wisatawan yang mengikuti pengarahan keselamatan, sehingga peserta dalam kelompok pengarahan tersebut mendapatkan kartu yang dimaksud dalam prosedur akses layanan wisata sungai.
+[53] p: Wisatawan memesan perjalanan menyusuri sungai.
+[54] q: Wisatawan mengikuti pengarahan keselamatan.
+[55] r: Wisatawan menerima kartu akses dermaga.
+[56] Premis 1: p → q
+[57] Premis 2: q → r
+[58] Gunakan hukum Silogisme. Terpenuhinya p menjamin q, sedangkan q menjamin r; hubungan ini berlaku untuk subjek yang sama.
+[59] Kesimpulan: p → r
+[60] Jawaban: Pemesanan perjalanan menyusuri sungai menjamin wisatawan menerima kartu akses dermaga.
+[61] Analisis setiap opsi:
+[62] A. Pemesanan perjalanan menyusuri sungai menjamin wisatawan menerima kartu akses dermaga.
+[63] → p → r. Hubungan ini diperoleh melalui kedua premis yang relevan. (kesimpulan yang dicari)
+[64] B. Kartu akses dermaga hanya diterima oleh wisatawan yang memesan perjalanan menyusuri sungai.
+[65] → r → p. Hubungan r → p membalik arah hasil silogisme; terpenuhinya r tidak membuktikan p. (bukan kesimpulan yang dicari)
+[66] C. Keikutsertaan dalam pengarahan keselamatan menunjukkan bahwa wisatawan telah memesan perjalanan menyusuri sungai.
+[67] → q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)
+[68] D. Ketiadaan pemesanan perjalanan menyusuri sungai menjamin wisatawan tidak menerima kartu akses dermaga.
+[69] → ¬p → ¬r. Hubungan ¬p → ¬r menolak anteseden. Tanpa p, r tetap mungkin terpenuhi melalui keadaan lain. (bukan kesimpulan yang dicari)
+[70] E. Penerimaan kartu akses dermaga menunjukkan bahwa wisatawan telah mengikuti pengarahan keselamatan.
+[71] → r → q. Hubungan r → q membalik Premis 2. Terpenuhinya r tidak membuktikan q. (bukan kesimpulan yang dicari)
+[72] Soal 3
+[73] Category: Penalaran Verbal
+[74] Lesson: Silogisme
+[75] Chapter: 2 Premis - Narasi
+[76] Tingkat Kesulitan: HOTS
+[77] Bentuk Soal: Option New
+[78] Pada usaha pengolahan pangan, petugas menata persediaan yang menunggu pengiriman kepada pelanggan dengan menempatkan di gudang kering setiap olahan yang tidak memerlukan penyimpanan dingin, sesuai pengaturan tempat penyimpanan bagi kelompok olahan tersebut. Dalam pengemasan persediaan yang disimpan pada tempat itu, petugas menggunakan kemasan berlapis penghalang uap air untuk setiap olahan yang ditempatkan di gudang kering, sebagai bentuk pengemasan yang diterapkan usaha tersebut pada produk dalam kelompok penyimpanan itu.
+[79] Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....
+[80] A. Penggunaan kemasan berlapis penghalang uap air menjamin olahan tersebut tidak memerlukan penyimpanan dingin.
+[81] B. Penempatan olahan di gudang kering menunjukkan bahwa penyimpanan dingin tidak diperlukan untuk olahan tersebut.
+[82] C. Kebutuhan penyimpanan dingin menjamin olahan tersebut tidak menggunakan kemasan berlapis penghalang uap air.
+[83] D. Kemasan berlapis penghalang uap air hanya digunakan oleh olahan yang ditempatkan di gudang kering.
+[84] E. Olahan tanpa kebutuhan penyimpanan dingin dipastikan menggunakan kemasan berlapis penghalang uap air.
+[85] Jawaban: E
+[86] Pembahasan:
+[87] Premis 1: Pada usaha pengolahan pangan, petugas menata persediaan yang menunggu pengiriman kepada pelanggan dengan menempatkan di gudang kering setiap olahan yang tidak memerlukan penyimpanan dingin, sesuai pengaturan tempat penyimpanan bagi kelompok olahan tersebut.
+[88] Premis 2: Dalam pengemasan persediaan yang disimpan pada tempat itu, petugas menggunakan kemasan berlapis penghalang uap air untuk setiap olahan yang ditempatkan di gudang kering, sebagai bentuk pengemasan yang diterapkan usaha tersebut pada produk dalam kelompok penyimpanan itu.
+[89] p: Olahan pangan tidak memerlukan penyimpanan dingin.
+[90] q: Olahan pangan ditempatkan di gudang kering.
+[91] r: Olahan pangan menggunakan kemasan berlapis penghalang uap air.
+[92] Premis 1: p → q
+[93] Premis 2: q → r
+[94] Gunakan hukum Silogisme. Terpenuhinya p menjamin q, sedangkan q menjamin r; hubungan ini berlaku untuk subjek yang sama.
+[95] Kesimpulan: p → r
+[96] Jawaban: Olahan tanpa kebutuhan penyimpanan dingin dipastikan menggunakan kemasan berlapis penghalang uap air.
+[97] Analisis setiap opsi:
+[98] A. Penggunaan kemasan berlapis penghalang uap air menjamin olahan tersebut tidak memerlukan penyimpanan dingin.
+[99] → r → p. Hubungan r → p membalik arah hasil silogisme; terpenuhinya r tidak membuktikan p. (bukan kesimpulan yang dicari)
+[100] B. Penempatan olahan di gudang kering menunjukkan bahwa penyimpanan dingin tidak diperlukan untuk olahan tersebut.
+[101] → q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)
+[102] C. Kebutuhan penyimpanan dingin menjamin olahan tersebut tidak menggunakan kemasan berlapis penghalang uap air.
+[103] → ¬p → ¬r. Hubungan ¬p → ¬r menolak anteseden. Tanpa p, r tetap mungkin terpenuhi melalui keadaan lain. (bukan kesimpulan yang dicari)
+[104] D. Kemasan berlapis penghalang uap air hanya digunakan oleh olahan yang ditempatkan di gudang kering.
+[105] → r → q. Hubungan r → q membalik Premis 2. Terpenuhinya r tidak membuktikan q. (bukan kesimpulan yang dicari)
+[106] E. Olahan tanpa kebutuhan penyimpanan dingin dipastikan menggunakan kemasan berlapis penghalang uap air.
+[107] → p → r. Hubungan ini diperoleh melalui kedua premis yang relevan. (kesimpulan yang dicari)
+[108] Soal 4
+[109] Category: Penalaran Verbal
+[110] Lesson: Silogisme
+[111] Chapter: 2 Premis - Narasi
+[112] Tingkat Kesulitan: HOTS
+[113] Bentuk Soal: Option New
+[114] Untuk mengelola pengerjaan pengalihan koleksi ke bentuk digital, petugas perpustakaan memasukkan ke dalam antrean digitalisasi setiap naskah yang memiliki izin penggandaan, sehingga naskah dengan izin tersebut menjadi bagian dari antrean pengerjaan koleksi perpustakaan. Ruang digitalisasi berada di sisi ruang baca yang menghadap taman. Pada pencatatan layanan digitalisasi koleksi, petugas memberikan nomor arsip digital kepada setiap naskah yang masuk antrean digitalisasi, sebagai nomor identitas naskah dalam pencatatan arsip yang dikelola perpustakaan melalui layanan pengolahan koleksi tersebut.
+[115] Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....
+[116] A. Nomor arsip digital hanya diperoleh oleh naskah yang memiliki izin penggandaan.
+[117] B. Izin penggandaan yang dimiliki naskah menjamin perolehan nomor arsip digital bagi naskah tersebut.
+[118] C. Ketiadaan izin penggandaan menjamin naskah tidak memperoleh nomor dalam pencatatan arsip digital.
+[119] D. Keberadaan naskah dalam antrean digitalisasi menjamin tersedianya izin penggandaan untuk naskah tersebut.
+[120] E. Pemberian nomor arsip digital menunjukkan bahwa naskah tersebut masuk ke antrean digitalisasi.
+[121] Jawaban: B
+[122] Pembahasan:
+[123] Premis 1: Untuk mengelola pengerjaan pengalihan koleksi ke bentuk digital, petugas perpustakaan memasukkan ke dalam antrean digitalisasi setiap naskah yang memiliki izin penggandaan, sehingga naskah dengan izin tersebut menjadi bagian dari antrean pengerjaan koleksi perpustakaan.
+[124] Premis 2: Pada pencatatan layanan digitalisasi koleksi, petugas memberikan nomor arsip digital kepada setiap naskah yang masuk antrean digitalisasi, sebagai nomor identitas naskah dalam pencatatan arsip yang dikelola perpustakaan melalui layanan pengolahan koleksi tersebut.
+[125] Kalimat “Ruang digitalisasi berada di sisi ruang baca yang menghadap taman.” merupakan informasi pengecoh karena letak ruang tidak menentukan hubungan antara izin penggandaan, antrean digitalisasi, dan pemberian nomor arsip. Kalimat ini tidak dijadikan variabel logis dan tidak digunakan dalam penarikan kesimpulan.
+[126] p: Naskah memiliki izin penggandaan.
+[127] q: Naskah masuk antrean digitalisasi.
+[128] r: Naskah memperoleh nomor arsip digital.
+[129] Premis 1: p → q
+[130] Premis 2: q → r
+[131] Gunakan hukum Silogisme. Terpenuhinya p menjamin q, sedangkan q menjamin r; hubungan ini berlaku untuk subjek yang sama.
+[132] Kesimpulan: p → r
+[133] Jawaban: Izin penggandaan yang dimiliki naskah menjamin perolehan nomor arsip digital bagi naskah tersebut.
+[134] Analisis setiap opsi:
+[135] A. Nomor arsip digital hanya diperoleh oleh naskah yang memiliki izin penggandaan.
+[136] → r → p. Hubungan r → p membalik arah hasil silogisme; terpenuhinya r tidak membuktikan p. (bukan kesimpulan yang dicari)
+[137] B. Izin penggandaan yang dimiliki naskah menjamin perolehan nomor arsip digital bagi naskah tersebut.
+[138] → p → r. Hubungan ini diperoleh melalui kedua premis yang relevan. (kesimpulan yang dicari)
+[139] C. Ketiadaan izin penggandaan menjamin naskah tidak memperoleh nomor dalam pencatatan arsip digital.
+[140] → ¬p → ¬r. Hubungan ¬p → ¬r menolak anteseden. Tanpa p, r tetap mungkin terpenuhi melalui keadaan lain. (bukan kesimpulan yang dicari)
+[141] D. Keberadaan naskah dalam antrean digitalisasi menjamin tersedianya izin penggandaan untuk naskah tersebut.
+[142] → q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)
+[143] E. Pemberian nomor arsip digital menunjukkan bahwa naskah tersebut masuk ke antrean digitalisasi.
+[144] → r → q. Hubungan r → q membalik Premis 2. Terpenuhinya r tidak membuktikan q. (bukan kesimpulan yang dicari)
+[145] Soal 5
+[146] Category: Penalaran Verbal
+[147] Lesson: Silogisme
+[148] Chapter: 2 Premis - Narasi
+[149] Tingkat Kesulitan: HOTS
+[150] Bentuk Soal: Option New
+[151] Dalam mengatur bibit untuk kegiatan pembesaran, pengelola kebun menempatkan setiap bibit yang memenuhi standar kesehatan di petak pembesaran, sebagai bagian dari penataan bibit pada tempat yang digunakan kebun untuk pengelolaan tahap pembesaran. Petak pembesaran terletak di dekat jalur yang biasa dilewati pengunjung kebun. Untuk pencatatan persediaan bibit pada tahap tersebut, petugas memberikan penanda varietas kepada setiap bibit yang ditempatkan di petak pembesaran, sehingga varietas bibit pada kelompok penempatan itu dinyatakan melalui penanda dalam pengelolaan persediaan kebun.
+[152] Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....
+[153] A. Penanda varietas hanya diberikan kepada bibit yang memenuhi standar kesehatan.
+[154] B. Petak pembesaran hanya ditempati oleh bibit yang memenuhi standar kesehatan.
+[155] C. Kegagalan bibit memenuhi standar kesehatan menjamin bibit tidak mendapat penanda varietas.
+[156] D. Pemenuhan standar kesehatan oleh bibit menjamin perolehan penanda varietas bagi bibit tersebut.
+[157] E. Kepemilikan penanda varietas menunjukkan bahwa bibit tersebut ditempatkan di petak pembesaran.
+[158] Jawaban: D
+[159] Pembahasan:
+[160] Premis 1: Dalam mengatur bibit untuk kegiatan pembesaran, pengelola kebun menempatkan setiap bibit yang memenuhi standar kesehatan di petak pembesaran, sebagai bagian dari penataan bibit pada tempat yang digunakan kebun untuk pengelolaan tahap pembesaran.
+[161] Premis 2: Untuk pencatatan persediaan bibit pada tahap tersebut, petugas memberikan penanda varietas kepada setiap bibit yang ditempatkan di petak pembesaran, sehingga varietas bibit pada kelompok penempatan itu dinyatakan melalui penanda dalam pengelolaan persediaan kebun.
+[162] Kalimat “Petak pembesaran terletak di dekat jalur yang biasa dilewati pengunjung kebun.” merupakan informasi pengecoh karena kedekatan petak dengan jalur pengunjung tidak menentukan standar kesehatan maupun pemberian penanda varietas. Kalimat ini tidak dijadikan variabel logis dan tidak digunakan dalam penarikan kesimpulan.
+[163] p: Bibit memenuhi standar kesehatan.
+[164] q: Bibit ditempatkan di petak pembesaran.
+[165] r: Bibit mendapat penanda varietas.
+[166] Premis 1: p → q
+[167] Premis 2: q → r
+[168] Gunakan hukum Silogisme. Terpenuhinya p menjamin q, sedangkan q menjamin r; hubungan ini berlaku untuk subjek yang sama.
+[169] Kesimpulan: p → r
+[170] Jawaban: Pemenuhan standar kesehatan oleh bibit menjamin perolehan penanda varietas bagi bibit tersebut.
+[171] Analisis setiap opsi:
+[172] A. Penanda varietas hanya diberikan kepada bibit yang memenuhi standar kesehatan.
+[173] → r → p. Hubungan r → p membalik arah hasil silogisme; terpenuhinya r tidak membuktikan p. (bukan kesimpulan yang dicari)
+[174] B. Petak pembesaran hanya ditempati oleh bibit yang memenuhi standar kesehatan.
+[175] → q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)
+[176] C. Kegagalan bibit memenuhi standar kesehatan menjamin bibit tidak mendapat penanda varietas.
+[177] → ¬p → ¬r. Hubungan ¬p → ¬r menolak anteseden. Tanpa p, r tetap mungkin terpenuhi melalui keadaan lain. (bukan kesimpulan yang dicari)
+[178] D. Pemenuhan standar kesehatan oleh bibit menjamin perolehan penanda varietas bagi bibit tersebut.
+[179] → p → r. Hubungan ini diperoleh melalui kedua premis yang relevan. (kesimpulan yang dicari)
+[180] E. Kepemilikan penanda varietas menunjukkan bahwa bibit tersebut ditempatkan di petak pembesaran.
+[181] → r → q. Hubungan r → q membalik Premis 2. Terpenuhinya r tidak membuktikan q. (bukan kesimpulan yang dicari)
+[182] Soal 6
+[183] Category: Penalaran Verbal
+[184] Lesson: Silogisme
+[185] Chapter: 2 Premis - Narasi
+[186] Tingkat Kesulitan: HOTS
+[187] Bentuk Soal: Option New
+[188] Melalui pengaturan keamanan pada aplikasi penyimpanan foto, sistem memasukkan setiap akun yang mengaktifkan verifikasi dua langkah ke dalam kelompok perlindungan tambahan, sebagai kelompok akun yang dikelola melalui pengaturan perlindungan tambahan pada layanan aplikasi tersebut. Halaman pengaturan keamanan menggunakan ikon perisai berwarna biru. Untuk layanan pemberitahuan aktivitas masuk, sistem mengirimkan pemberitahuan masuk melalui surel kepada setiap akun yang masuk kelompok perlindungan tambahan, sehingga akun dalam kelompok tersebut mendapatkan pemberitahuan melalui saluran surel sebagaimana diatur pada layanan keamanan aplikasi.
+[189] Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....
+[190] A. Verifikasi dua langkah yang diaktifkan pada akun menjamin perolehan pemberitahuan masuk melalui surel.
+[191] B. Pemberitahuan masuk melalui surel hanya diperoleh oleh akun yang mengaktifkan verifikasi dua langkah.
+[192] C. Keanggotaan dalam kelompok perlindungan tambahan menunjukkan bahwa akun telah mengaktifkan verifikasi dua langkah.
+[193] D. Tanpa pengaktifan verifikasi dua langkah, akun dipastikan tidak memperoleh pemberitahuan masuk melalui surel.
+[194] E. Akun penerima pemberitahuan masuk melalui surel dipastikan masuk ke kelompok perlindungan tambahan.
+[195] Jawaban: A
+[196] Pembahasan:
+[197] Premis 1: Melalui pengaturan keamanan pada aplikasi penyimpanan foto, sistem memasukkan setiap akun yang mengaktifkan verifikasi dua langkah ke dalam kelompok perlindungan tambahan, sebagai kelompok akun yang dikelola melalui pengaturan perlindungan tambahan pada layanan aplikasi tersebut.
+[198] Premis 2: Untuk layanan pemberitahuan aktivitas masuk, sistem mengirimkan pemberitahuan masuk melalui surel kepada setiap akun yang masuk kelompok perlindungan tambahan, sehingga akun dalam kelompok tersebut mendapatkan pemberitahuan melalui saluran surel sebagaimana diatur pada layanan keamanan aplikasi.
+[199] Kalimat “Halaman pengaturan keamanan menggunakan ikon perisai berwarna biru.” merupakan informasi pengecoh karena bentuk dan warna ikon tidak menentukan pengelompokan akun atau layanan pemberitahuan masuk. Kalimat ini tidak dijadikan variabel logis dan tidak digunakan dalam penarikan kesimpulan.
+[200] p: Akun mengaktifkan verifikasi dua langkah.
+[201] q: Akun masuk kelompok perlindungan tambahan.
+[202] r: Akun memperoleh pemberitahuan masuk melalui surel.
+[203] Premis 1: p → q
+[204] Premis 2: q → r
+[205] Gunakan hukum Silogisme. Terpenuhinya p menjamin q, sedangkan q menjamin r; hubungan ini berlaku untuk subjek yang sama.
+[206] Kesimpulan: p → r
+[207] Jawaban: Verifikasi dua langkah yang diaktifkan pada akun menjamin perolehan pemberitahuan masuk melalui surel.
+[208] Analisis setiap opsi:
+[209] A. Verifikasi dua langkah yang diaktifkan pada akun menjamin perolehan pemberitahuan masuk melalui surel.
+[210] → p → r. Hubungan ini diperoleh melalui kedua premis yang relevan. (kesimpulan yang dicari)
+[211] B. Pemberitahuan masuk melalui surel hanya diperoleh oleh akun yang mengaktifkan verifikasi dua langkah.
+[212] → r → p. Hubungan r → p membalik arah hasil silogisme; terpenuhinya r tidak membuktikan p. (bukan kesimpulan yang dicari)
+[213] C. Keanggotaan dalam kelompok perlindungan tambahan menunjukkan bahwa akun telah mengaktifkan verifikasi dua langkah.
+[214] → q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)
+[215] D. Tanpa pengaktifan verifikasi dua langkah, akun dipastikan tidak memperoleh pemberitahuan masuk melalui surel.
+[216] → ¬p → ¬r. Hubungan ¬p → ¬r menolak anteseden. Tanpa p, r tetap mungkin terpenuhi melalui keadaan lain. (bukan kesimpulan yang dicari)
+[217] E. Akun penerima pemberitahuan masuk melalui surel dipastikan masuk ke kelompok perlindungan tambahan.
+[218] → r → q. Hubungan r → q membalik Premis 2. Terpenuhinya r tidak membuktikan q. (bukan kesimpulan yang dicari)
+[219] Soal 7
+[220] Category: Penalaran Verbal
+[221] Lesson: Silogisme
+[222] Chapter: 3 Premis - Narasi
+[223] Tingkat Kesulitan: HOTS
+[224] Bentuk Soal: Option New
+[225] Dalam mengatur pemakaian taman bersama untuk acara komunitas, pengurus mencantumkan dalam agenda kawasan setiap kegiatan yang memperoleh persetujuan penggunaan taman, sebagai bagian dari pencatatan kegiatan komunitas yang diselenggarakan melalui layanan penggunaan taman tersebut. Pada pengaturan pemakaian panggung untuk acara komunitas, pengurus memberikan jadwal penggunaan panggung kepada setiap kegiatan yang masuk agenda kawasan, sehingga kegiatan dalam agenda itu mendapatkan alokasi jadwal pemakaian panggung pada pengelolaan fasilitas taman. Untuk pengelolaan fasilitas listrik pada pelaksanaan acara, pengurus menyediakan akses listrik panggung bagi setiap kegiatan yang mendapat jadwal penggunaan panggung, sebagai akses pemakaian listrik yang diberikan melalui layanan fasilitas panggung di taman bersama tersebut.
+[226] Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....
+[227] A. Akses listrik panggung hanya diperoleh oleh kegiatan yang mendapat persetujuan penggunaan taman.
+[228] B. Ketiadaan persetujuan penggunaan taman menjamin kegiatan tersebut tidak memperoleh akses listrik panggung.
+[229] C. Pencantuman kegiatan dalam agenda kawasan menunjukkan bahwa persetujuan penggunaan taman telah diperoleh.
+[230] D. Persetujuan penggunaan taman yang diperoleh kegiatan menjamin perolehan akses listrik panggung bagi kegiatan tersebut.
+[231] E. Perolehan akses listrik panggung menunjukkan bahwa kegiatan telah mendapat jadwal penggunaan panggung.
+[232] Jawaban: D
+[233] Pembahasan:
+[234] Premis 1: Dalam mengatur pemakaian taman bersama untuk acara komunitas, pengurus mencantumkan dalam agenda kawasan setiap kegiatan yang memperoleh persetujuan penggunaan taman, sebagai bagian dari pencatatan kegiatan komunitas yang diselenggarakan melalui layanan penggunaan taman tersebut.
+[235] Premis 2: Pada pengaturan pemakaian panggung untuk acara komunitas, pengurus memberikan jadwal penggunaan panggung kepada setiap kegiatan yang masuk agenda kawasan, sehingga kegiatan dalam agenda itu mendapatkan alokasi jadwal pemakaian panggung pada pengelolaan fasilitas taman.
+[236] Premis 3: Untuk pengelolaan fasilitas listrik pada pelaksanaan acara, pengurus menyediakan akses listrik panggung bagi setiap kegiatan yang mendapat jadwal penggunaan panggung, sebagai akses pemakaian listrik yang diberikan melalui layanan fasilitas panggung di taman bersama tersebut.
+[237] p: Kegiatan komunitas memperoleh persetujuan penggunaan taman.
+[238] q: Kegiatan komunitas masuk agenda kawasan.
+[239] r: Kegiatan komunitas mendapat jadwal penggunaan panggung.
+[240] s: Kegiatan komunitas memperoleh akses listrik panggung.
+[241] • Langkah 1 (Premis 1 + 2):
+[242] Premis 1: p → q
+[243] Premis 2: q → r
+[244] Gunakan hukum Silogisme.
+[245] Kesimpulan (Premis 4): p → r
+[246] • Langkah 2 (Premis 4 + 3):
+[247] Premis 4: p → r
+[248] Premis 3: r → s
+[249] Gunakan hukum Silogisme. Terpenuhinya p menjamin r, sedangkan r menjamin s.
+[250] Kesimpulan: p → s
+[251] Jawaban: Persetujuan penggunaan taman yang diperoleh kegiatan menjamin perolehan akses listrik panggung bagi kegiatan tersebut.
+[252] Analisis setiap opsi:
+[253] A. Akses listrik panggung hanya diperoleh oleh kegiatan yang mendapat persetujuan penggunaan taman.
+[254] → s → p. Hubungan s → p membalik arah rangkaian implikasi. Terpenuhinya s tidak membuktikan p. (bukan kesimpulan yang dicari)
+[255] B. Ketiadaan persetujuan penggunaan taman menjamin kegiatan tersebut tidak memperoleh akses listrik panggung.
+[256] → ¬p → ¬s. Hubungan ¬p → ¬s menolak anteseden. Ketiadaan p tidak mengharuskan ketiadaan s. (bukan kesimpulan yang dicari)
+[257] C. Pencantuman kegiatan dalam agenda kawasan menunjukkan bahwa persetujuan penggunaan taman telah diperoleh.
+[258] → q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)
+[259] D. Persetujuan penggunaan taman yang diperoleh kegiatan menjamin perolehan akses listrik panggung bagi kegiatan tersebut.
+[260] → p → s. Hasil ini diperoleh melalui dua langkah penalaran di atas. (kesimpulan yang dicari)
+[261] E. Perolehan akses listrik panggung menunjukkan bahwa kegiatan telah mendapat jadwal penggunaan panggung.
+[262] → s → r. Hubungan s → r membalik Premis 3. Terpenuhinya s tidak membuktikan r. (bukan kesimpulan yang dicari)
+[263] Soal 8
+[264] Category: Penalaran Verbal
+[265] Lesson: Silogisme
+[266] Chapter: 3 Premis - Narasi
+[267] Tingkat Kesulitan: HOTS
+[268] Bentuk Soal: Option New
+[269] Dalam mendampingi peserta program latihan pemulihan, pusat latihan olahraga mengatur agar setiap peserta yang mengikuti program latihan pemulihan menjalani pemeriksaan kebugaran, sebagai bagian dari pemeriksaan kondisi peserta pada rangkaian kegiatan program latihan tersebut. Pada pengelolaan kegiatan latihan peserta, pendamping memberikan rencana latihan individual kepada setiap peserta yang menjalani pemeriksaan kebugaran, sehingga peserta dalam kelompok pemeriksaan itu mendapatkan rencana latihan masing-masing melalui layanan pendampingan di pusat latihan. Di pusat latihan yang menerapkan ketentuan tersebut, Nara mengikuti program latihan pemulihan, sehingga keikutsertaan Nara berada dalam lingkup program yang dimaksud pada uraian pelayanan peserta di atas.
+[270] Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....
+[271] A. Pemeriksaan kebugaran tidak dijalani oleh Nara dalam program latihan di pusat tersebut.
+[272] B. Rencana latihan individual diperoleh Nara melalui program latihan di pusat tersebut.
+[273] C. Latihan pemulihan dalam program di pusat tersebut tidak diikuti oleh Nara.
+[274] D. Perolehan rencana latihan individual oleh Nara tidak terjadi dalam program di pusat tersebut.
+[275] E. Tanpa menjalani pemeriksaan kebugaran, Nara memperoleh rencana latihan individual di pusat tersebut.
+[276] Jawaban: B
+[277] Pembahasan:
+[278] Premis 1: Dalam mendampingi peserta program latihan pemulihan, pusat latihan olahraga mengatur agar setiap peserta yang mengikuti program latihan pemulihan menjalani pemeriksaan kebugaran, sebagai bagian dari pemeriksaan kondisi peserta pada rangkaian kegiatan program latihan tersebut.
+[279] Premis 2: Pada pengelolaan kegiatan latihan peserta, pendamping memberikan rencana latihan individual kepada setiap peserta yang menjalani pemeriksaan kebugaran, sehingga peserta dalam kelompok pemeriksaan itu mendapatkan rencana latihan masing-masing melalui layanan pendampingan di pusat latihan.
+[280] Premis 3: Di pusat latihan yang menerapkan ketentuan tersebut, Nara mengikuti program latihan pemulihan, sehingga keikutsertaan Nara berada dalam lingkup program yang dimaksud pada uraian pelayanan peserta di atas.
+[281] Untuk menerapkan aturan umum pada Nara, p, q, dan r berikut merujuk pada subjek tersebut.
+[282] p: Nara mengikuti program latihan pemulihan.
+[283] q: Nara menjalani pemeriksaan kebugaran.
+[284] r: Nara memperoleh rencana latihan individual.
+[285] • Langkah 1 (Premis 1 + 2):
+[286] Premis 1: p → q
+[287] Premis 2: q → r
+[288] Gunakan hukum Silogisme.
+[289] Kesimpulan (Premis 4): p → r
+[290] • Langkah 2 (Premis 4 + 3):
+[291] Premis 4: p → r
+[292] Premis 3: p
+[293] Gunakan Modus Ponens. Karena p terpenuhi, konsekuensinya, yaitu r, juga terpenuhi.
+[294] Kesimpulan: r
+[295] Jawaban: Rencana latihan individual diperoleh Nara melalui program latihan di pusat tersebut.
+[296] Analisis setiap opsi:
+[297] A. Pemeriksaan kebugaran tidak dijalani oleh Nara dalam program latihan di pusat tersebut.
+[298] → ¬q. Premis 1 dan fakta p menghasilkan q, sehingga ¬q bertentangan dengan hasil penalaran. (bukan kesimpulan yang dicari)
+[299] B. Rencana latihan individual diperoleh Nara melalui program latihan di pusat tersebut.
+[300] → r. Hasil ini diperoleh melalui dua langkah penalaran di atas. (kesimpulan yang dicari)
+[301] C. Latihan pemulihan dalam program di pusat tersebut tidak diikuti oleh Nara.
+[302] → ¬p. Premis 3 menyatakan p, sehingga ¬p bertentangan dengan fakta tersebut. (bukan kesimpulan yang dicari)
+[303] D. Perolehan rencana latihan individual oleh Nara tidak terjadi dalam program di pusat tersebut.
+[304] → ¬r. Rangkaian implikasi dan fakta p menghasilkan r, sehingga ¬r bertentangan dengan kesimpulan. (bukan kesimpulan yang dicari)
+[305] E. Tanpa menjalani pemeriksaan kebugaran, Nara memperoleh rencana latihan individual di pusat tersebut.
+[306] → r ∧ ¬q. Pernyataan ini menggabungkan r dengan ¬q, padahal q juga diperoleh dari Premis 1 dan Premis 3. (bukan kesimpulan yang dicari)
+[307] Soal 9
+[308] Category: Penalaran Verbal
+[309] Lesson: Silogisme
+[310] Chapter: 3 Premis - Narasi
+[311] Tingkat Kesulitan: HOTS
+[312] Bentuk Soal: Option New
+[313] Dalam menata muatan pada layanan angkutan antarkota, petugas mencantumkan ke dalam daftar muatan khusus setiap paket yang dikirim menggunakan layanan angkutan malam, sebagai bagian dari pencatatan paket untuk pengelolaan muatan pengiriman pada layanan malam tersebut. Pada pengelolaan paket dalam pencatatan muatan, petugas memasang segel bernomor pada setiap paket yang masuk daftar muatan khusus, sehingga paket dalam daftar tersebut mendapatkan segel dengan nomor sebagai penanda pada layanan angkutan antarkota. Untuk pencatatan penyerahan muatan antara petugas pengiriman dan penerima muatan, petugas mencantumkan dalam laporan serah terima setiap paket yang memperoleh segel bernomor, sesuai pengelolaan pencatatan paket pada proses serah terima dalam layanan tersebut.
+[314] Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....
+[315] A. Pencatatan paket dalam laporan serah terima menjamin pengirimannya menggunakan layanan angkutan malam.
+[316] B. Daftar muatan khusus hanya memuat paket yang dikirim menggunakan layanan angkutan malam.
+[317] C. Tidak digunakannya layanan angkutan malam untuk mengirim paket menjamin paket tidak tercatat dalam laporan serah terima.
+[318] D. Segel bernomor pasti diperoleh oleh paket yang tercatat dalam laporan serah terima.
+[319] E. Layanan angkutan malam yang digunakan untuk mengirim paket menjamin paket tercatat dalam laporan serah terima.
+[320] Jawaban: E
+[321] Pembahasan:
+[322] Premis 1: Dalam menata muatan pada layanan angkutan antarkota, petugas mencantumkan ke dalam daftar muatan khusus setiap paket yang dikirim menggunakan layanan angkutan malam, sebagai bagian dari pencatatan paket untuk pengelolaan muatan pengiriman pada layanan malam tersebut.
+[323] Premis 2: Pada pengelolaan paket dalam pencatatan muatan, petugas memasang segel bernomor pada setiap paket yang masuk daftar muatan khusus, sehingga paket dalam daftar tersebut mendapatkan segel dengan nomor sebagai penanda pada layanan angkutan antarkota.
+[324] Premis 3: Untuk pencatatan penyerahan muatan antara petugas pengiriman dan penerima muatan, petugas mencantumkan dalam laporan serah terima setiap paket yang memperoleh segel bernomor, sesuai pengelolaan pencatatan paket pada proses serah terima dalam layanan tersebut.
+[325] p: Paket dikirim menggunakan layanan angkutan malam.
+[326] q: Paket masuk daftar muatan khusus.
+[327] r: Paket memperoleh segel bernomor.
+[328] s: Paket tercatat dalam laporan serah terima.
+[329] • Langkah 1 (Premis 1 + 2):
+[330] Premis 1: p → q
+[331] Premis 2: q → r
+[332] Gunakan hukum Silogisme.
+[333] Kesimpulan (Premis 4): p → r
+[334] • Langkah 2 (Premis 4 + 3):
+[335] Premis 4: p → r
+[336] Premis 3: r → s
+[337] Gunakan hukum Silogisme. Terpenuhinya p menjamin r, sedangkan r menjamin s.
+[338] Kesimpulan: p → s
+[339] Jawaban: Layanan angkutan malam yang digunakan untuk mengirim paket menjamin paket tercatat dalam laporan serah terima.
+[340] Analisis setiap opsi:
+[341] A. Pencatatan paket dalam laporan serah terima menjamin pengirimannya menggunakan layanan angkutan malam.
+[342] → s → p. Hubungan s → p membalik arah rangkaian implikasi. Terpenuhinya s tidak membuktikan p. (bukan kesimpulan yang dicari)
+[343] B. Daftar muatan khusus hanya memuat paket yang dikirim menggunakan layanan angkutan malam.
+[344] → q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)
+[345] C. Tidak digunakannya layanan angkutan malam untuk mengirim paket menjamin paket tidak tercatat dalam laporan serah terima.
+[346] → ¬p → ¬s. Hubungan ¬p → ¬s menolak anteseden. Ketiadaan p tidak mengharuskan ketiadaan s. (bukan kesimpulan yang dicari)
+[347] D. Segel bernomor pasti diperoleh oleh paket yang tercatat dalam laporan serah terima.
+[348] → s → r. Hubungan s → r membalik Premis 3. Terpenuhinya s tidak membuktikan r. (bukan kesimpulan yang dicari)
+[349] E. Layanan angkutan malam yang digunakan untuk mengirim paket menjamin paket tercatat dalam laporan serah terima.
+[350] → p → s. Hasil ini diperoleh melalui dua langkah penalaran di atas. (kesimpulan yang dicari)
+[351] Soal 10
+[352] Category: Penalaran Verbal
+[353] Lesson: Silogisme
+[354] Chapter: 3 Premis - Narasi
+[355] Tingkat Kesulitan: HOTS
+[356] Bentuk Soal: Option New
+[357] Dalam menyiapkan pendataan karya untuk pameran seni, pengelola memasukkan ke dalam daftar pameran setiap karya yang lolos seleksi kuratorial, sebagai bagian dari pencatatan karya yang digunakan dalam pengelolaan penyelenggaraan pameran seni tersebut. Meja pembagian panduan pengunjung ditempatkan di dekat pintu masuk ruang pamer. Untuk menyusun katalog karya pada pameran itu, pengelola memberikan nomor katalog kepada setiap karya yang masuk daftar pameran, sehingga karya dalam daftar tersebut mendapatkan nomor identitas pada pencatatan katalog yang digunakan dalam penyelenggaraan pameran. Pada penyusunan bahan bacaan untuk pengunjung, pengelola mencantumkan dalam panduan pengunjung setiap karya yang mendapat nomor katalog, sehingga karya dengan nomor tersebut dimuat dalam panduan yang digunakan pengunjung selama mengikuti pameran seni.
+[358] Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....
+[359] A. Panduan pengunjung hanya mencantumkan karya yang dinyatakan lolos seleksi kuratorial.
+[360] B. Ketidaklulusan dalam seleksi kuratorial menjamin karya tidak dicantumkan dalam panduan pengunjung.
+[361] C. Keberhasilan karya melewati seleksi kuratorial menjamin pencantumannya dalam panduan pengunjung.
+[362] D. Daftar pameran hanya memuat karya yang telah dinyatakan lolos seleksi kuratorial.
+[363] E. Nomor katalog dipastikan dimiliki oleh karya yang dicantumkan dalam panduan pengunjung.
+[364] Jawaban: C
+[365] Pembahasan:
+[366] Premis 1: Dalam menyiapkan pendataan karya untuk pameran seni, pengelola memasukkan ke dalam daftar pameran setiap karya yang lolos seleksi kuratorial, sebagai bagian dari pencatatan karya yang digunakan dalam pengelolaan penyelenggaraan pameran seni tersebut.
+[367] Premis 2: Untuk menyusun katalog karya pada pameran itu, pengelola memberikan nomor katalog kepada setiap karya yang masuk daftar pameran, sehingga karya dalam daftar tersebut mendapatkan nomor identitas pada pencatatan katalog yang digunakan dalam penyelenggaraan pameran.
+[368] Premis 3: Pada penyusunan bahan bacaan untuk pengunjung, pengelola mencantumkan dalam panduan pengunjung setiap karya yang mendapat nomor katalog, sehingga karya dengan nomor tersebut dimuat dalam panduan yang digunakan pengunjung selama mengikuti pameran seni.
+[369] Kalimat “Meja pembagian panduan pengunjung ditempatkan di dekat pintu masuk ruang pamer.” merupakan informasi pengecoh karena letak meja pembagian tidak menentukan seleksi, pendataan, atau pencantuman karya dalam panduan. Kalimat ini tidak dijadikan variabel logis dan tidak digunakan dalam penarikan kesimpulan.
+[370] p: Karya lolos seleksi kuratorial.
+[371] q: Karya masuk daftar pameran.
+[372] r: Karya mendapat nomor katalog.
+[373] s: Karya dicantumkan dalam panduan pengunjung.
+[374] • Langkah 1 (Premis 1 + 2):
+[375] Premis 1: p → q
+[376] Premis 2: q → r
+[377] Gunakan hukum Silogisme.
+[378] Kesimpulan (Premis 4): p → r
+[379] • Langkah 2 (Premis 4 + 3):
+[380] Premis 4: p → r
+[381] Premis 3: r → s
+[382] Gunakan hukum Silogisme. Terpenuhinya p menjamin r, sedangkan r menjamin s.
+[383] Kesimpulan: p → s
+[384] Jawaban: Keberhasilan karya melewati seleksi kuratorial menjamin pencantumannya dalam panduan pengunjung.
+[385] Analisis setiap opsi:
+[386] A. Panduan pengunjung hanya mencantumkan karya yang dinyatakan lolos seleksi kuratorial.
+[387] → s → p. Hubungan s → p membalik arah rangkaian implikasi. Terpenuhinya s tidak membuktikan p. (bukan kesimpulan yang dicari)
+[388] B. Ketidaklulusan dalam seleksi kuratorial menjamin karya tidak dicantumkan dalam panduan pengunjung.
+[389] → ¬p → ¬s. Hubungan ¬p → ¬s menolak anteseden. Ketiadaan p tidak mengharuskan ketiadaan s. (bukan kesimpulan yang dicari)
+[390] C. Keberhasilan karya melewati seleksi kuratorial menjamin pencantumannya dalam panduan pengunjung.
+[391] → p → s. Hasil ini diperoleh melalui dua langkah penalaran di atas. (kesimpulan yang dicari)
+[392] D. Daftar pameran hanya memuat karya yang telah dinyatakan lolos seleksi kuratorial.
+[393] → q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)
+[394] E. Nomor katalog dipastikan dimiliki oleh karya yang dicantumkan dalam panduan pengunjung.
+[395] → s → r. Hubungan s → r membalik Premis 3. Terpenuhinya s tidak membuktikan r. (bukan kesimpulan yang dicari)
+[396] Soal 11
+[397] Category: Penalaran Verbal
+[398] Lesson: Silogisme
+[399] Chapter: 3 Premis - Narasi
+[400] Tingkat Kesulitan: HOTS
+[401] Bentuk Soal: Option New
+[402] Dalam mengatur pengerjaan perangkat pada layanan bengkel elektronik, petugas memasukkan ke dalam antrean pengerjaan setiap perangkat yang memperoleh persetujuan perbaikan dari pemilik, sebagai bagian dari penataan perangkat untuk pengerjaan perbaikan pada sistem layanan bengkel. Salinan laporan teknisi disimpan dalam map berwarna abu-abu di meja layanan. Untuk pencatatan pekerjaan perbaikan perangkat, petugas memberikan nomor pekerjaan kepada setiap perangkat yang masuk antrean pengerjaan, sehingga perangkat dalam antrean tersebut mendapatkan nomor identitas pekerjaan melalui sistem pencatatan layanan bengkel kepada pemilik perangkat. Pada penyusunan pencatatan pekerjaan oleh teknisi, setiap perangkat yang mendapat nomor pekerjaan akan tercantum dalam laporan teknisi, sebagai bagian dari laporan perangkat yang dikelola dalam penanganan pekerjaan perbaikan pada layanan bengkel elektronik tersebut.
+[403] Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....
+[404] A. Persetujuan perbaikan dari pemilik menjamin perangkat dicantumkan dalam laporan teknisi.
+[405] B. Laporan teknisi hanya mencantumkan perangkat yang mendapat persetujuan perbaikan dari pemilik.
+[406] C. Antrean pengerjaan hanya memuat perangkat yang mendapat persetujuan perbaikan dari pemilik.
+[407] D. Tanpa persetujuan perbaikan dari pemilik, perangkat dipastikan tidak dicantumkan dalam laporan teknisi.
+[408] E. Nomor pekerjaan dipastikan dimiliki oleh perangkat yang dicantumkan dalam laporan teknisi.
+[409] Jawaban: A
+[410] Pembahasan:
+[411] Premis 1: Dalam mengatur pengerjaan perangkat pada layanan bengkel elektronik, petugas memasukkan ke dalam antrean pengerjaan setiap perangkat yang memperoleh persetujuan perbaikan dari pemilik, sebagai bagian dari penataan perangkat untuk pengerjaan perbaikan pada sistem layanan bengkel.
+[412] Premis 2: Untuk pencatatan pekerjaan perbaikan perangkat, petugas memberikan nomor pekerjaan kepada setiap perangkat yang masuk antrean pengerjaan, sehingga perangkat dalam antrean tersebut mendapatkan nomor identitas pekerjaan melalui sistem pencatatan layanan bengkel kepada pemilik perangkat.
+[413] Premis 3: Pada penyusunan pencatatan pekerjaan oleh teknisi, setiap perangkat yang mendapat nomor pekerjaan akan tercantum dalam laporan teknisi, sebagai bagian dari laporan perangkat yang dikelola dalam penanganan pekerjaan perbaikan pada layanan bengkel elektronik tersebut.
+[414] Kalimat “Salinan laporan teknisi disimpan dalam map berwarna abu-abu di meja layanan.” merupakan informasi pengecoh karena warna dan tempat penyimpanan map tidak menentukan hubungan persetujuan, antrean, nomor pekerjaan, dan laporan. Kalimat ini tidak dijadikan variabel logis dan tidak digunakan dalam penarikan kesimpulan.
+[415] p: Perangkat memperoleh persetujuan perbaikan dari pemilik.
+[416] q: Perangkat masuk antrean pengerjaan.
+[417] r: Perangkat mendapat nomor pekerjaan.
+[418] s: Perangkat tercantum dalam laporan teknisi.
+[419] • Langkah 1 (Premis 1 + 2):
+[420] Premis 1: p → q
+[421] Premis 2: q → r
+[422] Gunakan hukum Silogisme.
+[423] Kesimpulan (Premis 4): p → r
+[424] • Langkah 2 (Premis 4 + 3):
+[425] Premis 4: p → r
+[426] Premis 3: r → s
+[427] Gunakan hukum Silogisme. Terpenuhinya p menjamin r, sedangkan r menjamin s.
+[428] Kesimpulan: p → s
+[429] Jawaban: Persetujuan perbaikan dari pemilik menjamin perangkat dicantumkan dalam laporan teknisi.
+[430] Analisis setiap opsi:
+[431] A. Persetujuan perbaikan dari pemilik menjamin perangkat dicantumkan dalam laporan teknisi.
+[432] → p → s. Hasil ini diperoleh melalui dua langkah penalaran di atas. (kesimpulan yang dicari)
+[433] B. Laporan teknisi hanya mencantumkan perangkat yang mendapat persetujuan perbaikan dari pemilik.
+[434] → s → p. Hubungan s → p membalik arah rangkaian implikasi. Terpenuhinya s tidak membuktikan p. (bukan kesimpulan yang dicari)
+[435] C. Antrean pengerjaan hanya memuat perangkat yang mendapat persetujuan perbaikan dari pemilik.
+[436] → q → p. Hubungan q → p membalik Premis 1. Terpenuhinya q tidak membuktikan p. (bukan kesimpulan yang dicari)
+[437] D. Tanpa persetujuan perbaikan dari pemilik, perangkat dipastikan tidak dicantumkan dalam laporan teknisi.
+[438] → ¬p → ¬s. Hubungan ¬p → ¬s menolak anteseden. Ketiadaan p tidak mengharuskan ketiadaan s. (bukan kesimpulan yang dicari)
+[439] E. Nomor pekerjaan dipastikan dimiliki oleh perangkat yang dicantumkan dalam laporan teknisi.
+[440] → s → r. Hubungan s → r membalik Premis 3. Terpenuhinya s tidak membuktikan r. (bukan kesimpulan yang dicari)
+[441] Soal 12
+[442] Category: Penalaran Verbal
+[443] Lesson: Silogisme
+[444] Chapter: 3 Premis - Narasi
+[445] Tingkat Kesulitan: HOTS
+[446] Bentuk Soal: Option New
+[447] Dalam menilai kualitas air untuk kolam pembibitan ikan, pengelola memberikan status layak untuk kolam pembibitan kepada setiap sampel air yang memenuhi standar kejernihan, sebagai penetapan kelayakan air untuk penggunaan pada kegiatan pembibitan tersebut. Wadah sampel dari bak timur memiliki tutup berwarna hijau. Pada pencatatan hasil penilaian kualitas air, pengelola memberikan tanda persetujuan penggunaan kepada setiap sampel air yang memperoleh status layak untuk kolam pembibitan, sehingga sampel dengan status itu mendapatkan tanda persetujuan penggunaan air untuk kegiatan pembibitan. Pada hasil penilaian kualitas air yang menggunakan ketentuan tersebut, sampel air dari bak timur tidak mendapat tanda persetujuan penggunaan, yaitu tanda persetujuan penggunaan air untuk kolam pembibitan yang dimaksud dalam penilaian itu.
+[448] Berdasarkan narasi tersebut, kesimpulan yang pasti benar adalah ....
+[449] A. Standar kejernihan air dipenuhi oleh sampel yang berasal dari bak timur.
+[450] B. Status layak untuk kolam pembibitan ikan diperoleh sampel air dari bak timur.
+[451] C. Tanda persetujuan penggunaan dimiliki oleh sampel air yang berasal dari bak timur.
+[452] D. Pemenuhan standar kejernihan air tidak tercapai pada sampel yang berasal dari bak timur.
+[453] E. Meskipun tidak berstatus layak, sampel air dari bak timur memiliki tanda persetujuan penggunaan.
+[454] Jawaban: D
+[455] Pembahasan:
+[456] Premis 1: Dalam menilai kualitas air untuk kolam pembibitan ikan, pengelola memberikan status layak untuk kolam pembibitan kepada setiap sampel air yang memenuhi standar kejernihan, sebagai penetapan kelayakan air untuk penggunaan pada kegiatan pembibitan tersebut.
+[457] Premis 2: Pada pencatatan hasil penilaian kualitas air, pengelola memberikan tanda persetujuan penggunaan kepada setiap sampel air yang memperoleh status layak untuk kolam pembibitan, sehingga sampel dengan status itu mendapatkan tanda persetujuan penggunaan air untuk kegiatan pembibitan.
+[458] Premis 3: Pada hasil penilaian kualitas air yang menggunakan ketentuan tersebut, sampel air dari bak timur tidak mendapat tanda persetujuan penggunaan, yaitu tanda persetujuan penggunaan air untuk kolam pembibitan yang dimaksud dalam penilaian itu.
+[459] Kalimat “Wadah sampel dari bak timur memiliki tutup berwarna hijau.” merupakan informasi pengecoh karena warna tutup wadah tidak menentukan kejernihan, status kelayakan, atau tanda persetujuan penggunaan. Kalimat ini tidak dijadikan variabel logis dan tidak digunakan dalam penarikan kesimpulan.
+[460] Untuk menerapkan aturan umum pada sampel air dari bak timur, p, q, dan r berikut merujuk pada subjek tersebut.
+[461] p: Sampel air dari bak timur memenuhi standar kejernihan.
+[462] q: Sampel air dari bak timur memperoleh status layak untuk kolam pembibitan.
+[463] r: Sampel air dari bak timur mendapat tanda persetujuan penggunaan.
+[464] • Langkah 1 (Premis 1 + 2):
+[465] Premis 1: p → q
+[466] Premis 2: q → r
+[467] Gunakan hukum Silogisme.
+[468] Kesimpulan (Premis 4): p → r
+[469] • Langkah 2 (Premis 4 + 3):
+[470] Premis 4: p → r
+[471] Premis 3: ¬r
+[472] Gunakan Modus Tollens. Karena r tidak terpenuhi, p tidak mungkin terpenuhi; p akan mengharuskan r.
+[473] Kesimpulan: ¬p
+[474] Jawaban: Pemenuhan standar kejernihan air tidak tercapai pada sampel yang berasal dari bak timur.
+[475] Analisis setiap opsi:
+[476] A. Standar kejernihan air dipenuhi oleh sampel yang berasal dari bak timur.
+[477] → p. Modus Tollens menghasilkan ¬p, sehingga p bertentangan dengan hasil penalaran. (bukan kesimpulan yang dicari)
+[478] B. Status layak untuk kolam pembibitan ikan diperoleh sampel air dari bak timur.
+[479] → q. Premis 2 dan fakta ¬r menghasilkan ¬q, sehingga q tidak dapat dibenarkan. (bukan kesimpulan yang dicari)
+[480] C. Tanda persetujuan penggunaan dimiliki oleh sampel air yang berasal dari bak timur.
+[481] → r. Premis 3 menyatakan ¬r, sehingga r bertentangan dengan fakta tersebut. (Bukan kesimpulan yang dicari)
+[482] D. Pemenuhan standar kejernihan air tidak tercapai pada sampel yang berasal dari bak timur.
+[483] → ¬p. Hasil ini diperoleh melalui dua langkah penalaran di atas. (kesimpulan yang dicari)
+[484] E. Meskipun tidak berstatus layak, sampel air dari bak timur memiliki tanda persetujuan penggunaan.
+[485] → ¬q ∧ r. Meskipun ¬q dapat diturunkan, bagian r bertentangan dengan Premis 3. Konjungsi ini tidak benar. (Bukan kesimpulan yang dicari)
+[486] Soal 13
+[487] Category: Penalaran Verbal
+[488] Lesson: Silogisme
+[489] Chapter: 3 Premis
+[490] Tingkat Kesulitan: HOTS
+[491] Bentuk Soal: Option New
+[492] Kelulusan unit pompa dalam uji ketahanan menjamin perolehan izin penggunaan operasional. Perolehan izin penggunaan operasional membebaskan unit pompa dari kewajiban pengujian ulang. Unit pompa K lolos uji ketahanan.
+[493] Kesimpulan yang pasti benar berdasarkan ketiga pernyataan tersebut adalah ....
+[494] A. Kewajiban mengikuti pengujian ulang masih berlaku bagi unit pompa K.
+[495] B. Izin penggunaan operasional tidak diperoleh oleh unit pompa K.
+[496] C. Pengujian ulang bukan merupakan kewajiban yang harus dijalani unit pompa K.
+[497] D. Meskipun memperoleh izin operasional, unit pompa K tetap wajib menjalani pengujian ulang.
+[498] E. Kelulusan dalam uji ketahanan tidak terpenuhi pada unit pompa K.
+[499] Jawaban: C
+[500] Pembahasan:
+[501] Premis 1: Kelulusan unit pompa dalam uji ketahanan menjamin perolehan izin penggunaan operasional.
+[502] Premis 2: Perolehan izin penggunaan operasional membebaskan unit pompa dari kewajiban pengujian ulang.
+[503] Premis 3: Unit pompa K lolos uji ketahanan.
+[504] Aturan pada dua pernyataan pertama diterapkan pada unit pompa K. Semua variabel berikut merujuk pada unit tersebut.
+[505] p: Unit pompa K lolos uji ketahanan.
+[506] q: Unit pompa K memperoleh izin penggunaan operasional.
+[507] r: Unit pompa K wajib mengikuti pengujian ulang.
+[508] Pembebasan dari kewajiban pengujian ulang berarti ¬r. Pernyataan tersebut tidak menyatakan bahwa pengujian ulang dilarang atau bahwa pengujian ulang tidak pernah dilakukan.
+[509] • Langkah 1 (Premis 1 + 3):
+[510] Premis 1: p → q
+[511] Premis 3: p
+[512] Gunakan Modus Ponens.
+[513] Kesimpulan (Premis 4): q
+[514] • Langkah 2 (Premis 2 + 4):
+[515] Premis 2: q → ¬r
+[516] Premis 4: q
+[517] Gunakan Modus Ponens.
+[518] Kesimpulan: ¬r
+[519] Jawaban: Pengujian ulang bukan merupakan kewajiban yang harus dijalani unit pompa K.
+[520] Analisis setiap opsi:
+[521] A. Kewajiban mengikuti pengujian ulang masih berlaku bagi unit pompa K.
+[522] → r. Opsi ini menyatakan adanya kewajiban, sedangkan hasil penalaran menyatakan pembebasan dari kewajiban tersebut. (bukan kesimpulan yang dicari)
+[523] B. Izin penggunaan operasional tidak diperoleh oleh unit pompa K.
+[524] → ¬q. Premis 1 dan Premis 3 menghasilkan q, sehingga penyangkalan izin operasional bertentangan dengan hasil langkah pertama. (bukan kesimpulan yang dicari)
+[525] C. Pengujian ulang bukan merupakan kewajiban yang harus dijalani unit pompa K.
+[526] → ¬r. Tidak memiliki kewajiban pengujian ulang bermakna sama dengan dibebaskan dari kewajiban tersebut, sesuai hasil dua penerapan Modus Ponens. (kesimpulan yang dicari)
+[527] D. Meskipun memperoleh izin operasional, unit pompa K tetap wajib menjalani pengujian ulang.
+[528] → q ∧ r. Bagian q benar, tetapi bagian r bertentangan dengan ¬r. Kata “tetapi” tetap menghubungkan dua proposisi yang keduanya harus benar. (bukan kesimpulan yang dicari)
+[529] E. Kelulusan dalam uji ketahanan tidak terpenuhi pada unit pompa K.
+[530] → ¬p. Pernyataan ini menyangkal kelulusan unit pompa K yang telah dinyatakan pada Premis 3. (bukan kesimpulan yang dicari)
+[531] Soal 14
+[532] Category: Penalaran Verbal
+[533] Lesson: Silogisme
+[534] Chapter: 3 Premis
+[535] Tingkat Kesulitan: HOTS
+[536] Bentuk Soal: Option New
+[537] Terpenuhinya standar kandungan kimia menjamin perolehan status aman untuk saluran pembuangan bagi cairan olahan. Perolehan status aman untuk saluran pembuangan menjamin pemberian izin pelepasan bagi cairan olahan. Cairan olahan dari tangki M tidak mendapat izin pelepasan.
+[538] Kesimpulan yang pasti benar berdasarkan ketiga pernyataan tersebut adalah ....
+[539] A. Standar kandungan kimia yang ditetapkan telah dipenuhi oleh cairan olahan dari tangki M.
+[540] B. Status aman untuk saluran pembuangan diperoleh oleh cairan olahan dari tangki M.
+[541] C. Izin pelepasan ke saluran pembuangan diberikan kepada cairan olahan dari tangki M.
+[542] D. Meskipun memenuhi standar kandungan kimia, cairan olahan dari tangki M tidak berstatus aman.
+[543] E. Kandungan kimia cairan olahan dari tangki M tidak memenuhi standar yang ditetapkan.
+[544] Jawaban: E
+[545] Pembahasan:
+[546] Premis 1: Terpenuhinya standar kandungan kimia menjamin perolehan status aman untuk saluran pembuangan bagi cairan olahan.
+[547] Premis 2: Perolehan status aman untuk saluran pembuangan menjamin pemberian izin pelepasan bagi cairan olahan.
+[548] Premis 3: Cairan olahan dari tangki M tidak mendapat izin pelepasan.
+[549] Aturan pada dua pernyataan pertama diterapkan pada cairan olahan dari tangki M. Semua variabel berikut merujuk pada cairan tersebut.
+[550] p: Cairan olahan dari tangki M memenuhi standar kandungan kimia.
+[551] q: Status aman untuk saluran pembuangan diperoleh oleh cairan olahan dari tangki M.
+[552] r: Cairan olahan dari tangki M mendapat izin pelepasan.
+[553] • Langkah 1 (Premis 2 + 3):
+[554] Premis 2: q → r
+[555] Premis 3: ¬r
+[556] Gunakan Modus Tollens.
+[557] Kesimpulan (Premis 4): ¬q
+[558] • Langkah 2 (Premis 1 + 4):
+[559] Premis 1: p → q
+[560] Premis 4: ¬q
+[561] Gunakan Modus Tollens.
+[562] Kesimpulan: ¬p
+[563] Jawaban: Kandungan kimia cairan olahan dari tangki M tidak memenuhi standar yang ditetapkan.
+[564] Analisis setiap opsi:
+[565] A. Standar kandungan kimia yang ditetapkan telah dipenuhi oleh cairan olahan dari tangki M.
+[566] → p. Hasil langkah kedua adalah ¬p, sehingga pernyataan terpenuhinya standar kandungan kimia bertentangan dengan kesimpulan. (bukan kesimpulan yang dicari)
+[567] B. Status aman untuk saluran pembuangan diperoleh oleh cairan olahan dari tangki M.
+[568] → q. Hasil langkah pertama adalah ¬q. Status aman akan mengharuskan adanya izin pelepasan, sedangkan izin itu tidak diperoleh. (bukan kesimpulan yang dicari)
+[569] C. Izin pelepasan ke saluran pembuangan diberikan kepada cairan olahan dari tangki M.
+[570] → r. Premis 3 secara langsung menyatakan ¬r, sehingga opsi ini bertentangan dengan fakta yang diberikan. (bukan kesimpulan yang dicari)
+[571] D. Meskipun memenuhi standar kandungan kimia, cairan olahan dari tangki M tidak berstatus aman.
+[572] → p ∧ ¬q. Bagian ¬q dapat diturunkan, tetapi bagian p bertentangan dengan ¬p. Selain itu, Premis 1 tidak mengizinkan p benar bersamaan dengan ¬q. (bukan kesimpulan yang dicari)
+[573] E. Kandungan kimia cairan olahan dari tangki M tidak memenuhi standar yang ditetapkan.
+[574] → ¬p. Opsi ini merupakan hasil dua penerapan Modus Tollens, dari ketiadaan izin menuju ketiadaan status aman, kemudian menuju tidak terpenuhinya standar kandungan kimia. (kesimpulan yang dicari)
+[575] Soal 15
+[576] Category: Penalaran Verbal
+[577] Lesson: Silogisme
+[578] Chapter: 3 Premis
+[579] Tingkat Kesulitan: HOTS
+[580] Bentuk Soal: Option New
+[581] Setiap pesanan yang pembayarannya tuntas masuk daftar pengambilan barang. Masuknya pesanan ke daftar pengambilan barang menjamin perolehan nomor pengiriman. Perolehan nomor pengiriman menjamin pesanan mendapat layanan pengiriman prioritas.
+[582] Kesimpulan yang pasti benar berdasarkan ketiga pernyataan tersebut adalah ....
+[583] A. Layanan pengiriman prioritas hanya diberikan kepada pesanan yang pembayarannya tuntas.
+[584] B. Pesanan tanpa layanan pengiriman prioritas memiliki pembayaran yang tidak tuntas.
+[585] C. Ketidaktuntasan pembayaran menjamin pesanan tidak mendapat layanan pengiriman prioritas.
+[586] D. Masuknya pesanan ke daftar pengambilan barang menjamin ketuntasan pembayarannya.
+[587] E. Ketuntasan pembayaran menjamin pesanan tidak mendapat layanan pengiriman prioritas.
+[588] Jawaban: B
+[589] Pembahasan:
+[590] Premis 1: Setiap pesanan yang pembayarannya tuntas masuk daftar pengambilan barang.
+[591] Premis 2: Masuknya pesanan ke daftar pengambilan barang menjamin perolehan nomor pengiriman.
+[592] Premis 3: Perolehan nomor pengiriman menjamin pesanan mendapat layanan pengiriman prioritas.
+[593] Variabel berikut menyatakan kondisi pada pesanan yang sama. Implikasi berlaku untuk setiap pesanan yang dibicarakan dalam ketiga pernyataan.
+[594] p: Pembayaran pesanan tuntas.
+[595] q: Pesanan masuk daftar pengambilan barang.
+[596] r: Pesanan memperoleh nomor pengiriman.
+[597] s: Pesanan mendapat layanan pengiriman prioritas.
+[598] • Langkah 1 (Premis 1 + 2):
+[599] Premis 1: p → q
+[600] Premis 2: q → r
+[601] Gunakan hukum Silogisme.
+[602] Kesimpulan (Premis 4): p → r
+[603] • Langkah 2 (Premis 4 + 3):
+[604] Premis 4: p → r
+[605] Premis 3: r → s
+[606] Gunakan hukum Silogisme.
+[607] Kesimpulan: p → s
+[608] Hasil silogisme kemudian dinyatakan dalam bentuk ekuivalensi kontraposisi. Suatu implikasi p → s ekuivalen dengan ¬s → ¬p: ketiadaan konsekuen mengharuskan ketiadaan anteseden.
+[609] Kesimpulan ekuivalen: ¬s → ¬p
+[610] Jawaban: Pesanan tanpa layanan pengiriman prioritas memiliki pembayaran yang tidak tuntas.
+[611] Analisis setiap opsi:
+[612] A. Layanan pengiriman prioritas hanya diberikan kepada pesanan yang pembayarannya tuntas.
+[613] → s → p. Ini merupakan konvers dari p → s. Mendapat layanan prioritas tidak membuktikan ketuntasan pembayaran berdasarkan arah implikasi yang diberikan. (bukan kesimpulan yang dicari)
+[614] B. Pesanan tanpa layanan pengiriman prioritas memiliki pembayaran yang tidak tuntas.
+[615] → ¬s → ¬p. Ini adalah kontraposisi yang ekuivalen dengan p → s, sehingga tetap menyatakan hubungan logis yang diperoleh melalui silogisme. (kesimpulan yang dicari)
+[616] C. Ketidaktuntasan pembayaran menjamin pesanan tidak mendapat layanan pengiriman prioritas.
+[617] → ¬p → ¬s. Ini merupakan invers dari p → s. Pembayaran yang tidak tuntas tidak cukup untuk menyimpulkan ketiadaan layanan pengiriman prioritas. (bukan kesimpulan yang dicari)
+[618] D. Masuknya pesanan ke daftar pengambilan barang menjamin ketuntasan pembayarannya.
+[619] → q → p. Ini membalik Premis 1. Keberadaan pesanan dalam daftar pengambilan tidak membuktikan ketuntasan pembayarannya. (bukan kesimpulan yang dicari)
+[620] E. Ketuntasan pembayaran menjamin pesanan tidak mendapat layanan pengiriman prioritas.
+[621] → p → ¬s. Opsi ini mengganti konsekuen s dengan ¬s, padahal rangkaian silogisme menjamin s untuk pesanan dengan p. Hubungan ini tidak dapat diturunkan dari ketiga premis. (bukan kesimpulan yang dicari)

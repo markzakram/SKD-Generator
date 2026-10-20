@@ -3,7 +3,7 @@ import path from 'node:path';
 import { DEFAULT_SETTINGS } from '../lib/config';
 import { generate, normalizeSettings } from '../lib/generate';
 import { auditPackages } from '../lib/validate';
-import type { DifficultyFilter, Mode } from '../lib/types';
+import type { DifficultyFilter, Mode, Settings } from '../lib/types';
 const args = process.argv.slice(2);
 const value = (key: string, fallback: string) => {
   const index = args.indexOf('--' + key);
@@ -12,6 +12,7 @@ const value = (key: string, fallback: string) => {
 const mode = value('mode', 'SKD').toUpperCase() as Mode;
 const count = mode === 'TWK' ? 30 : mode === 'TIU' ? 35 : mode === 'TKP' ? 45 : 110;
 const settings = normalizeSettings({ ...DEFAULT_SETTINGS, mode, count: Number(value('soal', String(count))),
+  profile:value('profile','free') as Settings['profile'],twkSource:value('twk','accepted') as Settings['twkSource'],tkpSource:value('tkp','accepted') as Settings['tkpSource'],tiuSource:value('tiu','accepted') as Settings['tiuSource'],
   packages: Number(value('paket', '1')), seed: value('seed', DEFAULT_SETTINGS.seed),
   difficulty: value('kesulitan', 'campuran') as DifficultyFilter, uniqueAcross: !args.includes('--boleh-ulang') });
 const packages = generate(settings);

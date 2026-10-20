@@ -41,8 +41,10 @@ export type Proof =
   | { kind: 'scene'; mekanisme: string }
   | { kind: 'bank'; id: string; answerText: string }
   | { kind: 'model'; model: import('./models').Model }
+  | { kind: 'local'; version: 1; model: string; context: number; state: number; order: number[] }
   | { kind: 'manual'; note: string };
 export type ReviewStatus = 'draft' | 'revision' | 'approved';
+export type Provenance = { file: string; question: number; category: string; lesson: string; chapter: string; declaredDifficulty: string; sourceHash: string; block: number; status: 'accepted-example' | 'adapted' };
 export type Review = { status: ReviewStatus; excluded: boolean; note: string; revision: number; reviewedAt?: string; reviewer?: string; updatedAt: string };
 export type Rubric = { authority: string; urgency: string; efficacy: string; risk: string; followUp: string };
 export type Question = {
@@ -68,6 +70,8 @@ export type Question = {
   difficultyReason?: string;
   rubric?: Rubric;
   review?: Review;
+  provenance?: Provenance;
+  mappingId?: string;
 };
 export type Package = { id: string; seed: string; mode: Mode; duration: number; questions: Question[] };
 export type Settings = {
@@ -83,13 +87,17 @@ export type Settings = {
   uniqueAcross: boolean;
   blueprint?: BlueprintRow[];
   composition?: { mudah: number; sedang: number; sulit: number };
+  profile?: 'free' | 'tryout-2027';
+  tiuSource?: 'accepted' | 'variation';
+  twkSource?: 'accepted' | 'new';
+  tkpSource?: 'accepted' | 'new';
 };
 export type BlueprintRow = { subtest: Subtest; topic: string; difficulty: Difficulty; count: number };
 export type Audit = { ok: boolean; checked: number; errors: string[]; duplicateCount: number; keyDistribution: number[] };
 export type Result = { settings: Settings; packages: Package[]; audit: Audit; elapsed: number };
 export type BankItem = {
   id: string;
-  subtest: 'TWK' | 'TKP';
+  subtest: Subtest;
   topic: string;
   subtopic: string;
   difficulty: Difficulty;
@@ -101,6 +109,10 @@ export type BankItem = {
   source: string;
   difficultyReason?: string;
   rubric?: Rubric;
+  tip?: string;
+  table?: Question['table'];
+  provenance?: Provenance;
+  mappingId?: string;
 };
 export type Snapshot = { version: number; at: string; label: string; result: Result };
 export type Workspace = { schema: 2; id: string; name: string; createdAt: string; updatedAt: string; version: number; result: Result; snapshots: Snapshot[] };

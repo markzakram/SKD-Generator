@@ -1,4 +1,63 @@
-# JadiASN SKD Studio v2
+# JadiASN SKD Studio v2.2
+
+## Soal TWK dan TKP baru tanpa API
+
+Pada **Buat paket → Sumber soal**, pilih **Soal baru · generator lokal** untuk TWK dan/atau TKP. Pilihan ini tersedia dalam profil tryout maupun latihan bebas. Instalasi baru memilih mode baru; pengaturan pengguna lama dan paket yang tersimpan tetap dipertahankan. Pilih **Gunakan bank contoh** untuk memakai sumber sebelumnya.
+
+Mesin lokal menyusun stimulus, pilihan, kunci, poin, pembahasan, dan cara cepat dari **konteks + kondisi penentu + model keputusan**. Tidak memerlukan API key, biaya per soal, atau server AI. Contohnya, aduan belum terverifikasi membutuhkan pemeriksaan; kesalahan yang sudah terbukti dan berada dalam kewenangan membutuhkan koreksi; keputusan di luar kewenangan membutuhkan eskalasi. Kondisi yang berubah benar-benar mengubah tindakan terbaik serta alasan pilihan, bukan hanya nama tokoh.
+
+- **TWK:** 12 model penerapan nilai pada Nasionalisme, Integritas, Bela Negara, Pilar Negara; 6 model Bahasa Negara sesuai mapping (ide pokok, simpulan, kalimat efektif, kata baku, tanda baca, EYD).
+- **TKP:** 18 model pada seluruh enam kompetensi. Setiap model mempunyai 3 kondisi keputusan dan 3 konteks pekerjaan. Skor 1–5 disertai alasan setiap opsi, pembeda 5 vs 4, dan rubrik penelaahan.
+- **Kapasitas saat ini:** 132 kombinasi TWK dan 202 kombinasi TKP dalam 78 model. Angka ini menghitung kombinasi kondisi dan konteks; beberapa memakai prinsip keputusan yang sama. Pengacakan opsi tidak menambah kapasitas. Tiga paket lengkap dapat memakai TWK/TKP baru tanpa isi identik, dengan kesulitan campuran. Kapasitas berkurang ketika difilter menurut chapter/kesulitan. Generator menolak kelebihan kapasitas sebelum mulai; pemakaian ulang dapat diizinkan antarpaket.
+- **Pustaka soal → Model generator soal baru:** pratinjau setiap model; ubah konteks dan kondisi untuk membandingkan keputusan serta pembahasannya.
+- **Kurasi:** seluruh hasil adalah draf. Pemeriksaan model memastikan konsistensi teks, opsi, kunci, dan skor terhadap parameter penyusun; bukan pembuktian independen atas kualitas akademik atau kalibrasi kesulitan. Persetujuan soal baru memerlukan identitas penelaah dan catatan substansi. Menyunting konten membatalkan bukti model serta persetujuan sebelumnya.
+- **Kompatibilitas:** penggantian mempertahankan mode baru, chapter, dan kesulitan. Cadangan, penyalinan, PDF/Word/CSV/JSON, serta uji peserta menggunakan alur yang sama. Mapping 30/35/45 tetap berlaku. TIU masih mengikuti sumber/model TIU yang tersedia.
+
+Implementasi: `lib/local/{schema,twk,tkp,bahasa,index}.ts`. Tambahkan model dan verifikasi kapasitas untuk memperluas variasi; hasilnya tidak diklaim sebagai generasi bahasa tanpa batas. Acuan prinsip dan ejaan diperiksa pada [UUD NRI 1945 — JDIH DPR](https://jdih.dpr.go.id/index/uu1945), [EYD V — Badan Bahasa](https://ejaan.kemendikdasmen.go.id/), serta [KBBI Daring](https://kbbi.kemendikdasmen.go.id/). Aturan operasional pada kasus yang menyebut pedoman internal merupakan fakta simulasi pada stimulus, bukan klaim peraturan baru.
+
+Verifikasi: `npm run verify:local` mencakup seluruh kombinasi, pengacakan, perubahan keputusan saat kondisi berubah, penolakan isi yang diubah tanpa kurasi, tiga paket unik, sumber campuran, kapasitas, cadangan, dan penggantian. `scripts/browser-local.mjs` memeriksa alur browser dan ekspor.
+
+API menerima `twkSource: "new"` dan `tkpSource: "new"`. Nilai `"accepted"` atau kolom yang tidak dikirim mempertahankan perilaku bank sebelumnya.
+
+~~~powershell
+npm run generate -- --profile tryout-2027 --twk new --tkp new --paket 3
+~~~
+
+## Acuan tiga tryout 2027
+
+Profil **Standar tryout 2027** pada halaman generator memakai **Mapping SKD 2027.xlsx** dan 312 contoh yang dinyatakan layak oleh pengguna: 90 TWK, 87 TIU, dan 135 TKP. Pilih **Latihan bebas** untuk pengaturan kuota manual sebelumnya.
+
+Pada paket penuh 110 soal, distribusi mengikuti 37 baris berkuota dari workbook: 30 TWK, 35 TIU, 45 TKP. Seluruh 57 chapter tetap tersedia dalam data mapping, termasuk chapter latihan yang tidak memiliki kuota pada tryout penuh.
+
+- TWK: Nasionalisme, Integritas, Bela Negara, dan Pilar Negara masing-masing 6 soal; Bahasa Negara 6 soal, masing-masing satu ide pokok, simpulan, kalimat efektif, kata baku, tanda baca, dan EYD.
+- TIU verbal: silogisme 5 (1 tiga premis, 2 narasi dua premis, 2 narasi tiga premis), analogi kata 1, argumen 3, susunan/posisi 2.
+- TIU numerik: berhitung 3, kecukupan data 6, deret 1, matriks angka 2, pola tabel 2, kombinasi pernyataan 1, kombinasi optimal 1.
+- TIU figural: analogi, ketidaksamaan, serial, dan matriks masing-masing 2.
+- TKP: Pelayanan Publik, Jejaring Kerja, Sosial Budaya masing-masing 8; TIK, Profesionalisme, Anti Radikalisme masing-masing 7.
+
+Rotasi tiga paket pada bagian bawah sheet **3 TO 0 Latsol** diterapkan pada pasangan chapter aljabar, jenis/sifat-keterbagian-faktor bilangan, serta tiga kelompok soal cerita. Sel yang kosong pada kuota tryout tidak diubah menjadi kuota 1. Angka ketersediaan SIADU dalam workbook tidak dianggap sebagai soal yang telah tersedia di proyek.
+
+**Penyusunan TIU** menyediakan dua pilihan:
+
+1. **Utamakan contoh diterima:** mempertahankan stimulus, urutan pilihan, kunci, skor, dan pembahasan teks dari dokumen. Tiga paket penuh dapat disusun tanpa soal identik; sebanyak 300 soal berasal dari contoh, sedangkan 30 lainnya memakai pola analogi/figural dan pelengkap susunan. Contoh analogi kata dan figural tidak terdapat pada berkas baru yang disertakan, sehingga bagian itu memakai mesin proyek yang tersedia.
+2. **Variasi TIU terhitung + contoh acuan:** membuat variasi pada model silogisme, susunan, pecahan, perkalian/pembagian setara, aljabar terbatas, deret, matriks/tabel, kombinasi, dan figural. Argumen, sifat/keterbagian bilangan, serta rotasi cerita khusus tetap menggunakan contoh diterima. Pilihan TIU independen dari pilihan sumber TWK dan TKP di atasnya.
+
+Variasi baru diberi label tersendiri dan diperiksa ulang melalui model. Aljabar variasi memakai domain bilangan bulat yang dinyatakan eksplisit pada soal; tidak diperlakukan sebagai pembuktian untuk semua bilangan real. Contoh sumber dengan label HOTS tetap menyimpan label tersebut pada metadata; estimasi kesulitan aplikasi menjadi sulit, bukan klaim kalibrasi empiris.
+
+**Pustaka soal → Acuan tryout diterima** memuat semua 312 contoh, termasuk chapter tambahan yang tidak masuk paket penuh. Sumber menampilkan nama berkas dan nomor soal. Teks cara cepat ikut ditampilkan, disalin, serta diekspor ke PDF, Word, PNG, dan CSV. Rumus Word diekstrak sebagai teks matematis; pecahan campuran ditulis dengan tanda tambah eksplisit agar tidak terbaca sebagai perkalian. Tabel dipertahankan. Diagram bantu yang berada dalam pembahasan sumber tidak direplikasi; uraian langkah dan tabelnya tetap digunakan.
+
+Versi awal **Dhea_TWK - Bahasa Negara.docx** tidak dihitung ulang; versi **Done Input** menjadi sumber kanonisnya. Penanda sumber adalah **Contoh diterima**, **Variasi baru**, atau **Adaptasi sumber** setelah konten disunting. Semua paket tetap memulai kurasi sebagai draf. Satu catatan ketidaksesuaian alasan opsi D pada sumber Nynda TKP soal 1 ditampilkan dalam panel mutu tanpa mengubah poin asli diam-diam.
+
+Data dan verifikasi:
+
+- **data/skd-mapping.json**: kuota, category, lesson, chapter, baris asal, dan rotasi workbook.
+- **data/tryout-reference.json**: contoh, metadata sumber, label asli, nomor soal, dan hash dokumen.
+- **data/tryout-import-report.json**: jumlah impor, versi duplikat, dan perubahan notasi.
+- **scripts/extract-tryouts.py**, kemudian **scripts/import-tryouts.py**: impor ulang dari berkas asli di G:/Downloads; ekstraksi workbook memerlukan openpyxl. Python tidak diperlukan saat build atau runtime Vercel.
+- **npm run verify:tryout**: memeriksa sumber, rotasi dan kuota tiga paket, duplikasi, variasi pada banyak seed, notasi/kunci hitungan sumber, penggantian soal, cara cepat, dan cadangan.
+- **scripts/browser-tryout.mjs**: menguji profil, tiga paket, pustaka, variasi TIU, ekspor Word/PDF/CSV, pemulihan browser, API, dan ukuran mobile.
+
+Pada mode bank contoh, profil ini menolak permintaan ketika contoh suatu chapter habis; tidak mengisi kuotanya dengan materi generik. Untuk memakai ulang sumber di paket berbeda, matikan larangan pengulangan antarpaket. Jumlah soal selain 110 diskalakan menurut rasio subtes dan chapter; jumlah sangat kecil dapat membuat beberapa chapter mendapat kuota nol.
 
 Ruang kerja untuk menyusun, menelaah, menguji, dan mengekspor paket latihan TWK, TIU, TKP, atau SKD gabungan. Tampilan menggunakan biru #3D6E99, biru tua #052C5F, dan emas #E8B41E dari identitas JadiASN.
 
@@ -51,9 +110,9 @@ Status: **Draf → Perlu revisi → Disetujui**. Penelaah dapat mengembalikan st
 
 | Bagian | Pustaka v2 |
 | --- | --- |
-| TWK | 77 butir: 37 contoh riset dan 40 soal orisinal dengan kumpulan opsi berbeda |
-| TKP | 118 butir: 26 contoh panduan dan 92 kasus orisinal |
-| TIU | 25 keluarga pola: 8 verbal, 13 numerik, 4 figural |
+| TWK | 167 butir: 90 contoh tryout + 77 butir pustaka sebelumnya |
+| TKP | 253 butir: 135 contoh tryout + 118 butir pustaka sebelumnya |
+| TIU | 87 contoh tryout + 25 keluarga pola: 8 verbal, 13 numerik, 4 figural |
 
 TWK tambahan versi lama memakai 80 variasi dari 20 kerangka. Versi ini menggantinya dengan 40 soal yang berbeda beserta alasan spesifik tiap pengecoh.
 
@@ -172,3 +231,14 @@ Sumber penelitian disimpan di references/ dan tidak dibaca saat runtime. Bank co
 - [EYD V — Badan Bahasa](https://ejaan.kemendikdasmen.go.id/eyd/)
 
 Untuk memperbarui contoh dari ekstraksi sumber: npm run references. Jika PDF TKP berubah, ekstrak tabel kembali dengan scripts/extract-tkp-tables.py (memerlukan pdfplumber), lalu impor dan jalankan verifikasi. Koreksi sumber tercatat dalam data/reference-import-report.json.
+
+
+## Pembaruan variasi dan notasi matematika
+
+Tambahan 42 model memuat 64 kasus baru dengan pilihan dan alasan tersendiri: 24 TWK dan 40 TKP. Cakupan baru meliputi atribusi karya, indikator kinerja, solidaritas lintas wilayah, serah terima, informasi biaya, akses layanan, konflik definisi data, kebutuhan budaya, izin berkas, verifikasi konten, serta pembedaan kritik dan kekerasan. Kondisi lanjutan pada model baru dapat mengganti seluruh pilihan. Model yang belum dipakai diprioritaskan dalam paket; riwayat paket juga dipakai untuk mengurangi pengulangan keluarga. Jumlah kombinasi tetap terbatas dan bukan ukuran kualitas psikometrik; status awal tetap draf untuk kurasi.
+
+Matriks Deret ditampilkan tanpa header. Impor lama yang menyimpan baris angka pertama sebagai header dinormalisasi saat penyajian, termasuk angka negatif, tanpa mengubah isi sumber atau bukti validasinya. Tabel lain tetap memiliki header. Generator tidak lagi memilih pola figural garis bebas `analogi-garis` dan `ketidaksamaan-garis`; pembaca cadangan lama tetap dapat menampilkannya. Gunakan Ganti soal atau buat paket baru untuk mengganti butir lama tersebut.
+
+Rumus memakai renderer LaTeX lokal MathJax SVG tanpa CDN. Notasi eksplisit `\( ... \)` dan `\[ ... \]` didukung pada soal, pilihan, pembahasan, dan tabel; operasi aritmetika lama, pecahan dari Word, serta pangkat ²/³ dinormalisasi saat ditampilkan. Teks sumber dan bukti hitung tetap utuh. PDF, PNG, Word, salinan kaya, serta HTML peserta menyertakan rumus yang sudah dirender. Rumus di Word dan clipboard berupa gambar; teks biasa/CSV menyertakan notasi LaTeX, sedangkan JSON cadangan mempertahankan sumber aslinya. Rumus khusus yang belum terdeteksi otomatis dapat diberi pembatas LaTeX lewat Sunting soal.
+
+`npm run verify:presentation` menguji konversi rumus, enam matriks sumber, pengamanan HTML, keragaman model satu paket, dan tidak munculnya figural garis. `scripts/browser-presentation.mjs` memeriksa tampilan desktop/mobile, salin, ekspor rumus dan matriks, serta HTML peserta offline. Renderer mengikuti [dokumentasi SVG MathJax 3.2](https://docs.mathjax.org/en/v3.2/options/output/svg.html); dependensi dipin agar hasil tidak berubah oleh CDN.

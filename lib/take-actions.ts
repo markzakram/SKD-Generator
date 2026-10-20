@@ -1,6 +1,7 @@
 // Penghubung antara tombol "ambil soal" dan modul yang sudah ada: rasterisasi (lib/export.ts), clipboard (lib/clipboard.ts),
 // dan serialisasi murni (lib/take.ts). Dipanggil dari komponen; hanya berjalan di browser.
 import { copyPng, copyRich, type CopyKind } from './clipboard';
+import { mathImageHtml, prepareMathImages } from './math-raster';
 import { download, pdfBlob, pngBlob, questionPngBlob, rasterizeSvg } from './export';
 import { hasStimulus, optionSvg, questionSvg } from './figures';
 import { joinHtml, joinTexts, pngEntryNames, sectionSlots, sectionsHtml, sectionsText, slotSvg, takeFileName, takeSections, type TakeContext, type TakeImages, type TakePart } from './take';
@@ -17,7 +18,9 @@ export function copyQuestions(questions: readonly Question[], parts: readonly Ta
         const raster = await rasterizeSvg(slotSvg(questions[i], slot));
         images[slot] = { url: raster.url, width: raster.width, height: raster.height };
       }
-      htmls.push(sectionsHtml(sections[i], images));
+      const texts=sections[i].flat().flatMap(n=>n.k==='table'?[...n.headers,...n.rows.flat()]:n.k==='image'?[]:[n.text]);
+      const mathImages=await prepareMathImages(texts,rasterizeSvg);
+      htmls.push(sectionsHtml(sections[i], images,text=>mathImageHtml(text,mathImages)));
     }
     return joinHtml(htmls);
   });

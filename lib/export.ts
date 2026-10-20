@@ -1,4 +1,7 @@
 import { LABELS } from './config';
+import { questionTable } from './table';
+import { mathParts, latexText, legacyLatex } from './math';
+import { mathLines, prepareMathImages } from './math-raster';
 import { questionSvg } from './figures';
 import type { ExportContent, Package, Question, Settings } from './types';
 
@@ -25,12 +28,12 @@ function csvCell(text: unknown): string {
 }
 export function exportCsv(packages: Package[], settings: Settings) {
   const headers = ['Paket', 'Nomor', 'Subtes', 'Materi', 'Submateri', 'Kesulitan', 'Bloom', 'Soal', 'A', 'B', 'C', 'D', 'E',
-    'Kunci', 'Poin A', 'Poin B', 'Poin C', 'Poin D', 'Poin E', 'Pembahasan', 'Alasan A', 'Alasan B', 'Alasan C', 'Alasan D', 'Alasan E', 'Stimulus JSON', 'Sumber', 'Status', 'Revisi', 'Penelaah', 'Catatan kurasi', 'Alasan kesulitan', 'Rubrik JSON'];
+    'Kunci', 'Poin A', 'Poin B', 'Poin C', 'Poin D', 'Poin E', 'Pembahasan', 'Alasan A', 'Alasan B', 'Alasan C', 'Alasan D', 'Alasan E', 'Stimulus JSON', 'Sumber', 'Status', 'Revisi', 'Penelaah', 'Catatan kurasi', 'Alasan kesulitan', 'Rubrik JSON', 'Mapping ID','Category sumber','Lesson sumber','Chapter sumber','Label kesulitan sumber','Cara cepat','Asal butir'];
   const rows = packages.flatMap((pack) => pack.questions.map((q) => [pack.id, q.no, q.subtest, q.topic, q.subtopic, LABELS[q.difficulty],
-    q.bloom ?? '', q.stem, ...q.options.map((option) => option.text), letter(q.answer), ...q.options.map((option) => option.score),
-    q.explanation, ...q.options.map((option) => option.reason),
+    q.bloom ?? '', latexText(q.stem), ...q.options.map((option) => latexText(option.text)), letter(q.answer), ...q.options.map((option) => option.score),
+    latexText(q.explanation), ...q.options.map((option) => latexText(option.reason)),
     q.visual || q.table ? JSON.stringify({ visual: q.visual, table: q.table, figures: q.options.map((option) => option.figure), scenes: q.options.map((option) => option.scene) }) : '', q.source,
-    q.review?.status ?? 'draft', q.review?.revision ?? 1, q.review?.reviewer ?? '', q.review?.note ?? '', q.difficultyReason ?? '', q.rubric ? JSON.stringify(q.rubric) : '']));
+    q.review?.status ?? 'draft', q.review?.revision ?? 1, q.review?.reviewer ?? '', q.review?.note ?? '', q.difficultyReason ?? '', q.rubric ? JSON.stringify(q.rubric) : '',q.mappingId??'',q.provenance?.category??'',q.provenance?.lesson??'',q.provenance?.chapter??'',q.provenance?.declaredDifficulty??'',q.tip??'',q.provenance?.status??q.origin]));
   download(new Blob(['\ufeff' + [headers, ...rows].map((row) => row.map(csvCell).join(',')).join('\r\n')], { type: 'text/csv;charset=utf-8' }),
     name(settings.title) + '.csv');
 }
@@ -55,9 +58,9 @@ const rasterize = (question: Question) => rasterizeSvg(questionSvg(question));
 export const pngBlob = (raster: Raster) => new Blob([raster.data], { type: 'image/png' });
 // Ukuran gambar figural di dokumen Word (piksel); salinan clipboard memakai ukuran yang sama supaya hasil tempel serupa.
 export const docImageSize = (image: { width: number; height: number }) => { const width = Math.min(630, image.width * 1.1); return { width, height: width * image.height / image.width }; };
-const plain = (text: string) => text.replace(/[“”]/g, '"').replace(/[‘’]/g, "'").replace(/[–—−]/g, '-')
+const plain = (text: string) => text.normalize('NFKC').replace(/[“”]/g, '"').replace(/[‘’]/g, "'").replace(/[–—−]/g, '-')
   .replace(/→/g, ' -> ').replace(/¬/g, 'bukan ').replace(/…/g, '...').replace(/[•∙]/g, '-')
-  .replace(/≥/g, '>=').replace(/≤/g, '<=');
+  .replace(/≥/g, '>=').replace(/≤/g, '<=').replace(/≠/g,'!=').replace(/[⇔↔]/g,' <-> ').replace(/∧/g,' dan ').replace(/∨/g,' atau ').replace(/∴/g,'maka ').replace(/∈/g,' anggota ');
 
 // Tata letak satu soal sebagai daftar blok (ukuran huruf, tebal, jarak, gambar). PDF (pdfBlob) dan PNG (questionPngBlob)
 // sama-sama melukis daftar ini, jadi keduanya selalu seragam. Satuan lebar, tinggi, dan jarak: milimeter pada halaman A4.
@@ -71,18 +74,31 @@ export function questionBlocks(q: Question, content: ExportContent, image: Raste
   const head: Block[] = [];
   if (draftNote && q.review?.status !== 'approved') head.push(text(DRAFT_NOTE, 9, true, 2));
   head.push(text(questionHeader(q), 9, true, 3), text(q.stem, 10, false, 3));
-  if (q.table) head.push(text(q.table.headers.join(' | '), 9, true, 1), ...q.table.rows.map((row) => text(row.join(' | '), 9, false, 1)), { kind: 'gap', mm: 3 });
+  const table=questionTable(q);
+  if (table) {
+    if(!table.headers.length&&(q.subtopic==='Matriks Deret'||q.family==='matriks-angka'))head.push(text('\\[\\begin{array}{'+ 'r'.repeat(table.rows[0].length) +'}'+table.rows.map(row=>row.map(legacyLatex).join(' & ')).join(' \\\\ ')+'\\end{array}\\]',11,false,3));
+    else head.push(...(table.headers.length?[text(table.headers.join(' | '),9,true,1)]:[]), ...table.rows.map(row=>text(row.join(' | '),9,false,1)), {kind:'gap',mm:3});
+  }
   if (image) {
     const width = Math.min(q.visual?.kind === 'matriks' ? 145 : 172, image.width * 0.3);
     head.push({ kind: 'image', image, width, height: width * image.height / image.width, gap: 6 });
-  } else q.options.forEach((option, i) => head.push(text(letter(i) + '. ' + option.text, 10, false, 1)));
+  } else q.options.forEach((option, i) => head.push(text(letter(i) + '. ' + latexText(option.text), 10, false, 1)));
   const tail = content === 'pembahasan' ? [text('Jawaban: ' + letter(q.answer), 10, true, 2), text(q.explanation, 9, false, 3),
-    ...q.options.map((_, i) => text(reasonLine(q, i), 9, false, 2))] : [];
+    ...q.options.map((_, i) => text(reasonLine(q, i), 9, false, 2)),...(q.tip?[text('Cara cepat: '+q.tip,9,false,3)]:[]),...(q.source?[text('Sumber: '+q.source,8,false,3)]:[])] : [];
   return { head, tail };
 }
 
 // 'paket': judul, info paket, dan label draf (ekspor biasa). 'ringkas': untuk soal terpilih, tanpa durasi paket.
 // 'tanpa': hanya soal tanpa judul; label draf menempel pada tiap soal yang belum disetujui (satu soal).
+async function typesetBlocks(blocks:Block[]):Promise<Block[]> {
+  const output:Block[]=[];
+  for(const b of blocks){
+    if(b.kind!=='text'||/^Soal \d+ \|/.test(b.text)||!mathParts(b.text).some(p=>p.kind==='math')){output.push(b);continue;}
+    const lines=await mathLines(b.text,b.size*96/72,b.bold,178*96/25.4,rasterizeSvg);
+    lines.forEach((image,i)=>output.push({kind:'image',image,width:178,height:image.height*25.4/96,gap:i===lines.length-1?b.gap:0}));
+  }
+  return output;
+}
 export type PdfHeading = 'paket' | 'ringkas' | 'tanpa';
 export async function pdfBlob(packages: Package[], settings: Pick<Settings, 'title'>, content: ExportContent, heading: PdfHeading = 'paket'): Promise<Blob> {
   const { jsPDF } = await import('jspdf');
@@ -124,7 +140,8 @@ export async function pdfBlob(packages: Package[], settings: Pick<Settings, 'tit
         continue;
       }
       const image = q.visual ? await rasterize(q) : null;
-      const { head, tail } = questionBlocks(q, content, image, heading === 'tanpa');
+      const blocks = questionBlocks(q, content, image, heading === 'tanpa');
+      const head=await typesetBlocks(blocks.head),tail=await typesetBlocks(blocks.tail);
       room(Math.min(260, heightOf(head) + 7));
       paint(head);
       if (tail.length) { room(20); paint(tail); }
@@ -139,8 +156,14 @@ export async function pdfBlob(packages: Package[], settings: Pick<Settings, 'tit
 export async function wordBlob(packages: Package[], settings: Settings, content: ExportContent): Promise<Blob> {
   const { Document, Packer, Paragraph, TextRun, ImageRun, Table, TableCell, TableRow, WidthType, BorderStyle } = await import('docx');
   type Child = InstanceType<typeof Paragraph> | InstanceType<typeof Table>;
+  const mathImages=await prepareMathImages(packages.flatMap(p=>p.questions.flatMap(q=>[q.stem,q.explanation,q.tip??'',...q.options.flatMap(o=>[o.text,o.reason]),...(q.table?[...q.table.headers,...q.table.rows.flat()]:[])])),rasterizeSvg);
   const paragraph = (text: string, bold = false, size = 22, keepNext = false) => new Paragraph({
-    keepNext, spacing: { after: 100 }, children: [new TextRun({ text, bold, size, font: 'Calibri' })],
+    keepNext, spacing: { after: 100 }, children: mathParts(text).map(part=>{
+      if(part.kind==='text')return new TextRun({text:part.value,bold,size,font:'Calibri'});
+      const image=mathImages.get(part.value);
+      const scale=image?Math.min(size/24,630/image.width):1;
+      return image?new ImageRun({type:'png',data:image.data,transformation:{width:image.width*scale,height:image.height*scale},altText:{title:part.value,description:part.value,name:'formula'}}):new TextRun({text:'\\('+part.value+'\\)',size});
+    }),
   });
   const children: Child[] = [];
   for (let i = 0; i < packages.length; i++) {
@@ -159,14 +182,16 @@ export async function wordBlob(packages: Package[], settings: Settings, content:
         new TextRun({ text: questionHeader(q), bold: true, size: 20 }),
       ] }));
       q.stem.split('\n').filter(Boolean).forEach((line) => children.push(paragraph(line, false, 22, Boolean(q.visual || q.table))));
-      if (q.table) {
-        const widths = q.table.headers.map(() => Math.floor(9900 / q.table!.headers.length));
+      const table=questionTable(q);
+      if (table) {
+        const columns=table.headers.length||table.rows[0].length;
+        const widths = Array.from({length:columns},() => Math.floor(9900 / columns));
         const border = { style: BorderStyle.SINGLE, size: 4, color: 'D9D9D9' };
         children.push(new Table({ width: { size: widths.reduce((a, b) => a + b, 0), type: WidthType.DXA }, columnWidths: widths,
-          rows: [q.table.headers, ...q.table.rows].map((row, rowIndex) => new TableRow({
-            tableHeader: rowIndex === 0, children: row.map((cell, cellIndex) => new TableCell({
+          rows: [...(table.headers.length?[table.headers]:[]), ...table.rows].map((row, rowIndex) => new TableRow({
+            tableHeader: table.headers.length>0 && rowIndex === 0, children: row.map((cell, cellIndex) => new TableCell({
               width: { size: widths[cellIndex], type: WidthType.DXA }, margins: { top: 90, bottom: 90, left: 120, right: 120 },
-              borders: { top: border, bottom: border, left: border, right: border }, children: [paragraph(cell, rowIndex === 0, 20)],
+              borders: { top: border, bottom: border, left: border, right: border }, children: [paragraph(cell, table.headers.length>0 && rowIndex === 0, 20)],
             })),
           })) }));
       }
@@ -175,11 +200,13 @@ export async function wordBlob(packages: Package[], settings: Settings, content:
         children.push(new Paragraph({ children: [new ImageRun({ type: 'png', data: image.data,
           transformation: docImageSize(image),
           altText: { title: 'Soal figural ' + q.no, description: q.stem, name: 'figural-' + q.no } })] }));
-      } else q.options.forEach((option, j) => children.push(paragraph(letter(j) + '. ' + option.text)));
+      } else q.options.forEach((option, j) => children.push(paragraph(letter(j) + '. ' + latexText(option.text))));
       if (content === 'pembahasan') {
         children.push(paragraph('Jawaban: ' + letter(q.answer), true));
         q.explanation.split('\n').filter(Boolean).forEach((line) => children.push(paragraph(line)));
         q.options.forEach((_, j) => children.push(paragraph(reasonLine(q, j), false, 20)));
+        if(q.tip)children.push(paragraph('Cara cepat: '+q.tip,false,20));
+        if(q.source)children.push(paragraph('Sumber: '+q.source,false,18));
       }
     }
   }
@@ -233,7 +260,8 @@ const loadImage = (src: string) => new Promise<HTMLImageElement>((resolve, rejec
 });
 export async function questionPngBlob(q: Question, content: ExportContent): Promise<Blob> {
   const image = q.visual ? await rasterize(q) : null;
-  const { head, tail } = questionBlocks(q, content, image, true);
+  const blocks = questionBlocks(q, content, image, true);
+  const head=await typesetBlocks(blocks.head),tail=await typesetBlocks(blocks.tail);
   const canvas = document.createElement('canvas'), context = canvas.getContext('2d');
   if (!context) throw new Error('Canvas tidak tersedia.');
   const px = PNG_PX_PER_MM;

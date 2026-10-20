@@ -7,9 +7,15 @@ import type { BankItem, DifficultyFilter, Mode, Package, Question, Settings, Sub
 import { auditPackages } from './validate';
 import { buildBlueprint, checkBlueprint } from './blueprint';
 import { validationBinding } from './binding';
+import { generateTryout } from './tryout-profile';
+import { MAPPING_ROWS } from './mapping';
+import { LOCAL_RECIPES, localRecipes, usesLocal, chooseLocal, makeLocal } from './local';
 
 export function normalizeSettings(input: Partial<Settings>): Settings {
   const value = { ...DEFAULT_SETTINGS, ...input };
+  if (value.profile && !['free','tryout-2027'].includes(value.profile)) throw new Error('Profil paket tidak dikenal.');
+  if (value.tiuSource && !['accepted','variation'].includes(value.tiuSource)) throw new Error('Sumber TIU tidak dikenal.');
+  for(const key of ['twkSource','tkpSource'] as const) if(value[key]!==undefined&&!['accepted','new'].includes(value[key]!))throw new Error('Sumber '+key.slice(0,3).toUpperCase()+' tidak dikenal.');
   if (value.difficulty === 'hots') value.difficulty = 'sulit';
   if (!['SKD', 'TWK', 'TIU', 'TKP'].includes(value.mode)) throw new Error('Subtes tidak dikenal.');
   if (!['campuran', 'mudah', 'sedang', 'sulit', 'hots'].includes(value.difficulty)) throw new Error('Tingkat kesulitan tidak dikenal.');
@@ -24,7 +30,7 @@ export function normalizeSettings(input: Partial<Settings>): Settings {
   const available = value.mode === 'SKD' ? Object.values(TOPICS).flat() : TOPICS[value.mode];
   if (value.topics.some((topic) => !available.includes(topic))) throw new Error('Materi tidak sesuai dengan subtes yang dipilih.');
   if (!Array.isArray(value.subtopics) || value.subtopics.some((topic) => typeof topic !== 'string')) throw new Error('Pilihan submateri tidak valid.');
-  const eligibleSubtopics = [...BANK, ...TIU_FAMILIES.map((family) => ({ ...family, subtopic: family.name }))]
+  const eligibleSubtopics = [...BANK, ...LOCAL_RECIPES, ...TIU_FAMILIES.map((family) => ({ ...family, subtopic: family.name })), ...MAPPING_ROWS.map((r)=>({ topic:r.topic,subtopic:r.chapter }))]
     .filter((item) => available.includes(item.topic)).map((item) => item.topic + '::' + item.subtopic);
   if (value.subtopics.some((topic) => !eligibleSubtopics.includes(topic))) throw new Error('Submateri tidak sesuai subtes yang dipilih.');
   if (value.mode === 'SKD' && value.count < 3) throw new Error('Paket gabungan memerlukan minimal tiga soal.');
@@ -61,6 +67,8 @@ function fromBank(item: BankItem): Question {
   };
 }
 function shuffled(question: Question, random: Rng): Question {
+  // Preserve authored labels, mathematical variables, scores, and explanation in accepted originals.
+  if (question.provenance?.status === 'accepted-example'||question.proof.kind==='local') return question;
   const order = random.shuffle([0, 1, 2, 3, 4]);
   const proof = question.proof;
   const remapLabels = (text: string) => question.origin === 'referensi' ?
@@ -82,12 +90,17 @@ function planTopics(topics: string[], count: number, random: Rng): string[] {
 export function capacity(settings: Settings) {
   const counts = distribution(settings.mode, settings.count);
   return (['TWK', 'TKP'] as const).filter((subtest) => counts[subtest]).map((subtest) => ({
-    subtest, available: bankFor(subtest, settings.topics, settings.difficulty, settings.subtopics).length,
+    subtest, available: usesLocal(settings,subtest)?localRecipes(subtest,settings.topics,settings.difficulty,settings.subtopics).length:bankFor(subtest, settings.topics, settings.difficulty, settings.subtopics).length,
     required: counts[subtest] * (settings.uniqueAcross ? settings.packages : 1),
   }));
 }
 export function generate(settingsInput: Partial<Settings>): Package[] {
   const settings = normalizeSettings(settingsInput);
+  if (settings.profile==='tryout-2027') {
+    const packages=generateTryout(settings,fingerprint),audit=auditPackages(packages,settings);
+    if (!audit.ok) throw new Error('Profil tryout gagal validasi: '+audit.errors.slice(0,3).join('; '));
+    return packages;
+  }
   const counts = distribution(settings.mode, settings.count);
   const blueprint = buildBlueprint(settings);
   for (const entry of capacity(settings)) if (entry.required > entry.available) {
@@ -96,27 +109,35 @@ export function generate(settingsInput: Partial<Settings>): Package[] {
   }
   const globalUsed = new Set<string>();
   const globalBankUsed = new Set<string>();
+  const globalLocalUsed = new Set<string>();
   const packages: Package[] = [];
   for (let p = 0; p < settings.packages; p++) {
     const random = rng(settings.seed + '|' + p);
     const localUsed = new Set<string>(), localBankUsed = new Set<string>(), usedFamilies = new Set<string>();
     const questions: Question[] = [];
+    const localUsedRecipes = new Set<string>();
     for (const subtest of ['TWK', 'TIU', 'TKP'] as const) {
       if (!counts[subtest]) continue;
       const topics = TOPICS[subtest].filter((topic) => !settings.topics.length || settings.topics.includes(topic));
       if (!topics.length) throw new Error('Pilih setidaknya satu materi untuk ' + subtest + '.');
-      const pool = subtest === 'TIU' ? [] : random.shuffle(bankFor(subtest, topics, settings.difficulty, settings.subtopics));
+      const pool = random.shuffle(bankFor(subtest, topics, settings.difficulty, settings.subtopics));
       const familyPool = TIU_FAMILIES.filter((family) => topics.includes(family.topic) &&
         (settings.difficulty === 'campuran' || family.levels.includes(settings.difficulty)) &&
         (!settings.subtopics.length || settings.subtopics.includes(family.topic + '::' + family.name)));
-      const availableTopics = subtest === 'TIU' ? topics.filter((topic) => familyPool.some((family) => family.topic === topic)) :
-        topics.filter((topic) => pool.some((item) => item.topic === topic));
+      const availableTopics = subtest === 'TIU' ? topics.filter((topic) => familyPool.some((family) => family.topic === topic)||pool.some((item)=>item.topic===topic)) :
+        topics.filter((topic) => usesLocal(settings,subtest)?localRecipes(subtest,[topic],settings.difficulty,settings.subtopics).length:pool.some((item) => item.topic === topic));
       if (!availableTopics.length) throw new Error('Tidak ada soal ' + subtest + ' pada filter kesulitan ini.');
       const plan = random.shuffle(blueprint.filter((row) => row.subtest === subtest).flatMap((row) => Array.from({ length: row.count }, () => ({ topic: row.topic, difficulty: row.difficulty }))));
       for (let index = 0; index < plan.length; index++) {
         let question: Question | undefined;
         const target = plan[index].topic, targetLevel = plan[index].difficulty;
-        if (subtest !== 'TIU') {
+        if (usesLocal(settings,subtest)) {
+          const available=localRecipes(subtest,[target],targetLevel,settings.subtopics).filter(x=>!localUsedRecipes.has(x.key)&&(!settings.uniqueAcross||!globalLocalUsed.has(x.key)));
+          const recipe=chooseLocal(available,questions,random,packages.flatMap(p=>p.questions));
+          if(!recipe)throw new Error('Variasi lokal '+target+' / '+targetLevel+' habis. Perluas filter atau izinkan pengulangan antarpaket.');
+          question=makeLocal(recipe,random); question.id+='-p'+p;
+          localUsedRecipes.add(recipe.key);globalLocalUsed.add(recipe.key);
+        } else if (subtest !== 'TIU') {
           const candidates = pool.filter((item) => !localBankUsed.has(item.id) && (!settings.uniqueAcross || !globalBankUsed.has(item.id)));
           const choose = (items: BankItem[]) => items.find((item) => !usedFamilies.has(familyFor(item))) ?? items[0];
           const item = choose(candidates.filter((item) => item.topic === target && item.difficulty === targetLevel));
@@ -125,7 +146,13 @@ export function generate(settingsInput: Partial<Settings>): Package[] {
           question = fromBank(item);
         } else {
           const families = familyPool.filter((family) => family.topic === target && family.levels.includes(targetLevel));
+          if(!families.length){
+            const item=pool.find((item)=>item.topic===target&&item.difficulty===targetLevel&&!localBankUsed.has(item.id)&&(!settings.uniqueAcross||!globalBankUsed.has(item.id)));
+            if(!item)throw new Error('Contoh TIU habis untuk chapter dan kesulitan ini.');
+            localBankUsed.add(item.id);globalBankUsed.add(item.id);question=fromBank(item);
+          }
           for (let attempt = 0; attempt < 600; attempt++) {
+            if(question)break;
             const family = families[(index + attempt) % families.length];
             const level = targetLevel;
             const draft = makeTiu(family, level, random);

@@ -1,0 +1,208 @@
+FILE: Andika_Verbal Analitis - Memperkuat_Memperlemah_Ready to Input.docx
+[0] Soal 1
+[1] Category: Penalaran Verbal
+[2] Lesson: Analitis
+[3] Chapter: Memperkuat/Memperlemah Argumen
+[4] Tingkat Kesulitan: Mudah
+[5] Bentuk Soal: Option New
+[6] Perpustakaan kelurahan memasang label warna yang sama pada punggung buku dan rak sesuai jenis bacaannya. Pengelola berpendapat bahwa label tersebut membantu pengunjung mengembalikan buku ke rak yang tepat. Dengan demikian, waktu yang dibutuhkan petugas untuk menata ulang buku akan berkurang.
+[7] Temuan manakah yang paling MEMPERKUAT pendapat pengelola?
+[8] A. Petugas tetap menata ulang rak setiap sore, termasuk memeriksa urutan buku dan merapikan buku yang dipinjam pengunjung.
+[9] B. Jumlah buku yang salah rak menurun setelah pelabelan, sedangkan jumlah pengunjung dan buku yang dikembalikan relatif tetap.
+[10] C. Pengunjung lebih mudah mengenali jenis bacaan melalui warna label, tetapi belum diketahui apakah mereka mengembalikan buku ke rak yang sesuai.
+[11] D. Buku yang dikembalikan kini dicatat lebih rinci sehingga petugas mengetahui peminjamnya, meskipun tempat pengembalian buku tidak tercantum dalam catatan tersebut.
+[12] E. Pengunjung menilai susunan rak lebih menarik setelah diberi label, tetapi penilaian itu tidak mencakup ketepatan pengembalian atau waktu penataan buku.
+[13] Jawaban: B
+[14] Pembahasan:
+[15] Alasan pengelola adalah bahwa kecocokan warna memudahkan pengembalian buku. Kesimpulannya, pekerjaan menata ulang akan berkurang. Opsi B memberikan bukti pada penghubung kedua gagasan tersebut: lebih sedikit buku berada di rak yang salah. Jumlah pengunjung dan buku yang relatif tetap membuat penurunan itu tidak sekadar disebabkan berkurangnya aktivitas perpustakaan. Karena buku yang perlu dipindahkan lebih sedikit, perkiraan berkurangnya waktu penataan menjadi lebih masuk akal. Bukti ini memperkuat kesimpulan tanpa harus membuktikan bahwa label merupakan satu-satunya penyebab.
+[16] Alasan opsi lain tidak tepat:
+[17] A menunjukkan bahwa kegiatan penataan masih dilakukan, tetapi tidak memberikan perbandingan waktu atau jumlah buku yang salah rak.
+[18] C mendukung pengenalan jenis bacaan, tetapi belum menghubungkannya dengan perilaku mengembalikan buku secara tepat.
+[19] D menjelaskan ketelitian pencatatan peminjaman, bukan ketepatan penempatan buku.
+[20] E menunjukkan perubahan kesan pengunjung, bukan perbaikan hasil yang diklaim pengelola.
+[21] Cara cepat:
+[22] Cari bukti yang menghubungkan tindakan dengan hasil yang diklaim, bukan informasi yang hanya membahas tempat atau objek yang sama.
+[23] Soal 2
+[24] Category: Penalaran Verbal
+[25] Lesson: Analitis
+[26] Chapter: Memperkuat/Memperlemah Argumen
+[27] Tingkat Kesulitan: Sedang
+[28] Bentuk Soal: Option New
+[29] Sebuah sanggar menyediakan rekaman pelafalan untuk peserta kelas bahasa daerah. Peserta diminta mendengarkan rekaman, mengucapkan kata yang sama, lalu membandingkan suara mereka dengan contoh. Pengajar memperkirakan latihan ini dapat meningkatkan ketepatan pelafalan karena peserta lebih mudah mengenali dan memperbaiki bunyi yang mereka ucapkan secara keliru.
+[30] Jika benar, informasi tambahan manakah yang paling MEMPERKUAT mekanisme dalam argumen tersebut?
+[31] A. Peserta dapat mengakses rekaman setiap hari, tetapi catatan penggunaan belum membedakan kegiatan mendengarkan contoh dari kegiatan membandingkan ucapan sendiri.
+[32] B. Peserta menghafal lebih banyak kosakata setelah latihan, sedangkan tes yang digunakan hanya menilai arti kata tanpa memeriksa ketepatan pelafalannya.
+[33] C. Peserta menganggap suara pada rekaman mudah didengar, tetapi sebagian tetap tidak mengetahui bagian ucapan mereka yang berbeda dari contoh.
+[34] D. Peserta mengenali perbedaan bunyi dengan contoh dan mengurangi kesalahan yang sama pada percobaan berikutnya tanpa koreksi langsung dari pengajar.
+[35] E. Pengajar menilai rekaman sesuai dengan materi kelas, meskipun belum memeriksa apakah peserta mampu menggunakan contoh tersebut untuk memperbaiki pelafalan.
+[36] Jawaban: D
+[37] Pembahasan:
+[38] Argumen tidak sekadar menyatakan bahwa rekaman tersedia, tetapi menjelaskan proses perbaikannya: mendengar contoh, mengenali kesalahan, lalu memperbaiki ucapan. Opsi D menunjukkan bahwa dua tahap penting itu benar-benar berlangsung. Peserta dapat membedakan bunyi dan menggunakan perbedaan tersebut untuk memperbaiki percobaan selanjutnya. Informasi ini mendukung mekanisme yang dipakai pengajar untuk memperkirakan peningkatan ketepatan pelafalan.
+[39] Alasan opsi lain tidak tepat:
+[40] A menunjukkan tersedianya akses, tetapi tidak membuktikan berlangsungnya proses membandingkan dan memperbaiki ucapan.
+[41] B menunjukkan hasil pada penguasaan arti kata, sedangkan kesimpulan menyangkut pelafalan.
+[42] C menunjukkan kejelasan rekaman, tetapi justru menyisakan hambatan dalam mengenali kesalahan sendiri.
+[43] E menilai kesesuaian bahan ajar tanpa menunjukkan bahwa mekanisme perbaikan pelafalan bekerja.
+[44] Cara cepat:
+[45] Untuk argumen yang menjelaskan suatu proses, cari informasi yang membuktikan bahwa tahap penghubung menuju hasil memang bekerja.
+[46] Soal 3
+[47] Category: Penalaran Verbal
+[48] Lesson: Analitis
+[49] Chapter: Memperkuat/Memperlemah Argumen
+[50] Tingkat Kesulitan: Sulit
+[51] Bentuk Soal: Option New
+[52] Sebuah koperasi menerapkan jadwal pengambilan pesanan yang berbeda untuk setiap kelompok pelanggan. Sebulan kemudian, waktu antre rata-rata berkurang. Pada bulan yang sama, koperasi juga menambah satu loket pembayaran. Ketua koperasi menduga pengaturan jadwal, bukan penambahan loket, merupakan penyebab utama antrean menjadi lebih singkat.
+[53] Bukti manakah yang paling MEMPERKUAT dugaan ketua koperasi?
+[54] A. Ketika loket tambahan ditutup, antrean tetap lebih singkat daripada sebelum pengaturan jadwal, pada hari-hari dengan jumlah pesanan dan petugas yang sebanding.
+[55] B. Pelanggan dengan jadwal baru lebih sering datang tepat waktu, tetapi lama antre mereka belum dicatat terpisah dari pelanggan yang datang tanpa jadwal.
+[56] C. Loket tambahan melayani pembayaran lebih cepat daripada loket lama, dan pelanggan paling sering memilihnya ketika kedua loket dibuka secara bersamaan.
+[57] D. Jumlah pesanan harian selama penerapan jadwal baru lebih rendah daripada bulan sebelumnya, sedangkan jumlah loket yang beroperasi tidak selalu sama.
+[58] E. Survei menunjukkan pelanggan menyukai pengaturan jadwal, tetapi mereka juga menyukai loket tambahan dan tidak diminta membandingkan pengaruh kedua perubahan tersebut.
+[59] Jawaban: A
+[60] Pembahasan:
+[61] Ada dua perubahan yang dapat menjelaskan antrean lebih singkat, yaitu pengaturan jadwal dan penambahan loket. Opsi A membantu memisahkan pengaruh keduanya. Saat loket tambahan tidak beroperasi, manfaat berupa antrean yang lebih singkat masih terlihat pada jumlah pesanan yang sebanding. Dengan demikian, penambahan loket tidak diperlukan untuk menjelaskan seluruh penurunan waktu antre. Temuan ini meningkatkan dukungan bagi peran pengaturan jadwal, meskipun belum membuktikan bahwa faktor lain sama sekali tidak berpengaruh.
+[62] Alasan opsi lain tidak tepat:
+[63] B mendukung kepatuhan terhadap jadwal, tetapi belum membuktikan pengaruhnya terhadap waktu antre atau memisahkannya dari pengaruh loket.
+[64] C justru memberi alasan bahwa penambahan loket ikut menjelaskan antrean yang lebih singkat.
+[65] D menawarkan penjelasan alternatif berupa berkurangnya pesanan dan tidak mengendalikan jumlah loket.
+[66] E menunjukkan penerimaan pelanggan terhadap kedua perubahan, bukan bukti yang membedakan penyebab penurunan waktu antre.
+[67] Cara cepat:
+[68] Jika beberapa perubahan terjadi bersamaan, cari pembanding yang mempertahankan perubahan yang diuji sambil meniadakan penyebab alternatif.
+[69] Soal 4
+[70] Category: Penalaran Verbal
+[71] Lesson: Analitis
+[72] Chapter: Memperkuat/Memperlemah Argumen
+[73] Tingkat Kesulitan: HOTS
+[74] Bentuk Soal: Option New
+[75] Dalam uji coba di Desa Lestari, petani menerima pesan singkat tentang waktu penyiraman yang disesuaikan dengan kelembapan tanah. Penggunaan air menurun tanpa penurunan hasil panen. Dinas pertanian ingin menerapkan program serupa di Desa Harapan dan memperkirakan manfaat yang sama. Perkiraan itu didasarkan pada keberhasilan uji coba di Desa Lestari.
+[76] Informasi manakah yang paling MEMPERKUAT kesimpulan bahwa manfaat uji coba dapat diterapkan di desa sasaran?
+[77] A. Hasil panen awal kedua desa hampir sama, tetapi komoditas dan kemampuan tanah menahan air berbeda, sehingga kebutuhan penyiramannya belum tentu sebanding.
+[78] B. Petani Desa Harapan terbiasa membaca pesan dinas, tetapi belum diketahui apakah mereka dapat mengubah penyiraman pada waktu yang dianjurkan.
+[79] C. Tanah kedua desa memiliki kelembapan serupa saat diperiksa, tetapi pemeriksaan itu hanya sekali dan jenis tanaman yang dibudidayakan tidak dibandingkan.
+[80] D. Sistem irigasi kedua desa sama-sama dapat diatur, tetapi pasokan air Desa Harapan sering terputus pada waktu yang dianjurkan untuk penyiraman.
+[81] E. Tanaman, sifat tanah, dan pengaturan irigasi kedua desa sebanding; petani desa sasaran dapat menerima serta menjalankan anjuran penyiraman pada waktu yang ditentukan.
+[82] Jawaban: E
+[83] Pembahasan:
+[84] Kesimpulan menggunakan analogi: keberhasilan di satu lokasi diperkirakan dapat terjadi di lokasi lain. Kekuatan analogi bergantung pada kesamaan faktor yang menentukan keberhasilan, bukan pada sembarang kemiripan. Opsi E mencakup kondisi pertanian yang memengaruhi kebutuhan air serta kemampuan petani menjalankan anjuran. Kesamaan tersebut mengurangi risiko bahwa hasil uji coba hanya berlaku karena keadaan khusus Desa Lestari. Karena faktor penting dan cara penerapannya sebanding, perkiraan manfaat di Desa Harapan menjadi lebih kuat.
+[85] Alasan opsi lain tidak tepat:
+[86] A memakai kesamaan hasil panen sebagai dasar analogi, padahal kebutuhan air dapat berbeda karena tanaman dan tanahnya berbeda.
+[87] B mendukung penerimaan informasi saja dan belum memastikan bahwa anjuran dapat dilaksanakan.
+[88] C hanya memberikan kesamaan kondisi sesaat tanpa membandingkan faktor kebutuhan air secara memadai.
+[89] D menunjukkan kesamaan sarana, tetapi gangguan pasokan air dapat menghambat pelaksanaan anjuran.
+[90] Cara cepat:
+[91] Uji analogi melalui kesamaan faktor penyebab dan syarat pelaksanaannya. Kemiripan lokasi atau kegiatan saja belum cukup.
+[92] Soal 5
+[93] Category: Penalaran Verbal
+[94] Lesson: Analitis
+[95] Chapter: Memperkuat/Memperlemah Argumen
+[96] Tingkat Kesulitan: Sedang
+[97] Bentuk Soal: Option New
+[98] Setelah sebuah bengkel membuka saluran pelaporan anonim, jumlah laporan kejadian nyaris celaka meningkat. Sebagian pengawas menilai kenaikan itu menandakan kondisi kerja memburuk. Namun, koordinator keselamatan berpendapat bahwa kenaikan laporan terutama terjadi karena pekerja kini lebih berani mengungkap kejadian yang dahulu mereka sembunyikan.
+[99] Hasil pemeriksaan manakah yang paling MEMPERKUAT penafsiran koordinator keselamatan?
+[100] A. Jumlah laporan meningkat seiring bertambahnya pekerja, tetapi data belum memisahkan kenaikan akibat jumlah pekerja dari perubahan keberanian mereka untuk melapor.
+[101] B. Laporan kini lebih lengkap sehingga pengawas dapat menilai tingkat bahaya, tetapi kelengkapan itu tidak menunjukkan kapan kejadian berlangsung atau pernah dilaporkan.
+[102] C. Sebagian besar tambahan laporan berasal dari kejadian sebelum saluran anonim dibuka dan belum pernah disampaikan kepada pengawas melalui sistem sebelumnya.
+[103] D. Pekerja baru lebih sering mengalami kejadian nyaris celaka daripada pekerja lama, dan jumlah pekerja baru meningkat setelah saluran pelaporan dibuka.
+[104] E. Survei menunjukkan pekerja mengetahui saluran anonim, tetapi tidak menanyakan apakah mereka pernah menyembunyikan kejadian atau kini lebih bersedia mengungkapkannya.
+[105] Jawaban: C
+[106] Pembahasan:
+[107] Kedua pihak memberikan penafsiran berbeda atas kenaikan jumlah laporan. Pengawas menganggap kejadian bertambah, sedangkan koordinator menganggap lebih banyak kejadian lama terungkap. Opsi C mendukung penafsiran kedua melalui waktu kejadian dan riwayat pelaporannya. Jika sebagian besar tambahan laporan berasal dari kejadian sebelum saluran dibuka, kenaikan laporan tersebut tidak dapat langsung dianggap sebagai kenaikan kejadian baru. Temuan ini mendukung perubahan keterbukaan pelaporan sebagai penjelasan utama tambahan laporan, tanpa menyimpulkan bahwa seluruh kondisi keselamatan sudah membaik.
+[108] Alasan opsi lain tidak tepat:
+[109] A menyediakan penjelasan alternatif berupa bertambahnya pekerja dan belum mendukung perubahan keterbukaan pelaporan.
+[110] B menunjukkan kualitas informasi laporan, bukan apakah kenaikannya berasal dari kejadian lama yang baru terungkap.
+[111] D justru mendukung kemungkinan bertambahnya kejadian baru sehingga tidak memperkuat penafsiran koordinator.
+[112] E menunjukkan pengetahuan tentang saluran, tetapi belum menunjukkan perubahan perilaku pelaporan.
+[113] Cara cepat:
+[114] Bedakan jumlah kejadian dengan jumlah kejadian yang tercatat. Perubahan pelaporan dapat mengubah data tanpa perubahan yang sama pada keadaan sebenarnya.
+[115] Soal 6
+[116] Category: Penalaran Verbal
+[117] Lesson: Analitis
+[118] Chapter: Memperkuat/Memperlemah Argumen
+[119] Tingkat Kesulitan: Mudah
+[120] Bentuk Soal: Option New
+[121] Pengelola kantin mengganti wadah makan sekali pakai dengan kotak yang dapat digunakan berulang kali. Ia memperkirakan perubahan ini akan mengurangi jumlah kemasan sekali pakai yang dibuang setiap hari, karena makanan tidak lagi disajikan langsung dalam wadah sekali pakai.
+[122] Kondisi manakah yang paling MEMPERLEMAH perkiraan tersebut?
+[123] A. Setiap kotak tetap diberi pelapis sekali pakai; jumlah pelapis yang dibuang sama dengan jumlah wadah sekali pakai sebelumnya.
+[124] B. Sebagian pengunjung membawa makanan pulang, tetapi mereka menggunakan kotak baru yang dapat dikembalikan dan tidak diberi kemasan tambahan oleh petugas kantin.
+[125] C. Pencucian kotak meningkatkan pemakaian air kantin karena petugas harus membersihkan seluruh kotak setiap selesai digunakan pengunjung.
+[126] D. Biaya membeli kotak baru melebihi biaya wadah lama pada bulan pertama, tetapi kotak tersebut masih digunakan kembali pada bulan-bulan sesudahnya.
+[127] E. Jumlah pembeli bertambah setelah pergantian wadah, tetapi petugas memastikan bahwa setiap pembeli tetap menerima makanan dalam kotak yang dapat dipakai ulang.
+[128] Jawaban: A
+[129] Pembahasan:
+[130] Kesimpulan menyangkut jumlah kemasan sekali pakai yang dibuang, bukan sekadar jenis wadah luar yang dipakai. Opsi A menunjukkan bahwa fungsi kemasan sekali pakai tetap dipertahankan dalam bentuk pelapis. Karena jumlah pelapis yang dibuang sama dengan jumlah wadah sebelumnya, penggantian kotak tidak menghasilkan pengurangan jumlah kemasan sekali pakai sebagaimana diperkirakan. Hal ini menyerang hubungan antara tindakan dan hasil yang diklaim. Informasi tersebut tidak harus membuktikan bahwa semua manfaat kotak baru hilang.
+[131] Alasan opsi lain tidak tepat:
+[132] B tidak menunjukkan penggunaan kemasan sekali pakai pengganti karena kotak dapat dikembalikan dan tidak diberi kemasan tambahan.
+[133] C mengungkap dampak pada pemakaian air, sedangkan kesimpulan secara khusus menyangkut jumlah kemasan sekali pakai yang dibuang.
+[134] D membahas biaya pembelian, bukan jumlah kemasan yang dibuang.
+[135] E menunjukkan bertambahnya pembeli, tetapi tanpa informasi tentang penggunaan kemasan sekali pakai, dampaknya terhadap kesimpulan belum dapat dipastikan.
+[136] Cara cepat:
+[137] Cocokkan ukuran hasil dalam kesimpulan dengan keadaan sebenarnya. Perubahan bentuk sarana belum tentu mengurangi hal yang ingin dikurangi.
+[138] Soal 7
+[139] Category: Penalaran Verbal
+[140] Lesson: Analitis
+[141] Chapter: Memperkuat/Memperlemah Argumen
+[142] Tingkat Kesulitan: Sedang
+[143] Bentuk Soal: Option New
+[144] Pengelola komunitas baca menemukan bahwa anggota yang memakai aplikasi pencatat bacaan membaca lebih sering daripada anggota yang tidak memakainya. Ia menyimpulkan bahwa penggunaan aplikasi tersebut meningkatkan kebiasaan membaca. Berdasarkan kesimpulan itu, ia menganjurkan semua anggota memasang aplikasi agar frekuensi membaca mereka meningkat.
+[145] Temuan manakah yang paling MEMPERLEMAH kesimpulan bahwa aplikasi tersebut menyebabkan peningkatan frekuensi membaca?
+[146] A. Aplikasi menyediakan pengingat membaca dan catatan kemajuan, sehingga pengguna dapat menentukan target serta melihat jumlah buku yang telah mereka baca setiap bulan.
+[147] B. Beberapa anggota yang jarang membaca belum tertarik memasang aplikasi, tetapi alasan penolakan mereka dan perubahan frekuensi membacanya belum ditelusuri oleh pengelola.
+[148] C. Pengguna aplikasi memilih jenis bacaan yang berbeda dari nonpengguna; sebagian menyukai novel, sedangkan lainnya lebih sering membaca biografi.
+[149] D. Pengguna sudah lebih sering membaca sebelum memasang aplikasi; frekuensinya tetap setelah pemasangan, dan kebiasaan lama itulah yang mendorong mereka menggunakannya.
+[150] E. Sebagian anggota menggunakan aplikasi hanya untuk mencatat buku selesai dibaca, sementara anggota lainnya juga memakai pengingat dan fitur penentuan target bulanan.
+[151] Jawaban: D
+[152] Pembahasan:
+[153] Kesimpulan menganggap aplikasi menyebabkan kebiasaan membaca meningkat. Namun, perbedaan antara pengguna dan nonpengguna juga dapat muncul karena arah hubungan yang terbalik: anggota yang sudah rajin membaca lebih terdorong memakai aplikasi. Opsi D memberikan bukti langsung bagi kemungkinan tersebut. Perbedaan frekuensi sudah ada sebelum pemasangan, tidak meningkat sesudahnya, dan kebiasaan membaca yang lebih dahulu terbentuk mendorong penggunaan aplikasi. Dengan demikian, perbedaan yang diamati pengelola tidak cukup untuk menyimpulkan bahwa aplikasi menyebabkan peningkatan. Temuan ini melemahkan kesimpulan kausal tanpa menyatakan bahwa aplikasi mustahil bermanfaat bagi siapa pun.
+[154] Alasan opsi lain tidak tepat:
+[155] A menjelaskan fitur yang mungkin membantu kebiasaan membaca, sehingga tidak melemahkan arah hubungan yang diklaim.
+[156] B memberi petunjuk tentang perbedaan minat antarkelompok, tetapi belum menunjukkan urutan waktu atau penyebab perbedaan frekuensi membaca.
+[157] C menyebut perbedaan jenis bacaan tanpa membuktikan pengaruhnya terhadap ukuran hasil yang digunakan.
+[158] E menjelaskan variasi pemakaian fitur, tetapi belum menunjukkan apakah frekuensi membaca meningkat akibat aplikasi.
+[159] Cara cepat:
+[160] Periksa urutan waktunya: apakah tindakan menghasilkan kebiasaan, atau kebiasaan yang sudah ada justru mendorong seseorang melakukan tindakan?
+[161] Soal 8
+[162] Category: Penalaran Verbal
+[163] Lesson: Analitis
+[164] Chapter: Memperkuat/Memperlemah Argumen
+[165] Tingkat Kesulitan: Sulit
+[166] Bentuk Soal: Option New
+[167] Sebuah survei tentang pelayanan puskesmas dilakukan melalui kode QR yang ditempel di dekat pintu keluar. Dari warga yang mengisi survei, 92% menyatakan puas. Berdasarkan hasil tersebut, pengelola menyimpulkan bahwa hampir seluruh pengguna layanan puskesmas puas terhadap pelayanan yang diterima.
+[168] Keterangan manakah yang paling MEMPERLEMAH dasar penarikan kesimpulan itu?
+[169] A. Responden survei berasal dari berbagai kelompok usia, termasuk pengguna layanan yang datang sendiri maupun pengguna yang datang dengan pendamping.
+[170] B. Banyak pengguna layanan tidak terjangkau survei digital; pendataan terpisah menunjukkan bahwa tingkat kepuasan kelompok yang terlewat itu jauh lebih rendah.
+[171] C. Ribuan pengguna memindai kode QR selama survei berlangsung, dan banyaknya jawaban per hari relatif stabil dari awal hingga akhir.
+[172] D. Hampir semua responden menjawab seluruh pertanyaan; uji keterbacaan sebelumnya juga menunjukkan bahwa pertanyaan survei dipahami oleh pengguna yang mencobanya.
+[173] E. Proporsi responden yang puas relatif serupa pada pagi dan siang hari serta pada awal dan akhir pekan selama survei berlangsung.
+[174] Jawaban: B
+[175] Pembahasan:
+[176] Angka 92% berlaku bagi warga yang mengisi survei. Kesimpulan memperluasnya menjadi hampir seluruh pengguna layanan. Perluasan ini membutuhkan responden yang cukup mewakili populasi sasaran. Opsi B menunjukkan adanya kelompok besar yang tidak terjangkau sekaligus memiliki jawaban berbeda. Akibatnya, hasil survei cenderung terlalu mencerminkan kelompok yang dapat mengaksesnya. Masalahnya bukan hanya penggunaan media digital, melainkan ketidakterwakilan kelompok yang kepuasannya lebih rendah. Karena itu, angka pada responden belum layak digunakan untuk mendukung kesimpulan seluas yang dibuat pengelola.
+[177] Alasan opsi lain tidak tepat:
+[178] A menunjukkan keragaman responden, tetapi tidak membuktikan bahwa seluruh kelompok pengguna terwakili secara proporsional atau bahwa kelompok yang terlewat kurang puas.
+[179] C menunjukkan ukuran sampel besar dan jumlah jawaban stabil, bukan bukti adanya bias kepuasan dalam sampel.
+[180] D mendukung kelengkapan dan keterbacaan instrumen, tetapi tidak menguji keterwakilan pengguna layanan.
+[181] E menunjukkan konsistensi jawaban antarkelompok responden. Konsistensi tersebut tidak memberikan bukti langsung tentang kepuasan pengguna yang tidak terjangkau survei.
+[182] Cara cepat:
+[183] Bandingkan siapa yang memberikan data dengan siapa yang menjadi sasaran kesimpulan. Kelompok yang terlewat menjadi penting jika karakteristik atau jawabannya berbeda.
+[184] Soal 9
+[185] Category: Penalaran Verbal
+[186] Lesson: Analitis
+[187] Chapter: Memperkuat/Memperlemah Argumen
+[188] Tingkat Kesulitan: HOTS
+[189] Bentuk Soal: Option New
+[190] Sebuah kantor perizinan melaporkan bahwa rata-rata waktu dari berkas dinyatakan lengkap hingga izin diterbitkan turun dari 18 hari menjadi 10 hari setelah prosedur baru diterapkan. Kepala kantor menggunakan data itu untuk menyimpulkan bahwa rata-rata seluruh waktu yang dihabiskan pemohon sejak pertama menyerahkan berkas hingga menerima izin kini lebih singkat.
+[191] Informasi manakah yang paling MEMPERLEMAH kesimpulan kepala kantor tentang waktu keseluruhan yang dihabiskan pemohon?
+[192] A. Catatan waktu sesudah berkas lengkap dihasilkan sistem otomatis, sehingga penurunan durasi tahap itu tidak bergantung pada perkiraan petugas atau ingatan pemohon.
+[193] B. Sebagian besar izin diterbitkan paling lama 10 hari setelah berkas lengkap, dan petugas memeriksa pencapaian batas waktu itu setiap bulan.
+[194] C. Jumlah izin yang diterbitkan setiap bulan bertambah setelah prosedur baru diberlakukan, sementara jumlah petugas pada tahap penerbitan izin tetap sama.
+[195] D. Petugas menyelesaikan pemeriksaan akhir lebih cepat setelah dokumen pendukung dipindai, sehingga rata-rata waktu pada tahap tersebut turun dibandingkan prosedur sebelumnya.
+[196] E. Pada kelompok pemohon yang sama di setiap periode, waktu sejak penyerahan pertama hingga berkas dinyatakan lengkap rata-rata naik dari 2 menjadi 12 hari.
+[197] Jawaban: E
+[198] Pembahasan:
+[199] Data yang dikutip kepala kantor hanya mengukur tahap setelah berkas lengkap, sedangkan kesimpulannya menyangkut seluruh waktu sejak penyerahan pertama. Opsi E melengkapi tahap yang tidak dihitung. Sebelumnya, rata-rata waktu keseluruhan adalah 2 + 18 = 20 hari. Pada prosedur baru, rata-ratanya menjadi 12 + 10 = 22 hari. Karena rata-rata kedua tahap dihitung pada kelompok pemohon yang sama dalam setiap periode, rata-rata waktu total dapat diperoleh dengan menjumlahkan rata-rata kedua tahap tersebut. Tahap penerbitan memang lebih cepat, tetapi tambahan waktu pada tahap kelengkapan berkas lebih besar daripada penghematannya. Dengan demikian, kesimpulan bahwa seluruh waktu pemohon lebih singkat justru bertentangan dengan informasi lengkap.
+[200] Alasan opsi lain tidak tepat:
+[201] A mendukung ketepatan pengukuran tahap setelah berkas lengkap, tetapi tidak menunjukkan bahwa waktu total meningkat.
+[202] B mendukung pencapaian batas waktu setelah berkas lengkap, sedangkan kesimpulan menyangkut waktu sejak penyerahan pertama.
+[203] C menunjukkan peningkatan keluaran per bulan, bukan perubahan rata-rata waktu yang dialami setiap pemohon.
+[204] D menunjukkan percepatan salah satu tahap sehingga tidak membantah kesimpulan dengan bukti tentang durasi seluruh proses.
+[205] Cara cepat:
+[206] Periksa apakah data mengukur seluruh hal yang disebut dalam kesimpulan. Perbaikan satu tahap dapat tertutup oleh memburuknya tahap lain.

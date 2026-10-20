@@ -1,0 +1,40 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url),{chromium}=require(process.env.SKD_PLAYWRIGHT_MODULE??'playwright'),{unzipSync}=require('fflate');
+const dir=path.resolve('test-results'),base=process.env.SKD_BROWSER_URL??'http://127.0.0.1:3107';
+const browser=await chromium.launch({headless:true,...(process.env.SKD_BROWSER_EXECUTABLE?{executablePath:process.env.SKD_BROWSER_EXECUTABLE}:{})});
+const context=await browser.newContext({viewport:{width:1440,height:1050},acceptDownloads:true,permissions:['clipboard-read','clipboard-write']});
+const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
+const save=async(action,name)=>{const event=page.waitForEvent('download',{timeout:60000});await action();const d=await event;await d.saveAs(path.join(dir,name));return fs.readFileSync(path.join(dir,name));};
+try{
+ await page.goto(base);await page.waitForFunction(()=>document.querySelector('.save-status')?.textContent.includes('Tersimpan'));
+ await page.locator('input[type=file]').first().setInputFiles(path.join(dir,'presentation-workspace.json'));
+ await page.locator('.question-card').waitFor();assert.equal(await page.locator('.number-button').count(),5);
+ assert.ok(await page.locator('.question-stem [role=math]').count());assert.equal(await page.locator('.math-error').count(),0);
+ await page.locator('.question-card').screenshot({path:path.join(dir,'math-card-desktop.png')});
+ const png=await save(()=>page.getByRole('button',{name:'Unduh PNG',exact:true}).click(),'math-question.png');assert.equal(png[0],137);
+ await save(()=>page.getByRole('button',{name:'Unduh PDF',exact:true}).click(),'math-question.pdf');
+ await page.getByRole('button',{name:'Salin',exact:true}).click();await page.getByRole('button',{name:'Salin semua',exact:false}).click();await page.locator('.toast.ok').waitFor();
+ const copied=await page.evaluate(async()=>{const items=await navigator.clipboard.read();const out={};for(const item of items)for(const type of item.types)out[type]=await(await item.getType(type)).text();return out;});
+ assert.ok(copied['text/html'].includes('data:image/png;base64'));assert.ok(copied['text/plain'].includes('\\frac{3}{8}'));fs.writeFileSync(path.join(dir,'math-clipboard.html'),copied['text/html']);
+ for(const at of [3,4]){await page.locator('.number-button').nth(at).click();assert.equal(await page.locator('.question-card table th').count(),0);assert.equal(await page.locator('.question-card table td').count(),9);assert.equal(await page.locator('.question-card table tr').count(),3);}
+ await page.locator('.question-card').screenshot({path:path.join(dir,'matrix-card-desktop.png')});
+ await save(()=>page.getByRole('button',{name:'Unduh PNG',exact:true}).click(),'matrix-question.png');
+ await page.getByRole('button',{name:'Salin',exact:true}).click();await page.getByRole('button',{name:'Salin soal',exact:false}).click();await page.locator('.toast.ok').waitFor();
+ const matrixHtml=await page.evaluate(async()=>{const items=await navigator.clipboard.read();return await(await items[0].getType('text/html')).text();});assert.ok(!matrixHtml.includes('<th '));assert.equal((matrixHtml.match(/<td /g)??[]).length,9);
+ await page.setViewportSize({width:390,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.locator('.question-card').screenshot({path:path.join(dir,'matrix-card-mobile.png')});
+ await page.locator('.number-button').nth(1).click();assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));assert.equal(await page.locator('.math-error').count(),0);await page.locator('.question-card').screenshot({path:path.join(dir,'math-card-mobile.png')});
+ await page.setViewportSize({width:1440,height:1050});await page.getByRole('button',{name:'Ekspor paket',exact:true}).click();await page.getByLabel('Isi dokumen').selectOption('pembahasan');
+ await page.locator('.format-button').nth(1).click();const word=await save(()=>page.locator('.export-dialog .primary-button').click(),'math-matrix.docx');const zip=unzipSync(word),xml=new TextDecoder().decode(zip['word/document.xml']);
+ assert.ok(xml.includes('name="formula"'));assert.ok(!/<w:tblHeader\s*\/>|<w:tblHeader w:val="(?:true|1)"/.test(xml));assert.equal((xml.match(/<w:tr>/g)??[]).length,6);
+ await page.locator('.format-button').nth(0).click();await save(()=>page.locator('.export-dialog .primary-button').click(),'math-matrix.pdf');
+ await page.locator('.format-button').nth(2).click();const csv=await save(()=>page.locator('.export-dialog .primary-button').click(),'math-matrix.csv');assert.ok(csv.toString().includes('\\frac'));
+ await page.getByLabel('Tutup dialog ekspor').click();await page.getByRole('button',{name:'Evaluasi peserta',exact:true}).click();
+ const html=await save(()=>page.getByRole('button',{name:'Unduh berkas uji untuk peserta'}).click(),'math-pilot.html');assert.ok(!html.toString().includes('"answer":'));assert.ok(!html.toString().includes('"score":'));
+ const offline=await context.newPage();offline.on('pageerror',e=>errors.push(e.message));await offline.goto(pathToFileURL(path.join(dir,'math-pilot.html')).href);await offline.getByRole('button',{name:'Mulai pengerjaan'}).click();assert.ok(await offline.locator('#stem [role=math]').count());
+ for(let i=0;i<3;i++)await offline.getByRole('button',{name:'Berikutnya',exact:true}).click();assert.equal(await offline.locator('th').count(),0);assert.equal(await offline.locator('td').count(),9);await offline.screenshot({path:path.join(dir,'math-pilot.png'),fullPage:true});
+ assert.deepEqual(errors,[]);const report={status:'PASS',latexUi:true,richClipboard:true,matrixBodyRows:3,wordPdfPngCsv:true,offlineMath:true,mobileOverflow:false,errors};fs.writeFileSync(path.join(dir,'browser-presentation-report.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));
+}catch(e){await page.screenshot({path:path.join(dir,'presentation-failure.png'),fullPage:true});console.log(JSON.stringify({errors,alerts:await page.locator('[role=alert]').allTextContents()}));throw e;}finally{await browser.close();}

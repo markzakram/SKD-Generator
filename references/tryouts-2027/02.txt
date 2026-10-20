@@ -1,0 +1,250 @@
+FILE: Dhea_TWK (Bahasa Negara)_Done Input.docx
+[0] Soal 1
+[1] Category: Bahasa Indonesia
+[2] Lesson: Pemahaman Bacaan
+[3] Chapter: Ide pokok atau gagasan utama
+[4] Tingkat Kesulitan: Sedang
+[5] Bentuk Soal: Option New
+[6] Pemerintah kota memperluas layanan administrasi melalui aplikasi digital. Namun, sebagian warga lanjut usia belum terbiasa mengunggah dokumen dan memantau permohonan secara daring. Untuk membantu mereka, pemerintah menyediakan petugas pendamping di kantor kelurahan. Warga tetap mengajukan permohonan melalui sistem yang sama, tetapi memperoleh bantuan sesuai kebutuhan. Dengan demikian, perluasan layanan digital disertai dukungan agar kelompok yang mengalami kesulitan tetap dapat mengakses pelayanan.
+[7] Ide pokok paragraf tersebut adalah ....
+[8] A. Keterbatasan keterampilan digital warga lanjut usia memengaruhi kecepatan pengurusan dokumen.
+[9] B. Kantor kelurahan menjadi tempat pendampingan warga dalam mengunggah dokumen administrasi.
+[10] C. Kesamaan sistem pengajuan diperlukan untuk menyeragamkan pelayanan administrasi masyarakat.
+[11] D. Perluasan layanan digital disertai pendampingan untuk menjaga keterjangkauan pelayanan.
+[12] E. Petugas pendamping membantu pemerintah memantau permohonan administrasi secara daring.
+[13] Jawaban: D
+[14] Pembahasan:
+[15] Paragraf membahas perluasan layanan digital yang disertai pendampingan bagi warga yang kesulitan menggunakannya. Kalimat tentang warga lanjut usia, petugas pendamping, dan bantuan pengajuan merupakan penjelas gagasan tersebut.
+[16] Alasan opsi salah:
+[17] Opsi A dan B hanya mengambil bagian tertentu dari paragraf. Opsi C menekankan penyeragaman sistem, padahal fokusnya adalah keterjangkauan pelayanan. Opsi E menggeser fungsi pendamping dari membantu warga menjadi membantu pemerintah memantau permohonan.
+[18] Cara cepat:
+[19] Tentukan gagasan yang mencakup keseluruhan paragraf, bukan hanya kelompok warga atau satu tindakan pendampingan.
+[20] Soal 2
+[21] Category: Bahasa Indonesia
+[22] Lesson: Pemahaman Bacaan
+[23] Chapter: Ide pokok atau gagasan utama
+[24] Tingkat Kesulitan: Sedang
+[25] Bentuk Soal: Option New
+[26] Dalam tiga bulan terakhir, tim penyusun laporan menemukan sejumlah data yang berbeda antardokumen. Perbedaan itu muncul karena setiap bagian menggunakan waktu pembaruan dan definisi indikator yang berlainan. Tim kemudian menyepakati batas waktu pembaruan, menyusun definisi indikator bersama, dan menetapkan sumber rujukan untuk setiap angka. Langkah tersebut menunjukkan bahwa keseragaman acuan pengelolaan data diperlukan untuk menghasilkan laporan yang konsisten.
+[27] Gagasan utama paragraf tersebut adalah ....
+[28] A. Keseragaman acuan pengelolaan data diperlukan untuk menghasilkan laporan yang konsisten.
+[29] B. Perbedaan waktu pembaruan menjadi penyebab utama ketidaksesuaian angka dalam laporan.
+[30] C. Penyusunan definisi indikator bersama merupakan tugas utama tim penyusun laporan.
+[31] D. Penetapan sumber rujukan membantu setiap bagian mempercepat pembaruan data laporan.
+[32] E. Pemeriksaan laporan selama tiga bulan diperlukan untuk menemukan perbedaan antardokumen.
+[33] Jawaban: A
+[34] Pembahasan:
+[35] Paragraf diawali rincian masalah dan tindakan perbaikan, kemudian diakhiri pernyataan umum tentang perlunya keseragaman acuan pengelolaan data. Karena gagasan utama dinyatakan pada akhir paragraf, paragraf tersebut berpola induktif.
+[36] Alasan opsi salah:
+[37] Opsi B hanya menyebut salah satu penyebab dan menambahkan penilaian “utama”. Opsi C mempersempit pembahasan pada definisi indikator. Opsi D menambahkan manfaat berupa percepatan yang tidak disebutkan. Opsi E menjadikan rentang pengamatan sebagai keharusan, padahal teks tidak menyatakan demikian.
+[38] Cara cepat:
+[39] Cari pernyataan umum yang merangkum masalah dan tindakan perbaikan. Pada paragraf ini gagasan utama terdapat di akhir.
+[40] Soal 3
+[41] Category: Bahasa Indonesia
+[42] Lesson: Pemahaman Bacaan
+[43] Chapter: Simpulan paragraf
+[44] Tingkat Kesulitan: Sedang
+[45] Bentuk Soal: Option New
+[46] Sebuah sekolah membuka ruang belajar tambahan setelah jam pelajaran. Selama satu semester, jumlah siswa yang memanfaatkan ruang tersebut meningkat. Akan tetapi, sebagian siswa yang tinggal jauh jarang hadir karena kendaraan umum menuju rumah mereka berhenti beroperasi pada sore hari. Sekolah kemudian menyediakan bahan belajar yang dapat dipinjam agar siswa tersebut tetap memperoleh dukungan belajar dari rumah.
+[47] Simpulan yang paling tepat adalah ....
+[48] A. Peminjaman bahan belajar memberikan hasil yang lebih baik daripada penggunaan ruang belajar tambahan.
+[49] B. Penambahan ruang belajar belum banyak dimanfaatkan karena jadwal kendaraan umum tidak sesuai.
+[50] C. Jarak tempat tinggal menjadi penentu utama keberhasilan seluruh program belajar tambahan sekolah.
+[51] D. Peningkatan jumlah pengguna menunjukkan bahwa kebutuhan belajar tambahan siswa telah terpenuhi.
+[52] E. Dukungan belajar perlu mempertimbangkan perbedaan akses siswa terhadap fasilitas yang disediakan.
+[53] Jawaban: E
+[54] Pembahasan:
+[55] Sekolah telah menyediakan fasilitas yang semakin banyak digunakan, tetapi sebagian siswa masih menghadapi hambatan transportasi. Penyediaan bahan pinjaman menjadi alternatif untuk menjangkau kelompok tersebut. Simpulan yang mencakup seluruh informasi itu adalah perlunya mempertimbangkan perbedaan akses.
+[56] Alasan opsi salah:
+[57] Opsi A membandingkan hasil dua layanan tanpa data. Opsi B bertentangan dengan peningkatan pemanfaatan ruang belajar. Opsi C memperluas pengaruh jarak terhadap seluruh program. Opsi D mengabaikan siswa yang masih mengalami hambatan.
+[58] Cara cepat:
+[59] Gabungkan kondisi siswa yang terbantu dan siswa yang terkendala akses, lalu pilih simpulan yang mencakup keduanya.
+[60] Soal 4
+[61] Category: Bahasa Indonesia
+[62] Lesson: Pemahaman Bacaan
+[63] Chapter: Simpulan paragraf
+[64] Tingkat Kesulitan: Sedang
+[65] Bentuk Soal: Option New
+[66] Sebuah kantor mengganti formulir permohonan dengan versi yang lebih singkat. Setelah satu bulan, rata-rata waktu pengisian berkurang dari dua belas menit menjadi delapan menit. Meskipun demikian, jumlah formulir yang harus dikembalikan untuk diperbaiki tidak banyak berubah. Pemeriksaan petugas menunjukkan bahwa kesalahan masih sering terjadi pada bagian persyaratan yang menggunakan istilah teknis tanpa penjelasan.
+[67] Simpulan yang paling tepat adalah ....
+[68] A. Penggunaan istilah teknis merupakan penyebab berkurangnya waktu pengisian formulir permohonan.
+[69] B. Penyederhanaan formulir mempercepat pengisian, tetapi belum banyak mengurangi kebutuhan perbaikan.
+[70] C. Pemangkasan jumlah pertanyaan meningkatkan kecepatan sekaligus ketepatan pengisian formulir.
+[71] D. Formulir yang lebih singkat membuat pemohon mengabaikan bagian persyaratan yang harus dilengkapi.
+[72] E. Penambahan penjelasan istilah teknis telah mengurangi kesalahan pengisian formulir permohonan.
+[73] Jawaban: B
+[74] Pembahasan:
+[75] Dua hasil utama evaluasi adalah waktu pengisian berkurang dan jumlah formulir yang memerlukan perbaikan relatif tetap. Opsi B merangkum keduanya tanpa menambahkan informasi.
+[76] Alasan opsi salah:
+[77] Opsi A menghubungkan istilah teknis dengan penurunan waktu tanpa dasar. Opsi C bertentangan dengan hasil pemeriksaan kesalahan. Opsi D mengasumsikan perilaku mengabaikan persyaratan. Opsi E menyatakan tindakan dan hasil yang belum terjadi dalam teks.
+[78] Cara cepat:
+[79] Bandingkan dua hasil evaluasi, yakni waktu pengisian dan kesalahan formulir. Hindari simpulan yang mengabaikan salah satunya.
+[80] Soal 5
+[81] Category: Bahasa Indonesia
+[82] Lesson: Kalimat
+[83] Chapter: Kalimat efektif dan tidak efektif
+[84] Tingkat Kesulitan: Sedang
+[85] Bentuk Soal: Option New
+[86] Panitia menulis pemberitahuan berikut dalam grup peserta.
+[87] Bagi peserta yang belum mengunggah surat pernyataan diminta mengirimkannya paling lambat Jumat.
+[88] Penyunting ingin memperjelas subjek tanpa mengubah penerima pemberitahuan, dokumen yang diminta, maupun tenggat pengiriman.
+[89] Perbaikan kalimat yang paling tepat adalah ....
+[90] A. Bagi peserta yang belum mengunggah surat pernyataan, panitia diminta mengirimkannya paling lambat Jumat.
+[91] B. Surat pernyataan peserta yang belum mengunggah diminta mengirimkannya paling lambat Jumat.
+[92] C. Peserta yang belum mengunggah surat pernyataan diminta mengirimkannya paling lambat Jumat.
+[93] D. Peserta diminta mengirimkan surat pernyataan paling lambat Jumat setelah selesai mengunggahnya.
+[94] E. Kepada peserta yang belum mengunggah surat pernyataan diminta mengirimkannya paling lambat Jumat.
+[95] Jawaban: C
+[96] Pembahasan:
+[97] Kata bagi membuat bagian “bagi peserta yang belum mengunggah surat pernyataan” menjadi keterangan sehingga subjek kalimat tidak jelas. Menghilangkan kata tersebut membuat peserta yang belum mengunggah surat pernyataan berfungsi sebagai subjek.
+[98] Alasan opsi salah:
+[99] Opsi A mengubah pihak yang diminta mengirim menjadi panitia. Opsi B menjadikan surat pernyataan seolah-olah dapat melakukan pengiriman. Opsi D mengubah urutan tindakan dan sasaran pemberitahuan. Opsi E masih memiliki masalah yang sama karena penggunaan kepada tidak memperjelas subjek.
+[100] Cara cepat:
+[101] Identifikasi subjek yang seharusnya diminta bertindak. Hilangkan kata depan yang membuat subjek tidak jelas.
+[102] Soal 6
+[103] Category: Bahasa Indonesia
+[104] Lesson: Kalimat
+[105] Chapter: Kalimat efektif dan tidak efektif
+[106] Tingkat Kesulitan: Mudah
+[107] Bentuk Soal: Option New
+[108] Dalam laporan evaluasi tertulis kalimat berikut.
+[109] Evaluasi dilakukan untuk mengidentifikasi hambatan, pengukuran waktu pelayanan, dan merumuskan perbaikan.
+[110] Penyunting diminta memperbaiki kesejajaran bentuk pada perincian tujuan evaluasi.
+[111] Perbaikan yang paling tepat adalah ....
+[112] A. Evaluasi dilakukan untuk identifikasi hambatan, mengukur waktu pelayanan, dan perumusan perbaikan.
+[113] B. Evaluasi dilakukan untuk mengidentifikasi hambatan, waktu pelayanan diukur, dan merumuskan perbaikan.
+[114] C. Evaluasi dilakukan untuk mengidentifikasi hambatan, pengukuran waktu pelayanan, dan perumusan perbaikan.
+[115] D. Evaluasi dilakukan untuk identifikasi hambatan, pengukuran waktu pelayanan, dan merumuskan perbaikan.
+[116] E. Evaluasi dilakukan untuk mengidentifikasi hambatan, mengukur waktu pelayanan, dan merumuskan perbaikan.
+[117] Jawaban: E
+[118] Pembahasan:
+[119] Opsi E menggunakan tiga verba aktif yang sejajar, yaitu mengidentifikasi, mengukur, dan merumuskan. Ketiganya menyatakan tujuan evaluasi dengan struktur yang konsisten.
+[120] Alasan opsi salah:
+[121] Opsi A, C, dan D mencampurkan verba dengan nomina seperti identifikasi, pengukuran, dan perumusan. Opsi B mencampurkan verba aktif dengan klausa pasif waktu pelayanan diukur. Ketidaksejajaran tersebut membuat susunan perincian kurang efektif.
+[122] Cara cepat:
+[123] Pada perincian tujuan dengan kata untuk, pastikan bentuk unsur-unsurnya sejajar, misalnya sama-sama verba aktif.
+[124] Soal 7
+[125] Category: Bahasa Indonesia
+[126] Lesson: Ejaan dan Kebakuan
+[127] Chapter: Kata baku dan tidak baku
+[128] Tingkat Kesulitan: Mudah
+[129] Bentuk Soal: Option New
+[130] Seorang pegawai menyiapkan laporan kegiatan berikut.
+[131] Tim melakukan analisa terhadap aktifitas pelayanan untuk memperkirakan resiko keterlambatan.
+[132] Penyunting hanya diminta mengganti kata tidak baku tanpa mengubah susunan kalimat.
+[133] Hasil penyuntingan yang tepat adalah ....
+[134] A. Tim melakukan analisis terhadap aktifitas pelayanan untuk memperkirakan risiko keterlambatan.
+[135] B. Tim melakukan analisa terhadap aktivitas pelayanan untuk memperkirakan risiko keterlambatan.
+[136] C. Tim melakukan analisis terhadap aktivitas pelayanan untuk memperkirakan resiko keterlambatan.
+[137] D. Tim melakukan analisis terhadap aktivitas pelayanan untuk memperkirakan risiko keterlambatan.
+[138] E. Tim melakukan analisa terhadap aktifitas pelayanan untuk memperkirakan risiko keterlambatan.
+[139] Jawaban: D
+[140] Pembahasan:
+[141] Bentuk baku ketiga kata tersebut adalah analisis, aktivitas, dan risiko. Opsi D menggunakan seluruh bentuk baku itu.
+[142] Alasan opsi salah:
+[143] Opsi A masih menggunakan aktifitas, opsi B menggunakan analisa, dan opsi C menggunakan resiko. Opsi E masih memuat dua bentuk tidak baku, yaitu analisa dan aktifitas.
+[144] Cara cepat:
+[145] Periksa semua kata yang diuji dan pilih opsi yang membakukan ketiganya sekaligus.
+[146] Soal 8
+[147] Category: Bahasa Indonesia
+[148] Lesson: Ejaan dan Kebakuan
+[149] Chapter: Kata baku dan tidak baku
+[150] Tingkat Kesulitan: Mudah
+[151] Bentuk Soal: Option New
+[152] Pengelola layanan kesehatan akan memasang pengumuman berikut.
+[153] Petugas menghimbau warga agar antri dengan tertib di depan apotik.
+[154] Pengumuman itu perlu disunting agar seluruh katanya menggunakan bentuk baku.
+[155] Hasil penyuntingan yang tepat adalah ....
+[156] A. Petugas mengimbau warga agar antre dengan tertib di depan apotik.
+[157] B. Petugas mengimbau warga agar antre dengan tertib di depan apotek.
+[158] C. Petugas menghimbau warga agar antre dengan tertib di depan apotek.
+[159] D. Petugas mengimbau warga agar antri dengan tertib di depan apotek.
+[160] E. Petugas menghimbau warga agar antri dengan tertib di depan apotek.
+[161] Jawaban: B
+[162] Pembahasan:
+[163] Bentuk baku yang diperlukan adalah mengimbau, antre, dan apotek. Kata mengimbau dibentuk dari kata dasar imbau, bukan himbau.
+[164] Alasan opsi salah:
+[165] Opsi A masih menggunakan apotik. Opsi C masih menggunakan menghimbau. Opsi D menggunakan antri. Opsi E mengandung dua bentuk tidak baku, yaitu menghimbau dan antri.
+[166] Cara cepat:
+[167] Perhatikan bentuk baku mengimbau, antre, dan apotek. Satu bentuk tidak baku saja membuat opsi tidak tepat.
+[168] Soal 9
+[169] Category: Bahasa Indonesia
+[170] Lesson: Ejaan dan Kebakuan
+[171] Chapter: Penulisan tanda baca
+[172] Tingkat Kesulitan: Sedang
+[173] Bentuk Soal: Option New
+[174] Sebuah kantor menyiapkan petunjuk pendaftaran. Petunjuk itu menyebutkan tiga dokumen persyaratan, lalu menjelaskan bahwa petugas akan memeriksa dokumen setelah menerimanya. Penyunting diminta menggunakan titik dua untuk memperkenalkan perincian dan titik koma untuk memisahkan dua klausa setara.
+[175] Kalimat yang memenuhi ketentuan tersebut adalah ....
+[176] A. Pemohon menyiapkan tiga dokumen: kartu identitas, surat pengantar, dan formulir pendaftaran; petugas memeriksa kelengkapannya setelah dokumen diterima.
+[177] B. Pemohon menyiapkan: kartu identitas, surat pengantar, dan formulir pendaftaran; petugas memeriksa kelengkapannya setelah dokumen diterima.
+[178] C. Pemohon menyiapkan tiga dokumen; kartu identitas, surat pengantar, dan formulir pendaftaran: petugas memeriksa kelengkapannya setelah dokumen diterima.
+[179] D. Pemohon menyiapkan tiga dokumen: kartu identitas; surat pengantar; dan formulir pendaftaran, petugas memeriksa kelengkapannya setelah dokumen diterima.
+[180] E. Pemohon menyiapkan tiga dokumen, kartu identitas, surat pengantar, dan formulir pendaftaran: petugas memeriksa kelengkapannya setelah dokumen diterima.
+[181] Jawaban: A
+[182] Pembahasan:
+[183] Pada opsi A, “Pemohon menyiapkan tiga dokumen” merupakan pernyataan lengkap yang diikuti perincian sehingga tepat menggunakan titik dua. Titik koma memisahkan klausa tentang pemohon dan klausa tentang petugas yang berkedudukan setara.
+[184] Alasan opsi salah:
+[185] Opsi B memisahkan verba menyiapkan dari objeknya dengan titik dua. Opsi C menukar penggunaan titik dua dan titik koma. Opsi D tidak tepat dalam menandai perincian sederhana dan batas antarklausa. Opsi E menempatkan titik dua sebelum klausa yang bukan perincian dari bagian sebelumnya.
+[186] Cara cepat:
+[187] Titik dua memperkenalkan perincian setelah pernyataan lengkap, sedangkan titik koma dapat memisahkan klausa setara.
+[188] Soal 10
+[189] Category: Bahasa Indonesia
+[190] Lesson: Ejaan dan Kebakuan
+[191] Chapter: Penulisan tanda baca
+[192] Tingkat Kesulitan: Sedang
+[193] Bentuk Soal: Option New
+[194] Dalam penyuntingan laporan, seorang pegawai harus mempertahankan kalimat berikut sebagai satu kalimat.
+[195] Karena jaringan sedang diperbaiki layanan daring dihentikan sementara tetapi loket pelayanan tetap dibuka.
+[196] Penempatan tanda koma yang tepat adalah ....
+[197] A. Karena jaringan sedang diperbaiki layanan daring dihentikan sementara, tetapi loket pelayanan tetap dibuka.
+[198] B. Karena jaringan sedang diperbaiki, layanan daring dihentikan sementara tetapi loket pelayanan tetap dibuka.
+[199] C. Karena jaringan sedang diperbaiki, layanan daring dihentikan sementara, tetapi loket pelayanan tetap dibuka.
+[200] D. Karena jaringan sedang diperbaiki, layanan daring, dihentikan sementara, tetapi loket pelayanan tetap dibuka.
+[201] E. Karena jaringan sedang diperbaiki, layanan daring dihentikan sementara tetapi, loket pelayanan tetap dibuka.
+[202] Jawaban: C
+[203] Pembahasan:
+[204] Anak kalimat karena jaringan sedang diperbaiki mendahului induk kalimat sehingga dipisahkan dengan koma. Koma juga ditempatkan sebelum tetapi yang menghubungkan dua klausa setara dengan hubungan pertentangan.
+[205] Alasan opsi salah:
+[206] Opsi A tidak memisahkan anak kalimat di awal. Opsi B tidak menggunakan koma sebelum tetapi. Opsi D menyisipkan koma di antara subjek layanan daring dan predikatnya. Opsi E menempatkan koma setelah tetapi, bukan sebelumnya.
+[207] Cara cepat:
+[208] Pisahkan anak kalimat yang mendahului induk kalimat dan gunakan koma sebelum tetapi yang menghubungkan dua klausa setara.
+[209] Soal 11
+[210] Category: Bahasa Indonesia
+[211] Lesson: Ejaan dan Kebakuan
+[212] Chapter: Penulisan Ejaan Bahasa Indonesia yang Disempurnakan (EYD)
+[213] Tingkat Kesulitan: Mudah
+[214] Bentuk Soal: Option New
+[215] Seorang petugas mencatat bahwa dokumen telah melalui pemeriksaan di ruang administrasi sebelum dipindahkan menuju kantor pusat. Catatan tersebut akan dimasukkan ke dalam laporan resmi.
+[216] Kalimat yang tepat dalam membedakan penulisan kata depan dan imbuhan adalah ....
+[217] A. Dokumen diperiksa diruang administrasi sebelum dikirim ke kantor pusat.
+[218] B. Dokumen di periksa di ruang administrasi sebelum dikirim ke kantor pusat.
+[219] C. Dokumen diperiksa di ruang administrasi sebelum di kirim ke kantor pusat.
+[220] D. Dokumen diperiksa di ruang administrasi sebelum dikirim kekantor pusat.
+[221] E. Dokumen diperiksa di ruang administrasi sebelum dikirim ke kantor pusat.
+[222] Jawaban: E
+[223] Pembahasan:
+[224] Pada diperiksa dan dikirim, di- merupakan imbuhan pembentuk verba pasif sehingga ditulis serangkai. Pada di ruang dan ke kantor, di dan ke menunjukkan tempat atau arah sehingga ditulis terpisah sebagai kata depan.
+[225] Alasan opsi salah:
+[226] Opsi A keliru menulis diruang. Opsi B memisahkan imbuhan pada di periksa. Opsi C memisahkan imbuhan pada di kirim. Opsi D merangkaikan kata depan dengan kata berikutnya menjadi kekantor.
+[227] Cara cepat:
+[228] Bedakan di- sebagai imbuhan verba pasif yang dirangkai dan di atau ke sebagai kata depan yang dipisah.
+[229] Soal 12
+[230] Category: Bahasa Indonesia
+[231] Lesson: Ejaan dan Kebakuan
+[232] Chapter: Penulisan Ejaan Bahasa Indonesia yang Disempurnakan (EYD)
+[233] Tingkat Kesulitan: Sedang
+[234] Bentuk Soal: Option New
+[235] Panitia pelatihan menyiapkan informasi bagi pegawai non-ASN dari berbagai daerah di Indonesia. Pengumuman itu juga menjelaskan bahwa peserta dapat melakukan pembayaran tanpa uang tunai.
+[236] Kalimat yang seluruh penulisan bentuk terikatnya tepat adalah ....
+[237] A. Pelatihan bagi pegawai non ASN se-Indonesia menyediakan pilihan pembayaran nontunai.
+[238] B. Pelatihan bagi pegawai non-ASN se Indonesia menyediakan pilihan pembayaran nontunai.
+[239] C. Pelatihan bagi pegawai non-ASN se-Indonesia menyediakan pilihan pembayaran non-tunai.
+[240] D. Pelatihan bagi pegawai non-ASN se-Indonesia menyediakan pilihan pembayaran nontunai.
+[241] E. Pelatihan bagi pegawai non ASN se Indonesia menyediakan pilihan pembayaran nontunai.
+[242] Jawaban: D
+[243] Pembahasan:
+[244] Bentuk terikat non- dirangkaikan dengan singkatan berhuruf kapital menggunakan tanda hubung sehingga menjadi non-ASN. Bentuk se- yang diikuti nama berhuruf awal kapital juga menggunakan tanda hubung, yaitu se-Indonesia. Sementara itu, non- yang diikuti kata umum tunai ditulis serangkai menjadi nontunai.
+[245] Alasan opsi salah:
+[246] Opsi A keliru pada non ASN. Opsi B keliru pada se Indonesia. Opsi C keliru pada non-tunai. Opsi E mengandung dua kesalahan, yaitu non ASN dan se Indonesia.
+[247] Cara cepat:
+[248] Periksa bentuk terikat berdasarkan unsur sesudahnya: non-ASN, se-Indonesia, dan nontunai memiliki aturan penulisan berbeda.
