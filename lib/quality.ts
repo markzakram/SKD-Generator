@@ -30,9 +30,11 @@ export function questionIssues(q: Question, peers: Question[] = []): Issue[] {
   if (q.difficulty === 'hots') issues.push({ code: 'legacy', level: 'warning', text: 'Label HOTS lama perlu ditinjau. Pilih kesulitan dan Bloom secara terpisah.' });
   return issues;
 }
-export function qualitySummary(questions: Question[]) {
+// `issueLists` (opsional) = questionIssues untuk tiap soal di `questions`, urutan sama. Menghitungnya mahal (±0,4 dtk untuk 110 soal),
+// jadi layar kurasi menghitung sekali lalu memakainya juga untuk ringkasan. Soal yang dikeluarkan tidak memengaruhi isu soal lain.
+export function qualitySummary(questions: Question[], issueLists?: Issue[][]) {
   const included = questions.filter((q) => !q.review?.excluded);
-  const issues = included.map((q) => questionIssues(q, included));
+  const issues = issueLists ? questions.flatMap((q, i) => q.review?.excluded ? [] : [issueLists[i]]) : included.map((q) => questionIssues(q, included));
   return { total: questions.length, included: included.length, excluded: questions.length - included.length,
     approved: included.filter((q) => q.review?.status === 'approved').length,
     revision: included.filter((q) => q.review?.status === 'revision').length,

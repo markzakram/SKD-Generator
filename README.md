@@ -2,7 +2,7 @@
 
 ## Soal TWK dan TKP baru tanpa API
 
-Pada **Buat paket → Sumber soal**, pilih **Soal baru · generator lokal** untuk TWK dan/atau TKP. Pilihan ini tersedia dalam profil tryout maupun latihan bebas. Instalasi baru memilih mode baru; pengaturan pengguna lama dan paket yang tersimpan tetap dipertahankan. Pilih **Gunakan bank contoh** untuk memakai sumber sebelumnya.
+Pada **Buat paket → 3 Sumber, jumlah, dan kesulitan**, pilih **Soal baru · generator lokal** untuk TWK dan/atau TKP. Pilihan ini tersedia dalam profil tryout maupun latihan bebas. Instalasi baru memilih mode baru; pengaturan pengguna lama dan paket yang tersimpan tetap dipertahankan. Pilih **Gunakan bank contoh** untuk memakai sumber sebelumnya.
 
 Mesin lokal menyusun stimulus, pilihan, kunci, poin, pembahasan, dan cara cepat dari **konteks + kondisi penentu + model keputusan**. Tidak memerlukan API key, biaya per soal, atau server AI. Contohnya, aduan belum terverifikasi membutuhkan pemeriksaan; kesalahan yang sudah terbukti dan berada dalam kewenangan membutuhkan koreksi; keputusan di luar kewenangan membutuhkan eskalasi. Kondisi yang berubah benar-benar mengubah tindakan terbaik serta alasan pilihan, bukan hanya nama tokoh.
 
@@ -82,6 +82,8 @@ npm run build
 npm start
 ~~~
 
+**npm run build** butuh koneksi internet karena font Manrope dan DM Sans diunduh dari Google Fonts saat build (next/font), lalu disajikan dari aplikasi sendiri.
+
 Untuk Vercel:
 
 1. Masukkan proyek ke repositori GitHub dan impor sebagai proyek Vercel.
@@ -96,9 +98,9 @@ Next.js telah diperbarui ke 16.3.8. Setelah memasang dependensi baru, restart se
 
 ## Alur penggunaan
 
-1. **Buat paket:** pilih subtes, materi, jumlah soal, dan tingkat kesulitan. Pengaturan seed, durasi, paket tambahan, dan submateri berada di bagian lanjutan.
-2. **Blueprint:** tinjau kuota tiap materi dan kesulitan. Persentase kesulitan dapat ditentukan sendiri; kuota dapat disunting secara manual. Persediaan yang kurang menghasilkan pesan kesalahan, tanpa penggantian materi diam-diam.
-3. **Ruang kurasi:** gunakan daftar nomor dan filter untuk meninjau satu soal. Periksa pertanyaan, tabel/gambar, seluruh pilihan, kunci, alasan pengecoh, pembahasan, sumber, dan rubrik. Panel **Ambil soal** di atas kartu soal menyalin atau mengunduh soal itu saja, atau beberapa soal terpilih (lihat bagian Ambil soal satuan atau terpilih).
+1. **Buat paket:** formulir dibagi menjadi blok bernomor 1–3 (acuan penyusunan; jenis paket dan materi; sumber, jumlah soal, dan kesulitan). Pengaturan lanjutan memuat jumlah paket, durasi, seed, hindari soal sama, dan submateri khusus.
+2. **Blueprint:** tinjau ringkasan blueprint di kanan (menempel di layar lebar; di layar sempit tombol tetap di bawah layar): jumlah soal, komposisi TWK/TIU/TKP, rincian per subtes, dan cek persediaan. Persentase kesulitan dapat ditentukan sendiri; kuota dapat disunting secara manual pada tabel di bawah formulir. Persediaan yang kurang menghasilkan pesan kesalahan, tanpa penggantian materi diam-diam.
+3. **Ruang kurasi:** gunakan antrean soal (satu daftar bergulir; cari nomor atau teks, filter subtes dan status) untuk meninjau satu soal. Di layar lebar antrean, soal, dan panel mutu serta keputusan tampil berdampingan tanpa menggulir halaman. Pintasan papan ketik: **J**/**K** soal berikutnya/sebelumnya dalam hasil filter, **A** setujui (setelah syarat persetujuan terpenuhi, lalu pindah ke soal berikutnya), **R** tandai perlu revisi; pintasan tidak aktif saat mengetik atau saat dialog terbuka. **Tampilan peserta** menyembunyikan kunci dan pembahasan. Periksa pertanyaan, tabel/gambar, seluruh pilihan, kunci, alasan pengecoh, pembahasan, sumber, dan rubrik. Panel **Ambil soal** di atas kartu soal menyalin atau mengunduh soal itu saja, atau beberapa soal terpilih (lihat bagian Ambil soal satuan atau terpilih).
 4. **Sunting / ganti / tandai / keluarkan:** suntingan konten membuat revisi baru dan membatalkan persetujuan. Penggantian mempertahankan subtes, materi, dan kesulitan blueprint serta menghindari soal identik. Soal yang dikeluarkan tidak diekspor atau dianalisis.
 5. **Persetujuan:** isi nama penelaah dan konfirmasi pemeriksaan per soal. Soal dengan kegagalan struktur/skor tidak bisa disetujui. Soal hasil suntingan juga memerlukan catatan verifikasi substansi.
 6. **Evaluasi peserta:** uji soal yang telah disetujui, periksa respons, kemudian gunakan hasilnya untuk revisi berikutnya.
@@ -181,7 +183,7 @@ Untuk tim akademik yang hanya butuh satu atau beberapa soal, tanpa membuat ekspo
 - **Salin** (menu): soal (pertanyaan, tabel, gambar stimulus), pilihan A sampai E, jawaban (TKP: skor tiap pilihan), pembahasan beserta alasan tiap pilihan, atau semua. Hasilnya langsung bisa ditempel ke Word atau Google Docs: `text/html` dengan gambar PNG tertanam (gambar SVG dirasterkan di browser) dan `text/plain` sebagai cadangan.
 - **Salin gambar:** tombol kecil di bawah gambar stimulus dan di bawah tiap gambar pilihan menyalin gambar itu sebagai `image/png`.
 - **Unduh PNG** dan **Unduh PDF** untuk soal yang sedang dibuka. Kotak **Sertakan kunci & pembahasan** menentukan isinya. Huruf, tata letak TWK/TIU/TKP, dan gambar figural sama dengan PDF ekspor paket (satu model tata letak di `lib/export.ts` dilukis oleh PDF dan PNG). Soal yang belum disetujui diberi label draf.
-- **Pilih beberapa soal:** nomor di daftar menjadi kotak centang. **Pilih semua** mengikuti filter daftar dan melewati soal yang dikeluarkan; pilihan bertahan saat pindah halaman. Aksinya **Ekspor PDF** (satu berkas), **Ekspor PNG** (satu PNG per soal, dibungkus ZIP bila lebih dari satu), dan **Salin terpilih**. Urutan mengikuti paket dan nomor soal tidak diubah.
+- **Pilih beberapa soal:** baris di antrean menjadi kotak centang. **Pilih semua** mengikuti filter daftar dan melewati soal yang dikeluarkan; pilihan bertahan saat filter diganti. Aksinya **Ekspor PDF** (satu berkas), **Ekspor PNG** (satu PNG per soal, dibungkus ZIP bila lebih dari satu), dan **Salin terpilih**. Urutan mengikuti paket dan nomor soal tidak diubah.
 
 Hasil salin dan unduh diumumkan lewat toast. Salinan kaya memakai Async Clipboard API (`ClipboardItem`), yang butuh HTTPS atau localhost. Bila browser tidak mendukung atau menolak akses clipboard, yang tersalin hanya teks dan toast memberi tahu; tombol salin gambar menampilkan galat dan menyarankan Unduh PNG. Pengujian UI dilakukan di Edge (Chromium); Chrome memakai mesin yang sama. Safari dan Firefox belum diuji di sini.
 
