@@ -23,7 +23,7 @@ export function useIssueLists(questions: Question[]): Issue[][] {
 }
 
 export type Mark = { tone: 'error' | 'warning' | 'ok'; text: string; title: string };
-const MARK_TEXT: Record<string, string> = { structure: 'Gagal validasi', length: 'Panjang kunci', absolute: 'Klaim mutlak', duplicate: 'Duplikat', similar: 'Mirip soal lain', 'source-note': 'Catatan sumber', legacy: 'Label HOTS lama' };
+const MARK_TEXT: Record<string, string> = { structure: 'Gagal validasi', length: 'Panjang kunci', absolute: 'Klaim mutlak', duplicate: 'Duplikat', similar: 'Mirip soal lain', 'source-note': 'Catatan sumber', 'generic-reason': 'Alasan generik', 'working-note': 'Sisa catatan', 'position-ref': 'Rujukan urutan opsi', legacy: 'Label HOTS lama' };
 const hasSolver = (q: Question) => ['numeric', 'figure', 'scene', 'model'].includes(q.proof.kind) || (q.proof.kind === 'logic' && !!q.proof.entailment);
 
 // Tanda mutu satu baris untuk antrean: isu terberat dulu, lalu "Solver lolos". Catatan tingkat info tidak ditandai.

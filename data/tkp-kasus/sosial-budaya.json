@@ -1,0 +1,1796 @@
+[
+  {
+    "id": "tkp-kasus-sb-01",
+    "skenario": "ungkapan-bahasa-daerah-rekan-kantor",
+    "topic": "Sosial Budaya",
+    "subtopic": "Adaptasi dalam Masyarakat Majemuk",
+    "pola": "ketegangan-kesalahpahaman",
+    "peran": "pegawai-baru",
+    "kewenangan": "tidak-ada",
+    "penentu": "rekan sering memakai ungkapan bahasa daerah yang belum Anda pahami dan tidak keberatan bila ditanya",
+    "tempat": "administratif",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Hambatan pemahaman jelas dan rekan terbuka untuk ditanya; tindakan langsung yang menghormati bahasa setempat mudah dikenali.",
+    "stem": "Anda pegawai baru di kantor kecamatan yang sebagian besar stafnya berasal dari daerah setempat. Di sela pekerjaan, rekan-rekan sering memakai ungkapan bahasa daerah yang belum Anda pahami, dan Anda kerap tidak ikut tertawa ketika mereka berkelakar. Tidak ada rekan yang tampak keberatan bila ditanya, sedangkan ketua tim menyatakan bahasa Indonesia tetap menjadi bahasa rapat resmi. Apa tindakan Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Menyimak percakapan rekan dari jauh hingga merasa akrab, lalu menanyakan arti ungkapan yang paling sering terdengar.",
+        "score": 3,
+        "reason": "Menyimak memberi bekal konteks, dan pertanyaan tentang ungkapan yang sering terdengar tetap diajukan. Namun menunggu sampai merasa akrab menahan pertanyaan yang dapat diajukan sekarang, padahal rekan tidak keberatan bila ditanya, sehingga rasa terasing bertahan lebih lama.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menegur rekan yang berkelakar dalam bahasa daerah di depan staf lain, lalu meminta mereka mengulang dalam bahasa Indonesia.",
+        "score": 1,
+        "reason": "Menegur di depan staf lain mempermalukan rekan hanya karena memakai bahasa daerah dalam percakapan di sela pekerjaan. Bahasa rapat resmi memang bahasa Indonesia, tetapi aturan itu tidak mencakup kelakar rekan di luar rapat.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:memojokkan"
+        }
+      },
+      {
+        "text": "Meminta rekan menjelaskan arti ungkapan yang sering mereka pakai, lalu mencoba memakainya dalam percakapan ringan.",
+        "score": 5,
+        "reason": "Rekan tidak keberatan bila ditanya, sehingga penjelasan langsung menjawab ketidakpahaman terhadap ungkapan bahasa daerah itu. Mencoba memakainya dalam percakapan ringan menjadikan adaptasi dua arah tanpa mengubah bahasa rapat resmi.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta rekan berbahasa Indonesia ketika Anda berada di dekat mereka, lalu menyampaikan alasannya kepada ketua tim.",
+        "score": 2,
+        "reason": "Permintaan itu menjadikan rasa terasing Anda sebagai alasan agar rekan mengubah kebiasaan bercakap dalam bahasa daerah. Ungkapan yang belum dipahami tetap tidak terjawab, dan ketua tim dilibatkan padahal rekan terbuka untuk ditanya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sb:penyeragaman"
+        }
+      },
+      {
+        "text": "Mencatat ungkapan yang sering terdengar di kantor, lalu mencari artinya di kamus bahasa daerah secara daring.",
+        "score": 4,
+        "reason": "Kamus daring membantu memahami arti ungkapan tanpa merepotkan rekan, dan Anda menunjukkan kemauan belajar. Namun rekan tidak keberatan ditanya langsung, sehingga percakapan dua arah yang mempererat hubungan belum terjadi.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: adaptasi dalam masyarakat majemuk, yaitu mencari pemahaman langsung tentang kebiasaan berbahasa setempat tanpa menuntut pihak lain berubah. Fakta penentu: rekan sering memakai ungkapan bahasa daerah yang belum Anda pahami dan tidak keberatan bila ditanya. Bertanya langsung lalu mencoba memakai ungkapan itu membangun komunikasi dua arah. Mencari arti lewat kamus membantu, tetapi melewatkan percakapan dengan rekan. Menyimak dari jauh sampai merasa akrab menunda pertanyaan yang dapat diajukan sekarang, meminta rekan berbahasa Indonesia menuntut mereka berubah demi kenyamanan Anda, dan menegur di depan staf lain mempermalukan rekan.",
+    "tip": "Siapa yang terbuka untuk ditanya, dan siapa yang justru dituntut berubah?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "adaptasi-sehari-hari",
+    "kataKunci": "pegawai baru, ungkapan bahasa daerah, belum dipahami, berkelakar, tidak keberatan ditanya"
+  },
+  {
+    "id": "tkp-kasus-sb-02",
+    "skenario": "tata-cara-bertamu-pendataan-dusun",
+    "topic": "Sosial Budaya",
+    "subtopic": "Adaptasi dalam Masyarakat Majemuk",
+    "pola": "peluang-pengembangan-keterbatasan",
+    "peran": "pelaksana",
+    "kewenangan": "terbatas",
+    "penentu": "ketua RT mendampingi Anda dan bersedia menjelaskan tata cara bertamu yang dianggap pantas warga",
+    "tempat": "lapangan",
+    "keputusan": "minta-bantuan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Sumber informasi tersedia dan tindakan yang mencari pemahaman sebelum bertindak mudah dibedakan dari tindakan yang mengabaikan kebiasaan.",
+    "stem": "Anda petugas pendataan penduduk yang baru bertugas di sebuah dusun. Pada kunjungan pertama, Anda melihat warga biasanya berbincang sebentar di teras dan menyuguhkan minum sebelum membicarakan keperluan, sedangkan Anda belum mengenal tata cara bertamu yang dianggap pantas oleh warga setempat. Ketua RT mendampingi Anda hari ini dan bersedia menjawab pertanyaan. Jadwal kunjungan hari ini longgar. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Menanyakan kepada ketua RT cara bertamu yang pantas, lalu menyesuaikan urutan pembicaraan di setiap rumah.",
+        "score": 5,
+        "reason": "Ketua RT mendampingi dan bersedia menjelaskan, sehingga tata cara bertamu dapat dipahami sebelum Anda menafsirkannya sendiri. Urutan pembicaraan yang disesuaikan menghormati kebiasaan warga tanpa mengurangi tujuan pendataan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengamati cara ketua RT bertamu di rumah pertama, lalu meniru urutan pembicaraannya di rumah berikutnya.",
+        "score": 4,
+        "reason": "Meniru ketua RT memberi contoh nyata dan menghemat waktu. Namun Anda belum menanyakan tata cara yang dianggap pantas dan hanya menebaknya dari satu rumah, padahal ketua RT bersedia menjelaskan.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kurang-langsung"
+        }
+      },
+      {
+        "text": "Menyelesaikan pendataan seperti biasa pada kunjungan pertama, lalu menanyakan tata cara bertamu pada kunjungan berikutnya.",
+        "score": 3,
+        "reason": "Pertanyaan tentang tata cara bertamu tetap diajukan dan ada rencana memperbaiki cara berkunjung. Namun ketua RT mendampingi hari ini, sehingga kunjungan pertama berjalan tanpa penyesuaian yang dapat dilakukan sekarang.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Meminta warga memperpendek perbincangan di teras demi kecepatan pendataan, lalu menyampaikan bahwa Anda ingin cepat pindah.",
+        "score": 2,
+        "reason": "Permintaan itu meminta warga memperpendek kebiasaan berbincang di teras demi kecepatan kerja Anda, padahal jadwal hari ini longgar. Ketua RT yang bersedia menjelaskan tata cara tidak dimanfaatkan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sb:penyeragaman"
+        }
+      },
+      {
+        "text": "Mengabaikan suguhan dan perbincangan di teras, lalu menyodorkan formulir untuk ditandatangani sebelum pindah ke rumah berikutnya.",
+        "score": 1,
+        "reason": "Melewati suguhan dan perbincangan di teras berarti menyingkirkan tata cara bertamu yang dianggap pantas warga. Keterburu-buruan itu membuat warga enggan terbuka saat didata.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:abai-norma"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: adaptasi terhadap tata cara setempat dengan mencari informasi dari pihak yang memahaminya. Fakta penentu: ketua RT mendampingi Anda dan bersedia menjelaskan tata cara bertamu yang dianggap pantas warga, sedangkan jadwal hari ini longgar. Bertanya langsung lalu menyesuaikan urutan pembicaraan menghormati kebiasaan tanpa mengurangi tujuan pendataan. Meniru ketua RT membantu, tetapi kebiasaan tiap rumah dapat berbeda. Menanyakan baru pada kunjungan berikutnya menunda penyesuaian yang dapat dilakukan sekarang, meminta warga bergegas menuntut mereka berubah demi kecepatan Anda, dan menyodorkan formulir langsung mengabaikan tata cara bertamu.",
+    "tip": "Hal apa yang belum Anda ketahui tentang kebiasaan di sini, dan siapa yang tersedia untuk menjawabnya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "adaptasi-sehari-hari",
+    "kataKunci": "petugas pendataan, berbincang di teras, menyuguhkan minum, tata cara bertamu, ketua RT, jadwal longgar"
+  },
+  {
+    "id": "tkp-kasus-sb-03",
+    "skenario": "ruang-serbaguna-ibadah-rapat-mendadak",
+    "topic": "Sosial Budaya",
+    "subtopic": "Konsep Dasar, Unsur, dan Struktur Sosial Budaya",
+    "pola": "dua-tanggung-jawab",
+    "peran": "pelaksana",
+    "kewenangan": "terbatas",
+    "penentu": "ruang serbaguna dipakai beribadah setiap siang dan kepala bagian belum tahu, sedangkan ruang rapat kecil di lantai satu kosong dan cukup",
+    "tempat": "administratif",
+    "keputusan": "koordinasi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Satu kebutuhan jelas yang harus dijaga dan alternatif ruang tersedia; tindakan yang memberi tahu dan menawarkan alternatif mudah dikenali.",
+    "stem": "Anda petugas umum di sebuah kantor dinas yang mengatur pemakaian ruang serbaguna lantai dua. Setiap siang beberapa pegawai memakai ruang itu untuk beribadah sekitar dua puluh menit. Hari ini kepala bagian meminta rapat koordinasi pukul 12.30 di ruang serbaguna karena ruang rapat utama sedang diperbaiki, dan ia belum tahu ruang itu dipakai pada jam tersebut. Ruang rapat kecil di lantai satu kosong dan cukup untuk peserta rapat. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Menyarankan kepala bagian mengundurkan rapat sampai ruang rapat utama selesai diperbaiki, lalu mencatat permintaan itu.",
+        "score": 3,
+        "reason": "Pengunduran rapat menjaga ruang serbaguna bagi pegawai yang beribadah dan permintaan kepala bagian tercatat. Namun ruang rapat kecil di lantai satu kosong dan cukup, sehingga rapat koordinasi hari ini tertunda padahal dapat berjalan.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menyuruh pegawai yang sedang beribadah menyelesaikannya lebih cepat, lalu mempersilakan peserta rapat masuk.",
+        "score": 1,
+        "reason": "Menyuruh pegawai menyelesaikan ibadah lebih cepat mengabaikan kebutuhan yang mereka penuhi setiap siang di ruang serbaguna. Padahal ruang rapat kecil di lantai satu kosong dan cukup, sehingga desakan itu tidak diperlukan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:abai-norma"
+        }
+      },
+      {
+        "text": "Meminta pegawai yang beribadah memakai ruang lain pada jam itu, lalu menyiapkan ruang serbaguna untuk rapat.",
+        "score": 2,
+        "reason": "Permintaan itu menuntut pegawai mengubah kebiasaan beribadah setiap siang demi rapat kepala bagian. Ruang rapat kecil di lantai satu yang kosong dan cukup tidak dipakai, sehingga beban perubahan dipindahkan kepada mereka.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sb:penyeragaman"
+        }
+      },
+      {
+        "text": "Menyiapkan ruang rapat kecil di lantai satu untuk rapat itu, lalu menyampaikan perubahan lewat undangan rapat.",
+        "score": 4,
+        "reason": "Ruang rapat kecil kosong dan cukup, sehingga rapat tetap berjalan dan ruang serbaguna tetap tersedia bagi pegawai yang beribadah. Namun kepala bagian tidak mendapat penjelasan bahwa ruang serbaguna dipakai pada jam itu, padahal ia belum mengetahuinya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Memberi tahu kepala bagian bahwa ruang serbaguna dipakai pada jam itu, lalu menawarkan ruang rapat kecil di lantai satu.",
+        "score": 5,
+        "reason": "Kepala bagian belum tahu ruang serbaguna dipakai untuk beribadah setiap siang, sehingga penjelasan Anda mencegah rapat berbenturan dengan kebutuhan itu. Ruang rapat kecil di lantai satu yang kosong dan cukup menjawab kebutuhan rapat tanpa mengganggu siapa pun.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: penggunaan fasilitas bersama yang menghormati kebutuhan beribadah pegawai tanpa menghambat pekerjaan. Fakta penentu: ruang serbaguna dipakai beribadah setiap siang dan kepala bagian belum tahu, sedangkan ruang rapat kecil di lantai satu kosong dan cukup. Memberi tahu kepala bagian lalu menawarkan ruang rapat kecil menjaga keduanya. Menyiapkan ruang rapat kecil tanpa penjelasan membuat kepala bagian tidak mengetahui alasannya. Mengundurkan rapat menunda pekerjaan yang dapat berjalan, meminta pegawai berpindah menuntut mereka berubah, dan menyuruh ibadah dipercepat mengabaikan kebutuhan mereka.",
+    "tip": "Kebutuhan siapa yang tidak dapat digeser, dan sumber daya apa yang masih tersedia?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "benturan-kegiatan",
+    "kataKunci": "ruang serbaguna, beribadah setiap siang, rapat pukul 12.30, kepala bagian belum tahu, ruang rapat kecil"
+  },
+  {
+    "id": "tkp-kasus-sb-04",
+    "skenario": "rapat-panitia-lansia-bahasa-daerah-terpotong",
+    "topic": "Sosial Budaya",
+    "subtopic": "Empati, Kepedulian, dan Harmoni Sosial",
+    "pola": "hak-minoritas-keputusan-mayoritas",
+    "peran": "anggota-tim",
+    "kewenangan": "hanya-usul",
+    "penentu": "warga lansia lebih nyaman berbahasa daerah, usulnya terpotong dan ia memilih diam, sedangkan Anda dapat menerjemahkan bila diminta",
+    "tempat": "rapat",
+    "keputusan": "melindungi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Hambatan partisipasi jelas dan Anda dapat membantu tanpa mengambil alih; tindakan yang membuka ruang bicara mudah dikenali.",
+    "stem": "Anda anggota panitia peringatan hari besar di lingkungan RW. Dalam rapat, seorang warga lansia yang lebih nyaman berbahasa daerah beberapa kali mulai mengajukan usul, tetapi pembicaraannya terpotong karena rapat berjalan cepat dan memakai istilah yang asing baginya. Ia kemudian diam. Ketua rapat sedang mencatat dan tidak melihat kejadian itu. Anda boleh berbicara dalam rapat dan dapat membantu menerjemahkan usulnya bila diminta. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menghampiri warga lansia itu setelah rapat, lalu menanyakan dalam bahasa daerah usul yang tadi hendak disampaikannya.",
+        "score": 3,
+        "reason": "Mendatangi warga itu menunjukkan kepedulian dan usulnya dapat didengar. Namun rapat berjalan dan memutuskan tanpa usulnya karena ia baru ditanya setelah rapat, padahal ia dapat dibantu sekarang.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Meminta ketua rapat memberi waktu bagi warga lansia itu, lalu menawarkan diri menerjemahkan usulnya ke bahasa Indonesia.",
+        "score": 5,
+        "reason": "Usul warga itu terpotong dan ketua rapat belum menyadarinya, sehingga permintaan memberi waktu membuka kembali ruang bicara. Tawaran menerjemahkan menjawab kendala bahasa daerah dan istilah asing tanpa mengambil alih usulnya.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengingatkan peserta agar mendengarkan sampai selesai, lalu menawarkan menerjemahkan usul warga lansia itu bila ia berkenan.",
+        "score": 4,
+        "reason": "Pengingat kepada peserta menyentuh cara rapat berjalan dan tawaran terjemahan membuka jalan bagi usulnya. Namun ruang bicara warga itu bergantung pada kesediaan peserta lain, sedangkan jalannya rapat tetap dipegang ketua rapat yang belum menyadari kejadiannya.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "kurang-perlindungan"
+        }
+      },
+      {
+        "text": "Mencatat kejadian itu dalam buku pribadi Anda, lalu mengangkatnya pada rapat evaluasi tahunan panitia.",
+        "score": 2,
+        "reason": "Catatan itu menyimpan kejadian, tetapi rapat evaluasi tahunan baru berlangsung setahun kemudian. Warga lansia itu tetap tidak punya kesempatan menyampaikan usulnya pada acara tahun ini.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menegur ketua rapat di depan peserta karena membiarkan pembicaraan terpotong, lalu meminta warga lansia mengulang usulnya.",
+        "score": 1,
+        "reason": "Menegur ketua rapat di depan peserta menyudutkan seseorang dan mengalihkan perhatian dari usul warga itu. Meminta ia mengulang di tengah suasana tegang membuat kendala bahasa daerah dan istilah asing semakin berat baginya.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:memojokkan"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: partisipasi setara, yaitu membuka ruang bicara bagi anggota yang terhambat bahasa dan kecepatan rapat tanpa mengambil alih suaranya. Fakta penentu: warga lansia lebih nyaman berbahasa daerah, usulnya terpotong dan ia memilih diam, sedangkan Anda dapat menerjemahkan bila diminta. Meminta ketua rapat memberi waktu lalu menawarkan terjemahan memulihkan kesempatan bicara pada rapat yang sedang berjalan. Pengingat kepada peserta disertai tawaran terjemahan membantu, tetapi bergantung pada kesediaan peserta lain. Menghampiri setelah rapat menunda pemulihan usul, mencatat untuk evaluasi tahunan membiarkan masalahnya, dan menegur ketua rapat di depan peserta menyudutkan orang.",
+    "tip": "Hal apa yang membuat seseorang berhenti ikut bicara, dan siapa yang dapat membuka kembali kesempatannya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "partisipasi-tidak-setara",
+    "kataKunci": "warga lansia, nyaman berbahasa daerah, usul terpotong, istilah asing, ketua rapat tidak melihat"
+  },
+  {
+    "id": "tkp-kasus-sb-05",
+    "skenario": "pemakaian-aula-balai-tari-dan-pengajian",
+    "topic": "Sosial Budaya",
+    "subtopic": "Perubahan Sosial Budaya dan Penyelesaian Konflik",
+    "pola": "kebutuhan-individual-vs-keadilan",
+    "peran": "pelaksana",
+    "kewenangan": "penuh",
+    "penentu": "kelompok tari tercatat lebih dahulu memakai aula, sedangkan ruang pertemuan kecil kosong dan cukup untuk pengajian",
+    "tempat": "loket",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Hak yang tercatat bertemu kebutuhan pihak lain; alternatif yang tersedia harus dinilai dari keadilan dan cara memberi tahu pihak yang tercatat lebih dahulu.",
+    "stem": "Anda petugas desa yang mengatur pemakaian balai warga. Pada Kamis malam pukul 19.00, kelompok latihan tari sudah tercatat memakai aula sejak dua minggu lalu. Ketua kelompok pengajian anak datang ke loket dan meminta aula pada jam yang sama karena anggotanya baru pulang bekerja pada waktu itu. Pengajian beranggotakan sekitar dua belas orang, sedangkan ruang pertemuan kecil di balai itu kosong dan cukup untuk jumlah tersebut. Apa yang sebaiknya Anda lakukan?",
+    "options": [
+      {
+        "text": "Mengajukan pembagian jam aula kepada pengurus balai, lalu mengabarkan hasilnya kepada ketua kelompok tari dan pengajian.",
+        "score": 3,
+        "reason": "Pengajuan kepada pengurus balai menjaga keadilan dan hasilnya akan disampaikan kepada kedua kelompok. Namun ruang pertemuan kecil kosong dan cukup untuk pengajian, sehingga kepastian untuk malam itu tertunda sampai pengurus menjawab.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Memberikan aula kepada kelompok pengajian karena ketuanya tetangga Anda, lalu meminta kelompok tari berlatih di ruang pertemuan kecil.",
+        "score": 1,
+        "reason": "Mendahulukan pengajian karena kedekatan pribadi membatalkan pemakaian aula yang sudah tercatat bagi kelompok tari sejak dua minggu lalu. Menyuruh kelompok tari pindah ke ruang pertemuan kecil mengorbankan hak mereka yang mencatat lebih dahulu, dan kepercayaan warga pada pengelolaan balai rusak.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Menyarankan kelompok pengajian mencari tempat lain di luar balai, lalu mencatat permintaan mereka untuk jadwal bulan depan.",
+        "score": 2,
+        "reason": "Menyuruh pengajian mencari tempat lain memindahkan beban kepada ketuanya, padahal ruang pertemuan kecil di balai kosong dan cukup. Catatan untuk bulan depan tidak menjawab kebutuhan kelompok yang baru pulang bekerja pada malam itu.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Mencocokkan catatan jam pemakaian aula, lalu menawarkan ruang pertemuan kecil kepada pengajian sebelum pukul 19.00.",
+        "score": 5,
+        "reason": "Catatan menunjukkan kelompok tari lebih dahulu memakai aula sehingga haknya terjaga, sedangkan ruang pertemuan kecil yang kosong dan cukup menjawab kebutuhan pengajian pada jam yang sama. Kedua kelompok terlayani tanpa mengubah jadwal siapa pun.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menawarkan ruang pertemuan kecil kepada pengajian malam itu, lalu memberi tahu kelompok tari setelah kegiatan selesai.",
+        "score": 4,
+        "reason": "Ruang pertemuan kecil menjawab kebutuhan pengajian dan aula tetap tersedia bagi kelompok tari. Namun kelompok tari baru diberi tahu sesudah kegiatan selesai dan catatan pemakaian tidak dicocokkan lebih dahulu, sehingga pihak yang tercatat lebih dahulu terlewat dari keputusan yang menyangkut haknya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: penyelesaian benturan penggunaan fasilitas bersama secara adil, yaitu menghormati hak yang tercatat sambil mencari jalan bagi kebutuhan pihak lain. Fakta penentu: kelompok tari tercatat lebih dahulu memakai aula, sedangkan ruang pertemuan kecil kosong dan cukup untuk pengajian. Mencocokkan catatan lalu menawarkan ruang pertemuan menjaga hak kelompok tari dan menjawab kebutuhan pengajian sebelum kegiatan dimulai. Menawarkan ruang kecil tetapi memberi tahu kelompok tari sesudahnya membuat pihak yang tercatat lebih dahulu terlewat. Mengajukan ke pengurus menunda kepastian, menyuruh pengajian mencari tempat lain memindahkan beban, dan memberikan aula karena ketuanya tetangga Anda melanggar urutan pemakaian.",
+    "tip": "Hak siapa yang sudah lebih dahulu berlaku, dan siapa yang perlu mengetahui keputusan yang diambil?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "benturan-kegiatan",
+    "kataKunci": "aula sudah tercatat, kelompok latihan tari, pengajian anak, jam yang sama, ruang pertemuan kecil, dua belas orang"
+  },
+  {
+    "id": "tkp-kasus-sb-06",
+    "skenario": "salah-sapa-sesepuh-kampung",
+    "topic": "Sosial Budaya",
+    "subtopic": "Adaptasi dalam Masyarakat Majemuk",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "warga",
+    "kewenangan": "tidak-ada",
+    "penentu": "sesepuh masih berada di balai dan tetangga telah memberi tahu sebutan yang biasa dipakai warga",
+    "tempat": "masyarakat",
+    "keputusan": "mengoreksi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kesalahan kecil baru disadari dan orang yang disapa masih dapat ditemui; perbaikan langsung yang rendah hati mudah dikenali.",
+    "stem": "Anda warga yang baru pindah ke sebuah kampung. Pada pertemuan warga, Anda menyapa seorang sesepuh dengan sebutan akrab yang biasa Anda pakai kepada kenalan sebaya, lalu beberapa warga terdiam. Seorang tetangga kemudian memberi tahu Anda dengan ramah bahwa di kampung itu sesepuh biasa disapa dengan sebutan yang lebih hormat. Sesepuh tersebut masih berada di balai pertemuan dan tampak tidak marah. Apa tindakan Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Meminta maaf kepada sesepuh di balai sebelum pertemuan bubar, lalu menanyakan sebutan yang pantas untuk menyapa.",
+        "score": 5,
+        "reason": "Sesepuh masih berada di balai, sehingga permintaan maaf dan pertanyaan tentang sebutan yang pantas dapat disampaikan langsung. Kesalahan kecil itu diperbaiki di hadapan orang yang disapa, bukan melalui orang lain.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta tetangga menyampaikan maaf kepada sesepuh itu hari ini, lalu memakai sebutan yang hormat mulai pertemuan berikutnya.",
+        "score": 4,
+        "reason": "Permohonan maaf melalui tetangga sampai kepada sesepuh hari ini, dan Anda memakai sebutan yang benar sesudahnya. Namun sesepuh masih berada di balai, sehingga maaf yang dapat disampaikan sendiri dititipkan kepada orang lain.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      },
+      {
+        "text": "Memakai sebutan yang hormat mulai sekarang, lalu menyampaikan maaf kepada sesepuh bila bertemu lagi di jalan.",
+        "score": 3,
+        "reason": "Memakai sebutan yang hormat sudah memperbaiki kebiasaan Anda, dan maaf akan disampaikan. Namun sesepuh masih berada di balai dan dapat ditemui sekarang, sedangkan maaf digantungkan pada pertemuan kebetulan sehingga bisa tidak pernah terucap.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Meninggalkan balai pertemuan lebih awal, lalu menghindari sesepuh itu pada setiap pertemuan berikutnya.",
+        "score": 2,
+        "reason": "Menghindar membuat kesalahan sapaan tidak pernah diluruskan, dan sesepuh dapat mengira Anda tidak peduli. Tetangga sudah memberi tahu sebutan yang biasa dipakai warga, tetapi informasi itu tidak dimanfaatkan.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menanyakan kepada warga di balai mengapa tidak ada yang mengingatkan, lalu menyebut kebiasaan kampung terlalu kaku.",
+        "score": 1,
+        "reason": "Menyalahkan warga atas kesalahan sapaan Anda dan menyebut kebiasaan kampung kaku menyudutkan mereka di depan sesepuh. Tetangga yang memberi tahu dengan ramah justru diabaikan, dan hubungan Anda dengan warga memburuk.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:memojokkan"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: adaptasi dalam masyarakat majemuk, yaitu mengakui dan memperbaiki kesalahan tata krama kecil secara langsung kepada pihak yang bersangkutan. Fakta penentu: sesepuh masih berada di balai dan tetangga telah memberi tahu sebutan yang biasa dipakai warga. Menghampiri sesepuh untuk meminta maaf dan menanyakan sebutan yang pantas memperbaiki kesalahan pada saat yang tepat. Menitipkan maaf melalui tetangga sah tetapi kurang langsung. Memakai sebutan baru namun meminta maaf bila kebetulan bertemu menunda perbaikan, menghindar membiarkan kesalahan, dan menyalahkan warga menyudutkan mereka.",
+    "tip": "Siapa yang berhak menerima perbaikan, dan apakah ia masih dapat dijumpai sekarang?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "adaptasi-sehari-hari",
+    "kataKunci": "sesepuh, sebutan akrab, warga terdiam, sebutan yang lebih hormat, balai pertemuan"
+  },
+  {
+    "id": "tkp-kasus-sb-07",
+    "skenario": "pengumuman-kerja-bakti-warga-tunanetra",
+    "topic": "Sosial Budaya",
+    "subtopic": "Empati, Kepedulian, dan Harmoni Sosial",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "warga tunanetra dan lansia tidak tahu jadwal karena selebaran ditempel, sedangkan balai memiliki pengeras suara dan pemuda bersedia membantu",
+    "tempat": "masyarakat",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Hambatan akses informasi jelas dan sumber daya untuk mengatasinya tersedia; tindakan yang menjangkau warga terhambat mudah dikenali.",
+    "stem": "Anda ketua RW yang selama ini menyebarkan pengumuman kerja bakti dengan selebaran yang ditempel di pos ronda. Pada kerja bakti terakhir, seorang warga tunanetra dan dua warga lansia yang sulit membaca tidak hadir karena tidak tahu jadwalnya, dan mereka mengaku sudah beberapa kali tertinggal informasi. Balai RW memiliki pengeras suara, dan beberapa pemuda bersedia membantu. Apa keputusan Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Menempelkan selebaran berhuruf besar di pos ronda, lalu mengumumkannya sekali lewat pengeras suara balai.",
+        "score": 3,
+        "reason": "Huruf besar membantu warga lansia yang masih dapat membaca, dan pengumuman sekali lewat pengeras suara menjangkau warga yang kebetulan mendengarnya. Namun pengumuman sekali tidak memastikan warga tunanetra dan lansia yang selama ini tertinggal informasi benar-benar mengetahui jadwalnya.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Meminta warga tunanetra dan lansia menanyakan jadwal kepada pemuda, lalu mencatat nama mereka sebagai peserta tetap kerja bakti.",
+        "score": 2,
+        "reason": "Meminta mereka menanyakan sendiri kepada pemuda memindahkan beban kepada warga yang sudah beberapa kali tertinggal informasi. Selebaran di pos ronda tetap menjadi cara umum, padahal balai memiliki pengeras suara.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Meminta pemuda mengabari warga terhambat ke rumahnya, lalu menambahkan pengumuman lewat pengeras suara balai.",
+        "score": 5,
+        "reason": "Pemuda yang bersedia membantu mengabari warga yang tidak dapat membaca selebaran langsung ke rumah, dan pengeras suara balai menambah jalur pengumuman bagi warga lain. Selebaran tetap dipakai sehingga warga lain tidak kehilangan cara yang biasa mereka pakai.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menganggap warga tunanetra dan lansia tidak mampu ikut kerja bakti, lalu meminta pemuda mengerjakan bagian mereka.",
+        "score": 1,
+        "reason": "Menganggap mereka tidak mampu memperlakukan mereka sebagai label, padahal penyebab absen mereka adalah selebaran yang tidak terbaca. Meminta pemuda mengerjakan bagian mereka menyingkirkan mereka tanpa menanyakan apakah mereka ingin dan dapat ikut.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:stereotip"
+        }
+      },
+      {
+        "text": "Menyiarkan pengumuman lewat pengeras suara balai, lalu mengunggah ringkasannya bagi warga di kelompok pesan RW.",
+        "score": 4,
+        "reason": "Pengeras suara menjangkau warga yang tidak bisa membaca selebaran, dan ringkasan di kelompok pesan menambah jalur bagi warga lain. Namun tidak ada yang memastikan warga tunanetra dan lansia yang tertinggal sebelumnya benar-benar mendengar.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: kesalahan cara menyampaikan informasi yang menyisihkan warga, yaitu memperbaiki mekanisme agar warga yang terhambat tidak tersisih dari kegiatan bersama. Fakta penentu: warga tunanetra dan lansia tidak tahu jadwal karena selebaran ditempel, sedangkan balai memiliki pengeras suara dan pemuda bersedia membantu. Mengabari warga terhambat lewat pemuda dan menambah pengumuman lisan menjangkau mereka tanpa meniadakan cara lama. Pengumuman lisan dengan ringkasan pesan menjangkau lebih banyak orang tetapi belum memastikan yang tertinggal mengetahuinya. Selebaran besar dengan pengumuman sekali tidak memastikan, meminta mereka bertanya sendiri membebani mereka, dan mencoret nama mereka memperlakukan mereka berdasarkan anggapan.",
+    "tip": "Apa penyebab seseorang tertinggal, dan siapa yang dapat menjangkau mereka tanpa meniadakan cara lain?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "partisipasi-tidak-setara",
+    "kataKunci": "selebaran di pos ronda, warga tunanetra, lansia sulit membaca, tertinggal informasi, pengeras suara, pemuda bersedia membantu"
+  },
+  {
+    "id": "tkp-kasus-sb-08",
+    "skenario": "iringan-musik-modern-sanggar-tradisi",
+    "topic": "Sosial Budaya",
+    "subtopic": "Perubahan Sosial Budaya dan Penyelesaian Konflik",
+    "pola": "penolakan-perubahan",
+    "peran": "penghubung-mitra",
+    "kewenangan": "hanya-usul",
+    "penentu": "pengurus sanggar ingin menambah alat musik modern, sebagian penabuh muda khawatir irama khas hilang, dan keduanya bersedia bertemu",
+    "tempat": "kemitraan",
+    "keputusan": "koordinasi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua pihak sah berbeda pandangan dan Anda hanya dapat mengusulkan; beberapa cara menggerakkan pihak itu harus dibandingkan.",
+    "stem": "Anda staf dinas kebudayaan yang menjadi penghubung dengan sebuah sanggar kesenian tradisional. Pengurus sanggar ingin mengiringi pertunjukan dengan alat musik modern agar menarik penonton muda, sedangkan sebagian penabuh muda menolak karena khawatir irama khas pertunjukan itu hilang. Keduanya bersedia bertemu bila diundang, dan pertunjukan berikutnya baru berlangsung dua bulan lagi. Anda hanya berwenang mengusulkan, bukan memutuskan format pertunjukan. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Membiarkan penabuh muda dan pengurus menyelesaikan perbedaannya sendiri, lalu menawarkan bantuan dinas bila diminta.",
+        "score": 2,
+        "reason": "Menawarkan bantuan hanya bila diminta membiarkan perbedaan antara penabuh muda dan pengurus sanggar membesar, padahal keduanya bersedia bertemu bila diundang. Penonton muda yang menjadi tujuan pengurus juga tidak bertambah.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menetapkan format pertunjukan gabungan atas nama dinas, lalu meminta sanggar segera melaksanakannya.",
+        "score": 1,
+        "reason": "Anda hanya berwenang mengusulkan, sehingga menetapkan format atas nama dinas melampaui peran dan menekan sanggar. Keberatan penabuh muda tentang irama khas tidak didengar.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      },
+      {
+        "text": "Menemui salah seorang penabuh muda untuk menanyakan keberatannya, lalu menyampaikannya kepada pengurus secara terpisah.",
+        "score": 3,
+        "reason": "Seorang penabuh muda dapat menjelaskan keberatan tentang irama khas, dan keberatannya diteruskan kepada pengurus. Namun penabuh muda lain dan pengurus belum bertemu langsung padahal keduanya bersedia bertemu bila diundang.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sb:satu-suara"
+        }
+      },
+      {
+        "text": "Mengundang penabuh muda mendengarkan contoh rekaman iringan modern, lalu bertemu mereka untuk mencatat tanggapannya.",
+        "score": 4,
+        "reason": "Rekaman memberi penabuh muda gambaran nyata dan pertemuan mencatat tanggapan mereka. Namun pengurus sanggar belum berkesempatan menjelaskan alasan rencananya langsung kepada penabuh muda, sehingga hanya satu pihak yang didengar dan bergerak.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mempertemukan pengurus dan penabuh muda dalam satu pertemuan, lalu mencatat unsur yang disepakati tetap dipertahankan.",
+        "score": 5,
+        "reason": "Pertemuan langsung memberi pengurus dan penabuh muda kesempatan menjelaskan alasan masing-masing, dan keduanya bersedia hadir. Catatan unsur yang dipertahankan, seperti irama khas, menjadi dasar usulan yang dapat Anda teruskan tanpa memutuskan format sendiri.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: pelestarian dan perubahan budaya melalui dialog, yaitu mempertemukan pihak yang berbeda pandangan dan mencatat unsur yang perlu dijaga. Fakta penentu: pengurus sanggar ingin menambah alat musik modern, sebagian penabuh muda khawatir irama khas hilang, dan keduanya bersedia bertemu, sedangkan Anda hanya berwenang mengusulkan. Pertemuan bersama disertai catatan unsur yang dipertahankan memberi dasar usulan. Rekaman contoh lalu pertemuan dengan penabuh muda hanya menggerakkan satu pihak. Bertanya kepada satu penabuh belum mempertemukan alasan kedua pihak, membiarkan mereka menyelesaikan sendiri menunda penanganan, dan menetapkan format melampaui peran.",
+    "tip": "Apakah pihak yang berbeda pandangan sudah saling mendengar alasan masing-masing?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pelestarian-perubahan",
+    "kataKunci": "sanggar kesenian tradisional, alat musik modern, penabuh muda, irama khas, bersedia bertemu, hanya berwenang mengusulkan"
+  },
+  {
+    "id": "tkp-kasus-sb-09",
+    "skenario": "candaan-logat-rekan-di-grup-kerja",
+    "topic": "Sosial Budaya",
+    "subtopic": "Empati, Kepedulian, dan Harmoni Sosial",
+    "pola": "ketegangan-kesalahpahaman",
+    "peran": "anggota-tim",
+    "kewenangan": "tidak-ada",
+    "penentu": "rekan yang dicandai berhenti berbincang di grup, sedangkan rekan yang bercanda belum pernah ditegur soal candaan itu",
+    "tempat": "layanan-digital",
+    "keputusan": "melindungi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Dampak pada rekan sudah terlihat dan rekan yang bercanda terbuka pada masukan; tindakan yang menyentuh perilaku sekaligus korbannya mudah dikenali.",
+    "stem": "Anda anggota tim di sebuah kantor dinas yang memiliki grup pesan kerja. Seorang rekan beberapa kali melontarkan candaan tentang logat bicara rekan lain yang berasal dari daerah berbeda. Rekan yang dicandai hanya membalas dengan stiker, lalu berhenti ikut berbincang di grup. Rekan yang bercanda belum pernah ditegur soal candaan itu, dan rekan yang dicandai belum menyampaikan keberatan kepada siapa pun. Anda rekan sejawat di tim itu. Bagaimana sebaiknya Anda bersikap?",
+    "options": [
+      {
+        "text": "Menanyakan kabar rekan yang dicandai lewat pesan pribadi, lalu menawarkan menemaninya makan siang.",
+        "score": 4,
+        "reason": "Pesan pribadi menunjukkan kepedulian, dan rekan yang dicandai merasa diperhatikan. Namun kebiasaan bercanda tentang logat di grup tidak disentuh, sehingga ia dapat kembali menjadi bahan candaan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mengingatkan rekan yang bercanda secara pribadi tentang dampak candaannya, lalu menanyakan kabar rekan yang dicandai.",
+        "score": 5,
+        "reason": "Rekan yang bercanda belum pernah ditegur, sehingga pengingat pribadi memberinya kesempatan menyadari dampak candaannya tanpa dipermalukan. Menanyakan kabar rekan yang dicandai menjawab dampak yang sudah terlihat dari berhentinya ia berbincang di grup.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengirim pesan ke grup tentang pentingnya saling menghargai, lalu melanjutkan pekerjaan seperti biasa.",
+        "score": 3,
+        "reason": "Imbauan umum di grup menyentuh suasana kelompok, tetapi tidak menyebut candaan tentang logat dan tidak menjangkau rekan yang berhenti berbincang. Rekan yang bercanda mungkin tidak menyadari bahwa imbauan itu ditujukan kepadanya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Ikut membalas candaan itu dengan lelucon lain tentang logat, lalu mengajak rekan lain bergabung.",
+        "score": 1,
+        "reason": "Ikut melontarkan lelucon tentang logat menambah bahan olok-olok dan mengajak rekan lain memperkuat tekanan pada rekan yang dicandai. Ia yang sudah berhenti berbincang di grup menjadi semakin tersisih.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:memojokkan"
+        }
+      },
+      {
+        "text": "Menegur candaan itu secara terbuka di grup pesan kerja, lalu meminta rekan yang bercanda segera berhenti.",
+        "score": 2,
+        "reason": "Teguran terbuka di grup pesan menekan rekan yang bercanda lewat jalur yang terlihat banyak orang dan dapat mempermalukannya, padahal ia belum pernah ditegur secara pribadi. Rekan yang dicandai belum ditanya kabarnya, sehingga dampak pada dirinya tidak tersentuh.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "jalur-tidak-resmi"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: empati dan harmoni sosial, yaitu menghentikan perlakuan yang menyisihkan rekan tanpa mempermalukan pihak yang bercanda. Fakta penentu: rekan yang dicandai berhenti berbincang di grup, sedangkan rekan yang bercanda belum pernah ditegur soal candaan itu. Mengingatkan secara pribadi lalu menanyakan kabar rekan yang dicandai menyentuh perilaku sekaligus dampaknya. Pendekatan hanya kepada rekan yang dicandai memberi dukungan tetapi membiarkan kebiasaannya. Imbauan umum tidak menyebut persoalannya, ikut membalas candaan menambah olok-olok, dan teguran terbuka di grup menekan lewat jalur yang terlihat banyak orang.",
+    "tip": "Perubahan apa yang sudah terlihat pada orang yang menjadi sasaran, dan cara apa yang tidak mempermalukan siapa pun?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "partisipasi-tidak-setara",
+    "kataKunci": "candaan logat, rekan dicandai, berhenti berbincang, belum ditegur, rekan sejawat"
+  },
+  {
+    "id": "tkp-kasus-sb-10",
+    "skenario": "orientasi-penugasan-wilayah-baru-tokoh-masyarakat",
+    "topic": "Sosial Budaya",
+    "subtopic": "Adaptasi dalam Masyarakat Majemuk",
+    "pola": "peluang-pengembangan-keterbatasan",
+    "peran": "pegawai-baru",
+    "kewenangan": "terbatas",
+    "penentu": "sesi tanya jawab dengan tokoh masyarakat tersedia, sedangkan modul tertulis hanya memuat ungkapan dasar dan tidak membahas kebiasaan sehari-hari",
+    "tempat": "pelatihan",
+    "keputusan": "mengembangkan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Sumber belajar terbaik jelas tersedia dan keterbatasan modul disebut; memilih cara belajar yang menutup celah itu mudah dikenali.",
+    "stem": "Anda pegawai baru yang akan ditempatkan di kantor layanan pada wilayah dengan bahasa dan adat yang belum Anda kenal. Sebelum berangkat, Anda mengikuti pelatihan orientasi dua hari. Panitia menyediakan sesi tanya jawab dengan seorang tokoh masyarakat dari wilayah itu dan modul tertulis tentang ungkapan dasar bahasa setempat. Seorang peserta lain pernah bertugas di wilayah itu. Waktu belajar terbatas, dan modul itu tidak membahas kebiasaan sehari-hari warga. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Mempelajari modul ungkapan dasar sampai hafal, lalu mencoba memakainya saat bertemu warga di wilayah penugasan.",
+        "score": 3,
+        "reason": "Ungkapan dasar bermanfaat untuk menyapa warga, dan mencobanya di lapangan melatih keterampilan itu. Namun modul tidak membahas kebiasaan sehari-hari warga, sehingga kebutuhan memahami tata cara belum dijawab.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menanyakan kebiasaan warga kepada peserta yang pernah bertugas di wilayah itu, lalu menambahkannya pada catatan modul.",
+        "score": 4,
+        "reason": "Peserta yang pernah bertugas memberi gambaran nyata kebiasaan warga, dan hasilnya menambah catatan modul. Namun informasinya berasal dari pengalaman satu orang, sedangkan tokoh masyarakat dari wilayah itu tersedia pada sesi tanya jawab, sehingga langkahnya kurang langsung.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      },
+      {
+        "text": "Melewatkan sesi tanya jawab karena akan belajar langsung di lapangan, lalu menyelesaikan tugas pelatihan lainnya.",
+        "score": 2,
+        "reason": "Melewatkan sesi berarti melepas kesempatan bertanya kepada tokoh masyarakat sebelum bertugas. Belajar di lapangan dengan bekal seadanya membuat kesalahan tata cara lebih mungkin terjadi, sedangkan modul tidak membahas kebiasaan sehari-hari warga.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menyiapkan pertanyaan seputar kebiasaan warga sehari-hari, lalu menanyakannya kepada tokoh masyarakat pada sesi itu.",
+        "score": 5,
+        "reason": "Modul hanya memuat ungkapan dasar, sehingga pertanyaan tentang kebiasaan sehari-hari warga mengisi bagian yang belum dibahas. Tokoh masyarakat tersedia pada sesi itu, dan waktu belajar yang terbatas terpakai pada hal yang paling dibutuhkan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyimpulkan kebiasaan warga wilayah itu dari cerita yang pernah didengar, lalu menyusun cara bekerja berdasarkan kesimpulan itu.",
+        "score": 1,
+        "reason": "Menyimpulkan kebiasaan dari cerita yang pernah didengar menganggap warga wilayah itu seragam dan dapat menimbulkan salah paham. Tokoh masyarakat yang dapat ditanya langsung dan modul tertulis tidak dimanfaatkan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:stereotip"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: adaptasi dalam masyarakat majemuk, yaitu belajar tentang kebiasaan setempat dari sumber yang tepat sebelum bertugas. Fakta penentu: sesi tanya jawab dengan tokoh masyarakat tersedia, sedangkan modul tertulis hanya memuat ungkapan dasar dan tidak membahas kebiasaan sehari-hari. Menyiapkan pertanyaan lalu bertanya pada sesi itu mengisi celah modul dengan waktu terbatas. Mempelajari modul saja menyentuh sebagian kebutuhan, dan bertanya kepada peserta yang pernah bertugas memberi gambaran nyata tetapi lewat pengalaman satu orang. Melewatkan sesi melepas kesempatan, dan menyimpulkan dari cerita menganggap warga seragam.",
+    "tip": "Bagian mana dari kebutuhan Anda yang belum ditutup bahan yang ada, dan siapa yang paling tepat melengkapinya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "adaptasi-sehari-hari",
+    "kataKunci": "adat belum dikenal, sesi tanya jawab, tokoh masyarakat, modul ungkapan dasar, kebiasaan sehari-hari, waktu terbatas"
+  },
+  {
+    "id": "tkp-kasus-sb-11",
+    "skenario": "rekan-cabang-luar-pulau-gagasan-terlewat",
+    "topic": "Sosial Budaya",
+    "subtopic": "Empati, Kepedulian, dan Harmoni Sosial",
+    "pola": "hak-minoritas-keputusan-mayoritas",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "rekan itu ingin berkontribusi tetapi tidak ingin ceritanya diungkit di depan tim, sedangkan Anda koordinator yang memimpin diskusi",
+    "tempat": "rapat",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Perlu menimbang kebutuhan rekan agar tidak disorot dengan peran memimpin diskusi; dukungan personal belum cukup, perubahan tata diskusi perlu disertai pertanyaan tentang kenyamanannya.",
+    "stem": "Anda koordinator tim lintas bidang yang berdiskusi setiap Senin. Seorang rekan yang baru tiga bulan bergabung beberapa kali tampak hendak berbicara, tetapi gagasannya terlewat karena anggota lain saling menyela. Ia pernah menyampaikan kepada Anda bahwa ia ingin berkontribusi, tetapi tidak ingin ceritanya diungkit di depan tim. Kepala bidang jarang hadir dalam diskusi mingguan itu. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Mengingatkan tim agar setiap anggota diberi kesempatan bicara, lalu meneruskan diskusi dengan susunan yang sama.",
+        "score": 3,
+        "reason": "Pengingat itu menyentuh kebiasaan diskusi tim, tetapi susunan diskusi tetap memberi peluang menyela sehingga gagasan rekan itu masih mudah terlewat. Sebagai koordinator Anda memimpin diskusi, namun peran itu belum dipakai untuk mengubah susunannya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menetapkan giliran bicara dan gagasan tertulis pada tiap diskusi, lalu menanyakan kepada rekan itu cara berkontribusi yang nyaman.",
+        "score": 5,
+        "reason": "Giliran bicara dan gagasan tertulis memberi setiap anggota kesempatan tanpa menyebut rekan itu secara khusus, sesuai keinginannya agar ceritanya tidak diungkit. Pertanyaan tentang cara berkontribusi yang nyaman menjaga martabatnya dan menjawab kebutuhannya.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengatur diskusi hari ini dengan giliran bicara berurutan, lalu membahas tata diskusi tetap pada rapat tim berikutnya.",
+        "score": 4,
+        "reason": "Giliran bicara berurutan pada diskusi hari ini langsung memulihkan kesempatan setiap anggota tanpa menyebut rekan itu, sehingga membahas tata diskusi tetap pada rapat berikutnya tidak menambah kesempatan yang terlewat. Namun rekan itu belum ditanya cara berkontribusi yang nyaman bagi dirinya, sehingga kebutuhannya belum dijawab.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Meminta rekan itu menyampaikan sendiri kesulitannya kepada kepala bidang, lalu mengikuti arahan kepala bidang.",
+        "score": 2,
+        "reason": "Meminta rekan itu melapor sendiri memindahkan beban kepada pihak yang kurang didengar, padahal Anda koordinator yang memimpin diskusi. Ia juga tidak ingin ceritanya diungkit, sehingga jalur itu bertentangan dengan keinginannya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Menyebut dalam diskusi bahwa rekan itu jarang bicara, lalu memintanya menyampaikan gagasan saat itu juga.",
+        "score": 1,
+        "reason": "Menyebut kebiasaan diamnya di depan tim menempatkannya sebagai sorotan, padahal ia tidak ingin ceritanya diungkit. Permintaan menyampaikan gagasan saat itu juga menambah tekanan dan dapat mempermalukannya.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:memojokkan"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: perlindungan kesempatan berpartisipasi bagi anggota yang kurang didengar tanpa menyorotnya. Fakta penentu: rekan itu ingin berkontribusi tetapi tidak ingin ceritanya diungkit di depan tim, sedangkan Anda koordinator yang memimpin diskusi. Menetapkan giliran bicara dan gagasan tertulis memperbaiki tata diskusi bagi setiap anggota, dan bertanya tentang cara berkontribusi yang nyaman menghormati keinginannya. Giliran berurutan pada diskusi hari ini saja memulihkan kesempatan tanpa menjawab kebutuhannya. Pengingat umum tidak mengubah susunan diskusi, meminta rekan itu melapor memindahkan beban, dan menyebut kebiasaannya diam menyorotnya.",
+    "tip": "Perubahan apa yang memperbaiki kesempatan banyak orang, dan bagaimana perasaan orang yang terdampak dapat dipastikan?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "partisipasi-tidak-setara",
+    "kataKunci": "rekan baru tiga bulan, gagasan terlewat, saling menyela, ingin berkontribusi, tidak ingin diungkit"
+  },
+  {
+    "id": "tkp-kasus-sb-12",
+    "skenario": "imunisasi-balita-bertepatan-tradisi-dusun",
+    "topic": "Sosial Budaya",
+    "subtopic": "Konsep Dasar, Unsur, dan Struktur Sosial Budaya",
+    "pola": "dua-tanggung-jawab",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "tradisi memakai lapangan sampai pukul 12.00, sedangkan balai dusun kosong dan vaksin serta petugas tersedia sampai pukul 16.00",
+    "tempat": "kemitraan",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua tanggung jawab sama-sama sah dengan batas waktu vaksin; harus mencari lokasi dan jam yang menghormati tradisi tanpa menghilangkan imunisasi hari itu.",
+    "stem": "Anda kepala puskesmas. Imunisasi balita di sebuah dusun dijadwalkan pukul 08.00 di lapangan dusun, tempat pos imunisasi biasanya didirikan. Pada hari itu warga menggelar tradisi tahunan yang memakai lapangan sampai pukul 12.00 dan melibatkan hampir setiap keluarga. Vaksin sudah dikeluarkan dari pendingin dan hanya berlaku sampai pukul 16.00, dan petugas dapat bertugas sampai jam itu. Balai dusun kosong dan dapat dipakai. Anda yang menentukan jadwal dan lokasi imunisasi di dusun itu. Keputusan apa yang paling tepat Anda ambil?",
+    "options": [
+      {
+        "text": "Membatalkan imunisasi di dusun pada hari itu, lalu menjadwalkan ulang pada hari kerja pekan depan.",
+        "score": 2,
+        "reason": "Pembatalan menghormati tradisi dan imunisasi dijadwalkan ulang, tetapi vaksin yang sudah dikeluarkan hanya berlaku sampai pukul 16.00 sehingga terbuang. Balai dusun kosong dan petugas dapat bertugas sampai jam itu, jadi layanan dihentikan padahal masih dapat berjalan.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "menutup-sementara"
+        }
+      },
+      {
+        "text": "Mendirikan pos imunisasi di lapangan pukul 08.00 sesuai jadwal, lalu meminta panitia tradisi menghentikan rangkaian acaranya.",
+        "score": 1,
+        "reason": "Mendirikan pos di lapangan yang dipakai tradisi sampai pukul 12.00 dan meminta rangkaian dihentikan mengabaikan kegiatan yang melibatkan hampir setiap keluarga. Balai dusun yang kosong dan jam petugas sampai pukul 16.00 tidak dipakai.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:abai-norma"
+        }
+      },
+      {
+        "text": "Meminta kepala dusun mengatur ulang waktu imunisasi, lalu menyesuaikan jam petugas dengan keputusannya.",
+        "score": 3,
+        "reason": "Kepala dusun mengetahui kegiatan warga dan keputusannya akan diikuti. Namun menyerahkan penentuan waktu kepadanya, padahal Anda yang menentukan jadwal dan lokasi, dapat menjatuhkan hari setelah vaksin tidak berlaku lagi, sedangkan petugas hanya dapat bertugas sampai pukul 16.00.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Memindahkan pos ke balai dusun setelah tradisi selesai, lalu meminta kader mengumumkan perubahan itu kepada keluarga balita.",
+        "score": 5,
+        "reason": "Tradisi memakai lapangan sampai pukul 12.00, sedangkan balai dusun kosong dan vaksin serta petugas tersedia sampai pukul 16.00, sehingga pos sesudah pukul 12.00 menghormati tradisi dan tetap menjangkau balita. Kader mengabarkan perubahan itu kepada keluarga yang pagi harinya mengikuti tradisi.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mendirikan pos imunisasi di balai dusun sejak pukul 08.00, lalu memasang pengumuman lokasi barunya di lapangan.",
+        "score": 4,
+        "reason": "Balai dusun kosong dan menjauhkan pos dari lapangan tradisi, sehingga tradisi tidak terganggu. Namun hampir setiap keluarga mengikuti tradisi sampai pukul 12.00, sehingga balita yang terjangkau pada pagi hari lebih sedikit dan keluarga harus memilih antara tradisi dan imunisasi.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: struktur sosial budaya dan benturan kegiatan, yaitu menetapkan lokasi dan jam pelayanan yang menghormati tradisi warga tanpa mengorbankan batas waktu layanan. Fakta penentu: tradisi memakai lapangan sampai pukul 12.00, sedangkan balai dusun kosong dan vaksin serta petugas tersedia sampai pukul 16.00. Memindahkan pos ke balai dusun setelah tradisi selesai lalu mengumumkannya lewat kader menjaga keduanya. Mendirikan pos di balai sejak pagi tidak mengganggu lapangan tetapi menjangkau lebih sedikit balita. Menyerahkan pengaturan kepada kepala dusun menunda kepastian, membatalkan membuang vaksin yang sudah dikeluarkan, dan mendirikan pos di lapangan mengabaikan tradisi.",
+    "tip": "Batas waktu apa yang mengikat layanan, dan kapan tempat yang biasa dipakai kembali bebas?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "benturan-kegiatan",
+    "kataKunci": "imunisasi balita, tradisi tahunan, lapangan sampai pukul 12.00, vaksin sampai pukul 16.00, balai dusun kosong"
+  },
+  {
+    "id": "tkp-kasus-sb-13",
+    "skenario": "rute-pawai-kampung-dipendekkan",
+    "topic": "Sosial Budaya",
+    "subtopic": "Perubahan Sosial Budaya dan Penyelesaian Konflik",
+    "pola": "penolakan-perubahan",
+    "peran": "warga",
+    "kewenangan": "hanya-usul",
+    "penentu": "pawai melewati tiga titik bermakna bagi warga lama, sedangkan ibu muda dan remaja mengusulkan rute pendek karena anak kecil dan lansia kelelahan",
+    "tempat": "masyarakat",
+    "keputusan": "mengembangkan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua kebutuhan sah, pelestarian makna dan kenyamanan peserta, bertemu pada satu rute; perlu memetakan makna sebelum mencari penyesuaian.",
+    "stem": "Anda warga muda yang ikut menyusun pawai kampung tahunan. Pawai itu melewati tiga titik yang bermakna bagi warga lama dan berlangsung dari pagi sampai petang. Beberapa ibu muda dan remaja mengusulkan rute dipendekkan karena anak kecil dan lansia kelelahan, sedangkan para sesepuh menolak karena makna ketiga titik itu. Panitia yang diketuai kepala dusun menerima usulan bila disertai alasan, dan Anda hanya dapat mengusulkan. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Mengusulkan pertemuan warga untuk memetakan makna tiap titik rute, lalu mencari penyesuaian seperti pos istirahat.",
+        "score": 5,
+        "reason": "Pertemuan memberi sesepuh kesempatan menjelaskan makna ketiga titik dan ibu muda menjelaskan kelelahan anak kecil dan lansia. Penyesuaian seperti pos istirahat menjawab kebutuhan kedua pihak tanpa mengubah rute yang bermakna.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengusulkan kepada panitia agar peserta anak dan lansia memakai kendaraan pendamping, lalu menyampaikan alasannya kepada sesepuh.",
+        "score": 4,
+        "reason": "Kendaraan pendamping meringankan kelelahan anak kecil dan lansia tanpa mengubah rute yang bermakna, dan sesepuh diberi tahu alasannya. Namun sesepuh hanya diberi tahu dan tidak didengar, sehingga makna ketiga titik belum dibicarakan bersama dan ibu muda belum ikut menentukan penyesuaiannya.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menanyakan alasan penolakan kepada seorang sesepuh dusun, lalu menyusun rute baru sesuai penjelasan yang diberikannya.",
+        "score": 3,
+        "reason": "Seorang sesepuh dapat menjelaskan makna ketiga titik, dan rute baru disusun berdasarkan penjelasannya. Namun ibu muda, remaja, dan sesepuh lain belum didengar, padahal kelelahan anak kecil dan lansia perlu dijawab.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sb:satu-suara"
+        }
+      },
+      {
+        "text": "Mengusulkan rute pendek yang hanya melewati satu titik, lalu meminta sesepuh menerima perubahan itu demi anak kecil dan lansia.",
+        "score": 2,
+        "reason": "Rute pendek menjawab kelelahan anak kecil dan lansia, tetapi meminta sesepuh menerima perubahan menuntut mereka melepas makna dua titik lainnya. Alasan penolakan sesepuh tidak dibahas sebelum perubahan diminta.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sb:penyeragaman"
+        }
+      },
+      {
+        "text": "Mengumumkan rute pendek sebagai keputusan panitia, lalu mengajak warga mengikuti rute itu pada hari pawai.",
+        "score": 1,
+        "reason": "Anda hanya dapat mengusulkan, sehingga mengumumkan keputusan panitia melampaui peran dan menutup suara sesepuh. Makna ketiga titik tidak dibahas dan pertentangan antara warga lama dan warga muda dapat memanas.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: pelestarian budaya dan perubahan bentuk melalui dialog yang memetakan makna sebelum menyesuaikan. Fakta penentu: pawai melewati tiga titik bermakna bagi warga lama, sedangkan ibu muda dan remaja mengusulkan rute pendek karena anak kecil dan lansia kelelahan, dan Anda hanya dapat mengusulkan. Pertemuan warga lalu penyesuaian seperti pos istirahat menjaga makna rute dan menjawab kelelahan. Usulan kendaraan pendamping saja belum membahas alasan kedua pihak. Bertanya kepada satu sesepuh belum mendengar pihak lain, meminta sesepuh menerima rute pendek membebankan perubahan kepada mereka, dan mengumumkan keputusan panitia melampaui peran.",
+    "tip": "Nilai apa yang sedang dijaga oleh bentuk yang ada, dan kebutuhan siapa yang belum terpenuhi olehnya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pelestarian-perubahan",
+    "kataKunci": "pawai kampung, tiga titik bermakna, rute dipendekkan, lansia kelelahan, sesepuh menolak, usulan disertai alasan"
+  },
+  {
+    "id": "tkp-kasus-sb-14",
+    "skenario": "survei-dinas-kawasan-hutan-masa-larangan-adat",
+    "topic": "Sosial Budaya",
+    "subtopic": "Konsep Dasar, Unsur, dan Struktur Sosial Budaya",
+    "pola": "dua-tanggung-jawab",
+    "peran": "penghubung-mitra",
+    "kewenangan": "hanya-usul",
+    "penentu": "kawasan hutan tertutup bagi orang luar sampai Rabu selama masa larangan adat, pemangku adat bersedia mengantar tim ke sisi desa yang tidak dilarang, dan laporan akhir bulan memuat kedua data",
+    "tempat": "lapangan",
+    "keputusan": "menolak",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Tenggat laporan dan ketentuan adat sama-sama harus dihormati; ada alternatif yang menjaga keduanya sehingga menolak jadwal saja belum cukup.",
+    "stem": "Anda staf dinas yang menjadi penghubung antara tim survei dan sebuah desa adat. Tim dijadwalkan mengambil data di kawasan hutan desa pada Senin, padahal menurut pemangku adat kawasan itu tertutup bagi orang luar sampai Rabu selama masa larangan adat. Pemangku adat bersedia mengantar tim ke sisi desa yang tidak dilarang. Laporan akhir bulan harus memuat data hutan dan sisi desa, dan ketua tim ingin jadwal tidak berubah. Anda hanya berwenang mengusulkan kepada ketua tim. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mengusulkan survei diundur sampai masa larangan berakhir, lalu menyampaikan alasannya kepada ketua tim survei.",
+        "score": 3,
+        "reason": "Mengundur survei menghormati larangan adat dan alasannya disampaikan kepada ketua tim. Namun pemangku adat bersedia mengantar tim ke sisi desa yang tidak dilarang, sehingga pengambilan data yang dapat dikerjakan pada Senin ikut tertunda.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Mengusulkan tim memakai Senin sampai Rabu untuk sisi desa, lalu meminta ketua tim menghubungi pemangku adat soal hutan.",
+        "score": 4,
+        "reason": "Senin sampai Rabu dipakai untuk sisi desa sehingga larangan adat dihormati, dan ketua tim menghubungi pemangku adat soal hutan. Namun jadwal hutan belum diusulkan dan Anda sendiri belum memastikannya kepada pemangku adat, sehingga laporan akhir bulan yang memuat kedua data bergantung pada tindak lanjut ketua tim.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      },
+      {
+        "text": "Memastikan sisi desa yang boleh dimasuki kepada pemangku adat, lalu mengusulkan survei bertahap kepada ketua tim.",
+        "score": 5,
+        "reason": "Pemangku adat bersedia mengantar tim ke sisi desa yang tidak dilarang, sehingga batas yang boleh dimasuki dipastikan dari sumbernya. Usulan survei bertahap, sisi desa pada Senin dan hutan setelah Rabu, memenuhi laporan akhir bulan yang memuat kedua data dan menghormati larangan adat.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta pemangku adat membuka kawasan hutan pada Senin, lalu menjanjikan tim akan menjaga batas yang ditunjuk.",
+        "score": 2,
+        "reason": "Meminta pemangku adat membuka kawasan pada masa larangan menuntut mereka mengubah ketentuan adat demi tenggat laporan tim. Janji menjaga batas tidak menggantikan penghormatan terhadap larangan yang berlaku bagi orang luar.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sb:penyeragaman"
+        }
+      },
+      {
+        "text": "Mengikuti tim memasuki kawasan hutan pada Senin sesuai jadwal, lalu mencatat larangan adat dalam laporan survei.",
+        "score": 1,
+        "reason": "Memasuki kawasan yang tertutup pada masa larangan mengabaikan ketentuan adat yang sudah disampaikan pemangku adat. Mencatat larangan dalam laporan tidak memperbaiki pelanggaran yang sudah terjadi dan merusak kepercayaan desa.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:abai-norma"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: norma adat sebagai pembatas kegiatan dinas dan pencarian jalan yang menjaga tujuan kedua pihak. Fakta penentu: kawasan hutan tertutup bagi orang luar sampai Rabu selama masa larangan adat, pemangku adat bersedia mengantar tim ke sisi desa yang tidak dilarang, dan laporan akhir bulan harus memuat data hutan dan sisi desa, sedangkan Anda hanya berwenang mengusulkan. Memastikan sisi yang boleh dimasuki lalu mengusulkan jadwal bertahap menjaga ketentuan adat dan laporan. Mengusulkan jadwal bertahap tanpa memastikannya sendiri kepada pemangku adat menambah satu langkah. Mengundur survei menunda pekerjaan yang dapat dilakukan, meminta pemangku adat membuka kawasan menuntut mereka berubah, dan memasuki kawasan mengabaikan larangan.",
+    "tip": "Bagian pekerjaan mana yang tidak dapat berjalan sekarang, dan bagian mana yang dapat?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "benturan-kegiatan",
+    "kataKunci": "desa adat, masa larangan adat, tertutup sampai Rabu, pemangku adat, sisi desa, laporan akhir bulan"
+  },
+  {
+    "id": "tkp-kasus-sb-15",
+    "skenario": "urutan-penyambutan-tamu-keterangan-bertentangan",
+    "topic": "Sosial Budaya",
+    "subtopic": "Adaptasi dalam Masyarakat Majemuk",
+    "pola": "informasi-belum-lengkap-bertentangan",
+    "peran": "anggota-tim",
+    "kewenangan": "hanya-usul",
+    "penentu": "dua warga memberi keterangan berbeda tentang penyambut pertama, sedangkan kepala desa dan ketua lembaga adat dapat dihubungi sebelum rombongan tiba",
+    "tempat": "administratif",
+    "keputusan": "minta-bantuan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua keterangan sama-sama diyakini sehingga harus ditentukan sumber yang berwenang menjelaskannya sebelum waktu habis.",
+    "stem": "Anda anggota tim dinas yang menyiapkan penyambutan rombongan tamu dari kabupaten lain di sebuah desa. Dua warga yang membantu persiapan memberi keterangan berbeda: seorang menyebut tamu harus disambut kepala desa lebih dahulu, yang lain menyebut tetua adat yang menyambut lebih dahulu. Keduanya yakin dengan keterangannya. Kepala desa dan ketua lembaga adat dapat dihubungi, dan rombongan tiba lusa. Anda hanya berwenang mengusulkan susunan acara kepada ketua tim. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Meminta kedua warga menanyakan urutan penyambutan kepada kepala desa, lalu mengusulkan susunan acara sesuai jawabannya.",
+        "score": 4,
+        "reason": "Kepala desa dapat memastikan urutan, dan jawabannya dipakai untuk susunan acara yang diusulkan. Namun Anda sendiri tidak berbicara dengan kepala desa dan ketua lembaga adat tidak ditanya, sehingga langkahnya lebih panjang daripada menghubungi keduanya langsung.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      },
+      {
+        "text": "Menyiapkan dua versi susunan acara penyambutan, lalu memastikan versi yang benar pada hari kedatangan rombongan.",
+        "score": 2,
+        "reason": "Dua versi menyiapkan kedua kemungkinan, tetapi kepastian baru dicari pada hari kedatangan rombongan, padahal kepala desa dan ketua lembaga adat dapat dihubungi sebelum rombongan tiba. Jika versi yang dipilih keliru, tamu dan tuan rumah dipermalukan di depan umum.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Meminta ketua tim memutuskan urutan penyambutan tamu rombongan, lalu mengikuti keputusan itu dalam susunan acara desa.",
+        "score": 3,
+        "reason": "Ketua tim ikut menyusun acara dan keputusannya akan diikuti. Namun urutan penyambutan baru dapat dipastikan oleh kepala desa atau ketua lembaga adat yang tidak ditanya, sehingga keterangan yang berbeda dilimpahkan tanpa kepastian dari sumbernya.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Memilih keterangan warga yang lebih tua usianya, lalu menyusun acara penyambutan berdasarkan keterangan itu.",
+        "score": 1,
+        "reason": "Memilih keterangan berdasarkan usia warga memutuskan susunan acara sebelum urutan penyambutan dipastikan. Jika keliru, tamu dan tuan rumah dipermalukan, padahal kepala desa dan ketua lembaga adat dapat dihubungi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tanpa-verifikasi"
+        }
+      },
+      {
+        "text": "Menghubungi kepala desa dan ketua lembaga adat sebelum rombongan tiba, lalu mengusulkan urutannya kepada ketua tim.",
+        "score": 5,
+        "reason": "Kepala desa dan ketua lembaga adat dapat dihubungi sebelum rombongan tiba, sehingga urutan penyambutan dipastikan dari pihak yang memahami adat desa. Hasilnya diusulkan kepada ketua tim sesuai peran Anda dan mengakhiri perbedaan keterangan kedua warga.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: norma dan struktur sosial dalam penyambutan tamu, yaitu memastikan tata cara dari pihak yang memiliki legitimasi sebelum bertindak. Fakta penentu: dua warga memberi keterangan berbeda tentang penyambut pertama, sedangkan kepala desa dan ketua lembaga adat dapat dihubungi sebelum rombongan tiba. Menghubungi keduanya lalu mengusulkan urutannya kepada ketua tim memastikan urutan dari sumber yang tepat. Meminta kedua warga bertanya kepada kepala desa menambah langkah dan melewatkan ketua lembaga adat. Meminta ketua tim memutuskan menunda kepastian dari sumbernya, dua versi baru memastikan pada hari kedatangan sehingga berisiko mempermalukan tamu, dan memilih berdasarkan usia memutuskan tanpa verifikasi.",
+    "tip": "Pihak mana yang memegang kepastian tata cara itu, dan apakah masih ada waktu untuk bertanya kepadanya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "adaptasi-sehari-hari",
+    "kataKunci": "keterangan berbeda, kepala desa, tetua adat, ketua lembaga adat, rombongan tiba lusa"
+  },
+  {
+    "id": "tkp-kasus-sb-16",
+    "skenario": "brosur-desa-wisata-upacara-sebagai-hiburan",
+    "topic": "Sosial Budaya",
+    "subtopic": "Adaptasi dalam Masyarakat Majemuk",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "pelaksana",
+    "kewenangan": "penuh",
+    "penentu": "brosur menyebut upacara sebagai hiburan yang boleh difoto kapan saja, padahal pemangku adat meminta pengunjung tidak memotret pada bagian tertentu",
+    "tempat": "administratif",
+    "keputusan": "memulihkan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Kesalahan sudah sampai ke sebagian pengunjung; perbaikan perlu menyentuh naskah, sisa brosur, dan penerima yang sudah menerimanya.",
+    "stem": "Anda pelaksana di kantor desa wisata yang menyusun brosur bagi pengunjung. Setelah separuh dari seribu brosur dibagikan, seorang warga menyampaikan bahwa brosur menyebut upacara adat desa sebagai hiburan yang boleh difoto kapan saja, padahal pemangku adat meminta pengunjung tidak memotret pada bagian tertentu upacara. Sisa brosur masih ada di kantor. Pemangku adat bersedia memeriksa naskah. Tindakan apa yang paling tepat Anda ambil?",
+    "options": [
+      {
+        "text": "Menarik sisa brosur dari meja pengunjung, lalu mencetak ulang dengan kalimat yang lebih netral sebelum dibagikan lagi.",
+        "score": 4,
+        "reason": "Menarik sisa brosur menghentikan penyebaran keterangan keliru, dan cetak ulang dengan kalimat netral memperbaiki naskah sebelum dibagikan lagi. Namun naskah belum diperiksa pemangku adat dan pengunjung yang sudah menerima brosur lama belum dihubungi, sehingga koreksinya belum menjangkau mereka.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mencoret kalimat yang keliru pada sisa brosur dengan pulpen, lalu meminta naskah baru diperiksa pemangku adat bulan depan.",
+        "score": 3,
+        "reason": "Mencoret kalimat pada sisa brosur menghentikan kesalahan yang paling nyata, dan naskah baru akan diperiksa pemangku adat. Namun pemangku adat bersedia memeriksa naskah sekarang, sehingga perbaikan yang layak menunggu satu bulan.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Memasang papan larangan memotret di lokasi upacara, lalu tetap membagikan sisa brosur lama kepada pengunjung.",
+        "score": 2,
+        "reason": "Papan larangan mengurangi pelanggaran di lokasi, tetapi sisa brosur lama tetap menyebut upacara sebagai hiburan yang boleh difoto. Penyebab kesalahan pada naskah brosur tidak disentuh sama sekali.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kosmetik"
+        }
+      },
+      {
+        "text": "Meminta pemangku adat memeriksa naskah koreksi, lalu menukar brosur lama dengan naskah yang sudah diperiksa.",
+        "score": 5,
+        "reason": "Pemangku adat memeriksa naskah koreksi sehingga penyebutan upacara sesuai dengan maknanya. Brosur lama, baik sisa di kantor maupun yang sudah dipegang pengunjung, ditukar dengan naskah yang sudah diperiksa sehingga keterangan tentang memotret dibetulkan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Tetap membagikan sisa brosur sesuai naskah awal, lalu mencatat keberatan warga sebagai masukan untuk cetakan tahun depan.",
+        "score": 1,
+        "reason": "Membagikan sisa brosur yang diketahui keliru mengabaikan permintaan pemangku adat agar pengunjung tidak memotret pada bagian tertentu. Keberatan warga hanya dicatat untuk tahun depan, sehingga pengunjung terus menerima keterangan yang menyesatkan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:abai-norma"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: pemulihan atas kesalahan yang menyinggung makna budaya, yaitu memperbaiki naskah bersama pihak yang memahami maknanya dan menjangkau penerima yang sudah terdampak. Fakta penentu: brosur menyebut upacara sebagai hiburan yang boleh difoto kapan saja, padahal pemangku adat meminta pengunjung tidak memotret pada bagian tertentu, dan pemangku adat bersedia memeriksa naskah. Pemeriksaan naskah lalu penukaran brosur lama menutup ketiga celahnya. Menarik sisa brosur dan mencetak ulang naskah netral belum menjangkau penerima lama dan belum diperiksa pemangku adat. Mencoret lalu menunda pemeriksaan menahan perbaikan, papan larangan tidak menyentuh brosur, dan membagikan brosur lama mengabaikan permintaan pemangku adat.",
+    "tip": "Siapa yang memahami makna yang disinggung, dan siapa yang sudah memegang keterangan keliru?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "adaptasi-sehari-hari",
+    "kataKunci": "separuh brosur dibagikan, boleh difoto kapan saja, tidak memotret bagian tertentu, sisa brosur, pemangku adat"
+  },
+  {
+    "id": "tkp-kasus-sb-17",
+    "skenario": "penonton-pentas-seni-kelurahan-menurun",
+    "topic": "Sosial Budaya",
+    "subtopic": "Perubahan Sosial Budaya dan Penyelesaian Konflik",
+    "pola": "masalah-berulang",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "penonton turun tiga tahun berturut-turut padahal spanduk dan unggahan sudah dipakai, sedangkan alasan warga belum diketahui dan kader RW bersedia membagikan lembar tanya",
+    "tempat": "rapat",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Penurunan berulang dengan cara yang sama sudah gagal; perlu menggali penyebab dari warga sebelum merancang ulang, bukan menebak atau mengulang promosi.",
+    "stem": "Anda koordinator panitia pentas seni budaya tahunan sebuah kelurahan. Jumlah penonton turun tiga tahun berturut-turut, dari sekitar empat ratus menjadi seratus lima puluh orang, padahal spanduk dan unggahan media sosial sudah dipakai setiap tahun. Panitia saling menduga penyebabnya, tetapi belum ada keterangan dari warga. Kader RW bersedia membagikan lembar tanya, dan pentas berikutnya delapan pekan lagi. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Meminta panitia menyusun dugaan penyebab dari pengalaman mereka, lalu mengujinya pada pentas yang akan datang.",
+        "score": 3,
+        "reason": "Dugaan panitia memberi titik awal, dan pengujian pada pentas berikutnya menunjukkan ada rencana. Namun penonton sudah turun tiga tahun berturut-turut, sehingga menunggu pentas yang akan datang untuk menguji dugaan memperpanjang penurunan itu padahal kader RW dapat menanyakan warga sekarang.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Meminta kader RW menanyakan alasan warga tidak hadir, lalu merancang ulang acara berdasarkan jawabannya.",
+        "score": 5,
+        "reason": "Kader RW bersedia membagikan lembar tanya, sehingga alasan warga dari berbagai usia diketahui sebelum acara diubah. Perancangan ulang berdasarkan jawaban menyentuh penyebab turunnya penonton, bukan mengulang cara yang sudah dipakai.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Membagikan lembar tanya kepada peserta pentas tahun lalu lewat kader RW, lalu menyesuaikan susunan acara dengan masukan mereka.",
+        "score": 4,
+        "reason": "Lembar tanya kepada peserta tahun lalu memberi masukan nyata dan susunan acara disesuaikan dengan jawaban mereka. Namun warga yang tidak hadir, yang menjadi sumber turunnya penonton, tidak ditanya sehingga alasan mereka belum diketahui.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menambah jumlah spanduk dan unggahan media sosial tentang pentas, lalu meminta kader RW mengajak warga hadir.",
+        "score": 2,
+        "reason": "Spanduk dan unggahan sudah dipakai setiap tahun tanpa menahan turunnya penonton, sehingga menambah jumlahnya mengulang cara yang sama. Mengajak warga lewat kader tidak menjawab alasan warga yang belum diketahui.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kosmetik"
+        }
+      },
+      {
+        "text": "Menyimpulkan warga muda kelurahan kurang menghargai budaya, lalu mengganti acara dengan hiburan populer saja.",
+        "score": 1,
+        "reason": "Menyimpulkan warga muda kurang menghargai budaya menganggap satu kelompok usia seragam tanpa menanyakannya. Mengganti acara dengan hiburan populer meninggalkan unsur budaya yang menjadi tujuan pentas dan tetap tidak menjawab alasan warga.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:stereotip"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: pelestarian budaya yang dievaluasi dari kebutuhan warga ketika kegiatan berulang kali sepi. Fakta penentu: penonton turun tiga tahun berturut-turut padahal spanduk dan unggahan sudah dipakai, sedangkan alasan warga belum diketahui dan kader RW bersedia membagikan lembar tanya. Menanyakan warga yang tidak hadir lalu merancang ulang acara menyentuh penyebabnya. Lembar tanya kepada peserta tahun lalu hanya menjangkau yang sudah hadir. Menguji dugaan panitia pada pentas berikutnya memperpanjang penurunan, menambah spanduk mengulang cara yang gagal, dan menyimpulkan warga muda kurang menghargai budaya adalah anggapan tanpa dasar.",
+    "tip": "Penyebabnya sudah diketahui dari siapa, dan keterangan mana yang masih sekadar dugaan?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pelestarian-perubahan",
+    "kataKunci": "penonton turun tiga tahun, spanduk dan unggahan, saling menduga, keterangan warga, kader RW, lembar tanya"
+  },
+  {
+    "id": "tkp-kasus-sb-18",
+    "skenario": "loket-kelurahan-lansia-bahasa-daerah",
+    "topic": "Sosial Budaya",
+    "subtopic": "Adaptasi dalam Masyarakat Majemuk",
+    "pola": "peluang-pengembangan-keterbatasan",
+    "peran": "pegawai-baru",
+    "kewenangan": "terbatas",
+    "penentu": "rekan senior yang fasih bahasa daerah bertugas di loket sebelah dan bersedia membantu, sedangkan kartu frasa hanya memuat ungkapan dasar",
+    "tempat": "loket",
+    "keputusan": "minta-bantuan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kebutuhan warga jelas dan bantuan rekan senior tersedia; memakai bantuan itu sambil mulai belajar mudah dikenali.",
+    "stem": "Anda pegawai baru di loket kelurahan. Sebagian warga yang datang lebih lancar berbicara dalam bahasa daerah, sedangkan Anda belum menguasainya dan kerap kesulitan memahami keperluan mereka. Rekan senior yang fasih bahasa itu bertugas di loket sebelah dan bersedia membantu, dan di loket tersedia kartu frasa yang hanya memuat ungkapan dasar. Antrean pagi biasanya padat. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Meminta rekan senior menerjemahkan percakapan sulit, lalu mencatat frasa yang sering muncul untuk dipelajari.",
+        "score": 5,
+        "reason": "Rekan senior yang fasih bersedia membantu, sehingga keperluan warga dipahami saat itu juga tanpa menebak. Frasa yang sering muncul dicatat untuk dipelajari, sehingga ketergantungan pada rekan berkurang seiring waktu.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengandalkan kartu frasa dasar yang tersedia di loket, lalu mencatat frasa yang belum ada untuk ditambahkan ke kartu.",
+        "score": 4,
+        "reason": "Kartu frasa membantu menyapa dan menanyakan keperluan, dan catatan frasa tambahan menunjukkan kemauan belajar. Namun kartu hanya memuat ungkapan dasar, sehingga keperluan yang di luar daftar tetap tidak terpahami padahal rekan senior bersedia membantu.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mengikuti kursus bahasa daerah dulu, lalu melayani warga di loket dengan bahasa Indonesia selama kursus berjalan.",
+        "score": 3,
+        "reason": "Kursus membangun kemampuan jangka panjang dan ada rencana yang jelas. Namun antrean pagi biasanya padat dan warga yang datang tetap tidak terlayani dengan baik, padahal rekan senior di loket sebelah bersedia membantu sekarang.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Meminta warga berbahasa Indonesia semampunya tanpa bantuan rekan senior, lalu mengulang penjelasan secara perlahan.",
+        "score": 2,
+        "reason": "Meminta warga berbahasa Indonesia semampunya menuntut mereka menyesuaikan diri demi kemampuan Anda, sedangkan mengulang penjelasan secara perlahan belum menjawab keperluan yang tidak terpahami. Rekan senior yang fasih bahasa daerah bersedia membantu dan tidak dimanfaatkan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sb:penyeragaman"
+        }
+      },
+      {
+        "text": "Menebak maksud warga dari beberapa kata yang dikenali, lalu mengisi formulir berdasarkan tebakan itu.",
+        "score": 1,
+        "reason": "Mengisi formulir berdasarkan tebakan memasukkan data sebelum maksud warga dipastikan dan dapat menimbulkan kesalahan dokumen. Kartu frasa dan rekan senior yang fasih bahasa daerah tersedia, tetapi tidak dipakai.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tanpa-verifikasi"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: adaptasi terhadap bahasa setempat dengan memanfaatkan bantuan yang tersedia sambil mengembangkan kemampuan sendiri. Fakta penentu: rekan senior yang fasih bahasa daerah bertugas di loket sebelah dan bersedia membantu, sedangkan kartu frasa hanya memuat ungkapan dasar. Meminta rekan menerjemahkan percakapan yang sulit lalu mencatat frasa yang sering muncul menjawab kebutuhan warga hari ini dan kemampuan jangka panjang. Kartu frasa saja tidak mencakup keperluan di luar daftar. Mengikuti kursus dulu menunda bantuan yang tersedia sekarang, meminta warga berbahasa Indonesia menuntut mereka menyesuaikan diri, dan menebak maksud warga berisiko pada dokumen.",
+    "tip": "Bantuan apa yang tersedia hari ini, dan kemampuan apa yang perlu dibangun untuk hari berikutnya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "adaptasi-sehari-hari",
+    "kataKunci": "pegawai baru, bahasa daerah, rekan senior fasih, kartu frasa, ungkapan dasar, antrean padat"
+  },
+  {
+    "id": "tkp-kasus-sb-19",
+    "skenario": "musyawarah-desa-jam-malam-perempuan-kurang-hadir",
+    "topic": "Sosial Budaya",
+    "subtopic": "Empati, Kepedulian, dan Harmoni Sosial",
+    "pola": "hak-minoritas-keputusan-mayoritas",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "perempuan sulit hadir pukul 20.00 karena mengurus anak tetapi dapat hadir pukul 16.00, dan laki-laki pekerja ladang juga dapat hadir pada jam itu",
+    "tempat": "rapat",
+    "keputusan": "melindungi",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Beberapa cara sama-sama membuka ruang bicara; harus dinilai mana yang menjadikan perempuan ikut memutuskan, bukan hanya didengar.",
+    "stem": "Anda kepala seksi pemberdayaan masyarakat di kecamatan dan memimpin musyawarah perencanaan desa. Musyawarah biasanya dimulai pukul 20.00 di balai desa, dan sebagian besar yang hadir laki-laki. Sejumlah perempuan menyampaikan bahwa mereka sulit hadir malam hari karena mengurus anak, tetapi dapat hadir pukul 16.00. Laki-laki pekerja ladang juga dapat hadir pada jam itu. Balai desa memiliki ruang yang dapat dipakai bermain anak. Keputusan apa yang paling tepat Anda ambil?",
+    "options": [
+      {
+        "text": "Mempertahankan musyawarah pada malam hari, lalu mengadakan sesi siang khusus bagi perempuan untuk menampung usul mereka.",
+        "score": 4,
+        "reason": "Sesi siang memberi perempuan ruang menyampaikan usul dan dukungan terhadap kebutuhan mereka nyata. Namun usul itu dibicarakan terpisah dari musyawarah malam yang memutuskan, sehingga mereka tetap tidak ikut menentukan hasil perencanaan desa.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menyediakan ruang bermain anak di balai pada musyawarah malam, lalu membacakan usul tertulis dari kotak usul.",
+        "score": 3,
+        "reason": "Ruang bermain anak membantu sebagian perempuan hadir malam hari, dan kotak usul menampung usul yang tidak dapat disampaikan langsung. Namun pukul 20.00 tetap menyulitkan mereka mengurus anak, sedangkan pukul 16.00 yang memungkinkan mereka hadir tidak dimanfaatkan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Memindahkan musyawarah ke pukul 16.00, lalu menyediakan ruang bermain anak di balai selama musyawarah berlangsung.",
+        "score": 5,
+        "reason": "Pukul 16.00 dapat dihadiri perempuan maupun laki-laki pekerja ladang, dan ruang bermain anak mengurangi hambatan mengurus anak. Perempuan ikut berbicara dan memutuskan dalam musyawarah yang sama tanpa membuat forum terpisah.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta kepala desa mengajak perempuan hadir malam hari, lalu menilai kehadiran pada musyawarah berikutnya.",
+        "score": 2,
+        "reason": "Ajakan kepada perempuan tidak mengubah penyebab mereka tidak hadir, yaitu mengurus anak pada pukul 20.00. Sebagai pemimpin musyawarah Anda dapat menetapkan waktunya, tetapi hal itu diserahkan kepada kepala desa dan hasilnya baru dinilai pada musyawarah berikutnya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Menyimpulkan perempuan kurang tertarik pada urusan desa, lalu menyusun usul program dari peserta yang hadir saja.",
+        "score": 1,
+        "reason": "Menyimpulkan perempuan kurang tertarik memperlakukan mereka sebagai kelompok seragam padahal mereka menyampaikan hambatan nyata. Usul program disusun dari peserta yang hadir, sehingga kebutuhan perempuan tidak masuk perencanaan desa.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:stereotip"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: partisipasi setara dan perlindungan kelompok yang tersisih akibat mekanisme rapat, dengan menilai beberapa cara yang sama-sama membuka ruang. Fakta penentu: perempuan sulit hadir pukul 20.00 karena mengurus anak tetapi dapat hadir pukul 16.00, dan laki-laki pekerja ladang juga dapat hadir pada jam itu. Memindahkan musyawarah ke pukul 16.00 dan menyediakan ruang bermain anak membuat semua pihak ikut memutuskan dalam satu forum. Sesi khusus perempuan menampung usul tetapi memisahkan mereka dari keputusan. Ruang bermain anak dan kotak usul membantu sebagian, tetapi pukul 20.00 tetap menyulitkan, meminta kepala desa mengajak tidak mengubah penyebabnya, dan menyimpulkan perempuan kurang tertarik adalah anggapan.",
+    "tip": "Apakah cara yang dipakai membuat pihak yang terhambat ikut memutuskan, atau hanya didengar?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "partisipasi-tidak-setara",
+    "kataKunci": "musyawarah pukul 20.00, perempuan mengurus anak, hadir pukul 16.00, pekerja ladang, ruang bermain anak"
+  },
+  {
+    "id": "tkp-kasus-sb-20",
+    "skenario": "siaran-langsung-pertunjukan-tradisi-perantau",
+    "topic": "Sosial Budaya",
+    "subtopic": "Perubahan Sosial Budaya dan Penyelesaian Konflik",
+    "pola": "penolakan-perubahan",
+    "peran": "warga",
+    "kewenangan": "hanya-usul",
+    "penentu": "sesepuh menyatakan hanya bagian pertunjukan boleh disaksikan orang di luar warga dan bersedia menunjukkan bagian yang boleh disiarkan, sedangkan perantau ingin menonton",
+    "tempat": "layanan-digital",
+    "keputusan": "koordinasi",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Keinginan perantau dan batas dari sesepuh sama-sama sah; beberapa bentuk siaran harus dinilai berdasarkan batas yang disebutkan sesepuh.",
+    "stem": "Anda warga yang ikut dalam panitia pertunjukan tradisi tahunan kampung. Banyak perantau ingin menyaksikan acara itu, dan sebagian pemuda panitia mengusulkan siaran langsung di media sosial. Para sesepuh keberatan karena hanya bagian pertunjukan yang boleh disaksikan orang di luar warga, tetapi mereka bersedia menunjukkan bagian yang boleh disiarkan. Keputusan akhir ada pada panitia, dan Anda hanya dapat mengusulkan. Usul apa yang paling tepat Anda sampaikan?",
+    "options": [
+      {
+        "text": "Mengusulkan unggahan rekaman pertunjukan setelah acara selesai, lalu meminta sesepuh menyetujui hasil akhirnya.",
+        "score": 4,
+        "reason": "Rekaman yang disetujui sesepuh menghormati batas bagian yang boleh disaksikan, dan perantau tetap dapat menonton. Namun perantau tidak menyaksikan pertunjukan saat berlangsung, sedangkan sesepuh bersedia menunjukkan bagian yang boleh disiarkan langsung.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menanyakan kepada pemuda panitia bagian yang layak disiarkan, lalu mengusulkan siaran langsung sesuai pendapat mereka.",
+        "score": 3,
+        "reason": "Pemuda panitia memahami kebutuhan siaran dan perantau, dan usulan disusun dari pendapat mereka. Namun batas bagian yang boleh disaksikan orang luar ditentukan sesepuh, yang belum ditanya, sehingga siaran dapat melewati batas itu.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sb:satu-suara"
+        }
+      },
+      {
+        "text": "Mengusulkan acara disiarkan dari awal sampai akhir agar perantau tidak ketinggalan, lalu meminta sesepuh menyesuaikan diri.",
+        "score": 2,
+        "reason": "Siaran dari awal sampai akhir menjawab keinginan perantau, tetapi meminta sesepuh menyesuaikan diri menuntut mereka melepas batas yang mereka jaga. Bagian yang boleh disiarkan menurut sesepuh tidak dibahas sebelum perubahan diminta.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sb:penyeragaman"
+        }
+      },
+      {
+        "text": "Menyiarkan acara secara langsung dari ponsel Anda, lalu menjelaskan alasannya kepada sesepuh setelah acara selesai.",
+        "score": 1,
+        "reason": "Keputusan akhir ada pada panitia dan Anda hanya dapat mengusulkan, sehingga menyiarkan sendiri melampaui peran. Penjelasan setelah acara tidak dapat menarik kembali bagian yang sudah disaksikan orang di luar warga.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      },
+      {
+        "text": "Menanyakan kepada sesepuh bagian yang boleh disiarkan, lalu mengusulkan siaran langsung pada bagian itu.",
+        "score": 5,
+        "reason": "Sesepuh bersedia menunjukkan bagian yang boleh disiarkan, sehingga batas bagian pertunjukan yang boleh disaksikan orang luar dihormati. Siaran langsung pada bagian itu menjawab keinginan perantau untuk menonton saat acara berlangsung.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: pelestarian dan perubahan bentuk dengan menilai beberapa cara yang sama-sama berusaha mengakomodasi dua kepentingan. Fakta penentu: sesepuh menyatakan hanya bagian pertunjukan boleh disaksikan orang di luar warga dan bersedia menunjukkan bagian yang boleh disiarkan, sedangkan perantau ingin menonton dan Anda hanya dapat mengusulkan. Siaran langsung hanya pada bagian yang ditunjukkan sesepuh menjaga batas sekaligus menjawab perantau. Rekaman yang diunggah kemudian menjaga batas tetapi tidak memenuhi keinginan menonton saat berlangsung. Pendapat pemuda saja belum mendengar penentu batas, siaran penuh menuntut sesepuh berubah, dan menyiarkan sendiri melampaui peran.",
+    "tip": "Siapa yang menentukan batas, dan apakah keinginan pihak lain tetap dapat terjawab dalam batas itu?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pelestarian-perubahan",
+    "kataKunci": "perantau, siaran langsung, sesepuh keberatan, bagian pertunjukan, boleh disiarkan"
+  },
+  {
+    "id": "tkp-kasus-sb-21",
+    "skenario": "rekan-pindahan-tidak-ikut-makan-siang-bersama",
+    "topic": "Sosial Budaya",
+    "subtopic": "Adaptasi dalam Masyarakat Majemuk",
+    "pola": "ketegangan-kesalahpahaman",
+    "peran": "anggota-tim",
+    "kewenangan": "hanya-usul",
+    "penentu": "rekan itu belum pernah menceritakan alasannya tidak ikut makan siang, sedangkan beberapa rekan mulai berbisik bahwa ia tidak mau akrab",
+    "tempat": "administratif",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Alasan ketidakhadiran belum diketahui dan dugaan sudah beredar; perlu mencari tahu tanpa mengasumsikan identitas atau menyorot rekan itu.",
+    "stem": "Anda anggota tim di sebuah kantor dinas. Setiap Jumat, tim makan siang bersama di ruang pertemuan. Seorang rekan pindahan dari kantor cabang lain sudah beberapa kali tidak ikut dan hanya berkata ia ada urusan. Beberapa rekan mulai berbisik bahwa ia tidak mau akrab dengan tim. Anda cukup dekat dengan rekan itu, tetapi ia belum pernah menceritakan alasannya. Acara makan siang itu diatur oleh ketua tim. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mengusulkan kepada tim acara kebersamaan bergilir, lalu mengajak rekan itu secara pribadi ke acara berikutnya.",
+        "score": 4,
+        "reason": "Acara bergilir memberi variasi bentuk kebersamaan dan ajakan pribadi menunjukkan rekan itu diterima. Namun alasannya tidak hadir belum ditanyakan, sehingga bentuk acara baru dapat tetap tidak sesuai dengan kebutuhannya.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menanyakan secara pribadi pendapat rekan itu tentang acara itu, lalu mengusulkan bentuk lain kepada tim bila ia berkenan.",
+        "score": 5,
+        "reason": "Rekan itu belum menceritakan alasannya, sehingga pertanyaan pribadi tentang pendapatnya membuka kesempatan ia menjelaskan tanpa dituduh. Usulan bentuk lain kepada tim bila ia berkenan sesuai peran Anda sebagai anggota tim, tanpa membuka alasan pribadinya.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Memberi rekan itu waktu sampai akhir bulan untuk menyesuaikan diri, lalu menanyakan alasannya bila ia masih tidak ikut.",
+        "score": 3,
+        "reason": "Memberi waktu menghormati ruang pribadinya dan ada rencana untuk bertanya. Namun menunggu sampai akhir bulan membiarkan bisik-bisik rekan lain terus beredar, sehingga kesalahpahaman mengeras sebelum alasannya diketahui.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menganggap ketidakhadirannya urusan pribadi, lalu melanjutkan perencanaan acara berikutnya seperti biasa.",
+        "score": 2,
+        "reason": "Menganggap urusan pribadi membiarkan bisik-bisik bahwa rekan itu tidak mau akrab terus beredar. Alasan ketidakhadirannya tidak pernah diketahui, dan ia dapat merasa disisihkan dari acara tim.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menyimpulkan rekan itu tertutup karena pindahan dari cabang lain, lalu meminta tim tidak mengajaknya lagi ke acara lain.",
+        "score": 1,
+        "reason": "Menyimpulkan sifat rekan itu dari statusnya sebagai pindahan adalah prasangka, bukan jawaban atas alasan yang belum ia ceritakan. Meminta tim berhenti mengajaknya menyisihkannya dari kegiatan bersama.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:stereotip"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: adaptasi dan penghormatan terhadap perbedaan tanpa asumsi tentang identitas, yaitu mencari pemahaman sebelum menilai. Fakta penentu: rekan itu belum pernah menceritakan alasannya tidak ikut makan siang, sedangkan beberapa rekan mulai berbisik bahwa ia tidak mau akrab. Bertanya secara pribadi lalu mengusulkan bentuk lain atas persetujuannya mencari pemahaman dan menghormati ruangnya. Mengubah bentuk acara tanpa bertanya belum menjawab kebutuhannya. Memberi waktu sampai akhir bulan membiarkan kesalahpahaman mengeras, menganggapnya urusan pribadi membiarkan bisik-bisik, dan menyimpulkan dari status pindahan adalah prasangka.",
+    "tip": "Mana yang sudah diketahui dan mana yang masih dugaan, dan siapa yang dapat menjelaskannya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "adaptasi-sehari-hari",
+    "kataKunci": "makan siang bersama, rekan pindahan, ada urusan, berbisik, belum menceritakan alasan"
+  },
+  {
+    "id": "tkp-kasus-sb-22",
+    "skenario": "tanggal-puncak-syukuran-panen-festival-wisata",
+    "topic": "Sosial Budaya",
+    "subtopic": "Konsep Dasar, Unsur, dan Struktur Sosial Budaya",
+    "pola": "informasi-belum-lengkap-bertentangan",
+    "peran": "penghubung-mitra",
+    "kewenangan": "penuh",
+    "penentu": "ketua adat dan staf desa menyebut tanggal puncak syukuran berbeda, sedangkan pengumuman sudah dibagikan ke penginapan dan agen wisata",
+    "tempat": "lapangan",
+    "keputusan": "mengoreksi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua sumber bertentangan tentang jadwal adat dan pengumuman sudah beredar; perlu memastikan sumber yang tepat dan menjangkau penerima yang sudah memegang tanggal lama.",
+    "stem": "Anda staf dinas pariwisata yang menjadi penghubung dengan sebuah desa yang menggelar festival panen. Dinas telah membagikan pengumuman ke penginapan dan agen wisata bahwa puncak syukuran panen berlangsung Sabtu. Ketua adat kemudian menyebut puncaknya jatuh pada Jumat sesuai perhitungan kalender adat, sedangkan seorang staf desa tetap menyebut Sabtu. Pengumuman dinas untuk festival ini Anda yang menyusun, dan keduanya dapat dihubungi hari ini. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mempertahankan Sabtu sebagai puncak syukuran karena sudah diumumkan, lalu meminta desa menyesuaikan acaranya.",
+        "score": 1,
+        "reason": "Mempertahankan Sabtu demi pengumuman mengabaikan keterangan adat yang belum dipastikan kebenarannya. Meminta desa menyesuaikan puncak syukuran menempatkan jadwal wisata di atas ketentuan upacara, dan wisatawan dapat datang pada hari yang keliru.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:abai-norma"
+        }
+      },
+      {
+        "text": "Meminta penginapan dan agen wisata menanyakan sendiri tanggal puncak syukuran kepada desa itu, lalu mencatat pertanyaan mereka.",
+        "score": 2,
+        "reason": "Meminta mereka bertanya ke desa memindahkan beban yang menjadi tugas Anda sebagai penyusun pengumuman. Tanggal yang keliru pada pengumuman tetap beredar sampai ada jawaban, dan perbedaan ketua adat dengan staf desa tidak diselesaikan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Menyampaikan tanggal dari ketua adat kepada penginapan dan agen wisata, lalu memperbarui laman dinas.",
+        "score": 4,
+        "reason": "Tanggal dari ketua adat berlandaskan kalender adat dan langsung dikirim kepada penginapan dan agen wisata yang sudah menerima pengumuman lama, sehingga kekeliruan tidak berlanjut. Namun staf desa yang menyebut Sabtu tidak dikonfirmasi, sehingga perbedaan keterangan antara ketua adat dan staf desa belum benar-benar diselesaikan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Memastikan tanggal kepada ketua adat dan staf desa, lalu mengoreksi pengumuman di penginapan dan agen wisata sebelum Jumat.",
+        "score": 5,
+        "reason": "Ketua adat dan staf desa dapat dihubungi hari ini, sehingga perbedaan tanggal puncak syukuran diselesaikan dari sumber yang tepat sebelum dikoreksi. Anda yang menyusun pengumuman, sehingga penginapan dan agen wisata yang sudah menerimanya mendapat tanggal yang benar.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyampaikan perbedaan tanggal puncak syukuran kepada atasan, lalu mengoreksi pengumuman sesuai tanggal yang ditetapkan atasan.",
+        "score": 3,
+        "reason": "Menyampaikan kepada atasan menjaga keterbukaan dan koreksi akan dilakukan. Namun Anda yang menyusun pengumuman dan kedua sumber dapat dihubungi hari ini, sehingga penetapan tanggal tertunda dan penginapan serta agen wisata terus memegang tanggal yang mungkin keliru.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: benturan antara jadwal pelayanan dan kalender adat, yaitu memastikan informasi dari sumber yang berlegitimasi sebelum mengoreksi pihak yang sudah menerimanya. Fakta penentu: ketua adat dan staf desa menyebut tanggal puncak syukuran berbeda, sedangkan pengumuman sudah dibagikan ke penginapan dan agen wisata. Memastikan kepada keduanya lalu mengoreksi pengumuman menyentuh sumber dan penerimanya. Mengirim tanggal ketua adat kepada penginapan dan agen tanpa mencocokkannya dengan staf desa belum menyelesaikan perbedaan keterangan. Menyampaikan kepada atasan lebih dahulu menunda koreksi, meminta mitra bertanya sendiri melepas tanggung jawab, dan mempertahankan Sabtu mengabaikan kalender adat.",
+    "tip": "Hari itu ditentukan oleh siapa, dan siapa saja yang sudah memegang informasi lama?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "benturan-kegiatan",
+    "kataKunci": "puncak syukuran, kalender adat, ketua adat, staf desa, penginapan dan agen wisata, pengumuman dinas"
+  },
+  {
+    "id": "tkp-kasus-sb-23",
+    "skenario": "jeda-siang-pelatihan-kebutuhan-peserta-berbeda",
+    "topic": "Sosial Budaya",
+    "subtopic": "Konsep Dasar, Unsur, dan Struktur Sosial Budaya",
+    "pola": "kebutuhan-individual-vs-keadilan",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "dua peserta memerlukan waktu tambahan pada siang hari sedangkan peserta lain belum ditanya, dan materi dapat digeser",
+    "tempat": "pelatihan",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Beberapa cara sama-sama menghormati kebutuhan; harus dinilai mana yang adil bagi peserta lain tanpa memberi keistimewaan atau menyorot peserta tertentu.",
+    "stem": "Anda koordinator pelatihan dua hari yang diikuti peserta dari berbagai daerah. Jadwal hari pertama padat pada pukul 11.30 sampai 13.30, dengan makan siang hanya tiga puluh menit. Dua peserta menyampaikan bahwa mereka memerlukan waktu tambahan pada siang hari untuk keperluan pribadi, termasuk ibadah. Peserta lain belum ditanya kebutuhannya. Materi dapat digeser dan ruang tambahan tersedia. Anda yang menyusun jadwal pelatihan itu. Keputusan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menanyakan kebutuhan jeda lewat formulir singkat, lalu menetapkan jeda siang yang mencukupi kebutuhan tercatat.",
+        "score": 5,
+        "reason": "Dua peserta sudah menyampaikan kebutuhan dan peserta lain belum ditanya, sehingga formulir singkat menjangkau setiap peserta tanpa meminta alasan rinci. Materi dapat digeser dan Anda yang menyusun jadwal, sehingga jeda siang yang mencukupi dapat ditetapkan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengizinkan peserta yang meminta untuk meninggalkan ruangan sebentar, lalu menyesuaikan materi pada sesi berikutnya.",
+        "score": 4,
+        "reason": "Izin keluar ruangan memenuhi kebutuhan peserta yang sudah menyampaikannya, dan materi disesuaikan. Namun peserta lain belum ditanya kebutuhannya, dan peserta yang meminta menjadi terlihat berbeda di depan peserta lain.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mempertahankan jadwal padat sesuai rencana awal, lalu menyarankan peserta memakai waktu makan siang untuk keperluan mereka.",
+        "score": 3,
+        "reason": "Jadwal padat dipertahankan secara konsisten bagi peserta, dan makan siang tiga puluh menit dapat dipakai. Namun waktu itu terlalu singkat untuk makan sekaligus keperluan lain, padahal materi dapat digeser dan Anda yang menyusun jadwal.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kaku"
+        }
+      },
+      {
+        "text": "Menetapkan istirahat serentak selama makan siang tiga puluh menit, lalu meminta peserta yang ingin keluar ruangan melapor kepada panitia.",
+        "score": 2,
+        "reason": "Istirahat serentak selama makan siang tiga puluh menit menyamakan waktu bagi peserta tanpa menambah jeda, dan peserta harus melapor lebih dahulu untuk keluar ruangan. Kebutuhan waktu tambahan yang disampaikan dua peserta tidak terjawab, dan keperluan mereka menjadi urusan yang harus dilaporkan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sb:penyeragaman"
+        }
+      },
+      {
+        "text": "Meminta peserta yang membutuhkan jeda menjelaskan alasannya di depan peserta lain, lalu menilai layak tidaknya permintaan itu.",
+        "score": 1,
+        "reason": "Meminta penjelasan alasan di depan peserta lain membuka urusan pribadi dan keagamaan seseorang kepada orang banyak. Peserta lain yang belum ditanya menjadi enggan menyampaikan kebutuhannya, dan penilaian layak tidaknya tidak berdasar.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:memojokkan"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: penyesuaian jadwal yang adil bagi kebutuhan kelompok berbeda tanpa membuat peserta tertentu disorot. Fakta penentu: dua peserta memerlukan waktu tambahan pada siang hari sedangkan peserta lain belum ditanya, dan materi dapat digeser. Formulir singkat lalu jeda yang mencukupi menjangkau setiap peserta tanpa meminta alasan rinci. Izin bagi yang meminta memenuhi sebagian kebutuhan dan membuat peminta tampak berbeda. Mempertahankan jadwal menyisakan waktu yang terlalu singkat, istirahat serentak menyamakan waktu tanpa menjawab kebutuhan tambahan, dan meminta penjelasan di depan peserta lain memojokkan.",
+    "tip": "Bagaimana keperluan peserta dapat diketahui tanpa membuat seseorang harus membela dirinya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "benturan-kegiatan",
+    "kataKunci": "jadwal padat, makan siang tiga puluh menit, waktu tambahan, ibadah, peserta lain belum ditanya, materi dapat digeser"
+  },
+  {
+    "id": "tkp-kasus-sb-24",
+    "skenario": "gotong-royong-makam-desa-loket-sabtu",
+    "topic": "Sosial Budaya",
+    "subtopic": "Konsep Dasar, Unsur, dan Struktur Sosial Budaya",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "pelaksana",
+    "kewenangan": "tidak-ada",
+    "penentu": "warga menantikan perwakilan kelurahan di gotong royong, sedangkan antrean loket Sabtu pagi biasanya sepi dan tiga rekan bertugas",
+    "tempat": "loket",
+    "keputusan": "koordinasi",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Arahan atasan bertemu harapan warga; tidak ada kewenangan mengubah jaga sehingga jalan keluar harus berupa usulan yang menghormati kedua pihak.",
+    "stem": "Anda pelaksana di loket kelurahan yang buka juga pada Sabtu pagi. Pada Sabtu ini warga menggelar gotong royong membersihkan makam desa dan menantikan kehadiran perwakilan kelurahan sebagai tanda kebersamaan. Kepala seksi, atasan langsung Anda, meminta staf tetap berada di loket sepanjang pagi karena khawatir antrean ramai. Biasanya antrean Sabtu pagi sepi dan tiga rekan bertugas. Anda tidak berwenang mengubah jadwal jaga. Bagaimana respons Anda?",
+    "options": [
+      {
+        "text": "Meminta izin kepada atasan untuk keluar sebentar, lalu mewakili kelurahan hadir di gotong royong warga.",
+        "score": 4,
+        "reason": "Kehadiran Anda mewakili kelurahan dan izin atasan diminta lebih dahulu. Namun hanya satu orang yang hadir dan jadwal tiga rekan di loket yang biasanya sepi tidak ditinjau, sehingga kekhawatiran atasan tentang loket tidak dijawab dengan pengaturan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Tetap bertugas di loket sesuai arahan atasan, lalu menyampaikan permintaan maaf kepada warga yang sudah menantikan.",
+        "score": 3,
+        "reason": "Mematuhi arahan atasan menjaga layanan loket dan maaf kepada warga akan disampaikan. Namun antrean Sabtu pagi biasanya sepi dan tiga rekan bertugas, sehingga ruang bagi staf bergiliran hadir di gotong royong tidak dicari.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kaku"
+        }
+      },
+      {
+        "text": "Menyampaikan kepada atasan bahwa warga menantikan kelurahan, lalu mengusulkan staf bergiliran ikut gotong royong.",
+        "score": 5,
+        "reason": "Warga menantikan perwakilan kelurahan di gotong royong, sedangkan antrean loket Sabtu pagi biasanya sepi dengan tiga rekan bertugas. Usulan bergiliran menghormati arahan atasan tentang loket sekaligus kebutuhan warga, tanpa mengubah jadwal jaga sendiri.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta rekan yang lebih senior membicarakan masalah itu dengan atasan, lalu mengikuti keputusan mereka.",
+        "score": 2,
+        "reason": "Menyerahkan pembicaraan kepada rekan senior memindahkan tanggung jawab menyampaikan harapan warga yang Anda ketahui langsung. Gotong royong berjalan tanpa kepastian kehadiran kelurahan, padahal loket Sabtu pagi biasanya sepi.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Meninggalkan loket menuju gotong royong sebelum atasan menjawab, lalu menitipkan warga yang datang kepada rekan.",
+        "score": 1,
+        "reason": "Meninggalkan loket sebelum atasan menjawab melanggar arahan jaga, padahal Anda tidak berwenang mengubah jadwal jaga. Rekan yang dititipi menanggung antrean tanpa persetujuan atasan, sehingga kepercayaan atasan rusak.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: benturan kewajiban pelayanan dengan kegiatan kebersamaan warga, yaitu menawarkan penyelesaian yang menghormati arahan atasan dan harapan warga. Fakta penentu: warga menantikan perwakilan kelurahan di gotong royong, sedangkan antrean loket Sabtu pagi biasanya sepi dan tiga rekan bertugas, dan Anda tidak berwenang mengubah jadwal jaga. Menyampaikan harapan warga lalu mengusulkan staf bergiliran menjaga keduanya. Meminta izin keluar hanya mewakili satu orang dan belum menjawab kekhawatiran atasan tentang loket. Tetap di loket menutup jalan keluar, meminta rekan senior melepas tanggung jawab, dan meninggalkan loket melanggar arahan.",
+    "tip": "Kebutuhan apa yang sama-sama sah di sini, dan seberapa jauh peran Anda memungkinkan jalan keluar?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "benturan-kegiatan",
+    "kataKunci": "gotong royong, makam desa, perwakilan kelurahan, antrean Sabtu sepi, tiga rekan bertugas, jadwal jaga"
+  },
+  {
+    "id": "tkp-kasus-sb-25",
+    "skenario": "digitalisasi-naskah-pusaka-milik-warga",
+    "topic": "Sosial Budaya",
+    "subtopic": "Perubahan Sosial Budaya dan Penyelesaian Konflik",
+    "pola": "penolakan-perubahan",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "pemilik menolak karena naskah dianggap pusaka dan khawatir disalahgunakan, sedangkan dinas dapat memotret di rumah dan tokoh adat bersedia mendampingi",
+    "tempat": "kemitraan",
+    "keputusan": "mengembangkan",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Pelestarian naskah dan keyakinan pemilik sama-sama sah; beberapa cara pendataan harus dinilai berdasarkan kekhawatiran pemilik yang disebutkan.",
+    "stem": "Anda kepala perpustakaan daerah yang ingin mendigitalkan naskah lama milik warga di sebuah kecamatan agar tidak rusak. Beberapa pemilik menolak karena naskah dianggap pusaka yang tidak boleh dibawa keluar rumah, dan sebagian khawatir isinya disalahgunakan. Petugas dapat memotret naskah di rumah pemilik dan memberikan salinan digital kepada pemilik, dengan jadwal bulan ini masih longgar. Tokoh adat kecamatan bersedia mendampingi. Keputusan apa yang paling tepat Anda ambil?",
+    "options": [
+      {
+        "text": "Mendata naskah pemilik yang bersedia, lalu menyerahkan salinan digitalnya kepada pemilik masing-masing.",
+        "score": 4,
+        "reason": "Pemilik yang bersedia terlayani dan menerima salinan digital, sehingga naskah mereka terlindung dari kerusakan. Namun pemilik yang menolak tidak didekati dan kekhawatiran mereka tentang pusaka dan penyalahgunaan tidak dijawab, sehingga naskah mereka tidak ikut terdata.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mengusulkan peraturan daerah tentang pendataan naskah warga, lalu mengikuti pembahasannya di dewan daerah.",
+        "score": 3,
+        "reason": "Peraturan daerah memberi dasar hukum yang jelas dan jalurnya sah. Namun pemilik yang menolak belum diajak bicara, sedangkan tokoh adat bersedia mendampingi dan petugas dapat memotret di rumah pemilik, sehingga tahap dialog dilompati.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Meminta pemilik membawa naskah ke perpustakaan daerah, lalu menolak tawaran tokoh adat untuk mendampingi.",
+        "score": 2,
+        "reason": "Meminta naskah dibawa keluar rumah menuntut pemilik meninggalkan keyakinan bahwa pusaka tidak boleh dipindahkan, padahal petugas dapat memotret di rumah pemilik. Tawaran tokoh adat yang dapat menjembatani kekhawatiran pemilik juga ditolak.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sb:penyeragaman"
+        }
+      },
+      {
+        "text": "Memotret naskah milik pemilik yang menolak saat mereka tidak di rumah, lalu mengabari tokoh adat setelahnya.",
+        "score": 1,
+        "reason": "Memotret naskah pemilik yang menolak tanpa persetujuan melanggar hak mereka atas pusaka dan merusak kepercayaan. Mengabari tokoh adat sesudahnya tidak memperbaiki pelanggaran itu dan membenarkan kekhawatiran pemilik bahwa isi naskah dapat disalahgunakan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Menemui pemilik bersama tokoh adat untuk menjelaskan tujuan, lalu menawarkan pemotretan di rumah atas izin pemilik.",
+        "score": 5,
+        "reason": "Tokoh adat bersedia mendampingi, sehingga kekhawatiran pemilik tentang pusaka dan penyalahgunaan dapat didengar dan dijawab. Pemotretan di rumah atas persetujuan, dengan salinan digital kepada pemilik, menjaga naskah tanpa memindahkannya keluar rumah.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: pelestarian budaya melalui perubahan cara penyimpanan dengan menghormati pemilik dan makna pusaka. Fakta penentu: pemilik menolak karena naskah dianggap pusaka dan khawatir disalahgunakan, sedangkan petugas dapat memotret di rumah dan tokoh adat bersedia mendampingi. Menemui pemilik bersama tokoh adat lalu menawarkan pemotretan di rumah atas persetujuan menjawab kekhawatiran mereka. Mendata yang bersedia saja tidak menjawab kekhawatiran pemilik yang menolak. Peraturan daerah melompati dialog, meminta naskah dibawa keluar menuntut pemilik berubah, dan memotret tanpa persetujuan melanggar hak mereka.",
+    "tip": "Kekhawatiran apa yang paling mendesak bagi pihak yang menolak, dan jalan apa yang menjawabnya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pelestarian-perubahan",
+    "kataKunci": "naskah lama, pusaka, tidak boleh dibawa keluar, khawatir disalahgunakan, memotret di rumah, tokoh adat"
+  },
+  {
+    "id": "tkp-kasus-sb-26",
+    "skenario": "daftar-undangan-syukuran-keluarga-pindahan",
+    "topic": "Sosial Budaya",
+    "subtopic": "Empati, Kepedulian, dan Harmoni Sosial",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "keluarga yang pindah delapan bulan lalu tidak masuk daftar undangan karena panitia memakai catatan warga lama, dan mereka sebenarnya ingin hadir",
+    "tempat": "masyarakat",
+    "keputusan": "memulihkan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Keterlewatan jelas bersumber dari daftar panitia dan keluarga itu ingin hadir; meminta maaf secara langsung dan memperbaiki daftar mudah dikenali.",
+    "stem": "Anda ketua panitia syukuran kampung tahunan. Daftar undangan disusun dari catatan warga lama, sehingga keluarga yang pindah delapan bulan lalu tidak diundang. Seorang tetangga memberi tahu Anda bahwa keluarga itu merasa tersisih dan menolak ajakan ronda, padahal sebenarnya ingin hadir bila diundang. Ketua RT dapat mengantar undangan ke rumah mereka. Persiapan dimulai pekan ini dan undangan dibagikan akhir pekan depan. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Menugaskan ketua RT mengantar undangan ke rumah keluarga pendatang, lalu menambahkan nama mereka ke daftar.",
+        "score": 4,
+        "reason": "Undangan yang diantar ketua RT sampai kepada keluarga itu dan nama mereka masuk daftar, sehingga keterlewatan tidak berulang. Namun keluarga yang merasa tersisih tidak mendengar permintaan maaf dari Anda yang menyusun daftar, sehingga perasaan tersisih belum dijawab secara langsung.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Menemui keluarga pendatang untuk meminta maaf dan mengundang mereka, lalu memperbarui daftar sebelum undangan dibagikan.",
+        "score": 5,
+        "reason": "Keluarga itu ingin hadir tetapi tidak masuk daftar karena panitia memakai catatan warga lama, sehingga permintaan maaf langsung dari penyusun daftar menjawab rasa tersisih. Pembaruan daftar mencegah warga baru lain terlewat pada kegiatan berikutnya.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menambahkan nama keluarga pendatang ke daftar undangan, lalu membahas pendataan warga baru pada rapat panitia bulan depan.",
+        "score": 3,
+        "reason": "Nama yang ditambahkan memastikan keluarga itu terdaftar dan pendataan akan dibahas. Namun keluarga yang merasa tersisih belum diberi tahu atau dimintai maaf, dan warga baru lain tetap terlewat sampai rapat bulan depan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menganggap keluarga pendatang dapat bergabung bila mereka mau, lalu melanjutkan persiapan sesuai daftar yang ada.",
+        "score": 2,
+        "reason": "Menganggap mereka dapat bergabung sendiri membiarkan keluarga yang sudah merasa tersisih tetap di luar daftar. Panitia memakai catatan warga lama, tetapi penyebab keluarga itu tidak diundang tidak diperbaiki.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menyebut dalam rapat bahwa keluarga pendatang kurang mau berbaur, lalu meminta mereka mendaftar sendiri sebagai peserta acara.",
+        "score": 1,
+        "reason": "Menyebut keluarga itu kurang mau berbaur di depan panitia menyalahkan pihak yang tidak diundang, padahal penyebabnya catatan warga lama. Meminta mereka mendaftar sendiri membebankan perbaikan kepada keluarga yang merasa tersisih.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sb:memojokkan"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: pemulihan partisipasi bagi warga yang tersisih akibat cara kerja panitia, yaitu mengakui keterlewatan secara langsung dan memperbaiki mekanisme pendataan. Fakta penentu: keluarga yang pindah delapan bulan lalu tidak masuk daftar undangan karena panitia memakai catatan warga lama, dan mereka sebenarnya ingin hadir. Menemui keluarga untuk meminta maaf dan mengundang lalu memperbarui daftar memulihkan hubungan dan mencegah pengulangan. Undangan lewat ketua RT kurang langsung. Menambah nama lalu membahas bulan depan menunda perbaikan, menganggap mereka dapat bergabung sendiri membiarkan, dan menyebut mereka kurang berbaur menyalahkan.",
+    "tip": "Dari mana keterlewatan ini berasal, dan siapa yang paling tepat memperbaikinya secara langsung?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "partisipasi-tidak-setara",
+    "kataKunci": "daftar undangan, catatan warga lama, keluarga pindah, merasa tersisih, ingin hadir, ketua RT"
+  }
+]

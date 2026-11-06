@@ -2,21 +2,22 @@
 import { useMemo, useState } from 'react';
 import { BANK } from '@/lib/bank';
 import { buildBlueprint, checkBlueprint, rowCapacity } from '@/lib/blueprint';
-import { BASELINE, DESCRIPTIONS, LABELS, PRESET, TOPICS } from '@/lib/config';
+import { BASELINE, DESCRIPTIONS, KURASI_AKTIF, LABELS, PRESET, TOPICS } from '@/lib/config';
 import { normalizeSettings } from '@/lib/generate';
 import { TIU_FAMILIES } from '@/lib/tiu';
 import type { BlueprintRow, DifficultyFilter, Mode, Settings } from '@/lib/types';
 import BlueprintSummary, { planTotals, topicLabel } from './BlueprintSummary';
 import Icon from './Icon';
 import { MAPPING_ROWS, MAPPING_SOURCE, profilePlan } from '@/lib/mapping';
-import { eligibleSources, profileCapacityErrors, PROFILE_SETTINGS, VARY_ROWS } from '@/lib/tryout-profile';
+import { eligibleSources, profileCapacityErrors, PROFILE_SETTINGS, SILO_ROWS, VARY_ROWS } from '@/lib/tryout-profile';
 import { LOCAL_RECIPES, localRecipes, usesLocal } from '@/lib/local';
+import { randomSeed } from '@/lib/seed-analysis';
 
 // Sumber per chapter tryout: jumlah kombinasi model lokal, tanda Variasi/Pola, atau jumlah contoh untuk paket pertama.
-const supplyLabel=(row:ReturnType<typeof profilePlan>[number],settings:Settings)=>usesLocal(settings,row.subtest)?localRecipes(row.subtest,[row.topic],settings.difficulty,[row.topic+'::'+row.chapter]).length+' baru':settings.tiuSource==='variation'&&row.subtest==='TIU'&&VARY_ROWS.includes(row.row)?'Variasi':eligibleSources(row,settings,0).length||([16,50,51,52,53].includes(row.row)?'Pola':'0');
+const supplyLabel=(row:ReturnType<typeof profilePlan>[number],settings:Settings)=>usesLocal(settings,row.subtest)?localRecipes(row.subtest,[row.topic],settings.difficulty,[row.topic+'::'+row.chapter]).length+' baru':row.subtest==='TIU'&&(settings.tiuSource==='variation'&&VARY_ROWS.includes(row.row)||SILO_ROWS.includes(row.row))?'Variasi':eligibleSources(row,settings,0).length||([16,50,51,52,53].includes(row.row)?'Pola':'0');
 
-export default function GeneratorForm({ settings, onSettings, onGenerate, busy }: { settings: Settings; onSettings: (s: Settings) => void; onGenerate: (s: Settings) => void; busy: boolean }) {
-  const [manual, setManual] = useState<BlueprintRow[] | null>(null), [mixed, setMixed] = useState(!!settings.composition);
+export default function GeneratorForm({ settings, onSettings, onGenerate, onCompare, busy }: { settings: Settings; onSettings: (s: Settings) => void; onGenerate: (s: Settings) => void; onCompare: (s: Settings) => void; busy: boolean }) {
+  const [manual, setManual] = useState<BlueprintRow[] | null>(settings.blueprint ?? null), [mixed, setMixed] = useState(!!settings.composition);
   const isTryout=settings.profile==='tryout-2027';
   const update = (patch: Partial<Settings>) => { setManual(null); onSettings({ ...settings, ...patch, blueprint: undefined }); };
   const topics = settings.mode === 'SKD' ? Object.values(TOPICS).flat() : TOPICS[settings.mode];
@@ -41,8 +42,8 @@ export default function GeneratorForm({ settings, onSettings, onGenerate, busy }
     </fieldset>
     <fieldset className="form-block"><legend><span className="block-num">3</span>Sumber, jumlah, dan kesulitan</legend>
       <div className="field-grid">{(['TWK','TKP'] as const).filter(s=>settings.mode==='SKD'||settings.mode===s).map(s=>{
-        const key=s==='TWK'?'twkSource':'tkpSource';return <label className="field" key={s}>Penyusunan {s}<select aria-label={'Penyusunan '+s} value={settings[key]??'accepted'} onChange={e=>update({[key]:e.target.value,subtopics:[]})}><option value="new">Soal baru · generator lokal</option><option value="accepted">Gunakan bank contoh</option></select></label>;
-      })}{(settings.mode!=='TIU'&&(usesLocal(settings,'TWK')||usesLocal(settings,'TKP')))&&<p className="help">Kasus baru disusun dari model kondisi dan keputusan, tanpa API. Fakta penentu memengaruhi kunci serta alasan opsi. Variasi terbatas dan semua hasil tetap masuk kurasi sebagai draf.</p>}
+        const key=s==='TWK'?'twkSource':'tkpSource';return <label className="field" key={s}>Penyusunan {s}<select aria-label={'Penyusunan '+s} value={settings[key]??'accepted'} onChange={e=>update({[key]:e.target.value,subtopics:[]})}><option value="new">Soal baru · generator lokal</option><option value="accepted">{s==='TKP'?(isTryout?'Bank kasus orisinal':'Bank (kasus baru + contoh)'):'Gunakan bank contoh'}</option></select></label>;
+      })}{(settings.mode!=='TIU'&&(usesLocal(settings,'TWK')||usesLocal(settings,'TKP')))&&<p className="help">Kasus baru disusun dari model kondisi dan keputusan, tanpa API. Fakta penentu memengaruhi kunci serta alasan opsi. {KURASI_AKTIF ? 'Variasi terbatas dan semua hasil tetap masuk kurasi sebagai draf.' : 'Variasi terbatas; periksa hasilnya sebelum dipakai.'}</p>}
       {isTryout&&(settings.mode==='SKD'||settings.mode==='TIU')&&<label className="field field-wide">Penyusunan TIU<select aria-label="Penyusunan TIU" value={settings.tiuSource??'accepted'} onChange={(e)=>update({tiuSource:e.target.value as Settings['tiuSource']})}><option value="accepted">Utamakan contoh diterima</option><option value="variation">Variasi TIU terhitung + contoh acuan</option></select><span className="help">Variasi TIU tersedia pada pola yang sudah dimodelkan. Argumen, sifat bilangan, dan cerita khusus tetap memakai acuan; figural memakai mesin gambar.</span></label>}
       <label className="field">Judul paket<input value={settings.title} maxLength={150} onChange={(e) => update({ title: e.target.value })}/></label>
       <label className="field">Soal per paket<input aria-label="Soal per paket" type="number" min={settings.mode === 'SKD' ? 3 : 1} max={200} value={settings.count} onChange={(e) => update({ count: Number(e.target.value) })}/></label>
@@ -50,9 +51,13 @@ export default function GeneratorForm({ settings, onSettings, onGenerate, busy }
       {!isTryout&&settings.difficulty === 'campuran' && <><label className="check-row"><input type="checkbox" checked={mixed && !!settings.composition} onChange={(e) => { setMixed(e.target.checked); update({ composition: e.target.checked ? { mudah: 25, sedang: 50, sulit: 25 } : undefined }); }}/><span>Tentukan persentase kesulitan</span></label>
         {settings.composition && <div className="composition-grid">{(['mudah', 'sedang', 'sulit'] as const).map((level) => <label className="field" key={level}>{LABELS[level]} %<input type="number" min={0} max={100} value={settings.composition![level]} onChange={(e) => update({ composition: { ...settings.composition!, [level]: Number(e.target.value) } })}/></label>)}</div>}</>}
     </fieldset>
-    <details className="advanced"><summary><Icon name="sliders"/>Pengaturan lanjutan<span className="adv-sum">{settings.packages} paket · {settings.duration} menit · seed {settings.seed} · {settings.uniqueAcross ? 'Hindari soal sama' : 'Boleh sama'}</span><Icon name="chevron"/></summary><div className="advanced-body">
+    <fieldset className="form-block seed-form-block" disabled={busy}><legend><span className="block-num">4</span>Seed dan variasi soal</legend>
+      <label className="field">Seed<span className="seed-input"><input aria-label="Seed" value={settings.seed} maxLength={100} onChange={(e) => onSettings({ ...settings, seed: e.target.value })}/><button type="button" className="secondary-button" onClick={() => onSettings({ ...settings, seed: randomSeed() })}><Icon name="refresh"/>Acak seed</button></span></label>
+      <p className="help">Seed dan pengaturan yang sama menghasilkan paket awal yang sama pada versi generator yang sama. Seed berbeda dapat mengubah butir, parameter, atau urutan opsi; sebagian isi bisa tetap sama.</p>
+      <button type="button" className="secondary-button" disabled={!!preview.errors.length} onClick={() => onCompare({ ...settings, blueprint: isTryout ? undefined : preview.rows })}><Icon name="sliders"/>Bandingkan seed & ruang variasi</button>
+    </fieldset>
+    <details className="advanced"><summary><Icon name="sliders"/>Pengaturan lanjutan<span className="adv-sum">{settings.packages} paket · {settings.duration} menit · {settings.uniqueAcross ? 'Hindari soal sama' : 'Boleh sama'}</span><Icon name="chevron"/></summary><div className="advanced-body">
       <div className="field-pair"><label className="field">Jumlah paket<input type="number" min={1} max={50} value={settings.packages} onChange={(e) => update({ packages: Number(e.target.value) })}/></label><label className="field">Durasi (menit)<input type="number" min={1} max={300} value={settings.duration} onChange={(e) => update({ duration: Number(e.target.value) })}/></label></div>
-      <label className="field">Seed<input value={settings.seed} maxLength={100} onChange={(e) => update({ seed: e.target.value })}/><span className="help">Seed yang sama menghasilkan paket awal yang sama.</span></label>
       <label className="check-row"><input type="checkbox" checked={settings.uniqueAcross} onChange={(e) => update({ uniqueAcross: e.target.checked })}/><span>Hindari soal sama di paket berbeda</span></label>
       <fieldset disabled={isTryout&&settings.mode==='SKD'}><legend>Submateri khusus</legend><div className="subtopic-list">{subtopics.map(([key, q]) => <label className="check-row" key={key}><input type="checkbox" checked={settings.subtopics.includes(key)} onChange={(e) => update({ subtopics: e.target.checked ? [...settings.subtopics, key] : settings.subtopics.filter((s) => s !== key) })}/><span>{q.subtopic}<small>{q.topic}</small></span></label>)}</div></fieldset>
     </div></details>

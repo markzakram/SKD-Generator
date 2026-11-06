@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import { DM_Sans, Manrope } from 'next/font/google';
 import './globals.css';
 import './controls.css';
+import './export.css';
+import './seed.css';
+import './video.css';
 
 // Keduanya font variabel, jadi bobot tidak perlu dituliskan. Variabelnya dipasang di <html> agar :root bisa memakainya
 // (--font-display dan --font-body di globals.css).

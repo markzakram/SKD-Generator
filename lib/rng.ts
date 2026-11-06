@@ -21,3 +21,11 @@ export function rng(seed: string) {
   return { next, int, pick, shuffle };
 }
 export type Rng = ReturnType<typeof rng>;
+// Isolasi keacakan sebuah pembangkit (keputusan PM): pembangkit berjalan pada pengacak turunan (kunci + satu undian dari aliran bersama), dan aliran bersama hanya
+// dimajukan sebanyak `draws` undian, yaitu jumlah yang dipakai pembangkit itu sebelum direvisi. Dengan begitu perubahan isi pembangkit tidak menggeser
+// pemilihan dan pengacakan butir lain pada seed yang sama (profil tryout, paket biasa).
+export function isolated(shared: Rng, key: string, draws: number): Rng {
+  const seed = shared.int(0, 0x3fffffff);
+  for (let i = 1; i < draws; i++) shared.next();
+  return rng(key + '|' + seed);
+}

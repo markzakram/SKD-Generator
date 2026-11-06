@@ -1,0 +1,1220 @@
+{
+  "_petunjuk": "Koreksi akademik atas 37 contoh TWK riset (twk-ref-*), dipakai scripts/import-references.mjs (npm run references). Satu entri per id; semua kunci opsional kecuali rujukan dan catatan: { topic (salah satu dari 5 KD), subtopic, bloom (C1-C6), difficulty (mudah|sedang|sulit), difficultyReason, stem, options: [{ text, reason } x5] (urutan akhir), answer (indeks kunci pada options), explanation, tip, rujukan: acuan QC, catatan: ringkasan perubahan }. Entri berisi stem/options/answer/explanation/tip mengganti teks hasil ekstraksi secara penuh; entri hanya label mengubah KD, subtopik, Bloom, kesulitan, dan alasan kesulitan. Setiap koreksi dicatat di reference-import-report.json (corrections). Soal TWK riset tanpa entri di sini, atau tanpa Bloom/subtopik, membuat impor gagal.",
+  "twk-ref-0-1": {
+    "topic": "Nasionalisme",
+    "subtopic": "Sejarah, Tonggak, dan Tokoh Nasionalisme",
+    "bloom": "C1",
+    "difficulty": "mudah",
+    "difficultyReason": "Peserta mengenali peristiwa dari isi ikrarnya; pengecoh adalah peristiwa pergerakan lain, termasuk kongres pemuda sebelumnya yang belum menghasilkan ikrar. Dipertahankan sebagai pengukur dasar.",
+    "stem": "Budi Utomo, Sarekat Islam, dan Perhimpunan Indonesia telah menumbuhkan kesadaran nasional sejak awal abad ke-20, tetapi perkumpulan pelajar yang berbasis daerah masih bergerak sendiri-sendiri. Wakil berbagai perkumpulan itu kemudian bertemu dalam satu kongres dan menyatakan ikrar bertumpah darah yang satu, berbangsa yang satu, serta menjunjung bahasa persatuan. Peristiwa yang dimaksud adalah ...",
+    "options": [
+      {
+        "text": "Sumpah Pemuda",
+        "reason": "Ikrar satu tumpah darah, satu bangsa, dan bahasa persatuan dinyatakan dalam Sumpah Pemuda pada Kongres Pemuda II tahun 1928."
+      },
+      {
+        "text": "Kongres Perempuan Indonesia I",
+        "reason": "Kongres Perempuan Indonesia I (Desember 1928) mempertemukan organisasi perempuan untuk memajukan kaum perempuan; ikrar tiga butir bukan hasilnya."
+      },
+      {
+        "text": "Manifesto Politik Perhimpunan Indonesia",
+        "reason": "Manifesto Politik 1925 memuat asas persatuan dan tuntutan merdeka dari perhimpunan mahasiswa di Belanda, bukan ikrar wakil perkumpulan daerah dalam satu kongres."
+      },
+      {
+        "text": "Kongres Pemuda I",
+        "reason": "Kongres Pemuda I (1926) sudah mempertemukan perkumpulan pemuda daerah, tetapi belum mencapai kesepakatan ikrar, termasuk soal bahasa persatuan."
+      },
+      {
+        "text": "Proklamasi Kemerdekaan",
+        "reason": "Proklamasi 1945 menyatakan kemerdekaan, bukan ikrar persatuan perkumpulan daerah dalam sebuah kongres."
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep dalam soal ini menekankan perbedaan antara tumbuhnya kesadaran nasional dan penegasan persatuan. Budi Utomo, Sarekat Islam, dan Perhimpunan Indonesia menumbuhkan kesadaran kebangsaan, tetapi ikrar bersama wakil perkumpulan daerah tentang satu tumpah darah, satu bangsa, dan bahasa persatuan baru dinyatakan pada Kongres Pemuda II, 28 Oktober 1928. Kongres Pemuda I (1926) juga mempertemukan perkumpulan daerah, tetapi belum menghasilkan ikrar tersebut. Opsi yang paling tepat adalah “Sumpah Pemuda” karena itulah ikrar yang dihasilkan kongres tersebut.",
+    "tip": "Cocokkan isi ikrar dan pelakunya dalam soal dengan isi tiap peristiwa, bukan dengan masa terjadinya.",
+    "rujukan": "QC akademik TWK, SKD-01 nomor 8 (revisi tahap 2)",
+    "catatan": "QC: ungkapan tonggak lahirnya nasionalisme Indonesia terlalu luas untuk kunci Sumpah Pemuda. Diubah: pertanyaan dipersempit menjadi peristiwa yang menegaskan ikrar satu tanah air, satu bangsa, dan bahasa persatuan; stimulus membedakan perkembangan kesadaran nasional dari penegasan persatuan; pembahasan memuat pembedaan itu; opsi menjadi lima peristiwa pergerakan (satu taksonomi); kata pemuda dihindari di stimulus agar tidak bocor ke kunci; label dijujurkan menjadi C1 mudah. Putaran 3 (telaah penelaah-twk dan simulasi buta): Sarekat Islam tidak lagi disebut gerakan kalangan terpelajar; ikrar memakai frasa asli bertumpah darah yang satu; pertanyaan menjadi Peristiwa yang dimaksud adalah; pengecoh Pembentukan Budi Utomo diganti Kongres Pemuda I."
+  },
+  "twk-ref-0-2": {
+    "topic": "Nasionalisme",
+    "subtopic": "Implementasi Nasionalisme Sehari-hari dan ASN",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Tujuan panitia (peneladanan tidak berhenti pada hari upacara) ditulis sebagai fakta; dua pengecoh aktif tetapi berhenti pada hari peringatan sehingga peserta menilai keberlanjutan.",
+    "stem": "Panitia peringatan Hari Pahlawan di sebuah SMP menerima beberapa rancangan kegiatan dari guru dan siswa. Panitia ingin peringatan itu tidak berhenti pada hari upacara, tetapi membuat siswa meneladani nilai perjuangan para pahlawan dalam keseharian mereka. Rancangan kegiatan yang paling sesuai dengan tujuan panitia adalah ...",
+    "options": [
+      {
+        "text": "Siswa menonton film perjuangan pahlawan, lalu menulis refleksi tentang nilai yang paling berkesan.",
+        "reason": "Refleksi menumbuhkan penghayatan, tetapi berhenti pada tulisan dan belum menjadi praktik nilai dalam keseharian."
+      },
+      {
+        "text": "Seluruh kelas mementaskan drama perjuangan pahlawan, lalu menampilkannya dalam upacara peringatan.",
+        "reason": "Seluruh kelas terlibat aktif, tetapi kegiatannya selesai pada upacara, padahal panitia ingin peneladanan berlanjut setelahnya."
+      },
+      {
+        "text": "Siswa memilih satu nilai pahlawan daerah, lalu mempraktikkannya di kelas selama sebulan.",
+        "reason": "Siswa memilih satu nilai pahlawan daerah lalu mempraktikkannya di kelas selama sebulan sehingga peneladanan berlanjut dalam keseharian dan tidak berhenti pada hari upacara."
+      },
+      {
+        "text": "Siswa melakukan napak tilas ke taman makam pahlawan, lalu menyusun laporan perjalanan kelompok.",
+        "reason": "Napak tilas memberi pengalaman langsung, tetapi hanya sekali jalan, dan laporan perjalanan bukan praktik nilai."
+      },
+      {
+        "text": "Siswa mengikuti cerdas cermat sejarah pahlawan, lalu regu terbaik mewakili sekolah di tingkat kota.",
+        "reason": "Cerdas cermat menguji pengetahuan sejarah, bukan praktik nilai perjuangan dalam keseharian."
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep dalam soal ini menekankan penerapan nasionalisme yang substantif, bukan sekadar seremonial: nilai perjuangan pahlawan diteladani bila dipraktikkan dalam keseharian. Stimulus memberi dua batasan, yaitu peringatan tidak berhenti pada hari upacara dan nilai diteladani dalam keseharian siswa. Jawaban yang paling tepat adalah memilih satu nilai pahlawan daerah lalu mempraktikkannya di kelas selama sebulan karena hanya kegiatan ini yang berlanjut setelah peringatan dan menuntut siswa mempraktikkan nilai. Pengecoh terdekat adalah drama seluruh kelas dan napak tilas: keduanya melibatkan siswa secara aktif, tetapi selesai pada hari kegiatan.",
+    "tip": "Pisahkan kegiatan yang selesai pada hari peringatan dari kegiatan yang berlanjut dalam keseharian siswa, lalu cocokkan dengan dua batasan tujuan panitia.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 28 (revisi tahap 2)",
+    "catatan": "QC (dirombak): stimulus sudah menjelaskan bahwa penghargaan kepada pahlawan membentuk nasionalisme, identitas, dan karakter, kunci hanya mengulang. Diubah: stimulus diganti dilema perancangan peringatan; peserta memilih penerapan nilai yang sesuai tujuan panitia (dari dua pilihan QC dipilih ganti stimulus). Putaran 2: kata pahlawan, nilai, dan sekolah kini dimuat juga oleh pengecoh sehingga tidak menjadi petunjuk kunci; semua opsi berisi dua tindakan dan tanpa kata negatif. Putaran 3 (telaah penelaah-twk dan simulasi buta): Pengecoh tidak lagi seluruhnya pasif: ada yang aktif tetapi selesai pada hari peringatan; penanda kelemahan (siswa berbakat) dan kalimat pasif dihapus; kunci berupa praktik selama sebulan."
+  },
+  "twk-ref-0-3": {
+    "topic": "Nasionalisme",
+    "subtopic": "Implementasi Nasionalisme Sehari-hari dan ASN",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Kelima tindakan positif dan masuk akal; peserta membedakan memberi ruang, mengabarkan, menganjurkan, mengenalkan, dan membangun kerja sama sesuai keinginan ketua RW.",
+    "stem": "Di sebuah RW, warga dari tiga suku dan dua agama tinggal berdampingan. Hubungan antarwarga selama ini baik, tetapi tiap kelompok berkegiatan sendiri-sendiri dan hanya saling berkunjung saat hari raya. Ketua RW ingin warga lintas kelompok terbiasa terlibat dalam satu kegiatan yang manfaatnya dirasakan seluruh RW. Tindakan Ketua RW yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Memberi giliran tiap kelompok memakai balai warga untuk kegiatan budaya dan keagamaannya.",
+        "reason": "Giliran memakai balai menghormati hak tiap kelompok dan tidak keliru, tetapi kegiatan tetap terpisah. Syarat keterlibatan lintas kelompok belum terpenuhi."
+      },
+      {
+        "text": "Menempelkan kalender kegiatan semua kelompok di papan pengumuman RW setiap awal bulan.",
+        "reason": "Kalender memudahkan koordinasi, tetapi hanya berbagi informasi. Warga tetap tidak terlibat dalam satu kegiatan."
+      },
+      {
+        "text": "Membentuk regu kerja bakti lingkungan yang anggotanya dicampur dari semua kelompok.",
+        "reason": "Anggota dari semua kelompok bekerja dalam satu regu kerja bakti, dan lingkungan yang bersih dinikmati seluruh RW; keterlibatan lintas kelompok dalam satu kegiatan terpenuhi."
+      },
+      {
+        "text": "Menganjurkan warga menghadiri perayaan hari raya kelompok lain yang tinggal di RW itu.",
+        "reason": "Menghadiri hari raya kelompok lain itu baik, tetapi manfaatnya bagi kelompok penyelenggara, bukan seluruh RW. Kebiasaan ini pun sudah berjalan dan belum mengubah keadaan."
+      },
+      {
+        "text": "Menerbitkan buletin RW yang memperkenalkan tradisi tiap kelompok kepada seluruh warga.",
+        "reason": "Buletin menambah saling pengertian, tetapi bersifat pengenalan satu arah dan tidak melibatkan warga dalam kegiatan bersama."
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep dalam soal ini menekankan nasionalisme dalam keberagaman, yaitu persatuan yang tumbuh dari keterlibatan bersama untuk kepentingan seluruh warga, bukan sekadar hidup berdampingan. Stimulus menunjukkan hubungan warga sudah baik, tetapi tiap kelompok berkegiatan sendiri-sendiri dan hanya bertemu saat hari raya. Ketua RW menetapkan dua syarat: warga lintas kelompok terlibat dalam satu kegiatan, dan manfaatnya dirasakan seluruh RW. Opsi yang paling tepat adalah membentuk regu kerja bakti campuran karena anggota dari semua kelompok bekerja dalam satu regu dan lingkungan yang bersih dinikmati seluruh RW. Pengecoh terdekat, anjuran menghadiri hari raya kelompok lain, memang mempertemukan warga, tetapi perayaan itu milik satu kelompok dan kebiasaan saling berkunjung sudah berjalan tanpa mengubah keadaan.",
+    "tip": "Tandai dua syarat yang ditulis Ketua RW, lalu coret tindakan yang hanya memberi ruang, berbagi informasi, atau mengulang kebiasaan yang menurut stimulus sudah berjalan.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 4 (revisi tahap 2)",
+    "catatan": "QC: satu pilihan menghargai keberagaman melawan empat penghapusan, pembatasan, dominasi, atau penyeragaman. Diubah: kasus konkret di kelurahan; kelima opsi positif dan masuk akal dengan tingkat tindakan berbeda. Putaran 2: opsi bernada negatif (menjaga ketertiban dan menghindari gesekan) diganti pemberitahuan jadwal; kunci memparafrasekan suku dan agama menjadi semua kelompok; tujuan kasus ditulis dalam pertanyaan; semua opsi berisi satu tindakan. Putaran 3 (telaah penelaah-twk dan simulasi buta): Latar diganti RW (Ketua RW tidak berwenang atas kelurahan); penanda kelemahan (sebagai tamu, sebagai pemberitahuan) dihapus; tujuan ditulis sebagai keinginan ketua RW pada stimulus, bukan kalimat kriteria di pertanyaan; koma sebelum tetapi pada pembahasan."
+  },
+  "twk-ref-0-4": {
+    "topic": "Nasionalisme",
+    "subtopic": "Implementasi Nasionalisme Sehari-hari dan ASN",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Posisi pelaku dan informasi kasus jelas; lima langkah positif dengan kegunaan berbeda sehingga peserta menentukan kebutuhan utama sebelum memilih langkah awal.",
+    "stem": "Anda adalah pengelola grup pesan warga sebuah perumahan yang penghuninya berasal dari beragam suku dan agama. Seorang anggota membagikan video pendek keributan dua kelompok warga di kota lain dengan keterangan yang menuduh satu kelompok agama sebagai pemicunya. Belasan anggota sudah berkomentar dengan nada marah, sedangkan belum ada yang menelusuri apakah keterangan itu sesuai dengan isi video. Langkah awal yang paling tepat sebagai pengelola grup untuk menghadapi video yang sedang beredar itu adalah ...",
+    "options": [
+      {
+        "text": "Mengumpulkan perwakilan tiap kelompok warga perumahan dan memfasilitasi dialog di antara mereka.",
+        "reason": "Dialog antarkelompok baik, tetapi peristiwanya terjadi di kota lain dan belum ada konflik antarkelompok di perumahan yang perlu didamaikan."
+      },
+      {
+        "text": "Melaporkan video itu kepada platform dan membatasi pengiriman pesan grup hanya untuk pengelola.",
+        "reason": "Pelaporan dan pembatasan pesan dapat meredam, tetapi dilakukan sebelum kebenaran keterangan video diketahui sehingga belum tepat sebagai langkah awal."
+      },
+      {
+        "text": "Menahan penyebaran unggahan itu untuk sementara dan mengecek asal serta konteksnya lewat sumber tepercaya.",
+        "reason": "Kebutuhan utama kasus adalah kejelasan informasi yang belum terverifikasi; menahan penyebaran sambil mengecek konteks mencegah tuduhan keliru terhadap satu kelompok agama berkembang."
+      },
+      {
+        "text": "Mengunggah imbauan menjaga keharmonisan antarwarga dan mengingatkan anggota tentang aturan grup.",
+        "reason": "Imbauan dan pengingat aturan menenangkan suasana, tetapi tidak memeriksa kebenaran video yang sudah tersebar."
+      },
+      {
+        "text": "Mengadakan kelas literasi digital tentang ujaran kebencian dan membagikan panduan memeriksa informasi kepada anggota grup.",
+        "reason": "Kelas literasi digital berguna untuk jangka panjang, tetapi tidak menangani video yang sedang beredar dan komentar yang sedang memanas."
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep dalam soal ini menekankan sikap nasionalis di ruang digital: persatuan warga yang beragam dijaga dengan menahan informasi bernuansa suku dan agama yang belum jelas, lalu memeriksanya, bukan membiarkannya menyebar. Stimulus menunjukkan keterangan video menuduh satu kelompok agama, kemarahan anggota mulai muncul, dan belum ada yang menelusuri kesesuaian keterangan dengan isi video. Opsi yang paling tepat adalah menahan penyebaran unggahan sementara dan mengecek asal serta konteksnya karena kebutuhan paling mendesak adalah kejelasan informasi sebelum tuduhan itu meluas. Pengecoh terdekat, melaporkan video dan membatasi pesan grup, dapat meredam keributan, tetapi diambil sebelum diketahui apakah keterangan video benar atau keliru.",
+    "tip": "Tentukan kebutuhan paling mendesak dalam kasus, apakah informasi yang belum jelas, emosi yang memanas, atau pencegahan jangka panjang, lalu pilih langkah awal yang menjawabnya.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 19 (revisi tahap 2)",
+    "catatan": "QC: kunci edukasi diri berhadapan dengan pembiaran, sensor menyeluruh, toleransi kebencian, atau balasan provokatif; mudah dikenali. Diubah: posisi pelaku admin grup dengan informasi kasus jelas; lima pilihan positif dengan kebutuhan utama kasus sebagai pembeda. Putaran 2: kunci memparafrasekan kata video dan memeriksa (unggahan, mengecek); opsi tanpa kata negatif (tidak menyebarkan dihapus); semua opsi berisi dua tindakan; pertanyaan dibatasi pada langkah awal untuk video yang sedang beredar agar kelas literasi tidak ikut unggul. Putaran 3 (telaah penelaah-twk dan simulasi buta): Pengelola grup dengan penghuni beragam suku dan agama (lensa persatuan eksplisit); berkomentar menggantikan mengomentari; pengecoh pembatasan pesan menggantikan imbauan ganda."
+  },
+  "twk-ref-0-5": {
+    "topic": "Nasionalisme",
+    "subtopic": "Implementasi Nasionalisme Sehari-hari dan ASN",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta membaca data, menemukan perilaku paling tertinggal, dan memilih program yang sesuai penyebabnya (tidak tahu cara); empat pengecoh menyasar topik yang sama dengan pendekatan yang belum memadai.",
+    "stem": "Survei OSIS sebuah SMA tentang perilaku kebangsaan siswa mencatat hasil berikut: memakai bahasa Indonesia dalam forum resmi sekolah 82%, mengikuti upacara bendera dengan tertib 85%, menghargai teman yang berbeda suku dan agama 79%, serta memeriksa kebenaran berita bernuansa SARA sebelum membagikannya 31%. Sebagian besar siswa yang tidak memeriksa berita mengaku tidak tahu cara melakukannya. Program OSIS yang paling tepat untuk memperbaiki perilaku yang paling tertinggal adalah ...",
+    "options": [
+      {
+        "text": "Memasang poster imbauan antihoaks di setiap kelas dan membacakannya pada upacara bendera.",
+        "reason": "Menyasar perilaku yang tepat, tetapi imbauan hanya menambah kesadaran, sedangkan penyebab yang dilaporkan adalah siswa tidak tahu caranya."
+      },
+      {
+        "text": "Menetapkan sanksi bagi siswa yang terbukti menyebarkan berita bohong bernuansa SARA.",
+        "reason": "Sanksi menekan penyebaran setelah terjadi, tetapi tidak membekali siswa dengan cara memeriksa berita."
+      },
+      {
+        "text": "Melatih siswa menguji keaslian berita memakai contoh unggahan di media sosial.",
+        "reason": "Fakta menunjukkan siswa yang tidak memeriksa berita belum tahu cara melakukannya; pelatihan menguji keaslian berita dengan contoh nyata menjawab penyebab itu."
+      },
+      {
+        "text": "Mengadakan dialog lintas suku dan agama, lalu siswa menyusun ikrar persatuan bersama.",
+        "reason": "Dialog lintas suku dan agama memperkuat toleransi, padahal perilaku menghargai perbedaan (79%) bukan yang paling tertinggal."
+      },
+      {
+        "text": "Mengadakan lomba pidato berbahasa Indonesia tentang bahaya hoaks bagi persatuan bangsa.",
+        "reason": "Lomba pidato menyentuh tema hoaks, tetapi hanya melibatkan peserta lomba dan melatih kemampuan berpidato, bukan memeriksa berita."
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep dalam soal ini menekankan implementasi nasionalisme dalam kehidupan sosial, termasuk menahan penyebaran hoaks bernuansa SARA yang dapat memecah persatuan. Data menunjukkan perilaku memeriksa berita bernuansa SARA (31%) jauh tertinggal dari tiga perilaku lain (79–85%), dan penyebabnya adalah siswa tidak tahu cara memeriksa. Jawaban yang paling tepat adalah melatih siswa menguji keaslian berita dengan contoh unggahan nyata karena program ini menyasar perilaku yang paling tertinggal sekaligus menjawab penyebabnya, yaitu kurangnya keterampilan. Pengecoh terdekat adalah poster imbauan dan lomba pidato tentang bahaya hoaks: keduanya menyasar perilaku yang tepat, tetapi belum memadai karena hanya menambah kesadaran, bukan keterampilan.",
+    "tip": "Tentukan perilaku dengan angka terendah, baca penyebab yang dilaporkan, lalu pilih program yang menjawab penyebab itu, bukan yang sekadar menyebut perilakunya.",
+    "rujukan": "Telaah penelaah-twk dan simulasi peserta atas bank riset (butir di luar paket QC; revisi tahap 2)",
+    "catatan": "Koordinator: kunci opsi terpanjang dan kurang unik. Diubah: angka disusun ulang (batik 78%, upacara 85%, bahasa baku 74%, memeriksa berita 31%) sehingga celah terbesar tidak ambigu (sebelumnya batik 40% tampak paling rendah); kelima opsi positif dengan panjang setara dan dua tindakan; kunci bukan opsi terpanjang; pengecoh masing-masing menyasar aspek yang datanya sudah tinggi; KD tetap Nasionalisme. Putaran 3 (telaah penelaah-twk dan simulasi buta): Konstruk diganti: memeriksa berita bernuansa SARA masuk Implementasi (anti-hoaks), bukan indikator identitas nasional; ditambah data penyebab (tidak tahu cara); pengecoh berupa pendekatan lain pada topik yang sama; paling prioritas diganti."
+  },
+  "twk-ref-0-6": {
+    "topic": "Nasionalisme",
+    "subtopic": "Implementasi Nasionalisme Sehari-hari dan ASN",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta mencocokkan perilaku dengan dua hal sekaligus (menyelesaikan perselisihan jadwal dan tidak meninggalkan satu kelompok pun); empat tindakan lain baik tetapi hanya memenuhi satu hal.",
+    "stem": "Di sebuah SMA berasrama, siswa dari berbagai provinsi membentuk kelompok belajar menurut asal daerah. Dalam rapat OSIS, perwakilan kelompok-kelompok itu berulang kali berselisih tentang jadwal latihan pentas seni gabungan karena masing-masing hanya menyuarakan keinginan kelompoknya. Pembina OSIS ingin perselisihan itu selesai dengan cara yang menjaga kebinekaan dalam bingkai persatuan dan tidak meninggalkan satu kelompok pun. Perilaku perwakilan siswa yang paling sesuai adalah ...",
+    "options": [
+      {
+        "text": "Membagi tugas pentas kepada tiap kelompok menurut keahlian yang paling dikuasai daerahnya, lalu meminta tiap kelompok menjadwalkan latihannya sendiri.",
+        "reason": "Pembagian tugas memberi peran bagi tiap kelompok, tetapi tidak menyelesaikan perselisihan jadwal latihan yang menjadi pokok masalah."
+      },
+      {
+        "text": "Mengadakan pekan budaya yang memberi tiap kelompok daerah kesempatan tampil secara bergiliran di aula dan mengundang seluruh siswa menonton.",
+        "reason": "Pekan budaya menghargai tiap daerah secara adil dan tetap baik, tetapi belum menyelesaikan perselisihan jadwal latihan."
+      },
+      {
+        "text": "Menampung usulan waktu tiap kelompok, lalu menyepakati jadwal yang dapat diikuti semua.",
+        "reason": "Menampung usulan waktu semua kelompok lalu menyepakati jadwal yang dapat diikuti semua menyelesaikan perselisihan tanpa meninggalkan kelompok mana pun."
+      },
+      {
+        "text": "Menetapkan jadwal latihan melalui pemungutan suara terbuka dengan satu suara untuk setiap siswa, lalu mengumumkan hasilnya kepada semua kelompok.",
+        "reason": "Pemungutan suara adalah cara yang sah, tetapi hasilnya ditentukan kelompok terbesar sehingga syarat tidak meninggalkan satu kelompok pun belum terjamin."
+      },
+      {
+        "text": "Mengenalkan bahasa dan pakaian adat tiap daerah kepada teman-teman dalam acara kelas dan mengajak mereka mencobanya.",
+        "reason": "Mengenalkan bahasa dan pakaian adat adalah pelestarian budaya yang baik, tetapi tidak menjawab perselisihan jadwal dalam kasus ini."
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep dalam soal ini menekankan kebinekaan dalam bingkai persatuan: perbedaan kelompok dihargai sambil diikat dalam keputusan bersama yang menampung semua pihak. Stimulus menunjukkan perselisihan jadwal latihan muncul karena tiap kelompok hanya menyuarakan keinginannya. Pembina OSIS memberi dua syarat: perselisihan selesai, dan tidak ada kelompok yang tertinggal. Opsi yang paling tepat adalah menampung usulan waktu tiap kelompok lalu menyepakati jadwal yang dapat diikuti semua karena perilaku itu menyelesaikan pokok perselisihan sekaligus memastikan setiap kelompok tertampung. Pengecoh terdekat, pemungutan suara, juga menyelesaikan perselisihan secara sah, tetapi suara terbanyak menentukan hasil sehingga kelompok yang anggotanya sedikit bisa tidak tertampung.",
+    "tip": "Tulis pokok masalah dan syarat penyelesaiannya, lalu bedakan tindakan yang menyelesaikan masalah itu dari tindakan baik yang menyasar hal lain.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 8 (revisi tahap 2)",
+    "catatan": "QC: label sulit tidak sesuai tuntutan sederhana; tips memilih kata menghormati/menghargai/toleransi mengajarkan pencarian kata positif; pembahasan bahasa daerah dan pakaian adat perlu dibatasi agar tidak terkesan menolak pelestarian budaya. Diubah: konteks interaksi lintas kelompok (perselisihan jadwal kegiatan gabungan); pembahasan menegaskan pelestarian budaya tetap baik; tip diganti; label sulit diturunkan menjadi sedang C3. Putaran 2: dua kriteria ditulis dalam pertanyaan; kata keinginan di stimulus menggantikan kebutuhan agar tidak bocor ke kunci; semua opsi berisi dua tindakan; kata bernada negatif dihapus dari opsi. Putaran 3 (telaah penelaah-twk dan simulasi buta): Latar diubah SMA berasrama dengan rapat OSIS (konsisten dengan kelompok lintas provinsi); kebinekaan (KBBI V); pengecoh tanpa penanda kelemahan (pada setiap kegiatan) dan berbeda jenis."
+  },
+  "twk-ref-0-7": {
+    "topic": "Nasionalisme",
+    "subtopic": "Implementasi Nasionalisme Sehari-hari dan ASN",
+    "bloom": "C4",
+    "difficulty": "sulit",
+    "difficultyReason": "Lima kebijakan diuji terhadap dua sisi prinsip (terbuka dan bertanggung jawab); dua kebijakan yang tidak sesuai cacat halus, dan semua opsi berisi tiga nomor. Belum dikalibrasi dari peserta.",
+    "stem": "Sebuah pemerintah daerah merancang kampanye “Cinta Produk Nusantara” dengan lima kebijakan berikut.\n1. Pengadaan barang pemda mengutamakan produk UMKM lokal sepanjang mutunya memenuhi standar nasional dan sesuai dengan kebutuhan satuan kerja.\n2. Kuota 60% pengadaan dari UMKM lokal diberlakukan sama untuk semua jenis barang, termasuk barang yang belum diproduksi di daerah itu, tetapi tersedia dari produsen dalam negeri di daerah lain.\n3. Pemda menyelenggarakan inkubasi desain batik daerah bersama kampus untuk menembus pasar ekspor.\n4. Pemda memberikan pelatihan standardisasi mutu dan pemasaran digital kepada pelaku UMKM untuk memperluas pasar produknya.\n5. Pemda menyelenggarakan pameran produk daerah khusus bagi pembeli dan mitra dari dalam negeri untuk menjaga manfaat ekonomi bagi pelaku usaha daerah.\nPrinsip yang dipakai adalah nasionalisme terbuka dan bertanggung jawab. Kombinasi yang memuat semua dan hanya kebijakan yang sesuai dengan prinsip tersebut adalah ...",
+    "options": [
+      {
+        "text": "1, 3, dan 4",
+        "reason": "Kebijakan 1 mengutamakan produk lokal dengan syarat mutu dan kebutuhan, kebijakan 3 membuka peluang ekspor, dan kebijakan 4 memperkuat daya saing pelaku usaha; ketiganya sesuai dengan prinsip."
+      },
+      {
+        "text": "1, 2, dan 5",
+        "reason": "Kebijakan 1 sesuai, tetapi kebijakan 2 memaksakan kuota tanpa memperhatikan ketersediaan, kebijakan 5 menutup diri dari mitra luar negeri, dan kebijakan 3 serta 4 yang sesuai tidak termasuk."
+      },
+      {
+        "text": "3, 4, dan 5",
+        "reason": "Kebijakan 3 dan 4 sesuai, tetapi kebijakan 5 menutup produk daerah dari mitra luar negeri, dan kebijakan 1 yang sesuai tidak termasuk."
+      },
+      {
+        "text": "2, 3, dan 5",
+        "reason": "Kebijakan 3 sesuai, tetapi kebijakan 2 mengabaikan ketersediaan dan kebutuhan, kebijakan 5 menutup diri, dan kebijakan 1 serta 4 yang sesuai tidak termasuk."
+      },
+      {
+        "text": "1, 2, dan 4",
+        "reason": "Kebijakan 1 dan 4 sesuai, tetapi kebijakan 2 memaksakan kuota tanpa memperhatikan ketersediaan, dan kebijakan 3 yang sesuai tidak termasuk."
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep dalam soal ini menekankan nasionalisme terbuka dan bertanggung jawab, yaitu mengutamakan produk bangsa tanpa mengorbankan mutu dan kebutuhan serta tanpa menutup diri dari peluang berkembang. Kebijakan 1 sesuai karena mengutamakan UMKM lokal dengan syarat mutu dan kebutuhan. Kebijakan 2 tidak sesuai karena kuota yang sama untuk semua jenis barang dapat memaksa pembelian barang yang tidak tersedia di daerah, padahal produk dalam negeri dari daerah lain dapat memenuhinya. Kebijakan 3 sesuai karena mengembangkan budaya sekaligus membuka pasar ekspor. Kebijakan 4 sesuai karena memperkuat kemampuan pelaku usaha bersaing. Kebijakan 5 tidak sesuai karena menutup produk daerah dari mitra luar negeri. Karena itu, kombinasi yang tepat adalah kebijakan 1, 3, dan 4; setiap kombinasi lain memuat kebijakan yang tidak sesuai dan melewatkan kebijakan yang sesuai.",
+    "tip": "Uji setiap kebijakan terhadap dua sisi prinsip, yaitu mengutamakan produk bangsa secara bertanggung jawab dan tetap terbuka pada peluang, lalu susun kombinasi dari kebijakan yang lolos keduanya.",
+    "rujukan": "QC akademik TWK, SKD-01 nomor 17 (revisi tahap 2)",
+    "catatan": "QC: pertanyaan paling benar dengan nasionalisme rasional dan modern sekaligus tidak luwes; batas UMKM lokal, mutu, kebutuhan belum dibedakan; larangan istilah asing terlalu menonjol. Diubah: pertanyaan menjadi kombinasi kebijakan yang sesuai prinsip nasionalisme terbuka dan bertanggung jawab (memuat semua dan hanya kebijakan yang sesuai); syarat mutu dan kesesuaian kebutuhan menjadi bagian kasus; larangan istilah asing dihapus dan diganti dua kebijakan bercacat halus (kuota tanpa ketersediaan, pameran tertutup bagi mitra asing); kebijakan cek fakta diganti pelatihan mutu dan pemasaran agar terkait nasionalisme; pengecoh kombinasi tidak lagi gugur karena satu istilah ekstrem. Putaran 3 (telaah penelaah-twk dan simulasi buta): Pernyataan dibuat paralel (klausa); pernyataan 4 tanpa tujuan yang menggemakan prinsip; pernyataan 2 menyebut produk dalam negeri dari daerah lain; definisi prinsip (yaitu ...) dihapus dari pertanyaan; sebaran nomor pada opsi diseimbangkan (tiap nomor muncul tiga kali) dan semua opsi berisi tiga nomor; koma setelah Karena itu."
+  },
+  "twk-ref-0-8": {
+    "topic": "Nasionalisme",
+    "subtopic": "Sejarah, Tonggak, dan Tokoh Nasionalisme",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta menarik teladan (bersatu tanpa meleburkan identitas) dari sejarah organisasi pemuda lalu menerapkannya; pengecoh dekat memenuhi satu sisi teladan.",
+    "stem": "Pada masa pergerakan nasional, sejumlah organisasi pemuda kedaerahan hadir dalam satu kongres untuk menyatakan cita-cita bersama sebagai satu bangsa. Dalam kongres itu, tiap organisasi tetap datang dengan nama dan perwakilannya sendiri. Kini, pengurus perhimpunan mahasiswa perantau dari satu provinsi di sebuah kampus ingin meneladani sikap organisasi-organisasi tersebut. Tindakan pengurus yang paling sesuai dengan teladan itu adalah ...",
+    "options": [
+      {
+        "text": "Meleburkan perhimpunan menjadi bagian organisasi mahasiswa kampus yang bersifat umum.",
+        "reason": "Peleburan menghasilkan satu wadah, tetapi identitas perhimpunan hilang, padahal organisasi dalam teladan tetap hadir dengan nama sendiri."
+      },
+      {
+        "text": "Membagikan buku saku kebudayaan provinsi kepada seluruh mahasiswa baru dari berbagai daerah.",
+        "reason": "Buku saku memperkenalkan budaya provinsi kepada mahasiswa lain, tetapi bersifat satu arah dan tidak menghadirkan kerja sama untuk tujuan bersama."
+      },
+      {
+        "text": "Menggandeng perhimpunan dari provinsi lain dalam program pengabdian di desa binaan.",
+        "reason": "Menggandeng perhimpunan dari provinsi lain dalam program pengabdian menjaga nama dan identitas perhimpunan sambil bekerja bersama untuk tujuan yang sama, seperti organisasi dalam kongres."
+      },
+      {
+        "text": "Mengirim tim kesenian provinsi untuk bertanding dalam festival antardaerah yang digelar kampus.",
+        "reason": "Festival menjaga identitas dan mempertemukan berbagai daerah, tetapi dalam bentuk persaingan, bukan kerja sama untuk satu tujuan."
+      },
+      {
+        "text": "Membuka kelas bahasa dan adat daerah bagi anggota perhimpunan di perantauan.",
+        "reason": "Kelas bahasa dan adat menjaga identitas daerah dan tetap baik, tetapi hanya untuk anggota sendiri sehingga belum berperan bagi persatuan."
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep dalam soal ini menekankan penerapan nilai sejarah pergerakan pada konteks baru: persatuan dibangun dengan bekerja bersama kelompok lain untuk satu tujuan tanpa meleburkan identitas masing-masing. Stimulus memuat dua bukti. Pertama, organisasi kedaerahan menyatakan cita-cita bersama dalam satu kongres. Kedua, tiap organisasi tetap hadir dengan nama dan perwakilannya sendiri. Opsi yang paling tepat adalah menggandeng perhimpunan dari provinsi lain menjalankan program pengabdian karena tindakan itu memadukan kedua bukti: perhimpunan tetap tampil sebagai dirinya dan bekerja bersama kelompok lain untuk satu tujuan. Pengecoh terdekat, meleburkan perhimpunan ke organisasi umum, tampak paling bersatu, tetapi menghapus identitas yang dalam teladan justru dipertahankan.",
+    "tip": "Rumuskan dua hal yang dilakukan organisasi dalam kisah sejarah, lalu pilih tindakan yang menerapkan keduanya sekaligus, bukan salah satunya.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 14 (revisi tahap 2)",
+    "catatan": "QC: kunci terlalu mudah dibedakan dari pilihan menghindari kegiatan atau mengutamakan kelompok sendiri; keunikan Jong Sumatera Bond belum diperlukan. Diubah: persoalan konkret perhimpunan mahasiswa perantau; lima tindakan positif dengan prioritas berbeda. Putaran 2: nama Jong Sumatranen Bond dan klaim keikutsertaan di Kongres Pemuda 1928 dihapus dan diganti premis umum organisasi pemuda daerah yang ikut kongres bersama organisasi lain (tidak menuntut fakta tambahan); kunci memparafrasekan organisasi daerah lain menjadi perhimpunan asal provinsi lain; opsi tanpa kata bernada negatif dan berisi satu tindakan. Putaran 3 (telaah penelaah-twk dan simulasi buta): Organisasi tetap datang dengan nama dan perwakilan sendiri (menggantikan membubarkan identitas); pengecoh dekat: meleburkan perhimpunan dan festival yang bersifat persaingan; istilah perhimpunan konsisten; pembahasan memakai sedangkan."
+  },
+  "twk-ref-1-1": {
+    "topic": "Nasionalisme",
+    "subtopic": "Konsep, Bentuk, dan Unsur Nasionalisme",
+    "bloom": "C2",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta menafsirkan sikap dua perwira dan memilih sikap yang sama-sama mereka tunjukkan; pengecoh benar sebagian atau tidak tampak dalam stimulus.",
+    "stem": "Dalam rapat pemilihan pimpinan sebuah laskar pada masa perang kemerdekaan, seorang perwira muda memperoleh suara lebih banyak daripada perwira seniornya. Karena khawatir laskar terpecah, ia menawarkan kedudukan itu kepada sang senior. Sang senior menolak tawaran itu dengan alasan yang sama, lalu meminta para pengikutnya mematuhi pimpinan terpilih. Sikap nasionalisme yang sama-sama ditunjukkan kedua perwira tersebut adalah ...",
+    "options": [
+      {
+        "text": "Memilih pimpinan berdasarkan kecakapan, bukan berdasarkan usia atau masa pengabdian.",
+        "reason": "Kecakapan adalah pertimbangan peserta rapat yang memilih, bukan sikap yang ditunjukkan kedua perwira."
+      },
+      {
+        "text": "Menjunjung hasil musyawarah sebagai dasar penentuan pimpinan dalam organisasi.",
+        "reason": "Hanya sang senior yang menegakkan hasil rapat; perwira muda justru menawarkan kedudukan yang diberikan rapat kepadanya."
+      },
+      {
+        "text": "Menghormati senioritas para pejuang yang lebih dahulu bergabung dengan laskar.",
+        "reason": "Penawaran kepada senior tampak seperti penghormatan, tetapi motif yang disebut adalah kekhawatiran laskar terpecah, dan sikap ini tidak tampak pada sang senior."
+      },
+      {
+        "text": "Mengutamakan keutuhan laskar di atas keinginan pribadi untuk memegang jabatan.",
+        "reason": "Perwira muda menawarkan kedudukan karena khawatir laskar terpecah dan sang senior menolak serta meminta pengikutnya mematuhi pimpinan terpilih; keduanya menempatkan keutuhan laskar di atas keinginan pribadi."
+      },
+      {
+        "text": "Rela mengorbankan jiwa dan raga di medan pertempuran demi kemerdekaan bangsa.",
+        "reason": "Kerelaan berkorban di medan tempur adalah patriotisme yang tidak digambarkan dalam peristiwa rapat ini."
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep dalam soal ini menekankan nasionalisme sebagai sikap mengutamakan kepentingan bersama dalam perjuangan bangsa di atas kepentingan pribadi, yang tampak dalam unsur persatuan dan kesatuan. Stimulus menunjukkan perwira muda menawarkan kedudukannya karena khawatir laskar terpecah, sedangkan sang senior menolak dengan alasan yang sama dan meminta pengikutnya mematuhi pimpinan terpilih. Jawaban yang paling tepat adalah mengutamakan keutuhan laskar di atas keinginan pribadi untuk memegang jabatan karena kedua perwira sama-sama melepaskan peluang memimpin agar barisan perjuangan tetap utuh. Pengecoh terdekat adalah menjunjung hasil musyawarah dan menghormati senioritas: masing-masing hanya tampak pada salah satu perwira.",
+    "tip": "Tuliskan tindakan dan alasan masing-masing tokoh, lalu pilih sikap yang tampak pada keduanya, bukan hanya pada salah satunya.",
+    "rujukan": "Telaah penelaah-twk dan simulasi peserta atas bank riset (butir di luar paket QC; revisi tahap 2)",
+    "catatan": "Koordinator: nilai ulang KD ref-1-1. Hasil: konstruk (menomorsatukan keutuhan dan kepentingan bersama di atas jabatan pribadi) lebih dekat ke Nasionalisme daripada Integritas karena tidak menampilkan keselarasan ucapan-tindakan atau anti-korupsi (standar: soal tokoh yang dapat dijawab tanpa nilai integritas masuk Nasionalisme). KD DIPINDAH dari Integritas ke Nasionalisme (jumlah entri riset Integritas berkurang satu, Nasionalisme bertambah satu). Narasi Soedirman dan Oerip Soemohardjo (siapa menyerahkan jabatan kepada siapa pada 12 November 1945) tidak dapat diverifikasi sehingga diganti kasus hipotetis dua perwira; opsi menjadi sikap dengan dua pengecoh yang hanya mewakili salah satu perwira. Putaran 3 (telaah penelaah-twk dan simulasi buta): KD tetap Nasionalisme (perpindahan dari Integritas dipertahankan); latar diperjelas (memperoleh suara lebih banyak); motif perwira muda dimuat di stimulus (khawatir laskar terpecah); pengecoh rela berkorban di medan menggantikan kebersamaan umum; alasan tidak lagi menolak karena terlalu umum."
+  },
+  "twk-ref-1-2": {
+    "topic": "Integritas",
+    "subtopic": "Konflik Kepentingan dan Whistle-Blowing",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Tiga fakta (akibat angka keliru, tata kerja yang memulai dari atasan langsung, waktu dua jam) menentukan kunci; kelima tindakan tampak bertanggung jawab.",
+    "stem": "Dalam persiapan rapat evaluasi proyek, seorang ASN menemukan bahwa laporan kemajuan fisik yang akan dipresentasikan atasannya melebihi kemajuan sebenarnya di lapangan, padahal angka itu akan menjadi dasar pimpinan instansi memutuskan tambahan anggaran. Atasan meminta semua anggota tim tidak membahas selisih itu supaya proyek tidak tampak terlambat. ASN tersebut memegang data lapangan yang lengkap, dan rapat baru dimulai dua jam lagi. Menurut tata kerja instansi, keberatan atas isi laporan tim disampaikan lebih dahulu kepada atasan langsung. Sikap yang paling mencerminkan integritas adalah ...",
+    "options": [
+      {
+        "text": "Mengikuti permintaan atasan dalam rapat dan mengirim angka laporan yang benar lewat surel kepada atasan setelah presentasi selesai.",
+        "reason": "Data disampaikan kepada atasan, tetapi setelah angka keliru telanjur dipresentasikan dan dipakai sebagai dasar keputusan anggaran."
+      },
+      {
+        "text": "Melaporkan selisih angka laporan itu kepada inspektorat sebelum rapat dan melampirkan data lapangan.",
+        "reason": "Pelaporan dilakukan sebelum presentasi dan disertai bukti, tetapi melompati tata kerja yang meminta keberatan disampaikan lebih dahulu kepada atasan langsung."
+      },
+      {
+        "text": "Menemui atasan sebelum rapat dan menyerahkan data lapangan sebagai bahan pertimbangannya.",
+        "reason": "Menemui atasan sesuai tata kerja dan dilakukan sebelum rapat, tetapi tanpa meminta koreksi angka keliru tetap dapat dipresentasikan."
+      },
+      {
+        "text": "Menemui atasan sebelum rapat dan meminta angka laporan dikoreksi sesuai data lapangan.",
+        "reason": "Tindakan ini terjadi sebelum angka keliru dipresentasikan, mengikuti tata kerja yang memulai dari atasan langsung, dan didukung data lapangan."
+      },
+      {
+        "text": "Menyampaikan koreksi langsung di depan peserta rapat dan menunjukkan data lapangan pada layar.",
+        "reason": "Koreksi menghentikan angka keliru, tetapi dilakukan tanpa menyampaikan keberatan lebih dahulu kepada atasan langsung seperti yang diatur tata kerja."
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep dalam soal ini menekankan integritas sebagai keselarasan antara data dan ucapan serta penggunaan jalur penyelesaian yang bertahap. Stimulus menunjukkan laporan melebihi kenyataan, angka itu akan dipakai memutuskan anggaran, atasan meminta selisih tidak dibahas, tata kerja instansi meminta keberatan disampaikan lebih dahulu kepada atasan langsung, dan rapat baru dimulai dua jam lagi. Atasan di sini adalah penanggung jawab laporan tanpa hubungan pribadi dengan pihak yang diuntungkan sehingga ia diberi kesempatan mengoreksi lebih dahulu sesuai tata kerja; hal ini berbeda dengan kasus ketika atasan berbenturan kepentingan. Karena itu, menemui atasan sebelum rapat dan meminta angka dikoreksi sesuai data lapangan adalah langkah paling tepat; bila atasan menolak, jalur berikutnya adalah atasan yang lebih tinggi, lalu inspektorat. Mengirim data setelah presentasi terlambat. Pelaporan ke inspektorat dan koreksi di depan peserta rapat melewati atasan langsung, sedangkan menemui atasan hanya untuk menyerahkan data tanpa meminta koreksi membiarkan angka keliru tetap dipresentasikan.",
+    "tip": "Daftar fakta kasus tentang waktu, akibat, dan tata kerja yang berlaku, lalu periksa setiap tindakan terhadap semuanya.",
+    "rujukan": "Telaah penelaah-twk dan simulasi peserta atas bank riset (butir di luar paket QC; revisi tahap 2)",
+    "catatan": "Koordinator: ref-1-2 masih berpola satu pilihan positif melawan pengecoh yang jelas bertentangan. Diubah: klaim pidato Lahirnya Pancasila yang dilakukan di bawah tekanan tidak dapat diverifikasi sehingga diganti kasus ASN hipotetis; lima tindakan positif dan masuk akal (tepat waktu, jalur, eskalasi); dua kriteria ditulis di pertanyaan; semua opsi berisi dua tindakan dan tanpa kata negatif; kunci memparafrasekan fakta stimulus dan kata atasan, presentasi, dan data lapangan juga dimuat pengecoh; kunci bukan opsi terpanjang. Putaran 3 (telaah penelaah-twk dan simulasi buta): Kalimat kriteria dihapus; akibat angka keliru, tata kerja (atasan langsung lebih dahulu), dan waktu dijadikan fakta; kunci berupa permintaan koreksi; pembahasan menyebut eskalasi lanjutan (atasan lebih tinggi lalu inspektorat). Telaah akhir: kalimat 1 dan 2 digabung (stem lima kalimat); pengecoh rekan satu tim diganti menemui atasan tanpa meminta koreksi; opsi surel menyebut penerima; pembahasan membedakan dengan soal 10 (atasan di sini penanggung jawab laporan tanpa hubungan pribadi, jadi diberi kesempatan mengoreksi lebih dahulu)."
+  },
+  "twk-ref-1-3": {
+    "topic": "Integritas",
+    "subtopic": "Keteladanan Tokoh dan Integritas Konstitusional",
+    "bloom": "C2",
+    "difficulty": "mudah",
+    "difficultyReason": "Peserta menarik sikap keteguhan yang tercantum pada stimulus; tiap pengecoh bertentangan dengan satu fakta stimulus. Label diturunkan ke mudah.",
+    "stem": "Ketika R.A. Kartini memperjuangkan pendidikan bagi perempuan pada masa penjajahan, ia menghadapi banyak penolakan dari lingkungan yang masih berpandangan sempit tentang peran perempuan. Ia terus menulis surat dan mengajar anak-anak perempuan di sekitarnya tanpa mengubah tujuannya serta tetap menjaga hubungan baik dengan pihak yang belum menerima gagasannya. Sikap integritas yang paling dapat diteladani dari R.A. Kartini adalah ...",
+    "options": [
+      {
+        "text": "Menunggu kesiapan masyarakat sambil menyiapkan gagasannya secara pribadi.",
+        "reason": "Menunggu kesiapan tampak sabar, tetapi tidak sesuai kasus: Kartini terus bertindak melalui surat dan pengajaran selama penolakan masih ada."
+      },
+      {
+        "text": "Memperjuangkan gagasan secara terbuka dan mengkritik tajam pemuka adat di lingkungannya.",
+        "reason": "Kritik tajam bertentangan dengan sikap Kartini yang tetap menjaga hubungan baik dengan pihak yang belum menerima gagasannya."
+      },
+      {
+        "text": "Bertahan pada tujuan yang diyakini meski ditolak sambil menghormati pihak yang berbeda pandangan.",
+        "reason": "Kartini tidak mengubah tujuannya meski ditolak dan tetap menjaga hubungan baik dengan pihak yang belum menerima gagasannya; itu keteguhan yang selaras antara keyakinan dan tindakan."
+      },
+      {
+        "text": "Menyesuaikan tujuan perjuangan dan mengutamakan bagian yang mudah diterima lingkungan.",
+        "reason": "Menyesuaikan tujuan demi penerimaan bertentangan dengan fakta bahwa Kartini tidak mengubah tujuannya."
+      },
+      {
+        "text": "Menyampaikan gagasan kepada kalangan yang sudah mendukung dan memperluas pengaruhnya secara bertahap.",
+        "reason": "Memperluas pengaruh secara bertahap tampak strategis, tetapi belum memadai: Kartini tidak memilih kalangan pendukung dan tetap mengajar di lingkungan yang menolaknya."
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep dalam soal ini menekankan integritas sebagai keteguhan (konsistensi dan komitmen) memegang tujuan yang diyakini dengan cara yang tetap santun. Stimulus menunjukkan bahwa Kartini menghadapi penolakan, tetapi terus menulis surat dan mengajar tanpa mengubah tujuannya sambil menjaga hubungan baik dengan pihak yang belum menerima gagasannya. Jawaban yang paling tepat adalah bertahan pada tujuan yang diyakini meski ditolak sambil menghormati pihak yang berbeda pandangan karena hanya pernyataan ini yang memuat kedua bukti itu sekaligus. Pengecoh terdekat adalah memperluas pengaruh secara bertahap: tampak strategis, tetapi belum memadai karena Kartini justru tetap berkiprah di lingkungan yang menolaknya.",
+    "tip": "Pisahkan apa yang dipertahankan tokoh (tujuan) dari cara yang ia tempuh (terus berkarya tanpa memusuhi), lalu singkirkan pilihan yang mengubah salah satunya.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 25 (revisi tahap 2)",
+    "catatan": "QC: nama tokoh pada pembahasan tertulis R.C. Kartini, tidak konsisten dengan R.A. Kartini; pertahankan inti keteguhan; hapus tambahan generik. Diubah: nama konsisten R.A. Kartini; peran perempuan menggantikan wanita; inti keteguhan dipertahankan; tidak ada pembahasan generik. Putaran 2: pengecoh bernada negatif (hanya, menghindari konflik, tanpa) diganti sikap positif yang masuk akal; kunci memparafrasekan tanpa mengubah tujuannya menjadi bertahan pada tujuan; semua opsi berisi dua tindakan. Putaran 3 (telaah penelaah-twk dan simulasi buta): Frasa tidak menyerang diganti tetap menjaga hubungan baik (surat Kartini memuat kritik tajam terhadap adat); label turun ke C2 mudah; pertanyaan memakai paling; cara cepat dibersihkan."
+  },
+  "twk-ref-1-4": {
+    "topic": "Integritas",
+    "subtopic": "Konsep Dasar dan Nilai Integritas ASN",
+    "bloom": "C2",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua perilaku (menulis penyebab sebenarnya dan menyelesaikan permohonan) mengarah ke dua nilai berbeda; pertanyaan membatasi fokus pada isi laporan, dan tidak ada tekanan atau risiko yang mengarah ke nilai berani.",
+    "stem": "Seorang petugas pelayanan menyusun laporan bulanan tentang 25 permohonan izin yang terlambat diproses. Keterlambatan itu terjadi karena berkas menumpuk selama seorang rekan cuti. Atasan hanya membaca laporan itu sepintas; seandainya ditulis penyebab lain, misalnya gangguan aplikasi, tidak ada yang akan memeriksanya. Petugas itu menuliskan penyebab yang sebenarnya, lalu menyelesaikan seluruh permohonan yang tertunda pada pekan itu juga. Nilai antikorupsi yang paling dominan terlihat dari isi laporan yang ditulis petugas tersebut adalah ...",
+    "options": [
+      {
+        "text": "Tanggung jawab",
+        "reason": "Menyelesaikan seluruh permohonan yang tertunda menunjukkan tanggung jawab, tetapi pertanyaan menanyakan nilai yang tampak pada isi laporan, bukan pada penyelesaian permohonan."
+      },
+      {
+        "text": "Berani",
+        "reason": "Kasus tidak memuat tekanan atau risiko yang menuntut keberanian; yang tampak adalah kesesuaian isi laporan dengan kenyataan."
+      },
+      {
+        "text": "Disiplin",
+        "reason": "Penyelesaian pada pekan itu menunjukkan ketepatan waktu, tetapi bukan fokus pertanyaan tentang isi laporan."
+      },
+      {
+        "text": "Jujur",
+        "reason": "Isi laporan menyampaikan penyebab yang sebenarnya walaupun penyebab lain tidak akan diperiksa siapa pun; itu inti kejujuran."
+      },
+      {
+        "text": "Peduli",
+        "reason": "Kepedulian kepada pemohon dapat tampak dari penyelesaian permohonan, tetapi tidak dari isi laporan yang ditulis."
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep dalam soal ini menekankan sembilan nilai antikorupsi dan pasangan nilai yang sering tertukar, yaitu jujur, berani, dan tanggung jawab. Stimulus memuat dua perilaku: menuliskan penyebab keterlambatan yang sebenarnya dan menyelesaikan seluruh permohonan yang tertunda. Pertanyaan membatasi fokus pada isi laporan. Isi laporan memuat penyebab yang sebenarnya meskipun penyebab lain tidak akan diperiksa siapa pun dan tidak ada tekanan atau risiko sehingga nilai yang dominan adalah jujur. Tanggung jawab dan disiplin terlihat pada penyelesaian permohonan, bukan pada isi laporan. Keberanian tidak dituntut karena tidak ada risiko, dan kepedulian tidak menjadi bukti utama.",
+    "tip": "Pisahkan perilaku-perilaku dalam kasus, lalu cocokkan perilaku yang menjadi fokus pertanyaan dengan indikator tiap nilai, dengan memperhatikan ada tidaknya tekanan atau risiko.",
+    "rujukan": "Telaah penelaah-twk dan simulasi peserta atas bank riset (butir di luar paket QC; revisi tahap 2)",
+    "catatan": "Koordinator: ref-1-4 masih berpola satu pilihan positif melawan empat tindakan yang jelas melanggar. Diubah: klaim tentang sikap Sjahrir dalam diplomasi tidak dapat diverifikasi sehingga diganti kasus hipotetis petugas pelayanan; opsi menjadi lima nilai dari sembilan nilai antikorupsi (satu kerangka, istilah murni); pengecoh nilai yang benar pada perilaku lain dalam kasus (tanggung jawab, berani, peduli); fokus pertanyaan ditulis; kunci Jujur tidak muncul di stimulus. Putaran 3 (telaah penelaah-twk dan simulasi buta): Dibangun ulang agar satu nilai dominan tegas: perilaku murni kebenaran isi laporan tanpa unsur mengakui kesalahan dan tanpa risiko pribadi (Jujur lawan Berani dan Tanggung jawab); fokus pertanyaan pada isi laporan. Telaah akhir: kalimat ketiga stem dirumuskan ulang (seandainya ditulis penyebab lain, tidak ada yang memeriksanya); pembahasan memisahkan jujur dari berani."
+  },
+  "twk-ref-1-5": {
+    "topic": "Integritas",
+    "subtopic": "Keteladanan Tokoh dan Integritas Konstitusional",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta menarik prinsip konsistensi dari perilaku pemimpin (menolak jabatan tinggi dengan syarat menunda tuntutan merdeka, tetapi tetap duduk di dewan); fakta aturan beras dan rancangan dewan perwakilan daerah mematahkan pilihan urusan teknis.",
+    "stem": "Pada masa pendudukan asing, seorang pemimpin pergerakan menerima kursi dalam dewan penasihat bentukan penguasa. Di dewan itu ia ikut membahas aturan pembagian beras dan rancangan dewan perwakilan daerah. Suatu ketika penguasa menawarkan jabatan tinggi bagi kelompoknya asalkan ia mengajak rakyat menunda tuntutan kemerdekaan. Ia menolak tawaran itu, tetapi tetap duduk di dewan. Prinsip yang menunjukkan konsistensi pemimpin tersebut dalam bekerja sama adalah ...",
+    "options": [
+      {
+        "text": "Kerja sama diterima selama yang dibahas terbatas pada urusan kesejahteraan rakyat.",
+        "reason": "Ia tidak membatasi diri pada urusan kesejahteraan karena juga membahas rancangan dewan perwakilan daerah. Batasnya bukan bidang urusan."
+      },
+      {
+        "text": "Kerja sama diterima selama kelompoknya memperoleh kedudukan yang sepadan dalam pemerintahan.",
+        "reason": "Kedudukan bagi kelompoknya justru ia tolak ketika ditawarkan, jadi keuntungan kelompok bukan ukuran yang ia pegang."
+      },
+      {
+        "text": "Kerja sama diterima selama tujuan bangsa untuk berdaulat penuh tidak dikorbankan.",
+        "reason": "Pemimpin itu tetap bekerja sama dalam dewan, tetapi menolak jabatan tinggi yang menuntut penundaan tuntutan merdeka; yang dijaga adalah tujuan bangsa untuk berdaulat penuh."
+      },
+      {
+        "text": "Kerja sama diterima selama penguasa menjamin keselamatan para pemimpin pergerakan.",
+        "reason": "Keselamatan pemimpin memang penting, tetapi stimulus tidak menunjukkan hal itu menjadi pertimbangannya. Menjadikannya batas berarti mendahulukan diri sendiri."
+      },
+      {
+        "text": "Kerja sama diterima selama sebagian besar rakyat menyetujui keikutsertaannya di dewan.",
+        "reason": "Persetujuan rakyat adalah pertimbangan yang wajar, tetapi stimulus tidak menunjukkan ia mengukur kerja samanya dengan hal itu."
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep dalam soal ini menekankan integritas sebagai komitmen dan konsistensi: seseorang boleh berkompromi dalam cara, tetapi tidak dalam tujuan yang ia perjuangkan. Stimulus menunjukkan pemimpin itu tetap duduk di dewan dan membahas urusan pangan maupun rancangan dewan perwakilan, tetapi menolak jabatan bagi kelompoknya ketika imbalannya adalah menunda tuntutan kemerdekaan. Opsi yang paling tepat adalah kerja sama diterima selama tujuan berdaulat penuh tidak dikorbankan karena satu-satunya yang ia tolak adalah tawaran yang menggeser tujuan itu, sedangkan kerja sama lain tetap ia jalani. Pengecoh terdekat, pembatasan pada urusan kesejahteraan, tampak cocok dengan urusan beras, tetapi gugur karena ia juga membahas rancangan dewan perwakilan yang bersifat politik.",
+    "tip": "Cari satu hal yang ditolak tokoh padahal kerja sama lain tetap ia jalani, lalu uji setiap prinsip dengan seluruh perilakunya dalam stimulus.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 10 (revisi tahap 2)",
+    "catatan": "QC: opsi lain berisi klaim mutlak (menolak semua kerja sama, perjuangan hanya melalui senjata); kunci panjang satu-satunya yang bernuansa. Diubah: kelima opsi memakai pola yang sama; peserta menilai batas kompromi. Putaran 2: klaim sejarah tentang Soekarno (Putera, BPUPKI, motif memanfaatkan wadah) dihapus dan diganti premis kasus hipotetis tentang pemimpin pergerakan karena tidak yakin bahwa klaim itu cukup bersumber; kunci memparafrasekan fakta stimulus (arah perjuangan menuju merdeka menjadi cita-cita merdeka); dua pengecoh memakai fakta stimulus (keuntungan kelompok, urusan teknis) secara kurang tepat; semua opsi positif dan memuat satu tindakan. Catatan: butir tidak lagi menyebut tokoh nyata sehingga subtopik Keteladanan Tokoh dipertahankan hanya sebagai penanda materi. Putaran 3 (telaah penelaah-twk dan simulasi buta): Batas kompromi tidak lagi ditulis di stimulus; perilaku konkret dan fakta (urusan teknis dan politik dibahas) mematahkan opsi urusan teknis; kunci diparafrasekan (berdaulat penuh); opsi paralel; koma sebelum sekalipun dihapus; lensa konsistensi ditulis di pertanyaan."
+  },
+  "twk-ref-1-7": {
+    "topic": "Integritas",
+    "subtopic": "Konflik Kepentingan dan Whistle-Blowing",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Pembatas (daftar internal, pejabat tidak berwenang menetapkan, atasan berkerabat) ditulis sebagai fakta; lima tindakan tampak bertanggung jawab tetapi hanya satu yang menjaga keadilan lewat jalur yang sesuai kewenangan.",
+    "stem": "Pasal 33 ayat (4) UUD 1945 menyatakan bahwa perekonomian nasional diselenggarakan berdasar atas demokrasi ekonomi dengan prinsip kebersamaan, efisiensi berkeadilan, berkelanjutan, berwawasan lingkungan, kemandirian, serta dengan menjaga keseimbangan kemajuan dan kesatuan ekonomi nasional. Seorang pejabat dinas koperasi bertugas memeriksa kelengkapan daftar penerima pelatihan usaha bagi koperasi desa. Ia menemukan bahwa daftar yang disusun atasannya memuat satu koperasi yang belum memenuhi syarat, yaitu koperasi milik kerabat atasan itu, sedangkan beberapa koperasi yang memenuhi syarat tidak tercantum. Daftar itu masih berstatus internal dinas dan pejabat pemeriksa tidak berwenang menetapkan penerima. Tindakan pejabat tersebut yang paling mencerminkan integritas dalam pengelolaan ekonomi sesuai semangat pasal itu adalah ...",
+    "options": [
+      {
+        "text": "Mengumumkan temuan di media sosial dan meminta masyarakat ikut mengawasi pembagian pelatihan.",
+        "reason": "Pengawasan publik penting, tetapi daftar masih berstatus internal; mengumumkan temuan membuka data internal dan menyebarkan tuduhan sebelum diverifikasi."
+      },
+      {
+        "text": "Mencocokkan daftar dengan ketentuan seleksi yang diumumkan, lalu melaporkan ketidaksesuaiannya kepada inspektorat.",
+        "reason": "Pencocokan dengan ketentuan terbuka menjaga keadilan bagi koperasi yang berhak, dan inspektorat adalah jalur yang tidak terlibat hubungan kerabat atasan serta sesuai dengan kewenangan pejabat pemeriksa."
+      },
+      {
+        "text": "Menyampaikan keberatan secara lisan kepada atasan langsung dan menunggu keputusannya.",
+        "reason": "Keberatan kepada atasan tampak sopan, tetapi atasan memiliki hubungan kerabat dengan koperasi yang diuntungkan sehingga penyelesaiannya bergantung pada pihak berkepentingan."
+      },
+      {
+        "text": "Mengganti sendiri nama koperasi yang belum memenuhi syarat dengan koperasi yang memenuhi syarat dan mencatat perubahannya.",
+        "reason": "Niatnya memperbaiki ketidakadilan dan perubahan dicatat, tetapi pejabat pemeriksa tidak berwenang menetapkan penerima."
+      },
+      {
+        "text": "Meneruskan daftar sesuai alur dan menyerahkan penetapan akhir penerima kepada pimpinan dinas.",
+        "reason": "Meneruskan daftar menjaga alur prosedur, tetapi pejabat sudah mengetahui ketidaksesuaian dan koperasi yang berhak tetap tidak tercantum; keadilan dibiarkan."
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep dalam soal ini menekankan integritas dalam penanganan benturan kepentingan, yaitu penerapan nilai kebersamaan dan keadilan dalam pengelolaan program ekonomi, bukan bunyi eksplisit seluruh pasal. Benturan kepentingan muncul dari hubungan kerabat antara atasan dan pemilik koperasi yang masuk daftar, dan stimulus menyebut daftar masih internal serta pejabat pemeriksa tidak berwenang menetapkan penerima. Karena atasan langsung adalah pihak yang berbenturan kepentingan, keberatan tidak diselesaikan melalui dia, tetapi dilaporkan kepada inspektorat sebagai pengawas internal yang tidak terlibat, sesuai pedoman penanganan benturan kepentingan di instansi pemerintah (Permenpan-RB Nomor 37 Tahun 2012). Meneruskan daftar membiarkan ketidakadilan, mengganti daftar melampaui kewenangan, dan mengumumkan temuan membuka data internal serta menyebarkan tuduhan sebelum diverifikasi. Opsi yang paling tepat adalah “mencocokkan daftar dengan ketentuan seleksi yang diumumkan, lalu melaporkan ketidaksesuaiannya kepada inspektorat” karena tindakan itu berbasis bukti, menjaga hak koperasi yang memenuhi syarat, tidak melampaui kewenangan pejabat pemeriksa, dan tidak bergantung pada pihak berkepentingan.",
+    "tip": "Tentukan siapa yang berkepentingan dan apa kewenangan pelaku dalam kasus, lalu pilih jalur yang tidak bergantung pada pihak berkepentingan dan tidak melampaui kewenangan.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 2 (revisi tahap 2)",
+    "catatan": "QC: hubungan demokrasi ekonomi dengan integritas belum spesifik; pembahasan terlalu cepat menyebut jujur, adil, bebas KKN; daftar prinsip belum lengkap; hapus cara cepat berbasis kata kunci. Diubah: bunyi Pasal 33 ayat (4) dikutip utuh termasuk kemandirian; integritas dinyatakan sebagai penerapan nilai dalam pengelolaan ekonomi; kasus konflik kepentingan dengan tindakan konkret; cara cepat diganti cara membaca. Putaran 2: dua kriteria ditulis dalam pertanyaan; kunci memparafrasekan kata syarat (ketentuan seleksi); semua opsi berisi dua tindakan dan tidak memuat kata bernada negatif; dua pengecoh memakai fakta atasan dan daftar penerima secara kurang tepat. Putaran 3 (telaah penelaah-twk dan simulasi buta): Kutipan Pasal 33 ayat (4) dibuat persis (berdasar atas); kalimat kriteria dihapus dan diganti fakta; hubungan kerabat dinyatakan sebagai sumber benturan kepentingan; rujukan Permenpan-RB 37/2012 disebut di pembahasan. Telaah akhir: koma sebelum dan pejabat pemeriksa dihapus; pembahasan menjelaskan mengapa atasan yang berbenturan kepentingan tidak menjadi jalur dan ditutup dengan alasan kunci."
+  },
+  "twk-ref-1-8": {
+    "topic": "Integritas",
+    "subtopic": "Konsep Dasar dan Nilai Integritas ASN",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua pembatas tertulis sebagai fakta (janji ketua dan permintaan anggota agar persoalan keuangan dibahas terbuka); tiap pengecoh memenuhi satu pembatas atau tidak sama sekali.",
+    "stem": "Ketua sebuah perhimpunan pelajar berjanji kepada anggota bahwa dana iuran hanya akan dipakai untuk beasiswa sesama anggota. Dalam rapat sebelumnya, anggota juga meminta agar setiap persoalan keuangan perhimpunan dibahas terbuka bersama mereka. Pada akhir bulan, kas untuk kegiatan harian hampir habis. Seorang pengurus mengusulkan agar sebagian dana beasiswa dipakai lebih dahulu dan dikembalikan dari iuran bulan depan, tanpa perlu diumumkan karena jumlahnya kecil. Sikap ketua yang paling mencerminkan integritas adalah ...",
+    "options": [
+      {
+        "text": "Meminta persetujuan tertulis pengurus inti atas pemakaian sementara dana beasiswa dan mencatatnya sebagai keputusan resmi.",
+        "reason": "Persetujuan tertulis memenuhi prosedur internal pengurus, tetapi dana beasiswa tetap dipakai di luar peruntukan yang dijanjikan dan anggota tidak diajak membahasnya."
+      },
+      {
+        "text": "Menjaga dana beasiswa tetap utuh dan membawa kekurangan kas ke forum anggota.",
+        "reason": "Dana beasiswa tidak disentuh sehingga janji ditepati, dan kekurangan kas dibawa ke forum anggota sesuai permintaan mereka agar persoalan keuangan dibahas terbuka."
+      },
+      {
+        "text": "Mengumumkan pemakaian sementara dana beasiswa kepada anggota dan menjadwalkan pengembaliannya.",
+        "reason": "Pengumuman membuat anggota mengetahui, tetapi dana beasiswa tetap dipakai di luar peruntukan sebelum anggota ikut membahasnya."
+      },
+      {
+        "text": "Memakai dana beasiswa sementara dengan pencatatan rapi dan jadwal pengembalian dari iuran berikutnya.",
+        "reason": "Pencatatan rapi menunjukkan ketertiban, tetapi dana tetap dipakai di luar peruntukan yang dijanjikan dan anggota tidak dilibatkan menentukan jalan keluar."
+      },
+      {
+        "text": "Menutup kekurangan kas dengan uang pribadi dan mengatur sendiri pengembaliannya kelak.",
+        "reason": "Dana beasiswa tetap utuh sehingga janji terjaga, tetapi persoalan kas diselesaikan sendiri dan tidak dibahas terbuka bersama anggota seperti yang mereka minta."
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep dalam soal ini menekankan integritas sebagai kesesuaian antara ucapan dan tindakan dalam mengelola amanah. Stimulus memuat dua pembatas: janji ketua bahwa dana iuran hanya untuk beasiswa dan permintaan anggota agar persoalan keuangan dibahas terbuka bersama mereka, sedangkan usulan pengurus menggeser dana tanpa diumumkan. Persetujuan pengurus inti dan pencatatan rapi memenuhi prosedur atau ketertiban, tetapi dana tetap dipakai di luar peruntukan. Pengumuman membuat anggota tahu, tetapi janji tetap dilanggar sebelum anggota ikut membahas. Menutup kekurangan dengan uang pribadi menjaga janji, tetapi persoalan tidak dibahas terbuka seperti yang diminta anggota. Opsi yang paling tepat adalah “menjaga dana beasiswa tetap utuh dan membawa kekurangan kas ke forum anggota” karena hanya sikap itu yang menepati janji sekaligus memenuhi permintaan anggota agar persoalan keuangan dibahas terbuka.",
+    "tip": "Catat janji dan permintaan pihak terkait yang disebut dalam kasus, lalu periksa setiap tindakan terhadap semuanya, bukan hanya terhadap salah satunya.",
+    "rujukan": "QC akademik TWK, SKD-01 nomor 12 (revisi tahap 2)",
+    "catatan": "QC (dirombak): pertanyaan menyebut integritas tetapi kunci menekankan manfaat organisasi bagi efektivitas perjuangan; stimulus belum memperlihatkan perilaku integritas. Dipilih arah kedua QC (tambahkan bukti perilaku integritas) agar KD tetap Integritas; karena perilaku Soetomo tidak dapat diverifikasi, butir dibangun dari kasus hipotetis dana beasiswa. Putaran 2: dua kriteria (menepati janji, melibatkan anggota) ditulis dalam pertanyaan; tiap pengecoh memenuhi satu kriteria atau tidak sama sekali; semua opsi positif dan memuat dua tindakan; kunci tidak lagi satu-satunya opsi berkata menolak; dua pengecoh memakai fakta dana beasiswa. Putaran 3 (telaah penelaah-twk dan simulasi buta): Kalimat kriteria (yaitu yang menepati janjinya dan melibatkan anggota) dihapus; pembatas dijadikan fakta stimulus; kunci tidak lagi diawali Menepati; koma sebelum tetapi pada pembahasan diperbaiki. Telaah akhir: kunci dipersingkat menjadi menjaga dana beasiswa tetap utuh dan membawa kekurangan kas ke forum anggota (tanpa kata sesuai janji dan dana iuran yang hanya ada di kunci); paragraf konsep ditutup dengan alasan kunci."
+  },
+  "twk-ref-2-1": {
+    "topic": "Bela Negara",
+    "subtopic": "5 Nilai Dasar Bela Negara dan Dasar Hukum",
+    "bloom": "C2",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta menggolongkan perilaku guru ke dalam nilai dasar bela negara; nama nilai tidak disebut dan pengecoh adalah empat nilai lain.",
+    "stem": "Seorang guru di sebuah dusun terpencil dekat perbatasan negara ditawari mutasi ke kota dengan tunjangan lebih besar dan fasilitas lebih lengkap. Ia menolak tawaran itu karena sekolah di dusun tersebut belum memiliki guru pengganti. Ia tetap mengajar anak-anak dusun meskipun penghasilannya lebih kecil dan setiap pekan ia harus menempuh perjalanan berjam-jam untuk mengambil bahan ajar. Nilai dasar bela negara yang paling dominan terlihat dari sikap guru tersebut adalah ...",
+    "options": [
+      {
+        "text": "Rela berkorban untuk bangsa dan negara",
+        "reason": "Guru melepas tunjangan, fasilitas, dan penghasilan serta menanggung perjalanan jauh demi anak-anak dusun perbatasan; itu wujud kesediaan berkorban untuk kepentingan bangsa."
+      },
+      {
+        "text": "Setia pada Pancasila sebagai ideologi negara",
+        "reason": "Kasus tidak memuat penghayatan atau pembelaan terhadap Pancasila sebagai ideologi."
+      },
+      {
+        "text": "Sadar berbangsa dan bernegara",
+        "reason": "Guru menjalankan kewajiban profesinya, tetapi kasus tidak menonjolkan partisipasi kewarganegaraan atau pelaksanaan hak dan kewajiban warga; yang menonjol adalah pengorbanan."
+      },
+      {
+        "text": "Cinta tanah air",
+        "reason": "Mengabdi di perbatasan dapat dikaitkan dengan cinta tanah air, tetapi bukti yang ditonjolkan adalah keuntungan pribadi yang dilepas."
+      },
+      {
+        "text": "Kemampuan awal bela negara",
+        "reason": "Nilai ini menyangkut kesiapan psikis dan fisik sebagai modal awal bela negara (kecerdasan, kesehatan, ketangguhan), dan stimulus tidak menyoroti hal itu."
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep dalam soal ini menekankan lima nilai dasar bela negara (UU 23/2019) dan indikator perilakunya. Stimulus tidak menyebut nama nilai; yang tampak adalah guru menolak tunjangan dan fasilitas yang lebih baik, menerima penghasilan lebih kecil, dan menanggung perjalanan jauh agar anak-anak dusun perbatasan tetap bersekolah. Jawaban yang paling tepat adalah rela berkorban untuk bangsa dan negara karena bukti utamanya adalah kesediaan melepas keuntungan pribadi demi kepentingan umum. Pengecoh terdekat adalah cinta tanah air: lokasi di perbatasan memang dekat dengan nilai itu, tetapi stimulus menonjolkan apa yang dikorbankan, bukan kebanggaan atau penjagaan wilayah.",
+    "tip": "Catat apa yang dilepas atau ditanggung tokoh dan untuk siapa, lalu cocokkan dengan indikator tiap nilai dasar.",
+    "rujukan": "Telaah penelaah-twk dan simulasi peserta atas bank riset (butir di luar paket QC; revisi tahap 2)",
+    "catatan": "Koordinator: kunci bukan salah satu dari lima nilai dasar bela negara resmi. Diubah: butir dibangun ulang dengan opsi lima nilai dasar resmi (Cinta Tanah Air, Sadar Berbangsa dan Bernegara, Setia pada Pancasila sebagai Ideologi Negara, Rela Berkorban untuk Bangsa dan Negara, Kemampuan Awal Bela Negara); stimulus kasus hipotetis guru di dusun perbatasan tanpa menyebut nama nilai; dua pengecoh (cinta tanah air, sadar berbangsa) memakai fakta stimulus secara kurang tepat; kunci bukan opsi terpanjang; opsi istilah murni tanpa ekor deskriptif. Putaran 3 (telaah penelaah-twk dan simulasi buta): Klausa karena sekolah belum memiliki guru pengganti dipisah dari perjalanan; tujuan perjalanan dijelaskan; alasan kemampuan awal dikoreksi (kesiapan psikis dan fisik); istilah ditulis huruf awal kapital. Catatan paket: set opsi dan kunci sama dengan soal 31 sehingga jangan masuk satu paket."
+  },
+  "twk-ref-2-2": {
+    "topic": "Bela Negara",
+    "subtopic": "5 Nilai Dasar Bela Negara dan Dasar Hukum",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta menafsirkan perilaku dan dampaknya lalu membedakan lima nilai dasar bela negara yang berdekatan; nama nilai tidak disebut dalam stimulus.",
+    "stem": "Sekelompok pelajar di sebuah kabupaten membuat film dokumenter tentang perjuangan warga desa mereka melawan penjajah. Film itu berfokus pada kisah warga dan lanskap tempat peristiwa terjadi, dan disusun dari wawancara dengan sesepuh desa serta penelusuran arsip. Setelah film diputar di balai desa, banyak penonton mengaku bangga dengan sejarah desanya dan mulai mengajak anak-anak mereka mengunjungi serta menjaga situs perjuangan setempat. Nilai dasar bela negara yang paling dominan terlihat dari kegiatan dan dampaknya adalah ...",
+    "options": [
+      {
+        "text": "Sadar berbangsa dan bernegara",
+        "reason": "Menggali sejarah dapat menambah kesadaran kebangsaan, tetapi kasus tidak menampilkan pemahaman atau pelaksanaan hak dan kewajiban sebagai warga negara; yang menonjol adalah kebanggaan dan kepedulian pada tempat."
+      },
+      {
+        "text": "Rela berkorban untuk bangsa dan negara",
+        "reason": "Membuat film dan menjaga situs memang memerlukan waktu dan tenaga, tetapi kasus tidak menampilkan kesediaan melepas kepentingan pribadi demi bangsa dan negara; nilai ini belum menjadi bukti dominan."
+      },
+      {
+        "text": "Kemampuan awal bela negara",
+        "reason": "Nilai ini menyangkut kesiapan psikis dan fisik warga, seperti kecerdasan, keuletan, dan kesehatan, yang tidak menjadi fokus kasus."
+      },
+      {
+        "text": "Setia pada Pancasila sebagai ideologi negara",
+        "reason": "Film dan tanggapan penonton tidak membahas dasar negara atau penghayatan sila; kegiatannya berfokus pada kisah warga dan tempatnya."
+      },
+      {
+        "text": "Cinta tanah air",
+        "reason": "Kebanggaan pada sejarah desa serta kebiasaan mengenalkan dan menjaga situs perjuangan adalah wujud keterikatan dan kepedulian terhadap tanah air."
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep dalam soal ini menekankan lima nilai dasar bela negara (UU 23/2019) dan perilaku yang menjadi indikatornya. Stimulus tidak menyebut nama nilai. Buktinya adalah film yang berfokus pada kisah warga dan lanskap desa, kebanggaan penonton pada sejarah desanya, dan kebiasaan baru mengenalkan serta menjaga situs perjuangan setempat. Bangga pada sejarah, menghargai jasa pejuang, serta mengenal dan menjaga tanah kelahiran adalah indikator cinta tanah air. Sadar berbangsa dan bernegara memang ikut tumbuh ketika sejarah digali, tetapi kasus tidak menampilkan pemahaman atau pelaksanaan hak dan kewajiban sebagai warga negara. Opsi yang paling tepat adalah “Cinta tanah air” karena seluruh bukti dalam kasus berpusat pada keterikatan dan kepedulian terhadap tempat beserta sejarahnya.",
+    "tip": "Catat perilaku dan dampak yang benar-benar disebut dalam kasus, lalu cocokkan dengan indikator tiap nilai dasar dan pilih nilai yang didukung paling banyak bukti, bukan kesan umum kegiatan.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 3 (revisi tahap 2)",
+    "catatan": "QC (dirombak): stimulus menyebut langsung tujuan menumbuhkan rasa cinta tanah air lalu menanyakan unsur yang sama. Diubah: nama nilai dihapus dari stimulus; stimulus menyajikan perilaku (film dokumenter dari wawancara dan arsip) dan dampak (kebanggaan, kesediaan merawat situs); ditambahkan pembatas bahwa film berfokus pada kisah warga dan lanskap agar nilai sadar berbangsa tidak sama kuat; pengecoh berupa empat nilai dasar yang berdekatan dengan alasan bukti; nama kabupaten dihapus (rincian tidak berfungsi); label dinaikkan ke C3 sedang karena menuntut penafsiran perilaku. Putaran 3 (telaah penelaah-twk dan simulasi buta): Perilaku merawat situs diganti mengajak anak mengunjungi dan menjaga situs agar tidak bernuansa pengorbanan; alasan rela berkorban dan kemampuan awal dikoreksi (kemampuan awal = kesiapan psikis dan fisik); istilah nilai ditulis dengan huruf awal kapital."
+  },
+  "twk-ref-2-3": {
+    "topic": "Bela Negara",
+    "subtopic": "Bentuk Bela Negara Non-Militer dan Implementasi ASN",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta menerapkan semangat peristiwa sejarah pada ketegangan antarwarga; kelima tindakan masuk akal dan berbeda jenis (pemisahan, imbauan, peringatan, teguran, perundingan).",
+    "stem": "Pada 10 November 1945, rakyat Surabaya dari beragam suku, agama, dan golongan bertempur mempertahankan kota setelah menolak ultimatum Sekutu untuk menyerahkan senjata. Kini, di sebuah desa, warga dua dusun berulang kali bersitegang memperebutkan giliran air dari satu jaringan pipa yang banyak sambungannya bocor pada musim kemarau, dan pemuda kedua dusun mulai saling mengancam. Seorang anggota karang taruna ingin meneladani semangat rakyat Surabaya dalam menghadapi ancaman perpecahan tersebut. Tindakan anggota karang taruna yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Memisahkan jalur pipa dan menyerahkan pengelolaan aliran kepada tiap dusun.",
+        "reason": "Pemisahan jalur pipa mengakhiri rebutan, tetapi memisahkan kedua dusun dan tidak membangun kerja sama lintas kelompok seperti semangat rakyat Surabaya."
+      },
+      {
+        "text": "Mengunggah ajakan damai di media sosial dan mengimbau kedua dusun menahan diri.",
+        "reason": "Ajakan damai menenangkan suasana, tetapi tidak menyelesaikan pembagian air dan pipa yang bocor, serta tidak mempertemukan pemuda kedua dusun dalam satu pekerjaan."
+      },
+      {
+        "text": "Menggelar upacara peringatan Hari Pahlawan dan mengundang veteran bercerita tentang pertempuran Surabaya.",
+        "reason": "Upacara dan cerita veteran bermakna, tetapi bersifat peringatan dan tidak menjawab ketegangan yang sedang terjadi di desa."
+      },
+      {
+        "text": "Melaporkan pemuda yang saling mengancam kepada kepala dusun dan meminta teguran bagi mereka.",
+        "reason": "Teguran menghadapi pihak yang bersitegang, tetapi bersifat sepihak dan represif, bukan semangat rakyat dari beragam golongan yang bersatu menghadapi ancaman."
+      },
+      {
+        "text": "Mengajak pemuda kedua dusun merundingkan pembagian air, lalu bersama-sama memperbaiki pipa itu.",
+        "reason": "Tindakan ini menyelesaikan pokok ketegangan (pembagian air dan pipa yang bocor) sekaligus mempertemukan pemuda kedua dusun dalam satu pekerjaan, sejalan dengan semangat rakyat Surabaya yang bersatu lintas golongan."
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep dalam soal ini menekankan penerapan semangat kepahlawanan sebagai bela negara nonmiliter dalam menghadapi ancaman perpecahan antarwarga. Stimulus menunjukkan rakyat Surabaya dari beragam golongan bertindak bersama menghadapi ancaman, sedangkan di desa warga dua dusun bersitegang memperebutkan giliran air dari pipa yang bocor dan pemuda kedua dusun mulai saling mengancam. Tindakan yang paling tepat adalah mengajak pemuda kedua dusun merundingkan pembagian air lalu bersama-sama memperbaiki pipa karena menyelesaikan pokok ketegangan sekaligus mempertemukan kedua pihak dalam satu pekerjaan. Pemisahan jalur pipa mengakhiri rebutan, tetapi memisahkan kedua dusun. Ajakan damai tidak menyelesaikan pembagian air dan pipa yang bocor, upacara bersifat peringatan, dan teguran sepihak bersifat represif.",
+    "tip": "Tentukan pokok ancaman dalam kasus, lalu periksa apakah setiap tindakan menyelesaikannya dengan melibatkan pihak-pihak yang bersitegang, atau hanya memisahkan, menenangkan, memperingati, atau menghukum.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 17 (revisi tahap 2)",
+    "catatan": "QC (dirombak): pertanyaan inspirasi agar kita terlalu luas; beberapa pemaknaan sama-sama sah; pembahasan belum membuat kunci unik. Diubah: nilai yang diuji adalah penerapan semangat peristiwa sejarah dalam bela negara nonmiliter pada konteks tindakan generasi muda menghadapi ancaman persatuan; seluruh opsi berupa tindakan pada konteks yang sama; fakta 10 November 1945 dibatasi pada hal yang akurat. Putaran 2: opsi bernada negatif (tanpa musyawarah, tidak membahas lagi) diganti tindakan positif; dua pengecoh memakai fakta stimulus (grup pesan, isu, pemilihan ketua RW) secara kurang tepat; dua kriteria ditulis dalam pertanyaan; kata pemuda dan pesan tidak lagi berbagi dengan kunci kecuali grup pesan yang juga ada pada pengecoh; semua opsi berisi dua tindakan. Putaran 3 (telaah penelaah-twk dan simulasi buta): Konteks diganti dari hoaks SARA ke giliran air dua dusun dengan pipa bocor (menghilangkan tumpang tindih dengan soal hoaks pada grup warga dan soal perselisihan antardesa); kalimat kriteria dihapus; semangat 10 November berfungsi sebagai teladan; pengecoh berbeda jenis dan tanpa penanda kelemahan. Telaah akhir: konteks lapangan diganti giliran air dua dusun (pipa bocor) agar tidak tumpang tindih dengan soal perselisihan antardesa; pembahasan dan alasan opsi disesuaikan."
+  },
+  "twk-ref-2-4": {
+    "topic": "Pilar Negara",
+    "subtopic": "Pengamalan Sila-Sila Pancasila",
+    "bloom": "C2",
+    "difficulty": "mudah",
+    "difficultyReason": "Sasaran pelatihan hampir sama dengan butir pengamalan sila ketiga sehingga peserta cukup mengenalinya di antara kegiatan yang beragam; dipertahankan sebagai pengukur dasar.",
+    "stem": "Sebuah universitas menyelenggarakan pelatihan bela negara selama satu bulan bagi mahasiswa baru yang berasal dari berbagai suku dan daerah. Selain baris-berbaris dan simulasi siaga bencana, peserta ikut kerja bakti di desa sekitar kampus bersama warga setempat. Panitia menetapkan bahwa pelatihan dinyatakan berhasil bila peserta mau menempatkan keselamatan dan keutuhan bangsa di atas kepentingan kelompok asal masing-masing. Sila Pancasila yang paling erat dengan sasaran pelatihan tersebut adalah ...",
+    "options": [
+      {
+        "text": "Keadilan Sosial bagi Seluruh Rakyat Indonesia",
+        "reason": "Kerja bakti bermanfaat bagi warga, tetapi pemerataan kesejahteraan tidak menjadi tolok ukur keberhasilan pelatihan."
+      },
+      {
+        "text": "Kemanusiaan yang Adil dan Beradab",
+        "reason": "Siaga bencana dan kerja bakti menyentuh kepedulian kepada sesama, tetapi sasaran yang diukur adalah keutuhan bangsa di atas kelompok asal, bukan bantuan kepada sesama."
+      },
+      {
+        "text": "Ketuhanan Yang Maha Esa",
+        "reason": "Tidak ada kegiatan atau sasaran yang menyangkut kehidupan beragama dan keyakinan peserta."
+      },
+      {
+        "text": "Persatuan Indonesia",
+        "reason": "Peserta lintas suku dan daerah diukur dari kesediaannya menempatkan keutuhan bangsa di atas kelompok asal; itulah inti sila ketiga."
+      },
+      {
+        "text": "Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan",
+        "reason": "Sila keempat menyangkut pengambilan keputusan melalui musyawarah dan perwakilan, sedangkan pelatihan tidak menjadikan cara memutuskan sebagai ukuran keberhasilan."
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep dalam soal ini menekankan pengamalan sila Persatuan Indonesia, yaitu menempatkan persatuan, kesatuan, serta kepentingan dan keselamatan bangsa di atas kepentingan pribadi dan golongan. Kegiatan pelatihan beragam, tetapi ukuran keberhasilan yang ditetapkan panitia hanya satu: peserta dari berbagai suku dan daerah mendahulukan keselamatan dan keutuhan bangsa daripada kelompok asalnya. Kemanusiaan dan keadilan sosial dapat dikaitkan dengan simulasi siaga bencana dan kerja bakti, tetapi keduanya menjelaskan kegiatan, bukan sasaran yang diukur. Opsi yang paling tepat adalah “Persatuan Indonesia” karena sasaran pelatihan merupakan inti pengamalan sila ketiga.",
+    "tip": "Pisahkan kegiatan yang disebut dalam kasus dari sasaran yang dinyatakan panitia, lalu cocokkan sasaran itu dengan inti tiap sila.",
+    "rujukan": "QC akademik TWK, SKD-01 nomor 5 (revisi tahap 2)",
+    "catatan": "QC: dua kegiatan dan rincian waktu/tempat tidak dibutuhkan; frasa anak-anak tertentu tidak jelas. Diubah: diringkas menjadi satu kegiatan pelatihan; Lanud Adisutjipto, Agustus 2025, dan program Pemprov Jawa Barat dihapus; kelompok peserta dijelaskan (mahasiswa baru lintas suku dan daerah); sasaran pelatihan dinyatakan sebagai bukti agar kunci ditarik dari stimulus. Risiko: opsi berupa lima sila sehingga butir ini berbatasan dengan KD Pilar Negara; tetap Bela Negara karena stimulus tentang pelatihan bela negara. Putaran 3 (telaah penelaah-twk dan simulasi buta): KD DIPINDAH dari Bela Negara ke Pilar Negara karena yang ditanya adalah sila Pancasila (standar: yang ditanya menentukan KD); label turun ke C2 mudah; pertanyaan memakai Sila Pancasila; opsi Kerakyatan ditulis lengkap. Konsekuensi paket: slot Bela Negara pada SKD-01 #5 perlu diisi butir bela negara lain."
+  },
+  "twk-ref-2-6": {
+    "topic": "Bela Negara",
+    "subtopic": "5 Nilai Dasar Bela Negara dan Dasar Hukum",
+    "bloom": "C2",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta menggolongkan sikap juru runding hipotetis (menanggung kecaman dan risiko karier demi pemulihan pemerintahan) ke dalam nilai dasar bela negara.",
+    "stem": "Pada masa perang kemerdekaan, seorang juru runding Republik mengetahui bahwa kesepakatan yang akan ditandatanganinya akan dikecam sebagian pejuang di daerah dan dapat mengakhiri karier politiknya. Ia tetap menandatangani kesepakatan itu karena isinya memulihkan pemerintahan Republik dan membebaskan para pemimpin yang ditahan. Nilai dasar bela negara yang paling dominan terlihat dari sikap juru runding tersebut adalah ...",
+    "options": [
+      {
+        "text": "Sadar berbangsa dan bernegara",
+        "reason": "Keputusan itu memang demi negara, tetapi stimulus menonjolkan kecaman dan karier yang dipertaruhkan, bukan partisipasi atau pelaksanaan hak dan kewajiban warga."
+      },
+      {
+        "text": "Cinta tanah air",
+        "reason": "Cinta tanah air menyangkut kebanggaan dan kepedulian terhadap wilayah serta nama baik bangsa, dan stimulus tidak menonjolkan hal itu."
+      },
+      {
+        "text": "Rela berkorban untuk bangsa dan negara",
+        "reason": "Juru runding tetap menandatangani meski akan dikecam dan kariernya dapat berakhir, demi pemulihan pemerintahan Republik dan pembebasan para pemimpin; itu wujud kesediaan berkorban."
+      },
+      {
+        "text": "Kemampuan awal bela negara",
+        "reason": "Stimulus tidak menyoroti kesiapan psikis atau fisik juru runding, melainkan kerugian pribadi yang ia terima."
+      },
+      {
+        "text": "Setia pada Pancasila sebagai ideologi negara",
+        "reason": "Kasus tidak memuat pembelaan terhadap Pancasila sebagai ideologi negara."
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep dalam soal ini menekankan lima nilai dasar bela negara pada kasus perjuangan diplomasi. Stimulus menunjukkan juru runding tahu keputusannya akan dikecam sebagian pejuang dan dapat mengakhiri karier politiknya, tetapi tetap menandatangani kesepakatan karena isinya memulihkan pemerintahan Republik dan membebaskan para pemimpin yang ditahan. Jawaban yang paling tepat adalah rela berkorban untuk bangsa dan negara karena bukti utamanya adalah kerugian pribadi yang ia terima demi kepentingan negara. Pengecoh terdekat adalah sadar berbangsa dan bernegara: keputusan itu memang demi negara, tetapi yang ditonjolkan stimulus adalah harga pribadi yang dibayar, bukan partisipasi atau pelaksanaan hak dan kewajiban warga.",
+    "tip": "Catat apa yang dipertaruhkan tokoh dan untuk kepentingan siapa, lalu cocokkan dengan indikator tiap nilai dasar.",
+    "rujukan": "Telaah penelaah-twk dan simulasi peserta atas bank riset (butir di luar paket QC; revisi tahap 2)",
+    "catatan": "Koordinator: kunci opsi terpanjang. Diubah: opsi menjadi lima nilai dasar bela negara dalam istilah murni tanpa ekor deskriptif (kunci Rela Berkorban untuk Bangsa dan Negara bukan opsi terpanjang); stimulus menambahkan bukti kesadaran akan risiko dikritik agar kunci tidak bersaing dengan nilai lain; dua pengecoh memakai fakta stimulus secara kurang tepat; label sulit diturunkan ke sedang C3. Fakta yang dipakai (Perundingan Roem–Royen 1949, tekanan diplomatik, ketidakpuasan sebagian kelompok, pemulihan pemerintahan) dipertahankan dari sumber riset tanpa tambahan klaim. Putaran 3 (telaah penelaah-twk dan simulasi buta): Klaim sejarah Roem–Royen (tekanan diplomatik, menyadari risiko dikritik) dihapus; diganti juru runding hipotetis dengan fakta risiko dikecam dan karier berakhir; alasan kemampuan awal dikoreksi; label C2. Catatan paket: set opsi dan kunci sama dengan soal 30."
+  },
+  "twk-ref-2-7": {
+    "topic": "Bela Negara",
+    "subtopic": "Ancaman terhadap NKRI (AGHT)",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta menurunkan kebutuhan kasus dari fakta angket (Pancasila dianggap hafalan upacara yang tidak berkaitan dengan persoalan siswa) tanpa mengubah isi Pancasila. Belum dikalibrasi dari peserta.",
+    "stem": "Sebuah SMA menemukan bahwa sebagian siswanya mulai tertarik pada narasi daring yang menyebut Pancasila sudah usang dan perlu diganti ideologi lain. Angket sekolah menunjukkan siswa menganggap Pancasila hanya hafalan upacara yang tidak berkaitan dengan persoalan yang mereka hadapi, seperti perundungan dan kesenjangan. Guru ingin menjawab anggapan itu tanpa mengubah isi Pancasila. Strategi yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mengundang tokoh nasional berceramah tentang sejarah lahirnya Pancasila di depan seluruh siswa.",
+        "reason": "Ceramah tokoh dapat menginspirasi, tetapi membahas sejarah secara satu arah dan tidak menunjukkan kaitan Pancasila dengan persoalan siswa saat ini."
+      },
+      {
+        "text": "Menambah lomba cerdas cermat dan hafalan butir pengamalan Pancasila setiap bulan.",
+        "reason": "Lomba dan hafalan menambah pengetahuan, tetapi justru memperkuat kesan “hanya hafalan” yang dikeluhkan siswa."
+      },
+      {
+        "text": "Mengajak siswa membedah kasus nyata di sekolah dengan sila-sila sebagai ukuran penyelesaiannya.",
+        "reason": "Membedah kasus nyata di sekolah dengan sila sebagai ukuran menunjukkan kaitan Pancasila dengan persoalan yang dihadapi siswa tanpa mengubah isinya."
+      },
+      {
+        "text": "Menyaring situs yang menyebarkan narasi itu dan mengawasi pemakaian gawai di sekolah.",
+        "reason": "Penyaringan situs dapat mengurangi paparan di sekolah, tetapi tidak menjawab anggapan siswa, dan narasi tetap dapat diakses di luar sekolah."
+      },
+      {
+        "text": "Menggelar debat perbandingan Pancasila dengan ideologi lain yang dipandu moderator dari luar sekolah.",
+        "reason": "Debat melatih nalar kritis, tetapi berlangsung pada tataran perbandingan gagasan dan belum mengaitkan Pancasila dengan persoalan nyata siswa."
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep dalam soal ini menekankan ketahanan ideologi sebagai bela negara nonmiliter terhadap ancaman di gatra ideologi: nilai dasar Pancasila dipertahankan, sedangkan cara menghidupkannya disesuaikan dengan persoalan nyata. Stimulus menyebut alasan siswa secara spesifik, yaitu Pancasila dianggap hafalan yang tidak berkaitan dengan persoalan mereka, dan guru tidak ingin isi Pancasila diubah. Opsi yang paling tepat adalah mengajak siswa membedah kasus nyata dengan sila-sila sebagai ukuran karena strategi itu langsung membantah anggapan tidak relevan sambil memakai isi Pancasila apa adanya. Pengecoh terdekat, debat perbandingan ideologi, melatih nalar kritis, tetapi membandingkan gagasan secara abstrak dan tidak menghubungkan Pancasila dengan persoalan yang dikeluhkan siswa.",
+    "tip": "Temukan alasan siswa yang disebut stimulus, lalu pilih strategi yang membantah alasan itu secara langsung tanpa menyentuh isi Pancasila.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 9 (revisi tahap 2)",
+    "catatan": "QC: pilihan negatif kaku dan absolut sangat menonjol sebagai jawaban pertanyaan pengecualian; tips mencari opsi ekstrem menguatkan menebak. Diubah: pertanyaan kecuali diganti kasus benturan nilai dan strategi yang paling tepat; pembahasan menjelaskan beda mempertahankan isi dan menyesuaikan pelaksanaan; tip diganti. Putaran 2: dua kriteria ditulis dalam pertanyaan; semua opsi berisi dua tindakan dan tanpa kata negatif; kunci tidak memakai kata siswa dan nilai dasar dari stimulus. Putaran 3 (telaah penelaah-twk dan simulasi buta): Alasan siswa menganggap Pancasila usang dijadikan fakta (angket); satu pengecoh yang jelas melanggar (mengikuti kesimpulan mayoritas) diganti debat perbandingan ideologi; kunci tidak lagi memasangkan kata relevansi dan memperbarui langsung dengan kriteria."
+  },
+  "twk-ref-2-8": {
+    "topic": "Bela Negara",
+    "subtopic": "Wawasan Nusantara dan Ketahanan Nasional (Astagatra)",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta memakai konsep gatra (kekayaan alam dan ekonomi) untuk memilih langkah; tiga pengecoh menangani akibat sehingga satu aturan menggugurkan sebagian opsi. Label sulit diturunkan ke sedang.",
+    "stem": "Sebuah kabupaten mengalami krisis air bersih. Hutan di hulu sungai banyak dialihfungsikan menjadi kebun dan permukiman, sedangkan alirannya tercemar buangan sebuah pabrik yang mempekerjakan ribuan warga setempat. Krisis itu mengganggu kesehatan warga dan memicu pertengkaran antardesa tentang pembagian air. Dari sudut pandang ketahanan nasional, pemerintah daerah menginginkan langkah yang memulihkan gatra kekayaan alam tanpa melemahkan gatra ekonomi. Langkah yang paling sesuai adalah ...",
+    "options": [
+      {
+        "text": "Membentuk forum antardesa yang menyepakati jadwal pembagian air dari sumber yang masih tersedia.",
+        "reason": "Forum antardesa meredakan pertengkaran dan tidak keliru, tetapi hanya mengatur air yang tersisa. Hutan hulu dan sungai tercemar tidak dipulihkan."
+      },
+      {
+        "text": "Mendatangkan air dari kabupaten tetangga sambil mempertahankan jumlah pekerja pabrik seperti semula.",
+        "reason": "Langkah ini menjaga gatra ekonomi dan memenuhi kebutuhan air, tetapi gatra kekayaan alam tidak dipulihkan karena pencemaran dan kerusakan hulu tetap berlangsung."
+      },
+      {
+        "text": "Menetapkan baku mutu limbah pabrik dan menghijaukan kembali lahan hulu bersama warga.",
+        "reason": "Baku mutu limbah menangani pencemaran dan penghijauan lahan hulu memulihkan hutan, sedangkan pabrik tetap beroperasi sehingga gatra ekonomi tidak melemah."
+      },
+      {
+        "text": "Menyalurkan air bersih ke desa terdampak dan membuka layanan kesehatan keliling bagi warga.",
+        "reason": "Bantuan air dan layanan kesehatan meringankan akibat krisis, tetapi belum menyentuh sumber kerusakan pada gatra kekayaan alam."
+      },
+      {
+        "text": "Menutup sementara operasi pabrik dan menanami kembali kawasan hutan di hulu sungai itu.",
+        "reason": "Langkah ini memulihkan gatra kekayaan alam, tetapi penutupan pabrik memutus penghasilan ribuan pekerja sehingga gatra ekonomi melemah."
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep dalam soal ini menekankan ketahanan nasional dalam kerangka Astagatra. Gatra kekayaan alam (Trigatra) dan gatra ekonomi (Pancagatra) saling terkait sehingga pemulihan satu gatra tidak boleh mengorbankan gatra lain. Stimulus menunjukkan sumber krisis ada pada gatra kekayaan alam (alih fungsi hutan hulu dan pencemaran sungai), sedangkan pabrik pencemar menjadi sandaran ekonomi ribuan warga. Opsi yang paling tepat adalah menetapkan baku mutu limbah dan menghijaukan lahan hulu bersama warga karena langkah itu memulihkan kedua sumber kerusakan alam sambil membiarkan pabrik tetap beroperasi dengan syarat sehingga gatra ekonomi tidak melemah. Pengecoh terdekat, penutupan sementara pabrik disertai penanaman hutan, memulihkan alam sepenuhnya, tetapi memutus penghasilan ribuan pekerja selama penutupan.",
+    "tip": "Petakan setiap langkah ke gatra yang dipulihkan dan gatra yang dikorbankan, lalu pilih langkah yang memulihkan kekayaan alam tanpa mengorbankan ekonomi.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 6 (revisi tahap 2)",
+    "catatan": "QC: pengecoh memuat kata mutlak dan pengabaian kepentingan lain; kunci terlalu mudah dikenali untuk label sulit. Diubah: hubungan lingkungan dan ketahanan nasional dipertahankan; dilema nyata (pabrik menyerap tenaga kerja). Putaran 2: dua kriteria ditulis dalam pertanyaan agar hanya kunci yang unggul lewat kriteria tertulis; kunci memparafrasekan buangan pabrik dan alih fungsi hutan menjadi limbah dan kawasan hulu; opsi tidak memuat kata negatif (membiarkan, tanpa); semua opsi berisi dua tindakan. Putaran 3 (telaah penelaah-twk dan simulasi buta): Bingkai ketahanan nasional diberi fungsi (gatra kekayaan alam dan gatra ekonomi); kata hulu tidak lagi diulang kunci; tiap pengecoh memenuhi satu kriteria; label sulit diturunkan ke sedang; perbaikan bahasa (menginginkan, sesuai dengan)."
+  },
+  "twk-ref-3-1": {
+    "topic": "Pilar Negara",
+    "subtopic": "UUD 1945: Pasal Kunci dan Pokok Pikiran Pembukaan",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta menerapkan Pasal 28D ayat (2) pada lima tindakan di ranah ketenagakerjaan; empat tindakan tampak membatasi pekerja tetapi punya dasar yang sah.",
+    "stem": "Pasal 28D ayat (2) UUD 1945 menyatakan bahwa setiap orang berhak untuk bekerja serta mendapat imbalan dan perlakuan yang adil dan layak dalam hubungan kerja. Tindakan di bawah ini yang melanggar hak tersebut adalah ...",
+    "options": [
+      {
+        "text": "Pelamar dinyatakan tidak lulus seleksi setelah nilai uji kompetensinya berada di bawah ambang batas yang diumumkan sejak awal.",
+        "reason": "Ambang batas diumumkan sejak awal dan berlaku sama bagi semua pelamar, jadi ini seleksi yang sah."
+      },
+      {
+        "text": "Pegawai diberhentikan setelah pemeriksaan internal membuktikan bahwa ia membocorkan dokumen rahasia.",
+        "reason": "Pemberhentian didasarkan pada pelanggaran yang dibuktikan melalui pemeriksaan, jadi dasarnya sah."
+      },
+      {
+        "text": "Pekerja dilarang menangani pekerjaan berisiko tinggi sebelum memiliki sertifikat keselamatan.",
+        "reason": "Syarat sertifikat melindungi keselamatan pekerja dan berlaku bagi semua yang menangani pekerjaan itu."
+      },
+      {
+        "text": "Pegawai kontrak diberhentikan setelah mengajukan keberatan atas upah yang dipotong di luar perjanjian.",
+        "reason": "Pemotongan upah di luar perjanjian melanggar hak atas imbalan yang adil, dan pemberhentian setelah pegawai mengajukan keberatan menghukum penggunaan haknya; keduanya melanggar Pasal 28D ayat (2)."
+      },
+      {
+        "text": "Pegawai dipindahkan ke daerah lain sesuai kebutuhan organisasi dengan jabatan dan penghasilan yang tetap.",
+        "reason": "Mutasi sesuai kebutuhan organisasi tanpa mengurangi jabatan dan penghasilan termasuk pengelolaan kerja yang sah."
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep dalam soal ini menekankan Pasal 28D ayat (2) UUD 1945: setiap orang berhak bekerja serta mendapat imbalan dan perlakuan yang adil dan layak dalam hubungan kerja. Pembatasan terhadap pekerja tidak melanggar hak itu bila dasarnya sah, terbuka, dan berlaku sama. Jawaban yang paling tepat adalah pemberhentian pegawai kontrak setelah ia mengajukan keberatan atas upah yang dipotong di luar perjanjian karena ada dua perlakuan tidak adil: upahnya dipotong tanpa dasar perjanjian, lalu ia kehilangan pekerjaan setelah memperjuangkan haknya tanpa disebutkan adanya pelanggaran. Pengecoh terdekat adalah pemberhentian pegawai yang membocorkan dokumen rahasia: sama-sama pemberhentian, tetapi didasarkan pada pelanggaran yang dibuktikan melalui pemeriksaan.",
+    "tip": "Untuk setiap tindakan, cari dasarnya yang sah dan terbuka (syarat, prosedur, pelanggaran terbukti, atau kebutuhan organisasi), lalu tentukan tindakan yang merugikan pekerja tanpa dasar itu.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 30 (revisi tahap 2)",
+    "catatan": "QC: pertanyaan menyebut hak memperoleh pekerjaan sedangkan kunci berupa pemecatan karena kritik; pengecoh hampir seluruhnya di ranah pendidikan. Diubah: pertanyaan diselaraskan dengan Pasal 28D ayat (2) (kutipan akurat: setiap orang); pengecoh seluruhnya di ranah ketenagakerjaan dan berupa pembatasan yang sah; pembahasan menjelaskan fakta yang membuat pemberhentian tidak dapat dibenarkan. Putaran 2: salah satu pengecoh kini juga berupa pemberhentian (dengan dasar pelanggaran terbukti) dan dua lainnya berupa larangan atau pemindahan sehingga kunci bukan satu-satunya opsi bernada negatif; kata karena dihapus dari opsi. Putaran 3 (telaah penelaah-twk dan simulasi buta): Pembahasan menyebut fakta penentu (upah dipotong di luar perjanjian melanggar hak atas imbalan yang adil); struktur opsi pemberhentian diperjelas."
+  },
+  "twk-ref-3-2": {
+    "topic": "Pilar Negara",
+    "subtopic": "UUD 1945: Pasal Kunci dan Pokok Pikiran Pembukaan",
+    "bloom": "C1",
+    "difficulty": "mudah",
+    "difficultyReason": "Mengingat isi Pasal 31 UUD 1945; opsi istilah sejajar (lima hak konstitusional). Dipertahankan sebagai pengukur pengetahuan dasar dengan label yang jujur. Catatan: soal murni pengingat pasal, jadi sebaiknya satu-dua per paket.",
+    "rujukan": "Telaah label penelaah-twk atas bank riset (isi soal tidak diubah; revisi tahap 2)",
+    "catatan": "Label akademik (KD, subtopik, Bloom, kesulitan, alasan kesulitan) diperbarui; teks soal dan kunci tetap seperti hasil ekstraksi."
+  },
+  "twk-ref-3-3": {
+    "topic": "Pilar Negara",
+    "subtopic": "Pengamalan Sila-Sila Pancasila",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta menerapkan sila Persatuan Indonesia pada tiga tahap proses perumusan dasar negara; kelima sikap tampak wajar bagi sebuah forum, tetapi hanya satu yang menunjukkan kesediaan golongan merevisi rumusan yang diperjuangkannya.",
+    "stem": "Pada akhir Mei hingga awal Juni 1945, sejumlah tokoh dalam sidang BPUPKI mengajukan gagasan dasar negara yang berbeda-beda. Pada 22 Juni 1945, Panitia Sembilan yang beranggotakan wakil kelompok kebangsaan dan kelompok Islam merumuskan naskah yang menjembatani kedua pandangan. Pada 18 Agustus 1945, PPKI mengesahkan rumusan akhir setelah satu rumusan diubah dengan mempertimbangkan keberatan dari sebagian wilayah Indonesia. Sikap para tokoh dalam rangkaian proses tersebut yang paling mencerminkan sila Persatuan Indonesia adalah ...",
+    "options": [
+      {
+        "text": "Meminta tokoh yang paling dihormati semua pihak menetapkan rumusan akhir bagi seluruh golongan.",
+        "reason": "Menyerahkan keputusan kepada tokoh yang dihormati dapat mempercepat, tetapi tidak menunjukkan kesediaan golongan menyesuaikan pandangannya. Stimulus juga tidak menggambarkan keputusan oleh satu tokoh."
+      },
+      {
+        "text": "Memutuskan rumusan akhir melalui pemungutan suara dan menjadikan suara terbanyak sebagai penentu.",
+        "reason": "Pemungutan suara sah sebagai mekanisme (ranah sila keempat), tetapi dapat meninggalkan golongan yang kalah suara. Stimulus menunjukkan penyesuaian rumusan, bukan penghitungan suara."
+      },
+      {
+        "text": "Memuat seluruh rumusan awal tiap golongan secara utuh dalam naskah akhir.",
+        "reason": "Memuat semua rumusan tampak menghargai setiap golongan, tetapi naskah bersama hanya terwujud bila ada rumusan yang disesuaikan. Stimulus justru menunjukkan satu rumusan diubah."
+      },
+      {
+        "text": "Bersedia merevisi rumusan yang diperjuangkan golongannya setelah mendengar pihak lain.",
+        "reason": "Pada tahap pengesahan, rumusan yang sudah dijembatani tetap diubah demi keberatan sebagian wilayah. Kesediaan golongan merevisi rumusan yang diperjuangkannya adalah wujud mengutamakan bangsa di atas golongan."
+      },
+      {
+        "text": "Mempertahankan rumusan Panitia Sembilan yang telah diterima kedua kelompok yang diwakilinya.",
+        "reason": "Menjaga kesepakatan dua kelompok tampak konsisten, tetapi mempertahankannya tanpa menimbang keberatan sebagian wilayah berlawanan dengan perubahan saat pengesahan dan mengabaikan keutuhan seluruh wilayah."
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep dalam soal ini menekankan sila Persatuan Indonesia, yaitu menempatkan kepentingan bangsa di atas kepentingan golongan. Stimulus memisahkan tiga tahap: pengajuan gagasan di BPUPKI, perumusan naskah penjembatan oleh Panitia Sembilan, dan pengesahan oleh PPKI. Bukti terkuat ada pada tahap pengesahan. Rumusan yang sudah diterima dua kelompok tetap diubah setelah keberatan sebagian wilayah dipertimbangkan, artinya golongan yang memperjuangkannya merelakan rumusan itu demi kesepakatan seluruh bangsa. Pemungutan suara dan penyerahan keputusan kepada satu tokoh menyangkut cara memutuskan (ranah sila keempat), bukan kesediaan melepas kepentingan golongan. Opsi yang paling tepat adalah “bersedia merevisi rumusan yang diperjuangkan golongannya” karena sikap itulah yang terjadi pada tahap pengesahan dan menempatkan kesepakatan bangsa di atas kepentingan golongan.",
+    "tip": "Telusuri tiap tahap dalam kasus dan tanyakan apa yang direlakan atau disesuaikan oleh suatu golongan agar kesepakatan seluruh bangsa tercapai.",
+    "rujukan": "QC akademik TWK, SKD-01 nomor 3 (revisi tahap 2)",
+    "catatan": "QC: stimulus terlalu cepat menyatukan pidato 1 Juni dengan rumusan yang diterima semua golongan; pengecoh diskriminatif mudah dieliminasi. Diubah: stimulus membedakan pengajuan gagasan (akhir Mei–awal Juni), perumusan bersama (akhir Juni), dan pengesahan (18 Agustus 1945); Soekarno tidak lagi disebut menyelesaikan rumusan. Putaran 2: kelima opsi kini sikap positif yang masuk akal (tanpa menunda, memaksa, atau menyamakan); dua pengecoh memakai fakta stimulus (panitia kecil, gagasan awal) secara kurang tepat; kunci memparafrasekan fakta perubahan rumusan; jumlah tindakan tiap opsi setara. Putaran 3 (telaah penelaah-twk dan simulasi buta): Panitia Sembilan (22 Juni 1945) menggantikan sebutan panitia kecil yang rancu; opsi tanpa ekor pembenaran; kunci memuat golongan yang memperjuangkan rumusan; materi diganti Pengamalan Sila-Sila Pancasila."
+  },
+  "twk-ref-3-4": {
+    "topic": "Pilar Negara",
+    "subtopic": "UUD 1945: Pasal Kunci dan Pokok Pikiran Pembukaan",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta memisahkan tindakan yang ditanyakan (memeriksa dasar wewenang) dari tindakan lain dalam kasus lalu menerapkan prinsip; otonomi daerah adalah pengecoh terdekat.",
+    "stem": "Seorang wali kota menerima usulan warga untuk melarang kendaraan roda empat memasuki kawasan pasar tradisional pada akhir pekan. Sebelum menetapkan kebijakan, ia memeriksa apakah peraturan perundang-undangan memberinya wewenang mengatur lalu lintas di kawasan itu. Setelah itu, ia mengundang pedagang dan warga untuk menyampaikan pendapat. Pemeriksaan dasar wewenang yang dilakukan wali kota sebelum menetapkan kebijakan paling mencerminkan prinsip ketatanegaraan ...",
+    "options": [
+      {
+        "text": "Negara hukum",
+        "reason": "Memastikan peraturan memberi wewenang sebelum bertindak menunjukkan pemerintahan yang dijalankan berdasarkan hukum."
+      },
+      {
+        "text": "Persamaan di depan hukum",
+        "reason": "Prinsip ini menyangkut perlakuan yang sama bagi semua warga di hadapan hukum; kasus tidak menyangkut perbedaan perlakuan antarwarga."
+      },
+      {
+        "text": "Pemisahan kekuasaan",
+        "reason": "Prinsip ini mengatur pembagian fungsi antarlembaga negara; kasus tidak menunjukkan hubungan wali kota dengan lembaga lain."
+      },
+      {
+        "text": "Kedaulatan rakyat",
+        "reason": "Mengundang pedagang dan warga memang mencerminkan kedaulatan rakyat, tetapi tindakan yang ditanyakan adalah pemeriksaan dasar wewenang, bukan pelibatan warga."
+      },
+      {
+        "text": "Otonomi daerah",
+        "reason": "Wali kota menjalankan wewenang daerah, tetapi yang ditanyakan adalah pemeriksaan dasar wewenang itu pada peraturan, bukan keluasan daerah mengatur urusannya."
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep dalam soal ini menekankan prinsip negara hukum (Pasal 1 ayat (3) UUD 1945: “Negara Indonesia adalah negara hukum.”), yang menuntut setiap tindakan pemerintah berdasar pada wewenang yang diberikan peraturan perundang-undangan. Stimulus memuat dua tindakan, yaitu memeriksa dasar wewenang dan mengundang warga berpendapat, tetapi pertanyaan membatasi pada tindakan pertama. Otonomi daerah adalah pengecoh terdekat karena wewenang yang diperiksa memang urusan daerah, tetapi yang ditanyakan adalah kebiasaan memastikan dasar hukum sebelum bertindak, bukan keluasan daerah mengatur urusannya. Opsi yang paling tepat adalah “Negara hukum” karena memeriksa dasar wewenang sebelum menetapkan kebijakan merupakan wujud asas legalitas.",
+    "tip": "Pisahkan tindakan yang ditanyakan dari tindakan lain dalam kasus, lalu tanyakan prinsip apa yang menjadi alasan tindakan itu dilakukan.",
+    "rujukan": "QC akademik TWK, SKD-01 nomor 20 (revisi tahap 2)",
+    "catatan": "QC: hukum dan konstitusi langsung mengarah ke UUD 1945; aspirasi tidak dipakai; tips jawabannya pasti UUD 1945 terlalu mutlak. Diubah: fokus dipilih pada kepatuhan terhadap dasar hukum, dan aspirasi warga menjadi pengecoh yang sah (kedaulatan rakyat) dengan pembatas pada pertanyaan; taksonomi diganti dari empat pilar plus Ketetapan MPR (bukan pilar) menjadi lima prinsip ketatanegaraan satu tingkat; stimulus tidak lagi memuat frasa hukum dan konstitusi; tip diganti cara membaca. Catatan: konstruk berpindah dari pilar ke prinsip ketatanegaraan tetapi tetap KD Pilar Negara. Putaran 3 (telaah penelaah-twk dan simulasi buta): Pleonasme sebelum ... terlebih dahulu dihapus; frasa pertanyaan dijadikan frasa benda; pembahasan ditutup dengan alasan kunci."
+  },
+  "twk-ref-3-5": {
+    "topic": "Pilar Negara",
+    "subtopic": "UUD 1945: Pasal Kunci dan Pokok Pikiran Pembukaan",
+    "bloom": "C2",
+    "difficulty": "mudah",
+    "difficultyReason": "Hubungan Pasal 29 ayat (2) dengan sila pertama langsung; sila kedua dan ketiga tampak masuk akal tetapi tidak paling langsung. Label diturunkan ke mudah.",
+    "stem": "Pasal 29 ayat (2) UUD 1945 menyatakan bahwa negara menjamin kemerdekaan tiap-tiap penduduk untuk memeluk agamanya masing-masing dan untuk beribadat menurut agamanya dan kepercayaannya itu. Sila Pancasila yang menjadi landasan nilai paling langsung bagi jaminan tersebut adalah ...",
+    "options": [
+      {
+        "text": "Persatuan Indonesia",
+        "reason": "Sila ini terkait kerukunan dan keutuhan bangsa, sedangkan pasal tidak mengatur hubungan antarkelompok; yang dijamin adalah kebebasan memeluk agama dan beribadat."
+      },
+      {
+        "text": "Ketuhanan Yang Maha Esa",
+        "reason": "Jaminan memeluk agama dan beribadat bertumpu pada pengakuan bangsa yang berketuhanan; menghormati kebebasan beribadah adalah butir pengamalan sila pertama."
+      },
+      {
+        "text": "Keadilan Sosial bagi Seluruh Rakyat Indonesia",
+        "reason": "Sila ini terkait pemerataan kesejahteraan dan tidak berhubungan dengan jaminan memeluk agama."
+      },
+      {
+        "text": "Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan",
+        "reason": "Sila ini terkait pengambilan keputusan melalui permusyawaratan dan perwakilan, bukan jaminan kebebasan beragama."
+      },
+      {
+        "text": "Kemanusiaan yang Adil dan Beradab",
+        "reason": "Sila ini memang melandasi penghormatan hak asasi, termasuk kebebasan beragama sebagai hak, tetapi belum paling langsung; objek pasal adalah hubungan penduduk dengan agama dan kepercayaannya, yang menjadi ranah sila pertama."
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep dalam soal ini menekankan hubungan antara nilai Pancasila (sila) dan jaminan konstitusional (pasal), pasangan yang sering tertukar. Objek jaminan Pasal 29 ayat (2) adalah kemerdekaan tiap penduduk memeluk agama dan beribadat menurut agama dan kepercayaannya, yaitu hubungan manusia dengan Tuhan. Pasal 29 ayat (1) pun menegaskan bahwa negara berdasar atas Ketuhanan Yang Maha Esa. Sila kemanusiaan juga melindungi martabat dan hak asasi, tetapi bukan landasan yang paling langsung bagi jaminan beragama dan beribadat. Opsi yang paling tepat adalah “Ketuhanan Yang Maha Esa” karena nilai sila itulah yang dijabarkan langsung menjadi jaminan dalam Pasal 29 ayat (2).",
+    "tip": "Tentukan apa yang dijamin oleh pasal itu, apakah hubungan dengan Tuhan, antarmanusia, atau antarkelompok, lalu cari sila yang nilainya mengatur hubungan tersebut.",
+    "rujukan": "QC akademik TWK, SKD-01 nomor 10 (revisi tahap 2)",
+    "catatan": "QC (dirombak): pilihan tidak sejajar (sila, bentuk negara, sistem ekonomi, gabungan Bhinneka dengan sila pertama) dan pertanyaan pilar belum membatasi tingkat konsep. Dipilih konstruk sila Pancasila (bukan prinsip keberagaman); kelima opsi kini lima sila; pertanyaan dibatasi menjadi landasan nilai paling langsung bagi jaminan Pasal 29 ayat (2); kunci diganti dari gabungan Bhinneka dan sila pertama menjadi sila pertama saja; pembahasan diselaraskan; label sulit diturunkan menjadi sedang C2. Putaran 3 (telaah penelaah-twk dan simulasi buta): Opsi Kerakyatan ditulis lengkap; label turun ke C2 mudah; alasan sila kedua mengakui kaitan hak asasi tetapi belum paling langsung."
+  },
+  "twk-ref-3-6": {
+    "topic": "Pilar Negara",
+    "subtopic": "Pengamalan Sila-Sila Pancasila",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta membedakan tujuan yang dijaga (persatuan) dari cara yang ditempuh (musyawarah) dan dari hal yang tidak disentuh; lima sila sejajar.",
+    "stem": "Pemuda dari dua desa bertetangga di sebuah kecamatan beberapa kali berkelahi setelah saling mengejek dalam pertandingan sepak bola antardesa. Camat kemudian mengundang tokoh kedua desa untuk bermusyawarah. Hasilnya, kedua desa sepakat membentuk satu kesebelasan gabungan yang mewakili kecamatan dalam turnamen tingkat kabupaten. Tujuan yang hendak dicapai melalui kesepakatan tersebut paling langsung bersumber dari sila ...",
+    "options": [
+      {
+        "text": "Kemanusiaan yang Adil dan Beradab",
+        "reason": "Ejekan menyinggung sikap saling menghormati, tetapi isi kesepakatan bukan pemulihan martabat, melainkan penyatuan kedua desa dalam satu tim."
+      },
+      {
+        "text": "Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan",
+        "reason": "Musyawarah adalah cara yang ditempuh camat dan memang mencerminkan sila keempat, tetapi yang ditanyakan adalah tujuan kesepakatan."
+      },
+      {
+        "text": "Persatuan Indonesia",
+        "reason": "Kesebelasan gabungan yang mewakili kecamatan menyatukan dua desa yang berselisih; tujuan menjaga kedua desa tetap satu itulah nilai sila Persatuan Indonesia."
+      },
+      {
+        "text": "Keadilan Sosial bagi Seluruh Rakyat Indonesia",
+        "reason": "Kasus tidak menyangkut pembagian kesejahteraan atau sumber daya sehingga keadilan sosial bukan pokok tujuan kesepakatan."
+      },
+      {
+        "text": "Ketuhanan Yang Maha Esa",
+        "reason": "Kasus tidak menyangkut kehidupan beragama atau hubungan antarumat beragama."
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep dalam soal ini menekankan pembedaan antara tujuan dan cara dalam pengamalan Pancasila. Stimulus memuat tiga bagian: perkelahian yang memecah pemuda dua desa, musyawarah sebagai cara penyelesaian, dan kesepakatan untuk menyatukan kedua desa dalam satu kesebelasan yang mewakili wilayah bersama. Opsi yang paling tepat adalah Persatuan Indonesia karena tujuan kesepakatan itu adalah merekatkan kembali kelompok yang terpecah menjadi satu kesatuan, sejalan dengan butir pengamalan sila ketiga tentang memajukan pergaulan demi persatuan dan kesatuan bangsa. Pengecoh terdekat, sila keempat, memang tercermin dalam musyawarah yang ditempuh, tetapi pertanyaan menanyakan tujuan kesepakatan, bukan cara mencapainya.",
+    "tip": "Pisahkan tiga hal dalam kasus, yaitu masalah, cara penyelesaian, dan isi kesepakatan, lalu cocokkan sila dengan bagian yang ditanyakan.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 18 (revisi tahap 2)",
+    "catatan": "QC (dirombak): mediasi konflik agama dapat mencerminkan Bhinneka maupun Pancasila; pembahasan menolak Pancasila hanya karena lebih luas; pertanyaan belum menyediakan pembatas; hapus tips bahwa konflik agama selalu dijawab Bhinneka. Dipilih konstruk sila Pancasila (bukan prinsip keberagaman); pembatas dalam stimulus (tim tidak membahas ajaran; yang ditangani hubungan komunitas sebagai sesama warga) dan pada pertanyaan (tujuan yang dijaga); kelima opsi sila (sejajar); tidak ada alasan menolak pilihan karena lebih luas; tip lama dihapus. Risiko: tetap ada kemungkinan sebagian peserta menimbang sila pertama; pembatas stimulus dibuat sekuat mungkin. Putaran 3 (telaah penelaah-twk dan simulasi buta): Konteks diganti dari konflik antarumat beragama ke perselisihan antardesa (pertandingan sepak bola) dengan hasil kesebelasan gabungan sehingga hanya satu sila yang sah; ambiguitas Persatuan dan Ketuhanan (QC akademik SKD-02 #18) hilang tanpa menyalahkan pilihan lain karena lebih luas; opsi Kerakyatan ditulis lengkap; koma pada cara cepat."
+  },
+  "twk-ref-3-7": {
+    "topic": "Pilar Negara",
+    "subtopic": "Penerapan Pilar pada Kasus Aktual",
+    "bloom": "C4",
+    "difficulty": "sulit",
+    "difficultyReason": "Peserta sendiri menurunkan kebutuhan kasus (menjawab narasi pemecah dan menjangkau warga desa yang sulit sinyal) dari dua pokok pikiran Pembukaan; lima kebijakan masuk akal. Belum dikalibrasi dari peserta.",
+    "stem": "Menjelang pemilihan kepala daerah di sebuah kabupaten, narasi provokatif yang memecah warga berdasarkan asal daerah beredar luas di media sosial. Jaringan internet di kabupaten itu tidak merata: warga kota cepat menerima klarifikasi resmi, sedangkan warga desa terpencil sulit memperoleh sinyal dan lebih banyak mengandalkan cerita dari mulut ke mulut serta pertemuan di balai desa. Pemerintah daerah menyusun kebijakan dengan mengacu pada pokok pikiran Pembukaan UUD 1945 tentang persatuan dan keadilan sosial. Kebijakan yang paling sesuai dengan kedua pokok pikiran tersebut adalah ...",
+    "options": [
+      {
+        "text": "Mengirim petugas ke kampung-kampung untuk memberikan penjelasan pemerintah secara tatap muka dan melatih tokoh masyarakat memeriksa kabar.",
+        "reason": "Penjelasan tatap muka di kampung dan pelatihan tokoh masyarakat meluruskan narasi pemecah melalui saluran yang memang dipakai warga desa terpencil; persatuan dan keadilan sosial terpenuhi bersama."
+      },
+      {
+        "text": "Membentuk tim pemantau pemerintah daerah untuk menurunkan konten provokatif dengan cepat dan mengumumkan jumlah konten yang ditindak setiap pekan.",
+        "reason": "Menurunkan konten menjawab narasi pemecah di media sosial, tetapi tidak membantu warga desa yang tidak terjangkau internet; pemerataan belum terpenuhi."
+      },
+      {
+        "text": "Bekerja sama dengan platform media sosial untuk memverifikasi akun penyebar kampanye dan menelusuri sumber narasi provokatif di jaringan mereka.",
+        "reason": "Penelusuran sumber membantu menindak penyebar, tetapi tidak menyampaikan penjelasan kepada warga yang belum menerima klarifikasi."
+      },
+      {
+        "text": "Menggelar debat terbuka antarkandidat yang disiarkan langsung secara daring dan memutar ulang rekamannya di kanal resmi.",
+        "reason": "Debat membantu warga menilai kandidat, tetapi tidak meluruskan narasi pemecah, dan siaran daring tidak menjangkau warga tanpa sinyal."
+      },
+      {
+        "text": "Membuka pusat informasi pemilihan di ibu kota kabupaten dan menyediakan petugas penjelas yang melayani warga setiap hari.",
+        "reason": "Petugas penjelas dapat meluruskan narasi, tetapi lokasinya di ibu kota kabupaten membuat warga desa terpencil sulit memanfaatkannya; aksesnya setara secara formal, belum secara nyata."
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep dalam soal ini menekankan penerapan dua pokok pikiran Pembukaan UUD 1945: negara melindungi segenap bangsa dengan berdasar atas persatuan, dan negara hendak mewujudkan keadilan sosial bagi seluruh rakyat. Dalam kasus, ancaman terhadap persatuan berupa narasi yang memecah warga, sedangkan masalah keadilan berupa akses informasi yang timpang antara warga kota dan warga desa terpencil. Kebijakan yang sesuai harus meluruskan narasi pemecah sekaligus memastikan warga tanpa internet memperoleh penjelasan yang setara. Pusat informasi di ibu kota kabupaten tampak terbuka bagi semua, tetapi hanya setara secara formal. Penurunan konten dan penelusuran akun menjawab narasi, tetapi tidak menjangkau warga yang belum menerima klarifikasi. Opsi yang paling tepat adalah “mengirim petugas ke kampung-kampung … dan melatih tokoh masyarakat memeriksa kabar” karena hanya kebijakan itu yang sekaligus menjaga persatuan dan memeratakan akses informasi.",
+    "tip": "Terjemahkan tiap pokok pikiran yang disebut menjadi kebutuhan nyata dalam kasus, lalu uji setiap kebijakan terhadap kedua kebutuhan itu sekaligus.",
+    "rujukan": "QC akademik TWK, SKD-01 nomor 14 (revisi tahap 2)",
+    "catatan": "QC: pengecoh ekstrem, kunci paket kebijakan paling lengkap, Pemilu Daerah 2025 dan klaim lembaga tanpa konteks, verifikasi AI tanpa batasan. Diubah: kasus hipotetis tanpa klaim waktu/lembaga; AI dihapus (pilihan QC); lima kebijakan sebanding dan masuk akal. Putaran 2: dua kriteria ditulis dalam pertanyaan; fakta radio lokal dihapus dari stimulus dan diganti sulit sinyal sehingga kunci tidak mengulang kata stimulus; semua opsi berisi dua tindakan; tidak ada kata bernada negatif pada opsi. Putaran 3 (telaah penelaah-twk dan simulasi buta): Kalimat kriteria dihapus; keadaan warga desa menjadi fakta (sulit sinyal, cerita dari mulut ke mulut, balai desa); kata menjangkau dan desa tidak lagi berada di kunci; frasa berbahasa setempat dihapus; pesan berantai diganti agar konsisten dengan sulit sinyal; koma sebelum tetapi diperbaiki."
+  },
+  "twk-ref-3-8": {
+    "topic": "Pilar Negara",
+    "subtopic": "UUD 1945: Pasal Kunci dan Pokok Pikiran Pembukaan",
+    "bloom": "C2",
+    "difficulty": "mudah",
+    "difficultyReason": "Peserta memahami bunyi Pasal 26 ayat (1) dan membedakannya dari empat kekeliruan: instrumen, kelompok, cara, dan otomatisasi.",
+    "stem": "Pasal 26 ayat (1) UUD 1945 menyatakan bahwa yang menjadi warga negara ialah orang-orang bangsa Indonesia asli dan orang-orang bangsa lain yang disahkan dengan undang-undang sebagai warga negara. Kesimpulan yang sesuai dengan bunyi ketentuan tersebut adalah ...",
+    "options": [
+      {
+        "text": "Orang bangsa lain menjadi warga negara apabila disahkan dengan peraturan daerah tempat tinggalnya.",
+        "reason": "Ketentuan menyebut pengesahan dengan undang-undang, bukan peraturan daerah; peraturan daerah tidak dapat menetapkan kewarganegaraan."
+      },
+      {
+        "text": "Orang bangsa Indonesia asli menjadi warga negara apabila statusnya disahkan dengan undang-undang.",
+        "reason": "Pengesahan dengan undang-undang disebut bagi orang bangsa lain; orang bangsa Indonesia asli disebut sebagai warga negara tanpa syarat pengesahan itu."
+      },
+      {
+        "text": "Orang bangsa Indonesia asli dan orang bangsa lain menjadi warga negara melalui cara yang sama.",
+        "reason": "Ketentuan membedakan keduanya: orang bangsa lain memerlukan pengesahan dengan undang-undang, sedangkan orang bangsa Indonesia asli tidak."
+      },
+      {
+        "text": "Orang bangsa lain menjadi warga negara dengan sendirinya setelah lama tinggal di Indonesia.",
+        "reason": "Ketentuan tidak mengenal kewarganegaraan dengan sendirinya; orang bangsa lain menjadi warga negara melalui pengesahan."
+      },
+      {
+        "text": "Orang bangsa lain menjadi warga negara melalui pengesahan dengan undang-undang.",
+        "reason": "Sesuai bunyi ketentuan: orang bangsa lain menjadi warga negara apabila disahkan dengan undang-undang."
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep dalam soal ini menekankan bunyi Pasal 26 ayat (1) UUD 1945 tentang siapa yang menjadi warga negara. Ketentuan, yang dikutip dari naskah UUD 1945 sebagaimana tertulis, membedakan dua kelompok: orang-orang bangsa Indonesia asli, yang menjadi warga negara, dan orang-orang bangsa lain, yang menjadi warga negara apabila disahkan dengan undang-undang. Kesimpulan yang tepat adalah orang bangsa lain menjadi warga negara melalui pengesahan dengan undang-undang. Pengesahan dengan peraturan daerah salah instrumen, pengesahan bagi orang Indonesia asli menukar kelompok, menyamakan cara kedua kelompok mengabaikan pembedaan dalam teks, dan kewarganegaraan dengan sendirinya tidak dikenal dalam ketentuan.",
+    "tip": "Pisahkan kelompok yang disebut dalam pasal, lalu periksa setiap pernyataan: kepada siapa syarat dikenakan dan dengan bentuk aturan apa.",
+    "rujukan": "Telaah penelaah-twk dan simulasi peserta atas bank riset (butir di luar paket QC; revisi tahap 2)",
+    "catatan": "Koordinator: kunci berupa tafsir maksud perumus. Diubah: soal diganti pemahaman bunyi Pasal 26 ayat (1) (kutipan dari naskah UUD 1945 yang berlaku); kunci kini kesimpulan yang dapat diperiksa pada teks; pengecoh berupa mekanisme lain yang masuk akal (lama tinggal, keputusan presiden, peraturan pemerintah) atau pertukaran kelompok; konsep persatuan dihapus karena tidak dapat dibuktikan dari teks. Risiko: frasa orang-orang bangsa Indonesia asli adalah kutipan resmi tetapi dapat dianggap sensitif; bila dipakai, pembahasan sebaiknya menyebutnya sebagai kutipan. Putaran 3 (telaah penelaah-twk dan simulasi buta): Dua pengecoh yang benar menurut hukum pelaksana (keputusan presiden, lama tinggal) diganti kekeliruan yang salah menurut teks dan hukum (peraturan daerah, kelompok tertukar, cara sama, otomatis); pembahasan menyebut kutipan sebagai naskah resmi. Telaah akhir: kata dapat dihapus dari kunci; pengecoh memakai frasa orang bangsa Indonesia asli agar paralel dengan kutipan."
+  },
+  "twk-ref-4-1": {
+    "topic": "Bahasa Negara",
+    "subtopic": "Kalimat efektif dan tidak efektif",
+    "bloom": "C2",
+    "difficulty": "mudah",
+    "difficultyReason": "Mengenali kalimat efektif dari empat kalimat yang memuat pleonasme atau frasa boros; pengukur dasar. Risiko: seluruh pengecoh mengandalkan pengulangan atau pemborosan kata sehingga jenis kesalahan kurang bervariasi.",
+    "rujukan": "Telaah label penelaah-twk atas bank riset (isi soal tidak diubah; revisi tahap 2)",
+    "catatan": "Label akademik (KD, subtopik, Bloom, kesulitan, alasan kesulitan) diperbarui; teks soal dan kunci tetap seperti hasil ekstraksi."
+  },
+  "twk-ref-4-2": {
+    "topic": "Bahasa Negara",
+    "subtopic": "Makna kata dan ungkapan dalam konteks",
+    "bloom": "C2",
+    "difficulty": "mudah",
+    "difficultyReason": "Menentukan makna kata dari konteks paragraf pendek (memahami); pengecoh berupa bagian atau sarana dari kesejahteraan. Label mudah tepat. Catatan: subtopik ini tidak ada pada mapping Bahasa Negara; kunci sedikit lebih panjang dari pengecoh.",
+    "rujukan": "Telaah label penelaah-twk atas bank riset (isi soal tidak diubah; revisi tahap 2)",
+    "catatan": "Label akademik (KD, subtopik, Bloom, kesulitan, alasan kesulitan) diperbarui; teks soal dan kunci tetap seperti hasil ekstraksi."
+  },
+  "twk-ref-4-3": {
+    "topic": "Bahasa Negara",
+    "subtopic": "Kalimat efektif dan tidak efektif",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta memeriksa kehematan, kelogisan, dan kesetiaan pada makna asal; tiap pengecoh memuat kesalahan berbeda dan semuanya mempertahankan makna dan waktu kecuali yang menggeser tujuan.",
+    "stem": "Kalimat berikut digunakan dalam laporan resmi pemerintah.\n“Panitia akan segera menyelesaikan dan mengerjakan penyusunan laporan kegiatan yang sudah dilaksanakan.”\nKalimat tersebut belum efektif. Perbaikan yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Panitia akan segera menyelesaikan dan mengerjakan laporan kegiatan yang sudah dilaksanakan.",
+        "reason": "Dua kata kerja untuk satu pekerjaan masih dipertahankan sehingga kalimat tetap boros dan urutannya tidak logis."
+      },
+      {
+        "text": "Panitia akan segera menyelesaikan laporan kegiatan yang sudah dilaksanakan.",
+        "reason": "Satu kata kerja menyelesaikan sudah cukup; pelaku, waktu, dan keterangan kegiatan tetap, dan hubungan antarkata logis."
+      },
+      {
+        "text": "Panitia akan segera menyelesaikan laporan daripada kegiatan yang sudah dilaksanakan.",
+        "reason": "Kata daripada dipakai untuk membandingkan; di sini cukup “laporan kegiatan” tanpa kata depan, jadi perbaikan ini menimbulkan kesalahan diksi baru."
+      },
+      {
+        "text": "Panitia akan segera menyelesaikan laporan yang sudah dilaksanakan.",
+        "reason": "Tidak logis karena yang sudah dilaksanakan adalah kegiatan, bukan laporan."
+      },
+      {
+        "text": "Panitia akan segera mengerjakan laporan kegiatan.",
+        "reason": "Hemat, tetapi maknanya bergeser: menyelesaikan (menuntaskan) diganti mengerjakan (melakukan), dan keterangan bahwa kegiatan sudah dilaksanakan hilang."
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep dalam soal ini menekankan kalimat efektif, yaitu hemat, logis, dan setia pada makna asal. Kalimat asal boros di dua tempat. Pertama, “menyelesaikan dan mengerjakan” memakai dua kata kerja untuk satu pekerjaan dengan urutan yang tidak logis (menuntaskan disebut sebelum melakukan). Kedua, “mengerjakan penyusunan” mengulang makna karena penyusunan sudah merupakan pekerjaan itu. Perbaikan yang tepat cukup memakai satu kata kerja, menyelesaikan, dan mempertahankan pelaku (panitia), waktu (akan segera), serta keterangan kegiatan yang sudah dilaksanakan. Opsi yang paling tepat adalah “Panitia akan segera menyelesaikan laporan kegiatan yang sudah dilaksanakan.” karena kalimat itu hemat, logis, dan tidak mengubah makna.",
+    "tip": "Periksa tiga hal pada tiap perbaikan: ada tidaknya kata yang mengulang makna, apakah pelaku dan waktu tidak berubah, dan apakah hubungan antarkata masuk akal.",
+    "rujukan": "QC akademik TWK, SKD-01 nomor 22 (revisi tahap 2)",
+    "catatan": "QC: pembahasan menolak pilihan berbentuk pasif padahal pasif bukan alasan otomatis tidak efektif; beda mengerjakan dan menyelesaikan belum dijelaskan. Diubah: tidak ada lagi opsi pasif yang dianggap salah hanya karena pasif (opsi pasif dihapus karena bentuk pasif yang benar akan menjadi kunci kedua); semua opsi mempertahankan pelaku dan makna utama kecuali pada bagian yang memang menjadi kesalahan; pembahasan menjelaskan kehematan, kelogisan, dan perbedaan mengerjakan dengan menyelesaikan; pengecoh memuat satu jenis kesalahan berbeda (pergeseran makna, ketidaklogisan, pemborosan, perubahan waktu). Putaran 3 (telaah penelaah-twk dan simulasi buta): Opsi yang menukar waktu diganti kesalahan baru (salah pakai daripada) yang mempertahankan makna dan waktu; pembahasan menyebut mengerjakan penyusunan yang boros dan urutan menyelesaikan dan mengerjakan."
+  },
+  "twk-ref-4-4": {
+    "topic": "Bahasa Negara",
+    "subtopic": "Simpulan paragraf",
+    "bloom": "C2",
+    "difficulty": "sedang",
+    "difficultyReason": "Paragraf memuat kondisi, manfaat, masalah, dan arah penyelesaian; dua pengecoh tampak lengkap tetapi menyimpang dari teks (membatasi layanan, konvensional tersingkir), jadi opsi paling lengkap tidak otomatis benar.",
+    "stem": "Di beberapa kota besar, masyarakat semakin bergantung pada transportasi daring. Layanan ini mempermudah mobilitas, tetapi juga menimbulkan masalah baru, seperti kemacetan dan persaingan tidak sehat dengan transportasi konvensional. Pemerintah dituntut mencari regulasi yang adil agar kedua moda transportasi dapat berjalan berdampingan.\n\nSimpulan yang paling tepat dari teks tersebut adalah ...",
+    "options": [
+      {
+        "text": "Transportasi daring mempermudah mobilitas, tetapi menimbulkan kemacetan dan persaingan dengan transportasi konvensional.",
+        "reason": "Kalimat ini hanya mengulang bagian paragraf tentang manfaat dan masalah. Arah penyelesaian yang menjadi tujuan paragraf tidak tercakup."
+      },
+      {
+        "text": "Manfaat dan masalah transportasi daring mengharuskan pemerintah membatasi layanan daring di kota besar.",
+        "reason": "Strukturnya lengkap, tetapi isi penyelesaiannya melampaui teks: teks meminta regulasi yang adil bagi kedua moda, bukan pembatasan layanan daring."
+      },
+      {
+        "text": "Makin luasnya penggunaan transportasi daring di kota besar menimbulkan kemacetan dan persaingan antarmoda.",
+        "reason": "Kalimat ini memuat latar dan masalah, tetapi tidak memuat manfaat maupun arah penyelesaian."
+      },
+      {
+        "text": "Manfaat dan masalah transportasi daring menuntut aturan yang adil bagi moda daring dan konvensional.",
+        "reason": "Kalimat ini merangkum manfaat dan masalah transportasi daring sekaligus arah penyelesaian berupa aturan yang adil bagi kedua moda, sesuai paragraf."
+      },
+      {
+        "text": "Transportasi konvensional akan tersingkir dari kota-kota besar bila regulasi yang adil terlambat disusun pemerintah.",
+        "reason": "Kalimat ini membuat ramalan pasti yang tidak dinyatakan teks. Teks hanya menyebut tuntutan regulasi, bukan akibat bila regulasi tidak dibuat."
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep dalam soal ini menekankan simpulan paragraf, yaitu pernyataan yang memadukan gagasan-gagasan teks tanpa melampauinya. Paragraf bergerak dari latar (ketergantungan pada transportasi daring), ke manfaat dan masalah yang menyertainya, lalu ke tuntutan penyelesaian berupa regulasi yang adil agar kedua moda berjalan berdampingan. Opsi yang paling tepat adalah pernyataan bahwa manfaat dan masalah transportasi daring menuntut aturan yang adil bagi moda daring dan konvensional karena pernyataan itu memadukan manfaat, masalah, dan arah penyelesaian persis seperti dalam teks. Pengecoh terdekat, pernyataan bahwa pemerintah harus membatasi layanan daring, juga memuat manfaat, masalah, dan penyelesaian, tetapi mengubah regulasi yang adil bagi kedua moda menjadi pembatasan sepihak.",
+    "tip": "Bagi paragraf menjadi latar, manfaat dan masalah, serta arah penyelesaian, lalu pilih pernyataan yang memadukan semuanya tanpa mengubah isi bagian mana pun.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 20 (revisi tahap 2)",
+    "catatan": "QC: cara cepat mengandalkan frasa penutup pemerintah dituntut; alasan B hanya detail, C hanya data terlalu singkat. Diubah: kunci merangkum manfaat, masalah, dan arah penyelesaian; alasan pengecoh menyebut bagian yang tercakup dan tidak; cara cepat diganti pemeriksaan cakupan seluruh paragraf. Putaran 2: kunci memparafrasekan berjalan berdampingan menjadi beroperasi bersama; opsi tanpa kata penjelas; empat pengecoh memuat jenis kekeliruan berbeda (tanpa penyelesaian, hanya masalah, hanya kondisi awal, melampaui teks). Putaran 3 (telaah penelaah-twk dan simulasi buta): Pengecoh diganti: dua opsi lengkap tetapi menyimpang atau memuat sebagian; kata mutlak pasti dihapus; kunci memakai aturan yang adil (parafrase regulasi); kerangka pembahasan diselaraskan dengan isi opsi."
+  },
+  "twk-ref-4-5": {
+    "topic": "Bahasa Negara",
+    "subtopic": "Simpulan paragraf",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta memilih simpulan yang memuat kesenjangan dan keterbatasan program tanpa menggeneralisasi; pengecoh menggeneralisasi atau memilih satu detail. Label sulit lama diturunkan ke sedang karena simpulan masih dapat dikenali dari teks. Risiko: tiga pengecoh bernada melebihi teks sehingga mudah dikenali.",
+    "rujukan": "QC akademik #2 (3 Nov 2026): alasan empat opsi nonkunci kosong di sumber",
+    "catatan": "Ditambahkan alasan spesifik untuk empat opsi nonkunci, pembahasan paragraf, dan cara cepat sesuai standar twk-standar; opsi B diperpanjang tanpa mengubah maknanya agar kunci bukan satu-satunya opsi terpanjang. Teks soal, kunci, dan label tidak berubah.",
+    "stem": "Bacalah teks berikut:\n\nBanyak sekolah di daerah pedalaman Indonesia masih kekurangan guru dan fasilitas belajar. Kondisi ini berakibat pada rendahnya mutu pendidikan dan memperlebar kesenjangan kualitas sumber daya manusia dengan daerah perkotaan. Untuk mengatasi hal tersebut, pemerintah meluncurkan program pengiriman guru ke daerah 3T (terdepan, terluar, tertinggal). Namun, program ini belum sepenuhnya efektif karena keterbatasan anggaran dan minimnya insentif bagi tenaga pendidik.\n\nJika Anda diminta memberikan kesimpulan kritis dari paragraf tersebut, pernyataan yang paling tepat adalah…",
+    "options": [
+      {
+        "text": "Pemerintah gagal meningkatkan mutu pendidikan di daerah 3T.",
+        "reason": "Teks hanya menyatakan program belum sepenuhnya efektif; menyebut pemerintah gagal mengubah derajat pernyataan sehingga simpulan melampaui teks."
+      },
+      {
+        "text": "Program pengiriman guru ke daerah 3T tidak efektif karena anggaran pemerintah terlalu kecil.",
+        "reason": "Teks menyebut program belum sepenuhnya efektif karena dua hal, yaitu keterbatasan anggaran dan minimnya insentif; opsi ini menghapus kata sepenuhnya, menyisakan satu penyebab, dan hanya merangkum kalimat terakhir."
+      },
+      {
+        "text": "Kesenjangan pendidikan masih menjadi tantangan besar meskipun ada program pemerintah.",
+        "reason": "Kalimat ini memadukan dua gagasan teks: kesenjangan mutu pendidikan masih berlangsung dan program pengiriman guru belum sepenuhnya mengatasinya."
+      },
+      {
+        "text": "Sekolah di perkotaan lebih maju daripada sekolah di pedalaman.",
+        "reason": "Perbandingan dengan perkotaan hanya latar kesenjangan, dan teks membandingkan kualitas sumber daya manusia, bukan kemajuan sekolah; upaya pemerintah beserta keterbatasannya juga tidak tercakup."
+      },
+      {
+        "text": "Mutu pendidikan rendah disebabkan kekurangan guru di semua daerah.",
+        "reason": "Teks membatasi masalah pada sekolah di daerah pedalaman dan menyebut kekurangan fasilitas; frasa semua daerah memperluas cakupan dan menyisakan satu penyebab saja."
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep dalam soal ini menekankan simpulan yang merangkum seluruh paragraf tanpa melampaui teks. Paragraf memuat dua gagasan yang saling terkait: sekolah di daerah pedalaman masih kekurangan guru dan fasilitas sehingga kesenjangan mutu dengan perkotaan melebar, dan program pengiriman guru ke daerah 3T belum sepenuhnya efektif karena anggaran terbatas dan insentif minim. Simpulan yang kritis harus memuat kedua gagasan itu dengan derajat dan cakupan yang sama dengan teks, tanpa menyatakan pemerintah gagal, menyebut satu penyebab saja, atau memperluas masalah ke semua daerah. Opsi yang paling tepat adalah “Kesenjangan pendidikan masih menjadi tantangan besar meskipun ada program pemerintah.” karena kalimat itu memadukan masalah yang masih berlangsung dengan upaya yang belum tuntas.",
+    "tip": "Uji setiap calon simpulan dengan dua pertanyaan: apakah semua gagasan pokok paragraf tercakup, dan apakah derajat serta cakupannya tidak melebihi teks."
+  },
+  "twk-ref-4-7": {
+    "topic": "Bahasa Negara",
+    "subtopic": "Simpulan paragraf",
+    "bloom": "C2",
+    "difficulty": "mudah",
+    "difficultyReason": "Paragraf tiga kalimat dengan penanda Oleh karena itu; simpulan setia pada kalimat berpenanda dan dua pengecoh adalah premis benar yang belum merupakan simpulan. Dipertahankan sebagai pengukur dasar.",
+    "stem": "Dalam era globalisasi, arus budaya asing semakin mudah masuk ke Indonesia melalui media sosial, film, dan musik. Walaupun memberi manfaat berupa wawasan baru, masuknya budaya asing juga menimbulkan tantangan bagi generasi muda dalam menjaga identitas nasional. Oleh karena itu, peran pendidikan sangat penting untuk memperkuat jati diri bangsa di tengah derasnya pengaruh global.\n\nSimpulan paragraf tersebut yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Media sosial, film, dan musik perlu diawasi pemerintah sebagai saluran utama masuknya budaya asing.",
+        "reason": "Melampaui teks: ketiga media hanya disebut sebagai saluran, dan tidak ada gagasan tentang pengawasan oleh pemerintah."
+      },
+      {
+        "text": "Generasi muda menghadapi tantangan menjaga identitas nasional akibat masuknya budaya asing.",
+        "reason": "Benar menurut teks, tetapi hanya premis yang mendahului simpulan, bukan simpulannya."
+      },
+      {
+        "text": "Generasi muda perlu menjaga jati diri bangsa dengan melestarikan budaya daerah di tengah wawasan baru dari luar.",
+        "reason": "Menambah gagasan yang tidak dinyatakan: teks menekankan peran pendidikan, bukan pelestarian budaya daerah oleh generasi muda."
+      },
+      {
+        "text": "Arus budaya asing memberi wawasan baru bagi generasi muda melalui media sosial, film, dan musik.",
+        "reason": "Benar menurut teks, tetapi hanya memuat sisi manfaat sebagai bagian dari keadaan yang dipaparkan."
+      },
+      {
+        "text": "Pendidikan sangat diperlukan untuk meneguhkan identitas bangsa di tengah manfaat dan tantangan budaya asing.",
+        "reason": "Kalimat ini setia pada penanda Oleh karena itu: pendidikan memperkuat identitas bangsa di tengah manfaat dan tantangan budaya asing sehingga mencakup seluruh paragraf."
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep dalam soal ini menekankan simpulan paragraf, yaitu pernyataan yang ditarik dari hubungan antargagasan tanpa menambah klaim di luar teks. Dua kalimat awal paragraf memaparkan keadaan: budaya asing masuk lewat media sosial, film, dan musik, membawa wawasan baru, tetapi juga menantang generasi muda dalam menjaga identitas nasional. Kalimat penutup, yang diawali “oleh karena itu”, menarik akibatnya: pendidikan sangat penting untuk memperkuat jati diri bangsa. Jawaban yang paling tepat adalah pendidikan sangat diperlukan untuk meneguhkan identitas bangsa di tengah manfaat dan tantangan budaya asing karena pernyataan ini setia pada kalimat simpulan sekaligus pada alasan yang mendahuluinya. Pengecoh terdekat adalah pernyataan tentang tantangan generasi muda: benar menurut teks, tetapi hanya premis, bukan simpulan yang ditarik.",
+    "tip": "Telusuri hubungan antarkalimat, temukan pernyataan yang ditarik sebagai akibat dari kalimat lain, lalu pilih rumusan yang setia pada pernyataan itu tanpa menambah gagasan baru.",
+    "rujukan": "Telaah penelaah-twk dan simulasi peserta atas bank riset (butir di luar paket QC; revisi tahap 2)",
+    "catatan": "Koordinator: ref-4-7 masih berpola kunci positif melawan pengecoh ekstrem (melarang, menolak semua, hanya negatif). Diubah: pengecoh menjadi kalimat yang masuk akal tetapi hanya memuat sebagian gagasan (hanya manfaat, hanya tantangan) atau melampaui teks (pengawasan pemerintah, pelestarian budaya daerah); kunci merangkum tiga gagasan tanpa mengulang kalimat penutup secara persis; tidak ada kata bernada negatif pada opsi; jenis kekeliruan tiap pengecoh berbeda; stimulus tidak diubah (bebas galat ejaan); label HOTS diturunkan ke C2 sedang. Putaran 3 (telaah penelaah-twk dan simulasi buta): Pertanyaan memakai Simpulan paragraf tersebut; kunci diparafrasekan; pembahasan membedakan premis benar tetapi belum simpulan dari kekeliruan; cara cepat diganti penelusuran hubungan sebab-akibat antarkalimat."
+  },
+  "twk-ref-4-8": {
+    "topic": "Bahasa Negara",
+    "subtopic": "Makna kata dan ungkapan dalam konteks",
+    "bloom": "C2",
+    "difficulty": "mudah",
+    "difficultyReason": "Makna ungkapan menjunjung tinggi relatif langsung; pengecoh adalah kandidat makna (harfiah, sempit, bergeser). Dipertahankan sebagai pengukur dasar.",
+    "stem": "Perhatikan kalimat berikut.\n“Setiap warga negara Indonesia wajib menjunjung tinggi bahasa Indonesia sebagai bahasa nasional.”\nMakna ungkapan “menjunjung tinggi” dalam kalimat tersebut adalah ...",
+    "options": [
+      {
+        "text": "Meletakkan di atas kepala",
+        "reason": "Ini makna harfiah kata menjunjung, padahal konteks kewajiban warga terhadap bahasa nasional menuntut makna kias."
+      },
+      {
+        "text": "Mengutamakan di atas bahasa daerah",
+        "reason": "Ungkapan itu tidak memuat perbandingan dengan bahasa lain. Pasal 32 ayat (2) UUD 1945 justru menyatakan negara menghormati dan memelihara bahasa daerah sebagai kekayaan budaya nasional."
+      },
+      {
+        "text": "Menggunakan dalam acara resmi",
+        "reason": "Penggunaan dalam acara resmi adalah salah satu wujud sikap menjunjung tinggi, bukan makna ungkapan itu."
+      },
+      {
+        "text": "Menghormati dan menaati",
+        "reason": "Ungkapan menjunjung tinggi bermakna menghormati dan menaati; dalam kalimat, kewajiban warga adalah menghormati bahasa nasional dan menaati ketentuannya."
+      },
+      {
+        "text": "Mempelajari hingga mahir",
+        "reason": "Mempelajari hingga mahir adalah upaya penguasaan bahasa. Ungkapan menjunjung tinggi menyatakan sikap, bukan tingkat kemahiran."
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep dalam soal ini menekankan makna kias ungkapan dalam konteks kalimat. Dalam KBBI V, menjunjung secara harfiah berarti membawa di atas kepala, sedangkan makna kiasnya mencakup memuliakan, menghargai, dan menaati; kata tinggi memperkuat makna kias itu. Kalimat membicarakan kewajiban warga negara terhadap bahasa nasional sehingga yang dimaksud adalah makna kias. Opsi yang paling tepat adalah menghormati dan menaati karena padanan ini dapat menggantikan ungkapan tanpa mengubah makna kalimat. Pengecoh terdekat, menggunakan dalam acara resmi, adalah wujud penerapan sikap tersebut, bukan makna ungkapannya.",
+    "tip": "Ganti ungkapan dengan setiap pilihan, lalu pertahankan pilihan yang membuat kalimat tetap bermakna sama dan bukan sekadar contoh tindakan.",
+    "rujukan": "QC akademik TWK, SKD-02 nomor 15 (revisi tahap 2)",
+    "catatan": "QC: pertanyaan menulis fungsi kata padahal yang diminta makna ungkapan; label sulit tidak sesuai. Diubah: pertanyaan menjadi Makna ungkapan menjunjung tinggi dalam kalimat tersebut adalah ...; dari dua pilihan QC dipilih menurunkan label (C2 mudah); pengecoh diganti kegiatan pembinaan bahasa yang masuk akal. Putaran 2: kata hanya dan sebanyak mungkin dihapus dari opsi; kunci memparafrasekan ungkapan menjadi padanan maknanya; kunci bukan opsi terpanjang. Putaran 3 (telaah penelaah-twk dan simulasi buta): Pengecoh diganti kandidat makna (harfiah, mengutamakan, penggunaan resmi, mempelajari); ungkapan diberi tanda petik di pertanyaan; rujukan KBBI V disebut di pembahasan (cek manual redaksi entri)."
+  }
+}

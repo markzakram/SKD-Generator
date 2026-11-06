@@ -1,8 +1,14 @@
-import { LABELS } from '@/lib/config';
+import { KURASI_AKTIF, LABELS } from '@/lib/config';
 import { hasStimulus, optionSvg, questionSvg } from '@/lib/figures';
 import type { Question } from '@/lib/types';
+import Explanation from './Explanation';
+import { explanationOf, hasOptionAnalysis } from '@/lib/explanation';
+import { academicText } from '@/lib/academic-format';
+import { keepsOptionReasons, withoutGenericReason } from '@/lib/reasons';
+import { boldAnswerLabels, isCaseSubtest, separateTip } from '@/lib/pembahasan';
 import Icon from './Icon';
 import MathText from './MathText';
+import RichText from './RichText';
 import { questionTable } from '@/lib/table';
 
 // Tombol kecil di bawah gambar untuk menyalin gambar itu saja sebagai PNG (hanya tampil bila `onCopyImage` diberikan).
@@ -19,7 +25,7 @@ export default function QuestionCard({ question: q, showAnswers, hideExplanation
       {!hideExplanation && <span className={'difficulty difficulty-' + q.difficulty}>{LABELS[q.difficulty]}{q.bloom ? ' · ' + q.bloom : ''}</span>}
     </div>
     <p className="question-stem"><MathText>{q.stem}</MathText></p>
-    {!hideExplanation&&q.mappingId&&<div className="question-provenance"><span>{q.proof.kind==='local'?'Soal baru · model lokal':q.provenance?.status==='accepted-example'?'Contoh diterima':q.provenance?'Adaptasi sumber':'Variasi baru'}</span><span>{q.provenance?q.provenance.lesson+' · Label sumber: '+q.provenance.declaredDifficulty:q.proof.kind==='local'?'Konteks dan kondisi keputusan · perlu kurasi':'Mengikuti chapter mapping'}</span></div>}
+    {!hideExplanation&&q.mappingId&&<div className="question-provenance"><span>{q.proof.kind==='local'?'Soal baru · model lokal':q.provenance?.status==='accepted-example'?'Contoh diterima':q.provenance?'Adaptasi sumber':q.kasus?'Kasus orisinal · bank':'Variasi baru'}</span><span>{q.provenance?q.provenance.lesson+' · Label sumber: '+q.provenance.declaredDifficulty:q.proof.kind==='local'?KURASI_AKTIF?'Konteks dan kondisi keputusan · perlu kurasi':'Konteks dan kondisi keputusan · perlu diperiksa':'Mengikuti chapter mapping'}</span></div>}
     {table && <div className="table-scroll"><table>{table.headers.length>0&&<thead><tr>{table.headers.map((header) => <th key={header}><MathText>{header}</MathText></th>)}</tr></thead>}<tbody>
       {table.rows.map((row, index) => <tr key={index}>{row.map((cell, i) => <td key={i}><MathText>{cell}</MathText></td>)}</tr>)}
     </tbody></table></div>}
@@ -36,15 +42,17 @@ export default function QuestionCard({ question: q, showAnswers, hideExplanation
         </>}
       </li>)}
     </ol>
+    {showAnswers && hideExplanation && <p className="answer-label answer-only">Jawaban: {String.fromCharCode(65 + q.answer)}{q.subtest === 'TKP' ? ' · ' + q.options[q.answer].score + ' poin' : ''}</p>}
     {!hideExplanation && <details className="explanation" open={showAnswers}>
       <summary><Icon name="book" size={15}/><span>Kunci & pembahasan</span><Icon name="chevron" size={14}/></summary>
-      <div className="explanation-body">
-        <p className="answer-label">Jawaban {String.fromCharCode(65 + q.answer)}{q.subtest === 'TKP' ? ' · 5 poin' : ''}</p>
-        <p className="explanation-text"><MathText>{q.explanation}</MathText></p>
-        <div className="option-reasons">{q.options.map((option, index) => <div key={index}>
-          <span>{String.fromCharCode(65 + index)}{q.subtest === 'TKP' ? ' · ' + option.score : ''}</span><p><MathText>{option.reason}</MathText></p>
-        </div>)}</div>
-        {q.tip&&<div className="quick-tip"><strong>Cara cepat</strong><p><MathText>{q.tip}</MathText></p></div>}
+      <div className={'explanation-body' + (q.subtest === 'TIU' ? ' academic-explanation' : '') + (boldAnswerLabels(q) ? '' : ' plain-labels')}>
+        <p className="answer-label">Jawaban: {String.fromCharCode(65 + q.answer)}{q.subtest === 'TKP' ? ' · 5 poin' : ''}</p>
+        <p className="explanation-heading">Pembahasan:</p>
+        <Explanation text={explanationOf(q)}/>
+        {!isCaseSubtest(q) && keepsOptionReasons(q) && q.options.some((option) => withoutGenericReason(option.reason).trim()) && !hasOptionAnalysis(q.explanation) && <div className="option-reasons">{q.options.map((option, index) => withoutGenericReason(option.reason).trim() ? <div key={index}>
+          <span>{String.fromCharCode(65 + index)}{q.subtest === 'TKP' ? ' · ' + option.score : ''}</span><p><RichText>{academicText(q, option.reason)}</RichText></p>
+        </div> : null)}</div>}
+        {separateTip(q)&&<div className="quick-tip"><strong>Cara cepat</strong><p><RichText>{separateTip(q)!}</RichText></p></div>}
         <p className="source-note">{q.source}</p>
       </div>
     </details>}

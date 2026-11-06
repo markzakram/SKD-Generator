@@ -1,6 +1,6 @@
 import { BANK, bankFor } from './bank';
 import { TOPICS } from './config';
-import { distribution } from './generate';
+import { bankSlots, distribution } from './generate';
 import { TIU_FAMILIES } from './tiu';
 import type { BlueprintRow, Difficulty, Settings, Subtest } from './types';
 import { localRecipes, usesLocal } from './local';
@@ -12,7 +12,8 @@ export function rowCapacity(settings: Settings, row: BlueprintRow): number {
     const families = TIU_FAMILIES.filter((f) => f.topic === row.topic && f.levels.includes(row.difficulty) && (!settings.subtopics.length || settings.subtopics.includes(f.topic + '::' + f.name)));
     return !families.length ? bankFor('TIU',[row.topic],row.difficulty,settings.subtopics).length : families.every((f) => f.id === 'analogi') ? 10 : 10000;
   }
-  return bankFor(row.subtest, [row.topic], row.difficulty, settings.subtopics).length;
+  // Butir sekelompok eksklusif (soal TWK yang tidak boleh satu paket) menyumbang satu slot per paket, bukan sebanyak butirnya.
+  return bankSlots(bankFor(row.subtest, [row.topic], row.difficulty, settings.subtopics), settings.uniqueAcross ? settings.packages : 1);
 }
 export function checkBlueprint(rows: BlueprintRow[], settings: Settings): string[] {
   const errors: string[] = [], keys = new Set<string>();

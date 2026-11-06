@@ -1,8 +1,9 @@
 import { useEffect, useRef } from 'react';
 
-type Actions = { next: () => void; prev: () => void; approve: () => void; revise: () => void };
+type Actions = { next: () => void; prev: () => void; approve?: () => void; revise?: () => void };
 
-// Pintasan papan ketik Ruang kurasi: J soal berikutnya, K sebelumnya, A setujui, R tandai perlu revisi.
+// Pintasan papan ketik Hasil paket / Ruang kurasi: J soal berikutnya, K sebelumnya, A setujui, R tandai perlu revisi.
+// A dan R hanya aktif bila `approve` dan `revise` diberikan (saat kurasi dimatikan keduanya tidak diberikan, jadi tombolnya dibiarkan untuk browser).
 // Handler terbaru disimpan di ref supaya listener window cukup dipasang sekali tanpa closure basi.
 export default function useReviewShortcuts(actions: Actions) {
   const latest = useRef(actions);
@@ -16,8 +17,8 @@ export default function useReviewShortcuts(actions: Actions) {
       const key = e.key.toLowerCase();
       if (key === 'j') latest.current.next();
       else if (key === 'k') latest.current.prev();
-      else if (key === 'a' && !e.repeat) latest.current.approve();
-      else if (key === 'r' && !e.repeat) latest.current.revise();
+      else if (key === 'a' && !e.repeat && latest.current.approve) latest.current.approve();
+      else if (key === 'r' && !e.repeat && latest.current.revise) latest.current.revise();
       else return;
       e.preventDefault();
     };

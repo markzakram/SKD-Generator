@@ -1,4 +1,5 @@
 import { normalizeSettings } from './generate';
+import { newId } from './id';
 import { initializeResult } from './quality';
 import { auditQuestion } from './validate';
 import { BANK_MAP } from './bank';
@@ -44,5 +45,5 @@ export function readBackup(text: string): Workspace {
   }
   const result = validResult({ ...value, audit: value.audit });
   const at = new Date().toISOString();
-  return { schema: 2, id: crypto.randomUUID(), name: result.settings.title, version: 1, createdAt: at, updatedAt: at, result, snapshots: [] };
+  return { schema: 2, id: newId(), name: result.settings.title, version: 1, createdAt: at, updatedAt: at, result, snapshots: [] };
 }

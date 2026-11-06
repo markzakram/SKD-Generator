@@ -9,6 +9,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { unzipSync, zlibSync } from 'fflate';
 import QuestionCard from '../components/QuestionCard';
 import { DEFAULT_SETTINGS } from '../lib/config';
+import { explanationOf, parseExplanation } from '../lib/explanation';
 import { pdfBlob, wordBlob } from '../lib/export';
 import { fingerprint, generate, normalizeSettings } from '../lib/generate';
 import { hasStimulus, optionSvg, questionSvg, solveFigure } from '../lib/figures';
@@ -23,6 +24,8 @@ import { inferHidden, matchPrediction, readScene } from '../lib/figural/infer';
 import { explain } from '../lib/figural/ops';
 import { LEAK, STEMS } from '../lib/figural/stems';
 import { diffScenes, flipScene, mk, rotateScene, rotationBetween, sameScene, scene } from '../lib/figural/scene';
+import { solveScene } from '../lib/figural';
+import { mathParts } from '../lib/math';
 
 type Check = (condition: unknown, message: string) => void;
 const FAMILIES = ['fig-analogi', 'fig-odd', 'fig-serial', 'fig-matrix'] as const;
@@ -51,6 +54,8 @@ const fnv = (text: string) => { let h = 2166136261; for (let i = 0; i < text.len
 // PNG putih polos berukuran w x h, diberi penanda unik agar tiap gambar berbeda; cukup untuk memeriksa jalur penyisipan
 // gambar di Word dan PDF tanpa peramban (pustaka docx membuang gambar yang isinya persis sama).
 export function solidPng(width: number, height: number, tag: string): Uint8Array {
+  // Canvas dimensions are unsigned integers in a browser; emulate that coercion.
+  width = Math.max(1, Math.floor(width)); height = Math.max(1, Math.floor(height));
   const chunk = (type: string, data: Uint8Array) => {
     const out = new Uint8Array(12 + data.length), view = new DataView(out.buffer);
     view.setUint32(0, data.length); for (let i = 0; i < 4; i++) out[4 + i] = type.charCodeAt(i);
@@ -176,7 +181,7 @@ export async function runFiguralChecks(check: Check): Promise<Record<string, unk
         check(q.proof.kind === 'scene' && q.options.length === 5 && q.options.every((o) => o.scene && /^Gambar \d$/.test(o.text)), 'Opsi figural harus berupa lima gambar');
         check(STEMS[kind].includes(q.stem) && !LEAK.test(q.stem), family + ': kalimat soal harus baku dan tidak membocorkan aturan: ' + q.stem);
         check(!lettersInText.test(q.explanation + ' ' + q.options.map((o) => o.reason).join(' ')), family + ': pembahasan tidak boleh menyebut huruf opsi');
-        check(new Set(q.options.map((o) => o.reason)).size === 5 && q.options.every((o) => o.reason.length > 40), family + ': alasan setiap opsi harus ada dan berbeda');
+        check(q.options.every((o) => o.reason === ''), family + ': soal figural tidak memuat alasan per opsi (Figural Analogi bukan pengecualian)');
         check(q.explanation.length > 120 && visual.rule!.aturan.length > 0, family + ': pembahasan harus menguraikan aturan');
         const svg = questionSvg(q, true), problem = wellFormed(svg);
         check(!problem, family + ': SVG tidak sah: ' + problem);
@@ -191,7 +196,6 @@ export async function runFiguralChecks(check: Check): Promise<Record<string, unk
           q.options.forEach((option, i) => {
             if (i === q.answer) return;
             check(!sameScene(option.scene!, key), family + ': pengecoh tidak boleh sama dengan kunci');
-            check(/^Gambar ini berbeda dari gambar yang benar: .+/.test(option.reason), family + ': alasan pengecoh harus menyebut selisih konkret: ' + option.reason);
           });
         }
         if (kind === 'serial' || kind === 'matriks') {
@@ -261,11 +265,14 @@ export async function runFiguralChecks(check: Check): Promise<Record<string, unk
   const sample = packs[0].questions.filter((q) => q.visual);
   for (const q of sample.slice(0, 12)) {
     const html = renderToStaticMarkup(createElement(QuestionCard, { question: q, showAnswers: true }));
-    const svgCount = (html.match(/<svg xmlns=/g) ?? []).length, expected = 5 + (hasStimulus(q) ? 1 : 0);
+    // Gambar stimulus dan lima opsi, ditambah satu SVG untuk tiap diagram beranotasi pada pembahasan (lib/figural/annotate.ts).
+    const diagrams = (parseExplanation(explanationOf(q)) ?? []).filter((block) => block.k === 'figure').length;
+    const svgCount = (html.match(/<svg xmlns=/g) ?? []).length, expected = 5 + (hasStimulus(q) ? 1 : 0) + diagrams;
     check(svgCount === expected && !/NaN|undefined/.test(html), 'Kartu soal figural harus menggambar ' + expected + ' SVG, bukan ' + svgCount);
-    check(html.includes('Jawaban ' + String.fromCharCode(65 + q.answer)), 'Kartu soal harus menampilkan kunci jawaban');
+    check(html.includes('Jawaban: ' + String.fromCharCode(65 + q.answer)), 'Kartu soal harus menampilkan kunci jawaban');
     const hidden = renderToStaticMarkup(createElement(QuestionCard, { question: q, showAnswers: false, hideExplanation: true }));
-    check(!hidden.includes(q.explanation.slice(0, 60)) && !hidden.includes(q.options[0].reason.slice(0, 60)), 'Kartu untuk peserta tidak boleh memuat pembahasan');
+    check(!hidden.includes(q.explanation.slice(0, 60)), 'Kartu untuk peserta tidak boleh memuat pembahasan');
+    check(!html.includes('option-reasons'), 'Kartu soal tanpa alasan opsi tidak menampilkan daftar alasan kosong');
   }
 
   // 9. Ekspor Word dan PDF memakai gambar figural yang dirasterkan.
@@ -306,5 +313,38 @@ export async function runFiguralChecks(check: Check): Promise<Record<string, unk
   check(hasStimulus(legacy) && !wellFormed(questionSvg(legacy)) && questionSvg(legacy).includes('rotate('), 'Soal figural lama harus tetap digambar');
   const brokenLegacy = clone(legacy); brokenLegacy.options[0].figure!.count += 1;
   check(auditQuestion(brokenLegacy).length > 0, 'Soal figural lama yang dirusak tetap ditolak');
+
+  // 12. QC akademik #2 (soal 65): kunci figural profil tryout tidak menumpuk di A. Per paket, delapan butir figural tersebar (setiap huruf paling banyak 2 kali),
+  // label "Gambar n" mengikuti posisi, kunci terbukti ulang dari gambar, dan tag pembahasan menyebut huruf kunci yang sama.
+  const keyTotals = [0, 0, 0, 0, 0];
+  for (const tiuSource of ['accepted', 'variation'] as const) for (const seed of ['JADIASN-2027', 'sebaran-kunci-1', 'sebaran-kunci-2']) {
+    for (const pack of generate(normalizeSettings({ ...DEFAULT_SETTINGS, profile: 'tryout-2027', tiuSource, packages: 2, seed }))) {
+      const figs = pack.questions.filter((q) => (FAMILIES as readonly string[]).includes(q.family));
+      const perLetter = [0, 1, 2, 3, 4].map((at) => figs.filter((q) => q.answer === at).length);
+      perLetter.forEach((n, at) => { keyTotals[at] += n; });
+      check(figs.length === 8 && Math.max(...perLetter) <= 2, 'Sebaran kunci figural ' + tiuSource + '/' + seed + '/' + pack.id + ' harus merata (A–E: ' + perLetter.join(', ') + ')');
+      for (const q of figs) {
+        const letter = String.fromCharCode(65 + q.answer), tags = [...explanationOf(q).matchAll(/Sesuai dengan gambar pada opsi ([A-E])/g)].map((m) => m[1]);
+        check(q.options.every((o, i) => o.text === 'Gambar ' + (i + 1) && (o.score === 5) === (i === q.answer)), 'Label dan skor opsi figural mengikuti posisi barunya: ' + q.id);
+        check(solveScene(q).answer === q.answer && tags.length > 0 && tags.every((t) => t === letter), 'Kunci figural yang dipindah tetap terbukti dan pembahasannya menyebut opsi ' + letter + ': ' + q.id);
+      }
+    }
+  }
+  check(keyTotals.every((n) => n >= 6), 'Kunci figural muncul di semua huruf A–E (' + keyTotals.join(', ') + ')');
+  report.figuralKeys = keyTotals;
+
+  // 13. QC akademik #2 (soal 64): garis miring berspasi di antara dua angka (pemisah daftar/baris) tidak menjadi pecahan; "5/3" tanpa spasi tetap pecahan.
+  const fracs = (text: string) => mathParts(text).reduce((n, p) => n + (p.kind === 'math' ? p.value.split('\\frac').length - 1 : 0), 0);
+  check(fracs('Hitung banyaknya bangun pada setiap kotak: 2, 3, 5 / 5, 3, 8 / 5, 6, ?.') === 0 && fracs('Nilai 5/3 dan 8/5.') === 2 && fracs('Hasil (3)/(4) + 1/2.') === 2, 'Daftar "2, 3, 5 / 5, 3, 8" tidak dirender sebagai pecahan lintas baris; pecahan tanpa spasi tetap pecahan');
+  let counted = 0;
+  for (let seed = 0; seed < 400 && counted < 12; seed++) for (const level of ['sedang', 'sulit'] as Difficulty[]) {
+    const q = figural(makeTiu(TIU_FAMILIES.find((f) => f.id === 'fig-matrix')!, level, rng('matriks-jumlah-' + seed)), 'fig-matrix', level, seed);
+    if (q.visual?.rule?.mekanisme !== 'matriks-jumlah') continue;
+    counted++;
+    const rows = q.explanation.split('\n').filter((line) => /^Baris [123]: /.test(line));
+    check(!/\d \/ \d/.test(q.explanation) && rows.length === 3 && rows.every((line) => fracs(line) === 0), 'Matriks jumlah bangun: satu baris persamaan per baris kotak, tanpa daftar bergaris miring: ' + q.id);
+    for (const line of rows) for (const m of line.matchAll(/(\d+) ([+×]) (\d+) = (\d+)/g)) check((m[2] === '+' ? +m[1] + +m[3] : +m[1] * +m[3]) === +m[4], 'Persamaan baris matriks benar: ' + m[0] + ' (' + q.id + ')');
+  }
+  check(counted >= 4, 'Contoh matriks jumlah bangun cukup untuk diperiksa (' + counted + ')');
   return report;
 }

@@ -1,13 +1,17 @@
 import { BANK_MAP } from './bank';
+import { optionNumber } from './option-number';
 import { calculate, entails } from './solver';
 import { solveFigure } from './figures';
 import { checkScene, solveScene } from './figural/solve';
 import { solveModel } from './models';
+import { seatCount } from './posisi-model';
 import { checkBlueprint, actualBlueprint } from './blueprint';
 import { validationBinding } from './binding';
 import { profilePlan, mappingMatch } from './mapping';
 import { distribution, fingerprint } from './generate';
 import type { Audit, Package, Question, Settings } from './types';
+
+export { optionNumber };
 import { auditLocal } from './local';
 
 export function auditQuestion(question: Question): string[] {
@@ -21,7 +25,8 @@ export function auditQuestion(question: Question): string[] {
   if (question.visual?.oddRule && !['attribute', 'count-fill', 'turn-count'].includes(question.visual.oddRule)) fail('aturan kelompok gambar tidak valid');
   if (question.options.length !== 5) { fail('jumlah opsi harus lima'); return errors; }
   if (!Number.isInteger(question.answer) || question.answer < 0 || question.answer > 4) { fail('kunci di luar opsi'); return errors; }
-  if (question.options.some((option) => !option.text.trim() || !option.reason.trim())) fail('teks/alasan opsi kosong');
+  // Alasan per opsi hanya wajib untuk TKP (dasar penskoran); TWK dan TIU boleh membiarkannya kosong bila tidak ada alasan spesifik.
+  if (question.options.some((option) => !option.text.trim() || (question.subtest === 'TKP' && !option.reason.trim()))) fail(question.subtest === 'TKP' ? 'teks/alasan opsi kosong' : 'teks opsi kosong');
   // Gambar mesin baru: struktur setiap kotak diperiksa walau soalnya sudah disunting manual, agar tampilan tidak rusak.
   const sceneErrors: string[] = [];
   (question.visual?.scenes ?? []).forEach((s, i) => { if (s) checkScene(s, 'kotak ' + (i + 1), sceneErrors); });
@@ -34,7 +39,9 @@ export function auditQuestion(question: Question): string[] {
   if (high !== 5 || question.options[question.answer].score !== high ||
     question.options.filter((option) => option.score === high).length !== 1) fail('kunci terbaik tidak tunggal');
   if (question.subtest === 'TKP') {
+    // Skor TKP: tiap nilai 1–5 tepat satu kali (permutasi); kunci = satu-satunya opsi bernilai 5 (diperiksa di atas).
     if (question.options.some((option) => !Number.isInteger(option.score) || option.score < 1 || option.score > 5)) fail('skor TKP di luar 1–5');
+    else if (new Set(question.options.map((option) => option.score)).size !== 5) fail('skor TKP harus permutasi 1–5 (tiap nilai tepat satu kali)');
   } else if (question.options.some((option, index) => option.score !== (index === question.answer ? 5 : 0))) fail('skor TWK/TIU tidak sesuai kunci');
   const proof = question.proof;
   try {
@@ -43,7 +50,7 @@ export function auditQuestion(question: Question): string[] {
       const computed = proof.expression ? calculate(proof.expression) : NaN;
       const matches = proof.values.map((value, index) => ({ value, index })).filter(({ value }) => Math.abs(value - computed) < 0.000051);
       if (matches.length !== 1 || matches[0].index !== question.answer) fail('hasil hitung ulang tidak sesuai kunci');
-      if (question.options.some((option, index) => !Number.isFinite(Number(option.text.replace(',', '.'))) || Math.abs(Number(option.text.replace(',', '.')) - proof.values[index]) > 0.000051)) fail('nilai opsi berubah');
+      if (question.options.some((option, index) => !Number.isFinite(optionNumber(option.text)) || Math.abs(optionNumber(option.text) - proof.values[index]) > 0.000051)) fail('nilai opsi berubah');
     } else if (proof.kind === 'logic') {
       const valid = proof.entailment ? entails(proof.entailment.premises, proof.entailment.conclusions) : proof.valid;
       if (valid.filter(Boolean).length !== 1 || !valid[question.answer]) fail('kesimpulan logika tidak tunggal atau salah');
@@ -58,6 +65,7 @@ export function auditQuestion(question: Question): string[] {
       const model = proof.model;
       if (model.kind === 'data' && (!Number.isInteger(model.domain) || model.domain < 1 || model.domain > 30)) throw new Error('domain solver di luar batas');
       if (model.kind === 'route' && model.nodes.length > 12) throw new Error('jumlah simpul di luar batas');
+      if (model.kind === 'arrangement' && (!Array.isArray(model.names) || !Array.isArray(model.clues) || model.names.length > 10 || model.clues.length > 24 || seatCount(model.geo) > 12 || seatCount(model.geo) < model.names.length)) throw new Error('model susunan di luar batas solver');
       const valid = solveModel(question);
       if (valid.filter(Boolean).length !== 1 || !valid[question.answer]) fail('hasil solver model berbeda dari kunci');
     } else if (proof.kind === 'local') {

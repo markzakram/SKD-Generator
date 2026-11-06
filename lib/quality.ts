@@ -1,5 +1,8 @@
+import { KURASI_AKTIF } from './config';
 import { auditQuestion } from './validate';
+import { newId } from './id';
 import { fingerprint, normalizeText } from './generate';
+import { isGenericReason, keepsOptionOrder, positionReferences, workingNote } from './reasons';
 import type { Question, ReviewStatus, Result, Workspace } from './types';
 
 export const STATUS_LABELS: Record<ReviewStatus, string> = { draft: 'Draf', revision: 'Perlu revisi', approved: 'Disetujui' };
@@ -14,6 +17,12 @@ export function questionIssues(q: Question, peers: Question[] = []): Issue[] {
     if (q.options.filter((o, i) => i !== q.answer && /selalu|seluruh|tidak pernah|semua|apa pun/i.test(o.text)).length >= 3)
       issues.push({ code: 'absolute', level: 'warning', text: 'Beberapa pengecoh memakai klaim mutlak; pastikan tetap masuk akal.' });
   }
+  if (q.options.some((o) => isGenericReason(o.reason))) issues.push({ code: 'generic-reason', level: 'warning', text: 'Alasan opsi berupa kalimat pengisi yang tidak spesifik; tulis alasan khusus opsi itu atau kosongkan.' });
+  const note = [q.explanation, ...q.options.map((o) => o.reason)].map(workingNote).find(Boolean);
+  if (note) issues.push({ code: 'working-note', level: 'warning', text: 'Pembahasan memuat sisa catatan penyusunan ("' + note + '"); hapus sebelum dipakai.' });
+  // Opsi diacak saat paket dibuat. Soal referensi sudah dipetakan hurufnya; selain itu rujukan huruf atau urutan opsi menjadi keliru.
+  const positional = q.origin === 'referensi' || keepsOptionOrder(q) ? [] : positionReferences(q.explanation);
+  if (positional.length) issues.push({ code: 'position-ref', level: 'warning', text: 'Pembahasan menyebut urutan atau huruf opsi ("' + positional[0] + '"), padahal opsi diacak; sebut isi opsinya.' });
   const options = (p: Question) => p.options.map((o) => normalizeText(o.text)).sort().join('|');
   if (peers.some((p) => p.id !== q.id && !p.review?.excluded && (fingerprint(q) === fingerprint(p) || (!q.visual && options(q) === options(p)))))
     issues.push({ code: 'duplicate', level: 'warning', text: 'Stimulus atau kumpulan opsi sama dengan soal lain; tinjau variasi substansinya.' });
@@ -24,7 +33,7 @@ export function questionIssues(q: Question, peers: Question[] = []): Issue[] {
     const b = tokens(p), overlap = [...a].filter((t) => b.has(t)).length;
     return overlap / new Set([...a, ...b]).size > 0.84;
   })) issues.push({ code: 'similar', level: 'warning', text: 'Teks sangat mirip dengan soal lain; bandingkan tuntutan penalarannya.' });
-  if (q.proof.kind === 'manual' || (q.proof.kind === 'logic' && !q.proof.entailment)) issues.push({ code: 'human', level: 'info', text: 'Memerlukan verifikasi substansi oleh penelaah; belum diverifikasi solver independen.' });
+  if (q.proof.kind === 'manual' || (q.proof.kind === 'logic' && !q.proof.entailment)) issues.push({ code: 'human', level: 'info', text: 'Memerlukan verifikasi substansi oleh manusia; belum diverifikasi solver independen.' });
   if (q.proof.kind === 'bank') issues.push({ code: 'bank', level: 'info', text: 'Isi cocok dengan bank sumber; kecocokan ini belum membuktikan mutu akademik.' });
   if (q.proof.kind === 'local') issues.push({code:'local',level:'info',text:'Soal baru dari model lokal. Konsistensi kondisi, kunci, dan alasan diperiksa; ketepatan substansi serta peringkat TKP tetap perlu ditelaah.'});
   if (q.difficulty === 'hots') issues.push({ code: 'legacy', level: 'warning', text: 'Label HOTS lama perlu ditinjau. Pilih kesulitan dan Bloom secara terpisah.' });
@@ -51,7 +60,7 @@ export function initializeResult(result: Result): Result {
 }
 export function createWorkspace(result: Result): Workspace {
   const at = now();
-  return { schema: 2, id: crypto.randomUUID(), name: result.settings.title, createdAt: at, updatedAt: at, version: 1, result: initializeResult(result), snapshots: [] };
+  return { schema: 2, id: newId(), name: result.settings.title, createdAt: at, updatedAt: at, version: 1, result: initializeResult(result), snapshots: [] };
 }
 export function reviseWorkspace(workspace: Workspace, result: Result, label: string): Workspace {
   return { ...workspace, name: result.settings.title, result, version: workspace.version + 1, updatedAt: now(),
@@ -74,6 +83,11 @@ export function editQuestion(original: Question, draft: Question): Question {
   const errors = auditQuestion(q); if (errors.length) throw new Error(errors.join('; '));
   return q;
 }
+// Cakupan ekspor yang dipakai antarmuka. Saat kurasi aktif, pilihan pengguna berlaku. Saat disembunyikan, semua soal aktif paket diekspor ('draft' = semua yang tidak dikeluarkan);
+// soal yang ditandai dikeluarkan pada workspace lama tetap dilewati, sama seperti sebelumnya. `curation` hanya untuk pengujian kedua jalur.
+export const exportScope = (chosen: 'approved' | 'draft', curation: boolean = KURASI_AKTIF): 'approved' | 'draft' => curation ? chosen : 'draft';
+// Soal yang boleh dibagikan untuk uji peserta: yang disetujui saat kurasi aktif; semua soal aktif paket saat kurasi disembunyikan.
+export const shareable = (q: Question, curation: boolean = KURASI_AKTIF) => !q.review?.excluded && (!curation || q.review?.status === 'approved');
 export function exportPackages(result: Result, scope: 'approved' | 'draft', active?: number) {
   const selected = active === undefined ? result.packages : [result.packages[active]];
   const packages = selected.map((p) => ({ ...p, questions: p.questions.filter((q) => !q.review?.excluded && (scope === 'draft' || q.review?.status === 'approved')).map((q, i) => ({ ...q, no: i + 1 })) })).filter((p) => p.questions.length);

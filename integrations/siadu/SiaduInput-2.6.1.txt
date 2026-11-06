@@ -1,0 +1,3170 @@
+// ==UserScript==
+// @name         SiAdu Auto Input Option New + Legacy + MathType + Table
+// @namespace    cerebrum.input.soal.word.turbo
+// @version      2.6.1
+// @description  Auto input dari Excel/DOCX/TXT. Mendukung $$LaTeX$$, equation Word, tabel Word/Markdown/HTML, dan PILIHAN mode jawaban: Option New atau Option (Legacy).
+// @match        https://siadu-min.cerebrum.id/admin/question/*
+// @match        https://siadu-min.cerebrum.id/admin/question-management*
+// @match        https://siadu-min.cerebrum.id/admin/detail/*
+// @run-at       document-idle
+// @require      https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js
+// @require      https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js
+// @require      https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js
+// @grant        GM_addStyle
+// @grant        unsafeWindow
+// ==/UserScript==
+
+(function () {
+  'use strict';
+
+  const PAGE = typeof unsafeWindow !== 'undefined' ? unsafeWindow : window;
+
+  const APP = {
+    queueKey: 'siadu_auto_input_queue_iframefix_v1',
+    stateKey: 'siadu_auto_input_state_iframefix_v1',
+    createUrlKey: 'siadu_auto_input_create_url_iframefix_v1',
+    panelPosKey: 'siadu_auto_input_panel_pos_iframefix_v1',
+    panelMinKey: 'siadu_auto_input_panel_min_iframefix_v1',
+    defaultSaveDelayMs: 2500,
+    waitTimeoutMs: 15000,
+    editorWaitMs: 5000,
+    afterFieldDelayMs: 70,
+    afterSelectDelayMs: 220,
+    swalConfirmDelayMs: 2500,
+    swalClickDelayMs: 0,
+    validationModalDelayMs: 150,
+    // v2.6.0: mode jawaban default bila belum dipilih.
+    defaultAnswerMode: 'option_new',
+  };
+
+  const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+  const TRAILING_EDITOR_HTML = '<p>&nbsp;</p>';
+
+  const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+  function norm(s) {
+    return String(s == null ? '' : s)
+      .replace(/\u00a0/g, ' ')
+      .replace(/\r\n/g, '\n')
+      .replace(/\r/g, '\n')
+      .replace(/[ \t]+\n/g, '\n')
+      .replace(/\n{4,}/g, '\n\n\n')
+      .trim();
+  }
+
+  function compact(s) {
+    return String(s == null ? '' : s).replace(/\s+/g, ' ').trim();
+  }
+
+  function escapeHtml(value) {
+    return String(value == null ? '' : value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
+  function stripHtml(html) {
+    const div = document.createElement('div');
+    div.innerHTML = String(html || '');
+    return compact(div.textContent || '');
+  }
+
+  function textToHtml(text) {
+    const lines = String(text || '')
+      .replace(/\r\n/g, '\n')
+      .replace(/\r/g, '\n')
+      .split('\n');
+
+    return lines
+      .map((line) => line.trim())
+      .filter((t) => t.length > 0)
+      .map((t) => `<p>${escapeHtml(t)}</p>`)
+      .join('');
+  }
+
+  function explanationToHtmlWithTrailingDotSpace(text) {
+    const trimmedRight = String(text == null ? '' : text).replace(/[\s\u00a0]+$/u, '');
+    let html = textToHtml(trimmedRight);
+    if (/\.$/.test(trimmedRight) && /<\/p>$/.test(html)) {
+      html = html.replace(/<\/p>$/, '&nbsp;</p>');
+    }
+    return html;
+  }
+
+  function loadJSON(key, fallback) {
+    try {
+      const raw = localStorage.getItem(key);
+      return raw ? JSON.parse(raw) : fallback;
+    } catch (e) {
+      return fallback;
+    }
+  }
+
+  function saveJSON(key, value) {
+    localStorage.setItem(key, JSON.stringify(value));
+  }
+
+  function getQueue() {
+    return loadJSON(APP.queueKey, []);
+  }
+
+  function setQueue(queue) {
+    saveJSON(APP.queueKey, queue || []);
+  }
+
+  function getState() {
+    return loadJSON(APP.stateKey, {
+      running: false,
+      mode: 'autosave',
+      answerMode: APP.defaultAnswerMode, // v2.6.0: 'option_new' | 'option'
+      index: 0,
+      phase: 'idle',
+      createUrl: '',
+      saveDelayMs: APP.defaultSaveDelayMs,
+      lastSaveAt: 0,
+      autoConfirmSwal: true,
+      lastMessage: '',
+    });
+  }
+
+  function setState(state) {
+    saveJSON(APP.stateKey, state);
+    updatePanel();
+  }
+
+  function resetAll() {
+    localStorage.removeItem(APP.queueKey);
+    localStorage.removeItem(APP.stateKey);
+    updatePanel();
+  }
+
+  // v2.6.0: baca mode jawaban aktif dari state (default option_new).
+  function getAnswerMode() {
+    const m = getState().answerMode;
+    return m === 'option' ? 'option' : 'option_new';
+  }
+
+  function isCreatePage() {
+    return /\/admin\/detail\/\d+\/0(?:$|\?)/.test(location.href);
+  }
+
+  function detectCreateUrl() {
+    const currentMatch = location.href.match(/^(https:\/\/siadu-min\.cerebrum\.id\/admin\/detail\/\d+)\/\d+/);
+    if (currentMatch) return `${currentMatch[1]}/0`;
+
+    const createLink = Array.from(document.querySelectorAll('a[href*="/admin/detail/"]'))
+      .find((a) => /\/admin\/detail\/\d+\/0/.test(a.href) && /create/i.test(a.textContent || ''));
+
+    if (createLink) return createLink.href;
+
+    return localStorage.getItem(APP.createUrlKey) || '';
+  }
+
+  function getFormComponent() {
+    const form = document.querySelector('#form-modal');
+    const root =
+      (form && form.closest('[wire\\:id]')) ||
+      (document.querySelector('#level') && document.querySelector('#level').closest('[wire\\:id]')) ||
+      document.querySelector('[wire\\:id]');
+
+    if (!root || !PAGE.Livewire) return null;
+
+    const id = root.getAttribute('wire:id');
+    if (!id) return null;
+
+    try {
+      if (typeof PAGE.Livewire.find === 'function') return PAGE.Livewire.find(id);
+      if (typeof PAGE.Livewire.all === 'function') {
+        return PAGE.Livewire.all().find((c) => c.id === id) || null;
+      }
+    } catch (e) {}
+
+    return null;
+  }
+
+  function isSafeLivewireProp(prop) {
+    const name = String(prop == null ? '' : prop).trim();
+    if (!name || name.includes('$') || name.includes('-')) return false;
+
+    if (/^(table|question|data)\.content_(question|explanation)$/.test(name)) {
+      return false;
+    }
+
+    return /^[A-Za-z_][A-Za-z0-9_]*(?:\.(?:[A-Za-z_][A-Za-z0-9_]*|\d+))*$/.test(name);
+  }
+
+  function livewireSet(prop, value) {
+    if (!isSafeLivewireProp(prop)) return false;
+    if (!prop) return false;
+
+    const component = getFormComponent();
+    if (!component) return false;
+
+    let ok = false;
+
+    try {
+      if (typeof component.set === 'function') {
+        component.set(prop, value);
+        ok = true;
+      }
+    } catch (e) {}
+
+    try {
+      if (component.$wire && typeof component.$wire.set === 'function') {
+        component.$wire.set(prop, value);
+        ok = true;
+      }
+    } catch (e) {}
+
+    try {
+      if (component.$wire && typeof component.$wire.$set === 'function') {
+        component.$wire.$set(prop, value);
+        ok = true;
+      }
+    } catch (e) {}
+
+    return ok;
+  }
+
+  function livewireCall(methodName) {
+    const component = getFormComponent();
+    if (!component) return false;
+
+    try {
+      if (typeof component.call === 'function') {
+        component.call(methodName);
+        return true;
+      }
+    } catch (e) {}
+
+    try {
+      if (component.$wire && typeof component.$wire.call === 'function') {
+        component.$wire.call(methodName);
+        return true;
+      }
+    } catch (e) {}
+
+    try {
+      if (component.$wire && typeof component.$wire[methodName] === 'function') {
+        component.$wire[methodName]();
+        return true;
+      }
+    } catch (e) {}
+
+    return false;
+  }
+
+  function isVisible(el) {
+    if (!el) return false;
+    const style = window.getComputedStyle(el);
+    return style.display !== 'none' && style.visibility !== 'hidden' && style.opacity !== '0';
+  }
+
+  async function waitForLivewireIdle(timeoutMs = 15000) {
+    const start = Date.now();
+
+    while (Date.now() - start < timeoutMs) {
+      const loadingVisible = Array.from(document.querySelectorAll('[wire\\:loading], .spinner-border'))
+        .some(isVisible);
+
+      if (!loadingVisible) {
+        await sleep(450);
+        return true;
+      }
+
+      await sleep(250);
+    }
+
+    return false;
+  }
+
+  function getWireModelName(el) {
+    if (!el) return '';
+    return (
+      el.getAttribute('wire:model.defer') ||
+      el.getAttribute('wire:model.lazy') ||
+      el.getAttribute('wire:model.live') ||
+      el.getAttribute('wire:model') ||
+      ''
+    );
+  }
+
+  function setNativeValue(el, value) {
+    if (!el) return false;
+
+    try {
+      el.scrollIntoView({ behavior: 'instant', block: 'center' });
+    } catch (e) {}
+
+    try { el.focus(); } catch (e) {}
+    try { el.click(); } catch (e) {}
+
+    const tag = el.tagName.toLowerCase();
+    const proto =
+      tag === 'select'
+        ? window.HTMLSelectElement.prototype
+        : tag === 'textarea'
+          ? window.HTMLTextAreaElement.prototype
+          : window.HTMLInputElement.prototype;
+
+    const descriptor = Object.getOwnPropertyDescriptor(proto, 'value');
+
+    if (descriptor && descriptor.set) descriptor.set.call(el, value);
+    else el.value = value;
+
+    el.dispatchEvent(new Event('input', { bubbles: true }));
+    el.dispatchEvent(new Event('change', { bubbles: true }));
+    el.dispatchEvent(new Event('blur', { bubbles: true }));
+
+    const model = getWireModelName(el);
+    if (model) livewireSet(model, value);
+
+    return true;
+  }
+
+  async function setFieldValue(selector, value, explicitModel = '') {
+    const el = document.querySelector(selector);
+    if (!el) return false;
+
+    setNativeValue(el, value);
+    if (explicitModel) livewireSet(explicitModel, value);
+
+    await sleep(APP.afterFieldDelayMs || 70);
+
+    return true;
+  }
+
+  async function waitForElement(selector, timeoutMs = APP.waitTimeoutMs) {
+    const start = Date.now();
+
+    while (Date.now() - start < timeoutMs) {
+      const el = document.querySelector(selector);
+      if (el) return el;
+      await sleep(250);
+    }
+
+    throw new Error(`Elemen tidak ditemukan: ${selector}`);
+  }
+
+  function findCkeditorFrame(id) {
+    const wrapper = document.querySelector(`#cke_${id}`);
+
+    if (wrapper) {
+      const iframe =
+        wrapper.querySelector('iframe.cke_wysiwyg_frame') ||
+        wrapper.querySelector('iframe');
+      if (iframe) return iframe;
+    }
+
+    const byTitle = Array.from(document.querySelectorAll('iframe'))
+      .find((iframe) => {
+        const title = iframe.getAttribute('title') || '';
+        const name = iframe.getAttribute('name') || '';
+        return title.includes(id) || name.includes(id);
+      });
+
+    if (byTitle) return byTitle;
+
+    return null;
+  }
+
+  function getCkeditorInstance(id) {
+    try {
+      if (PAGE.CKEDITOR && PAGE.CKEDITOR.instances && PAGE.CKEDITOR.instances[id]) {
+        return PAGE.CKEDITOR.instances[id];
+      }
+    } catch (e) {}
+    return null;
+  }
+
+  async function waitForEditorReady(id, timeoutMs = 12000) {
+    const start = Date.now();
+
+    while (Date.now() - start < timeoutMs) {
+      const editor = getCkeditorInstance(id);
+      const frame = findCkeditorFrame(id);
+
+      if (editor || frame) return true;
+
+      await sleep(250);
+    }
+
+    return false;
+  }
+
+  async function setEditorIframeBody(id, html) {
+    const iframe = findCkeditorFrame(id);
+    if (!iframe) return false;
+
+    let doc = null;
+
+    try {
+      doc = iframe.contentDocument || (iframe.contentWindow && iframe.contentWindow.document);
+    } catch (e) {
+      return false;
+    }
+
+    if (!doc || !doc.body) return false;
+
+    try {
+      iframe.scrollIntoView({ behavior: 'instant', block: 'center' });
+    } catch (e) {}
+
+    try { iframe.focus(); } catch (e) {}
+    try { doc.body.focus(); } catch (e) {}
+
+    doc.body.innerHTML = html || '<p><br></p>';
+
+    try {
+      doc.body.dispatchEvent(new Event('input', { bubbles: true }));
+      doc.body.dispatchEvent(new Event('keyup', { bubbles: true }));
+      doc.body.dispatchEvent(new Event('change', { bubbles: true }));
+      doc.body.dispatchEvent(new Event('blur', { bubbles: true }));
+    } catch (e) {}
+
+    return true;
+  }
+
+
+  // ==================== v2.5.0: LATEX + TABLE ====================
+  const TABLE_MARKER_PREFIX = '[[SIADU_TABLE:';
+  const TABLE_MARKER_RE = /\[\[SIADU_TABLE:([A-Za-z0-9+/=]+)\]\]/g;
+
+  function hasMathFormula(text) {
+    return /\$\$[\s\S]*?\$\$/.test(String(text || ''));
+  }
+
+  function hasBoldMarker(text) {
+    return /\*\*[\s\S]*?\*\*/.test(String(text || ''));
+  }
+
+  function hasTableMarker(text) {
+    return /\[\[SIADU_TABLE:[A-Za-z0-9+/=]+\]\]/.test(String(text || ''));
+  }
+
+  function hasRawTableSyntax(text) {
+    const value = String(text || '');
+    return /<table\b[\s\S]*?<\/table>/i.test(value) ||
+      /(^|\n)\s*\|[^\n]*\|\s*(?=\n\s*\|)/.test(value) ||
+      /(^|\n)[^\n]*\t[^\n]*(?=\n[^\n]*\t)/.test(value);
+  }
+
+  function needsRichInsert(text) {
+    const normalized = normalizeInputTables(text);
+    return hasMathFormula(normalized) || hasBoldMarker(normalized) || hasTableMarker(normalized);
+  }
+
+  function encodeBase64Unicode(value) {
+    const bytes = new TextEncoder().encode(String(value || ''));
+    let binary = '';
+    const chunk = 0x8000;
+    for (let i = 0; i < bytes.length; i += chunk) {
+      binary += String.fromCharCode(...bytes.subarray(i, i + chunk));
+    }
+    return btoa(binary);
+  }
+
+  function decodeBase64Unicode(value) {
+    const binary = atob(String(value || ''));
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+    return new TextDecoder().decode(bytes);
+  }
+
+  function normalizeTableData(data) {
+    const sourceRows = data && Array.isArray(data.rows) ? data.rows : [];
+    const rows = sourceRows.map((row) => {
+      const sourceCells = Array.isArray(row) ? row : [];
+      return sourceCells.map((cell) => {
+        if (cell && typeof cell === 'object' && !Array.isArray(cell)) {
+          return {
+            text: String(cell.text == null ? '' : cell.text),
+            colspan: Math.max(1, parseInt(cell.colspan || 1, 10) || 1),
+            rowspan: Math.max(1, parseInt(cell.rowspan || 1, 10) || 1),
+          };
+        }
+        return { text: String(cell == null ? '' : cell), colspan: 1, rowspan: 1 };
+      });
+    });
+
+    const maxCols = Math.max(1, ...rows.map((row) => row.reduce((sum, cell) => sum + (cell.colspan || 1), 0)));
+    for (const row of rows) {
+      while (row.reduce((sum, cell) => sum + (cell.colspan || 1), 0) < maxCols) {
+        row.push({ text: '', colspan: 1, rowspan: 1 });
+      }
+    }
+
+    return {
+      rows: rows.length ? rows : [[{ text: '', colspan: 1, rowspan: 1 }]],
+      headerRows: Math.max(0, parseInt(data && data.headerRows || 0, 10) || 0),
+      width: String(data && data.width || '500px'),
+      border: String(data && data.border || '1'),
+      cellspacing: String(data && data.cellspacing || '1'),
+      cellpadding: String(data && data.cellpadding || '1'),
+    };
+  }
+
+  function tableDataToMarker(data) {
+    const normalized = normalizeTableData(data);
+    return TABLE_MARKER_PREFIX + encodeBase64Unicode(JSON.stringify(normalized)) + ']]';
+  }
+
+  function markerToTableData(markerOrBase64) {
+    const raw = String(markerOrBase64 || '');
+    const match = raw.match(/^\[\[SIADU_TABLE:([A-Za-z0-9+/=]+)\]\]$/);
+    const encoded = match ? match[1] : raw;
+    try {
+      return normalizeTableData(JSON.parse(decodeBase64Unicode(encoded)));
+    } catch (e) {
+      throw new Error('Data tabel tidak valid atau rusak.');
+    }
+  }
+
+  function parseMarkdownRow(line) {
+    let value = String(line || '').trim();
+    if (value.startsWith('|')) value = value.slice(1);
+    if (value.endsWith('|')) value = value.slice(0, -1);
+
+    const cells = [];
+    let current = '';
+    let escaped = false;
+
+    for (const ch of value) {
+      if (escaped) {
+        current += ch;
+        escaped = false;
+      } else if (ch === '\\') {
+        escaped = true;
+        current += ch;
+      } else if (ch === '|') {
+        cells.push(current.trim().replace(/\\\|/g, '|'));
+        current = '';
+      } else {
+        current += ch;
+      }
+    }
+    cells.push(current.trim().replace(/\\\|/g, '|'));
+    return cells;
+  }
+
+  function isMarkdownSeparatorRow(line) {
+    const cells = parseMarkdownRow(line);
+    return cells.length > 0 && cells.every((cell) => /^:?-{3,}:?$/.test(cell.trim()));
+  }
+
+  function htmlTableToData(html) {
+    const doc = new DOMParser().parseFromString(String(html || ''), 'text/html');
+    const table = doc.querySelector('table');
+    if (!table) return null;
+
+    const rows = [];
+    let headerRows = 0;
+
+    for (const tr of Array.from(table.querySelectorAll('tr'))) {
+      const row = [];
+      const cells = Array.from(tr.children).filter((el) => /^(TD|TH)$/.test(el.tagName));
+      if (!cells.length) continue;
+      if (cells.every((cell) => cell.tagName === 'TH')) headerRows++;
+
+      for (const cell of cells) {
+        let value = cell.innerHTML
+          .replace(/<br\s*\/?\s*>/gi, '\n')
+          .replace(/<strong\b[^>]*>([\s\S]*?)<\/strong>/gi, '**$1**')
+          .replace(/<b\b[^>]*>([\s\S]*?)<\/b>/gi, '**$1**');
+
+        const temp = document.createElement('div');
+        temp.innerHTML = value;
+        value = (temp.textContent || '').trim();
+
+        row.push({
+          text: value,
+          colspan: Math.max(1, parseInt(cell.getAttribute('colspan') || '1', 10) || 1),
+          rowspan: Math.max(1, parseInt(cell.getAttribute('rowspan') || '1', 10) || 1),
+        });
+      }
+      rows.push(row);
+    }
+
+    return normalizeTableData({
+      rows,
+      headerRows,
+      width: table.style.width || table.getAttribute('width') || '500px',
+      border: table.getAttribute('border') || '1',
+      cellspacing: table.getAttribute('cellspacing') || '1',
+      cellpadding: table.getAttribute('cellpadding') || '1',
+    });
+  }
+
+  function replaceHtmlTablesWithMarkers(text) {
+    return String(text || '').replace(/<table\b[\s\S]*?<\/table>/gi, (html) => {
+      const data = htmlTableToData(html);
+      return data ? '\n' + tableDataToMarker(data) + '\n' : html;
+    });
+  }
+
+  function replaceMarkdownAndTsvTables(text) {
+    const lines = String(text || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
+    const output = [];
+
+    for (let i = 0; i < lines.length;) {
+      const line = lines[i];
+
+      if (/^\s*\[\[SIADU_TABLE:[A-Za-z0-9+/=]+\]\]\s*$/.test(line)) {
+        output.push(line.trim());
+        i++;
+        continue;
+      }
+
+      const markdownCandidate = /^\s*\|.*\|\s*$/.test(line) && i + 1 < lines.length && /^\s*\|.*\|\s*$/.test(lines[i + 1]);
+      if (markdownCandidate) {
+        const block = [];
+        while (i < lines.length && /^\s*\|.*\|\s*$/.test(lines[i])) {
+          block.push(lines[i]);
+          i++;
+        }
+
+        let headerRows = 0;
+        let dataLines = block.slice();
+        if (block.length >= 2 && isMarkdownSeparatorRow(block[1])) {
+          headerRows = 1;
+          dataLines = [block[0], ...block.slice(2)];
+        }
+
+        const rows = dataLines.map((rowLine) => parseMarkdownRow(rowLine));
+        output.push(tableDataToMarker({ rows, headerRows }));
+        continue;
+      }
+
+      const tsvCandidate = line.includes('\t') && i + 1 < lines.length && lines[i + 1].includes('\t');
+      if (tsvCandidate) {
+        const block = [];
+        while (i < lines.length && lines[i].includes('\t')) {
+          block.push(lines[i]);
+          i++;
+        }
+        const rows = block.map((rowLine) => rowLine.split('\t').map((cell) => cell.trim()));
+        output.push(tableDataToMarker({ rows, headerRows: 0 }));
+        continue;
+      }
+
+      output.push(line);
+      i++;
+    }
+
+    return output.join('\n');
+  }
+
+  function normalizeInputTables(text) {
+    const value = String(text == null ? '' : text);
+    if (!value) return '';
+    return replaceMarkdownAndTsvTables(replaceHtmlTablesWithMarkers(value));
+  }
+
+  function latexToMathTypeElement(latex) {
+    const source = String(latex || '').trim();
+    const src = 'https://latex.codecogs.com/svg.image?' + encodeURIComponent('\\large ' + source);
+
+    return (
+      '<img class="siadu-latex-formula" role="math" ' +
+        'alt="' + escapeHtml(source) + '" ' +
+        'title="' + escapeHtml(source) + '" ' +
+        'src="' + src + '" ' +
+        'style="vertical-align:middle;max-width:100%;height:auto;" />'
+    );
+  }
+
+  function inlineMarkdownToHtml(value) {
+    let html = escapeHtml(value);
+    html = html.replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
+    return html;
+  }
+
+  function tokenizeInlineRichContent(text) {
+    const input = String(text == null ? '' : text);
+    const tokens = [];
+    const re = /(\$\$[\s\S]*?\$\$)|(\*\*[\s\S]*?\*\*)/g;
+    let last = 0;
+    let match;
+
+    while ((match = re.exec(input)) !== null) {
+      if (match.index > last) tokens.push({ type: 'text', value: input.slice(last, match.index) });
+      if (match[1] != null) tokens.push({ type: 'math', value: match[1].slice(2, -2).trim() });
+      else tokens.push({ type: 'bold', value: match[2].slice(2, -2) });
+      last = re.lastIndex;
+    }
+
+    if (last < input.length) tokens.push({ type: 'text', value: input.slice(last) });
+    return tokens;
+  }
+
+  function inlineRichToHtml(text) {
+    const tokens = tokenizeInlineRichContent(text);
+    let html = '';
+    let mathCount = 0;
+
+    for (const token of tokens) {
+      if (token.type === 'math') {
+        html += latexToMathTypeElement(token.value);
+        mathCount++;
+      } else if (token.type === 'bold') {
+        html += '<strong>' + inlineMarkdownToHtml(token.value) + '</strong>';
+      } else {
+        html += escapeHtml(token.value).replace(/\n/g, '<br>');
+      }
+    }
+
+    return { html, mathCount };
+  }
+
+  function segmentToParagraphHtml(segment) {
+    const lines = String(segment || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
+    let mathCount = 0;
+    const html = lines
+      .map((line) => {
+        const rendered = inlineRichToHtml(line.trim());
+        mathCount += rendered.mathCount;
+        return rendered.html ? '<p>' + rendered.html + '</p>' : '';
+      })
+      .filter(Boolean)
+      .join('');
+    return { html, mathCount };
+  }
+
+  function richTextToMathTypeHtml(rawText) {
+    const normalized = normalizeInputTables(rawText);
+    const tables = [];
+    let mathCount = 0;
+    let html = '';
+    let last = 0;
+    let match;
+    const re = new RegExp(TABLE_MARKER_RE.source, 'g');
+
+    while ((match = re.exec(normalized)) !== null) {
+      const before = normalized.slice(last, match.index);
+      const rendered = segmentToParagraphHtml(before);
+      html += rendered.html;
+      mathCount += rendered.mathCount;
+
+      const table = markerToTableData(match[1]);
+      const placeholderId = 'siadu-table-placeholder-' + Date.now() + '-' + tables.length + '-' + Math.random().toString(36).slice(2, 8);
+      tables.push({ placeholderId, table });
+      html += '<p class="siadu-table-placeholder-p"><span id="' + placeholderId + '" data-siadu-table-placeholder="1">&nbsp;</span></p>';
+      last = re.lastIndex;
+    }
+
+    const tail = segmentToParagraphHtml(normalized.slice(last));
+    html += tail.html;
+    mathCount += tail.mathCount;
+
+    return {
+      html: html + TRAILING_EDITOR_HTML,
+      mathCount,
+      tables,
+    };
+  }
+
+  function hasMathTypeHtml(html) {
+    return /(?:class=["'][^"']*(?:Wirisformula|siadu-latex-formula)|data-mathml=|<math\b|wrs_formula|latex\.codecogs\.com)/i.test(String(html || ''));
+  }
+
+  function hasTableHtml(html) {
+    return /<table\b/i.test(String(html || ''));
+  }
+
+  function editorContentFilled(html) {
+    return !!stripHtml(html || '') || hasMathTypeHtml(html) || hasTableHtml(html);
+  }
+
+  function isOptionEditorId(id) {
+    return /^mc-answer-\d+$/.test(String(id || ''));
+  }
+
+  function allowRichContent(editor) {
+    if (!editor) return;
+    try {
+      editor.config.allowedContent = true;
+      editor.config.extraAllowedContent =
+        'img[!src,alt,title,class,style,width,height,role];' +
+        'table[border,cellspacing,cellpadding,width,height,style,class,align];' +
+        'thead;tbody;tfoot;tr;td[colspan,rowspan,width,height,style,class,align,valign];' +
+        'th[colspan,rowspan,width,height,style,class,align,valign,scope];';
+    } catch (e) {}
+    try {
+      if (editor.filter && typeof editor.filter.addAllowedContent === 'function') {
+        editor.filter.addAllowedContent('img[!src,alt,title,class,style,width,height,role]');
+        editor.filter.addAllowedContent('table[border,cellspacing,cellpadding,width,height,style,class,align];thead;tbody;tfoot;tr;td[colspan,rowspan,width,height,style,class,align,valign];th[colspan,rowspan,width,height,style,class,align,valign,scope]');
+      }
+    } catch (e) {}
+  }
+
+  function triggerWirisParser(editor) {
+    if (!editor) return false;
+    let body = null;
+    try { body = editor.document && editor.document.$ && editor.document.$.body; } catch (e) {}
+    if (!body) return false;
+    const parsers = [];
+    try { if (PAGE.WirisPlugin && PAGE.WirisPlugin.Parser) parsers.push(PAGE.WirisPlugin.Parser); } catch (e) {}
+    try { if (window.WirisPlugin && window.WirisPlugin.Parser) parsers.push(window.WirisPlugin.Parser); } catch (e) {}
+    for (const parser of parsers) {
+      if (!parser || typeof parser.initParse !== 'function') continue;
+      const plugin = editor.plugins && editor.plugins.ckeditor_wiris;
+      for (const integration of [plugin && plugin.integration, plugin, undefined]) {
+        try {
+          if (integration === undefined) parser.initParse(body);
+          else parser.initParse(body, integration);
+          return true;
+        } catch (e) {}
+      }
+    }
+    return false;
+  }
+
+  function countEditorMath(editorId) {
+    const selector = 'math, img.Wirisformula, img.wirisformula, img.siadu-latex-formula, [data-mathml], .wrs_formula';
+    const editor = getCkeditorInstance(editorId);
+    if (editor) {
+      try {
+        const editable = editor.editable();
+        if (editable && editable.$) return editable.$.querySelectorAll(selector).length;
+      } catch (e) {}
+    }
+    const iframe = findCkeditorFrame(editorId);
+    if (iframe) {
+      try {
+        const doc = iframe.contentDocument || iframe.contentWindow.document;
+        if (doc && doc.body) return doc.body.querySelectorAll(selector).length;
+      } catch (e) {}
+    }
+    return 0;
+  }
+
+  function countEditorTables(editorId) {
+    const editor = getCkeditorInstance(editorId);
+    if (editor) {
+      try {
+        const editable = editor.editable();
+        if (editable && editable.$) return editable.$.querySelectorAll('table').length;
+      } catch (e) {}
+    }
+    const iframe = findCkeditorFrame(editorId);
+    if (iframe) {
+      try {
+        const doc = iframe.contentDocument || iframe.contentWindow.document;
+        if (doc && doc.body) return doc.body.querySelectorAll('table').length;
+      } catch (e) {}
+    }
+    return 0;
+  }
+
+  function getVisibleTableDialog() {
+    return Array.from(document.querySelectorAll('.cke_dialog_body')).find((dialog) => {
+      if (!isVisible(dialog)) return false;
+      const title = dialog.querySelector('.cke_dialog_title');
+      return /Table\s+Properties/i.test(title ? title.textContent || '' : '');
+    }) || null;
+  }
+
+  async function waitForTableDialog(timeoutMs = 5000) {
+    const start = Date.now();
+    while (Date.now() - start < timeoutMs) {
+      const dialog = getVisibleTableDialog();
+      if (dialog) return dialog;
+      await sleep(100);
+    }
+    return null;
+  }
+
+  function dialogControlByLabel(dialog, labelText) {
+    const labels = Array.from(dialog.querySelectorAll('label.cke_dialog_ui_labeled_label'));
+    const label = labels.find((el) => new RegExp('^' + labelText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$', 'i').test(compact(el.textContent || '')));
+    if (!label) return null;
+    const id = label.getAttribute('for');
+    return id ? dialog.querySelector('#' + id) || document.getElementById(id) : null;
+  }
+
+  function setDialogControlValue(control, value) {
+    if (!control) return false;
+    try { control.focus(); } catch (e) {}
+    control.value = String(value == null ? '' : value);
+    try { control.dispatchEvent(new Event('input', { bubbles: true })); } catch (e) {}
+    try { control.dispatchEvent(new Event('change', { bubbles: true })); } catch (e) {}
+    return true;
+  }
+
+  function tableColumnCount(tableData) {
+    return Math.max(1, ...tableData.rows.map((row) => row.reduce((sum, cell) => sum + (cell.colspan || 1), 0)));
+  }
+
+  function tableCellHtml(text) {
+    const rendered = inlineRichToHtml(String(text == null ? '' : text));
+    return rendered.html || '<br>';
+  }
+
+  function buildDirectTableHtml(tableData) {
+    const table = normalizeTableData(tableData);
+    let html = '<table border="' + escapeHtml(table.border) + '" cellspacing="' + escapeHtml(table.cellspacing) + '" cellpadding="' + escapeHtml(table.cellpadding) + '" style="width:' + escapeHtml(table.width) + ';">';
+    html += '<tbody>';
+    table.rows.forEach((row, rowIndex) => {
+      html += '<tr>';
+      row.forEach((cell) => {
+        const tag = rowIndex < table.headerRows ? 'th' : 'td';
+        const attrs = (cell.colspan > 1 ? ' colspan="' + cell.colspan + '"' : '') + (cell.rowspan > 1 ? ' rowspan="' + cell.rowspan + '"' : '');
+        html += '<' + tag + attrs + '>' + tableCellHtml(cell.text) + '</' + tag + '>';
+      });
+      html += '</tr>';
+    });
+    html += '</tbody></table>';
+    return html;
+  }
+
+  function cleanupPlaceholder(editor, placeholder) {
+    if (!placeholder) return;
+    const parent = placeholder.parentNode;
+    try { placeholder.remove(); } catch (e) { if (placeholder.parentNode) placeholder.parentNode.removeChild(placeholder); }
+    if (parent && parent.tagName === 'P' && !compact(parent.textContent || '') && !parent.querySelector('img,table')) {
+      try { parent.remove(); } catch (e) {}
+    }
+  }
+
+  function fillCreatedTable(tableElement, tableData) {
+    if (!tableElement) return false;
+    const data = normalizeTableData(tableData);
+    const rows = Array.from(tableElement.querySelectorAll('tr'));
+    if (rows.length < data.rows.length) return false;
+
+    for (let r = 0; r < data.rows.length; r++) {
+      const sourceRow = data.rows[r];
+      const cells = Array.from(rows[r].children).filter((el) => /^(TD|TH)$/.test(el.tagName));
+      if (cells.length < sourceRow.length) return false;
+
+      for (let c = 0; c < sourceRow.length; c++) {
+        const sourceCell = sourceRow[c];
+        const cell = cells[c];
+        cell.innerHTML = tableCellHtml(sourceCell.text);
+        if (sourceCell.colspan > 1) cell.setAttribute('colspan', String(sourceCell.colspan));
+        if (sourceCell.rowspan > 1) cell.setAttribute('rowspan', String(sourceCell.rowspan));
+      }
+    }
+    return true;
+  }
+
+  async function insertTableDirectly(editor, placeholderId, tableData) {
+    if (!editor || !editor.document || !editor.document.$) return null;
+    const doc = editor.document.$;
+    const placeholder = doc.getElementById(placeholderId);
+    if (!placeholder) return null;
+
+    const holder = doc.createElement('div');
+    holder.innerHTML = buildDirectTableHtml(tableData);
+    const table = holder.querySelector('table');
+    if (!table) return null;
+
+    const paragraph = placeholder.closest ? placeholder.closest('p') : placeholder.parentNode;
+    const anchor = paragraph && paragraph.parentNode ? paragraph : placeholder;
+    anchor.parentNode.insertBefore(table, anchor);
+    cleanupPlaceholder(editor, placeholder);
+    if (paragraph && paragraph.parentNode && !compact(paragraph.textContent || '') && !paragraph.querySelector('img,table')) {
+      try { paragraph.remove(); } catch (e) {}
+    }
+    return table;
+  }
+
+  async function insertTableViaDialog(editor, placeholderId, tableData) {
+    if (!editor || !editor.document || !editor.document.$ || !PAGE.CKEDITOR) return null;
+    const doc = editor.document.$;
+    const placeholder = doc.getElementById(placeholderId);
+    if (!placeholder) return null;
+
+    const beforeTables = new Set(Array.from(doc.querySelectorAll('table')));
+
+    try {
+      const ckePlaceholder = PAGE.CKEDITOR.dom.element.get
+        ? PAGE.CKEDITOR.dom.element.get(placeholder)
+        : new PAGE.CKEDITOR.dom.element(placeholder);
+      const range = editor.createRange();
+      range.setStartBefore(ckePlaceholder);
+      range.collapse(true);
+      editor.getSelection().selectRanges([range]);
+      editor.focus();
+    } catch (e) {
+      return null;
+    }
+
+    try {
+      editor.execCommand('table');
+    } catch (e) {
+      const toolbarButton = document.querySelector('#cke_' + editor.name + ' .cke_button__table, #cke_' + editor.name + ' a[title="Table"]');
+      if (toolbarButton) toolbarButton.click();
+    }
+
+    const dialog = await waitForTableDialog(5000);
+    if (!dialog) return null;
+
+    const data = normalizeTableData(tableData);
+    setDialogControlValue(dialogControlByLabel(dialog, 'Rows'), data.rows.length);
+    setDialogControlValue(dialogControlByLabel(dialog, 'Columns'), tableColumnCount(data));
+    setDialogControlValue(dialogControlByLabel(dialog, 'Width'), data.width);
+    setDialogControlValue(dialogControlByLabel(dialog, 'Border size'), data.border);
+    setDialogControlValue(dialogControlByLabel(dialog, 'Cell spacing'), data.cellspacing);
+    setDialogControlValue(dialogControlByLabel(dialog, 'Cell padding'), data.cellpadding);
+
+    const headers = dialogControlByLabel(dialog, 'Headers');
+    if (headers) setDialogControlValue(headers, data.headerRows > 0 ? 'row' : '');
+
+    const ok = dialog.querySelector('.cke_dialog_ui_button_ok');
+    if (!ok) return null;
+    ok.click();
+
+    const start = Date.now();
+    let inserted = null;
+    while (Date.now() - start < 5000) {
+      inserted = Array.from(doc.querySelectorAll('table')).find((table) => !beforeTables.has(table));
+      if (inserted) break;
+      await sleep(120);
+    }
+
+    if (!inserted) return null;
+    if (!fillCreatedTable(inserted, data)) {
+      const direct = await insertTableDirectly(editor, placeholderId, data);
+      try { inserted.remove(); } catch (e) {}
+      return direct;
+    }
+
+    cleanupPlaceholder(editor, placeholder);
+    return inserted;
+  }
+
+  async function insertPlannedTables(editor, plans) {
+    if (!editor || !Array.isArray(plans) || !plans.length) return true;
+    allowRichContent(editor);
+
+    for (const plan of plans) {
+      let inserted = await insertTableViaDialog(editor, plan.placeholderId, plan.table);
+      if (!inserted) inserted = await insertTableDirectly(editor, plan.placeholderId, plan.table);
+      if (!inserted) throw new Error('Gagal membuat tabel pada editor ' + editor.name + '.');
+      await sleep(120);
+    }
+
+    try {
+      triggerWirisParser(editor);
+      editor.updateElement();
+      if (!isOptionEditorId(editor.name)) {
+        editor.fire('change');
+        editor.fire('blur');
+      }
+    } catch (e) {}
+    return true;
+  }
+
+  function ensureExactlyOneTrailingSpaceHtml(html) {
+    let value = String(html == null ? '' : html);
+    value = value.replace(/(?:\s*<p\b[^>]*>(?:\s|&nbsp;|&#160;|<br\s*\/?>)*<\/p>)+\s*$/gi, '');
+    value = value.replace(/(?:\s|&nbsp;|&#160;|\u00a0)+(?=<\/p>\s*$)/gi, '');
+    if (!value) return '<p>&nbsp;</p>';
+    if (/<\/p>\s*$/i.test(value)) return value.replace(/<\/p>\s*$/i, '&nbsp;</p>');
+    return value.replace(/(?:\s|&nbsp;|&#160;|\u00a0)+$/gi, '') + '&nbsp;';
+  }
+  // ================== /v2.5.0 LATEX + TABLE ==================
+
+  async function setEditorMathTypeData(editorId, rawText, livewireProp) {
+    const converted = richTextToMathTypeHtml(rawText);
+
+    await recoverEditor(editorId);
+    await waitForEditorReady(editorId, APP.editorWaitMs || 5000);
+
+    const editor = getCkeditorInstance(editorId);
+    const textarea = document.getElementById(editorId);
+
+    if (editor && typeof editor.setData === 'function') {
+      allowRichContent(editor);
+
+      await new Promise((resolve) => {
+        let resolved = false;
+        const done = () => { if (!resolved) { resolved = true; resolve(); } };
+        try {
+          editor.setData(converted.html, {
+            callback: function () {
+              try {
+                triggerWirisParser(editor);
+                editor.updateElement();
+                if (!isOptionEditorId(editorId)) {
+                  editor.fire('change');
+                  editor.fire('blur');
+                }
+              } catch (e) {}
+              done();
+            },
+          });
+          setTimeout(done, 5000);
+        } catch (e) { done(); }
+      });
+
+      if (converted.tables.length) await insertPlannedTables(editor, converted.tables);
+
+      try {
+        triggerWirisParser(editor);
+        editor.updateElement();
+        if (!isOptionEditorId(editorId)) editor.fire('change');
+      } catch (e) {}
+
+      let data = '';
+      try { data = editor.getData() || converted.html; } catch (e) { data = converted.html; }
+      if (textarea) setNativeValue(textarea, data);
+
+      if (livewireProp) {
+        livewireFindSet(livewireProp, data, false);
+        livewireSet(livewireProp, data);
+        livewireSetEditorAll(editorId, data);
+      }
+    } else {
+      let fallbackHtml = converted.html;
+      for (const plan of converted.tables) {
+        const placeholder = '<p class="siadu-table-placeholder-p"><span id="' + plan.placeholderId + '" data-siadu-table-placeholder="1">&nbsp;</span></p>';
+        fallbackHtml = fallbackHtml.replace(placeholder, buildDirectTableHtml(plan.table));
+      }
+      await setEditorIframeBody(editorId, fallbackHtml);
+      if (textarea) setNativeValue(textarea, fallbackHtml);
+      if (livewireProp) {
+        livewireFindSet(livewireProp, fallbackHtml, false);
+        livewireSet(livewireProp, fallbackHtml);
+        livewireSetEditorAll(editorId, fallbackHtml);
+      }
+    }
+
+    if (converted.mathCount > 0) {
+      const start = Date.now();
+      while (Date.now() - start < 5000) {
+        if (countEditorMath(editorId) >= converted.mathCount) break;
+        const currentEditor = getCkeditorInstance(editorId);
+        if (currentEditor) triggerWirisParser(currentEditor);
+        await sleep(180);
+      }
+    }
+
+    if (converted.tables.length > 0) {
+      const start = Date.now();
+      while (Date.now() - start < 5000) {
+        if (countEditorTables(editorId) >= converted.tables.length) break;
+        await sleep(150);
+      }
+    }
+
+    if (!isOptionEditorId(editorId)) {
+      await typeTrailingSpace(editorId);
+      const ed = getCkeditorInstance(editorId);
+      if (ed) {
+        try {
+          const data = ed.getData();
+          if (livewireProp) livewireFindSet(livewireProp, data, false);
+          livewireFindSet(editorId, data, false);
+        } catch (e) {}
+      }
+    }
+
+    await sleep(180);
+    return true;
+  }
+
+  async function setEditorWithMath(editorId, rawText, livewireProp) {
+    const normalized = normalizeInputTables(rawText);
+    if (!needsRichInsert(normalized)) return false;
+    return setEditorMathTypeData(editorId, normalized, livewireProp);
+  }
+
+  async function setCkeditorData(id, html, livewireProp) {
+    await waitForEditorReady(id, APP.editorWaitMs || 5000);
+
+    const textarea = document.getElementById(id);
+    const editor = getCkeditorInstance(id);
+
+    await setEditorIframeBody(id, html);
+
+    if (editor) {
+      try {
+        editor.setData(html);
+        editor.updateElement();
+        if (!isOptionEditorId(id)) {
+          editor.fire('change');
+          editor.fire('blur');
+        }
+      } catch (e) {}
+    }
+
+    if (textarea) {
+      setNativeValue(textarea, html);
+    }
+
+    if (livewireProp) {
+      livewireSet(livewireProp, html);
+    }
+
+    await sleep(180);
+  }
+
+  function livewireGet(prop) {
+    if (!isSafeLivewireProp(prop)) return undefined;
+    const component = getFormComponent();
+    if (!component) return undefined;
+    try {
+      if (component.get && typeof component.get === 'function') return component.get(prop);
+    } catch (e) {}
+    try {
+      if (component.$wire && typeof component.$wire.get === 'function') return component.$wire.get(prop);
+    } catch (e) {}
+    try {
+      if (component.$wire) return component.$wire[prop];
+    } catch (e) {}
+    try {
+      if (component.data) return component.data[prop];
+    } catch (e) {}
+    return undefined;
+  }
+
+  function getLivewireComponentId() {
+    const form = document.querySelector('#form-modal');
+    const root = (form && form.closest('[wire\\:id]')) ||
+                 (document.querySelector('#level') && document.querySelector('#level').closest('[wire\\:id]')) ||
+                 document.querySelector('[wire\\:id]');
+    return root ? root.getAttribute('wire:id') : null;
+  }
+
+  function livewireFindSet(prop, value, defer) {
+    if (!isSafeLivewireProp(prop)) return false;
+    const deferFlag = defer !== false;
+
+    try {
+      const id = getLivewireComponentId();
+      if (id && window.livewire && typeof window.livewire.find === 'function') {
+        const comp = window.livewire.find(id);
+        if (comp && typeof comp.set === 'function') {
+          comp.set(prop, value, deferFlag);
+          return true;
+        }
+      }
+    } catch (e) {}
+
+    try {
+      const id = getLivewireComponentId();
+      if (id && PAGE.Livewire && typeof PAGE.Livewire.find === 'function') {
+        const comp = PAGE.Livewire.find(id);
+        if (comp && typeof comp.set === 'function') {
+          comp.set(prop, value, deferFlag);
+          return true;
+        }
+      }
+    } catch (e) {}
+    return false;
+  }
+
+  function editorModelCandidates(id) {
+    const set = [];
+    const push = (v) => {
+      if (isSafeLivewireProp(v) && set.indexOf(v) === -1) set.push(String(v).trim());
+    };
+
+    const ta = document.getElementById(id);
+    if (ta) {
+      const fromAttr = getWireModelName(ta);
+      if (fromAttr) push(fromAttr);
+    }
+
+    push(id);
+    return set;
+  }
+
+  function livewireSetEditorAll(id, html) {
+    let any = false;
+    for (const prop of editorModelCandidates(id)) {
+      if (livewireSet(prop, html)) any = true;
+    }
+    return any;
+  }
+
+  function livewireGetEditorAny(id) {
+    for (const prop of editorModelCandidates(id)) {
+      const v = livewireGet(prop);
+      if (stripHtml(v || '')) return v;
+    }
+    return '';
+  }
+
+  async function recoverEditor(id) {
+    try {
+      if (!window.CKEDITOR) return;
+      const ta = document.getElementById(id);
+      if (!ta) return;
+
+      const existing = getCkeditorInstance(id);
+      if (existing && existing.status === 'ready' && findCkeditorFrame(id)) return;
+
+      if (existing) {
+        try { existing.destroy(true); } catch (e) {}
+      }
+      try {
+        CKEDITOR.replace(id, { allowedContent: true });
+      } catch (e) {}
+
+      const t0 = Date.now();
+      while (Date.now() - t0 < 3000) {
+        const ed = getCkeditorInstance(id);
+        if (ed && (ed.status === 'ready' || findCkeditorFrame(id))) break;
+        await sleep(100);
+      }
+    } catch (e) {}
+  }
+
+  async function typeTrailingSpace(id) {
+    const editor = getCkeditorInstance(id);
+    if (editor) {
+      try {
+        let data = editor.getData() || '';
+        if (id === 'content_explanation') data = ensureExactlyOneTrailingSpaceHtml(data);
+        editor.setData(data);
+        editor.focus();
+        editor.updateElement();
+        editor.fire('change');
+        editor.fire('key');
+        editor.fire('blur');
+        await sleep(100);
+        return true;
+      } catch (e) {}
+    }
+
+    const iframe = findCkeditorFrame(id);
+    if (iframe) {
+      try {
+        const doc = iframe.contentDocument || (iframe.contentWindow && iframe.contentWindow.document);
+        if (doc && doc.body) {
+          if (id === 'content_explanation') doc.body.innerHTML = ensureExactlyOneTrailingSpaceHtml(doc.body.innerHTML);
+          doc.body.dispatchEvent(new Event('input', { bubbles: true }));
+          doc.body.dispatchEvent(new Event('change', { bubbles: true }));
+          doc.body.dispatchEvent(new Event('blur', { bubbles: true }));
+          await sleep(100);
+          return true;
+        }
+      } catch (e) {}
+    }
+    return false;
+  }
+
+  async function commitEditor(id, livewireProp, expectedHtmlFallback) {
+    await recoverEditor(id);
+    const editor = getCkeditorInstance(id);
+    let html = expectedHtmlFallback || '';
+
+    if (editor && typeof editor.setData === 'function') {
+      if (hasMathTypeHtml(expectedHtmlFallback || '') || hasTableHtml(expectedHtmlFallback || '')) allowRichContent(editor);
+
+      try {
+        editor.setData(expectedHtmlFallback || '', {
+          callback: function () {
+            try {
+              if (!isOptionEditorId(id)) editor.fire('change');
+              editor.updateElement();
+            } catch (e) {}
+          }
+        });
+      } catch (e) {}
+
+      try {
+        if (!isOptionEditorId(id)) editor.fire('change');
+        editor.updateElement();
+      } catch (e) {}
+
+      // v2.6.1: typeTrailingSpace (yang melakukan setData ulang penuh) hanya
+      // diperlukan untuk content_explanation. Untuk soal, lewati agar tidak
+      // ada setData ganda yang memperlambat konten panjang.
+      if (id === 'content_explanation') {
+        await typeTrailingSpace(id);
+      }
+
+      try { html = editor.getData() || html; } catch (e) {}
+    } else {
+      await setEditorIframeBody(id, expectedHtmlFallback || '');
+      const textarea = document.getElementById(id);
+      if (textarea) setNativeValue(textarea, expectedHtmlFallback || '');
+      html = expectedHtmlFallback || '';
+    }
+
+    if (id === 'content_explanation') html = ensureExactlyOneTrailingSpaceHtml(html);
+
+    if (editorContentFilled(html)) {
+      livewireFindSet(id, html, false);
+      if (livewireProp && livewireProp !== id) livewireFindSet(livewireProp, html, false);
+    }
+
+    return html;
+  }
+
+  async function ensureEditorCommitted(id, livewireProp, expectedHtmlFallback, attempts = 3) {
+    for (let i = 0; i < attempts; i++) {
+      const html = await commitEditor(id, livewireProp, expectedHtmlFallback);
+      const edData = getCkeditorInstance(id) ? (() => { try { return getCkeditorInstance(id).getData(); } catch (e) { return ''; } })() : '';
+      if (editorContentFilled(edData)) {
+        // v2.6.1: tidak perlu menunggu idle 6 detik di sini. Commit sudah
+        // dilakukan dgn defer=false (langsung sync). Flush final sebelum
+        // Simpan yang akan memastikan idle. Cukup jeda sangat singkat.
+        await sleep(120);
+        return true;
+      }
+
+      const lwVal = livewireGet(id) || livewireGetEditorAny(id) || livewireGet(livewireProp);
+      if (editorContentFilled(lwVal || '')) {
+        await sleep(120);
+        return true;
+      }
+
+      await sleep(180);
+    }
+
+    await commitEditor(id, livewireProp, expectedHtmlFallback);
+    const lwVal = livewireGetEditorAny(id) || livewireGet(livewireProp);
+    return editorContentFilled(lwVal || '') || editorContentFilled(getEditorData(id) || '');
+  }
+
+  function getEditorData(id) {
+    const editor = getCkeditorInstance(id);
+
+    if (editor) {
+      try {
+        const data = editor.getData();
+        if (editorContentFilled(data)) return data;
+      } catch (e) {}
+    }
+
+    const iframe = findCkeditorFrame(id);
+    if (iframe) {
+      try {
+        const doc = iframe.contentDocument || (iframe.contentWindow && iframe.contentWindow.document);
+        if (doc && doc.body) {
+          const html = doc.body.innerHTML || '';
+          if (editorContentFilled(html)) return html;
+        }
+      } catch (e) {}
+    }
+
+    const el = document.getElementById(id);
+    return el ? el.value : '';
+  }
+
+  function mapLevel(rawLevel) {
+    const s = compact(rawLevel).toLowerCase();
+    if (s === 'hots' || s === 'hot' || s === 'h.o.t.s') return 'Hots';
+    if (s === 'sulit') return 'Sulit';
+    if (s === 'sedang') return 'Sedang';
+    if (s === 'mudah') return 'Mudah';
+    return '';
+  }
+
+  function isTrailingMetadataLine(line) {
+    const t = String(line || '').trim();
+    if (!t) return true;
+    if (/^Materi\s+Pokok\s*:/i.test(t)) return true;
+    if (/^Kompetensi\s+Teknis\s*:/i.test(t)) return true;
+    if (/^Bloom\s*:/i.test(t)) return true;
+    if (/^SOAL\s+\d+/i.test(t)) return true;
+    const noLowercase = !/[a-zà-ÿ]/.test(t);
+    const hasUppercase = /[A-Z]/.test(t);
+    const notOption = !/^(Opsi\s+[A-F]|[A-F]\.)/i.test(t);
+    if (noLowercase && hasUppercase && notOption && t.length >= 10) return true;
+    return false;
+  }
+
+  function cleanLines(lines) {
+    const arr = lines.map((x) => String(x || '').trimEnd());
+    while (arr.length && !arr[0].trim()) arr.shift();
+    while (arr.length && !arr[arr.length - 1].trim()) arr.pop();
+    return arr;
+  }
+
+  function cleanExplanationLines(lines) {
+    const arr = lines.map((x) => String(x || '').trimEnd());
+    while (arr.length && !arr[0].trim()) arr.shift();
+    while (arr.length) {
+      const last = arr[arr.length - 1];
+      if (isTrailingMetadataLine(last)) arr.pop();
+      else break;
+    }
+    while (arr.length && !arr[arr.length - 1].trim()) arr.pop();
+    return arr;
+  }
+
+  function parseScores(explanationText) {
+    const scores = {};
+    const re = /Opsi\s+([A-F])\s*\(\s*(\d+)\s*poin\s*\)/gi;
+    let m;
+    while ((m = re.exec(explanationText)) !== null) {
+      const letter = m[1].toUpperCase();
+      const score = parseInt(m[2], 10);
+      if (LETTERS.includes(letter) && Number.isFinite(score)) {
+        scores[letter] = score;
+      }
+    }
+    return scores;
+  }
+
+  // ===================== OPTION NEW HELPERS =====================
+  function splitQuestionAndOptions(questionLines) {
+    const stemLines = [];
+    const optionTexts = {};
+    let currentLetter = null;
+
+    for (const rawLine of questionLines) {
+      const line = String(rawLine || '').trimEnd();
+      const trimmed = line.trim();
+      const m = trimmed.match(/^([A-F])\.\s*(.*)$/i);
+
+      if (m) {
+        currentLetter = m[1].toUpperCase();
+        optionTexts[currentLetter] = (m[2] || '').trim();
+        continue;
+      }
+      if (currentLetter && trimmed) {
+        optionTexts[currentLetter] = [optionTexts[currentLetter], trimmed].filter(Boolean).join('\n');
+        continue;
+      }
+      if (!currentLetter) {
+        stemLines.push(line);
+      }
+    }
+
+    const stemText = cleanLines(stemLines).join('\n').trim();
+    const optionLettersFound = LETTERS.filter((letter) => optionTexts[letter] && String(optionTexts[letter]).trim());
+    return { stemText, optionTexts, optionLettersFound };
+  }
+
+  function optionLettersForItem(item) {
+    const fromTexts = item && item.optionTexts
+      ? LETTERS.filter((letter) => item.optionTexts[letter] && String(item.optionTexts[letter]).trim())
+      : [];
+    if (fromTexts.length) return fromTexts;
+    if (item && Array.isArray(item.optionLettersFound) && item.optionLettersFound.length) {
+      return item.optionLettersFound.filter((letter) => LETTERS.includes(letter));
+    }
+    return [];
+  }
+
+  function optionCountForItem(item) {
+    return optionLettersForItem(item).length;
+  }
+
+  function optionTextForLetter(item, letter) {
+    if (item && item.optionTexts && item.optionTexts[letter]) {
+      return String(item.optionTexts[letter]).trim();
+    }
+    return '';
+  }
+
+  function htmlForOptionText(text) {
+    return textToHtml(text) + TRAILING_EDITOR_HTML;
+  }
+
+  function setCheckboxValue(el, checked) {
+    if (!el) return false;
+    const boolVal = !!checked;
+    if (el.checked !== boolVal) {
+      try { el.click(); } catch (e) { el.checked = boolVal; }
+    } else {
+      try { el.focus(); } catch (e) {}
+    }
+    el.checked = boolVal;
+    try {
+      el.dispatchEvent(new Event('input', { bubbles: true }));
+      el.dispatchEvent(new Event('change', { bubbles: true }));
+      el.dispatchEvent(new Event('blur', { bubbles: true }));
+    } catch (e) {}
+    const model = getWireModelName(el);
+    if (model) livewireSet(model, boolVal);
+    return true;
+  }
+
+  function findRefreshMcButton() {
+    const input = document.querySelector('#multiple_choice_rows');
+    if (input) {
+      const group = input.closest('.input-group');
+      const btn = group && (
+        group.querySelector('button[wire\\:click="refreshMcForm"]') ||
+        Array.from(group.querySelectorAll('button')).find((b) => /Ubah/i.test(b.textContent || ''))
+      );
+      if (btn) return btn;
+    }
+    return (
+      document.querySelector('button[wire\\:click="refreshMcForm"]') ||
+      Array.from(document.querySelectorAll('button')).find((b) => /Ubah/i.test(b.textContent || ''))
+    );
+  }
+
+  async function ensureOptionNewAccordionOpen() {
+    const collapse = document.querySelector('#collapseOptionNew');
+    if (!collapse) return false;
+    if (!collapse.classList.contains('show')) {
+      const trigger =
+        document.querySelector('[data-bs-target="#collapseOptionNew"]') ||
+        document.querySelector('[aria-controls="collapseOptionNew"]');
+      if (trigger) {
+        try { trigger.click(); } catch (e) {}
+        await sleep(500);
+      }
+    }
+    return true;
+  }
+
+  async function waitForOptionNewBase(timeoutMs = APP.waitTimeoutMs) {
+    const start = Date.now();
+    while (Date.now() - start < timeoutMs) {
+      const rowsInput = document.querySelector('#multiple_choice_rows');
+      if (rowsInput) {
+        await ensureOptionNewAccordionOpen();
+        return true;
+      }
+      await sleep(150);
+    }
+    throw new Error('Field Jumlah Pilihan (#multiple_choice_rows) untuk Option New tidak muncul.');
+  }
+
+  function countRenderedMcRows() {
+    return Array.from(document.querySelectorAll('tr.option-row[id^="mc_tr_"]')).length;
+  }
+
+  async function waitForMcRows(count, timeoutMs = APP.waitTimeoutMs) {
+    const start = Date.now();
+    while (Date.now() - start < timeoutMs) {
+      let ok = true;
+      for (let i = 0; i < count; i++) {
+        const tr = document.querySelector(`#mc_tr_${i}`);
+        const label = tr ? tr.querySelector('input[type="text"][maxlength="5"], input.form-control-sm') : null;
+        const textarea = document.querySelector(`#mc-answer-${i}`);
+        if (!tr || !label || !textarea) { ok = false; break; }
+      }
+      if (ok) {
+        await ensureOptionNewAccordionOpen();
+        await sleep(500);
+        return true;
+      }
+      await sleep(180);
+    }
+    throw new Error(`Tabel Option New belum muncul lengkap. Diharapkan ${count} pilihan, terdeteksi ${countRenderedMcRows()}.`);
+  }
+
+  async function chooseAnswerTypeOptionNew(item) {
+    const count = optionCountForItem(item);
+    if (!count || count < 1) {
+      throw new Error('Jumlah pilihan tidak terbaca dari soal. Pastikan opsi memakai format A. ... B. ... C. ...');
+    }
+
+    await setFieldValue('#answer_type', 'option_new', 'table.answer_type');
+    await sleep(APP.afterSelectDelayMs || 220);
+    livewireCall('changeAnswerType');
+
+    await waitForOptionNewBase();
+    await ensureOptionNewAccordionOpen();
+
+    await setFieldValue('#multiple_choice_rows', String(count), 'multiple_choice_rows');
+
+    const rowsInput = document.querySelector('#multiple_choice_rows');
+    if (rowsInput) {
+      setNativeValue(rowsInput, String(count));
+      livewireSet('multiple_choice_rows', count);
+      livewireSet('multiple_choice_rows', String(count));
+    }
+
+    await sleep(180);
+
+    const refreshBtn = findRefreshMcButton();
+    if (!refreshBtn) {
+      throw new Error('Tombol Ubah untuk Jumlah Pilihan tidak ditemukan.');
+    }
+    try { refreshBtn.scrollIntoView({ behavior: 'instant', block: 'center' }); } catch (e) {}
+    refreshBtn.click();
+    await sleep(700);
+
+    if (countRenderedMcRows() < count) {
+      livewireCall('refreshMcForm');
+      await sleep(700);
+    }
+
+    await waitForMcRows(count);
+
+    const answerType = document.querySelector('#answer_type');
+    if (answerType && answerType.value !== 'option_new') {
+      await setFieldValue('#answer_type', 'option_new', 'table.answer_type');
+      livewireCall('changeAnswerType');
+      await waitForOptionNewBase();
+    }
+    return true;
+  }
+
+  async function fillOptionNewRows(item) {
+    const letters = optionLettersForItem(item);
+    const count = letters.length;
+    await waitForMcRows(count);
+
+    for (let i = 0; i < count; i++) {
+      const letter = letters[i];
+      const optionText = optionTextForLetter(item, letter);
+
+      const row = document.querySelector(`#mc_tr_${i}`);
+      if (!row) throw new Error(`Baris Option New ke-${i + 1} tidak ditemukan.`);
+
+      const labelInput =
+        row.querySelector('input[type="text"][maxlength="5"]') ||
+        row.querySelector('input.form-control-sm');
+      if (!labelInput) throw new Error(`Field label Option New ke-${i + 1} tidak ditemukan.`);
+
+      setNativeValue(labelInput, letter);
+      livewireSet(`multiple_labels.${i}`, letter);
+
+      if (needsRichInsert(optionText)) {
+        await setEditorWithMath(`mc-answer-${i}`, optionText, `multiple_choices.${i}`);
+      } else {
+        const html = htmlForOptionText(optionText);
+        await setCkeditorData(`mc-answer-${i}`, html, `multiple_choices.${i}`);
+        await ensureEditorCommitted(`mc-answer-${i}`, `multiple_choices.${i}`, html, 4);
+      }
+
+      const correctCheckbox = document.querySelector(`#mc-correct-${i}`);
+      if (correctCheckbox) {
+        const isCorrect = letter === item.correctAnswer;
+        setCheckboxValue(correctCheckbox, isCorrect);
+        livewireSet(`multiple_correct_answers.${i}`, isCorrect);
+      }
+      await sleep(120);
+    }
+    return true;
+  }
+
+  function checkOptionNewRows(item) {
+    const problems = [];
+    const letters = optionLettersForItem(item);
+    const count = letters.length;
+    if (!count) { problems.push('Jumlah opsi Option New tidak terbaca'); return problems; }
+    if (countRenderedMcRows() < count) {
+      problems.push(`Tabel Option New belum lengkap (${countRenderedMcRows()}/${count})`);
+    }
+    for (let i = 0; i < count; i++) {
+      const letter = letters[i];
+      const optionText = optionTextForLetter(item, letter);
+      const row = document.querySelector(`#mc_tr_${i}`);
+      if (!row) { problems.push(`Baris opsi ${letter} belum ada`); continue; }
+      const labelInput =
+        row.querySelector('input[type="text"][maxlength="5"]') ||
+        row.querySelector('input.form-control-sm');
+      if (!labelInput || String(labelInput.value || '').trim() !== letter) {
+        problems.push(`Label opsi ${letter} belum sesuai`);
+      }
+      const editorData = getEditorData(`mc-answer-${i}`);
+      const livewireData = livewireGet(`multiple_choices.${i}`);
+      if (!stripHtml(editorData) && !stripHtml(livewireData || '') && optionText) {
+        problems.push(`Konten opsi ${letter} masih kosong`);
+      }
+      const correctCheckbox = document.querySelector(`#mc-correct-${i}`);
+      if (correctCheckbox) {
+        const expected = letter === item.correctAnswer;
+        if (correctCheckbox.checked !== expected) {
+          problems.push(`Status benar/salah opsi ${letter} belum sesuai`);
+        }
+      }
+    }
+    return problems;
+  }
+  // =================== /OPTION NEW HELPERS ===================
+
+  // ===================== v2.6.0: OPTION LEGACY HELPERS =====================
+  // Mode lama: tipe jawaban = "option". Memakai field #correct_answer dan
+  // #score_option_a..f. Skor per opsi dibaca dari pembahasan ("Opsi A (5 poin)")
+  // atau dari kolom skor_a..f Excel. Konten opsi A-E TIDAK masuk editor terpisah;
+  // pada mode legacy, opsi ditulis di dalam editor SOAL (sesuai format asli).
+  async function waitForOptionLegacyFields(timeoutMs = APP.waitTimeoutMs) {
+    const start = Date.now();
+    while (Date.now() - start < timeoutMs) {
+      const correct = document.querySelector('#correct_answer');
+      const scoreA = document.querySelector('#score_option_a');
+      const scoreB = document.querySelector('#score_option_b');
+      if (correct && scoreA && scoreB) {
+        await sleep(300);
+        return true;
+      }
+      await sleep(150);
+    }
+    throw new Error('Field Jawaban Benar / Nilai Per Opsi (Option Legacy) tidak muncul.');
+  }
+
+  async function chooseAnswerTypeOptionLegacy() {
+    await setFieldValue('#answer_type', 'option', 'table.answer_type');
+    await sleep(APP.afterSelectDelayMs || 220);
+    livewireCall('changeAnswerType');
+
+    await waitForOptionLegacyFields();
+
+    const answerType = document.querySelector('#answer_type');
+    if (answerType && answerType.value !== 'option') {
+      await setFieldValue('#answer_type', 'option', 'table.answer_type');
+      livewireCall('changeAnswerType');
+      await waitForOptionLegacyFields();
+    }
+    return true;
+  }
+
+  function relevantLetters(item) {
+    return LETTERS.filter((l) => item.scores && item.scores[l] != null);
+  }
+
+  async function fillOptionScores(item) {
+    for (const letter of LETTERS) {
+      const lower = letter.toLowerCase();
+      const el = document.querySelector(`#score_option_${lower}`);
+      if (!el) continue;
+      const value = item.scores && item.scores[letter] != null ? String(item.scores[letter]) : '';
+      await setFieldValue(`#score_option_${lower}`, value, `table.score_option_${lower}`);
+    }
+  }
+
+  function checkOptionScores(item) {
+    const mismatched = [];
+    for (const letter of relevantLetters(item)) {
+      const lower = letter.toLowerCase();
+      const el = document.querySelector(`#score_option_${lower}`);
+      const expected = String(item.scores[letter]);
+      const actual = el ? String(el.value || '').trim() : '';
+      if (!el) { mismatched.push(`${letter} (field tidak ada)`); continue; }
+      if (actual === '' || actual !== expected) mismatched.push(letter);
+    }
+    return mismatched;
+  }
+
+  async function ensureOptionScores(item, attempts = 6) {
+    let missing = checkOptionScores(item);
+    let tries = 0;
+    while (missing.length && tries < attempts) {
+      for (const letter of missing) {
+        const lower = String(letter).charAt(0).toLowerCase();
+        const value = item.scores && item.scores[letter] != null ? String(item.scores[letter]) : '';
+        await setFieldValue(`#score_option_${lower}`, value, `table.score_option_${lower}`);
+      }
+      await sleep(180);
+      missing = checkOptionScores(item);
+      tries++;
+    }
+    return missing;
+  }
+  // =================== /v2.6.0: OPTION LEGACY HELPERS ===================
+
+  async function fillLegacyAnswerAndScoresIfPresent(item) {
+    if (document.querySelector('#correct_answer')) {
+      await setFieldValue('#correct_answer', item.correctAnswer, 'table.correct_answer');
+    }
+    for (const letter of LETTERS) {
+      const lower = letter.toLowerCase();
+      const el = document.querySelector(`#score_option_${lower}`);
+      if (!el) continue;
+      const value = item.scores && item.scores[letter] != null ? String(item.scores[letter]) : '';
+      await setFieldValue(`#score_option_${lower}`, value, `table.score_option_${lower}`);
+    }
+  }
+
+  function parseQuestions(rawText) {
+    const text = norm(normalizeInputTables(rawText));
+    const markerRe = /^SOAL\s+(\d+)\s*$/gim;
+    const markers = [];
+    let m;
+    while ((m = markerRe.exec(text)) !== null) {
+      markers.push({ no: m[1], index: m.index });
+    }
+
+    const results = [];
+    const errors = [];
+    if (!markers.length) {
+      throw new Error('Tidak ditemukan pola "SOAL 1", "SOAL 2", dan seterusnya.');
+    }
+
+    for (let i = 0; i < markers.length; i++) {
+      const start = markers[i].index;
+      const end = i + 1 < markers.length ? markers[i + 1].index : text.length;
+      const block = text.slice(start, end).trim();
+      const lines = block.split('\n').map((line) => line.trimEnd());
+      const no = markers[i].no;
+
+      const idxBloom = lines.findIndex((line) => /Bloom\s*:/i.test(line) || /Tingkat\s+Kesulitan\s*:/i.test(line));
+      const idxJawaban = lines.findIndex((line) => /^Jawaban\s*:/i.test(line.trim()));
+
+      const levelMatch = block.match(/Tingkat\s+Kesulitan\s*:\s*([A-Za-z]+)/i);
+      const level = mapLevel(levelMatch ? levelMatch[1] : '');
+
+      const correctMatch = block.match(/Jawaban\s*:\s*([A-F])(?:\s*\(\s*\d+\s*poin\s*\))?/i);
+      const correctAnswer = correctMatch ? correctMatch[1].toUpperCase() : '';
+
+      if (idxJawaban < 0) {
+        errors.push(`SOAL ${no}: tidak menemukan baris "Jawaban:".`);
+        continue;
+      }
+
+      const questionStartIndex = idxBloom >= 0 ? idxBloom + 1 : 1;
+      const questionLines = cleanLines(lines.slice(questionStartIndex, idxJawaban));
+      const explanationLines = cleanExplanationLines(lines.slice(idxJawaban));
+
+      const questionFullText = questionLines.join('\n').trim();
+      const split = splitQuestionAndOptions(questionLines);
+      const questionStemText = split.stemText || questionFullText;
+      const optionTexts = split.optionTexts;
+      const optionLettersFound = split.optionLettersFound;
+
+      const explanationText = explanationLines.join('\n').trim();
+      const scores = parseScores(explanationText);
+
+      const itemErrors = [];
+      if (!level) itemErrors.push('level kesulitan tidak terbaca');
+      if (!questionStemText) itemErrors.push('soal kosong');
+      if (!/^([A-F])$/.test(correctAnswer)) itemErrors.push('jawaban benar tidak terbaca');
+      if (!explanationText) itemErrors.push('pembahasan kosong');
+      if (!optionLettersFound.includes('A') || !optionLettersFound.includes('B')) {
+        itemErrors.push('format opsi A/B tidak terdeteksi di bagian soal');
+      }
+      if (optionLettersFound.length < 3) {
+        itemErrors.push(`jumlah opsi kurang dari 3 (${optionLettersFound.length})`);
+      }
+
+      results.push({
+        no, level, correctAnswer,
+        questionText: questionFullText,
+        questionStemText,
+        explanationText,
+        questionHtml: textToHtml(questionStemText) + TRAILING_EDITOR_HTML,
+        questionFullHtml: textToHtml(questionFullText) + TRAILING_EDITOR_HTML,
+        explanationHtml: explanationToHtmlWithTrailingDotSpace(explanationText) + TRAILING_EDITOR_HTML,
+        optionTexts, optionLettersFound,
+        optionCount: optionLettersFound.length,
+        scores, errors: itemErrors,
+      });
+    }
+    return { items: results, errors };
+  }
+
+  // ===================== PARSER EXCEL =====================
+  const XLSX_LIB = (typeof XLSX !== 'undefined') ? XLSX : (PAGE && PAGE.XLSX);
+
+  function normHeader(h) {
+    return String(h == null ? '' : h).trim().toLowerCase().replace(/\s+/g, '_');
+  }
+
+  const HEADER_ALIASES = {
+    no: ['no','nomor','number'],
+    level: ['level','tingkat','kesulitan','tingkat_kesulitan'],
+    soal: ['soal','pertanyaan','question','isi','isi_soal'],
+    opsi_a: ['opsi_a','pilihan_a','a','option_a'],
+    opsi_b: ['opsi_b','pilihan_b','b','option_b'],
+    opsi_c: ['opsi_c','pilihan_c','c','option_c'],
+    opsi_d: ['opsi_d','pilihan_d','d','option_d'],
+    opsi_e: ['opsi_e','pilihan_e','e','option_e'],
+    opsi_f: ['opsi_f','pilihan_f','f','option_f'],
+    jawaban_benar: ['jawaban_benar','kunci','jawaban','correct','correct_answer','kunci_jawaban'],
+    skor_a: ['skor_a','nilai_a','score_a','poin_a'],
+    skor_b: ['skor_b','nilai_b','score_b','poin_b'],
+    skor_c: ['skor_c','nilai_c','score_c','poin_c'],
+    skor_d: ['skor_d','nilai_d','score_d','poin_d'],
+    skor_e: ['skor_e','nilai_e','score_e','poin_e'],
+    skor_f: ['skor_f','nilai_f','score_f','poin_f'],
+    pembahasan: ['pembahasan','penjelasan','explanation','pembahasan_soal'],
+  };
+
+  function buildHeaderMap(headerRow) {
+    const map = {};
+    headerRow.forEach((raw, idx) => {
+      const n = normHeader(raw);
+      for (const canon in HEADER_ALIASES) {
+        if (HEADER_ALIASES[canon].indexOf(n) !== -1) {
+          if (map[canon] == null) map[canon] = idx;
+        }
+      }
+    });
+    return map;
+  }
+
+  function cellStr(row, idx) {
+    if (idx == null) return '';
+    const v = row[idx];
+    if (v == null) return '';
+    return String(v).replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+  }
+
+  function parseQuestionsFromExcel(arrayBuffer) {
+    if (!XLSX_LIB) {
+      throw new Error('Library Excel (SheetJS) gagal dimuat. Refresh halaman lalu coba lagi.');
+    }
+    const wb = XLSX_LIB.read(arrayBuffer, { type: 'array' });
+    let sheetName = wb.SheetNames.find(n => /soal/i.test(n)) || wb.SheetNames[0];
+    const ws = wb.Sheets[sheetName];
+    const rows = XLSX_LIB.utils.sheet_to_json(ws, { header: 1, blankrows: false, defval: '' });
+
+    if (!rows.length) throw new Error('Sheet kosong: ' + sheetName);
+
+    const headerMap = buildHeaderMap(rows[0]);
+    if (headerMap.soal == null && headerMap.pembahasan == null) {
+      throw new Error('Header tidak dikenali. Pastikan baris pertama memuat kolom seperti: level, soal, jawaban_benar, pembahasan. (sheet: ' + sheetName + ')');
+    }
+
+    const items = [];
+    const errors = [];
+
+    for (let i = 1; i < rows.length; i++) {
+      const row = rows[i];
+      const soalText = normalizeInputTables(cellStr(row, headerMap.soal));
+      const pembText = normalizeInputTables(cellStr(row, headerMap.pembahasan));
+      if (!soalText && !pembText) continue;
+
+      const no = cellStr(row, headerMap.no) || String(items.length + 1);
+      const level = mapLevel(cellStr(row, headerMap.level));
+      const correctAnswer = (cellStr(row, headerMap.jawaban_benar).toUpperCase().match(/[A-F]/) || [''])[0];
+
+      const optCols = { A:'opsi_a', B:'opsi_b', C:'opsi_c', D:'opsi_d', E:'opsi_e', F:'opsi_f' };
+      let optionTexts = {};
+      for (const L in optCols) {
+        const t = normalizeInputTables(cellStr(row, headerMap[optCols[L]]));
+        if (t) optionTexts[L] = t;
+      }
+
+      let questionStemText = soalText;
+      let questionFull = soalText;
+      let optionLettersFound = LETTERS.filter((L) => optionTexts[L]);
+
+      if (!optionLettersFound.length) {
+        const split = splitQuestionAndOptions(String(soalText || '').split('\n'));
+        questionStemText = split.stemText || soalText;
+        optionTexts = split.optionTexts;
+        optionLettersFound = split.optionLettersFound;
+        questionFull = soalText;
+      } else {
+        const lines = [soalText];
+        for (const L of LETTERS) {
+          if (optionTexts[L]) lines.push(`${L}. ${optionTexts[L]}`);
+        }
+        questionFull = lines.join('\n');
+      }
+
+      const scoreCols = { A:'skor_a', B:'skor_b', C:'skor_c', D:'skor_d', E:'skor_e', F:'skor_f' };
+      const scores = {};
+      for (const L in scoreCols) {
+        const raw = cellStr(row, headerMap[scoreCols[L]]);
+        if (raw !== '' && !isNaN(parseInt(raw, 10))) scores[L] = parseInt(raw, 10);
+      }
+
+      const itemErrors = [];
+      if (!level) itemErrors.push('level kesulitan tidak terbaca');
+      if (!questionStemText) itemErrors.push('soal kosong');
+      if (!/^[A-F]$/.test(correctAnswer)) itemErrors.push('jawaban benar tidak terbaca');
+      if (!pembText) itemErrors.push('pembahasan kosong');
+      if (!optionLettersFound.includes('A') || !optionLettersFound.includes('B')) {
+        itemErrors.push('format opsi A/B tidak terdeteksi');
+      }
+      if (optionLettersFound.length < 3) {
+        itemErrors.push(`jumlah opsi kurang dari 3 (${optionLettersFound.length})`);
+      }
+
+      items.push({
+        no, level, correctAnswer,
+        questionText: questionFull,
+        questionStemText,
+        explanationText: pembText,
+        questionHtml: textToHtml(questionStemText) + TRAILING_EDITOR_HTML,
+        questionFullHtml: textToHtml(questionFull) + TRAILING_EDITOR_HTML,
+        explanationHtml: explanationToHtmlWithTrailingDotSpace(pembText) + TRAILING_EDITOR_HTML,
+        optionTexts, optionLettersFound,
+        optionCount: optionLettersFound.length,
+        scores, errors: itemErrors,
+      });
+    }
+
+    if (!items.length) throw new Error('Tidak ada baris soal terisi di sheet ' + sheetName + '.');
+    return { items, errors };
+  }
+  // =================== /PARSER EXCEL ===================
+
+  function readFileAsArrayBuffer(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsArrayBuffer(file);
+    });
+  }
+
+  function readFileAsText(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(String(reader.result || ''));
+      reader.onerror = reject;
+      reader.readAsText(file);
+    });
+  }
+
+  // ===================== DOCX EQUATION + TABLE =====================
+  const JSZIP_LIB = (typeof JSZip !== 'undefined') ? JSZip : (PAGE && PAGE.JSZip);
+
+  function xmlLocalName(node) {
+    return String((node && (node.localName || node.nodeName)) || '').replace(/^.*:/, '');
+  }
+  function xmlElementChildren(node, name) {
+    return Array.from(node ? node.childNodes || [] : [])
+      .filter((child) => child.nodeType === 1 && (!name || xmlLocalName(child) === name));
+  }
+  function xmlFirstChild(node, name) {
+    return xmlElementChildren(node, name)[0] || null;
+  }
+  function xmlAttr(node, localName) {
+    if (!node || !node.attributes) return '';
+    for (const attr of Array.from(node.attributes)) {
+      if (xmlLocalName(attr) === localName) return attr.value || '';
+    }
+    return '';
+  }
+  function latexText(value) {
+    return String(value == null ? '' : value)
+      .replace(/\u00a0/g, ' ').replace(/\u2212/g, '-').replace(/\u2192/g, '\\rightarrow ')
+      .replace(/\u00d7/g, '\\times ').replace(/[\u2219\u2022]/g, '\\bullet ')
+      .replace(/\u2264/g, '\\le ').replace(/\u2265/g, '\\ge ').replace(/\u2260/g, '\\ne ')
+      .replace(/\u00b1/g, '\\pm ').replace(/\s+/g, '\\ ').trim();
+  }
+  function latexGroup(value) {
+    const valueText = String(value || '').trim();
+    if (!valueText) return '';
+    if (/^[A-Za-z0-9]+$/.test(valueText)) return valueText;
+    return '{' + valueText + '}';
+  }
+  function ommlChildLatex(node, name) {
+    const child = xmlFirstChild(node, name);
+    return child ? ommlToLatex(child) : '';
+  }
+  function ommlChildrenLatex(node) {
+    let out = '';
+    for (const child of xmlElementChildren(node)) {
+      const name = xmlLocalName(child);
+      if (/Pr$/.test(name) || name === 'ctrlPr') continue;
+      out += ommlToLatex(child);
+    }
+    return out;
+  }
+  function ommlNaryOperator(node) {
+    const naryPr = xmlFirstChild(node, 'naryPr');
+    const chr = naryPr && xmlFirstChild(naryPr, 'chr');
+    const val = chr ? xmlAttr(chr, 'val') : '';
+    if (val === '\u222b') return '\\int';
+    if (val === '\u220f') return '\\prod';
+    if (val === '\u2211' || !val) return '\\sum';
+    return latexText(val);
+  }
+  function ommlToLatex(node) {
+    if (!node) return '';
+    const name = xmlLocalName(node);
+    if (name === 't') return latexText(node.textContent || '');
+    if (name === 'r') return xmlElementChildren(node)
+      .filter((child) => xmlLocalName(child) === 't')
+      .map((child) => latexText(child.textContent || '')).join('');
+    if (['oMath','oMathPara','e','num','den','sub','sup'].includes(name)) return ommlChildrenLatex(node);
+    if (name === 'f') return '\\frac{' + ommlChildLatex(node, 'num') + '}{' + ommlChildLatex(node, 'den') + '}';
+    if (name === 'sSub') return latexGroup(ommlChildLatex(node, 'e')) + '_{' + ommlChildLatex(node, 'sub') + '}';
+    if (name === 'sSup') return latexGroup(ommlChildLatex(node, 'e')) + '^{' + ommlChildLatex(node, 'sup') + '}';
+    if (name === 'sSubSup') return latexGroup(ommlChildLatex(node, 'e')) + '_{' + ommlChildLatex(node, 'sub') + '}^{' + ommlChildLatex(node, 'sup') + '}';
+    if (name === 'nary') {
+      const op = ommlNaryOperator(node);
+      const sub = ommlChildLatex(node, 'sub');
+      const sup = ommlChildLatex(node, 'sup');
+      const body = ommlChildLatex(node, 'e');
+      return op + (sub ? '_{' + sub + '}' : '') + (sup ? '^{' + sup + '}' : '') + (body ? ' ' + body : '');
+    }
+    if (name === 'rad') {
+      const deg = ommlChildLatex(node, 'deg');
+      const body = ommlChildLatex(node, 'e');
+      return deg ? '\\sqrt[' + deg + ']{' + body + '}' : '\\sqrt{' + body + '}';
+    }
+    if (name === 'd') {
+      const dPr = xmlFirstChild(node, 'dPr');
+      const beg = dPr && xmlFirstChild(dPr, 'begChr');
+      const end = dPr && xmlFirstChild(dPr, 'endChr');
+      const left = beg ? xmlAttr(beg, 'val') : '(';
+      const right = end ? xmlAttr(end, 'val') : ')';
+      return latexText(left) + ommlChildLatex(node, 'e') + latexText(right);
+    }
+    if (name === 'func') {
+      const fname = ommlChildLatex(node, 'fName').replace(/\\ /g, '');
+      return '\\' + fname + '{' + ommlChildLatex(node, 'e') + '}';
+    }
+    if (name === 'bar') return '\\overline{' + ommlChildLatex(node, 'e') + '}';
+    return ommlChildrenLatex(node);
+  }
+  function wordRunToText(run) {
+    let out = '';
+    for (const child of xmlElementChildren(run)) {
+      const name = xmlLocalName(child);
+      if (name === 't') out += child.textContent || '';
+      else if (name === 'tab') out += '\t';
+      else if (name === 'br' || name === 'cr') out += '\n';
+      else if (name === 'oMath' || name === 'oMathPara') {
+        const latex = ommlToLatex(child).trim();
+        if (latex) out += '$$' + latex + '$$';
+      }
+    }
+    const rPr = xmlFirstChild(run, 'rPr');
+    const bold = rPr && xmlFirstChild(rPr, 'b');
+    if (bold && out.trim()) out = '**' + out + '**';
+    return out;
+  }
+  function wordNodeToText(node) {
+    let out = '';
+    for (const child of Array.from(node ? node.childNodes || [] : [])) {
+      if (child.nodeType !== 1) continue;
+      const name = xmlLocalName(child);
+      if (name === 'r') out += wordRunToText(child);
+      else if (name === 't') out += child.textContent || '';
+      else if (name === 'tab') out += '\t';
+      else if (name === 'br' || name === 'cr') out += '\n';
+      else if (name === 'oMath' || name === 'oMathPara') {
+        const latex = ommlToLatex(child).trim();
+        if (latex) out += '$$' + latex + '$$';
+      } else out += wordNodeToText(child);
+    }
+    return out;
+  }
+  function wordCellText(cell) {
+    const parts = [];
+    for (const child of xmlElementChildren(cell)) {
+      const name = xmlLocalName(child);
+      if (name === 'p') {
+        const value = wordNodeToText(child).replace(/[ \t]+/g, ' ').trim();
+        if (value) parts.push(value);
+      } else if (name === 'tbl') {
+        parts.push(tableDataToMarker(wordTableToData(child)));
+      }
+    }
+    return parts.join('\n');
+  }
+  function wordTableToData(tableNode) {
+    const rows = [];
+    let headerRows = 0;
+    for (const tr of xmlElementChildren(tableNode, 'tr')) {
+      const row = [];
+      const trPr = xmlFirstChild(tr, 'trPr');
+      if (trPr && xmlFirstChild(trPr, 'tblHeader')) headerRows++;
+      for (const tc of xmlElementChildren(tr, 'tc')) {
+        const tcPr = xmlFirstChild(tc, 'tcPr');
+        const gridSpan = tcPr && xmlFirstChild(tcPr, 'gridSpan');
+        const colspan = Math.max(1, parseInt(gridSpan ? xmlAttr(gridSpan, 'val') : '1', 10) || 1);
+        row.push({ text: wordCellText(tc), colspan, rowspan: 1 });
+      }
+      if (row.length) rows.push(row);
+    }
+    return normalizeTableData({ rows, headerRows, width: '500px', border: '1', cellspacing: '1', cellpadding: '1' });
+  }
+  function docxDocumentXmlToText(xmlText) {
+    const xml = new DOMParser().parseFromString(xmlText, 'application/xml');
+    if (xml.querySelector('parsererror')) throw new Error('document.xml pada DOCX tidak valid.');
+    const body = Array.from(xml.getElementsByTagName('*')).find((node) => xmlLocalName(node) === 'body') || xml.documentElement;
+    const blocks = [];
+    for (const child of xmlElementChildren(body)) {
+      const name = xmlLocalName(child);
+      if (name === 'p') {
+        const value = wordNodeToText(child).replace(/[ \t]+/g, ' ').trim();
+        if (value) blocks.push(value);
+      } else if (name === 'tbl') {
+        blocks.push(tableDataToMarker(wordTableToData(child)));
+      }
+    }
+    return blocks.join('\n').replace(/\n{3,}/g, '\n\n').trim();
+  }
+  async function extractDocxTextWithEquationsAndTables(arrayBuffer) {
+    if (!JSZIP_LIB) throw new Error('Library JSZip gagal dimuat.');
+    const zip = await JSZIP_LIB.loadAsync(arrayBuffer);
+    const documentXml = zip.file('word/document.xml');
+    if (!documentXml) throw new Error('word/document.xml tidak ditemukan di DOCX.');
+    return docxDocumentXmlToText(await documentXml.async('text'));
+  }
+
+  async function readUploadedFile(file) {
+    if (!file) throw new Error('File belum dipilih.');
+    const name = file.name.toLowerCase();
+    if (name.endsWith('.docx')) {
+      const arrayBuffer = await readFileAsArrayBuffer(file);
+      try {
+        const value = await extractDocxTextWithEquationsAndTables(arrayBuffer);
+        if (value) return value;
+      } catch (e) {
+        console.warn('[SiAdu Auto Input] Parser DOCX equation/table gagal, fallback ke mammoth:', e);
+      }
+      if (!window.mammoth || typeof window.mammoth.extractRawText !== 'function') {
+        throw new Error('Library pembaca DOCX gagal dimuat.');
+      }
+      const result = await window.mammoth.extractRawText({ arrayBuffer });
+      return normalizeInputTables(result.value || '');
+    }
+    return normalizeInputTables(await readFileAsText(file));
+  }
+  // =================== /DOCX EQUATION + TABLE ===================
+
+  function getSaveButton() {
+    return (
+      document.querySelector('button.save-btn[data-action="store"]') ||
+      document.querySelector('button[wire\\:click="validateQuestion()"]') ||
+      Array.from(document.querySelectorAll('button')).find((b) => /Simpan\s+Data/i.test(b.textContent || ''))
+    );
+  }
+
+  async function waitForFormReady() {
+    await waitForElement('#level');
+    await waitForElement('#answer_type');
+    await sleep(250);
+    return true;
+  }
+
+  // v2.6.0: alur khusus mode OPTION NEW.
+  async function fillFormOptionNew(item) {
+    await chooseAnswerTypeOptionNew(item);
+
+    const qHasRich = needsRichInsert(item.questionStemText || item.questionText || '');
+    const eHasRich = needsRichInsert(item.explanationText || '');
+
+    if (qHasRich) {
+      await setEditorWithMath('content_question', item.questionStemText || item.questionText || '', 'content_question');
+    } else {
+      await setCkeditorData('content_question', item.questionHtml, 'content_question');
+      await ensureEditorCommitted('content_question', 'content_question', item.questionHtml);
+    }
+
+    if (eHasRich) {
+      await setEditorWithMath('content_explanation', item.explanationText || '', 'content_explanation');
+    } else {
+      await setCkeditorData('content_explanation', item.explanationHtml, 'content_explanation');
+      await ensureEditorCommitted('content_explanation', 'content_explanation', item.explanationHtml);
+    }
+
+    await fillOptionNewRows(item);
+    await fillLegacyAnswerAndScoresIfPresent(item);
+
+    await setFieldValue('#level', item.level, 'table.level');
+    await setFieldValue('#answer_type', 'option_new', 'table.answer_type');
+
+    if (!qHasRich) await ensureEditorCommitted('content_question', 'content_question', item.questionHtml);
+    if (!eHasRich) await ensureEditorCommitted('content_explanation', 'content_explanation', item.explanationHtml);
+
+    await fillOptionNewRows(item);
+
+    const qData = getEditorData('content_question');
+    const eData = getEditorData('content_explanation');
+
+    if (!editorContentFilled(qData) && countEditorMath('content_question') === 0) {
+      if (qHasRich) await setEditorWithMath('content_question', item.questionStemText || item.questionText || '', 'content_question');
+      else { await setCkeditorData('content_question', item.questionHtml, 'content_question'); await ensureEditorCommitted('content_question', 'content_question', item.questionHtml); }
+    }
+    if (!editorContentFilled(eData) && countEditorMath('content_explanation') === 0) {
+      if (eHasRich) await setEditorWithMath('content_explanation', item.explanationText || '', 'content_explanation');
+      else { await setCkeditorData('content_explanation', item.explanationHtml, 'content_explanation'); await ensureEditorCommitted('content_explanation', 'content_explanation', item.explanationHtml); }
+    }
+
+    let check = verifyFilledFormOptionNew(item);
+    if (!check.ok) {
+      await setFieldValue('#answer_type', 'option_new', 'table.answer_type');
+      await fillOptionNewRows(item);
+      if (qHasRich) await setEditorWithMath('content_question', item.questionStemText || item.questionText || '', 'content_question');
+      else await ensureEditorCommitted('content_question', 'content_question', item.questionHtml);
+      if (eHasRich) await setEditorWithMath('content_explanation', item.explanationText || '', 'content_explanation');
+      else await ensureEditorCommitted('content_explanation', 'content_explanation', item.explanationHtml);
+      await sleep(250);
+      check = verifyFilledFormOptionNew(item);
+    }
+    if (!check.ok) throw new Error(check.message);
+    return true;
+  }
+
+  // v2.6.0: alur khusus mode OPTION (LEGACY).
+  // Pada legacy, editor SOAL berisi soal LENGKAP + opsi A-E (questionFullHtml),
+  // editor pembahasan berisi pembahasan, lalu #correct_answer & skor per opsi.
+  async function fillFormOptionLegacy(item) {
+    await chooseAnswerTypeOptionLegacy();
+
+    const qRichText = item.questionText || item.questionStemText || '';
+    const qHasRich = needsRichInsert(qRichText);
+    const eHasRich = needsRichInsert(item.explanationText || '');
+
+    if (qHasRich) {
+      await setEditorWithMath('content_question', qRichText, 'content_question');
+    } else {
+      await setCkeditorData('content_question', item.questionFullHtml || item.questionHtml, 'content_question');
+      await ensureEditorCommitted('content_question', 'content_question', item.questionFullHtml || item.questionHtml);
+    }
+
+    if (eHasRich) {
+      await setEditorWithMath('content_explanation', item.explanationText || '', 'content_explanation');
+    } else {
+      await setCkeditorData('content_explanation', item.explanationHtml, 'content_explanation');
+      await ensureEditorCommitted('content_explanation', 'content_explanation', item.explanationHtml);
+    }
+
+    await setFieldValue('#correct_answer', item.correctAnswer, 'table.correct_answer');
+    await fillOptionScores(item);
+
+    await setFieldValue('#level', item.level, 'table.level');
+    await setFieldValue('#answer_type', 'option', 'table.answer_type');
+    await setFieldValue('#correct_answer', item.correctAnswer, 'table.correct_answer');
+    await fillOptionScores(item);
+
+    // v2.6.1: TIDAK commit editor ulang di sini (sebelumnya memicu
+    // ensureEditorCommitted 2x -> lambat). Editor sudah terisi di atas;
+    // flush final sebelum Simpan yang menjamin sinkron ke server.
+
+    // Skor: hanya divalidasi-paksa bila data skor memang ada.
+    if (relevantLetters(item).length) {
+      const stillMissing = await ensureOptionScores(item, 6);
+      if (stillMissing.length) {
+        throw new Error('Nilai per opsi masih kosong/tidak sesuai: ' + stillMissing.join(', ') +
+          '. Pengisian dihentikan agar tidak menyimpan data tidak lengkap.');
+      }
+    }
+
+    let check = verifyFilledFormLegacy(item);
+    if (!check.ok) {
+      await setFieldValue('#level', item.level, 'table.level');
+      await setFieldValue('#correct_answer', item.correctAnswer, 'table.correct_answer');
+      await fillOptionScores(item);
+      // Re-isi editor HANYA bila memang terdeteksi kosong di pesan check.
+      if (/Editor soal/.test(check.message)) {
+        if (qHasRich) await setEditorWithMath('content_question', qRichText, 'content_question');
+        else await ensureEditorCommitted('content_question', 'content_question', item.questionFullHtml || item.questionHtml);
+      }
+      if (/Editor pembahasan/.test(check.message)) {
+        if (eHasRich) await setEditorWithMath('content_explanation', item.explanationText || '', 'content_explanation');
+        else await ensureEditorCommitted('content_explanation', 'content_explanation', item.explanationHtml);
+      }
+      await sleep(200);
+      check = verifyFilledFormLegacy(item);
+    }
+    if (!check.ok) throw new Error(check.message);
+    return true;
+  }
+
+  async function fillQuestionForm(item) {
+    await waitForFormReady();
+
+    // 1. Konfigurasi dasar.
+    await setFieldValue('#level', item.level, 'table.level');
+    await sleep(APP.afterSelectDelayMs || 220);
+    await setFieldValue('#question_type', 'text', 'table.question_type');
+    await setFieldValue('#is_carcep', '0', 'table.is_carcep');
+    await setFieldValue('#orientation', 'portrait', 'table.orientation');
+    await setFieldValue('#video_player_mode', 'youtube', 'table.video_player_mode');
+
+    // 2. Cabang sesuai mode jawaban terpilih.
+    const mode = getAnswerMode();
+    if (mode === 'option') {
+      await fillFormOptionLegacy(item);
+    } else {
+      await fillFormOptionNew(item);
+    }
+    return true;
+  }
+
+  function verifyFilledFormOptionNew(item) {
+    const problems = [];
+    const level = document.querySelector('#level');
+    const answerType = document.querySelector('#answer_type');
+    if (level && level.value !== item.level) problems.push(`Level belum sesuai (${item.level})`);
+    if (answerType && answerType.value !== 'option_new') problems.push('Tipe Jawaban belum Option New');
+
+    const qData = getEditorData('content_question');
+    const eData = getEditorData('content_explanation');
+    const qLw = livewireGetEditorAny('content_question');
+    const eLw = livewireGetEditorAny('content_explanation');
+    if (!editorContentFilled(qData) && !editorContentFilled(qLw || '')) problems.push('Editor soal masih kosong');
+    if (!editorContentFilled(eData) && !editorContentFilled(eLw || '')) problems.push('Editor pembahasan masih kosong');
+
+    problems.push(...checkOptionNewRows(item));
+
+    const correct = document.querySelector('#correct_answer');
+    if (correct && isVisible(correct) && correct.value && correct.value !== item.correctAnswer) {
+      problems.push(`Jawaban benar belum ${item.correctAnswer}`);
+    }
+    return { ok: problems.length === 0, message: problems.join('; ') };
+  }
+
+  function verifyFilledFormLegacy(item) {
+    const problems = [];
+    const level = document.querySelector('#level');
+    const answerType = document.querySelector('#answer_type');
+    const correct = document.querySelector('#correct_answer');
+
+    if (level && level.value !== item.level) problems.push(`Level belum sesuai (${item.level})`);
+    if (answerType && answerType.value !== 'option') problems.push('Tipe Jawaban belum Option (Legacy)');
+    if (correct && correct.value !== item.correctAnswer) problems.push(`Jawaban benar belum ${item.correctAnswer}`);
+
+    const qData = getEditorData('content_question');
+    const eData = getEditorData('content_explanation');
+    const qLw = livewireGetEditorAny('content_question');
+    const eLw = livewireGetEditorAny('content_explanation');
+    if (!editorContentFilled(qData) && !editorContentFilled(qLw || '')) problems.push('Editor soal masih kosong');
+    if (!editorContentFilled(eData) && !editorContentFilled(eLw || '')) problems.push('Editor pembahasan masih kosong');
+
+    for (const letter of relevantLetters(item)) {
+      const lower = letter.toLowerCase();
+      const expected = String(item.scores[letter]);
+      const el = document.querySelector(`#score_option_${lower}`);
+      if (el && String(el.value || '') !== expected) problems.push(`Nilai opsi ${letter} belum sesuai`);
+    }
+    return { ok: problems.length === 0, message: problems.join('; ') };
+  }
+
+  function findSwalConfirmButton() {
+    const popup = document.querySelector('.swal2-popup.swal2-show');
+    if (!popup) return null;
+    const title = compact(popup.querySelector('#swal2-title')?.textContent || '');
+    const body = compact(popup.querySelector('#swal2-html-container')?.textContent || '');
+    const confirm = popup.querySelector('button.swal2-confirm');
+    if (!confirm || !isVisible(confirm)) return null;
+    const confirmText = compact(confirm.textContent || '');
+    const isValidationConfirm =
+      /Terdapat\s+Error\s+Validasi/i.test(title) ||
+      /tetap\s+ingin\s+menyimpan/i.test(body) ||
+      /Ya,\s*Simpan/i.test(confirmText);
+    const isOkConfirm = /OK|Oke|Ya|Simpan|Lanjut/i.test(confirmText);
+    if (isValidationConfirm || isOkConfirm) return confirm;
+    return null;
+  }
+
+  function findValidationModal() {
+    const candidates = Array.from(
+      document.querySelectorAll('.modal.show, .modal[style*="display: block"], .modal[style*="display:block"]')
+    );
+    for (const modal of candidates) {
+      if (!isVisible(modal)) continue;
+      const titleEl = modal.querySelector('#modalSimilarityTitle, .modal-title');
+      if (titleEl && /Validasi/i.test(titleEl.textContent || '')) return modal;
+      if (modal.querySelector('#modal-simpan-btn')) return modal;
+    }
+    const simpanBtn = document.querySelector('#modal-simpan-btn');
+    if (simpanBtn) {
+      const modal = simpanBtn.closest('.modal');
+      if (modal && isVisible(modal)) return modal;
+    }
+    return null;
+  }
+
+  function isValidationModalComplete(modal) {
+    if (!modal) return false;
+    const candidates = modal.querySelectorAll('small, .text-success, span, div, p');
+    for (const el of candidates) {
+      const txt = compact(el.textContent || '');
+      if (/Validasi\s+selesai/i.test(txt) && isVisible(el)) return true;
+    }
+    return false;
+  }
+
+  function findValidationModalSimpanButton(modal) {
+    if (!modal) modal = findValidationModal();
+    if (!modal) return null;
+    let btn = modal.querySelector('#modal-simpan-btn');
+    if (!btn) {
+      btn = Array.from(modal.querySelectorAll('button')).find((b) => /^\s*Simpan\s*$/i.test(b.textContent || ''));
+    }
+    if (btn && isVisible(btn) && !btn.disabled) return btn;
+    return null;
+  }
+
+  async function tryClickValidationModalSimpan() {
+    const modal = findValidationModal();
+    if (!modal) return 'none';
+    if (!isValidationModalComplete(modal)) return 'waiting';
+    await sleep(APP.validationModalDelayMs);
+    const stillModal = findValidationModal();
+    if (!stillModal || !isValidationModalComplete(stillModal)) return 'waiting';
+    const simpanBtn = findValidationModalSimpanButton(stillModal);
+    if (!simpanBtn) return 'waiting';
+    try { simpanBtn.click(); return 'clicked'; } catch (e) { return 'waiting'; }
+  }
+
+  async function delayedClickSwalButton(btn, delayMs) {
+    if (!btn) return false;
+    const wait = Number.isFinite(delayMs) ? delayMs : (Number(APP.swalClickDelayMs) || 0);
+    if (wait > 0) await sleep(wait);
+    const stillBtn = findSwalConfirmButton();
+    if (!stillBtn) return false;
+    try { stillBtn.click(); return true; } catch (e) { return false; }
+  }
+
+  async function autoClickSweetAlerts(totalMs = 10000) {
+    const start = Date.now();
+    let clicked = 0;
+    while (Date.now() - start < totalMs) {
+      const btn = findSwalConfirmButton();
+      if (btn) {
+        const ok = await delayedClickSwalButton(btn, APP.swalClickDelayMs);
+        if (ok) clicked++;
+        await sleep(500);
+        continue;
+      }
+      const vmResult = await tryClickValidationModalSimpan();
+      if (vmResult === 'clicked') { clicked++; await sleep(400); continue; }
+      if (vmResult === 'waiting') { await sleep(200); continue; }
+      await sleep(200);
+    }
+    return clicked;
+  }
+
+  async function waitAfterSave(button, timeoutMs = 30000, autoConfirm = true) {
+    const start = Date.now();
+    let everLoading = false;
+    const oldUrl = location.href;
+    let pendingPopupSince = 0;
+
+    while (Date.now() - start < timeoutMs) {
+      if (autoConfirm) {
+        const swalBtn = findSwalConfirmButton();
+        if (swalBtn) {
+          const d = Number(APP.swalClickDelayMs) || 0;
+          if (d > 0) await sleep(d);
+          const stillBtn = findSwalConfirmButton();
+          if (stillBtn) { stillBtn.click(); await sleep(500); }
+          pendingPopupSince = 0;
+          continue;
+        }
+        const vmResult = await tryClickValidationModalSimpan();
+        if (vmResult === 'waiting') { await sleep(200); continue; }
+        if (vmResult === 'clicked') { pendingPopupSince = 0; await sleep(400); continue; }
+        pendingPopupSince = 0;
+      }
+
+      const text = compact(button ? button.textContent : '');
+      const disabled = button && button.disabled;
+      if (location.href !== oldUrl) { await sleep(800); return true; }
+      if (disabled || /Menyimpan/i.test(text)) everLoading = true;
+      if (everLoading && !disabled && !/Menyimpan/i.test(text)) {
+        if (autoConfirm) await autoClickSweetAlerts(2500);
+        await sleep(900);
+        return true;
+      }
+      const alertSuccess = Array.from(document.querySelectorAll('.alert, .swal2-popup, .toast, .notify, .notification'))
+        .some((el) => /berhasil|success|sukses|tersimpan|data berhasil/i.test(el.textContent || ''));
+      if (alertSuccess) {
+        if (autoConfirm) await autoClickSweetAlerts(2500);
+        await sleep(900);
+        return true;
+      }
+      await sleep(250);
+    }
+    if (autoConfirm) await autoClickSweetAlerts(3000);
+    await sleep(900);
+    return true;
+  }
+
+  function makeReloadUrl(url) {
+    const u = new URL(url, location.origin);
+    u.searchParams.set('_ai', String(Date.now()));
+    return u.toString();
+  }
+
+  function advanceToNext(message) {
+    const queue = getQueue();
+    const state = getState();
+    state.index = Number(state.index || 0) + 1;
+    state.phase = 'idle';
+    state.lastSaveAt = 0;
+    state.lastMessage = message || '';
+    if (state.index >= queue.length) {
+      state.running = false;
+      state.phase = 'done';
+      state.lastMessage = `Selesai input ${queue.length} soal.`;
+      setState(state);
+      return;
+    }
+    setState(state);
+    if (state.running && state.createUrl) {
+      location.href = makeReloadUrl(state.createUrl);
+    }
+  }
+
+  async function processCurrentAuto() {
+    const queue = getQueue();
+    const state = getState();
+    if (!state.running) return;
+
+    if (!queue.length) {
+      state.running = false; state.phase = 'idle';
+      state.lastMessage = 'Queue kosong. Parse file dulu.';
+      setState(state); return;
+    }
+    if (state.index >= queue.length) {
+      state.running = false; state.phase = 'done';
+      state.lastMessage = `Selesai input ${queue.length} soal.`;
+      setState(state); return;
+    }
+    if (state.phase === 'saving') {
+      const age = Date.now() - Number(state.lastSaveAt || 0);
+      if (age < 7000) { setTimeout(processCurrentAuto, 7500 - age); return; }
+      advanceToNext('Terdeteksi halaman selesai simpan. Lanjut soal berikutnya.');
+      return;
+    }
+    if (!isCreatePage()) {
+      const createUrl = state.createUrl || detectCreateUrl();
+      if (!createUrl) {
+        state.running = false; state.phase = 'idle';
+        state.lastMessage = 'Create URL tidak ditemukan. Buka halaman yang ada tombol Create atau isi URL create manual.';
+        setState(state); return;
+      }
+      state.createUrl = createUrl;
+      setState(state);
+      location.href = makeReloadUrl(createUrl);
+      return;
+    }
+
+    const item = queue[state.index];
+    try {
+      state.phase = 'filling';
+      state.lastMessage = `Mengisi SOAL ${item.no} (${state.index + 1}/${queue.length}) [${getAnswerMode() === 'option' ? 'Legacy' : 'Option New'}]...`;
+      setState(state);
+
+      await fillQuestionForm(item);
+
+      if (state.mode === 'fillOnly') {
+        state.running = false; state.phase = 'idle';
+        state.lastMessage = `SOAL ${item.no} sudah diisi tanpa simpan. Silakan cek manual.`;
+        setState(state); return;
+      }
+
+      const saveButton = getSaveButton();
+      if (!saveButton) throw new Error('Tombol Simpan Data tidak ditemukan.');
+
+      state.phase = 'saving';
+      state.lastSaveAt = Date.now();
+      state.lastMessage = `Menyimpan SOAL ${item.no}; auto klik popup jika muncul...`;
+      setState(state);
+
+      // Flush final non-defer sebelum validasi/simpan.
+      try {
+        await typeTrailingSpace('content_explanation');
+        const eEd = getCkeditorInstance('content_explanation');
+        const qEd = getCkeditorInstance('content_question');
+        if (eEd) {
+          const eData = ensureExactlyOneTrailingSpaceHtml(eEd.getData() || '');
+          eEd.setData(eData);
+          eEd.updateElement();
+          eEd.fire('change');
+          livewireFindSet('content_explanation', eData, false);
+        }
+        if (qEd) {
+          const qData = qEd.getData() || '';
+          qEd.updateElement();
+          qEd.fire('change');
+          livewireFindSet('content_question', qData, false);
+        }
+        await waitForLivewireIdle(7000);
+      } catch (e) {}
+
+      saveButton.scrollIntoView({ behavior: 'instant', block: 'center' });
+      await sleep(250);
+      saveButton.click();
+
+      await waitAfterSave(saveButton, 30000, state.autoConfirmSwal !== false);
+
+      const delay = Number(state.saveDelayMs || APP.defaultSaveDelayMs);
+      await sleep(delay);
+
+      advanceToNext(`SOAL ${item.no} dianggap tersimpan.`);
+    } catch (err) {
+      const current = getState();
+      current.running = false;
+      current.phase = 'error';
+      current.lastMessage = `Error pada index ${Number(current.index || 0) + 1}: ${err.message}`;
+      setState(current);
+      console.error('[SiAdu Auto Input] Error:', err);
+    }
+  }
+
+  function renderPreview(queue) {
+    if (!queue || !queue.length) return '<div class="siadu-muted">Belum ada data soal.</div>';
+    const invalidCount = queue.filter((q) => q.errors && q.errors.length).length;
+    const rows = queue.slice(0, 15).map((q) => {
+      const tableCount = ((q.questionStemText || '').match(/\[\[SIADU_TABLE:/g) || []).length + ((q.explanationText || '').match(/\[\[SIADU_TABLE:/g) || []).length;
+      const scoreText = `Opsi: ${q.optionCount || (q.optionLettersFound ? q.optionLettersFound.length : 0)} | Tabel: ${tableCount}`;
+      const err = q.errors && q.errors.length
+        ? `<div class="siadu-error">${escapeHtml(q.errors.join('; '))}</div>`
+        : '<span class="siadu-ok">OK</span>';
+      return `
+        <tr>
+          <td>${escapeHtml(q.no)}</td>
+          <td>${escapeHtml(q.level)}</td>
+          <td>${escapeHtml(q.correctAnswer)}</td>
+          <td>${escapeHtml(scoreText)}</td>
+          <td>${err}</td>
+        </tr>
+      `;
+    }).join('');
+
+    return `
+      <div class="siadu-muted">
+        Total: <b>${queue.length}</b> soal.
+        Bermasalah: <b>${invalidCount}</b>.
+        Preview 15 soal pertama.
+      </div>
+      <table class="siadu-table">
+        <thead>
+          <tr><th>No</th><th>Level</th><th>Kunci</th><th>Skor</th><th>Status</th></tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    `;
+  }
+
+  function updatePanel() {
+    const panel = document.querySelector('#siadu-auto-input-panel');
+    if (!panel) return;
+    const queue = getQueue();
+    const state = getState();
+
+    const createUrl = detectCreateUrl();
+    const createUrlInput = panel.querySelector('#siadu-create-url');
+    if (createUrlInput && !createUrlInput.value && createUrl) createUrlInput.value = createUrl;
+
+    const status = panel.querySelector('#siadu-status');
+    if (status) {
+      const currentProgress = queue.length ? Math.min(Number(state.index || 0) + 1, queue.length) : 0;
+      const modeLabel = (state.answerMode === 'option') ? 'Option (Legacy)' : 'Option New';
+      status.innerHTML = `
+        <div><b>Status:</b> ${escapeHtml(state.phase || 'idle')}</div>
+        <div><b>Mode:</b> ${escapeHtml(modeLabel)}</div>
+        <div><b>Progress:</b> ${currentProgress} / ${queue.length || 0}</div>
+        <div><b>Running:</b> ${state.running ? 'Ya' : 'Tidak'}</div>
+        <div>${escapeHtml(state.lastMessage || '-')}</div>
+      `;
+    }
+
+    const preview = panel.querySelector('#siadu-preview');
+    if (preview) preview.innerHTML = renderPreview(queue);
+
+    const startIndex = panel.querySelector('#siadu-start-index');
+    if (startIndex && !startIndex.value) startIndex.value = String((state.index || 0) + 1);
+
+    const saveDelay = panel.querySelector('#siadu-save-delay');
+    if (saveDelay) {
+      const sd = Number(state.saveDelayMs);
+      if (Number.isFinite(sd) && sd > 0) saveDelay.value = String(sd);
+    }
+
+    const autoSwal = panel.querySelector('#siadu-auto-swal');
+    if (autoSwal && typeof state.autoConfirmSwal === 'boolean') {
+      autoSwal.checked = state.autoConfirmSwal !== false;
+    }
+
+    // v2.6.0: pulihkan pilihan mode jawaban.
+    const modeSel = panel.querySelector('#siadu-answer-mode');
+    if (modeSel) modeSel.value = (state.answerMode === 'option') ? 'option' : 'option_new';
+  }
+
+  async function parseFromPanel() {
+    const panel = document.querySelector('#siadu-auto-input-panel');
+    const file = panel.querySelector('#siadu-file').files[0];
+    const pasted = panel.querySelector('#siadu-paste').value.trim();
+
+    let parsed;
+    if (file && /\.(xlsx|xls)$/i.test(file.name)) {
+      const buf = await readFileAsArrayBuffer(file);
+      parsed = parseQuestionsFromExcel(buf);
+    } else {
+      let rawText = '';
+      if (file) rawText = await readUploadedFile(file);
+      else if (pasted) rawText = pasted;
+      else throw new Error('Pilih file Excel/DOCX/TXT atau paste teks soal terlebih dahulu.');
+      parsed = parseQuestions(rawText);
+    }
+
+    if (parsed.errors.length) console.warn('[SiAdu Auto Input] Parse warning:', parsed.errors);
+    setQueue(parsed.items);
+
+    const createUrl = panel.querySelector('#siadu-create-url').value.trim() || detectCreateUrl();
+    if (createUrl) localStorage.setItem(APP.createUrlKey, createUrl);
+
+    const state = getState();
+    state.lastMessage = `Parse selesai. Terbaca ${parsed.items.length} soal.`;
+    state.phase = 'idle';
+    state.index = 0;
+    state.running = false;
+    // simpan mode terpilih saat ini ke state.
+    const modeSel = panel.querySelector('#siadu-answer-mode');
+    if (modeSel) state.answerMode = (modeSel.value === 'option') ? 'option' : 'option_new';
+    setState(state);
+    updatePanel();
+  }
+
+  async function startAuto(mode) {
+    const panel = document.querySelector('#siadu-auto-input-panel');
+    let queue = getQueue();
+    if (!queue.length) {
+      await parseFromPanel();
+      queue = getQueue();
+    }
+
+    const invalid = queue.filter((q) => q.errors && q.errors.length);
+    if (invalid.length) {
+      const ok = confirm(
+        `Ada ${invalid.length} soal yang terdeteksi bermasalah saat parsing.\n\n` +
+        `Tetap lanjut input? Disarankan Cancel lalu cek preview dulu.`
+      );
+      if (!ok) return;
+    }
+
+    const createUrl = panel.querySelector('#siadu-create-url').value.trim() || detectCreateUrl();
+    if (!createUrl) {
+      alert('Create URL tidak ditemukan. Isi manual, contoh: https://siadu-min.cerebrum.id/admin/detail/2568/0');
+      return;
+    }
+    localStorage.setItem(APP.createUrlKey, createUrl);
+
+    const startIndexRaw = parseInt(panel.querySelector('#siadu-start-index').value || '1', 10);
+    const startIndex = Number.isFinite(startIndexRaw) ? Math.max(0, startIndexRaw - 1) : 0;
+    const saveDelayMs = parseInt(panel.querySelector('#siadu-save-delay').value || String(APP.defaultSaveDelayMs), 10);
+    const autoConfirmSwal = panel.querySelector('#siadu-auto-swal')?.checked !== false;
+    const modeSel = panel.querySelector('#siadu-answer-mode');
+    const answerMode = (modeSel && modeSel.value === 'option') ? 'option' : 'option_new';
+
+    const state = {
+      running: true,
+      mode,
+      answerMode,
+      index: startIndex,
+      phase: 'idle',
+      createUrl,
+      saveDelayMs: Number.isFinite(saveDelayMs) ? saveDelayMs : APP.defaultSaveDelayMs,
+      lastSaveAt: 0,
+      autoConfirmSwal,
+      lastMessage: mode === 'autosave' ? 'Mulai auto input dan simpan.' : 'Mulai isi 1 soal tanpa simpan.',
+    };
+    setState(state);
+
+    if (!isCreatePage() || !location.href.startsWith(createUrl)) {
+      location.href = makeReloadUrl(createUrl);
+    } else {
+      processCurrentAuto();
+    }
+  }
+
+  function pauseAuto() {
+    const state = getState();
+    state.running = false;
+    state.phase = 'paused';
+    state.lastMessage = 'Dijeda oleh user.';
+    setState(state);
+  }
+
+  function applyPanelPosition(panel) {
+    const pos = loadJSON(APP.panelPosKey, null);
+    if (pos && Number.isFinite(pos.left) && Number.isFinite(pos.top)) {
+      panel.style.left = `${pos.left}px`;
+      panel.style.top = `${pos.top}px`;
+      panel.style.right = 'auto';
+      panel.style.bottom = 'auto';
+    }
+    const minimized = localStorage.getItem(APP.panelMinKey) === '1';
+    if (minimized) panel.classList.add('siadu-minimized');
+  }
+
+  function makePanelDraggable(panel) {
+    const head = panel.querySelector('.siadu-head');
+    if (!head) return;
+    let dragging = false, startX = 0, startY = 0, startLeft = 0, startTop = 0;
+
+    head.addEventListener('mousedown', (e) => {
+      if (e.target && e.target.closest('button')) return;
+      dragging = true;
+      startX = e.clientX; startY = e.clientY;
+      const rect = panel.getBoundingClientRect();
+      startLeft = rect.left; startTop = rect.top;
+      panel.style.left = `${startLeft}px`;
+      panel.style.top = `${startTop}px`;
+      panel.style.right = 'auto';
+      panel.style.bottom = 'auto';
+      document.body.style.userSelect = 'none';
+      e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!dragging) return;
+      const width = panel.offsetWidth;
+      let left = startLeft + (e.clientX - startX);
+      let top = startTop + (e.clientY - startY);
+      left = Math.max(0, Math.min(window.innerWidth - width, left));
+      top = Math.max(0, Math.min(window.innerHeight - 48, top));
+      panel.style.left = `${left}px`;
+      panel.style.top = `${top}px`;
+      panel.style.right = 'auto';
+      panel.style.bottom = 'auto';
+    });
+
+    document.addEventListener('mouseup', () => {
+      if (!dragging) return;
+      dragging = false;
+      document.body.style.userSelect = '';
+      const rect = panel.getBoundingClientRect();
+      saveJSON(APP.panelPosKey, { left: Math.round(rect.left), top: Math.round(rect.top) });
+    });
+  }
+
+  function createPanel() {
+    if (document.querySelector('#siadu-auto-input-panel')) return;
+
+    GM_addStyle(`
+      #siadu-auto-input-panel { position: fixed; right: 18px; bottom: 18px; width: 440px; max-height: 84vh; overflow: auto; z-index: 999999; background: #ffffff; border: 1px solid #cfd7e6; box-shadow: 0 12px 40px rgba(15, 23, 42, .24); border-radius: 14px; font-family: Arial, sans-serif; color: #0f172a; }
+      #siadu-auto-input-panel.siadu-minimized { width: 300px; max-height: 54px; overflow: hidden; }
+      #siadu-auto-input-panel.siadu-minimized .siadu-body { display: none; }
+      .siadu-head { padding: 12px 14px; background: linear-gradient(135deg, #0f62fe, #3056d3); color: #fff; border-radius: 14px 14px 0 0; display: flex; align-items: center; justify-content: space-between; gap: 10px; cursor: move; }
+      .siadu-head b { font-size: 14px; }
+      .siadu-body { padding: 12px 14px 14px; }
+      .siadu-row { margin-bottom: 10px; }
+      .siadu-row label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 4px; }
+      .siadu-input, .siadu-textarea, .siadu-select { width: 100%; border: 1px solid #cbd5e1; border-radius: 8px; padding: 7px 9px; font-size: 12px; box-sizing: border-box; }
+      .siadu-textarea { min-height: 90px; resize: vertical; }
+      .siadu-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+      .siadu-btn { border: 0; border-radius: 8px; padding: 8px 10px; font-size: 12px; cursor: pointer; font-weight: 700; }
+      .siadu-btn-primary { background: #0f62fe; color: #fff; }
+      .siadu-btn-success { background: #16a34a; color: #fff; }
+      .siadu-btn-warning { background: #f59e0b; color: #111827; }
+      .siadu-btn-danger { background: #dc2626; color: #fff; }
+      .siadu-btn-secondary { background: #e2e8f0; color: #0f172a; }
+      .siadu-status { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px; font-size: 12px; line-height: 1.45; margin-top: 10px; }
+      .siadu-muted { color: #475569; font-size: 12px; margin: 8px 0; }
+      .siadu-error { color: #dc2626; font-size: 11px; }
+      .siadu-ok { color: #16a34a; font-weight: 700; }
+      .siadu-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 8px; }
+      .siadu-table th, .siadu-table td { border: 1px solid #e2e8f0; padding: 5px; vertical-align: top; }
+      .siadu-table th { background: #f1f5f9; }
+      .siadu-mini-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+      .siadu-checkline { display: flex; align-items: center; gap: 8px; font-size: 12px; margin: 6px 0 10px; }
+    `);
+
+    const panel = document.createElement('div');
+    panel.id = 'siadu-auto-input-panel';
+    panel.innerHTML = `
+      <div class="siadu-head">
+        <b>SiAdu Auto Input (Option New / Legacy)</b>
+        <button type="button" class="siadu-btn siadu-btn-secondary" id="siadu-minimize">Minimize</button>
+      </div>
+      <div class="siadu-body">
+        <div class="siadu-row">
+          <label>File Excel / Word / TXT</label>
+          <input class="siadu-input" id="siadu-file" type="file" accept=".xlsx,.xls,.docx,.txt,.md">
+          <div class="siadu-muted">
+            Excel memakai template kolom. DOCX/TXT juga didukung. Tabel Word/Markdown/HTML/TSV dimasukkan ke CKEditor; isi sel bisa **bold** dan $$LaTeX$$.
+          </div>
+        </div>
+        <div class="siadu-row">
+          <label>Atau Paste Teks Soal</label>
+          <textarea class="siadu-textarea" id="siadu-paste" placeholder="Paste isi dokumen di sini jika tidak memakai file..."></textarea>
+        </div>
+        <div class="siadu-row">
+          <label>Mode Jawaban (pilih setelah / sebelum parsing)</label>
+          <select class="siadu-select" id="siadu-answer-mode">
+            <option value="option_new">Option New (opsi terpisah + centang benar)</option>
+            <option value="option">Option (Legacy) (kunci + skor per opsi)</option>
+          </select>
+          <div class="siadu-muted">
+            Option New: tiap opsi punya editor sendiri, jawaban benar via centang. Legacy: opsi ditulis di editor soal, isi #Jawaban Benar dan skor per opsi (skor dibaca dari pembahasan "Opsi A (5 poin)" atau kolom skor_a..f Excel).
+          </div>
+        </div>
+        <div class="siadu-row">
+          <label>Create URL</label>
+          <input class="siadu-input" id="siadu-create-url" placeholder="https://siadu-min.cerebrum.id/admin/detail/2568/0">
+        </div>
+        <div class="siadu-mini-grid">
+          <div class="siadu-row">
+            <label>Mulai dari urutan queue</label>
+            <input class="siadu-input" id="siadu-start-index" type="number" min="1" value="1">
+          </div>
+          <div class="siadu-row">
+            <label>Delay setelah simpan (ms)</label>
+            <input class="siadu-input" id="siadu-save-delay" type="number" min="500" value="${APP.defaultSaveDelayMs}">
+          </div>
+        </div>
+        <label class="siadu-checkline">
+          <input type="checkbox" id="siadu-auto-swal" checked>
+          Auto klik popup validasi: Ya, Simpan / OK
+        </label>
+        <div class="siadu-actions">
+          <button type="button" class="siadu-btn siadu-btn-primary" id="siadu-parse">Parse File</button>
+          <button type="button" class="siadu-btn siadu-btn-success" id="siadu-start">Mulai Auto Input + Simpan</button>
+          <button type="button" class="siadu-btn siadu-btn-warning" id="siadu-fill-one">Isi 1 Soal Tanpa Simpan</button>
+          <button type="button" class="siadu-btn siadu-btn-secondary" id="siadu-pause">Pause</button>
+          <button type="button" class="siadu-btn siadu-btn-danger" id="siadu-reset">Reset</button>
+        </div>
+        <div class="siadu-status" id="siadu-status"></div>
+        <div id="siadu-preview"></div>
+      </div>
+    `;
+
+    document.body.appendChild(panel);
+    applyPanelPosition(panel);
+    makePanelDraggable(panel);
+
+    const createUrl = detectCreateUrl();
+    const createUrlInput = panel.querySelector('#siadu-create-url');
+    if (createUrl) createUrlInput.value = createUrl;
+
+    // set nilai awal dropdown mode dari state.
+    const modeSel = panel.querySelector('#siadu-answer-mode');
+    if (modeSel) {
+      modeSel.value = getAnswerMode();
+      modeSel.addEventListener('change', () => {
+        const st = getState();
+        st.answerMode = (modeSel.value === 'option') ? 'option' : 'option_new';
+        setState(st);
+      });
+    }
+
+    const minButton = panel.querySelector('#siadu-minimize');
+    minButton.textContent = panel.classList.contains('siadu-minimized') ? 'Open' : 'Minimize';
+    minButton.addEventListener('click', () => {
+      panel.classList.toggle('siadu-minimized');
+      const isMin = panel.classList.contains('siadu-minimized');
+      localStorage.setItem(APP.panelMinKey, isMin ? '1' : '0');
+      minButton.textContent = isMin ? 'Open' : 'Minimize';
+    });
+
+    panel.querySelector('#siadu-parse').addEventListener('click', async () => {
+      try { await parseFromPanel(); } catch (err) { alert(err.message); console.error(err); }
+    });
+    panel.querySelector('#siadu-start').addEventListener('click', async () => {
+      try { await startAuto('autosave'); } catch (err) { alert(err.message); console.error(err); }
+    });
+    panel.querySelector('#siadu-fill-one').addEventListener('click', async () => {
+      try { await startAuto('fillOnly'); } catch (err) { alert(err.message); console.error(err); }
+    });
+    panel.querySelector('#siadu-pause').addEventListener('click', pauseAuto);
+
+    const saveDelayInput = panel.querySelector('#siadu-save-delay');
+    if (saveDelayInput) {
+      saveDelayInput.addEventListener('change', () => {
+        const st = getState();
+        const v = parseInt(saveDelayInput.value || '', 10);
+        st.saveDelayMs = Number.isFinite(v) && v > 0 ? v : APP.defaultSaveDelayMs;
+        setState(st);
+      });
+    }
+    const autoSwalInput = panel.querySelector('#siadu-auto-swal');
+    if (autoSwalInput) {
+      autoSwalInput.addEventListener('change', () => {
+        const st = getState();
+        st.autoConfirmSwal = autoSwalInput.checked;
+        setState(st);
+      });
+    }
+
+    panel.querySelector('#siadu-reset').addEventListener('click', () => {
+      const ok = confirm('Reset queue dan state auto input?');
+      if (ok) resetAll();
+    });
+
+    updatePanel();
+  }
+
+  function init() {
+    createPanel();
+    const state = getState();
+    if (state.running) setTimeout(processCurrentAuto, 900);
+  }
+
+  init();
+})();

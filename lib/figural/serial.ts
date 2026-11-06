@@ -3,6 +3,7 @@ import type { Difficulty, Fill, Part, Scene } from '../types';
 import { MARK_GLYPHS, PLAIN_GLYPHS } from './glyphs';
 import { chooseWrong, layoutOk, pack, packPositions, polar, tierOf, type Built } from './compose';
 import { mk, sameScene, scene } from './scene';
+import { serialPembahasan, type SerialStep } from './pembahasan';
 import { STEMS } from './stems';
 import { capital, dirOfPoint, facing, fillWord, glyphName, listText, makeNamer, turnWord } from './text';
 
@@ -50,15 +51,38 @@ function variants(e: Ent, k: number, label: string): Variant[] {
   }
   return out;
 }
+// Label panah pada diagram pembahasan: ringkas, satu per bagian yang berubah (PDF 167).
+const STEP_NAME: Record<string, string> = { inti: 'tengah', batang: 'batang', satelit: 'bangun kecil', titik: 'titik sudut' };
+function stepLabel(e: Ent): string {
+  const bits: string[] = [];
+  if (e.rot) bits.push('putar ' + Math.abs(e.rot) + '° ' + (e.rot > 0 ? 'searah' : 'berlawanan'));
+  if (e.orbit) bits.push('geser ' + Math.abs(e.orbit.delta) + '° ' + (e.orbit.delta > 0 ? 'searah' : 'berlawanan'));
+  if (e.fill) bits.push(e.fill.mode === 'alt' ? 'warna bergantian' : 'warna ' + (e.fill.d === 1 ? 'maju' : 'mundur'));
+  if (e.cycle) bits.push('bentuk berganti');
+  return (STEP_NAME[e.id] ?? e.id) + ': ' + bits.join(', ');
+}
+const TONES: SerialStep['tone'][] = ['blue', 'red', 'ink', 'blue'];
 const ruleTexts = (e: Ent, label: string) => variants(e, 0, label).map((v) => v.rule).filter((r, i, all) => all.indexOf(r) === i);
 const swap = (s: Scene, part: Part) => scene(s.parts.map((p) => p.id === part.id ? part : p));
 
+// Satu konvensi sudut (QC akademik #2, soal 62–63): putaran kumulatif ditulis k langkah dengan arah yang sama seperti aturannya ("2 × 135° = 270° berlawanan arah
+// jarum jam"), bukan diringkas ke arah sebaliknya; lebih dari satu putaran penuh disebut kesetaraannya.
+function turnedFromFirst(rot: number, k: number): string {
+  const step = Math.abs(rot), total = step * k, dir = rot > 0 ? 'searah jarum jam' : 'berlawanan arah jarum jam';
+  if (k === 1) return 'terputar ' + turnWord(rot) + ' dari kedudukannya pada kotak pertama';
+  return 'terputar ' + k + ' × ' + step + '° = ' + total + '° ' + dir + ' dari kedudukannya pada kotak pertama' + (total > 360 ? ' (sama dengan ' + total % 360 + '° ' + dir + ' setelah satu putaran penuh)' : '');
+}
+// Batang tidak berarah: kedudukan yang berselisih 180° tampak sama (r = 0 tegak).
+function barLook(r: number): string {
+  const v = ((Math.round(r) % 180) + 180) % 180;
+  return v === 0 ? 'tegak' : v === 90 ? 'mendatar' : v === 45 ? 'miring dari kiri bawah ke kanan atas' : v === 135 ? 'miring dari kiri atas ke kanan bawah' : 'miring ' + v + '° dari kedudukan tegak';
+}
+const barNote = (rot: number) => 'Batang tidak berarah, sehingga kedudukan yang berselisih 180° tampak sama: putaran ' + turnWord(rot) + ' tampak sama dengan putaran ' + turnWord(rot > 0 ? Math.abs(rot) - 180 : 180 - Math.abs(rot)) + '. Pembahasan ini memakai arah putaran pada aturan.';
 function describeAt(e: Ent, key: Part, label: string, k: number): string {
   const parts: string[] = [];
   if (e.rot || (e.orbit && !e.fill)) {
     const f = facing(key);
-    const total = ((e.rot ?? 0) * k % 360 + 360) % 360;
-    parts.push(e.orbit ? label + ' berada di ' + dirOfPoint(key.x, key.y) + (f ? ' dan ' + f : '') : label + ' ' + (f ?? 'terputar ' + turnWord(total > 180 ? total - 360 : total) + ' dari kedudukannya pada kotak pertama'));
+    parts.push(e.orbit ? label + ' berada di ' + dirOfPoint(key.x, key.y) + (f ? ' dan ' + f : '') : label + ' ' + (f ?? turnedFromFirst(e.rot ?? 0, k) + (e.g === 'batang' ? ', sehingga batang tampak ' + barLook(key.r) : '')));
   }
   if (e.fill) parts.push(label + ' berwarna ' + fillWord(key.f));
   if (e.cycle) parts.push(label + ' berbentuk ' + glyphName(key.g));
@@ -121,8 +145,10 @@ export function buildSerial(a: Rng, level: Difficulty): Built | null {
   const rules = ents.flatMap((e) => ruleTexts(e, labels.get(e.id)!));
   const order = hidden + 1, where = hidden === total - 1 ? 'kotak berikutnya (kotak ke-' + order + ')' : 'kotak bertanda tanya (kotak ke-' + order + ')';
   const finals = ents.map((e) => describeAt(e, key.parts.find((q) => q.id === e.id)!, name(e.id, key), hidden)).filter(Boolean);
-  const explanation = (rules.length === 1 ? 'Aturan yang berlaku dari kotak ke kotak:\n' : 'Terdapat ' + rules.length + ' aturan yang berjalan bersamaan dari kotak ke kotak:\n') + rules.map((r, i) => (i + 1) + '. ' + capital(r) + '.').join('\n') +
+  const narrative = (rules.length === 1 ? 'Aturan yang berlaku dari kotak ke kotak:\n' : 'Terdapat ' + rules.length + ' aturan yang berjalan bersamaan dari kotak ke kotak:\n') + rules.map((r, i) => (i + 1) + '. ' + capital(r) + '.').join('\n') +
+    ents.filter((e) => e.g === 'batang' && e.rot).map((e) => '\n' + barNote(e.rot!)).join('') +
     '\n' + (rules.length === 1 ? 'Meneruskan aturan itu ke ' : 'Meneruskan semua aturan itu ke ') + where + ': ' + listText(finals) + '. Bagian lain tidak berubah.';
+  const explanation = serialPembahasan({ cells, hidden, steps: ents.map((e, i): SerialStep => ({ label: stepLabel(e), side: i % 2 ? 'bottom' : 'top', level: i >> 1, tone: TONES[i % TONES.length] })), narrative });
   return {
     kind: 'serial', columns: total, scenes: cells.map((s, k) => k === hidden ? null : s), key, wrong: wrong.map((w) => ({ ...w })),
     rule: { mekanisme: 'serial-' + (tier === 0 ? 'satu-aturan' : tier === 1 ? 'dua-aturan' : tier === 2 ? 'tiga-aturan' : 'empat-aturan'), aturan: rules.map(capital) },
@@ -148,7 +174,9 @@ function buildSwap(a: Rng): Built | null {
   return {
     kind: 'serial', columns: total, scenes: cells.map((s, k) => k === total - 1 ? null : s), key, wrong, namer: name,
     rule: { mekanisme: 'serial-jumlah', aturan: [capital(rule)] },
-    explanation: 'Perhatikan banyaknya tiap bangun pada setiap kotak. ' + capital(rule) + '. Jumlah ' + glyphName(y) + ' pada kotak-kotak itu adalah ' + cells.slice(0, total - 1).map((_, k) => m0 + k).join(', ') + ', sehingga pada kotak kelima terdapat ' + nY + ' ' + glyphName(y) + ' dan ' + (K - nY) + ' ' + glyphName(x) + '.',
+    explanation: serialPembahasan({ cells, hidden: total - 1, steps: [{ label: 'satu ' + glyphName(x) + ' berganti ' + glyphName(y), side: 'top', level: 0, tone: 'blue' }],
+      corners: (k) => [{ text: String(K - (m0 + k)), tone: 'cyan' }, { text: String(m0 + k), tone: 'cyan' }],
+      narrative: 'Perhatikan banyaknya tiap bangun pada setiap kotak (angka di sudut kiri bawah: jumlah ' + glyphName(x) + ', angka di sudut kanan bawah: jumlah ' + glyphName(y) + '). ' + capital(rule) + '. Jumlah ' + glyphName(y) + ' pada kotak-kotak itu adalah ' + cells.slice(0, total - 1).map((_, k) => m0 + k).join(', ') + ', sehingga pada kotak kelima terdapat ' + nY + ' ' + glyphName(y) + ' dan ' + (K - nY) + ' ' + glyphName(x) + '.' }),
     keyReason: 'Memenuhi aturan: terdapat ' + nY + ' ' + glyphName(y) + ' dan ' + (K - nY) + ' ' + glyphName(x) + '.',
     difficultyReason: 'Satu aturan berupa perubahan jumlah dua jenis bangun yang saling bertukar tempat.', stem: STEMS.serial[0],
   };
@@ -172,7 +200,9 @@ function buildDuo(a: Rng): Built | null {
   return {
     kind: 'serial', columns: total, scenes: cells.map((s, k) => k === total - 1 ? null : s), key, wrong, namer: name,
     rule: { mekanisme: 'serial-jumlah-ganda', aturan: [capital(ruleX), capital(ruleY)] },
-    explanation: 'Terdapat dua pola jumlah yang berjalan bersamaan.\n1. ' + capital(ruleX) + ': ' + Array.from({ length: total }, (_, k) => x0 - dx * k).join(', ') + '.\n2. ' + capital(ruleY) + ': ' + Array.from({ length: total }, (_, k) => y0 + dy * k).join(', ') + '.\nJadi kotak kelima memuat ' + nx + ' ' + glyphName(x) + ' dan ' + ny + ' ' + glyphName(y) + '.',
+    explanation: serialPembahasan({ cells, hidden: total - 1, steps: [{ label: glyphName(x) + ' −' + dx, side: 'top', level: 0, tone: 'blue' }, { label: glyphName(y) + ' +' + dy, side: 'bottom', level: 0, tone: 'red' }],
+      corners: (k) => [{ text: String(x0 - dx * k), tone: 'cyan' }, { text: String(y0 + dy * k), tone: 'cyan' }],
+      narrative: 'Terdapat dua pola jumlah yang berjalan bersamaan (angka di sudut kiri bawah: jumlah ' + glyphName(x) + ', angka di sudut kanan bawah: jumlah ' + glyphName(y) + ').\n1. ' + capital(ruleX) + ': ' + Array.from({ length: total }, (_, k) => x0 - dx * k).join(', ') + '.\n2. ' + capital(ruleY) + ': ' + Array.from({ length: total }, (_, k) => y0 + dy * k).join(', ') + '.\nJadi kotak kelima memuat ' + nx + ' ' + glyphName(x) + ' dan ' + ny + ' ' + glyphName(y) + '.' }),
     keyReason: 'Memenuhi kedua aturan: terdapat ' + nx + ' ' + glyphName(x) + ' dan ' + ny + ' ' + glyphName(y) + '.',
     difficultyReason: 'Dua aturan jumlah berjalan bersamaan dengan laju berbeda.', stem: STEMS.serial[0],
   };

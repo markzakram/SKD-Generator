@@ -2,12 +2,15 @@ import assert from 'node:assert/strict';
 import { BANK } from '../lib/bank';
 import { DEFAULT_SETTINGS, TOPICS } from '../lib/config';
 import { distribution, fingerprint, generate, normalizeSettings } from '../lib/generate';
+import { SETTINGS_VERSION, migrateStoredSettings } from '../lib/prefs';
 import { rng } from '../lib/rng';
 import { TIU_FAMILIES, makeTiu } from '../lib/tiu';
 import { auditPackages, auditQuestion } from '../lib/validate';
 import { calculate, entails, implies, not, variable } from '../lib/solver';
 import type { Question, Settings, Subtest } from '../lib/types';
 import { runFiguralChecks } from './figural-checks';
+import { runProxyChecks } from './proxy-checks';
+import { runReplaceChecks } from './replace-checks';
 import { runTakeChecks } from './take-checks';
 
 let checks = 0, questions = 0;
@@ -56,7 +59,8 @@ const numeric = baseline[0].questions.find((item) => item.proof.kind === 'numeri
 const badNumber = structuredClone(numeric);
 badNumber.options[badNumber.answer].text = '999999';
 check(auditQuestion(badNumber).length > 0, 'Validator harus menolak perubahan angka jawaban.');
-const logic = baseline[0].questions.find((item) => item.proof.kind === 'logic' && item.proof.entailment)!;
+// Silogisme kini dibuktikan oleh model silogisme (lib/models.ts: premis dan opsi berbentuk logika, status dihitung ulang oleh solver).
+const logic = baseline[0].questions.find((item) => item.proof.kind === 'model' && item.proof.model.kind === 'syllogism')!;
 const badLogic = structuredClone(logic); badLogic.answer = (badLogic.answer + 1) % 5;
 check(auditQuestion(badLogic).length > 0, 'Validator harus menolak kunci logika yang diubah.');
 const visual = baseline[0].questions.find((item) => item.visual?.kind === 'matriks') ??
@@ -76,9 +80,19 @@ assert.throws(() => normalizeSettings({ count: -1 }), /count/); checks++;
 check(BANK.every((item) => item.options.length === 5 && item.options[item.answer].score === 5), 'Setiap sumber bank harus lengkap.');
 generated({ ...DEFAULT_SETTINGS, mode: 'TKP', count: 4, subtopics: ['Pelayanan Publik::Prinsip dan Standar'] });
 generated({ ...DEFAULT_SETTINGS, mode: 'TIU', count: 5, subtopics: ['Figural::Matriks 3 × 3'] });
-check(BANK.find((item) => item.id === 'tkp-ref-1')?.options[0].reason ===
-  'Paling partisipatif, edukatif, setara, dan berorientasi pada tindak lanjut.', 'Alasan TKP harus mengikuti sel tabel PDF, bukan letak baris teks.');
+// Koreksi akademik TKP (data/tkp-ref-koreksi.json) mengganti alasan semua opsi contoh kecuali tkp-ref-23 opsi D, jadi uji sel tabel PDF memakai opsi itu;
+// alasan opsi A tkp-ref-1 (dulu "Paling partisipatif, edukatif, setara, ...") kini menjadi uji bahwa koreksi terpasang.
+check(BANK.find((item) => item.id === 'tkp-ref-23')?.options[3].reason ===
+  'Aman, proporsional, mencegah amplifikasi, dan menggunakan kanal yang tepat.', 'Alasan TKP harus mengikuti sel tabel PDF, bukan letak baris teks.');
+check(BANK.find((item) => item.id === 'tkp-ref-1')?.options[0].reason.startsWith('Edukasi bersama perwakilan komunitas menjawab hambatan warga') === true, 'Koreksi akademik TKP terpasang: alasan opsi A tkp-ref-1 berasal dari data/tkp-ref-koreksi.json.');
+// Migrasi pengaturan tersimpan (lib/prefs.ts): tkpSource "new" dari versi lama diganti sekali ke "accepted"; pengaturan lain dan pilihan versi baru tetap.
+const oldPrefs = { twkSource: 'new', tkpSource: 'new', seed: 'seed-saya', packages: 3, topics: ['Integritas'], mode: 'TKP' };
+check(JSON.stringify(migrateStoredSettings(oldPrefs, 1)) === JSON.stringify({ ...oldPrefs, tkpSource: 'accepted' }), 'Migrasi pengaturan v1: hanya tkpSource "new" diganti "accepted", pengaturan lain tidak hilang.');
+check(migrateStoredSettings(oldPrefs, SETTINGS_VERSION).tkpSource === 'new' && migrateStoredSettings({ ...oldPrefs, tkpSource: 'accepted' }, 1).tkpSource === 'accepted' && migrateStoredSettings({ seed: 'x' }, 1).tkpSource === undefined,
+  'Migrasi pengaturan: pilihan manual pada versi terbaru dipertahankan, "accepted" dan nilai kosong tidak berubah.');
 runFiguralChecks(check).then(async (figural) => {
   const take = await runTakeChecks(check);
-  console.log(JSON.stringify({ status: 'PASS', checks, auditedQuestions: questions, bank: BANK.length, families: TIU_FAMILIES.length, figural, take }, null, 2));
+  const replace = runReplaceChecks(check); // ganti nomor terpilih dan saklar kurasi (cakupan ekspor, judul, uji peserta)
+  runProxyChecks(check); // gerbang password situs (SITE_PASSWORD)
+  console.log(JSON.stringify({ status: 'PASS', checks, auditedQuestions: questions, bank: BANK.length, families: TIU_FAMILIES.length, figural, take, replace }, null, 2));
 }).catch((error) => { console.error(error); process.exit(1); });

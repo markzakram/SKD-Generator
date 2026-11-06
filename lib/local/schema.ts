@@ -8,6 +8,8 @@ export type State = {
   reasons: [string, string, string, string, string]; conclusion: string;
   actions?: [string, string, string, string, string];
   prompt?: string;
+  // Pengganti konsep dan cara cepat model untuk keadaan ini (naskah QC akademik #2); boleh memakai parameter konteks seperti {kiat}.
+  concept?: string; tip?: string;
 };
 export type CaseModel = {
   id: string; subtest: 'TWK' | 'TKP'; topic: string; chapter: string;

@@ -9,6 +9,8 @@ export function mappingMatch(item: Pick<BankItem, 'subtest' | 'topic' | 'subtopi
   if (item.subtest !== row.subtest || item.topic !== row.topic) return false;
   const chapter = normalize(item.subtopic), target = normalize(row.chapter);
   if (row.row <= 6 || row.subtest === 'TKP') return true;
+  // Baris 17 bertanda "/" ("Memperkuat/Memperlemah Argumen"), sedangkan nama keluarga pembangkit memakai "dan": normalize tidak menyamakannya.
+  if (row.row === 17) return chapter === target || chapter === normalize('Memperkuat dan memperlemah argumen');
   if (row.row === 24) return chapter.includes('operasi hitung') || chapter === 'berhitung dan pecahan';
   if (row.row === 27) {
     const rotations=[['Aljabar - Operasi Aljabar','Aljabar - Persamaan'],['Aljabar - Persamaan','Aljabar - Sistem Persamaan'],['Aljabar - Sistem Persamaan','Aljabar - Operasi Aljabar']];

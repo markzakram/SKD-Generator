@@ -29,7 +29,7 @@ const simple=ACCEPTED_BANK.find((q)=>q.id==='tryout-ref-00-01')!;assert.equal(Nu
 const bahasa=ACCEPTED_BANK.find((q)=>q.id==='tryout-ref-02-01')!;
 check(bahasa.options[0].reason===bahasa.options[1].reason&&bahasa.options[2].reason!==bahasa.options[0].reason&&bahasa.options[4].reason!==bahasa.options[0].reason,'Alasan gabungan Bahasa Negara dipisah sesuai opsi yang disebut sumber.');
 for(const q of ACCEPTED_BANK.filter((q)=>q.provenance?.file.startsWith('Andika - Numerik')&&[4,5,6,7,8,9].includes(q.provenance.question))){
-  const correct=q.options.map((o)=>{const [left,right]=o.text.replaceAll('sama dengan','=').replaceAll('×','*').replaceAll('÷','/').split('=');return Math.abs(calculate(left)-calculate(right))<1e-8;});
+  const correct=q.options.map((o)=>{const [left,right]=o.text.replaceAll('dibandingkan dengan','=').replaceAll('sama dengan','=').replaceAll('×','*').replaceAll('÷','/').split('=');return Math.abs(calculate(left)-calculate(right))<1e-8;});
   check(correct.filter(Boolean).length===1&&correct[q.answer],'Perkalian/pembagian setara asli: '+q.id);
 }
 let three:ReturnType<typeof generate>=[];

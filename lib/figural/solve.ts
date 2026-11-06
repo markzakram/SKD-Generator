@@ -113,7 +113,8 @@ export function solveScene(q: Question): SolveResult {
   options.forEach((s, i) => checkScene(s, 'opsi ' + String.fromCharCode(65 + i), errors));
   if (errors.some((e) => e.includes('tidak valid') || e.includes('keluar dari kotak'))) return { answer: -1, errors };
   for (let i = 0; i < 5; i++) for (let j = i + 1; j < 5; j++) if (sameScene(options[i], options[j])) errors.push('opsi ' + String.fromCharCode(65 + i) + ' dan ' + String.fromCharCode(65 + j) + ' tampak sebagai gambar yang sama');
-  const reasons = q.options.map((o) => o.reason.trim());
+  // Soal figural tidak lagi memuat alasan per opsi; bila ada (soal lama/suntingan), alasan yang terisi tidak boleh sama.
+  const reasons = q.options.map((o) => o.reason.trim()).filter(Boolean);
   if (new Set(reasons).size !== reasons.length) errors.push('alasan antaropsi tidak boleh sama');
   let answer = -1;
   if (visual.kind === 'analogi') answer = solveAnalogy(q, scenes, options, errors);

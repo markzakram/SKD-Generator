@@ -9,30 +9,47 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "references": "node scripts/import-references.mjs",
+    "references:format": "python scripts/import-tryout-format.py",
     "verify": "tsx scripts/verify.ts",
     "verify:quality": "tsx scripts/quality-verify.ts",
     "verify:tryout": "tsx scripts/tryout-verify.ts",
     "generate": "tsx scripts/generate.ts",
     "figural:preview": "tsx scripts/figural-preview.ts",
     "verify:local": "tsx scripts/local-verify.ts",
-    "verify:presentation": "tsx scripts/presentation-verify.ts"
+    "verify:presentation": "tsx scripts/presentation-verify.ts",
+    "verify:siadu": "tsx scripts/siadu-verify.ts",
+    "verify:siadu-format": "tsx scripts/academic-checks.ts && tsx scripts/siadu-format-checks.ts",
+    "verify:siadu-import": "node scripts/siadu-import-verify.mjs",
+    "build:siadu-importer": "node scripts/build-siadu-importer.mjs",
+    "verify:siadu-importer": "node scripts/build-siadu-importer.mjs --test && node scripts/siadu-rich-import-verify.mjs",
+    "verify:seeds": "tsx scripts/seed-verify.ts",
+    "verify:twk-options": "tsx scripts/twk-option-checks.ts",
+    "verify:export-format": "tsx scripts/academic-checks.ts && tsx scripts/export-format-checks.ts",
+    "verify:academic-regression": "tsx scripts/academic-checks.ts && tsx scripts/academic-regression-checks.ts",
+    "verify:tiu-academic": "tsx scripts/tiu-academic-audit.ts",
+    "verify:video": "tsx scripts/academic-checks.ts && tsx scripts/video-checks.ts"
   },
   "engines": {
     "node": ">=20.9.0"
   },
   "dependencies": {
+    "@remotion/player": "4.0.539",
+    "@remotion/web-renderer": "4.0.539",
     "docx": "^9.5.0",
     "fflate": "^0.8.3",
     "jspdf": "^4.2.1",
     "mathjax-full": "3.2.2",
     "next": "16.3.8",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "remotion": "4.0.539"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
+    "esbuild": "0.28.2",
+    "jszip": "3.10.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },

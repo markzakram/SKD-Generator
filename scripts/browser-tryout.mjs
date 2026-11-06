@@ -9,6 +9,9 @@ const context=await browser.newContext({viewport:{width:1512,height:1100},accept
 page.on('pageerror',(e)=>errors.push(e.message));
 const base=process.env.SKD_BROWSER_URL??'http://127.0.0.1:3107';
 const save=async(action,name)=>{const event=page.waitForEvent('download',{timeout:60000});await action();const download=await event;await download.saveAs(path.join(dir,name));return fs.readFileSync(path.join(dir,name));};
+// Saklar kurasi dibaca dari lib/config.ts (KURASI_AKTIF) supaya skrip mengikuti pengaturan saat ini: false = tanpa persetujuan/keluarkan, dengan ganti nomor.
+const kurasi=/KURASI_AKTIF\s*:\s*boolean\s*=\s*true/.test(fs.readFileSync('lib/config.ts','utf8'));
+const buat=()=>page.locator('main').getByRole('button',{name:kurasi?'Buat paket untuk dikurasi':'Buat paket',exact:true});
 try{
   assert.equal((await page.goto(base)).status(),200);await page.waitForFunction(()=>document.querySelector('.save-status')?.textContent.includes('Tersimpan'));
   assert.equal(await page.getByRole('button',{name:/Standar tryout 2027/}).getAttribute('aria-pressed'),'true');
@@ -16,7 +19,7 @@ try{
   assert.equal(await page.locator('.mapping-table tbody tr').count(),37);
   await page.screenshot({path:path.join(dir,'tryout-generator-desktop.png'),fullPage:true});
   await page.locator('.advanced summary').click();await page.getByLabel('Jumlah paket',{exact:true}).fill('3');
-  await page.getByRole('button',{name:'Buat paket untuk dikurasi'}).click();await page.locator('.question-card').waitFor();
+  await buat().click();await page.locator('.question-card').waitFor();
   assert.equal(await page.getByLabel('Paket aktif').locator('option').count(),3);assert.equal(await page.locator('.mapping-coverage tbody tr').count(),37);
   assert.equal(await page.locator('.mapping-coverage .coverage-gap').count(),0);
   assert.ok((await page.locator('.question-provenance').textContent()).includes('Contoh diterima'));
@@ -30,18 +33,18 @@ try{
   assert.ok(await page.locator('.reference-preview .options [role=math]').count()>0);assert.equal(await page.locator('.reference-preview .math-error').count(),0);
   await page.getByRole('button',{name:'Buat paket',exact:true}).click();await page.getByRole('button',{name:/^TWK/}).click();await page.getByRole('button',{name:'Bahasa Negara',exact:true}).click();await page.getByLabel('Soal per paket',{exact:true}).fill('6');
   await page.locator('.advanced summary').click();await page.getByLabel('Jumlah paket',{exact:true}).fill('1');
-  await page.getByRole('button',{name:'Buat paket untuk dikurasi'}).click();await page.locator('.question-card').waitFor();assert.equal(await page.locator('.mapping-coverage tbody tr').count(),6);
+  await buat().click();await page.locator('.question-card').waitFor();assert.equal(await page.locator('.mapping-coverage tbody tr').count(),6);
   assert.equal(await page.locator('.quick-tip').count(),1);
-  await page.getByRole('button',{name:'Ekspor paket',exact:true}).click();await page.getByLabel('Status soal yang disertakan').selectOption('draft');
-  await page.locator('.format-button').nth(1).click();const docx=await save(()=>page.locator('.export-dialog .primary-button').click(),'tryout-bahasa-negara.docx');
+  await page.getByRole('button',{name:'Ekspor paket',exact:true}).click();if(kurasi)await page.getByLabel('Status soal yang disertakan').selectOption('draft');
+  await page.getByRole('group', { name: 'Format berkas' }).getByRole('button', { name: /^Word biasa/ }).click();const docx=await save(()=>page.locator('.export-dialog .primary-button').click(),'tryout-bahasa-negara.docx');
   const xml=new TextDecoder().decode(unzipSync(docx)['word/document.xml']);assert.ok(xml.includes('Cara cepat:'));assert.ok(xml.includes('Ide pokok atau gagasan utama'));
-  await page.locator('.format-button').nth(0).click();const pdf=await save(()=>page.locator('.export-dialog .primary-button').click(),'tryout-bahasa-negara.pdf');assert.equal(pdf.subarray(0,5).toString(),'%PDF-');
-  await page.locator('.format-button').nth(2).click();const csv=(await save(()=>page.locator('.export-dialog .primary-button').click(),'tryout-bahasa-negara.csv')).toString();assert.ok(csv.includes('Chapter sumber'));assert.ok(csv.includes('Cara cepat'));
+  await page.getByRole('group', { name: 'Format berkas' }).getByRole('button', { name: /^PDF/ }).click();const pdf=await save(()=>page.locator('.export-dialog .primary-button').click(),'tryout-bahasa-negara.pdf');assert.equal(pdf.subarray(0,5).toString(),'%PDF-');
+  await page.getByRole('group', { name: 'Format berkas' }).getByRole('button', { name: /^CSV/ }).click();const csv=(await save(()=>page.locator('.export-dialog .primary-button').click(),'tryout-bahasa-negara.csv')).toString();assert.ok(csv.includes('Chapter sumber'));assert.ok(csv.includes('Cara cepat'));
   await page.getByLabel('Tutup dialog ekspor').click();
   await page.setViewportSize({width:390,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.screenshot({path:path.join(dir,'tryout-review-mobile.png'),fullPage:true});
   await page.getByRole('button',{name:'Buat paket',exact:true}).click();await page.getByRole('button',{name:/^TIU/}).click();await page.getByLabel('Penyusunan TIU').selectOption('variation');await page.getByLabel('Soal per paket',{exact:true}).fill('35');
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.screenshot({path:path.join(dir,'tryout-generator-mobile.png'),fullPage:true});
-  await page.getByRole('button',{name:'Buat paket untuk dikurasi'}).click();await page.locator('.question-card').waitFor();assert.ok((await page.locator('.question-provenance').textContent()).includes('Variasi baru'));
+  await buat().click();await page.locator('.question-card').waitFor();assert.ok((await page.locator('.question-provenance').textContent()).includes('Variasi baru'));
   assert.equal(await page.locator('.mapping-coverage .coverage-gap').count(),0);
   const api=await context.request.post(base+'/api/generate',{data:{profile:'tryout-2027',packages:3}});assert.equal(api.status(),200);assert.equal((await api.json()).audit.checked,330);
   const bad=await context.request.post(base+'/api/generate',{data:{profile:'tryout-2027',packages:4}});assert.equal(bad.status(),400);

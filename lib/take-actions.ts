@@ -5,7 +5,7 @@ import { mathImageHtml, prepareMathImages } from './math-raster';
 import { download, pdfBlob, pngBlob, questionPngBlob, rasterizeSvg } from './export';
 import { hasStimulus, optionSvg, questionSvg } from './figures';
 import { joinHtml, joinTexts, pngEntryNames, sectionSlots, sectionsHtml, sectionsText, slotSvg, takeFileName, takeSections, type TakeContext, type TakeImages, type TakePart } from './take';
-import type { Package, Question } from './types';
+import type { Package, Question, QuestionContent } from './types';
 
 // Menyalin bagian soal (satu atau beberapa soal) sebagai teks + HTML dengan gambar. `heading` menambahkan baris "Soal N | ...".
 export function copyQuestions(questions: readonly Question[], parts: readonly TakePart[], heading: boolean): Promise<CopyKind> {
@@ -18,9 +18,9 @@ export function copyQuestions(questions: readonly Question[], parts: readonly Ta
         const raster = await rasterizeSvg(slotSvg(questions[i], slot));
         images[slot] = { url: raster.url, width: raster.width, height: raster.height };
       }
-      const texts=sections[i].flat().flatMap(n=>n.k==='table'?[...n.headers,...n.rows.flat()]:n.k==='image'?[]:[n.text]);
+      const texts=sections[i].flat().flatMap(n=>n.k==='table'?[...n.headers.map(text=>'**'+text+'**'),...n.rows.flat()]:n.k==='image'?[]:[n.k==='text'&&n.bold?'**'+n.text+'**':n.text]);
       const mathImages=await prepareMathImages(texts,rasterizeSvg);
-      htmls.push(sectionsHtml(sections[i], images,text=>mathImageHtml(text,mathImages)));
+      htmls.push(sectionsHtml(sections[i], images,(text,style)=>mathImageHtml(text,mathImages,style?.color,style)));
     }
     return joinHtml(htmls);
   });
@@ -33,15 +33,16 @@ export function copyQuestionImage(q: Question, target: 'stimulus' | number): Pro
 }
 
 // Unduh PDF: satu soal tanpa judul, beberapa soal dengan judul ringkas. Isi dan gaya sama dengan ekspor paket (pdfBlob).
-export async function downloadPdf(pack: Package, questions: readonly Question[], context: TakeContext, withKey: boolean): Promise<string> {
-  const blob = await pdfBlob([{ ...pack, questions: [...questions] }], { title: context.title }, withKey ? 'pembahasan' : 'soal', questions.length === 1 ? 'tanpa' : 'ringkas');
+export async function downloadPdf(pack: Package, questions: readonly Question[], context: TakeContext, withKey: boolean | QuestionContent): Promise<string> {
+  const content = typeof withKey === 'boolean' ? withKey ? 'pembahasan' : 'soal' : withKey;
+  const blob = await pdfBlob([{ ...pack, questions: [...questions] }], { title: context.title }, content, questions.length === 1 ? 'tanpa' : 'ringkas');
   const filename = takeFileName(context, questions, withKey, 'pdf');
   download(blob, filename);
   return filename;
 }
 // Unduh PNG: satu soal langsung PNG, beberapa soal satu PNG per soal dalam ZIP. `onProgress(selesai, total)` untuk label tombol.
-export async function downloadPng(questions: readonly Question[], context: TakeContext, withKey: boolean, onProgress?: (done: number, total: number) => void): Promise<string> {
-  const content = withKey ? 'pembahasan' : 'soal';
+export async function downloadPng(questions: readonly Question[], context: TakeContext, withKey: boolean | QuestionContent, onProgress?: (done: number, total: number) => void): Promise<string> {
+  const content = typeof withKey === 'boolean' ? withKey ? 'pembahasan' : 'soal' : withKey;
   if (questions.length === 1) {
     const filename = takeFileName(context, questions, withKey, 'png');
     download(await questionPngBlob(questions[0], content), filename);

@@ -1,9 +1,11 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import dynamic from 'next/dynamic';
 import { copyQuestions, downloadPdf, downloadPng } from '@/lib/take-actions';
 import { ALL_PARTS, NASKAH_PARTS, TAKE_MENU, partsOf, pickAll, pickedQuestions, selectable, type TakeChoice } from '@/lib/take';
-import type { Package, Question } from '@/lib/types';
+import type { Package, Question, QuestionContent } from '@/lib/types';
 import Icon from './Icon';
+const VideoDialog = dynamic(() => import('./video/VideoDialog'), { ssr: false });
 
 export type ToastState = { kind: 'ok' | 'warn' | 'error'; text: string };
 // Pemberitahuan singkat di bawah layar: "Tersalin", peringatan (hanya teks yang tersalin), atau galat.
@@ -30,8 +32,9 @@ export default function TakePanel({ question: q, pack, title, visible, pick, onP
   question: Question; pack: Package; title: string; visible: Question[]; pick: boolean; onPick: (on: boolean) => void;
   picked: ReadonlySet<string>; onPicked: (next: Set<string>) => void; notify: (toast: ToastState | null) => void;
 }) {
-  const [withKey, setWithKey] = useState(true), [busy, setBusy] = useState(''), [progress, setProgress] = useState(''), [open, setOpen] = useState(false);
+  const [content, setContent] = useState<QuestionContent>('pembahasan'), [busy, setBusy] = useState(''), [progress, setProgress] = useState(''), [open, setOpen] = useState(false);
   const wrap = useRef<HTMLDivElement>(null);
+  const [videoOpen, setVideoOpen] = useState(false);
   const context = { title, packId: pack.id }, chosen = pickedQuestions(pack.questions, picked), anyBusy = busy !== '';
   useEffect(() => {
     if (!open) return;
@@ -53,14 +56,14 @@ export default function TakePanel({ question: q, pack, title, visible, pick, onP
     { kind: 'ok', text: 'Tersalin: ' + what + '. Siap ditempel ke Word atau Google Docs.' } :
     { kind: 'warn', text: 'Tersalin sebagai teks saja: ' + what + '. Browser ini tidak mengizinkan salinan dengan format dan gambar.' });
   const copyOne = (choice: TakeChoice) => run('salin', async () => reportCopy(await copyQuestions([q], partsOf(choice), choice === 'semua'), WHAT[choice] + ' ' + q.no), 'Gagal menyalin.');
-  const downloadOnePng = () => run('png', async () => { notify({ kind: 'ok', text: 'PNG diunduh: ' + await downloadPng([q], context, withKey) }); }, 'PNG gagal dibuat.');
-  const downloadOnePdf = () => run('pdf', async () => { notify({ kind: 'ok', text: 'PDF diunduh: ' + await downloadPdf(pack, [q], context, withKey) }); }, 'PDF gagal dibuat.');
-  const exportPdf = () => run('pilih-pdf', async () => { notify({ kind: 'ok', text: 'PDF diunduh: ' + await downloadPdf(pack, chosen, context, withKey) }); }, 'PDF gagal dibuat.');
+  const downloadOnePng = () => run('png', async () => { notify({ kind: 'ok', text: 'PNG diunduh: ' + await downloadPng([q], context, content) }); }, 'PNG gagal dibuat.');
+  const downloadOnePdf = () => run('pdf', async () => { notify({ kind: 'ok', text: 'PDF diunduh: ' + await downloadPdf(pack, [q], context, content) }); }, 'PDF gagal dibuat.');
+  const exportPdf = () => run('pilih-pdf', async () => { notify({ kind: 'ok', text: 'PDF diunduh: ' + await downloadPdf(pack, chosen, context, content) }); }, 'PDF gagal dibuat.');
   const exportPng = () => run('pilih-png', async () => {
-    const name = await downloadPng(chosen, context, withKey, (done, total) => setProgress(done + 1 + ' / ' + total));
+    const name = await downloadPng(chosen, context, content, (done, total) => setProgress(done + 1 + ' / ' + total));
     notify({ kind: 'ok', text: (chosen.length > 1 ? 'ZIP berisi ' + chosen.length + ' PNG diunduh: ' : 'PNG diunduh: ') + name });
   }, 'PNG gagal dibuat.');
-  const copyChosen = () => run('pilih-salin', async () => reportCopy(await copyQuestions(chosen, withKey ? ALL_PARTS : NASKAH_PARTS, true), chosen.length + ' soal terpilih'), 'Gagal menyalin.');
+  const copyChosen = () => run('pilih-salin', async () => reportCopy(await copyQuestions(chosen, content === 'pembahasan' ? ALL_PARTS : content === 'soal' ? NASKAH_PARTS : [...NASKAH_PARTS, 'jawaban'], true), chosen.length + ' soal terpilih'), 'Gagal menyalin.');
   const label = (id: string, idle: string, working: string) => busy === id ? working + (progress ? ' ' + progress : '…') : idle;
   const none = chosen.length === 0;
   return <section className="take-panel" aria-label="Ambil soal">
@@ -72,9 +75,12 @@ export default function TakePanel({ question: q, pack, title, visible, pick, onP
       </div>
       <button className="secondary-button" disabled={anyBusy} onClick={downloadOnePng}><Icon name="image" size={16}/>{label('png', 'Unduh PNG', 'Menyiapkan')}</button>
       <button className="secondary-button" disabled={anyBusy} onClick={downloadOnePdf}><Icon name="download" size={16}/>{label('pdf', 'Unduh PDF', 'Menyiapkan')}</button>
+      <button className="secondary-button" disabled={anyBusy} onClick={() => setVideoOpen(true)}><Icon name="video" size={16}/>Video pembahasan</button>
     </div>
     <div className="take-row take-options">
-      <label className="check-row" title="Berlaku untuk Unduh PNG, Unduh PDF, dan soal terpilih. Menu Salin memilih bagiannya sendiri."><input type="checkbox" checked={withKey} onChange={(e) => setWithKey(e.target.checked)}/><span>Sertakan kunci & pembahasan</span></label>
+      <label className="check-row take-content" title="Berlaku untuk Unduh PNG, Unduh PDF, dan soal terpilih. Menu Salin memilih bagiannya sendiri."><span>Isi unduhan soal</span><select value={content} onChange={(e) => setContent(e.target.value as QuestionContent)} disabled={anyBusy}>
+        <option value="pembahasan">Soal + kunci + pembahasan</option><option value="soal-jawaban">Soal + jawaban tanpa pembahasan</option><option value="soal">Soal tanpa kunci</option>
+      </select></label>
       <label className="check-row"><input type="checkbox" checked={pick} onChange={(e) => onPick(e.target.checked)}/><span>Pilih beberapa soal</span></label>
     </div>
     {pick && <div className="take-select" role="group" aria-label="Soal terpilih">
@@ -83,12 +89,13 @@ export default function TakePanel({ question: q, pack, title, visible, pick, onP
         <button className="text-button" onClick={() => onPicked(pickAll(picked, visible))} disabled={anyBusy || !selectable(visible).length}>Pilih semua ({selectable(visible).length})</button>
         <button className="text-button" onClick={() => onPicked(new Set())} disabled={anyBusy || none}>Batal pilih</button>
       </div>
-      <p className="help">Klik nomor di daftar soal untuk memilih. Pilih semua mengikuti filter daftar dan melewati soal yang dikeluarkan. Kunci & pembahasan mengikuti kotak di atas.</p>
+      <p className="help">Klik nomor di daftar soal untuk memilih. Pilih semua mengikuti filter daftar dan melewati soal yang dikeluarkan. Isi mengikuti pilihan unduhan di atas.</p>
       <div className="take-row">
         <button className="primary-button" disabled={anyBusy || none} onClick={exportPdf}><Icon name="download" size={16}/>{label('pilih-pdf', 'Ekspor PDF', 'Menyiapkan')}</button>
         <button className="primary-button" disabled={anyBusy || none} onClick={exportPng}><Icon name="image" size={16}/>{label('pilih-png', chosen.length > 1 ? 'Ekspor PNG (ZIP)' : 'Ekspor PNG', 'Menyiapkan PNG')}</button>
         <button className="secondary-button" disabled={anyBusy || none} onClick={copyChosen}><Icon name="copy" size={16}/>{label('pilih-salin', 'Salin terpilih', 'Menyalin')}</button>
       </div>
     </div>}
+    {videoOpen && <VideoDialog key={pack.id} pack={pack} question={q} picked={picked} title={title} onClose={() => setVideoOpen(false)}/>}
   </section>;
 }

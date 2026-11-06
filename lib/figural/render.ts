@@ -31,6 +31,7 @@ const frame = (inner: string) => '<rect x="1" y="1" width="98" height="98" rx="3
 const cell = (s: Scene | null, x: number, y: number) => '<g transform="translate(' + x + ' ' + y + ')">' + frame(s ?
   '<g transform="translate(50 50)">' + sceneMarkup(s) + '</g>' :
   '<text x="50" y="66" text-anchor="middle" font-family="' + FONT + '" font-weight="700" font-size="48" fill="' + INK + '">?</text>') + '</g>';
+export const sceneCell = cell; // satu kotak 100 × 100 (dipakai diagram pembahasan, lib/figural/annotate.ts)
 const label = (text: string, x: number, y: number, size = 20) => '<text x="' + x + '" y="' + y + '" text-anchor="middle" font-family="' + FONT + '" font-weight="700" font-size="' + size + '" fill="' + INK + '">' + text + '</text>';
 
 // Satu gambar (opsi) pada kotak 100 × 100.

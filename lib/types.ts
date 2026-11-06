@@ -2,7 +2,9 @@ export type Subtest = 'TWK' | 'TIU' | 'TKP';
 export type Mode = Subtest | 'SKD';
 export type Difficulty = 'mudah' | 'sedang' | 'sulit' | 'hots';
 export type DifficultyFilter = Difficulty | 'campuran';
-export type ExportContent = 'soal' | 'kunci' | 'pembahasan';
+export type ExportContent = 'soal' | 'kunci' | 'soal-jawaban' | 'pembahasan';
+export type QuestionContent = Exclude<ExportContent, 'kunci'>;
+export type ExportFormat = 'pdf' | 'siadu' | 'docx' | 'csv' | 'json';
 
 export type Figure = {
   shape: 'triangle' | 'square' | 'circle' | 'diamond';
@@ -33,20 +35,26 @@ export type Visual = {
   scenes?: (Scene | null)[]; // mesin v3; null = kotak tanda tanya
   rule?: FiguralRule; // aturan yang diuraikan di pembahasan; kunci tetap dibuktikan ulang dari gambar
 };
-export type Option = { text: string; score: number; reason: string; figure?: Figure; scene?: Scene };
+// Penanda tiap opsi kasus TKP baru (data/tkp-kasus/): `pembeda` = apa yang membedakannya dari kunci; `pengecoh` = pola pengecoh menurut tabel skor
+// (null pada kunci). Ikut berpindah bersama opsinya saat diacak dan tidak dicetak.
+export type TkpTag = { pembeda: string; pengecoh: string | null };
+// `ref`: nomor tetap opsi untuk penanda {opsi:N} pada pembahasan silogisme narasi (lib/explanation.ts); ikut berpindah bersama opsinya saat diacak atau disunting, sehingga huruf yang tampil tetap benar.
+export type Option = { text: string; score: number; reason: string; figure?: Figure; scene?: Scene; tag?: TkpTag; ref?: number };
 export type Proof =
-  | { kind: 'numeric'; values: number[]; answer: number; expression?: string }
+  | { kind: 'numeric'; values: number[]; answer: number; expression?: string; distractors?: { value: number; source: string; reason: string }[] } // distractors: sumber kesalahan tiap pengecoh (deret), tidak ditampilkan
   | { kind: 'logic'; valid: boolean[]; entailment?: { premises: import('./solver').Logic[]; conclusions: import('./solver').Logic[] } }
   | { kind: 'figure'; answer: Figure; odd?: boolean }
   | { kind: 'scene'; mekanisme: string }
   | { kind: 'bank'; id: string; answerText: string }
   | { kind: 'model'; model: import('./models').Model }
-  | { kind: 'local'; version: 1; model: string; context: number; state: number; order: number[] }
+  | { kind: 'local'; version: 1 | 2; model: string; context: number; state: number; order: number[] }
   | { kind: 'manual'; note: string };
 export type ReviewStatus = 'draft' | 'revision' | 'approved';
 export type Provenance = { file: string; question: number; category: string; lesson: string; chapter: string; declaredDifficulty: string; sourceHash: string; block: number; status: 'accepted-example' | 'adapted' };
 export type Review = { status: ReviewStatus; excluded: boolean; note: string; revision: number; reviewedAt?: string; reviewer?: string; updatedAt: string };
 export type Rubric = { authority: string; urgency: string; efficacy: string; risk: string; followUp: string };
+// Metadata kasus TKP baru (lib/bank/tkp-kasus.ts). `skenario` menjadi family: satu skenario tidak muncul dua kali dalam paket.
+export type TkpMeta = { skenario: string; pola: string; peran: string; kewenangan: string; penentu: string; tempat: string; keputusan: string; konteks?: string; kataKunci?: string };
 export type Question = {
   id: string;
   no: number;
@@ -72,6 +80,7 @@ export type Question = {
   review?: Review;
   provenance?: Provenance;
   mappingId?: string;
+  kasus?: TkpMeta;
 };
 export type Package = { id: string; seed: string; mode: Mode; duration: number; questions: Question[] };
 export type Settings = {
@@ -113,6 +122,7 @@ export type BankItem = {
   table?: Question['table'];
   provenance?: Provenance;
   mappingId?: string;
+  kasus?: TkpMeta;
 };
 export type Snapshot = { version: number; at: string; label: string; result: Result };
 export type Workspace = { schema: 2; id: string; name: string; createdAt: string; updatedAt: string; version: number; result: Result; snapshots: Snapshot[] };

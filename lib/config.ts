@@ -5,6 +5,11 @@ export const TOPICS: Record<Subtest, string[]> = {
   TIU: ['Verbal', 'Numerik', 'Figural'],
   TKP: ['Pelayanan Publik', 'Jejaring Kerja', 'Sosial Budaya', 'Teknologi Informasi dan Komunikasi', 'Profesionalisme', 'Anti Radikalisme'],
 };
+// Saklar fitur telaah/kurasi: persetujuan soal, status draf/perlu revisi, isian dan catatan penelaah, keluarkan dari paket, pintasan A/R,
+// ringkasan "x/110 disetujui", pilihan cakupan ekspor, dan label "DRAF KURASI" pada ekspor. false = disembunyikan (v2): hanya antarmukanya yang hilang;
+// kode, fungsi, dan data `review` pada workspace tetap ada. Ubah ke true untuk menghidupkannya lagi (v3). Bertipe boolean, bukan literal false,
+// supaya cabang kurasi tetap diperiksa tipe dan tidak dianggap kode mati.
+export const KURASI_AKTIF: boolean = false;
 export const LABELS: Record<Difficulty, string> = { mudah: 'Mudah', sedang: 'Sedang', sulit: 'Sulit', hots: 'Sulit (label lama)' };
 export const PRESET = { TWK: 30, TIU: 35, TKP: 45, SKD: 110 };
 export const DESCRIPTIONS: Record<Mode, string> = {

@@ -3,7 +3,10 @@
 // `--png` juga menulis gambar PNG tiap soal bila pustaka sharp tersedia (tidak wajib).
 import fs from 'node:fs';
 import path from 'node:path';
+import { diagramSvg, isDiagramBlock } from '../lib/diagram';
+import { explanationOf, parseExplanation, plainTableRows } from '../lib/explanation';
 import { questionSvg } from '../lib/figures';
+import { plainMath } from '../lib/math';
 import { rng } from '../lib/rng';
 import { TIU_FAMILIES, makeTiu } from '../lib/tiu';
 import type { Difficulty, Question } from '../lib/types';
@@ -14,6 +17,20 @@ const out = path.resolve(value('out', 'output/figural-contoh')), per = Number(va
 fs.mkdirSync(out, { recursive: true });
 const esc = (text: string) => text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const levels: Difficulty[] = ['mudah', 'sedang', 'sulit', 'hots'];
+// Pembahasan seperti yang tampil di aplikasi: huruf kunci diisi ({kunci}), kotak opsi diurutkan, dan diagram digambar sebagai SVG; baris JSON mentah tidak ditulis.
+function pembahasanHtml(q: Question): string {
+  const shown = explanationOf(q), blocks = parseExplanation(shown);
+  if (!blocks) return '<p>' + esc(plainMath(shown)).replace(/\n/g, '<br>') + '</p>';
+  return blocks.map((block) => {
+    if (isDiagramBlock(block)) return '<div class="diagram">' + diagramSvg(block) + '</div>';
+    if (block.k === 'gap') return '';
+    if (block.k === 'heading') return '<p><b>' + esc(block.text) + '</b></p>';
+    if (block.k === 'list') return (block.ordered ? '<ol start="' + block.start + '">' : '<ul>') + block.items.map((item) => '<li>' + esc(plainMath(item)) + '</li>').join('') + (block.ordered ? '</ol>' : '</ul>');
+    if (block.k === 'table') return '<pre>' + esc(plainTableRows(block).join('\n')) + '</pre>';
+    if (block.k === 'box') return '<p>' + block.lines.map((line) => esc(plainMath(line))).join('<br>') + '</p>';
+    return '<p>' + esc(plainMath(block.text)) + '</p>';
+  }).join('');
+}
 
 (async () => {
   type Sharp = (input: Buffer, options: { density: number }) => { png(): { toFile(file: string): Promise<unknown> } };
@@ -30,7 +47,7 @@ const levels: Difficulty[] = ['mudah', 'sedang', 'sulit', 'hots'];
       const name = family.id + '-' + level + '-' + (i + 1);
       if (sharp) await sharp(Buffer.from(svg), { density: 150 }).png().toFile(path.join(out, name + '.png'));
       items.push('<article><h3>' + esc(family.name) + ' · ' + level + ' · ' + esc(q.visual!.rule!.mekanisme) + ' · kunci ' + String.fromCharCode(65 + q.answer) + '</h3><p class="stem">' + esc(q.stem) + '</p><div class="art">' + svg + '</div>' +
-        '<details><summary>Pembahasan</summary><p>' + esc(q.explanation).replace(/\n/g, '<br>') + '</p><ol type="A">' + q.options.map((o) => '<li' + (q === q && o.score ? ' class="kunci"' : '') + '>' + esc(o.reason) + '</li>').join('') + '</ol><p class="meta">' + esc(q.difficultyReason ?? '') + '</p></details></article>');
+        '<details><summary>Pembahasan</summary>' + pembahasanHtml(q) + (q.options.some((o) => o.reason.trim()) ? '<ol type="A">' + q.options.map((o) => '<li' + (o.score ? ' class="kunci"' : '') + '>' + esc(o.reason) + '</li>').join('') + '</ol>' : '') + '<p class="meta">' + esc(q.difficultyReason ?? '') + '</p></details></article>');
     }
     sections.push('<section><h2>' + esc(family.name) + ' — ' + level + '</h2>' + items.join('') + '</section>');
   }

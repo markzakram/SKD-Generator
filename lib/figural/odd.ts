@@ -3,6 +3,7 @@ import type { Difficulty, Fill, Part, Scene } from '../types';
 import { MARK_GLYPHS } from './glyphs';
 import { LIMIT, layoutOk, packPositions, polar, tierOf, type Built } from './compose';
 import { flipScene, mk, norm, polygonPart, rotateScene, rotationBetween, scene, worldPoints } from './scene';
+import { oddOrderPembahasan, oddParityPembahasan, oddSidesPembahasan } from './pembahasan';
 import { panel, singled, sidesOf } from './solve';
 import { STEMS } from './stems';
 import { dirWord, fillWord, glyphName, listText } from './text';
@@ -32,21 +33,23 @@ function buildOrder(a: Rng, tier: number): Built | null {
   const order = angles.map((x, i) => ({ x, i })).sort((p, q) => p.x - q.x).map((p) => p.i);
   const modes = tier === 0 ? ['tukar', 'ganti'] : tier === 1 ? ['tukar', 'warna'] : ['tukar-jauh', 'warna', 'cermin'];
   const mode = a.pick(modes);
-  let odd: Scene | null = null, explain = '';
+  let odd: Scene | null = null, explain = '', markIds: string[] = [];
   const swapParts = (s: Scene, i: number, j: number) => scene(s.parts.map((p) => p.id === 'obj' + (i + 1) ? { ...p, x: objects[j].x, y: objects[j].y } : p.id === 'obj' + (j + 1) ? { ...p, x: objects[i].x, y: objects[i].y } : p));
   if (mode === 'tukar' || mode === 'tukar-jauh') {
     const gap = mode === 'tukar' ? 1 : 2, at = a.int(0, n - 1), i = order[at], j = order[(at + gap) % n];
     if (n < 4 && gap > 1) return null;
-    odd = swapParts(base, i, j);
+    odd = swapParts(base, i, j); markIds = ['obj' + (i + 1), 'obj' + (j + 1)];
     explain = 'bangun ' + glyphName(glyphs[i]) + ' dan ' + glyphName(glyphs[j]) + ' bertukar tempat sehingga urutannya berubah';
   } else if (mode === 'warna') {
     const pair = order.filter((i) => order.some((j) => fills[j] !== fills[i]));
     const i = a.pick(pair), j = a.pick(pair.filter((x) => fills[x] !== fills[i]));
     odd = scene(base.parts.map((p) => p.id === 'obj' + (i + 1) ? { ...p, f: fills[j] } : p.id === 'obj' + (j + 1) ? { ...p, f: fills[i] } : p));
+    markIds = ['obj' + (i + 1), 'obj' + (j + 1)];
     explain = 'bangun ' + glyphName(glyphs[i]) + ' dan ' + glyphName(glyphs[j]) + ' bertukar warna';
   } else if (mode === 'ganti') {
     const i = a.int(0, n - 1), g = a.pick(MARK_GLYPHS.filter((x) => !glyphs.includes(x)));
     odd = scene(base.parts.map((p) => p.id === 'obj' + (i + 1) ? mk(p.id, g, p.x, p.y, { radius: 6, f: p.f }) : p));
+    markIds = ['obj' + (i + 1)];
     explain = 'bangun ' + glyphName(glyphs[i]) + ' diganti dengan ' + glyphName(g);
   } else {
     odd = flipScene(base);
@@ -69,8 +72,7 @@ function buildOrder(a: Rng, tier: number): Built | null {
   return {
     kind: 'ketidaksamaan', columns: 5, scenes: [], key: scenes[oddAt], wrong: [], options: scenes, answer: oddAt, reasons, keyReason: reasons[oddAt],
     rule: { mekanisme: 'ketidaksamaan-urutan', aturan: ['Urutan bangun di sekeliling pusat (searah jarum jam) sama pada empat gambar; hanya sudut putarnya yang berbeda'] },
-    explanation: 'Perhatikan urutan bangun di sekeliling pusat gambar, dibaca searah jarum jam. Empat gambar memiliki urutan yang sama, yaitu ' + same + '; gambar-gambar itu hanya diputar dengan sudut yang berbeda-beda. ' +
-      'Gambar yang berbeda memiliki urutan ' + different + ': ' + explain + '. Jadi gambar yang berbeda adalah gambar dengan urutan tersebut.',
+    explanation: oddOrderPembahasan({ scenes, oddAt, markIds, same, different, explain }),
     difficultyReason: tier === 0 ? 'Empat bangun pada pusat yang sama; perbedaan terlihat dari urutan atau bentuk bangun.' : tier === 1 ? 'Lima bangun; perbedaan hanya pada susunan atau warna, sedangkan seluruh bangun tetap sama.' : 'Enam bangun dengan daftar bangun, warna, dan jumlah yang sama pada kelima gambar; hanya susunan yang membedakan.',
     stem: STEMS.ketidaksamaan[0],
   };
@@ -110,8 +112,7 @@ function buildParity(a: Rng, tier: number): Built | null {
   return {
     kind: 'ketidaksamaan', columns: 5, scenes: [], key: scenes[oddAt], wrong: [], options: scenes, answer: oddAt, reasons, keyReason: reasons[oddAt],
     rule: { mekanisme: 'ketidaksamaan-paritas', aturan: ['Banyaknya bangun hitam pada empat gambar bersifat ' + kind + '; satu gambar bersifat ' + opposite] },
-    explanation: 'Hitung banyaknya bangun berwarna hitam pada kelima gambar; hasilnya (diurutkan dari yang paling sedikit) adalah ' + [...arrangedBlack].sort((x, y) => x - y).join(', ') + '. Empat gambar memuat jumlah bangun hitam ' + kind + ', sedangkan satu gambar memuat jumlah ' + opposite + ' (' + other + ' bangun hitam). ' +
-      'Banyaknya bangun putih atau abu-abu dan susunan letaknya berbeda-beda pada tiap gambar dan tidak menentukan kelompok.',
+    explanation: oddParityPembahasan({ scenes, oddAt, counts: scenes.map((s) => s.parts.filter((p) => p.f === 2).length), kind, opposite }),
     difficultyReason: tier === 0 ? 'Menghitung bangun hitam dalam jumlah kecil dengan satu warna pembanding.' : tier === 1 ? 'Menghitung bangun hitam di antara bangun putih dan abu-abu yang tersebar acak.' : 'Menghitung bangun hitam dalam jumlah besar di antara dua jenis bangun dan tiga warna.',
     stem: STEMS.ketidaksamaan[0],
   };
@@ -165,7 +166,7 @@ function buildSides(a: Rng, tier: number): Built | null {
   return {
     kind: 'ketidaksamaan', columns: 5, scenes: [], key: scenes[key], wrong: [], options: scenes, answer: key, reasons, keyReason: reasons[key],
     rule: { mekanisme: 'ketidaksamaan-sisi', aturan: ['Gambar-gambar dikelompokkan menurut banyaknya sisi; satu gambar tidak memiliki pasangan'] },
-    explanation: 'Hitung banyaknya sisi pada kelima gambar; hasilnya (diurutkan dari yang paling sedikit) adalah ' + [...order].sort((x, y) => x - y).join(', ') + '. Gambar-gambar dengan ' + listText(groups.map(String)) + ' sisi masing-masing berpasangan, sedangkan gambar dengan ' + order[key] + ' sisi tidak memiliki pasangan. Jadi yang berbeda adalah gambar dengan ' + order[key] + ' sisi.',
+    explanation: oddSidesPembahasan({ scenes, oddAt: key, sides: order }),
     difficultyReason: tier === 0 ? 'Empat gambar punya jumlah sisi sama; selisih jumlah sisi dengan gambar yang berbeda besar.' : tier === 1 ? 'Gambar membentuk dua pasangan dan satu gambar tanpa pasangan; selisih jumlah sisi kecil.' : 'Dua pasangan dengan jumlah sisi berurutan dan satu gambar tanpa pasangan; menuntut penghitungan sisi yang teliti.',
     stem: STEMS.ketidaksamaan[0],
   };

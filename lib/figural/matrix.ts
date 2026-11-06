@@ -3,6 +3,7 @@ import type { Difficulty, Fill, Part, Scene } from '../types';
 import { PLAIN_GLYPHS } from './glyphs';
 import { chooseWrong, layoutOk, pack, packPositions, polar, tierOf, type Built } from './compose';
 import { groupOf, isGroup, mk, orientation, partRadius, scene } from './scene';
+import { matrixPembahasan } from './pembahasan';
 import { STEMS } from './stems';
 import { capital, describeScene, fillWord, glyphName, listText, makeNamer, turnWord } from './text';
 
@@ -60,6 +61,12 @@ function latin(a: Rng, tier: number): Recipe {
     difficultyReason: tier === 1 ? 'Dua bagian dengan aturan persegi Latin pada bentuk atau warna.' : 'Beberapa bagian mengikuti persegi Latin pada bentuk dan warna sekaligus, ditambah bagian yang warnanya mengikuti baris atau kolom; opsi harus disaring satu per satu.',
   };
 }
+// Persamaan satu baris kotak, ditulis terpisah per langkah (tanpa garis miring yang terbaca sebagai pecahan); baris terakhir ditandai sebagai kotak bertanda tanya.
+function rowEquations(kind: string, [a, b, c]: number[], last: boolean): string {
+  const text = kind === 'jumlah' ? a + ' + ' + b + ' = ' + c : kind === 'kali' ? a + ' × ' + b / a + ' = ' + b + '; ' + b + ' × ' + c / b + ' = ' + c :
+    kind === 'prima' ? a + ', ' + b + ', ' + c : a + ' + ' + (b - a) + ' = ' + b + '; ' + b + ' + ' + (c - b) + ' = ' + c;
+  return text + (last ? ' (kotak bertanda tanya berisi ' + c + ' bangun)' : '');
+}
 // Matriks 4: banyaknya bangun mengikuti deret atau hubungan antarkolom.
 function counts(a: Rng, tier: number): Recipe {
   const glyph = a.pick(['bintang', 'lingkaran', 'segitiga', 'persegi', 'belah']), kind = tier === 0 ? 'aritmetika' : tier === 1 ? a.pick(['jumlah', 'kali']) : a.pick(['prima', 'jumlah', 'kali', 'aritmetika-besar']);
@@ -87,7 +94,9 @@ function counts(a: Rng, tier: number): Recipe {
   const cell = (r: number, c: number) => scene(pack('bangun', glyph, value(r, c), { cols, pitch, radius, f: 2 }));
   return {
     cell, roles: { bangun: 'bangun ' + glyphName(glyph) }, mekanisme: 'matriks-jumlah', rules: { 'bangun@:n': rule }, repack: (name, n) => pack(name, glyph, n, { cols, pitch, radius, f: 2 }),
-    explain: 'Hitung banyaknya bangun pada setiap kotak: ' + GRID.map((r) => GRID.map((c) => r === 2 && c === 2 ? '?' : value(r, c)).join(', ')).join(' / ') + '. ' + capital(rule) + '. Jadi kotak kanan bawah berisi ' + value(2, 2) + ' bangun.',
+    // Satu baris persamaan per baris kotak (QC akademik #2, soal 64): daftar "2, 3, 5 / 5, 3, 8" dahulu terbaca sebagai pecahan lintas baris (5/5, 8/5).
+    explain: ['Banyaknya bangun pada setiap baris:', ...GRID.map((r) => 'Baris ' + (r + 1) + ': ' + rowEquations(kind, [0, 1, 2].map((c) => value(r, c)), r === 2)),
+      capital(rule) + '.', 'Jadi kotak kanan bawah berisi ' + value(2, 2) + ' bangun.'].join('\n'),
     difficultyReason: kind === 'aritmetika' ? 'Banyaknya bangun bertambah dengan langkah tetap pada kolom dan baris.' : kind === 'prima' ? 'Banyaknya bangun mengikuti deret bilangan prima yang harus dikenali sendiri.' : 'Banyaknya bangun mengikuti hubungan antarkolom yang harus ditemukan sendiri.',
   };
 }
@@ -174,7 +183,7 @@ export function buildMatrix(a: Rng, level: Difficulty): Built | null {
   return {
     kind: 'matriks', columns: 3, scenes: [...known, null], key, wrong, namer: name,
     rule: { mekanisme: recipe.mekanisme, aturan: [...new Set(Object.values(recipe.rules))].map(capital) },
-    explanation: recipe.explain, keyReason: 'Memenuhi seluruh aturan: ' + describeScene(key, name) + '.',
+    explanation: matrixPembahasan({ mekanisme: recipe.mekanisme, rules: recipe.rules, roles: recipe.roles, explain: recipe.explain, cells, key, describe: describeScene(key, name) }), keyReason: 'Memenuhi seluruh aturan: ' + describeScene(key, name) + '.',
     difficultyReason: recipe.difficultyReason, stem: STEMS.matriks[0],
   };
 }

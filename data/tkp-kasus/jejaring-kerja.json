@@ -1,0 +1,1796 @@
+[
+  {
+    "id": "tkp-kasus-jk-01",
+    "skenario": "rekap-realisasi-unit-keuangan-terlambat",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Komunikasi, Koordinasi, dan Berbagi Informasi",
+    "pola": "gangguan-layanan-mendadak",
+    "peran": "anggota-tim",
+    "kewenangan": "terbatas",
+    "penentu": "unit keuangan belum mengirim rekap realisasi yang dibutuhkan laporan untuk pimpinan lusa, sedangkan stafnya dapat dihubungi langsung",
+    "tempat": "administratif",
+    "keputusan": "koordinasi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Ketergantungan jelas, pihak yang harus dihubungi tersedia, dan satu tindakan langsung mudah dikenali.",
+    "stem": "Anda staf unit perencanaan yang menyusun laporan triwulan untuk pimpinan dinas, dan laporan itu harus diserahkan lusa. Angka realisasi anggaran dalam laporan berasal dari rekap unit keuangan, yang menurut jadwal bersama seharusnya sudah masuk kemarin. Rekap itu belum diterima dan tidak ada kabar dari unit keuangan. Staf pengolah rekap di unit itu dapat dihubungi langsung lewat telepon kantor. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Menghubungi staf pengolah rekap untuk menanyakan kendalanya, lalu menyepakati tanggal kirim secara tertulis.",
+        "score": 5,
+        "reason": "Staf pengolah rekap dapat dihubungi langsung, sehingga kendala keterlambatan diketahui dan tanggal kirim tertulis menjadi pegangan bagi laporan yang harus diserahkan lusa. Hubungan dengan unit keuangan terjaga karena persoalan dibahas dengan pihak yang memegang rekap.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengirim surel kepada staf pengolah rekap agar data dikirim hari ini, lalu memberi tahu atasan tentang ketergantungan laporan.",
+        "score": 4,
+        "reason": "Surel dan pemberitahuan kepada atasan membuat laporan lusa tidak terkejut oleh rekap yang terlambat. Kendala unit keuangan belum diketahui dan belum ada tanggal kirim yang disepakati, sehingga kepastian rekap tetap kosong.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Menanyakan jadwal rekap kepada koordinator unit Anda, lalu menghubungi unit keuangan sesuai arahannya.",
+        "score": 3,
+        "reason": "Bertanya kepada koordinator unit sendiri masih memberi rencana tindak lanjut. Namun staf pengolah rekap dapat dihubungi langsung sekarang, sehingga arahan itu menambah langkah sebelum rekap dikejar untuk laporan lusa.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Mengerjakan bagian laporan yang lain terlebih dahulu, lalu memeriksa kotak surel unit keuangan itu besok pagi.",
+        "score": 2,
+        "reason": "Mengerjakan bagian lain memang memakai waktu dengan baik. Namun rekap realisasi tidak dikejar kepada siapa pun dan hanya diperiksa lewat surel, padahal laporan untuk pimpinan harus diserahkan lusa.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Mengisi angka realisasi dengan perkiraan dari triwulan lalu, lalu menyerahkan laporan kepada pimpinan tepat pada jadwal.",
+        "score": 1,
+        "reason": "Angka perkiraan menggantikan rekap realisasi yang belum diterima, sehingga pimpinan memperoleh laporan yang tampak lengkap tetapi tidak benar. Keterlambatan unit keuangan tersembunyi dan keputusan pimpinan dapat salah arah.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: koordinasi antarunit yang saling bergantung, yaitu menelusuri kendala dan menyepakati waktu serah terima. Fakta penentu: unit keuangan belum mengirim rekap realisasi yang dibutuhkan laporan untuk pimpinan lusa, sedangkan stafnya dapat dihubungi langsung. Respons terbaik menghubungi staf itu, menanyakan kendalanya, lalu menyepakati tanggal kirim secara tertulis. Meminta kirim lewat surel dan memberi tahu atasan menjaga laporan, tetapi kendala dan tanggal belum jelas. Bertanya dahulu kepada koordinator sendiri menambah langkah yang tidak perlu, memeriksa surel besok pagi membiarkan rekap tertahan, dan mengisi angka perkiraan memalsukan laporan.",
+    "tip": "Siapa yang memegang bahan yang Anda butuhkan, dan apa yang masih dapat Anda kerjakan hari ini?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "ketergantungan-antarunit",
+    "kataKunci": "laporan triwulan lusa, rekap unit keuangan, jadwal bersama, tidak ada kabar, staf pengolah rekap"
+  },
+  {
+    "id": "tkp-kasus-jk-02",
+    "skenario": "format-nama-kecamatan-dua-unit",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Komunikasi, Koordinasi, dan Berbagi Informasi",
+    "pola": "informasi-belum-lengkap-bertentangan",
+    "peran": "pelaksana",
+    "kewenangan": "penuh",
+    "penentu": "unit pertama menulis nama kecamatan lengkap, unit kedua memakai kode singkatan, dan pedoman data dinas menetapkan penulisan lengkap",
+    "tempat": "layanan-digital",
+    "keputusan": "mengoreksi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Standar penulisan sudah ada dalam pedoman, sehingga tindakan yang sesuai standar dan komunikasinya mudah dibedakan.",
+    "stem": "Anda pelaksana yang menggabungkan data penerima bantuan dari dua unit dalam satu lembar kerja bersama. Unit pertama menulis nama kecamatan secara lengkap, sedangkan unit kedua memakai kode singkatan, sehingga penjumlahan per kecamatan terpecah menjadi dua baris. Pedoman data dinas menetapkan penulisan nama kecamatan secara lengkap. Kedua unit akan memakai lembar kerja itu bulan depan. Apa keputusan Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Mengubah kode singkatan menjadi nama lengkap pada baris yang sudah terpecah, lalu menjumlahkan ulang data per kecamatan.",
+        "score": 4,
+        "reason": "Perbaikan baris yang terpecah membuat jumlah per kecamatan benar untuk bulan ini. Penulisan pada data kedua unit dan pada lembar kerja tidak diubah, sehingga baris terpecah muncul lagi saat data bulan depan dimasukkan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menyeragamkan penulisan kecamatan sesuai pedoman pada data kedua unit, lalu memasang daftar pilihan nama baku di lembar kerja.",
+        "score": 5,
+        "reason": "Pedoman data dinas sudah menetapkan penulisan lengkap, sehingga penyeragaman pada data kedua unit menyatukan baris kecamatan yang terpecah. Daftar pilihan nama baku mencegah perbedaan penulisan terulang ketika kedua unit memakai lembar kerja bulan depan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta kepala kedua unit bertemu untuk memilih format penulisan kecamatan, lalu menggabungkan data sesuai keputusan bersama itu.",
+        "score": 3,
+        "reason": "Pertemuan kepala unit memberi kesepakatan, tetapi pedoman data dinas sudah menetapkan penulisan lengkap. Penggabungan data tertahan untuk keputusan yang jawabannya sudah ada.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menggabungkan data sesuai tulisan masing-masing unit, lalu memberi catatan bahwa jumlah per kecamatan mungkin ganda.",
+        "score": 2,
+        "reason": "Catatan peringatan memberi tahu pembaca tentang masalah penjumlahan. Akan tetapi baris kecamatan tetap terpecah dan pedoman penulisan tidak dipakai, sehingga pembaca harus memperbaiki hitungan sendiri.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Mengubah angka satu kecamatan agar jumlah total sama dengan laporan bulan lalu, lalu menandai data sebagai sudah selesai.",
+        "score": 1,
+        "reason": "Mengubah angka demi kecocokan total memalsukan data penerima yang sebenarnya. Perbedaan penulisan kecamatan tetap ada dan hasil gabungan menyesatkan siapa pun yang memakainya.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: menyelaraskan standar data lintas unit berdasarkan pedoman yang berlaku. Fakta penentu: unit pertama menulis nama kecamatan lengkap, unit kedua memakai kode singkatan, dan pedoman data dinas menetapkan penulisan lengkap. Respons terbaik menyeragamkan penulisan pada data kedua unit lalu memasang daftar pilihan nama baku pada lembar kerja bersama. Memperbaiki hanya baris yang terpecah menyelesaikan bulan ini, tetapi sumber penulisan tidak berubah. Memanggil rapat kepala unit untuk keputusan yang sudah ada dalam pedoman memperlambat kerja, memberi catatan peringatan membiarkan baris terpecah, dan mengubah angka demi total memalsukan data.",
+    "tip": "Bandingkan standar yang sudah ada dengan cara tiap unit bekerja, lalu lihat siapa yang akan memanfaatkan hasilnya kelak.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "ketergantungan-antarunit",
+    "kataKunci": "nama kecamatan lengkap, kode singkatan, penjumlahan terpecah, pedoman data dinas, lembar kerja bersama"
+  },
+  {
+    "id": "tkp-kasus-jk-03",
+    "skenario": "tindak-lanjut-rapat-sosialisasi-tanpa-pemilik",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Kolaborasi dan Penyelesaian Masalah dalam Tim",
+    "pola": "ketegangan-kesalahpahaman",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "tiga tindak lanjut sosialisasi disepakati tetapi belum punya penanggung jawab, dan peserta sepakat koordinator rapat menyusun pembagian tugas",
+    "tempat": "rapat",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kewenangan menyusun pembagian tugas jelas dan kebutuhan penanggung jawab serta tenggat langsung terlihat.",
+    "stem": "Rapat koordinasi tiga unit baru saja selesai. Peserta menyepakati tiga tindak lanjut sosialisasi, yaitu mengirim undangan kepada kepala desa, menyiapkan daftar hadir, dan memesan ruang aula, tetapi tidak ada yang menyebut penanggung jawabnya. Dua perwakilan unit sama-sama mengira unit lain yang akan mengirim undangan. Peserta sepakat bahwa koordinator rapat, yaitu Anda, menyusun pembagian tugas. Sebagian peserta sudah pulang, dan grup pesan antarunit masih aktif. Tindakan apa yang paling tepat Anda ambil sebagai koordinator rapat?",
+    "options": [
+      {
+        "text": "Menugaskan diri sendiri untuk ketiga tindak lanjut sosialisasi itu, lalu melaporkan hasilnya pada rapat koordinasi berikutnya.",
+        "score": 3,
+        "reason": "Mengerjakan sendiri menjamin tindak lanjut sosialisasi berjalan dan Anda berhak menyusun pembagian. Hanya saja unit lain yang seharusnya terlibat kehilangan perannya, dan Anda seorang diri menanggung ketiga pekerjaan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Mencatat ketiga tindak lanjut sosialisasi dalam laporan rapat, lalu memeriksa apakah ada unit yang menawarkan diri.",
+        "score": 2,
+        "reason": "Pencatatan menyimpan hasil rapat, tetapi ketiga tindak lanjut tetap belum punya penanggung jawab. Pembagian tugas yang menjadi bagian Anda sebagai koordinator rapat tidak dijalankan.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Mengirim ringkasan berisi nama dan tenggat tiap tindak lanjut, lalu meminta penanggung jawab mengonfirmasi.",
+        "score": 5,
+        "reason": "Peserta sepakat Anda menyusun pembagian tugas, sehingga ringkasan dengan nama dan tenggat menutup kekosongan penanggung jawab pada ketiga tindak lanjut. Permintaan konfirmasi memastikan rapat tidak berakhir dengan pembagian yang tidak diketahui orangnya.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menulis di grup pesan bahwa unit lain lalai karena tidak mengambil tindak lanjut, lalu meminta mereka segera mengerjakannya.",
+        "score": 1,
+        "reason": "Menyebut unit lain lalai di grup pesan mempermalukan mereka, padahal rapat memang tidak menetapkan penanggung jawab ketiga tindak lanjut. Pembagian tugas yang menjadi bagian Anda sebagai koordinator rapat berubah menjadi tuduhan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "jk:mempermalukan"
+        }
+      },
+      {
+        "text": "Mengumumkan ketiga tindak lanjut sosialisasi di grup pesan antarunit, lalu meminta unit yang sanggup untuk membalas.",
+        "score": 4,
+        "reason": "Pengumuman di grup pesan mengingatkan ketiga tindak lanjut sosialisasi kepada peserta yang sebagian sudah pulang. Nama penanggung jawab dan tenggat tidak ditetapkan, sehingga dua perwakilan yang saling mengira tetap bisa sama-sama berharap pada unit lain.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: memastikan kepemilikan tindak lanjut rapat, yaitu penanggung jawab, tenggat, dan konfirmasi, ketika dua pihak saling mengira. Fakta penentu: tiga tindak lanjut sosialisasi disepakati tanpa penanggung jawab, dua perwakilan unit saling mengira, dan peserta sepakat koordinator rapat menyusun pembagian tugas. Respons terbaik mengirim ringkasan berisi nama dan tenggat lalu meminta konfirmasi. Mengumumkan tindak lanjut tanpa nama dan tenggat mengingatkan peserta, tetapi pembagian belum ada. Mengerjakan semuanya sendiri menutup peran unit lain, mencatat saja membiarkan tindak lanjut tanpa pemilik, dan menuduh unit lain lalai mempermalukan mereka.",
+    "tip": "Apakah setiap hasil rapat sudah memiliki pengurus yang jelas, dan siapa yang berhak menyusun pembagiannya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "ketergantungan-antarunit",
+    "kataKunci": "tiga tindak lanjut, penanggung jawab, undangan kepala desa, pembagian tugas, grup pesan antarunit"
+  },
+  {
+    "id": "tkp-kasus-jk-04",
+    "skenario": "keluaran-survei-unit-pertama-dibutuhkan-unit-kedua",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Konsep Dasar dan Prinsip",
+    "pola": "dua-tanggung-jawab",
+    "peran": "koordinator",
+    "kewenangan": "terbatas",
+    "penentu": "unit survei menargetkan hasil akhir bulan, unit kebijakan membutuhkan data pada tanggal 15, dan hasil antara tersedia setelah pengumpulan selesai",
+    "tempat": "administratif",
+    "keputusan": "koordinasi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua target sah bertemu pada satu keluaran; peserta harus menilai cara menyelaraskan tanpa menekan salah satu unit.",
+    "stem": "Anda koordinator forum lintas unit di sebuah dinas. Unit survei menargetkan hasil akhir survei pada akhir bulan, sedangkan unit kebijakan membutuhkan data survei pada tanggal 15 untuk menyusun rancangan peraturan. Tim survei menyatakan hasil antara dapat dibuka setelah pengumpulan data selesai pada tanggal 12. Forum ini memfasilitasi dan tidak berwenang memerintah salah satu unit. Kedua kepala unit bersedia hadir pada pertemuan minggu ini. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Meminta tim survei membuka hasil antara pada tanggal 12 bagi unit kebijakan, lalu memberi tahu kepala unit kebijakan.",
+        "score": 4,
+        "reason": "Hasil antara yang dibuka pada tanggal 12 dapat menutup kebutuhan data unit kebijakan pada tanggal 15, dan kepala unit kebijakan diberi tahu. Namun tanggal serah terima dan penanggung jawab tidak disepakati, sedangkan kepala unit survei tidak diajak bicara.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Memerintahkan unit survei menyerahkan hasil akhir pada tanggal 15, lalu melaporkan penolakannya kepada pimpinan.",
+        "score": 1,
+        "reason": "Forum ini memfasilitasi dan tidak berwenang memerintah salah satu unit, sehingga perintah menyerahkan hasil akhir pada tanggal 15 melampaui perannya. Pelaporan penolakan memperburuk hubungan sebelum kedua kepala unit sempat dipertemukan, padahal hasil antara tersedia tanggal 12.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      },
+      {
+        "text": "Menyusun daftar kebutuhan data kedua unit secara tertulis, lalu mengundang kedua kepala unit pada pertemuan bulanan forum.",
+        "score": 3,
+        "reason": "Daftar kebutuhan membuat pembicaraan nanti lebih terarah dan forum tetap bekerja. Pertemuan bulanan menggeser pembicaraan dari minggu ini, padahal kedua kepala unit bersedia hadir sekarang dan tanggal 15 sudah dekat.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Mempertemukan kedua kepala unit untuk menyepakati hasil antara dan tanggal serah terima, lalu mencatat penanggung jawab.",
+        "score": 5,
+        "reason": "Kedua target sah, sehingga pertemuan bersama mencari irisan: hasil antara tersedia tanggal 12 dapat menutup kebutuhan tanggal 15 tanpa memaksa unit survei. Tanggal serah terima dan penanggung jawab yang dicatat mencegah janji tidak jelas.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyampaikan keluhan unit kebijakan kepada unit survei lewat pesan singkat, lalu meminta keduanya menyelesaikannya sendiri.",
+        "score": 2,
+        "reason": "Pesan singkat meneruskan keluhan unit kebijakan, tetapi tidak ada penengah dan tidak ada kesepakatan. Peran forum untuk memfasilitasi kedua unit diserahkan kembali kepada mereka tanpa bantuan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: menyelaraskan keluaran antarunit yang saling bergantung melalui fasilitasi, bukan perintah. Fakta penentu: unit survei menargetkan akhir bulan, unit kebijakan membutuhkan data tanggal 15, dan hasil antara tersedia setelah pengumpulan selesai. Respons terbaik mempertemukan kedua kepala unit untuk menyepakati hasil antara, tanggal serah terima, dan penanggung jawab. Meminta tim survei membuka hasil antara menjawab sebagian kebutuhan, tetapi tanggal dan penanggung jawab belum disepakati. Menyusun daftar kebutuhan lalu menunggu pertemuan bulanan menunda pembicaraan yang dapat berjalan sekarang, meneruskan keluhan lewat pesan melempar fasilitasi, dan memerintahkan unit survei melampaui peran forum.",
+    "tip": "Pikirkan kebutuhan sah masing-masing pihak, dan siapa yang tidak berhak memerintah salah satunya.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "ketergantungan-antarunit",
+    "kataKunci": "hasil akhir bulan, kebutuhan tanggal 15, hasil antara, pengumpulan data tanggal 12, tidak berwenang memerintah, kedua kepala unit"
+  },
+  {
+    "id": "tkp-kasus-jk-05",
+    "skenario": "angka-salah-sudah-dipakai-unit-penerima",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Komunikasi, Koordinasi, dan Berbagi Informasi",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "pelaksana",
+    "kewenangan": "penuh",
+    "penentu": "angka jumlah penerima yang Anda kirim keliru pada satu kecamatan, dan unit penerima sudah memasukkannya ke bahan paparan",
+    "tempat": "layanan-digital",
+    "keputusan": "mengoreksi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Satu kebutuhan jelas, yaitu memastikan bahan yang dipakai pimpinan memuat angka yang benar; pilihan terbaik mudah dikenali dari siapa yang dijangkau.",
+    "stem": "Sehari setelah mengirim rekap jumlah penerima bantuan kepada unit analisis, Anda memeriksa ulang dan menemukan angka satu kecamatan keliru karena salah salin. Unit analisis sudah menyatakan memasukkan angka itu ke bahan paparan yang akan dibawakan kepala dinas besok pagi. Berkas sumber ada pada Anda dan Anda dapat memperbaiki rekap sendiri. Staf unit analisis dapat dihubungi lewat telepon dan grup pesan. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Memberi tahu staf unit analisis lewat telepon tentang angka yang benar, lalu mempercayakan pembaruan paparan kepada mereka.",
+        "score": 4,
+        "reason": "Telepon langsung kepada unit analisis menyampaikan angka yang benar tepat pada pihak yang menyusun bahan paparan. Tidak ada berkas koreksi dan tidak ada pemastian bahwa paparan berubah, sehingga hanya sebagian kebutuhan yang tertutup.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Memperbaiki rekap di berkas sumber, lalu menyimpannya dengan nama berkas yang sama seperti sebelumnya.",
+        "score": 1,
+        "reason": "Berkas yang diganti dengan nama sama membuat unit analisis dan siapa pun tidak dapat membedakan rekap lama dari rekap baru. Paparan besok pagi tetap memuat angka keliru dan perubahan tidak dapat ditelusuri.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      },
+      {
+        "text": "Menyiapkan koreksi lengkap dengan alasan salah salin, lalu mengirimkannya setelah paparan selesai dibawakan.",
+        "score": 2,
+        "reason": "Koreksi lengkap menunjukkan tanggung jawab atas kesalahan. Pengiriman setelah paparan membuat kepala dinas membawakan angka keliru, padahal unit analisis dapat dihubungi sekarang.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menyerahkan berkas koreksi lengkap kepada kepala dinas yang akan membawakan paparan, lalu memberi tembusan kepada unit analisis.",
+        "score": 3,
+        "reason": "Kepala dinas yang akan membawakan paparan menerima koreksi tertulis dan unit analisis mendapat tembusan. Bahan paparan disusun unit analisis dan kepala dinas membawakannya besok pagi, sehingga koreksi yang jatuh pada penyaji belum tentu masuk ke bahan itu.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Mengirim berkas koreksi bertanda versi kepada unit analisis, lalu memastikan secara langsung bahwa paparan memakai data yang benar.",
+        "score": 5,
+        "reason": "Berkas koreksi bertanda versi memperlihatkan angka mana yang berubah, dan konfirmasi langsung memastikan bahan paparan kepala dinas besok memakai angka yang benar. Kesalahan diakui dan dampaknya ditutup pada bagian yang sudah dipakai penerima.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: pemulihan kepercayaan setelah kesalahan data yang sudah sampai pada pihak lain. Fakta penentu: angka satu kecamatan yang Anda kirim keliru dan unit penerima sudah memasukkannya ke bahan paparan. Respons terbaik mengirim berkas koreksi bertanda versi lalu memastikan paparan memakai data yang benar. Telepon langsung kepada unit analisis menjangkau penyusun bahan, tetapi tanpa berkas koreksi dan tanpa pemastian. Menyerahkan koreksi kepada kepala dinas dan tembusan kepada unit analisis menjangkau penyaji, tetapi penyusun bahan belum tentu mengubahnya. Koreksi sesudah paparan terlambat dan mengganti berkas dengan nama sama menghilangkan jejak perubahan.",
+    "tip": "Siapa saja yang sudah menerima data keliru itu, dan apa yang meyakinkan Anda bahwa mereka kini berpegang pada angka yang tepat?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "ketergantungan-antarunit",
+    "kataKunci": "salah salin, angka satu kecamatan, bahan paparan, kepala dinas besok pagi, berkas sumber"
+  },
+  {
+    "id": "tkp-kasus-jk-06",
+    "skenario": "dua-permintaan-data-satu-analis",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Kolaborasi dan Penyelesaian Masalah dalam Tim",
+    "pola": "dua-tanggung-jawab",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "dua unit menyatakan olahan data dibutuhkan pada waktu yang sama dengan tenggat berbeda, hanya satu analis tersedia, dan dokumen pendukung kedua pernyataan belum diperiksa",
+    "tempat": "rapat",
+    "keputusan": "koordinasi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua klaim kebutuhan sama-sama mungkin benar dan belum terbukti; peserta menilai cara menetapkan urutan atas dasar yang dapat diperiksa.",
+    "stem": "Anda koordinator unit data yang hanya memiliki satu analis untuk minggu ini. Unit anggaran menyatakan olahan datanya dibutuhkan untuk rapat penetapan pagu yang tidak dapat diundur, sedangkan unit layanan menyatakan olahan datanya dibutuhkan untuk laporan kepada pemberi bantuan yang jatuh tempo lusa. Anda belum melihat dokumen pendukung kedua pernyataan itu, dan kedua unit belum mengetahui permintaan yang lain. Bagaimana Anda sebaiknya mengatur pekerjaan analis itu?",
+    "options": [
+      {
+        "text": "Menanyakan bukti tenggat dan dampak penundaan kepada kedua unit, lalu menetapkan urutan sesuai jawabannya.",
+        "score": 5,
+        "reason": "Kedua unit baru menyatakan kebutuhan olahan data dan belum ada dokumen pendukung, sehingga menanyakan bukti tenggat dan dampak penundaan membuat urutan analis ditetapkan atas fakta. Kedua unit juga memahami alasan urutan itu.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengerjakan permintaan yang masuk lebih dahulu, lalu memberi tahu unit lain tentang jadwal kerja analis.",
+        "score": 4,
+        "reason": "Urutan masuk adil secara administratif dan unit yang belum dilayani diberi kabar tentang jadwal analis. Klaim tenggat dan dampak penundaan kedua unit tidak diperiksa, sehingga olahan untuk laporan yang jatuh tempo lusa bisa terlambat.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Membagi waktu analis sama rata untuk kedua permintaan, lalu memeriksa kemajuan pekerjaannya pada akhir minggu.",
+        "score": 3,
+        "reason": "Pembagian sama rata terlihat adil dan kedua unit sama-sama mendapat pengerjaan olahan data. Tenggat dan dampak yang diklaim masing-masing tidak dibandingkan, sehingga salah satu permintaan bisa terlewat sebelum pemeriksaan akhir minggu.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Mendahulukan permintaan unit yang dipimpin sahabat Anda, lalu membiarkan unit lain mencari olahan data sendiri.",
+        "score": 1,
+        "reason": "Kedekatan pribadi menjadi dasar urutan, bukan bukti tenggat dan dampak dari kedua unit. Unit yang tidak dipimpin sahabat Anda dirugikan tanpa alasan kerja yang dapat dipertanggungjawabkan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Meminta kedua unit membagi sendiri waktu analis itu di antara mereka, lalu menerima hasil pembagian itu.",
+        "score": 2,
+        "reason": "Kedua unit sama-sama menganggap permintaannya mendesak, sehingga pembagian sendiri berpotensi buntu. Anda menyerahkan urutan pekerjaan analis kepada pihak yang berkepentingan, padahal tenggat tiap unit dapat dinilai lebih dahulu.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: mengatur dua tanggung jawab sah yang bersaing untuk satu sumber daya dengan dasar yang dapat diperiksa. Fakta penentu: dua unit menyatakan kebutuhan olahan data bersamaan, hanya satu analis tersedia, dan dokumen pendukung belum diperiksa. Respons terbaik menanyakan bukti tenggat dan dampak penundaan kepada kedua unit lalu menetapkan urutan sesuai jawabannya. Mengikuti urutan masuk adil, tetapi klaim kedua unit tidak diperiksa. Membagi waktu sama rata mengabaikan perbedaan tenggat, menyerahkan pembagian kepada kedua unit melepas tanggung jawab mengatur, dan mendahulukan unit yang dipimpin sahabat melanggar keadilan.",
+    "tip": "Apa yang sudah dapat dipastikan dari pernyataan masing-masing peminta, dan siapa yang berhak menentukan giliran?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "ketergantungan-antarunit",
+    "kataKunci": "satu analis, rapat penetapan pagu, jatuh tempo lusa, dokumen pendukung belum dilihat, permintaan unit lain"
+  },
+  {
+    "id": "tkp-kasus-jk-07",
+    "skenario": "serah-terima-berkas-jumat-terlambat-berulang",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Komunikasi, Koordinasi, dan Berbagi Informasi",
+    "pola": "masalah-berulang",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "berkas dari unit Anda selalu tiba di unit verifikasi pada Jumat sore, padahal unit verifikasi menutup penerimaan pukul 14.00 dan unit Anda menyiapkan berkas pada hari yang sama",
+    "tempat": "administratif",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Keterlambatan berulang berasal dari jadwal internal unit sendiri, sehingga perbaikan harus menyentuh penyebab dan bukan hanya hubungan antarunit.",
+    "stem": "Anda kepala sebuah unit pelaksana. Selama tiga bulan terakhir, berkas dari unit Anda tiba di unit verifikasi pada Jumat sore setiap minggu, padahal unit verifikasi menutup penerimaan pukul 14.00. Unit verifikasi sudah dua kali mengeluh, dan berkas baru dikerjakannya hari Senin. Penyebabnya, unit Anda menyiapkan berkas pada hari Jumat itu juga setelah menerima data dari lapangan. Langkah apa yang paling tepat Anda ambil?",
+    "options": [
+      {
+        "text": "Menggeser penyiapan berkas dari hari Jumat ke hari Kamis, lalu menyampaikan jadwal baru itu kepada unit verifikasi.",
+        "score": 4,
+        "reason": "Penyiapan pada hari Kamis menghindari penutupan penerimaan pukul 14.00 hari Jumat, dan unit verifikasi mengetahui jadwal baru. Data dari lapangan baru masuk pada hari Jumat, sehingga berkas Kamis bisa belum lengkap dan penyebabnya tidak ditelusuri.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menelusuri alur data lapangan ke berkas bersama staf, lalu menggeser jadwal penyiapan sesuai batas penerimaan unit verifikasi.",
+        "score": 5,
+        "reason": "Keterlambatan berulang tiga bulan berasal dari penyiapan berkas pada hari Jumat setelah data lapangan tiba. Menelusuri alur dan menggeser jadwal menyentuh penyebabnya, sedangkan jadwal baru yang mengikuti batas penerimaan unit verifikasi menjaga kerja sama.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengantar berkas sendiri ke unit verifikasi begitu selesai disiapkan setiap Jumat, lalu meminta maaf atas keterlambatan yang sudah terjadi.",
+        "score": 3,
+        "reason": "Mengantar sendiri dan meminta maaf menunjukkan itikad baik dan mempercepat sampainya berkas ke unit verifikasi. Berkas masih disiapkan pada hari Jumat setelah data lapangan tiba, sehingga penyebab tidak disentuh dan keterlambatan akan kembali ketika Anda berhalangan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Meminta unit verifikasi menerima berkas Jumat sore, lalu menanyakan kemungkinan penerimaan hari Jumat diperpanjang.",
+        "score": 2,
+        "reason": "Meminta kelonggaran memindahkan beban penyesuaian kepada unit verifikasi yang sudah dua kali mengeluh. Penutupan pukul 14.00 adalah jadwal mereka, dan jadwal penyiapan berkas di unit Anda tidak berubah.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Mengubah tanggal kirim pada catatan berkas menjadi hari Kamis, lalu menyerahkan catatan itu kepada unit verifikasi.",
+        "score": 1,
+        "reason": "Mengubah tanggal kirim memalsukan catatan keterlambatan yang sudah dua kali dikeluhkan unit verifikasi. Penyebab berkas baru disiapkan Jumat sore tidak disentuh dan kepercayaan unit verifikasi hilang.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: memperbaiki ketergantungan antarunit yang berulang dengan menyasar penyebab di dalam unit sendiri. Fakta penentu: berkas tiba Jumat sore karena disiapkan pada hari Jumat setelah data lapangan tiba, padahal unit verifikasi menutup penerimaan pukul 14.00. Respons terbaik menelusuri alur data lalu menggeser jadwal penyiapan sesuai batas penerimaan unit verifikasi. Memajukan penyiapan ke hari Kamis tanpa menelusuri data lapangan menyentuh sebagian penyebab. Mengantar berkas sendiri mempercepat sampainya berkas, tetapi penyebab tidak disentuh. Meminta kelonggaran memindahkan beban kepada unit verifikasi, dan mengubah tanggal kirim memalsukan catatan.",
+    "tip": "Di bagian mana keterlambatan itu bermula, dan apakah usulan menyentuh titik awalnya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "ketergantungan-antarunit",
+    "kataKunci": "Jumat sore, penerimaan pukul 14.00, tiga bulan, data lapangan, penyiapan berkas"
+  },
+  {
+    "id": "tkp-kasus-jk-08",
+    "skenario": "penghubung-pengganti-lembaga-pelatihan-belum-terima-berkas",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Komunikasi, Koordinasi, dan Berbagi Informasi",
+    "pola": "gangguan-layanan-mendadak",
+    "peran": "penghubung-mitra",
+    "kewenangan": "terbatas",
+    "penentu": "penghubung pengganti belum menerima berkas kesepakatan dan jadwal pelatihan yang dimulai lima hari lagi, sedangkan Anda memegang salinannya",
+    "tempat": "kemitraan",
+    "keputusan": "memulihkan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kebutuhan penghubung baru jelas dan jalur langsung tersedia; tindakan yang tepat mudah dibedakan dari perantara dan perubahan sendiri.",
+    "stem": "Anda penghubung dinas untuk sebuah lembaga pelatihan mitra. Minggu ini penghubung lembaga itu dipindahtugaskan mendadak, dan penggantinya baru mulai bekerja kemarin. Pelatihan angkatan pertama dimulai lima hari lagi, tetapi pengganti itu belum menerima berkas kesepakatan dan jadwal pelatihan, serta belum tahu siapa pemegang naskahnya di pihak dinas. Anda memegang salinan keduanya, dan surel kantor lembaga dapat dihubungi. Kantor lembaga biasa meneruskan surel dalam satu hari kerja. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mengirim berkas kepada pengganti setelah menanyakan kepada pimpinan dinas apakah kesepakatan perlu ditinjau.",
+        "score": 3,
+        "reason": "Bertanya kepada pimpinan menunjukkan kehati-hatian atas kesepakatan yang ada. Isi kesepakatan tidak dipersoalkan, sehingga arahan itu menunda pengiriman berkas yang dapat dilakukan sekarang kepada pengganti.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Meminta kantor lembaga meneruskan salinan ke penghubung pengganti setelah salinan itu Anda kirim ke surel kantor lembaga.",
+        "score": 4,
+        "reason": "Kantor lembaga biasa meneruskan surel dalam satu hari kerja, sehingga jalur lewat perantara tidak mengancam persiapan lima hari lagi. Jalur itu tetap lebih lambat daripada menghubungi pengganti langsung, dan kepastian pengganti menerima salinan bergantung pada kantor itu.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      },
+      {
+        "text": "Mengirim salinan berkas yang dibutuhkan setelah menghubungi penghubung pengganti lewat surel kantor.",
+        "score": 5,
+        "reason": "Pengganti belum menerima berkas, sedangkan Anda memegang salinan kesepakatan dan jadwal serta kontak surel kantor lembaga. Menghubunginya langsung sebelum mengirim berkas membuat pengganti siap ketika pelatihan dimulai lima hari lagi.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Membiarkan pengganti menghubungi Anda lebih dahulu setelah menyimpan salinan kesepakatan di lemari arsip kantor.",
+        "score": 2,
+        "reason": "Salinan yang tersimpan di arsip menjaga dokumen dinas tetap aman, tetapi tidak ada yang menjangkau pengganti. Pengganti belum menerima berkas kesepakatan dan jadwal, padahal pelatihan dimulai lima hari lagi.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Memberi tahu pengganti tentang jadwal baru setelah mengubah jadwal pelatihan menurut perkiraan Anda sendiri.",
+        "score": 1,
+        "reason": "Jadwal diubah menurut perkiraan sendiri, padahal jadwal itu bagian dari kesepakatan yang disetujui kedua pihak. Pengganti menerima jadwal yang keliru, sehingga persiapan lembaga bagi pelatihan lima hari lagi dapat terganggu.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: menjaga kesinambungan kemitraan saat penghubung mitra berganti. Fakta penentu: penghubung pengganti belum menerima berkas kesepakatan dan jadwal pelatihan yang dimulai lima hari lagi, sedangkan Anda memegang salinannya. Respons terbaik menghubungi pengganti langsung lewat surel kantor lalu mengirim salinan berkas. Meminta kantor lembaga meneruskan salinan sah, tetapi memakai perantara padahal jalur langsung tersedia. Bertanya dahulu kepada pimpinan dinas menambah langkah, menyimpan salinan di arsip membiarkan pengganti tidak memegang berkas, dan mengubah jadwal sendiri melanggar kesepakatan.",
+    "tip": "Apa yang diperlukan pihak baru agar dapat bekerja, dan lewat mana bahan itu paling cepat sampai kepadanya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mitra-baru",
+    "kataKunci": "penghubung pengganti, berkas kesepakatan, jadwal pelatihan, lima hari lagi, salinan, surel kantor lembaga"
+  },
+  {
+    "id": "tkp-kasus-jk-09",
+    "skenario": "komunitas-pemuda-minta-lewati-urutan-proposal",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Konsep Dasar dan Prinsip",
+    "pola": "kebutuhan-individual-vs-keadilan",
+    "peran": "pelaksana",
+    "kewenangan": "terbatas",
+    "penentu": "proposal dibahas menurut urutan tanggal masuk bagi setiap mitra, sedangkan unit menyediakan contoh proposal dan konsultasi singkat",
+    "tempat": "kemitraan",
+    "keputusan": "menolak",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Kebutuhan mitra baru bertemu dengan hak mitra lain yang sudah mengantre; peserta menimbang bantuan yang layak tanpa mengubah urutan.",
+    "stem": "Anda pelaksana di unit kerja sama sebuah dinas. Ketua komunitas pemuda yang baru pertama kali mengajukan kerja sama datang dan meminta proposalnya langsung dibahas hari ini, karena belum paham alur dan khawatir kegiatannya keburu lewat. Proposal dibahas menurut urutan tanggal masuk, berlaku sama bagi setiap mitra, dan beberapa mitra lain sudah mengantre sejak pekan lalu. Unit menyediakan contoh proposal dan konsultasi singkat setiap Rabu. Apa yang sebaiknya Anda lakukan terhadap permintaan itu?",
+    "options": [
+      {
+        "text": "Memasukkan proposal komunitas itu ke urutan awal, lalu menggeser proposal mitra lain ke belakang.",
+        "score": 1,
+        "reason": "Mendahulukan proposal komunitas melanggar urutan tanggal masuk yang berlaku bagi setiap mitra. Mitra lain yang sudah mengajukan lebih dahulu dirugikan hanya karena ketua komunitas meminta.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Meminta ketua komunitas mempelajari aturan kerja sama di papan pengumuman, lalu mengajukan proposal kelak.",
+        "score": 3,
+        "reason": "Aturan memang berlaku sama dan papan pengumuman memuatnya, sehingga mitra lain tidak dirugikan. Ketua komunitas baru pertama kali mengajukan, sedangkan unit menyediakan contoh proposal dan konsultasi singkat yang tidak ditawarkan kepadanya.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kaku"
+        }
+      },
+      {
+        "text": "Menuliskan proposal komunitas bersama ketuanya hari ini, lalu memasukkannya ke antrean pembahasan.",
+        "score": 4,
+        "reason": "Proposal yang dituliskan bersama masuk antrean sesuai urutan tanggal masuk, sehingga mitra lain tidak dirugikan. Ketua komunitas tidak belajar menyusun proposal sendiri, padahal contoh proposal dan konsultasi singkat dapat membantunya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "mengambil-alih"
+        }
+      },
+      {
+        "text": "Menjelaskan alur dan urutan penelaahan, lalu menawarkan contoh proposal dan konsultasi sebelum pengajuan.",
+        "score": 5,
+        "reason": "Penjelasan alur menjawab ketidaktahuan ketua komunitas tanpa mengubah urutan tanggal masuk yang berlaku bagi setiap mitra. Contoh proposal dan konsultasi singkat membantunya menyiapkan proposal dengan benar.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyarankan ketua komunitas bertanya kepada komunitas lain yang pernah bermitra, lalu mengajukan proposal sendiri.",
+        "score": 2,
+        "reason": "Komunitas lain mungkin dapat berbagi pengalaman. Di sisi lain, Anda memindahkan bantuan kepada pihak luar, padahal unit menyediakan contoh proposal dan konsultasi singkat yang dapat langsung diberikan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: kesetaraan perlakuan terhadap mitra, yaitu membedakan penyesuaian yang layak dari keistimewaan. Fakta penentu: proposal dibahas menurut urutan tanggal masuk bagi setiap mitra, sedangkan unit menyediakan contoh proposal dan konsultasi singkat. Respons terbaik menjelaskan alur dan urutan lalu menawarkan contoh proposal serta konsultasi. Menuliskan proposal bersama menjaga urutan, tetapi mengurangi kemandirian ketua komunitas. Menyuruh mempelajari aturan sendiri mengabaikan bantuan yang tersedia, menyarankan bertanya kepada komunitas lain memindahkan bantuan, dan mendahulukan proposal melanggar urutan.",
+    "tip": "Perhatikan apa yang berlaku sama bagi setiap mitra dan apa yang masih dapat diberikan kepada pihak baru.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mitra-baru",
+    "kataKunci": "komunitas pemuda, belum paham alur, urutan tanggal masuk, berlaku sama, contoh proposal, konsultasi singkat"
+  },
+  {
+    "id": "tkp-kasus-jk-10",
+    "skenario": "lembaga-pelatihan-baru-brosur-versus-kabar-rekan",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Konsep Dasar dan Prinsip",
+    "pola": "informasi-belum-lengkap-bertentangan",
+    "peran": "anggota-tim",
+    "kewenangan": "hanya-usul",
+    "penentu": "brosur lembaga menyebut telah melatih ratusan pegawai, rekan dari instansi lain mengaku pelatihannya mengecewakan, dan lembaga bersedia mengirim contoh materi serta daftar klien",
+    "tempat": "kemitraan",
+    "keputusan": "koordinasi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua informasi tentang kemampuan mitra baru bertentangan dan belum terbukti; peserta menilai cara memeriksa kemampuan secara objektif.",
+    "stem": "Anda anggota tim yang menyusun usulan penyedia pelatihan bagi unit Anda. Sebuah lembaga pelatihan baru menawarkan kerja sama; brosurnya menyebut telah melatih ratusan pegawai, tetapi seorang rekan dari instansi lain mengaku pelatihannya mengecewakan. Belum ada bukti yang menguatkan salah satunya. Lembaga itu bersedia mengirim contoh materi dan daftar klien. Pimpinan unit yang akan memilih penyedia dari usulan tim, dan usulan Anda harus masuk pekan depan. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menyusun usulan memakai lembaga itu berdasarkan brosur, lalu menyampaikan bahwa pengalamannya sudah terbukti.",
+        "score": 1,
+        "reason": "Brosur adalah klaim lembaga sendiri, sedangkan rekan dari instansi lain menyampaikan pengalaman yang berlawanan. Menyatakan pengalaman sudah terbukti menyesatkan pimpinan unit yang akan memutuskan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tanpa-verifikasi"
+        }
+      },
+      {
+        "text": "Mengumpulkan pendapat anggota tim tentang brosur dan kabar rekan, lalu menyusun usulan menurut pendapat terbanyak.",
+        "score": 3,
+        "reason": "Pendapat anggota tim memberi masukan tentang brosur dan kabar rekan dari instansi lain. Pendapat belum menjadi bukti, sedangkan lembaga sudah bersedia mengirim contoh materi dan daftar klien yang belum diminta.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Meminta contoh materi pelatihan dari penyedia itu, lalu menyusun usulan berdasarkan penilaian terhadap contoh itu.",
+        "score": 4,
+        "reason": "Contoh materi memberi bahan penilaian yang nyata tentang mutu isi pelatihan. Pengalaman klien yang menjawab kabar rekan tentang pelatihan yang mengecewakan tidak diperiksa, sehingga hanya separuh pertentangan informasi yang diuji.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menolak kerja sama dengan lembaga itu karena kabar rekan, lalu mencari lembaga lain yang lebih dikenal.",
+        "score": 2,
+        "reason": "Kabar rekan belum terbukti dan lembaga bersedia menunjukkan contoh materi serta daftar klien. Menolak sebelum memeriksa menutup peluang kerja sama yang mungkin layak, meski belum ada kerugian yang terjadi.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "jk:menghindari-mitra"
+        }
+      },
+      {
+        "text": "Mengumpulkan contoh materi dan daftar klien dari lembaga, lalu menghubungi seorang klien untuk menanyakan hasil pelatihannya.",
+        "score": 5,
+        "reason": "Brosur dan kabar rekan saling bertentangan, sehingga contoh materi menunjukkan mutu yang dapat dinilai dan klien lembaga memberi pengalaman nyata. Usulan kepada pimpinan unit pekan depan dapat bersandar pada bukti, bukan pada klaim yang belum terbukti.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: menilai kemampuan mitra baru secara objektif ketika informasi saling bertentangan. Fakta penentu: brosur menyebut telah melatih ratusan pegawai, rekan dari instansi lain mengaku mengecewakan, dan lembaga bersedia mengirim contoh materi serta daftar klien. Respons terbaik meminta contoh materi dan daftar klien lalu menghubungi seorang klien. Menilai contoh materi saja memeriksa separuh bukti. Mengumpulkan pendapat tim belum menghasilkan bukti, menolak karena kabar rekan menutup kerja sama tanpa pemeriksaan, dan memercayai brosur menyesatkan pimpinan.",
+    "tip": "Mana yang baru klaim dan mana yang sudah dapat dibuktikan sebelum Anda mengusulkan sesuatu?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mitra-baru",
+    "kataKunci": "brosur lembaga, ratusan pegawai, pelatihan mengecewakan, belum ada bukti, contoh materi, daftar klien"
+  },
+  {
+    "id": "tkp-kasus-jk-11",
+    "skenario": "desa-mitra-sepakat-lewat-telepon-instansi-minta-surat",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Pengembangan Hubungan Kerja dan Kemitraan Produktif",
+    "pola": "ketegangan-kesalahpahaman",
+    "peran": "penghubung-mitra",
+    "kewenangan": "terbatas",
+    "penentu": "kepala desa menganggap surat resmi bernada tidak percaya, sedangkan prosedur instansi mensyaratkan kesepakatan tertulis agar anggaran dapat dicairkan",
+    "tempat": "kemitraan",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Kebiasaan kerja mitra dan prosedur instansi sama-sama sah; peserta mencari cara yang memenuhi keduanya.",
+    "stem": "Anda penghubung instansi dengan pemerintah desa yang baru menjadi mitra kegiatan penyuluhan. Kepala desa terbiasa menyepakati kegiatan lewat telepon dan merasa permintaan surat resmi bernada tidak percaya. Kepala desa menyatakan tidak berkeberatan mengikuti cara kerja lain bila alasannya jelas. Prosedur instansi mensyaratkan setiap kesepakatan kegiatan tertulis agar anggarannya dapat dicairkan. Anda dapat mengusulkan cara kerja yang disepakati kedua pihak, dan kegiatan pertama berlangsung bulan depan. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Menelepon kepala desa untuk menyepakati kegiatan, lalu mengirim surat singkat sebagai catatan kesepakatannya.",
+        "score": 5,
+        "reason": "Percakapan telepon menghormati kebiasaan kepala desa dan menggali kebutuhan kegiatan. Surat singkat setelahnya memenuhi prosedur kesepakatan tertulis, sehingga anggaran dapat dicairkan tanpa surat resmi terasa sebagai tanda tidak percaya.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengirim surat resmi berisi rincian kegiatan kepada kepala desa, lalu menjelaskan bahwa prosedur instansi menuntutnya.",
+        "score": 4,
+        "reason": "Surat resmi memenuhi syarat kesepakatan tertulis agar anggaran dapat dicairkan. Namun kepala desa menerimanya sebagai tanda tidak percaya sebelum sempat berbicara, sehingga kesalahpahaman tentang surat tetap tertinggal.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Menyepakati kegiatan lewat telepon saja, lalu mengajukan pencairan anggaran dengan catatan lisan.",
+        "score": 1,
+        "reason": "Prosedur instansi mensyaratkan kesepakatan tertulis, sehingga pencairan anggaran berdasarkan catatan lisan melanggar aturan. Kepala desa pun dapat dirugikan bila kegiatan dipersoalkan kemudian.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Menerima kesepakatan lewat telepon dari kepala desa, lalu menyusun sendiri catatan tertulis untuk berkas instansi.",
+        "score": 3,
+        "reason": "Catatan tertulis di berkas instansi memberi dasar pencairan anggaran, dan telepon menghormati kebiasaan kepala desa. Manfaatnya hanya sampai ke instansi karena kepala desa tidak memegang catatan itu, sehingga kesepakatan belum menjadi pegangan kedua pihak.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Mengganti mitra kegiatan dengan desa tetangga yang terbiasa memakai surat, lalu mengajukan perubahan itu kepada atasan.",
+        "score": 2,
+        "reason": "Desa tetangga mungkin cocok dengan prosedur instansi. Akan tetapi Anda menghindari kepala desa tanpa mencoba menyelaraskan cara kerja, padahal anggaran dan kesepakatan tertulis masih dapat dipenuhi bersama desa itu.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "jk:menghindari-mitra"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: menata mekanisme kerja sama dengan mitra baru yang menghormati kebiasaannya sekaligus memenuhi prosedur. Fakta penentu: kepala desa menganggap surat resmi bernada tidak percaya, sedangkan prosedur instansi mensyaratkan kesepakatan tertulis agar anggaran dapat dicairkan. Respons terbaik menelepon kepala desa lalu mengirim surat singkat sebagai catatan kesepakatan. Mengirim surat resmi dahulu memenuhi prosedur, tetapi kesalahpahaman tetap ada. Menyusun catatan sendiri tidak melibatkan kepala desa, mengganti mitra menghindari persoalan, dan mencairkan anggaran dengan catatan lisan melanggar prosedur.",
+    "tip": "Cermati kebiasaan mitra dan syarat prosedur, lalu lihat apakah keduanya dapat dipenuhi sekaligus.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mitra-baru",
+    "kataKunci": "kebiasaan lewat telepon, surat resmi, nada tidak percaya, alasan jelas, kesepakatan tertulis, pencairan anggaran"
+  },
+  {
+    "id": "tkp-kasus-jk-12",
+    "skenario": "relawan-komunitas-baru-belum-teruji-acara-lansia",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Pengembangan Hubungan Kerja dan Kemitraan Produktif",
+    "pola": "peluang-pengembangan-keterbatasan",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "relawan belum teruji, acara melayani warga lansia dua pekan lagi, dan ada kegiatan kecil pekan depan yang dapat dipakai sebagai uji coba",
+    "tempat": "masyarakat",
+    "keputusan": "mengembangkan",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Beberapa cara memanfaatkan tawaran mitra sama-sama masuk akal; peserta menilai cara yang membuktikan kemampuan sebelum acara untuk warga rentan.",
+    "stem": "Anda kepala unit penyuluhan yang menentukan peran pihak luar dalam kegiatan unit. Sebuah komunitas relawan baru menawarkan dua puluh relawan untuk acara penyuluhan bagi warga lansia di desa dua pekan lagi. Komunitas itu belum pernah bekerja dengan instansi Anda dan kemampuannya belum teruji, sedangkan unit kekurangan petugas. Pekan depan ada kegiatan kecil yang dapat dipakai sebagai uji coba, dan ketua komunitas bersedia mengikutinya. Keputusan apa yang paling tepat Anda ambil?",
+    "options": [
+      {
+        "text": "Mengadakan pengarahan sehari sebelum acara bagi relawan, lalu menugaskan mereka mendampingi petugas pada tugas ringan.",
+        "score": 4,
+        "reason": "Pengarahan, pendampingan petugas, dan tugas ringan membatasi risiko bagi warga lansia. Perlindungan warga bergantung pada kemampuan relawan yang belum teramati pada kegiatan nyata, padahal kegiatan kecil pekan depan dapat dipakai sebagai uji coba sebelum acara dua pekan lagi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "kurang-perlindungan"
+        }
+      },
+      {
+        "text": "Menjadwalkan uji coba bagi relawan pada satu kegiatan terdekat, lalu menyusun penugasan acara setelah pengamatan selesai.",
+        "score": 5,
+        "reason": "Relawan belum teruji dan acara melayani warga lansia, sehingga uji coba pada kegiatan kecil membuktikan kemampuan mereka dengan risiko rendah. Peran acara yang disusun dari hasil pengamatan memanfaatkan tawaran komunitas tanpa mempertaruhkan warga.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menerima sebagian relawan untuk tugas ringan di acara itu, lalu mengevaluasi kerja mereka sesudahnya.",
+        "score": 3,
+        "reason": "Tugas ringan membatasi risiko dan unit yang kekurangan petugas mendapat tambahan tenaga. Relawan belum diberi pengarahan dan penilaian baru dilakukan sesudah acara untuk warga lansia, padahal uji coba pekan depan tersedia untuk menilai relawan lebih dahulu.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menolak tawaran relawan untuk acara ini, lalu membuka kerja sama setelah mereka berpengalaman di tempat lain.",
+        "score": 2,
+        "reason": "Penolakan menghindari risiko bagi warga lansia. Komunitas yang bersedia mengikuti uji coba tidak diberi kesempatan membuktikan diri, padahal unit kekurangan petugas.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "jk:menghindari-mitra"
+        }
+      },
+      {
+        "text": "Menugaskan relawan mendampingi warga lansia sejak hari pertama acara, lalu memeriksa hasil kerja mereka setelah acara selesai.",
+        "score": 1,
+        "reason": "Relawan yang belum teruji ditempatkan langsung bersama warga lansia sebelum kemampuannya diperiksa. Kekeliruan dapat merugikan warga yang rentan dan baru ketahuan setelah acara dua pekan lagi selesai.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tanpa-verifikasi"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: memanfaatkan tawaran mitra baru secara proporsional ketika kemampuan belum teruji dan pihak yang dilayani rentan. Fakta penentu: relawan belum teruji, acara melayani warga lansia dua pekan lagi, dan kegiatan kecil pekan depan dapat dipakai sebagai uji coba. Respons terbaik menjadwalkan uji coba lalu menyusun peran dari hasil pengamatan. Pengarahan dan pendampingan petugas menurunkan risiko, tetapi kemampuan belum teramati. Tugas ringan dengan evaluasi sesudah acara menilai terlambat, menolak tawaran menutup peluang, dan menugaskan langsung mempertaruhkan warga lansia.",
+    "tip": "Bukti apa yang masih dapat dikumpulkan sebelum pihak rentan dilayani, dan berapa waktu yang tersisa?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mitra-baru",
+    "kataKunci": "relawan baru, belum teruji, warga lansia, kekurangan petugas, kegiatan kecil pekan depan, uji coba"
+  },
+  {
+    "id": "tkp-kasus-jk-13",
+    "skenario": "penghubung-yayasan-baru-tafsir-biaya-konsumsi",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Konsep Dasar dan Prinsip",
+    "pola": "ketegangan-kesalahpahaman",
+    "peran": "penghubung-mitra",
+    "kewenangan": "hanya-usul",
+    "penentu": "penghubung baru yayasan menganggap dinas menanggung konsumsi dan sudah memesannya, padahal naskah kesepakatan menyebut yayasan yang menanggung",
+    "tempat": "kemitraan",
+    "keputusan": "memulihkan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Tafsir mitra berbeda dari naskah, pesanan sudah terjadi, dan perubahan isi bukan wewenang Anda; peserta menimbang cara memulihkan kesepahaman.",
+    "stem": "Anda penghubung dinas untuk yayasan mitra pelatihan. Penghubung baru yayasan, yang baru dua minggu bertugas, menganggap dinas menanggung konsumsi peserta dan sudah memesannya untuk pelatihan bulan depan. Naskah kesepakatan menyebut yayasan yang menanggung konsumsi. Perubahan isi kesepakatan hanya dapat diputuskan pimpinan kedua pihak, dan Anda hanya dapat mengusulkan. Penghubung baru itu dapat dihubungi hari ini. Apa yang sebaiknya Anda lakukan sebagai penghubung dinas?",
+    "options": [
+      {
+        "text": "Meminta pimpinan dinas memutuskan siapa yang menanggung konsumsi sambil menyiapkan jawaban untuk penghubung baru.",
+        "score": 3,
+        "reason": "Pimpinan dinas memang dapat memberi arah tentang konsumsi. Penghubung baru belum diajak membaca naskah kesepakatan, dan putusan dari dinas saja tidak melibatkan pimpinan yayasan yang juga berhak memutuskan.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Menjelaskan isi naskah kepada penghubung baru lewat telepon sambil memintanya membatalkan pesanan konsumsi pelatihan.",
+        "score": 4,
+        "reason": "Penjelasan naskah meluruskan tafsir penghubung baru dan menjaga kesepakatan yang ada. Pesanan konsumsi sudah terjadi dan biayanya belum dibicarakan dengan pimpinan kedua pihak, sehingga akibat dari tafsir itu belum tertangani.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Membaca naskah bersama penghubung baru sambil mengusulkan penanganan pesanan kepada kedua pimpinan.",
+        "score": 5,
+        "reason": "Naskah dibaca bersama penghubung baru sehingga perbedaan tafsir ditemukan tanpa menyalahkannya. Karena perubahan isi kesepakatan hanya dapat diputuskan pimpinan kedua pihak, usulan penanganan pesanan konsumsi disampaikan kepada mereka.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta penghubung baru menanyakan sendiri kepada pimpinan yayasan sambil mengikuti hasil pembicaraan mereka.",
+        "score": 2,
+        "reason": "Penghubung baru mungkin dapat meluruskan persoalan dengan pimpinannya sendiri. Anda melepas tanggung jawab sebagai penghubung dinas dan membiarkan naskah kesepakatan tidak dibahas bersama.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Menunjukkan kesalahan tafsir penghubung baru dalam rapat yayasan sambil meminta ia menyampaikan permintaan maaf.",
+        "score": 1,
+        "reason": "Membeberkan kesalahan tafsir di depan forum mempermalukan penghubung baru yang baru dua minggu bertugas. Persoalan konsumsi dan naskah kesepakatan tidak diselesaikan, sedangkan hubungan dengan yayasan rusak.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "jk:mempermalukan"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: memulihkan kesepahaman dengan mitra yang berganti penghubung tanpa melampaui wewenang mengubah kesepakatan. Fakta penentu: penghubung baru yayasan menganggap dinas menanggung konsumsi dan sudah memesannya, padahal naskah menyebut yayasan yang menanggung, sedangkan perubahan isi hanya diputuskan pimpinan kedua pihak. Respons terbaik membaca naskah bersama penghubung baru lalu mengusulkan penanganan pesanan kepada kedua pimpinan. Menjelaskan naskah dan meminta pembatalan menyentuh tafsir, tetapi pesanan belum tertangani. Meminta pimpinan dinas memutuskan terlalu dini, menyerahkan pembicaraan kepada penghubung baru melepas tanggung jawab, dan membeberkan kesalahan di forum mempermalukannya.",
+    "tip": "Dari mana perbedaan tafsir itu bermula, dan siapa yang berhak memutuskan akibatnya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mitra-baru",
+    "kataKunci": "penghubung baru, konsumsi peserta, sudah dipesan, naskah kesepakatan, pimpinan kedua pihak"
+  },
+  {
+    "id": "tkp-kasus-jk-14",
+    "skenario": "rekan-minta-pakai-akun-rekap-penggajian",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Kolaborasi dan Penyelesaian Masalah dalam Tim",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "anggota-tim",
+    "kewenangan": "tidak-ada",
+    "penentu": "akses data penggajian hanya untuk petugas berizin dan Anda tidak termasuk, sedangkan lampiran tanpa data pribadi boleh dikerjakan siapa saja",
+    "tempat": "administratif",
+    "keputusan": "menolak",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Batas akses jelas dan ada bagian pekerjaan yang boleh dibantu; menolak permintaan yang salah sambil membantu bagian yang diizinkan.",
+    "stem": "Anda anggota tim di unit umum. Seorang rekan dari unit kepegawaian tampak kewalahan menyusun rekap penggajian yang harus selesai besok. Ia meminta Anda masuk memakai akunnya untuk mengerjakan bagian angka karena Anda cepat bekerja. Akses ke data penggajian hanya diberikan kepada petugas berizin, dan Anda tidak termasuk di dalamnya. Lampiran rekap yang tidak memuat data pribadi boleh dikerjakan siapa saja. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menolak memakai akun rekan sambil menyatakan bahwa rekap penggajian bukan urusan unit umum tempat Anda bekerja.",
+        "score": 2,
+        "reason": "Penolakan memakai akun menjaga batas akses data penggajian, tetapi pernyataan bahwa rekap bukan urusan unit mengalihkan beban sepenuhnya kepada rekan. Lampiran tanpa data pribadi yang boleh dikerjakan siapa saja ikut ditolak, padahal rekap harus selesai besok.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Merapikan lampiran rekap yang tidak memuat data pribadi sambil mengembalikan berkas bagian angka kepada rekan.",
+        "score": 4,
+        "reason": "Lampiran tanpa data pribadi boleh dikerjakan siapa saja, sehingga rekan terbantu pada bagian itu. Rekan tidak tahu mengapa bagian angka dikembalikan, jadi permintaan memakai akun dapat diulang pada hari berikutnya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Menyarankan rekan menyelesaikan rekap sendiri dengan lembur sambil menawarkan membawakan makan malam.",
+        "score": 3,
+        "reason": "Makan malam menunjukkan perhatian kepada rekan yang kewalahan, dan saran lembur tidak menyentuh batas akses data penggajian. Lampiran tanpa data pribadi yang boleh dikerjakan siapa saja tidak dibantu, sehingga hanya sebagian kebutuhan rekan yang terjawab.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menolak masuk memakai akun rekan sambil menawarkan bantuan merapikan lampiran yang tidak berisi data pribadi.",
+        "score": 5,
+        "reason": "Akses data penggajian hanya untuk petugas berizin, sehingga menolak memakai akun rekan menjaga batas itu. Lampiran tanpa data pribadi boleh dikerjakan siapa saja, jadi tawaran merapikannya tetap meringankan rekan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Masuk memakai akun rekan sambil mengerjakan bagian angka rekap penggajian atas nama rekan itu.",
+        "score": 1,
+        "reason": "Akses data penggajian hanya untuk petugas berizin dan Anda tidak termasuk di dalamnya. Memakai akun rekan menembus batas akses itu, dan jejak pekerjaan menyesatkan karena tercatat atas nama orang lain.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: membantu rekan lintas unit tanpa melanggar batas akses data. Fakta penentu: akses data penggajian hanya untuk petugas berizin dan Anda tidak termasuk, sedangkan lampiran tanpa data pribadi boleh dikerjakan siapa saja. Respons terbaik menolak memakai akun rekan sambil menawarkan bantuan pada lampiran. Mengerjakan lampiran tanpa menjawab permintaan akun membantu, tetapi rekan tidak mendapat penjelasan. Saran lembur sambil membawakan makan malam membantu sebagian saja, dan menolak sambil menyatakan rekap bukan urusan unit mengalihkan beban. Memakai akun rekan menembus batas akses.",
+    "tip": "Perhatikan apa yang diminta oleh pihak yang kewalahan, apa yang diizinkan bagi Anda, dan apa yang tetap perlu dijawab.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "bantuan-lintas-tim",
+    "kataKunci": "rekap penggajian, akun rekan, petugas berizin, data pribadi, lampiran rekap"
+  },
+  {
+    "id": "tkp-kasus-jk-15",
+    "skenario": "petugas-pencatat-layanan-keliling-sakit-mendadak",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Kolaborasi dan Penyelesaian Masalah dalam Tim",
+    "pola": "gangguan-layanan-mendadak",
+    "peran": "anggota-tim",
+    "kewenangan": "terbatas",
+    "penentu": "pencatatan nama dan keperluan dapat dikerjakan petugas lain menurut panduan lapangan, sedangkan pemeriksaan berkas hanya oleh petugas bersertifikat",
+    "tempat": "lapangan",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Bantuan yang diizinkan dan yang tidak diizinkan dinyatakan jelas, serta koordinator pemilik pekerjaan dapat dihubungi.",
+    "stem": "Anda anggota tim pembinaan yang kebetulan berada di balai desa yang sama dengan tim layanan keliling kependudukan. Petugas pencatat tim layanan keliling mendadak sakit dan pulang, sementara antrean warga mulai memanjang. Pencatatan nama dan keperluan warga dapat dikerjakan petugas lain menurut panduan lapangan, tetapi pemeriksaan berkas hanya oleh petugas bersertifikat. Koordinator tim layanan keliling sedang menangani pemeriksaan di meja sebelah. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Memeriksa berkas warga yang antre sesuai pengalaman Anda sambil menyatakan berkas yang lengkap sudah terverifikasi.",
+        "score": 1,
+        "reason": "Pemeriksaan berkas hanya boleh oleh petugas bersertifikat, dan Anda tidak termasuk di dalamnya. Berkas yang dinyatakan terverifikasi oleh orang yang bukan petugas bersertifikat dapat merugikan warga dan tim layanan keliling.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      },
+      {
+        "text": "Mengatur antrean warga agar bergerak ke meja pemeriksaan sambil memberi tahu koordinator bahwa pencatat sakit.",
+        "score": 4,
+        "reason": "Antrean yang teratur dan kabar kepada koordinator membantu layanan keliling tetap berjalan. Pencatatan nama dan keperluan yang diizinkan panduan lapangan tidak dikerjakan, sehingga hanya sebagian kebutuhan di meja pencatatan yang tertutup.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menyarankan koordinator mencari petugas pengganti dari kantor sambil kembali ke pekerjaan tim Anda sendiri.",
+        "score": 3,
+        "reason": "Saran pengganti dari kantor memberi rencana yang sah bagi layanan keliling. Pencatatan nama dan keperluan dapat Anda kerjakan sekarang, sehingga antrean tetap memanjang selama pengganti dicari.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menyampaikan kepada warga bahwa pencatatan hanya dilayani petugas layanan keliling sambil melanjutkan tugas tim Anda.",
+        "score": 2,
+        "reason": "Penyampaian itu mengalihkan urusan pencatatan kepada petugas yang sedang tidak ada, sehingga warga dibiarkan menunggu. Panduan lapangan sebenarnya mengizinkan petugas lain mengerjakan pencatatan, jadi bantuan yang dapat Anda berikan tidak dipakai.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Mencatat nama dan keperluan warga di meja pencatatan sambil memberi tahu koordinator layanan keliling tentang bantuan itu.",
+        "score": 5,
+        "reason": "Panduan lapangan mengizinkan petugas lain mengerjakan pencatatan, sehingga antrean dapat berjalan tanpa Anda menyentuh pemeriksaan berkas. Pemberitahuan kepada koordinator menjaga tanggung jawab atas meja pencatatan tetap jelas.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: bantuan lintas tim yang berguna, diizinkan, dan menjaga tanggung jawab atas pekerjaan tim lain. Fakta penentu: pencatatan nama dan keperluan dapat dikerjakan petugas lain menurut panduan lapangan, sedangkan pemeriksaan berkas hanya oleh petugas bersertifikat. Respons terbaik mencatat lalu memberi tahu koordinator. Mengatur antrean dan memberi kabar membantu, tetapi pencatatan yang diizinkan tidak dikerjakan. Menyarankan pengganti dari kantor memberi rencana, tetapi antrean tetap memanjang. Menyampaikan bahwa pencatatan hanya oleh petugas layanan keliling mengalihkan urusan dan mengabaikan jalan keluar yang sah, dan memeriksa berkas melampaui batas petugas bersertifikat.",
+    "tip": "Bagian pekerjaan mana yang boleh dikerjakan orang lain, dan siapa yang harus mengetahui keadaan di meja itu?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "bantuan-lintas-tim",
+    "kataKunci": "petugas pencatat sakit, antrean memanjang, pencatatan nama dan keperluan, panduan lapangan, petugas bersertifikat"
+  },
+  {
+    "id": "tkp-kasus-jk-16",
+    "skenario": "rotasi-bantuan-lintas-tim-petugas-senior-menolak",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Kolaborasi dan Penyelesaian Masalah dalam Tim",
+    "pola": "penolakan-perubahan",
+    "peran": "koordinator",
+    "kewenangan": "terbatas",
+    "penentu": "petugas senior menolak rotasi karena pekerjaannya khusus, sebagian pekerjaan tim pengolahan memerlukan sertifikasi sedangkan penginputan dan pengarsipan tidak",
+    "tempat": "rapat",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Penolakan senior memiliki dasar sebagian sah; peserta harus menggali alasan dan menyesuaikan penerapan.",
+    "stem": "Anda koordinator forum bantuan lintas tim yang mengatur rotasi bantuan saat beban kerja memuncak. Anda mengusulkan jadwal rotasi baru, tetapi petugas senior tim pengolahan menolak ikut dengan alasan pekerjaannya terlalu khusus sehingga bantuan justru memperlambat. Sebagian pekerjaan tim itu memang memerlukan sertifikasi, sedangkan sebagian lain berupa penginputan dan pengarsipan. Jadwal rotasi baru akan berlaku mulai pekan depan. Respons Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menanyakan kekhawatiran petugas senior, lalu menyesuaikan rotasi hanya pada penginputan dan pengarsipan.",
+        "score": 5,
+        "reason": "Penolakan petugas senior berdasar sebagian: pekerjaan tim pengolahan yang memerlukan sertifikasi memang tidak dapat dibantu orang lain. Bertanya lebih dahulu lalu membatasi rotasi pada penginputan dan pengarsipan menjawab kekhawatirannya dan tetap membuka bantuan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Melanjutkan rotasi bagi tim lain lebih dahulu, lalu mengundang tim pengolahan bergabung pada putaran berikutnya.",
+        "score": 4,
+        "reason": "Rotasi bagi tim lain berjalan dan tim pengolahan diundang kembali sehingga pintu bantuan tidak tertutup. Kekhawatiran petugas senior tentang pekerjaan yang memerlukan sertifikasi tidak didengar, sehingga penginputan dan pengarsipan di sana belum terbantu pada putaran pertama.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Tetap menjalankan jadwal rotasi baru bagi setiap tim, lalu mencatat keberatan petugas senior dalam risalah rapat.",
+        "score": 2,
+        "reason": "Jadwal rotasi baru dijalankan sebagaimana diusulkan dan keberatan petugas senior hanya dicatat. Sebagian pekerjaan tim pengolahan memang memerlukan sertifikasi, tetapi rotasi tidak disesuaikan, sehingga kekhawatiran yang masuk akal dibiarkan tanpa jawaban dan penolakan berlanjut.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Mengeluarkan tim pengolahan dari rotasi, lalu menyusun jadwal bantuan hanya antara dua tim lain.",
+        "score": 3,
+        "reason": "Rotasi bagi dua tim lain berjalan sehingga bantuan tetap mengalir. Tim pengolahan dilewati tanpa dibicarakan, padahal sebagian pekerjaannya berupa penginputan dan pengarsipan yang dapat dibantu, sehingga hanya sebagian kebutuhan bantuan yang terjawab.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menyebut penolakan petugas senior sebagai penghambat dalam rapat forum, lalu meminta tim lain tidak membantunya.",
+        "score": 1,
+        "reason": "Menyebut petugas senior sebagai penghambat di depan forum mempermalukannya, padahal kekhawatirannya tentang pekerjaan yang memerlukan sertifikasi masuk akal. Rotasi tidak membaik dan hubungan antartim memburuk.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "jk:mempermalukan"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: menggali alasan penolakan dan menyesuaikan penerapan bantuan lintas tim. Fakta penentu: petugas senior menolak rotasi karena pekerjaan khusus, sebagian pekerjaan memerlukan sertifikasi sedangkan penginputan dan pengarsipan tidak. Respons terbaik menanyakan kekhawatiran lalu membatasi rotasi pada penginputan dan pengarsipan. Melanjutkan rotasi bagi tim lain dan mengundang tim pengolahan kemudian membuka pintu bantuan, tetapi kekhawatiran belum didengar. Mengeluarkan tim dari rotasi menjaga bantuan bagi tim lain, tetapi melewati tim pengolahan. Tetap menjalankan jadwal yang sama hanya mencatat keberatan tanpa menjawabnya, dan menyebutnya penghambat mempermalukan petugas senior.",
+    "tip": "Bagian mana dari keberatan itu yang benar, dan apakah rencana dapat diubah tanpa membatalkan tujuannya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "bantuan-lintas-tim",
+    "kataKunci": "rotasi bantuan, penolakan petugas senior, pekerjaan khusus, sertifikasi, penginputan dan pengarsipan"
+  },
+  {
+    "id": "tkp-kasus-jk-17",
+    "skenario": "rekan-senior-minta-proyeksi-regresi-pegawai-baru",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Kolaborasi dan Penyelesaian Masalah dalam Tim",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "pegawai-baru",
+    "kewenangan": "tidak-ada",
+    "penentu": "Anda belum pernah memakai metode regresi, hasilnya dipakai untuk rencana anggaran dalam tiga hari, dan analis unit data bersedia mendampingi",
+    "tempat": "administratif",
+    "keputusan": "minta-bantuan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Permintaan rekan melampaui kompetensi Anda, hasil dipakai untuk anggaran, dan ada pendamping yang tersedia; peserta menimbang bantuan yang jujur dan berguna.",
+    "stem": "Anda pegawai baru di unit perencanaan. Seorang rekan senior dari tim lain meminta Anda menghitung proyeksi jumlah penerima bantuan dengan metode regresi karena yakin lulusan baru mampu. Anda belum pernah memakai metode itu, sedangkan hasilnya akan dipakai untuk rencana anggaran dan harus selesai dalam tiga hari. Seorang analis di unit data bersedia mendampingi bila diminta. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menyalin rumus regresi dari internet, lalu menyerahkan hasil hitungannya sebagai angka resmi unit.",
+        "score": 1,
+        "reason": "Rumus salinan belum dipahami dan belum diperiksa, padahal hasilnya dipakai untuk rencana anggaran. Menyebutnya angka resmi unit membuat kekeliruan metode dipercaya pihak lain.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tanpa-verifikasi"
+        }
+      },
+      {
+        "text": "Menyampaikan kepada rekan senior bahwa Anda belum menguasai regresi, lalu meminta analis mendampingi Anda.",
+        "score": 5,
+        "reason": "Kejujuran kepada rekan senior tentang batas kemampuan menjaga mutu angka yang dipakai untuk rencana anggaran. Analis unit data bersedia mendampingi dan tiga hari cukup untuk belajar sambil bekerja, sehingga proyeksi tetap selesai.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta analis unit data menghitung proyeksi itu dengan regresi, lalu menyerahkan hasilnya kepada rekan senior.",
+        "score": 3,
+        "reason": "Analis unit data bersedia membantu, sehingga proyeksi untuk rencana anggaran dihitung dengan metode yang benar dan selesai dalam tiga hari. Pekerjaan hanya dipindahkan kepada analis, sedangkan rekan senior tidak mengetahui batas kemampuan Anda dan Anda tidak belajar dari pendampingan, sehingga hanya sebagian kebutuhan yang tertutup.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Mempelajari metode regresi dari panduan daring, lalu meminta analis memeriksa hasil proyeksi Anda sebelum diserahkan.",
+        "score": 4,
+        "reason": "Belajar dari panduan menambah kemampuan dan pemeriksaan analis menjaga mutu angka anggaran. Pemeriksaan baru datang setelah proyeksi selesai dan rekan senior tidak diberi tahu bahwa Anda belum pernah memakai metode itu, sehingga kekeliruan awal baru ketahuan ketika tiga hari sudah mepet.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Menjawab bahwa permintaan itu bukan tugas unit perencanaan, lalu menyarankan rekan senior untuk menghubungi unit data lain.",
+        "score": 2,
+        "reason": "Menyarankan unit data mengarahkan rekan ke pihak yang tepat. Di sisi lain, Anda menolak membantu sama sekali pada bagian yang dapat Anda kerjakan bersama analis, sehingga proyeksi untuk rencana anggaran tertahan pada rekan senior.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: bantuan lintas tim yang jujur tentang batas kompetensi dan memanfaatkan pendamping yang tersedia. Fakta penentu: Anda belum pernah memakai metode regresi, hasilnya dipakai untuk rencana anggaran dalam tiga hari, dan analis unit data bersedia mendampingi. Respons terbaik menyampaikan batas kemampuan kepada rekan senior lalu meminta analis mendampingi. Belajar dari panduan lalu meminta analis memeriksa menjaga mutu, tetapi pemeriksaan datang belakangan dan rekan senior tidak diberi tahu. Meminta analis menghitung lalu menyerahkan hasilnya menghasilkan angka yang benar, tetapi pekerjaan hanya dipindahkan. Menyatakan bukan tugas unit melempar permintaan, dan menyalin rumus menyesatkan pihak lain.",
+    "tip": "Apa yang dapat Anda tanggung dengan jujur, dan siapa yang dapat memperkuat mutu hasilnya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "bantuan-lintas-tim",
+    "kataKunci": "pegawai baru, metode regresi, belum pernah memakai, rencana anggaran, tiga hari, analis unit data"
+  },
+  {
+    "id": "tkp-kasus-jk-18",
+    "skenario": "pinjam-dua-staf-saat-tenggat-laporan-sendiri",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Komunikasi, Koordinasi, dan Berbagi Informasi",
+    "pola": "informasi-belum-lengkap-bertentangan",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "peminta menyebut unit Anda longgar, sedangkan jadwal unit menunjukkan laporan bertenggat akhir bulan dan hanya satu staf yang tidak terikat pekerjaan itu",
+    "tempat": "rapat",
+    "keputusan": "koordinasi",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Keterangan peminta dan jadwal unit sendiri bertentangan; beberapa bentuk bantuan terlihat sah sehingga peserta menilai yang proporsional bagi kedua tanggung jawab.",
+    "stem": "Anda kepala unit pelaksana. Kepala unit lain meminta Anda meminjamkan dua staf selama dua minggu untuk menyelesaikan laporan tahunan, dan menyebut unit Anda sedang longgar. Menurut jadwal unit Anda, laporan unit sendiri bertenggat akhir bulan dan tersisa satu staf yang tidak terikat pekerjaan itu. Staf yang dapat dipinjam sudah biasa menyusun laporan tahunan, dan kepala unit peminta dapat dihubungi hari ini. Bagaimana Anda sebaiknya menanggapi permintaan itu?",
+    "options": [
+      {
+        "text": "Memberi tahu kepala unit peminta bahwa staf baru tersedia setelah laporan unit sendiri selesai, lalu menyusun jadwal peminjamannya.",
+        "score": 3,
+        "reason": "Laporan unit sendiri terlindungi dan peminta mendapat jadwal yang jelas. Peminta menyelesaikan laporan tahunan sekarang, padahal satu staf yang tidak terikat tenggat dapat membantu sebelum akhir bulan.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Meminjamkan satu staf yang tidak terikat tenggat, lalu menyerahkan pengaturan tugasnya kepada kepala unit peminta.",
+        "score": 4,
+        "reason": "Satu staf yang bebas dipinjamkan sehingga laporan unit sendiri aman dan peminta terbantu. Batas waktu dan bentuk bantuan tidak disepakati dan pengaturan tugas diserahkan kepada peminta, sehingga anggapan bahwa unit Anda longgar tetap hidup dan permintaan staf tambahan dapat datang menjelang tenggat laporan unit sendiri.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Menawarkan satu staf yang tidak terikat tenggat kepada kepala unit peminta, lalu menyepakati batas waktu dan bentuk bantuannya.",
+        "score": 5,
+        "reason": "Hanya satu staf yang tidak terikat pekerjaan akhir bulan, sehingga bantuan sebesar itu menjawab sebagian kebutuhan peminta tanpa membahayakan laporan unit sendiri. Kesepakatan batas waktu dan bentuk bantuan meluruskan anggapan bahwa unit Anda longgar.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menolak meminjamkan staf karena tenggat laporan unit sendiri, lalu menyarankan kepala unit lain mencari bantuan dari luar.",
+        "score": 2,
+        "reason": "Tenggat laporan akhir bulan memang nyata. Satu staf yang tidak terikat pekerjaan itu sebenarnya dapat membantu, tetapi kebutuhan peminta dibiarkan dan Anda tidak mencoba menyepakati bantuan yang sanggup diberikan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "jk:menghindari-mitra"
+        }
+      },
+      {
+        "text": "Menarik dua staf dari pekerjaan laporan unit sendiri, lalu menggeser tenggat laporan itu setelah dua staf dipinjamkan.",
+        "score": 1,
+        "reason": "Dua staf diambil dari pekerjaan yang bertenggat akhir bulan, lalu tenggat digeser menurut keinginan sendiri. Laporan unit sendiri terancam dan tenggat yang menjadi kewajiban unit diubah tanpa dasar jadwal.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: menentukan bantuan lintas tim yang berguna dan proporsional tanpa mengorbankan tanggung jawab unit sendiri. Fakta penentu: peminta menyebut unit Anda longgar, sedangkan jadwal menunjukkan laporan bertenggat akhir bulan dan hanya satu staf yang tidak terikat pekerjaan itu. Respons terbaik menawarkan satu staf yang bebas lalu menyepakati batas waktu dan bentuk bantuan dengan peminta. Meminjamkan satu staf lalu menyerahkan pengaturan tugasnya kepada peminta menolong, tetapi batas dan bentuk bantuan tidak disepakati. Menjadwalkan bantuan sesudah laporan selesai terlambat bagi peminta, menolak sama sekali menghindari kebutuhan peminta, dan menarik staf lalu menggeser tenggat sendiri melanggar jadwal.",
+    "tip": "Bandingkan pernyataan pihak lain dengan jadwal unit Anda sendiri, lalu pikirkan dukungan apa yang masih sanggup diberikan.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "bantuan-lintas-tim",
+    "kataKunci": "pinjaman dua staf, unit longgar, laporan akhir bulan, satu staf tidak terikat, laporan tahunan"
+  },
+  {
+    "id": "tkp-kasus-jk-19",
+    "skenario": "laporan-tim-lapangan-terlambat-petugas-menangani-dua-kecamatan",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Kolaborasi dan Penyelesaian Masalah dalam Tim",
+    "pola": "masalah-berulang",
+    "peran": "pimpinan-unit",
+    "kewenangan": "hanya-usul",
+    "penentu": "laporan tim lapangan terlambat tiga minggu karena satu petugas menangani dua kecamatan, sedangkan petugas unit Anda punya waktu luang dan pembagian petugas ditetapkan kepala bidang",
+    "tempat": "lapangan",
+    "keputusan": "minta-bantuan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Keterlambatan berulang berasal dari beban tim lain; peserta menilai cara menelusuri penyebab dan mengajukan bantuan sesuai batas wewenang.",
+    "stem": "Anda kepala unit analisis yang menerima laporan mingguan dari tim lapangan di bidang lain. Laporan itu terlambat tiga minggu berturut-turut, dan analisis unit Anda ikut tertunda. Setelah bertanya sepintas, Anda tahu satu petugas lapangan menangani dua kecamatan karena rekannya cuti panjang. Petugas di unit Anda ada yang punya waktu luang dan paham data lapangan. Pembagian petugas ditetapkan kepala bidang tim lapangan, dan Anda hanya dapat mengusulkan. Langkah apa yang paling tepat Anda ambil?",
+    "options": [
+      {
+        "text": "Meminta kepala bidang menambah petugas baru bagi tim lapangan, lalu memantau pengiriman laporan mingguan.",
+        "score": 4,
+        "reason": "Penambahan petugas baru menyasar beban dua kecamatan dan pembagian petugas memang ada pada kepala bidang. Di sisi lain, petugas baru perlu waktu belajar dan kendala tim lapangan belum ditanyakan, padahal petugas unit Anda punya waktu luang dan paham data lapangan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Mengirim pengingat tenggat laporan kepada petugas lapangan setiap pekan, lalu mencatat keterlambatannya dalam rekap unit.",
+        "score": 2,
+        "reason": "Pengingat tenggat dan pencatatan keterlambatan menjaga jejak di unit Anda. Penyebab keterlambatan, yaitu satu petugas menangani dua kecamatan, tidak disentuh, sehingga laporan tetap terlambat pada minggu berikutnya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kosmetik"
+        }
+      },
+      {
+        "text": "Menyusun analisis sementara dari data yang masuk, lalu menandai bagian yang belum dilengkapi tim lapangan.",
+        "score": 3,
+        "reason": "Analisis sementara melindungi hasil unit Anda dari tertundanya laporan tim lapangan. Pekerjaan itu hanya menutup sebagian kebutuhan karena penyebab keterlambatan, yaitu beban dua kecamatan pada satu petugas, tidak ditangani.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menanyakan kendala kepada petugas lapangan itu, lalu mengusulkan kepada kepala bidang bantuan petugas unit Anda.",
+        "score": 5,
+        "reason": "Keterlambatan tiga minggu berulang karena satu petugas menangani dua kecamatan, sehingga menanyakan kendalanya memastikan penyebab. Usulan bantuan petugas unit Anda kepada kepala bidang menyentuh penyebab dan tetap dalam batas Anda yang hanya mengusulkan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyimpulkan petugas lapangan itu kurang disiplin, lalu meminta kepala bidang menggantinya dengan petugas lain.",
+        "score": 1,
+        "reason": "Kesimpulan tentang disiplin diambil sebelum penyebab keterlambatan diperiksa, padahal satu petugas menangani dua kecamatan. Penggantian petugas tidak mengurangi beban dua kecamatan dan merugikan petugas yang sudah bekerja.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tanpa-verifikasi"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: menangani masalah berulang pada pekerjaan lintas tim dengan menelusuri penyebab dan mengusulkan bantuan sesuai wewenang. Fakta penentu: laporan terlambat tiga minggu karena satu petugas menangani dua kecamatan, petugas unit Anda punya waktu luang, dan pembagian petugas ditetapkan kepala bidang. Respons terbaik menanyakan kendala kepada petugas lapangan lalu mengusulkan bantuan kepada kepala bidang. Meminta penambahan petugas baru menyasar beban dua kecamatan, tetapi kendala tim lapangan belum ditanyakan dan petugas unit yang longgar tidak dipakai. Analisis sementara hanya menyelamatkan hasil unit sendiri, pengingat tidak menyentuh penyebab, dan menyimpulkan petugas kurang disiplin mengabaikan penyebab.",
+    "tip": "Apa yang membuat keterlambatan itu terus berulang dari sudut pihak yang mengerjakan, dan siapa yang dapat memperbaikinya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "bantuan-lintas-tim",
+    "kataKunci": "terlambat tiga minggu, analisis tertunda, dua kecamatan, cuti panjang, waktu luang, kepala bidang"
+  },
+  {
+    "id": "tkp-kasus-jk-20",
+    "skenario": "ucapan-terima-kasih-berita-staf-unit-lain-terlewat",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Pengembangan Hubungan Kerja dan Kemitraan Produktif",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "pelaksana",
+    "kewenangan": "penuh",
+    "penentu": "nama staf unit lain yang menyusun bahan paparan terlewat dari ucapan terima kasih pada berita yang sudah dibaca banyak orang, dan Anda dapat memperbaruinya sendiri",
+    "tempat": "layanan-digital",
+    "keputusan": "mengoreksi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kesalahan pengakuan kontribusi ditemukan sendiri, dapat diperbaiki langsung, dan pihak terdampak mudah dihubungi.",
+    "stem": "Anda pelaksana yang mengelola kolom berita unit Anda di laman instansi. Kemarin Anda menayangkan berita tentang kegiatan bersama dua unit, dan ucapan terima kasihnya menyebut nama sebagian peserta. Hari ini Anda sadar nama seorang staf unit lain, yang menyusun bahan paparan kegiatan itu, terlewat. Ia belum mengeluh, dan beritanya sudah dibaca banyak orang. Ucapan terima kasih itu Anda susun dari ingatan, bukan dari daftar peserta kegiatan yang tersedia di arsip unit. Anda dapat memperbarui berita itu sendiri. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Menghapus ucapan terima kasih setelah mengubah keterangan berita menjadi bahan paparan disusun unit Anda.",
+        "score": 1,
+        "reason": "Mengubah keterangan agar bahan paparan tampak disusun unit sendiri mengambil pengakuan kontribusi staf unit lain. Penghapusan ucapan terima kasih membuat kekeliruan menjadi pengabaian yang disengaja.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "jk:klaim-pengakuan"
+        }
+      },
+      {
+        "text": "Menyampaikan terima kasih kepada staf itu di rapat gabungan dua unit setelah mencatat bahwa namanya terlewat dari berita.",
+        "score": 4,
+        "reason": "Terima kasih di rapat gabungan memulihkan pengakuan staf di hadapan kedua unit. Berita yang sudah dibaca banyak orang tidak diperbarui, sehingga pengakuan di ruang publik tetap kurang dan ucapan terima kasih tertulis masih belum memuat namanya.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Memperbarui berita berdasarkan daftar peserta kegiatan setelah rapat bulanan unit membahas kekeliruan itu.",
+        "score": 3,
+        "reason": "Pembaruan berdasarkan daftar peserta menambahkan nama staf dan nama lain yang terlewat. Berita yang sudah dibaca banyak orang tetap memuat kekeliruan sampai rapat bulanan, padahal Anda dapat memperbaruinya sekarang dan staf belum mendengar permintaan maaf.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Melanjutkan pekerjaan Anda yang lain setelah mencatat kekeliruan itu untuk diperbaiki pada berita kegiatan berikutnya.",
+        "score": 2,
+        "reason": "Kekeliruan dicatat sehingga tidak hilang dari ingatan. Nama staf tetap terlewat pada berita yang sudah dibaca banyak orang, padahal Anda dapat memperbarui berita itu hari ini.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menyampaikan permintaan maaf kepada staf itu setelah memperbarui berita berdasarkan daftar peserta kegiatan.",
+        "score": 5,
+        "reason": "Daftar peserta kegiatan tersedia di arsip unit, sehingga pembaruan berita berdasarkan daftar itu menambahkan nama staf yang terlewat dan menjaring nama lain yang mungkin terlewat juga. Permintaan maaf langsung kepada staf menjaga hubungan kerja antarunit.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: menjaga pengakuan kontribusi dan kepercayaan antarunit setelah kesalahan sendiri ditemukan. Fakta penentu: nama staf unit lain yang menyusun bahan paparan terlewat dari ucapan terima kasih pada berita yang sudah dibaca banyak orang, ucapan itu disusun dari ingatan, dan daftar peserta tersedia di arsip unit. Respons terbaik memperbarui berita berdasarkan daftar peserta lalu menyampaikan permintaan maaf kepada staf itu. Berterima kasih kepada staf di rapat gabungan memulihkan pengakuan di dalam, tetapi berita yang dibaca banyak orang tidak berubah. Memperbarui berita baru sesudah rapat bulanan menunda perbaikan yang sudah jelas dan tanpa permintaan maaf, mencatat untuk berita berikutnya membiarkan kekeliruan, dan menghapus ucapan terima kasih mengambil pengakuan.",
+    "tip": "Apa yang masih dapat dibenahi sendiri, dan siapa yang terdampak kekeliruan itu?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemanfaatan-relasi",
+    "kataKunci": "ucapan terima kasih, nama terlewat, penyusun bahan paparan, dari ingatan, daftar peserta kegiatan"
+  },
+  {
+    "id": "tkp-kasus-jk-21",
+    "skenario": "undang-narasumber-kenalan-keluarga-pelatihan-arsip",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Pengembangan Hubungan Kerja dan Kemitraan Produktif",
+    "pola": "peluang-pengembangan-keterbatasan",
+    "peran": "pegawai-baru",
+    "kewenangan": "tidak-ada",
+    "penentu": "pejabat kenalan keluarga menguasai pengelolaan arsip, dua calon narasumber lain tersedia, dan undangan narasumber harus lewat surat resmi dari unit",
+    "tempat": "pelatihan",
+    "keputusan": "mengembangkan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Relasi pribadi dan prosedur undangan harus ditimbang; peserta menilai cara memanfaatkan relasi secara terbuka tanpa melewati panitia.",
+    "stem": "Anda pegawai baru yang membantu panitia pelatihan internal. Panitia membutuhkan narasumber tentang pengelolaan arsip, dan Anda mengenal seorang pejabat di instansi lain yang menguasainya karena ia kenalan keluarga Anda. Pejabat itu belum mengetahui kebutuhan pelatihan, dan dua calon narasumber lain yang dikenal panitia juga tersedia. Prosedur panitia mengharuskan undangan narasumber dikirim lewat surat resmi dari unit, dan anggaran honor narasumber sudah tersedia. Menetapkan narasumber bukan wewenang Anda. Apa yang paling tepat Anda lakukan?",
+    "options": [
+      {
+        "text": "Mengungkapkan hubungan keluarga Anda dengan pejabat itu kepada panitia, lalu mengusulkan agar unit mengundangnya secara resmi.",
+        "score": 5,
+        "reason": "Pejabat itu kenalan keluarga Anda dan dua calon narasumber lain juga tersedia, sehingga hubungan itu diungkapkan agar panitia menilainya secara terbuka. Usulan agar unit mengundang secara resmi mengikuti prosedur undangan lewat surat resmi dan tidak memberi jalur istimewa.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta unit mengirim surat undangan resmi kepada pejabat itu, lalu memberi tahu panitia bahwa narasumber sudah diundang.",
+        "score": 4,
+        "reason": "Surat undangan resmi dari unit sesuai prosedur panitia dan anggaran honor tersedia. Hubungan keluarga Anda dengan pejabat itu tidak diungkapkan, dan panitia baru mengetahui nama narasumber setelah undangan terkirim, sehingga panitia tidak sempat menimbang dua calon lain.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Meminta panitia mencari narasumber lain yang tidak Anda kenal secara pribadi, lalu mengirim surat undangan resmi.",
+        "score": 3,
+        "reason": "Mencari narasumber yang tidak dikenal menghindari konflik kepentingan, dan prosedur undangan resmi dijalankan. Pejabat yang menguasai pengelolaan arsip tetap relevan dan dapat dinilai panitia bila hubungan keluarga diungkapkan, sehingga calon yang layak ikut tersingkir.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kaku"
+        }
+      },
+      {
+        "text": "Mengajak pejabat itu lewat pesan pribadi ke ponselnya, lalu memberi tahu panitia setelah ia menyatakan setuju.",
+        "score": 2,
+        "reason": "Pesan pribadi menghubungkan Anda dengan pejabat yang menguasai arsip. Sementara itu, undangan narasumber harus lewat surat resmi dari unit, sehingga kesediaan yang diperoleh di luar prosedur dapat tidak diakui panitia.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "jalur-tidak-resmi"
+        }
+      },
+      {
+        "text": "Menetapkan pejabat itu sebagai narasumber atas keputusan Anda sendiri, lalu meminta honornya dibayarkan dari dana panitia.",
+        "score": 1,
+        "reason": "Anda pegawai baru dan tidak berwenang menetapkan narasumber atau membayar honor. Kedekatan keluarga menjadi dasar keputusan, bukan kebutuhan pelatihan dan prosedur undangan resmi dari unit.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: memanfaatkan relasi pribadi secara etis dengan mengungkapkan hubungan kepada pihak yang memutuskan dan mengikuti prosedur. Fakta penentu: pejabat kenalan keluarga menguasai pengelolaan arsip, dua calon narasumber lain tersedia, dan undangan narasumber harus lewat surat resmi dari unit. Respons terbaik mengungkapkan hubungan keluarga kepada panitia lalu mengusulkan agar unit mengundang pejabat itu secara resmi. Meminta unit mengirim undangan resmi tanpa mengungkapkan hubungan menjalankan prosedur, tetapi panitia tidak sempat menimbang calon lain. Mencari narasumber lain menghindari konflik tetapi membuang calon yang relevan, mengajak lewat pesan pribadi menempuh jalur di luar prosedur, dan menetapkan sendiri melampaui wewenang.",
+    "tip": "Siapa yang memutuskan, dan apa yang perlu diketahui orang itu tentang kedekatan Anda dengan calon?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemanfaatan-relasi",
+    "kataKunci": "kenalan keluarga, pengelolaan arsip, dua calon narasumber lain, surat resmi, bukan wewenang"
+  },
+  {
+    "id": "tkp-kasus-jk-22",
+    "skenario": "ketua-rt-minta-titip-proposal-jalan-kampung",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Pengembangan Hubungan Kerja dan Kemitraan Produktif",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "warga",
+    "kewenangan": "tidak-ada",
+    "penentu": "dinas hanya menerima proposal lewat loket dan menelaah menurut urutan masuk, sedangkan proposal belum ditandatangani lurah",
+    "tempat": "masyarakat",
+    "keputusan": "menolak",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Permintaan memakai kenalan jelas bertentangan dengan jalur resmi, dan ada bantuan sah yang dapat diberikan.",
+    "stem": "Anda warga yang aktif di karang taruna dan mengenal seorang kepala seksi di dinas pekerjaan umum karena pernah sekelas. Ketua RT meminta Anda menitipkan proposal perbaikan jalan kampung langsung kepada kenalan itu agar didahulukan. Dinas hanya menerima proposal lewat loket dan menelaahnya menurut urutan masuk, dan proposal itu belum ditandatangani lurah. Anda tidak punya wewenang atas telaah proposal. Sikap Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mengantar proposal ke loket dinas bersama ketua RT sambil menanyakan kelengkapan berkas kepada petugas loket.",
+        "score": 4,
+        "reason": "Proposal masuk lewat loket sesuai urutan masuk, sehingga tidak ada pengusul lain yang dirugikan. Kelengkapan baru ditanyakan di loket tanpa inisiatif menyiapkannya lebih dulu, sehingga kekurangan tanda tangan lurah baru ketahuan di sana dan ketua RT harus bolak-balik.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menjelaskan kepada ketua RT bahwa proposal masuk lewat loket sambil membantu melengkapi tanda tangan lurah.",
+        "score": 5,
+        "reason": "Dinas hanya menerima proposal lewat loket menurut urutan masuk, sehingga menitipkan kepada kenalan tidak sesuai jalur. Melengkapi tanda tangan lurah tanpa menunggu diminta petugas menjawab kebutuhan kampung tanpa mendahului proposal lain.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyampaikan kepada ketua RT bahwa proposal harus lewat loket sambil menyarankannya bertanya kepada petugas loket.",
+        "score": 3,
+        "reason": "Penyampaian itu benar dan tidak memakai kedekatan. Proposal yang belum ditandatangani lurah tidak dibantu dilengkapi, padahal Anda dapat membantu sebelum proposal masuk ke loket.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kaku"
+        }
+      },
+      {
+        "text": "Menanyakan syarat proposal jalan kepada kenalan di dinas sambil mencatat jawabannya untuk ketua RT.",
+        "score": 2,
+        "reason": "Syarat proposal diperoleh cepat lewat kedekatan, tetapi dinas hanya menerima proposal lewat loket. Petugas loket tetap menjadi jalur yang berlaku, sehingga cara ini menyelesaikan di luar prosedur walau tidak merugikan pengusul lain.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "jalur-tidak-resmi"
+        }
+      },
+      {
+        "text": "Menitipkan proposal langsung kepada kenalan di dinas pekerjaan umum sambil meminta ia mendahulukan proposal kampung.",
+        "score": 1,
+        "reason": "Dinas menelaah proposal menurut urutan masuk, sehingga meminta kenalan mendahulukan proposal kampung melanggar urutan dan merugikan pengusul lain. Kedekatan teman sekelas menjadi jalur istimewa yang tidak dimiliki warga lain.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: menolak penggunaan relasi untuk mendahului proposal lain sambil membantu lewat jalur resmi. Fakta penentu: dinas hanya menerima proposal lewat loket dan menelaah menurut urutan masuk, sedangkan proposal belum ditandatangani lurah. Respons terbaik menjelaskan jalur loket kepada ketua RT sambil membantu melengkapi tanda tangan lurah sebelum diajukan. Mengantar ke loket lalu menanyakan kelengkapan di sana menjalankan jalur, tetapi kekurangan baru ketahuan dan proposal dapat ditolak dulu. Menyarankan bertanya ke petugas loket benar tetapi tidak membantu, menanyakan syarat lewat kenalan menempuh jalur di luar prosedur, dan menitipkan proposal melanggar urutan.",
+    "tip": "Bedakan menolong lewat jalur yang berlaku dari memakai kedekatan, lalu lihat apa yang masih dapat Anda sumbangkan.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemanfaatan-relasi",
+    "kataKunci": "titipan kepada kenalan, kepala seksi, penerimaan lewat loket, urutan masuk, belum ditandatangani lurah"
+  },
+  {
+    "id": "tkp-kasus-jk-23",
+    "skenario": "rekan-dekat-kepala-bidang-tulis-diri-penyusun-utama",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Konsep Dasar dan Prinsip",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "anggota-tim",
+    "kewenangan": "hanya-usul",
+    "penentu": "catatan pembagian tugas menunjukkan Anda menyusun tiga dari empat bagian kajian, sedangkan urutan nama penyusun ditetapkan kepala bidang dan Anda hanya dapat mengusulkan",
+    "tempat": "administratif",
+    "keputusan": "melindungi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Pengakuan kontribusi diperebutkan oleh rekan yang dekat dengan pimpinan; peserta menimbang cara menjaga hubungan dan keadilan dalam batas wewenang.",
+    "stem": "Anda anggota tim yang menyusun kajian bersama seorang rekan dari unit lain untuk dilaporkan kepada pimpinan. Menurut catatan pembagian tugas pada rapat awal, Anda menyusun tiga dari empat bagian kajian. Rekan itu dekat dengan kepala bidang dan menyatakan bahwa namanya akan ditulis sebagai penyusun utama. Urutan nama penyusun ditetapkan kepala bidang, dan Anda hanya dapat mengusulkan. Laporan akan dikirim pekan depan. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mengusulkan sesuai catatan kepada kepala bidang tanpa memberi tahu rekan itu, lalu melanjutkan penyusunan kajian.",
+        "score": 4,
+        "reason": "Usulan sesuai catatan pembagian tugas menjaga pengakuan kontribusi lewat pihak yang menetapkannya. Rekan itu tidak diajak membicarakan catatan lebih dahulu, sehingga ia mengetahui usulan dari kepala bidang dan hubungan kerja menjadi renggang.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Menerima urutan nama rekan itu, lalu meminta kepala bidang mencantumkan bagian yang Anda susun sendiri.",
+        "score": 3,
+        "reason": "Pencantuman bagian yang Anda susun memberi sedikit pengakuan atas kontribusi. Urutan nama yang menempatkan rekan sebagai penyusun utama tidak dipersoalkan, padahal catatan pembagian tugas menunjukkan tiga dari empat bagian berasal dari Anda.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menunjukkan bukti kontribusi kepada rekan itu, lalu mengusulkan urutan nama kepada kepala bidang.",
+        "score": 5,
+        "reason": "Catatan pembagian tugas menjadi bukti yang terbuka bagi rekan, sehingga perbedaan kontribusi dibicarakan langsung lebih dahulu. Karena urutan nama ditetapkan kepala bidang, usulan kepadanya menjaga pengakuan tanpa Anda mengambil keputusan sendiri.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Memendam kekecewaan itu agar hubungan kerja tetap baik, lalu menyerahkan bagian Anda sebagai bahan laporan.",
+        "score": 2,
+        "reason": "Menjaga hubungan kerja memang penting. Namun kontribusi tiga dari empat bagian kajian tidak diakui dan urutan nama yang keliru dibiarkan sampai laporan dikirim.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menulis nama Anda sebagai penyusun utama pada naskah kajian, lalu mengirim naskah itu kepada pimpinan.",
+        "score": 1,
+        "reason": "Mengubah urutan nama padahal penetapannya ada pada kepala bidang mengambil keputusan yang bukan hak Anda. Perebutan pengakuan berubah menjadi klaim sendiri, dan hubungan dengan rekan serta kepala bidang rusak.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "jk:klaim-pengakuan"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: menjaga pengakuan kontribusi secara terbuka dan adil dengan menghormati pihak yang berwenang menetapkan. Fakta penentu: catatan pembagian tugas menunjukkan Anda menyusun tiga dari empat bagian, sedangkan urutan nama ditetapkan kepala bidang dan Anda hanya dapat mengusulkan. Respons terbaik menunjukkan bukti kontribusi kepada rekan lalu mengusulkan urutan nama kepada kepala bidang. Mengusulkan sesuai catatan tanpa memberi tahu rekan menjaga pengakuan, tetapi rekan tidak diajak bicara. Menerima urutan rekan hanya memperoleh pencantuman bagian, memendam kekecewaan membiarkan ketidakadilan, dan menulis nama sendiri mengklaim keputusan kepala bidang.",
+    "tip": "Rekam kerja apa yang dapat dilihat bersama, dan siapa yang berhak memutuskan pengakuannya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemanfaatan-relasi",
+    "kataKunci": "catatan pembagian tugas, tiga dari empat bagian, penyusun utama, dekat dengan kepala bidang, urutan nama penyusun"
+  },
+  {
+    "id": "tkp-kasus-jk-24",
+    "skenario": "panitia-sponsor-syarat-produk-dipilih-dinas",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Konsep Dasar dan Prinsip",
+    "pola": "hak-minoritas-keputusan-mayoritas",
+    "peran": "koordinator",
+    "kewenangan": "terbatas",
+    "penentu": "sponsor menawarkan dana dengan syarat produknya disebut dipilih dinas, sedangkan aturan dinas melarang pernyataan itu dan hanya membolehkan logo",
+    "tempat": "rapat",
+    "keputusan": "melindungi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Keputusan mayoritas panitia bertemu aturan independensi dan keberatan seorang anggota; peserta menjaga hak suara minoritas sekaligus peluang dana.",
+    "stem": "Anda koordinator panitia acara penyuluhan sebuah dinas. Dalam rapat panitia yang sedang berlangsung, sponsor swasta menawarkan dana yang menutup kekurangan anggaran, dengan syarat materi acara menyebut produknya dipilih dinas. Lima dari tujuh anggota panitia setuju menerima karena dana kurang, sedangkan seorang anggota keberatan dan merasa pendapatnya diabaikan. Aturan dinas membolehkan sponsor mencantumkan logo, tetapi melarang pernyataan bahwa produk dipilih dinas. Apa yang sebaiknya Anda lakukan sebagai koordinator?",
+    "options": [
+      {
+        "text": "Menerima dana sponsor hanya untuk satu sesi acara, lalu menyampaikan bahwa pernyataan produk dipilih dinas tidak dapat dimuat.",
+        "score": 4,
+        "reason": "Dana untuk satu sesi mengurangi kekurangan anggaran tanpa menyalahi aturan tentang pernyataan produk. Kekurangan dana pada sesi lain tetap terbuka dan logo yang dibolehkan aturan dinas tidak dimanfaatkan, sehingga hanya sebagian kebutuhan panitia yang tertutup.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mengundang perwakilan sponsor ke rapat panitia berikutnya, lalu membahas syarat itu bersama panitia.",
+        "score": 3,
+        "reason": "Pembahasan bersama sponsor dan panitia dapat menghasilkan jalan tengah. Rapat berikutnya menunda pembicaraan padahal rapat panitia sedang berlangsung dan aturan dinas sudah menyatakan batas pernyataan produk, sehingga penawaran balik dapat disusun sekarang.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Mengakhiri pembicaraan dengan sponsor itu dalam rapat panitia, lalu mencari dana dari pihak lain yang lebih mudah diatur.",
+        "score": 2,
+        "reason": "Penolakan menjaga aturan dinas tentang pernyataan produk. Namun sponsor tidak diajak membicarakan logo yang dibolehkan, dan lima anggota panitia yang membutuhkan dana kehilangan peluang tanpa upaya menegosiasikannya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "jk:menghindari-mitra"
+        }
+      },
+      {
+        "text": "Meminta anggota yang keberatan menjelaskan alasannya, lalu mengajukan penawaran balik berisi logo saja kepada sponsor.",
+        "score": 5,
+        "reason": "Anggota yang keberatan didengar sehingga suara minoritas tidak tertutup keputusan lima dari tujuh anggota. Penawaran yang hanya memuat logo sesuai aturan dinas dan masih menutup kebutuhan dana dengan sponsor.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menerima syarat sponsor sesuai suara terbanyak panitia, lalu mencantumkan pernyataan produk dipilih dinas dalam materi.",
+        "score": 1,
+        "reason": "Aturan dinas melarang pernyataan bahwa produk dipilih dinas, sehingga suara terbanyak tidak dapat membenarkannya. Pendapat anggota yang keberatan diabaikan dan independensi dinas terhadap sponsor terlanggar.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: menjaga independensi dalam kemitraan dan hak anggota minoritas ketika mayoritas ingin menerima syarat sponsor. Fakta penentu: sponsor menawarkan dana dengan syarat produknya disebut dipilih dinas, sedangkan aturan dinas melarang pernyataan itu dan hanya membolehkan logo. Respons terbaik meminta anggota yang keberatan menjelaskan alasannya lalu mengajukan penawaran balik berisi logo saja. Menerima dana untuk satu sesi menjaga aturan, tetapi sebagian kebutuhan dana tetap terbuka. Membahas syarat pada rapat berikutnya menunda penawaran yang dapat disusun sekarang, mengakhiri pembicaraan menghindari negosiasi, dan menerima syarat melanggar aturan.",
+    "tip": "Suara siapa yang belum didengar, dan apa yang dibolehkan aturan sebelum Anda memutuskan?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemanfaatan-relasi",
+    "kataKunci": "sponsor swasta, produk dipilih dinas, kekurangan anggaran, lima dari tujuh anggota, anggota keberatan, logo sponsor"
+  },
+  {
+    "id": "tkp-kasus-jk-25",
+    "skenario": "komunitas-mitra-lama-menolak-penyesuaian-peran",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Pengembangan Hubungan Kerja dan Kemitraan Produktif",
+    "pola": "penolakan-perubahan",
+    "peran": "penghubung-mitra",
+    "kewenangan": "hanya-usul",
+    "penentu": "dua kegiatan terakhir hasilnya menurun, pengurus komunitas menolak penyesuaian peran karena merasa berjasa, dan perubahan peran memerlukan persetujuan pimpinan dinas",
+    "tempat": "rapat",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Beberapa cara memelihara kemitraan lama sama-sama sah; peserta menilai cara yang menjaga hubungan sambil memperbaiki hasil dalam batas wewenang.",
+    "stem": "Anda penghubung dinas untuk sebuah komunitas mitra yang telah bekerja sama dengan dinas selama dua tahun. Dua kegiatan terakhir menunjukkan hasil menurun: jumlah peserta turun dan laporan komunitas terlambat. Anda mengusulkan penyesuaian pembagian peran, tetapi pengurus komunitas menolak karena merasa sudah berjasa selama ini. Perubahan pembagian peran memerlukan persetujuan pimpinan dinas, dan Anda hanya dapat mengusulkan. Kegiatan berikutnya berlangsung bulan depan. Apa langkah yang paling tepat Anda ambil sebagai penghubung?",
+    "options": [
+      {
+        "text": "Mempertahankan pembagian peran lama demi hubungan baik, lalu tetap memantau hasil kegiatan komunitas itu.",
+        "score": 3,
+        "reason": "Pembagian peran lama menjaga hubungan dengan pengurus yang merasa berjasa, dan hasil tetap dipantau. Dua kegiatan terakhir sudah menurun, sehingga peran yang sama menunda perbaikan yang dapat dibicarakan sekarang.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menyampaikan rencana penyesuaian peran kepada pimpinan dinas lebih dahulu, lalu mengundang pengurus membahasnya.",
+        "score": 4,
+        "reason": "Rencana yang sampai ke pimpinan dinas lebih dahulu mengikuti jalur persetujuan, dan pengurus tetap diundang membahasnya. Pengurus yang merasa berjasa baru mendengar rencana itu sesudah pimpinan mengetahuinya, sehingga penolakan mereka bisa mengeras sebelum didengar.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Mengalihkan satu kegiatan berikutnya kepada komunitas lain, lalu menjelaskan alasannya kepada pengurus lama.",
+        "score": 2,
+        "reason": "Komunitas lain mungkin dapat menjaga hasil kegiatan, dan pengurus lama mendapat penjelasan. Keputusan diambil tanpa mengajak pengurus membahas penurunan, padahal Anda hanya dapat mengusulkan perubahan yang memerlukan persetujuan pimpinan dinas.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "jk:menghindari-mitra"
+        }
+      },
+      {
+        "text": "Mengumumkan penurunan hasil komunitas itu dalam pertemuan dengan mitra lain, lalu meminta pengurus menyampaikan penjelasan.",
+        "score": 1,
+        "reason": "Mengumumkan penurunan di depan mitra lain mempermalukan pengurus yang merasa berjasa. Kerja sama dua tahun terancam dan persoalan peran tidak dibahas dengan data yang adil.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "jk:mempermalukan"
+        }
+      },
+      {
+        "text": "Mengajak pengurus menyepakati penyesuaian peran berdasarkan hasil dua kegiatan terakhir, lalu mengusulkannya kepada pimpinan dinas.",
+        "score": 5,
+        "reason": "Pengurus menolak karena merasa berjasa, sehingga penyesuaian peran dirumuskan bersama dengan hasil yang menurun sebagai dasar yang menghargai jasanya sekaligus membuka data yang sama. Karena perubahan peran memerlukan persetujuan pimpinan dinas, hasil kesepakatan itu diusulkan kepada pimpinan dengan dasar yang jelas.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: memelihara dan mengevaluasi kemitraan lama dengan menghargai kontribusi sambil memperbaiki hasil. Fakta penentu: dua kegiatan terakhir hasilnya menurun, pengurus komunitas menolak penyesuaian peran karena merasa berjasa, dan perubahan peran memerlukan persetujuan pimpinan dinas. Respons terbaik mengajak pengurus menyepakati penyesuaian berdasarkan hasil lalu mengusulkannya kepada pimpinan dinas. Menyampaikan rencana kepada pimpinan lebih dahulu menjalankan jalur persetujuan, tetapi pengurus belum didengar. Mempertahankan peran lama menunda perbaikan, mengalihkan kegiatan menghindari mitra, dan mengumumkan penurunan mempermalukan pengurus.",
+    "tip": "Manfaat kemitraan menurut angka yang dapat dibandingkan, dan siapa yang berhak menyetujui perubahan?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemanfaatan-relasi",
+    "kataKunci": "hasil menurun, peserta turun, laporan terlambat, merasa berjasa, penyesuaian peran, persetujuan pimpinan dinas"
+  },
+  {
+    "id": "tkp-kasus-jk-26",
+    "skenario": "menyebut-nama-pejabat-kenalan-saat-minta-data",
+    "topic": "Jejaring Kerja",
+    "subtopic": "Pengembangan Hubungan Kerja dan Kemitraan Produktif",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "pegawai-baru",
+    "kewenangan": "tidak-ada",
+    "penentu": "Anda menyebut pejabat kenalan sudah menyetujui padahal baru lisan, staf mitra akan mengonfirmasi kepadanya sore ini, dan permintaan data seharusnya lewat surat resmi",
+    "tempat": "kemitraan",
+    "keputusan": "memulihkan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Satu kekeliruan jelas yang diakui sendiri; pilihan terbaik mudah dikenali dari siapa yang perlu mendengar penjelasan dan jalur yang berlaku.",
+    "stem": "Anda pegawai baru yang meminta data kepada staf instansi mitra untuk bahan kajian. Agar permintaan cepat dilayani, Anda menyebut bahwa seorang pejabat di instansi itu, kenalan Anda, sudah menyetujui, padahal pembicaraan Anda dengannya baru lisan dan belum ada keputusan. Staf itu menjawab akan mengonfirmasi kepada pejabat tersebut sore ini. Instansi mitra menerima permintaan data lewat surat resmi, dan Anda dapat menghubungi pejabat itu langsung. Apa tindakan Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Mengajukan permintaan data lewat surat resmi setelah mengakui kekeliruan Anda kepada staf dan pejabat itu.",
+        "score": 5,
+        "reason": "Staf akan mengonfirmasi kepada pejabat sore ini, sehingga pengakuan kepada staf dan pejabat meluruskan penyebutan namanya sebelum konfirmasi itu. Permintaan lewat surat resmi mengembalikan urusan ke jalur yang berlaku di instansi mitra.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Memberi tahu staf bahwa pejabat itu belum memutuskan setelah mengingat kembali isi pembicaraan Anda dengannya.",
+        "score": 4,
+        "reason": "Staf yang akan mengonfirmasi sore ini mendengar keadaan sebenarnya dari Anda sehingga tidak bertanya atas dasar yang keliru. Pejabat yang namanya dipakai tidak mendengar penjelasan Anda, dan permintaan data belum masuk lewat surat resmi, sehingga hanya sebagian persoalan yang selesai.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menghubungi pejabat itu sesuai arahan atasan Anda setelah menanyakan cara memperbaiki kekeliruan itu kepada atasan.",
+        "score": 3,
+        "reason": "Bertanya kepada atasan menunjukkan kehati-hatian seorang pegawai baru. Staf akan mengonfirmasi kepada pejabat sore ini, sehingga arahan itu dapat datang setelah pejabat lebih dahulu mendengar dari staf.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menjelaskan kepada pejabat itu bila ia menanyakannya setelah membiarkan staf mengonfirmasi sendiri kepadanya.",
+        "score": 2,
+        "reason": "Staf mengonfirmasi lewat jalur yang wajar kepada pejabat. Nama pejabat itu dibiarkan dipakai tanpa kabar darinya, sehingga ia mengetahui kekeliruan dari pihak lain dan kepercayaan staf mitra turun.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Mengirim permintaan data lewat pesan singkat setelah meminta pejabat itu membenarkan bahwa ia setuju bila staf menghubunginya.",
+        "score": 1,
+        "reason": "Meminta pejabat membenarkan keputusan yang belum ada menutupi kekeliruan Anda dengan kedekatan pribadi. Permintaan data lewat pesan singkat juga melewati surat resmi yang menjadi jalur instansi mitra.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: memulihkan kepercayaan mitra setelah memakai nama relasi secara keliru dan kembali ke jalur resmi. Fakta penentu: Anda menyebut pejabat kenalan sudah menyetujui padahal baru lisan, staf mitra akan mengonfirmasi kepadanya sore ini, dan permintaan data seharusnya lewat surat resmi. Respons terbaik mengakui kekeliruan kepada staf dan pejabat lalu mengajukan permintaan lewat surat resmi. Memberi tahu staf bahwa pejabat belum memutuskan meluruskan sebagian, tetapi pejabat dan jalur surat belum tersentuh. Bertanya kepada atasan dapat terlambat, membiarkan staf mengonfirmasi menunda pengakuan, dan meminta pejabat membenarkan menutupi kekeliruan.",
+    "tip": "Siapa yang akan mengetahui kesalahan itu lebih dulu, dan siapa yang seharusnya mendengarnya dari Anda?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemanfaatan-relasi",
+    "kataKunci": "pejabat kenalan, sudah menyetujui, baru lisan, konfirmasi sore ini, surat resmi"
+  }
+]

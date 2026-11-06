@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { LEVELS, rowCapacity } from '@/lib/blueprint';
-import { LABELS } from '@/lib/config';
+import { KURASI_AKTIF, LABELS } from '@/lib/config';
 import { distribution } from '@/lib/generate';
 import { MAPPING_SOURCE, type MappingRow } from '@/lib/mapping';
 import type { BlueprintRow, Settings, Subtest } from '@/lib/types';
@@ -94,11 +94,11 @@ export default function BlueprintSummary({ settings, isTryout, rows, mapped, tot
       {manual && !!errors.length && <button className="text-button" onClick={onResetManual}>Reset kuota manual</button>}
       {manual && <p className="help">Angka kuota disunting pada tabel di bawah formulir. Kuota manual harus sesuai jumlah soal dan persediaan.</p>}
       {!isTryout && !manual && <p className="help">Rincian menampilkan kuota per tingkat dan persediaannya (kuota/persediaan). Kuota berlaku untuk setiap paket.</p>}
-      <p className="help">Kesulitan merupakan estimasi penulis. Bloom mencatat proses berpikir secara terpisah; keduanya ditinjau saat kurasi.</p>
+      <p className="help">Kesulitan merupakan estimasi penulis. Bloom mencatat proses berpikir secara terpisah; {KURASI_AKTIF ? 'keduanya ditinjau saat kurasi.' : 'keduanya perlu kamu tinjau.'}</p>
     </div>
     <div className="summary-actions">
       <span className="summary-short">{errors.length ? 'Periksa pesan di ringkasan.' : <><strong>{settings.count}</strong> soal · {settings.packages} paket</>}</span>
-      <button className="primary-button full-width" disabled={busy || !!errors.length} onClick={onGenerate}><Icon name="spark"/>{busy ? 'Menyusun dan memeriksa…' : 'Buat paket untuk dikurasi'}<Icon name="arrow"/></button>
+      <button className="primary-button full-width" disabled={busy || !!errors.length} onClick={onGenerate}><Icon name="spark"/>{busy ? 'Menyusun dan memeriksa…' : KURASI_AKTIF ? 'Buat paket untuk dikurasi' : 'Buat paket'}<Icon name="arrow"/></button>
     </div>
   </aside>;
 }

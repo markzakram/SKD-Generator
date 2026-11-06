@@ -1,0 +1,1589 @@
+[
+  {
+    "id": "tkp-kasus-tik-01",
+    "skenario": "laporan-bulanan-tiga-salinan-lampiran-surel",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan",
+    "pola": "informasi-belum-lengkap-bertentangan",
+    "peran": "anggota-tim",
+    "kewenangan": "penuh",
+    "penentu": "tiga rekan menyunting salinan lampiran surel yang berbeda, sedangkan platform dokumen bersama kantor sudah tersedia dan aturan kantor mengharuskan draf disimpan di sistem kantor",
+    "tempat": "layanan-digital",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Satu masalah jelas (salinan berbeda) dan satu alat resmi yang sudah tersedia; pilihan terbaik mudah dikenali.",
+    "stem": "Anda anggota tim penyusun laporan bulanan di sebuah dinas. Setiap pekan draf dikirim sebagai lampiran surel, lalu tiga rekan menyunting salinan masing-masing sehingga angka pada ketiga salinan berbeda dan Anda menggabungkannya sampai larut malam. Aturan kantor mengharuskan draf laporan disimpan di sistem milik kantor. Platform dokumen bersama kantor sudah tersedia dan dapat dibuka Anda maupun ketiga rekan, tetapi belum ada yang memakainya untuk laporan ini. Apa tindakan Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Meminta rekan menamai salinan dengan tanggal dan inisial, lalu membandingkan ketiga lampiran setiap Jumat sore sebelum rapat.",
+        "score": 3,
+        "reason": "Penamaan salinan dengan tanggal dan inisial membantu Anda mengenali suntingan mana yang terbaru. Namun ketiga rekan masih menyunting lampiran masing-masing, sehingga angka tetap berbeda dan penggabungan manual berlanjut.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menyimpan draf laporan di penyimpanan daring pribadi di luar sistem kantor, lalu membagikan tautannya kepada ketiga rekan.",
+        "score": 1,
+        "reason": "Penyimpanan pribadi memudahkan ketiga rekan membuka draf yang sama. Namun aturan kantor mengharuskan draf laporan disimpan di sistem milik kantor, padahal platform dokumen bersama kantor sudah tersedia.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Memindahkan draf terbaru ke platform dokumen bersama kantor, lalu meminta rekan menyunting dokumen itu bersama-sama.",
+        "score": 5,
+        "reason": "Dokumen yang sama di platform kantor menghapus ketiga salinan sehingga angka tidak perlu digabung lagi, dan aturan penyimpanan terpenuhi. Rekan dapat menyunting bersamaan karena platform dokumen bersama itu sudah dapat mereka buka.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengunggah draf ke platform dokumen milik kantor, lalu mengumumkan lokasinya lewat surel kepada ketiga rekan.",
+        "score": 4,
+        "reason": "Platform dokumen milik kantor menjadi sumber draf tunggal yang sesuai aturan, dan lokasinya diumumkan kepada ketiga rekan. Namun rekan tidak diajak menyunting di sana, sehingga mereka dapat tetap mengirim lampiran surel dan salinan terus bertambah.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Tetap menerima suntingan lewat lampiran surel setiap pekan, lalu menggabungkan salinan itu sendiri pada hari Kamis.",
+        "score": 2,
+        "reason": "Cara yang sama sudah menghasilkan tiga salinan berbeda dan membuat Anda menggabungkan sampai larut malam. Menggabungkan pada hari Kamis hanya mengatur waktu, sedangkan lampiran surel tetap memecah draf menjadi salinan.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "kosmetik"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: pemilihan alat kolaborasi yang menjaga satu sumber dokumen. Fakta penentu: tiga rekan menyunting salinan lampiran surel yang berbeda, sementara platform dokumen bersama kantor sudah tersedia dan aturan mengharuskan draf berada di sistem kantor. Memindahkan draf ke dokumen yang sama menghapus perbedaan salinan di sumbernya. Mengunggah draf lalu hanya mengumumkan lokasinya memperbaiki tempat penyimpanan, tetapi rekan belum diajak menyunting di sana sehingga salinan masih dapat bertambah. Penamaan berkas dan penggabungan pada hari tertentu hanya merapikan cara lama, dan penyimpanan pribadi melanggar aturan kantor.",
+    "tip": "Perhatikan jumlah salinan yang beredar, aturan tempat penyimpanan, dan fasilitas yang sudah disediakan kantor.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemilihan-alat",
+    "kataKunci": "lampiran surel, tiga salinan berbeda, larut malam, sistem milik kantor, platform dokumen bersama"
+  },
+  {
+    "id": "tkp-kasus-tik-02",
+    "skenario": "pendataan-lapangan-aplikasi-pribadi-sinyal-lemah",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "pelaksana",
+    "kewenangan": "terbatas",
+    "penentu": "rekan senior mengajak memakai aplikasi catatan di ponsel pribadi, padahal ketentuan melarang menyimpan jawaban warga di perangkat pribadi, formulir luring resmi sudah terpasang, dan sinyal desa lemah",
+    "tempat": "lapangan",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Satu alat resmi yang jelas sesuai kondisi lapangan dan ketentuan; tidak ada konflik kepentingan yang rumit.",
+    "stem": "Anda pelaksana tim pendataan rumah tangga di sebuah kabupaten dan hari ini bekerja di desa yang sinyal selulernya lemah. Rekan senior mengajak Anda mencatat jawaban warga di aplikasi catatan pada ponsel pribadi karena menurutnya lebih cepat. Ketentuan pendataan melarang menyimpan jawaban warga di perangkat pribadi. Formulir luring dari aplikasi pendataan resmi sudah terpasang di ponsel dinas Anda dan dapat dikirim saat sinyal tersedia. Atasan berada di kantor kabupaten dan sulit dihubungi karena sinyal. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Mengajak rekan senior memakai formulir luring resmi, lalu mengirim hasilnya begitu jaringan kembali stabil.",
+        "score": 5,
+        "reason": "Formulir luring resmi menyimpan jawaban warga sesuai ketentuan dan tetap berjalan di desa yang sinyalnya lemah, lalu terkirim saat sinyal tersedia. Mengajak rekan senior memakainya juga menutup risiko ponsel pribadi tanpa perlu menghubungi atasan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta rekan senior menghubungi atasan untuk memutuskan alat pendataan, lalu menghentikan pencatatan sampai ada jawaban.",
+        "score": 3,
+        "reason": "Menghubungi atasan memang jalur yang sah untuk memutuskan alat pendataan. Namun formulir luring resmi sudah terpasang dan ketentuan sudah jelas, sedangkan atasan sulit dihubungi karena sinyal sehingga pencatatan warga ikut terhenti.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Mencatat jawaban warga di aplikasi catatan ponsel pribadi, lalu menyalinnya ke formulir resmi saat sinyal tersedia.",
+        "score": 1,
+        "reason": "Menyimpan jawaban warga di aplikasi catatan ponsel pribadi melanggar ketentuan pendataan, dan menyalinnya ke formulir resmi tidak menghapus salinan di perangkat itu. Data warga tetap berada di luar kendali dinas meski sinyal desa lemah.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Mencatat jawaban warga di formulir luring resmi, lalu mengingatkan rekan senior tentang ketentuan itu saat istirahat siang.",
+        "score": 4,
+        "reason": "Formulir luring resmi dipakai untuk jawaban warga sehingga data Anda sesuai ketentuan, dan rekan senior akhirnya diingatkan tentang ketentuan itu. Namun peringatan baru datang saat istirahat siang, sehingga rekan senior belum diajak memakai formulir luring resmi sejak pendataan dimulai.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Mengunduh aplikasi survei lain yang ramai dipakai petugas desa ke ponsel dinas, lalu mencobanya dengan contoh jawaban dahulu.",
+        "score": 2,
+        "reason": "Aplikasi survei yang sedang ramai belum dinilai kebutuhan dan keamanannya oleh dinas, sedangkan formulir luring resmi sudah terpasang. Mencobanya hanya menambah alat dan menyita waktu pendataan di desa yang sinyalnya lemah, padahal formulir resmi sudah cukup.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "tik:alat-baru-tanpa-kajian"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: pemilihan alat pendataan yang sesuai kondisi lapangan dan ketentuan perlindungan data, bukan alat yang tampak paling cepat atau baru. Fakta penentu: rekan senior mengajak memakai aplikasi catatan di ponsel pribadi, padahal ketentuan melarang menyimpan jawaban warga di perangkat pribadi, formulir luring resmi sudah terpasang, dan sinyal desa lemah. Respons terbaik mengajak rekan senior memakai formulir luring resmi lalu mengirim hasilnya saat sinyal tersedia. Memakai formulir resmi sendiri lalu baru mengingatkan rekan senior saat istirahat siang melindungi data Anda, tetapi rekan senior terlambat diajak. Menghubungi atasan menghentikan pencatatan yang dapat berjalan sekarang. Aplikasi survei yang ramai belum dinilai keamanannya, dan menyimpan jawaban di ponsel pribadi melanggar ketentuan.",
+    "tip": "Perhatikan kondisi sinyal, ketentuan penyimpanan isian warga, dan peralatan yang sudah terpasang.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemilihan-alat",
+    "kataKunci": "sinyal lemah, aplikasi catatan ponsel pribadi, larangan perangkat pribadi, formulir luring resmi, atasan sulit dihubungi"
+  },
+  {
+    "id": "tkp-kasus-tik-03",
+    "skenario": "berkas-csv-nik-notasi-ilmiah",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "pegawai-baru",
+    "kewenangan": "penuh",
+    "penentu": "kolom NIK berubah menjadi notasi ilmiah dan angka di ujungnya menjadi nol saat berkas CSV dibuka, sedangkan berkas CSV sumber dari aplikasi masih utuh",
+    "tempat": "administratif",
+    "keputusan": "mengoreksi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Penyebab dan sumber data yang utuh jelas; tindakan langsung dan validasi mudah dibandingkan dengan pengecoh.",
+    "stem": "Anda pegawai baru di bagian pendataan sebuah dinas sosial. Saat membuka berkas daftar penerima bantuan berformat CSV pada lembar kerja, kolom NIK berubah menjadi notasi ilmiah dan angka di ujungnya menjadi nol. Berkas CSV sumber dari aplikasi masih tersimpan utuh di komputer Anda, dan daftar itu harus diserahkan kepada koordinator siang ini. Merapikan daftar ini memang tugas Anda. Bagaimana sebaiknya Anda menangani daftar itu?",
+    "options": [
+      {
+        "text": "Menyerahkan daftar itu kepada koordinator beserta catatan bahwa kolom NIK tampak berubah, lalu mengerjakan tugas berikutnya.",
+        "score": 2,
+        "reason": "Catatan kepada koordinator membuat masalah NIK diketahui. Namun daftar yang diserahkan tetap memuat NIK yang berubah, padahal berkas CSV sumber masih utuh dan merapikan daftar itu tugas Anda.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menanyakan kepada koordinator cara memperbaiki kolom NIK, lalu menyusun ulang daftar setelah mendapat arahan.",
+        "score": 3,
+        "reason": "Bertanya kepada koordinator menunjukkan kehati-hatian dan masih diikuti penyusunan ulang daftar. Namun berkas CSV sumber masih utuh di komputer Anda, sehingga perbaikan dapat dimulai sekarang sebelum daftar diserahkan siang ini.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Mengisi angka NIK yang berubah menjadi nol dengan perkiraan dari baris sekitarnya, lalu menandai baris itu dengan warna.",
+        "score": 1,
+        "reason": "Mengisi angka NIK dengan perkiraan membuat data penerima tidak lagi sesuai berkas sumber. Penandaan warna tidak memulihkan angka yang hilang, sehingga NIK yang salah dapat menyebabkan bantuan salah sasaran.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      },
+      {
+        "text": "Mengimpor ulang berkas CSV sumber dengan kolom NIK berformat teks, lalu mencocokkan sampel NIK dengan berkas sumber.",
+        "score": 5,
+        "reason": "Berkas CSV sumber yang masih utuh diimpor ulang dengan format teks sehingga NIK kembali penuh, dan pencocokan sampel memastikan tidak ada angka yang berubah. Perbaikan itu tugas Anda dan selesai sebelum daftar diserahkan siang ini.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Membuka berkas CSV sumber di penyunting teks, lalu menyalin kolom NIK ke lembar kerja berformat teks.",
+        "score": 4,
+        "reason": "Penyunting teks menampilkan berkas CSV sumber yang masih utuh sehingga angka NIK tidak berubah, dan kolom itu disalin ke lembar kerja berformat teks. Namun hasil salinan tidak dicocokkan dengan berkas sumber, sehingga baris yang bergeser atau terpotong dapat lolos ke daftar yang diserahkan siang ini.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: menjaga akurasi data dengan memperbaiki dari sumbernya dan memvalidasi hasil. Fakta penentu: kolom NIK berubah menjadi notasi ilmiah dan angka ujungnya menjadi nol, sedangkan berkas CSV sumber dari aplikasi masih utuh dan perapian daftar menjadi tugas Anda. Respons terbaik mengimpor ulang berkas sumber dengan kolom berformat teks lalu mencocokkan sampel NIK. Menyalin kolom NIK dari penyunting teks juga memulihkan angka, tetapi hasil salinan tidak dicocokkan dengan berkas sumber. Bertanya dulu menunda perbaikan yang dapat dimulai sekarang, menyerahkan daftar bercatatan membiarkan NIK rusak, dan mengisi NIK dengan perkiraan memanipulasi data penerima.",
+    "tip": "Perhatikan kondisi berkas aslinya, tenggat penyerahan, dan siapa yang bertanggung jawab atas daftar itu.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mutu-data",
+    "kataKunci": "berkas CSV, kolom NIK, notasi ilmiah, angka ujung menjadi nol, berkas sumber utuh"
+  },
+  {
+    "id": "tkp-kasus-tik-04",
+    "skenario": "pendaftaran-puskesmas-sistem-berhenti-formulir-kertas",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan",
+    "pola": "gangguan-layanan-mendadak",
+    "peran": "pelaksana",
+    "kewenangan": "terbatas",
+    "penentu": "sistem pendaftaran daring berhenti bekerja dan baru pulih sekitar dua jam lagi, sedangkan prosedur cadangan mengizinkan formulir kertas yang dimasukkan ulang setelah sistem pulih",
+    "tempat": "loket",
+    "keputusan": "memulihkan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Satu gangguan jelas dengan prosedur cadangan yang tersedia; pilihan terbaik mudah dikenali.",
+    "stem": "Anda petugas loket pendaftaran di sebuah puskesmas. Sistem pendaftaran daring berhenti bekerja sejak pagi dan menurut teknisi baru pulih sekitar dua jam lagi, sementara belasan pasien sudah mengantre. Prosedur cadangan puskesmas mengizinkan pendaftaran dengan formulir kertas, yang datanya harus dimasukkan ulang ke sistem setelah pulih. Anda tidak dapat memperbaiki sistem itu, dan data pasien tidak boleh dibagikan di luar petugas pendaftaran. Bagaimana Anda menangani pendaftaran pasien?",
+    "options": [
+      {
+        "text": "Mencatat pasien pada formulir kertas sesuai prosedur cadangan, lalu memberi tahu pasien bahwa datanya dimasukkan ulang.",
+        "score": 4,
+        "reason": "Formulir kertas sesuai prosedur cadangan melayani pasien yang sudah mengantre, dan pasien diberi tahu bahwa datanya dimasukkan ulang. Namun pemasukan ulang itu baru dijanjikan dan belum dikerjakan, sehingga prosedur cadangan belum dijalankan sampai tuntas.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mendaftarkan pasien lewat formulir kertas yang diizinkan prosedur, lalu memasukkan datanya begitu layanan pulih.",
+        "score": 5,
+        "reason": "Formulir kertas yang diizinkan prosedur cadangan membuat pasien yang mengantre tetap terdaftar, dan datanya dimasukkan ulang begitu layanan pulih sehingga prosedur cadangan dijalankan sampai tuntas. Anda tidak dapat memperbaiki sistem, jadi pendaftaran dan pemasukan ulang itu menjadi bagian yang dapat Anda kerjakan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menanyakan kepada teknisi kepastian waktu pulih sistem, lalu menentukan cara pendaftaran pasien sesudah mendapat jawaban.",
+        "score": 3,
+        "reason": "Bertanya kepada teknisi menunjukkan kehati-hatian dan masih menghasilkan cara pendaftaran. Namun prosedur cadangan sudah mengizinkan formulir kertas, sehingga pendaftaran dapat dimulai sekarang tanpa menunggu kepastian waktu pulih.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menghentikan pendaftaran sementara dan meminta pasien kembali setelah sistem pulih, lalu mencatat nama pasien yang sudah datang.",
+        "score": 2,
+        "reason": "Menghentikan pendaftaran membuat belasan pasien pulang tanpa terdaftar, padahal prosedur cadangan mengizinkan formulir kertas. Pencatatan nama pasien yang sudah datang membantu, tetapi pelayanan baru berjalan setelah sistem pulih.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "menutup-sementara"
+        }
+      },
+      {
+        "text": "Mencatat data pasien di grup pesan petugas agar mudah dimasukkan kembali, lalu menghapus pesan itu setelah sistem pulih.",
+        "score": 1,
+        "reason": "Grup pesan memudahkan data pasien dimasukkan kembali. Namun data pasien tidak boleh dibagikan di luar petugas pendaftaran, sedangkan formulir kertas sesuai prosedur cadangan sudah mengizinkan pencatatan yang aman.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membuka-data"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: kesinambungan layanan memakai prosedur cadangan yang sah dan menyinkronkan data setelah sistem pulih. Fakta penentu: sistem pendaftaran daring berhenti dan baru pulih sekitar dua jam lagi, prosedur cadangan mengizinkan formulir kertas yang dimasukkan ulang, dan data pasien tidak boleh dibagikan di luar petugas pendaftaran. Respons terbaik mendaftarkan pasien lewat formulir kertas lalu memasukkan datanya begitu layanan pulih, sehingga prosedur cadangan tuntas. Mencatat pasien lalu hanya memberi tahu bahwa data akan dimasukkan ulang memberi kepastian, tetapi pemasukan ulang belum dikerjakan. Menanyakan teknisi lebih dulu menunda layanan yang dapat dimulai, menghentikan pendaftaran membuat pasien kembali, dan mencatat data pasien di grup pesan membuka data kesehatan.",
+    "tip": "Perhatikan perkiraan lama gangguan, cara yang diizinkan, dan jenis data yang tercatat.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mutu-data",
+    "kataKunci": "sistem berhenti, pulih dua jam, belasan pasien, prosedur cadangan, formulir kertas, data pasien"
+  },
+  {
+    "id": "tkp-kasus-tik-05",
+    "skenario": "berbagi-layar-rapat-tab-data-warga",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Etika, Keamanan, dan Tanggung Jawab Digital",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "layar yang dibagikan menampilkan tab lembar kerja berisi NIK dan alamat warga, padahal peserta rapat hanya perlu melihat grafik",
+    "tempat": "rapat",
+    "keputusan": "melindungi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Satu paparan yang sedang berlangsung dengan kewenangan penuh; langkah melindungi sambil melanjutkan kerja mudah dibedakan.",
+    "stem": "Anda koordinator tim data dan sedang mempresentasikan grafik capaian program kepada peserta rapat daring, termasuk mitra dari luar kantor. Saat menggeser jendela, Anda menyadari bahwa tab lembar kerja berisi NIK dan alamat warga penerima bantuan ikut terlihat pada layar yang dibagikan. Peserta rapat hanya perlu melihat grafik. Banyak jendela sedang terbuka, sehingga menemukan dan menutup tab itu memerlukan beberapa saat. Anda mengendalikan presentasi ini sepenuhnya dan dapat menghentikan atau memulai kembali berbagi layar kapan saja. Apa yang sebaiknya Anda lakukan?",
+    "options": [
+      {
+        "text": "Menghentikan berbagi layar dan membatalkan sesi, lalu menjadwalkan ulang rapat untuk pekan depan.",
+        "score": 3,
+        "reason": "Menghentikan berbagi layar langsung menutup paparan tab data warga. Namun membatalkan sesi dan menjadwalkan ulang rapat menghentikan penyampaian grafik yang masih dapat dilanjutkan setelah tab ditutup.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Melanjutkan presentasi grafik sampai selesai, lalu menutup tab lembar kerja berisi data warga setelah tanya jawab.",
+        "score": 2,
+        "reason": "Presentasi grafik tetap berjalan, tetapi NIK dan alamat warga tetap terlihat oleh peserta rapat sampai sesi tanya jawab selesai. Penutupan tab setelah itu terlambat, sedangkan Anda dapat menghentikan berbagi layar kapan saja.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Mengirim berkas lembar kerja lengkap kepada mitra luar kantor, lalu meminta mereka menyaring sendiri grafiknya.",
+        "score": 1,
+        "reason": "Mengirim berkas lembar kerja lengkap memberi mitra luar kantor akses ke NIK dan alamat warga yang tidak mereka perlukan. Peserta rapat hanya perlu melihat grafik, sehingga paparan data pribadi justru bertambah.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membuka-data"
+        }
+      },
+      {
+        "text": "Menutup tab data warga di tengah presentasi, lalu melanjutkan berbagi layar dari grafik yang sama.",
+        "score": 4,
+        "reason": "Menutup tab menghilangkan data warga dari layar, dan presentasi berjalan terus. Namun menemukan dan menutup tab memerlukan beberapa saat selama layar masih dibagikan, sehingga NIK dan alamat warga tetap terlihat oleh mitra luar kantor.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kurang-perlindungan"
+        }
+      },
+      {
+        "text": "Menghentikan berbagi layar lebih dulu, lalu membagikan ulang jendela grafik saja setelah tab data warga ditutup oleh Anda.",
+        "score": 5,
+        "reason": "Layar langsung berhenti menampilkan NIK dan alamat warga, dan jendela grafik dibagikan ulang sehingga peserta rapat tetap dapat melihat grafik. Anda mengendalikan presentasi sepenuhnya, jadi paparan dihentikan tanpa menghentikan rapat.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: privasi dan minimalisasi data saat berbagi layar, tanpa menghambat kerja yang sah. Fakta penentu: layar yang dibagikan menampilkan tab lembar kerja berisi NIK dan alamat warga, padahal peserta rapat hanya perlu melihat grafik. Respons terbaik menghentikan berbagi layar lebih dulu lalu membagikan ulang hanya jendela grafik. Menutup tab di tengah presentasi menghilangkan data, tetapi layar masih dibagikan saat tab ditutup. Membatalkan sesi melindungi data tetapi menghentikan kerja yang sah. Melanjutkan presentasi membiarkan paparan berlangsung, dan mengirim berkas lengkap kepada mitra memperluas paparan.",
+    "tip": "Perhatikan siapa yang menonton, data apa yang terlihat, dan apa yang masih dapat Anda kendalikan.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "privasi",
+    "kataKunci": "berbagi layar, tab lembar kerja, NIK dan alamat warga, mitra luar kantor, hanya perlu grafik, banyak jendela"
+  },
+  {
+    "id": "tkp-kasus-tik-06",
+    "skenario": "berkas-daftar-warga-surel-pribadi-rekan",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Etika, Keamanan, dan Tanggung Jawab Digital",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "anggota-tim",
+    "kewenangan": "tidak-ada",
+    "penentu": "rekan dekat mengirim berkas daftar warga ke surel pribadinya agar mudah dikerjakan dari rumah, padahal kantor menyediakan penyimpanan resmi yang dapat dibuka dari rumah melalui akun kerja",
+    "tempat": "administratif",
+    "keputusan": "melindungi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Tekanan dari rekan dekat bertemu aturan yang jelas; satu tindakan yang menjaga data dan kebutuhan kerja mudah dikenali.",
+    "stem": "Anda anggota tim pengolah data kependudukan sebuah kelurahan. Rekan dekat Anda mengirim berkas daftar warga berisi nama dan alamat ke surel pribadinya agar mudah dikerjakan dari rumah, lalu memohon Anda tidak menyampaikannya kepada siapa pun. Aturan kantor melarang data warga disimpan di surel pribadi. Kantor menyediakan penyimpanan resmi yang dapat dibuka dari rumah melalui akun kerja, dan petugas keamanan informasi menerima laporan. Anda tidak memiliki wewenang atas rekan itu. Bagaimana sikap Anda?",
+    "options": [
+      {
+        "text": "Melaporkan pengiriman itu ke petugas keamanan, lalu mengarahkan rekan memakai penyimpanan resmi dan menghapus salinan sesuai petunjuk petugas.",
+        "score": 5,
+        "reason": "Laporan kepada petugas keamanan informasi membuat berkas daftar warga di surel pribadi dapat ditangani sebelum salinan dihapus, sehingga bukti tidak hilang. Rekan tetap dapat bekerja dari rumah lewat penyimpanan resmi, dan penghapusan mengikuti petunjuk petugas.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengabarkan petugas keamanan informasi tentang berkas di surel pribadi rekan, lalu menyerahkan penanganan rekan itu kepada petugas.",
+        "score": 4,
+        "reason": "Petugas keamanan informasi menerima laporan dan menangani berkas daftar warga di surel pribadi rekan. Namun rekan belum diarahkan memakai penyimpanan resmi dari rumah, sehingga kebutuhan kerjanya belum terjawab.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Melaporkan perbuatan rekan itu kepada kepala kelurahan hari ini juga, lalu menyerahkan penanganan berkas dan rekan itu kepada beliau.",
+        "score": 3,
+        "reason": "Melapor kepada kepala kelurahan membawa kejadian ke pihak berwenang pada tahap awal. Namun petugas keamanan informasi yang menerima laporan kejadian seperti itu tidak dilibatkan, dan rekan dekat itu tidak diarahkan memakai penyimpanan resmi.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Menyimpan permintaan rekan itu sebagai rahasia, lalu mengingatkannya kembali bila ia mengirim berkas lain ke surel pribadinya.",
+        "score": 2,
+        "reason": "Permintaan rekan dekat dituruti, sehingga berkas daftar warga tetap berada di surel pribadinya. Mengingatkan hanya bila ia mengirim berkas lain berarti salinan yang sudah ada dibiarkan tanpa penanganan.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Meminta rekan mengirim berkas yang sama ke surel pribadi Anda, lalu mengerjakan bagian Anda dari rumah selama akhir pekan.",
+        "score": 1,
+        "reason": "Meminta rekan mengirim berkas ke surel pribadi Anda menambah salinan data warga di luar kantor, padahal penyimpanan resmi dapat dibuka dari rumah. Kedekatan dengan rekan tidak mengubah aturan kantor yang melarang penyimpanan itu.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: perlindungan data pribadi warga dan tanggung jawab melaporkan, termasuk ketika tekanan datang dari rekan dekat. Fakta penentu: rekan dekat mengirim berkas daftar warga ke surel pribadinya, aturan kantor melarangnya, penyimpanan resmi dapat dibuka dari rumah, dan petugas keamanan informasi menerima laporan. Respons terbaik melaporkan pengiriman kepada petugas keamanan informasi lalu mengarahkan rekan memakai penyimpanan resmi dan menghapus salinan sesuai petunjuk petugas. Mengabarkan petugas lalu menyerahkan penanganan rekan kepadanya benar, tetapi kebutuhan kerja rekan belum dijawab. Melapor kepada kepala kelurahan melewati petugas keamanan, merahasiakan permintaan rekan membiarkan salinan, dan meminta berkas dikirim ke surel pribadi Anda menambah pelanggaran.",
+    "tip": "Perhatikan aturan penyimpanan data warga, kebutuhan kerja rekan, dan pihak yang menangani kejadian seperti ini.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "privasi",
+    "kataKunci": "rekan dekat, surel pribadi, nama dan alamat warga, penyimpanan resmi, akun kerja, petugas keamanan informasi"
+  },
+  {
+    "id": "tkp-kasus-tik-07",
+    "skenario": "pesan-palsu-layanan-kependudukan-kode-verifikasi",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Etika, Keamanan, dan Tanggung Jawab Digital",
+    "pola": "dugaan-ancaman",
+    "peran": "warga",
+    "kewenangan": "tidak-ada",
+    "penentu": "pesan mengaku dari layanan kependudukan meminta kode verifikasi lewat tautan, padahal pengumuman aplikasi menyatakan kode hanya dimasukkan di dalam aplikasi",
+    "tempat": "masyarakat",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Satu pesan palsu yang dapat dicek langsung di aplikasi resmi; tidak ada konflik kepentingan.",
+    "stem": "Anda warga yang memakai aplikasi layanan kependudukan di ponsel. Sebuah pesan singkat dari nomor tak dikenal mengaku dari layanan kependudukan dan menyatakan akun Anda akan ditutup hari ini, kecuali Anda memasukkan kode verifikasi melalui tautan di pesan itu. Pengumuman di aplikasi resmi menyebutkan bahwa kode verifikasi hanya dimasukkan di dalam aplikasi, yang juga menyediakan kanal pengaduan. Anda belum membuka tautan itu, dan status akun dapat Anda lihat langsung di aplikasi. Bagaimana sikap Anda terhadap pesan itu?",
+    "options": [
+      {
+        "text": "Meneruskan pesan itu ke grup warga sekitar, lalu meminta tetangga berhati-hati terhadap tautannya.",
+        "score": 2,
+        "reason": "Meneruskan pesan ke grup warga menyebarkan tautan yang meminta kode verifikasi kepada lebih banyak orang. Niat memperingatkan tetangga tidak mengurangi risiko bahwa ada yang membukanya sebelum membaca pengumuman aplikasi.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "tik:memperluas-paparan"
+        }
+      },
+      {
+        "text": "Membuka tautan itu di ponsel Anda untuk memastikan halamannya, lalu memasukkan kode bila tampak resmi.",
+        "score": 1,
+        "reason": "Membuka tautan untuk memastikan halamannya dapat mencuri kode verifikasi dan akses akun Anda. Pengumuman aplikasi sudah menyatakan bahwa kode hanya dimasukkan di dalam aplikasi, sehingga pengujian itu tidak diperlukan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tik:uji-tautan-langsung"
+        }
+      },
+      {
+        "text": "Menghapus pesan itu dari ponsel Anda, lalu memblokir nomor pengirimnya lewat pengaturan pesan di ponsel.",
+        "score": 3,
+        "reason": "Menghapus pesan dan memblokir nomor pengirim mengurangi risiko Anda membuka tautan tanpa sengaja. Namun status akun belum diperiksa di aplikasi dan pesan tidak sampai ke layanan, sehingga penipuan serupa tetap dapat menjangkau warga lain.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Memeriksa status akun langsung di aplikasi resmi, lalu melaporkan penipuan itu kepada pengelola layanan resmi.",
+        "score": 5,
+        "reason": "Status akun diperiksa langsung di aplikasi sehingga kebenaran ancaman penutupan dapat dipastikan, dan tautan tidak dibuka. Laporan melalui kanal pengaduan aplikasi memungkinkan layanan menangani pesan yang mengaku dari layanan kependudukan itu.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyimpan tangkapan layar pesan itu sebagai bukti kiriman, lalu memeriksa status akun langsung di aplikasi resmi.",
+        "score": 4,
+        "reason": "Tangkapan layar menyimpan bukti pesan yang mengaku dari layanan kependudukan, dan status akun diperiksa langsung di aplikasi. Namun layanan tidak menerima laporan tentang pesan itu, sehingga penanganan terhadap pengirimnya tidak berjalan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: pencegahan penipuan digital dan pelaporan lewat kanal resmi, tanpa menguji pesan secara langsung. Fakta penentu: pesan mengaku dari layanan kependudukan dan meminta kode verifikasi lewat tautan, padahal pengumuman aplikasi menyatakan kode hanya dimasukkan di dalam aplikasi. Respons terbaik memeriksa status akun langsung di aplikasi resmi lalu melaporkan pesan itu lewat kanal pengaduan. Menyimpan tangkapan layar menjaga bukti, tetapi layanan tidak mengetahui pesan palsu itu. Menghapus dan memblokir hanya melindungi Anda, meneruskan pesan ke grup memperluas paparan, dan membuka tautan menguji risiko dengan perangkat Anda sendiri.",
+    "tip": "Perhatikan sumber pesan, isi pengumuman resmi, dan bagian yang dapat Anda periksa sendiri.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "adopsi-keamanan",
+    "kataKunci": "nomor tak dikenal, akun ditutup hari ini, kode verifikasi, tautan di pesan, pengumuman aplikasi resmi, kanal pengaduan"
+  },
+  {
+    "id": "tkp-kasus-tik-08",
+    "skenario": "aplikasi-absensi-baru-pegawai-belum-terbiasa",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Adaptasi terhadap Perubahan Teknologi",
+    "pola": "penolakan-perubahan",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "enam dari lima belas pegawai gagal merekam kehadiran karena belum terbiasa, bukan karena menolak, dan sesi latihan dapat dijadwalkan di ruang rapat bagian",
+    "tempat": "pelatihan",
+    "keputusan": "mengembangkan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Hambatan pengguna dinyatakan jelas (belum terbiasa, bukan menolak); satu pendekatan pendampingan yang sesuai mudah dikenali.",
+    "stem": "Anda koordinator sebuah bagian di dinas yang sejak awal bulan memakai aplikasi absensi berbasis ponsel menggantikan daftar hadir kertas. Enam dari lima belas pegawai sering gagal merekam kehadiran dan terlambat mengirim bukti hadir. Mereka menyatakan bukan menolak aplikasi itu, tetapi belum terbiasa memakainya. Anda dapat menjadwalkan sesi latihan di ruang rapat bagian, dan kepala dinas sudah menyetujui pemakaian aplikasi baru itu. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Membagikan panduan bergambar kepada keenam pegawai itu, lalu menanyakan hasilnya pada rapat bulanan bagian.",
+        "score": 3,
+        "reason": "Panduan bergambar membantu pegawai mengenali langkah aplikasi. Namun pegawai belum terbiasa memakainya dan belum berlatih langsung, sehingga hasilnya baru terlihat pada rapat bulanan bagian padahal belum ada pendampingan sebelumnya.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menanyakan langkah yang sulit kepada keenam pegawai, lalu menyusun sesi latihan sesuai kendala mereka.",
+        "score": 5,
+        "reason": "Menanyakan langkah yang sulit memperlihatkan bahwa keenam pegawai belum terbiasa, bukan menolak, dan sesi latihan disusun sesuai kendala mereka. Ruang rapat bagian dapat dipakai sehingga latihan menjawab kegagalan merekam kehadiran.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta rekan yang lancar menekan tombol hadir untuk keenam pegawai itu, lalu memeriksa rekap kehadiran pada akhir bulan.",
+        "score": 1,
+        "reason": "Kehadiran pegawai direkam oleh orang lain sehingga catatan tidak lagi menunjukkan kehadiran sebenarnya. Pegawai yang belum terbiasa pun tetap tidak belajar memakai aplikasi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      },
+      {
+        "text": "Menjadwalkan satu sesi latihan umum di ruang rapat bagian, lalu mencatat pertanyaan yang muncul selama sesi.",
+        "score": 4,
+        "reason": "Sesi latihan di ruang rapat bagian memberi kesempatan berlatih bagi pegawai yang belum terbiasa. Namun sesi umum belum tentu menyentuh langkah yang membuat keenam pegawai gagal merekam kehadiran.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mengaktifkan kembali daftar hadir kertas bagi keenam pegawai itu, lalu menyalin hasilnya ke aplikasi tiap akhir pekan.",
+        "score": 2,
+        "reason": "Daftar hadir kertas menjaga kehadiran tetap tercatat selama pegawai belum terbiasa. Namun penyalinan tiap akhir pekan menambah pekerjaan ganda dan memperlambat peralihan, padahal sesi latihan dapat dijadwalkan di ruang rapat bagian.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "tik:bertahan-cara-lama"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: pengelolaan adaptasi teknologi dengan menggali hambatan pengguna, bukan memberi label menolak. Fakta penentu: enam dari lima belas pegawai gagal merekam kehadiran karena belum terbiasa, bukan karena menolak, dan sesi latihan dapat dijadwalkan di ruang rapat bagian. Respons terbaik menanyakan langkah yang sulit lalu menyusun latihan sesuai kendala itu. Satu sesi umum memberi kesempatan berlatih, tetapi belum menyentuh kendala tiap pegawai. Panduan tanpa praktik hanya menyentuh sebagian kebutuhan, kembali ke daftar kertas mempertahankan cara lama, dan merekam kehadiran atas nama orang lain memalsukan catatan.",
+    "tip": "Perhatikan penyebab kegagalan yang disampaikan pegawai dan dukungan yang dapat Anda jadwalkan.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "adopsi-keamanan",
+    "kataKunci": "aplikasi absensi, enam dari lima belas, gagal merekam kehadiran, belum terbiasa, bukan menolak, sesi latihan"
+  },
+  {
+    "id": "tkp-kasus-tik-09",
+    "skenario": "laporan-penyuluhan-asisten-ai-angka-berubah",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Etika, Keamanan, dan Tanggung Jawab Digital",
+    "pola": "dua-tanggung-jawab",
+    "peran": "pegawai-baru",
+    "kewenangan": "terbatas",
+    "penentu": "hasil asisten AI menyebut peserta 84 orang dan memuat satu demonstrasi yang tidak ada di catatan lapangan, sedangkan catatan asli masih ada dan laporan harus dikirim sore ini",
+    "tempat": "lapangan",
+    "keputusan": "mengoreksi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Satu hasil AI yang jelas berbeda dari catatan asli yang masih ada; pemeriksaan terhadap sumber mudah dikenali sebagai langkah terbaik.",
+    "stem": "Anda pegawai baru di dinas pertanian dan baru menyelesaikan kunjungan penyuluhan di tiga desa. Untuk merapikan laporan, Anda memakai asisten AI yang disetujui kantor. Hasilnya enak dibaca, tetapi menyebut peserta sebanyak 84 orang padahal catatan lapangan Anda mencatat 48 orang, dan memuat satu kegiatan demonstrasi yang tidak ada di catatan itu. Catatan lapangan asli masih ada di tas Anda, dan laporan harus dikirim kepada koordinator sore ini. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Meminta koordinator memperpanjang tenggat sampai besok, lalu menulis ulang laporan dari awal berdasarkan catatan lapangan.",
+        "score": 3,
+        "reason": "Meminta tambahan waktu menunjukkan kehati-hatian, dan penulisan ulang dari catatan lapangan menghasilkan laporan yang benar. Namun catatan asli masih ada dan pencocokan dapat dilakukan sebelum laporan dikirim sore ini, sehingga tenggat tidak perlu bergeser.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Merapikan ulang laporan dengan asisten AI lain yang lebih baru, lalu membandingkan angkanya dengan hasil pertama.",
+        "score": 2,
+        "reason": "Asisten AI lain belum dinilai kebutuhan dan keamanannya oleh kantor, dan hasilnya tetap berupa keluaran yang belum dicek. Membandingkan angkanya dengan hasil pertama tidak menjawab selisih antara laporan dan catatan lapangan, yaitu 84 orang dan 48 orang.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "tik:alat-baru-tanpa-kajian"
+        }
+      },
+      {
+        "text": "Mencocokkan angka dan kegiatan pada hasil itu dengan catatan lapangan, lalu mengirim laporan setelah selisih dikoreksi.",
+        "score": 5,
+        "reason": "Pencocokan terhadap catatan lapangan menemukan jumlah peserta 48 orang dan kegiatan demonstrasi yang tidak ada, sehingga laporan dikoreksi sebelum dikirim sore ini. Anda yang bertanggung jawab atas isi laporan, bukan asisten AI.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengoreksi angka dan kegiatan dalam laporan sesuai catatan lapangan, lalu mengirimnya sore ini dan menyimpan temuan selisih untuk diri sendiri.",
+        "score": 4,
+        "reason": "Angka dan kegiatan dikoreksi sesuai catatan lapangan sehingga laporan benar sebelum dikirim sore ini. Namun koordinator tidak mengetahui bahwa hasil asisten AI menyebut 84 orang padahal catatan lapangan mencatat 48 orang, sehingga kekeliruan asisten tidak ikut dievaluasi.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Mengirim laporan hasil asisten AI itu kepada koordinator, lalu memeriksa angkanya pada catatan lapangan setelah terkirim.",
+        "score": 1,
+        "reason": "Laporan terkirim sebelum angka 84 orang dan kegiatan demonstrasi yang tidak ada dicek terhadap catatan lapangan. Pemeriksaan setelah terkirim terlambat, sebab koordinator sudah menerima isi laporan yang keliru.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "tanpa-verifikasi"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: penggunaan AI disertai pemeriksaan hasil oleh manusia dan sumber tepercaya. Fakta penentu: hasil asisten AI menyebut peserta 84 orang dan memuat satu demonstrasi yang tidak ada di catatan lapangan, sedangkan catatan asli masih ada dan laporan harus dikirim sore ini. Respons terbaik mencocokkan angka dan kegiatan dengan catatan lapangan lalu mengirim laporan setelah dikoreksi. Mengoreksi laporan lalu mengirimnya sambil menyimpan temuan untuk diri sendiri juga benar, tetapi koordinator tidak mengetahui kekeliruan asisten AI. Meminta perpanjangan tenggat menunda pekerjaan yang dapat selesai sore ini, asisten AI lain hanya mengganti alat, dan mengirim lebih dulu membuat keluaran yang belum diperiksa sampai ke koordinator.",
+    "tip": "Perhatikan perbedaan isi dengan dokumen asli, tenggat pengiriman, dan peran Anda atas isinya.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemilihan-alat",
+    "kataKunci": "asisten AI, peserta 84 orang, catatan lapangan 48 orang, kegiatan demonstrasi, laporan sore ini"
+  },
+  {
+    "id": "tkp-kasus-tik-10",
+    "skenario": "lansia-pendaftaran-antrean-komputer-layanan-mandiri",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan",
+    "pola": "kebutuhan-individual-vs-keadilan",
+    "peran": "pelaksana",
+    "kewenangan": "penuh",
+    "penentu": "pemohon lansia tidak memiliki ponsel pintar tetapi mampu menunjuk dan mengetik pelan, komputer layanan mandiri tersedia di loket, dan antrean dilayani menurut urutan nomor",
+    "tempat": "loket",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kebutuhan pengguna jelas, alat bantu tersedia, dan aturan antrean tegas; tidak ada konflik kepentingan yang rumit.",
+    "stem": "Anda petugas di loket sebuah kantor layanan administrasi kependudukan yang kini meminta pendaftaran antrean lewat aplikasi, dan antrean dilayani menurut urutan nomor. Seorang pemohon lansia datang tanpa ponsel pintar dan menyatakan tidak paham cara memakai aplikasi, tetapi ia mampu menunjuk layar dan mengetik pelan. Di loket tersedia satu komputer layanan mandiri dengan aplikasi yang sama, dan antrean saat ini tidak panjang. Pendampingan pengguna termasuk tugas Anda. Apa tindakan Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Meminta pemohon membawa anggota keluarga yang memiliki ponsel pintar, lalu melayaninya pada kunjungan berikutnya di loket.",
+        "score": 2,
+        "reason": "Meminta pemohon membawa anggota keluarga menggeser beban ke pemohon, padahal komputer layanan mandiri tersedia di loket dan pendampingan termasuk tugas Anda. Pemohon lansia itu baru terlayani pada kunjungan berikutnya.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Mengetikkan data pemohon pada komputer layanan mandiri untuknya, lalu menyerahkan nomor antrean yang tercetak.",
+        "score": 4,
+        "reason": "Data pemohon terisi dan nomor antrean tercetak, sehingga ia terdaftar menurut urutan nomor. Namun pemohon lansia itu mampu menunjuk dan mengetik pelan, sehingga mengetikkan isiannya mengurangi kemandirian yang masih ia miliki.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "mengambil-alih"
+        }
+      },
+      {
+        "text": "Mendaftarkan pemohon memakai akun rekan agar mendapat nomor lebih awal, lalu memanggilnya mendahului pengantre lain.",
+        "score": 1,
+        "reason": "Memakai akun rekan untuk mengambil nomor lebih awal mengakali urutan nomor yang berlaku bagi pengantre lain. Kebutuhan pemohon lansia tetap dapat dijawab lewat komputer layanan mandiri, sehingga jalur pribadi itu tidak diperlukan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Menjelaskan cara memakai aplikasi lewat brosur bergambar, lalu mempersilakan pemohon mencoba di komputer layanan mandiri.",
+        "score": 3,
+        "reason": "Brosur bergambar membantu pemohon lansia mengenali langkah aplikasi, dan komputer layanan mandiri tersedia di loket. Namun ia belum paham cara memakai aplikasi sehingga ia mencoba sendirian di depan layar.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Mendampingi pemohon mengoperasikan komputer layanan mandiri, lalu memastikan ia menerima nomor giliran tercetak.",
+        "score": 5,
+        "reason": "Pemohon lansia mampu menunjuk dan mengetik pelan, sehingga pendampingan di komputer layanan mandiri cukup untuk membuatnya mendaftar sendiri. Nomor giliran tercetak membuatnya dilayani menurut urutan nomor seperti pemohon lain.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: aksesibilitas layanan digital, yaitu menyesuaikan bantuan dengan kemampuan pengguna tanpa memberi keistimewaan. Fakta penentu: pemohon lansia tidak memiliki ponsel pintar tetapi mampu menunjuk dan mengetik pelan, komputer layanan mandiri tersedia di loket, dan antrean dilayani menurut urutan nomor. Respons terbaik mendampingi pemohon memakai komputer layanan mandiri lalu memastikan ia menerima nomor giliran. Mengetikkan data untuknya menyelesaikan pendaftaran tetapi mengurangi kemandirian. Brosur tanpa pendamping hanya membantu sebagian kebutuhan, meminta membawa keluarga memindahkan beban ke pemohon, dan memakai akun rekan untuk mengambil nomor lebih awal mengakali urutan.",
+    "tip": "Perhatikan kemampuan pemohon, perangkat yang tersedia, dan aturan antrean.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemilihan-alat",
+    "kataKunci": "pemohon lansia, tanpa ponsel pintar, menunjuk dan mengetik pelan, komputer layanan mandiri, urutan nomor, pendampingan pengguna"
+  },
+  {
+    "id": "tkp-kasus-tik-11",
+    "skenario": "riwayat-cuti-tidak-muncul-uji-migrasi-kepegawaian",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Adaptasi terhadap Perubahan Teknologi",
+    "pola": "penolakan-perubahan",
+    "peran": "anggota-tim",
+    "kewenangan": "hanya-usul",
+    "penentu": "uji coba impor memperlihatkan sebagian riwayat cuti tidak muncul, Anda memiliki akses ke hasil uji coba, dan jadwal migrasi ditetapkan koordinator bersama tim teknologi",
+    "tempat": "rapat",
+    "keputusan": "koordinasi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Penolakan yang beralasan harus dibuktikan dan disampaikan kepada pemegang keputusan, bukan dinilai dari siapa yang menolak.",
+    "stem": "Kantor akan memindahkan data kepegawaian dari aplikasi lama ke aplikasi baru bulan depan. Dalam rapat tim, seorang rekan menolak karena pada uji coba impor ia melihat sebagian riwayat cuti tahun lalu tidak muncul. Dua rekan lain menilai penolakan itu hanya menghambat. Jadwal migrasi ditetapkan koordinator bersama tim teknologi, sedangkan Anda anggota tim biasa. Anda memiliki akses ke hasil uji coba itu. Bagaimana sikap Anda?",
+    "options": [
+      {
+        "text": "Mencocokkan riwayat cuti pada hasil uji coba dengan aplikasi lama, lalu menyampaikan selisihnya kepada koordinator sebagai bahan keputusan.",
+        "score": 5,
+        "reason": "Hasil uji coba dicocokkan dengan aplikasi lama sehingga sebagian riwayat cuti yang tidak muncul menjadi bukti yang dapat dinilai. Koordinator dan tim teknologi yang menetapkan jadwal migrasi menerima bahan itu, sehingga Anda memberi bahan tanpa mengambil keputusan jadwal.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengusulkan kepada koordinator agar migrasi dijalankan bertahap per bagian, lalu meminta rekan yang menolak ikut menguji tiap tahap.",
+        "score": 4,
+        "reason": "Migrasi bertahap dengan keterlibatan rekan yang menolak dapat mengurangi risiko dan memberi rekan itu peran. Namun penyebab riwayat cuti tidak muncul belum ditelusuri, sehingga tahap awal dapat mengulang kehilangan yang sama dan koordinator belum memiliki bukti.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menyampaikan penolakan rekan itu kepada kepala dinas hari ini juga, lalu meminta jadwal migrasi ditinjau ulang oleh kepala dinas.",
+        "score": 3,
+        "reason": "Kepala dinas memang dapat meninjau jadwal migrasi, tetapi koordinator dan tim teknologi yang menetapkannya belum mendapat bukti dari uji coba. Melompati keduanya menjadikan keberatan rekan seperti perselisihan sebelum riwayat cuti diperiksa.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Meminta tim tetap memakai aplikasi lama untuk catatan cuti pegawai, lalu memakai aplikasi baru untuk bagian data lainnya.",
+        "score": 2,
+        "reason": "Aplikasi lama tetap dipakai untuk catatan cuti, sehingga data cuti terpisah dan pekerjaan menjadi ganda. Penyebab riwayat cuti tidak muncul pada uji coba impor tidak diperiksa, dan jadwal migrasi tetap berjalan tanpa jawaban.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "tik:bertahan-cara-lama"
+        }
+      },
+      {
+        "text": "Menjalankan sendiri impor data kepegawaian ke aplikasi baru pada akhir pekan, lalu melaporkan hasilnya kepada tim teknologi.",
+        "score": 1,
+        "reason": "Menjalankan impor sendiri pada data kepegawaian melampaui peran Anda sebagai anggota tim, padahal jadwal migrasi ditetapkan koordinator bersama tim teknologi. Riwayat cuti yang sudah tidak muncul pada uji coba dapat hilang pada data yang sebenarnya.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: pengelolaan penolakan terhadap perubahan dengan menggali alasan yang masuk akal dan menyiapkan bukti, bukan menganggap penolak sebagai penghambat. Fakta penentu: uji coba impor memperlihatkan sebagian riwayat cuti tidak muncul, Anda memiliki akses ke hasil uji coba, dan jadwal migrasi ditetapkan koordinator bersama tim teknologi. Respons terbaik mencocokkan hasil uji coba dengan aplikasi lama lalu menyampaikan selisihnya kepada koordinator. Usulan migrasi bertahap bermanfaat tetapi belum didasari penelusuran penyebab. Melapor kepada kepala dinas melompati koordinator, mempertahankan aplikasi lama untuk catatan cuti mengulang cara lama, dan menjalankan impor sendiri melampaui peran.",
+    "tip": "Perhatikan bukti yang dimiliki penolak, akses Anda, dan siapa yang memutuskan jadwal.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "adopsi-keamanan",
+    "kataKunci": "uji coba impor, riwayat cuti tidak muncul, penolakan dinilai menghambat, akses hasil uji coba, jadwal migrasi"
+  },
+  {
+    "id": "tkp-kasus-tik-12",
+    "skenario": "penutupan-aplikasi-persuratan-lama-tiga-seksi",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Adaptasi terhadap Perubahan Teknologi",
+    "pola": "peluang-pengembangan-keterbatasan",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "kantor pusat menutup aplikasi lama pada akhir kuartal, baru satu dari tiga seksi yang lancar, dan pusat menyediakan dua sesi pelatihan untuk unit Anda",
+    "tempat": "pelatihan",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Beberapa alternatif sama-sama sah; perlu menimbang kesiapan tiap seksi, dukungan yang tersedia, dan tenggat penutupan.",
+    "stem": "Anda kepala sebuah unit pelayanan yang memiliki tiga seksi. Kantor pusat telah menetapkan bahwa aplikasi persuratan lama ditutup pada akhir kuartal dan setiap unit beralih ke aplikasi baru. Baru satu seksi yang sudah lancar memakai aplikasi baru, sedangkan dua seksi lain masih sering salah mengirim surat. Anda dapat mengatur jadwal kerja seksi, dan pusat menyediakan dua sesi pelatihan untuk unit Anda. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Meminta kantor pusat memundurkan penutupan aplikasi lama, lalu menyusun pelatihan setelah tanggal baru ditetapkan.",
+        "score": 2,
+        "reason": "Kantor pusat memang dapat menimbang penundaan penutupan aplikasi lama, tetapi unit Anda sudah memiliki dua sesi pelatihan yang dapat dipakai sekarang. Keputusan dialihkan kepada pusat, sedangkan dua seksi yang belum lancar tidak terbantu sampai tanggal baru ditetapkan.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Memerintahkan ketiga seksi beralih besok pagi, lalu menilai kedisiplinan seksi dari jumlah surat salah kirim.",
+        "score": 1,
+        "reason": "Memerintahkan ketiga seksi beralih esok hari membiarkan dua seksi yang belum lancar beralih padahal pelatihan yang tersedia belum dipakai. Menilai kedisiplinan dari surat salah kirim memindahkan kegagalan peralihan menjadi kesalahan seksi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "menyalahkan-pengguna"
+        }
+      },
+      {
+        "text": "Memakai dua sesi pelatihan untuk dua seksi yang belum lancar, lalu menugaskan pendamping dari seksi yang sudah lancar.",
+        "score": 5,
+        "reason": "Dua sesi pelatihan dari pusat dipakai untuk dua seksi yang belum lancar, dan pendamping dari seksi yang sudah lancar membantu mereka menjelang penutupan aplikasi lama pada akhir kuartal. Peralihan tetap sesuai jadwal pusat dan tidak mengganggu pengiriman surat.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengalihkan seksi yang sudah lancar lebih dahulu, lalu meminta kantor pusat menambah sesi pelatihan bagi dua seksi lain.",
+        "score": 4,
+        "reason": "Peralihan bertahap dimulai dari seksi yang lancar sehingga unit tidak berhenti, dan permintaan pelatihan tambahan memperhatikan kebutuhan dua seksi lain. Namun dua sesi pelatihan yang sudah disediakan pusat belum dipakai, sehingga dua seksi itu menunggu tambahan yang belum pasti.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Membagikan panduan pusat kepada dua seksi yang belum lancar, lalu memeriksa kemajuan mereka setiap pekan.",
+        "score": 3,
+        "reason": "Panduan pusat memberi acuan bagi dua seksi yang belum lancar, dan pemeriksaan tiap pekan menjaga perkembangan terpantau. Namun dua sesi pelatihan dari pusat belum dipakai dan belum ada pendamping, sehingga kebiasaan salah mengirim surat sulit berubah menjelang penutupan aplikasi lama pada akhir kuartal.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: pengelolaan transisi sistem dengan penerapan bertahap, pendampingan, dan pemanfaatan dukungan yang tersedia ketika kemampuan pengguna tidak merata. Fakta penentu: kantor pusat menutup aplikasi lama pada akhir kuartal, baru satu dari tiga seksi yang lancar, dan pusat menyediakan dua sesi pelatihan untuk unit Anda. Respons terbaik memakai dua sesi pelatihan untuk dua seksi yang belum lancar lalu menugaskan pendamping dari seksi yang sudah lancar. Mengalihkan seksi lancar lebih dulu lalu meminta tambahan pelatihan juga sah, tetapi dukungan yang sudah ada belum dipakai. Membagikan panduan dan memeriksa kemajuan hanya menyentuh sebagian kebutuhan. Meminta pemunduran penutupan mengalihkan keputusan kepada pusat, dan memerintahkan beralih seketika menyalahkan seksi atas kegagalan peralihan.",
+    "tip": "Perhatikan kesiapan tiap seksi, dukungan yang sudah tersedia, dan tenggat yang ditetapkan pusat.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "adopsi-keamanan",
+    "kataKunci": "aplikasi persuratan lama, akhir kuartal, satu seksi lancar, salah mengirim surat, dua sesi pelatihan, jadwal kerja seksi"
+  },
+  {
+    "id": "tkp-kasus-tik-13",
+    "skenario": "berbagi-hasil-pelatihan-pengolahan-data-rekap",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Adaptasi terhadap Perubahan Teknologi",
+    "pola": "peluang-pengembangan-keterbatasan",
+    "peran": "pelaksana",
+    "kewenangan": "hanya-usul",
+    "penentu": "hanya dua dari sembilan staf yang mengikuti pelatihan, rekap bulanan masih dikerjakan manual selama enam jam oleh tiga orang termasuk Anda, dan atasan menentukan perubahan cara kerja bagian",
+    "tempat": "pelatihan",
+    "keputusan": "mengembangkan",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Peluang belajar harus diubah menjadi manfaat yang terukur dan terbagi dalam batas peran pengusul.",
+    "stem": "Anda pelaksana di bagian perencanaan dan baru mengikuti pelatihan pengolahan data tingkat lanjut bersama satu rekan. Bagian Anda terdiri dari sembilan staf, dan anggaran tahun ini tidak cukup untuk mengirim staf lain. Rekap bulanan bagian masih dikerjakan manual selama enam jam oleh tiga orang, termasuk Anda, sedangkan teknik dari pelatihan itu dapat memangkasnya. Atasan menentukan perubahan cara kerja bagian dan belum meminta laporan tentang pelatihan itu. Apa tindakan Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Menyusun ringkasan materi pelatihan di dokumen bersama bagian, lalu mengirim tautannya kepada rekan satu bagian.",
+        "score": 4,
+        "reason": "Ringkasan materi di dokumen bersama membagikan pengetahuan kepada rekan satu bagian. Namun manfaat pelatihan belum dibuktikan pada rekap bulanan yang dikerjakan manual selama enam jam, dan usulan perubahan cara kerja tidak sampai kepada atasan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mengikuti kursus daring tambahan tentang analitik data di luar jam kerja, lalu menambahkan sertifikatnya ke berkas kepegawaian.",
+        "score": 2,
+        "reason": "Kursus tambahan menambah pengetahuan Anda, tetapi rekap bulanan tetap dikerjakan manual oleh tiga orang. Sertifikat tambahan tidak mengubah cara kerja bagian yang sembilan stafnya belum memanfaatkan pelatihan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kosmetik"
+        }
+      },
+      {
+        "text": "Mengubah format rekap bagian dengan teknik baru pada berkas bersama tim, lalu memberi tahu dua rekan pengerja rekap setelah berubah.",
+        "score": 1,
+        "reason": "Mengubah format rekap pada berkas bersama melampaui peran Anda karena atasan yang menentukan perubahan cara kerja bagian. Dua rekan pengerja rekap dapat kehilangan acuan kerja sebelum mereka mengenal teknik baru itu.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      },
+      {
+        "text": "Mencoba teknik pelatihan pada rekap bulan lalu untuk mengukur waktunya, lalu mengusulkan sesi berbagi dengan hasilnya.",
+        "score": 5,
+        "reason": "Teknik pelatihan dicoba pada rekap bulan lalu sehingga penghematan dari enam jam kerja manual dapat diukur, dan usulan sesi berbagi kepada atasan memakai hasil itu. Atasan menentukan perubahan cara kerja, sehingga bukti menjadi dasar yang kuat bagi sembilan staf.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menerapkan teknik pelatihan pada bagian rekap yang menjadi tugas Anda, lalu mencatat penghematan waktunya untuk diri sendiri.",
+        "score": 3,
+        "reason": "Teknik pelatihan dipakai pada bagian rekap Anda sendiri sehingga pekerjaan Anda lebih cepat. Namun hasilnya hanya dicatat untuk diri sendiri, sehingga staf lain di bagian itu belum memperoleh manfaat pelatihan yang diikuti sebagian kecil staf.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "tik:inisiatif-tertutup"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: pemanfaatan peluang pengembangan yang diukur manfaatnya terhadap tugas dan dibagikan kepada tim. Fakta penentu: hanya dua dari sembilan staf yang mengikuti pelatihan, rekap bulanan masih dikerjakan manual selama enam jam oleh tiga orang termasuk Anda, dan atasan menentukan perubahan cara kerja bagian. Respons terbaik mencoba teknik pada rekap bulan lalu untuk mengukur penghematan lalu mengusulkan sesi berbagi dengan hasilnya. Ringkasan materi berguna bagi tim, tetapi manfaat bagi pekerjaan belum terbukti. Menerapkan teknik untuk diri sendiri tidak menjadi kesiapan tim, kursus tambahan tidak menyentuh rekap, dan mengubah format bersama melampaui peran.",
+    "tip": "Perhatikan beban kerja yang dapat dipangkas, jumlah staf yang ikut pelatihan, dan siapa yang menentukan cara kerja.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemilihan-alat",
+    "kataKunci": "pelatihan pengolahan data, sembilan staf, anggaran tidak cukup, rekap manual enam jam, cara kerja bagian"
+  },
+  {
+    "id": "tkp-kasus-tik-14",
+    "skenario": "pencocokan-alamat-lingkungan-uji-data-contoh",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Adaptasi terhadap Perubahan Teknologi",
+    "pola": "peluang-pengembangan-keterbatasan",
+    "peran": "anggota-tim",
+    "kewenangan": "penuh",
+    "penentu": "berkas alamat asli memuat NIK warga, lingkungan uji dengan data contoh sudah disediakan, dan fitur pencocokan teks belum pernah dicoba di kantor",
+    "tempat": "administratif",
+    "keputusan": "mengembangkan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Inisiatif belajar harus dijalankan pada ruang yang aman karena data asli memuat identitas, lalu dibuktikan manfaatnya.",
+    "stem": "Anda anggota tim pendataan yang setiap bulan merapikan sekitar tiga ribu alamat penerima bantuan secara manual karena penulisannya beragam. Anda menemukan fitur pencocokan teks pada aplikasi pengolah data resmi yang belum pernah dicoba di kantor ini. Berkas alamat asli memuat NIK warga, sedangkan lingkungan uji dengan data contoh sudah disediakan bagian teknologi dan dapat Anda pakai. Hasil kerja Anda diperiksa koordinator tim. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Tetap merapikan alamat secara manual seperti bulan-bulan sebelumnya, lalu mencatat jumlah waktu yang terpakai.",
+        "score": 2,
+        "reason": "Penulisan manual menjaga alamat tetap rapi dan data asli tidak keluar dari berkas. Namun fitur pencocokan teks yang belum pernah dicoba di kantor tidak dimanfaatkan, sehingga pekerjaan manual tiga ribu alamat berulang setiap bulan.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "tik:bertahan-cara-lama"
+        }
+      },
+      {
+        "text": "Menguji fitur pencocokan teks itu pada data contoh di lingkungan uji, lalu hanya melaporkan angka totalnya kepada koordinator.",
+        "score": 4,
+        "reason": "Fitur pencocokan teks diuji pada data contoh di lingkungan uji sehingga NIK warga aman, dan koordinator menerima angka totalnya. Namun hanya angka total yang dilaporkan, sehingga kendala dan alamat yang gagal dicocokkan tidak terlihat oleh koordinator yang memeriksa hasil kerja Anda.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Mengunggah berkas alamat asli ke layanan pencocokan gratis di internet, lalu membandingkan hasilnya dengan cara manual.",
+        "score": 1,
+        "reason": "Layanan gratis di internet menerima berkas alamat asli yang memuat NIK warga, sehingga identitas warga keluar dari kendali kantor. Fitur pencocokan teks pada aplikasi resmi dan lingkungan uji sebenarnya sudah tersedia.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membuka-data"
+        }
+      },
+      {
+        "text": "Mencoba fitur itu di lingkungan uji dengan data contoh, lalu menyimpan catatan hasilnya untuk dipakai sendiri.",
+        "score": 3,
+        "reason": "Fitur pencocokan teks dicoba di lingkungan uji dengan data contoh sehingga NIK warga tidak tersentuh dan Anda belajar dengan aman. Namun hasilnya hanya tersimpan untuk diri sendiri, sehingga koordinator dan tim tidak mengetahui apakah fitur itu layak dipakai di kantor.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "tik:inisiatif-tertutup"
+        }
+      },
+      {
+        "text": "Mencoba fitur itu di lingkungan uji dengan data contoh, lalu menunjukkan hasilnya kepada koordinator.",
+        "score": 5,
+        "reason": "Lingkungan uji dengan data contoh melindungi NIK warga selama fitur pencocokan teks dicoba, dan hasilnya dapat dinilai bersama koordinator sebelum dipakai pada berkas alamat asli. Anda mengembangkan cara kerja tanpa mempertaruhkan data warga.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: pengembangan kompetensi dengan mencoba teknologi pada ruang yang aman sebelum dipakai pada data penting. Fakta penentu: berkas alamat asli memuat NIK warga, lingkungan uji dengan data contoh sudah disediakan, dan fitur pencocokan teks belum pernah dicoba di kantor. Respons terbaik mencoba fitur di lingkungan uji lalu menunjukkan hasilnya kepada koordinator. Menguji di lingkungan uji lalu hanya melaporkan angka total aman, tetapi kendala yang ditemukan tidak sampai kepada koordinator. Mencoba di lingkungan uji lalu menyimpan hasilnya sendiri tidak menjadi kesiapan tim, bekerja manual terus mengabaikan peluang, dan mengunggah berkas asli ke layanan gratis membuka data warga.",
+    "tip": "Perhatikan jenis data pada berkas asli, ruang uji yang tersedia, dan pihak yang memeriksa hasil kerja Anda.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemilihan-alat",
+    "kataKunci": "tiga ribu alamat, penulisan beragam, fitur pencocokan teks, belum pernah dicoba, NIK warga, lingkungan uji"
+  },
+  {
+    "id": "tkp-kasus-tik-15",
+    "skenario": "selisih-daftar-penerima-dinas-dan-desa",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan",
+    "pola": "informasi-belum-lengkap-bertentangan",
+    "peran": "penghubung-mitra",
+    "kewenangan": "hanya-usul",
+    "penentu": "daftar dinas memuat 412 nama dan daftar desa 374 nama sehingga selisih 38 nama, dokumen pendukung kedua pihak dapat Anda lihat, dan penetapan daftar akhir ada pada kepala bidang",
+    "tempat": "kemitraan",
+    "keputusan": "koordinasi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua daftar yang bertentangan dengan bukti yang dapat diperiksa; keputusan akhir ada pada pihak lain, sehingga langkah pembuktian dan penyerahan perlu dibedakan.",
+    "stem": "Anda penghubung dinas sosial untuk sebuah desa mitra penyaluran bantuan. Daftar penerima di dinas memuat 412 nama, sedangkan daftar yang dipegang desa memuat 374 nama, sehingga ada selisih 38 nama. Penyaluran dilakukan dua pekan lagi. Anda dapat melihat daftar kedua pihak beserta dokumen pendukung masing-masing, tetapi penetapan daftar akhir berada pada kepala bidang di dinas. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Meminta pihak desa mengirim dokumen pendukung 38 nama itu ke dinas hari ini, lalu meneruskan daftar selisihnya kepada kepala bidang.",
+        "score": 4,
+        "reason": "Dokumen pendukung dari desa memang perlu dilihat dinas, dan daftar selisih sampai kepada kepala bidang. Namun Anda sudah dapat melihat dokumen kedua pihak, sehingga meminta desa mengirimnya menambah perantara dan memperlambat penyaluran dua pekan lagi.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      },
+      {
+        "text": "Mencocokkan 38 nama itu dengan dokumen pembuktian kedua pihak, lalu menyerahkan selisih beserta bukti kepada kepala bidang.",
+        "score": 5,
+        "reason": "Pencocokan 38 nama dengan dokumen pendukung kedua pihak menunjukkan nama mana yang berhak, dan daftar selisih beserta bukti sampai kepada kepala bidang yang menetapkan daftar akhir. Anda menyerahkan bukti dan tidak menetapkan daftar.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menanyakan kepada kepala bidang daftar mana yang dipakai penyaluran, lalu menunjukkan pencocokan dokumen setelah ada jawaban.",
+        "score": 3,
+        "reason": "Bertanya kepada kepala bidang menghormati penetapan daftar akhir. Namun dokumen pendukung kedua pihak sudah dapat Anda lihat, sehingga pencocokan 38 nama dapat dimulai sekarang dan hasilnya menjadi bahan jawaban.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Memberi tahu desa bahwa 38 nama selisih akan menerima bantuan, lalu menyiapkan penyaluran sesuai daftar dinas.",
+        "score": 2,
+        "reason": "Memberi tahu desa bahwa 38 nama akan menerima bantuan menyampaikan hal yang belum ditetapkan kepala bidang. Desa dapat menyiapkan penyaluran menurut daftar dinas yang masih berselisih dengan daftar desa.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "janji-tanpa-dasar"
+        }
+      },
+      {
+        "text": "Menghapus 38 nama selisih dari daftar dinas agar sama dengan daftar desa, lalu menetapkannya sebagai daftar akhir.",
+        "score": 1,
+        "reason": "Menghapus 38 nama dan menetapkan daftar akhir melampaui peran Anda, karena penetapan daftar akhir berada pada kepala bidang. Nama yang dihapus sebelum dokumen pendukung dicocokkan dapat kehilangan hak bantuan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: penyelesaian data yang bertentangan antarmitra dengan menelusuri bukti dan menyerahkan keputusan kepada pemilik kewenangan. Fakta penentu: daftar dinas memuat 412 nama dan daftar desa 374 nama sehingga selisih 38 nama, dokumen pendukung kedua pihak dapat Anda lihat, dan penetapan daftar akhir ada pada kepala bidang. Respons terbaik mencocokkan 38 nama dengan dokumen kedua pihak lalu menyerahkan daftar selisih beserta bukti kepada kepala bidang. Meminta desa mengirim dokumen menambah perantara, bertanya dulu menunda pencocokan yang dapat dimulai, memberi tahu desa lebih dulu menjanjikan hal yang belum ditetapkan, dan menetapkan daftar sendiri melampaui peran.",
+    "tip": "Perhatikan asal tiap daftar, dokumen yang dapat Anda lihat, dan pemegang keputusan akhir.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mutu-data",
+    "kataKunci": "selisih 38 nama, daftar dinas dan desa, dokumen pendukung, penyaluran dua pekan lagi, penetapan daftar akhir, kepala bidang"
+  },
+  {
+    "id": "tkp-kasus-tik-16",
+    "skenario": "hasil-aplikasi-berbeda-dari-sampel-manual",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan",
+    "pola": "informasi-belum-lengkap-bertentangan",
+    "peran": "pegawai-baru",
+    "kewenangan": "terbatas",
+    "penentu": "tiga dari lima puluh baris sampel manual berbeda dari hasil aplikasi, Anda dapat melihat rumus dan data sumber, dan hanya pengelola aplikasi yang dapat mengubah rumus",
+    "tempat": "administratif",
+    "keputusan": "mengoreksi",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua kemungkinan sumber kekeliruan sama-sama masuk akal; perlu menilai langkah penelusuran dalam batas peran pengguna aplikasi.",
+    "stem": "Anda pegawai baru yang menyiapkan laporan jumlah penerima bantuan per kecamatan. Aplikasi pengolah data menampilkan angka yang berbeda dari hitungan manual Anda pada sampel lima puluh baris, yaitu selisih pada tiga baris. Anda dapat melihat rumus dan data sumber aplikasi itu, tetapi hanya pengelola aplikasi yang dapat mengubah rumus. Laporan final akan dikirim kepada pimpinan lusa. Belum diketahui apakah kekeliruan ada pada rumus aplikasi atau pada hitungan manual Anda. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menelusuri tiga baris yang berselisih sampai ke data sumber dan rumus, lalu melaporkan temuannya kepada pengelola aplikasi.",
+        "score": 5,
+        "reason": "Penelusuran tiga baris yang berselisih sampai ke data sumber dan rumus menunjukkan apakah kekeliruan ada pada aplikasi atau hitungan manual. Hanya pengelola aplikasi yang dapat mengubah rumus, sehingga temuan Anda dilaporkan kepadanya.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menghitung ulang sampel dari data sumber dengan baris baru, lalu memberi tahu pengelola aplikasi bahwa sampel Anda sudah dihitung ulang.",
+        "score": 4,
+        "reason": "Menghitung ulang dengan baris baru menguji kemungkinan salah hitung di pihak Anda dan pengelola aplikasi diberi tahu hasilnya. Namun baris yang berselisih dan rumus aplikasi tidak ditelusuri, sehingga sebab selisih tetap belum diketahui.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Meminta pengelola aplikasi memeriksa rumusnya hari ini juga, lalu menyusun laporan setelah ia memberi jawaban tertulis.",
+        "score": 3,
+        "reason": "Meminta pengelola aplikasi memeriksa rumus menunjukkan kehati-hatian dan menghormati kewenangannya mengubah rumus. Namun rumus dan data sumber dapat Anda lihat sendiri, sehingga penelusuran awal dapat dimulai sekarang sebelum laporan dikirim lusa.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Mengirim laporan memakai angka aplikasi dengan catatan adanya selisih pada sampel, lalu membahasnya setelah laporan diterima.",
+        "score": 2,
+        "reason": "Laporan dikirim dengan angka aplikasi sementara selisih pada sampel belum dijelaskan. Membahasnya setelah laporan diterima pimpinan membiarkan angka yang mungkin keliru dipakai, padahal rumus dan data sumber dapat Anda lihat.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Mengubah angka tiga baris pada laporan agar sesuai hitungan manual, lalu mengirim laporan dan tidak menyebut perubahannya.",
+        "score": 1,
+        "reason": "Mengubah angka tiga baris agar sesuai hitungan manual membuat laporan tidak lagi sesuai hasil aplikasi, padahal belum ada bukti bahwa rumus keliru. Perubahan yang tidak disebutkan menutup jejak selisih dari pimpinan dan pengelola aplikasi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: validasi hasil aplikasi terhadap sampel dengan menelusuri sumber dan rumus sebelum angka dipakai. Fakta penentu: tiga dari lima puluh baris sampel manual berbeda dari hasil aplikasi, Anda dapat melihat rumus dan data sumber, dan hanya pengelola aplikasi yang dapat mengubah rumus. Respons terbaik menelusuri baris yang berselisih sampai ke data sumber dan rumus lalu melaporkan temuannya kepada pengelola aplikasi. Menghitung ulang dengan baris baru menguji hitungan Anda tetapi tidak menyentuh rumus. Meminta pengelola memeriksa lebih dulu menunda penelusuran yang dapat dimulai, mengirim laporan dengan catatan membiarkan angka yang mungkin keliru, dan mengubah angka agar cocok memanipulasi laporan.",
+    "tip": "Perhatikan bagian yang dapat Anda periksa sendiri, bagian yang hanya dapat diubah pihak lain, dan tenggat laporan.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mutu-data",
+    "kataKunci": "sampel lima puluh baris, selisih tiga baris, rumus aplikasi, data sumber, pengelola aplikasi, laporan final lusa"
+  },
+  {
+    "id": "tkp-kasus-tik-17",
+    "skenario": "rumus-melewatkan-baris-laporan-sudah-dipakai-mitra",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "rumus penjumlahan melewatkan satu baris sehingga total wilayah timur kurang 140, mitra memakainya untuk alokasi yang diputuskan Jumat, dan koreksi laporan menjadi kewenangan Anda",
+    "tempat": "kemitraan",
+    "keputusan": "memulihkan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Kesalahan sudah berdampak pada mitra dengan batas waktu keputusan; perlu menilai langkah yang langsung memulihkan data dari kewenangan sendiri.",
+    "stem": "Anda koordinator penyusun laporan penerima bantuan per wilayah dan telah mengirimkannya kepada dinas mitra hari Senin. Hari ini, Rabu, Anda menemukan bahwa rumus penjumlahan melewatkan satu baris sehingga total wilayah timur kurang 140 penerima. Mitra memakai total itu untuk menetapkan alokasi bantuan yang akan diputuskan hari Jumat. Menerbitkan koreksi laporan menjadi kewenangan Anda, sedangkan alokasi ditetapkan mitra. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Memeriksa rumus pada laporan bulan-bulan sebelumnya, lalu mengirim koreksi setelah pemeriksaan itu selesai.",
+        "score": 3,
+        "reason": "Memeriksa rumus pada laporan sebelumnya dapat menemukan kesalahan serupa, dan koreksi tetap dikirim. Namun total wilayah timur yang kurang 140 sudah diketahui dan mitra memutuskan alokasi hari Jumat, sehingga pengiriman koreksi tidak perlu menunggu pemeriksaan yang lebih luas.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Mengubah angka total wilayah timur langsung pada berkas milik mitra, lalu memberi tahu mitra setelah berubah.",
+        "score": 1,
+        "reason": "Mengubah total pada berkas milik mitra memasukkan angka ke dokumen yang bukan milik Anda, padahal rumus yang melewatkan satu baris belum diperbaiki. Pemberitahuan setelah berubah tidak menjelaskan sumber koreksi kepada mitra yang memakai total itu untuk alokasi Jumat.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      },
+      {
+        "text": "Menyiapkan koreksi untuk laporan bulan depan, lalu menyampaikannya bila mitra menanyakan selisih total.",
+        "score": 2,
+        "reason": "Koreksi untuk laporan bulan depan terlambat bagi alokasi yang diputuskan mitra hari Jumat. Total wilayah timur yang kurang 140 tetap dipakai mitra, dan penyampaian koreksi hanya bila ditanya membiarkan kekeliruan yang sudah Anda ketahui.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Memperbaiki rumus dari data sumber, lalu langsung mengirim versi koreksi kepada mitra beserta angka yang berubah.",
+        "score": 5,
+        "reason": "Rumus diperbaiki dari data sumber sehingga total wilayah timur benar, dan versi koreksi beserta angka yang berubah dikirim langsung kepada mitra sebelum alokasi diputuskan Jumat. Koreksi laporan menjadi kewenangan Anda, jadi Anda dapat melakukannya sendiri hari ini.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Membetulkan penjumlahan pada laporan berdasarkan data sumber, lalu mengabari mitra bahwa laporan sudah diperbaiki.",
+        "score": 4,
+        "reason": "Penjumlahan diperbaiki berdasarkan data sumber dan mitra dikabari bahwa laporan sudah diperbaiki. Namun angka yang berubah tidak disebutkan, sehingga mitra harus membandingkan sendiri total wilayah timur sebelum alokasi diputuskan Jumat.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: pemulihan kepercayaan data setelah kesalahan yang sudah berdampak pada mitra, dengan memperbaiki dari sumber dan memberi tahu penerima versi yang berlaku. Fakta penentu: rumus penjumlahan melewatkan satu baris sehingga total wilayah timur kurang 140, mitra memakainya untuk alokasi yang diputuskan Jumat, dan koreksi laporan menjadi kewenangan Anda. Respons terbaik memperbaiki rumus dari data sumber lalu mengirim versi koreksi kepada mitra beserta angka yang berubah. Mengabari mitra bahwa laporan sudah diperbaiki tanpa menyebut angka yang berubah sah, tetapi mitra harus mencari selisihnya sendiri. Memeriksa laporan lama lebih dulu menunda koreksi, menyiapkan koreksi bulan depan membiarkan kekeliruan, dan mengubah angka pada berkas milik mitra memanipulasi dokumen yang bukan milik Anda.",
+    "tip": "Perhatikan siapa yang sudah memakai angka itu, kapan keputusan mereka diambil, dan bagian mana yang menjadi tanggung jawab Anda.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mutu-data",
+    "kataKunci": "rumus penjumlahan, satu baris terlewat, wilayah timur kurang 140, alokasi hari Jumat, koreksi laporan"
+  },
+  {
+    "id": "tkp-kasus-tik-18",
+    "skenario": "rekap-kunjungan-selisih-zona-waktu-impor",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan",
+    "pola": "masalah-berulang",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "selisih hanya terjadi pada transaksi setelah pukul 23.00 karena kedua sistem memakai zona waktu berbeda, dan pengaturan impor dapat Anda ubah hari ini",
+    "tempat": "layanan-digital",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Masalah berulang dengan penyebab yang tampak dari pola waktu; perbaikan harus menyentuh penyebab, bukan menambah pemeriksaan.",
+    "stem": "Anda pimpinan unit di sebuah puskesmas. Rekap otomatis jumlah kunjungan dari sistem pendaftaran dan sistem farmasi berselisih sekitar dua persen pada akhir setiap bulan, dan pemeriksaan manual yang ditambahkan selama tiga bulan tidak mengurangi selisih itu. Selisih bulan lalu hanya terjadi pada transaksi setelah pukul 23.00, ketika kedua sistem memakai zona waktu berbeda. Pengaturan impor data berada dalam kewenangan Anda dan dapat diubah hari ini, sedangkan tim teknologi dinas dapat membantu memeriksa sistem. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Meminta tim teknologi memeriksa kedua sistem pekan ini, lalu menetapkan perbaikan setelah laporannya diterima.",
+        "score": 3,
+        "reason": "Tim teknologi dapat memeriksa kedua sistem dan perbaikan tetap ditetapkan sesudahnya. Namun selisih hanya terjadi pada transaksi setelah pukul 23.00 dan pengaturan impor dapat Anda ubah hari ini, sehingga penyebab yang sudah tampak tidak perlu menunggu laporan.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menambah petugas yang mencocokkan transaksi setelah pukul 23.00 tiap malam, lalu menutup rekap setelah pencocokan selesai.",
+        "score": 2,
+        "reason": "Menambah petugas pencocokan mengulang pemeriksaan manual yang sudah berjalan tiga bulan dan tidak mengurangi selisih. Penyebab berupa zona waktu yang berbeda pada transaksi setelah pukul 23.00 tidak tersentuh.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kosmetik"
+        }
+      },
+      {
+        "text": "Menyeragamkan zona waktu pada pengaturan impor kedua sistem, lalu menguji hasilnya pada data bulan lalu.",
+        "score": 5,
+        "reason": "Zona waktu diseragamkan pada pengaturan impor, yang dapat Anda ubah hari ini, sehingga transaksi setelah pukul 23.00 tercatat pada tanggal yang sama di kedua sistem. Pengujian pada data bulan lalu dengan zona waktu seragam memperlihatkan apakah selisihnya hilang, sehingga perbaikan terbukti sebelum bulan berikutnya.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menggeser tanggal transaksi setelah pukul 23.00 pada sistem farmasi, lalu menyamakan angkanya dengan sistem pendaftaran.",
+        "score": 1,
+        "reason": "Menggeser tanggal transaksi pada sistem farmasi membuat angka rekap sama tanpa memperbaiki zona waktu yang berbeda. Perubahan data seperti itu mengubah catatan transaksi setelah pukul 23.00 sehingga kunjungan tidak lagi mencerminkan kejadian sebenarnya.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      },
+      {
+        "text": "Menyamakan zona waktu kedua sistem saat data diimpor, lalu memberi tahu petugas rekap tentang aturan baru itu.",
+        "score": 4,
+        "reason": "Zona waktu kedua sistem disamakan saat data diimpor dan petugas rekap diberi tahu tentang aturan baru itu. Namun hasilnya belum diuji pada transaksi setelah pukul 23.00 dari bulan lalu, sehingga belum terbukti bahwa selisih berhenti.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: evaluasi masalah berulang dengan menelusuri penyebab dari data yang terlacak, lalu memperbaiki mekanisme kerja sesuai penyebab itu. Fakta penentu: selisih hanya terjadi pada transaksi setelah pukul 23.00 karena kedua sistem memakai zona waktu berbeda, dan pengaturan impor dapat Anda ubah hari ini. Respons terbaik menyeragamkan zona waktu pada pengaturan impor lalu menguji hasilnya pada data bulan lalu. Menyamakan zona waktu lalu memberi tahu petugas rekap juga sah, tetapi hasilnya belum diuji. Meminta pemeriksaan lebih dulu menunda perbaikan, menambah petugas mengulang cara yang gagal, dan menggeser tanggal transaksi memanipulasi catatan.",
+    "tip": "Perhatikan pola waktu munculnya masalah, bagian yang dapat Anda ubah sendiri, dan hasil perbaikan sebelumnya.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mutu-data",
+    "kataKunci": "selisih dua persen, pemeriksaan manual tiga bulan, transaksi setelah pukul 23.00, zona waktu berbeda, pengaturan impor"
+  },
+  {
+    "id": "tkp-kasus-tik-19",
+    "skenario": "mitra-minta-ekspor-nik-gaji-pegawai-lewat-pesan",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Etika, Keamanan, dan Tanggung Jawab Digital",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "penghubung-mitra",
+    "kewenangan": "hanya-usul",
+    "penentu": "mitra meminta ekspor NIK dan gaji pegawai lewat pesan instan untuk uji coba pekan depan, persetujuan pemberian data ada pada bagian kepegawaian, dan unit teknologi Anda dapat membuat data contoh fiktif dalam satu jam",
+    "tempat": "kemitraan",
+    "keputusan": "menolak",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Permintaan mitra yang sah (uji coba) bertemu data yang belum disetujui pemiliknya; perlu menolak data asli sambil menyediakan alternatif.",
+    "stem": "Anda penghubung unit teknologi dengan perusahaan pengembang aplikasi kepegawaian yang bermitra dengan kantor Anda. Seorang pengembang mitra menghubungi lewat pesan instan dan meminta ekspor data pegawai berisi NIK dan gaji untuk uji coba fitur baru pekan depan, dengan alasan data contoh tidak mirip aslinya. Persetujuan pemberian data pegawai berada pada bagian kepegawaian. Data contoh fiktif dengan struktur yang sama dapat dibuat unit teknologi Anda dalam satu jam. Bagaimana sikap Anda?",
+    "options": [
+      {
+        "text": "Menjanjikan kepada mitra bahwa data asli diberikan sebelum pekan depan, lalu mengajukan persetujuan ke bagian kepegawaian.",
+        "score": 2,
+        "reason": "Mengajukan permintaan persetujuan ke bagian kepegawaian benar, tetapi janji bahwa data asli diberikan sebelum pekan depan menyampaikan hal yang belum dapat dipastikan. Mitra dapat menjadwalkan uji coba dari janji itu, padahal persetujuan pemberian data belum ada.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "janji-tanpa-dasar"
+        }
+      },
+      {
+        "text": "Mengirim ekspor data pegawai selain kolom gaji lewat pesan instan, lalu memberi tahu bagian kepegawaian setelah terkirim.",
+        "score": 1,
+        "reason": "Mengirim ekspor data pegawai lewat pesan instan membuka NIK pegawai kepada mitra sebelum bagian kepegawaian memberi persetujuan. Pemberitahuan setelah terkirim tidak menarik kembali data yang sudah keluar, padahal data contoh fiktif dapat dibuat dalam satu jam.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membuka-data"
+        }
+      },
+      {
+        "text": "Menolak permintaan itu dan meminta mitra mengirim surat resmi, lalu menjadwalkan ulang uji coba setelah surat diterima kantor.",
+        "score": 3,
+        "reason": "Menolak permintaan dan meminta surat resmi menjaga data pegawai tetap aman. Namun data contoh fiktif dapat dibuat dalam satu jam, sehingga uji coba pekan depan tidak perlu dijadwalkan ulang menunggu surat.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "kaku"
+        }
+      },
+      {
+        "text": "Meneruskan permintaan mitra kepada bagian kepegawaian untuk diputuskan, lalu menyampaikan jawabannya kepada mitra bila sudah ada.",
+        "score": 4,
+        "reason": "Meneruskan permintaan kepada bagian kepegawaian menghormati pihak yang memberi persetujuan pemberian data, dan mitra mendapat jawaban. Namun uji coba pekan depan belum didukung, padahal data contoh fiktif dapat dibuat dalam satu jam.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menyampaikan bahwa data asli baru diberikan setelah pemiliknya menyetujui, lalu meminta unit teknologi membuat data contoh fiktif berstruktur sama.",
+        "score": 5,
+        "reason": "Persetujuan pemberian data pegawai ada pada bagian kepegawaian, sehingga data asli menunggu keputusan itu. Data contoh fiktif yang strukturnya sama dapat dibuat unit teknologi Anda dalam satu jam, sehingga uji coba pekan depan tetap berjalan tanpa membuka NIK dan gaji pegawai.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: privasi tanpa menghambat kerja yang sah, yaitu menolak permintaan data yang belum disetujui pemiliknya sambil menyediakan alternatif. Fakta penentu: mitra meminta ekspor NIK dan gaji pegawai lewat pesan instan untuk uji coba pekan depan, persetujuan pemberian data ada pada bagian kepegawaian, dan unit teknologi Anda dapat membuat data contoh fiktif dalam satu jam. Respons terbaik menyampaikan bahwa data asli menunggu persetujuan lalu meminta unit teknologi membuat data contoh fiktif. Meneruskan permintaan kepada bagian kepegawaian benar tetapi uji coba belum didukung. Menolak dan meminta surat resmi tidak mencari jalan keluar yang tersedia, menjanjikan data asli menyampaikan hal yang belum dapat dipastikan, dan mengirim ekspor lewat pesan instan membuka data pegawai.",
+    "tip": "Perhatikan data apa yang benar-benar diperlukan mitra, siapa pemilik persetujuan, dan siapa yang dapat menyiapkan alternatif.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "privasi",
+    "kataKunci": "pesan instan, NIK dan gaji, uji coba fitur baru, persetujuan bagian kepegawaian, data contoh fiktif, satu jam"
+  },
+  {
+    "id": "tkp-kasus-tik-20",
+    "skenario": "tautan-folder-bersama-terbuka-tim-lapangan",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Etika, Keamanan, dan Tanggung Jawab Digital",
+    "pola": "ketegangan-kesalahpahaman",
+    "peran": "anggota-tim",
+    "kewenangan": "hanya-usul",
+    "penentu": "tautan terbuka memungkinkan siapa pun melihat alamat calon penerima, tim lapangan enam orang butuh data untuk survei hari Kamis, sistem penyimpanan dapat memberi akses atas nama lewat surel kerja, dan hanya bagian data yang dapat mengubah pengaturan folder",
+    "tempat": "layanan-digital",
+    "keputusan": "minta-bantuan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Kebutuhan kerja tim yang sah bertemu paparan data; perlu meminta perubahan kepada pemilik pengaturan tanpa menghentikan survei.",
+    "stem": "Anda anggota tim lapangan yang akan mensurvei calon penerima bantuan hari Kamis. Daftar calon penerima beserta alamatnya disimpan di folder bersama milik bagian data dan dibagikan melalui tautan yang dapat dibuka siapa pun yang memilikinya. Enam anggota tim lapangan memakai tautan itu karena belum terdaftar di sistem penyimpanan, yang dapat memberi akses atas nama lewat surel kerja. Aturan kantor melarang data calon penerima disimpan di akun pribadi. Hanya bagian data yang dapat mengubah pengaturan folder, dan bagian itu pernah mengganti tautan tanpa pemberitahuan sehingga survei terhenti. Bagaimana sikap Anda?",
+    "options": [
+      {
+        "text": "Melaporkan tautan terbuka itu kepada kepala bagian data, lalu meminta kepala bagian mengganti pengaturan.",
+        "score": 3,
+        "reason": "Kepala bagian data memang dapat memerintahkan pergantian pengaturan folder, dan tautan terbuka dilaporkan. Namun Anda belum menyampaikan kebutuhan tim lapangan kepada bagian data, sehingga pengaturan dapat berubah tanpa pemberitahuan lagi dan survei hari Kamis terganggu.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Meminta bagian data mengganti tautan terbuka dengan akses atas nama, lalu mengirim daftar nama dan surel rekan satu tim.",
+        "score": 5,
+        "reason": "Akses atas nama bagi anggota tim lapangan menutup tautan terbuka yang memungkinkan siapa pun melihat alamat calon penerima, dan tiap anggota tetap dapat membuka data untuk survei hari Kamis. Bagian data yang dapat mengubah pengaturan folder menerima daftar nama dan surel yang diperlukan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyalin daftar calon penerima ke akun penyimpanan pribadi Anda, lalu membagikan salinannya kepada tim lapangan.",
+        "score": 1,
+        "reason": "Menyimpan daftar di akun pribadi melanggar aturan kantor dan memindahkan alamat calon penerima ke tempat yang tidak dikendalikan kantor. Tim lapangan memang mendapat data untuk survei hari Kamis, tetapi tautan terbuka dan pengaturan folder tidak berubah.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Tetap memakai tautan itu untuk survei hari Kamis, lalu mengingatkan bagian data mengganti tautan setelah survei.",
+        "score": 2,
+        "reason": "Survei hari Kamis tetap berjalan, tetapi tautan terbuka tetap memungkinkan siapa pun melihat alamat calon penerima sampai survei selesai. Mengingatkan bagian data setelah survei membiarkan paparan berlangsung, padahal bagian data yang dapat mengubah pengaturan folder dapat dihubungi sekarang.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Meminta bagian data membuat tautan berbatas waktu sampai survei selesai, lalu membagikannya kepada enam anggota tim lapangan.",
+        "score": 4,
+        "reason": "Tautan berbatas waktu membuat alamat calon penerima tidak terbuka selamanya dan tim lapangan tetap dapat bekerja sampai survei hari Kamis selesai. Namun siapa pun yang memperoleh tautan selama waktu itu tetap dapat melihat alamat calon penerima, sehingga paparan hanya dipersempit dan tidak ditutup.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "kurang-perlindungan"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: privasi tanpa menghambat kerja yang sah, yaitu mengganti akses terbuka dengan akses yang dikenali bagi pihak yang berhak. Fakta penentu: tautan terbuka memungkinkan siapa pun melihat alamat calon penerima, tim lapangan beranggota enam orang butuh data untuk survei hari Kamis, sistem penyimpanan dapat memberi akses atas nama lewat surel kerja, dan hanya bagian data yang dapat mengubah pengaturan folder. Respons terbaik meminta bagian data mengganti tautan dengan akses atas nama bagi anggota tim lapangan lalu mengirim daftar nama dan surelnya. Tautan berbatas waktu mempersempit paparan tetapi tidak menutupnya bagi siapa pun yang memiliki tautan. Melapor kepada kepala bagian data melompati permintaan langsung, tetap memakai tautan membiarkan paparan, dan menyalin ke akun pribadi melanggar aturan kantor.",
+    "tip": "Perhatikan siapa yang dapat melihat data sekarang, kebutuhan kerja tim, dan siapa pemegang pengaturan.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "privasi",
+    "kataKunci": "alamat calon penerima, tautan terbuka, belum terdaftar, akses atas nama, surel kerja, survei Kamis"
+  },
+  {
+    "id": "tkp-kasus-tik-21",
+    "skenario": "pengumpulan-foto-kartu-keluarga-grup-pesan-rt",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Etika, Keamanan, dan Tanggung Jawab Digital",
+    "pola": "hak-minoritas-keputusan-mayoritas",
+    "peran": "warga",
+    "kewenangan": "tidak-ada",
+    "penentu": "foto kartu keluarga akan dikumpulkan di grup berisi enam puluh warga, seorang tetangga lansia tidak punya ponsel pintar, dan pengurus RT dapat menerima berkas secara langsung maupun lewat surel",
+    "tempat": "masyarakat",
+    "keputusan": "melindungi",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Keputusan mayoritas yang praktis merugikan dua warga dengan alasan berbeda; perlu menimbang beberapa respons yang sama-sama menghormati keputusan rapat.",
+    "stem": "Dalam rapat warga satu RT, mayoritas peserta memutuskan mengumpulkan foto kartu keluarga untuk pendataan bantuan melalui grup pesan berisi enam puluh warga karena dianggap paling praktis. Seorang tetangga lansia tidak memiliki ponsel pintar, dan seorang warga lain keberatan karena foto kartu keluarga akan terlihat oleh anggota grup. Ketua RT menyatakan bahwa pengurus dapat menerima berkas secara langsung maupun lewat surel. Anda warga biasa dalam rapat itu dan tidak memegang jabatan. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menyarankan tetangga lansia memakai ponsel anaknya untuk mengirim foto kartunya ke grup, lalu mencatat warga yang sudah mengirim.",
+        "score": 3,
+        "reason": "Anak tetangga lansia dapat membantu mengirim foto kartu keluarga sehingga tetangga yang tidak punya ponsel pintar tetap ikut. Namun foto itu tetap terlihat oleh enam puluh anggota grup, sehingga keberatan warga lain tentang kartu keluarga di grup tidak terjawab.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Memotret kartu keluarga tetangga lansia dengan ponsel Anda, lalu mengirim fotonya ke grup atas nama tetangga itu.",
+        "score": 1,
+        "reason": "Memotret kartu keluarga tetangga lansia lalu mengirimnya ke grup membuka data keluarga itu kepada enam puluh warga tanpa izinnya. Cara itu memang membantu pendataan, tetapi mengabaikan keberatan tentang foto kartu keluarga yang terlihat oleh anggota grup.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membuka-data"
+        }
+      },
+      {
+        "text": "Mengusulkan agar pengurus RT menerima berkas melalui tatap muka, lalu membantu lansia itu menyerahkan kartu miliknya.",
+        "score": 5,
+        "reason": "Pengurus RT dapat menerima berkas secara langsung maupun lewat surel, sehingga kartu keluarga tidak perlu masuk grup berisi enam puluh warga. Tetangga lansia yang tidak punya ponsel pintar dibantu menyerahkan kartunya, dan keberatan warga lain terjawab tanpa menolak keputusan rapat.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengusulkan agar kartu keluarga setiap warga diserahkan langsung kepada pengurus RT, lalu meminta anak tetangga lansia mengantarkan kartunya.",
+        "score": 4,
+        "reason": "Kartu keluarga setiap warga diserahkan langsung kepada pengurus RT sehingga tidak masuk grup berisi enam puluh warga, dan keberatan warga lain terjawab. Namun bantuan bagi tetangga lansia bergantung pada anaknya, padahal Anda dapat membantunya menyerahkan kartu itu langsung.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      },
+      {
+        "text": "Menyampaikan keberatan kedua warga itu kepada kepala desa, lalu meminta keputusan rapat tentang kartu dibatalkan.",
+        "score": 2,
+        "reason": "Kepala desa dapat dimintai pertimbangan, tetapi ketua RT sudah menyatakan bahwa pengurus dapat menerima berkas secara langsung maupun lewat surel. Menyerahkan keberatan kepada kepala desa dan meminta keputusan rapat dibatalkan memindahkan beban dari Anda, padahal jalur langsung dapat diusulkan sendiri.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: perlindungan hak minoritas dan data pribadi dalam keputusan mayoritas, dengan mengembalikan keputusan pada kebutuhan yang sah. Fakta penentu: foto kartu keluarga akan dikumpulkan di grup berisi enam puluh warga, seorang tetangga lansia tidak punya ponsel pintar, dan pengurus RT dapat menerima berkas secara langsung maupun lewat surel. Respons terbaik mengusulkan penerimaan berkas langsung lalu membantu tetangga lansia menyerahkan kartunya. Mengusulkan penerimaan langsung bagi setiap warga lalu meminta anak tetangga mengantar kartunya aman, tetapi bantuan bagi lansia bergantung pada orang lain. Membantu lansia lewat anaknya ke grup memenuhi sebagian kebutuhan, tetapi kartu keluarga tetap terlihat oleh anggota grup. Melapor kepada kepala desa memindahkan beban, dan memotret kartu tetangga membuka data keluarga.",
+    "tip": "Perhatikan data yang dikumpulkan, siapa yang terlihat datanya, dan jalur lain yang disebut ketua RT.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "privasi",
+    "kataKunci": "foto kartu keluarga, grup enam puluh warga, keputusan mayoritas, tetangga lansia tanpa ponsel pintar, terlihat anggota grup, pengurus RT"
+  },
+  {
+    "id": "tkp-kasus-tik-22",
+    "skenario": "atasan-minta-ringkas-naskah-internal-ai-publik",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Etika, Keamanan, dan Tanggung Jawab Digital",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "pelaksana",
+    "kewenangan": "tidak-ada",
+    "penentu": "naskah rancangan belum diumumkan, layanan AI publik menyimpan masukan penggunanya, dan kantor menyediakan asisten AI internal yang disetujui",
+    "tempat": "rapat",
+    "keputusan": "menolak",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Tekanan atasan bertemu aturan kerahasiaan; beberapa respons sama-sama aman dan perlu dibedakan dari kemudahan menyelesaikan tugas tepat waktu.",
+    "stem": "Kepala seksi Anda meminta Anda meringkas naskah rancangan peraturan internal setebal empat puluh halaman sebelum rapat siang ini. Ia menyarankan memasukkan naskah itu ke layanan AI publik gratis lewat akun pribadi Anda karena cepat. Naskah itu belum diumumkan, dan layanan tersebut menyimpan masukan penggunanya. Kantor menyediakan asisten AI internal yang disetujui untuk dokumen seperti ini, tetapi atasan Anda belum mengetahuinya. Anda pelaksana dan tidak berwenang mengubah ketentuan penggunaan AI. Bagaimana sikap Anda?",
+    "options": [
+      {
+        "text": "Menjelaskan bahwa naskah belum diumumkan tidak boleh masuk layanan publik, lalu meringkasnya dengan asisten kantor dan mengecek hasilnya.",
+        "score": 5,
+        "reason": "Naskah rancangan yang belum diumumkan tidak masuk layanan publik yang menyimpan masukan penggunanya, dan asisten AI internal yang disetujui kantor dipakai untuk meringkasnya. Pemeriksaan hasil pada naskah menjaga ringkasan tetap benar sebelum rapat siang ini.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menolak memasukkan naskah ke layanan publik, lalu meringkas naskah secara manual per bab dan menyerahkannya sebelum rapat siang ini.",
+        "score": 3,
+        "reason": "Menolak memasukkan naskah ke layanan publik menjaga naskah rancangan yang belum diumumkan. Namun asisten AI internal yang disetujui kantor sudah tersedia, sehingga meringkas manual per bab lambat dan rawan terlewat menjelang rapat siang ini.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "tik:manual-padahal-ada-alat"
+        }
+      },
+      {
+        "text": "Memasukkan naskah itu ke layanan AI publik memakai akun pribadi Anda, lalu menyerahkan ringkasannya kepada atasan sebelum rapat siang ini.",
+        "score": 1,
+        "reason": "Layanan AI publik menyimpan masukan penggunanya, sehingga naskah rancangan yang belum diumumkan keluar dari kendali kantor. Ringkasan yang cepat tidak sebanding dengan paparan itu, apalagi asisten AI internal yang disetujui sudah tersedia.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membuka-data"
+        }
+      },
+      {
+        "text": "Meringkas naskah dengan asisten kantor dan mengecek hasilnya, lalu menyerahkannya kepada atasan dan tidak menjelaskan mengapa layanan publik dihindari.",
+        "score": 4,
+        "reason": "Naskah diringkas dengan asisten AI internal yang disetujui kantor dan hasilnya dicek, sehingga naskah rancangan yang belum diumumkan tetap di dalam kantor. Namun atasan tidak mengetahui bahwa layanan AI publik menyimpan masukan penggunanya, sehingga permintaan serupa dapat terulang.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Mengembalikan naskah kepada atasan dengan alasan Anda tidak berwenang memakai AI, lalu meminta atasan meringkasnya sendiri sebelum rapat siang ini.",
+        "score": 2,
+        "reason": "Mengembalikan naskah dengan alasan tidak berwenang memakai AI mengabaikan asisten AI internal yang disetujui kantor untuk dokumen seperti ini. Beban meringkas berpindah kepada atasan, padahal Anda dapat membantu sebelum rapat siang ini.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: penggunaan AI yang menjaga kerahasiaan naskah internal dan memeriksa hasilnya, termasuk saat tekanan datang dari atasan. Fakta penentu: naskah rancangan belum diumumkan, layanan AI publik menyimpan masukan penggunanya, dan kantor menyediakan asisten AI internal yang disetujui. Respons terbaik menjelaskan bahwa naskah tidak boleh masuk layanan publik lalu meringkasnya dengan asisten kantor dan memeriksa hasilnya. Meringkas dengan asisten kantor lalu tidak menjelaskan alasannya aman, tetapi atasan belum tahu bahwa layanan publik tidak boleh dipakai. Meringkas manual menolak alat yang tersedia, mengembalikan naskah memindahkan beban, dan memasukkan naskah ke layanan publik membuka naskah internal.",
+    "tip": "Perhatikan sifat naskah, tempat penyimpanan masukan oleh alat, dan alat yang sudah disetujui.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "adopsi-keamanan",
+    "kataKunci": "naskah rancangan peraturan, belum diumumkan, layanan AI publik, akun pribadi, menyimpan masukan pengguna, asisten AI internal"
+  },
+  {
+    "id": "tkp-kasus-tik-23",
+    "skenario": "surel-tiruan-kepala-dinas-kata-sandi-rekan",
+    "topic": "Teknologi Informasi dan Komunikasi",
+    "subtopic": "Etika, Keamanan, dan Tanggung Jawab Digital",
+    "pola": "dugaan-ancaman",
+    "peran": "pegawai-baru",
+    "kewenangan": "terbatas",
+    "penentu": "satu rekan sudah memasukkan kata sandi pada halaman dari tautan surel itu, rekan lain hampir membukanya, dan tim keamanan hanya menangani laporan lewat formulir intranet",
+    "tempat": "layanan-digital",
+    "keputusan": "melindungi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Satu rekan sudah terpapar dan satu hampir terpapar sementara jalur lapor terbatas; perlu mengurutkan perlindungan dan pelaporan.",
+    "stem": "Anda pegawai baru di sebuah dinas. Surel dari alamat yang sangat mirip dengan alamat kepala dinas meminta Anda dan dua rekan mengisi daftar gaji melalui sebuah tautan hari ini. Salah satu rekan di ruangan Anda baru saja memasukkan kata sandi akunnya pada halaman dari tautan itu, sedangkan rekan lainnya hampir membukanya. Tim keamanan informasi hanya menangani laporan yang masuk melalui formulir pada intranet. Anda tidak berwenang memblokir akun maupun mengatur sistem surel. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mengirim ulang surel itu kepada pegawai lain di unit Anda sebagai peringatan, lalu meminta mereka tidak mengisi tautannya hari ini.",
+        "score": 2,
+        "reason": "Peringatan kepada pegawai lain dimaksudkan melindungi mereka, tetapi surel yang diteruskan membawa tautan yang sama kepada lebih banyak orang. Rekan yang sudah memasukkan kata sandi tidak ditolong, dan tim keamanan belum menerima laporan lewat formulir intranet.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "tik:memperluas-paparan"
+        }
+      },
+      {
+        "text": "Melaporkan surel itu melalui formulir intranet, lalu mencantumkan nama rekan yang memasukkan kata sandi pada laporan.",
+        "score": 4,
+        "reason": "Laporan melalui formulir intranet sampai kepada tim keamanan beserta nama rekan yang sudah memasukkan kata sandi. Namun perlindungan akun rekan itu bergantung pada tim keamanan, padahal Anda dapat memintanya mengubah kata sandi sekarang dan menghentikan rekan lain membuka tautan.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kurang-perlindungan"
+        }
+      },
+      {
+        "text": "Membuka tautan dari surel itu di komputer kantor untuk menilai halamannya, lalu menyampaikan hasilnya kepada rekan.",
+        "score": 1,
+        "reason": "Membuka tautan di komputer kantor menjalankan risiko pada perangkat Anda sendiri, padahal satu rekan sudah memasukkan kata sandi dan rekan lain hampir membukanya. Hasil pengujian tidak menggantikan laporan kepada tim keamanan melalui formulir intranet.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tik:uji-tautan-langsung"
+        }
+      },
+      {
+        "text": "Meminta rekan yang terpapar mengganti kata sandi dan rekan lain berhenti mengakses tautan, lalu melapor lewat formulir intranet.",
+        "score": 5,
+        "reason": "Rekan yang sudah memasukkan kata sandi segera mengubahnya sehingga akunnya terlindungi, dan rekan yang hampir membuka tautan dihentikan sebelum terlambat. Laporan melalui formulir intranet menyampaikan surel itu kepada tim keamanan yang hanya menangani laporan lewat jalur itu.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Memeriksa keaslian surel itu kepada kepala dinas lewat nomor dikenal, lalu melapor lewat formulir bila terbukti palsu.",
+        "score": 3,
+        "reason": "Menghubungi kepala dinas lewat nomor yang dikenal adalah cara aman untuk memeriksa keaslian surel. Namun satu rekan sudah memasukkan kata sandi dan rekan lain hampir membuka tautan, sehingga pemeriksaan dahulu menunda perlindungan akun dan laporan kepada tim keamanan.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: penanganan insiden phishing yang sudah menimbulkan paparan, yaitu melindungi akun yang terpapar, menghentikan paparan baru, dan melapor lewat jalur yang ditetapkan. Fakta penentu: satu rekan sudah memasukkan kata sandi pada halaman dari tautan surel itu, rekan lain hampir membukanya, dan tim keamanan hanya menangani laporan lewat formulir intranet. Respons terbaik meminta rekan yang terpapar mengubah kata sandinya dan rekan lain berhenti membuka tautan, lalu melaporkan surel melalui formulir intranet. Melapor lebih dulu lalu meminta tim keamanan menghubungi rekan itu menunda perlindungan akun. Memeriksa keaslian dulu menunda keduanya, meneruskan surel memperluas paparan, dan membuka tautan menguji risiko di perangkat kantor.",
+    "tip": "Perhatikan siapa yang sudah menjadi korban, siapa yang masih dapat dicegah, dan jalur lapor yang diterima tim keamanan.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "adopsi-keamanan",
+    "kataKunci": "alamat mirip kepala dinas, tautan daftar gaji, kata sandi dimasukkan, rekan hampir membuka, formulir intranet"
+  }
+]

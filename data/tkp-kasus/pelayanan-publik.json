@@ -1,0 +1,1727 @@
+[
+  {
+    "id": "tkp-kasus-pp-01",
+    "skenario": "lansia-formulir-huruf-kecil",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Adil, Inklusif, dan Tidak Diskriminatif",
+    "pola": "kebutuhan-individual-vs-keadilan",
+    "peran": "pelaksana",
+    "kewenangan": "penuh",
+    "penentu": "pemohon lansia sulit membaca huruf kecil, tetapi tulisannya rapi dan memahami penjelasan lisan",
+    "tempat": "loket",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kebutuhan pengguna jelas dan satu tindakan langsung yang sesuai hambatan; tidak ada konflik kepentingan.",
+    "stem": "Seorang pemohon lansia datang ke loket Anda untuk memperbarui data kepesertaan layanan kesehatannya. Ia kesulitan membaca butir formulir yang berhuruf kecil karena kacamatanya tertinggal, tetapi tulisannya rapi dan ia memahami penjelasan lisan dengan baik. Antrean di belakangnya cukup panjang dan beberapa warga mulai melirik jam. Kaca pembesar tersedia di meja Anda, dan standar layanan membolehkan petugas membantu pengisian formulir. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menuliskan isian formulir sesuai jawaban lisan pemohon, lalu meminta pemohon memeriksa hasilnya sebelum menandatangani.",
+        "score": 4,
+        "reason": "Penulisan oleh petugas mengatasi hambatan huruf kecil dan menjaga laju antrean. Namun tulisan pemohon yang rapi dan pemahamannya atas penjelasan lisan menunjukkan ia masih mampu mengisi sendiri, sehingga kemandiriannya berkurang tanpa kebutuhan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "mengambil-alih"
+        }
+      },
+      {
+        "text": "Menyarankan pemohon meminta pengunjung lain di ruang tunggu membacakan formulirnya, lalu melayani pemohon berikutnya.",
+        "score": 1,
+        "reason": "Meminta pengunjung lain membacakan formulir membuka data kepesertaan pemohon kepada orang yang tidak berkepentingan. Hambatan huruf kecil memang teratasi, tetapi kerahasiaan data dan tanggung jawab petugas diabaikan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membuka-data"
+        }
+      },
+      {
+        "text": "Membacakan bagian yang sulit dengan kaca pembesar, lalu membiarkan pemohon mengisi dan menandatangani sendiri.",
+        "score": 5,
+        "reason": "Kaca pembesar dan bacaan lisan mengatasi hambatan huruf kecil, sedangkan tulisan pemohon yang rapi menunjukkan ia masih mampu mengisi sendiri. Kemandirian terjaga dan antrean di belakangnya tidak tertahan lama.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta pemohon pulang mengambil kacamata, lalu melayaninya kembali begitu ia tiba di loket Anda.",
+        "score": 2,
+        "reason": "Menyuruh pemohon pulang mengambil kacamata memindahkan hambatan huruf kecil menjadi beban pemohon. Layanan yang sebenarnya dapat berjalan dengan kaca pembesar di meja Anda tertunda ke kunjungan berikutnya.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Mempersilakan pemohon duduk di ruang tunggu, lalu memanggil rekan untuk membantunya membaca formulir.",
+        "score": 3,
+        "reason": "Pendampingan rekan memang bantuan yang layak bagi pemohon lansia. Namun pemohon harus duduk dan menanti rekan itu, padahal kaca pembesar di meja Anda dan penjelasan lisan sudah cukup mengatasi huruf kecil.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: pelayanan inklusif, yaitu akomodasi yang disesuaikan dengan hambatan tanpa mengambil alih hal yang masih dapat dilakukan pengguna. Fakta penentu: pemohon lansia kesulitan membaca huruf kecil, tetapi tulisannya rapi dan ia memahami penjelasan lisan. Hambatan itu cukup diatasi dengan alat bantu baca dan penjelasan lisan, sedangkan mengisi dan menandatangani tetap dikerjakan pemohon sendiri. Pengisian oleh petugas membantu, tetapi mengurangi kemandirian yang masih ada. Pendampingan rekan menambah waktu tunggu, penyuruhan pulang memindahkan beban kepada pemohon, dan meminta bantuan pengunjung lain mengabaikan kerahasiaan data.",
+    "tip": "Tanyakan hambatan apa yang sebenarnya dialami pengguna dan kemampuan apa yang masih ia miliki sebelum menilai bantuan.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "aksesibilitas",
+    "kataKunci": "pemohon lansia, huruf kecil, tulisan rapi, penjelasan lisan, kaca pembesar"
+  },
+  {
+    "id": "tkp-kasus-pp-02",
+    "skenario": "bantuan-telepon-kode-sekali-pakai",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Pelayanan Prima dan Kepuasan",
+    "pola": "ketegangan-kesalahpahaman",
+    "peran": "pegawai-baru",
+    "kewenangan": "terbatas",
+    "penentu": "warga tidak memahami istilah verifikasi dua langkah dan menawarkan membacakan kode sekali pakai, padahal aturan pusat bantuan melarang petugas memakainya",
+    "tempat": "layanan-digital",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Satu tawaran pengguna yang jelas melanggar aturan dan satu kebutuhan komunikasi yang mudah dikenali.",
+    "stem": "Anda pegawai baru di pusat bantuan layanan daring dinas kependudukan. Seorang warga menelepon dengan nada kesal karena tidak dapat masuk ke akunnya. Ia tidak memahami istilah “verifikasi dua langkah” yang Anda sebut dan mengira Anda sengaja mempersulitnya. Kode sekali pakai baru saja terkirim ke ponselnya, dan ia menawarkan membacakan kode itu agar Anda dapat masuk ke akunnya. Aturan pusat bantuan melarang petugas meminta atau memakai kode milik pengguna. Sikap Anda adalah ...",
+    "options": [
+      {
+        "text": "Menjelaskan dengan bahasa sehari-hari fungsi kode itu, lalu memandu warga memasukkannya sendiri.",
+        "score": 5,
+        "reason": "Penjelasan bahasa sehari-hari menjawab anggapan warga bahwa ia dipersulit, dan memasukkan kode sendiri sesuai aturan pusat bantuan yang melarang petugas memakai kode pengguna. Akunnya terbuka tanpa mengorbankan keamanan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyarankan warga datang ke loket dinas, lalu mencatat keluhannya agar petugas loket mengetahui kendalanya.",
+        "score": 3,
+        "reason": "Loket dinas memang jalur yang sah dan keluhannya dicatat untuk petugas loket. Namun masuk ke akun masih dapat diselesaikan sekarang karena kode sudah terkirim dan warga masih berada di telepon.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menerima kode yang dibacakan warga, lalu masuk ke akunnya untuk menyelesaikan proses atas namanya.",
+        "score": 1,
+        "reason": "Menerima kode warga lalu masuk ke akunnya melanggar aturan pusat bantuan dan membuka akun bagi pihak yang tidak berhak. Kemudahan sesaat itu juga membiasakan warga membagikan kode kepada orang lain.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Memandu warga membuka pesan dan memasukkan kode sendiri, lalu menutup telepon setelah akunnya terbuka.",
+        "score": 4,
+        "reason": "Memandu warga memasukkan kode sendiri sesuai aturan pusat bantuan dan membuka akunnya. Namun warga tidak memahami istilah yang Anda sebut, sehingga anggapan bahwa ia dipersulit tetap tertinggal.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Meminta warga mencoba lagi nanti ketika lebih tenang, lalu mengakhiri panggilan dengan ucapan terima kasih.",
+        "score": 2,
+        "reason": "Menyuruh warga mencoba lagi nanti menempatkan kekesalan sebagai masalah warga dan membiarkan kode yang sudah terkirim tidak dimanfaatkan. Akun tetap tertutup dan bimbingan tidak diberikan, meski ucapan terima kasih menjaga sopan santun.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "melempar"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: pelayanan prima pada layanan daring, yaitu komunikasi yang menyesuaikan pemahaman pengguna sambil menjaga keamanan akun. Fakta penentu: warga menawarkan membacakan kode sekali pakai, padahal aturan pusat bantuan melarang petugas memakainya, dan ia kesal karena tidak memahami istilah yang disebut. Respons terbaik menjelaskan fungsi kode dengan bahasa sehari-hari dan memandu warga memasukkannya sendiri. Memandu tanpa menjelaskan istilah menyelesaikan akun, tetapi kesalahpahaman tertinggal. Mengarahkan warga ke loket menunda kebutuhan yang masih dapat dilayani, meminta warga mencoba lagi nanti memindahkan beban kepada warga, dan masuk memakai kode warga melanggar keamanan.",
+    "tip": "Pisahkan kebutuhan pengguna dari hal yang tidak boleh Anda lakukan, lalu cari langkah yang menghormati keduanya.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "aksesibilitas",
+    "kataKunci": "verifikasi dua langkah, nada kesal, kode sekali pakai, kode milik pengguna, aturan pusat bantuan"
+  },
+  {
+    "id": "tkp-kasus-pp-03",
+    "skenario": "pembayaran-retribusi-ganda-warga",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Konsep Dasar dan Ruang Lingkup",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "warga",
+    "kewenangan": "tidak-ada",
+    "penentu": "riwayat transaksi di aplikasi dan catatan dinas hanya menampilkan satu pembayaran, padahal saldo terpotong dua kali",
+    "tempat": "layanan-digital",
+    "keputusan": "memulihkan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Bukti ada di tangan pengguna dan jalur keluhan tersedia; pilihan terbaik mudah dikenali.",
+    "stem": "Anda membayar retribusi sampah melalui aplikasi pembayaran milik pemerintah daerah. Beberapa menit kemudian, saldo rekening Anda terpotong dua kali, tetapi riwayat transaksi di aplikasi dan catatan dinas hanya menampilkan satu pembayaran. Anda menyimpan tangkapan layar kedua notifikasi dari bank, dan belum ada pesan dari dinas. Keluhan pengguna dapat disampaikan melalui aplikasi atau langsung ke kantor dinas. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Memantau saldo rekening selama beberapa hari kerja, lalu mengadu ke dinas bila kelebihannya belum kembali.",
+        "score": 3,
+        "reason": "Memantau saldo dengan batas waktu masih memberi rencana tindak lanjut. Namun pembayaran kedua belum tercatat di aplikasi maupun catatan dinas, sehingga hak Anda tertahan beberapa hari sebelum pengaduan diajukan.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Meminta kenalan di dinas mengambilkan kelebihan bayarnya dari kas, lalu menunjukkan notifikasi sebagai bukti.",
+        "score": 1,
+        "reason": "Meminta kenalan mengambilkan uang dari kas melewati catatan dinas dan menjadikan kedekatan pribadi sebagai jalur layanan. Kenalan Anda menanggung risiko, sedangkan transaksi kedua tetap tidak tercatat di aplikasi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Menghubungi pusat layanan bank dengan kedua notifikasi, lalu meminta bank menelusuri potongan saldo itu.",
+        "score": 4,
+        "reason": "Pusat layanan bank dapat menelusuri potongan saldo itu, tetapi riwayat transaksi yang hanya menampilkan satu pembayaran berada di catatan dinas. Tanpa pengaduan ke dinas, kelebihan bayar belum tercatat di sana sehingga pengembaliannya tidak dapat dipantau.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mengajukan pengaduan melalui aplikasi dengan kedua notifikasi bank, lalu menanyakan batas waktu pengembalian dana.",
+        "score": 5,
+        "reason": "Pengaduan melalui aplikasi dengan kedua notifikasi bank membuat kelebihan bayar tercatat di dinas yang menyimpan riwayat transaksi, dan batas waktu pengembalian dapat dipantau. Anda memakai jalur keluhan yang tersedia dengan bukti yang Anda pegang.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengunggah tangkapan layar notifikasi ke media sosial dinas dengan nomor rekening ditutup, lalu meminta dinas menanggapi.",
+        "score": 2,
+        "reason": "Unggahan yang menutup nomor rekening tidak membuka data Anda dan dapat menarik perhatian dinas. Namun keluhan itu tidak masuk jalur pengaduan, sehingga pengembalian tidak tercatat dan penanganannya bergantung pada tekanan publik.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "jalur-tidak-resmi"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: pemulihan hak pengguna melalui jalur pengaduan dengan bukti. Fakta penentu: saldo terpotong dua kali, tetapi riwayat transaksi di aplikasi dan catatan dinas hanya menampilkan satu pembayaran, dan Anda memegang kedua notifikasi bank. Pengaduan melalui aplikasi membuat kelebihan bayar tercatat pada dinas yang menyimpan riwayat transaksi, dan pertanyaan tentang batas waktu menjaga tindak lanjut. Menghubungi bank hanya menyentuh sebagian karena catatan retribusi berada di dinas. Memantau saldo menunda pengaduan, mengunggah bukti di media sosial menempuh jalur di luar pengaduan, dan meminta kenalan mengambil uang dari kas melewati catatan dinas.",
+    "tip": "Perhatikan siapa yang memegang catatan masalahnya dan bukti apa yang Anda miliki.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemulihan-layanan",
+    "kataKunci": "saldo terpotong dua kali, riwayat transaksi, satu pembayaran, notifikasi bank, keluhan melalui aplikasi"
+  },
+  {
+    "id": "tkp-kasus-pp-04",
+    "skenario": "aduan-lewat-batas-tanggapan",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Konsep Dasar dan Ruang Lingkup",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "empat aduan melewati standar lima hari kerja karena petugas penerima disposisi cuti dan tidak ada pengganti",
+    "tempat": "administratif",
+    "keputusan": "memulihkan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Penyebab dan kewenangan jelas; tindakan langsung dan komunikasi kepada pelapor mudah dibandingkan.",
+    "stem": "Anda koordinator pengaduan di sebuah kantor layanan perizinan. Saat menyusun rekap mingguan, Anda menemukan empat aduan warga yang belum dijawab, padahal standar tanggapan lima hari kerja sudah terlewati tiga hari. Penyebabnya, petugas yang menerima disposisi aduan itu sedang cuti dan tidak ada pengganti. Penugasan ulang aduan di unit ini berada dalam kewenangan Anda, dan dua petugas lain masih dapat menerima tambahan pekerjaan. Keputusan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mencatat keterlambatan keempat aduan dalam rekap mingguan, lalu membahas penyebabnya pada rapat evaluasi bulan depan.",
+        "score": 2,
+        "reason": "Pencatatan dalam rekap menjaga keterbukaan tentang keterlambatan, dan penyebabnya akan dibahas. Namun keempat aduan tidak bergerak sampai rapat bulan depan, padahal dua petugas lain masih dapat menerima tambahan pekerjaan.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menugaskan ulang keempat aduan, lalu menghubungi pelapor untuk meminta maaf dan menyampaikan jadwal tanggapan.",
+        "score": 5,
+        "reason": "Menugaskan ulang menyelesaikan penyebab keterlambatan, yaitu tidak adanya pengganti petugas yang cuti, dan menghubungi pelapor memulihkan kepercayaan mereka atas empat aduan yang sudah lewat batas. Warga mendapat kepastian jadwal tanggapan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menugaskan ulang aduan yang paling mendesak kepada petugas lain, lalu menjawab aduan lainnya sesuai urutan masuk pekan depan.",
+        "score": 3,
+        "reason": "Aduan yang paling mendesak tertangani, tetapi tiga aduan lain tetap melewati batas lima hari kerja padahal dua petugas lain masih dapat menerima tambahan pekerjaan. Keterlambatan sebagian dibiarkan berlanjut hingga pekan depan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Mengubah tanggal terima keempat aduan pada daftar penerimaan ke hari ini, lalu menjawabnya sesuai urutan.",
+        "score": 1,
+        "reason": "Mengubah tanggal terima memalsukan catatan layanan dan menyembunyikan keterlambatan empat aduan dari pimpinan. Menjawab sesuai urutan tidak memperbaiki pelanggaran standar tanggapan lima hari kerja.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      },
+      {
+        "text": "Menugaskan ulang keempat aduan kepada petugas lain, lalu memantau penyelesaiannya hingga tanggapan tertulis terkirim.",
+        "score": 4,
+        "reason": "Penugasan ulang dan pemantauan menjamin keempat aduan terjawab. Namun pelapor yang sudah menunggu melewati lima hari kerja tidak mendapat penjelasan maupun permintaan maaf, sehingga kepercayaan mereka belum pulih.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-komunikasi"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: service recovery atas kesalahan internal yang sudah berdampak kepada pengguna. Fakta penentu: empat aduan melewati standar lima hari kerja karena petugas penerima disposisi cuti tanpa pengganti, sedangkan koordinator berwenang menugaskan ulang dan petugas lain masih tersedia. Penugasan ulang menutup penyebab keterlambatan, dan menghubungi pelapor memulihkan kepercayaan. Penugasan ulang tanpa menghubungi pelapor menyelesaikan aduan tetapi tidak memulihkan hubungan. Menangani sebagian aduan meninggalkan keterlambatan, membahas penyebab di rapat bulan depan membiarkan aduan tertahan, dan mengubah tanggal terima memalsukan catatan layanan.",
+    "tip": "Periksa dua hal: penyebab kegagalan layanan dan pihak yang sudah terdampak olehnya.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemulihan-layanan",
+    "kataKunci": "empat aduan, standar lima hari kerja, petugas cuti, tanpa pengganti, penugasan ulang"
+  },
+  {
+    "id": "tkp-kasus-pp-05",
+    "skenario": "sistem-pendaftaran-terhenti",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Prinsip dan Standar",
+    "pola": "gangguan-layanan-mendadak",
+    "peran": "anggota-tim",
+    "kewenangan": "terbatas",
+    "penentu": "prosedur gangguan membolehkan pencatatan manual untuk pengajuan, sedangkan dokumen baru boleh diserahkan setelah sistem pulih",
+    "tempat": "loket",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Prosedur gangguan menyebut batas yang boleh dan tidak boleh dilakukan, sehingga pilihan mudah dibedakan.",
+    "stem": "Pukul sepuluh pagi, sistem pendaftaran di kantor layanan kependudukan terhenti dan teknisi memperkirakan pemulihan sekitar dua jam lagi. Anda anggota tim loket. Prosedur gangguan membolehkan pencatatan manual untuk pengajuan layanan baru, tetapi dokumen baru boleh diterbitkan atau diserahkan setelah sistem pulih. Belasan warga sudah menunggu; sebagian membawa berkas pengajuan baru dan sebagian lain hendak mengambil dokumen yang sudah jadi. Ketua tim sedang berada di luar kantor. Respons Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mengumumkan perkiraan pulih dari teknisi, lalu mempersilakan warga duduk di ruang tunggu sampai sistem normal.",
+        "score": 3,
+        "reason": "Perkiraan pulih dari teknisi memberi informasi yang jujur kepada warga. Namun pengajuan baru tidak dicatat padahal prosedur gangguan membolehkan pencatatan manual, sehingga warga duduk dua jam tanpa layanan yang sebenarnya dapat berjalan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kaku"
+        }
+      },
+      {
+        "text": "Menerbitkan dokumen secara manual dari arsip salinan, lalu mencocokkannya dengan data setelah sistem pulih.",
+        "score": 1,
+        "reason": "Menerbitkan dokumen dari arsip salinan melanggar prosedur gangguan yang menyerahkan penerbitan setelah sistem pulih. Dokumen yang tidak cocok dengan data kependudukan dapat tidak sah, dan warga dirugikan bila harus mengurus ulang.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Mencatat pengajuan baru secara manual sesuai prosedur, lalu menghubungi ketua tim tentang gangguan dan perkiraan pulih.",
+        "score": 4,
+        "reason": "Pencatatan manual menjaga pengajuan baru, dan ketua tim yang berada di luar kantor mendapat kabar tentang gangguan. Namun warga di loket belum mengetahui perkiraan pulih dari teknisi maupun layanan yang ditunda, sehingga mereka belum dapat memutuskan menunggu atau kembali.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Meminta warga pulang dan datang kembali besok pagi, lalu menutup sementara loket sampai sistem pendaftaran pulih.",
+        "score": 2,
+        "reason": "Menyuruh warga pulang lalu menutup loket menghentikan layanan yang masih dapat dilakukan secara manual dan membuat warga menanggung perjalanan ulang. Kerugian mereka dapat dipulihkan esok hari, tetapi pencatatan manual yang diizinkan prosedur tidak dipakai.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "menutup-sementara"
+        }
+      },
+      {
+        "text": "Mencatat pengajuan baru secara manual sesuai prosedur, lalu mengumumkan perkiraan pulih dari teknisi dan urusan yang ditunda.",
+        "score": 5,
+        "reason": "Pencatatan manual yang diizinkan prosedur gangguan menjaga layanan pengajuan tetap berjalan, dan pengumuman perkiraan pulih beserta urusan yang ditunda memberi warga kepastian tanpa janji pasti. Penyerahan dokumen menunggu sistem pulih sesuai aturan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: kesinambungan layanan dan manajemen ekspektasi saat sistem terganggu. Fakta penentu: prosedur gangguan membolehkan pencatatan manual untuk pengajuan, tetapi dokumen baru boleh diserahkan setelah sistem pulih, dan teknisi memperkirakan dua jam. Respons terbaik menjalankan bagian yang diizinkan dan memberi warga perkiraan serta daftar layanan yang ditunda. Pencatatan yang hanya dilaporkan kepada ketua tim membiarkan warga tanpa kepastian. Hanya mengumumkan perkiraan membiarkan layanan yang dapat berjalan, menutup loket menghentikan layanan, dan menerbitkan dokumen dari arsip melanggar prosedur.",
+    "tip": "Bedakan layanan yang masih boleh berjalan dari layanan yang tidak, lalu lihat siapa yang perlu tahu keadaannya.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "keterbatasan-layanan",
+    "kataKunci": "sistem terhenti, pencatatan manual, pengajuan baru, dokumen jadi, perkiraan pemulihan"
+  },
+  {
+    "id": "tkp-kasus-pp-06",
+    "skenario": "pegawai-baru-verifikasi-layanan-keliling",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Pengambilan Keputusan",
+    "pola": "peluang-pengembangan-keterbatasan",
+    "peran": "pegawai-baru",
+    "kewenangan": "terbatas",
+    "penentu": "verifikasi harus oleh petugas bersertifikat, pelatihan Anda hanya mencakup penerimaan berkas, dan berkas yang dicatat langsung masuk antrean verifikasi",
+    "tempat": "lapangan",
+    "keputusan": "minta-bantuan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Batas kemampuan dan kewenangan Anda jelas dan bantuan tersedia; memilih tindakan yang sesuai kompetensi.",
+    "stem": "Anda pegawai baru yang bertugas bersama tim layanan keliling di balai desa. Rekan senior yang biasa menangani verifikasi data kependudukan mendadak sakit dan pulang, sedangkan pelatihan yang baru Anda ikuti hanya mencakup penerimaan berkas. Seorang warga meminta pembaruan data keluarga yang harus diverifikasi petugas bersertifikat. Berkas yang sudah dicatat langsung masuk antrean verifikasi. Kepala tim dapat dihubungi lewat telepon dan dapat menunjuk petugas dari kantor yang tiba dalam satu jam. Apa yang sebaiknya Anda lakukan?",
+    "options": [
+      {
+        "text": "Meminta kepala tim mengirim petugas verifikasi pengganti, lalu mempersilakan warga duduk sampai petugas tiba.",
+        "score": 4,
+        "reason": "Meminta pengganti ke kepala tim sudah tepat karena verifikasi harus oleh petugas bersertifikat. Namun berkas warga belum dicatat sehingga belum masuk antrean verifikasi, dan satu jam sebelum pengganti tiba tidak dipakai untuk memprosesnya.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Memberi tahu warga bahwa Anda baru bertugas pada penerimaan berkas, lalu melayani warga lain yang siap.",
+        "score": 2,
+        "reason": "Melayani warga lain memang memanfaatkan waktu, tetapi kebutuhan warga yang meminta pembaruan tidak diteruskan kepada petugas verifikasi mana pun. Berkasnya tidak dicatat, sehingga tidak ada langkah yang menjawab kebutuhannya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menerima dan mencatat berkas tersebut, lalu meminta kepala tim mengirim petugas bersertifikat untuk memeriksanya.",
+        "score": 5,
+        "reason": "Berkas yang diterima dan dicatat sekarang langsung masuk antrean verifikasi, sedangkan verifikasinya diserahkan kepada petugas bersertifikat yang dapat tiba dalam satu jam. Pekerjaan sesuai pelatihan Anda dikerjakan, sedangkan yang di luar kompetensi tidak Anda ambil sendiri.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Memverifikasi data memakai panduan yang pernah Anda baca, lalu mencatat pembaruan data keluarga itu sebagai berkas selesai.",
+        "score": 1,
+        "reason": "Memverifikasi data tanpa sertifikasi melampaui pelatihan Anda yang hanya mencakup penerimaan berkas. Kesalahan pada data keluarga dapat merugikan warga dalam pengurusan dokumen berikutnya.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      },
+      {
+        "text": "Menyarankan warga membawa berkas ke kantor kecamatan terdekat, lalu memberi tahu kepala tim tentang kendala di lapangan.",
+        "score": 3,
+        "reason": "Mengirim warga ke kantor kecamatan menjaga ketentuan verifikasi dan kepala tim diberi tahu. Namun petugas pengganti dapat tiba dalam satu jam, sehingga warga menanggung perjalanan dan berkasnya belum dicatat.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: kompetensi dan batas kewenangan dalam pelayanan, yaitu mengerjakan yang sesuai pelatihan dan menghubungkan pengguna dengan pihak yang tepat. Fakta penentu: verifikasi data kependudukan harus oleh petugas bersertifikat, pelatihan Anda hanya mencakup penerimaan berkas, berkas yang dicatat langsung masuk antrean verifikasi, dan kepala tim dapat mengirim pengganti dalam satu jam. Menerima berkas sambil meminta petugas verifikasi menjawab kebutuhan sekarang dan tetap sah. Meminta pengganti tanpa mencatat berkas membuat warga menanti tanpa kemajuan. Mengirim warga ke kantor kecamatan menunda layanan yang dapat dipenuhi, melayani warga lain mengabaikan kebutuhan itu, dan memverifikasi sendiri melampaui kewenangan.",
+    "tip": "Ukur kemampuan dan kewenangan Anda lebih dulu, lalu cari langkah yang tetap memajukan kebutuhan warga di dalam batas itu.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "keterbatasan-layanan",
+    "kataKunci": "pegawai baru, pelatihan penerimaan berkas, petugas bersertifikat, antrean verifikasi, kepala tim"
+  },
+  {
+    "id": "tkp-kasus-pp-07",
+    "skenario": "jemput-bola-perekaman-biometrik",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Adil, Inklusif, dan Tidak Diskriminatif",
+    "pola": "kebutuhan-individual-vs-keadilan",
+    "peran": "pelaksana",
+    "kewenangan": "terbatas",
+    "penentu": "perekaman harus pada orang yang bersangkutan, tetapi layanan jemput bola tersedia bagi warga sakit lewat permohonan tertulis",
+    "tempat": "loket",
+    "keputusan": "menolak",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Aturan dan jalan keluar yang sah dinyatakan di stimulus; memilih tindakan yang menjaga keduanya.",
+    "stem": "Seorang pria datang ke loket mewakili ibunya yang berusia delapan puluh tahun dan terbaring sakit di rumah. Ia meminta perekaman data biometrik ibunya diselesaikan melalui dirinya karena ibunya tidak dapat datang. Aturan kantor mengharuskan perekaman dilakukan pada orang yang bersangkutan, tetapi menyediakan layanan jemput bola bagi warga yang sakit melalui permohonan tertulis. Anda petugas penerima permohonan dan tidak berwenang mengecualikan aturan itu. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menjelaskan bahwa perekaman harus pada orang yang bersangkutan, lalu membantu pria itu mengisi permohonan jemput bola.",
+        "score": 5,
+        "reason": "Penjelasan tentang syarat kehadiran menjaga aturan, dan bantuan mengisi permohonan jemput bola memenuhi kebutuhan ibu yang terbaring sakit melalui layanan yang memang disediakan. Pria itu pulang membawa jalan keluar yang sah.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Memberi tahu pria itu bahwa ibunya harus hadir, lalu meminta ia membawa ibunya ke kantor setelah sembuh.",
+        "score": 3,
+        "reason": "Pria itu diberi tahu bahwa ibunya harus hadir dan diberi rencana, yaitu membawa ibunya setelah sembuh, sehingga aturan kehadiran terjaga. Namun layanan jemput bola yang tersedia bagi warga sakit tidak disebut, dan perekaman baru dapat berlangsung setelah ibunya pulih.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "kaku"
+        }
+      },
+      {
+        "text": "Merekam data biometrik dari sidik jari lama ibunya sebagai pengganti jemput bola, lalu menyelesaikannya hari ini.",
+        "score": 1,
+        "reason": "Merekam data biometrik dari sidik jari lama melanggar aturan yang mengharuskan perekaman pada orang yang bersangkutan. Data yang tidak sah dapat membuat kartu ibunya bermasalah dan membuka penyalahgunaan identitas.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Menjelaskan bahwa perekaman harus pada orang yang bersangkutan, lalu memberikan brosur layanan jemput bola untuk dipelajari.",
+        "score": 4,
+        "reason": "Penjelasan syarat dan informasi jemput bola sudah benar, tetapi pria itu hanya diberi brosur dan permohonan tertulisnya belum dibantu. Ia masih harus mencari tahu sendiri langkah yang sebenarnya dapat dibantu sekarang.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Meminta pria itu bertanya kepada petugas loket informasi, lalu melayani pemohon berikutnya di antrean.",
+        "score": 2,
+        "reason": "Mengarahkan pria itu bertanya ke loket informasi memindahkan permintaan, dan Anda melayani pemohon berikutnya sebelum memastikan ia memperoleh jawaban. Tidak ada kepastian bahwa permohonan tertulis akan terisi.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: keadilan dan akomodasi layak, yaitu menjaga syarat sambil menunjukkan jalan yang disediakan aturan. Fakta penentu: perekaman biometrik harus pada orang yang bersangkutan, tetapi aturan menyediakan jemput bola bagi warga sakit lewat permohonan tertulis. Respons terbaik menjelaskan syarat dan membantu mengisi permohonan itu. Memberi brosur tanpa membantu menyelesaikan permohonan membiarkan pekerjaan itu kepada pria tersebut. Meminta ibunya datang setelah sembuh mematuhi syarat tetapi tidak menyebut jemput bola, mengarahkan ke loket lain memindahkan permintaan, dan merekam dari sidik jari lama melanggar aturan.",
+    "tip": "Bedakan syarat yang tidak dapat Anda ubah dari jalan keluar yang memang disediakan aturan.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "permintaan-khusus",
+    "kataKunci": "perekaman biometrik, orang yang bersangkutan, warga sakit, layanan jemput bola, permohonan tertulis"
+  },
+  {
+    "id": "tkp-kasus-pp-08",
+    "skenario": "tenggat-berkas-bantuan-usaha-terlewat",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Prinsip dan Standar",
+    "pola": "kebutuhan-individual-vs-keadilan",
+    "peran": "anggota-tim",
+    "kewenangan": "tidak-ada",
+    "penentu": "tenggat berlaku sama bagi setiap pemohon dan tidak ada gangguan layanan pada hari batas",
+    "tempat": "administratif",
+    "keputusan": "menolak",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Tenggat berlaku sama dan tidak ada gangguan; Anda jelas tidak berwenang mengecualikan.",
+    "stem": "Anda anggota tim penerima permohonan bantuan usaha mikro. Batas penerimaan berkas ditutup kemarin pukul 16.00 dan berlaku sama bagi setiap pemohon. Pagi ini seorang pemilik warung datang dengan berkas lengkap, mengaku lupa tanggalnya, dan memohon berkasnya diterima karena modalnya menipis. Tidak ada gangguan layanan pada hari batas itu. Anda tidak berwenang memperpanjang tenggat, sedangkan gelombang penerimaan berikutnya dibuka bulan depan. Sikap Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Meminta pemohon datang kembali besok pagi, lalu memberi tahu rekan bahwa tenggat kemungkinan masih dilonggarkan.",
+        "score": 2,
+        "reason": "Meminta pemohon datang besok sambil menyebut tenggat kemungkinan masih dilonggarkan menumbuhkan harapan tanpa dasar, padahal Anda tidak berwenang memperpanjang tenggat. Pemohon dapat menyiapkan diri dengan perkiraan yang keliru.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "janji-tanpa-dasar"
+        }
+      },
+      {
+        "text": "Menjelaskan bahwa berkas melewati tenggat dan ditolak, lalu mencatat nama pemohon untuk gelombang penerimaan berikutnya.",
+        "score": 4,
+        "reason": "Penolakan yang jelas dan pencatatan nama menunjukkan kepedulian. Namun pemohon belum diberi tahu jadwal gelombang berikutnya maupun kelengkapan yang perlu disiapkan, sehingga ia belum mendapat jalan keluar yang konkret.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mengubah tanggal terima berkas pada daftar penerimaan menjadi kemarin, lalu meneruskannya ke seleksi bantuan usaha.",
+        "score": 1,
+        "reason": "Mengubah tanggal terima memalsukan daftar penerimaan dan melanggar batas yang berlaku sama bagi setiap pemohon. Pemohon lain yang tepat waktu dirugikan, dan Anda menanggung akibat pemalsuan catatan itu.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      },
+      {
+        "text": "Menjelaskan bahwa tenggat berlaku sama, lalu menyampaikan jadwal gelombang berikutnya beserta kelengkapannya.",
+        "score": 5,
+        "reason": "Penjelasan bahwa tenggat berlaku sama menjaga keadilan bagi pemohon yang tepat waktu, dan informasi jadwal gelombang berikutnya memberi pemilik warung jalan keluar yang sah. Ia dapat menyiapkan diri tanpa harapan keliru.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyarankan pemohon mengajukan surat keberatan kepada pimpinan, lalu menyampaikan bahwa hasilnya belum dapat dipastikan.",
+        "score": 3,
+        "reason": "Surat keberatan memang dapat diajukan dan Anda sudah menyampaikan bahwa hasilnya belum pasti. Namun tidak ada gangguan layanan pada hari batas yang mendukungnya, sehingga langkah ini mengarahkan pemohon pada pengecualian yang tidak punya dasar.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "eskalasi-dini"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: kesetaraan perlakuan dan kepastian standar layanan. Fakta penentu: batas penerimaan berlaku sama bagi setiap pemohon, tidak ada gangguan layanan pada hari batas, dan Anda tidak berwenang memperpanjang tenggat. Respons terbaik menolak dengan penjelasan dan memberi pemohon jadwal serta kelengkapan untuk gelombang berikutnya. Menolak dan mencatat nama saja belum menyiapkan pemohon. Menyarankan surat keberatan mengarahkan pemohon pada pengecualian yang tidak punya dasar, menyuruh datang besok sambil menyebut tenggat dapat dilonggarkan memberi janji yang tidak dapat dipenuhi, dan mengubah tanggal terima memalsukan daftar penerimaan.",
+    "tip": "Tanyakan apakah ada keadaan yang membenarkan pengecualian, dan siapa lagi yang terdampak jika pengecualian itu diberikan.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "permintaan-khusus",
+    "kataKunci": "tenggat berlaku sama, berkas lengkap, lupa tanggal, tanpa gangguan layanan, gelombang berikutnya"
+  },
+  {
+    "id": "tkp-kasus-pp-09",
+    "skenario": "lift-rusak-pengguna-kursi-roda",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Adil, Inklusif, dan Tidak Diskriminatif",
+    "pola": "gangguan-layanan-mendadak",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "prosedur membolehkan penyerahan dokumen di meja informasi lantai satu dan koordinator berwenang mengatur lokasi layanan",
+    "tempat": "loket",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kebutuhan jelas dan prosedur alternatif tersedia dalam kewenangan Anda; rival yang sah berbeda pada sasaran dan risiko.",
+    "stem": "Lift di kantor layanan perizinan rusak sejak pagi dan baru selesai diperbaiki sore hari. Seorang pengguna kursi roda datang untuk mengambil izin yang sudah selesai di loket lantai dua. Anda koordinator loket yang berwenang mengatur lokasi layanan di unit Anda, dan prosedur membolehkan penyerahan dokumen di meja informasi lantai satu setelah identitas pemohon diperiksa. Rekan Anda di lantai dua sedang melayani antrean. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Meminta pengguna kembali setelah lift diperbaiki sore ini, lalu menyiapkan dokumennya agar langsung diserahkan.",
+        "score": 3,
+        "reason": "Menyiapkan dokumen agar langsung diserahkan membantu, tetapi pengguna kursi roda tetap harus kembali setelah lift diperbaiki. Padahal prosedur membolehkan penyerahan dokumen di lantai satu sekarang.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Membawa dokumen izin ke meja informasi lantai satu, lalu menyerahkannya setelah identitas pengguna cocok dengan berkas.",
+        "score": 5,
+        "reason": "Menurunkan layanan ke lantai satu sesuai prosedur menyelesaikan kebutuhan pengguna kursi roda hari ini tanpa mengubah syarat identitas. Hambatan lift diatasi oleh petugas, bukan dipindahkan kepada pengguna.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta dua pengunjung mengangkat kursi roda menaiki tangga, lalu melayani pengguna di loket lantai dua.",
+        "score": 1,
+        "reason": "Mengangkat kursi roda menaiki tangga membahayakan keselamatan dan martabat pengguna serta melibatkan pengunjung yang tidak terlatih. Hambatan lift tidak diatasi, hanya diganti menjadi risiko cedera, padahal penyerahan dokumen di lantai satu diizinkan prosedur.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membahayakan"
+        }
+      },
+      {
+        "text": "Meminta rekan di lantai dua mengantar dokumen ke meja informasi, lalu meminta petugas meja itu menyerahkannya.",
+        "score": 4,
+        "reason": "Meja informasi lantai satu memang boleh menyerahkan dokumen dan koordinator berwenang mengatur lokasi, tetapi dokumen berpindah melalui dua orang dan rekan yang sedang melayani antrean harus meninggalkan loketnya. Layanan menjadi lebih lambat dan rantai penyerahan lebih panjang daripada koordinator yang membawa sendiri.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      },
+      {
+        "text": "Menyarankan pengguna membuat surat kuasa kepada keluarganya, lalu menyerahkan dokumen setelah kuasa itu diverifikasi.",
+        "score": 2,
+        "reason": "Surat kuasa membebani pengguna dan keluarga dengan pengurusan baru karena kerusakan lift yang bukan kesalahan mereka. Cara ini tidak membahayakan pengguna, tetapi menambah langkah penyerahan dokumen yang sebenarnya tidak diperlukan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: akses layanan bagi penyandang disabilitas saat fasilitas terganggu. Fakta penentu: lift rusak sampai sore, prosedur membolehkan penyerahan dokumen di meja informasi lantai satu setelah identitas diperiksa, dan koordinator berwenang mengatur lokasi layanan. Respons terbaik memindahkan layanan ke pengguna, bukan sebaliknya. Meminta rekan mengantar dokumen memperpanjang rantai penyerahan dan menarik rekan dari antreannya. Meminta pengguna kembali sore hari memaksanya mengulang perjalanan, surat kuasa menambah beban pengurusan, dan mengangkat kursi roda menaiki tangga membahayakan keselamatannya.",
+    "tip": "Cari tahu bagian layanan mana yang terhambat dan siapa yang sebaiknya menanggung hambatan itu.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "aksesibilitas",
+    "kataKunci": "lift rusak, pengguna kursi roda, loket lantai dua, meja informasi lantai satu, lokasi layanan, identitas pemohon"
+  },
+  {
+    "id": "tkp-kasus-pp-10",
+    "skenario": "estimasi-izin-dua-kanal-berbeda",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Prinsip dan Standar",
+    "pola": "informasi-belum-lengkap-bertentangan",
+    "peran": "anggota-tim",
+    "kewenangan": "terbatas",
+    "penentu": "maklumat pelayanan menetapkan lima hari kerja sejak berkas lengkap, berkas dinyatakan lengkap kemarin, dan status dapat Anda lihat",
+    "tempat": "layanan-digital",
+    "keputusan": "mengoreksi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua perkiraan yang bertentangan harus dinilai terhadap standar tertulis dan status berkas yang dapat diperiksa.",
+    "stem": "Seorang pemohon izin usaha menerima dua perkiraan waktu: pusat panggilan dinas menyebut tiga hari kerja, sedangkan petugas loket menyebut tujuh hari kerja. Ia menghubungi Anda, anggota tim informasi layanan, karena akan menyerahkan izin itu kepada bank akhir pekan depan. Status berkasnya dalam verifikasi dan dinyatakan lengkap kemarin, sedangkan maklumat pelayanan menetapkan standar lima hari kerja sejak berkas lengkap. Anda dapat melihat status berkas, tetapi tidak dapat mempercepatnya. Sikap Anda adalah ...",
+    "options": [
+      {
+        "text": "Menghubungi petugas loket untuk memastikan lama proses lima hari kerja itu, lalu menyampaikan hasilnya kepada pemohon.",
+        "score": 3,
+        "reason": "Memastikan ke loket sebelum menjawab terasa hati-hati, tetapi maklumat lima hari kerja dan status berkas yang dapat Anda lihat sudah cukup untuk menjawab sekarang. Pemohon menanti jawaban dan berisiko menerima angka tujuh hari yang tidak sesuai maklumat.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menyampaikan perkiraan tiga hari kerja dari pusat panggilan, lalu menyarankan pemohon menghubungi dinas lagi pekan depan.",
+        "score": 2,
+        "reason": "Perkiraan tiga hari kerja dari pusat panggilan tidak sesuai maklumat yang menetapkan lima hari kerja sejak berkas lengkap. Pemohon dapat salah merencanakan penyerahan izin kepada bank akhir pekan depan, dan baru diminta menghubungi dinas lagi ketika tenggat itu dekat.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "janji-tanpa-dasar"
+        }
+      },
+      {
+        "text": "Meminta maaf atas informasi yang berbeda, lalu menyampaikan bahwa penyelesaian mengacu pada maklumat lima hari kerja.",
+        "score": 4,
+        "reason": "Permintaan maaf dan rujukan pada maklumat lima hari kerja sudah memberi acuan yang benar. Namun pemohon yang akan menyerahkan izin kepada bank akhir pekan depan belum diberi tanggal dan kanal pemantauan, sehingga ia masih harus menghitung dan memeriksa sendiri.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menyarankan pemohon menemui petugas verifikasi di luar jam layanan, lalu meminta berkas didahulukan.",
+        "score": 1,
+        "reason": "Meminta berkas didahulukan lewat petugas verifikasi memberi keistimewaan di luar antrean yang berlaku dan merugikan pemohon lain. Pertemuan di luar jam layanan juga mengaburkan akuntabilitas proses verifikasi dan tidak mengubah standar lima hari kerja.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Menyampaikan batas lima hari kerja beserta tanggalnya, lalu menunjukkan kanal untuk memantau statusnya.",
+        "score": 5,
+        "reason": "Standar lima hari kerja sejak berkas dinyatakan lengkap kemarin menghasilkan tanggal yang dapat dipertanggungjawabkan, dan kanal pemantauan memberi pemohon cara memeriksa sendiri sebelum menyerahkan izin kepada bank. Perbedaan informasi ditutup dengan data yang sama.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: keterbukaan dan kepastian waktu layanan saat informasi bertentangan. Fakta penentu: maklumat pelayanan menetapkan lima hari kerja sejak berkas lengkap, berkas dinyatakan lengkap kemarin, dan status dapat Anda lihat sendiri. Respons terbaik menyampaikan batas beserta tanggalnya dan kanal pemantauan. Merujuk maklumat tanpa tanggal dan kanal memberi acuan yang benar, tetapi belum memberi pemohon bahan untuk merencanakan penyerahan kepada bank. Memastikan ke loket lebih dulu menunda jawaban yang sudah dapat diberikan. Menyebut tiga hari kerja memberi janji tanpa dasar, dan meminta berkas didahulukan di luar jam layanan memberi keistimewaan.",
+    "tip": "Periksa lebih dulu informasi tertulis dan data yang dapat Anda lihat sendiri sebelum memilih angka mana yang disampaikan.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemulihan-layanan",
+    "kataKunci": "dua perkiraan waktu, maklumat pelayanan, lima hari kerja, berkas lengkap kemarin, status berkas"
+  },
+  {
+    "id": "tkp-kasus-pp-11",
+    "skenario": "izin-usaha-salah-antar-kurir-mitra",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Konsep Dasar dan Ruang Lingkup",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "penghubung-mitra",
+    "kewenangan": "terbatas",
+    "penentu": "dokumen sudah dibuka pemilik toko lain, kontrak mengharuskan laporan pada hari yang sama, dan kurir berangkat setengah jam lagi",
+    "tempat": "kemitraan",
+    "keputusan": "memulihkan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Kesalahan sudah berdampak ke pihak lain; dua kewajiban (menarik dokumen dan melapor) bersaing dengan batas waktu kurir.",
+    "stem": "Anda penghubung perusahaan jasa pengiriman yang bermitra dengan dinas perizinan untuk mengantar izin usaha. Pagi ini kurir Anda melapor bahwa izin milik Bu Rahma diserahkan kepada pemilik toko di sebelahnya yang namanya mirip, dan toko itu sudah membukanya. Kontrak kemitraan mengharuskan penghubung perusahaan melapor kepada penghubung dinas pada hari yang sama bila dokumen salah antar, sedangkan dinas yang menerbitkan ulang izin. Kurir masih berada di sekitar toko dan harus berangkat ke alamat berikutnya setengah jam lagi. Bagaimana Anda menanganinya?",
+    "options": [
+      {
+        "text": "Melapor kepada penghubung dinas beserta kronologi, lalu meminta dinas menentukan cara menarik dokumen itu.",
+        "score": 3,
+        "reason": "Laporan kepada dinas dibuat pada hari yang sama sesuai kontrak, tetapi dokumen yang sudah dibuka tetap berada di toko ketika kurir harus berangkat setengah jam lagi. Cara menariknya baru ditentukan dinas, sehingga peluang menarik dokumen itu ikut menyempit.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Meminta pemilik toko mengantar dokumen itu ke rumah Bu Rahma, lalu melapor kepada penghubung dinas pada sore hari.",
+        "score": 2,
+        "reason": "Laporan kepada dinas tetap dibuat pada hari yang sama dan dokumen akan sampai ke pemiliknya. Namun dokumen yang sudah dibuka berpindah lagi lewat orang yang tidak berkepentingan, sehingga perusahaan tidak mengendalikan pengantarannya dan kurir yang berada di lokasi tidak dipakai.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Meminta kurir menarik kembali dokumen itu dengan berita acara, lalu melapor kepada penghubung dinas beserta kronologi.",
+        "score": 5,
+        "reason": "Dokumen yang sudah dibuka perlu segera ditarik dengan berita acara selama kurir masih di sekitar toko, sedangkan laporan beserta kronologi kepada dinas dibuat sekarang sesuai kontrak agar dinas dapat menilai perlunya penerbitan ulang. Kedua hal itu dapat Anda kerjakan sendiri.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mencatat kejadian sebagai insiden internal perusahaan, lalu memberi tahu dinas hanya bila Bu Rahma mengeluh.",
+        "score": 1,
+        "reason": "Mencatat sebagai insiden internal menunda laporan hingga ada keluhan, padahal kontrak mengharuskan laporan pada hari yang sama. Dokumen yang sudah dibuka juga tidak ditarik, dan dinas tidak dapat menilai perlunya penerbitan ulang.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Meminta kurir menarik kembali dokumen itu dengan berita acara, lalu meminta kurir tersebut menelepon petugas jaga dinas.",
+        "score": 4,
+        "reason": "Kurir yang menarik dokumen mengetahui kejadiannya, dan telepon kepada petugas jaga dapat dilakukan sebelum ia berangkat. Namun kontrak menunjuk penghubung perusahaan sebagai pelapor kepada penghubung dinas, sehingga laporan kurir kepada petugas jaga tidak melalui saluran yang disepakati dan kronologi dari sisi perusahaan dapat tidak lengkap.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: pemulihan layanan atas kesalahan yang sudah berdampak kepada pihak ketiga dalam kemitraan. Fakta penentu: izin sudah dibuka pemilik toko lain, kontrak mengharuskan laporan kepada dinas pada hari yang sama, dinas yang menerbitkan ulang izin, dan kurir berangkat setengah jam lagi. Respons terbaik menarik dokumen dengan berita acara dan segera melapor kepada dinas beserta kronologi. Menarik dokumen lalu meminta kurir menelepon petugas jaga memakai pelapor dan penerima yang bukan saluran laporan dalam kontrak, sedangkan melapor lebih dulu lalu meminta dinas menentukan cara menarik dokumen membiarkan dokumen tetap di toko. Meminta pemilik toko mengantar dokumen menyerahkan penanganan kepada pihak yang tidak berkepentingan, dan menyembunyikan kejadian sebagai insiden internal menunda laporan hingga ada keluhan.",
+    "tip": "Pisahkan apa yang dapat Anda lakukan sendiri sekarang dari apa yang menjadi kewajiban kepada pihak lain, lalu urutkan.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemulihan-layanan",
+    "kataKunci": "salah antar, izin sudah dibuka, kontrak kemitraan, laporan hari yang sama, penghubung dinas"
+  },
+  {
+    "id": "tkp-kasus-pp-12",
+    "skenario": "retribusi-salah-hitung-petugas-senior",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Prinsip dan Standar",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "pegawai-baru",
+    "kewenangan": "hanya-usul",
+    "penentu": "retribusi sudah dibayar, Anda belum yakin ada tarif khusus, dan koreksi hanya diproses petugas penetap atau kepala bagian",
+    "tempat": "administratif",
+    "keputusan": "mengoreksi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Temuan harus disampaikan kepada pihak yang tepat tanpa melampaui kewenangan pegawai baru; dua jalur sah (petugas penetap dan kepala bagian) berbeda tahap.",
+    "stem": "Anda pegawai baru di bagian retribusi. Saat membantu merekap berkas, Anda menghitung ulang retribusi izin sebuah bengkel dan mendapati petugas senior menetapkan Rp1.200.000, padahal tarif yang Anda ketahui menghasilkan Rp1.020.000. Bengkel itu sudah membayar kemarin dan menyimpan kuitansinya. Anda belum yakin apakah ada ketentuan tarif khusus untuk bengkel itu. Koreksi ketetapan hanya dapat diproses petugas penetap atau kepala bagian, dan keduanya sedang berada di kantor. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menunjukkan hitungan dan tarif Anda kepada petugas senior, lalu menanyakan apakah ada tarif khusus untuk usaha tersebut.",
+        "score": 5,
+        "reason": "Anda belum yakin apakah ada tarif khusus, sehingga menanyakannya kepada petugas penetap menyelesaikan keraguan tanpa menuduh. Petugas yang sama dapat memproses koreksi bila selisih terbukti, sehingga pembicaraan ini membuka jalan koreksi tanpa melampaui kewenangan Anda.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyampaikan selisih itu kepada kepala bagian, lalu meminta kepala bagian itu menetapkan koreksi resmi.",
+        "score": 3,
+        "reason": "Kepala bagian memang dapat memproses koreksi, tetapi petugas penetap belum diberi kesempatan menjelaskan kemungkinan tarif khusus yang belum Anda ketahui. Melompati petugas itu menjadikan temuan Anda seperti tuduhan sebelum diperiksa.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Mengikuti ketetapan petugas senior karena lebih berpengalaman, lalu menyimpan hasil hitungan Anda sebagai catatan pribadi.",
+        "score": 2,
+        "reason": "Mengikuti ketetapan karena senioritas membiarkan kelebihan bayar Rp180.000 milik bengkel tanpa dikoreksi. Hitungan Anda disimpan tetapi tidak dipakai, sehingga kuitansi yang sudah dibayar tetap memuat nilai yang mungkin keliru.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menunjukkan hitungan dan tarif Anda kepada petugas senior, lalu meminta koreksi dan pengembalian kelebihan bayar bengkel.",
+        "score": 4,
+        "reason": "Menunjukkan hitungan kepada petugas penetap sudah tepat karena ia yang dapat memproses koreksi dan pengembalian. Namun meminta koreksi langsung menganggap selisih itu pasti kesalahan padahal Anda belum yakin ada tarif khusus, sehingga permintaan itu mendahului klarifikasi.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "terlalu-dini"
+        }
+      },
+      {
+        "text": "Mengubah nilai ketetapan pada berkas bengkel sesuai hitungan Anda, lalu memberi tahu petugas senior setelah diubah.",
+        "score": 1,
+        "reason": "Mengubah nilai ketetapan melampaui kewenangan Anda karena koreksi hanya diproses petugas penetap atau kepala bagian. Berkas yang diubah sebelum klarifikasi dapat menimbulkan selisih baru antara kuitansi dan catatan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: akuntabilitas atas kesalahan internal yang merugikan pengguna dan batas kewenangan pegawai baru. Fakta penentu: retribusi sudah dibayar, Anda belum yakin apakah ada tarif khusus, dan koreksi hanya diproses petugas penetap atau kepala bagian. Respons terbaik menunjukkan hitungan kepada petugas penetap dan lebih dulu menanyakan apakah ada tarif khusus, sesuai keraguan Anda. Meminta koreksi dan pengembalian langsung mendahului klarifikasi. Melapor langsung kepada kepala bagian melompati klarifikasi, mengikuti ketetapan karena senioritas membiarkan kelebihan bayar, dan mengubah ketetapan melampaui kewenangan.",
+    "tip": "Tanyakan siapa yang memegang keputusan dan informasi apa yang mungkin belum Anda ketahui.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemulihan-layanan",
+    "kataKunci": "pegawai baru, hitung ulang retribusi, belum yakin, tarif khusus, koreksi ketetapan, petugas penetap"
+  },
+  {
+    "id": "tkp-kasus-pp-13",
+    "skenario": "pemberitahuan-status-sms-nomor-lama",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Konsep Dasar dan Ruang Lingkup",
+    "pola": "masalah-berulang",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "pemberitahuan status hanya lewat SMS ke nomor lama, sedangkan surel dan halaman cek status mandiri sudah tersedia",
+    "tempat": "layanan-digital",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Penyebab panggilan berulang harus dibaca dari catatan, dan perbaikan harus menyentuh penyebab, bukan kapasitas.",
+    "stem": "Anda koordinator layanan perizinan daring. Setelah Anda menambah dua petugas penjawab telepon, jumlah panggilan yang menanyakan status permohonan tetap tinggi pada setiap awal pekan. Catatan panggilan menunjukkan sebagian besar penelepon tidak menerima pemberitahuan status karena pesan hanya dikirim lewat SMS ke nomor yang diisi saat mendaftar, dan banyak nomor itu sudah tidak aktif. Aplikasi sudah punya halaman cek status mandiri yang jarang dipakai, dan surel pemohon juga tercatat saat mendaftar. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mengirim pemberitahuan status lewat surel kepada penelepon pekan ini, lalu memantau jumlah panggilan pekan depan.",
+        "score": 3,
+        "reason": "Surel kepada penelepon pekan ini menjawab mereka yang sudah menanyakan status, memakai surel yang memang tercatat. Namun pemohon lain tetap menerima SMS ke nomor lama dan nomor itu belum diperbarui, sehingga panggilan awal pekan akan berulang.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menambah satu petugas lagi pada jalur telepon, lalu memantau jumlah panggilan pada setiap awal pekan.",
+        "score": 2,
+        "reason": "Menambah petugas telepon mengulang perbaikan yang sebelumnya sudah dicoba dan tidak menurunkan panggilan. Catatan panggilan menunjuk penyebab pada pemberitahuan SMS, bukan pada jumlah penjawab.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kosmetik"
+        }
+      },
+      {
+        "text": "Meminta petugas menyatakan pesan sudah terkirim dan nomor adalah urusan pemohon, lalu mengakhiri panggilan telepon.",
+        "score": 1,
+        "reason": "Menyatakan pesan sudah terkirim dan menyerahkan pemeriksaan nomor kepada pemohon memindahkan beban kegagalan layanan kepada pengguna. Penelepon yang tidak mendapat pemberitahuan ditinggalkan tanpa bantuan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "menyalahkan-pengguna"
+        }
+      },
+      {
+        "text": "Menambah pemberitahuan lewat surel yang tercatat saat mendaftar, lalu meminta pemohon memperbarui nomor saat masuk akun.",
+        "score": 5,
+        "reason": "Penyebab panggilan adalah pemberitahuan yang hanya lewat SMS ke nomor lama, sehingga pemberitahuan lewat surel yang tercatat dan pembaruan nomor langsung mengubah cara pemberitahuan sampai ke pemohon. Perbaikan menyasar akar masalah, bukan kapasitas telepon.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengumumkan halaman cek status di laman utama, lalu meminta petugas telepon mengarahkan penelepon ke halaman itu.",
+        "score": 4,
+        "reason": "Halaman cek status yang sudah ada membuat pemohon dapat memeriksa sendiri dan mengurangi panggilan. Namun pemberitahuan tetap hanya lewat SMS ke nomor lama, sehingga pemohon yang tidak membuka halaman itu tetap tidak menerima kabar.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: perbaikan layanan berkelanjutan yang menyentuh penyebab masalah. Fakta penentu: penambahan petugas telepon tidak menurunkan panggilan karena pemberitahuan status hanya dikirim lewat SMS ke nomor lama, padahal surel pemohon tercatat. Respons terbaik menambah kanal surel dan memperbarui nomor sehingga pemberitahuan benar-benar sampai. Mengarahkan penelepon ke halaman cek status mengurangi panggilan, tetapi pemberitahuan SMS tidak diperbaiki. Surel hanya kepada penelepon menjangkau sebagian pemohon, menambah petugas lagi mengulang cara yang gagal, dan menyalahkan pemohon memindahkan beban kegagalan layanan.",
+    "tip": "Telusuri penyebab masalah dari catatan yang tersedia, lalu bandingkan setiap usulan dengan penyebab itu.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pemulihan-layanan",
+    "kataKunci": "penambahan petugas telepon, pemberitahuan SMS, nomor tidak aktif, surel pemohon, cek status mandiri"
+  },
+  {
+    "id": "tkp-kasus-pp-14",
+    "skenario": "antrean-aplikasi-keberatan-petugas-senior",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Adil, Inklusif, dan Tidak Diskriminatif",
+    "pola": "penolakan-perubahan",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "belum ada data berapa lansia yang benar-benar tidak dapat mendaftar, dan unit hanya punya tiga loket yang tidak cukup untuk dua jalur antrean tetap",
+    "tempat": "rapat",
+    "keputusan": "mengembangkan",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Kemajuan layanan dan akses lansia sama-sama sah; kebutuhan nyata belum terukur dan kapasitas loket membatasi jalur ganda, sehingga alternatif harus dinilai.",
+    "stem": "Dalam rapat unit, Anda sebagai kepala unit layanan memaparkan rencana mengganti nomor antrean kertas dengan pendaftaran lewat aplikasi mulai bulan depan. Petugas senior yang lama melayani lansia keberatan karena banyak lansia belum memiliki ponsel pintar. Sepertiga pengguna loket berusia di atas enam puluh tahun, tetapi belum ada data berapa yang benar-benar tidak dapat mendaftar, sebab sebagian datang bersama keluarga. Unit hanya punya tiga loket, tidak cukup untuk dua jalur antrean tetap. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Meminta petugas senior menyiapkan pengguna lansia memakai aplikasi, lalu menerapkan rencana sesuai jadwal bulan depan.",
+        "score": 4,
+        "reason": "Persiapan pengguna lansia membantu dan petugas senior dilibatkan. Namun rencana tetap berjalan bulan depan sebelum diketahui berapa lansia yang benar-benar tidak dapat mendaftar, sehingga hambatan mereka belum dipetakan.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Meminta petugas senior memetakan hambatan lansia, lalu menguji aplikasi dalam percobaan berpendampingan.",
+        "score": 5,
+        "reason": "Keberatan petugas senior didasari pengalaman melayani lansia yang mencakup sepertiga pengguna, sedangkan data berapa yang benar-benar tidak dapat mendaftar belum ada. Pemetaan hambatan dan percobaan berpendampingan menjawab ketidakpastian itu sebelum akses lansia ditutup.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menghentikan nomor antrean kertas mulai bulan depan, lalu meminta keberatan petugas senior dicatat sebagai masukan.",
+        "score": 1,
+        "reason": "Menghentikan nomor kertas menutup akses lansia yang belum memiliki ponsel pintar, padahal mereka sepertiga pengguna loket. Keberatan petugas senior hanya dicatat sebagai masukan dan tidak mengubah rencana.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "menutup-hak"
+        }
+      },
+      {
+        "text": "Membatalkan rencana aplikasi untuk tahun ini, lalu meninjau ulang kebutuhan lansia pada rapat tahun depan.",
+        "score": 2,
+        "reason": "Membatalkan rencana untuk tahun ini mengabaikan arah layanan digital dan peluang memperbaiki antrean. Lansia tidak dirugikan sekarang, tetapi kebutuhan mereka baru ditinjau setahun kemudian.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menerapkan aplikasi bagi pengguna yang siap, lalu mempertahankan nomor kertas bagi lansia pada jalur terpisah.",
+        "score": 3,
+        "reason": "Nomor kertas menjaga akses lansia dan aplikasi tetap berjalan bagi pengguna yang siap. Namun unit hanya punya tiga loket sehingga dua jalur tidak dapat dijaga, dan jalur terpisah dibuat sebelum diketahui berapa lansia yang membutuhkannya.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: pelayanan inklusif dalam perubahan, yaitu menguji perubahan bersama pihak yang paling terdampak. Fakta penentu: sepertiga pengguna loket berusia di atas enam puluh tahun, belum ada data berapa yang benar-benar tidak dapat mendaftar, dan unit hanya punya tiga loket. Respons terbaik memetakan hambatan lalu menguji aplikasi dengan pendampingan sebelum penerapan penuh. Menyiapkan lansia tanpa memetakan hambatan membantu tetapi mendahului data. Jalur terpisah menjaga akses tetapi membebani petugas sebelum kebutuhan terukur, membatalkan rencana menahan perbaikan antrean, dan menghentikan nomor kertas menutup akses.",
+    "tip": "Perlakukan keberatan sebagai informasi yang perlu diuji, lalu lihat kapasitas unit yang tersedia untuk setiap usulan.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "aksesibilitas",
+    "kataKunci": "pendaftaran lewat aplikasi, keberatan petugas senior, ponsel pintar, sepertiga pengguna lansia, belum ada data, tiga loket"
+  },
+  {
+    "id": "tkp-kasus-pp-15",
+    "skenario": "rekap-bulanan-versus-meja-pengaduan",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Pengambilan Keputusan",
+    "pola": "dua-tanggung-jawab",
+    "peran": "anggota-tim",
+    "kewenangan": "hanya-usul",
+    "penentu": "rekan yang bebas tugas bersedia membantu, sedangkan pengaduan yang tidak dicatat hari ini baru diproses esok",
+    "tempat": "administratif",
+    "keputusan": "koordinasi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua tanggung jawab sama-sama sah dengan tenggat berbeda; bantuan yang tersedia menentukan urutan terbaik.",
+    "stem": "Anda anggota tim pelayanan yang hari ini bertugas di meja pengaduan. Pukul 15.00 Anda harus menyerahkan rekap kepuasan pengguna bulanan kepada kepala bidang untuk bahan rapat esok pagi, tetapi rekap itu baru selesai separuh. Sejak siang pengaduan masuk lebih ramai karena gangguan jaringan, dan pengaduan yang tidak dicatat hari ini baru dapat diproses esok sehingga tanggapannya terlambat. Seorang rekan yang bebas tugas bersedia membantu bila diminta, dan kepala bidang masih dapat dihubungi. Apa yang sebaiknya Anda lakukan?",
+    "options": [
+      {
+        "text": "Mengabari kepala bidang bahwa rekap terlambat dua jam, lalu melanjutkan pencatatan pengaduan hingga gangguan mereda.",
+        "score": 4,
+        "reason": "Mengabari kepala bidang menjaga komunikasi dan pengaduan tetap dicatat hari ini. Namun bantuan rekan yang tersedia tidak dipakai, sehingga rekap terlambat dua jam yang sebenarnya dapat dihindari.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Melayani pengaduan sampai selesai, lalu menyerahkan rekap esok pagi sebelum rapat dengan penjelasan kepada kepala bidang.",
+        "score": 3,
+        "reason": "Pengaduan dicatat hari ini dan kepala bidang menerima penjelasan. Namun rekap baru tiba esok pagi tanpa izin lebih dulu, sehingga kepala bidang tidak sempat membacanya sebelum rapat.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Melengkapi bagian rekap yang belum selesai dengan angka perkiraan, lalu menyerahkannya tepat waktu.",
+        "score": 1,
+        "reason": "Mengisi angka perkiraan memasukkan data yang tidak benar ke dalam rekap untuk bahan rapat kepala bidang. Tepat waktu hanya di atas kertas, padahal rekan yang bersedia membantu dapat dipakai dan keputusan rapat dapat bertumpu pada angka palsu.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      },
+      {
+        "text": "Menutup sementara meja pengaduan dengan papan pemberitahuan, lalu menyelesaikan rekap di meja sampai pukul 15.00.",
+        "score": 2,
+        "reason": "Menutup meja pengaduan menghentikan pencatatan hari ini padahal rekan yang bersedia membantu tidak diminta. Rekap selesai tepat waktu dan pengaduan masih dapat dicatat esok, tetapi tanggapan atas pengaduan itu menjadi terlambat.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "menutup-sementara"
+        }
+      },
+      {
+        "text": "Meminta rekan yang bebas tugas menggantikan Anda di meja, lalu menyerahkan rekap yang selesai tepat waktu.",
+        "score": 5,
+        "reason": "Rekan yang bebas tugas dan bersedia membantu membuat pengaduan tetap dicatat hari ini, sehingga rekap dapat selesai dan sampai ke kepala bidang pada pukul 15.00. Kedua tanggung jawab terpenuhi tanpa mengorbankan salah satunya.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: pengambilan keputusan saat dua tanggung jawab sama-sama sah. Fakta penentu: rekap harus tiba pukul 15.00, pengaduan yang tidak dicatat hari ini baru diproses esok, dan rekan yang bebas tugas bersedia membantu. Respons terbaik memakai bantuan itu agar kedua tanggung jawab terpenuhi. Mengabari keterlambatan menjaga komunikasi tetapi mengabaikan bantuan yang tersedia. Menyerahkan rekap esok pagi melanggar waktu tanpa persetujuan, menutup meja pengaduan menunda warga, dan mengisi angka perkiraan memalsukan data.",
+    "tip": "Hitung dahulu bantuan dan waktu yang tersedia, lalu lihat tanggung jawab mana yang paling merugikan pihak lain bila tertunda.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "keterbatasan-layanan",
+    "kataKunci": "rekap pukul 15.00, meja pengaduan, gangguan jaringan, pengaduan tidak dicatat, rekan bebas tugas"
+  },
+  {
+    "id": "tkp-kasus-pp-16",
+    "skenario": "jembatan-rusak-layanan-keliling",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Pengambilan Keputusan",
+    "pola": "gangguan-layanan-mendadak",
+    "peran": "koordinator",
+    "kewenangan": "terbatas",
+    "penentu": "jembatan rusak, titik tambahan di balai dusun sebelah dapat dijangkau lewat jalan setapak kering, dan ketua dusun dapat menghubungi warga",
+    "tempat": "lapangan",
+    "keputusan": "memulihkan",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Kewenangan terbatas pada titik tambahan; alternatif berbeda dalam risiko dan jangkauan informasi kepada warga.",
+    "stem": "Anda koordinator tim layanan keliling yang dijadwalkan melayani dusun di seberang sungai hari ini. Setengah jam sebelum berangkat, Anda menerima kabar bahwa jembatan menuju dusun itu rusak sehingga kendaraan layanan tidak dapat melintas. Sekitar empat puluh warga, sebagian lansia, sudah diberi tahu akan dilayani hari ini. Rute resmi hanya dapat diubah kepala dinas, tetapi koordinator boleh menetapkan titik tambahan yang dapat dijangkau warga. Balai dusun sebelah dapat dicapai lewat jalan setapak yang kering, dan ketua dusun dapat menghubungi warga lewat grup pesan. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Membatalkan layanan hari ini karena jembatan rusak, lalu menetapkan jadwal kunjungan ulang pada putaran layanan keliling berikutnya.",
+        "score": 3,
+        "reason": "Pembatalan disertai jadwal kunjungan ulang memberi warga kepastian kapan dilayani. Namun empat puluh warga yang sudah diberi tahu dan sebagian lansia tetap dikecewakan padahal titik tambahan yang dapat dijangkau tersedia hari ini.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Melayani penduduk di balai dusun sebelah sebagai titik tambahan, lalu meminta ketua dusun menyampaikan hal itu kepada mereka.",
+        "score": 5,
+        "reason": "Balai dusun sebelah yang dapat dijangkau lewat jalan setapak kering menjaga layanan hari ini bagi empat puluh warga yang sudah diberi tahu, dan ketua dusun dapat menyampaikan perubahan lewat grup pesan. Anda memakai titik tambahan yang memang boleh Anda tetapkan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta tim membawa peralatan menyeberang dengan perahu warga, lalu memulai layanan di dusun seberang sesuai jadwal.",
+        "score": 1,
+        "reason": "Menyeberang dengan perahu warga membahayakan keselamatan tim dan perangkat yang memuat data penduduk. Hambatan jembatan dihindari dengan risiko yang lebih besar daripada kerugian penundaan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membahayakan"
+        }
+      },
+      {
+        "text": "Menanyakan kepada aparat desa kapan jembatan ke dusun selesai, lalu menyerahkan keputusan layanan kepada aparat desa.",
+        "score": 2,
+        "reason": "Menanyakan perkiraan perbaikan tidak menghasilkan jadwal apa pun bagi empat puluh warga yang sudah diberi tahu, dan keputusan layanan digantungkan pada aparat desa. Keselamatan tim tidak terancam, tetapi titik tambahan yang boleh Anda tetapkan tidak dipakai dan tidak ada rencana pengganti.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Melayani warga di balai dusun sebelah sebagai titik tambahan, lalu menempelkan pengumuman di kantor desa.",
+        "score": 4,
+        "reason": "Titik tambahan di balai dusun sebelah menjaga layanan, tetapi pengumuman di kantor desa tidak menjangkau warga dusun seberang yang terhalang jembatan rusak. Banyak warga bisa menunggu di tempat lama sementara layanan berlangsung di tempat lain.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: kesinambungan layanan di lapangan dengan kewenangan terbatas. Fakta penentu: jembatan rusak, balai dusun sebelah dapat dijangkau lewat jalan setapak kering, koordinator boleh menetapkan titik tambahan tetapi tidak mengubah rute resmi, dan ketua dusun dapat menghubungi warga. Respons terbaik melayani warga di titik tambahan dan memakai ketua dusun untuk menyampaikan informasi. Pengumuman di kantor desa tidak menjangkau warga dusun seberang. Membatalkan layanan membuang kesempatan yang ada, menanyakan perkiraan perbaikan menahan kepastian, dan menyeberang dengan perahu membahayakan tim dan data.",
+    "tip": "Periksa batas kewenangan Anda lebih dulu, lalu lihat apakah informasi baru benar-benar akan sampai ke warga.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "keterbatasan-layanan",
+    "kataKunci": "jembatan rusak, rute resmi, titik tambahan, balai dusun sebelah, jalan setapak, ketua dusun"
+  },
+  {
+    "id": "tkp-kasus-pp-17",
+    "skenario": "lonjakan-antrean-awal-bulan-pajak",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Pelayanan Prima dan Kepuasan",
+    "pola": "masalah-berulang",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "antrean menumpuk pada lima hari pertama bulan karena jatuh tempo, sedangkan petugas pada hari lain sudah cukup dan pembayaran daring jarang dipakai",
+    "tempat": "rapat",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Penyebab beban harus dibaca dari pola kunjungan; perbaikan harus menyentuh kapasitas sekaligus permintaan.",
+    "stem": "Dalam rapat evaluasi, Anda kepala unit layanan pajak daerah meninjau data kunjungan. Antrean menumpuk setiap lima hari pertama bulan karena pembayaran jatuh tempo, sedangkan pada hari lain jumlah petugas sudah mencukupi dan loket sering senggang. Keterlambatan membayar dikenai denda. Pembayaran daring sudah tersedia tetapi jarang dipakai, dan imbauan lewat spanduk selama dua bulan tidak mengubah puncak kunjungan. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Memperpanjang jam layanan pada lima hari pertama, lalu meminta petugas bergantian lembur sesuai kemampuan.",
+        "score": 3,
+        "reason": "Memperpanjang jam layanan menambah kapasitas pada lima hari pertama, tetapi bergantung pada lembur petugas yang tidak berkelanjutan. Pola kunjungan warga tidak berubah, padahal petugas pada hari lain senggang.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Mengalihkan sebagian layanan rutin ke kanal daring, lalu mengevaluasi lama tunggu pada akhir bulan.",
+        "score": 4,
+        "reason": "Pembayaran daring yang sudah tersedia dapat mengurangi kunjungan ke loket pada puncak, tetapi jumlah petugas pada lima hari pertama tetap sama. Penumpukan masih dapat terjadi bagi warga yang tetap datang, dan hasilnya baru dinilai sebulan kemudian.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menggeser jadwal agar lebih banyak petugas berjaga pada lima hari pertama, lalu membuka pemesanan jam kunjungan bagi warga.",
+        "score": 5,
+        "reason": "Puncak kunjungan terjadi pada lima hari pertama saat jatuh tempo, sementara petugas pada hari lain sudah cukup, sehingga menggeser jadwal petugas dan membuka pemesanan jam kunjungan menyesuaikan kapasitas dan permintaan sekaligus. Perubahan itu tidak menambah petugas tetap.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menghentikan penerimaan warga setelah kuota harian penuh, lalu meminta mereka kembali pada hari berikutnya.",
+        "score": 1,
+        "reason": "Menghentikan penerimaan setelah kuota penuh menyuruh warga kembali ketika pembayaran sudah jatuh tempo, sehingga mereka dikenai denda yang tidak dapat ditarik kembali. Kerugian itu permanen dan ditimpakan kepada warga demi menjaga beban kerja.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "menutup-hak"
+        }
+      },
+      {
+        "text": "Mengimbau warga lewat media sosial agar datang pada pertengahan bulan, lalu memantau kunjungan awal bulan.",
+        "score": 2,
+        "reason": "Imbauan di media sosial mengulang cara spanduk yang sudah dua bulan tidak mengubah puncak kunjungan awal bulan. Cara ini tidak menyentuh jatuh tempo pembayaran yang membuat warga datang bersamaan, dan warga tidak dirugikan olehnya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kosmetik"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: perbaikan berkelanjutan berdasarkan pola kunjungan. Fakta penentu: antrean menumpuk pada lima hari pertama bulan karena jatuh tempo, petugas pada hari lain sudah cukup, pembayaran daring jarang dipakai, dan imbauan spanduk selama dua bulan tidak mengubah puncak kunjungan. Respons terbaik menyesuaikan kapasitas petugas dan permintaan warga sekaligus. Mengalihkan layanan ke kanal daring meratakan kunjungan, tetapi kapasitas puncak tetap. Memperpanjang jam bergantung pada lembur, imbauan tambahan mengulang cara yang gagal, dan menghentikan penerimaan menimpakan denda permanen kepada warga.",
+    "tip": "Baca pola pada data, lalu lihat usulan mana yang mengubah pola itu, bukan hanya menambah usaha.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "keterbatasan-layanan",
+    "kataKunci": "lima hari pertama, jatuh tempo, loket senggang, denda, pembayaran daring, imbauan spanduk"
+  },
+  {
+    "id": "tkp-kasus-pp-18",
+    "skenario": "percepatan-sktm-surat-dokter-belum-terverifikasi",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Pengambilan Keputusan",
+    "pola": "informasi-belum-lengkap-bertentangan",
+    "peran": "pelaksana",
+    "kewenangan": "hanya-usul",
+    "penentu": "bagian verifikasi rumah sakit hanya melayani sampai pukul 11.00, sedangkan kepala seksi rapat sampai pukul 12.00",
+    "tempat": "administratif",
+    "keputusan": "koordinasi",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Urgensi nyata bertemu batas waktu verifikasi pihak lain dan persetujuan yang bukan wewenang Anda; alternatif harus dinilai terhadap jam layanan.",
+    "stem": "Seorang ibu mengajukan percepatan penerbitan surat keterangan tidak mampu karena anaknya menjalani operasi besok pagi dan jaminan biayanya harus terbit hari ini. Berkas lengkap, tetapi surat keterangan dokter yang dilampirkan belum terverifikasi. Bagian verifikasi rumah sakit dapat Anda hubungi, tetapi hanya melayani sampai pukul 11.00. Percepatan hanya dapat disetujui kepala seksi, yang rapat sampai pukul 12.00. Anda pelaksana penerima berkas dan tidak berwenang menyetujui percepatan. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Memverifikasi surat dokter lewat bagian verifikasi rumah sakit, lalu menyerahkan berkas dan hasilnya kepada kepala seksi.",
+        "score": 5,
+        "reason": "Surat dokter belum terverifikasi dan bagian verifikasi rumah sakit hanya melayani sampai pukul 11.00, sehingga Anda memverifikasinya sekarang agar kepala seksi memutuskan dengan berkas yang andal tepat setelah rapat. Anda mengerjakan bagian Anda dan menyerahkan keputusan kepada yang berwenang.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyerahkan berkas kepada kepala seksi setelah rapat dengan catatan mendesak, lalu menghubungi rumah sakit untuk verifikasi.",
+        "score": 3,
+        "reason": "Catatan mendesak memberi tahu kepala seksi tentang urgensi, tetapi verifikasi baru dicoba setelah rapat berakhir pukul 12.00 ketika bagian verifikasi rumah sakit sudah tutup. Kepala seksi harus memutuskan dengan surat yang belum dapat diverifikasi hari itu.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menyampaikan kepada ibu itu bahwa percepatan akan disetujui, lalu menyerahkan berkasnya kepada kepala seksi.",
+        "score": 2,
+        "reason": "Menjanjikan percepatan disetujui melampaui kewenangan Anda dan menumbuhkan harapan sebelum surat dokter terverifikasi. Jika kepala seksi menolak, ibu itu kehilangan waktu dan kepercayaan padahal operasi dilakukan besok pagi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "janji-tanpa-dasar"
+        }
+      },
+      {
+        "text": "Memverifikasi surat dokter lewat bagian verifikasi rumah sakit, lalu menjelaskan kepada ibu itu bahwa percepatan diputuskan kepala seksi.",
+        "score": 4,
+        "reason": "Surat dokter terverifikasi dan ibu itu mengetahui siapa yang memutuskan. Namun berkas belum sampai ke kepala seksi, sehingga persetujuan baru dapat dimulai setelah berkas diantar, padahal rapat selesai pukul 12.00 dan jaminan biaya harus terbit hari ini.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Meminta kepala seksi menandatangani percepatan di sela rapat, lalu menyerahkan surat dokter sebelum verifikasi selesai.",
+        "score": 1,
+        "reason": "Meminta persetujuan di sela rapat sebelum verifikasi selesai membuat percepatan diputuskan dengan surat yang belum terbukti benar. Cara ini menyalahgunakan jalur mendesak dan berisiko pada akuntabilitas keputusan kepala seksi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tanpa-verifikasi"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: pengambilan keputusan dengan urgensi nyata, batas waktu layanan pihak lain, dan kewenangan yang berada pada pejabat. Fakta penentu: bagian verifikasi rumah sakit hanya melayani sampai pukul 11.00 sedangkan kepala seksi rapat sampai pukul 12.00, dan Anda tidak berwenang menyetujui percepatan. Respons terbaik memverifikasi surat sekarang lalu menyerahkan berkas beserta hasilnya kepada kepala seksi. Memverifikasi dan hanya memberi tahu ibu itu belum membawa berkas kepada pemegang keputusan. Menyerahkan berkas dengan catatan mendesak lalu memverifikasi setelah rapat gagal karena bagian verifikasi sudah tutup, menjanjikan persetujuan melampaui kewenangan, dan meminta tanda tangan sebelum verifikasi menyalahgunakan jalur mendesak.",
+    "tip": "Tanyakan batas waktu setiap langkah dan siapa yang berwenang memutuskan sebelum memilih urutan kerja.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "permintaan-khusus",
+    "kataKunci": "operasi besok pagi, surat keterangan dokter, belum terverifikasi, verifikasi rumah sakit, pukul 11.00, kepala seksi"
+  },
+  {
+    "id": "tkp-kasus-pp-19",
+    "skenario": "atasan-minta-berkas-teman-didahulukan",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Adil, Inklusif, dan Tidak Diskriminatif",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "pelaksana",
+    "kewenangan": "tidak-ada",
+    "penentu": "unit mengurutkan berkas menurut waktu pengajuan, berkas teman atasan lengkap tanpa alasan mendesak, dan Anda tidak berwenang mengubah urutan",
+    "tempat": "layanan-digital",
+    "keputusan": "menolak",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Tekanan dari atasan langsung bertemu aturan urutan yang tidak dapat Anda ubah; perlu menolak tanpa memutus hubungan kerja.",
+    "stem": "Anda pelaksana verifikasi permohonan izin secara daring di unit yang mengurutkan berkas berdasarkan waktu pengajuan. Lewat pesan singkat, kepala seksi meminta permohonan milik temannya, yang diajukan tadi pagi, diverifikasi lebih dahulu daripada puluhan permohonan yang masuk sejak pekan lalu. Berkas temannya lengkap dan tidak ada alasan mendesak yang disebutkan. Pemohon dapat melihat posisi berkasnya di aplikasi unit. Anda tidak berwenang mengubah urutan, dan kepala seksi itu atasan langsung Anda. Bagaimana respons Anda?",
+    "options": [
+      {
+        "text": "Mengajukan keberatan tertulis kepada kepala bidang atas permintaan atasan, lalu memproses berkas sesuai urutan waktu.",
+        "score": 3,
+        "reason": "Keberatan tertulis kepada kepala bidang membawa persoalan ke tingkat yang lebih tinggi pada permintaan pertama dari atasan. Anda belum membicarakan batas urutan secara langsung, padahal jawaban yang jelas dapat menyelesaikannya.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Membiarkan pesan atasan tidak terjawab hingga akhir pekan, lalu memproses berkas sesuai urutan waktu pengajuan.",
+        "score": 2,
+        "reason": "Membiarkan pesan atasan tidak terjawab membuat permintaan itu menggantung dan teman atasan tidak tahu giliran berkasnya. Urutan waktu pengajuan tetap dijaga, tetapi persoalan dengan atasan langsung tidak diselesaikan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Memproses berkas teman atasan lebih dahulu, lalu mencatat permintaan atasan tersebut pada kolom keterangan berkas.",
+        "score": 1,
+        "reason": "Mendahulukan berkas teman atasan melanggar urutan waktu pengajuan yang tidak berwenang Anda ubah. Mencatat permintaan atasan pada kolom keterangan membuat pelanggaran itu terlihat, tetapi puluhan pemohon yang lebih dahulu mengajukan tetap dirugikan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Menjawab atasan bahwa urutan berlaku sama bagi setiap pemohon, lalu memberi tahu teman itu bahwa berkasnya diproses sesuai urutan.",
+        "score": 4,
+        "reason": "Jawaban bahwa urutan berlaku sama menjaga keadilan bagi pemohon lain, dan teman atasan diberi tahu bahwa berkasnya diproses sesuai urutan. Namun ia tidak diberi cara memantau posisi berkasnya sendiri di aplikasi unit, sehingga kepastiannya bergantung pada kabar dari Anda.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Menjawab atasan bahwa urutan berlaku, lalu mengajari teman itu cara memantau posisi berkas di aplikasi.",
+        "score": 5,
+        "reason": "Berkas diurutkan menurut waktu pengajuan dan Anda tidak berwenang mengubahnya, sehingga jawaban kepada atasan menolak permintaan tanpa memutus hubungan kerja. Cara memantau posisi berkas di aplikasi memberi teman atasan kepastian tanpa mendahului puluhan pemohon lain.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: anti-favoritisme dan kepatuhan pada urutan layanan di bawah tekanan atasan. Fakta penentu: berkas diurutkan menurut waktu pengajuan, berkas teman atasan lengkap tanpa alasan mendesak, dan Anda tidak berwenang mengubah urutan. Respons terbaik menjawab atasan bahwa urutan berlaku dan memberi teman itu cara memantau posisi berkasnya. Menyampaikan batas urutan dan hanya memberi tahu bahwa berkas diproses sesuai urutan menjaga keadilan, tetapi belum memberi cara memantau. Keberatan tertulis pada permintaan pertama melompati percakapan langsung, membiarkan pesan atasan menggantung menyisakan persoalan, dan mendahulukan berkas melanggar urutan.",
+    "tip": "Lihat apa yang berubah bagi pemohon lain jika permintaan atasan dituruti, dan bagaimana permintaan itu dapat dijawab tanpa memutus hubungan kerja.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "permintaan-khusus",
+    "kataKunci": "urutan waktu pengajuan, permintaan atasan, berkas teman, tanpa alasan mendesak, tidak berwenang mengubah urutan"
+  },
+  {
+    "id": "tkp-kasus-pp-20",
+    "skenario": "kepala-desa-minta-jadwal-layanan-keliling-dimajukan",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Prinsip dan Standar",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "penghubung-mitra",
+    "kewenangan": "hanya-usul",
+    "penentu": "dinas tidak punya hari kosong pada jadwal, desa lain menunggu gilirannya, dan dinas menerima layanan tambahan dengan daftar warga",
+    "tempat": "kemitraan",
+    "keputusan": "koordinasi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Tekanan dari pimpinan desa mitra harus dijawab lewat jalur yang diterima dinas tanpa merugikan desa lain.",
+    "stem": "Anda staf desa yang menjadi penghubung dengan dinas kependudukan untuk layanan keliling. Jadwal layanan disusun tiga bulan sekali dan giliran desa Anda jatuh pekan depan. Kepala desa menugaskan Anda meminta dinas memajukan layanan ke hari ini karena banyak warga akan merantau lusa dan membutuhkan dokumen. Dinas menyatakan tidak ada hari kosong pada jadwal ini, tetapi menerima usulan layanan tambahan bila disertai daftar warga yang membutuhkan. Desa lain sudah menunggu gilirannya. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Meneruskan permintaan kepala desa kepada dinas apa adanya, lalu menanyakan keputusan dinas tentang perubahan jadwal layanan desa.",
+        "score": 3,
+        "reason": "Meneruskan permintaan apa adanya menyampaikan aspirasi kepala desa kepada dinas, tetapi dinas sudah menyatakan tidak ada hari kosong pada jadwal. Anda tidak menawarkan jalan yang diterima dinas, dan kepala desa tidak mendengar batasannya.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menghubungi kenalan pejabat dinas lewat pesan pribadi, lalu menanyakan kemungkinan jadwal layanan desa dimajukan hari ini.",
+        "score": 2,
+        "reason": "Menghubungi kenalan pejabat memakai jalur pribadi di luar prosedur penghubung dan memberi kesan jadwal dapat digeser lewat kedekatan, padahal desa lain sudah menunggu gilirannya. Namun pertanyaan itu belum menggeser jadwal, dan keputusan tetap berada di dinas.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "jalur-tidak-resmi"
+        }
+      },
+      {
+        "text": "Memberi tahu warga bahwa jadwal layanan dimajukan hari ini, lalu mengurus persetujuan dinas setelahnya.",
+        "score": 1,
+        "reason": "Memberi tahu warga bahwa jadwal dimajukan hari ini mendahului keputusan dinas dan membuat warga bersiap berdasarkan informasi yang belum disetujui. Jika dinas menolak, warga yang sudah bersiap dirugikan dan kepercayaan mereka kepada desa Anda ikut rusak.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      },
+      {
+        "text": "Menyampaikan batasan jadwal dinas kepada kepala desa, lalu mengajukan layanan tambahan beserta daftar warga.",
+        "score": 5,
+        "reason": "Kepala desa dihormati dengan penjelasan yang jujur tentang jadwal tiga bulanan, dan usulan layanan tambahan bersama daftar warga yang merantau memakai jalur yang dinas terima tanpa menggeser giliran desa lain. Kebutuhan warga dijawab, bukan ditekan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyampaikan batasan jadwal dinas kepada kepala desa, lalu menyarankan warga mengurus dokumen ke kantor dinas.",
+        "score": 4,
+        "reason": "Penjelasan batasan jadwal jujur dan warga tetap diberi jalan mengurus dokumen. Namun usulan layanan tambahan yang diterima dinas tidak dipakai, sehingga warga harus menempuh perjalanan ke kantor dinas.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: kemitraan yang menjaga aturan dan keadilan antardesa di bawah tekanan pimpinan. Fakta penentu: jadwal tiga bulanan penuh, dinas menerima usulan layanan tambahan dengan daftar warga, dan desa lain menunggu gilirannya. Respons terbaik menjelaskan batasan kepada kepala desa lalu mengajukan layanan tambahan. Menyarankan warga ke kantor dinas menjaga aturan, tetapi mengabaikan jalur yang dinas buka. Meneruskan permintaan tanpa jalan keluar tidak membantu, menanyakan lewat kenalan pribadi memakai jalur di luar prosedur, dan memberi tahu warga sebelum persetujuan mendahului keputusan dinas.",
+    "tip": "Perhatikan jalur apa yang memang dibuka pihak mitra sebelum memilih cara menanggapi tekanan.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "permintaan-khusus",
+    "kataKunci": "warga merantau lusa, tidak ada hari kosong, usulan layanan tambahan, daftar warga, giliran desa lain"
+  },
+  {
+    "id": "tkp-kasus-pp-21",
+    "skenario": "bantuan-pangan-nama-belum-terdata-warga-marah",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Pelayanan Prima dan Kepuasan",
+    "pola": "ketegangan-kesalahpahaman",
+    "peran": "pelaksana",
+    "kewenangan": "penuh",
+    "penentu": "namanya belum masuk karena pendataan kelurahan belum diperbarui, dan Anda berwenang menerima sanggah",
+    "tempat": "masyarakat",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Ketegangan dengan pengguna yang marah, kewenangan jelas, dan tindakan langsung yang mudah dikenali.",
+    "stem": "Anda melayani pendaftaran bantuan pangan di stan layanan yang dibuka di balai warga. Seorang bapak datang dengan suara tinggi karena namanya tidak ada dalam daftar penerima, padahal tetangganya terdaftar. Setelah Anda periksa, namanya belum masuk karena pendataan di kelurahannya belum diperbarui. Ia mengancam akan mengunggah kemarahannya di media sosial, dan beberapa warga mulai memperhatikan. Anda berwenang menerima pengajuan sanggah untuk diteruskan ke kelurahan. Sikap Anda adalah ...",
+    "options": [
+      {
+        "text": "Meminta bapak itu menenangkan diri dahulu, lalu melayani warga berikutnya sampai ia siap berbicara lagi.",
+        "score": 2,
+        "reason": "Menyuruh bapak itu menenangkan diri menunda penerimaan sanggah dan menempatkan kemarahannya sebagai kesalahan warga. Haknya tetap dapat diproses nanti, tetapi tidak ada langkah yang menjawab kebutuhannya saat ini.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menjelaskan hasil pemeriksaan data kepadanya secara rinci, lalu menerima pengajuan sanggahnya untuk diteruskan ke kelurahan.",
+        "score": 5,
+        "reason": "Penjelasan hasil pemeriksaan tentang pendataan kelurahan yang belum diperbarui menjawab pertanyaan bapak itu, dan penerimaan sanggah yang Anda berwenang teruskan membuat haknya diproses. Ancaman unggahan tidak menggeser prosedur.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Memasukkan namanya ke daftar penerima di stan, lalu memperbaiki datanya di kelurahan setelah acara selesai.",
+        "score": 1,
+        "reason": "Memasukkan nama ke daftar penerima sebelum data diverifikasi melanggar aturan pendataan dan memberi insentif bagi ancaman unggahan. Penerima lain yang terdata sesuai prosedur dirugikan oleh data yang belum diperiksa.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tanpa-verifikasi"
+        }
+      },
+      {
+        "text": "Meminta maaf atas ketidaknyamanan, lalu mencatat keluhan bapak itu untuk disampaikan ke kelurahan akhir pekan ini.",
+        "score": 3,
+        "reason": "Permintaan maaf meredakan suasana dan keluhannya dicatat. Namun sanggah yang Anda berwenang terima tidak diajukan, dan keluhan baru sampai ke kelurahan akhir pekan ini sehingga proses haknya tertunda.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menerima pengajuan sanggah untuk diteruskan ke kelurahan, lalu menyampaikan bahwa unggahan di media sosial tidak mempercepat proses.",
+        "score": 4,
+        "reason": "Sanggah diterima dan diteruskan sehingga haknya diproses, tetapi jawaban tentang unggahan terdengar defensif dan tidak mengakui kekecewaannya. Hasil pemeriksaan data juga belum dijelaskan kepadanya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: pelayanan prima terhadap pengguna yang marah, yaitu empati yang disertai penyelesaian dalam kewenangan. Fakta penentu: nama bapak itu belum masuk karena pendataan kelurahan belum diperbarui, dan Anda berwenang menerima sanggah. Respons terbaik menjelaskan hasil pemeriksaan dan menerima sanggah untuk diteruskan. Menerima sanggah sambil menjawab ancaman secara defensif belum memenuhi sisi empati. Meminta maaf lalu hanya mencatat keluhan menunda sanggah, menyuruh menenangkan diri menunda penanganan, dan memasukkan namanya sebelum verifikasi melanggar aturan pendataan.",
+    "tip": "Dengarkan keluhan pengguna lebih dulu, lalu lihat bagian mana dari masalahnya yang dapat Anda selesaikan di tempat.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "permintaan-khusus",
+    "kataKunci": "daftar penerima, pendataan kelurahan belum diperbarui, suara tinggi, ancaman media sosial, pengajuan sanggah"
+  },
+  {
+    "id": "tkp-kasus-pp-22",
+    "skenario": "layanan-keliling-keputusan-mayoritas-dusun-terjauh",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Pengambilan Keputusan",
+    "pola": "hak-minoritas-keputusan-mayoritas",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "tiga dusun terjauh dihuni banyak penyandang disabilitas dan lansia yang menempuh enam kilometer tanpa angkutan umum menuju lokasi pilihan mayoritas",
+    "tempat": "masyarakat",
+    "keputusan": "melindungi",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Keputusan mayoritas yang sah bertemu hak kelompok kecil; alternatif berbeda dalam cara menjaga keduanya dan harus dinilai.",
+    "stem": "Anda kepala unit pelayanan terpadu kecamatan. Dalam musyawarah, mayoritas perwakilan desa memilih lokasi layanan keliling bulanan di balai desa terbesar yang mudah dijangkau kendaraan. Tiga dusun terjauh, tempat tinggal sebagian besar penyandang disabilitas dan lansia di wilayah itu, harus menempuh enam kilometer tanpa angkutan umum menuju lokasi tersebut. Keputusan titik layanan berada dalam kewenangan Anda dengan mempertimbangkan hasil musyawarah. Keputusan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mengikuti hasil musyawarah itu, lalu memberi tahu warga dusun terjauh agar mengurus dokumen lewat layanan daring.",
+        "score": 3,
+        "reason": "Mengikuti hasil musyawarah menghormati mayoritas, tetapi layanan daring tidak menjawab kebutuhan kehadiran warga dusun terjauh yang sulit bepergian, terutama penyandang disabilitas dan lansia. Mereka diminta menyesuaikan diri dengan keputusan yang menyulitkan mereka.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Mencatat keluhan dusun terjauh sebagai bahan evaluasi tahunan, lalu menjalankan hasil musyawarah sebagaimana adanya.",
+        "score": 2,
+        "reason": "Evaluasi tahunan baru akan melihat keluhan dusun terjauh setahun kemudian, sehingga penyandang disabilitas dan lansia di sana tetap menempuh enam kilometer pada bulan-bulan itu. Hasil musyawarah terjaga, tetapi tidak ada rencana yang memperbaiki akses mereka.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Mempertahankan balai desa terbesar sebagai titik utama, lalu menambahkan satu putaran layanan di dusun terjauh setiap bulan.",
+        "score": 5,
+        "reason": "Keputusan mayoritas dihormati dengan tetap memakai balai desa terbesar, sedangkan putaran layanan di dusun terjauh mengembalikan akses penyandang disabilitas dan lansia yang tinggal enam kilometer dari lokasi. Hak kelompok kecil dipenuhi tanpa menggugurkan hasil musyawarah.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Membatalkan hasil musyawarah itu, lalu menetapkan lokasi layanan atas keputusan Anda sendiri sebagai kepala unit.",
+        "score": 1,
+        "reason": "Membatalkan hasil musyawarah dan menetapkan lokasi atas keputusan sendiri mengabaikan kesepakatan perwakilan desa dan mengganti kepentingan mayoritas dengan keputusan sepihak. Kebutuhan dusun terjauh tidak terjamin, dan kepercayaan desa lain pada musyawarah rusak.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "menutup-hak"
+        }
+      },
+      {
+        "text": "Mempertahankan lokasi hasil musyawarah, lalu menyediakan kendaraan antar-jemput bagi warga dusun terjauh tiap hari layanan.",
+        "score": 4,
+        "reason": "Antar-jemput mengurangi jarak enam kilometer bagi warga dusun terjauh, dan hasil musyawarah tetap dipakai. Namun penyandang disabilitas dan lansia tetap harus melakukan perjalanan, dan kendaraan perlu tersedia pada setiap hari layanan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: perlindungan hak kelompok kecil dalam keputusan mayoritas. Fakta penentu: tiga dusun terjauh dihuni banyak penyandang disabilitas dan lansia yang harus menempuh enam kilometer tanpa angkutan umum, sedangkan musyawarah sudah memilih balai desa terbesar. Respons terbaik menghormati hasil musyawarah dan menambah putaran layanan di dusun terjauh. Antar-jemput mengurangi jarak, tetapi perjalanan tetap dibebankan kepada warga. Mengarahkan ke layanan daring tidak menjawab kebutuhan kehadiran, evaluasi tahunan menunda perbaikan, dan membatalkan hasil musyawarah melanggar proses bersama.",
+    "tip": "Hormati proses keputusan bersama, tetapi periksa siapa yang paling terdampak oleh hasilnya.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "aksesibilitas",
+    "kataKunci": "pilihan mayoritas, balai desa terbesar, tiga dusun terjauh, penyandang disabilitas, enam kilometer, tanpa angkutan umum"
+  },
+  {
+    "id": "tkp-kasus-pp-23",
+    "skenario": "pemanggilan-antrean-suara-pengguna-tunarungu",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Pelayanan Prima dan Kepuasan",
+    "pola": "masalah-berulang",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "panggilan hanya lewat pengeras suara, catatan kedatangan tersedia di mesin antrean, dan layar penampil nomor dapat dipasang",
+    "tempat": "loket",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Masalah berulang bersumber dari cara pemanggilan; perbaikan harus memulihkan pengguna yang terlewat sekaligus mengganti cara kerja.",
+    "stem": "Anda koordinator loket di kantor layanan kependudukan. Nomor antrean dipanggil lewat pengeras suara. Bulan ini beberapa pengguna dengan gangguan pendengaran melaporkan nomor mereka terlewat karena tidak mendengar panggilan, dan mereka harus mengambil nomor baru. Cara pemanggilan di loket ini berada di tangan Anda. Layar penampil nomor tersimpan di gudang kantor dan dapat dipasang di ruang tunggu, sedangkan catatan kedatangan tersedia pada mesin antrean. Apa tindakan Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Menyarankan pengguna dengan gangguan pendengaran datang bersama pendamping, lalu menjelaskan bahwa panggilan dilakukan lewat suara.",
+        "score": 2,
+        "reason": "Meminta pengguna membawa pendamping memindahkan beban hambatan kepada pengguna, padahal panggilan lewat suara yang menyebabkan nomor terlewat tidak diubah. Hak mereka dilayani secara mandiri tidak dipulihkan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Meminta petugas menghampiri pengguna yang tampak kesulitan, lalu mengumumkan nomor antrean dengan suara yang lebih pelan dan lebih jelas.",
+        "score": 3,
+        "reason": "Petugas yang menghampiri membantu sebagian pengguna, tetapi hambatan tetap bergantung pada pengamatan petugas dan pengumuman suara yang belum dapat didengar. Tidak ada perubahan pada cara pemanggilan yang menjadi sumber masalah.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Mengumumkan bahwa nomor yang terlewat dibatalkan, lalu meminta pengguna mengambil nomor baru di mesin antrean.",
+        "score": 1,
+        "reason": "Membatalkan nomor yang terlewat menghukum pengguna atas hambatan yang timbul dari cara pemanggilan, dan membuat mereka mengantre dari awal. Kerugian pengguna dengan gangguan pendengaran justru dilembagakan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "menutup-hak"
+        }
+      },
+      {
+        "text": "Memulihkan posisi pengguna yang terlewat sesuai catatan kedatangan mereka, lalu memasang layar nomor di ruang tunggu.",
+        "score": 5,
+        "reason": "Catatan kedatangan di mesin antrean membuktikan urutan pengguna yang terlewat, sehingga posisi mereka dapat dipulihkan tanpa merugikan pengguna lain. Layar penampil nomor menghilangkan penyebab, yaitu panggilan yang hanya dapat didengar.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Memasang layar penampil nomor di ruang tunggu, lalu meminta petugas memanggil ulang nomor yang baru terlewat.",
+        "score": 4,
+        "reason": "Layar penampil nomor mencegah terulangnya masalah, dan panggilan ulang membantu nomor yang baru terlewat. Namun pengguna yang sudah kehilangan nomor pada bulan ini belum dipulihkan posisinya, padahal catatan kedatangan tersedia.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kurang-cakupan"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: layanan inklusif bagi pengguna dengan gangguan pendengaran dan perbaikan cara kerja yang menimbulkan masalah berulang. Fakta penentu: panggilan nomor hanya lewat pengeras suara, catatan kedatangan tersedia di mesin antrean, dan layar penampil nomor dapat dipasang. Respons terbaik memulihkan posisi pengguna yang terlewat lalu mengganti cara pemanggilan. Hanya memasang layar belum memulihkan hak yang sudah hilang. Meminta petugas menghampiri tidak mengubah sumber masalah, meminta pendamping memindahkan beban kepada pengguna, dan membatalkan nomor yang terlewat menghukum pengguna.",
+    "tip": "Lihat dua hal: hak pengguna yang sudah dirugikan dan cara kerja yang menyebabkannya.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "aksesibilitas",
+    "kataKunci": "pengeras suara, gangguan pendengaran, nomor terlewat, catatan kedatangan, layar penampil nomor"
+  },
+  {
+    "id": "tkp-kasus-pp-24",
+    "skenario": "warga-melihat-ancaman-kepada-petugas-loket",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Pelayanan Prima dan Kepuasan",
+    "pola": "dugaan-ancaman",
+    "peran": "warga",
+    "kewenangan": "tidak-ada",
+    "penentu": "petugas keamanan berada sepuluh langkah dari Anda, sedangkan petugas loket tampak ketakutan dan pria itu mengancam menunggu di parkiran",
+    "tempat": "masyarakat",
+    "keputusan": "minta-bantuan",
+    "bloom": "C3",
+    "difficulty": "sedang",
+    "difficultyReason": "Warga tanpa kewenangan harus memilih respons yang aman bagi dirinya dan efektif melindungi petugas.",
+    "stem": "Anda warga yang menunggu giliran di ruang tunggu kantor layanan pajak daerah. Antrean panjang karena dua loket tutup. Seorang pria di depan Anda mulai berteriak kepada petugas loket dan mengatakan akan menunggunya di parkiran setelah jam kerja. Petugas tampak ketakutan, sementara pengunjung lain hanya memperhatikan. Petugas keamanan berada di pintu depan, sekitar sepuluh langkah dari tempat Anda duduk. Anda tidak berwenang menahan seseorang. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Memberi tahu petugas keamanan tentang ancaman itu, lalu menawarkan diri menjadi saksi bila diperlukan.",
+        "score": 5,
+        "reason": "Petugas keamanan berada sepuluh langkah dari Anda dan dapat menangani ancaman terhadap petugas loket yang tampak ketakutan. Kesediaan menjadi saksi memberi dasar penanganan tanpa membuat Anda menghadapi pria itu sendiri.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta pengunjung di sebelah Anda memanggil petugas keamanan di pintu depan, lalu tetap duduk di tempat.",
+        "score": 4,
+        "reason": "Meminta pengunjung lain memanggil petugas keamanan tetap menghentikan teriakan, tetapi isi ancaman tentang parkiran setelah jam kerja dapat hilang di tengah jalan. Anda tidak menyampaikan sendiri apa yang didengar, dan petugas keamanan tidak mendapat saksi.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      },
+      {
+        "text": "Merekam pria itu dengan ponsel Anda, lalu menyerahkan rekamannya kepada petugas keamanan setelah ia pergi.",
+        "score": 3,
+        "reason": "Rekaman diserahkan kepada petugas keamanan sehingga ancaman itu tercatat, dan Anda tidak berhadapan dengan pria itu. Namun penyerahan baru dilakukan setelah ia pergi, sehingga petugas loket yang tampak ketakutan tidak dilindungi selama teriakan berlangsung.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menegur pria itu dengan keras di depan pengunjung, lalu meminta pengunjung lain menahannya.",
+        "score": 1,
+        "reason": "Menegur dengan keras dan meminta pengunjung menahannya dapat memicu kekerasan dan menempatkan banyak orang pada bahaya. Warga tidak berwenang menahan seseorang, padahal petugas keamanan berada di dekat Anda.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membahayakan"
+        }
+      },
+      {
+        "text": "Mengajak pria itu duduk untuk menenangkannya, lalu menjelaskan bahwa petugas hanya menjalankan aturan kantor.",
+        "score": 2,
+        "reason": "Mengajak pria itu duduk menempatkan Anda berhadapan langsung dengan orang yang baru saja mengancam dan menangani ancaman tanpa pihak berwenang. Niatnya menenangkan dan belum memicu kekerasan, tetapi ancaman itu tidak sampai kepada petugas keamanan yang berada sepuluh langkah dari Anda, sehingga bukti dan perlindungan tidak ada.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "menangani-sendiri"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: respons warga terhadap dugaan ancaman kepada petugas layanan, yaitu melindungi pihak terdampak tanpa menghadapi pria yang mengancam sendiri. Fakta penentu: petugas keamanan berada di dekat Anda dan petugas loket tampak ketakutan. Respons terbaik meneruskan ancaman kepada petugas keamanan dan menawarkan diri sebagai saksi. Meminta pengunjung lain memanggil keamanan membuat isi ancaman bisa hilang di tengah jalan. Merekam lalu menyerahkan rekaman setelah ia pergi menunda perlindungan, mengajak pria itu berbicara menempatkan diri dalam bahaya dan menangani ancaman tanpa pihak berwenang, dan menegur dengan keras dapat memicu kekerasan.",
+    "tip": "Sebagai warga, nilai dahulu siapa yang berwenang menangani ancaman dan seberapa dekat Anda dengan bahaya.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "keterbatasan-layanan",
+    "kataKunci": "menunggu di parkiran, petugas ketakutan, petugas keamanan, sepuluh langkah, tidak berwenang menahan"
+  },
+  {
+    "id": "tkp-kasus-pp-25",
+    "skenario": "pesan-ancaman-di-kolom-pengaduan-daring",
+    "topic": "Pelayanan Publik",
+    "subtopic": "Konsep Dasar dan Ruang Lingkup",
+    "pola": "dugaan-ancaman",
+    "peran": "anggota-tim",
+    "kewenangan": "terbatas",
+    "penentu": "pesan menyebut nama petugas dan kelurahan tempat tinggalnya, petugas pulang pukul 16.00, dan kanal keamanan baru bertindak sekitar tiga jam kemudian",
+    "tempat": "layanan-digital",
+    "keputusan": "melindungi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Pesan mencampur keluhan sah dan ancaman; keduanya harus dipisahkan, dan batas waktu kepulangan petugas menentukan cara melindunginya.",
+    "stem": "Anda anggota tim pusat bantuan daring dinas perizinan. Pukul 14.00, seorang pemohon yang berkasnya ditolak karena kurang syarat menulis di kolom pengaduan bahwa ia akan mencari petugas penolak berkas itu di rumahnya, dengan menyebut nama petugas dan kelurahan tempat tinggalnya. Sebelumnya pemohon itu hanya mengeluhkan lamanya proses. Petugas yang disebut pulang pukul 16.00 dan dapat Anda hubungi lewat pesan internal. Kanal keamanan baru menindaklanjuti laporan sekitar tiga jam kemudian. Respons Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menjelaskan kepada pemohon syarat yang kurang pada berkasnya, lalu mencatat pesan tentang petugas pada catatan pengaduan resmi.",
+        "score": 3,
+        "reason": "Penjelasan syarat menjawab keluhan sah tentang berkas. Namun ancaman terhadap petugas hanya dicatat pada catatan pengaduan dan tidak dilaporkan kepada kanal keamanan, sehingga petugas yang disebut tetap tidak terlindungi.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menganggap pesan tentang petugas itu luapan emosi karena berkas ditolak, lalu membalasnya dengan penjelasan syarat.",
+        "score": 2,
+        "reason": "Menganggap pesan sebagai luapan emosi mengabaikan ancaman yang menyebut nama dan kelurahan petugas. Balasan penjelasan syarat menjaga sikap layanan, tetapi tidak ada perlindungan bagi petugas yang akan pulang pukul 16.00.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menghapus pesan tentang petugas itu dari kolom pengaduan, lalu memblokir akun pemohon agar tidak dapat mengadu lagi.",
+        "score": 1,
+        "reason": "Menghapus pesan menghilangkan bukti ancaman, dan memblokir akun menutup hak pemohon mengadu lewat kanal resmi. Petugas yang disebut tetap tidak dilindungi karena tidak ada laporan yang sampai ke kanal keamanan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      },
+      {
+        "text": "Melaporkan pesan itu beserta tangkapan layar kepada kanal keamanan, lalu meminta kanal itu menyiapkan surat peringatan bagi petugas.",
+        "score": 4,
+        "reason": "Laporan kepada kanal keamanan sudah benar dan menyimpan bukti. Namun peringatan kepada petugas baru berupa surat yang disiapkan kanal itu, yang baru bertindak sekitar tiga jam kemudian, padahal petugas pulang pukul 16.00 dan Anda dapat menghubunginya sekarang.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kurang-perlindungan"
+        }
+      },
+      {
+        "text": "Melaporkan pesan itu beserta tangkapan layar ke kanal keamanan, lalu menghubungi petugas lewat pesan internal.",
+        "score": 5,
+        "reason": "Pesan yang menyebut nama petugas dan kelurahan tempat tinggalnya melewati batas keluhan atas lamanya proses, sehingga laporan beserta tangkapan layar kepada kanal keamanan diperlukan. Petugas pulang pukul 16.00 dan dapat Anda hubungi sekarang, sedangkan kanal keamanan baru bertindak sekitar tiga jam kemudian.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: membedakan keluhan yang sah dari ancaman dan melindungi petugas yang menjadi sasaran. Fakta penentu: pemohon sebelumnya hanya mengeluh tentang lamanya proses, tetapi pesan pukul 14.00 menyebut nama petugas dan kelurahan tempat tinggalnya, sedangkan petugas pulang pukul 16.00 dan kanal keamanan baru bertindak sekitar tiga jam kemudian. Respons terbaik melaporkan pesan beserta bukti kepada kanal keamanan dan menghubungi petugas sendiri lewat pesan internal. Menyerahkan peringatan kepada kanal keamanan saja terlalu lambat bagi petugas yang akan pulang. Menjelaskan syarat tanpa melapor ancaman membiarkan petugas tanpa perlindungan, menganggapnya luapan emosi mengabaikan ancaman, dan menghapus pesan serta memblokir akun menghilangkan bukti.",
+    "tip": "Bedakan isi pesan yang berupa keluhan dari isi yang berupa ancaman, lalu lihat siapa yang perlu tahu dan seberapa cepat.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "permintaan-khusus",
+    "kataKunci": "mencari ke rumah, nama petugas, kelurahan tempat tinggal, pulang pukul 16.00, kanal keamanan"
+  }
+]

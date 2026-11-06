@@ -5,10 +5,86 @@ from pathlib import Path
 ROOT = Path('references/tryouts-2027')
 REPORT = {'files': [], 'duplicates': [], 'issues': [], 'corrections': []}
 def norm(s): return re.sub(r'\W+', ' ', s.lower()).strip()
+# Revisi akademik TWK (tahap 2): tip contoh tryout TWK. Tip lama mengajarkan rumus jawaban ("Apabila soal menyebut X, maka jawabannya mengarah ke Y");
+# penggantinya petunjuk membaca soal. Nilai: (kelompok, tip baru); tip baru None = tip dihapus (butir tidak lagi punya tip). Dicatat di REPORT['corrections'].
+TIP_REVISI = {
+    "tryout-ref-03-01": ("utama", "Bedakan isi tuntutan daerah dari cara memperjuangkannya, lalu nilai tiap pilihan dari dampaknya terhadap persatuan."),
+    "tryout-ref-03-02": ("utama", "Tentukan dahulu masalah inti yang dihadapi ASN, lalu nilai apakah tiap sikap menjawab masalah itu atau hanya menanggapi emosi publik."),
+    "tryout-ref-03-04": ("utama", "Cari dasar ikatan antarwarga dalam kasus, apakah asal-usul, budaya, atau kedudukan dan partisipasi sebagai warga negara, lalu cocokkan dengan pengertian tiap bentuk nasionalisme."),
+    "tryout-ref-03-05": ("utama", "Bandingkan kedua organisasi pada ciri yang diminta soal, yaitu siapa anggotanya dan seberapa luas jangkauannya, lalu singkirkan pilihan yang justru ciri organisasi pembanding."),
+    "tryout-ref-03-06": ("utama", "Baca makna keputusan itu dari apa yang dilepaskan dan apa yang dipertahankan para pemimpin daerah, lalu pilih penafsiran yang tidak melampaui fakta dalam teks."),
+    "tryout-ref-03-07": ("utama", "Tentukan apa yang sedang dipertahankan tokoh dalam kasus, lalu cocokkan dengan pengertian tiap nilai dasar bela negara dan bedakan nilai yang mirip dari objek yang dibela."),
+    "tryout-ref-03-08": ("utama", "Cari akar masalah dalam kasus lebih dahulu, lalu pilih program yang langsung mengatasi akar itu sesuai bidang tugas ASN, bukan program yang hanya simbolis atau administratif."),
+    "tryout-ref-03-11": ("utama", None),
+    "tryout-ref-03-12": ("utama", "Telusuri akibat langsung dari ketergantungan dalam kasus, lalu tentukan gatra yang kemampuan dasarnya paling terguncang, bukan gatra yang hanya terdampak tidak langsung."),
+    "tryout-ref-03-13": ("utama", "Pisahkan perilaku yang berkaitan dengan gaya hidup dari perilaku yang berkaitan dengan kerja atau kejujuran, lalu cocokkan dengan pengertian tiap nilai antikorupsi."),
+    "tryout-ref-03-15": ("utama", "Tentukan siapa yang berinisiatif, apakah ada ancaman atau paksaan, dan apakah penerima memanfaatkan kewenangan jabatan; unsur-unsur itu membedakan jenis tindak pidana korupsi yang berdekatan."),
+    "tryout-ref-03-16": ("utama", "Bandingkan isi dokumen yang diminta ditandatangani dengan fakta di lapangan, lalu pilih tindakan yang tidak mengesahkan data yang tidak sesuai meskipun ada tekanan atau janji perbaikan."),
+    "tryout-ref-03-17": ("utama", "Cari risiko yang secara sadar ditanggung tokoh dan hubungannya dengan tindakannya, lalu bedakan dari nilai lain yang tampak dalam narasi tetapi bukan fokus pertanyaan."),
+    "tryout-ref-03-19": ("utama", "Hubungkan peristiwa sejarah dalam soal dengan fungsi Pancasila yang paling langsung dijelaskan oleh fakta itu, lalu bedakan fungsi yang berdekatan satu per satu."),
+    "tryout-ref-03-20": ("utama", "Periksa setiap pernyataan sejarah terhadap tahapan perumusan dan pengesahan, lalu cocokkan pernyataan yang benar dengan kombinasi nomor yang ditawarkan."),
+    "tryout-ref-03-21": ("utama", "Ubah butir pengamalan dalam soal menjadi perilaku konkret, lalu cari tindakan yang benar-benar menjalankan butir itu, bukan tindakan baik lain yang bersumber dari sila yang berbeda."),
+    "tryout-ref-03-22": ("utama", "Pastikan lebih dahulu pihak yang diikat oleh ketentuan pasal itu, lalu uji alasan yang ditawarkan setiap pilihan terhadap bunyi ketentuannya."),
+    "tryout-ref-03-23": ("utama", "Telusuri tahapan Perppu menurut Pasal 22 beserta akibat hukum pada tiap tahap, lalu uji setiap pilihan terhadap akibat hukum ketika persetujuan DPR tidak diberikan."),
+    "tryout-ref-03-24": ("utama", "Bandingkan cara pandang peserta forum terhadap laut dengan cara pandang Wawasan Nusantara, lalu periksa apakah tiap pilihan menilai pendapat itu dengan dasar yang benar."),
+    "tryout-ref-03-25": ("utama", "Tentukan kalimat yang cakupannya paling luas dan didukung oleh kalimat lain, lalu singkirkan pilihan yang hanya merangkum satu kalimat penjelas atau menambah klaim di luar teks."),
+    "tryout-ref-03-26": ("utama", "Periksa kebakuan setiap kata pada tiap kalimat berdasarkan KBBI V, tandai kalimat yang memuat bentuk tidak baku, lalu cocokkan dengan kombinasi nomor pada pilihan."),
+    "tryout-ref-03-27": ("utama", "Periksa tiap kalimat terhadap kaidah tanda baca EYD V, terutama pada awal kalimat, di antara klausa, dan pada perincian, lalu tentukan kalimat yang melanggar kaidah."),
+    "tryout-ref-03-29": ("utama", "Uji setiap kalimat dengan kaidah titik, koma, dan titik dua dalam EYD V, tandai kalimat yang benar, lalu cocokkan dengan kombinasi nomor pada pilihan."),
+    "tryout-ref-03-30": ("utama", "Periksa kesejajaran bentuk unsur perincian dan kehematan kata, lalu pastikan perbaikan yang dipilih tidak menimbulkan kesalahan baru di bagian lain kalimat."),
+    "tryout-ref-05-01": ("tambahan", "Tanyakan kemampuan apa yang dicapai warga dalam kasus, lalu bandingkan dengan pengertian tiap unsur nasionalisme, termasuk unsur yang tampak mirip."),
+    "tryout-ref-05-03": ("tambahan", "Kaitkan peristiwa dengan tujuan yang hendak dicapai pihak Indonesia dan klaim yang hendak dibantah pihak lawan, lalu pilih makna yang menjelaskan hubungan keduanya, bukan sekadar hasil militernya."),
+    "tryout-ref-05-13": ("tambahan", "Hubungkan keahlian warga dengan jenis ancaman yang dihadapi dalam kasus, lalu periksa apakah tiap pilihan menjelaskan hubungan itu dengan kepentingan negara atau hanya dengan manfaat teknisnya."),
+    "tryout-ref-05-14": ("tambahan", "Telusuri sumber kerentanan dalam kasus dan apa yang diubah warga untuk mengurangi kerentanan itu, lalu pilih pilihan yang menghubungkan perubahan itu dengan dampaknya bagi kebutuhan strategis."),
+    "tryout-ref-05-15": ("tambahan", "Perhatikan peran yang dijalankan warga dan aparat dalam kasus, lalu pilih pilihan yang menjelaskan makna kegiatan itu bagi bela negara, bukan sekadar manfaat teknis seperti kedisiplinan atau keberanian."),
+    "tryout-ref-05-18": ("tambahan", "Identifikasi jenis ancaman dan dampaknya pada kepentingan negara dalam kasus, lalu bedakan pilihan yang menjelaskan hubungan itu dari pilihan yang hanya menyebut manfaat literasi atau komunikasi."),
+}
+TIP_RUJUKAN = 'QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal.'
+# Tip contoh yang direvisi lewat "revisi" di data/tryout-twk-koreksi.json (tahap 2b) tidak ada di TIP_REVISI: satu butir, satu sumber tip.
+# Koreksi TWK tahap 2b: data/tryout-twk-koreksi.json (ubah lewat berkas itu, bukan data/tryout-reference.json; impor ini idempoten, jalankan ulang saja).
+#   "label":  { id: { bloom (C1-C6), difficulty (mudah|sedang|sulit), alasan, catatan? } }, wajib untuk setiap butir TWK yang diimpor. Menggantikan kesulitan dari
+#             label sumber; label sumber tetap di provenance.declaredDifficulty dan disebut di difficultyReason. "alasan" (alasan operasi berpikir, bersih) masuk
+#             ke difficultyReason. "catatan" (catatan telaah, untuk audit) hanya divalidasi bentuknya (teks) dan TIDAK dipakai: tidak masuk data soal maupun laporan.
+#   "revisi": { id: { status, stem?, options[5 teks], answer, reasons[5], explanation, tip } }; answer harus sama dengan sumber (skor opsi tetap 5/0).
+# Id di berkas koreksi yang tidak diimpor, butir TWK tanpa label, dan id di dua sumber tip menghentikan impor.
+KOREKSI_PATH = Path('data/tryout-twk-koreksi.json')
+KOREKSI_RUJUKAN = 'QC akademik TWK tahap 2b: telaah studio-soal-twk'
+def load_koreksi():
+    data = json.loads(KOREKSI_PATH.read_text(encoding='utf-8'))
+    label, revisi = data.get('label', {}), data.get('revisi', {})
+    errors = []
+    def text(where, value):
+        if not isinstance(value, str) or not value.strip(): errors.append(where + ': teks kosong atau bukan string')
+    for key, entry in label.items():
+        if entry.get('bloom') not in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6'): errors.append(key + ': label.bloom harus C1-C6')
+        if entry.get('difficulty') not in ('mudah', 'sedang', 'sulit'): errors.append(key + ': label.difficulty harus mudah, sedang, atau sulit')
+        text(key + ' label.alasan', entry.get('alasan'))
+        if 'catatan' in entry and not isinstance(entry['catatan'], str): errors.append(key + ': label.catatan harus teks')
+    for key, entry in revisi.items():
+        if not isinstance(entry.get('answer'), int) or not 0 <= entry['answer'] <= 4: errors.append(key + ': revisi.answer harus indeks 0-4')
+        for field in ('options', 'reasons'):
+            values = entry.get(field)
+            if not isinstance(values, list) or len(values) != 5: errors.append(key + ': revisi.' + field + ' harus berisi 5 teks')
+            else:
+                for i, value in enumerate(values): text(key + ' revisi.' + field + '[' + str(i) + ']', value)
+        for field in ('explanation', 'tip'): text(key + ' revisi.' + field, entry.get(field))
+        if 'stem' in entry: text(key + ' revisi.stem', entry['stem'])
+        if key not in label: errors.append(key + ': id revisi tidak punya entri label')
+    both = sorted(set(TIP_REVISI) & set(revisi))
+    if both: errors.append('tip dari dua sumber (TIP_REVISI dan revisi): ' + ', '.join(both))
+    if errors: raise SystemExit('Berkas koreksi tryout TWK tidak valid: ' + '; '.join(errors))
+    return label, revisi
+def reason_2b(declared, old_level, entry):
+    alasan = entry['alasan'].strip()
+    if alasan[-1] not in '.!?': alasan += '.'
+    same = 'sama dengan' if old_level == entry['difficulty'] else 'berbeda dari'
+    return 'Label sumber: ' + declared + '. Telaah QC TWK tahap 2b menetapkan ' + entry['bloom'] + ' dan ' + entry['difficulty'] + ', ' + same + ' label sumber. ' + alasan + ' Estimasi akademik, belum dikalibrasi dari peserta.'
 def metadata(lines, name):
     return next((line.split(':',1)[1].strip() for line in lines if re.match(re.escape(name)+r'\s*:',line,re.I)), '')
 def main():
     records, signatures = [], {}
+    koreksi_label, koreksi_revisi = load_koreksi()
+    unlabeled = []
     # The Done Input version contains the earlier Bahasa Negara document plus complete metadata.
     REPORT['duplicates'].append({'file': 'Dhea_TWK - Bahasa Negara.docx', 'count': 12, 'canonical': 'Dhea_TWK (Bahasa Negara)_Done Input.docx', 'reason': 'Versi awal; gunakan versi Done Input dengan metadata lengkap.'})
     for path in sorted(ROOT.glob('[0-9][0-9].json')):
@@ -60,6 +136,10 @@ def main():
             exp = chunk[explanation_at+1:]
             tip_at = next((i for i,b in enumerate(exp) if re.match(r'^Cara cepat\s*:',b.get('text',''),re.I)),len(exp))
             tip = '\n'.join(b.get('text','') for b in exp[tip_at:]).removeprefix('Cara cepat:').strip()
+            if key in TIP_REVISI:
+                group, new_tip = TIP_REVISI[key]
+                REPORT['corrections'].append({'id': key, 'change': 'Tip diganti petunjuk membaca soal.' if new_tip else 'Tip dihapus (tidak ada pengganti yang bukan rumus jawaban).', 'kelompok': group, 'lama': tip, 'baru': new_tip, 'rujukan': TIP_RUJUKAN})
+                tip = new_tip or ''
             exp = exp[:tip_at]
             reason_at = next((i for i,b in enumerate(exp) if re.match(r'^(Alasan opsi|Pembahasan opsi|Analisis setiap opsi)',b.get('text',''),re.I)),len(exp))
             explanation = '\n'.join(b['text'] if b['kind']=='p' else '\n'.join(' | '.join(row) for row in b['rows']) if b['kind']=='table' else '' for b in exp[:reason_at]).strip()
@@ -90,11 +170,15 @@ def main():
                 best=next((re.sub(r'^(?:Opsi\s+)?'+o['letter']+r'\s*\(5\s*[Pp]oin\)\s*','',b.get('text','')).strip() for b in exp if re.match(r'^(?:Opsi\s+)?'+o['letter']+r'\s*\(5\s*[Pp]oin\)',b.get('text',''))), '') if i==answer else ''
                 o['reason']= reasons.get(o['letter'], best or 'Pilihan ini sesuai dengan konsep dan langkah pada pembahasan utama.' if i==answer else '\n'.join(reason_lines).strip() or 'Penjelasan per pilihan tidak dipisahkan dalam sumber; gunakan langkah penyelesaian pada pembahasan.')
                 del o['letter']
-            item={'id':key,'subtest':subtest,'topic':topic,'subtopic':chapter,'difficulty':'sulit' if declared.lower() in ['hots','sulit'] else 'mudah' if declared.lower()=='mudah' else 'sedang',
+            source_level = 'sulit' if declared.lower() in ['hots','sulit'] else 'mudah' if declared.lower()=='mudah' else 'sedang'
+            label = koreksi_label.get(key) if subtest=='TWK' else None
+            item={'id':key,'subtest':subtest,'topic':topic,'subtopic':chapter,'difficulty':label['difficulty'] if label else source_level,
+              **({'bloom':label['bloom']} if label else {}),
               'stem':stem,'options':opts,'answer':answer,'explanation':explanation,'tip':tip,'source':doc['file']+f' — Soal {number}',
               'provenance':{'file':doc['file'],'question':number,'category':category,'lesson':lesson,'chapter':chapter,'declaredDifficulty':declared,'sourceHash':doc['sha256'],'block':chunk[0]['block'],'status':'accepted-example'},
-              'difficultyReason':'Label sumber: '+declared+'. Contoh mutu yang diterima pengguna; label HOTS disimpan terpisah dari estimasi kesulitan.',
+              'difficultyReason':reason_2b(declared,source_level,label) if label else 'Label sumber: '+declared+'. Contoh mutu yang diterima pengguna; label HOTS disimpan terpisah dari estimasi kesulitan.',
               'pendingImages':[b for b in stem_blocks if b['kind']=='image']}
+            if subtest=='TWK' and not label: unlabeled.append(key)
             if index==0 and number in [2,3]:
                 item['explanation']=mixed(item['explanation'])
             if tables: item['table']={'headers':tables[0][0],'rows':tables[0][1:]}
@@ -102,8 +186,32 @@ def main():
             if signature in signatures:
                 REPORT['duplicates'].append({'id':key,'canonical':signatures[signature],'reason':'Stimulus dan lima opsi identik.'}); continue
             signatures[signature]=key
+            # Revisi tahap 2b dipasang setelah pemeriksaan duplikat, yang tetap membandingkan teks sumber.
+            if label:
+                REPORT['corrections'].append({'id':key,'change':'Label TWK diganti: Bloom '+label['bloom']+', kesulitan '+label['difficulty']+' (label sumber '+declared+').','jenis':'label','bloom':label['bloom'],'kesulitan':label['difficulty'],'labelSumber':declared,'alasan':label['alasan'],'rujukan':KOREKSI_RUJUKAN})
+            revision = koreksi_revisi.get(key)
+            if revision:
+                if revision['answer']!=answer:
+                    raise SystemExit(f'Revisi {key}: answer {revision["answer"]} berbeda dari kunci sumber {answer}.')
+                parts = []
+                if 'stem' in revision and revision['stem']!=item['stem']: parts.append('stem'); item['stem']=revision['stem']
+                changed_text = [chr(65+i) for i,o in enumerate(item['options']) if o['text']!=revision['options'][i]]
+                changed_reason = [chr(65+i) for i,o in enumerate(item['options']) if o['reason']!=revision['reasons'][i]]
+                for i,o in enumerate(item['options']): o['text']=revision['options'][i]; o['reason']=revision['reasons'][i]
+                if changed_text: parts.append('teks opsi '+', '.join(changed_text))
+                if changed_reason: parts.append('alasan opsi '+', '.join(changed_reason))
+                if revision['explanation']!=item['explanation']: parts.append('pembahasan'); item['explanation']=revision['explanation']
+                old_tip = item['tip']
+                if revision['tip']!=old_tip: parts.append('tip'); item['tip']=revision['tip']
+                REPORT['corrections'].append({'id':key,'change':'Butir direvisi (status '+str(revision.get('status',''))+'): '+(', '.join(parts) or 'tidak ada perubahan teks')+'.','jenis':'revisi','status':revision.get('status'),'bagian':parts,'tipLama':old_tip,'tipBaru':item['tip'],'rujukan':KOREKSI_RUJUKAN})
             records.append(item); perfile.append(key)
         REPORT['files'].append({'file':doc['file'],'questionsFound':len(starts),'imported':len(perfile)})
+    unplaced = sorted(set(TIP_REVISI) - {r['id'] for r in records})
+    if unplaced: raise SystemExit('Revisi tip untuk id yang tidak diimpor: ' + ', '.join(unplaced))
+    twk_ids = {r['id'] for r in records if r['subtest']=='TWK'}
+    missing_twk = sorted((set(koreksi_label) | set(koreksi_revisi)) - twk_ids)
+    if missing_twk: raise SystemExit('Koreksi tryout TWK untuk id yang tidak diimpor sebagai TWK: ' + ', '.join(missing_twk))
+    if unlabeled: raise SystemExit('Butir TWK tanpa label di ' + str(KOREKSI_PATH) + ': ' + ', '.join(unlabeled))
     Path('data/tryout-reference.json').write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
     REPORT['counts']=dict(collections.Counter(q['subtest'] for q in records))
     REPORT['pendingImages']=[q['id'] for q in records if q['pendingImages']]

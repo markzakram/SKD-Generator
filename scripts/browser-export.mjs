@@ -1,0 +1,121 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require(process.env.SKD_PLAYWRIGHT_MODULE ?? 'playwright');
+const { unzipSync, strFromU8 } = require('fflate');
+const { DOMParser } = require('@xmldom/xmldom');
+const dir = path.resolve('test-results');
+const fixture = JSON.parse(fs.readFileSync(path.join(dir, 'siadu-fixture.json'), 'utf8'));
+const browser = await chromium.launch({ headless: true, ...(process.env.SKD_BROWSER_EXECUTABLE ? { executablePath: process.env.SKD_BROWSER_EXECUTABLE } : {}) });
+const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, acceptDownloads: true });
+const page = await context.newPage(), errors = [];
+page.on('pageerror', (error) => errors.push(error.message));
+page.setDefaultTimeout(30000);
+const dialog = page.getByRole('dialog', { name: 'Ekspor paket soal' });
+const download = async (filename, buttonName) => {
+  const event = page.waitForEvent('download', { timeout: 120000 });
+  await dialog.getByRole('button', { name: buttonName, exact: true }).click();
+  const file = await event; await file.saveAs(path.join(dir, filename));
+  await dialog.locator('.export-success').waitFor();
+  assert.equal(await dialog.locator('.error-message').count(), 0);
+  return { bytes: fs.readFileSync(path.join(dir, filename)), name: file.suggestedFilename() };
+};
+const readWord = (bytes) => {
+  const files = unzipSync(bytes), xml = strFromU8(files['word/document.xml']);
+  const document = new DOMParser().parseFromString(xml, 'text/xml');
+  const lines = Array.from(document.getElementsByTagName('w:p')).map((node) => node.textContent ?? '');
+  assert.ok(!lines.some((line) => line.startsWith('@gambar ') || line.startsWith('@deret ') || line.startsWith('@graf ')));
+  for (const filename of Object.keys(files).filter((name) => name.startsWith('word/media/') && name.endsWith('.png'))) {
+    const image = Buffer.from(files[filename]);
+    assert.equal(image.subarray(1, 4).toString(), 'PNG');
+    assert.ok(image.readUInt32BE(16) > 1 && image.readUInt32BE(20) > 1, 'Gambar nyata, bukan placeholder');
+  }
+  return { files, xml, lines, count: lines.filter((line) => /^Soal \d+$/.test(line)).length };
+};
+try {
+  assert.equal((await page.goto(process.env.SKD_BROWSER_URL ?? 'http://localhost:3000')).status(), 200);
+  await page.waitForFunction(() => document.querySelector('.save-status')?.textContent.includes('Tersimpan'));
+  await page.locator('input[type=file]').first().setInputFiles(path.join(dir, 'siadu-fixture.json'));
+  const panel = page.getByRole('region', { name: 'Unduh paket', exact: true });
+  await panel.waitFor();
+  await page.getByLabel('Paket aktif', { exact: true }).selectOption('1');
+  await page.screenshot({ path: path.join(dir, 'export-desktop.png'), fullPage: true });
+  await panel.getByRole('button', { name: /Word SiAdu/ }).click();
+  assert.equal(await dialog.getByLabel('Paket yang diunduh').inputValue(), 'active');
+  assert.ok((await dialog.locator('.export-preview').textContent()).includes('110 soal · 1 paket'));
+  assert.equal(await dialog.getByLabel('Isi dokumen').inputValue(), 'pembahasan');
+  assert.ok(await dialog.getByRole('radio', { name: /^Satu file Word SiAdu/ }).isChecked());
+  await dialog.getByText('Pasang importir SiAdu & cara mengimpor', { exact: true }).click();
+  const importerDownload = page.waitForEvent('download');
+  await dialog.getByRole('link', { name: /Unduh importir SiAdu v2.7.1/ }).click();
+  const importerFile = await importerDownload;
+  await importerFile.saveAs(path.join(dir, 'downloaded-siadu-importer.user.js'));
+  assert.equal(importerFile.suggestedFilename(), 'SiAdu-Auto-Input-2.7.1.user.js');
+  assert.deepEqual(fs.readFileSync(path.join(dir, 'downloaded-siadu-importer.user.js')), fs.readFileSync('public/siadu-auto-input.user.js'));
+  assert.match(await dialog.locator('.siadu-format-note').textContent(), /Otomatis per soal/);
+  await dialog.getByText('Pasang importir SiAdu & cara mengimpor', { exact: true }).click();
+  const combinedActive = readWord((await download('siadu-active-combined.docx', 'Unduh 1 file Word SiAdu')).bytes);
+  assert.equal(combinedActive.count, 110);
+  assert.deepEqual(combinedActive.lines.filter(line => /^Soal \d+$/.test(line)), Array.from({ length: 110 }, (_, i) => 'Soal ' + (i + 1)));
+  await dialog.getByLabel('Paket yang diunduh').selectOption('all');
+  assert.match(await dialog.locator('.export-preview').textContent(), /220 soal · 2 paket/);
+  const combinedAll = readWord((await download('siadu-all-combined.docx', 'Unduh 1 file Word SiAdu')).bytes);
+  assert.equal(combinedAll.count, 220);
+  assert.deepEqual(combinedAll.lines.filter(line => /^Soal \d+$/.test(line)), Array.from({ length: 220 }, (_, i) => 'Soal ' + (i + 1)));
+  await dialog.getByLabel('Paket yang diunduh').selectOption('active');
+  await page.screenshot({ path: path.join(dir, 'export-siadu-dialog.png'), fullPage: true });
+  await dialog.getByRole('radio', { name: /^ZIP per paket dan subtes/ }).check();
+  const active = await download('siadu-active.zip', 'Unduh ZIP Word SiAdu');
+  const zip = unzipSync(active.bytes), names = Object.keys(zip);
+  assert.equal(names.length, 3);
+  assert.ok(names.every((name) => name.startsWith(fixture.result.packages[1].id + '/')));
+  for (const subtest of ['TWK', 'TIU', 'TKP']) {
+    const bytes = zip[names.find((name) => name.endsWith('-' + subtest.toLowerCase() + '-siadu.docx'))];
+    fs.writeFileSync(path.join(dir, 'siadu-' + subtest.toLowerCase() + '.docx'), bytes);
+    const word = readWord(bytes);
+    const source = fixture.result.packages[1].questions.filter((q) => q.subtest === subtest);
+    assert.equal(word.count, source.length);
+    assert.ok(word.lines.includes('Soal 1'));
+    if (subtest === 'TIU') { assert.ok(word.xml.includes('$$')); assert.ok(Object.keys(word.files).filter((name) => name.startsWith('word/media/')).length > 10); }
+    if (subtest === 'TKP') {
+      assert.equal(word.lines.filter((line) => line === 'Bentuk Soal: Option (Legacy)').length, 45);
+      assert.equal(word.lines.filter((line) => /^Opsi [A-E] \([1-5] poin\)$/.test(line)).length, 225);
+    }
+  }
+  await dialog.getByLabel('Subtes untuk Word SiAdu').selectOption('TKP');
+  const tkp = await download('siadu-tkp-single.docx', 'Unduh 1 file Word SiAdu');
+  assert.match(tkp.name, /-tkp-siadu\.docx$/); assert.equal(readWord(tkp.bytes).count, 45);
+  await dialog.getByLabel('Subtes untuk Word SiAdu').selectOption('all');
+  await dialog.getByLabel('Paket yang diunduh').selectOption('all');
+  const all = await download('siadu-all.zip', 'Unduh ZIP Word SiAdu');
+  assert.equal(Object.keys(unzipSync(all.bytes)).length, 6);
+  await dialog.getByLabel('Tutup dialog ekspor').click();
+  await panel.getByRole('button', { name: /^PDF/ }).click();
+  assert.equal(await dialog.getByLabel('Paket yang diunduh').inputValue(), 'active');
+  await dialog.getByLabel('Isi dokumen').selectOption('soal');
+  const pdf = await download('export-soal.pdf', 'Unduh 1 file PDF'); assert.equal(pdf.bytes.subarray(0, 5).toString(), '%PDF-');
+  await dialog.getByLabel('Tutup dialog ekspor').click();
+  await panel.getByRole('button', { name: 'Format lainnya', exact: true }).click();
+  assert.equal(await dialog.getByRole('button', { name: /^Word biasa/ }).getAttribute('aria-pressed'), 'true');
+  await dialog.getByLabel('Isi dokumen').selectOption('kunci');
+  assert.equal(readWord((await download('export-word-kunci.docx', 'Unduh Word biasa')).bytes).lines.filter((line) => /^\d+\. (TWK|TIU|TKP) — [A-E]/.test(line)).length, 110);
+  await dialog.getByRole('button', { name: /^JSON/ }).click();
+  assert.equal(JSON.parse((await download('export-active.json', 'Unduh JSON')).bytes).packages[0].id, fixture.result.packages[1].id);
+  await dialog.getByRole('button', { name: /^CSV/ }).click();
+  assert.ok((await download('export-active.csv', 'Unduh CSV')).bytes.toString().includes('Poin A'));
+  await dialog.getByLabel('Tutup dialog ekspor').click();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.screenshot({ path: path.join(dir, 'export-mobile.png') });
+  assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+  await panel.getByRole('button', { name: /Word SiAdu/ }).click();
+  await page.screenshot({ path: path.join(dir, 'export-dialog-mobile.png') });
+  const downloadButton = await dialog.getByRole('button', { name: 'Unduh 1 file Word SiAdu', exact: true }).boundingBox();
+  assert.ok(downloadButton && downloadButton.y >= 0 && downloadButton.y + downloadButton.height <= 844, 'Tombol unduh terlihat tanpa menggulir pada ponsel');
+  assert.ok(await dialog.evaluate((element) => element.scrollWidth <= element.clientWidth));
+  await page.keyboard.press('Escape'); await dialog.waitFor({ state: 'detached' });
+  await page.waitForFunction(() => document.activeElement?.textContent?.includes('Word SiAdu'));
+  assert.deepEqual(errors, []);
+  console.log('LULUS browser: paket aktif, semua paket, Word SiAdu per subtes/ZIP, gambar asli, poin TKP, PDF, Word biasa, CSV, JSON, mobile, Escape dan pemulihan fokus.');
+} finally { await browser.close(); }

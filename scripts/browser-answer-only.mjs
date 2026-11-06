@@ -1,0 +1,43 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url),{chromium}=require(process.env.SKD_PLAYWRIGHT_MODULE??'playwright'),{unzipSync,strFromU8}=require('fflate');
+const browser=await chromium.launch({headless:true,...(process.env.SKD_BROWSER_EXECUTABLE?{executablePath:process.env.SKD_BROWSER_EXECUTABLE}:{})});
+const page=await browser.newPage({viewport:{width:1440,height:1000},acceptDownloads:true});
+page.setDefaultTimeout(45000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
+async function download(button,file){const event=page.waitForEvent('download');await button.click();const result=await event;assert.equal(await result.failure(),null);await result.saveAs('test-results/'+file);return fs.readFileSync('test-results/'+file);}
+try{
+ await page.goto(process.env.SKD_BROWSER_URL??'http://127.0.0.1:3107');
+ await page.waitForFunction(()=>document.querySelector('.save-status')?.textContent.includes('Tersimpan'));
+ await page.locator('input[type=file]').first().setInputFiles('test-results/answer-only-fixture.json');
+ const card=page.locator('.question-card').first();
+ await card.waitFor();await page.getByLabel('Tampilkan pembahasan',{exact:true}).uncheck();
+ assert.equal(await card.locator('.explanation').count(),0);assert.equal(await card.locator('.answer-only').count(),1);assert.equal(await card.locator('.correct-option').count(),1);
+ await page.getByRole('button',{name:'Tampilan peserta',exact:true}).click();
+ assert.equal(await card.locator('.answer-label, .correct-option, .option-score, .explanation').count(),0);
+ await page.getByRole('button',{name:'Dengan kunci',exact:true}).click();
+ assert.equal(await card.locator('.answer-only').count(),1);
+ await page.getByLabel('Tampilkan pembahasan',{exact:true}).check();assert.equal(await card.locator('.explanation').count(),1);
+ await page.getByLabel('Tampilkan pembahasan',{exact:true}).uncheck();
+ const panel=page.getByRole('region',{name:'Ambil soal',exact:true});await panel.getByLabel('Isi unduhan soal').selectOption('soal-jawaban');
+ await download(panel.getByRole('button',{name:'Unduh PDF',exact:true}),'answer-only-single.pdf');
+ await download(panel.getByRole('button',{name:'Unduh PNG',exact:true}),'answer-only-single.png');
+ await page.getByRole('button',{name:/^Buka soal 4,/}).click();assert.equal(await card.locator('.option-score').count(),5);assert.equal(await card.locator('.answer-only').count(),1);
+ await page.setViewportSize({width:390,height:844});assert.ok(await panel.evaluate(el=>el.scrollWidth<=el.clientWidth+2),'Mobile dropdown fits');
+ await page.screenshot({path:'test-results/answer-only-mobile.png'});await page.setViewportSize({width:1440,height:1000});
+ await page.getByRole('region',{name:'Unduh paket',exact:true}).getByRole('button',{name:/^PDF/}).click();
+ const dialog=page.getByRole('dialog',{name:'Ekspor paket soal'});
+ await dialog.getByLabel('Isi dokumen').selectOption('soal-jawaban');
+ await dialog.getByRole('button',{name:'Lihat pratinjau PDF',exact:true}).click();await dialog.getByTitle('Pratinjau naskah PDF').waitFor();
+ const preview=await page.evaluate(async()=>{const url=document.querySelector('iframe[title="Pratinjau naskah PDF"]').src.split('#')[0];const bytes=new Uint8Array(await(await fetch(url)).arrayBuffer());let s='';for(let i=0;i<bytes.length;i+=16384)s+=String.fromCharCode(...bytes.slice(i,i+16384));return btoa(s);});
+ const pdf=await download(dialog.getByRole('button',{name:'Unduh 1 file PDF',exact:true}),'answer-only-package.pdf');assert.deepEqual(pdf,Buffer.from(preview,'base64'));
+ await dialog.getByLabel('Isi dokumen').selectOption('soal');assert.equal(await dialog.getByTitle('Pratinjau naskah PDF').count(),0);
+ await dialog.getByLabel('Isi dokumen').selectOption('soal-jawaban');await dialog.getByRole('button',{name:/^Word biasa/}).click();
+ const word=await download(dialog.getByRole('button',{name:'Unduh Word biasa',exact:true}),'answer-only-package.docx');
+ const parts=unzipSync(word),xml=strFromU8(parts['word/document.xml']);
+ assert.equal((xml.match(/Jawaban: /g)??[]).length,4);assert.ok(!/RAHASIA_|Pembahasan:|Cara cepat/.test(xml));
+ assert.ok(xml.includes('<w:tbl>'));assert.ok(Object.keys(parts).some(p=>p.startsWith('word/media/')));
+ const q=JSON.parse(fs.readFileSync('test-results/answer-only-fixture.json')).result.packages[0].questions[3];
+ for(const[i,o]of q.options.entries())assert.ok(xml.includes(String.fromCharCode(65+i)+': '+o.score));
+ assert.deepEqual(errors,[]);console.log('PASS: answer-only UI/participant/TKP, mobile, single PDF/PNG, package PDF preview equality, Word keys + scores + table + figures with no explanation leakage.');
+}finally{await browser.close();}

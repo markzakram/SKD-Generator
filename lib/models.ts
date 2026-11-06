@@ -1,15 +1,24 @@
-import { calculate } from './solver';
+import { optionNumber } from './option-number';
+import { calculate, entails, type Logic } from './solver';
+import { holdsAll, solve, type Fact, type Geo } from './posisi-model';
 import type { Question } from './types';
 
+export type ArgumentRole = 'kunci' | 'terbalik' | 'tidak-relevan' | 'sebagian' | 'luar-cakupan' | 'ulang-premis';
 export type Constraint = { a: string; b?: string; op: 'before' | 'adjacent' | 'distance' | 'at' | 'notAt'; value?: number };
 export type Condition = { op: 'sum' | 'difference' | 'product' | 'x' | 'y' | 'xGt' | 'yGt'; value: number };
 export type Model =
   | { kind: 'ordering'; names: string[]; constraints: Constraint[]; query: { position?: number; person?: string }; labels?: string[] }
+  | { kind: 'arrangement'; geo: Geo; names: string[]; anchor?: string; clues: Fact[]; options: { text: string; fact: Fact }[] } // susunan dan posisi (lib/tiu-posisi.ts): kunci = satu-satunya opsi yang benar pada semua susunan yang memenuhi petunjuk
+  | { kind: 'argument'; direction: 'perkuat' | 'lemahkan'; scenario?: string; options: { text: string; role: ArgumentRole }[] } // memperkuat/memperlemah argumen (lib/tiu-argumen.ts): kunci = opsi berperan 'kunci'; sisanya pengecoh dengan perannya
   | { kind: 'equality' }
-  | { kind: 'route'; nodes: string[]; edges: string[][] }
+  | { kind: 'analogy'; target: string; options: { text: string; rel: string; reversed: boolean }[] } // analogi verbal: kunci = pasangan berjenis hubungan sama (target) dan arah yang sama
+  | { kind: 'implication'; asked: 'konvers' | 'invers' | 'kontraposisi'; premise: Logic; options: { text: string; logic: Logic }[] } // bentuk turunan "jika p maka q" menurut namanya
+  | { kind: 'syllogism'; premises: Logic[]; options: { text: string; logic?: Logic }[]; code?: string; chapter?: string; errors?: (string | null)[]; narrative?: { implications: number; reversed: number; forward: { from: string; to: string; markedFrom: string; markedTo: string }[] } } // narrative menyimpan padanan kalimat dengan kondisi lebih dahulu untuk batas produksi Bagian 25; makna formal dan kunci tidak berubah.
+  | { kind: 'route'; nodes: string[]; edges: string[][]; distractors?: { value: number; source: string; reason: string }[] } // rute sederhana (simpul tidak diulang) dari nodes[0] ke simpul terakhir; arah dua arah = dua sisi
   | { kind: 'data'; domain: number; first: Condition[]; second: Condition[]; target: 'x' | 'sum' | 'product' }
   | { kind: 'cost'; capacities: number[]; prices: number[]; target: number; spare: number }
   | { kind: 'statements'; prices: number[]; amounts: number[][]; offered: number[] }
+  | { kind: 'availability'; stores: string[]; items: string[]; absent: number[][] }
   | { kind: 'category'; names: string[]; total: number; yes: string[]; no: string[]; second: string[]; claims: { text: string; person: string; first: boolean; second: boolean }[] };
 
 export function permutations<T>(values: T[]): T[][] {
@@ -55,18 +64,37 @@ export function solveModel(q: Question): boolean[] {
     const answer = values.size === 1 ? [...values][0] : 'Tidak dapat ditentukan';
     return q.options.map((o) => o.text === answer);
   }
+  if (m.kind === 'arrangement') {
+    const found = solve(m.geo, m.names, m.clues, m.anchor, 20000);
+    if (!found.length) throw new Error('Petunjuk susunan tidak konsisten.');
+    if (found.length > 20000) throw new Error('Petunjuk susunan menghasilkan terlalu banyak susunan.');
+    return q.options.map((o) => { const option = m.options.find((x) => x.text === o.text); return !!option && holdsAll(option.fact, m.names, found, m.geo); });
+  }
+  if (m.kind === 'argument') return q.options.map((o) => m.options.find((x) => x.text === o.text)?.role === 'kunci');
   if (m.kind === 'equality') return q.options.map((o) => {
-    const sides = o.text.replaceAll('×', '*').replaceAll('÷', '/').split('=');
+    const sides = o.text.replaceAll(' dibandingkan dengan ', '=').replaceAll('×', '*').replaceAll('÷', '/').split('=');
     return sides.length === 2 && Math.abs(calculate(sides[0]) - calculate(sides[1])) < 1e-8;
   });
+  if (m.kind === 'analogy') return q.options.map((o) => { const found = m.options.find((x) => x.text === o.text); return !!found && found.rel === m.target && !found.reversed; });
+  if (m.kind === 'implication') {
+    const p = m.premise;
+    if (p.op !== 'implies') throw new Error('Premis bentuk implikasi tidak valid.');
+    const wanted = m.asked === 'konvers' ? { op: 'implies', left: p.right, right: p.left } : m.asked === 'invers' ? { op: 'implies', left: { op: 'not', item: p.left }, right: { op: 'not', item: p.right } } :
+      { op: 'implies', left: { op: 'not', item: p.right }, right: { op: 'not', item: p.left } };
+    return q.options.map((o) => { const found = m.options.find((x) => x.text === o.text); return !!found && JSON.stringify(found.logic) === JSON.stringify(wanted); });
+  }
+  if (m.kind === 'syllogism') {
+    const claims = m.options.filter((o) => o.logic), entailed = entails(m.premises, claims.map((o) => o.logic!)), holds = new Map(claims.map((o, i) => [o.text, entailed[i]]));
+    return q.options.map((o) => { const found = m.options.find((x) => x.text === o.text); return !found ? false : found.logic ? !!holds.get(found.text) : !entailed.some(Boolean); });
+  }
   if (m.kind === 'route') {
+    // Rute sederhana: simpul yang sudah dilewati tidak boleh dilewati lagi (sisi dua arah tidak menimbulkan putaran).
     const visit = (node: string, seen: Set<string>): number => {
       if (node === m.nodes.at(-1)) return 1;
-      if (seen.has(node)) throw new Error('Siklus rute tidak didukung.');
-      return m.edges.filter(([from]) => from === node).reduce((n, [, to]) => n + visit(to, new Set([...seen, node])), 0);
+      return m.edges.filter(([from, to]) => from === node && !seen.has(to)).reduce((n, [, to]) => n + visit(to, new Set([...seen, node])), 0);
     };
     const answer = visit(m.nodes[0], new Set());
-    return q.options.map((o) => Number(o.text) === answer);
+    return q.options.map((o) => optionNumber(o.text) === answer);
   }
   if (m.kind === 'data') return q.options.map((o) => o.text === DATA_LABELS[dataCategory(m)]);
   if (m.kind === 'cost') {
@@ -82,6 +110,11 @@ export function solveModel(q: Question): boolean[] {
   if (m.kind === 'statements') {
     const correct = m.amounts.map((amounts, i) => amounts.reduce((n, a, j) => n + a * m.prices[j], 0) === m.offered[i] ? i + 1 : 0).filter(Boolean);
     return q.options.map((o) => o.text === correct.join(' dan '));
+  }
+  if (m.kind === 'availability') {
+    // Toko yang dapat dikunjungi: tidak ada barang dibutuhkan yang pasti tidak tersedia (tanda x) di toko itu; kunci hanya bila tepat satu.
+    const open = m.stores.filter((_, store) => m.absent.every((list) => !list.includes(store)));
+    return q.options.map((o) => open.length === 1 && o.text === open[0]);
   }
   const worlds = Array.from({ length: 2 ** m.names.length }, (_, mask) => m.names.filter((_, i) => mask & 1 << i))
     .filter((set) => set.length === m.total && m.yes.every((n) => set.includes(n)) && m.no.every((n) => !set.includes(n)));

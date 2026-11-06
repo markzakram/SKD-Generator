@@ -1,5 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import { KURASI_AKTIF } from '@/lib/config';
+import { newId } from '@/lib/id';
 import { blankAnswers } from '@/lib/pilot';
 import type { Package, PilotAnswer, PilotSession, Workspace } from '@/lib/types';
 import QuestionCard from './QuestionCard';
@@ -15,7 +17,7 @@ export default function PilotRunner({ workspace, pack, onFinish, onClose }: { wo
   };
   const finish = () => {
     if (submitted.current) return; submitted.current = true; setBusy(true);
-    onFinish({ id: crypto.randomUUID(), workspaceId: workspace.id, version: workspace.version, packageId: pack.id, participant: participant.trim() || 'Anonim', finishedAt: new Date().toISOString(), answers: record() });
+    onFinish({ id: newId(), workspaceId: workspace.id, version: workspace.version, packageId: pack.id, participant: participant.trim() || 'Anonim', finishedAt: new Date().toISOString(), answers: record() });
   };
   const latestFinish = useRef(finish); latestFinish.current = finish;
   useEffect(() => {
@@ -25,7 +27,7 @@ export default function PilotRunner({ workspace, pack, onFinish, onClose }: { wo
     window.addEventListener('beforeunload', unload);
     return () => { clearInterval(timer); window.removeEventListener('beforeunload', unload); };
   }, [started]);
-  if (!started) return <section className="panel pilot-intro"><span className="eyebrow">UJI PESERTA</span><h2>Kerjakan paket latihan</h2><p>{pack.questions.length} soal disetujui · {pack.duration} menit. Kunci dan pembahasan muncul kembali setelah sesi selesai.</p><label className="field">Kode peserta<input value={participant} onChange={(e) => setParticipant(e.target.value)} placeholder="Contoh P-001, tanpa data pribadi" maxLength={100}/></label><p className="help">Sesi ini mencatat pilihan dan waktu tiap soal. Selesaikan sesi sebelum menutup tab.</p><div className="dialog-actions"><button className="secondary-button" onClick={onClose}>Kembali</button><button className="primary-button" onClick={() => { entered.current = performance.now(); deadline.current = Date.now() + pack.duration * 60000; setStarted(true); }}>Mulai pengerjaan</button></div></section>;
+  if (!started) return <section className="panel pilot-intro"><span className="eyebrow">UJI PESERTA</span><h2>Kerjakan paket latihan</h2><p>{pack.questions.length} soal{KURASI_AKTIF ? ' disetujui' : ''} · {pack.duration} menit. Kunci dan pembahasan muncul kembali setelah sesi selesai.</p><label className="field">Kode peserta<input value={participant} onChange={(e) => setParticipant(e.target.value)} placeholder="Contoh P-001, tanpa data pribadi" maxLength={100}/></label><p className="help">Sesi ini mencatat pilihan dan waktu tiap soal. Selesaikan sesi sebelum menutup tab.</p><div className="dialog-actions"><button className="secondary-button" onClick={onClose}>Kembali</button><button className="primary-button" onClick={() => { entered.current = performance.now(); deadline.current = Date.now() + pack.duration * 60000; setStarted(true); }}>Mulai pengerjaan</button></div></section>;
   const q = pack.questions[index];
   return <div className="pilot-layout"><div className="pilot-top"><strong>{answers.filter((a) => a.choice !== null).length} / {answers.length} terjawab</strong><span className="timer">{Math.floor(remaining / 60)}:{String(remaining % 60).padStart(2, '0')}</span></div>
     <QuestionCard question={q} showAnswers={false} hideExplanation choice={answers[index].choice} onChoose={(choice) => setAnswers(answers.map((a, i) => i === index ? { ...a, choice } : a))}/>

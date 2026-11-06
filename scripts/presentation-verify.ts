@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { writeFileSync } from 'node:fs';
-import { mathParts, mathSvg, mathHtml, latexText } from '../lib/math';
+import { mathParts, mathSvg, mathHtml, latexText, plainMath } from '../lib/math';
 import { questionTable } from '../lib/table';
 import { ACCEPTED_BANK } from '../lib/bank';
 import { DEFAULT_SETTINGS } from '../lib/config';
@@ -44,7 +44,7 @@ for(const q of matrices){
  const html=renderToStaticMarkup(createElement(QuestionCard,{question:q,showAnswers:true}));
  check(!html.includes('<thead>')&&!html.includes('<th>')&&(html.match(/<td/g)??[]).length===9,'UI matriks hanya sel data');
  const sections=takeSections(q,['soal']);check(!sectionsHtml(sections,{}).includes('<th '),'Clipboard tanpa header');
- check(sectionsText(sections).includes(latexText(q.table!.headers.join(' | '))),'Salin mempertahankan angka baris pertama');
+ check(sectionsText(sections).includes(plainMath(q.table!.headers.join(' | '))),'Salin mempertahankan angka baris pertama'); // salinan kini teks polos lewat plainMath (lib/take.ts), bukan LaTeX
 }
 const ordinary=samples.find(q=>q.table&&q.subtopic!=='Matriks Deret')!;assert.deepEqual(questionTable(ordinary),ordinary.table);checks++;
 for(const family of ['fig-analogi','fig-odd'])for(const level of ['mudah','sedang','sulit'] as const)for(let i=0;i<60;i++){

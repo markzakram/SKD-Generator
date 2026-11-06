@@ -39,6 +39,8 @@
 .take-panel .primary-button,.take-panel .secondary-button{min-height:36px;padding:7px 12px;font-size:12px}
 .take-options{justify-content:space-between;border-top:1px solid var(--line);padding-top:12px}
 .take-options .check-row{font-size:12px}
+.take-content{flex-wrap:wrap;max-width:100%}.take-content select{width:auto;min-width:0;max-width:100%}
+.answer-only{padding-top:14px;border-top:1px solid var(--line)}
 .take-select{border:1px solid var(--blue-tint-line-2);background:var(--surface-6);border-radius:var(--radius-10);padding:12px 14px;display:grid;gap:8px}
 .take-select .help{margin:0;font-size:12px}
 .take-summary{gap:4px 16px}

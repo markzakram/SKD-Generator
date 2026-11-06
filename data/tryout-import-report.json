@@ -73,6 +73,1616 @@
     {
       "id": "tryout-ref-00-03",
       "change": "Pecahan campuran ditulis dengan tanda tambah eksplisit; nilai tidak berubah."
+    },
+    {
+      "id": "tryout-ref-02-01",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Merangkum gagasan yang mencakup seluruh paragraf dan membedakannya dari kalimat penjelas.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-02-02",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Merangkum gagasan utama paragraf induktif dari kalimat penutup yang menyimpulkan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-02-03",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menarik simpulan yang mencakup dua temuan berlawanan (pemakaian naik, sebagian siswa terkendala akses) tanpa melampaui teks.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-02-04",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Merangkum dua hasil evaluasi (waktu pengisian turun, perbaikan formulir relatif tetap) menjadi satu simpulan tanpa menambah informasi.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-02-05",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan kaidah subjek tidak didahului preposisi pada kalimat nyata sambil menjaga makna penerima dan tenggat.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-02-06",
+      "change": "Label TWK diganti: Bloom C2, kesulitan mudah (label sumber Mudah).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "mudah",
+      "labelSumber": "Mudah",
+      "alasan": "Mengenali kesejajaran bentuk verba pada perincian setelah kata 'untuk'.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-02-07",
+      "change": "Label TWK diganti: Bloom C1, kesulitan mudah (label sumber Mudah).",
+      "jenis": "label",
+      "bloom": "C1",
+      "kesulitan": "mudah",
+      "labelSumber": "Mudah",
+      "alasan": "Mengingat bentuk baku analisis, aktivitas, dan risiko dalam kalimat.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-02-08",
+      "change": "Label TWK diganti: Bloom C1, kesulitan mudah (label sumber Mudah).",
+      "jenis": "label",
+      "bloom": "C1",
+      "kesulitan": "mudah",
+      "labelSumber": "Mudah",
+      "alasan": "Mengingat bentuk baku mengimbau, antre, dan apotek dalam kalimat.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-02-09",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan dua kaidah sekaligus: titik dua sebelum perincian dan titik koma antarklausa setara.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-02-10",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan kaidah koma untuk anak kalimat yang mendahului induk kalimat dan sebelum kata 'tetapi'.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-02-11",
+      "change": "Label TWK diganti: Bloom C2, kesulitan mudah (label sumber Mudah).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "mudah",
+      "labelSumber": "Mudah",
+      "alasan": "Membedakan di-/ke- sebagai imbuhan dan sebagai kata depan pada contoh kalimat.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-02-12",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan tiga kaidah bentuk terikat (non- + singkatan, se- + nama diri, non- + kata umum) pada satu kalimat.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-01",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “kekecewaan daerah yang diwujudkan dengan pemerintahan tandingan atau pemberontakan”, maka jawabannya mengarah ke “perjuangan tuntutan melalui jalur konstitusional tanpa memecah NKRI”.",
+      "baru": "Bedakan isi tuntutan daerah dari cara memperjuangkannya, lalu nilai tiap pilihan dari dampaknya terhadap persatuan.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-01",
+      "change": "Label TWK diganti: Bloom C4, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C4",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Memisahkan isi tuntutan daerah dari cara memperjuangkannya, lalu menyimpulkan pelajaran persatuan dari peristiwa PRRI.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-02",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “produk asing membanjiri pasar dan muncul ajakan boikot”, maka jawabannya mengarah ke “penguatan mutu dan daya saing produk dalam negeri tanpa menutup diri”.",
+      "baru": "Tentukan dahulu masalah inti yang dihadapi ASN, lalu nilai apakah tiap sikap menjawab masalah itu atau hanya menanggapi emosi publik.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-02",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan nasionalisme ekonomi pada kasus konkret ASN dengan menimbang dua tekanan (daya saing perajin dan ajakan boikot).",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-03",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Mengklasifikasikan upaya hilirisasi hasil laut ke unsur kemandirian di antara lima unsur nasionalisme.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-03",
+      "change": "Butir direvisi (status MINOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Perhatikan tindakan utama dalam kasus. Apabila masyarakat meningkatkan kemampuan mengolah dan memanfaatkan sumber daya sendiri untuk memperkuat perekonomian, unsur nasionalisme yang paling tepat adalah kemandirian.",
+      "tipBaru": "Pisahkan tindakan utama dan tujuannya dari sarana dan dampaknya, lalu cocokkan tindakan utama itu dengan pengertian tiap unsur nasionalisme.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-04",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “warga beragam latar belakang yang berpartisipasi dan berkedudukan setara sebagai warga negara”, maka jawabannya mengarah ke “Nasionalisme sipil”.",
+      "baru": "Cari dasar ikatan antarwarga dalam kasus, apakah asal-usul, budaya, atau kedudukan dan partisipasi sebagai warga negara, lalu cocokkan dengan pengertian tiap bentuk nasionalisme.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-04",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Mengenali bentuk nasionalisme sipil dari ciri kesetaraan kedudukan dan partisipasi warga negara.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-05",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “Sarekat Islam” atau “anggota dari pedagang, petani, dan buruh”, maka jawabannya mengarah ke “basis massa yang luas”.",
+      "baru": "Bandingkan kedua organisasi pada ciri yang diminta soal, yaitu siapa anggotanya dan seberapa luas jangkauannya, lalu singkirkan pilihan yang justru ciri organisasi pembanding.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-05",
+      "change": "Label TWK diganti: Bloom C2, kesulitan mudah (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "mudah",
+      "labelSumber": "Sedang",
+      "alasan": "Membandingkan ciri Sarekat Islam dengan Budi Utomo memakai informasi keanggotaan yang sudah tersaji di stem.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-06",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “daerah atau kerajaan bergabung atas kehendak sendiri”, maka jawabannya mengarah ke “ikatan kedaerahan ditempatkan di bawah komitmen pada negara kebangsaan”.",
+      "baru": "Baca makna keputusan itu dari apa yang dilepaskan dan apa yang dipertahankan para pemimpin daerah, lalu pilih penafsiran yang tidak melampaui fakta dalam teks.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-06",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menafsirkan makna maklumat 5 September 1945 sebagai komitmen kebangsaan yang melampaui ikatan kedaerahan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-07",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “menolak paham yang ingin mengganti dasar negara”, maka jawabannya mengarah ke “Setia pada Pancasila”.",
+      "baru": "Tentukan apa yang sedang dipertahankan tokoh dalam kasus, lalu cocokkan dengan pengertian tiap nilai dasar bela negara dan bedakan nilai yang mirip dari objek yang dibela.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-07",
+      "change": "Label TWK diganti: Bloom C2, kesulitan mudah (label sumber Mudah).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "mudah",
+      "labelSumber": "Mudah",
+      "alasan": "Mengklasifikasikan sikap mahasiswa ke nilai dasar bela negara 'setia pada Pancasila'.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-08",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “ASN merancang program menghadapi ancaman nonmiliter di bidang tugasnya”, maka jawabannya mengarah ke “program substantif dan kolaboratif yang mengatasi akar ketergantungan”.",
+      "baru": "Cari akar masalah dalam kasus lebih dahulu, lalu pilih program yang langsung mengatasi akar itu sesuai bidang tugas ASN, bukan program yang hanya simbolis atau administratif.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-08",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "HOTS",
+      "alasan": "Menerapkan konsep bela negara nonmiliter dengan memilih program yang menyasar akar masalah (ketergantungan benih impor).",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-09",
+      "change": "Label TWK diganti: Bloom C5, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C5",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menimbang kepentingan ekonomi terhadap risiko lingkungan dan sosial untuk memilih sikap yang preventif dan kolaboratif.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-09",
+      "change": "Butir direvisi (status MAYOR): stem, teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MAYOR",
+      "bagian": [
+        "stem",
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Apabila soal menyebut “dilema investasi yang berisiko merusak sumber daya dan memicu konflik dengan masyarakat”, maka jawabannya mengarah ke “kajian menyeluruh dan musyawarah sebelum keputusan diambil”.",
+      "tipBaru": "Tandai ancaman yang ditemukan kajian awal, lalu periksa setiap rekomendasi dari tiga sisi: kapan ancaman itu dinilai, apa yang dikaji, dan siapa yang diajak menentukan serta dengan cara apa.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-10",
+      "change": "Label TWK diganti: Bloom C4, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C4",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menghubungkan tiga penyebab masalah perbatasan dengan program yang menyasar tiap penyebab dalam kerangka Pancagatra.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-11",
+      "change": "Tip dihapus (tidak ada pengganti yang bukan rumus jawaban).",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “kesiapan fisik, kesiapan psikis, dan keterampilan dasar”, maka jawabannya mengarah ke “Kemampuan awal bela negara”.",
+      "baru": null,
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-11",
+      "change": "Label TWK diganti: Bloom C1, kesulitan mudah (label sumber Mudah).",
+      "jenis": "label",
+      "bloom": "C1",
+      "kesulitan": "mudah",
+      "labelSumber": "Mudah",
+      "alasan": "Mengingat nilai dasar bela negara dari ciri kesiapan fisik, kesiapan psikis, dan keterampilan dasar.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-12",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “ketergantungan pasokan, kelangkaan barang, dan lonjakan harga”, maka jawabannya mengarah ke “gatra Ekonomi”.",
+      "baru": "Telusuri akibat langsung dari ketergantungan dalam kasus, lalu tentukan gatra yang kemampuan dasarnya paling terguncang, bukan gatra yang hanya terdampak tidak langsung.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-12",
+      "change": "Label TWK diganti: Bloom C2, kesulitan mudah (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "mudah",
+      "labelSumber": "Sedang",
+      "alasan": "Mengklasifikasikan kerentanan akibat ketergantungan pasokan ke gatra ekonomi dalam Pancagatra.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-13",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “mampu hidup mewah tetapi memilih tidak boros dan membeli sesuai kebutuhan”, maka jawabannya mengarah ke “Sederhana”.",
+      "baru": "Pisahkan perilaku yang berkaitan dengan gaya hidup dari perilaku yang berkaitan dengan kerja atau kejujuran, lalu cocokkan dengan pengertian tiap nilai antikorupsi.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-13",
+      "change": "Label TWK diganti: Bloom C2, kesulitan mudah (label sumber Mudah).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "mudah",
+      "labelSumber": "Mudah",
+      "alasan": "Mengenali nilai antikorupsi Sederhana dari perilaku hidup bersahaja pejabat.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-14",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sulit",
+      "alasan": "Menerapkan prosedur konflik kepentingan (deklarasi dan mundur) pada kasus kerabat pengusul hibah.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-14",
+      "change": "Butir direvisi (status MINOR): teks opsi A, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "teks opsi A",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Apabila soal menyebut “kerabat menjadi pihak yang akan dinilai dan keputusan belum diambil”, maka jawabannya mengarah ke “deklarasi tertulis kepada atasan dan mundur dari pengambilan keputusan”.",
+      "tipBaru": "Kenali hubungan pribadi dan tahap proses dalam kasus, lalu pilih tindakan yang mencegah hubungan itu memengaruhi keputusan, bukan sekadar keyakinan diri bahwa penilaian akan objektif.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-15",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “pegawai mensyaratkan pembayaran di luar biaya resmi dan mengancam layanan tidak diproses”, maka jawabannya mengarah ke “Pemerasan”.",
+      "baru": "Tentukan siapa yang berinisiatif, apakah ada ancaman atau paksaan, dan apakah penerima memanfaatkan kewenangan jabatan; unsur-unsur itu membedakan jenis tindak pidana korupsi yang berdekatan.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-15",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan unsur tindak pidana (inisiatif petugas, paksaan, jabatan) untuk menggolongkan perbuatan sebagai pemerasan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-16",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “diminta menandatangani dokumen yang tidak sesuai fakta demi target atau tenggat, dengan janji perbaikan kemudian”, maka jawabannya mengarah ke “menunda atau menolak menandatangani dan menyampaikan keberatan tertulis”.",
+      "baru": "Bandingkan isi dokumen yang diminta ditandatangani dengan fakta di lapangan, lalu pilih tindakan yang tidak mengesahkan data yang tidak sesuai meskipun ada tekanan atau janji perbaikan.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-16",
+      "change": "Label TWK diganti: Bloom C5, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C5",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menimbang tekanan atasan, kelaziman tim, dan janji penyedia terhadap kebenaran dokumen untuk memilih sikap berintegritas.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-17",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “tetap menyuarakan kritik meskipun menyadari risiko hukuman atau pembuangan”, maka jawabannya mengarah ke “Berani”.",
+      "baru": "Cari risiko yang secara sadar ditanggung tokoh dan hubungannya dengan tindakannya, lalu bedakan dari nilai lain yang tampak dalam narasi tetapi bukan fokus pertanyaan.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-17",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Memetakan keputusan tokoh (tetap menerbitkan tulisan meski berisiko) ke nilai antikorupsi 'Berani'.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-18",
+      "change": "Label TWK diganti: Bloom C5, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C5",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menimbang dua kebutuhan sah (penyaluran bantuan dan perangkat sekolah) terhadap batas kewenangan anggaran.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-18",
+      "change": "Butir direvisi (status CACAT): stem, teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "CACAT",
+      "bagian": [
+        "stem",
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Dalam soal integritas anggaran, bedakan manfaat suatu usulan dengan kewenangan untuk melaksanakannya. Prioritaskan penggunaan anggaran yang sah dan pemenuhan kewajiban program yang masih dapat diselesaikan.",
+      "tipBaru": "Bedakan manfaat suatu usulan dari kewenangan untuk melaksanakannya, lalu uji setiap pilihan dengan dua tuntutan di stem: manfaat program tetap terjaga dan penggunaan anggaran dapat dipertanggungjawabkan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-19",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “kesepakatan para pendiri negara”, maka jawabannya mengarah ke “perjanjian luhur bangsa”.",
+      "baru": "Hubungkan peristiwa sejarah dalam soal dengan fungsi Pancasila yang paling langsung dijelaskan oleh fakta itu, lalu bedakan fungsi yang berdekatan satu per satu.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-19",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menghubungkan fakta kesepakatan pendiri negara dengan fungsi Pancasila sebagai perjanjian luhur.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-20",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “merumuskan rancangan” atau “Piagam Jakarta”, maka jawabannya mengarah ke “BPUPKI dan Panitia Sembilan”, sedangkan “mengesahkan” mengarah ke “PPKI”.",
+      "baru": "Periksa setiap pernyataan sejarah terhadap tahapan perumusan dan pengesahan, lalu cocokkan pernyataan yang benar dengan kombinasi nomor yang ditawarkan.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-20",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sulit (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sulit",
+      "labelSumber": "Sulit",
+      "alasan": "Memeriksa kebenaran enam pernyataan sejarah perumusan Pancasila terhadap tahapan BPUPKI, Panitia Sembilan, dan PPKI.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-21",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “menerima dan melaksanakan hasil musyawarah”, maka jawabannya mengarah ke “tetap menjalankan kesepakatan bersama meskipun usul pribadi ditolak”.",
+      "baru": "Ubah butir pengamalan dalam soal menjadi perilaku konkret, lalu cari tindakan yang benar-benar menjalankan butir itu, bukan tindakan baik lain yang bersumber dari sila yang berbeda.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-21",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan butir pengamalan sila ke-4 pada perilaku konkret warga.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-22",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “anggaran pendidikan daerah diturunkan di bawah 20 persen”, maka jawabannya mengarah ke “bertentangan dengan Pasal 31 ayat (4) yang mengikat APBN dan APBD”.",
+      "baru": "Pastikan lebih dahulu pihak yang diikat oleh ketentuan pasal itu, lalu uji alasan yang ditawarkan setiap pilihan terhadap bunyi ketentuannya.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-22",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menerapkan Pasal 31 ayat (4) UUD 1945 untuk menilai usulan APBD di bawah batas 20 persen.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-23",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “Perppu tidak mendapat persetujuan DPR”, maka jawabannya mengarah ke “harus dicabut”.",
+      "baru": "Telusuri tahapan Perppu menurut Pasal 22 beserta akibat hukum pada tiap tahap, lalu uji setiap pilihan terhadap akibat hukum ketika persetujuan DPR tidak diberikan.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-23",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menerapkan Pasal 22 UUD 1945 untuk menentukan akibat hukum Perppu yang tidak disetujui DPR.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-24",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “perairan antarpulau sebagai pemisah wilayah”, maka jawabannya mengarah ke “bertentangan dengan Wawasan Nusantara, laut adalah penghubung dan pemersatu”.",
+      "baru": "Bandingkan cara pandang peserta forum terhadap laut dengan cara pandang Wawasan Nusantara, lalu periksa apakah tiap pilihan menilai pendapat itu dengan dasar yang benar.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-24",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menilai pendapat peserta forum dengan cara pandang Wawasan Nusantara (laut sebagai penghubung).",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-25",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “ide pokok” dan kalimat pertama paling umum sementara kalimat berikutnya berisi rincian, contoh, atau penanda “Selain itu”, maka jawabannya mengarah ke “parafrase kalimat pertama”.",
+      "baru": "Tentukan kalimat yang cakupannya paling luas dan didukung oleh kalimat lain, lalu singkirkan pilihan yang hanya merangkum satu kalimat penjelas atau menambah klaim di luar teks.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-25",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menentukan ide pokok paragraf deduktif yang kalimat utamanya di awal.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-26",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “seluruh katanya baku” dan ada kata serapan berakhiran -sa atau -fitas seperti “analisa” dan “kreatifitas”, maka jawabannya mengarah ke “kombinasi nomor yang tidak memuat kalimat dengan kata tersebut”.",
+      "baru": "Periksa kebakuan setiap kata pada tiap kalimat berdasarkan KBBI V, tandai kalimat yang memuat bentuk tidak baku, lalu cocokkan dengan kombinasi nomor pada pilihan.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-26",
+      "change": "Label TWK diganti: Bloom C1, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C1",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Mengingat bentuk baku sembilan kata (saksama, kuitansi, mengimbau, antre, dan lain-lain) pada lima kalimat.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-27",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “tanda baca yang keliru” dan ada kalimat yang diawali “Oleh karena itu”, “Jadi”, atau “Meskipun demikian” tanpa koma sesudahnya, maka jawabannya mengarah ke “kalimat tersebut”.",
+      "baru": "Periksa tiap kalimat terhadap kaidah tanda baca EYD V, terutama pada awal kalimat, di antara klausa, dan pada perincian, lalu tentukan kalimat yang melanggar kaidah.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-27",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "Sulit",
+      "alasan": "Menerapkan kaidah koma setelah penghubung antarkalimat 'Oleh karena itu' sambil memeriksa empat kalimat lain.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-28",
+      "change": "Label TWK diganti: Bloom C4, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C4",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menelusuri rantai sebab-akibat antarkalimat dan memilih simpulan yang didukung data, bukan generalisasi.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-28",
+      "change": "Butir direvisi (status MAYOR): teks opsi B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MAYOR",
+      "bagian": [
+        "teks opsi B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Apabila soal menyebut “simpulan yang paling dapat dipertanggungjawabkan”, maka jawabannya mengarah ke “pernyataan yang merangkum seluruh rangkaian sebab-akibat dengan kuantor dan modalitas sehalus teks”.",
+      "tipBaru": "Bandingkan setiap pilihan dengan seluruh paragraf: periksa kelompok yang dibicarakan, tingkat kepastiannya, dan apakah pernyataan itu masih berupa simpulan dari data, bukan saran atau rincian satu kalimat.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-29",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “tanda baca secara tepat” dan ada titik dua sesudah verba atau koma sesudah subjek, maka jawabannya mengarah ke “kombinasi yang membuang kalimat-kalimat tersebut”.",
+      "baru": "Uji setiap kalimat dengan kaidah titik, koma, dan titik dua dalam EYD V, tandai kalimat yang benar, lalu cocokkan dengan kombinasi nomor pada pilihan.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-29",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "Sulit",
+      "alasan": "Menerapkan kaidah titik, koma, dan titik dua pada lima kalimat.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-03-30",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "utama",
+      "lama": "Apabila soal menyebut “perbaikan yang paling tepat” untuk kalimat berisi perincian, maka jawabannya mengarah ke “opsi yang semua unsur perinciannya berbentuk sama dan tidak memuat kesalahan baru”.",
+      "baru": "Periksa kesejajaran bentuk unsur perincian dan kehematan kata, lalu pastikan perbaikan yang dipilih tidak menimbulkan kesalahan baru di bagian lain kalimat.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-03-30",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "Sulit",
+      "alasan": "Menerapkan dua kaidah (kesejajaran dan kehematan) sekaligus tanpa menimbulkan kesalahan baru.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-01",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Memilih kegiatan yang menjawab masalah yang didiagnosis (interaksi antarkelompok terbatas) untuk membangun kesadaran sebagai satu bangsa.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-01",
+      "change": "Butir direvisi (status CACAT): stem, teks opsi B, C, D, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "CACAT",
+      "bagian": [
+        "stem",
+        "teks opsi B, C, D",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Apabila soal menyebut peserta berasal dari berbagai daerah, sudah memahami bahasa persatuan, tetapi masih berkelompok berdasarkan asalnya, fokus permasalahannya adalah kurangnya interaksi lintas daerah.\nPilih tindakan yang menciptakan kerja sama nyata berdasarkan tujuan bersama, bukan hanya kegiatan yang memperkenalkan keberagaman atau meningkatkan pengetahuan kebangsaan.",
+      "tipBaru": "Tentukan masalah sebenarnya dalam kasus, apakah kemampuan berbahasa, pengetahuan budaya, atau pola interaksi antarkelompok, lalu pilih kegiatan yang langsung mengubah masalah itu, bukan yang hanya menambah pengetahuan atau menampilkan keberagaman.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-02",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menafsirkan makna keputusan pendanaan lintas daerah sebagai perluasan kesadaran kebangsaan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-03",
+      "change": "Label TWK diganti: Bloom C5, kesulitan sedang (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C5",
+      "kesulitan": "sedang",
+      "labelSumber": "HOTS",
+      "alasan": "Menimbang lima program terhadap tiga sasaran sekaligus dan penyebab masalah mutu warna.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-03",
+      "change": "Butir direvisi (status MINOR): teks opsi A, B, C, D, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "teks opsi A, B, C, D",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Jika stimulus memberikan beberapa sasaran kebijakan, periksa apakah pilihan jawaban memenuhi setiap sasaran dan menyentuh penyebab masalahnya. Jangan memilih kebijakan yang hanya mengukur hasil atau hanya unggul pada satu sasaran.",
+      "tipBaru": "Tentukan dulu penyebab masalah mutu menurut hasil uji, lalu periksa setiap program: apakah program itu menyentuh penyebab tersebut dan apakah ketiga sasaran tetap terpenuhi.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-04",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Memilih mekanisme pemilihan yang memenuhi dua tujuan (kompetensi dan kebersamaan warga lama dan baru).",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-04",
+      "change": "Butir direvisi (status MINOR): teks opsi C, D, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "teks opsi C, D",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Identifikasi masalah utama dalam stimulus. Jika persoalannya adalah gagasan sebagian kelompok kurang dipertimbangkan, pilih mekanisme yang menjamin penilaian objektif sekaligus memperbaiki keterlibatan kelompok tersebut dalam proses pengambilan keputusan.",
+      "tipBaru": "Uraikan dua tujuan panitia dan masalah yang ingin diperbaiki, lalu periksa apakah setiap mekanisme memenuhi kedua tujuan itu atau hanya salah satunya.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-05",
+      "change": "Label TWK diganti: Bloom C5, kesulitan sedang (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C5",
+      "kesulitan": "sedang",
+      "labelSumber": "Sulit",
+      "alasan": "Menilai pendekatan pameran terhadap dua kriteria: menumbuhkan rasa kebangsaan dan tidak melampaui bukti sejarah.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-05",
+      "change": "Butir direvisi (status MINOR): teks opsi D, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "teks opsi D",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Identifikasi fakta yang benar-benar tersedia dalam stimulus. Pilih narasi yang menjelaskan kontribusi daerah dan keterhubungannya dengan wilayah lain tanpa menambahkan klaim yang belum didukung bukti.",
+      "tipBaru": "Pisahkan fakta yang didukung bukti dari klaim yang belum terbukti, lalu periksa apakah setiap pendekatan bertumpu pada fakta itu dan tetap menjawab tujuan pameran.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-06",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan prinsip keadilan akses pada akar masalah yang sudah dinyatakan (aturan reservasi, bukan jumlah slot).",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-07",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan prinsip akuntabilitas dan ketentuan kontrak untuk menerima sebagian barang sambil mencatat ketidaksesuaian.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-08",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "Sulit",
+      "alasan": "Menerapkan pedoman konflik kepentingan (ungkap, tinjau ulang, alihkan penilaian) pada tahap proses yang sudah berjalan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-08",
+      "change": "Butir direvisi (status MAYOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MAYOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Pisahkan tiga hal, yaitu kelayakan peserta, konflik kepentingan penilai, dan perlunya pemeriksaan independen terhadap tahapan yang sudah dilakukan.",
+      "tipBaru": "Tandai tahapan seleksi yang sudah dan yang belum dilalui anggota tim tersebut, lalu periksa apakah setiap pilihan benar-benar melepaskan pengaruhnya dari semua tahapan itu, bukan hanya dari salah satunya.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-09",
+      "change": "Label TWK diganti: Bloom C5, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C5",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menimbang cara melaporkan angka berstatus berbeda (terverifikasi, tertunda, selisih dengan sistem) di bawah tenggat.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-09",
+      "change": "Butir direvisi (status MAYOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MAYOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Gunakan status verifikasi sebagai dasar pelaporan, bukan sekadar memilih angka terbesar atau angka yang tercatat dalam sistem.",
+      "tipBaru": "Kelompokkan setiap angka menurut statusnya, lalu uji setiap pilihan terhadap tiga tuntutan dalam kasus, yaitu tenggat, syarat laporan sementara, dan permintaan atasan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-10",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sulit",
+      "alasan": "Menerapkan aturan persetujuan tertulis untuk membedakan koreksi sah dari perubahan target yang belum disahkan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-10",
+      "change": "Butir direvisi (status MAYOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MAYOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Jangan menyamakan koreksi administratif dengan perubahan substantif. Gunakan data sah dan dokumentasikan perubahan yang belum disetujui.",
+      "tipBaru": "Pilah setiap perubahan dalam laporan menurut statusnya, yaitu sudah sah atau belum, lalu bandingkan pilihan berdasarkan ketentuan pedoman, tenggat laporan, dan kewenangan yang diberikan kepada pimpinan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-11",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Membedakan unsur penentu pemerasan (paksaan melalui kewenangan jabatan) dari unsur yang juga ada pada pungli atau penyalahgunaan jabatan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-12",
+      "change": "Label TWK diganti: Bloom C5, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C5",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menimbang tindakan proporsional atas potensi konflik kepentingan (hubungan keluarga, akses matriks rahasia) tanpa menganggapnya pelanggaran.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-13",
+      "change": "Label TWK diganti: Bloom C4, kesulitan sulit (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C4",
+      "kesulitan": "sulit",
+      "labelSumber": "Sulit",
+      "alasan": "Memilah masalah yang terbukti dan belum tertangani dari yang sudah ditangani, lalu memilih pasangan program prioritas.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-14",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan batas antara kritik yang sah dan ajakan melanggar hukum pada keputusan pengurus forum.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-15",
+      "change": "Label TWK diganti: Bloom C5, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C5",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menimbang dua horizon waktu (pemasok alternatif 2 bulan, produsen lokal 1 tahun) untuk strategi ketahanan ekonomi.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-15",
+      "change": "Butir direvisi (status MAYOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MAYOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Cari strategi yang menjaga produksi saat ini dan meningkatkan kemampuan nasional secara bertahap.",
+      "tipBaru": "Petakan dulu risiko yang harus diatasi segera dan kemampuan yang baru siap dalam jangka panjang, lalu nilai apakah setiap kebijakan menjawab kedua kebutuhan itu tanpa menambah ketergantungan yang ingin dikurangi.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-16",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan prinsip urgensi dan keberlanjutan untuk menyusun urutan dua program dengan anggaran satu tahap.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-17",
+      "change": "Label TWK diganti: Bloom C3, kesulitan mudah (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "mudah",
+      "labelSumber": "Sedang",
+      "alasan": "Mencocokkan kebutuhan 'kesiapsiagaan praktis' dengan program yang melatih keterampilan (Q) berdasarkan data capaian.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-18",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan syarat pemerintah (kendali dan pemulihan tetap pada pengelola nasional) untuk menilai opsi kerja sama.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-19",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan nilai musyawarah dan ketepatan sejarah untuk memilih cara menyajikan dokumen perumusan Pancasila.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-20",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan prinsip Bhinneka Tunggal Ika pada pembagian tugas berdasarkan kemampuan, bukan asal.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-20",
+      "change": "Butir direvisi (status MAYOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MAYOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Prinsip Bhinneka Tunggal Ika menekankan kerja sama tanpa membedakan asal. Pilih pembagian tugas berdasarkan kemampuan dan tujuan bersama, bukan identitas kelompok.",
+      "tipBaru": "Cari dulu ukuran yang dipakai dalam usulan koordinator dan periksa apakah ukuran itu sesuai dengan fakta di stem, lalu bandingkan ukuran yang dipakai setiap pilihan dengan tujuan panitia.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-21",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan Pasal 24C untuk membedakan pengujian UU (MK) dari pengujian peraturan di bawah UU (MA).",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-22",
+      "change": "Label TWK diganti: Bloom C4, kesulitan sedang (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C4",
+      "kesulitan": "sedang",
+      "labelSumber": "HOTS",
+      "alasan": "Menganalisis kendala waktu, kelonggaran jadwal, dan aula alternatif untuk menemukan solusi yang menghormati kedua komunitas.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-22",
+      "change": "Butir direvisi (status MAYOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MAYOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Jangan langsung menyamakan keadilan dengan pembagian waktu yang identik. Perhatikan kebutuhan setiap komunitas dan cari solusi yang memungkinkan kedua kegiatan tetap berlangsung.",
+      "tipBaru": "Catat dahulu fakta pembatas dalam kasus, yaitu kegiatan mana yang terikat waktu, mana yang dapat bergeser, fasilitas apa yang tersedia, dan syarat apa yang diajukan komunitas, lalu periksa apakah setiap pilihan sesuai dengan semua fakta itu.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-23",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "Sulit",
+      "alasan": "Menerapkan pembagian urusan pusat dan daerah (politik luar negeri urusan absolut) pada rencana kerja sama daerah.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-04-24",
+      "change": "Label TWK diganti: Bloom C5, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C5",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menimbang dua kepentingan sah (pertumbuhan ekonomi dan keterhubungan pulau kecil) dengan prinsip Wawasan Nusantara.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-01",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "tambahan",
+      "lama": "Kata kunci “tidak bergantung pada pasokan luar negeri” dan “memanfaatkan sumber daya lokal” menunjukkan kemandirian.",
+      "baru": "Tanyakan kemampuan apa yang dicapai warga dalam kasus, lalu bandingkan dengan pengertian tiap unsur nasionalisme, termasuk unsur yang tampak mirip.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-05-01",
+      "change": "Label TWK diganti: Bloom C2, kesulitan mudah (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "mudah",
+      "labelSumber": "Sedang",
+      "alasan": "Mengklasifikasikan upaya produksi bibit dan pupuk lokal ke unsur kemandirian.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-02",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "HOTS",
+      "alasan": "Memilih kebijakan yang menerapkan semangat Sumpah Pemuda (persatuan lintas daerah, bahasa persatuan, kekhasan budaya).",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-02",
+      "change": "Butir direvisi (status MINOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Sumpah Pemuda dalam kasus keberagaman mengarah pada persatuan melalui interaksi lintas daerah dan bahasa Indonesia, bukan penyeragaman budaya.",
+      "tipBaru": "Rumuskan dulu masalah utama platform dengan kalimat sendiri, lalu uji setiap pilihan: apakah pilihan itu mengubah pola interaksi pengguna dan sejalan dengan isi ikrar Sumpah Pemuda.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-03",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "tambahan",
+      "lama": "Apabila stimulus menekankan klaim Belanda di dunia internasional dan keberhasilan perlawanan TNI, hubungkan perjuangan militer dengan penguatan diplomasi.",
+      "baru": "Kaitkan peristiwa dengan tujuan yang hendak dicapai pihak Indonesia dan klaim yang hendak dibantah pihak lawan, lalu pilih makna yang menjelaskan hubungan keduanya, bukan sekadar hasil militernya.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-05-03",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sulit (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sulit",
+      "labelSumber": "Sulit",
+      "alasan": "Menafsirkan makna Serangan Umum 1 Maret sebagai penguat posisi politik dan diplomasi, bukan sekadar capaian militer.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-04",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sulit",
+      "alasan": "Memilih keputusan yang menyeimbangkan pelestarian seni tradisional dan daya tarik acara bagi generasi muda.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-04",
+      "change": "Butir direvisi (status MINOR): stem, teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "stem",
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Untuk kasus pelestarian budaya di tengah modernisasi, pilih tindakan yang menggabungkan pelestarian nilai budaya dan inovasi yang relevan.",
+      "tipBaru": "Tulis dulu tuntutan penyelenggara dan tuntutan komunitas budaya, lalu periksa pilihan mana yang memenuhi keduanya di dalam festival yang sama.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-05",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menafsirkan perubahan pola perjuangan yang ditandai lahirnya Budi Utomo.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-05",
+      "change": "Butir direvisi (status MINOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Pada soal Budi Utomo, perhatikan frasa perubahan pola perjuangan: dari perlawanan kedaerahan menuju organisasi modern.",
+      "tipBaru": "Bedakan dulu ciri perjuangan sebelum dan sesudah tahun 1908, lalu cocokkan setiap peralihan dalam pilihan dengan tonggak sejarah yang benar-benar menandainya.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-06",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "HOTS",
+      "alasan": "Menerapkan nasionalisme ekonomi pada kebijakan kawasan perdagangan dengan menimbang investor besar dan UMKM.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-06",
+      "change": "Butir direvisi (status MAYOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MAYOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Nasionalisme ekonomi tidak sekadar menolak pengaruh asing. Cari kebijakan yang memperkuat kapasitas ekonomi dalam negeri dan kemandirian masyarakat secara berkelanjutan.",
+      "tipBaru": "Uji setiap kebijakan dengan dua pertanyaan, yaitu siapa yang menjadi pelaku utama kawasan dan siapa yang benar-benar menerima dukungan, lalu cocokkan dukungan itu dengan hambatan yang disebut dalam kasus.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-07",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menerapkan prosedur konflik kepentingan (ungkap dan mundur dari keputusan) pada kepala daerah yang masih berwenang mengawasi.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-07",
+      "change": "Butir direvisi (status MINOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Apabila soal menyebut kerabat, bisnis pribadi, atau hubungan keluarga dalam keputusan jabatan, periksa dua indikator utama, yaitu pengungkapan konflik kepentingan dan pengunduran diri dari keputusan terkait.",
+      "tipBaru": "Pisahkan tiga hal dalam kasus, yaitu hubungan pribadi, kewenangan yang masih dimiliki, dan tahap proses, lalu nilai apakah setiap pilihan menghapus pengaruh hubungan itu atau sekadar menambah lapisan pemeriksaan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-08",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "HOTS",
+      "alasan": "Menerapkan pedoman audit (laporan sementara, pencatatan terpisah, klarifikasi resmi) pada kasus bukti belum terverifikasi.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-08",
+      "change": "Butir direvisi (status MAYOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MAYOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Dalam soal integritas auditor, perhatikan tiga unsur utama, yaitu keakuratan laporan, transparansi status verifikasi, dan tindak lanjut temuan. Pilih tindakan yang memenuhi ketiganya sesuai ketentuan yang berlaku.",
+      "tipBaru": "Uraikan isi pedoman audit menjadi beberapa syarat terpisah, lalu uji setiap pilihan langkah demi langkah dan cari langkah yang menyimpang dari salah satu syarat itu.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-09",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "HOTS",
+      "alasan": "Menerapkan prinsip dokumen harus mencerminkan fakta pada permintaan penyedia agar berita acara ditandatangani.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-09",
+      "change": "Butir direvisi (status MINOR): teks opsi B, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "teks opsi B",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Apabila terdapat perbedaan antara kondisi aktual dan dokumen resmi, integritas mengharuskan dokumen mencerminkan fakta, bukan janji perbaikan.",
+      "tipBaru": "Tentukan dahulu apa yang dibuktikan oleh berita acara penerimaan, lalu nilai apakah setiap pilihan menjaga fungsi dokumen itu.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-10",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan nilai komitmen dan tanggung jawab dari keteladanan Soedirman pada konteks kepemimpinan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-10",
+      "change": "Butir direvisi (status MAYOR): stem, teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MAYOR",
+      "bagian": [
+        "stem",
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Ketika soal integritas menampilkan pemimpin yang tetap menjalankan amanah dalam keadaan sulit, fokus pada konsistensi komitmen dan tanggung jawab.",
+      "tipBaru": "Tentukan dulu tindakan inti tokoh dan keadaan yang ia hadapi, lalu bandingkan setiap pilihan dengan tindakan inti itu, bukan dengan kemiripan kata atau nilai baik secara umum.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-11",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menerapkan prosedur konflik kepentingan pada pemohon teman dekat yang dokumennya belum lengkap.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-11",
+      "change": "Butir direvisi (status MAYOR): teks opsi A, B, C, D, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MAYOR",
+      "bagian": [
+        "teks opsi A, B, C, D",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Jika soal memuat hubungan pribadi dan kewenangan memberi keputusan, pilih prosedur yang menjamin objektivitas, kesetaraan, dan pengelolaan konflik kepentingan.",
+      "tipBaru": "Pisahkan dua persoalan dalam kasus, yaitu kelengkapan dokumen dan kedudukan pegawai terhadap pemohon, lalu periksa pilihan mana yang menyelesaikan persoalan yang paling menentukan objektivitas keputusan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-12",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menerapkan prinsip keterlacakan koreksi data resmi (bukti, dokumentasi, verifikasi) sebelum pengumuman.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-12",
+      "change": "Butir direvisi (status MINOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Pada kasus kesalahan data resmi, integritas menuntut koreksi yang benar, tercatat, dapat diverifikasi, dan dapat dipertanggungjawabkan.",
+      "tipBaru": "Bedakan hasil akhir yang benar dari proses koreksi yang dapat dipertanggungjawabkan, lalu periksa apakah setiap pilihan memenuhi keduanya untuk semua peserta.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-13",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "tambahan",
+      "lama": "Jika warga menggunakan keahlian tertentu untuk mengatasi serangan siber, ancaman pangan, atau gangguan kepentingan nasional, hubungkan dengan bela negara menghadapi ancaman nonmiliter.",
+      "baru": "Hubungkan keahlian warga dengan jenis ancaman yang dihadapi dalam kasus, lalu periksa apakah tiap pilihan menjelaskan hubungan itu dengan kepentingan negara atau hanya dengan manfaat teknisnya.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-05-13",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Menafsirkan bantuan warga ahli keamanan siber sebagai bela negara menghadapi ancaman nonmiliter.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-14",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "tambahan",
+      "lama": "Jika teknologi lokal digunakan untuk mengurangi risiko terhentinya produksi pangan, fokus pada kemandirian teknologi dan ketahanan pangan.",
+      "baru": "Telusuri sumber kerentanan dalam kasus dan apa yang diubah warga untuk mengurangi kerentanan itu, lalu pilih pilihan yang menghubungkan perubahan itu dengan dampaknya bagi kebutuhan strategis.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-05-14",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sulit (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sulit",
+      "labelSumber": "Sulit",
+      "alasan": "Menafsirkan pelatihan perawatan dan produksi komponen lokal sebagai bela negara (mengurangi kerentanan produksi).",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-15",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "tambahan",
+      "lama": "Jika stimulus memuat ronda, partisipasi warga, dan koordinasi dengan aparat, fokus pada kesadaran bela negara dan tanggung jawab bersama menjaga keamanan.",
+      "baru": "Perhatikan peran yang dijalankan warga dan aparat dalam kasus, lalu pilih pilihan yang menjelaskan makna kegiatan itu bagi bela negara, bukan sekadar manfaat teknis seperti kedisiplinan atau keberanian.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-05-15",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menafsirkan kegiatan ronda sebagai kesadaran tanggung jawab bersama dalam bela negara.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-16",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "HOTS",
+      "alasan": "Menerapkan nilai rela berkorban pada dilema kompetisi karier melawan kebutuhan posko bencana.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-16",
+      "change": "Butir direvisi (status MAYOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MAYOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Dalam kasus rela berkorban, cari tindakan yang menunjukkan kesediaan melepaskan kepentingan pribadi yang bernilai demi kebutuhan masyarakat yang lebih mendesak.",
+      "tipBaru": "Tentukan dahulu kebutuhan paling mendesak dalam kasus dan kepentingan pribadi yang dipertaruhkan, lalu periksa pilihan mana yang memenuhi kebutuhan itu dan apa yang dikorbankan pelakunya.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-17",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "HOTS",
+      "alasan": "Menentukan strategi bela negara dari akar masalah yang dinyatakan stem (layanan dasar terbatas, ketergantungan pada negara tetangga).",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-17",
+      "change": "Butir direvisi (status MINOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Jika masalah perbatasan disebabkan kurangnya pelayanan negara, pilih kebijakan yang memperkuat kehadiran negara melalui pemenuhan kebutuhan masyarakat.",
+      "tipBaru": "Tentukan dahulu penyebab warga beralih ke layanan negara tetangga, lalu periksa apakah setiap strategi menghilangkan penyebab itu atau hanya menangani akibatnya.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-18",
+      "change": "Tip diganti petunjuk membaca soal.",
+      "kelompok": "tambahan",
+      "lama": "Jika hoaks mengganggu keamanan, stabilitas, atau kepentingan strategis negara, hubungkan dengan upaya menghadapi ancaman nonmiliter melalui literasi dan verifikasi informasi.",
+      "baru": "Identifikasi jenis ancaman dan dampaknya pada kepentingan negara dalam kasus, lalu bedakan pilihan yang menjelaskan hubungan itu dari pilihan yang hanya menyebut manfaat literasi atau komunikasi.",
+      "rujukan": "QC akademik TWK (revisi tahap 2): tip berbentuk rumus jawaban diganti petunjuk membaca soal."
+    },
+    {
+      "id": "tryout-ref-05-18",
+      "change": "Label TWK diganti: Bloom C2, kesulitan sulit (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C2",
+      "kesulitan": "sulit",
+      "labelSumber": "Sulit",
+      "alasan": "Menafsirkan pembentukan tim literasi digital sebagai bela negara menghadapi ancaman informasi.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-19",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber Sedang).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "Sedang",
+      "alasan": "Menerapkan sila kelima (keadilan berdasarkan kebutuhan, bukan pemerataan jumlah) pada alokasi bantuan pendidikan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-19",
+      "change": "Butir direvisi (status MINOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Dalam soal sila kelima, bedakan pemerataan jumlah bantuan dengan keadilan berdasarkan kebutuhan. Jika kondisi masyarakat tidak sama, alokasi yang adil dapat berbeda.",
+      "tipBaru": "Bandingkan dahulu kondisi kedua wilayah dalam data, lalu uji setiap pilihan: dasar pembagian apa yang dipakai dan apakah dasar itu sesuai dengan tujuan bantuan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-20",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "Sulit",
+      "alasan": "Mencocokkan tiga objek pengujian dengan kewenangan MA, MK, dan KY.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-21",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "Sulit",
+      "alasan": "Menerapkan Pasal 14 ayat (2) untuk menilai kewenangan amnesti dan pertimbangan DPR.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-22",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber Sulit).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "Sulit",
+      "alasan": "Menerapkan Pasal 20 ayat (2): RUU dibahas dan disetujui bersama oleh DPR dan Presiden.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-22",
+      "change": "Butir direvisi (status MINOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Apabila soal membahas proses pembentukan UU, ingat Pasal 20 ayat (2), RUU dibahas DPR dan Presiden untuk memperoleh persetujuan bersama.",
+      "tipBaru": "Uraikan dahulu peran DPR dan Presiden dalam pembentukan undang-undang menurut Pasal 5 dan Pasal 20 UUD 1945, lalu periksa apakah setiap pilihan memberi peran yang sesuai kepada kedua lembaga itu atas seluruh isi rancangan tanpa melibatkan lembaga yang tidak berwenang.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-23",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sedang (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sedang",
+      "labelSumber": "HOTS",
+      "alasan": "Menerapkan sila pertama (kebebasan beragama, tanpa paksaan) pada pemberian bantuan yang dikaitkan dengan kegiatan agama.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-23",
+      "change": "Butir direvisi (status MAYOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MAYOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Jika soal menggabungkan bantuan publik dengan kegiatan agama, periksa apakah kebijakan menghormati kebebasan beragama, kesetaraan, dan prinsip tanpa paksaan.",
+      "tipBaru": "Tentukan dahulu hal yang diperselisihkan para pengurus, lalu periksa apakah setiap pilihan benar-benar menyelesaikan persoalan itu atau hanya mengubah bentuk kegiatannya.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-24",
+      "change": "Label TWK diganti: Bloom C3, kesulitan sulit (label sumber HOTS).",
+      "jenis": "label",
+      "bloom": "C3",
+      "kesulitan": "sulit",
+      "labelSumber": "HOTS",
+      "alasan": "Memilih kebijakan festival yang menerapkan Bhinneka Tunggal Ika (persatuan tanpa menghapus identitas) di bawah keterbatasan waktu.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
+    },
+    {
+      "id": "tryout-ref-05-24",
+      "change": "Butir direvisi (status MINOR): teks opsi A, B, C, D, E, alasan opsi A, B, C, D, E, pembahasan, tip.",
+      "jenis": "revisi",
+      "status": "MINOR",
+      "bagian": [
+        "teks opsi A, B, C, D, E",
+        "alasan opsi A, B, C, D, E",
+        "pembahasan",
+        "tip"
+      ],
+      "tipLama": "Pada soal Bhinneka Tunggal Ika, utamakan tindakan yang menyatukan keberagaman tanpa menghapus identitas kelompok.",
+      "tipBaru": "Ingat dua sisi semboyan Bhinneka Tunggal Ika, lalu periksa sisi mana yang dipenuhi setiap pilihan dan sisi mana yang terabaikan.",
+      "rujukan": "QC akademik TWK tahap 2b: telaah studio-soal-twk"
     }
   ],
   "counts": {

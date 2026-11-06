@@ -1,0 +1,1451 @@
+[
+  {
+    "id": "tkp-kasus-prof-01",
+    "skenario": "salah-rekening-daftar-transpor",
+    "topic": "Profesionalisme",
+    "subtopic": "Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "pelaksana",
+    "kewenangan": "penuh",
+    "penentu": "bendahara menerima daftar pengganti sampai pukul 16.00 dan hanya memproses daftar versi terbaru yang disertai catatan perubahan, sedangkan pembayaran dilakukan besok pukul 09.00",
+    "tempat": "administratif",
+    "keputusan": "mengoreksi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kesalahan sendiri sudah sampai ke bendahara; syarat versi terbaru dan batas waktu tertulis jelas.",
+    "stem": "Anda staf administrasi yang menyusun daftar penerima uang transpor peserta bimbingan teknis. Kemarin sore daftar itu Anda kirim kepada bendahara, dan sekarang pukul 15.00 Anda mendapati nomor rekening dua peserta tertukar. Bendahara menerima daftar pengganti sampai pukul 16.00, membayar besok pukul 09.00, dan hanya memproses daftar versi terbaru yang disertai catatan perubahan. Berkas sumber daftar itu ada di komputer Anda dan dapat Anda ubah. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Mengabarkan kepada bendahara bahwa dua rekening pada daftar itu keliru, lalu meminta bendahara mencocokkannya dengan peserta.",
+        "score": 2,
+        "reason": "Bendahara harus mencocokkan rekening dengan kedua peserta, padahal kekeliruan berasal dari daftar Anda dan dapat Anda betulkan sendiri. Waktu bendahara sebelum batas pukul 16.00 terpakai untuk pekerjaan yang bukan bagiannya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Mengirim daftar baru kepada bendahara beserta catatan perubahan, lalu menyimpan salinan daftar lama sebagai arsip.",
+        "score": 4,
+        "reason": "Daftar versi terbaru beserta catatan perubahan sampai kepada bendahara sebelum batas pukul 16.00, sehingga pembayaran besok pukul 09.00 dapat diproses. Berkas sumber belum diperbaiki, jadi perbaikan baru mencakup daftar yang dikirim.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Memperbaiki data rekening pada berkas asal, lalu mengirim daftar baru kepada bendahara beserta catatan perubahannya.",
+        "score": 5,
+        "reason": "Berkas asal yang diperbaiki menjadi dasar daftar baru, dan catatan perubahan membuat bendahara dapat memproses versi pengganti sebelum batas pukul 16.00. Kekeliruan Anda tertutup sampai ke sumbernya.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengganti nomor rekening langsung pada berkas milik bendahara, lalu memberi tahu bendahara setelah perubahan selesai.",
+        "score": 1,
+        "reason": "Berkas milik bendahara adalah catatan pembayarannya, yang berarti perubahan dari luar mengubah data yang bukan bagian Anda. Bendahara baru tahu setelah angka berubah, padahal ia hanya memproses daftar versi terbaru yang disertai catatan perubahan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      },
+      {
+        "text": "Menghubungi kedua peserta untuk memastikan rekening mereka, lalu mengirim daftar baru kepada bendahara beserta catatan perubahan.",
+        "score": 3,
+        "reason": "Rekening yang benar tetap sampai kepada bendahara dengan catatan perubahan. Menghubungi kedua peserta lebih dulu memakai waktu sebelum batas pukul 16.00 untuk hal yang sudah jelas dari berkas Anda, padahal peserta belum tentu dapat dihubungi.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: tanggung jawab atas kesalahan sendiri yang sudah sampai ke pihak lain, yaitu memperbaiki sumber dan menyampaikan koreksi lewat jalur yang dapat ditelusuri. Fakta penentu: bendahara menerima daftar pengganti sampai pukul 16.00, hanya memproses versi terbaru yang disertai catatan perubahan, dan membayar besok pukul 09.00. Memperbaiki berkas asal lalu mengirim daftar baru beserta catatan perubahan memenuhi syarat itu tepat waktu. Mengirim daftar baru tanpa memperbaiki berkas asal menyisakan sumber yang keliru. Memastikan lebih dulu kepada peserta memakai waktu menjelang batas, meminta bendahara mencocokkan sendiri memindahkan beban, dan mengganti berkas bendahara mengubah catatan yang bukan milik Anda.",
+    "tip": "Siapa yang sudah bertindak berdasarkan keadaan lama, dan apa yang mereka syaratkan agar keadaan terkini diterima?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "tanggung-jawab",
+    "kataKunci": "nomor rekening tertukar, daftar pengganti pukul 16.00, versi terbaru, catatan perubahan, berkas sumber"
+  },
+  {
+    "id": "tkp-kasus-prof-02",
+    "skenario": "kupon-penyedia-setelah-penilaian",
+    "topic": "Profesionalisme",
+    "subtopic": "Konsep Dasar, Ciri, dan Etika Profesional",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "koordinator",
+    "kewenangan": "terbatas",
+    "penentu": "aturan kantor mewajibkan penolakan pemberian dari penyedia dan pencatatannya di unit pengendalian gratifikasi, sedangkan termin kedua belum dibayar dan kontrak tahun depan akan dinilai ulang",
+    "tempat": "kemitraan",
+    "keputusan": "menolak",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Kewajiban menolak dan mencatat tertulis jelas, tetapi waktu pencatatan dan hubungan yang masih berlanjut dengan penyedia harus ditimbang.",
+    "stem": "Anda koordinator panitia penilai hasil cetak buku panduan sebuah dinas. Setelah Anda menandatangani berita acara penilaian, direktur percetakan penyedia menyodorkan kupon belanja sebagai ucapan terima kasih. Aturan kantor mewajibkan pegawai menolak pemberian dari penyedia dan mencatatnya di unit pengendalian gratifikasi. Termin kedua belum dibayar dan kontrak tahun depan akan dinilai ulang. Anda berwenang menolak atas nama panitia. Sikap Anda adalah ...",
+    "options": [
+      {
+        "text": "Menolak kupon itu secara lisan, lalu meminta rekan panitia melapor ke unit pengendalian bila sempat.",
+        "score": 2,
+        "reason": "Pencatatan di unit pengendalian gratifikasi berpindah kepada rekan yang tidak ditawari, sedangkan penolakan lisan tidak menjelaskan aturan kantor kepada penyedia. Kontrak tahun depan akan dinilai ulang, akibatnya penjelasan itu dibutuhkan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Menerima kupon itu karena berita acara sudah ditandatangani, lalu membagikannya kepada rekan panitia.",
+        "score": 1,
+        "reason": "Aturan kantor mewajibkan penolakan pemberian dari penyedia, dan termin kedua belum dibayar sehingga hubungan dengan penyedia masih berlanjut. Pembagian kupon kepada rekan menyeret panitia ke dalam penyimpangan yang sama.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Menolak kupon itu dengan alasan aturan kantor, lalu mencatat tawarannya pada unit gratifikasi sebelum pembayaran.",
+        "score": 5,
+        "reason": "Penjelasan aturan membuat penyedia memahami alasan penolakan sebelum kontrak tahun depan dinilai, dan pencatatan di unit pengendalian gratifikasi menjaga penilaian tetap independen selama termin kedua belum dibayar. Kewajiban kantor terpenuhi oleh Anda sendiri.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengembalikan kupon itu kepada direktur percetakan, lalu menjelaskan bahwa aturan kantor melarang pegawai menerima pemberian.",
+        "score": 3,
+        "reason": "Kupon kembali kepada direktur percetakan beserta alasan dari aturan kantor, sehingga penyedia memahami batasnya. Kewajiban mencatat tawaran di unit pengendalian gratifikasi belum dijalankan, jadi hanya sebagian kewajiban kantor yang terpenuhi.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menyampaikan penolakan atas kupon itu, lalu mencatat tawarannya pada unit pengendalian gratifikasi setelah termin kedua dibayar.",
+        "score": 4,
+        "reason": "Penolakan disampaikan saat itu juga dan pencatatan tetap dilakukan di unit yang ditunjuk aturan kantor. Pencatatan digeser sampai termin kedua dibayar, sehingga selama termin berjalan belum ada jejak yang melindungi penilaian dari kesan terpengaruh.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kurang-perlindungan"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: integritas dalam hubungan dengan penyedia, yaitu menolak pemberian dan mencatatnya melalui jalur yang berwenang pada waktu yang tepat. Fakta penentu: aturan kantor mewajibkan penolakan pemberian dari penyedia dan pencatatannya di unit pengendalian gratifikasi, sedangkan termin kedua belum dibayar dan kontrak tahun depan akan dinilai ulang. Menolak dengan menjelaskan aturan lalu mencatat sebelum termin dibayar memenuhi kewajiban dan menjaga independensi penilaian. Menolak lalu mencatat setelah termin dibayar tetap menjalankan kewajiban, tetapi perlindungan penilaian datang lebih lambat. Mengembalikan kupon tanpa mencatat hanya menjalankan sebagian kewajiban, menyerahkan pencatatan kepada rekan memindahkan tugas, dan menerima lalu membagi kupon menyalahi aturan kantor.",
+    "tip": "Hubungan apa yang masih berlangsung antara Anda dan pemberi, dan jalur mana yang disediakan untuk hal seperti ini?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "integritas-hubungan",
+    "kataKunci": "berita acara penilaian, kupon belanja, pemberian dari penyedia, unit pengendalian gratifikasi, termin kedua, kontrak tahun depan"
+  },
+  {
+    "id": "tkp-kasus-prof-03",
+    "skenario": "daftar-nama-sertifikat-terlewat",
+    "topic": "Profesionalisme",
+    "subtopic": "Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "penghubung-mitra",
+    "kewenangan": "penuh",
+    "penentu": "daftar nama sudah tersedia di berkas unit, mitra belum menghubungi Anda, dan batas pengiriman adalah Jumat siang",
+    "tempat": "kemitraan",
+    "keputusan": "memulihkan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kelalaian sendiri yang belum menimbulkan keluhan; bahan sudah ada sehingga pemulihan langsung dan komunikasi mudah dibedakan.",
+    "stem": "Anda penghubung unit Anda dengan sebuah lembaga pelatihan mitra. Kemarin mitra meminta daftar nama peserta untuk mencetak sertifikat, paling lambat Jumat siang, dan Anda berjanji mengirimnya kemarin sore. Jumat pagi Anda sadar daftar itu belum dikirim karena terlewat dalam kesibukan, sedangkan mitra belum menghubungi Anda. Daftar nama sudah tersedia di berkas unit, dan sertifikat itu dijadwalkan dibagikan pada acara penutupan akhir pekan. Bagaimana sikap Anda?",
+    "options": [
+      {
+        "text": "Mencatat permintaan itu pada daftar pekerjaan pekan ini, lalu baru mengirim daftar nama pada Jumat sore.",
+        "score": 2,
+        "reason": "Batas pengiriman adalah Jumat siang, sedangkan daftar nama baru dikirim Jumat sore, akibatnya janji Anda terlewat. Pencetakan sertifikat mitra ikut mundur padahal acara penutupan sudah terjadwal akhir pekan.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Mengirim daftar nama beserta nomor identitas peserta sekarang, lalu menjelaskan bahwa data itu sekalian disiapkan.",
+        "score": 1,
+        "reason": "Mitra hanya meminta daftar nama untuk mencetak sertifikat, yang berarti nomor identitas peserta yang ikut terkirim membuka data pribadi di luar kebutuhan mitra. Daftar tiba sebelum Jumat siang, tetapi data peserta tersebar kepada pihak yang tidak memerlukannya.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membuka-data"
+        }
+      },
+      {
+        "text": "Memasukkan daftar nama ke surel balasan untuk mitra sekarang, lalu mencatat keterlambatan pada berkas kerja unit.",
+        "score": 4,
+        "reason": "Mitra menerima daftar nama lewat surel sebelum Jumat siang, dan keterlambatan tercatat pada berkas kerja unit. Penjelasan tentang janji yang terlewat belum sampai kepada mitra, sehingga kepercayaan mereka belum pulih.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Memberi tahu kepala unit bahwa daftar terlambat, lalu mengirim daftar itu sesuai arahannya.",
+        "score": 3,
+        "reason": "Kepala unit mengetahui kelalaian itu dan daftar nama tetap dikirim. Daftar sudah tersedia di berkas unit dan Anda sebagai penghubung dapat mengirimnya sendiri, akibatnya arahan hanya memperpendek waktu sebelum Jumat siang.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Mengirim daftar nama itu sekarang, lalu menjelaskan kepada mitra penyebab keterlambatan pengirimannya.",
+        "score": 5,
+        "reason": "Daftar nama yang sudah tersedia langsung sampai kepada mitra sebelum batas Jumat siang, dan penjelasan penyebab keterlambatan memulihkan kepercayaan mereka. Anda memegang janji sendiri tanpa menunggu ditanya.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: tanggung jawab memulihkan komitmen yang terlewat dengan tindakan langsung dan keterbukaan kepada mitra. Fakta penentu: daftar nama sudah tersedia di berkas unit, mitra belum menghubungi Anda, dan batas pengiriman adalah Jumat siang. Mengirim daftar sekarang lalu menjelaskan penyebab keterlambatan menyelesaikan kebutuhan mitra sekaligus menjaga kepercayaan. Mengirim lewat surel lalu hanya mencatat keterlambatan pada berkas unit membuat mitra tidak tahu penyebabnya. Memberi tahu kepala unit lebih dulu menyempitkan waktu untuk hal yang dapat Anda putuskan sendiri, mengirim pada Jumat sore melewati batas, dan menyertakan nomor identitas membuka data peserta di luar kebutuhan mitra.",
+    "tip": "Apa yang masih dapat dikerjakan hari ini, dan siapa yang sedang bergantung pada janji Anda?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "tanggung-jawab",
+    "kataKunci": "janji kemarin sore, paling lambat Jumat siang, terlewat dalam kesibukan, mitra belum menghubungi, daftar nama tersedia"
+  },
+  {
+    "id": "tkp-kasus-prof-04",
+    "skenario": "pelatihan-aplikasi-pelaporan-baru",
+    "topic": "Profesionalisme",
+    "subtopic": "Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi",
+    "pola": "peluang-pengembangan-keterbatasan",
+    "peran": "pegawai-baru",
+    "kewenangan": "hanya-usul",
+    "penentu": "aplikasi pelaporan baru wajib dipakai bulan depan, pelatihan satu hari dibuka Kamis, instruktur menganjurkan latihan pada laporan contoh pada pekan yang sama, dan akun pelaporan bersifat pribadi",
+    "tempat": "pelatihan",
+    "keputusan": "mengembangkan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kebutuhan belajar jelas dari kewajiban bulan depan dan peluang pelatihan tersedia; tidak ada kepentingan yang bersaing.",
+    "stem": "Anda pegawai baru di bagian perencanaan. Bulan depan setiap laporan kegiatan wajib dikirim lewat aplikasi pelaporan baru, dan kantor membuka pelatihan satu hari pada Kamis ini. Anda belum pernah memakai aplikasi sejenis. Akun pelaporan bersifat pribadi dan tidak boleh dipakai orang lain. Kepala bagian membolehkan peserta pelatihan menitipkan pekerjaan rutin yang tidak mendesak kepada rekan satu bagian, dan instruktur menganjurkan peserta berlatih pada laporan contoh pada pekan yang sama agar materinya melekat. Apa keputusan Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Mengatur titipan pekerjaan rutin kepada rekan satu bagian, lalu mengikuti pelatihan satu hari pada Kamis.",
+        "score": 4,
+        "reason": "Pekerjaan rutin yang tidak mendesak aman dititipkan, dan pelatihan Kamis dihadiri penuh. Latihan pada laporan contoh pada pekan yang sama belum direncanakan, jadi anjuran instruktur belum dijalankan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mengikuti pelatihan Kamis itu, lalu berlatih memakai aplikasi pada laporan contoh sesudahnya.",
+        "score": 5,
+        "reason": "Pelatihan Kamis memberi dasar memakai aplikasi, dan latihan pada laporan contoh sesudahnya menjalankan anjuran instruktur agar materinya melekat sebelum kewajiban bulan depan. Kesalahan latihan tidak berdampak pada laporan resmi.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mempelajari panduan aplikasi pelaporan sendiri di rumah, lalu bertanya kepada rekan saat menemui kesulitan.",
+        "score": 3,
+        "reason": "Panduan dan pertanyaan kepada rekan membantu Anda belajar sendiri. Pelatihan satu hari pada Kamis yang tersedia di kantor tidak dipakai, sehingga belajar aplikasi menjadi lebih lambat dan tidak terarah.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menyelesaikan pekerjaan rutin lebih dulu, lalu belajar memakai aplikasi pelaporan pada waktu luang yang ada.",
+        "score": 2,
+        "reason": "Belajar aplikasi digeser ke waktu luang yang belum jelas, padahal pelatihan dibuka Kamis dan kewajiban memakainya berlaku bulan depan. Pekerjaan rutin terselesaikan, tetapi kemampuan memakai aplikasi belum tersentuh.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Meminjam akun pelaporan rekan yang sudah mahir, lalu mengisi laporan kegiatan Anda dari akun itu.",
+        "score": 1,
+        "reason": "Akun pelaporan bersifat pribadi, yang berarti meminjam akun rekan menyalahi aturan pemakaian aplikasi dan mengaburkan siapa yang bertanggung jawab atas laporan. Pelatihan pada Kamis pun tidak dimanfaatkan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: pengembangan kompetensi yang terkait langsung dengan tuntutan tugas. Fakta penentu: aplikasi pelaporan baru wajib dipakai bulan depan, pelatihan satu hari dibuka Kamis, instruktur menganjurkan latihan pada laporan contoh pada pekan yang sama, dan akun pelaporan bersifat pribadi. Mengikuti pelatihan lalu berlatih pada laporan contoh mengubah kesenjangan kemampuan menjadi keterampilan yang diuji sebelum laporan resmi. Menitipkan pekerjaan rutin lalu mengikuti pelatihan menjaga kehadiran, tetapi anjuran latihan belum dijalankan. Belajar sendiri melewatkan pelatihan yang tersedia, menggeser belajar ke waktu luang membuat kewajiban bulan depan mendekat, dan meminjam akun rekan menyalahi aturan akun pribadi.",
+    "tip": "Kemampuan apa yang akan dituntut dari Anda tidak lama lagi, dan dukungan apa yang sudah disediakan?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pengembangan-diri",
+    "kataKunci": "pegawai baru, aplikasi pelaporan baru, pelatihan Kamis, akun pribadi, menitipkan pekerjaan rutin, laporan contoh"
+  },
+  {
+    "id": "tkp-kasus-prof-05",
+    "skenario": "rumus-keliru-lembar-kerja-senior",
+    "topic": "Profesionalisme",
+    "subtopic": "Konsep Dasar, Ciri, dan Etika Profesional",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "pegawai-baru",
+    "kewenangan": "tidak-ada",
+    "penentu": "rumus melewatkan satu baris pada lembar kerja rekan senior, yang dibawa ke rapat pimpinan besok pagi, dan Anda hanya memiliki akses baca",
+    "tempat": "administratif",
+    "keputusan": "mengoreksi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kesalahan rekan senior yang terbuka menerima masukan; tindakan yang menjaga akurasi dan hubungan mudah dibedakan.",
+    "stem": "Anda pegawai baru di bagian keuangan. Saat membantu merekap anggaran kegiatan, Anda mendapati rumus pada lembar kerja rekan senior, Pak Hendra, melewatkan satu baris sehingga total lebih kecil Rp3.000.000. Lembar kerja itu akan dibawanya ke rapat pimpinan besok pagi. Pak Hendra dikenal terbuka menerima masukan, dan Anda hanya memiliki akses baca pada lembar kerja milik rekan itu. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menunjukkan selisih itu di grup pesan bagian, lalu meminta Pak Hendra mengakui kekeliruan rumusnya di sana.",
+        "score": 1,
+        "reason": "Grup pesan bagian membuat kekeliruan rekan senior terbaca banyak orang, dan permintaan mengakuinya di sana mempermalukan Pak Hendra sebelum ia memeriksa lembar kerjanya. Hubungan kerja dan rasa hormat kepadanya rusak walau selisih terungkap.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "prof:mempermalukan"
+        }
+      },
+      {
+        "text": "Melaporkan selisih hitungan Anda kepada kepala bagian secara tertulis, lalu menyimpan hitungan itu di berkas kerja.",
+        "score": 3,
+        "reason": "Kepala bagian perlu mengetahui selisih pada lembar kerja untuk rapat pimpinan, tetapi Pak Hendra terbuka menerima masukan. Melapor lebih dulu melompati kesempatan memperbaiki yang paling dekat.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Memercayai total pada lembar kerja karena Pak Hendra senior, lalu menyimpan hitungan Anda untuk ditunjukkan bila ditanya.",
+        "score": 2,
+        "reason": "Total yang lebih kecil Rp3.000.000 tetap dibawa ke rapat pimpinan besok pagi karena hitungan Anda hanya disimpan. Pengalaman Pak Hendra patut dihormati, tetapi kekeliruan yang sudah Anda ketahui tidak disampaikan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "prof:patuh-tanpa-pertimbangan"
+        }
+      },
+      {
+        "text": "Menghitung ulang baris yang terlewat, lalu menunjukkan selisihnya kepada Pak Hendra secara pribadi.",
+        "score": 5,
+        "reason": "Hitungan ulang membuktikan baris yang terlewat, dan penyampaian langsung memberi Pak Hendra kesempatan memperbaiki lembar kerjanya sendiri sebelum rapat pimpinan besok pagi. Anda tidak mengubah milik rekan senior itu.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menuliskan selisih hitungan pada catatan singkat, lalu meminta rekan sebelah menyampaikannya kepada Pak Hendra.",
+        "score": 4,
+        "reason": "Catatan singkat dan rekan sebelah membuat selisih sampai kepada Pak Hendra sebelum rapat pimpinan besok pagi. Kerugiannya kecil: ia mendengar temuan lewat perantara dan tidak dapat langsung menanyakan cara Anda menghitung.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: objektivitas dan etika komunikasi saat menemukan kesalahan rekan senior. Fakta penentu: rumus melewatkan satu baris pada lembar kerja yang dibawa ke rapat pimpinan besok pagi, Pak Hendra terbuka menerima masukan, dan Anda hanya memiliki akses baca. Menghitung ulang lalu menunjukkan selisih secara pribadi menjaga akurasi sekaligus memberi pemilik lembar kerja kesempatan memperbaikinya. Menitipkan catatan kepada rekan menambah perantara pada hal yang dapat Anda sampaikan sendiri. Melapor kepada kepala bagian melompati rekan yang terbuka menerima masukan, mempercayai total mengabaikan temuan Anda, dan membuka selisih di grup pesan mempermalukan rekan senior.",
+    "tip": "Seberapa yakin Anda atas temuan itu, dan siapa yang paling berhak mendengarnya lebih dulu?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "integritas-hubungan",
+    "kataKunci": "rumus melewatkan satu baris, total lebih kecil, rapat pimpinan besok pagi, terbuka menerima masukan, akses baca"
+  },
+  {
+    "id": "tkp-kasus-prof-06",
+    "skenario": "ringkasan-rapat-tak-bertuan",
+    "topic": "Profesionalisme",
+    "subtopic": "Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja",
+    "pola": "ketegangan-kesalahpahaman",
+    "peran": "anggota-tim",
+    "kewenangan": "tidak-ada",
+    "penentu": "tidak ada penunjukan penyusun ringkasan, ringkasan harus terkirim kepada mitra besok siang, dan Mbak Rina masih berada di kantor",
+    "tempat": "rapat",
+    "keputusan": "koordinasi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Dugaan masing-masing anggota tim dapat diklarifikasi langsung dengan orang yang masih berada di kantor.",
+    "stem": "Rapat koordinasi dengan sebuah lembaga mitra menyepakati bahwa ringkasan keputusan harus dikirim kepada mitra besok siang. Rapat bubar tanpa ada yang menyebut siapa penyusunnya. Anda anggota tim dan mengira Mbak Rina yang akan mengerjakannya karena ia mencatat jalannya rapat, tetapi tidak ada penunjukan resmi. Ketua tim sudah pulang dan hanya dapat dihubungi lewat pesan, sedangkan Mbak Rina masih berada di kantor. Apa yang sebaiknya Anda lakukan?",
+    "options": [
+      {
+        "text": "Memberi tahu mitra bahwa ringkasan terlambat karena Mbak Rina belum menyusunnya, lalu meminta Mbak Rina menyelesaikannya.",
+        "score": 1,
+        "reason": "Mitra menerima kabar bahwa ringkasan terlambat padahal batasnya baru besok siang, dan kesalahan dialihkan kepada Mbak Rina yang belum ditanya. Tidak ada penunjukan penyusun, yang berarti kekeliruan itu juga milik Anda.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "prof:menyalahkan-pihak-lain"
+        }
+      },
+      {
+        "text": "Menemui Mbak Rina untuk memastikan siapa penyusun ringkasan, lalu mencatat pembagian tugas lewat pesan kepada tim.",
+        "score": 5,
+        "reason": "Mbak Rina masih berada di kantor, sehingga dugaan tentang penyusun ringkasan dapat dipastikan sekarang. Pesan kepada tim menjadikan pembagian tugas itu tercatat sebelum kiriman kepada mitra besok siang.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menanyakan kepada ketua tim lewat pesan siapa yang menyusun ringkasan itu, lalu mengerjakannya sesuai jawaban yang datang.",
+        "score": 3,
+        "reason": "Ketua tim dapat menunjuk penyusun, tetapi ia sudah pulang dan hanya dapat dihubungi lewat pesan, jadi jawabannya belum tentu datang sebelum besok siang. Mbak Rina yang masih berada di kantor dapat ditanya langsung.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Mengandalkan Mbak Rina yang mencatat jalannya rapat, lalu memeriksa kiriman ringkasan itu besok siang.",
+        "score": 2,
+        "reason": "Mbak Rina mencatat jalannya rapat, tetapi tidak ada penunjukan penyusun ringkasan sehingga dugaan Anda belum terbukti. Pemeriksaan baru dilakukan besok siang, ketika batas kiriman kepada mitra sudah tiba.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menyusun ringkasan dari catatan Anda, lalu mengabari tim bahwa Anda akan mengirimnya ke mitra besok siang.",
+        "score": 4,
+        "reason": "Ringkasan dari catatan Anda dan kabar kepada tim membuat tugas itu berpemilik sebelum besok siang. Mbak Rina tidak ditanya langsung, sehingga catatan yang ia pegang dari rapat belum ikut dipakai.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: kepemilikan tugas dan penyelesaian kesalahpahaman dengan klarifikasi langsung. Fakta penentu: tidak ada penunjukan penyusun ringkasan, ringkasan harus terkirim kepada mitra besok siang, dan Mbak Rina masih berada di kantor. Menemui Mbak Rina lalu mencatat pembagian tugas menyelesaikan dugaan yang saling bertumpuk. Menyusun sendiri lalu mengabari tim membuat tugas berpemilik, tetapi tidak menanyai Mbak Rina. Bertanya kepada ketua tim yang sudah pulang melompati orang yang dapat ditanya langsung, mengandalkan dugaan membuat tugas tidak bertuan sampai batas kirim, dan menyalahkan Mbak Rina memindahkan kekeliruan kepada orang yang belum ditanya.",
+    "tip": "Mana yang baru dugaan dan mana yang sudah jelas, dan siapa yang masih dapat ditanya langsung?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "tanggung-jawab",
+    "kataKunci": "ringkasan keputusan besok siang, penyusun tidak disebut, tidak ada penunjukan resmi, Mbak Rina mencatat rapat, ketua tim sudah pulang"
+  },
+  {
+    "id": "tkp-kasus-prof-07",
+    "skenario": "laporan-harian-desa-tanpa-jaringan",
+    "topic": "Profesionalisme",
+    "subtopic": "Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi",
+    "pola": "gangguan-layanan-mendadak",
+    "peran": "pelaksana",
+    "kewenangan": "terbatas",
+    "penentu": "jaringan hanya aktif di kantor kecamatan yang berjarak satu jam, laporan harian harus terunggah sebelum pukul 17.00, dan kendala jaringan harus dilaporkan lewat telepon kepada koordinator sebelum pukul 18.00",
+    "tempat": "lapangan",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Jam sekarang, jarak, dan aturan laporan susulan tertulis jelas sehingga tindakan yang sah dan paling cepat mudah dibedakan.",
+    "stem": "Anda petugas pendata di sebuah desa terpencil. Sekarang pukul 15.30. Laporan harian wajib diunggah lewat aplikasi sebelum pukul 17.00, tetapi sejak siang jaringan seluler terputus dan baru aktif di kantor kecamatan, sekitar satu jam perjalanan dari lokasi Anda. Data warga hari ini sudah Anda catat di buku lapangan. Aturan dinas membolehkan laporan susulan paling lambat esok pagi bila kendala jaringan dilaporkan lewat telepon kepada koordinator, yang menerima laporan kendala sampai pukul 18.00. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Meminta rekan di kantor kecamatan mengisi laporan hari ini berdasarkan perkiraan Anda, lalu mengunggahnya sebelum pukul 17.00.",
+        "score": 1,
+        "reason": "Laporan yang diisi dari perkiraan tidak cocok dengan data warga di buku lapangan, sehingga angkanya tidak dapat dipertanggungjawabkan walau tepat waktu. Aturan dinas sebenarnya membolehkan laporan susulan esok pagi bila kendala jaringan dilaporkan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      },
+      {
+        "text": "Merapikan catatan di buku lapangan hingga pukul 16.30, lalu berangkat ke kantor kecamatan untuk melapor dan mengirim laporan.",
+        "score": 3,
+        "reason": "Kendala tetap dilaporkan lewat telepon sebelum pukul 18.00 dan laporan terkirim sebagai susulan. Dari pukul 15.30 Anda dapat tiba sebelum pukul 17.00, tetapi merapikan catatan lebih dulu membuat laporan harian terlambat padahal data sudah lengkap.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Mencatat data di buku lapangan, lalu mengunggah laporan beberapa hari sekaligus saat jaringan di desa sudah pulih.",
+        "score": 2,
+        "reason": "Buku lapangan menjaga data warga hari ini, tetapi laporan digeser beberapa hari padahal aturan dinas hanya membolehkan susulan esok pagi. Koordinator juga tidak menerima laporan kendala sampai pukul 18.00.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Mengunggah laporan setibanya di kantor kecamatan, lalu meminta rekan di sana menyampaikan kendala jaringan kepada koordinator.",
+        "score": 4,
+        "reason": "Laporan terkirim sebelum pukul 17.00 dari kantor kecamatan, dan kabar kendala sampai kepada koordinator lewat telepon sebelum pukul 18.00. Kendala tidak Anda sampaikan sendiri, jadi koordinator menerimanya lewat rekan dan tidak dapat langsung menanyai Anda.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      },
+      {
+        "text": "Pergi ke kantor kecamatan yang jaringannya aktif untuk mengirim isi buku catatan, lalu menelepon koordinator untuk melaporkan kendala jaringan.",
+        "score": 5,
+        "reason": "Dari pukul 15.30 kantor kecamatan dapat dicapai sebelum batas pukul 17.00, sehingga laporan terkirim tepat waktu. Kendala jaringan Anda laporkan sendiri lewat telepon kepada koordinator sebelum pukul 18.00 sesuai aturan dinas.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: disiplin waktu dan kesinambungan pelaporan saat sarana terganggu. Fakta penentu: jaringan hanya aktif di kantor kecamatan yang berjarak satu jam, laporan harian harus terunggah sebelum pukul 17.00, dan kendala jaringan harus dilaporkan lewat telepon kepada koordinator sebelum pukul 18.00. Pergi ke kantor kecamatan lalu menelepon koordinator memenuhi kedua batas waktu secara langsung. Mengirim laporan lalu meminta rekan menyampaikan kendala tetap sah, tetapi koordinator menerima kabar tidak langsung dari Anda. Merapikan catatan lebih dulu membuat laporan terlambat padahal data lengkap, mengumpulkan laporan beberapa hari menyalahi batas susulan, dan mengisi dari perkiraan mengganti data warga dengan dugaan.",
+    "tip": "Apa yang masih mungkin dicapai sebelum batas, dan siapa yang perlu menerima kabar langsung dari Anda?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mutu-tenggat",
+    "kataKunci": "unggah sebelum pukul 17.00, jaringan seluler terputus, kantor kecamatan satu jam, buku lapangan, laporan susulan, laporan kendala sampai pukul 18.00"
+  },
+  {
+    "id": "tkp-kasus-prof-08",
+    "skenario": "umpan-balik-draf-ringkasan-pelatihan",
+    "topic": "Profesionalisme",
+    "subtopic": "Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi",
+    "pola": "peluang-pengembangan-keterbatasan",
+    "peran": "pelaksana",
+    "kewenangan": "penuh",
+    "penentu": "instruktur menandai kalimat terlalu panjang sehingga angka capaian sulit ditemukan, dan menawarkan sesi konsultasi singkat setelah kelas",
+    "tempat": "pelatihan",
+    "keputusan": "mengembangkan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Umpan balik yang spesifik dan sesi konsultasi tersedia; sikap yang mengubah umpan balik menjadi perbaikan mudah dikenali.",
+    "stem": "Dalam pelatihan penulisan laporan, Anda menyerahkan draf ringkasan kegiatan untuk dinilai instruktur. Instruktur menandai bahwa kalimat Anda terlalu panjang sehingga angka capaian sulit ditemukan pembaca, dan menawarkan sesi konsultasi singkat setelah kelas. Ringkasan semacam itu akan Anda tulis setiap bulan di kantor dan dibaca atasan Anda sebelum rapat. Menurut Anda isi draf sudah lengkap, dan Anda masih memiliki waktu sore ini. Sikap Anda adalah ...",
+    "options": [
+      {
+        "text": "Merevisi draf dengan kalimat lebih pendek, lalu mengirim hasilnya kepada instruktur lewat surel untuk dinilai.",
+        "score": 4,
+        "reason": "Kalimat yang lebih pendek menjawab tanda dari instruktur, dan hasil revisi dinilai instruktur lewat surel. Penilaian datang lewat jalur tertulis, sedangkan sesi konsultasi setelah kelas memungkinkan perbaikan dibahas langsung sore ini.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "kurang-langsung"
+        }
+      },
+      {
+        "text": "Menjelaskan kepada instruktur bahwa isi draf sudah lengkap, lalu melewatkan sesi konsultasi yang ditawarkan.",
+        "score": 2,
+        "reason": "Kelengkapan isi draf baik, tetapi tanda instruktur tentang kalimat panjang yang menyulitkan pembaca tidak dijawab. Sesi konsultasi dilewatkan sehingga kebiasaan menulis itu terbawa ke ringkasan bulanan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menghadiri sesi konsultasi singkat itu, lalu merevisi draf bersama instruktur sebelum sore berakhir.",
+        "score": 5,
+        "reason": "Revisi bersama instruktur mengubah tanda penilaian menjadi perbaikan yang dipahami, dan angka capaian dipastikan mudah ditemukan pembaca sebelum sore berakhir. Keterampilan itu langsung terpakai pada ringkasan bulanan di kantor.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyalin ringkasan peserta lain yang dinilai baik, lalu menyerahkannya sebagai draf revisi Anda.",
+        "score": 1,
+        "reason": "Menyalin ringkasan peserta lain membuat revisi bukan hasil kerja Anda dan melanggar kejujuran pelatihan. Kalimat panjang pada draf Anda sendiri tidak pernah diperbaiki, padahal instruktur menawarkan konsultasi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Menghadiri sesi konsultasi itu, lalu mencatat saran instruktur untuk dipakai pada ringkasan bulan depan.",
+        "score": 3,
+        "reason": "Sesi konsultasi dan catatan saran bermanfaat bagi ringkasan berikutnya. Draf yang sudah ditandai instruktur belum direvisi dan belum diperiksa kembali, akibatnya kesempatan berlatih langsung terlewat.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-parsial"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: pengembangan kompetensi melalui umpan balik yang langsung diterapkan. Fakta penentu: instruktur menandai kalimat terlalu panjang sehingga angka capaian sulit ditemukan, dan menawarkan sesi konsultasi singkat setelah kelas. Menghadiri sesi lalu merevisi draf bersama instruktur mengubah umpan balik menjadi keterampilan yang terbukti sore ini. Merevisi sendiri lalu mengirim hasilnya lewat surel tetap mendapat penilaian, tetapi lebih lambat daripada konsultasi langsung. Mencatat saran tanpa merevisi menunda penerapan, membela kelengkapan isi mengabaikan umpan balik, dan menyalin ringkasan peserta lain melanggar kejujuran pelatihan.",
+    "tip": "Apakah masukan itu menyentuh keterampilan yang akan sering Anda pakai, dan dukungan apa yang ditawarkan?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pengembangan-diri",
+    "kataKunci": "kalimat terlalu panjang, angka capaian sulit ditemukan, sesi konsultasi singkat, ringkasan bulanan, waktu sore ini"
+  },
+  {
+    "id": "tkp-kasus-prof-09",
+    "skenario": "paraf-kehadiran-rekan-dekat",
+    "topic": "Profesionalisme",
+    "subtopic": "Konsep Dasar, Ciri, dan Etika Profesional",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "anggota-tim",
+    "kewenangan": "penuh",
+    "penentu": "daftar hadir dipakai untuk menerbitkan sertifikat dan menghitung jam pelatihan, sedangkan koordinator menetapkan jam pegawai yang izin dari keterangan tertulis sebelum pukul 16.00",
+    "tempat": "pelatihan",
+    "keputusan": "menolak",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Permintaan rekan dekat bertentangan dengan fungsi daftar hadir; jalur izin yang sah dan hak jam pelatihan Dimas harus ditimbang bersama.",
+    "stem": "Anda panitia pendaftaran pada pelatihan dua hari yang diadakan kantor. Daftar hadir dipakai untuk menerbitkan sertifikat dan menghitung jam pelatihan setiap pegawai. Hari ini Dimas, rekan dekat Anda, pulang pukul 11.00 karena urusan keluarga, padahal sesi baru selesai pukul 16.00. Sebelum pergi ia meminta Anda memarafkan kolom kehadirannya hingga sore agar jam pelatihannya tidak dikurangi. Koordinator pelatihan menetapkan jam pegawai yang izin berdasarkan keterangan tertulis yang masuk sebelum daftar hadir ditutup pukul 16.00. Sikap Anda adalah ...",
+    "options": [
+      {
+        "text": "Menolak memarafkan kolom sore itu, lalu menyarankan Dimas mengirim keterangan izin kepada koordinator sebelum pukul 16.00.",
+        "score": 5,
+        "reason": "Daftar hadir menjadi dasar sertifikat dan jam pelatihan, yang berarti kehadiran Dimas hanya tercatat sampai pukul 11.00. Keterangan izin sebelum pukul 16.00 membuka jalan agar koordinator menetapkan jam pelatihannya secara sah.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mencatat jam pulang Dimas yang sebenarnya pada daftar hadir, lalu menolak memarafkan kolom sore itu.",
+        "score": 4,
+        "reason": "Jam pulang Dimas tercatat sesuai kenyataan pada daftar hadir yang menjadi dasar sertifikat. Dimas tidak diberi tahu bahwa keterangan izin masih dapat masuk sebelum pukul 16.00, sehingga jam pelatihannya berkurang tanpa upaya yang sah.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Melaporkan permintaan Dimas kepada kepala bagian kepegawaian, lalu menolak memarafkan kolom kehadirannya.",
+        "score": 3,
+        "reason": "Penolakan menjaga keakuratan daftar hadir, dan kepala bagian kepegawaian dapat mengetahui permintaan itu. Dimas baru mengajukan permintaan sekali dan belum diberi tahu jalur izin, akibatnya laporan melompati pembicaraan langsung.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Mengosongkan kolom kehadiran Dimas, lalu menutup daftar hadir pukul 16.00 dan tidak memberi tahu siapa pun.",
+        "score": 2,
+        "reason": "Kolom yang kosong menjaga keakuratan daftar hadir, tetapi Dimas dan koordinator tidak mengetahui bahwa keterangan izin masih dapat masuk sebelum pukul 16.00. Jam pelatihan Dimas berkurang tanpa upaya apa pun dari Anda.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Memarafkan kolom kehadiran Dimas hingga pukul 16.00, lalu menyampaikan kepada koordinator bahwa ia hadir penuh.",
+        "score": 1,
+        "reason": "Paraf pada kolom sore mencatat kehadiran yang tidak terjadi pada daftar yang menjadi dasar sertifikat dan jam pelatihan. Dimas pulang pukul 11.00, dan keterangan kepada koordinator menutup jalur izin yang sah.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: integritas profesional saat rekan dekat meminta Anda menyimpang dari standar. Fakta penentu: daftar hadir dipakai untuk menerbitkan sertifikat dan menghitung jam pelatihan, sedangkan koordinator menetapkan jam pegawai yang izin dari keterangan tertulis sebelum pukul 16.00. Menolak memarafkan lalu menyarankan keterangan izin menjaga keakuratan catatan sekaligus membantu rekan lewat jalur yang sah. Mencatat jam pulang tanpa menunjukkan jalur izin menjaga catatan tetapi tidak membantu Dimas. Melapor kepada kepala bagian kepegawaian melompati pembicaraan langsung pada permintaan pertama, mengosongkan kolom lalu menutup daftar tanpa kabar tidak membantu siapa pun, dan memarafkan kolom sore mencatat kehadiran yang tidak terjadi.",
+    "tip": "Untuk apa catatan resmi itu dipakai oleh pihak lain, dan jalan sah apa yang masih terbuka bagi rekan Anda?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "integritas-hubungan",
+    "kataKunci": "daftar hadir, sertifikat dan jam pelatihan, Dimas pulang pukul 11.00, memarafkan kolom kehadiran, rekan dekat, keterangan tertulis sebelum pukul 16.00"
+  },
+  {
+    "id": "tkp-kasus-prof-10",
+    "skenario": "analisis-statistik-di-luar-kemampuan",
+    "topic": "Profesionalisme",
+    "subtopic": "Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi",
+    "pola": "peluang-pengembangan-keterbatasan",
+    "peran": "pelaksana",
+    "kewenangan": "hanya-usul",
+    "penentu": "analisis memerlukan fitur statistik yang belum Anda kuasai, rekan unit statistik bersedia membimbing satu jam setiap hari kerja, dan tenggat empat hari dapat diperpanjang bila atasan diberi tahu lebih awal",
+    "tempat": "layanan-digital",
+    "keputusan": "minta-bantuan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Batas kemampuan, bimbingan yang tersedia, dan peluang memperpanjang tenggat harus ditimbang bersama; pilihan yang jujur dan terarah perlu dibedakan dari belajar sendiri.",
+    "stem": "Anda pelaksana di unit data sebuah dinas. Atasan meminta analisis hubungan antara jumlah kunjungan layanan dan lama antrean untuk laporan evaluasi yang harus selesai empat hari lagi dan akan dipakai menentukan jumlah petugas loket. Selama ini Anda baru terbiasa menghitung rata-rata dan persentase, sedangkan analisis itu memerlukan fitur statistik di platform data kantor yang belum Anda kuasai. Seorang rekan dari unit statistik bersedia membimbing satu jam setiap hari kerja. Tenggat dapat diperpanjang bila atasan diberi tahu lebih awal. Apa tindakan Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Mempelajari fitur statistik dari video panduan sendiri, lalu meminta rekan memeriksa hasil analisis Anda.",
+        "score": 3,
+        "reason": "Video panduan dan pemeriksaan rekan membantu Anda belajar fitur statistik. Bimbingan harian dari unit statistik dan peluang memperpanjang tenggat tidak dipakai, sehingga hasil analisis baru diperiksa menjelang tenggat empat hari.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menjadwalkan bimbingan harian dengan rekan unit statistik, lalu mengerjakan analisis dari hasil bimbingan itu.",
+        "score": 4,
+        "reason": "Bimbingan harian mengisi kesenjangan fitur statistik dan analisis tetap Anda kerjakan sendiri. Atasan belum mengetahui keterbatasan Anda, akibatnya peluang tenggat empat hari diperlonggar belum terbuka.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Meminta rekan unit statistik mengerjakan analisis itu, lalu mempelajari hasilnya pada waktu senggang.",
+        "score": 2,
+        "reason": "Rekan dari unit statistik mampu mengerjakan analisis, tetapi tugas yang diberikan kepada Anda berpindah tangan. Anda baru belajar fitur statistik pada waktu senggang, yang berarti tanggung jawab atas hasilnya tidak benar-benar Anda pegang.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Menyampaikan batas kemampuan Anda kepada atasan, lalu menjadwalkan bimbingan harian dengan rekan unit statistik.",
+        "score": 5,
+        "reason": "Atasan mengetahui keterbatasan Anda lebih awal, sehingga tenggat empat hari dapat diperpanjang bila perlu. Bimbingan harian dari unit statistik memberi waktu belajar, dan tugas tetap Anda kerjakan sendiri.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Memasukkan data ke fitur statistik dengan pengaturan bawaan, lalu menyerahkan hasilnya sebagai kesimpulan laporan.",
+        "score": 1,
+        "reason": "Pengaturan bawaan fitur statistik belum tentu sesuai dengan data kunjungan dan antrean, dan hasilnya tidak dapat Anda jelaskan. Kesimpulan laporan akan dipakai menentukan jumlah petugas loket, akibatnya keputusan atasan dapat keliru.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tanpa-verifikasi"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: pengakuan batas kompetensi dan pengembangan diri yang terarah pada tugas. Fakta penentu: analisis memerlukan fitur statistik yang belum Anda kuasai, rekan unit statistik bersedia membimbing satu jam setiap hari kerja, dan tenggat empat hari dapat diperpanjang bila atasan diberi tahu lebih awal. Menyampaikan batas kemampuan kepada atasan lalu menjadwalkan bimbingan menjaga kejujuran, kualitas, dan tanggung jawab atas hasil. Bimbingan tanpa kabar kepada atasan membuat peluang memperpanjang tenggat tidak terbuka. Belajar sendiri melewatkan bimbingan yang tersedia, menyerahkan analisis kepada rekan memindahkan tanggung jawab, dan menyerahkan hasil dari pengaturan bawaan menyesatkan laporan.",
+    "tip": "Seberapa jauh keahlian Anda sekarang dibanding tuntutan pekerjaan ini, dan dukungan apa yang tersedia?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "tanggung-jawab",
+    "kataKunci": "empat hari lagi, jumlah petugas loket, fitur statistik belum dikuasai, bimbingan rekan unit statistik, tenggat dapat diperpanjang"
+  },
+  {
+    "id": "tkp-kasus-prof-11",
+    "skenario": "bimbingan-anggota-baru-dan-verifikasi-berkas",
+    "topic": "Profesionalisme",
+    "subtopic": "Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja",
+    "pola": "dua-tanggung-jawab",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "sisa verifikasi memerlukan tiga jam dari tujuh jam kerja yang tersisa, data Indra ikut diserahkan besok pagi, dan sistem inspektorat menolak data dengan kolom wajib kosong",
+    "tempat": "administratif",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua tanggung jawab sah bersaing dalam satu hari; urutan mendampingi, memeriksa, dan menyelesaikan harus ditimbang terhadap kesalahan yang menumpuk.",
+    "stem": "Anda koordinator tim pendataan di sebuah dinas. Besok pagi hasil verifikasi berkas penerima bantuan harus diserahkan kepada inspektorat. Sisa verifikasi memerlukan tiga jam, sedangkan jam kerja hari ini masih tujuh jam. Hari ini Indra, anggota baru, untuk pertama kalinya memasukkan data survei yang ikut diserahkan bersama hasil verifikasi, dan ia belum memahami kolom yang wajib diisi. Sistem inspektorat menolak data dengan kolom wajib kosong. Anda berwenang mengatur beban kerja tim. Keputusan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Meminta Indra menandatangani hasil verifikasi atas nama Anda, lalu menyerahkannya kepada inspektorat besok pagi.",
+        "score": 1,
+        "reason": "Anggota baru yang menandatangani hasil verifikasi atas nama koordinator mengambil tanggung jawab yang bukan miliknya. Inspektorat menerima hasil yang belum seluruhnya Anda periksa, padahal berkas penerima bantuan menyangkut hak orang lain.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      },
+      {
+        "text": "Menyelesaikan verifikasi berkas lebih dulu, lalu mendampingi Indra memasukkan data setelah verifikasi selesai.",
+        "score": 3,
+        "reason": "Verifikasi tiga jam selesai lebih dulu, dan pendampingan masih muat dalam tujuh jam kerja. Selama itu Indra menganggur atau mencoba sendiri, padahal pendampingan pada data awal dapat dimulai sekarang.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Meminta Indra mencoba sendiri sampai selesai, lalu memperbaiki kesalahannya setelah sistem inspektorat menolak datanya.",
+        "score": 2,
+        "reason": "Mencoba sendiri melatih kemandirian Indra, tetapi kolom wajib yang belum ia pahami menghasilkan data yang ditolak sistem inspektorat. Perbaikan baru dilakukan setelah penolakan, padahal data itu ikut diserahkan besok pagi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Memberi Indra daftar kolom wajib beserta contoh pengisian, lalu mengerjakan verifikasi berkas sampai selesai.",
+        "score": 4,
+        "reason": "Daftar kolom dan contoh pengisian memberi Indra pegangan, dan verifikasi tiga jam selesai tanpa gangguan. Hasil input Indra belum ditinjau oleh Anda, sehingga pembinaan baru teruji ketika sistem inspektorat memeriksanya.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mendampingi Indra memasukkan data awalnya, lalu menetapkan jam pemeriksaan hasilnya sebelum verifikasi selesai.",
+        "score": 5,
+        "reason": "Pendampingan dan jam pemeriksaan muat dalam tujuh jam kerja, sedangkan verifikasi tiga jam tetap selesai sebelum besok pagi. Kolom wajib yang kosong tertangkap sebelum data diserahkan, sehingga tidak ditolak sistem inspektorat.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: prioritas dan pembinaan anggota baru dengan menjaga tanggung jawab atas hasil. Fakta penentu: sisa verifikasi memerlukan tiga jam dari tujuh jam kerja yang tersisa, data Indra ikut diserahkan besok pagi, dan sistem inspektorat menolak data dengan kolom wajib kosong. Mendampingi pada data awal lalu menetapkan jam pemeriksaan sebelum verifikasi selesai menutup dua tanggung jawab dalam waktu yang cukup. Memberi daftar kolom dan contoh tanpa meninjau hasil membuat pembinaan baru teruji ketika sistem inspektorat memeriksanya. Menyelesaikan verifikasi lebih dulu membuat Indra menunggu padahal pendampingan dapat dimulai sekarang, meminta Indra mencoba sendiri membuat data ditolak, dan meminta anggota baru menandatangani hasil melampaui perannya.",
+    "tip": "Bagian mana yang berbatas waktu keras, dan bagian mana yang masalahnya membesar bila ditangani belakangan?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mutu-tenggat",
+    "kataKunci": "inspektorat besok pagi, sisa verifikasi tiga jam, tujuh jam kerja, Indra anggota baru, kolom wajib kosong, beban kerja tim"
+  },
+  {
+    "id": "tkp-kasus-prof-12",
+    "skenario": "forum-mitra-bentrok-rapat-evaluasi",
+    "topic": "Profesionalisme",
+    "subtopic": "Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja",
+    "pola": "dua-tanggung-jawab",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "forum mitra memutuskan format pertukaran data dan menerima perwakilan bersurat tugas, Bu Sari memahami format itu, dan kedua jadwal bentrok pukul 09.00",
+    "tempat": "kemitraan",
+    "keputusan": "koordinasi",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua kepentingan sah bentrok pada jam yang sama; delegasi yang tepat harus tetap menjaga tanggung jawab atas keputusan unit.",
+    "stem": "Anda kepala unit layanan data sebuah dinas. Pukul 09.00 Anda diundang ke forum mitra yang akan memutuskan format pertukaran data tahun depan, padahal pada jam yang sama rapat evaluasi internal membahas temuan kesalahan data bulan ini dan Anda yang harus memaparkannya. Kepala seksi Anda, Bu Sari, memahami format pertukaran data. Mitra menerima perwakilan yang membawa surat tugas dari kepala unit. Bagaimana Anda sebaiknya menangani kedua jadwal itu?",
+    "options": [
+      {
+        "text": "Menghadiri forum mitra sendiri, lalu meminta ketua rapat evaluasi internal memindahkannya ke sore hari.",
+        "score": 3,
+        "reason": "Kehadiran Anda di forum menjamin keputusan format tidak berjalan tanpa kepala unit. Bu Sari memahami format itu dan dapat mewakili Anda, akibatnya rapat evaluasi dipindahkan dan peserta lain harus menyesuaikan jadwal tanpa perlu.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Membekali Bu Sari dengan surat tugas dan arahan sikap unit, lalu meminta laporan tertulis hasil forum itu darinya.",
+        "score": 5,
+        "reason": "Surat tugas membuat Bu Sari diterima mitra, sedangkan arahan sikap unit dan laporan tertulis menjaga tanggung jawab Anda atas format pertukaran data. Anda tetap memaparkan temuan pada rapat evaluasi pukul 09.00.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menugaskan Bu Sari hadir di forum dengan surat tugas, lalu menanyakan hasilnya setelah rapat evaluasi selesai.",
+        "score": 4,
+        "reason": "Bu Sari memahami format dan diterima mitra dengan surat tugas, sedangkan Anda memaparkan temuan di rapat evaluasi. Arahan sikap unit tidak ia terima, yang berarti hasil forum baru Anda ketahui saat ditanyakan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Tetap memaparkan temuan pada rapat evaluasi, lalu membaca keputusan forum mitra dari catatan rapat mitra.",
+        "score": 2,
+        "reason": "Rapat evaluasi mendapat pemaparan Anda, tetapi keputusan format pertukaran data di forum mitra diambil tanpa suara unit. Anda baru membaca hasilnya ketika keputusan sudah mengikat.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Mengutus staf pelaksana yang tidak bersurat tugas ke forum mitra, lalu meminta mitra tetap menerimanya sebagai wakil Anda.",
+        "score": 1,
+        "reason": "Mitra hanya menerima perwakilan yang membawa surat tugas, sehingga permintaan agar staf pelaksana tetap diterima menekan mitra untuk menyimpang dari aturannya. Staf itu juga tidak memahami format pertukaran data yang diputuskan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: delegasi yang menjaga tanggung jawab akhir saat dua kewajiban sah bentrok. Fakta penentu: forum mitra memutuskan format pertukaran data dan menerima perwakilan bersurat tugas, Bu Sari memahami format itu, dan kedua jadwal bentrok pukul 09.00. Membekali Bu Sari dengan surat tugas dan arahan lalu meminta laporan tertulis memenuhi aturan mitra sekaligus menjaga akuntabilitas unit. Menugaskan tanpa arahan membuat unit baru mengetahui hasil setelah keputusan diambil. Menghadiri forum sendiri membebani jadwal rapat evaluasi, melewatkan forum membuat keputusan diambil tanpa suara unit, dan mengutus staf tanpa surat tugas melanggar aturan mitra.",
+    "tip": "Kewajiban mana yang dapat diwakilkan, dan apa yang tetap menjadi tanggung jawab Anda sebagai pimpinan?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mutu-tenggat",
+    "kataKunci": "forum mitra, format pertukaran data, rapat evaluasi internal, jam yang sama, Bu Sari, surat tugas"
+  },
+  {
+    "id": "tkp-kasus-prof-13",
+    "skenario": "laporan-harian-angka-keliru-portal",
+    "topic": "Profesionalisme",
+    "subtopic": "Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "anggota-tim",
+    "kewenangan": "terbatas",
+    "penentu": "unit perencanaan sudah mengunduh laporan dengan jumlah 1.250 padahal angka benar 1.025, dan portal tidak memberi tahu pengunduh bahwa berkas diganti",
+    "tempat": "layanan-digital",
+    "keputusan": "mengoreksi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Satu kebutuhan jelas: angka yang benar harus sampai kepada pihak yang sudah memakai angka keliru; pilihan lain jelas kurang.",
+    "stem": "Anda anggota tim pelaporan di sebuah dinas. Pagi tadi Anda mengunggah laporan harian ke portal bersama, dan siang ini Anda menemukan jumlah penerima layanan tertulis 1.250, padahal catatan sumber menunjukkan 1.025. Unit perencanaan sudah mengunduh laporan itu untuk bahan rapat sore, sedangkan unit lain belum membukanya. Anda dapat mengganti berkas di portal, tetapi portal tidak memberi tahu pengunduh bahwa berkas diganti. Keputusan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mengganti berkas di portal dengan angka 1.025, lalu mengirim koreksi tertulis kepada unit perencanaan sebelum rapat sore.",
+        "score": 5,
+        "reason": "Berkas yang diganti mencegah unit lain membaca angka yang salah, dan koreksi tertulis menjangkau unit perencanaan yang sudah mengunduh versi lama sebelum rapat sore. Kesalahan Anda tertutup pada sumber dan pada pengguna angkanya.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menelepon unit perencanaan sebelum rapat sore tentang angka yang benar, lalu mengganti berkas di portal.",
+        "score": 4,
+        "reason": "Unit perencanaan mengetahui angka yang benar sebelum rapat sore, dan berkas di portal sudah diganti. Koreksi lewat telepon tidak meninggalkan catatan tertulis, akibatnya unit itu tidak memegang bukti perubahan angka.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Mengganti berkas di portal dengan angka 1.025, lalu mencatat perubahan itu pada riwayat berkas portal.",
+        "score": 3,
+        "reason": "Berkas di portal kini benar dan riwayat perubahan tercatat. Portal tidak memberi tahu pengunduh bahwa berkas diganti, yang berarti unit perencanaan tetap membawa angka 1.250 ke rapat sore.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "prof:koreksi-diam-diam"
+        }
+      },
+      {
+        "text": "Memberi tahu ketua tim bahwa angka hari ini keliru, lalu menyimpan angka yang benar untuk laporan besok.",
+        "score": 2,
+        "reason": "Ketua tim mengetahui kekeliruan itu dan angka yang benar tersimpan untuk laporan besok. Angka 1.250 tetap tersedia di portal dan sudah dibawa unit perencanaan ke rapat sore, jadi dampaknya belum dihentikan.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Mengunggah laporan perbaikan sebagai berkas baru, lalu menghapus riwayat unggahan pertama beserta catatannya dari portal bersama.",
+        "score": 1,
+        "reason": "Penghapusan riwayat unggahan pertama menghilangkan jejak bahwa angka 1.250 pernah dipakai, dan unit perencanaan tidak pernah diberi tahu tentang perubahan itu. Angka yang benar tersedia, tetapi akuntabilitas Anda atas kekeliruan hilang.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: akuntabilitas atas kesalahan data yang sudah berdampak pada pihak lain. Fakta penentu: unit perencanaan sudah mengunduh laporan dengan jumlah 1.250 padahal angka benar 1.025, dan portal tidak memberi tahu pengunduh bahwa berkas diganti. Mengganti berkas lalu mengirim koreksi tertulis memperbaiki sumber sekaligus menjangkau pengguna versi lama. Menelepon unit perencanaan lalu mengganti berkas menjangkau pengguna, tetapi tidak meninggalkan catatan tertulis. Mengganti berkas tanpa memberi tahu unit perencanaan membuat angka keliru tetap masuk rapat, memberi tahu ketua tim lalu menyimpan perbaikan untuk laporan besok membuat kesalahan tetap beredar, dan mengunggah berkas baru lalu menghapus riwayat pertama menyembunyikan kesalahan.",
+    "tip": "Siapa yang sudah memakai bahan lama, dan apakah ia menyadari bahwa bahannya berubah?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "tanggung-jawab",
+    "kataKunci": "portal bersama, tertulis 1.250, catatan sumber 1.025, unit perencanaan sudah mengunduh, rapat sore, portal tidak memberi tahu"
+  },
+  {
+    "id": "tkp-kasus-prof-14",
+    "skenario": "salinan-arsip-dan-laporan-bulanan",
+    "topic": "Profesionalisme",
+    "subtopic": "Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja",
+    "pola": "dua-tanggung-jawab",
+    "peran": "anggota-tim",
+    "kewenangan": "terbatas",
+    "penentu": "rekan yang juga pegawai bagian umum sedang tersedia, arsip kontrak hanya boleh disalin oleh pegawai bagian umum, dan jam kerja Anda sebelum pukul 15.00 terpotong rapat",
+    "tempat": "administratif",
+    "keputusan": "minta-bantuan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua kewajiban sah dengan jam yang terpotong rapat dan satu bantuan yang diizinkan; delegasi harus ditimbang terhadap tanggung jawab atas mutu hasil.",
+    "stem": "Sekarang pukul 09.00. Anda anggota tim di bagian umum, dan kepala seksi meminta salinan arsip kontrak untuk rapat pukul 11.00 yang Anda ikuti sampai pukul 13.00. Penyalinan memerlukan dua jam, sedangkan laporan bulanan Anda memerlukan tiga jam dan harus diunggah ke portal pusat paling lambat pukul 15.00. Rekan di meja sebelah, yang juga pegawai bagian umum, tidak memiliki tugas mendesak. Arsip kontrak hanya boleh disalin oleh pegawai bagian umum. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Meminta rekan menyalin arsip kontrak dengan daftar halaman yang jelas, lalu memeriksa kelengkapan salinannya sebelum rapat.",
+        "score": 5,
+        "reason": "Rekan yang juga pegawai bagian umum boleh menyalin arsip kontrak, dan pemeriksaan sebelum pukul 11.00 menjaga tanggung jawab Anda atas hasilnya. Tiga jam laporan bulanan tetap muat di antara pukul 09.00 sampai 11.00 dan pukul 13.00 sampai 15.00.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Memberi tahu kepala seksi bahwa rekan akan menyalin arsip kontrak, lalu menyerahkan daftar halaman kepada rekan itu.",
+        "score": 4,
+        "reason": "Kepala seksi mengetahui bahwa salinan disiapkan oleh pegawai bagian umum, dan rekan memegang daftar halaman yang jelas. Kelengkapan salinan belum Anda cocokkan sendiri, sehingga tanggung jawab Anda atas hasilnya belum tertutup.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menyalin arsip kontrak sendiri sebelum pukul 11.00, lalu mengerjakan laporan bulanan setelah rapat usai.",
+        "score": 3,
+        "reason": "Menyalin sendiri menjamin arsip kontrak dikerjakan pegawai bagian umum, tetapi memakai dua jam yang tersedia sebelum rapat. Laporan bulanan yang memerlukan tiga jam hanya mendapat waktu setelah pukul 13.00 dan melewati pukul 15.00.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "prof:menanggung-sendiri"
+        }
+      },
+      {
+        "text": "Mengerjakan laporan bulanan lebih dahulu dengan teliti, lalu menyalin arsip kontrak pada jam yang tersisa.",
+        "score": 2,
+        "reason": "Laporan bulanan memakai jam pagi yang seharusnya dipakai menyalin, akibatnya arsip kontrak belum tersedia saat rapat pukul 11.00. Permintaan kepala seksi terlewat padahal rekan yang tersedia tidak dipakai.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Meminta staf magang dari bagian lain menyalin arsip kontrak, lalu mengerjakan laporan bulanan sampai selesai.",
+        "score": 1,
+        "reason": "Arsip kontrak hanya boleh disalin oleh pegawai bagian umum, yang berarti staf magang dari bagian lain menyalahi aturan penyalinan dan salinannya tidak dapat dipertanggungjawabkan. Laporan bulanan tertangani, tetapi arsip untuk rapat dikerjakan pihak yang tidak berhak.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: pengelolaan dua tanggung jawab sah melalui delegasi yang tetap menjaga tanggung jawab hasil. Fakta penentu: rekan yang juga pegawai bagian umum tersedia, arsip kontrak hanya boleh disalin oleh pegawai bagian umum, dan jam Anda sebelum pukul 15.00 terpotong rapat. Meminta rekan menyalin dengan daftar halaman yang jelas lalu memeriksa salinannya sebelum rapat memakai bantuan sekaligus menjaga mutu, sehingga laporan bulanan tetap muat. Memberi tahu kepala seksi dan menyerahkan daftar halaman belum menutup pemeriksaan hasil. Menyalin sendiri menghabiskan jam sebelum rapat, mengerjakan laporan lebih dulu mengorbankan permintaan rapat, dan meminta staf magang bagian lain menyalin melanggar aturan tentang siapa yang boleh menyalin arsip.",
+    "tip": "Berapa jam yang benar-benar Anda miliki, dan siapa yang boleh mengerjakan bagian mana?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mutu-tenggat",
+    "kataKunci": "arsip kontrak, rapat sampai pukul 13.00, penyalinan dua jam, laporan pukul 15.00, rekan bagian umum, tanpa tugas mendesak"
+  },
+  {
+    "id": "tkp-kasus-prof-15",
+    "skenario": "temuan-berkas-hibah-diminta-ditunda",
+    "topic": "Profesionalisme",
+    "subtopic": "Konsep Dasar, Ciri, dan Etika Profesional",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "pegawai-baru",
+    "kewenangan": "hanya-usul",
+    "penentu": "temuan didukung berkas yang tidak memuat tanda tangan penerima, laporan dikirim kepada inspektur pekan ini, dan hanya ketua tim yang dapat mengubah isi laporan akhir",
+    "tempat": "rapat",
+    "keputusan": "menolak",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Permintaan atasan langsung untuk menunda temuan harus dibedakan dari penolakan yang menawarkan jalan keluar sah dan dari laporan kepada pihak di luar tim.",
+    "stem": "Anda pegawai baru di tim pemeriksa dokumen sebuah dinas. Dalam draf laporan Anda mencatat satu temuan: sebagian berkas hibah tidak memuat tanda tangan penerima, dan berkas pendukungnya lengkap. Ketua tim, Pak Arif, meminta temuan itu tidak dicantumkan pekan ini karena ia akan memperbaikinya bulan depan. Laporan dikirim kepada inspektur pekan ini, dan hanya ketua tim yang dapat mengubah isi laporan akhir. Anda hanya dapat mengusulkan perubahan. Bagaimana sebaiknya Anda menanggapi?",
+    "options": [
+      {
+        "text": "Mempertahankan temuan itu pada draf laporan, lalu melaporkan permintaan Pak Arif langsung kepada inspektur.",
+        "score": 3,
+        "reason": "Temuan tetap tercantum dan inspektur berhak mengetahui permintaan itu. Pak Arif belum Anda ajak membahas rencana perbaikannya, sehingga laporan langsung kepada inspektur melompati pembicaraan dengan ketua tim.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Menyusun laporan tanpa temuan itu sesuai permintaan Pak Arif, lalu menyimpan berkas pendukungnya untuk bulan depan.",
+        "score": 2,
+        "reason": "Berkas pendukung temuan tersimpan dan Pak Arif berjanji memperbaikinya, tetapi inspektur menerima laporan pekan ini tanpa temuan yang sudah terbukti. Tanggung jawab Anda sebagai pemeriksa dilepaskan karena ketua tim memintanya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "prof:patuh-tanpa-pertimbangan"
+        }
+      },
+      {
+        "text": "Mengeluarkan temuan itu beserta berkas pendukungnya dari draf, lalu mengirim draf laporan kepada Pak Arif hari ini.",
+        "score": 1,
+        "reason": "Pengeluaran temuan dan berkas pendukungnya menghilangkan bukti yang sudah lengkap, dan laporan yang sampai kepada inspektur tidak menggambarkan keadaan sebenarnya. Pak Arif memang meminta, tetapi Anda ikut melepaskannya.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      },
+      {
+        "text": "Menegaskan temuan itu didukung berkas, lalu mengusulkan pencantuman bersama rencana perbaikan Pak Arif.",
+        "score": 5,
+        "reason": "Berkas yang lengkap menjaga temuan tetap tercantum, dan rencana perbaikan Pak Arif memberinya ruang menunjukkan penanganan kepada inspektur. Anda mengusulkan perubahan sesuai peran, bukan mengubah laporan akhir sendiri.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mendiskusikan dengan Pak Arif alasan permintaannya, lalu meminta keputusan tertulis tentang temuan sebelum laporan dikirim.",
+        "score": 4,
+        "reason": "Diskusi membuka alasan Pak Arif, dan keputusan tertulis meninggalkan jejak sebelum laporan dikirim kepada inspektur pekan ini. Usul mencantumkan temuan bersama rencana perbaikan belum Anda sampaikan, akibatnya peran Anda sebagai pemeriksa baru terisi separuh.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: integritas dan keberanian menyampaikan temuan di bawah tekanan atasan langsung. Fakta penentu: temuan didukung berkas yang tidak memuat tanda tangan penerima, laporan dikirim kepada inspektur pekan ini, dan hanya ketua tim yang dapat mengubah isi laporan akhir. Menegaskan dukungan berkas lalu mengusulkan temuan dicantumkan bersama rencana perbaikan mempertahankan fakta sekaligus menawarkan jalan keluar yang sah. Berdiskusi lalu meminta keputusan tertulis meninggalkan jejak, tetapi belum mengusulkan cara mencantumkan temuan. Melapor langsung kepada inspektur melompati pembicaraan, menyusun laporan tanpa temuan melepaskan tanggung jawab pemeriksa, dan mengeluarkan temuan menutupi bukti.",
+    "tip": "Siapa yang memegang keputusan akhir atas laporan itu, dan sejauh mana peran Anda dalam menyampaikan pendapat?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "integritas-hubungan",
+    "kataKunci": "temuan berkas hibah, tanda tangan penerima, berkas pendukung lengkap, perbaikan bulan depan, laporan kepada inspektur"
+  },
+  {
+    "id": "tkp-kasus-prof-16",
+    "skenario": "hasil-survei-kuesioner-tidak-lengkap",
+    "topic": "Profesionalisme",
+    "subtopic": "Konsep Dasar, Ciri, dan Etika Profesional",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "penghubung-mitra",
+    "kewenangan": "hanya-usul",
+    "penentu": "12 persen kuesioner tidak memuat jawaban untuk dua pertanyaan utama, termin kedua hanya dibayar setelah hasil memenuhi standar kelengkapan menurut kontrak, dan Anda hanya dapat merekomendasikan penerimaan",
+    "tempat": "lapangan",
+    "keputusan": "koordinasi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Syarat kontrak tertulis jelas dan peran penghubung terbatas pada rekomendasi; satu tindakan tepat dan pilihan lain jelas menyimpang.",
+    "stem": "Anda penghubung unit Anda dengan sebuah lembaga survei mitra. Mitra menyerahkan hasil survei kepuasan layanan, tetapi 12 persen kuesioner tidak memuat jawaban untuk dua pertanyaan utama. Pemimpin mitra meminta hasil diterima agar termin kedua dapat diajukan hari ini, dan berjanji melengkapi kuesioner itu bulan depan. Menurut kontrak, termin kedua hanya dibayar setelah hasil memenuhi standar kelengkapan. Anda hanya dapat merekomendasikan penerimaan kepada kepala unit. Keputusan Anda adalah ...",
+    "options": [
+      {
+        "text": "Menutup dua pertanyaan utama yang kosong dengan jawaban dari kuesioner lain yang serupa, lalu melaporkan hasil survei lengkap.",
+        "score": 1,
+        "reason": "Jawaban dari kuesioner lain tidak mewakili responden yang kuesionernya kosong, yang berarti hasil survei menjadi tidak sesuai kenyataan. Termin kedua akan dibayar atas hasil yang belum memenuhi standar kelengkapan menurut kontrak.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      },
+      {
+        "text": "Menjanjikan kepada mitra bahwa termin kedua dapat diajukan hari ini, lalu meminta kuesioner dilengkapi bulan depan.",
+        "score": 2,
+        "reason": "Anda hanya dapat merekomendasikan, sehingga janji termin kedua diajukan hari ini melampaui peran penghubung. Mitra dapat menyimpulkan bahwa 12 persen kuesioner yang kosong itu diterima.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "janji-tanpa-dasar"
+        }
+      },
+      {
+        "text": "Meminta kepala unit membahas permintaan mitra lebih dulu, lalu menyusun rekomendasi setelah ada arahan.",
+        "score": 3,
+        "reason": "Kepala unit menerima rekomendasi akhir, tetapi syarat kelengkapan dalam kontrak sudah jelas dan dapat Anda nilai sendiri. Rekomendasi yang menunggu arahan hanya menunda jawaban kepada mitra.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Merekomendasikan kepada kepala unit agar hasil diterima setelah dilengkapi, lalu tidak menyampaikan alasan penolakan kepada mitra.",
+        "score": 4,
+        "reason": "Rekomendasi Anda sesuai dengan syarat kelengkapan dalam kontrak, dan kepala unit yang memutuskan. Mitra tidak mendengar alasan penolakan dari penghubungnya, akibatnya hubungan kerja dengan pemimpin mitra belum terjaga.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Menyampaikan bagian yang kurang kepada mitra, lalu merekomendasikan penerimaan setelah kuesioner dilengkapi.",
+        "score": 5,
+        "reason": "Mitra mengetahui bahwa dua pertanyaan utama pada 12 persen kuesioner harus dilengkapi, dan rekomendasi penerimaan menunggu kelengkapan sesuai kontrak. Anda bertindak sebatas peran penghubung tanpa menjanjikan termin kedua.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: objektivitas dan standar mutu saat mitra menekan agar hasil kurang lengkap diterima. Fakta penentu: 12 persen kuesioner tidak memuat jawaban untuk dua pertanyaan utama, termin kedua hanya dibayar setelah hasil memenuhi standar kelengkapan menurut kontrak, dan Anda hanya dapat merekomendasikan penerimaan. Menyampaikan kekurangan kepada mitra lalu merekomendasikan penerimaan setelah dilengkapi menjaga standar tanpa melampaui peran. Rekomendasi yang hanya sampai kepada kepala unit membuat mitra tidak mendengar alasan dari penghubungnya. Meminta arahan lebih dulu menunda jawaban yang dapat Anda nilai sendiri, menjanjikan termin menyalahi peran, dan menutup jawaban kosong memalsukan hasil survei.",
+    "tip": "Apa yang sudah menjadi syarat tertulis, dan sejauh mana batas peran Anda dalam menanggapi permintaan pihak luar?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "integritas-hubungan",
+    "kataKunci": "lembaga survei mitra, 12 persen kuesioner, dua pertanyaan utama, termin kedua, standar kelengkapan kontrak, janji melengkapi bulan depan"
+  },
+  {
+    "id": "tkp-kasus-prof-17",
+    "skenario": "format-laporan-baru-rekan-senior-ragu",
+    "topic": "Profesionalisme",
+    "subtopic": "Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi",
+    "pola": "penolakan-perubahan",
+    "peran": "koordinator",
+    "kewenangan": "terbatas",
+    "penentu": "Bu Wati khawatir riwayat data di format lama tidak terbaca, tanggal berlaku format baru tetap, dan Anda dapat mengatur cara tim mencoba format itu",
+    "tempat": "rapat",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Keberatan rekan senior memiliki dasar nyata dan tanggal berlaku tetap; cara menguji perubahan harus dibedakan dari memaksa atau menunda.",
+    "stem": "Anda koordinator tim penyusun laporan di sebuah dinas. Pimpinan menetapkan format laporan baru berbasis lembar kerja bersama mulai bulan depan. Bu Wati, rekan senior yang paling teliti, keberatan karena data tahun-tahun lalu tersimpan di format lama dan ia khawatir riwayat angka tidak terbaca. Dua anggota lain ingin segera beralih. Anda dapat mengatur cara tim mencoba format baru, sedangkan tanggal berlakunya tetap. Keputusan Anda adalah ...",
+    "options": [
+      {
+        "text": "Menggali alasan keberatan Bu Wati secara terbuka, lalu menguji format baru pada satu laporan percobaan sebelum tanggal berlaku.",
+        "score": 5,
+        "reason": "Keberatan Bu Wati tentang riwayat data punya dasar nyata yang perlu didengar, dan uji pada satu laporan membuktikan apakah format baru terbaca sebelum berlaku bulan depan. Tanggal berlaku tetap terpenuhi.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengumumkan uji format baru pada satu laporan kepada tim, lalu meminta masukan setelah laporan selesai.",
+        "score": 4,
+        "reason": "Uji pada satu laporan diumumkan kepada tim dan masukan dikumpulkan setelahnya, yang berarti tim siap sebelum format baru berlaku. Alasan keberatan Bu Wati belum dibahas lebih dulu, sehingga ia belum merasa didengar.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Menyampaikan bahwa tanggal berlaku format baru tetap, lalu menyiapkan pelatihan format baru bagi tim.",
+        "score": 3,
+        "reason": "Pelatihan membantu tim beralih sebelum tanggal berlaku yang tetap. Keberatan Bu Wati tentang riwayat data tidak mendapat jalan keluar, padahal Anda dapat mengatur cara tim mencoba format baru.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kaku"
+        }
+      },
+      {
+        "text": "Meminta Bu Wati membuktikan sendiri bahwa riwayat data tidak hilang, lalu memutuskan format berdasarkan jawabannya.",
+        "score": 2,
+        "reason": "Bu Wati paling mengenal data lama, akibatnya ia mampu menilai keamanan format baru. Beban membuktikannya berpindah kepadanya, padahal Anda yang dapat mengatur cara tim mencoba format itu sebelum tanggal berlaku.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Menyebut keberatan Bu Wati sebagai penghambat pada rapat tim, lalu meminta anggota lain beralih ke format baru.",
+        "score": 1,
+        "reason": "Menyebut keberatan Bu Wati sebagai penghambat di depan rapat mempermalukan rekan senior yang keberatannya berdasar. Format baru berjalan, tetapi persoalan riwayat data tidak dibahas dan hubungan kerja rusak.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "prof:mempermalukan"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: adaptasi terhadap perubahan dengan menggali penolakan dan menguji perubahan secara terkendali. Fakta penentu: Bu Wati khawatir riwayat data di format lama tidak terbaca, tanggal berlaku format baru tetap, dan Anda dapat mengatur cara tim mencoba format itu. Menggali alasan keberatan lalu menguji pada satu laporan menjawab keberatan yang berdasar tanpa mengubah tanggal berlaku. Mengumumkan uji dan meminta masukan menyiapkan tim, tetapi keberatan Bu Wati belum didengar lebih dulu. Menegaskan tanggal dan menyiapkan pelatihan melewatkan ruang pengujian, meminta Bu Wati membuktikan sendiri memindahkan beban, dan menyebutnya penghambat mempermalukan rekan senior.",
+    "tip": "Apa dasar kekhawatiran yang disampaikan, dan bagian perubahan mana yang dapat dijajaki lebih dulu?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pengembangan-diri",
+    "kataKunci": "format laporan baru, keberatan Bu Wati, data format lama, riwayat angka tidak terbaca, tanggal berlaku tetap, cara tim mencoba"
+  },
+  {
+    "id": "tkp-kasus-prof-18",
+    "skenario": "kesalahan-nomor-identitas-berulang",
+    "topic": "Profesionalisme",
+    "subtopic": "Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi",
+    "pola": "masalah-berulang",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "keempat kesalahan terjadi pada formulir lama yang kolom nomornya tidak berpetak, dua kali sudah diperbaiki dengan peringatan, dan formulir berpetak di dua loket tidak menimbulkan kesalahan",
+    "tempat": "administratif",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Penyebab dapat dibaca dari data dan dua perbaikan sebelumnya gagal; perbaikan sistem, pemantauan, dan tindakan yang tidak menyentuh penyebab harus dibedakan.",
+    "stem": "Anda kepala unit pendaftaran di sebuah dinas. Dalam tiga bulan terakhir, kesalahan penulisan nomor identitas pada formulir pemohon muncul empat kali, dan dua kali di antaranya sudah ditangani dengan mengingatkan petugas. Data menunjukkan keempat kesalahan terjadi pada formulir cetak lama yang kolom nomornya tidak berpetak, sedangkan formulir berpetak yang baru dipakai di dua loket tidak menimbulkan kesalahan. Stok formulir berpetak tersedia di gudang unit. Bagaimana Anda menindaklanjutinya?",
+    "options": [
+      {
+        "text": "Mengulang peringatan kepada petugas pada apel pagi, lalu mencatat kesalahan berikutnya pada daftar pantauan.",
+        "score": 2,
+        "reason": "Peringatan sudah dua kali diberikan dan kesalahan tetap muncul, yang berarti mengulanginya tidak menyentuh penyebab. Daftar pantauan hanya mencatat kesalahan pada formulir lama yang kolom nomornya tidak berpetak.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kosmetik"
+        }
+      },
+      {
+        "text": "Mengganti formulir lama dengan yang berpetak di setiap loket, lalu memantau kesalahan selama dua bulan.",
+        "score": 5,
+        "reason": "Data menunjukkan kesalahan hanya terjadi pada formulir yang kolom nomornya tidak berpetak, sehingga mengganti formulir di setiap loket menyentuh penyebabnya. Pemantauan dua bulan membuktikan bahwa perbaikan itu bekerja.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menambah pemeriksaan nomor identitas oleh petugas kedua di setiap loket, lalu mengevaluasinya pada akhir tahun.",
+        "score": 3,
+        "reason": "Petugas kedua menangkap sebagian kesalahan nomor identitas. Formulir lama yang kolom nomornya tidak berpetak tetap dipakai, dan evaluasi akhir tahun terlalu jauh untuk kesalahan yang muncul tiap bulan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Memakai formulir berpetak di loket yang sudah menggunakannya, lalu mengganti formulir lama di loket lain secara bertahap.",
+        "score": 4,
+        "reason": "Formulir berpetak sudah terbukti tidak menimbulkan kesalahan di dua loket, dan formulir lama di loket lain diganti secara bertahap. Penggantian belum menjangkau setiap loket sekarang dan belum disertai pemantauan hasil, jadi perbaikan penyebab baru separuh jalan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Memberi sanksi kepada petugas yang terakhir salah menulis, lalu memakai formulir lama sampai stoknya habis.",
+        "score": 1,
+        "reason": "Sanksi memindahkan kegagalan formulir menjadi kesalahan seorang petugas, padahal empat kesalahan terjadi pada formulir yang sama. Formulir lama yang kolom nomornya tidak berpetak tetap dipakai sehingga kesalahan berikutnya hampir pasti terjadi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "prof:menyalahkan-pihak-lain"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: penyelesaian masalah yang menyentuh akar penyebab dan dipantau hasilnya. Fakta penentu: keempat kesalahan terjadi pada formulir lama yang kolom nomornya tidak berpetak, dua kali sudah diperbaiki dengan peringatan, dan formulir berpetak di dua loket tidak menimbulkan kesalahan. Mengganti formulir di setiap loket lalu memantau menjawab penyebab dan membuktikan hasilnya. Memakai formulir berpetak di dua loket lalu mengganti formulir lain secara bertahap menyentuh penyebab, tetapi lebih lambat dan tanpa pemantauan. Menambah pemeriksaan kedua menangkap gejala tetapi formulir lama tetap dipakai, mengulang peringatan mengulang cara yang sudah gagal, dan memberi sanksi memindahkan kegagalan formulir kepada petugas.",
+    "tip": "Kapan masalah muncul dan kapan tidak, dan apakah perbaikan terdahulu menyentuh sebabnya?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mutu-tenggat",
+    "kataKunci": "kesalahan nomor identitas, empat kali, dua kali diingatkan, formulir cetak lama, kolom tidak berpetak, stok formulir berpetak"
+  },
+  {
+    "id": "tkp-kasus-prof-19",
+    "skenario": "jumlah-penerima-beasiswa-dua-sumber",
+    "topic": "Profesionalisme",
+    "subtopic": "Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi",
+    "pola": "informasi-belum-lengkap-bertentangan",
+    "peran": "anggota-tim",
+    "kewenangan": "tidak-ada",
+    "penentu": "selisih 13 nama antara sistem kepegawaian dan rekap manual, surat penetapan penerima dapat Anda buka di arsip, dan Anda hanya memiliki akses baca pada kedua sumber",
+    "tempat": "layanan-digital",
+    "keputusan": "koordinasi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Satu kebutuhan jelas: jumlah laporan harus terbukti dari dokumen penetapan, dan pemilik kedua sumber perlu diberi tahu; pilihan lain jelas kurang.",
+    "stem": "Anda anggota tim yang menyiapkan rekap jumlah penerima beasiswa untuk laporan kepada inspektorat pukul 15.00 hari ini. Sistem kepegawaian dinas menunjukkan 418 penerima, sedangkan rekap manual bagian kesejahteraan menunjukkan 431. Selisih 13 nama sudah Anda daftar. Surat penetapan penerima dapat Anda buka di arsip, tetapi Anda hanya memiliki akses baca pada kedua sumber. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menyerahkan kedua jumlah kepada inspektorat, lalu meminta inspektorat menentukan sendiri jumlah yang benar.",
+        "score": 2,
+        "reason": "Inspektorat menerima kedua jumlah secara terbuka, tetapi surat penetapan penerima yang dapat Anda buka tidak dipakai. Tugas memastikan selisih 13 nama berpindah kepada pihak yang menunggu laporan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Menghitung ulang jumlah untuk laporan dari surat penetapan, lalu mengabari pemilik sistem soal selisihnya.",
+        "score": 4,
+        "reason": "Penghitungan ulang dari surat penetapan menghasilkan jumlah laporan yang terbukti sebelum pukul 15.00, dan pemilik sistem kepegawaian diberi tahu tentang selisih. Pemilik rekap manual belum diberi tahu, yang berarti selisih 13 nama baru terselesaikan pada sumber sistem saja.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mencocokkan 13 nama selisih dengan surat penetapan, lalu menyampaikan hasil terbukti kepada inspektorat dan para pemilik data.",
+        "score": 5,
+        "reason": "Surat penetapan penerima menjadi bukti jumlah laporan sebelum pukul 15.00, dan pemberitahuan kepada pemilik kedua sumber membuka jalan memperbaiki 13 nama pada masing-masing data. Anda tidak mengubah data milik pihak lain.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyerahkan rekap dari jumlah sistem kepegawaian saja karena sumbernya resmi, lalu menyatakan bahwa angka itu sudah dicek petugas.",
+        "score": 1,
+        "reason": "Jumlah sistem kepegawaian dipakai sebelum selisih 13 nama dibandingkan dengan surat penetapan, sehingga pernyataan sudah dicek tidak sesuai kenyataan. Inspektorat menerima angka yang belum teruji.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tanpa-verifikasi"
+        }
+      },
+      {
+        "text": "Menghubungi bagian kesejahteraan dan staf sistem untuk memastikan jumlah, lalu menyerahkan laporan sesuai jawaban dari keduanya.",
+        "score": 3,
+        "reason": "Menghubungi kedua pemilik sumber sah dan keduanya dapat menjelaskan selisih. Surat penetapan penerima sudah dapat Anda buka sekarang, akibatnya laporan bergantung pada jawaban yang dapat datang setelah pukul 15.00.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: objektivitas dan akurasi saat dua sumber data bertentangan. Fakta penentu: selisih 13 nama antara sistem kepegawaian dan rekap manual, surat penetapan penerima dapat Anda buka di arsip, dan Anda hanya memiliki akses baca pada kedua sumber. Mencocokkan nama selisih dengan surat penetapan lalu melapor kepada inspektorat dan pemilik kedua sumber menghasilkan angka yang dapat dipertanggungjawabkan dan membuka jalan perbaikan data. Menghitung ulang lalu mengabari pemilik satu sumber saja menyisakan sumber lain yang salah. Menghubungi kedua pemilik dahulu menunda hal yang dapat dibuktikan sekarang, menyerahkan kedua jumlah melempar tugas memastikan, dan memakai satu sumber saja menyatakan angka teruji padahal belum.",
+    "tip": "Dokumen mana yang paling dekat dengan keputusan aslinya, dan siapa saja yang berkepentingan dengan pemeriksaan ini?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mutu-tenggat",
+    "kataKunci": "inspektorat pukul 15.00, 418 dan 431 penerima, selisih 13 nama, surat penetapan, akses baca kedua sumber"
+  },
+  {
+    "id": "tkp-kasus-prof-20",
+    "skenario": "anggaran-pelatihan-satu-peserta",
+    "topic": "Profesionalisme",
+    "subtopic": "Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi",
+    "pola": "peluang-pengembangan-keterbatasan",
+    "peran": "pegawai-baru",
+    "kewenangan": "hanya-usul",
+    "penentu": "anggaran hanya cukup untuk satu peserta, tugas pertama Anda menyusun harga perkiraan bulan depan, dan Mas Bayu sudah dua tahun mengerjakannya serta pernah mengikuti pelatihan serupa",
+    "tempat": "pelatihan",
+    "keputusan": "mengembangkan",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua pegawai sama-sama layak ikut pelatihan; usul harus dinilai dari kebutuhan tugas dan manfaat bagi bagian, bukan dari senioritas atau jumlah kegiatan.",
+    "stem": "Anda pegawai baru di bagian pengadaan. Kantor membuka pelatihan eksternal dua hari tentang penyusunan harga perkiraan, dengan anggaran hanya cukup untuk satu peserta dari bagian Anda. Kepala bagian meminta usul dari anggota yang berminat. Anda dan Mas Bayu sama-sama ingin ikut. Tugas pertama Anda bulan depan adalah menyusun harga perkiraan, sedangkan Mas Bayu sudah dua tahun mengerjakannya dan pernah mengikuti pelatihan serupa. Anda hanya dapat mengusulkan. Usul Anda adalah ...",
+    "options": [
+      {
+        "text": "Mengajukan diri sebagai peserta pelatihan eksternal itu, lalu menyimpan materinya untuk keperluan pribadi.",
+        "score": 4,
+        "reason": "Anda mendapat pelatihan yang tepat untuk tugas pertama bulan depan, dan Mas Bayu tetap mengerjakan tugas rutinnya. Manfaat berhenti pada Anda, yang berarti bagian pengadaan tidak ikut memperoleh bekal dari kursi yang dibiayai anggaran itu.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mempelajari panduan penyusunan harga perkiraan sendiri, lalu meminta Mas Bayu mengoreksi hasil latihan Anda.",
+        "score": 3,
+        "reason": "Panduan dan koreksi Mas Bayu membantu Anda belajar tanpa biaya. Pelatihan dua hari yang membahas penyusunan harga perkiraan tidak dimanfaatkan, padahal tugas pertama Anda jatuh bulan depan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menyerahkan kesempatan pelatihan kepada Mas Bayu, lalu mempelajari penyusunan harga perkiraan setelah tugas pertama Anda selesai.",
+        "score": 2,
+        "reason": "Mas Bayu berpengalaman dan wajar mendapat kesempatan itu. Anda mengerjakan tugas pertama sebelum belajar, sehingga harga perkiraan pertama disusun tanpa bekal yang pelatihan dua hari itu sediakan.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menyusun usul ikut pelatihan berdasarkan tugas pertama Anda bulan nanti, lalu menawarkan membagikan materinya kepada bagian.",
+        "score": 5,
+        "reason": "Tugas pertama Anda menyusun harga perkiraan bulan depan dan Mas Bayu sudah mengikuti pelatihan serupa, akibatnya manfaat pelatihan paling besar bagi Anda. Membagikan materi menjadikan satu kursi bermanfaat bagi bagian pengadaan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mendaftar sendiri ke penyelenggara atas nama bagian, lalu membayar selisih biaya dari anggaran kegiatan lain.",
+        "score": 1,
+        "reason": "Anggaran pelatihan hanya cukup untuk satu peserta, yang berarti memakai anggaran kegiatan lain melanggar peruntukan dana. Anda juga mendaftar tanpa usul yang sah kepada kepala bagian.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: pengembangan kompetensi dengan sumber daya terbatas, dinilai dari manfaat terhadap tugas. Fakta penentu: anggaran hanya cukup untuk satu peserta, tugas pertama Anda menyusun harga perkiraan bulan depan, dan Mas Bayu sudah dua tahun mengerjakannya serta pernah mengikuti pelatihan serupa. Menyusun usul berdasarkan tugas lalu menawarkan membagikan materi menempatkan kursi pada kebutuhan terbesar dan menyebarkan manfaatnya. Mengajukan diri lalu menyimpan materi sendiri memenuhi kebutuhan Anda tetapi tidak menjangkau bagian. Belajar sendiri melewatkan pelatihan yang tersedia, menyerahkan kesempatan lalu belajar setelah tugas menggeser belajar ke waktu yang terlambat, dan memakai anggaran lain melanggar peruntukan dana.",
+    "tip": "Kebutuhan pekerjaan mana yang paling mendesak, dan sejauh mana manfaatnya dapat menjangkau rekan?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "pengembangan-diri",
+    "kataKunci": "pelatihan harga perkiraan, anggaran satu peserta, tugas pertama bulan depan, Mas Bayu dua tahun, pelatihan serupa, hanya mengusulkan"
+  },
+  {
+    "id": "tkp-kasus-prof-21",
+    "skenario": "penyuluhan-balai-desa-dan-revisi-laporan",
+    "topic": "Profesionalisme",
+    "subtopic": "Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja",
+    "pola": "dua-tanggung-jawab",
+    "peran": "pelaksana",
+    "kewenangan": "terbatas",
+    "penentu": "penyuluhan di balai desa pukul 09.00 sudah diumumkan, revisi laporan imunisasi harus terkirim sebelum pukul 12.00, dan Mbak Dewi dapat menggantikan penyuluhan bila diberi bahan yang siap dalam setengah jam",
+    "tempat": "masyarakat",
+    "keputusan": "minta-bantuan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Dua kewajiban kepada pihak berbeda bentrok pada pagi yang sama; bantuan rekan yang sah, waktu menyiapkan bahan, dan tanggung jawab atas hasil harus ditimbang.",
+    "stem": "Anda petugas penyuluh di sebuah puskesmas. Sekarang pukul 08.00. Penyuluhan imunisasi di balai desa pukul 09.00 sudah diumumkan kepada warga, tetapi kepala puskesmas meminta revisi laporan imunisasi yang harus terkirim kepada dinas kesehatan sebelum pukul 12.00. Revisi itu hanya dapat dikerjakan dari berkas di komputer Anda dan memerlukan sekitar dua jam, sedangkan menyiapkan bahan untuk Mbak Dewi memerlukan setengah jam. Kepala puskesmas membolehkan petugas meminta bantuan sesama penyuluh, dan Mbak Dewi dapat menggantikan penyuluhan bila diberi bahan. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Memberi penyuluhan sesuai jadwal, lalu meminta kepala puskesmas memperpanjang batas kirim laporan imunisasi.",
+        "score": 3,
+        "reason": "Penyuluhan terlaksana sesuai pengumuman kepada warga, dan perpanjangan batas kiriman dapat diminta. Mbak Dewi dapat menggantikan penyuluhan, sehingga batas laporan dikorbankan padahal bantuan yang diizinkan tersedia.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Mengerjakan revisi laporan lebih dulu, lalu memberi tahu warga di balai desa bahwa penyuluhan imunisasi ditunda.",
+        "score": 2,
+        "reason": "Laporan imunisasi terkirim sebelum pukul 12.00, tetapi warga yang sudah datang ke balai desa pukul 09.00 kehilangan penyuluhan yang diumumkan. Mbak Dewi dapat menggantikan bila diberi bahan, akibatnya penutupan itu sebenarnya dapat dihindari.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "menutup-sementara"
+        }
+      },
+      {
+        "text": "Mengirim revisi laporan imunisasi sebelum angka dicocokkan dengan berkas, lalu berangkat memberi penyuluhan sesuai jadwal.",
+        "score": 1,
+        "reason": "Revisi dikirim sebelum angka dicocokkan dengan berkas di komputer Anda, yang berarti dinas kesehatan menerima laporan yang belum teruji. Penyuluhan terlaksana, tetapi laporan imunisasi tidak dapat dipertanggungjawabkan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tanpa-verifikasi"
+        }
+      },
+      {
+        "text": "Mengabari kepala puskesmas bahwa Mbak Dewi menggantikan penyuluhan, lalu mengirim bahan penyuluhan kepada Mbak Dewi.",
+        "score": 4,
+        "reason": "Kepala puskesmas mengetahui pergantian itu dan Mbak Dewi menerima bahan penyuluhan sebelum pukul 09.00, sehingga warga tetap mendapat penyuluhan. Hasil penyuluhan tidak kembali kepada Anda, akibatnya pertanyaan warga yang belum terjawab belum dapat ditindaklanjuti.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Meminta Mbak Dewi menggantikan penyuluhan dengan bahan Anda, lalu meminta laporan hasilnya setelah revisi itu.",
+        "score": 5,
+        "reason": "Bahan siap dalam setengah jam sehingga Mbak Dewi dapat menggantikan penyuluhan pukul 09.00, dan revisi laporan imunisasi terkirim sebelum pukul 12.00. Laporan hasil penyuluhan menjaga tanggung jawab Anda atas pertanyaan warga.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: pengelolaan dua tanggung jawab melalui bantuan rekan yang diizinkan, dengan tanggung jawab hasil tetap pada pemilik tugas. Fakta penentu: penyuluhan di balai desa pukul 09.00 sudah diumumkan, revisi laporan imunisasi harus terkirim sebelum pukul 12.00, dan Mbak Dewi dapat menggantikan penyuluhan bila diberi bahan yang siap dalam setengah jam. Meminta Mbak Dewi menggantikan dengan bahan Anda lalu meminta laporan hasilnya memenuhi kedua kewajiban dan menjaga tindak lanjut. Mengabari kepala puskesmas lalu mengirim bahan memastikan penyuluhan berjalan, tetapi hasilnya tidak kembali kepada Anda. Memberi penyuluhan lalu meminta perpanjangan mengorbankan batas laporan, menunda penyuluhan mengecewakan warga yang sudah datang, dan mengirim revisi sebelum dicocokkan membuat laporan tidak teruji.",
+    "tip": "Kewajiban mana yang harus Anda pegang sendiri, dan mana yang dapat dijalankan orang lain dengan bekal cukup?",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "mutu-tenggat",
+    "kataKunci": "penyuluhan pukul 09.00, sudah diumumkan, revisi laporan sebelum pukul 12.00, revisi dua jam, bahan setengah jam, Mbak Dewi"
+  }
+]

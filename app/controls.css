@@ -9,3 +9,104 @@
 .math-formula svg { display:block; max-width:100%; height:auto; overflow:visible; }
 .math-formula.math-display { display:block!important; margin:12px 0; text-align:center; }
 .math-error { color:var(--red-ink-2); }
+
+/* Pembahasan terstruktur (components/Explanation.tsx): sub-judul, langkah, daftar, tabel, dan persamaan bertingkat. */
+.explanation-steps { font-size:14px; line-height:1.8; }
+.explanation-steps > * + * { margin-top:2px; }
+.explanation-steps .explanation-gap { height:10px; margin-top:0; }
+.explanation-heading { font-weight:700; margin-top:10px; }
+.explanation-body.plain-labels .answer-label, .explanation-body.plain-labels .explanation-heading { font-weight:400; } /* TWK gaya Nynda: "Jawaban:" dan "Pembahasan:" tidak tebal (lib/pembahasan.ts) */
+.explanation-gap + .explanation-heading { margin-top:0; }
+.explanation-list { margin:0; padding-left:22px; }
+.explanation-list li { padding-left:2px; }
+.explanation-eq .math-formula.math-display { margin:6px 0; }
+.explanation-eq:not(.is-aligned) .math-formula svg { margin-inline:auto; }
+.explanation-table { width:auto; min-width:min(100%,320px); margin:8px 0; border:1px solid var(--line-2); }
+.explanation-table th, .explanation-table td { border:1px solid var(--line-2); padding:6px 10px; text-align:left; vertical-align:middle; font-size:13px; }
+.explanation-table th { background:var(--surface); color:var(--ink); font-weight:700; text-align:center; }
+.explanation-table td.is-marked { background:var(--blue-tint); font-weight:700; }
+.explanation-box { border:1px solid var(--line-2); border-radius:var(--radius-4); padding:8px 12px; margin:6px 0; }
+.explanation-box p { margin:0; line-height:1.7; }
+.explanation-box p.is-bullet { padding-left:14px; text-indent:-14px; }
+.explanation-table.is-centered { min-width:0; }
+.explanation-table.is-centered td { text-align:center; }
+.explanation-chain { overflow-x:auto; margin:6px 0; }
+.explanation-chain svg { display:block; max-width:none; height:auto; }
+.academic-explanation { font-family:"Times New Roman",Times,serif; font-size:12pt; line-height:1.5; color:#000; }
+.academic-explanation .explanation-steps, .academic-explanation .explanation-text, .academic-explanation .answer-label,
+.academic-explanation .explanation-heading, .academic-explanation .explanation-table, .academic-explanation .explanation-table td, .academic-explanation .explanation-table th { font:inherit; color:inherit; }
+.academic-explanation .answer-label, .academic-explanation .explanation-heading { font-weight:700; }
+.academic-explanation .answer-label { background:none; padding:0; border:0; margin-bottom:6px; }
+.academic-explanation .explanation-heading { margin:8px 0 4px; }
+.academic-explanation .explanation-table th { font-weight:700; background:#fff; }
+.academic-explanation .explanation-table td.is-marked { font-weight:700; }
+.academic-explanation .explanation-table td, .academic-explanation .explanation-table th { border-color:#000; }
+.academic-explanation .explanation-chain svg { max-width:100%; }
+.academic-explanation .explanation-guide { overflow-x:hidden; }
+.academic-explanation .math-formula svg > g { fill:currentColor; stroke:currentColor; }
+
+/* Hasil paket: pilih nomor untuk diganti sekaligus (kotak centang di tiap baris daftar soal, pilihan cepat, dan tombol ganti nomor terpilih). */
+.queue-item { position:relative; }
+.queue-check { position:absolute; z-index:1; top:11px; left:12px; margin:0; }
+.review-queue .queue-item > button.queue-row { padding-left:34px; }
+.review-queue .queue-row.checked { box-shadow:inset 0 0 0 2px var(--blue); }
+.review-queue .queue-row.checked.active { box-shadow:inset 3px 0 0 var(--navy), inset 0 0 0 2px var(--blue); }
+.queue-filters.single { grid-template-columns:1fr; }
+.queue-bulk { display:grid; gap:6px; }
+.queue-bulk-links { display:flex; gap:14px; }
+.queue-bulk-links .text-button { padding:0; font-size:12px; }
+.queue-bulk .secondary-button { min-height:32px; padding:0 10px; font-size:12px; }
+
+/* Peta nomor: seluruh paket lebih mudah dipindai; rincian tetap memakai daftar lama. */
+.queue-head, .queue-legend { flex:none; }
+.queue-view-tools { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.queue-view-toggle { display:flex; gap:2px; padding:2px; border:1px solid var(--line); border-radius:var(--radius-8); background:var(--surface); }
+.queue-view-toggle button { display:flex; align-items:center; justify-content:center; gap:5px; min-height:28px; padding:3px 8px; border:0; border-radius:var(--radius-5); color:var(--muted); background:transparent; font-size:12px; }
+.queue-view-toggle button[aria-pressed=true] { background:var(--white); color:var(--navy); font-weight:700; box-shadow:0 1px 3px #183a601a; }
+.queue-pick-toggle.text-button { padding:4px 0; font-size:12px; white-space:nowrap; }
+.queue-pick-toggle[aria-pressed=true] { color:var(--navy); text-decoration:underline; text-underline-offset:3px; }
+.queue-hint { font-size:11px; line-height:1.4; color:var(--muted); }
+.queue-map { padding:12px; scrollbar-gutter:stable; }
+.queue-section + .queue-section { margin-top:14px; }
+.queue-section h3 { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:7px; }
+.queue-section h3 > span:last-child { font:400 11px/1.4 var(--font-body); color:var(--muted); }
+.queue-number-grid, .queue-detail-list { list-style:none; margin:0; padding:0; }
+.queue-number-grid { display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); gap:4px; }
+.review-queue .queue-tile { position:relative; display:flex; align-items:center; justify-content:center; width:100%; min-height:28px; margin:0; padding:4px 0; border:1px solid var(--line-strong); border-radius:var(--radius-5); background:var(--white); color:var(--navy); cursor:pointer; }
+.queue-tile .queue-no { min-width:0; font-size:11px; color:inherit; font-variant-numeric:tabular-nums; }
+.review-queue .queue-tile:hover { border-color:var(--blue); background:var(--blue-tint); }
+.review-queue .queue-tile.approved { border-bottom:3px solid var(--green); }
+.review-queue .queue-tile.revision { border-bottom:3px solid var(--amber-dot); }
+.review-queue .queue-tile.excluded { border-style:dashed; color:var(--muted); }
+.queue-tile.excluded .queue-no { text-decoration:line-through; }
+.review-queue .queue-tile.checked { box-shadow:inset 0 0 0 1px var(--blue); border-color:var(--blue); background:var(--blue-tint); }
+.review-queue .queue-tile.active { color:var(--white); border-color:var(--navy); background:var(--navy); }
+.review-queue .queue-tile.checked.active { box-shadow:inset 0 0 0 1px var(--white); }
+.queue-tile:has(input:focus-visible) { outline:3px solid var(--gold); outline-offset:2px; }
+.queue-tile input.queue-tile-check { position:absolute; inset:0; z-index:1; width:100%; height:100%; margin:0; opacity:0; cursor:pointer; }
+.queue-tile:has(input:disabled) { opacity:.5; cursor:wait; }
+.queue-tile-indicator { position:absolute; display:flex; align-items:center; justify-content:center; top:-3px; right:-3px; width:11px; height:11px; border-radius:50%; background:var(--blue); color:var(--white); font:bold 9px/1 var(--font-body); pointer-events:none; }
+.queue-tile-indicator.warning { background:var(--amber); }
+.queue-tile-indicator.error { background:var(--red); }
+.queue-legend { display:flex; flex-wrap:wrap; align-items:center; gap:12px; padding:9px 12px; border-top:1px solid var(--line); color:var(--muted); font-size:11px; }
+.queue-legend > span { display:flex; align-items:center; gap:5px; }
+.queue-legend i { display:flex; align-items:center; justify-content:center; width:13px; height:13px; border:1px solid var(--navy); border-radius:3px; }
+.queue-key-active { background:var(--navy); }
+.queue-legend .queue-key-picked { background:var(--blue-tint); color:var(--blue); border-color:var(--blue); }
+.queue-legend .queue-key-issue { border:0; border-radius:50%; background:var(--amber); color:var(--white); font-style:normal; font-weight:700; }
+@media(min-width:960px) {
+  .review-stage { grid-template-columns:280px minmax(0,1fr); }
+}
+@media(min-width:1280px) {
+  .review-stage { grid-template-columns:310px minmax(0,1fr) 290px; }
+  .queue-number-grid { grid-template-columns:repeat(10,minmax(0,1fr)); }
+}
+@media(min-width:1600px) {
+  .review-stage { grid-template-columns:320px minmax(0,1fr) 320px; }
+}
+@media(max-width:959px) {
+  .queue-map { max-height:400px; }
+  .queue-number-grid { grid-template-columns:repeat(auto-fill,minmax(40px,1fr)); gap:6px; }
+  .review-queue .queue-tile { min-height:40px; }
+  .queue-tile .queue-no { font-size:12px; }
+}

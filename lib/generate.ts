@@ -1,15 +1,19 @@
 import { BANK, BANK_MAP, bankFor } from './bank';
+import { TKP_KASUS_TOPICS } from './bank/tkp-kasus';
 import { BASELINE, DEFAULT_SETTINGS, TOPICS } from './config';
 import { figureSignature, sceneSignature } from './figures';
 import { rng, type Rng } from './rng';
 import { TIU_FAMILIES, makeTiu } from './tiu';
-import type { BankItem, DifficultyFilter, Mode, Package, Question, Settings, Subtest } from './types';
+import type { BankItem, DifficultyFilter, Mode, Package, Question, Settings, Subtest, TkpMeta } from './types';
 import { auditPackages } from './validate';
 import { buildBlueprint, checkBlueprint } from './blueprint';
 import { validationBinding } from './binding';
 import { generateTryout } from './tryout-profile';
 import { MAPPING_ROWS } from './mapping';
 import { LOCAL_RECIPES, localRecipes, usesLocal, chooseLocal, makeLocal } from './local';
+import { keepsOptionOrder } from './reasons';
+import { cellKey, planShares, type Share } from './bagi';
+import { constrainNarrativePackage } from './silo-production';
 
 export function normalizeSettings(input: Partial<Settings>): Settings {
   const value = { ...DEFAULT_SETTINGS, ...input };
@@ -58,7 +62,46 @@ export function fingerprint(question: Question): string {
   const options = question.options.map((option) => option.scene ? sceneSignature(option.scene) : option.figure ? figureSignature(option.figure) : normalizeText(option.text)).sort().join('|');
   return normalizeText(question.stem) + '|' + JSON.stringify(question.table ?? '') + '|' + visual + '|' + options;
 }
-const familyFor = (item: BankItem) => item.id.startsWith('twk-case-v2-') ? item.id : item.id.includes('-case-') ? item.id.replace(/-\d+$/, '') : item.id;
+// Kasus TKP baru: family = skenario (satu skenario tidak muncul dua kali dalam paket, juga antarpaket bila uniqueAcross).
+// Soal TWK yang tidak boleh satu paket karena set opsi dan kuncinya sama: berbagi family, sehingga `usedFamilies` (per paket) menyingkirkan pasangannya.
+// Antarpaket tetap boleh bergantian (family hanya dicek per paket untuk soal bukan kasus), jadi kapasitas antarpaket tidak berkurang.
+// Kelompok boleh berisi lebih dari dua soal (tryout-eksklusif-*: contoh tryout yang konstruknya berulang, mis. konflik kepentingan atau berita acara); tiap kelompok paling banyak satu soal per paket.
+export const EXCLUSIVE_TWK: Record<string, string> = {
+  'twk-ref-2-1': 'twk-eksklusif-nilai-dasar', 'twk-ref-2-6': 'twk-eksklusif-nilai-dasar', 'twk-ref-2-4': 'twk-eksklusif-sila-persatuan', 'twk-ref-3-6': 'twk-eksklusif-sila-persatuan',
+  'tryout-ref-03-03': 'tryout-eksklusif-kemandirian', 'tryout-ref-05-01': 'tryout-eksklusif-kemandirian',
+  'tryout-ref-04-01': 'tryout-eksklusif-proyek-lintas-daerah', 'tryout-ref-05-02': 'tryout-eksklusif-proyek-lintas-daerah',
+  'tryout-ref-03-15': 'tryout-eksklusif-pemerasan-izin', 'tryout-ref-04-11': 'tryout-eksklusif-pemerasan-izin',
+  'tryout-ref-03-14': 'tryout-eksklusif-konflik-kepentingan', 'tryout-ref-04-08': 'tryout-eksklusif-konflik-kepentingan', 'tryout-ref-04-12': 'tryout-eksklusif-konflik-kepentingan',
+  'tryout-ref-05-07': 'tryout-eksklusif-konflik-kepentingan', 'tryout-ref-05-11': 'tryout-eksklusif-konflik-kepentingan',
+  'tryout-ref-03-16': 'tryout-eksklusif-berita-acara', 'tryout-ref-04-07': 'tryout-eksklusif-berita-acara', 'tryout-ref-05-09': 'tryout-eksklusif-berita-acara',
+};
+// Pengganti manual (app/page.tsx) tidak boleh membawa soal eksklusif yang pasangannya sudah ada di paket yang sama.
+export const clashesExclusive = (candidate: Pick<Question, 'family'>, pack: Pick<Question, 'id' | 'family'>[], replacingId: string) =>
+  Object.values(EXCLUSIVE_TWK).includes(candidate.family) && pack.some((other) => other.id !== replacingId && other.family === candidate.family);
+const familyFor = (item: BankItem) => item.kasus ? item.kasus.skenario : EXCLUSIVE_TWK[item.id] ?? (item.id.startsWith('twk-case-v2-') ? item.id : item.id.includes('-case-') ? item.id.replace(/-\d+$/, '') : item.id);
+// Sebaran kasus TKP baru per paket (Tahap 3): batas tiap nilai sebagai bagian dari jumlah TKP paket. Lunak: bila persediaan sel topik × kesulitan memaksa,
+// batas boleh terlampaui; pemeriksaan di scripts/tkp-checks.ts melaporkannya.
+const SPREAD_LIMITS = { pola: .15, keputusan: .2, peran: .25, tempat: .2 } as const;
+type SpreadKey = keyof typeof SPREAD_LIMITS;
+const SPREAD_KEYS = Object.keys(SPREAD_LIMITS) as SpreadKey[];
+type Spread = Record<SpreadKey, Map<string, number>>;
+const newSpread = (): Spread => ({ pola: new Map(), keputusan: new Map(), peran: new Map(), tempat: new Map() });
+export const spreadLimit = (key: SpreadKey, total: number) => Math.max(1, Math.round(SPREAD_LIMITS[key] * total));
+// Penalti memilih kasus: kelebihan di atas batas (utama, bobot 1000) ditambah keterpakaian nilainya dalam paket (pembeda); makin kecil makin baik.
+function spreadPenalty(meta: TkpMeta, spread: Spread, total: number): number {
+  let over = 0, used = 0;
+  for (const key of SPREAD_KEYS) {
+    const count = spread[key].get(meta[key]) ?? 0, limit = spreadLimit(key, total);
+    over += Math.max(0, count + 1 - limit); used += count / limit;
+  }
+  return over * 1000 + used;
+}
+function noteSpread(meta: TkpMeta, spread: Spread) { for (const key of SPREAD_KEYS) spread[key].set(meta[key], (spread[key].get(meta[key]) ?? 0) + 1); }
+function chooseSpread(items: BankItem[], spread: Spread, total: number, random: Rng): BankItem {
+  const scored = items.map((item) => ({ item, penalty: spreadPenalty(item.kasus!, spread, total) }));
+  const least = Math.min(...scored.map((entry) => entry.penalty));
+  return random.pick(scored.filter((entry) => entry.penalty <= least + 1e-9).map((entry) => entry.item));
+}
 function fromBank(item: BankItem): Question {
   return {
     ...item, no: 0, options: item.options.map((option) => ({ ...option })), family: familyFor(item),
@@ -66,16 +109,34 @@ function fromBank(item: BankItem): Question {
     proof: { kind: 'bank', id: item.id, answerText: item.options[item.answer].text },
   };
 }
-function shuffled(question: Question, random: Rng): Question {
-  // Preserve authored labels, mathematical variables, scores, and explanation in accepted originals.
-  if (question.provenance?.status === 'accepted-example'||question.proof.kind==='local') return question;
-  const order = random.shuffle([0, 1, 2, 3, 4]);
+// Rujukan huruf opsi di pembahasan/alasan soal referensi dipetakan ke urutan baru. Hanya rujukan eksplisit yang disentuh: "Opsi B",
+// "pilihan A dan C", "jawaban B", "(B)", dan rentang ("Opsi A–C", "A hingga D"; rentang tidak lagi berurutan setelah diacak, jadi
+// ditulis ulang sebagai daftar huruf hasil pemetaan). Huruf pembuka butir "B." / "B:" di awal baris hanya dipetakan bila `lineLabels`
+// (blok alasan per opsi), bukan di pembahasan bebas, karena nama seperti "A. Hasyim Muzadi" tidak bisa dibedakan dari butir.
+// Huruf lain tidak pernah diubah: singkatan nama dan gelar ("R.A. Kartini", "A.H. Nasution", "D. N. Aidit") maupun huruf di dalam kata.
+export function remapOptionLabels(text: string, order: number[], lineLabels = false): string {
+  const move = (letter: string) => String.fromCharCode(65 + order.indexOf(letter.charCodeAt(0) - 65));
+  const spoken = (letters: string[]) => letters.length < 3 ? letters.join(' dan ') : letters.slice(0, -1).join(', ') + ', dan ' + letters[letters.length - 1];
+  const explicit = /\b((?:[Oo]psi|[Pp]ilihan|[Jj]awaban)\s+)([A-E])(?:\s*(?:–|—|-|hingga|sampai dengan|sampai|s\.d\.)\s*([A-E])\b|((?:(?:\s*,\s*(?:(?:dan|atau|serta)\s+)?|\s+(?:dan|atau|serta)\s+|\s*&\s*)[A-E])*)\b)/g;
+  const mapped = text
+    .replace(explicit, (_, lead: string, first: string, last: string | undefined, rest: string | undefined) => {
+      if (!last) return lead + (first + (rest ?? '')).replace(/[A-E]/g, move);
+      const from = Math.min(first.charCodeAt(0), last.charCodeAt(0)), to = Math.max(first.charCodeAt(0), last.charCodeAt(0));
+      return lead + spoken(Array.from({ length: to - from + 1 }, (_, i) => move(String.fromCharCode(from + i))).sort());
+    })
+    .replace(/\(([A-E])\)/g, (_, letter: string) => '(' + move(letter) + ')');
+  return lineLabels ? mapped.replace(/(^|\n)([A-E])(?=[.:]\s)(?!\.\s?[A-Z]\.)/g, (_, lead: string, letter: string) => lead + move(letter)) : mapped;
+}
+// Urutan opsi: `mix` adalah pengacakan bawaan (satu undian per butir yang diacak); bila `keyAt` diberikan, kunci dipindahkan ke posisi itu
+// dan opsi lain tetap berurutan menurut `mix`. Butir yang urutannya dipertahankan (keepsOptionOrder) tidak melewati fungsi ini.
+function arranged(question: Question, mix: number[], keyAt?: number): Question {
+  const rest = mix.filter((i) => i !== question.answer);
+  const order = keyAt === undefined ? mix : [...rest.slice(0, keyAt), question.answer, ...rest.slice(keyAt)];
   const proof = question.proof;
-  const remapLabels = (text: string) => question.origin === 'referensi' ?
-    text.replace(/\b[A-E]\b/g, (letter) => String.fromCharCode(65 + order.indexOf(letter.charCodeAt(0) - 65))) : text;
+  const remapLabels = (text: string, lineLabels = false) => question.origin === 'referensi' ? remapOptionLabels(text, order, lineLabels) : text;
   return {
     // Opsi bergambar diberi nama menurut hurufnya setelah diacak ("Gambar C"), bukan menurut urutan susun.
-    ...question, options: order.map((i, position) => ({ ...question.options[i], reason: remapLabels(question.options[i].reason),
+    ...question, options: order.map((i, position) => ({ ...question.options[i], reason: remapLabels(question.options[i].reason, true),
       ...(question.options[i].scene || question.options[i].figure ? { text: 'Gambar ' + String.fromCharCode(65 + position) } : {}) })),
     answer: order.indexOf(question.answer), explanation: remapLabels(question.explanation),
     proof: proof.kind === 'numeric' ? { ...proof, values: order.map((i) => proof.values[i]) } :
@@ -83,16 +144,37 @@ function shuffled(question: Question, random: Rng): Question {
         ...(proof.entailment ? { entailment: { ...proof.entailment, conclusions: order.map((i) => proof.entailment!.conclusions[i]) } } : {}) } : proof,
   };
 }
+// Posisi kunci untuk butir TWK/TIU yang diacak: huruf yang paling jarang muncul diisi lebih dahulu (butir yang posisinya tetap sudah
+// dihitung di `fixed`), lalu urutannya diacak. Selisih antarhuruf paling banyak satu bila butir tetap tidak sudah timpang. Deterministik per seed.
+function keyTargets(fixed: number[], count: number, random: Rng): number[] {
+  const totals = [...fixed], targets: number[] = [];
+  for (let i = 0; i < count; i++) {
+    const least = Math.min(...totals);
+    const position = random.pick(totals.flatMap((n, at) => n === least ? [at] : []));
+    totals[position]++; targets.push(position);
+  }
+  return random.shuffle(targets);
+}
 function planTopics(topics: string[], count: number, random: Rng): string[] {
   const sorted = random.shuffle(topics);
   return Array.from({ length: count }, (_, index) => sorted[index % sorted.length]);
 }
+// Butir sekelompok eksklusif (EXCLUSIVE_TWK) tidak boleh satu paket, jadi satu kelompok hanya menyumbang satu slot per paket: paling banyak `packages` butir
+// (satu per paket), bukan sebanyak butirnya. Butir lain satu slot masing-masing.
+export function bankSlots(items: BankItem[], packages: number): number {
+  const groups = new Map<string, number>();
+  let single = 0;
+  for (const item of items) { const group = EXCLUSIVE_TWK[item.id]; if (group) groups.set(group, (groups.get(group) ?? 0) + 1); else single++; }
+  return [...groups.values()].reduce((sum, n) => sum + Math.min(n, packages), single);
+}
 export function capacity(settings: Settings) {
-  const counts = distribution(settings.mode, settings.count);
-  return (['TWK', 'TKP'] as const).filter((subtest) => counts[subtest]).map((subtest) => ({
-    subtest, available: usesLocal(settings,subtest)?localRecipes(subtest,settings.topics,settings.difficulty,settings.subtopics).length:bankFor(subtest, settings.topics, settings.difficulty, settings.subtopics).length,
-    required: counts[subtest] * (settings.uniqueAcross ? settings.packages : 1),
-  }));
+  const counts = distribution(settings.mode, settings.count), packages = settings.uniqueAcross ? settings.packages : 1;
+  return (['TWK', 'TKP'] as const).filter((subtest) => counts[subtest]).map((subtest) => {
+    const required = counts[subtest] * packages;
+    if (usesLocal(settings, subtest)) { const available = localRecipes(subtest, settings.topics, settings.difficulty, settings.subtopics).length; return { subtest, available, bank: available, required }; }
+    const items = bankFor(subtest, settings.topics, settings.difficulty, settings.subtopics);
+    return { subtest, available: bankSlots(items, packages), bank: items.length, required };
+  });
 }
 export function generate(settingsInput: Partial<Settings>): Package[] {
   const settings = normalizeSettings(settingsInput);
@@ -104,16 +186,37 @@ export function generate(settingsInput: Partial<Settings>): Package[] {
   const counts = distribution(settings.mode, settings.count);
   const blueprint = buildBlueprint(settings);
   for (const entry of capacity(settings)) if (entry.required > entry.available) {
-    throw new Error('Persediaan ' + entry.subtest + ' untuk filter ini ' + entry.available + ' butir, sedangkan permintaan ' +
+    throw new Error('Persediaan ' + entry.subtest + ' untuk filter ini ' + entry.available + ' butir' +
+      (entry.bank > entry.available ? ' (bank memuat ' + entry.bank + ', tetapi soal berpasangan eksklusif hanya boleh satu per paket)' : '') + ', sedangkan permintaan ' +
       entry.required + '. Kurangi jumlah, perluas materi/kesulitan, atau izinkan soal dipakai kembali di paket berbeda.');
   }
   const globalUsed = new Set<string>();
   const globalBankUsed = new Set<string>();
+  const globalFamilies = new Set<string>();
   const globalLocalUsed = new Set<string>();
+  const quotaError = (subtest: Subtest, topic: string, level: string) => new Error(TKP_KASUS_TOPICS.has(topic) && subtest === 'TKP' ?
+    'Kuota ' + topic + ' / ' + level + ' tidak dapat dipenuhi tanpa mengulang skenario TKP. Kurangi soal atau paket, perluas filter, atau tambah kasus di data/tkp-kasus/.' :
+    'Kuota ' + topic + ' / ' + level + ' tidak dapat dipenuhi. Materi tidak diganti otomatis.');
+  // Soal TWK dan TKP dari bank dibagi ke SEMUA paket sekaligus bila soal tidak boleh berulang antarpaket (lib/bagi.ts); paket tunggal atau yang boleh
+  // berulang memilih sendiri-sendiri (di bawah). Pemilihan serakah paket demi paket menyisakan anggota kelompok eksklusif dan strata TKP yang sama untuk paket terakhir.
+  const shares = new Map<Subtest, Share>();
+  if (settings.uniqueAcross && settings.packages > 1) for (const subtest of ['TWK', 'TKP'] as const) {
+    if (!counts[subtest] || usesLocal(settings, subtest)) continue;
+    const topics = TOPICS[subtest].filter((topic) => !settings.topics.length || settings.topics.includes(topic));
+    if (!topics.length) continue;
+    const rows = blueprint.filter((row) => row.subtest === subtest);
+    const planned = planShares({ rows, items: bankFor(subtest, topics, settings.difficulty, settings.subtopics), packages: settings.packages, seed: settings.seed + '|' + subtest,
+      group: (item) => EXCLUSIVE_TWK[item.id],
+      ...(subtest === 'TKP' ? { limits: { pola: spreadLimit('pola', counts.TKP), keputusan: spreadLimit('keputusan', counts.TKP), peran: spreadLimit('peran', counts.TKP), tempat: spreadLimit('tempat', counts.TKP) } } : {}) });
+    if ('failed' in planned) throw quotaError(subtest, planned.failed.topic, planned.failed.difficulty);
+    shares.set(subtest, planned.share);
+  }
   const packages: Package[] = [];
   for (let p = 0; p < settings.packages; p++) {
     const random = rng(settings.seed + '|' + p);
     const localUsed = new Set<string>(), localBankUsed = new Set<string>(), usedFamilies = new Set<string>();
+    // Undian tersendiri untuk seri penalti sebaran, agar `random` (acak butir lain pada seed yang sama) tidak bergeser.
+    const spread = newSpread(), spreadRandom = rng(settings.seed + '|' + p + '|sebaran');
     const questions: Question[] = [];
     const localUsedRecipes = new Set<string>();
     for (const subtest of ['TWK', 'TIU', 'TKP'] as const) {
@@ -128,6 +231,9 @@ export function generate(settingsInput: Partial<Settings>): Package[] {
         topics.filter((topic) => usesLocal(settings,subtest)?localRecipes(subtest,[topic],settings.difficulty,settings.subtopics).length:pool.some((item) => item.topic === topic));
       if (!availableTopics.length) throw new Error('Tidak ada soal ' + subtest + ' pada filter kesulitan ini.');
       const plan = random.shuffle(blueprint.filter((row) => row.subtest === subtest).flatMap((row) => Array.from({ length: row.count }, () => ({ topic: row.topic, difficulty: row.difficulty }))));
+      // TWK dan TIU: butir yang diacak ditempatkan sesudah seluruh butir subtes tersusun, agar posisi kuncinya bisa diseimbangkan.
+      // TKP tidak punya satu kunci tunggal dan tetap diacak langsung.
+      const balanced = subtest !== 'TKP', deferred: { at: number; question: Question; mix: number[] }[] = [], fixedKeys = [0, 0, 0, 0, 0];
       for (let index = 0; index < plan.length; index++) {
         let question: Question | undefined;
         const target = plan[index].topic, targetLevel = plan[index].difficulty;
@@ -139,10 +245,21 @@ export function generate(settingsInput: Partial<Settings>): Package[] {
           localUsedRecipes.add(recipe.key);globalLocalUsed.add(recipe.key);
         } else if (subtest !== 'TIU') {
           const candidates = pool.filter((item) => !localBankUsed.has(item.id) && (!settings.uniqueAcross || !globalBankUsed.has(item.id)));
-          const choose = (items: BankItem[]) => items.find((item) => !usedFamilies.has(familyFor(item))) ?? items[0];
-          const item = choose(candidates.filter((item) => item.topic === target && item.difficulty === targetLevel));
-          if (!item) throw new Error('Kuota ' + target + ' / ' + targetLevel + ' tidak dapat dipenuhi. Materi tidak diganti otomatis.');
+          // Kasus TKP baru: skenario tidak pernah berulang (tanpa fallback duplikat) dan dipilih menurut penalti sebaran, bukan urutan pool.
+          // Butir lain (TWK, referensi, kerangka TKP lama) tetap memakai urutan pool dan fallback lama, sehingga pilihan TWK dan TIU tidak bergeser.
+          // TKP tidak sama: pool TKP diacak dengan `random` (setelah TWK dan TIU), dan isinya berubah bila kasus baru menggantikan kerangka lama, jadi pemilihan
+          // TKP topik lain ikut bergeser. TWK dan TIU tetap tidak bergeser karena disusun lebih dahulu dari aliran undian yang sama.
+          const choose = (items: BankItem[]) => {
+            const fresh = items.filter((item) => !usedFamilies.has(familyFor(item)) && !(settings.uniqueAcross && item.kasus && globalFamilies.has(familyFor(item))));
+            const head = fresh[0] ?? items.find((item) => !item.kasus && !EXCLUSIVE_TWK[item.id]);
+            return head?.kasus ? chooseSpread(fresh.filter((item) => item.kasus), spread, counts.TKP, spreadRandom) : head;
+          };
+          // Dengan pembagian lintas paket, butir paket ini sudah ditetapkan per sel; selain itu dipilih seperti biasa.
+          const planned = shares.get(subtest)?.[p];
+          const item = planned ? planned.get(cellKey(target, targetLevel))?.shift() : choose(candidates.filter((item) => item.topic === target && item.difficulty === targetLevel));
+          if (!item) throw quotaError(subtest, target, targetLevel);
           localBankUsed.add(item.id); globalBankUsed.add(item.id); usedFamilies.add(familyFor(item));
+          if (item.kasus) { globalFamilies.add(familyFor(item)); noteSpread(item.kasus, spread); }
           question = fromBank(item);
         } else {
           const families = familyPool.filter((family) => family.topic === target && family.levels.includes(targetLevel));
@@ -155,7 +272,9 @@ export function generate(settingsInput: Partial<Settings>): Package[] {
             if(question)break;
             const family = families[(index + attempt) % families.length];
             const level = targetLevel;
-            const draft = makeTiu(family, level, random);
+            // Silogisme narasi: contoh blueprint dipakai lebih dahulu; banyak butir chapter itu yang sudah ada (semua paket) menentukan contoh berikutnya, dan percobaan ulang memakai pembangkit.
+            const slot = attempt === 0 ? { seed: settings.seed, used: (chapter: string) => [...packages.flatMap((pack) => pack.questions), ...questions].filter((placed) => placed.proof.kind === 'model' && placed.proof.model.kind === 'syllogism' && placed.proof.model.chapter === chapter).length } : undefined;
+            const draft = makeTiu(family, level, random, slot);
             const candidate: Question = { ...draft, id: 'tiu-' + family.id + '-' + p + '-' + index + '-' + attempt, no: 0 };
             const signature = fingerprint(candidate);
             if (localUsed.has(signature) || (settings.uniqueAcross && globalUsed.has(signature))) continue;
@@ -168,12 +287,25 @@ export function generate(settingsInput: Partial<Settings>): Package[] {
           throw new Error('Butir berulang ditemukan. Kurangi jumlah paket atau perluas filter.');
         }
         localUsed.add(signature); globalUsed.add(signature);
-        const final = { ...shuffled(question, random), no: questions.length + 1 };
+        // Satu undian pengacakan per butir, pada titik yang sama seperti sebelumnya, sehingga pemilihan butir lain pada seed yang sama tidak
+        // bergeser. Butir berurutan baku (kecukupan data, opsi ordinal) tetap mengambil undian itu tetapi tidak memakainya.
+        const drawn = question.provenance?.status === 'accepted-example' || question.proof.kind === 'local' ? null : random.shuffle([0, 1, 2, 3, 4]);
+        const mix = drawn && !keepsOptionOrder(question) ? drawn : null;
+        if (mix && balanced) { deferred.push({ at: questions.length, question, mix }); questions.push({ ...question, no: questions.length + 1 }); continue; }
+        if (!mix && balanced) fixedKeys[question.answer]++;
+        const final = { ...(mix ? arranged(question, mix) : question), no: questions.length + 1 };
         questions.push({ ...final, binding: validationBinding(final) });
+      }
+      if (deferred.length) {
+        const targets = keyTargets(fixedKeys, deferred.length, rng(settings.seed + '|' + p + '|kunci|' + subtest));
+        deferred.forEach((item, i) => {
+          const final = { ...arranged(item.question, item.mix, targets[i]), no: item.at + 1 };
+          questions[item.at] = { ...final, binding: validationBinding(final) };
+        });
       }
     }
     packages.push({ id: 'SKD-' + String(p + 1).padStart(2, '0'), mode: settings.mode, seed: settings.seed + '|' + p,
-      duration: settings.duration, questions });
+      duration: settings.duration, questions: constrainNarrativePackage(questions) });
   }
   const audit = auditPackages(packages, settings);
   if (!audit.ok) throw new Error('Paket gagal validasi: ' + audit.errors.slice(0, 3).join('; '));

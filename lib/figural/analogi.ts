@@ -4,6 +4,7 @@ import { MARK_GLYPHS } from './glyphs';
 import { chooseWrong, layoutOk, polar, tierOf, type Built } from './compose';
 import { applyOps, type Op } from './ops';
 import { find, mk, sameScene, scene } from './scene';
+import { analogiPembahasan } from './pembahasan';
 import { STEMS } from './stems';
 import { capital, dirOfPoint, facing, fillWord, glyphName, listText, turnWord } from './text';
 
@@ -92,8 +93,7 @@ export function buildAnalogi(a: Rng, level: Difficulty): Built | null {
   return {
     kind: 'analogi', columns: 4, scenes: [A, B, C, null], key: D, wrong, namer: analogiName,
     rule: { mekanisme: 'analogi-' + ops.map((o) => o.op).join('+'), aturan: rules, ops: ops as unknown as Record<string, unknown>[] },
-    explanation: 'Berdasarkan pasangan gambar yang diketahui, hubungan gambar pertama terhadap gambar kedua adalah:\n' + rules.map((r, i) => (i + 1) + '. ' + r + '.').join('\n') +
-      '\nDengan menerapkan hubungan yang sama pada gambar ketiga, diperoleh gambar dengan ' + keyState + '.',
+    explanation: analogiPembahasan({ A, B, C, key: D, rules, keyState }),
     keyReason: 'Memenuhi seluruh hubungan: ' + listText(ops.map(sentence)) + '. Hasilnya: ' + keyState + '.',
     difficultyReason: ops.length === 1 ? 'Satu hubungan sederhana yang tampak jelas pada pasangan pertama.' : ops.length === 2 ? 'Dua perubahan berbeda terjadi bersamaan; pengecoh hanya melanggar salah satunya.' : 'Tiga perubahan terjadi bersamaan dan harus diterapkan berurutan; setiap pengecoh hanya melanggar satu perubahan.',
     stem: STEMS.analogi[0],

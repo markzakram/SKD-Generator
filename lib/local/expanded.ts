@@ -4,13 +4,13 @@ import { TKP_SOURCE, UUD, type CaseModel, type State } from './schema';
 // state changes the decisive constraint AND the response set, not just a name.
 type Choice = [text: string, reason: string];
 type Five = [Choice, Choice, Choice, Choice, Choice];
-export type Variant = { fact: string; choices: Five; conclusion: string; prompt?: string };
+export type Variant = { fact: string; choices: Five; conclusion: string; prompt?: string; concept?: string; tip?: string };
 function pair(id:string,subtest:'TWK'|'TKP',topic:string,concept:string,intro:string,tip:string,variants:[Variant,Variant]):CaseModel {
   const states:State[]=variants.map((v,i)=>{
     const choices=i?[v.choices[4],...v.choices.slice(0,4)]:v.choices;
     return {fact:v.fact,difficulty:i?'sulit':'sedang',actions:choices.map(c=>c[0]) as State['actions'],
       scores:(subtest==='TKP'?(i?[1,5,4,3,2]:[5,4,3,2,1]):(i?[0,5,0,0,0]:[5,0,0,0,0])) as State['scores'],
-      reasons:choices.map(c=>c[1]) as State['reasons'],conclusion:v.conclusion,prompt:v.prompt};
+      reasons:choices.map(c=>c[1]) as State['reasons'],conclusion:v.conclusion,prompt:v.prompt,...(v.concept?{concept:v.concept}:{}),...(v.tip?{tip:v.tip}:{})};
   });
   return {id,subtest,topic,chapter:subtest==='TWK'?'SKD_'+topic:topic,concept,
     source:subtest==='TKP'?TKP_SOURCE:UUD,contexts:[{intro}],actions:states[0].actions!,states,
@@ -59,12 +59,15 @@ twk('nas-ingatan','Nasionalisme','Penghargaan atas perjuangan bersama tidak dida
  ['Mengikuti sponsor karena pembiayaan memberinya hak menentukan kebenaran sejarah.','Sumber dana tidak menentukan kebenaran fakta.'],
  ['Menghapus asal seluruh tokoh sekalipun relevan untuk memahami kerja sama mereka.','Penghapusan konteks dapat menghilangkan makna persatuan lintas kelompok.'],
  ['Membatalkan pameran karena keberagaman pelaku pasti menimbulkan perselisihan.','Perbedaan pelaku tidak dengan sendirinya menghalangi penyajian berbasis bukti.']],conclusion:'Narasi bersama terbentuk melalui pengakuan kontribusi yang dapat dibuktikan, bukan pengutamaan identitas mayoritas.'},
- {fact:'Sebuah cerita kepahlawanan yang populer belum memiliki arsip pendukung. Tim menemukan sumber berbeda yang bertentangan, sedangkan kontribusi tokoh lain sudah terverifikasi.',choices:[
- ['Membedakan fakta terverifikasi dari cerita yang masih diteliti serta menjelaskan batas bukti kepada pengunjung.','Kejujuran sejarah memungkinkan penghargaan tanpa mengubah dugaan menjadi kepastian.'],
- ['Menyatakan cerita populer sebagai fakta karena isinya membangkitkan kebanggaan.','Manfaat emosional tidak menggantikan dukungan bukti.'],
- ['Menyimpulkan tokoh tersebut tidak pernah ada karena arsipnya belum lengkap.','Ketiadaan bukti memadai belum membuktikan tokoh tidak pernah ada.'],
- ['Menggabungkan semua versi menjadi cerita tunggal tanpa menyebut perbedaannya.','Penggabungan menyembunyikan pertentangan sumber yang relevan.'],
- ['Menghapus semua materi perjuangan sampai setiap cerita telah disepakati.','Ketidakpastian sebagian cerita tidak membatalkan fakta lain yang telah terverifikasi.']],conclusion:'Kecintaan pada bangsa perlu berjalan bersama kejujuran tentang apa yang sudah dan belum diketahui.'}
+ // Naskah pengganti QC akademik #2 (butir 6): konsep, alasan opsi, kalimat hubungan, dan cara cepat untuk keadaan ini.
+ {fact:'Sebuah cerita kepahlawanan yang populer belum memiliki arsip pendukung. Tim menemukan sumber berbeda yang bertentangan, sedangkan kontribusi tokoh lain sudah terverifikasi.',
+  concept:'Penghargaan terhadap sejarah perjuangan sebagai bagian dari nasionalisme yang tetap bertanggung jawab terhadap bukti.',
+  tip:'Jika kebanggaan sejarah berhadapan dengan keterbatasan bukti, pilih penyajian yang menjelaskan apa yang sudah terverifikasi dan apa yang masih diteliti.',choices:[
+ ['Membedakan fakta terverifikasi dari cerita yang masih diteliti serta menjelaskan batas bukti kepada pengunjung.','Pemisahan fakta terverifikasi dan cerita yang masih diteliti memungkinkan museum menumbuhkan penghargaan terhadap perjuangan tanpa menyajikan dugaan sebagai kepastian.'],
+ ['Menyatakan cerita populer sebagai fakta karena isinya membangkitkan kebanggaan.','Kemampuan cerita membangkitkan kebanggaan tidak menjadikannya fakta sejarah.'],
+ ['Menyimpulkan tokoh tersebut tidak pernah ada karena arsipnya belum lengkap.','Ketiadaan arsip pendukung belum cukup untuk menyimpulkan bahwa tokoh tidak pernah ada.'],
+ ['Menggabungkan semua versi menjadi cerita tunggal tanpa menyebut perbedaannya.','Penggabungan sumber yang bertentangan tanpa penjelasan justru menyembunyikan batas bukti dari pengunjung.'],
+ ['Menghapus semua materi perjuangan sampai setiap cerita telah disepakati.','Penelitian atas cerita yang belum pasti tidak mengharuskan penundaan seluruh materi yang sudah terverifikasi.']],conclusion:'Popularitas cerita tidak dapat menggantikan verifikasi, sedangkan keterbatasan bukti juga belum membuktikan bahwa tokoh tersebut tidak pernah ada.'}
 ]),
 twk('int-target','Integritas','Akuntabilitas menghubungkan indikator dengan keadaan yang benar-benar terjadi.','Tim layanan mengevaluasi pencapaian target bulanan.','Bedakan perbaikan indikator dari manipulasi hasil.',[
  {fact:'Target mengukur permohonan yang selesai. Beberapa berkas baru diterima, tetapi koordinator meminta semuanya ditandai selesai agar target tercapai.',choices:[

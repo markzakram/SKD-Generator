@@ -6,32 +6,32 @@
     "subtopic": "Konsep Dasar dan Ruang Lingkup",
     "bloom": "C5",
     "difficulty": "hots",
-    "stem": "Sebuah unit layanan memiliki kanal pengaduan resmi, tetapi partisipasi masyarakat masih rendah meskipun keluhan tentang layanan cukup banyak. Pimpinan meminta Anda meningkatkan penggunaan kanal tersebut tanpa sekadar mengejar angka laporan. Tindakan yang paling tepat adalah ...",
+    "stem": "Sebuah unit layanan memiliki kanal pengaduan resmi, tetapi partisipasi masyarakat masih rendah meskipun keluhan tentang layanan cukup banyak. Pengamatan unit menunjukkan banyak warga belum tahu cara menyampaikan dan memantau aduan, sedangkan sebagian lain ragu aduannya akan ditanggapi. Pimpinan meminta Anda meningkatkan penggunaan kanal tersebut tanpa sekadar mengejar angka laporan. Tindakan yang paling tepat adalah ...",
     "options": [
       {
-        "text": "Menyelenggarakan edukasi singkat tentang cara menyampaikan dan memantau aduan, bekerja sama dengan perwakilan komunitas, serta memastikan ada umpan balik atas setiap laporan.",
+        "text": "Mengadakan edukasi singkat cara melapor dan memantau aduan bersama perwakilan komunitas, lalu memberi umpan balik atas setiap laporan.",
         "score": 5,
-        "reason": "Paling partisipatif, edukatif, setara, dan berorientasi pada tindak lanjut."
+        "reason": "Edukasi bersama perwakilan komunitas menjawab hambatan warga yang belum tahu cara melapor, sedangkan umpan balik atas setiap laporan menjawab keraguan bahwa aduan ditanggapi. Kanal tumbuh karena dipercaya, bukan sekadar karena jumlah laporan didorong naik."
       },
       {
-        "text": "Mengirim pesan massal agar masyarakat lebih sering melapor dan membentuk tim pencatat, meskipun tidak semua laporan dapat segera ditindaklanjuti.",
+        "text": "Mengirim pesan massal tentang cara melapor dan memantau aduan kepada seluruh warga, lalu membentuk tim pencatat untuk semua laporan yang masuk.",
         "score": 4,
-        "reason": "Meningkatkan akses dan pencatatan, tetapi berisiko menurunkan kepercayaan jika tindak lanjut tidak jelas."
+        "reason": "Pesan massal menjawab hambatan warga yang belum tahu cara melapor, dan tim pencatat memastikan setiap laporan terekam. Keraguan warga bahwa aduannya ditanggapi belum disentuh karena belum ada umpan balik atas laporan."
       },
       {
-        "text": "Memprioritaskan hanya laporan yang dianggap berdampak besar agar beban kerja tetap terkendali.",
-        "score": 2,
-        "reason": "Efisien bagi organisasi, tetapi mengabaikan kesetaraan dan dapat mengecilkan keluhan yang dianggap tidak penting."
-      },
-      {
-        "text": "Membuka jalur komunikasi khusus untuk tokoh masyarakat yang dinilai paling kooperatif.",
-        "score": 1,
-        "reason": "Menciptakan jalur istimewa dan bertentangan dengan prinsip akses yang setara."
-      },
-      {
-        "text": "Menunda peningkatan partisipasi agar tidak menimbulkan ekspektasi baru dari masyarakat.",
+        "text": "Memprioritaskan penanganan laporan yang berdampak besar, lalu menjawab laporan lain sesuai kapasitas unit yang tersedia.",
         "score": 3,
-        "reason": "Menjaga stabilitas operasional, tetapi pasif dan tidak menjawab kebutuhan masyarakat. Kesulitan Contoh Soal 2 – Prinsip dan Standar Pelayanan Publik Level Bloom: C4 - Menganalisis Tingkat Kesulitan: HOTS"
+        "reason": "Urutan berdasarkan dampak beralasan ketika kapasitas unit terbatas, dan laporan lain tetap dijawab sesuai kapasitas. Namun pimpinan meminta partisipasi naik, sedangkan warga yang belum tahu cara melapor tidak terjangkau langkah ini."
+      },
+      {
+        "text": "Membuka jalur komunikasi khusus bagi tokoh masyarakat yang dinilai paling kooperatif, lalu menanggapi aduan mereka lebih dulu.",
+        "score": 1,
+        "reason": "Jalur khusus bagi tokoh yang dinilai kooperatif membuat kanal resmi tidak lagi setara bagi warga lain yang belum tahu cara melapor. Aduan tokoh didahulukan sehingga keraguan warga bahwa aduannya ditanggapi justru membesar."
+      },
+      {
+        "text": "Mengurungkan upaya meningkatkan penggunaan kanal agar tidak menimbulkan ekspektasi baru, lalu menerima aduan seperti biasa.",
+        "score": 2,
+        "reason": "Mengurungkan upaya tanpa rencana pengganti membiarkan hambatan warga yang belum tahu cara melapor dan ragu aduannya ditanggapi tetap ada. Keluhan yang cukup banyak menunjukkan kebutuhan yang belum terjawab, sedangkan menjaga ekspektasi bukan alasan menahan akses."
       }
     ],
     "answer": 0,
@@ -45,36 +45,36 @@
     "subtopic": "Prinsip dan Standar",
     "bloom": "C4",
     "difficulty": "hots",
-    "stem": "Sistem antrean daring mengalami keterlambatan sinkronisasi. Beberapa warga yang sudah mengambil nomor daring tidak muncul dalam daftar ketika tiba di kantor. Mereka khawatir dianggap tidak hadir, sementara antrean manual sudah mengular. Tindakan yang paling tepat adalah ...",
+    "stem": "Sistem antrean daring mengalami keterlambatan sinkronisasi. Beberapa warga yang sudah mengambil nomor daring tidak muncul dalam daftar ketika tiba di kantor, tetapi mereka membawa bukti nomor di ponsel, dan warga lain dengan nomor daring masih berdatangan. Mereka khawatir dianggap tidak hadir, sementara antrean manual sudah mengular. Menurut ketentuan unit, saat sistem terganggu, antrean daring dan manual digabung menurut waktu pengambilan nomor. Tindakan yang paling tepat adalah ...",
     "options": [
       {
-        "text": "Meminta seluruh warga mengulang antrean secara manual agar data ditata kembali dari awal.",
+        "text": "Meminta seluruh warga mengambil nomor manual baru, lalu menata ulang urutan antrean dari awal menurut nomor manual yang baru.",
         "score": 1,
-        "reason": "Menghapus hak antrean yang telah diperoleh dan berpotensi memicu konflik."
+        "reason": "Pemegang nomor daring yang membawa bukti kehilangan urutan waktu pengambilan nomornya dan harus mengantre di belakang warga manual. Hak antrean yang sudah diperoleh hilang permanen, padahal ketentuan unit menggabungkan kedua antrean menurut waktu pengambilan nomor."
       },
       {
-        "text": "Memasukkan warga ke antrean manual berdasarkan perkiraan nomor yang mereka sebutkan.",
+        "text": "Memeriksa bukti nomor daring di ponsel warga, lalu memasukkan mereka ke antrean manual menurut urutan kedatangan di kantor.",
         "score": 3,
-        "reason": "Memberi solusi cepat, tetapi perkiraan tanpa bukti rawan tidak akurat dan tidak akuntabel."
+        "reason": "Pemeriksaan bukti di ponsel memastikan nomor daring itu sah sehingga warga tidak dianggap tidak hadir. Namun urutan kedatangan tidak sama dengan waktu pengambilan nomor, sehingga warga yang mengambil nomor lebih awal tetapi tiba belakangan kehilangan sebagian haknya."
       },
       {
-        "text": "Menjelaskan gangguan secara terbuka, memverifikasi bukti nomor antrean daring, lalu menempatkan mereka sesuai urutan bukti tersebut.",
+        "text": "Menjelaskan gangguan dan dasar penggabungan kepada semua warga, lalu menempatkan pemegang nomor daring terverifikasi menurut waktu pengambilan nomor.",
         "score": 5,
-        "reason": "Paling transparan, dapat diverifikasi, adil, dan menjaga pelayanan tetap berjalan."
+        "reason": "Penjelasan kepada semua warga yang datang, termasuk yang masih berdatangan, meredakan kekhawatiran dianggap tidak hadir, sedangkan bukti yang terverifikasi mencegah klaim nomor palsu. Penempatan menurut waktu pengambilan nomor memulihkan hak pemegang nomor daring dan tetap adil bagi warga manual sesuai ketentuan penggabungan antrean."
       },
       {
-        "text": "Meminta warga menunggu sampai sistem pulih sambil tetap mengambil nomor antrean manual.",
-        "score": 2,
-        "reason": "Pasif, menggandakan beban warga, dan tidak memberi kepastian."
-      },
-      {
-        "text": "Mengutamakan antrean manual karena sistem daring sedang bermasalah.",
+        "text": "Memverifikasi bukti nomor daring warga yang sudah antre di loket, lalu menempatkan mereka menurut waktu pengambilan nomor.",
         "score": 4,
-        "reason": "Praktis untuk menjaga alur manual, tetapi mengabaikan hak pengguna kanal daring. Kesulitan Contoh Soal 3 – Sikap Pelayanan Prima dan Kepuasan Masyarakat Level Bloom: C4 - Menganalisis Tingkat Kesulitan: HOTS"
+        "reason": "Warga yang sudah menunggu terlayani sesuai waktu pengambilan nomor dan buktinya terverifikasi. Namun warga dengan nomor daring yang masih berdatangan belum mendapat penjelasan tentang dasar penggabungan, sehingga posisi mereka baru jelas setelah bertemu petugas."
+      },
+      {
+        "text": "Melayani antrean manual yang sudah mengular lebih dulu, lalu memanggil pemegang nomor daring pada giliran terakhir.",
+        "score": 2,
+        "reason": "Layanan bagi warga manual tetap berjalan dan tidak ada nomor daring yang dibatalkan. Namun penanganan pemegang nomor daring ditunda ke giliran terakhir, padahal ketentuan unit menggabungkan kedua antrean menurut waktu pengambilan nomor dan bukti mereka sudah ada."
       }
     ],
     "answer": 2,
-    "explanation": "Konsep yang digunakan: Keterbukaan, verifikasi, kepastian proses, keadilan antrean, dan kontinuitas layanan. Kata kunci: gangguan sinkronisasi, bukti antrean, transparansi, urutan, adil Opsi C menjaga hak warga yang telah mengikuti prosedur daring tanpa merugikan warga lain. Verifikasi bukti mencegah manipulasi, penjelasan terbuka mengurangi kecurigaan, dan penempatan sesuai urutan mempertahankan keadilan proses.",
+    "explanation": "Konsep yang digunakan: Keterbukaan, verifikasi, kepastian proses, keadilan antrean, dan kontinuitas layanan. Kata kunci: gangguan sinkronisasi, bukti antrean, transparansi, urutan, adil Opsi C menjaga hak warga yang telah mengikuti prosedur daring karena ketentuan unit menggabungkan kedua antrean menurut waktu pengambilan nomor, sehingga warga manual tetap diperlakukan sama. Verifikasi bukti mencegah klaim palsu, penjelasan terbuka mengurangi kecurigaan, dan penempatan menurut waktu pengambilan nomor mempertahankan keadilan proses.",
     "source": "Panduan Produksi Soal TKP JadiASN — Pelayanan Publik, contoh 2"
   },
   {
@@ -84,32 +84,32 @@
     "subtopic": "Pelayanan Prima dan Kepuasan",
     "bloom": "C4",
     "difficulty": "hots",
-    "stem": "Anda sedang memproses permohonan yang mendesak. Aplikasi layanan tiba-tiba sangat lambat sehingga penyelesaian satu dokumen memerlukan waktu lebih lama. Pengguna mulai gelisah dan terus menanyakan kapan proses selesai. Sikap Anda adalah ...",
+    "stem": "Anda sedang memproses permohonan yang mendesak. Aplikasi layanan tiba-tiba sangat lambat sehingga penyelesaian satu dokumen memerlukan waktu lebih lama. Pengguna mulai gelisah dan terus menanyakan kapan proses selesai karena harus tiba di instansi lain pukul 15.00. Dari kecepatan beberapa dokumen terakhir, Anda dapat memperkirakan waktu proses. Prosedur unit membolehkan pengguna menitipkan berkas dan menerima pemberitahuan saat selesai, sedangkan layar sistem memuat data pengguna lain. Sikap Anda adalah ...",
     "options": [
       {
-        "text": "Meminta pengguna tidak banyak bertanya karena pertanyaan tersebut menambah tekanan kerja.",
+        "text": "Meminta pengguna tidak banyak bertanya karena menambah tekanan, lalu melanjutkan dokumen secepat mungkin.",
         "score": 1,
-        "reason": "Tidak empatik dan berpotensi memperburuk konflik."
+        "reason": "Pengguna yang gelisah karena harus tiba di instansi lain pukul 15.00 justru diminta diam, seolah pertanyaannya penyebab tekanan kerja. Kegagalan aplikasi dialihkan menjadi kesalahan pengguna dan konflik berpotensi membesar."
       },
       {
-        "text": "Menunjukkan seluruh layar sistem agar pengguna melihat sendiri bahwa aplikasi sedang bermasalah.",
-        "score": 4,
-        "reason": "Transparan, tetapi memperlihatkan layar internal dapat menimbulkan risiko keamanan atau kerahasiaan."
-      },
-      {
-        "text": "Mengalihkan pembicaraan ke topik lain agar pengguna tidak terlalu memikirkan keterlambatan.",
-        "score": 2,
-        "reason": "Menghindari inti masalah dan tidak memberikan kepastian."
-      },
-      {
-        "text": "Meminta pengguna meninggalkan berkas dan berjanji menghubungi setelah sistem kembali lancar.",
+        "text": "Menunjukkan layar ringkasan proses yang tidak memuat data pengguna lain, lalu menjelaskan bahwa kendala ada pada aplikasi.",
         "score": 3,
-        "reason": "Praktis, tetapi memindahkan beban dan belum tentu sesuai kebutuhan pengguna."
+        "reason": "Layar ringkasan tanpa data pengguna lain membuktikan aplikasi memang lambat dan tetap menjaga kerahasiaan. Namun pertanyaan pengguna tentang kapan permohonannya selesai belum dijawab dan tidak ada permintaan maaf."
       },
       {
-        "text": "Tetap tenang, meminta maaf atas kendala, menjelaskan situasi seperlunya, dan memberikan estimasi waktu tunggu yang realistis.",
+        "text": "Mengalihkan pembicaraan ke topik lain agar pengguna tenang, lalu melanjutkan dokumen sesuai antrean.",
+        "score": 2,
+        "reason": "Pertanyaan pengguna tentang kapan proses selesai tidak dijawab karena pembicaraan dibelokkan. Kegelisahannya tidak berkurang dan kendala aplikasi tetap tidak dijelaskan, sehingga masalah yang membuatnya gelisah dibiarkan."
+      },
+      {
+        "text": "Menawarkan pengguna menitipkan berkas, lalu mengirim pemberitahuan setelah dokumen selesai diproses.",
+        "score": 4,
+        "reason": "Penitipan dan pemberitahuan sesuai prosedur membebaskan pengguna dari menunggu di loket. Namun ia belum mendapat permintaan maaf, penjelasan kendala, atau perkiraan lama proses, sehingga belum dapat menilai apakah dokumennya selesai sebelum pukul 15.00."
+      },
+      {
+        "text": "Meminta maaf atas kendala dan menjelaskan situasi, lalu memberi perkiraan waktu dari kecepatan dokumen terakhir.",
         "score": 5,
-        "reason": "Paling seimbang dalam empati, informasi, kepastian, dan profesionalisme. Hambatan Kesulitan Contoh Soal 4 – Pelayanan yang Adil, Inklusif, dan Tidak Diskriminatif Level Bloom: C4 - Menganalisis Tingkat Kesulitan: HOTS"
+        "reason": "Permintaan maaf dan penjelasan menenangkan pengguna yang gelisah, sedangkan perkiraan dari kecepatan dokumen terakhir menjawab pertanyaannya sehingga ia dapat memutuskan menunggu atau menitipkan berkas agar tiba pukul 15.00. Data pengguna lain tidak dibuka dan tidak ada janji pasti yang belum dapat dijamin."
       }
     ],
     "answer": 4,
@@ -123,32 +123,32 @@
     "subtopic": "Adil, Inklusif, dan Tidak Diskriminatif",
     "bloom": "C4",
     "difficulty": "hots",
-    "stem": "Anda bertugas di loket prioritas untuk lansia, ibu hamil, dan penyandang disabilitas. Seorang warga yang tidak termasuk kategori prioritas meminta dilayani di loket tersebut karena sedang terburu-buru. Ia mengancam akan mengajukan laporan jika permintaannya ditolak. Tindakan paling tepat adalah ...",
+    "stem": "Anda bertugas di loket prioritas untuk lansia, ibu hamil, dan penyandang disabilitas. Seorang warga yang tidak termasuk kategori prioritas meminta dilayani di loket tersebut karena sedang terburu-buru. Ia mengancam akan mengajukan laporan jika permintaannya ditolak. Dari meja Anda, pengecekan awal berkas dapat dilakukan tanpa menghentikan layanan bagi pengguna prioritas. Tindakan paling tepat adalah ...",
     "options": [
       {
-        "text": "Menjelaskan tujuan loket prioritas, meminta pengertian, dan menawarkan bantuan pengecekan awal tanpa memotong antrean.",
+        "text": "Menjelaskan tujuan loket prioritas dan meminta pengertian, lalu menawarkan pengecekan awal dari meja tanpa memotong antrean.",
         "score": 5,
-        "reason": "Paling adil, empatik, dan tetap konsisten dengan tujuan loket prioritas."
+        "reason": "Penjelasan tujuan loket menjaga hak lansia, ibu hamil, dan penyandang disabilitas, sedangkan pengecekan awal dari meja membantu warga yang terburu-buru tanpa menghentikan layanan prioritas. Ancaman laporan tidak dituruti dan akomodasi yang sah dibedakan dari keistimewaan."
       },
       {
-        "text": "Meminta warga tetap menggunakan jalur reguler dan menegaskan aturan secara singkat.",
+        "text": "Mengarahkan warga ke jalur reguler dengan nomor antrean yang berlaku, lalu menunjukkan papan ketentuan loket prioritas di depan loket.",
         "score": 4,
-        "reason": "Sesuai aturan, tetapi kurang membantu dan dapat terasa kaku."
+        "reason": "Warga segera diarahkan ke jalur yang berhak dan papan ketentuan menunjukkan dasar aturan tanpa memotong antrean. Namun tidak ada penjelasan langsung dan tawaran pengecekan awal dari meja, sehingga warga yang terburu-buru belum merasa terbantu."
       },
       {
-        "text": "Melayani warga tersebut di loket prioritas agar konflik tidak membesar.",
+        "text": "Melayani warga tersebut lebih dulu di loket prioritas, lalu melanjutkan pengguna prioritas yang sudah antre.",
         "score": 1,
-        "reason": "Mengorbankan hak pengguna prioritas dan memberi insentif pada ancaman."
+        "reason": "Warga non-prioritas didahulukan karena ancaman laporan, sehingga lansia, ibu hamil, dan penyandang disabilitas yang sudah menunggu tergeser. Perilaku mengancam justru diberi imbalan dan fungsi loket prioritas hilang."
       },
       {
-        "text": "Mengarahkan warga kepada petugas lain agar Anda tidak menghadapi komplain.",
+        "text": "Memindahkan warga ke petugas lain, lalu melanjutkan melayani pengguna prioritas yang sudah antre di loket.",
         "score": 2,
-        "reason": "Menghindari tanggung jawab serta memindahkan konflik."
+        "reason": "Warga yang terburu-buru dipindahkan ke petugas lain tanpa dipastikan terlayani, padahal Anda dapat membantu pengecekan awal dari meja. Ancaman laporan tidak dijawab dan keluhan hanya berpindah tangan."
       },
       {
-        "text": "Meminta warga menulis keluhan terlebih dahulu sebelum diarahkan ke jalur reguler.",
+        "text": "Meminta warga menulis keluhan terlebih dahulu di loket pengaduan terdekat, lalu mengarahkannya ke jalur reguler.",
         "score": 3,
-        "reason": "Menjaga prosedur, tetapi menambah langkah yang tidak perlu dan belum menyelesaikan kebutuhan. Diskresi dalam Soal Jangan menggambarkan diskresi sebagai kebebasan mengabaikan aturan. Diskresi yang layak harus memiliki tujuan pelayanan yang jelas, alasan objektif, kewenangan atau koordinasi yang tepat, dampak yang proporsional, dan dapat dipertanggungjawabkan. Kesulitan Contoh Soal 5 – Pengambilan Keputusan dalam Skenario Pelayanan Publik Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+        "reason": "Prosedur pengaduan memang tersedia dan loket prioritas tidak terganggu. Namun menulis keluhan menambah langkah yang tidak perlu bagi warga yang terburu-buru, dan kebutuhannya tidak terjawab oleh pengecekan awal yang dapat dilakukan dari meja."
       }
     ],
     "answer": 0,
@@ -162,32 +162,32 @@
     "subtopic": "Pengambilan Keputusan",
     "bloom": "C5",
     "difficulty": "hots",
-    "stem": "Petugas layanan perjalanan menemukan dokumen identitas seorang pengguna sedikit rusak pada bagian sudut, tetapi data utama masih terbaca. Aturan menyatakan dokumen rusak dapat ditolak oleh otoritas tujuan. Pengguna memohon karena harus menghadiri pemakaman orang tuanya dan tidak memiliki waktu mengurus dokumen baru. Tindakan yang sebaiknya dilakukan adalah ...",
+    "stem": "Petugas layanan perjalanan menemukan dokumen identitas seorang pengguna sedikit rusak pada bagian sudut, tetapi data utama masih terbaca. Aturan menyatakan dokumen rusak dapat ditolak oleh otoritas tujuan. Hanya penerbit dokumen dan otoritas tujuan yang dapat memastikan kelayakannya, sedangkan petugas dan pimpinan loket tidak berwenang menilai kelayakan maupun membuat pengecualian. Pengguna memohon karena harus menghadiri pemakaman orang tuanya dan tidak memiliki waktu mengurus dokumen baru. Tindakan yang sebaiknya dilakukan adalah ...",
     "options": [
       {
-        "text": "Mengizinkan pengguna melanjutkan proses karena kondisi kedukaan merupakan alasan kemanusiaan.",
+        "text": "Menyatakan kepada pengguna bahwa dokumen masih dapat diterima, lalu mengizinkannya melanjutkan proses karena alasan kemanusiaan.",
         "score": 2,
-        "reason": "Empatik, tetapi melampaui kewenangan dan dapat menimbulkan risiko lebih besar bagi pengguna."
+        "reason": "Petugas tidak berwenang menilai kelayakan dokumen, sehingga pernyataan bahwa dokumen diterima belum dapat dipastikan. Pengguna bisa tertolak di tujuan setelah berangkat, justru saat tidak lagi sempat mengurus dokumen baru."
       },
       {
-        "text": "Menolak secara tegas tanpa penjelasan tambahan karena aturan harus dipatuhi.",
+        "text": "Menolak proses karena aturan menyebut dokumen rusak dapat ditolak, lalu menyarankan pengguna mengurus dokumen baru.",
         "score": 3,
-        "reason": "Patuh aturan, tetapi terlalu kaku dan tidak mencoba mencari solusi."
+        "reason": "Aturan memang menyebut dokumen rusak dapat ditolak, dan penolakan menghindarkan pengguna dari risiko di tujuan. Namun data utama yang masih terbaca membuka peluang pemeriksaan resmi, sehingga menolak tanpa menawarkan pengecekan menutup jalan keluar yang sah."
       },
       {
-        "text": "Membantu pengguna berkoordinasi dengan otoritas dokumen dan penyedia layanan untuk memastikan apakah tingkat kerusakan masih dapat diterima.",
+        "text": "Membantu pengguna menghubungi penerbit dokumen dan otoritas tujuan, lalu melanjutkan sesuai hasil pemeriksaan mereka.",
         "score": 5,
-        "reason": "Paling legal, empatik, solutif, dan sesuai batas kewenangan."
+        "reason": "Penerbit dokumen dan otoritas tujuan adalah pihak yang dapat memastikan apakah kerusakan sudut masih dapat diterima, sehingga proses mengikuti kewenangan yang sah. Pengguna yang berduka dibantu mencari kepastian tanpa janji keberangkatan dan tanpa melanggar aturan."
       },
       {
-        "text": "Menyarankan pengguna memperbaiki bagian yang rusak secara mandiri agar tidak terlihat.",
+        "text": "Menyarankan pengguna merapikan sudut yang rusak sendiri, lalu melanjutkan proses memakai dokumen yang sudah dirapikan itu.",
         "score": 1,
-        "reason": "Mendorong manipulasi dokumen dan bertentangan dengan integritas."
+        "reason": "Memperbaiki sudut dokumen identitas sendiri mengubah dokumen resmi dan dapat dinilai sebagai pemalsuan oleh otoritas tujuan. Pengguna menanggung risiko lebih besar daripada sekadar penolakan, padahal data utama sebenarnya masih terbaca."
       },
       {
-        "text": "Langsung meminta pimpinan membuat pengecualian khusus agar pengguna dapat berangkat.",
+        "text": "Menghubungi otoritas tujuan untuk menanyakan kelayakan dokumen itu, lalu menyampaikan jawabannya kepada pengguna.",
         "score": 4,
-        "reason": "Berusaha membantu melalui eskalasi, tetapi melewati koordinasi teknis yang seharusnya dilakukan terlebih dahulu. Prinsip Kunci Respons terbaik bukan selalu yang paling formal atau paling akrab. Nilai tinggi muncul ketika peserta memilih cara yang tepat untuk pihak, masalah, waktu, dan risiko: langsung tetapi sopan, terbuka tetapi menjaga kerahasiaan, kolaboratif tetapi tetap jelas peran dan tanggung jawabnya. Kesulitan Kesulitan Kesulitan Contoh Soal 2 – Komunikasi, Koordinasi, dan Berbagi Informasi Level Bloom: C4 – Menganalisis Tingkat Kesulitan: HOTS"
+        "reason": "Otoritas tujuan adalah pihak yang menerima atau menolak dokumen, sehingga jawabannya langsung menentukan keberangkatan dan tidak memerlukan pengecualian. Namun penerbit dokumen yang dapat memastikan keabsahan dokumen tidak dihubungi, sehingga kepastian baru datang dari satu pihak."
       }
     ],
     "answer": 2,
@@ -201,32 +201,32 @@
     "subtopic": "Komunikasi, Koordinasi, dan Berbagi Informasi",
     "bloom": "C4",
     "difficulty": "hots",
-    "stem": "Koordinasi lintas bagian sering terlambat karena informasi penting hanya diketahui sebagian pegawai atau baru dibagikan setelah diminta. Sikap yang paling tepat untuk mendukung kerja tim adalah ...",
+    "stem": "Koordinasi lintas bagian sering terlambat karena informasi penting hanya diketahui sebagian pegawai atau baru dibagikan setelah diminta. Informasi itu berupa pembaruan jadwal dan versi data kerja yang dipakai tiga bagian, dan sebagian datanya hanya boleh diakses pihak yang membutuhkannya. Saluran internal bersama sudah tersedia bagi Anda, sedangkan rapat koordinasi antarbagian hanya diadakan sekali sepekan. Sikap yang paling tepat untuk mendukung kerja tim adalah ...",
     "options": [
       {
-        "text": "Membagikan informasi hanya sejauh berkaitan langsung dengan tugas pribadi.",
+        "text": "Memberi tahu rekan di bagian Anda sendiri, lalu mempersilakan bagian lain menanyakan pembaruan itu bila membutuhkannya.",
         "score": 2,
-        "reason": "Berbagi secara sangat terbatas sehingga kebutuhan lintas bagian dan tujuan bersama dapat terabaikan."
+        "reason": "Pembaruan hanya sampai kepada rekan sebagian bagian, padahal tiga bagian memakai versi data yang sama. Bagian lain harus menanyakan sendiri, sehingga keterlambatan koordinasi yang menjadi masalah tetap berulang."
       },
       {
-        "text": "Menyampaikan informasi kepada beberapa rekan yang dianggap paling membutuhkan tanpa menunggu permintaan.",
+        "text": "Menyampaikan pembaruan beserta nomor versinya kepada beberapa rekan yang dianggap paling membutuhkan, lalu menjawab pertanyaan mereka.",
         "score": 4,
-        "reason": "Proaktif dan membantu, tetapi masih selektif sehingga belum menjamin akses informasi yang merata."
+        "reason": "Pembaruan dan nomor versi disampaikan tanpa menunggu permintaan, dan pertanyaan penerima dijawab. Namun penerimanya dipilih berdasarkan anggapan Anda, sehingga akses informasi belum merata bagi bagian yang tidak terpilih."
       },
       {
-        "text": "Menyebarkan informasi yang dibutuhkan melalui saluran internal yang sesuai dan membuka ruang klarifikasi bagi pihak terkait.",
+        "text": "Mengunggah pembaruan dan nomor versinya ke saluran internal dengan akses sesuai kebutuhan, lalu membuka ruang klarifikasi.",
         "score": 5,
-        "reason": "Proaktif, inklusif, menggunakan kanal yang tepat, dan menyediakan ruang untuk memastikan pemahaman."
+        "reason": "Ketiga bagian yang memakai data menerima pembaruan dan versi yang sama lewat saluran internal, sedangkan akses sesuai kebutuhan menjaga data terbatas tetap aman. Ruang klarifikasi memastikan perbedaan pemahaman selesai sebelum menghambat pekerjaan."
       },
       {
-        "text": "Menyimpan informasi sampai atasan atau rekan meminta secara eksplisit.",
+        "text": "Mengirim seluruh data kerja kepada semua pegawai lewat surel, lalu meminta mereka menyimpan salinannya di komputer masing-masing.",
         "score": 1,
-        "reason": "Pasif dan menciptakan hambatan informasi yang dapat memperlambat pekerjaan."
+        "reason": "Data yang hanya boleh diakses pihak yang membutuhkannya terkirim kepada pegawai yang tidak berhak. Salinan yang menyebar juga membuat tiga bagian sulit memastikan versi data kerja mana yang berlaku."
       },
       {
-        "text": "Menunggu rapat formal berikutnya agar seluruh informasi disampaikan dalam satu forum.",
+        "text": "Mencatat pembaruan beserta nomor versinya, lalu menyampaikannya pada rapat koordinasi bersama semua bagian.",
         "score": 3,
-        "reason": "Menjaga keteraturan, tetapi terlalu lambat untuk kebutuhan informasi yang memengaruhi pekerjaan berjalan. Kesulitan Kesulitan Contoh Soal 3 – Kolaborasi dan Penyelesaian Masalah dalam Tim Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+        "reason": "Pembaruan tercatat rapi dan semua bagian menerima versi yang sama dalam forum bersama. Namun rapat hanya diadakan sekali sepekan, sehingga bagian yang memakai data tetap bekerja dengan jadwal dan versi lama padahal saluran internal sudah tersedia."
       }
     ],
     "answer": 2,
@@ -240,32 +240,32 @@
     "subtopic": "Kolaborasi dan Penyelesaian Masalah dalam Tim",
     "bloom": "C5",
     "difficulty": "hots",
-    "stem": "Dua anggota tim memiliki cara kerja berbeda dan mulai saling menyalahkan atas keterlambatan target. Ketegangan mulai memengaruhi anggota lain. Tindakan yang paling tepat adalah ...",
+    "stem": "Anda koordinator tim yang berwenang membagi tugas dan memfasilitasi pertemuan, tetapi penggantian anggota hanya dapat diputuskan pimpinan unit. Dua anggota tim memiliki cara kerja berbeda dan mulai saling menyalahkan atas keterlambatan target. Ketegangan mulai memengaruhi anggota lain, sedangkan batas target masih dua minggu lagi. Tindakan yang paling tepat adalah ...",
     "options": [
       {
-        "text": "Meminta keduanya menyelesaikan masalah sendiri agar anggota lain tidak terlibat.",
-        "score": 2,
-        "reason": "Memberi ruang mandiri, tetapi terlalu pasif ketika konflik sudah memengaruhi tim dan membutuhkan fasilitasi."
-      },
-      {
-        "text": "Menegur keduanya di depan tim agar menjadi pelajaran bersama.",
-        "score": 1,
-        "reason": "Mempermalukan pihak di depan umum, meningkatkan defensif, dan dapat merusak kepercayaan tim."
-      },
-      {
-        "text": "Mengundang keduanya berdiskusi secara pribadi untuk menggali akar masalah dan merumuskan solusi bersama.",
-        "score": 5,
-        "reason": "Empatik, objektif, langsung menangani akar masalah, dan melibatkan kedua pihak dalam solusi."
-      },
-      {
-        "text": "Menunda pembahasan konflik agar tim berfokus dahulu pada pekerjaan yang mendesak.",
-        "score": 3,
-        "reason": "Menjaga fokus jangka pendek, tetapi membiarkan konflik berlarut dan mengganggu produktivitas berikutnya."
-      },
-      {
-        "text": "Mengganti salah satu anggota yang dianggap paling banyak menimbulkan masalah.",
+        "text": "Membagi ulang tugas kedua anggota agar tidak saling bergantung, lalu memberi tahu masing-masing secara pribadi.",
         "score": 4,
-        "reason": "Tegas dan dapat menghentikan gangguan, tetapi terlalu drastis tanpa pemeriksaan menyeluruh dan upaya perbaikan. Kesulitan Contoh Soal 4 – Pengembangan Hubungan Kerja dan Kemitraan Produktif Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+        "reason": "Pembagian ulang tugas berada dalam wewenang Anda dan langsung mengurangi gesekan sebelum target dua minggu lagi. Namun keduanya belum diajak menyampaikan versi masing-masing, sehingga perbedaan cara kerja dan sumber saling menyalahkan belum dibahas."
+      },
+      {
+        "text": "Menegur keduanya di depan seluruh tim agar menjadi pelajaran, lalu meminta mereka saling meminta maaf di hadapan tim.",
+        "score": 1,
+        "reason": "Teguran dan permintaan maaf paksa di hadapan seluruh tim mempermalukan kedua anggota tanpa tujuan perbaikan yang jelas. Ketegangan yang sudah memengaruhi anggota lain justru menjadi tontonan dan tidak diselesaikan."
+      },
+      {
+        "text": "Mengundang keduanya berdiskusi pribadi untuk menggali akar masalah, lalu menyepakati pembagian kerja dan tinjauan lanjutan.",
+        "score": 5,
+        "reason": "Diskusi pribadi menjaga martabat kedua anggota dan membuka fakta di balik saling menyalahkan, sedangkan pembagian kerja baru dan tinjauan lanjutan menjawab keterlambatan target. Wewenang membagi tugas dipakai tanpa melampaui keputusan pimpinan unit."
+      },
+      {
+        "text": "Mengesampingkan pembahasan konflik agar tim berfokus pada pekerjaan mendesak, lalu membahasnya pada rapat evaluasi akhir proyek.",
+        "score": 2,
+        "reason": "Batas target masih dua minggu lagi, sehingga ada waktu menangani konflik sekarang, tetapi pembahasan baru dijadwalkan pada rapat evaluasi akhir proyek. Ketegangan yang sudah memengaruhi anggota lain dibiarkan berlarut dan mengganggu produktivitas."
+      },
+      {
+        "text": "Meminta pimpinan unit mengganti salah satu anggota yang dianggap paling bermasalah, lalu menyerahkan keputusannya kepada pimpinan unit tersebut.",
+        "score": 3,
+        "reason": "Penggantian memang hanya dapat diputuskan pimpinan unit, tetapi permintaan diajukan sebelum Anda mendengar kedua pihak atau memfasilitasi pertemuan yang menjadi wewenang Anda. Tanpa pemeriksaan menyeluruh, penyebab saling menyalahkan tidak diketahui dan dapat berulang pada anggota pengganti."
       }
     ],
     "answer": 2,
@@ -279,32 +279,32 @@
     "subtopic": "Pengembangan Hubungan Kerja dan Kemitraan Produktif",
     "bloom": "C5",
     "difficulty": "hots",
-    "stem": "Dalam proyek lintas organisasi, seorang rekan memiliki koneksi luas dengan pihak eksternal yang relevan. Dukungan koneksi tersebut dapat mempercepat proyek, tetapi pendekatan yang terlalu langsung dapat menimbulkan kesan bahwa hubungan itu hanya dimanfaatkan. Tindakan yang paling tepat adalah ...",
+    "stem": "Dalam proyek lintas organisasi, seorang rekan memiliki koneksi luas dengan pihak eksternal yang relevan. Kerja sama dengan pihak eksternal hanya sah melalui proses kerja sama yang berlaku, yang biasanya memerlukan waktu sebulan, sedangkan proyek perlu kepastian dalam dua minggu. Rekan itu dapat membantu mempercepat proses tersebut bila bersedia, tetapi pendekatan yang terlalu langsung dapat menimbulkan kesan bahwa hubungan itu hanya dimanfaatkan. Tindakan yang paling tepat adalah ...",
     "options": [
       {
-        "text": "Segera meminta rekan mengenalkan Anda kepada semua pihak yang relevan.",
+        "text": "Meminta rekan memperkenalkan Anda kepada semua pihak yang relevan, lalu membahas kebutuhan proyek lewat hubungan pribadinya.",
         "score": 2,
-        "reason": "Proaktif, tetapi terlalu langsung dan berisiko menimbulkan kesan memanfaatkan hubungan pribadi."
+        "reason": "Perkenalan lewat hubungan pribadi menyelesaikan urusan di luar proses kerja sama yang berlaku, sehingga rekan terkesan hanya dimanfaatkan. Kesediaan rekan dan persetujuan resmi pihak eksternal belum dipastikan."
       },
       {
-        "text": "Mendiskusikan tujuan dan kebutuhan proyek secara terbuka, kemudian meminta dukungan koneksinya secara proporsional dengan tetap menjaga hubungan profesional.",
+        "text": "Mendiskusikan tujuan proyek dan batas proses kerja sama dengan rekan, lalu meminta kesediaannya membantu melalui jalur formal.",
         "score": 5,
-        "reason": "Transparan, strategis, menghargai rekan, dan memanfaatkan jejaring secara etis untuk tujuan bersama."
+        "reason": "Rekan diberi konteks tujuan proyek dan batas proses, sehingga ia dapat menilai kesediaannya, sedangkan kerja sama tetap diajukan lewat proses yang berlaku. Koneksinya dipakai untuk mempercepat keputusan dalam dua minggu tanpa meminta akses istimewa."
       },
       {
-        "text": "Mengandalkan jalur formal antarorganisasi agar hubungan pribadi tidak pernah digunakan.",
+        "text": "Mengajukan permohonan kerja sama melalui jalur formal antarorganisasi, lalu memberi tahu rekan perkembangan permohonan itu.",
         "score": 4,
-        "reason": "Menjaga profesionalisme, tetapi terlalu membatasi potensi sinergi yang sebenarnya dapat digunakan secara sah."
+        "reason": "Jalur formal sesuai proses kerja sama yang berlaku dan menjaga hubungan profesional. Namun prosesnya biasanya sebulan, sedangkan proyek perlu kepastian dua minggu, dan koneksi rekan yang dapat mempercepatnya belum dimanfaatkan."
       },
       {
-        "text": "Menunggu sampai rekan tersebut menawarkan bantuan koneksi atas inisiatifnya sendiri.",
+        "text": "Menunggu rekan menawarkan bantuan koneksinya, lalu mengajukan permohonan formal bila tawaran itu tidak datang.",
         "score": 3,
-        "reason": "Menghargai kenyamanan rekan, tetapi terlalu pasif dan dapat membuat peluang kerja sama hilang."
+        "reason": "Menunggu tawaran menghargai kenyamanan rekan dan permohonan formal tetap menjadi cadangan. Namun proses yang memerlukan waktu sebulan baru dimulai setelah menunggu, sehingga batas dua minggu proyek hampir pasti terlewat."
       },
       {
-        "text": "Menggunakan jalur lain dan tidak melibatkan rekan tersebut untuk menghindari kemungkinan salah paham.",
+        "text": "Meminta pihak eksternal langsung memberi akses khusus tanpa proses kerja sama, lalu menyebut rekan Anda sebagai penjamin.",
         "score": 1,
-        "reason": "Menghindari kolaborasi tanpa mencoba komunikasi, sehingga sumber daya relevan tidak dimanfaatkan. Kesulitan Contoh Soal 1 – Konsep Dasar, Unsur, dan Struktur Sosial Budaya Level Bloom: C4 – Menganalisis Tingkat Kesulitan: HOTS"
+        "reason": "Akses khusus tanpa proses kerja sama menyalahi ketentuan yang berlaku dan memberi keistimewaan lewat nama rekan. Rekan dijadikan penjamin tanpa kesediaannya, sehingga kepercayaan dan hubungan profesionalnya dengan pihak eksternal terancam."
       }
     ],
     "answer": 1,
@@ -318,32 +318,32 @@
     "subtopic": "Konsep Dasar, Unsur, dan Struktur Sosial Budaya",
     "bloom": "C4",
     "difficulty": "hots",
-    "stem": "Sebagian warga menganggap kegiatan budaya daerah tidak lagi relevan bagi generasi muda dan mengusulkan agar kegiatan tersebut diganti sepenuhnya dengan acara modern. Sebagai koordinator kegiatan, tindakan yang paling tepat adalah ...",
+    "stem": "Sebagian warga menganggap kegiatan budaya daerah tidak lagi relevan bagi generasi muda dan mengusulkan agar kegiatan tersebut diganti sepenuhnya dengan acara modern. Generasi muda ingin tampil dalam format yang lebih ringkas, sedangkan tokoh budaya menjaga unsur utama tradisi. Sebagai koordinator kegiatan, Anda tahu format ditetapkan panitia setelah mendengar kedua pihak. Tindakan yang paling tepat adalah ...",
     "options": [
       {
-        "text": "Mengganti seluruh kegiatan budaya dengan acara modern agar partisipasi meningkat.",
+        "text": "Mengganti sebagian besar kegiatan budaya dengan acara modern, lalu menyisakan satu sesi tradisi singkat.",
         "score": 1,
-        "reason": "Responsif terhadap minat baru, tetapi menghapus fungsi identitas dan mengabaikan kelompok yang masih memaknai tradisi."
+        "reason": "Keputusan diambil tanpa mendengar tokoh budaya, padahal format ditetapkan panitia setelah mendengar kedua pihak, sehingga unsur utama tradisi hanya tersisa dalam satu sesi singkat. Ruang pelestarian ada tetapi sempit, dan hak tokoh budaya untuk didengar tertutup."
       },
       {
-        "text": "Mempertahankan kegiatan budaya tanpa perubahan karena tradisi tidak boleh disesuaikan.",
+        "text": "Mempertahankan susunan kegiatan budaya, lalu menambahkan satu sesi singkat bagi generasi muda.",
         "score": 3,
-        "reason": "Menjaga budaya, tetapi terlalu kaku dan tidak membuka ruang adaptasi maupun partisipasi generasi muda."
+        "reason": "Unsur utama tradisi terjaga dan generasi muda mendapat satu sesi, sehingga ada ruang bagi keduanya. Namun susunan ditetapkan tanpa mendengar generasi muda, sehingga keinginan mereka akan format ringkas hanya terjawab di satu sesi."
       },
       {
-        "text": "Mengajak warga dan generasi muda berdialog, menjelaskan fungsi budaya sebagai identitas bersama, lalu merancang format yang lebih relevan tanpa menghilangkan unsur utamanya.",
+        "text": "Mengajak warga, tokoh budaya, dan generasi muda berdialog, lalu merancang format baru yang memuat unsur utama.",
         "score": 5,
-        "reason": "Memahami fungsi budaya, melibatkan pihak terkait, dan menyeimbangkan pelestarian dengan perubahan."
+        "reason": "Dialog mempertemukan harapan tokoh budaya akan unsur utama dengan keinginan generasi muda akan format ringkas, dan format diputuskan bersama sesuai mekanisme panitia. Pelestarian dan partisipasi sama-sama terjawab."
       },
       {
-        "text": "Menyerahkan keputusan sepenuhnya kepada tokoh budaya karena mereka paling memahami tradisi.",
+        "text": "Menetapkan unsur utama yang dipertahankan bersama tokoh budaya, lalu mempersilakan generasi muda menyusun formatnya.",
         "score": 4,
-        "reason": "Menghormati legitimasi tokoh budaya, tetapi terlalu menyerahkan keputusan dan belum melibatkan kelompok terdampak secara luas."
+        "reason": "Unsur utama ditetapkan bersama tokoh budaya dan generasi muda memperoleh ruang menyusun format yang ringkas, sehingga pelestarian dan partisipasi sama-sama berjalan. Namun warga yang mengusulkan pergantian belum dilibatkan, sehingga alasan mereka menganggap kegiatan tidak relevan belum dijawab."
       },
       {
-        "text": "Menjalankan dua kegiatan secara terpisah agar kelompok tradisional dan modern tidak perlu berinteraksi.",
+        "text": "Menjalankan dua kegiatan terpisah di tempat berbeda, lalu mempersilakan tiap kelompok menyusun acaranya sendiri-sendiri.",
         "score": 2,
-        "reason": "Menghindari konflik jangka pendek, tetapi memperlebar jarak sosial dan tidak membangun identitas bersama. Kesulitan Contoh Soal 2 – Adaptasi dalam Masyarakat Majemuk Level Bloom: C4 – Menganalisis Tingkat Kesulitan: HOTS"
+        "reason": "Pemisahan tempat memberi ruang bagi tradisi dan acara modern tanpa saling memaksa. Namun kedua kelompok tidak pernah merancang bersama, sehingga pertanyaan apakah unsur utama tradisi dapat dikenalkan kepada generasi muda tetap tidak terjawab."
       }
     ],
     "answer": 2,
@@ -357,32 +357,32 @@
     "subtopic": "Adaptasi dalam Masyarakat Majemuk",
     "bloom": "C4",
     "difficulty": "hots",
-    "stem": "Anda ditugaskan di daerah yang memiliki tradisi kuat. Anda diundang menghadiri acara yang mengharuskan tamu mengenakan pakaian tradisional, tetapi Anda tidak memiliki pakaian tersebut. Tindakan yang paling tepat adalah ...",
+    "stem": "Anda ditugaskan di daerah yang memiliki tradisi kuat dan diundang menghadiri acara yang mengharuskan tamu mengenakan pakaian tradisional, tetapi Anda tidak memiliki pakaian tersebut. Undangan itu dimaksudkan untuk memperkenalkan Anda kepada warga. Panitia biasa meminjamkan pakaian kepada tamu dan juga membolehkan tamu diwakilkan rekan sekantor. Tindakan yang paling tepat adalah ...",
     "options": [
       {
-        "text": "Datang dengan pakaian kasual karena kehadiran lebih penting daripada aturan pakaian.",
+        "text": "Datang dengan pakaian kasual karena kehadiran lebih penting daripada aturan pakaian, lalu menjelaskan alasannya kepada panitia.",
         "score": 1,
-        "reason": "Tetap hadir, tetapi mengutamakan kenyamanan pribadi dan berisiko dianggap mengabaikan makna simbolik acara."
+        "reason": "Aturan pakaian tradisional dilanggar secara sengaja padahal panitia biasa meminjamkan pakaian kepada tamu. Acara yang dimaksudkan memperkenalkan Anda kepada warga justru memberi kesan pertama yang kurang menghormati makna simbolik acara."
       },
       {
-        "text": "Menolak undangan agar tidak dianggap tidak menghormati aturan pakaian.",
+        "text": "Menolak undangan agar tidak dianggap melanggar aturan pakaian, lalu menawarkan bertemu warga pada kesempatan lain.",
         "score": 3,
-        "reason": "Menghindari pelanggaran, tetapi memilih mundur sebelum mencari solusi atau berkomunikasi."
+        "reason": "Penolakan menghindari pelanggaran aturan pakaian dan disertai tawaran bertemu lain waktu. Namun panitia biasa meminjamkan pakaian dan membolehkan perwakilan, sehingga jalan keluar yang sah tidak dicoba dan tujuan perkenalan batal."
       },
       {
-        "text": "Meminta panitia mengubah aturan pakaian karena tidak semua tamu memilikinya.",
+        "text": "Meminta panitia mengubah aturan pakaian bagi seluruh tamu, lalu mengikuti keputusan panitia sebelum memastikan kehadiran.",
         "score": 2,
-        "reason": "Mengusulkan perubahan demi akses, tetapi tidak proporsional karena meminta seluruh acara menyesuaikan kondisi pribadi."
+        "reason": "Seluruh acara diminta menyesuaikan kondisi pribadi Anda, padahal panitia sudah biasa meminjamkan pakaian kepada tamu. Kehadiran Anda tidak pasti sampai panitia memutuskan, sehingga tujuan perkenalan kepada warga ikut tertunda."
       },
       {
-        "text": "Menghubungi panitia untuk menjelaskan kondisi, memahami ketentuan, dan mencari alternatif pakaian yang sopan serta sesuai.",
+        "text": "Menghubungi panitia untuk menjelaskan kondisi dan menanyakan ketentuan, lalu meminjam atau mencari pakaian yang sesuai.",
         "score": 5,
-        "reason": "Terbuka, menghormati ketentuan, mencari pemahaman, dan menemukan penyesuaian yang realistis."
+        "reason": "Komunikasi dengan panitia menunjukkan penghormatan pada ketentuan pakaian sekaligus membuka kemungkinan meminjam pakaian yang biasa disediakan. Anda hadir sendiri sehingga tujuan undangan memperkenalkan Anda kepada warga terpenuhi."
       },
       {
-        "text": "Meminta rekan lain menggantikan kehadiran Anda agar tidak menimbulkan masalah.",
+        "text": "Meminta rekan sekantor mewakili Anda, lalu menyampaikan permohonan maaf kepada panitia atas ketidakhadiran Anda.",
         "score": 4,
-        "reason": "Menjaga keterwakilan dan menghindari kesalahan, tetapi mengalihkan tanggung jawab serta kehilangan kesempatan beradaptasi langsung. Kesulitan Contoh Soal 3 – Empati, Kepedulian, dan Harmoni Sosial Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+        "reason": "Panitia membolehkan perwakilan dan permohonan maaf menjaga hubungan baik. Namun tujuan undangan adalah memperkenalkan Anda kepada warga, sehingga kehadiran yang diwakilkan hanya memenuhi sebagian tujuan dan kesempatan beradaptasi langsung hilang."
       }
     ],
     "answer": 3,
@@ -396,36 +396,36 @@
     "subtopic": "Empati, Kepedulian, dan Harmoni Sosial",
     "bloom": "C5",
     "difficulty": "hots",
-    "stem": "Dalam kelompok diskusi, seorang anggota dari latar belakang suku yang berbeda tampak kurang diterima oleh sebagian anggota lain dan jarang diberi kesempatan berbicara. Respons yang paling tepat adalah ...",
+    "stem": "Dalam kelompok diskusi, seorang anggota dari latar belakang suku yang berbeda tampak kurang diterima oleh sebagian anggota lain dan jarang diberi kesempatan berbicara. Anda anggota kelompok, bukan fasilitator, sedangkan fasilitator diskusi terbuka terhadap usulan peserta tentang giliran bicara. Respons yang paling tepat adalah ...",
     "options": [
       {
-        "text": "Fokus menyelesaikan tugas agar perbedaan tidak menghambat target kelompok.",
+        "text": "Berfokus menyelesaikan tugas kelompok, lalu mengerjakan bagian Anda agar perbedaan tidak menghambat target kelompok.",
         "score": 3,
-        "reason": "Menjaga fokus tugas, tetapi mengabaikan masalah sosial yang dapat terus merusak kerja sama."
+        "reason": "Target kelompok tetap terkejar dan tidak ada anggota yang dirugikan oleh sikap Anda. Namun anggota dari suku berbeda yang jarang diberi kesempatan berbicara tetap tersisih, sehingga masalah sosial yang dapat merusak kerja sama dibiarkan."
       },
       {
-        "text": "Membiarkan anggota tersebut menyesuaikan diri sendiri agar tidak memperbesar masalah.",
+        "text": "Membiarkan anggota tersebut menyesuaikan diri sendiri, lalu menunggu ia lebih diterima oleh kelompok diskusi.",
         "score": 2,
-        "reason": "Menghindari konfrontasi, tetapi membebankan seluruh proses adaptasi kepada pihak yang sudah kurang diterima."
+        "reason": "Seluruh beban adaptasi diberikan kepada anggota yang sudah kurang diterima, padahal Anda dapat membantu membuka ruang bicara. Tanpa tindakan siapa pun, kesempatan berbicara baginya tetap jarang."
       },
       {
-        "text": "Menjaga jarak agar Anda tidak ikut dianggap berbeda oleh anggota lain.",
+        "text": "Menjaga jarak dari anggota tersebut agar tidak ikut dianggap berbeda, lalu bergabung dengan anggota yang dominan dalam diskusi.",
         "score": 1,
-        "reason": "Memperkuat eksklusi dan menunjukkan kepedulian yang rendah terhadap ketidakadilan."
+        "reason": "Ikut menjauhi anggota yang sudah kurang diterima memperkuat pengucilan berdasarkan latar belakang suku dan menutup haknya berpartisipasi setara. Anda memilih rasa aman diri sendiri daripada keadilan bagi anggota yang jarang diberi kesempatan berbicara."
       },
       {
-        "text": "Mendekati anggota tersebut secara personal dan menunjukkan dukungan saat diskusi.",
+        "text": "Mendekati anggota tersebut secara pribadi, lalu mendukung pendapatnya saat diskusi kelompok berlangsung.",
         "score": 4,
-        "reason": "Memberi dukungan nyata dan positif, tetapi belum memperbaiki perilaku kelompok secara keseluruhan."
+        "reason": "Dukungan pribadi memberi anggota itu dorongan nyata dan menjaga martabatnya di depan kelompok. Namun kebiasaan sebagian anggota yang tidak memberinya kesempatan berbicara tidak berubah, sehingga ia tetap bergantung pada dukungan Anda."
       },
       {
-        "text": "Mengajak seluruh anggota menghargai keberagaman dan mengatur diskusi agar semua orang mendapat ruang berkontribusi.",
+        "text": "Mengusulkan giliran bicara bagi semua anggota kepada fasilitator, lalu mengundang anggota tersebut berpendapat.",
         "score": 5,
-        "reason": "Empatik, inklusif, menyentuh akar dinamika kelompok, dan menciptakan kesempatan partisipasi yang setara. Kesulitan Kesulitan Contoh Soal 4 – Perubahan Sosial Budaya dan Penyelesaian Konflik Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+        "reason": "Usulan giliran bicara berada dalam peran Anda sebagai anggota dan membuka kesempatan berbicara bagi semua orang, bukan hanya satu anggota. Undangan langsung kepadanya mengakui kontribusinya tanpa mempermalukan anggota lain."
       }
     ],
     "answer": 4,
-    "explanation": "Konsep yang digunakan: Inklusivitas, empati aktif, kesetaraan partisipasi, dan harmoni kelompok Kata kunci: eksklusi, suku, ruang bicara, dukungan, kelompok, kesetaraan Opsi E paling tepat karena tidak hanya mendukung individu yang terdampak, tetapi memperbaiki dinamika kelompok. Ajakan menghargai keberagaman disertai pengaturan kesempatan berbicara membuat perubahan dapat diamati dan mencegah eksklusi berulang. Tindakan ini menjaga martabat tanpa mempermalukan pihak tertentu.",
+    "explanation": "Konsep yang digunakan: Inklusivitas, empati aktif, kesetaraan partisipasi, dan harmoni kelompok Kata kunci: eksklusi, suku, ruang bicara, dukungan, kelompok, kesetaraan Opsi E paling tepat karena tidak hanya mendukung individu yang terdampak, tetapi memperbaiki dinamika kelompok lewat jalur yang sesuai peran anggota. Usulan giliran bicara kepada fasilitator membuka kesempatan bagi semua orang, dan undangan langsung kepada anggota tersebut mengakui kontribusinya tanpa mempermalukan pihak mana pun. Dukungan pribadi saja belum mengubah kebiasaan kelompok, sedangkan menjauh atau menunggu membiarkan eksklusi berlanjut.",
     "source": "Panduan Produksi Soal TKP JadiASN — Sosial Budaya, contoh 11"
   },
   {
@@ -435,32 +435,32 @@
     "subtopic": "Perubahan Sosial Budaya dan Penyelesaian Konflik",
     "bloom": "C5",
     "difficulty": "hots",
-    "stem": "Sebagian warga menolak rencana pembangunan fasilitas umum karena lokasinya dianggap terlalu dekat dengan tempat yang memiliki nilai sakral. Izin administratif sudah tersedia dan jadwal proyek terbatas. Langkah yang paling tepat adalah ...",
+    "stem": "Anda petugas proyek dinas yang melaksanakan pembangunan fasilitas umum. Sebagian warga menolak rencana pembangunan tersebut karena lokasinya dianggap terlalu dekat dengan tempat yang memiliki nilai sakral. Izin administratif sudah tersedia dan jadwal proyek terbatas. Anda berwenang mengatur pertemuan dengan warga dan mengusulkan perubahan tata letak kepada pimpinan proyek, tetapi tidak berwenang mengubah lokasi atau menghentikan proyek. Langkah yang paling tepat adalah ...",
     "options": [
       {
-        "text": "Melanjutkan pembangunan karena seluruh izin sudah terpenuhi.",
+        "text": "Melanjutkan pembangunan sesuai jadwal karena seluruh izin sudah terpenuhi, lalu menyampaikan keputusan itu kepada warga.",
         "score": 1,
-        "reason": "Patuh prosedur, tetapi mengabaikan dampak sosial dan berpotensi memperbesar konflik."
+        "reason": "Izin administratif memang sudah ada, tetapi keputusan diambil sepihak tanpa mendengar keberatan warga tentang tempat sakral. Hak warga untuk didengar tertutup dan konflik berpotensi membesar selama jadwal proyek berjalan."
       },
       {
-        "text": "Mengajak warga, tokoh terkait, dan tim proyek berdialog untuk memetakan nilai yang dipersoalkan serta mencari alternatif lokasi atau rancangan yang dapat diterima.",
+        "text": "Mengajak warga dan tokoh terkait berdialog tentang nilai yang dipersoalkan, lalu mengusulkan alternatif tata letak.",
         "score": 5,
-        "reason": "Partisipatif, menghargai nilai lokal, tetap berorientasi solusi, dan menyeimbangkan pembangunan dengan harmoni."
+        "reason": "Dialog memetakan nilai sakral yang dipersoalkan, sedangkan usulan alternatif tata letak berada dalam wewenang Anda dan tetap menghormati izin yang ada. Tidak ada janji pindah lokasi yang berada di luar kewenangan Anda."
       },
       {
-        "text": "Membiarkan penolakan karena perbedaan pendapat merupakan hal biasa dalam pembangunan.",
+        "text": "Mencatat penolakan warga sebagai perbedaan pendapat biasa dalam pembangunan, lalu tidak menanggapi penolakan itu lebih jauh.",
         "score": 2,
-        "reason": "Tidak memperkeruh secara langsung, tetapi pasif dan mengabaikan tanggung jawab menyelesaikan konflik."
+        "reason": "Penolakan yang menyangkut tempat sakral diperlakukan seperti perbedaan pendapat biasa, sehingga konflik tidak ditangani. Jadwal proyek yang terbatas justru membuat penolakan yang berlarut menjadi hambatan yang lebih besar."
       },
       {
-        "text": "Menghentikan proyek dan menyerahkan keputusan sepenuhnya kepada atasan.",
-        "score": 4,
-        "reason": "Berhati-hati dan mencegah eskalasi, tetapi mengalihkan tanggung jawab serta belum membangun solusi bersama."
-      },
-      {
-        "text": "Memperkecil bangunan agar terlihat tidak terlalu mengganggu tanpa membahas persoalan dengan warga.",
+        "text": "Meminta pimpinan proyek menghentikan pekerjaan sementara di lokasi tersebut, lalu menyerahkan penanganan penolakan kepada pimpinan.",
         "score": 3,
-        "reason": "Memberi penyesuaian teknis, tetapi belum menyentuh akar persoalan dan berisiko dianggap sepihak. Kesulitan Contoh Soal 1 – Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan Level Bloom: C3 – Menerapkan Tingkat Kesulitan: Sulit"
+        "reason": "Pimpinan proyek berwenang menghentikan pekerjaan, sehingga permintaan ini lewat jalur yang sah dan menahan eskalasi di lokasi. Namun Anda sendiri berwenang mengatur pertemuan dengan warga, sehingga menyerahkan penanganan kepada pimpinan melompati dialog yang dapat Anda mulai, sementara jadwal proyek terbatas."
+      },
+      {
+        "text": "Menanyakan kepada tokoh terkait bagian yang dianggap sakral, lalu mengusulkan pergeseran tata letak menjauhi bagian itu.",
+        "score": 4,
+        "reason": "Tokoh terkait menunjukkan bagian yang dianggap sakral sehingga usulan tata letak tepat sasaran dan tetap dalam wewenang Anda. Namun warga yang menolak belum diajak bicara langsung, sehingga keberatan mereka belum dijawab oleh perubahan itu."
       }
     ],
     "answer": 1,
@@ -474,32 +474,32 @@
     "subtopic": "Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan",
     "bloom": "C3",
     "difficulty": "sulit",
-    "stem": "Anda harus menganalisis data interaksi pelanggan dalam jumlah besar dan menyelesaikan laporan dalam dua hari. Anda telah terbiasa menggunakan aplikasi analisis yang resmi, aman, dan sesuai kebutuhan. Tindakan paling tepat adalah ...",
+    "stem": "Anda harus menganalisis data interaksi pelanggan dalam jumlah besar dan menyelesaikan laporan dalam dua hari. Anda telah terbiasa menggunakan aplikasi analisis yang resmi, aman, dan sesuai kebutuhan, yang mampu mengolah data sebesar ini dalam satu hari. Pengolahan manual diperkirakan memerlukan lima hari, sedangkan atasan hanya dapat memperpanjang tenggat satu hari. Dua rekan memiliki akses ke aplikasi yang sama dan dapat membantu. Tindakan paling tepat adalah ...",
     "options": [
       {
-        "text": "Meminta perpanjangan waktu sebelum mencoba mengolah data karena jumlahnya sangat besar.",
+        "text": "Meminta perpanjangan satu hari kepada atasan, lalu mengolah data dengan aplikasi analisis resmi yang sudah tersedia.",
         "score": 3,
-        "reason": "Berhati-hati dan komunikatif, tetapi meminta tambahan waktu sebelum mencoba solusi yang tersedia menunjukkan pemecahan masalah yang belum optimal."
+        "reason": "Perpanjangan satu hari memberi ruang tambahan dan aplikasi resmi tetap dipakai. Namun aplikasi itu mampu mengolah data sebesar ini dalam satu hari dan Anda sudah terbiasa memakainya, sehingga meminta perpanjangan lebih dulu menunda pengolahan yang dapat dimulai sekarang."
       },
       {
-        "text": "Mengolah seluruh data secara manual agar proses sepenuhnya berada dalam kendali Anda.",
-        "score": 4,
-        "reason": "Aman dan dapat dikendalikan, tetapi sangat tidak efisien serta rawan kesalahan ketika alat resmi yang tepat sudah tersedia."
-      },
-      {
-        "text": "Menggunakan aplikasi tersebut, memeriksa sampel dan hasil akhirnya, lalu mendokumentasikan proses sebelum menyerahkan laporan.",
-        "score": 5,
-        "reason": "Memanfaatkan alat yang sesuai, memvalidasi hasil, dan menjaga keterlacakan proses."
-      },
-      {
-        "text": "Mencoba aplikasi lain yang lebih baru tanpa memeriksa keamanan dan keandalannya.",
-        "score": 1,
-        "reason": "Menggunakan alat yang belum dinilai aman dan andal dapat membahayakan data serta kualitas hasil."
-      },
-      {
-        "text": "Membagi data secara acak kepada beberapa rekan agar cepat selesai tanpa menyamakan metode pengolahan.",
+        "text": "Mengolah seluruh data secara manual agar terkendali, lalu menyelesaikannya sendiri tanpa melibatkan atasan atau rekan kerja.",
         "score": 2,
-        "reason": "Pembagian tanpa metode dan koordinasi yang sama berisiko menghasilkan data tidak konsisten dan sulit dipertanggungjawabkan. Contoh Soal 2 – Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+        "reason": "Pengolahan manual diperkirakan lima hari, sedangkan tenggat dua hari dan hanya dapat diperpanjang satu hari. Rekan dan atasan tidak dilibatkan padahal aplikasi resmi sudah tersedia, sehingga laporan hampir pasti terlambat dan rawan salah hitung."
+      },
+      {
+        "text": "Menggunakan aplikasi analisis resmi untuk semua data dalam satu hari, lalu memeriksa sampel hasil dan mendokumentasikan proses.",
+        "score": 5,
+        "reason": "Aplikasi resmi yang sudah Anda kuasai mengolah data sebesar ini dalam satu hari sehingga tenggat dua hari terjaga, sedangkan pemeriksaan sampel menjaga akurasi hasil. Dokumentasi proses membuat laporan dapat ditelusuri dan dipertanggungjawabkan."
+      },
+      {
+        "text": "Mencoba aplikasi lain yang lebih baru, lalu mengunggah data pelanggan tanpa lebih dulu memeriksa keamanan dan keandalannya.",
+        "score": 1,
+        "reason": "Mengunggah data interaksi pelanggan ke aplikasi yang belum dinilai aman membuka data itu kepada pihak yang belum tentu berhak dan dapat merusak mutu hasil. Aplikasi resmi yang aman sudah tersedia dan Anda terbiasa memakainya."
+      },
+      {
+        "text": "Membagi data kepada dua rekan yang memakai aplikasi resmi dengan metode sama, lalu menggabungkan hasil kerja mereka menjadi satu laporan.",
+        "score": 4,
+        "reason": "Pembagian dengan metode sama menjaga konsistensi dan mempercepat pengolahan, dan aplikasi resmi tetap dipakai. Namun langkah ini membutuhkan koordinasi tambahan dan memakai waktu rekan padahal Anda sudah terbiasa dengan aplikasi, serta hasil gabungan belum diperiksa sampelnya."
       }
     ],
     "answer": 2,
@@ -513,32 +513,32 @@
     "subtopic": "Konsep Dasar dan Pemanfaatan TIK dalam Pekerjaan",
     "bloom": "C5",
     "difficulty": "hots",
-    "stem": "Sebuah proyek melibatkan beberapa tim di lokasi berbeda. Revisi dokumen sering terlambat diterima, laporan progres tidak sinkron, dan sebagian anggota belum terbiasa menggunakan perangkat kolaborasi. Langkah strategis paling tepat adalah ...",
+    "stem": "Sebuah proyek melibatkan beberapa tim di lokasi berbeda. Revisi dokumen sering terlambat diterima, laporan progres tidak sinkron, dan sebagian anggota belum terbiasa menggunakan perangkat kolaborasi. Setiap lokasi memiliki petugas administrasi yang dapat menjadi penghubung harian, sedangkan perbedaan jam kerja hanya memungkinkan satu rapat video sepekan. Organisasi sudah menyediakan platform kolaborasi resmi dengan pengendalian versi dokumen, tetapi belum dipakai semua tim, dan pendampingan hanya tersedia selama tiga bulan. Langkah strategis paling tepat adalah ...",
     "options": [
       {
-        "text": "Menunjuk satu penghubung di setiap lokasi untuk mengirim pembaruan secara manual setiap hari.",
-        "score": 3,
-        "reason": "Membantu komunikasi dasar, tetapi proses manual tetap rentan terlambat, tidak konsisten, dan bergantung pada individu."
-      },
-      {
-        "text": "Menyusun panduan kerja digital dan meminta setiap tim mempelajarinya secara mandiri.",
-        "score": 2,
-        "reason": "Panduan berguna, tetapi tanpa sistem dan pendampingan tidak menjamin perubahan praktik."
-      },
-      {
-        "text": "Menambah rapat video secara rutin agar setiap tim dapat melaporkan perkembangan.",
+        "text": "Menunjuk petugas administrasi di setiap lokasi sebagai penghubung, lalu meminta mereka mengirim pembaruan setiap hari.",
         "score": 4,
-        "reason": "Rapat video mempercepat komunikasi, tetapi tidak cukup membangun satu sumber data dan pembaruan waktu nyata."
+        "reason": "Petugas administrasi yang sudah ada menjadi penghubung harian, sehingga revisi dokumen lebih cepat sampai dan komunikasi dasar antarlokasi terjaga tanpa biaya tambahan. Namun pembaruan tetap berupa pesan manual tanpa satu sumber data dan pengendalian versi, padahal platform resmi sudah tersedia."
       },
       {
-        "text": "Menerapkan platform kolaborasi resmi secara bertahap, menetapkan alur pembaruan, dan mendampingi pengguna sampai informasi terintegrasi.",
+        "text": "Menyusun panduan kerja digital, lalu meminta setiap tim mempelajarinya secara mandiri di sela pekerjaan.",
+        "score": 2,
+        "reason": "Panduan berguna, tetapi pembelajaran dilimpahkan kepada tim yang sebagian anggotanya belum terbiasa dengan perangkat kolaborasi. Tanpa platform bersama dan pendampingan selama tiga bulan, praktik kerja tidak berubah."
+      },
+      {
+        "text": "Menambah rapat video rutin, lalu meminta setiap tim melaporkan perkembangan pekerjaan pada rapat itu.",
+        "score": 3,
+        "reason": "Rapat video mempertemukan semua tim dan dapat dijalankan dengan perangkat yang ada. Namun perbedaan jam kerja hanya memungkinkan satu rapat sepekan, sehingga revisi dokumen yang terlambat tidak tertangani di antara dua rapat dan versi dokumen tetap tidak terkendali."
+      },
+      {
+        "text": "Menerapkan platform kolaborasi resmi secara bertahap, lalu menetapkan alur pembaruan dan mendampingi pengguna.",
         "score": 5,
-        "reason": "Menggabungkan integrasi sistem, alur kerja, penerapan bertahap, dan pendampingan pengguna."
+        "reason": "Platform resmi dengan pengendalian versi menyatukan sumber revisi dan laporan progres, sedangkan alur pembaruan dan pendampingan selama tiga bulan menyiapkan anggota yang belum terbiasa. Penerapan bertahap menjaga pekerjaan tetap berjalan."
       },
       {
-        "text": "Mengirim tim pemantau ke setiap lokasi untuk mengumpulkan seluruh laporan sebelum dikonsolidasikan.",
+        "text": "Menyamakan angka laporan progres tiap tim berdasarkan perkiraan, lalu menyatukannya menjadi satu laporan.",
         "score": 1,
-        "reason": "Pengumpulan fisik menambah beban dan tidak menyelesaikan keterlambatan serta ketidaksinkronan informasi. Kesulitan Kesulitan Contoh Soal 3 – Adaptasi terhadap Perubahan Teknologi Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+        "reason": "Angka perkiraan menutupi ketidaksinkronan alih-alih menyelesaikannya, sehingga laporan progres tidak lagi mencerminkan data tiap tim. Keputusan proyek yang bergantung pada laporan itu menjadi berisiko."
       }
     ],
     "answer": 3,
@@ -552,32 +552,32 @@
     "subtopic": "Adaptasi terhadap Perubahan Teknologi",
     "bloom": "C5",
     "difficulty": "hots",
-    "stem": "Organisasi Anda memperoleh akses awal ke sistem pelaporan yang diperkirakan akan menjadi standar dalam waktu dekat. Sistem tersebut belum diwajibkan. Sebagian rekan memilih bertahan dengan cara manual, sedangkan pimpinan belum memberi arahan khusus. Sikap paling tepat adalah ...",
+    "stem": "Organisasi Anda memperoleh akses awal ke sistem pelaporan yang diperkirakan akan menjadi standar dalam waktu dekat. Sistem tersebut belum diwajibkan, dan akses awal hanya boleh dipakai pada pekerjaan percobaan yang tidak menyangkut data pelanggan. Sebagian rekan memilih bertahan dengan cara manual karena beban kerja, sedangkan pimpinan belum memberi arahan khusus. Sikap paling tepat adalah ...",
     "options": [
       {
-        "text": "Mengajak rekan mendiskusikan apakah sistem perlu digunakan sekarang atau menunggu arahan resmi.",
+        "text": "Mengajak rekan mendiskusikan apakah sistem perlu dipakai, lalu mencari arahan resmi dari pimpinan tim.",
         "score": 3,
-        "reason": "Diskusi dapat mengurangi resistensi, tetapi tanpa pembelajaran dan uji coba perubahan mudah berhenti sebagai wacana."
+        "reason": "Diskusi dapat mengurangi keraguan rekan dan arahan pimpinan akan memperjelas langkah berikutnya. Namun akses awal sudah boleh dipakai pada pekerjaan percobaan, sehingga menunggu arahan menunda pembelajaran yang dapat dimulai sekarang."
       },
       {
-        "text": "Mempelajari sistem untuk kepentingan sendiri tanpa membahasnya dengan rekan agar tidak dianggap memaksakan.",
+        "text": "Meminta rekan yang lebih senior mencoba sistem lebih dulu, lalu menerima laporan hasil percobaannya kepada Anda.",
         "score": 2,
-        "reason": "Belajar sendiri adalah langkah awal yang baik, tetapi manfaatnya tidak membantu kesiapan tim."
+        "reason": "Beban mencoba sistem dialihkan kepada rekan senior, padahal Anda dapat memakai akses awal pada pekerjaan percobaan sendiri. Kesiapan Anda dan tim tidak bertambah selama laporan itu belum datang."
       },
       {
-        "text": "Mulai menggunakan sistem pada tugas sendiri dan membiarkan rekan menentukan pilihannya masing-masing.",
+        "text": "Memakai sistem pada pekerjaan percobaan sendiri, lalu mempersilakan rekan memilih sendiri cara kerjanya masing-masing.",
         "score": 4,
-        "reason": "Sudah menunjukkan inisiatif dan memberi contoh, tetapi perubahan dibiarkan berjalan sendiri tanpa pengelolaan kolektif."
+        "reason": "Pemakaian pada pekerjaan percobaan sesuai batas akses awal dan memberi contoh bagi rekan. Namun hasilnya tidak dikelola untuk tim, sehingga rekan yang bertahan dengan cara manual tidak memperoleh bukti manfaat untuk menilai sistem."
       },
       {
-        "text": "Mempelajari dan menguji sistem pada pekerjaan yang sesuai, mencatat hasilnya, lalu mengusulkan sesi berbagi dan penerapan bertahap kepada pimpinan.",
+        "text": "Menguji sistem pada pekerjaan percobaan, lalu membagikan bukti manfaatnya ke rekan dan pimpinan.",
         "score": 5,
-        "reason": "Menggabungkan belajar, uji coba terkontrol, bukti, berbagi praktik, dan koordinasi penerapan."
+        "reason": "Pengujian terbatas pada pekerjaan tanpa data pelanggan menghormati batas akses awal, sedangkan bukti manfaat membantu rekan dan pimpinan menilai sistem. Perubahan dipersiapkan tanpa dipaksakan sebelum sistem diwajibkan."
       },
       {
-        "text": "Menunggu sampai sistem diwajibkan agar tidak menimbulkan kebingungan bagi tim.",
+        "text": "Memindahkan seluruh pelaporan pelanggan ke sistem baru, lalu meminta semua rekan mengikuti cara kerja itu.",
         "score": 1,
-        "reason": "Menunggu sampai diwajibkan membuat tim berpotensi tidak siap dan menunjukkan sikap pasif terhadap perubahan yang sudah jelas arahnya. Kesulitan Contoh Soal 4 – Etika, Keamanan, dan Tanggung Jawab Digital Level Bloom: C4 – Menganalisis Tingkat Kesulitan: HOTS"
+        "reason": "Akses awal hanya boleh dipakai pada pekerjaan percobaan tanpa data pelanggan, sehingga pemindahan pelaporan pelanggan melanggar batas tersebut. Rekan yang bertahan secara manual dipaksa berubah sebelum sistem diwajibkan."
       }
     ],
     "answer": 3,
@@ -591,36 +591,36 @@
     "subtopic": "Etika, Keamanan, dan Tanggung Jawab Digital",
     "bloom": "C4",
     "difficulty": "hots",
-    "stem": "Anda menerima e-mail dari alamat yang sangat mirip dengan alamat resmi organisasi. Pesan tersebut meminta dokumen berisi data pribadi melalui sebuah tautan. Beberapa rekan hampir membuka tautan itu, sedangkan Anda menduga pesan tersebut merupakan phishing. Tindakan paling tepat adalah ...",
+    "stem": "Anda menerima surel dari alamat yang sangat mirip dengan alamat resmi organisasi. Pesan yang sama masuk ke seluruh pegawai unit dan meminta dokumen berisi data pribadi melalui sebuah tautan. Beberapa rekan di dekat Anda hampir membuka tautan itu, sedangkan Anda menduga pesan tersebut merupakan upaya pengelabuan untuk mencuri data. Organisasi menyediakan kanal keamanan untuk melaporkan pesan mencurigakan. Tindakan paling tepat adalah ...",
     "options": [
       {
-        "text": "Membuka tautan pada perangkat kerja untuk memastikan apakah permintaan tersebut benar.",
+        "text": "Membuka tautan pada perangkat kerja untuk memeriksa permintaannya, lalu melaporkan hasil pemeriksaan kepada rekan.",
         "score": 1,
-        "reason": "Membuka tautan untuk menguji kebenaran dapat mengaktifkan malware atau mencuri kredensial."
+        "reason": "Membuka tautan dari alamat yang mirip alamat resmi dapat mengaktifkan perangkat lunak berbahaya atau mencuri kata sandi pada perangkat kerja Anda. Rekan yang hampir membuka tautan yang sama melihat langkah itu sebagai cara yang boleh, padahal bahayanya sama."
       },
       {
-        "text": "Tidak membuka atau meneruskan tautan, menyimpan pesan sebagai bukti, mengingatkan rekan, dan melaporkannya melalui kanal keamanan yang ditetapkan.",
+        "text": "Mengingatkan seluruh rekan di unit agar tidak membuka tautan, lalu melaporkan pesan beserta buktinya ke kanal keamanan.",
         "score": 5,
-        "reason": "Mengendalikan risiko, menjaga bukti, memberi peringatan aman, dan mengikuti jalur penanganan resmi."
+        "reason": "Peringatan kepada seluruh rekan di unit melindungi mereka yang hampir membuka tautan maupun yang belum membaca pesan, sedangkan laporan beserta bukti pesan memungkinkan kanal keamanan menyelidiki dan memblokir alamat itu. Tautan tidak dibuka maupun diteruskan sehingga paparan tidak bertambah."
       },
       {
-        "text": "Menghapus e-mail tersebut dari kotak masuk agar Anda tidak salah membukanya.",
-        "score": 3,
-        "reason": "Mengurangi risiko pribadi, tetapi tidak melindungi rekan, menghilangkan jejak, dan tidak memungkinkan penanganan organisasi."
-      },
-      {
-        "text": "Meneruskan e-mail kepada seluruh rekan dengan pesan agar mereka berhati-hati.",
-        "score": 2,
-        "reason": "Niatnya memperingatkan, tetapi meneruskan tautan memperluas paparan dan meningkatkan kemungkinan ada yang membukanya."
-      },
-      {
-        "text": "Menghubungi pengirim melalui nomor atau alamat resmi yang sudah dikenal untuk memverifikasi permintaan, lalu melaporkan jika terbukti palsu.",
+        "text": "Mengabari rekan di dekat Anda tentang bahaya tautan itu, lalu mengirim pesan tersebut ke kanal keamanan.",
         "score": 4,
-        "reason": "Verifikasi melalui kanal terpisah merupakan tindakan aman dan cermat, tetapi laporan serta peringatan dapat terlambat ketika rekan sudah berisiko. Kesulitan Contoh Soal 1 – Konsep Dasar, Ciri, dan Etika Profesional Level Bloom: C4 – Menganalisis Tingkat Kesulitan: HOTS"
+        "reason": "Rekan di dekat Anda langsung diingatkan dan pesan segera dikirim ke kanal keamanan untuk diselidiki. Namun peringatan hanya menjangkau rekan yang berada di dekat Anda, sedangkan pegawai lain di unit yang menerima pesan yang sama belum mengetahui bahayanya."
+      },
+      {
+        "text": "Memasang peringatan umum tentang surel pengelabuan di papan pengumuman, lalu melanjutkan pekerjaan.",
+        "score": 2,
+        "reason": "Peringatan umum tidak menyebut pesan yang sedang beredar dan tidak sampai pada rekan yang hampir membuka tautan hari ini. Pesan tidak dilaporkan sehingga alamat palsu itu tetap dapat mengirim ulang dan kanal keamanan tidak mengetahuinya."
+      },
+      {
+        "text": "Menghubungi pengirim lewat nomor resmi yang sudah dikenal, lalu melaporkan pesan itu bila terbukti palsu.",
+        "score": 3,
+        "reason": "Verifikasi lewat saluran terpisah aman dan cermat serta tidak membuka tautan. Namun pemeriksaan itu menunda laporan dan peringatan kepada rekan yang hampir membuka tautan, padahal alamat yang mirip alamat resmi sudah cukup untuk melapor sekarang."
       }
     ],
     "answer": 1,
-    "explanation": "Konsep yang digunakan: Pencegahan phishing dan penanganan insiden Kata kunci: verifikasi, tidak membuka tautan, bukti, peringatan, pelaporan, kanal resmi Opsi B paling tepat karena menghentikan risiko langsung, melindungi rekan, mempertahankan bukti, dan meneruskan penanganan kepada pihak yang berwenang. Tindakan tersebut tidak mencoba membuktikan ancaman dengan cara berbahaya dan tidak menyebarkan tautan ke lebih banyak orang.",
+    "explanation": "Konsep yang digunakan: Pencegahan pengelabuan (phishing) dan penanganan insiden Kata kunci: verifikasi, tidak membuka tautan, bukti, peringatan, pelaporan, kanal resmi Opsi B paling tepat karena peringatan kepada seluruh rekan di unit dan laporan beserta bukti ke kanal keamanan menghentikan risiko langsung, melindungi rekan, mempertahankan bukti, dan menyerahkan penanganan kepada pihak yang berwenang. Tindakan tersebut tidak mencoba membuktikan ancaman dengan cara berbahaya dan tidak menyebarkan tautan ke lebih banyak orang.",
     "source": "Panduan Produksi Soal TKP JadiASN — Teknologi Informasi dan Komunikasi, contoh 16"
   },
   {
@@ -630,32 +630,32 @@
     "subtopic": "Konsep Dasar, Ciri, dan Etika Profesional",
     "bloom": "C4",
     "difficulty": "hots",
-    "stem": "Sebagai anggota baru dalam tim, Anda menemukan kesalahan angka pada laporan yang disusun oleh rekan senior. Jika dibiarkan, kesalahan tersebut dapat memengaruhi keputusan berikutnya, tetapi koreksi akan membuat sebagian laporan perlu direvisi. Apa tindakan paling tepat?",
+    "stem": "Sebagai anggota baru dalam tim, Anda menemukan kesalahan angka pada laporan yang disusun oleh rekan senior. Laporan itu berupa berkas bersama yang belum diserahkan kepada atasan, dapat disunting semua anggota tim, dan memiliki riwayat perubahan. Jika dibiarkan, kesalahan tersebut dapat memengaruhi keputusan berikutnya, tetapi koreksi akan membuat sebagian laporan perlu direvisi. Apa tindakan paling tepat?",
     "options": [
       {
-        "text": "Menegur rekan senior di depan tim agar semua orang mengetahui kesalahan tersebut.",
+        "text": "Menegur rekan senior di depan seluruh tim kerja, lalu meminta tim memeriksa ulang seluruh isi laporan itu.",
         "score": 1,
-        "reason": "Menjaga akurasi, tetapi mempermalukan pihak lain dan dapat membuat komunikasi defensif."
+        "reason": "Teguran di depan seluruh tim mempermalukan rekan senior tanpa tujuan perbaikan yang jelas, bahkan sebelum temuan Anda diperiksa bersama. Sikap defensif yang muncul menyulitkan revisi, padahal laporan masih berupa berkas bersama yang dapat diperbaiki dengan tenang."
       },
       {
-        "text": "Membiarkan kesalahan karena menghormati pengalaman dan posisi rekan senior.",
+        "text": "Membiarkan kesalahan karena menghormati pengalaman rekan senior, lalu mengerjakan bagian Anda sendiri.",
         "score": 2,
-        "reason": "Menghormati senioritas, tetapi membiarkan risiko dan mengabaikan tanggung jawab atas kualitas."
+        "reason": "Penghormatan pada senioritas tidak mengubah fakta bahwa angka keliru dapat memengaruhi keputusan berikutnya. Laporan belum diserahkan sehingga masih ada waktu menyampaikan temuan, tetapi Anda memilih diam."
       },
       {
-        "text": "Memeriksa kembali temuan, menyampaikan bukti dan dampaknya secara sopan kepada pihak terkait, serta mengusulkan langkah revisi.",
+        "text": "Memeriksa kembali temuan, lalu menyampaikan bukti dan usulan revisi kepada rekan senior secara sopan.",
         "score": 5,
-        "reason": "Memverifikasi, berkomunikasi etis, dan menawarkan solusi yang menjaga akurasi serta hubungan kerja."
+        "reason": "Pemeriksaan ulang memastikan temuan benar sebelum disampaikan, sedangkan bukti dan usulan revisi kepada penyusunnya menjaga hubungan kerja serta memberinya kesempatan memperbaiki lebih dulu. Laporan belum diserahkan sehingga koreksi selesai tanpa dampak ke pihak lain."
       },
       {
-        "text": "Menunggu sampai atasan menemukan kesalahan tersebut agar Anda tidak dianggap mencampuri pekerjaan orang lain.",
-        "score": 3,
-        "reason": "Menghindari kesalahan tindakan, tetapi terlalu pasif dan membiarkan dampak berkembang."
-      },
-      {
-        "text": "Memperbaiki angka secara diam-diam agar laporan segera selesai tanpa mempermalukan rekan senior.",
+        "text": "Menandai angka yang keliru dengan komentar di berkas bersama, lalu memberi tahu rekan senior lewat pesan singkat.",
         "score": 4,
-        "reason": "Berorientasi perbaikan, tetapi tidak transparan dan mengubah dokumen tanpa koordinasi. Contoh Soal 2 – Konsep Dasar, Ciri, dan Etika Profesional Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+        "reason": "Komentar di berkas bersama dan pesan singkat langsung memberi tahu rekan senior tanpa mengubah angka, sehingga jejak terjaga dan laporan belum diserahkan. Namun temuan ditandai sebelum Anda memeriksa ulang angka dan sumbernya, sehingga rekan senior belum menerima bukti atau usulan revisi yang dapat ia nilai."
+      },
+      {
+        "text": "Memperbaiki angka di berkas bersama dengan penanda perubahan, lalu memberi tahu rekan senior tentang perubahan itu.",
+        "score": 3,
+        "reason": "Perbaikan langsung membuat laporan segera benar, penanda menjaga jejak, dan rekan senior diberi tahu. Namun angka diubah sebelum temuan dibahas dengan penyusunnya, sehingga koreksi hanya bertumpu pada keyakinan Anda dan penyusun tidak sempat menilai temuan itu."
       }
     ],
     "answer": 2,
@@ -669,36 +669,36 @@
     "subtopic": "Konsep Dasar, Ciri, dan Etika Profesional",
     "bloom": "C5",
     "difficulty": "hots",
-    "stem": "Tim Anda mendapat tekanan untuk memublikasikan laporan secepat mungkin. Beberapa bagian belum diverifikasi sepenuhnya dan pimpinan meminta agar laporan tetap diterbitkan demi menjaga citra bahwa target telah tercapai. Tindakan Anda adalah...",
+    "stem": "Tim Anda mendapat tekanan untuk memublikasikan laporan secepat mungkin. Bagian ringkasan angka dan kutipan data pihak lain belum diverifikasi sepenuhnya, sedangkan standar tim mensyaratkan bagian kritis itu terverifikasi sebelum laporan terbit. Pimpinan meminta agar laporan tetap diterbitkan demi menjaga citra bahwa target telah tercapai, dan Anda dapat menyampaikan pertimbangan kepada pimpinan. Tindakan Anda adalah ...",
     "options": [
       {
-        "text": "Menerbitkan laporan sesuai arahan karena pimpinan bertanggung jawab atas keputusan akhir.",
-        "score": 2,
-        "reason": "Patuh pada arahan, tetapi melepaskan tanggung jawab profesional atas kualitas informasi."
-      },
-      {
-        "text": "Menolak seluruh pekerjaan dan meminta nama Anda dihapus dari tim.",
+        "text": "Menerbitkan laporan sesuai arahan pimpinan, lalu mencatat bahwa keputusan akhir berada pada pimpinan.",
         "score": 1,
-        "reason": "Menolak risiko, tetapi tidak menyelesaikan tugas dan tidak menawarkan perbaikan."
+        "reason": "Laporan terbit dengan angka dan kutipan kritis yang belum diverifikasi, padahal standar tim mensyaratkan verifikasi bagian kritis sebelum terbit. Mencatat bahwa keputusan ada pada pimpinan tidak menggantikan verifikasi, dan informasi yang belum andal telanjur sampai ke pembaca."
       },
       {
-        "text": "Menjelaskan risiko secara berbasis data, mengusulkan verifikasi minimum pada bagian kritis, dan menyepakati waktu publikasi yang realistis.",
+        "text": "Menolak seluruh pekerjaan penerbitan laporan ini, lalu meminta nama Anda dihapus dari daftar anggota tim.",
+        "score": 2,
+        "reason": "Seluruh pekerjaan dan keputusan dilimpahkan kepada rekan tanpa usulan verifikasi, padahal bagian kritis yang perlu diverifikasi dapat Anda kerjakan. Pimpinan tidak menerima pertimbangan apa pun tentang jadwal, sehingga tekanan target tidak terjawab."
+      },
+      {
+        "text": "Menjelaskan risiko berbasis data kepada pimpinan, lalu mengusulkan verifikasi bagian kritis dan jadwal realistis.",
         "score": 5,
-        "reason": "Menjaga akurasi, berkomunikasi berbasis bukti, dan menawarkan solusi proporsional."
+        "reason": "Penjelasan berbasis data menunjukkan bagian ringkasan angka dan kutipan yang berisiko, sedangkan usulan verifikasi dan jadwal baru menjaga standar tim tanpa menolak arahan. Pimpinan mendapat jalan keluar untuk citra target yang tidak mengorbankan keandalan informasi."
       },
       {
-        "text": "Menerbitkan laporan lalu memperbaiki kesalahan setelah ada tanggapan pembaca.",
-        "score": 3,
-        "reason": "Memenuhi target, tetapi menjadikan publik sebagai penguji dan berisiko merusak kepercayaan."
-      },
-      {
-        "text": "Menunda publikasi tanpa memberi penjelasan kepada pihak yang menunggu.",
+        "text": "Memisahkan bagian yang sudah terverifikasi untuk diterbitkan lebih dulu, lalu menyusulkan bagian kritis setelah diverifikasi.",
         "score": 4,
-        "reason": "Melindungi mutu, tetapi kurang akuntabel karena menunda tanpa komunikasi dan rencana. Kesulitan Contoh Soal 3 – Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja Level Bloom: C3 – Menerapkan Tingkat Kesulitan: Sulit"
+        "reason": "Hanya bagian yang andal yang terbit sehingga mutu terjaga dan sebagian target terpenuhi. Namun pembaca belum diberi tahu bahwa bagian kritis menyusul, dan pertimbangan Anda tentang jadwal belum disampaikan kepada pimpinan."
+      },
+      {
+        "text": "Menunda publikasi untuk memverifikasi seluruh bagian, lalu memberi tahu pimpinan saat verifikasi selesai.",
+        "score": 3,
+        "reason": "Penundaan ada rencananya, yaitu menyelesaikan verifikasi bagian kritis, sehingga laporan tidak terbit dengan informasi yang belum andal. Namun pimpinan baru diberi tahu saat verifikasi selesai, padahal tekanan target menuntut penjelasan dan jadwal sejak sekarang."
       }
     ],
     "answer": 2,
-    "explanation": "Konsep yang digunakan: Etika profesional, keberanian menyampaikan risiko, dan keseimbangan mutu-waktu Kata kunci: tekanan target, verifikasi, publikasi, risiko, komunikasi Opsi C mempertahankan standar tanpa mengabaikan kebutuhan waktu. Tindakan ini tidak sekadar menolak arahan, tetapi menunjukkan bagian yang berisiko, menawarkan langkah minimum yang dapat menjaga keandalan, dan membangun kesepakatan yang jelas. Profesionalisme menuntut keberanian menyampaikan fakta sekaligus kemampuan mencari jalan keluar yang operasional.",
+    "explanation": "Konsep yang digunakan: Etika profesional, keberanian menyampaikan risiko, dan keseimbangan mutu-waktu Kata kunci: tekanan target, verifikasi, publikasi, risiko, komunikasi Opsi C mempertahankan standar tanpa mengabaikan kebutuhan waktu. Tindakan ini tidak sekadar menolak arahan, tetapi menunjukkan bagian ringkasan angka dan kutipan yang berisiko, mengusulkan verifikasi bagian kritis sebelum terbit, dan menyepakati jadwal publikasi yang realistis. Verifikasi bagian kritis bukan pembenaran untuk menerbitkan informasi yang belum andal, melainkan syarat agar laporan layak terbit. Profesionalisme menuntut keberanian menyampaikan fakta sekaligus kemampuan mencari jalan keluar yang operasional.",
     "source": "Panduan Produksi Soal TKP JadiASN — Profesionalisme, contoh 18"
   },
   {
@@ -708,32 +708,32 @@
     "subtopic": "Tanggung Jawab, Akuntabilitas, dan Disiplin Kerja",
     "bloom": "C3",
     "difficulty": "sulit",
-    "stem": "Anda diminta menandatangani laporan yang disusun oleh rekan kerja. Waktu penyerahan hampir tiba, tetapi Anda belum memeriksa seluruh data dan rekan tersebut meyakinkan bahwa semuanya sudah benar. Apa tindakan paling tepat?",
+    "stem": "Anda diminta menandatangani laporan yang disusun oleh rekan kerja. Tanda tangan Anda menyatakan bahwa Anda bertanggung jawab atas angka total dan sumber datanya. Waktu penyerahan hampir tiba, tetapi Anda belum memeriksa seluruh data dan rekan tersebut meyakinkan bahwa semuanya sudah benar. Apa tindakan paling tepat?",
     "options": [
       {
-        "text": "Menandatangani laporan karena rekan kerja sudah memberikan jaminan.",
-        "score": 3,
-        "reason": "Menjaga hubungan dan kecepatan, tetapi mengandalkan kepercayaan tanpa verifikasi."
-      },
-      {
-        "text": "Menunda tanda tangan tanpa menjelaskan alasan atau rencana pemeriksaan.",
-        "score": 4,
-        "reason": "Berhati-hati, tetapi tidak akuntabel karena tidak menjelaskan alasan, prioritas, atau tindak lanjut."
-      },
-      {
-        "text": "Melakukan pemeriksaan terarah pada data kritis dan bukti pendukung sebelum menandatangani, lalu mencatat koreksi jika ditemukan.",
-        "score": 5,
-        "reason": "Melakukan verifikasi proporsional dan menjaga jejak koreksi sebelum menerima tanggung jawab."
-      },
-      {
-        "text": "Menolak menandatangani dan menyerahkan seluruh tanggung jawab kepada atasan.",
+        "text": "Menandatangani laporan karena rekan kerja sudah memberi jaminan, lalu menyerahkannya tepat waktu.",
         "score": 1,
-        "reason": "Menghindari risiko dengan melepaskan tugas yang telah diamanatkan."
+        "reason": "Tanda tangan menyatakan Anda bertanggung jawab atas angka total dan sumber datanya, tetapi data itu belum Anda periksa. Jaminan rekan tidak menggantikan verifikasi, sehingga kesalahan yang lolos menjadi tanggung jawab Anda."
       },
       {
-        "text": "Meminta rekan lain menyatakan bahwa laporan benar tanpa melakukan pemeriksaan sendiri.",
+        "text": "Menghitung ulang angka total pada laporan itu, lalu menandatangani dan mencatat koreksi bila ada.",
+        "score": 4,
+        "reason": "Penghitungan ulang angka total menjawab sebagian tanggung jawab penandatangan, dan koreksi dicatat sebelum laporan diserahkan. Namun sumber data yang ikut Anda pertanggungjawabkan belum diperiksa, sehingga verifikasi baru mencakup angka total."
+      },
+      {
+        "text": "Memeriksa angka total dan bukti sumbernya, lalu menandatangani dan mencatat koreksinya.",
+        "score": 5,
+        "reason": "Pemeriksaan terarah pada angka total dan sumber datanya memenuhi tanggung jawab penandatangan tanpa mengulang seluruh pekerjaan. Catatan koreksi menjaga jejak perubahan sebelum laporan diserahkan."
+      },
+      {
+        "text": "Menolak menandatangani laporan itu, lalu menyerahkan tanggung jawab atas laporan kepada atasan.",
         "score": 2,
-        "reason": "Mencari konfirmasi, tetapi tetap tidak menjalankan tanggung jawab verifikasi sendiri. Kesulitan Contoh Soal 4 – Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+        "reason": "Tanda tangan diminta kepada Anda sebagai penanggung jawab data kritis, dan menolaknya tanpa memeriksa memindahkan beban ke atasan. Waktu penyerahan yang hampir tiba justru terbuang tanpa kepastian apakah laporan benar."
+      },
+      {
+        "text": "Meminta rekan lain yang berpengalaman meninjau data, lalu menandatangani berdasarkan hasil tinjauannya.",
+        "score": 3,
+        "reason": "Tinjauan rekan berpengalaman berguna dan menambah keyakinan atas angka total serta sumber datanya. Namun tanggung jawab penandatangan tetap pada Anda, sehingga Anda masih perlu melihat sendiri bukti sumber sebelum menandatangani."
       }
     ],
     "answer": 2,
@@ -747,36 +747,36 @@
     "subtopic": "Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi",
     "bloom": "C5",
     "difficulty": "hots",
-    "stem": "Pukul 10.00 Anda sedang menyusun laporan audit yang harus diunggah paling lambat pukul 17.00. Beberapa menit kemudian, atasan meminta bahan presentasi untuk rapat pukul 12.00. Seorang rekan yang kompeten sedang tersedia untuk membantu bagian rutin laporan. Apa langkah paling tepat?",
+    "stem": "Pukul 10.00 Anda sedang menyusun laporan audit yang harus diunggah paling lambat pukul 17.00. Beberapa menit kemudian, atasan meminta bahan presentasi untuk rapat pukul 12.00. Seorang rekan yang kompeten sedang tersedia, dan Anda diizinkan mendelegasikan bagian tugas kepadanya selama tanggung jawab akhir tetap pada Anda. Apa langkah paling tepat?",
     "options": [
       {
-        "text": "Menghentikan laporan dan mengerjakan presentasi tanpa menyusun rencana untuk laporan audit.",
+        "text": "Mengerjakan presentasi untuk rapat pukul 12.00 lebih dulu, lalu menyusun rencana laporan menjelang tenggat pukul 17.00.",
         "score": 3,
-        "reason": "Responsif terhadap tugas mendesak, tetapi tidak mengelola risiko laporan yang memiliki tenggat pasti."
+        "reason": "Presentasi untuk rapat pukul 12.00 selesai tepat waktu dan rencana laporan masih disusun sebelum tenggat pukul 17.00. Namun rekan yang kompeten tersedia dan bagian rutin laporan dapat dikerjakan sejak pagi, sehingga menyusun rencana belakangan menyempitkan waktu laporan."
       },
       {
-        "text": "Meminta atasan menunda presentasi karena laporan audit memiliki batas sistem.",
+        "text": "Meminta atasan menunda rapat presentasi pukul 12.00, lalu menyelesaikan laporan audit sesuai tenggat yang berlaku hari ini.",
         "score": 2,
-        "reason": "Menjaga laporan, tetapi terlalu kaku dan belum mencoba mengelola sumber daya yang tersedia."
+        "reason": "Tenggat laporan terlindungi, tetapi beban mengatur jadwal rapat dialihkan kepada atasan yang membutuhkan bahan itu pukul 12.00. Rekan yang tersedia tidak dimanfaatkan sehingga presentasi tetap belum disiapkan."
       },
       {
-        "text": "Mengonfirmasi prioritas, menyusun rencana waktu, mengerjakan bagian presentasi yang mendesak, mendelegasikan bagian rutin laporan dengan instruksi dan checkpoint yang jelas, lalu memverifikasi hasil.",
+        "text": "Mendelegasikan bagian rutin laporan kepada rekan dengan titik pemeriksaan pukul 14.00, lalu mengerjakan presentasi.",
         "score": 5,
-        "reason": "Menggabungkan prioritas, komunikasi, delegasi terkontrol, dan verifikasi hasil."
+        "reason": "Delegasi bagian rutin kepada rekan yang kompeten membebaskan waktu untuk presentasi pukul 12.00, sedangkan titik pemeriksaan pukul 14.00 menjaga mutu laporan sebelum tenggat pukul 17.00. Tanggung jawab akhir tetap pada Anda sesuai izin delegasi."
       },
       {
-        "text": "Mengerjakan kedua tugas secara paralel tanpa komunikasi agar tidak terlihat kesulitan.",
+        "text": "Mengerjakan laporan audit lebih dulu tanpa memberi tahu atasan, lalu menyerahkan bahan presentasi pukul 13.00.",
         "score": 1,
-        "reason": "Terlihat bekerja keras, tetapi tanpa rencana dan komunikasi berisiko menurunkan kualitas keduanya."
+        "reason": "Permintaan atasan untuk rapat pukul 12.00 diabaikan tanpa komunikasi, sehingga bahan presentasi baru ada setelah rapat dimulai. Mengutamakan laporan secara diam-diam menyalahi instruksi atasan dan membuat rapat berjalan tanpa dasar."
       },
       {
-        "text": "Mengalihkan seluruh presentasi kepada rekan dan tetap mengerjakan laporan audit.",
+        "text": "Mengalihkan seluruh bahan presentasi kepada rekan yang tersedia, lalu menyelesaikan laporan audit itu sendiri hari ini.",
         "score": 4,
-        "reason": "Memanfaatkan rekan, tetapi sepenuhnya mengalihkan instruksi langsung dan lemah pada koordinasi tanggung jawab. Contoh Soal 5 – Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+        "reason": "Tenggat laporan terjaga dan rekan yang kompeten dimanfaatkan sesuai izin delegasi. Namun presentasi diminta atasan langsung dari Anda, sehingga mengalihkannya seluruhnya menambah satu perantara antara Anda dan atasan."
       }
     ],
     "answer": 2,
-    "explanation": "Konsep yang digunakan: Prioritisasi strategis, delegasi, koordinasi, dan akuntabilitas hasil Kata kunci: dua tenggat, urgensi, delegasi, checkpoint, verifikasi Opsi C paling tepat karena tidak memilih salah satu tugas secara impulsif. Respons tersebut memastikan kejelasan prioritas, membagi pekerjaan berdasarkan kompetensi, menjaga komunikasi, dan tetap menempatkan tanggung jawab akhir pada pemilik tugas. Delegasi menjadi profesional ketika instruksi, batas, waktu, dan verifikasi hasil jelas.",
+    "explanation": "Konsep yang digunakan: Prioritisasi strategis, delegasi, koordinasi, dan akuntabilitas hasil Kata kunci: dua tenggat, urgensi, delegasi, titik pemeriksaan, verifikasi Opsi C paling tepat karena tidak memilih salah satu tugas secara impulsif. Bagian rutin laporan didelegasikan kepada rekan yang kompeten dengan titik pemeriksaan pukul 14.00, sehingga presentasi pukul 12.00 dan tenggat laporan pukul 17.00 sama-sama terjaga dan tanggung jawab akhir tetap pada pemilik tugas. Delegasi menjadi profesional ketika instruksi, batas, waktu, dan pemeriksaan hasil jelas.",
     "source": "Panduan Produksi Soal TKP JadiASN — Profesionalisme, contoh 20"
   },
   {
@@ -786,32 +786,32 @@
     "subtopic": "Kualitas Kinerja, Penyelesaian Masalah, dan Pengembangan Kompetensi",
     "bloom": "C5",
     "difficulty": "hots",
-    "stem": "Organisasi mulai menerapkan sistem administrasi digital, sedangkan kemampuan Anda dalam pengelolaan dokumen digital masih terbatas. Pekerjaan utama juga cukup padat. Tindakan yang paling tepat adalah...",
+    "stem": "Organisasi mulai menerapkan sistem administrasi digital, sedangkan kemampuan Anda dalam pengelolaan dokumen digital masih terbatas. Pekerjaan utama juga cukup padat. Organisasi menyediakan modul belajar mandiri di portal dan pelatihan resmi yang jadwalnya belum ditentukan, seorang rekan yang lebih mahir bersedia mendampingi, sedangkan akun sistem bersifat pribadi. Tindakan yang paling tepat adalah ...",
     "options": [
       {
-        "text": "Menyusun jadwal belajar singkat, mengikuti pelatihan yang relevan, mempraktikkan pada tugas berisiko rendah, dan meminta umpan balik tanpa mengabaikan pekerjaan utama.",
+        "text": "Menjadwalkan belajar singkat dari modul mandiri, lalu berlatih pada tugas berisiko rendah dengan umpan balik.",
         "score": 5,
-        "reason": "Proaktif, realistis, langsung diterapkan, dan tetap menjaga pekerjaan utama."
+        "reason": "Jadwal singkat dari modul yang sudah tersedia menyesuaikan beban kerja yang padat, sedangkan latihan pada tugas berisiko rendah dengan umpan balik menguji kemampuan secara bertahap. Pekerjaan utama tetap terjaga sambil menutup kesenjangan sebelum pelatihan resmi dijadwalkan."
       },
       {
-        "text": "Menunggu sampai organisasi memberikan pelatihan resmi kepada seluruh pegawai.",
+        "text": "Mempelajari modul mandiri di portal, lalu menunggu pelatihan resmi untuk berlatih langsung di tempat kerja.",
         "score": 3,
-        "reason": "Mengandalkan dukungan organisasi yang mungkin bermanfaat, tetapi terlalu pasif."
+        "reason": "Modul mandiri memulai belajar tanpa mengganggu pekerjaan utama. Namun praktik langsung menunggu pelatihan resmi yang jadwalnya belum ditentukan, padahal sistem sudah berjalan dan kemampuan mengelola dokumen digital sudah dibutuhkan."
       },
       {
-        "text": "Tetap menggunakan cara lama karena hasilnya selama ini sudah diterima.",
-        "score": 2,
-        "reason": "Menjaga kelancaran jangka pendek, tetapi menolak tuntutan perubahan dan membatasi kinerja."
-      },
-      {
-        "text": "Meminta rekan yang lebih mahir mengerjakan seluruh bagian digital untuk Anda.",
-        "score": 1,
-        "reason": "Menyelesaikan tugas sementara, tetapi melepaskan tanggung jawab belajar dan membangun ketergantungan."
-      },
-      {
-        "text": "Menunda belajar sampai beban kerja benar-benar kosong.",
+        "text": "Mengajak rekan yang lebih mahir mendampingi Anda mengerjakan satu dokumen digital, lalu mencatat langkahnya di buku kerja.",
         "score": 4,
-        "reason": "Mempertimbangkan beban kerja, tetapi menunggu waktu kosong membuat pengembangan terus tertunda. sebagai cara mencapai tujuan. Kesulitan Kesulitan Contoh Soal 1 – Konsep Dasar Anti Radikalisme Level Bloom: C4 – Menganalisis Tingkat Kesulitan: HOTS"
+        "reason": "Pendampingan rekan yang lebih mahir membuat Anda berlatih langsung pada dokumen nyata dengan akun Anda sendiri, tanpa menunggu pelatihan resmi. Namun kemajuan bergantung pada waktu rekan itu, sehingga belajar belum terjadwal dan belum berlanjut ke tugas lain secara mandiri."
+      },
+      {
+        "text": "Meminta rekan yang lebih mahir mengerjakan seluruh bagian digital memakai akun Anda, lalu mengirim hasilnya atas nama Anda.",
+        "score": 1,
+        "reason": "Akun sistem bersifat pribadi, sehingga pemakaian oleh rekan melanggar aturan akses dan hasil kerja tercatat atas nama Anda. Anda juga tidak belajar sehingga ketergantungan pada rekan berlanjut."
+      },
+      {
+        "text": "Menyimpan rencana belajar untuk masa beban kerja kosong, lalu mengerjakan dokumen dengan cara lama seperti biasa.",
+        "score": 2,
+        "reason": "Rencana belajar disimpan untuk masa beban kerja kosong yang belum tentu datang, sehingga pengembangan kemampuan tidak dimulai padahal modul mandiri sudah tersedia. Dokumen tetap dikerjakan dengan cara lama ketika sistem digital mulai dipakai organisasi."
       }
     ],
     "answer": 0,
@@ -825,32 +825,32 @@
     "subtopic": "Konsep Dasar Anti Radikalisme",
     "bloom": "C4",
     "difficulty": "hots",
-    "stem": "Dalam rapat penentuan penerima bantuan, seorang anggota mengusulkan agar warga dari kelompok tertentu tidak diprioritaskan karena dianggap “tidak sejalan” dengan lingkungan mayoritas. Data kebutuhan menunjukkan beberapa warga dari kelompok tersebut justru termasuk yang paling membutuhkan. Sikap Anda adalah ...",
+    "stem": "Dalam rapat penentuan penerima bantuan, seorang anggota mengusulkan agar warga dari kelompok tertentu tidak diprioritaskan karena dianggap “tidak sejalan” dengan lingkungan mayoritas. Data kebutuhan menunjukkan beberapa warga dari kelompok tersebut justru termasuk yang paling membutuhkan. Anda anggota rapat yang berhak menyampaikan pendapat dan usulan, sedangkan keputusan akhir dipegang ketua rapat dan penyaluran bantuan dijadwalkan bulan ini. Sikap Anda adalah ...",
     "options": [
       {
-        "text": "Menolak usulan tersebut secara tegas tanpa memberikan penjelasan agar rapat segera kembali ke agenda.",
+        "text": "Menolak usulan itu secara tegas tanpa ragu di depan seluruh peserta rapat, lalu meminta rapat kembali ke agenda berikutnya hari itu.",
         "score": 4,
-        "reason": "Tegas dan menolak diskriminasi, tetapi tanpa penjelasan dapat menimbulkan resistensi dan tidak memperbaiki cara berpikir forum."
+        "reason": "Penolakan tegas menghentikan diskriminasi terhadap kelompok yang datanya menunjukkan kebutuhan tinggi. Namun penolakan tidak disertai penjelasan alasan dan rujukan data, sehingga anggota yang mengusulkan dan forum belum diarahkan menilai kebutuhan."
       },
       {
-        "text": "Meminta pembahasan ditunda sampai situasi lebih tenang agar tidak terjadi perdebatan.",
-        "score": 3,
-        "reason": "Menunda dapat meredakan ketegangan, tetapi belum menyelesaikan inti diskriminasi dan berisiko menunda hak warga."
-      },
-      {
-        "text": "Menegaskan bahwa bantuan harus diberikan berdasarkan kriteria objektif, menjelaskan risiko diskriminasi, dan mengarahkan rapat menilai data kebutuhan seluruh warga.",
-        "score": 5,
-        "reason": "Adil, berbasis data, komunikatif, dan langsung mengarahkan forum pada keputusan yang objektif."
-      },
-      {
-        "text": "Menerima sebagian usulan agar keputusan dapat disepakati oleh mayoritas anggota rapat.",
-        "score": 1,
-        "reason": "Mengompromikan hak warga dan melegitimasi diskriminasi demi kesepakatan."
-      },
-      {
-        "text": "Mencatat keberatan pribadi, tetapi mengikuti keputusan mayoritas karena forum memiliki kewenangan.",
+        "text": "Meminta pembahasan penerima bantuan ditunda karena suasana rapat tegang, lalu melanjutkan rapat ke agenda lain yang tersedia.",
         "score": 2,
-        "reason": "Menghindari tanggung jawab moral dan membiarkan keputusan tidak adil terjadi. Kesulitan Kesulitan Contoh Soal 2 – Ciri-Ciri dan Bentuk Paparan Radikalisme Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+        "reason": "Penyaluran bantuan dijadwalkan bulan ini, sehingga penundaan menunda hak warga yang datanya menunjukkan kebutuhan paling tinggi. Usulan yang membedakan kelompok juga tetap hidup tanpa dikoreksi selama pembahasan ditunda."
+      },
+      {
+        "text": "Menegaskan bahwa bantuan diberikan menurut kebutuhan tanpa membedakan kelompok, lalu mengarahkan rapat menilai data.",
+        "score": 5,
+        "reason": "Kriteria kebutuhan dan data seluruh warga mengembalikan keputusan pada dasar yang sah, sedangkan penegasan bahwa kelompok tidak boleh dibedakan mencegah pengucilan berbasis identitas. Penyaluran bulan ini tetap dapat berjalan karena rapat langsung memutuskan dari data."
+      },
+      {
+        "text": "Menerima sebagian usulan agar keputusan disepakati mayoritas, lalu menurunkan prioritas kelompok itu dalam daftar penerima.",
+        "score": 1,
+        "reason": "Menurunkan prioritas kelompok tertentu demi kesepakatan melegitimasi diskriminasi dan menutup hak warga yang datanya menunjukkan kebutuhan tinggi. Kompromi pada hak tidak membuat keputusan menjadi lebih adil."
+      },
+      {
+        "text": "Menyampaikan keberatan secara tertulis kepada ketua rapat, lalu menunggu keputusan ketua mengenai usulan itu.",
+        "score": 3,
+        "reason": "Keberatan tertulis kepada ketua rapat menolak diskriminasi lewat jalur yang sah. Namun data kebutuhan tidak dipaparkan di forum dan penyaluran bantuan bulan ini bergantung pada keputusan ketua, sehingga koreksi datang lebih lambat daripada menyampaikannya langsung di rapat."
       }
     ],
     "answer": 2,
@@ -864,22 +864,22 @@
     "subtopic": "Ciri-Ciri dan Bentuk Paparan Radikalisme",
     "bloom": "C5",
     "difficulty": "hots",
-    "stem": "Anda menerima undangan webinar dari akun yang tidak dikenal. Deskripsinya menggunakan bahasa perubahan yang umum, tetapi lampiran promosi memuat ajakan merendahkan kelompok tertentu, melarang peserta mempertanyakan materi, dan mengarahkan ke kanal lain yang tidak terverifikasi. Beberapa rekan berniat mengikuti karena penasaran. Tindakan Anda adalah ...",
+    "stem": "Anda menerima undangan webinar dari akun yang tidak dikenal. Deskripsinya menggunakan bahasa perubahan yang umum, tetapi lampiran promosi memuat ajakan merendahkan kelompok tertentu, melarang peserta mempertanyakan materi, dan mengarahkan ke kanal lain yang tidak terverifikasi. Beberapa rekan berniat mengikuti karena penasaran. Organisasi menyediakan kanal keamanan untuk laporan konten mencurigakan, sedangkan Anda tidak berwenang menyelidiki akun itu. Tindakan Anda adalah ...",
     "options": [
       {
         "text": "Mengikuti webinar untuk memastikan sendiri apakah materinya benar-benar berbahaya.",
-        "score": 1,
-        "reason": "Meningkatkan paparan dan risiko tanpa kewenangan investigasi."
-      },
-      {
-        "text": "Meneruskan undangan kepada rekan lain dengan pesan agar mereka berhati-hati.",
         "score": 2,
-        "reason": "Berniat memperingatkan, tetapi justru memperluas jangkauan tautan dan kemungkinan akses."
+        "reason": "Menilai isi webinar bukan kewenangan Anda dan mengikuti acaranya menambah paparan terhadap materi yang melarang peserta bertanya, padahal kanal keamanan tersedia untuk menanganinya. Rekan yang penasaran tidak terlindungi karena akun tidak dilaporkan."
       },
       {
-        "text": "Mengabaikan undangan karena Anda tidak berniat mengikutinya.",
+        "text": "Melaporkan akun dan tautan undangan ke kanal keamanan, lalu mengingatkan rekan yang berniat mengikuti webinar.",
+        "score": 4,
+        "reason": "Laporan ke kanal keamanan menjalankan penanganan yang berwenang dan rekan yang berniat hadir langsung diingatkan sebelum acara. Namun undangan dan lampirannya tidak disimpan sebagai bukti tersendiri, sehingga kanal hanya memiliki akun dan tautan yang dilaporkan."
+      },
+      {
+        "text": "Mengabaikan undangan karena Anda tidak berniat mengikutinya, lalu mengingatkan rekan secara lisan.",
         "score": 3,
-        "reason": "Menghindari risiko pribadi, tetapi tidak melindungi rekan atau mencegah penyebaran."
+        "reason": "Mengabaikan undangan menghindari paparan pribadi dan peringatan lisan membantu sebagian rekan yang berniat mengikutinya. Namun akun itu tidak dilaporkan, sehingga lampiran yang merendahkan kelompok tertentu tetap dapat menjangkau pegawai lain."
       },
       {
         "text": "Menyimpan informasi yang diperlukan, mengingatkan rekan agar tidak mengaksesnya, dan melaporkan akun atau tautan melalui kanal keamanan yang sesuai.",
@@ -888,8 +888,8 @@
       },
       {
         "text": "Menulis komentar publik yang menuduh penyelenggara sebagai kelompok radikal agar orang lain tidak ikut.",
-        "score": 4,
-        "reason": "Berupaya memperingatkan publik, tetapi tuduhan terbuka dapat memicu konflik, salah informasi, atau eskalasi. Kesulitan Contoh Soal 3 – Sikap Pencegahan dan Penolakan terhadap Radikalisme Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+        "score": 1,
+        "reason": "Menuduh penyelenggara sebagai kelompok radikal di depan publik tanpa pemeriksaan pihak berwenang mempermalukan mereka dan dapat memicu konflik serta salah informasi. Jalur kanal keamanan yang berwenang justru dilewati."
       }
     ],
     "answer": 3,
@@ -903,32 +903,32 @@
     "subtopic": "Sikap Pencegahan dan Penolakan terhadap Radikalisme",
     "bloom": "C5",
     "difficulty": "hots",
-    "stem": "Panitia kegiatan komunitas berencana mengundang pembicara yang pernah beberapa kali menyampaikan ujaran kebencian terhadap kelompok tertentu. Kegiatan belum diumumkan dan panitia masih terbuka terhadap masukan. Langkah Anda adalah ...",
+    "stem": "Panitia kegiatan komunitas berencana mengundang pembicara yang pernah beberapa kali menyampaikan ujaran kebencian terhadap kelompok tertentu dalam rekaman publik. Kegiatan belum diumumkan dan panitia masih terbuka terhadap masukan. Anda anggota komunitas yang dapat menghubungi panitia, tetapi tidak berwenang menentukan susunan acara. Langkah Anda adalah ...",
     "options": [
       {
-        "text": "Meminta aparat mengawasi kegiatan sejak awal agar panitia merasa jera.",
-        "score": 2,
-        "reason": "Terlalu cepat melibatkan aparat pada situasi yang masih dapat ditangani secara persuasif."
-      },
-      {
-        "text": "Mengimbau masyarakat untuk tidak hadir tanpa menghubungi panitia.",
+        "text": "Melaporkan rencana kegiatan itu kepada aparat setempat, lalu meminta aparat mengawasi kegiatan sejak awal.",
         "score": 3,
-        "reason": "Mengurangi audiens, tetapi tidak menyelesaikan sumber masalah dan berpotensi menimbulkan rumor."
+        "reason": "Pelaporan kepada aparat menunjukkan kepedulian dan jalurnya sah. Namun kegiatan belum diumumkan dan panitia masih terbuka terhadap masukan, sehingga melompati komunikasi langsung dengan panitia terlalu cepat untuk tahap pencegahan ini."
       },
       {
-        "text": "Menghubungi panitia, menyampaikan rekam jejak dan risikonya secara objektif, serta mengusulkan narasumber lain yang lebih kredibel dan inklusif.",
+        "text": "Mengimbau warga komunitas agar tidak hadir, lalu membagikan imbauan itu lewat grup tanpa menghubungi panitia.",
+        "score": 2,
+        "reason": "Imbauan kepada warga mengurangi audiens, tetapi dilakukan di luar jalur komunikasi dengan panitia yang masih terbuka terhadap masukan. Pembicara tetap diundang dan rumor tentang panitia dapat menyebar sebelum kegiatan diumumkan."
+      },
+      {
+        "text": "Menghubungi panitia untuk menyampaikan rekam jejak dan risikonya secara objektif, lalu mengusulkan narasumber lain yang kredibel.",
         "score": 5,
-        "reason": "Preventif, berbasis bukti, komunikatif, dan menawarkan solusi yang dapat diterapkan."
+        "reason": "Kegiatan belum diumumkan sehingga masih dapat dicegah lewat komunikasi langsung dengan panitia yang terbuka pada masukan. Rekam jejak yang objektif menjelaskan alasan pergantian narasumber, dan usulan pengganti memberi jalan keluar tanpa mempermalukan panitia."
       },
       {
-        "text": "Membiarkan kegiatan berjalan dengan menghadirkan pembicara penyeimbang agar semua pandangan terwakili.",
+        "text": "Membiarkan kegiatan berjalan dengan pembicara itu, lalu menghadirkan pembicara penyeimbang agar semua pandangan terwakili.",
         "score": 1,
-        "reason": "Tetap memberi ruang pada ujaran kebencian dan menganggapnya setara dengan perbedaan pendapat biasa."
+        "reason": "Pembicara yang berulang kali menyampaikan ujaran kebencian diberi panggung di depan peserta, sehingga kelompok yang menjadi sasaran direndahkan tanpa tujuan perbaikan. Pembicara penyeimbang menyamakan ujaran kebencian dengan perbedaan pendapat biasa."
       },
       {
-        "text": "Menyarankan kegiatan dibatalkan sepenuhnya tanpa menawarkan alternatif.",
+        "text": "Menyarankan panitia membatalkan undangan pembicara itu, lalu menyerahkan pencarian narasumber pengganti kepada panitia.",
         "score": 4,
-        "reason": "Tegas mencegah risiko, tetapi tidak memberi alternatif dan dapat memicu resistensi panitia. konfrontasi, dan hubungi pihak berwenang sesuai prosedur. Kesulitan Kesulitan Contoh Soal 4 – Respons di Lingkungan Kerja dan Digital Level Bloom: C5 – Mengevaluasi Tingkat Kesulitan: HOTS"
+        "reason": "Saran pembatalan disampaikan langsung kepada panitia sebelum kegiatan diumumkan, sehingga ujaran kebencian tidak sampai ke peserta. Namun saran tidak disertai rekam jejak dan usulan narasumber, sehingga panitia belum memiliki dasar dan pilihan pengganti yang dapat dipertimbangkan."
       }
     ],
     "answer": 2,
@@ -942,32 +942,32 @@
     "subtopic": "Respons terhadap Radikalisme di Lingkungan Kerja, Sosial, dan Digital",
     "bloom": "C5",
     "difficulty": "hots",
-    "stem": "Seorang rekan memberi tahu bahwa dalam grup percakapan internal kantor berulang kali muncul pesan yang merendahkan kelompok tertentu dan mengajak anggota menolak bekerja sama dengan mereka. Beberapa anggota merasa tidak nyaman, tetapi takut menanggapi. Anda tidak menjadi anggota grup tersebut. Tindakan Anda adalah ...",
+    "stem": "Seorang rekan memberi tahu bahwa dalam grup percakapan internal kantor berulang kali muncul pesan yang merendahkan kelompok tertentu dan mengajak anggota menolak bekerja sama dengan mereka. Beberapa anggota merasa tidak nyaman, tetapi takut menanggapi. Anda tidak menjadi anggota grup tersebut, rekan itu memegang tangkapan layar beberapa pesan, dan kantor memiliki kanal pengaduan internal yang menjaga identitas pelapor. Tindakan Anda adalah ...",
     "options": [
       {
-        "text": "Meminta rekan meneruskan seluruh pesan ke grup lain agar lebih banyak orang mengetahui masalahnya.",
+        "text": "Meminta rekan meneruskan seluruh pesan grup ke grup lain di kantor, lalu membahas pesan itu di sana bersama mereka.",
         "score": 1,
-        "reason": "Memperluas penyebaran konten dan meningkatkan risiko bagi pihak terdampak."
+        "reason": "Pesan internal diteruskan kepada orang di luar grup yang tidak berkepentingan, sehingga isi percakapan dan identitas pihak yang dirugikan meluas. Anggota yang takut menanggapi justru semakin terpapar, padahal tangkapan layar cukup diserahkan kepada pihak berwenang."
       },
       {
-        "text": "Bergabung ke grup untuk memantau percakapan dan mencari siapa yang paling aktif.",
-        "score": 2,
-        "reason": "Menambah paparan dan melampaui peran peserta tanpa menyelesaikan masalah."
-      },
-      {
-        "text": "Mengabaikan karena Anda tidak melihat pesan tersebut secara langsung.",
+        "text": "Menyarankan rekan mengumpulkan lebih banyak pesan grup sebagai bukti, lalu melapor bila buktinya dianggap cukup.",
         "score": 3,
-        "reason": "Berhati-hati terhadap informasi tidak langsung, tetapi terlalu pasif ketika terdapat pola dan pihak terdampak."
+        "reason": "Bukti yang lebih lengkap dapat menguatkan laporan dan tidak memperluas konten. Namun pesan sudah berulang dan rekan telah memegang tangkapan layar, sehingga laporan yang tertunda memperpanjang waktu anggota yang tidak nyaman tanpa perlindungan."
       },
       {
-        "text": "Meminta rekan menyimpan bukti yang relevan, mendukung pihak yang terdampak, dan menggunakan kanal internal yang berwenang untuk pemeriksaan serta tindak lanjut.",
-        "score": 5,
-        "reason": "Melindungi pihak terdampak, menjaga bukti, dan menggunakan kewenangan organisasi."
-      },
-      {
-        "text": "Menghubungi pengirim pesan secara pribadi dan menuntut mereka meminta maaf di grup.",
+        "text": "Menyerahkan tangkapan layar pesan ke kanal pengaduan internal, lalu meminta kanal itu menghubungi anggota yang tidak nyaman.",
         "score": 4,
-        "reason": "Menunjukkan keberanian dan koreksi, tetapi berisiko memicu konfrontasi dan pembalasan tanpa perlindungan. Contoh Soal 5 – Respons di Lingkungan Sosial dan Digital Level Bloom: C4 – Menganalisis Tingkat Kesulitan: HOTS"
+        "reason": "Tangkapan layar yang diserahkan ke kanal pengaduan menjalankan pemeriksaan yang berwenang dan identitas pelapor terjaga. Namun anggota yang merasa tidak nyaman baru dihubungi setelah kanal bertindak, sehingga perlindungan bagi mereka bergantung pada kanal."
+      },
+      {
+        "text": "Mendampingi rekan menyimpan bukti, lalu melapor ke kanal pengaduan internal yang menjaga identitas pelapor.",
+        "score": 5,
+        "reason": "Kanal internal menjaga identitas pelapor dan berwenang memeriksa pesan berulang, sedangkan bukti yang relevan menguatkan laporan. Anggota yang takut menanggapi terlindungi tanpa Anda harus masuk grup atau berkonfrontasi."
+      },
+      {
+        "text": "Menghubungi pengirim pesan secara pribadi, lalu menuntut mereka meminta maaf secara terbuka di grup itu.",
+        "score": 2,
+        "reason": "Anda bukan anggota grup dan tidak berwenang menegur pengirim, sehingga tuntutan itu berisiko memicu konfrontasi dan pembalasan terhadap rekan yang melapor. Pihak yang dirugikan tidak terlindungi dan pemeriksaan oleh kanal yang berwenang tidak berjalan."
       }
     ],
     "answer": 3,
@@ -984,29 +984,29 @@
     "stem": "Anda melihat rekan mengunggah komentar yang menyinggung kelompok agama tertentu. Unggahan belum menyebar luas, tidak mengandung ancaman, dan sebelumnya rekan tersebut tidak pernah melakukan hal serupa. Respons Anda adalah ...",
     "options": [
       {
-        "text": "Mengajak rekan berbicara secara pribadi, menjelaskan dampak unggahan, meminta klarifikasi, dan mendorongnya memperbaiki atau menghapus konten.",
+        "text": "Mengajak rekan berbicara pribadi untuk klarifikasi, lalu mendorongnya memperbaiki atau menghapus unggahan.",
         "score": 5,
-        "reason": "Proporsional, edukatif, menjaga martabat, dan berorientasi pada perbaikan langsung."
+        "reason": "Unggahan pertama yang belum menyebar luas dan tanpa ancaman masih dapat dikoreksi lewat pembicaraan dua arah yang menjaga martabat rekan. Klarifikasi memberi rekan ruang menjelaskan maksudnya sebelum dinilai, dan dorongan memperbaiki atau menghapus mengurangi dampak pada kelompok agama yang tersinggung."
       },
       {
-        "text": "Melaporkan langsung kepada pihak berwenang agar ada efek jera.",
+        "text": "Melaporkan unggahan itu langsung kepada pihak berwenang, lalu meminta agar rekan tersebut ditindak.",
         "score": 3,
-        "reason": "Menunjukkan kepedulian, tetapi terlalu cepat untuk kejadian pertama tanpa ancaman dan tanpa upaya klarifikasi."
+        "reason": "Melapor kepada pihak berwenang menunjukkan kepedulian dan jalurnya sah. Namun ini kejadian pertama tanpa ancaman dan klarifikasi langsung belum dicoba, sehingga laporan terlalu cepat dan dapat merusak hubungan kerja tanpa lebih dulu menghentikan dampaknya."
       },
       {
-        "text": "Menegur keras di kolom komentar agar publik mengetahui bahwa Anda tidak setuju.",
-        "score": 2,
-        "reason": "Menolak ujaran, tetapi mempermalukan rekan dan berpotensi memperluas konflik."
-      },
-      {
-        "text": "Menyampaikan unggahan tersebut kepada banyak rekan agar mereka ikut menasihati.",
-        "score": 1,
-        "reason": "Menyebarkan konten dan membuka peluang gosip atau perundungan."
-      },
-      {
-        "text": "Membiarkan karena unggahan dibuat melalui akun pribadi.",
+        "text": "Mengirim pesan pribadi yang menyebut dampak unggahan pada kelompok agama tertentu, lalu meminta rekan menghapusnya.",
         "score": 4,
-        "reason": "Menghormati ruang pribadi, tetapi mengabaikan dampak publik dari unggahan; masih kurang aktif dibanding komunikasi personal."
+        "reason": "Pesan pribadi menjaga martabat rekan dan permintaan menghapus unggahan langsung menghentikan dampak yang masih terbatas. Namun rekan belum diberi ruang menjelaskan maksudnya, sehingga permintaan itu berjalan satu arah dan tidak membuka klarifikasi."
+      },
+      {
+        "text": "Menyampaikan unggahan itu kepada banyak rekan di kantor, lalu meminta mereka ikut menasihati rekan tersebut.",
+        "score": 1,
+        "reason": "Unggahan disebarkan kepada banyak rekan sehingga rekan tersebut dipermalukan di hadapan banyak orang tanpa jalur koreksi yang jelas. Jangkauan unggahan melebihi penyebaran semula yang masih terbatas dan peluang gosip atau perundungan terbuka."
+      },
+      {
+        "text": "Membiarkan unggahan itu karena dibuat melalui akun pribadi rekan tersebut, lalu menunggu pihak lain menegurnya.",
+        "score": 2,
+        "reason": "Akun pribadi tidak membuat unggahan yang menyinggung kelompok agama tertentu menjadi tidak berdampak, dan dampaknya tetap dapat bertambah. Kejadian pertama justru waktu paling tepat untuk koreksi, sedangkan menunggu orang lain menegur menyerahkan tanggung jawab itu."
       }
     ],
     "answer": 0,

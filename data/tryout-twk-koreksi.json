@@ -1,0 +1,1172 @@
+{
+  "_petunjuk": "Koreksi contoh tryout TWK hasil revisi QC akademik (tahap 2b). Dibaca scripts/import-tryouts.py: \"label\" menetapkan bloom dan kesulitan tiap butir TWK (dari draf label yang ditelaah studio-soal-twk:penelaah-twk); \"revisi\" mengganti stem (bila ada), teks opsi, alasan opsi, pembahasan, dan tip dengan versi telaah. Kunci (answer) harus sama dengan sumber. Ubah lewat berkas ini, bukan dengan menyunting data/tryout-reference.json.",
+  "label": {
+    "tryout-ref-02-01": {
+      "bloom": "C2",
+      "difficulty": "sedang",
+      "alasan": "Merangkum gagasan yang mencakup seluruh paragraf dan membedakannya dari kalimat penjelas.",
+      "catatan": ""
+    },
+    "tryout-ref-02-02": {
+      "bloom": "C2",
+      "difficulty": "sedang",
+      "alasan": "Merangkum gagasan utama paragraf induktif dari kalimat penutup yang menyimpulkan.",
+      "catatan": ""
+    },
+    "tryout-ref-02-03": {
+      "bloom": "C2",
+      "difficulty": "sedang",
+      "alasan": "Menarik simpulan yang mencakup dua temuan berlawanan (pemakaian naik, sebagian siswa terkendala akses) tanpa melampaui teks.",
+      "catatan": ""
+    },
+    "tryout-ref-02-04": {
+      "bloom": "C2",
+      "difficulty": "sedang",
+      "alasan": "Merangkum dua hasil evaluasi (waktu pengisian turun, perbaikan formulir relatif tetap) menjadi satu simpulan tanpa menambah informasi.",
+      "catatan": ""
+    },
+    "tryout-ref-02-05": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan kaidah subjek tidak didahului preposisi pada kalimat nyata sambil menjaga makna penerima dan tenggat.",
+      "catatan": ""
+    },
+    "tryout-ref-02-06": {
+      "bloom": "C2",
+      "difficulty": "mudah",
+      "alasan": "Mengenali kesejajaran bentuk verba pada perincian setelah kata 'untuk'.",
+      "catatan": ""
+    },
+    "tryout-ref-02-07": {
+      "bloom": "C1",
+      "difficulty": "mudah",
+      "alasan": "Mengingat bentuk baku analisis, aktivitas, dan risiko dalam kalimat.",
+      "catatan": ""
+    },
+    "tryout-ref-02-08": {
+      "bloom": "C1",
+      "difficulty": "mudah",
+      "alasan": "Mengingat bentuk baku mengimbau, antre, dan apotek dalam kalimat.",
+      "catatan": ""
+    },
+    "tryout-ref-02-09": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan dua kaidah sekaligus: titik dua sebelum perincian dan titik koma antarklausa setara.",
+      "catatan": ""
+    },
+    "tryout-ref-02-10": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan kaidah koma untuk anak kalimat yang mendahului induk kalimat dan sebelum kata 'tetapi'.",
+      "catatan": ""
+    },
+    "tryout-ref-02-11": {
+      "bloom": "C2",
+      "difficulty": "mudah",
+      "alasan": "Membedakan di-/ke- sebagai imbuhan dan sebagai kata depan pada contoh kalimat.",
+      "catatan": ""
+    },
+    "tryout-ref-02-12": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan tiga kaidah bentuk terikat (non- + singkatan, se- + nama diri, non- + kata umum) pada satu kalimat.",
+      "catatan": ""
+    },
+    "tryout-ref-03-01": {
+      "bloom": "C4",
+      "difficulty": "sulit",
+      "alasan": "Memisahkan isi tuntutan daerah dari cara memperjuangkannya, lalu menyimpulkan pelajaran persatuan dari peristiwa PRRI.",
+      "catatan": ""
+    },
+    "tryout-ref-03-02": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan nasionalisme ekonomi pada kasus konkret ASN dengan menimbang dua tekanan (daya saing perajin dan ajakan boikot).",
+      "catatan": ""
+    },
+    "tryout-ref-03-03": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Mengklasifikasikan upaya hilirisasi hasil laut ke unsur kemandirian di antara lima unsur nasionalisme.",
+      "catatan": "Label yang tepat C3, bukan C2. Stem tidak menyebut ciri definisi kemandirian (mandiri/tidak bergantung), jadi peserta harus menyimpulkannya dari hilirisasi sambil menyisihkan tiga unsur lain yang juga punya penanda di stem. Format opsi melanggar aturan opsi istilah ('X melalui …'), dan deskripsi pada kunci mengulang tiga kata stem (kemampuan, olah, sumber daya)."
+    },
+    "tryout-ref-03-04": {
+      "bloom": "C2",
+      "difficulty": "sedang",
+      "alasan": "Mengenali bentuk nasionalisme sipil dari ciri kesetaraan kedudukan dan partisipasi warga negara.",
+      "catatan": ""
+    },
+    "tryout-ref-03-05": {
+      "bloom": "C2",
+      "difficulty": "mudah",
+      "alasan": "Membandingkan ciri Sarekat Islam dengan Budi Utomo memakai informasi keanggotaan yang sudah tersaji di stem.",
+      "catatan": "Label C2/mudah disetujui. Kunci memparafrasekan stem, sedangkan pengecoh priyayi-pelajar menjebak peserta yang terbalik membaca arah pembanding. Fakta (SDI menjadi SI 1912, Taman Siswa 1922, Kongres Pemuda II 1928) sesuai. Pembahasan masih menyebut huruf opsi."
+    },
+    "tryout-ref-03-06": {
+      "bloom": "C2",
+      "difficulty": "sedang",
+      "alasan": "Menafsirkan makna maklumat 5 September 1945 sebagai komitmen kebangsaan yang melampaui ikatan kedaerahan.",
+      "catatan": ""
+    },
+    "tryout-ref-03-07": {
+      "bloom": "C2",
+      "difficulty": "mudah",
+      "alasan": "Mengklasifikasikan sikap mahasiswa ke nilai dasar bela negara 'setia pada Pancasila'.",
+      "catatan": ""
+    },
+    "tryout-ref-03-08": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan konsep bela negara nonmiliter dengan memilih program yang menyasar akar masalah (ketergantungan benih impor).",
+      "catatan": "Label C3/sedang disetujui. Hanya satu opsi yang menyasar akar ketergantungan benih; pengecoh militeristik, simbolis, dan administratif mengikuti pola KD Bela Negara. Rujukan UU 23/2019 benar. Pembahasan masih menyebut huruf opsi."
+    },
+    "tryout-ref-03-09": {
+      "bloom": "C5",
+      "difficulty": "sulit",
+      "alasan": "Menimbang kepentingan ekonomi terhadap risiko lingkungan dan sosial untuk memilih sikap yang preventif dan kolaboratif.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Versi terakhir masih tertebak. Kunci mengulang ‘kajian’ dan ‘masyarakat adat’ dan hanya kunci yang memakai ‘menyeluruh’. Sekarang empat pengecoh juga memakai kajian dampak, musyawarah, atau ‘sebelum izin diputuskan’, dan tiap pengecoh keliru di satu sisi: waktu, cara pelibatan, pihak yang diajak, atau hal yang dikaji. Kata ‘menyeluruh’ dihapus; rasio panjang kunci 0,86. Label sulit karena alasan draf (pengecoh ekstrem) tidak berlaku lagi."
+    },
+    "tryout-ref-03-10": {
+      "bloom": "C4",
+      "difficulty": "sulit",
+      "alasan": "Menghubungkan tiga penyebab masalah perbatasan dengan program yang menyasar tiap penyebab dalam kerangka Pancagatra.",
+      "catatan": ""
+    },
+    "tryout-ref-03-11": {
+      "bloom": "C1",
+      "difficulty": "mudah",
+      "alasan": "Mengingat nilai dasar bela negara dari ciri kesiapan fisik, kesiapan psikis, dan keterampilan dasar.",
+      "catatan": ""
+    },
+    "tryout-ref-03-12": {
+      "bloom": "C2",
+      "difficulty": "mudah",
+      "alasan": "Mengklasifikasikan kerentanan akibat ketergantungan pasokan ke gatra ekonomi dalam Pancagatra.",
+      "catatan": "Tetap C2 sesuai aturan 8: penanda di stem (pasokan, barang langka, harga melonjak, kesulitan memenuhi kebutuhan) adalah kosakata definisi gatra ekonomi, jadi peserta tidak perlu mentransfer konsep. Opsi istilah dan satu kerangka (Pancagatra) sudah sesuai standar. Pembahasan masih menyebut huruf opsi."
+    },
+    "tryout-ref-03-13": {
+      "bloom": "C2",
+      "difficulty": "mudah",
+      "alasan": "Mengenali nilai antikorupsi Sederhana dari perilaku hidup bersahaja pejabat.",
+      "catatan": ""
+    },
+    "tryout-ref-03-14": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan prosedur konflik kepentingan (deklarasi dan mundur) pada kasus kerabat pengusul hibah.",
+      "catatan": "Kunci benar. Rujukan 'Permenpan-RB No. 17 Tahun 2024' tidak bisa saya pastikan (tidak ada akses web dan tidak ada di bahan project) sehingga diganti bentuk umum. Kunci juga opsi terpanjang (1,11x) dan dipendekkan sedikit. Kesulitan turun ke sedang karena hanya satu pengecoh yang kuat (tetap menilai secara objektif)."
+    },
+    "tryout-ref-03-15": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan unsur tindak pidana (inisiatif petugas, paksaan, jabatan) untuk menggolongkan perbuatan sebagai pemerasan.",
+      "catatan": ""
+    },
+    "tryout-ref-03-16": {
+      "bloom": "C5",
+      "difficulty": "sulit",
+      "alasan": "Menimbang tekanan atasan, kelaziman tim, dan janji penyedia terhadap kebenaran dokumen untuk memilih sikap berintegritas.",
+      "catatan": ""
+    },
+    "tryout-ref-03-17": {
+      "bloom": "C2",
+      "difficulty": "sedang",
+      "alasan": "Memetakan keputusan tokoh (tetap menerbitkan tulisan meski berisiko) ke nilai antikorupsi 'Berani'.",
+      "catatan": ""
+    },
+    "tryout-ref-03-18": {
+      "bloom": "C5",
+      "difficulty": "sulit",
+      "alasan": "Menimbang dua kebutuhan sah (penyaluran bantuan dan perangkat sekolah) terhadap batas kewenangan anggaran.",
+      "catatan": "Ambigu. 'Menyiapkan perubahan anggaran sesuai prosedur' dan 'mengusulkan pembagian anggaran' sama-sama prosedural, dan alasan pengecoh usulan pembagian salah baca ('mengusulkan' tidak sama dengan 'menerapkan'). Pada perbaikan, stem dipadatkan menjadi 5 kalimat dan empat pengecoh diganti dengan cacat yang tegas: belanja sebelum persetujuan, menunda hak penerima, memakai data lama, dan mengembalikan dana. Kunci tetap di indeks 3."
+    },
+    "tryout-ref-03-19": {
+      "bloom": "C2",
+      "difficulty": "sedang",
+      "alasan": "Menghubungkan fakta kesepakatan pendiri negara dengan fungsi Pancasila sebagai perjanjian luhur.",
+      "catatan": ""
+    },
+    "tryout-ref-03-20": {
+      "bloom": "C2",
+      "difficulty": "sulit",
+      "alasan": "Memeriksa kebenaran enam pernyataan sejarah perumusan Pancasila terhadap tahapan BPUPKI, Panitia Sembilan, dan PPKI.",
+      "catatan": ""
+    },
+    "tryout-ref-03-21": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan butir pengamalan sila ke-4 pada perilaku konkret warga.",
+      "catatan": ""
+    },
+    "tryout-ref-03-22": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Menerapkan Pasal 31 ayat (4) UUD 1945 untuk menilai usulan APBD di bawah batas 20 persen.",
+      "catatan": ""
+    },
+    "tryout-ref-03-23": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Menerapkan Pasal 22 UUD 1945 untuk menentukan akibat hukum Perppu yang tidak disetujui DPR.",
+      "catatan": ""
+    },
+    "tryout-ref-03-24": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Menilai pendapat peserta forum dengan cara pandang Wawasan Nusantara (laut sebagai penghubung).",
+      "catatan": ""
+    },
+    "tryout-ref-03-25": {
+      "bloom": "C2",
+      "difficulty": "sedang",
+      "alasan": "Menentukan ide pokok paragraf deduktif yang kalimat utamanya di awal.",
+      "catatan": ""
+    },
+    "tryout-ref-03-26": {
+      "bloom": "C1",
+      "difficulty": "sedang",
+      "alasan": "Mengingat bentuk baku sembilan kata (saksama, kuitansi, mengimbau, antre, dan lain-lain) pada lima kalimat.",
+      "catatan": ""
+    },
+    "tryout-ref-03-27": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Menerapkan kaidah koma setelah penghubung antarkalimat 'Oleh karena itu' sambil memeriksa empat kalimat lain.",
+      "catatan": ""
+    },
+    "tryout-ref-03-28": {
+      "bloom": "C4",
+      "difficulty": "sulit",
+      "alasan": "Menelusuri rantai sebab-akibat antarkalimat dan memilih simpulan yang didukung data, bukan generalisasi.",
+      "catatan": "Kunci benar, tetapi pengecoh memakai penanda mutlak (seluruh, pasti, menghapus, seluruh Indonesia) sehingga kunci menjadi satu-satunya opsi yang berhati-hati (label draf 'sedang' tepat untuk versi lama). Pada perbaikan, pengecoh diganti pergeseran cakupan yang halus, klaim penyebab utama, saran, dan rincian satu kalimat. Rasio panjang kunci 1,08."
+    },
+    "tryout-ref-03-29": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Menerapkan kaidah titik, koma, dan titik dua pada lima kalimat.",
+      "catatan": ""
+    },
+    "tryout-ref-03-30": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Menerapkan dua kaidah (kesejajaran dan kehematan) sekaligus tanpa menimbulkan kesalahan baru.",
+      "catatan": ""
+    },
+    "tryout-ref-04-01": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Memilih kegiatan yang menjawab masalah yang didiagnosis (interaksi antarkelompok terbatas) untuk membangun kesadaran sebagai satu bangsa.",
+      "catatan": "Ambigu. Forum komunikasi dan diskusi kebangsaan lintas daerah juga membangun interaksi dan kesadaran sebagai satu bangsa, sedangkan pembeda 'tujuan bersama' tidak ada di stem. Pada perbaikan, stem menegaskan bahwa kegiatan harus mengubah pola interaksi, dua pengecoh diganti (lomba antarkelompok bahasa daerah, ceramah Sumpah Pemuda), dan kunci dipendekkan (rasio 0,96)."
+    },
+    "tryout-ref-04-02": {
+      "bloom": "C2",
+      "difficulty": "sedang",
+      "alasan": "Menafsirkan makna keputusan pendanaan lintas daerah sebagai perluasan kesadaran kebangsaan.",
+      "catatan": ""
+    },
+    "tryout-ref-04-03": {
+      "bloom": "C5",
+      "difficulty": "sedang",
+      "alasan": "Menimbang lima program terhadap tiga sasaran sekaligus dan penyebab masalah mutu warna.",
+      "catatan": "Label C5 dan sedang sudah tepat. Panjang kunci 1,32x rata-rata pengecoh dan kunci menyalin kata penyebab dari stem (takaran, lama pewarnaan), jadi melanggar aturan 3. Kunci saya ringkas menjadi ‘pembakuan prosedur’ (rasio 0,97) dan klausa ‘untuk’ di pengecoh dihapus. Bisa jadi sulit setelah uji coba."
+    },
+    "tryout-ref-04-04": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Memilih mekanisme pemilihan yang memenuhi dua tujuan (kompetensi dan kebersamaan warga lama dan baru).",
+      "catatan": "Kunci 1,43x rata-rata pengecoh dan menyalin dua tujuan di stem. Pada perbaikan, kunci dipendekkan (1,06x) tanpa mengulang kata stem, dan opsi 'Musyawarah berdasarkan dukungan warga' yang janggal diganti. Kaitan ke KD Nasionalisme agak tipis (bisa terbaca Sila 4), tetapi tetap dipertahankan karena stem menonjolkan persatuan warga dari berbagai daerah. Simulasi peserta mahir menilai musyawarah mufakat sama kuatnya; pengecoh dipertegas dengan ukuran \"paling dikenal warga\"."
+    },
+    "tryout-ref-04-05": {
+      "bloom": "C5",
+      "difficulty": "sedang",
+      "alasan": "Menilai pendekatan pameran terhadap dua kriteria: menumbuhkan rasa kebangsaan dan tidak melampaui bukti sejarah.",
+      "catatan": "Kunci 1,58x rata-rata pengecoh dan mengulang 'arsip transaksi' dari stem, sementara tip memuat isi kunci. Pada perbaikan, kunci dipendekkan (1,10x, bukan yang terpanjang) tanpa frasa stem dan tidak berpasangan bentuk dengan 'Narasi kejayaan …'. Tip diganti petunjuk memilah bukti."
+    },
+    "tryout-ref-04-06": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan prinsip keadilan akses pada akar masalah yang sudah dinyatakan (aturan reservasi, bukan jumlah slot).",
+      "catatan": ""
+    },
+    "tryout-ref-04-07": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan prinsip akuntabilitas dan ketentuan kontrak untuk menerima sebagian barang sambil mencatat ketidaksesuaian.",
+      "catatan": ""
+    },
+    "tryout-ref-04-08": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Menerapkan pedoman konflik kepentingan (ungkap, tinjau ulang, alihkan penilaian) pada tahap proses yang sudah berjalan.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Kunci adalah satu-satunya opsi tiga langkah, dan ketiga langkahnya sama dengan tiga isi pedoman di stem. Sekarang semua opsi berbentuk tiga langkah yang diawali pengungkapan konflik. Tiap pengecoh keliru di satu langkah: meminta persetujuan peserta, administrasi tidak ditinjau ulang, pemeriksaan ulang dilakukan sendiri, atau ikut menilai bersama penilai pengganti. Label naik ke sulit karena alasan penurunan di draf tidak berlaku lagi."
+    },
+    "tryout-ref-04-09": {
+      "bloom": "C5",
+      "difficulty": "sulit",
+      "alasan": "Menimbang cara melaporkan angka berstatus berbeda (terverifikasi, tertunda, selisih dengan sistem) di bawah tenggat.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Kunci adalah satu-satunya opsi yang menyebut semua angka dan status. Sekarang tiga pengecoh juga memuat beberapa angka beserta selisihnya, dan tiap pengecoh gagal di satu tuntutan: tenggat, angka dasar diambil dari sistem, angka belum pasti disebut final, atau status verifikasi tidak dirinci. Kunci memparafrasekan ‘terverifikasi/menunggu konfirmasi’ menjadi ‘terpisah menurut statusnya’. Tidak ada pengecoh yang hanya berbeda pada unsur selisih, jadi keraguan lama soal perlu tidaknya selisih tidak muncul lagi."
+    },
+    "tryout-ref-04-10": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan aturan persetujuan tertulis untuk membedakan koreksi sah dari perubahan target yang belum disahkan.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Kunci adalah satu-satunya opsi yang menyebut 90% dan 80% sekaligus dan memakai kata ‘catat’, yang cocok dengan ‘catatan klarifikasi’ di stem. Sekarang semua opsi terdiri atas tiga komponen dan memuat kedua angka atau kata ‘catat’; tiap pengecoh keliru di satu komponen. Kunci memakai ‘jelaskan … dalam laporan’. Kata ‘sah’ dihapus dari semua opsi supaya pengecoh yang mengembalikan koreksi tidak gugur oleh teksnya sendiri."
+    },
+    "tryout-ref-04-11": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Membedakan unsur penentu pemerasan (paksaan melalui kewenangan jabatan) dari unsur yang juga ada pada pungli atau penyalahgunaan jabatan.",
+      "catatan": ""
+    },
+    "tryout-ref-04-12": {
+      "bloom": "C5",
+      "difficulty": "sulit",
+      "alasan": "Menimbang tindakan proporsional atas potensi konflik kepentingan (hubungan keluarga, akses matriks rahasia) tanpa menganggapnya pelanggaran.",
+      "catatan": ""
+    },
+    "tryout-ref-04-13": {
+      "bloom": "C4",
+      "difficulty": "sulit",
+      "alasan": "Memilah masalah yang terbukti dan belum tertangani dari yang sudah ditangani, lalu memilih pasangan program prioritas.",
+      "catatan": ""
+    },
+    "tryout-ref-04-14": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan batas antara kritik yang sah dan ajakan melanggar hukum pada keputusan pengurus forum.",
+      "catatan": ""
+    },
+    "tryout-ref-04-15": {
+      "bloom": "C5",
+      "difficulty": "sulit",
+      "alasan": "Menimbang dua horizon waktu (pemasok alternatif 2 bulan, produsen lokal 1 tahun) untuk strategi ketahanan ekonomi.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Kunci adalah satu-satunya opsi yang menggabungkan pemasok dari negara lain dan produsen dalam negeri, dan kata ‘penguatan’ menggemakan ‘memperkuat’ di stem. Sekarang semua opsi memadukan dua langkah dari kedua jalur, dan tiap pengecoh keliru di satu sisi: bahan domestik diwajibkan sebelum produsennya siap, impor dari pemasok lama ditambah, atau kemampuan domestik tidak dibangun. ‘Penguatan’ diganti ‘pembinaan’; rasio panjang kunci 0,90."
+    },
+    "tryout-ref-04-16": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan prinsip urgensi dan keberlanjutan untuk menyusun urutan dua program dengan anggaran satu tahap.",
+      "catatan": ""
+    },
+    "tryout-ref-04-17": {
+      "bloom": "C3",
+      "difficulty": "mudah",
+      "alasan": "Mencocokkan kebutuhan 'kesiapsiagaan praktis' dengan program yang melatih keterampilan (Q) berdasarkan data capaian.",
+      "catatan": "Label C3/mudah tepat. Penanda “kesiapsiagaan praktis” di stem cocok dengan “latihan praktik” di kunci (kata pemicu ringan), dan persentase hanya pengalih. Opsi istilah sudah paralel tanpa titik. Pembahasan masih format lama dan menyebut huruf opsi, tetapi lib/generate.ts sudah memetakan ulang rujukan “Opsi X”, jadi ini minor."
+    },
+    "tryout-ref-04-18": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan syarat pemerintah (kendali dan pemulihan tetap pada pengelola nasional) untuk menilai opsi kerja sama.",
+      "catatan": ""
+    },
+    "tryout-ref-04-19": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan nilai musyawarah dan ketepatan sejarah untuk memilih cara menyajikan dokumen perumusan Pancasila.",
+      "catatan": ""
+    },
+    "tryout-ref-04-20": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan prinsip Bhinneka Tunggal Ika pada pembagian tugas berdasarkan kemampuan, bukan asal.",
+      "catatan": "Masalahnya: tiga pengecoh membedakan asal secara terang (aturan 4), klausa ‘agar’ hanya ada di dua pengecoh, panjang kunci 1,18x, dan tip memuat rumus ‘tanpa membedakan asal’. Semua opsi saya ganti dengan pengecoh positif; kunci tetap di indeks 4, rasio 0,92. Kunci sengaja tidak memakai ‘regu campuran’ supaya tidak menambah pola kolaborasi lintas kelompok. Label mudah di draf berlaku untuk versi lama; versi perbaikan sedang."
+    },
+    "tryout-ref-04-21": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan Pasal 24C untuk membedakan pengujian UU (MK) dari pengujian peraturan di bawah UU (MA).",
+      "catatan": ""
+    },
+    "tryout-ref-04-22": {
+      "bloom": "C4",
+      "difficulty": "sedang",
+      "alasan": "Menganalisis kendala waktu, kelonggaran jadwal, dan aula alternatif untuk menemukan solusi yang menghormati kedua komunitas.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Kunci paling banyak mengulang kata stem (lokakarya, aula setara, mufakat). Sekarang dua pengecoh memakai kerangka yang persis sama dengan kunci, tetapi yang satu memindahkan kegiatan yang salah dan yang lain diputuskan sepihak. Dua pengecoh lain juga memakai ‘atas mufakat’ dan menyebut kedua kegiatan. Rasio panjang kunci 0,91. Pembahasan kini menyebut Pasal 36A UUD 1945."
+    },
+    "tryout-ref-04-23": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Menerapkan pembagian urusan pusat dan daerah (politik luar negeri urusan absolut) pada rencana kerja sama daerah.",
+      "catatan": ""
+    },
+    "tryout-ref-04-24": {
+      "bloom": "C5",
+      "difficulty": "sulit",
+      "alasan": "Menimbang dua kepentingan sah (pertumbuhan ekonomi dan keterhubungan pulau kecil) dengan prinsip Wawasan Nusantara.",
+      "catatan": ""
+    },
+    "tryout-ref-05-01": {
+      "bloom": "C2",
+      "difficulty": "mudah",
+      "alasan": "Mengklasifikasikan upaya produksi bibit dan pupuk lokal ke unsur kemandirian.",
+      "catatan": "Menurut aturan 8 penandanya literal: kalimat ‘dapat dipenuhi tanpa bergantung pada pasokan luar negeri’ sama dengan definisi kemandirian, dan unsur pesaing (kepedulian sosial, cinta tanah air) hanya punya penanda lemah. Karena itu labelnya C2 dan mudah, bukan sedang. Konstruknya mengulang 03-03 (kuncinya sama), jadi jangan pasang keduanya dalam satu paket."
+    },
+    "tryout-ref-05-02": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Memilih kebijakan yang menerapkan semangat Sumpah Pemuda (persatuan lintas daerah, bahasa persatuan, kekhasan budaya).",
+      "catatan": "Klausa tujuan hanya ada di pengecoh (‘untuk meningkatkan…’, ‘agar hubungan…’). Kunci terpanjang (1,17x) dengan tiga unsur dan pola ‘ruang budaya lokal’, dan tip berupa rumus. Opsi saya seimbangkan (rasio 1,04, bukan terpanjang). Kunci divariasikan menjadi proyek bersama berbahasa Indonesia tanpa ekor ‘budaya lokal’. Labelnya sedang, bukan sulit: ‘bahasa Indonesia’ di kunci langsung terkait ikrar ketiga, dan penerapannya cuma satu langkah seperti 04-01."
+    },
+    "tryout-ref-05-03": {
+      "bloom": "C2",
+      "difficulty": "sulit",
+      "alasan": "Menafsirkan makna Serangan Umum 1 Maret sebagai penguat posisi politik dan diplomasi, bukan sekadar capaian militer.",
+      "catatan": ""
+    },
+    "tryout-ref-05-04": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Memilih keputusan yang menyeimbangkan pelestarian seni tradisional dan daya tarik acara bagi generasi muda.",
+      "catatan": "Klausa tujuan hanya ada di pengecoh (‘untuk menjaga…’, ‘agar setiap jenis…’). Kunci terpanjang (1,20x) dengan pola ‘kolaboratif… tanpa menghilangkan ciri khas’, dan tip menyalin kunci. Stem saya beri batas ‘dalam festival tersebut’ dan ‘di bidang budaya’ supaya opsi festival khusus tidak bisa dibela. Kunci divariasikan, rasio 0,88. Labelnya sedang karena pola ‘tradisi dipadu masa kini’ sudah dikenal luas."
+    },
+    "tryout-ref-05-05": {
+      "bloom": "C2",
+      "difficulty": "sedang",
+      "alasan": "Menafsirkan perubahan pola perjuangan yang ditandai lahirnya Budi Utomo.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Kunci adalah satu-satunya opsi yang menggemakan kata ‘organisasi’ dari stem. Sekarang tiga pengecoh memuat ‘organisasi’ dan satu pengecoh memuat ‘kedaerahan’, sedangkan kunci memakai ‘perkumpulan modern’. Tonggak pembanding tetap (SI, PNI, diplomasi 1945–1949, Sumpah Pemuda). Rasio panjang kunci 1,03 dan kunci bukan yang terpanjang. Label sedang dipertahankan karena peserta harus membedakan tonggak sejarah."
+    },
+    "tryout-ref-05-06": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan nasionalisme ekonomi pada kebijakan kawasan perdagangan dengan menimbang investor besar dan UMKM.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Kunci adalah satu-satunya opsi yang menyebut modal, teknologi, dan pasar, yaitu tiga hambatan di stem. Sekarang dua pengecoh juga menyebut ketiganya, tetapi keliru pada pelaku utama atau penerima dukungan. Satu pengecoh menempatkan UMKM sebagai inti kawasan, tetapi dukungannya tidak menjawab hambatan modal dan teknologi. Kunci tetap berupa parafrase; rasio panjangnya 1,03 dan bukan yang terpanjang."
+    },
+    "tryout-ref-05-07": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Menerapkan prosedur konflik kepentingan (ungkap dan mundur dari keputusan) pada kepala daerah yang masih berwenang mengawasi.",
+      "catatan": "Label C3 dan sulit sudah tepat. Masalahnya: klausa ‘agar’ di E dan ‘untuk memastikan’ di C, serta kunci terpanjang (1,14x). Opsi saya ringkas dan seimbangkan, rasio kunci 0,93. Pembahasan menambah rujukan Permenpan-RB 37/2012 (dari standar KD) dan UU 30/2014 tanpa nomor pasal."
+    },
+    "tryout-ref-05-08": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan pedoman audit (laporan sementara, pencatatan terpisah, klarifikasi resmi) pada kasus bukti belum terverifikasi.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Dalam versi sebelumnya, kunci satu-satunya yang menyalin kata pedoman (“memisahkan”, “klarifikasi”). Sekarang tiga pengecoh berbentuk sejajar tiga langkah memakai frasa stem (“memisahkan”, “klarifikasi resmi”, “sesuai tenggat”), masing-masing dengan satu langkah keliru: klarifikasi ditunda, minta perpanjangan, atau semua transaksi digabung. Kunci memparafrasekan (“tepat waktu”, “bagian khusus”, “tertulis”), “resmi” kini hanya ada di pengecoh, dan rasio kunci 1,04 (bukan yang terpanjang)."
+    },
+    "tryout-ref-05-09": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan prinsip dokumen harus mencerminkan fakta pada permintaan penyedia agar berita acara ditandatangani.",
+      "catatan": "Label C3/sedang tepat. Kunci paling panjang (1,29x, melanggar aturan PM 3). Tip “dokumen mencerminkan fakta, bukan janji perbaikan” memuat isi kunci dan sekaligus menggugurkan dua pengecoh. Perbaikan ringan: hanya kunci dipadatkan (rasio 0,97) dan tip diganti."
+    },
+    "tryout-ref-05-10": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan nilai komitmen dan tanggung jawab dari keteladanan Soedirman pada konteks kepemimpinan.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Dalam versi sebelumnya, hanya kunci yang memuat unsur keadaan pribadi yang berat, jadi peserta tinggal mencocokkannya dengan cerita sakit tetapi tetap memimpin. Sekarang tiga pengecoh juga memuat keadaan sakit atau terbatas, tetapi responsnya keliru: menyerahkan pimpinan, terbuka lalu meminta keringanan, atau sekadar hadir di acara seremonial. Pengecoh keempat memakai “sarana yang terbatas” dari stem untuk nilai lain (adil). Rasio kunci 1,02, bukan yang terpanjang."
+    },
+    "tryout-ref-05-11": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Menerapkan prosedur konflik kepentingan pada pemohon teman dekat yang dokumennya belum lengkap.",
+      "catatan": "Kunci paling panjang (1,20x) dan memuat tiga tindakan. Klausa alasan hanya muncul di pengecoh: “agar” di indeks 1 dan “guna memastikan” di indeks 3. Pengecoh indeks 2 (“mengarahkan ke petugas lain … tanpa memberikan penilaian langsung”) nyaris sama dengan pengalihan penilaian, jadi rawan dianggap benar. Perbaikan: kunci dipadatkan menjadi ungkap hubungan + alihkan penilaian (rasio 1,01, bukan yang terpanjang), dan pengecoh indeks 2 diganti dengan pengecoh yang tegas salah."
+    },
+    "tryout-ref-05-12": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Menerapkan prinsip keterlacakan koreksi data resmi (bukti, dokumentasi, verifikasi) sebelum pengumuman.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Dalam versi sebelumnya, kunci satu-satunya yang memuat dokumentasi (“mencatat”, “arsip resmi”). Sekarang dua pengecoh juga mengoreksi dan mencatat, tetapi keliru di satu dimensi: satu hanya mengarsipkan daftar skor terbaru tanpa jejak perubahan, satu lagi hanya mengoreksi peserta di sekitar batas kelulusan. “Resmi” dipindah ke pengecoh, dan kunci memakai “membetulkan” alih-alih menyalin “koreksi”. Kesulitan dikembalikan ke sulit karena pengecoh arsip daftar terbaru menuntut pemahaman keterlacakan; rasio kunci 0,98."
+    },
+    "tryout-ref-05-13": {
+      "bloom": "C2",
+      "difficulty": "sulit",
+      "alasan": "Menafsirkan bantuan warga ahli keamanan siber sebagai bela negara menghadapi ancaman nonmiliter.",
+      "catatan": ""
+    },
+    "tryout-ref-05-14": {
+      "bloom": "C2",
+      "difficulty": "sulit",
+      "alasan": "Menafsirkan pelatihan perawatan dan produksi komponen lokal sebagai bela negara (mengurangi kerentanan produksi).",
+      "catatan": ""
+    },
+    "tryout-ref-05-15": {
+      "bloom": "C2",
+      "difficulty": "sedang",
+      "alasan": "Menafsirkan kegiatan ronda sebagai kesadaran tanggung jawab bersama dalam bela negara.",
+      "catatan": ""
+    },
+    "tryout-ref-05-16": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan nilai rela berkorban pada dilema kompetisi karier melawan kebutuhan posko bencana.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Dalam versi sebelumnya, kunci satu-satunya yang memuat “relawan” dan “melepaskan kesempatan”, yang cocok dengan “rela berkorban”. Sekarang “relawan pendataan di posko” muncul di tiga pengecoh, tetapi waktunya keliru (setelah kompetisi) atau pengorbanannya tidak penuh (bergantian, membuat sistem). “Melepaskan” dipindah ke pengecoh yang hanya mengorbankan sebagian waktu persiapan. Kunci diparafrasekan (“mundur … menangani pendataan langsung”), rasio 1,01, bukan yang terpanjang."
+    },
+    "tryout-ref-05-17": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menentukan strategi bela negara dari akar masalah yang dinyatakan stem (layanan dasar terbatas, ketergantungan pada negara tetangga).",
+      "catatan": "Label C3/sedang tepat. Masalah serius: kunci sendiri memuat klausa “agar masyarakat merasakan kehadiran negara …” dan paling panjang (1,34x). Pengecoh indeks 3 memuat “agar”, dan indeks 0, 2, 4 memuat frasa tujuan “untuk …”. Tip menyalin isi kunci (“memperkuat kehadiran negara”). Perbaikan: semua klausa alasan dan tujuan dihapus dengan konsep pengecoh tetap; rasio 1,00 dan kunci bukan yang terpanjang."
+    },
+    "tryout-ref-05-18": {
+      "bloom": "C2",
+      "difficulty": "sulit",
+      "alasan": "Menafsirkan pembentukan tim literasi digital sebagai bela negara menghadapi ancaman informasi.",
+      "catatan": ""
+    },
+    "tryout-ref-05-19": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan sila kelima (keadilan berdasarkan kebutuhan, bukan pemerataan jumlah) pada alokasi bantuan pendidikan.",
+      "catatan": "Klausa “agar” hanya ada di pengecoh indeks 0–2, dan kunci tipis paling panjang. Pengecoh indeks 3 tidak logis karena pemerintah daerah yang mengambil keputusan justru diminta mengikuti “usulan pemerintah daerah”. Tip memuat isi kunci (“keadilan berdasarkan kebutuhan”). Perbaikan: klausa dihapus, indeks 3 diubah menjadi usulan pimpinan tiap wilayah, kunci dipadatkan (rasio 0,98) tanpa menyalin kata “akses” dari stem."
+    },
+    "tryout-ref-05-20": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Mencocokkan tiga objek pengujian dengan kewenangan MA, MK, dan KY.",
+      "catatan": ""
+    },
+    "tryout-ref-05-21": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Menerapkan Pasal 14 ayat (2) untuk menilai kewenangan amnesti dan pertimbangan DPR.",
+      "catatan": ""
+    },
+    "tryout-ref-05-22": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Menerapkan Pasal 20 ayat (2): RUU dibahas dan disetujui bersama oleh DPR dan Presiden.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Dalam versi sebelumnya, kunci satu-satunya yang memuat “persetujuan bersama”, dan pengecohnya keputusan sepihak, jadi kunci terdengar paling kooperatif. Sekarang “persetujuan bersama” dipakai keliru di dua pengecoh “DPR dan Presiden”: persetujuan sebagian lalu sisanya diputus Presiden, dan Mahkamah Konstitusi menilai sebelum persetujuan. “Pembahasan” dipakai di dua pengecoh sepihak, dan kunci memparafrasekan (“menyetujui naskah yang sama”). Rasio kunci 0,88; rujukan Pasal 5 ayat (1), Pasal 20 ayat (1)–(4), dan Pasal 24C ayat (1) akurat."
+    },
+    "tryout-ref-05-23": {
+      "bloom": "C3",
+      "difficulty": "sedang",
+      "alasan": "Menerapkan sila pertama (kebebasan beragama, tanpa paksaan) pada pemberian bantuan yang dikaitkan dengan kegiatan agama.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Dalam versi sebelumnya, kunci mengulang “kegiatan agama tertentu” dan satu-satunya yang memuat “sukarela”. Sekarang “kegiatan keagamaan tertentu” muncul di tiga pengecoh dan “sukarela” dipakai keliru di pengecoh yang tetap mendahulukan bantuan bagi peserta kegiatan. Dua pengecoh baru (pembinaan lintas agama yang diwajibkan, doa bersama satu tata cara) terdengar toleran, tetapi tetap memaksakan. Kunci diparafrasekan (“memisahkan hak atas bantuan … bagi yang berminat”), rasio 0,98."
+    },
+    "tryout-ref-05-24": {
+      "bloom": "C3",
+      "difficulty": "sulit",
+      "alasan": "Memilih kebijakan festival yang menerapkan Bhinneka Tunggal Ika (persatuan tanpa menghapus identitas) di bawah keterbatasan waktu.",
+      "catatan": "Putaran 2 (simulasi buta: tertebak peserta awam). Dalam versi sebelumnya, kunci sama dengan usulan “pertunjukan bersama” di stem dan satu-satunya opsi gabungan. Sekarang dua pengecoh baru juga berbentuk pertunjukan gabungan memakai frasa stem (“pertunjukan bersama”, “satu pementasan bersama”), tetapi gagal di satu sisi: berpusat pada komunitas terbesar, atau kostum dan iringannya diseragamkan. Kunci diparafrasekan (“satu pergelaran yang memperlihatkan ciri tiap budaya”), rasio 1,04. Karena petunjuk dari usulan kedua sudah netral, kesulitan sulit kembali sesuai draf."
+    }
+  },
+  "revisi": {
+    "tryout-ref-03-03": {
+      "status": "MINOR",
+      "options": [
+        "Cinta tanah air",
+        "Kemandirian",
+        "Persatuan dan kesatuan",
+        "Kepedulian sosial",
+        "Identitas nasional"
+      ],
+      "answer": 1,
+      "reasons": [
+        "Cinta tanah air bisa tampak dari pemasaran produk daerah ke berbagai wilayah Indonesia, tetapi inti upaya dalam kasus bukan pengutamaan produk sendiri, melainkan peningkatan kemampuan mengolah sumber daya.",
+        "Daerah berhenti sekadar menjual bahan mentah ke luar negeri dan membangun kemampuan mengolah sumber dayanya sendiri; inilah wujud kemandirian sebagai unsur nasionalisme.",
+        "Kerja sama pemerintah, nelayan, dan pelaku usaha memang tampak, tetapi kerja sama itu sarana untuk membangun industri, bukan unsur yang paling menonjol.",
+        "Bertambahnya manfaat ekonomi bagi masyarakat adalah dampak dari upaya tersebut, bukan inti tindakan yang digambarkan.",
+        "Kasus tidak menekankan jati diri atau ciri khas bangsa; hasil laut disebut sebagai sumber daya ekonomi, bukan penanda identitas nasional."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan kemandirian sebagai unsur nasionalisme, yaitu kemampuan bangsa atau daerah mengelola sumber daya sendiri sehingga tidak terus bergantung pada pihak luar. Dalam kasus, daerah yang semula menjual hasil laut sebagai bahan mentah ke luar negeri membangun industri pengolahan agar nilai tambahnya dinikmati sendiri. Kerja sama dengan nelayan dan pelaku usaha adalah sarana, sedangkan manfaat ekonomi bagi masyarakat adalah dampaknya. Inti nasionalisme di sini adalah membangun kemampuan sendiri untuk mengolah kekayaan yang dimiliki. Opsi yang paling tepat adalah kemandirian, karena unsur itu langsung menjelaskan tindakan utama dan tujuannya, yaitu meningkatkan kemampuan ekonomi daerah melalui pengolahan sumber daya lokal.",
+      "tip": "Pisahkan tindakan utama dan tujuannya dari sarana dan dampaknya, lalu cocokkan tindakan utama itu dengan pengertian tiap unsur nasionalisme."
+    },
+    "tryout-ref-03-09": {
+      "status": "MAYOR",
+      "stem": "Sebuah perusahaan asing menawarkan investasi besar untuk membuka tambang di kawasan hutan adat dekat perbatasan negara dengan janji menyerap ribuan tenaga kerja. Kajian awal menunjukkan risiko kerusakan sumber air bagi permukiman di wilayah perbatasan dan potensi konflik dengan masyarakat adat setempat. Seorang ASN di badan perencanaan daerah diminta memberikan rekomendasi kepada kepala daerah. Rekomendasi ASN yang paling mencerminkan sikap bela negara dalam situasi tersebut adalah …",
+      "options": [
+        "Merekomendasikan persetujuan investasi disertai kajian dampak dan musyawarah dengan masyarakat adat selama tambang beroperasi",
+        "Merekomendasikan kajian dampak oleh tim teknis dan sosialisasi hasilnya kepada masyarakat adat sebelum izin diputuskan",
+        "Merekomendasikan kajian dampak dan musyawarah dengan pihak perusahaan sebelum izin diputuskan",
+        "Merekomendasikan kajian dampak dan musyawarah dengan masyarakat adat sebelum izin diputuskan",
+        "Merekomendasikan musyawarah besaran kompensasi dengan masyarakat adat sebelum izin diputuskan"
+      ],
+      "answer": 3,
+      "reasons": [
+        "Kajian dampak dan musyawarah memang disebut, tetapi baru dilakukan setelah investasi disetujui dan tambang beroperasi. Risiko kerusakan sumber air dan konflik baru ditangani setelah terjadi, bertentangan dengan prinsip preventif.",
+        "Kajian dampak sebelum keputusan sudah tepat, tetapi masyarakat adat hanya menerima sosialisasi hasil. Pendekatan satu arah tidak memberi ruang bagi pihak terdampak untuk menyampaikan kepentingannya dan tetap berisiko memicu konflik.",
+        "Kajian dampak sebelum keputusan sudah tepat, tetapi musyawarah dilakukan dengan pihak perusahaan, bukan dengan masyarakat adat yang paling terdampak, sehingga potensi konflik justru tidak tertangani.",
+        "Kajian dampak menilai ancaman terhadap sumber air sebelum izin diputuskan, dan musyawarah melibatkan masyarakat adat sebagai pihak terdampak. Ancaman dicegah sejak awal tanpa menutup peluang investasi yang layak.",
+        "Musyawarah dengan masyarakat adat sebelum keputusan sudah tepat, tetapi yang dibahas hanya besaran kompensasi. Risiko kerusakan sumber air tidak dikaji, dan potensi konflik diredam dengan imbalan, bukan dicegah."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan evaluasi sikap bela negara ketika kepentingan ekonomi berbenturan dengan perlindungan sumber daya dan keutuhan sosial di wilayah perbatasan. Kerusakan sumber air dan konflik dengan masyarakat adat merupakan potensi ancaman nonmiliter yang dapat melemahkan ketahanan wilayah perbatasan, sedangkan investasi juga dapat memperkuat ekonomi daerah. Setiap rekomendasi perlu diuji dari tiga sisi. Pertama, kapan risiko dinilai: preventif lebih baik daripada reaktif. Kedua, apa yang dinilai: ancaman yang ditemukan kajian awal, bukan sekadar manfaat atau kompensasi. Ketiga, bagaimana pihak terdampak dilibatkan: musyawarah dua arah lebih baik daripada sosialisasi sepihak atau perundingan tanpa mereka. Prinsip ini sejalan dengan semangat pertahanan semesta yang melibatkan seluruh komponen bangsa, termasuk masyarakat adat. Opsi yang paling tepat adalah merekomendasikan kajian dampak dan musyawarah dengan masyarakat adat sebelum izin diputuskan, karena hanya rekomendasi ini yang menilai ancaman sebelum keputusan diambil, mengajak pihak yang paling terdampak ikut menentukan, dan tetap membuka peluang investasi yang layak.",
+      "tip": "Tandai ancaman yang ditemukan kajian awal, lalu periksa setiap rekomendasi dari tiga sisi: kapan ancaman itu dinilai, apa yang dikaji, dan siapa yang diajak menentukan serta dengan cara apa."
+    },
+    "tryout-ref-03-14": {
+      "status": "MINOR",
+      "options": [
+        "Melaporkan hubungan itu secara tertulis kepada atasan dan mundur dari penilaian.",
+        "Tetap menilai seluruh proposal secara objektif dengan rubrik yang sama ketatnya.",
+        "Memberi nilai lebih rendah pada proposal lembaga yang dipimpin adik iparnya.",
+        "Mencatat hubungan itu dalam berkas pribadi sambil tetap ikut menilai proposal.",
+        "Meminta adik iparnya menarik proposal lembaganya dari seleksi hibah tersebut."
+      ],
+      "answer": 0,
+      "reasons": [
+        "Deklarasi tertulis kepada atasan dan mundur dari penilaian adalah penanganan konflik kepentingan yang benar; netralitas terjaga dan lembaga pengusul tetap dinilai oleh anggota tim lain.",
+        "Keyakinan diri akan objektivitas tidak menghapus konflik kepentingan; potensi pengaruh tetap ada dan publik tetap dapat meragukan hasil penilaian.",
+        "Menurunkan nilai demi menghindari kecurigaan justru memperlakukan pengusul secara tidak objektif; keputusan tetap dipengaruhi hubungan pribadi, hanya arahnya terbalik.",
+        "Catatan di berkas pribadi bukan deklarasi kepada atasan, dan pegawai tetap terlibat dalam keputusan yang dapat dipengaruhi kepentingan pribadinya.",
+        "Meminta penarikan proposal menghilangkan hak lembaga pengusul tanpa dasar aturan dan justru memanfaatkan hubungan keluarga untuk memengaruhi seleksi."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan penanganan konflik kepentingan sesuai kode etik ASN dan ketentuan pengelolaan konflik kepentingan di instansi pemerintah. Hubungan kekerabatan dengan pimpinan lembaga pengusul merupakan konflik kepentingan nonkeuangan yang masih potensial karena penilaian belum dimulai. Potensi seperti ini sudah cukup untuk menimbulkan kewajiban deklarasi, meskipun pegawai yakin dapat bersikap objektif. Inti integritas di sini adalah membuka kepentingan pribadi sebelum keputusan diambil dan menjauhkan diri dari keputusan yang dapat dipengaruhi kepentingan itu. Opsi yang paling tepat adalah melaporkan hubungan itu secara tertulis kepada atasan dan mundur dari penilaian, karena deklarasi dan pengunduran diri dari pengambilan keputusan menjaga netralitas penilaian tanpa merugikan hak lembaga pengusul untuk dinilai oleh anggota tim lain.",
+      "tip": "Kenali hubungan pribadi dan tahap proses dalam kasus, lalu pilih tindakan yang mencegah hubungan itu memengaruhi keputusan, bukan sekadar keyakinan diri bahwa penilaian akan objektif."
+    },
+    "tryout-ref-03-18": {
+      "status": "CACAT",
+      "stem": "Tim pengelola bantuan pendidikan menemukan sebagian anggaran belum tersalurkan karena data calon penerima perlu diperbarui. Kepala instansi mengusulkan agar dana itu dialihkan untuk pengadaan perangkat pembelajaran di sekolah yang membutuhkan. Usulan itu bermanfaat, tetapi perubahan peruntukan anggaran memerlukan persetujuan sesuai ketentuan, sedangkan verifikasi calon penerima masih dapat diselesaikan sebelum batas akhir penyaluran. Tim harus menjaga manfaat program sekaligus memastikan penggunaan anggaran dapat dipertanggungjawabkan.\nKeputusan tim yang paling mencerminkan integritas dalam pengelolaan anggaran publik adalah …",
+      "options": [
+        "Memulai pengadaan perangkat pembelajaran sambil menunggu persetujuan perubahan anggaran.",
+        "Mengajukan perubahan peruntukan anggaran sesuai prosedur dan menunda penyaluran bantuan.",
+        "Menyalurkan bantuan berdasarkan data penerima lama sambil memperbarui data secara bertahap.",
+        "Menuntaskan verifikasi calon penerima dan menyalurkan bantuan sesuai peruntukan semula.",
+        "Mengembalikan anggaran yang belum tersalurkan dan mencatatnya sebagai sisa anggaran."
+      ],
+      "answer": 3,
+      "reasons": [
+        "Pengadaan dimulai sebelum perubahan peruntukan disetujui, sehingga dana dipakai untuk kegiatan yang belum sah meskipun tujuannya bermanfaat.",
+        "Mengajukan perubahan sesuai prosedur memang sah, tetapi menunda penyaluran mengorbankan hak calon penerima yang masih dapat dipenuhi sebelum batas akhir; peruntukan semula belum gagal sehingga belum ada dasar kuat untuk mengubahnya.",
+        "Penyaluran dengan data lama berisiko salah sasaran, sehingga penggunaan anggaran tidak dapat dipertanggungjawabkan meskipun bantuan cepat tersalurkan.",
+        "Tindakan ini memenuhi kedua tuntutan di stem: anggaran dipakai sesuai peruntukan yang sah dan bantuan sampai kepada penerima yang berhak sebelum batas akhir.",
+        "Pengembalian dana tampak aman secara aturan, tetapi melepaskan manfaat program bagi calon penerima, padahal penyaluran masih dapat diselesaikan tepat waktu."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan integritas dalam pengelolaan anggaran publik, yaitu memakai dana sesuai peruntukan yang sah, dapat dipertanggungjawabkan, dan sampai kepada penerima yang berhak. Usulan pengalihan dana memang bermanfaat, tetapi manfaat tidak sama dengan kewenangan: perubahan peruntukan memerlukan persetujuan sesuai ketentuan. Selain itu, peruntukan semula belum gagal karena verifikasi calon penerima masih dapat selesai sebelum batas akhir penyaluran, sehingga belum ada alasan kuat untuk mengubahnya. Inti integritas di sini adalah menuntaskan kewajiban program yang masih bisa dipenuhi, bukan mengambil jalan pintas, mengorbankan hak penerima, atau melepas dana demi rasa aman. Opsi yang paling tepat adalah menuntaskan verifikasi calon penerima dan menyalurkan bantuan sesuai peruntukan semula, karena tindakan itu menjaga manfaat program sekaligus memastikan penggunaan anggaran dapat dipertanggungjawabkan.",
+      "tip": "Bedakan manfaat suatu usulan dari kewenangan untuk melaksanakannya, lalu uji setiap pilihan dengan dua tuntutan di stem: manfaat program tetap terjaga dan penggunaan anggaran dapat dipertanggungjawabkan."
+    },
+    "tryout-ref-03-28": {
+      "status": "MAYOR",
+      "options": [
+        "Pengelolaan hasil tangkapan melalui koperasi dapat membantu nelayan memperoleh harga jual lebih baik.",
+        "Sebagian besar nelayan di desa pesisir itu memperoleh pendapatan lebih tinggi setelah koperasi berdiri.",
+        "Penjualan secara berkelompok menjadi penyebab utama naiknya pendapatan anggota koperasi.",
+        "Nelayan yang belum bergabung perlu didorong untuk menjadi anggota koperasi desa tersebut.",
+        "Ikan hasil tangkapan dapat tetap segar selama beberapa hari jika disimpan di ruang pendingin."
+      ],
+      "answer": 0,
+      "reasons": [
+        "Simpulan ini memadukan kalimat (1) sampai (4), yaitu koperasi, penyimpanan bersama, dan perbaikan harga, dengan modalitas “dapat” yang sesuai dengan data “sebagian besar anggota”.",
+        "Kalimat (4) menyebut “sebagian besar anggota koperasi”, bukan sebagian besar nelayan desa; teks tidak memberi data berapa banyak nelayan desa yang sudah menjadi anggota.",
+        "Teks tidak membandingkan faktor penyebab; rantai sebab yang dijelaskan justru melalui ikan yang tetap segar sehingga koperasi dapat menunggu harga lebih baik, jadi klaim “penyebab utama” melampaui teks.",
+        "Pernyataan ini berupa saran, sedangkan paragraf hanya memaparkan keadaan dan tidak memuat anjuran apa pun.",
+        "Pernyataan ini hanya mengulang rincian kalimat (3) dan tidak memadukan isi paragraf secara utuh."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan simpulan yang integratif dan tidak melampaui teks. Paragraf tidak memakai penanda simpulan, jadi simpulan harus ditarik dari rangkaian sebab-akibat: harga semula ditentukan sepihak oleh tengkulak (kalimat 1), nelayan menyimpan dan menjual ikan bersama melalui koperasi (kalimat 2), ikan yang tetap segar memberi kesempatan menunggu harga lebih baik (kalimat 3), dan pendapatan sebagian besar anggota meningkat, sementara nelayan nonanggota masih bergantung pada tengkulak (kalimat 4). Inti kaidah di sini adalah simpulan harus mencakup seluruh rangkaian itu dengan cakupan dan tingkat kepastian yang sama dengan teks: tidak memperluas kelompok yang dibicarakan, tidak menambahkan peringkat penyebab, dan tidak berubah menjadi saran. Opsi yang paling tepat adalah simpulan bahwa pengelolaan hasil tangkapan melalui koperasi dapat membantu nelayan memperoleh harga jual lebih baik, karena simpulan itu memadukan kalimat (1) sampai (4) dengan modalitas “dapat” yang sesuai dengan data “sebagian besar anggota”.",
+      "tip": "Bandingkan setiap pilihan dengan seluruh paragraf: periksa kelompok yang dibicarakan, tingkat kepastiannya, dan apakah pernyataan itu masih berupa simpulan dari data, bukan saran atau rincian satu kalimat."
+    },
+    "tryout-ref-04-01": {
+      "status": "CACAT",
+      "stem": "Dalam persiapan Kongres Pemuda Nusantara, panitia menemukan bahwa peserta dari berbagai daerah cenderung membentuk kelompok berdasarkan kesamaan bahasa ibu. Meskipun seluruh peserta mampu berkomunikasi menggunakan bahasa Indonesia, interaksi antarkelompok masih terbatas. Panitia ingin memperkuat semangat Sumpah Pemuda melalui kegiatan yang mengubah keadaan tersebut dan membangun kesadaran sebagai satu bangsa, bukan sekadar memperkenalkan keberagaman budaya.\nRancangan kegiatan yang paling sesuai dengan tujuan tersebut adalah …",
+      "options": [
+        "Pertukaran budaya antarkelompok",
+        "Proyek bersama dalam tim lintas daerah",
+        "Lomba kreativitas antarkelompok bahasa daerah",
+        "Ceramah sejarah Sumpah Pemuda oleh tokoh nasional",
+        "Festival bahasa dan budaya daerah"
+      ],
+      "answer": 1,
+      "reasons": [
+        "Pertukaran budaya memperkenalkan kebiasaan daerah lain, tetapi peserta tetap tampil sebagai wakil kelompok asalnya dan kegiatan berhenti pada pengenalan keberagaman yang menurut stem belum cukup.",
+        "Peserta dari berbagai bahasa ibu dicampur dalam satu tim dan harus bekerja sama mencapai hasil yang sama, sehingga interaksi lintas kelompok terjadi dan kesadaran sebagai satu bangsa tumbuh dari pengalaman nyata.",
+        "Lomba antarkelompok bahasa daerah justru mempertahankan pengelompokan berdasarkan bahasa ibu dan menempatkan kelompok-kelompok itu saling berhadapan, bukan berbaur.",
+        "Ceramah menambah pengetahuan tentang Sumpah Pemuda, tetapi peserta hanya mendengarkan sehingga interaksi antarkelompok yang terbatas tidak tersentuh.",
+        "Festival menampilkan kekayaan bahasa dan budaya tiap daerah, tetapi hanya memperkenalkan keberagaman dan tidak mendorong peserta berbaur lintas kelompok."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan penerapan semangat Sumpah Pemuda, yaitu kesadaran sebagai satu bangsa di tengah keberagaman, dengan bahasa Indonesia sebagai bahasa persatuan. Masalah dalam stem bukan kemampuan berbahasa Indonesia dan bukan kurangnya pengenalan budaya, melainkan kebiasaan peserta berkumpul dengan kelompok sebahasa ibu sehingga interaksi antarkelompok terbatas. Inti nasionalisme di sini adalah persatuan yang dibangun lewat pengalaman bekerja bersama, bukan sekadar mengenal atau menampilkan perbedaan. Opsi yang paling tepat adalah proyek bersama dalam tim lintas daerah, karena kegiatan itu mencampur peserta dari berbagai bahasa ibu, menuntut mereka bekerja sama dengan bahasa Indonesia, dan menumbuhkan rasa sebagai satu bangsa dari pengalaman nyata.",
+      "tip": "Tentukan masalah sebenarnya dalam kasus, apakah kemampuan berbahasa, pengetahuan budaya, atau pola interaksi antarkelompok, lalu pilih kegiatan yang langsung mengubah masalah itu, bukan yang hanya menambah pengetahuan atau menampilkan keberagaman."
+    },
+    "tryout-ref-04-04": {
+      "status": "MINOR",
+      "options": [
+        "Seleksi oleh perwakilan warga lama dan baru",
+        "Pemilihan tokoh berpengalaman setempat",
+        "Seleksi kecakapan dan sikap inklusif calon",
+        "Musyawarah mufakat memilih calon yang paling dikenal warga",
+        "Pemungutan suara berdasarkan program calon"
+      ],
+      "answer": 2,
+      "reasons": [
+        "Melibatkan warga lama dan baru dalam tim seleksi memperluas keterwakilan, tetapi belum menetapkan ukuran apa pun tentang kemampuan calon mengelola program dan merangkul seluruh warga.",
+        "Pengalaman dan pemahaman lingkungan membantu pelaksanaan kegiatan, tetapi mengutamakan tokoh setempat justru memperkuat dominasi warga lama yang menjadi sumber masalah.",
+        "Kecakapan menjawab tuntutan mengelola program, sedangkan sikap inklusif menjawab masalah gagasan warga baru yang jarang dibahas, sehingga kedua tujuan panitia terpenuhi sekaligus.",
+        "Musyawarah mufakat adalah cara yang baik, tetapi ukuran \"paling dikenal\" menguntungkan warga lama yang sudah lama bermukim dan tidak menilai kemampuan calon mengelola program maupun merangkul warga baru.",
+        "Pemungutan suara atas program calon menilai rencana kerja, tetapi suara terbanyak belum menjamin gagasan warga baru mendapat ruang yang setara."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan penerapan nasionalisme dalam kehidupan bermasyarakat, yaitu persatuan warga dari berbagai daerah melalui penghargaan yang setara terhadap kontribusi setiap warga, tanpa membedakan asal atau lama tinggal. Masalah dalam stem adalah ketimpangan: gagasan warga lama lebih sering dipertimbangkan, sedangkan gagasan warga baru jarang dibahas meskipun relevan. Karena itu, pemilihan koordinator harus memenuhi dua tujuan sekaligus, yaitu kemampuan mengelola program dan kemampuan merangkul seluruh warga. Inti nasionalisme di sini adalah kebersamaan yang diwujudkan lewat keterlibatan nyata, bukan sekadar keterwakilan atau suara terbanyak. Opsi yang paling tepat adalah seleksi kecakapan dan sikap inklusif calon, karena kriteria itu menilai kemampuan memimpin program sekaligus memastikan pemimpin terpilih memberi ruang setara bagi gagasan warga lama dan baru.",
+      "tip": "Uraikan dua tujuan panitia dan masalah yang ingin diperbaiki, lalu periksa apakah setiap mekanisme memenuhi kedua tujuan itu atau hanya salah satunya."
+    },
+    "tryout-ref-04-05": {
+      "status": "MINOR",
+      "options": [
+        "Kajian dampak sosial perdagangan",
+        "Kronologi dan pemeringkatan pengaruh antarpelabuhan",
+        "Pemetaan asal komoditas Nusantara",
+        "Penelusuran peran pelabuhan dalam jaringan dagang",
+        "Narasi kejayaan pelabuhan sebagai pusat perdagangan Nusantara"
+      ],
+      "answer": 3,
+      "reasons": [
+        "Dampak sosial perdagangan merupakan topik yang relevan, tetapi stem tidak memuat bukti tentang perubahan sosial masyarakat, jadi pendekatan ini bertumpu pada hal yang belum diteliti.",
+        "Kronologi berguna untuk pameran, tetapi pemeringkatan pengaruh antarpelabuhan memerlukan bukti pembanding yang menurut stem belum tersedia.",
+        "Pemetaan asal komoditas menampilkan keragaman sumber daya, tetapi menggeser fokus dari kontribusi pelabuhan daerah ke asal barang dan melampaui bukti yang hanya menyebut daerah sekitarnya.",
+        "Pendekatan ini bertumpu pada dua fakta yang sudah terbukti, yaitu peran pelabuhan sebagai tempat pengumpulan komoditas dan hubungan dagangnya dengan wilayah lain, sehingga kontribusi daerah tampil sebagai bagian dari jaringan Nusantara tanpa klaim keunggulan.",
+        "Narasi kejayaan dapat menumbuhkan kebanggaan, tetapi menyebut pelabuhan sebagai pusat perdagangan Nusantara menyiratkan keunggulan atas pelabuhan lain yang belum didukung bukti."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan penghargaan terhadap sejarah daerah sebagai bagian dari perjalanan bangsa, dengan syarat penghargaan itu dibangun di atas bukti, bukan klaim yang dibesar-besarkan. Stem menyebut dua fakta yang sudah didukung bukti, yaitu pelabuhan menjadi tempat pengumpulan komoditas dari daerah sekitarnya dan arsip mencatat hubungan dagang dengan sejumlah wilayah lain, sedangkan keunggulan pelabuhan atas pelabuhan lain belum terbukti. Inti nasionalisme di sini adalah menumbuhkan rasa kebangsaan lewat kesadaran bahwa daerah terhubung dan berkontribusi dalam jaringan Nusantara, tanpa membesar-besarkan keunggulan daerah sendiri. Opsi yang paling tepat adalah penelusuran peran pelabuhan dalam jaringan dagang, karena pendekatan itu menampilkan kontribusi daerah dan keterhubungannya dengan wilayah lain sebatas bukti yang tersedia.",
+      "tip": "Pisahkan fakta yang didukung bukti dari klaim yang belum terbukti, lalu periksa apakah setiap pendekatan bertumpu pada fakta itu dan tetap menjawab tujuan pameran."
+    },
+    "tryout-ref-04-09": {
+      "status": "MAYOR",
+      "options": [
+        "Tunda laporan hingga Rp20 juta terkonfirmasi, lalu laporkan Rp482 juta dan selisih sistem",
+        "Laporkan Rp428 juta sesuai sistem, Rp20 juta tertunda, dan selisih dengan dokumen",
+        "Laporkan Rp482 juta sebagai nilai final, Rp462 juta terverifikasi, dan selisih sistem",
+        "Laporkan Rp482 juta sebagai total sementara beserta selisihnya dengan sistem",
+        "Laporkan Rp462 juta dan Rp20 juta terpisah menurut statusnya, serta selisih sistem"
+      ],
+      "answer": 4,
+      "reasons": [
+        "Aturan instansi mengizinkan laporan sementara, jadi tidak perlu menunggu konfirmasi Rp20 juta. Penundaan justru melewatkan tenggat tanpa membuat laporan lebih jujur.",
+        "Selisih memang diungkap, tetapi angka utama diambil dari sistem (Rp428 juta), padahal bukti yang sudah terverifikasi menunjukkan Rp462 juta. Laporan menjadi lebih rendah daripada fakta yang sudah pasti.",
+        "Rincian dan selisih disebut, tetapi Rp482 juta dinyatakan sebagai nilai final, padahal Rp20 juta di dalamnya belum dikonfirmasi. Ini melanggar permintaan atasan.",
+        "Label sementara saja tidak memenuhi syarat aturan. Total Rp482 juta mencampur angka terverifikasi dengan Rp20 juta yang belum dikonfirmasi tanpa penjelasan status verifikasi.",
+        "Laporan dikirim sebelum tenggat, angka terverifikasi dan angka tertunda dipisahkan sesuai syarat laporan sementara, tidak ada angka belum pasti yang disajikan sebagai final, dan perbedaan dengan sistem diungkap terbuka."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan integritas dalam pelaporan keuangan, yaitu menyajikan informasi secara jujur, lengkap, dan sesuai status kebenarannya meskipun waktu terbatas. Data dalam kasus memiliki tiga status: Rp462 juta sudah terverifikasi, Rp20 juta masih menunggu konfirmasi, dan catatan sistem Rp428 juta tidak cocok dengan dokumen. Angka sistem bahkan lebih rendah daripada bukti yang sudah terverifikasi, sehingga perbedaan itu harus diungkap dan ditelusuri, terpisah dari Rp20 juta yang statusnya masih tertunda. Aturan instansi membolehkan laporan sementara asalkan status verifikasi dijelaskan, dan atasan melarang angka yang belum pasti disajikan sebagai final. Inti integritas di sini adalah tidak mencampur angka pasti dengan angka yang belum pasti dan tidak menyembunyikan perbedaan yang sudah ditemukan. Opsi yang paling tepat adalah melaporkan Rp462 juta dan Rp20 juta terpisah menurut statusnya serta selisih sistem, karena laporan itu memenuhi tenggat, aturan laporan sementara, dan permintaan atasan tanpa mengorbankan ketepatan informasi.",
+      "tip": "Kelompokkan setiap angka menurut statusnya, lalu uji setiap pilihan terhadap tiga tuntutan dalam kasus, yaitu tenggat, syarat laporan sementara, dan permintaan atasan."
+    },
+    "tryout-ref-04-03": {
+      "status": "MINOR",
+      "options": [
+        "Pembakuan prosedur pewarnaan bersama ahli berbasis teknik khas perajin",
+        "Pengujian mutu rutin di setiap sentra dan pendampingan pemilahan hasil tenun",
+        "Kemitraan dengan industri besar dalam pengujian mutu dan pemasaran ekspor",
+        "Modernisasi alat celup perajin disertai pelatihan dan pengawasan mutu",
+        "Pembinaan teknik tradisional dan pengujian daya tahan warna produk akhir"
+      ],
+      "answer": 0,
+      "reasons": [
+        "Pembakuan prosedur menyeragamkan takaran dan lama pewarnaan yang menjadi sumber ketidakkonsistenan, sementara teknik khas tetap menjadi dasar sehingga perajin tetap berproduksi dan identitas tenun terjaga.",
+        "Pengujian dan pemilahan hanya menyaring produk yang sudah jadi; perbedaan takaran dan lama pewarnaan antarperajin tetap tidak diperbaiki.",
+        "Kemitraan dengan industri besar membantu pengujian dan pemasaran, tetapi tidak menyentuh proses pewarnaan dan berisiko menggeser kendali produksi dari perajin lokal.",
+        "Alat celup modern dapat menyeragamkan proses, tetapi menggeser teknik pewarnaan tradisional yang menjadi ciri khas sehingga sasaran menjaga identitas budaya tidak terpenuhi.",
+        "Pembinaan teknik tradisional menjaga identitas dan pengujian produk akhir mengukur hasil, tetapi perbedaan takaran dan lama pewarnaan antarperajin belum dibakukan."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan nasionalisme ekonomi, yaitu memperkuat daya saing produk dalam negeri tanpa menyingkirkan pelaku usaha lokal dan identitas budaya bangsa. Hasil uji menunjukkan bahwa masalah mutu bersumber dari takaran bahan pewarna dan lama perendaman yang berbeda antarperajin, bukan dari bahan, sedangkan teknik pewarnaan tradisional adalah ciri khas yang harus dipertahankan. Program yang tepat harus menyentuh penyebab itu dan memenuhi ketiga sasaran sekaligus: mutu ekspor, keterlibatan perajin, dan identitas tenun. Opsi yang paling tepat adalah pembakuan prosedur pewarnaan bersama ahli berbasis teknik khas perajin, karena program ini menyeragamkan takaran dan lama pewarnaan di semua perajin, membiarkan perajin tetap menjadi pelaku produksi, dan tidak mengganti teknik tradisionalnya.",
+      "tip": "Tentukan dulu penyebab masalah mutu menurut hasil uji, lalu periksa setiap program: apakah program itu menyentuh penyebab tersebut dan apakah ketiga sasaran tetap terpenuhi."
+    },
+    "tryout-ref-04-08": {
+      "status": "MAYOR",
+      "options": [
+        "Nyatakan hubungan bisnis, minta persetujuan peserta, dan lanjutkan penilaian substansi",
+        "Nyatakan hubungan bisnis, pertahankan hasil pemeriksaan administrasi, dan mundur dari penilaian substansi",
+        "Nyatakan hubungan bisnis, periksa ulang sendiri berkas peserta, dan mundur dari penilaian substansi",
+        "Nyatakan hubungan bisnis, minta petugas lain memeriksa ulang berkas, dan mundur dari penilaian substansi",
+        "Nyatakan hubungan bisnis, minta petugas lain memeriksa ulang berkas, dan nilai substansi bersama penilai pengganti"
+      ],
+      "answer": 3,
+      "reasons": [
+        "Persetujuan peserta tidak menghapus konflik kepentingan. Pengelolaan konflik adalah kewajiban penilai dan lembaga, dan melanjutkan penilaian substansi berarti anggota yang berkonflik tetap memengaruhi hasil.",
+        "Pengungkapan dan pengunduran diri dari penilaian substansi sudah tepat, tetapi pemeriksaan administrasi yang melibatkan anggota berkonflik dibiarkan tanpa ditinjau ulang oleh pihak lain, meskipun peserta tampak memenuhi syarat.",
+        "Pemeriksaan ulang oleh anggota yang berkonflik sendiri tidak independen. Pemeriksaan ulang justru bertujuan melepaskan tahap administrasi dari pengaruhnya.",
+        "Pengungkapan, pemeriksaan ulang oleh petugas lain, dan pengunduran diri dari penilaian substansi menangani konflik pada tahap yang sudah lewat maupun yang akan datang, sesuai pedoman seleksi.",
+        "Pengungkapan dan pemeriksaan ulang sudah tepat, tetapi ikut menilai substansi bersama penilai pengganti berarti anggota yang berkonflik tetap memengaruhi skor."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan pengelolaan konflik kepentingan sebagai bagian integritas penyelenggara layanan publik, sejalan dengan pedoman penanganan benturan kepentingan (Permenpan-RB Nomor 37 Tahun 2012). Hubungan bisnis yang masih aktif dengan peserta adalah konflik kepentingan walaupun peserta memenuhi syarat dan anggota tim belum memberi skor substansi. Anggota tersebut sudah ikut memeriksa administrasi peserta, jadi pengelolaan konflik harus menjangkau dua tahap. Tahap administrasi yang sudah dilalui perlu diperiksa ulang oleh pihak yang tidak berkonflik, dan penilaian substansi yang akan datang harus diserahkan sepenuhnya kepada penilai pengganti. Inti integritas di sini adalah memastikan orang yang berkonflik tidak lagi memengaruhi keputusan di tahap mana pun, bukan sekadar mengakui hubungan itu. Opsi yang paling tepat adalah menyatakan hubungan bisnis, meminta petugas lain memeriksa ulang berkas, dan mundur dari penilaian substansi, karena ketiga langkah itu menjaga objektivitas pada tahap yang sudah berjalan maupun yang akan datang tanpa menganggap peserta bersalah.",
+      "tip": "Tandai tahapan seleksi yang sudah dan yang belum dilalui anggota tim tersebut, lalu periksa apakah setiap pilihan benar-benar melepaskan pengaruhnya dari semua tahapan itu, bukan hanya dari salah satunya."
+    },
+    "tryout-ref-04-10": {
+      "status": "MAYOR",
+      "options": [
+        "Pertahankan dua koreksi, gunakan target 90%, dan abaikan perubahan 80% di sistem",
+        "Pertahankan dua koreksi, gunakan target 90%, dan jelaskan usulan 80% dalam laporan",
+        "Pertahankan dua koreksi, gunakan target 80%, dan catat persetujuan yang masih diproses",
+        "Kembalikan dua koreksi ke angka awal, gunakan target 90%, dan catat usulan 80%",
+        "Pertahankan dua koreksi, catat usulan 80%, dan tunda laporan sampai target disahkan"
+      ],
+      "answer": 1,
+      "reasons": [
+        "Target 90% dan dua koreksi sudah tepat, tetapi perubahan target di sistem dibiarkan tanpa penjelasan. Pembaca laporan tidak mengetahui adanya arahan yang belum sah, padahal pedoman menyediakan catatan klarifikasi.",
+        "Koreksi yang berbukti dan berjejak audit dipertahankan, target yang berlaku dipakai, dan usulan 80% dijelaskan secara terbuka. Laporan menjadi akurat sekaligus transparan dan tetap disampaikan tepat waktu.",
+        "Target 80% belum berlaku karena baru berupa arahan lisan, sedangkan pedoman mensyaratkan persetujuan tertulis. Mencatat bahwa persetujuan sedang diproses tidak membuat target itu sah.",
+        "Persetujuan tertulis hanya disyaratkan untuk perubahan target. Koreksi salah ketik sudah berbukti dan berjejak audit, sehingga mengembalikannya justru memasukkan lagi kesalahan ke laporan.",
+        "Laporan wajib disampaikan sebelum persetujuan diperoleh, dan target 90% masih berlaku. Penundaan melanggar ketentuan waktu meskipun usulan 80% sudah dicatat."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan integritas sebagai kejujuran dan akuntabilitas data: laporan hanya memuat angka yang sah, tetapi perubahan yang belum sah tidak disembunyikan. Dua koreksi salah ketik sudah sah karena didasarkan pada dokumen sumber dan memiliki jejak audit; ketentuan persetujuan tertulis hanya berlaku bagi perubahan target. Target 80% belum berlaku karena baru berupa arahan lisan, sehingga target yang dipakai tetap 90%. Laporan harus disampaikan sebelum persetujuan diperoleh, dan pedoman membolehkan catatan klarifikasi, sehingga perubahan di sistem dapat dijelaskan tanpa diberlakukan. Inti integritas di sini adalah memilah perubahan menurut keabsahannya, lalu menyampaikan semuanya secara terbuka dan tepat waktu. Opsi yang paling tepat adalah mempertahankan dua koreksi, memakai target 90%, dan menjelaskan usulan 80% dalam laporan, karena laporan tetap tepat waktu, hanya memuat angka yang sah, dan perbedaan target di sistem diungkap secara terbuka.",
+      "tip": "Pilah setiap perubahan dalam laporan menurut statusnya, yaitu sudah sah atau belum, lalu bandingkan pilihan berdasarkan ketentuan pedoman, tenggat laporan, dan kewenangan yang diberikan kepada pimpinan."
+    },
+    "tryout-ref-04-15": {
+      "status": "MAYOR",
+      "options": [
+        "Kewajiban memakai bahan baku domestik mulai bulan depan dan impor baru sebagai pelengkap",
+        "Diversifikasi sumber impor selama transisi dan penambahan stok dari pemasok lama",
+        "Diversifikasi sumber impor selama transisi dan pembinaan produsen dalam negeri",
+        "Pembinaan produsen dalam negeri dan penambahan impor dari pemasok lama selama transisi",
+        "Kontrak jangka panjang dengan pemasok baru dan pengurangan bertahap impor dari pemasok lama"
+      ],
+      "answer": 2,
+      "reasons": [
+        "Pengembangan pasokan domestik memang tujuan jangka panjang, tetapi mewajibkannya mulai bulan depan tidak realistis karena produsen domestik baru siap setelah satu tahun. Impor baru hanya memenuhi sebagian kebutuhan, sehingga produksi justru terancam berhenti.",
+        "Diversifikasi impor menutup risiko jangka pendek, tetapi kemampuan produksi dalam negeri tidak dibangun, dan tambahan stok dari pemasok lama memperpanjang ketergantungan pada negara yang sama.",
+        "Diversifikasi impor melindungi produksi selama produsen dalam negeri belum siap, sedangkan pembinaan produsen dalam negeri membangun kemandirian bahan baku untuk jangka panjang.",
+        "Pembinaan produsen dalam negeri sudah tepat, tetapi menambah impor dari pemasok lama selama transisi memperbesar ketergantungan pada satu negara tepat ketika produksi paling rentan, padahal pemasok lain siap dalam dua bulan.",
+        "Kontrak dengan beberapa pemasok baru mengurangi risiko sumber tunggal, tetapi industri tetap bergantung pada impor karena kemampuan produksi dalam negeri tidak dikembangkan."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan bela negara nonmiliter di bidang ekonomi, yaitu mengurangi kerentanan yang dapat melumpuhkan kegiatan nasional. Dalam kasus ini kerentanannya adalah ketergantungan 75% bahan baku strategis pada satu negara. Kajian pemerintah menunjukkan dua jalur dengan waktu berbeda: pemasok dari negara lain siap dalam dua bulan, sedangkan produsen domestik baru siap setelah satu tahun. Strategi yang menjaga produksi sekaligus memperkuat ketahanan ekonomi harus memenuhi dua kebutuhan: mengurangi ketergantungan pada satu negara selama masa transisi dan membangun kemampuan nasional untuk jangka panjang, tanpa memaksakan pasokan domestik sebelum siap. Hal ini sejalan dengan prinsip preventif dan substantif dalam bela negara serta semangat pertahanan semesta yang menjadikan kekuatan ekonomi nasional bagian dari ketahanan negara. Opsi yang paling tepat adalah diversifikasi sumber impor selama transisi dan pembinaan produsen dalam negeri, karena langkah pertama melindungi produksi selama produsen domestik belum siap dan langkah kedua mengurangi ketergantungan pada pihak luar secara bertahap.",
+      "tip": "Petakan dulu risiko yang harus diatasi segera dan kemampuan yang baru siap dalam jangka panjang, lalu nilai apakah setiap kebijakan menjawab kedua kebutuhan itu tanpa menambah ketergantungan yang ingin dikurangi."
+    },
+    "tryout-ref-04-20": {
+      "status": "MAYOR",
+      "options": [
+        "Membagi tugas lapangan secara seimbang antara warga setempat dan warga pendatang",
+        "Menyerahkan tugas lapangan kepada warga setempat setelah dilatih warga pendatang",
+        "Mengundi seluruh posisi lapangan dan administrasi di antara semua warga",
+        "Mempersilakan setiap warga memilih sendiri tugas yang paling diminati",
+        "Menetapkan tugas sesuai kemampuan setiap warga dan kebutuhan kegiatan"
+      ],
+      "answer": 4,
+      "reasons": [
+        "Pembagian seimbang tampak adil, tetapi asal daerah tetap menjadi ukuran sehingga warga setempat yang belum berpengalaman tetap ditempatkan di lapangan sekadar memenuhi jatah.",
+        "Pelatihan oleh warga pendatang menunjukkan kerja sama, tetapi tugas lapangan tetap dibatasi menurut asal kelahiran dan pengalaman warga pendatang tidak dipakai di lapangan.",
+        "Undian memberi peluang yang sama secara formal, tetapi mengabaikan keterampilan yang dibutuhkan untuk keselamatan dan keberhasilan kerja di sungai.",
+        "Kebebasan memilih menghargai minat warga, tetapi tidak menjamin tugas lapangan dipegang orang yang mampu sehingga kebutuhan kegiatan bisa tidak terpenuhi.",
+        "Kemampuan dan kebutuhan kegiatan adalah ukuran yang berlaku sama bagi semua warga; asal daerah tidak lagi menentukan peran, sesuai semangat Bhinneka Tunggal Ika."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan Bhinneka Tunggal Ika sebagai semboyan persatuan dalam keberagaman: perbedaan asal daerah diakui, tetapi tidak dijadikan dasar untuk membeda-bedakan peran warga. Usulan koordinator memakai asal kelahiran sebagai ukuran, padahal fakta di lapangan menunjukkan sebagian pendatang justru berpengalaman dan sebagian warga setempat masih baru. Pembagian yang adil dan tetap menjaga kerja sama harus memakai ukuran yang berlaku sama bagi semua warga dan sesuai dengan kebutuhan kegiatan. Opsi yang paling tepat adalah menetapkan tugas sesuai kemampuan setiap warga dan kebutuhan kegiatan, karena ukuran itu memperlakukan semua warga setara tanpa melihat asal dan menempatkan setiap orang pada tugas yang paling bisa ia jalankan demi tujuan bersama.",
+      "tip": "Cari dulu ukuran yang dipakai dalam usulan koordinator dan periksa apakah ukuran itu sesuai dengan fakta di stem, lalu bandingkan ukuran yang dipakai setiap pilihan dengan tujuan panitia."
+    },
+    "tryout-ref-05-02": {
+      "status": "MINOR",
+      "options": [
+        "Menyelenggarakan kompetisi konten budaya antardaerah dengan penilaian juri nasional.",
+        "Mengajak pengguna dari berbagai daerah menggarap proyek bersama dalam bahasa Indonesia.",
+        "Mengembangkan pusat dokumentasi digital berisi ragam budaya daerah se-Indonesia.",
+        "Memperluas kegiatan komunitas daring berdasarkan kesamaan minat dan hobi pengguna.",
+        "Menyelenggarakan festival budaya daring dengan penampilan setiap daerah secara bergantian."
+      ],
+      "answer": 1,
+      "reasons": [
+        "Kompetisi konten budaya menumbuhkan kebanggaan daerah, tetapi peserta tetap bersaing dalam kelompok daerahnya masing-masing sehingga interaksi lintas daerah tidak terbangun.",
+        "Proyek bersama mempertemukan pengguna dari daerah berbeda dalam kerja nyata dengan bahasa Indonesia sebagai bahasa persatuan, tanpa meminta mereka meninggalkan budaya daerahnya.",
+        "Pusat dokumentasi melestarikan pengetahuan budaya, tetapi hanya menyediakan informasi dan tidak mengubah pola interaksi pengguna yang terbatas pada daerahnya.",
+        "Kegiatan berdasarkan minat memperluas pergaulan, tetapi tidak memastikan pengguna dari daerah berbeda bertemu dan tidak terkait dengan kesadaran sebagai satu bangsa.",
+        "Festival bergiliran mengenalkan keberagaman, tetapi pengguna hanya menonton penampilan daerah lain tanpa bekerja sama satu sama lain."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan semangat Sumpah Pemuda 1928, yaitu kesadaran pemuda dari berbagai daerah sebagai satu bangsa dengan bahasa Indonesia sebagai bahasa persatuan. Bahasa persatuan tidak menghapus bahasa dan budaya daerah, tetapi menjadi sarana yang mempertemukan pemuda yang berbeda latar. Masalah di platform bukan kurangnya informasi budaya, melainkan pengguna yang hanya berinteraksi dengan pemuda sedaerah. Kebijakan yang tepat harus mempertemukan pengguna lintas daerah dalam kegiatan nyata tanpa menyeragamkan budaya mereka. Opsi yang paling tepat adalah mengajak pengguna dari berbagai daerah menggarap proyek bersama dalam bahasa Indonesia, karena kebijakan ini langsung memecah kebiasaan berinteraksi sedaerah, memakai bahasa persatuan sebagai penghubung, dan tetap memberi ruang bagi latar budaya setiap anggota.",
+      "tip": "Rumuskan dulu masalah utama platform dengan kalimat sendiri, lalu uji setiap pilihan: apakah pilihan itu mengubah pola interaksi pengguna dan sejalan dengan isi ikrar Sumpah Pemuda."
+    },
+    "tryout-ref-05-04": {
+      "status": "MINOR",
+      "stem": "Dalam sebuah festival pemuda nasional, penyelenggara berencana mengurangi pertunjukan seni tradisional karena jumlah penontonnya lebih sedikit dibandingkan pertunjukan musik modern. Sejumlah komunitas budaya meminta agar seni tradisional tetap mendapatkan ruang dalam festival tersebut tanpa mengurangi daya tarik acara bagi generasi muda.\nKeputusan yang paling mencerminkan nasionalisme di bidang budaya adalah ….",
+      "options": [
+        "Mempertahankan seluruh pertunjukan tradisional dengan format asli sesuai jadwal semula.",
+        "Memberikan sesi edukasi mengenai sejarah kesenian daerah sebelum pertunjukan modern dimulai.",
+        "Menyelenggarakan festival khusus seni tradisional pada kesempatan yang berbeda.",
+        "Memperluas promosi kesenian daerah melalui media sosial dengan dokumentasi pertunjukan.",
+        "Mengemas seni tradisional dengan sentuhan musik masa kini di panggung utama."
+      ],
+      "answer": 4,
+      "reasons": [
+        "Format asli menjaga keaslian, tetapi tidak menjawab rendahnya minat penonton muda yang menjadi alasan penyelenggara ingin mengurangi seni tradisional.",
+        "Sesi edukasi menambah pengetahuan sejarah, tetapi seni tradisional tetap tidak tampil menarik di panggung festival.",
+        "Festival khusus memindahkan seni tradisional ke luar festival pemuda, padahal komunitas meminta ruang dalam festival itu sendiri.",
+        "Promosi dokumentasi di media sosial memperluas jangkauan informasi, tetapi tidak mengubah tempat dan cara seni tradisional ditampilkan dalam festival.",
+        "Seni tradisional tetap tampil di festival, bahkan di panggung utama, sebagai inti pertunjukan, sedangkan sentuhan musik masa kini membuatnya lebih dekat dengan selera generasi muda tanpa mengganti unsur khasnya."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan nasionalisme di bidang budaya, yaitu menjaga sekaligus mengembangkan kebudayaan bangsa agar tetap hidup dan diminati di tengah arus budaya populer. Penyelenggara ingin mengurangi seni tradisional karena penontonnya sedikit, sedangkan komunitas budaya meminta seni tradisional tetap mendapat ruang dalam festival tanpa membuat acara kurang menarik bagi generasi muda. Mempertahankan bentuk lama apa adanya, memindahkan seni tradisional ke acara lain, atau sekadar menambah informasi tidak menjawab kedua tuntutan itu sekaligus. Opsi yang paling tepat adalah mengemas seni tradisional dengan sentuhan musik masa kini di panggung utama, karena seni tradisional tetap hadir dalam festival sebagai inti pertunjukan, sementara kemasannya dibuat dekat dengan selera generasi muda.",
+      "tip": "Tulis dulu tuntutan penyelenggara dan tuntutan komunitas budaya, lalu periksa pilihan mana yang memenuhi keduanya di dalam festival yang sama."
+    },
+    "tryout-ref-05-05": {
+      "status": "MINOR",
+      "options": [
+        "Peralihan dari perlawanan fisik kedaerahan ke perjuangan melalui perkumpulan modern",
+        "Peralihan dari organisasi kaum priayi ke organisasi massa rakyat lintas daerah",
+        "Peralihan dari organisasi kooperatif ke organisasi nonkooperatif terhadap penjajah",
+        "Peralihan dari perjuangan bersenjata ke jalur perundingan dan diplomasi internasional",
+        "Peralihan dari organisasi pemuda kedaerahan ke ikrar persatuan se-Nusantara"
+      ],
+      "answer": 0,
+      "reasons": [
+        "Budi Utomo menandai bergesernya perjuangan dari perlawanan fisik yang bersifat kedaerahan ke perjuangan melalui perkumpulan modern yang memiliki pengurus, anggota, dan program kerja.",
+        "Budi Utomo sendiri dipimpin kaum priayi dan terpelajar. Organisasi yang menjangkau massa rakyat luas baru menonjol pada Sarekat Islam.",
+        "Budi Utomo bersikap kooperatif. Sikap nonkooperatif terhadap pemerintah kolonial menonjol pada organisasi yang lebih kemudian, seperti PNI.",
+        "Perjuangan melalui perundingan dan diplomasi internasional menonjol pada masa mempertahankan kemerdekaan 1945–1949, bukan pada masa Budi Utomo.",
+        "Peralihan dari organisasi pemuda kedaerahan ke ikrar persatuan adalah makna Sumpah Pemuda 1928. Pada awalnya Budi Utomo masih berfokus pada masyarakat Jawa dan Madura."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan makna Budi Utomo (20 Mei 1908) sebagai tonggak Kebangkitan Nasional. Sebelum 1908, perlawanan terhadap penjajah umumnya berupa perlawanan fisik yang bersifat kedaerahan dan bergantung pada tokoh setempat, sehingga mudah dipatahkan. Budi Utomo memperkenalkan cara baru, yaitu perjuangan melalui perkumpulan modern yang memiliki pengurus, anggota, dan program kerja, terutama di bidang pendidikan dan kebudayaan. Peralihan lain dalam pilihan memang terjadi dalam sejarah pergerakan, tetapi ditandai oleh tonggak yang berbeda: Sarekat Islam, PNI, masa diplomasi 1945–1949, dan Sumpah Pemuda. Opsi yang paling tepat adalah peralihan dari perlawanan fisik kedaerahan ke perjuangan melalui perkumpulan modern, karena perubahan bentuk perjuangan inilah yang dimulai dengan lahirnya Budi Utomo.",
+      "tip": "Bedakan dulu ciri perjuangan sebelum dan sesudah tahun 1908, lalu cocokkan setiap peralihan dalam pilihan dengan tonggak sejarah yang benar-benar menandainya."
+    },
+    "tryout-ref-05-07": {
+      "status": "MINOR",
+      "options": [
+        "Memastikan seluruh peserta tender memperoleh informasi dan kesempatan yang sama sejak awal.",
+        "Menugaskan panitia independen menilai penawaran sambil tetap mengawasi langsung proses tender.",
+        "Meminta auditor internal meninjau seluruh dokumen tender sebelum pemenang diumumkan.",
+        "Mengungkapkan konflik kepentingan secara resmi dan menarik diri dari proses tender.",
+        "Mewajibkan publikasi hasil penilaian seluruh peserta tender melalui laman resmi daerah."
+      ],
+      "answer": 3,
+      "reasons": [
+        "Kesetaraan informasi adalah prinsip pengadaan yang baik, tetapi kepala daerah tetap memegang kewenangan atas tender yang diikuti perusahaan kerabatnya.",
+        "Panitia independen membantu objektivitas penilaian, tetapi pengawasan langsung oleh kepala daerah justru mempertahankan keterlibatan pihak yang berkonflik.",
+        "Pemeriksaan auditor internal menambah kontrol, tetapi tidak mengubah posisi kepala daerah yang masih berwenang atas proses tender.",
+        "Pengungkapan resmi dan penarikan diri memutus pengaruh hubungan keluarga dari pengawasan dan keputusan tender, sesuai ketentuan penanganan konflik kepentingan.",
+        "Publikasi hasil penilaian meningkatkan transparansi, tetapi tidak menghilangkan kewenangan kepala daerah atas tender yang diikuti kerabatnya."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan penanganan konflik kepentingan sebagai inti integritas pejabat publik. Konflik kepentingan sudah ada walaupun belum terjadi kecurangan: hubungan keluarga dengan peserta tender dan kewenangan pengawasan yang masih dipegang cukup untuk menimbulkan keraguan atas objektivitas. Undang-Undang Nomor 30 Tahun 2014 tentang Administrasi Pemerintahan melarang pejabat yang berpotensi memiliki konflik kepentingan menetapkan atau melakukan keputusan, dan pedoman penanganan benturan kepentingan (Permenpan-RB Nomor 37 Tahun 2012) menuntut pengungkapan serta penarikan diri. Opsi yang paling tepat adalah mengungkapkan konflik kepentingan secara resmi dan menarik diri dari proses tender, karena hanya langkah ini yang menghapus pengaruh hubungan keluarga dari pengawasan dan keputusan, bukan sekadar menambah lapisan pemeriksaan.",
+      "tip": "Pisahkan tiga hal dalam kasus, yaitu hubungan pribadi, kewenangan yang masih dimiliki, dan tahap proses, lalu nilai apakah setiap pilihan menghapus pengaruh hubungan itu atau sekadar menambah lapisan pemeriksaan."
+    },
+    "tryout-ref-05-08": {
+      "status": "MAYOR",
+      "options": [
+        "Menyampaikan laporan sementara sesuai tenggat, memisahkan transaksi yang belum terverifikasi, dan menjadwalkan klarifikasinya pada audit berikutnya.",
+        "Meminta perpanjangan tenggat, memisahkan transaksi yang belum terverifikasi, dan mengajukan permintaan klarifikasi resmi kepada pihak terkait.",
+        "Mengirim laporan tepat waktu, menyajikan transaksi yang belum terverifikasi di bagian khusus, dan meminta klarifikasi tertulis dari pihak terkait.",
+        "Menyampaikan laporan sementara sesuai tenggat, menggabungkan seluruh transaksi dalam satu daftar, dan meminta klarifikasi resmi atas selisihnya.",
+        "Menyampaikan laporan berisi transaksi yang sudah terverifikasi dan menyimpan catatan transaksi lainnya dalam kertas kerja auditor."
+      ],
+      "answer": 2,
+      "reasons": [
+        "Laporan tepat waktu dan pemisahan transaksi sudah sesuai pedoman, tetapi klarifikasi yang dijadwalkan pada audit berikutnya berarti transaksi yang belum terverifikasi tidak ditindaklanjuti dalam pemeriksaan yang sedang berjalan.",
+        "Pemisahan transaksi dan permintaan klarifikasi resmi sudah benar, tetapi perpanjangan tenggat tidak diperlukan karena pedoman membolehkan laporan sementara, dan keterlambatan dapat menghambat pencairan bantuan berikutnya.",
+        "Benar. Laporan dikirim sesuai tenggat, transaksi yang belum terverifikasi disajikan terpisah dari yang sudah pasti, dan klarifikasi diminta secara tertulis kepada pihak terkait, sesuai ketiga ketentuan pedoman audit.",
+        "Laporan tepat waktu dan permintaan klarifikasi resmi sudah benar, tetapi menggabungkan seluruh transaksi dalam satu daftar mengaburkan beda antara transaksi yang sudah dan belum terverifikasi, padahal pedoman mewajibkan pencatatan terpisah.",
+        "Laporan hanya memuat transaksi terverifikasi, sedangkan transaksi lain disimpan di kertas kerja internal tanpa permintaan klarifikasi, jadi temuan itu tidak tampak dalam laporan dan tidak ditindaklanjuti."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan integritas auditor: laporan harus jujur tentang status setiap temuan, tepat waktu, dan dapat dipertanggungjawabkan. Pedoman audit sudah memberi jalan keluar atas tekanan tenggat, yaitu laporan sementara boleh disampaikan asalkan setiap transaksi yang belum terverifikasi dicatat terpisah dan segera ditindaklanjuti melalui permintaan klarifikasi resmi. Ketiga syarat itu berlaku bersamaan. Tindakan yang hanya memenuhi dua di antaranya, misalnya meminta perpanjangan, menggabungkan semua transaksi dalam satu daftar, atau menunda klarifikasi ke audit berikutnya, belum mencerminkan integritas yang utuh. Opsi yang paling tepat adalah mengirim laporan tepat waktu, menyajikan transaksi yang belum terverifikasi di bagian khusus, dan meminta klarifikasi tertulis dari pihak terkait, karena tindakan itu memenuhi tenggat sekaligus seluruh kewajiban pedoman audit.",
+      "tip": "Uraikan isi pedoman audit menjadi beberapa syarat terpisah, lalu uji setiap pilihan langkah demi langkah dan cari langkah yang menyimpang dari salah satu syarat itu."
+    },
+    "tryout-ref-05-10": {
+      "status": "MAYOR",
+      "stem": "Ketika Agresi Militer Belanda II terjadi, Jenderal Soedirman sedang menderita sakit paru-paru. Ia tetap memimpin perang gerilya meskipun harus ditandu dan berpindah-pindah tempat dengan sarana yang serba terbatas.\nPenerapan nilai integritas kepemimpinan yang paling sesuai dengan keteladanan tersebut adalah ….",
+      "options": [
+        "Menyerahkan pimpinan kegiatan kepada wakil selama kesehatannya belum pulih sepenuhnya.",
+        "Menjelaskan keterbatasan kondisinya secara jujur kepada anggota dan meminta tenggat tugas diperpanjang.",
+        "Tetap menghadiri setiap acara seremonial organisasi walaupun kesehatannya sedang terganggu.",
+        "Membagi sarana yang terbatas secara adil kepada seluruh anggota tanpa membeda-bedakan.",
+        "Menunaikan amanah yang diemban sampai tuntas meskipun keadaan dirinya sedang tidak mendukung."
+      ],
+      "answer": 4,
+      "reasons": [
+        "Menyerahkan pimpinan selama sakit adalah langkah yang wajar, tetapi justru berlawanan dengan keteladanan Soedirman yang tetap memimpin walaupun sakit.",
+        "Keterbukaan tentang kondisi diri termasuk kejujuran, tetapi meminta tenggat diperpanjang mengurangi tanggung jawab, sedangkan Soedirman tidak mengurangi tugasnya.",
+        "Hadir di acara seremonial walaupun sakit menunjukkan kesungguhan, tetapi hanya bersifat simbolis; yang diteladankan Soedirman adalah memikul tugas pokok memimpin perjuangan, bukan sekadar hadir.",
+        "Keadilan dalam membagi sarana yang terbatas adalah sikap baik, tetapi bukan nilai yang ditonjolkan oleh keputusan Soedirman tetap memimpin dalam keadaan sakit.",
+        "Benar. Soedirman tetap memimpin gerilya walaupun sakit dan harus ditandu; menunaikan amanah sampai tuntas dalam keadaan berat adalah wujud komitmen dan ketangguhan."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan integritas kepemimpinan, khususnya unsur komitmen dan ketangguhan, yaitu kesetiaan menunaikan amanah yang sudah diterima walaupun keadaan pribadi sangat berat. Jenderal Soedirman sedang sakit paru-paru ketika Agresi Militer Belanda II terjadi, tetapi ia tidak menyerahkan pimpinan atau menunggu pulih. Ia tetap memimpin perang gerilya meskipun harus ditandu dan berpindah-pindah dengan sarana terbatas. Yang diteladankan bukan kehadiran simbolis, keterbukaan tentang kondisi diri, atau nilai baik lain yang tidak tampak dalam kasus, melainkan keteguhan memikul tugas pokok sampai selesai. Opsi yang paling tepat adalah menunaikan amanah yang diemban sampai tuntas meskipun keadaan dirinya sedang tidak mendukung, karena sikap itulah yang ditunjukkan Soedirman ketika kondisi tubuhnya tidak memungkinkan.",
+      "tip": "Tentukan dulu tindakan inti tokoh dan keadaan yang ia hadapi, lalu bandingkan setiap pilihan dengan tindakan inti itu, bukan dengan kemiripan kata atau nilai baik secara umum."
+    },
+    "tryout-ref-05-11": {
+      "status": "MAYOR",
+      "options": [
+        "Mengungkapkan hubungan pribadi kepada atasan dan meminta penilaian berkas pemohon itu dialihkan kepada petugas lain.",
+        "Memprioritaskan verifikasi berkas pemohon tersebut dan menyetujuinya segera setelah seluruh persyaratan terpenuhi.",
+        "Meminta pemohon melengkapi dokumen pendapatan, lalu melanjutkan penilaian dengan standar yang sama bagi semua pemohon.",
+        "Meminta pimpinan memeriksa ulang hasil penilaian atas berkas pemohon tersebut sebelum keputusan ditetapkan.",
+        "Memberikan penjelasan mengenai persyaratan yang belum terpenuhi dan membantu pemohon memahami prosedur pengajuan bantuan."
+      ],
+      "answer": 0,
+      "reasons": [
+        "Benar. Hubungan pertemanan dekat dengan pemohon adalah benturan kepentingan. Mengungkapkannya kepada atasan dan melepaskan penilaian kepada petugas lain menjaga objektivitas, sedangkan kelengkapan dokumen tetap diperiksa dengan persyaratan yang sama.",
+        "Mendahulukan berkas teman dekat berarti memberi perlakuan istimewa, dan pegawai tetap menilai pemohon yang punya hubungan pribadi dengannya.",
+        "Meminta dokumen dilengkapi dan memakai standar yang sama memang tertib, tetapi pegawai tetap menilai berkas teman dekatnya tanpa mengungkapkan benturan kepentingan.",
+        "Pemeriksaan ulang oleh pimpinan menambah pengawasan, tetapi penilaian awal tetap dilakukan pegawai yang berkepentingan dan hubungan pribadinya tidak diungkapkan.",
+        "Menjelaskan persyaratan adalah pelayanan yang baik, tetapi tidak menyelesaikan benturan kepentingan dalam proses penilaian."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan pengelolaan benturan kepentingan sebagai bagian dari integritas ASN. Pegawai yang menilai kelayakan bantuan berteman dekat dengan pemohon. Dokumen pendapatan pemohon belum lengkap, dan ada permintaan untuk mempercepat proses. Menurut pedoman penanganan benturan kepentingan (Permenpan-RB Nomor 37 Tahun 2012), hubungan pribadi seperti ini wajib diungkapkan, dan pejabat yang berkepentingan sebaiknya tidak ikut mengambil keputusan agar penilaian tetap objektif dan setara bagi semua pemohon. Pilihan yang paling tepat adalah mengungkapkan hubungan pribadi kepada atasan dan meminta penilaian dialihkan kepada petugas lain, karena langkah itu memisahkan hubungan pribadi dari keputusan, sementara petugas pengganti tetap memeriksa kelengkapan dokumen dengan persyaratan yang sama.",
+      "tip": "Pisahkan dua persoalan dalam kasus, yaitu kelengkapan dokumen dan kedudukan pegawai terhadap pemohon, lalu periksa pilihan mana yang menyelesaikan persoalan yang paling menentukan objektivitas keputusan."
+    },
+    "tryout-ref-05-12": {
+      "status": "MINOR",
+      "options": [
+        "Mengoreksi skor sesuai lembar jawaban dan menyimpan daftar skor terbaru dalam arsip resmi panitia.",
+        "Mengoreksi skor peserta di sekitar batas kelulusan dan mencatat perubahannya dalam risalah rapat panitia.",
+        "Meminta pengawas seleksi memeriksa kesalahan pencatatan dan memastikan tidak ada peserta yang dirugikan.",
+        "Membetulkan skor sesuai bukti serta mencatat setiap perubahan dan alasannya dalam arsip panitia.",
+        "Menunda pengumuman sampai seluruh anggota panitia menyetujui hasil perhitungan ulang."
+      ],
+      "answer": 3,
+      "reasons": [
+        "Skor memang dibetulkan dan daftarnya diarsipkan, tetapi daftar terbaru hanya menimpa angka lama tanpa jejak tentang apa yang diubah dan mengapa; ini sama saja dengan koreksi tanpa dokumentasi yang diusulkan sebagian anggota.",
+        "Perubahan memang dicatat, tetapi koreksi yang terbatas pada peserta di sekitar batas kelulusan membiarkan skor peserta lain tetap salah, padahal kesalahan itu dapat mengubah peringkat siapa pun.",
+        "Kehadiran pengawas menambah objektivitas, tetapi pemeriksaan itu belum meninggalkan catatan tentang skor yang diubah dan dasar perubahannya.",
+        "Benar. Koreksi bersandar pada bukti, dan setiap perubahan dicatat bersama alasannya, jadi hasil seleksi dapat ditelusuri dan dipertanggungjawabkan kepada peserta.",
+        "Persetujuan seluruh panitia tidak menggantikan bukti dan catatan koreksi, dan menunda pengumuman saja tidak membuat perubahan skor dapat ditelusuri."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan akuntabilitas dan keterlacakan sebagai bagian dari integritas penyelenggara seleksi. Ketua panitia menemukan kesalahan pencatatan skor yang dapat mengubah peringkat, sementara sebagian anggota ingin memperbaikinya tanpa dokumentasi karena dianggap persoalan teknis. Koreksi wajib dilakukan untuk semua skor yang salah karena menyangkut hak peserta, tetapi angka yang benar saja belum cukup: setiap perubahan pada data seleksi harus dapat ditelusuri, yaitu skor mana yang diubah dan berdasarkan bukti apa. Menyimpan daftar skor terbaru, meminta pengawas memeriksa, atau menunggu persetujuan seluruh panitia tidak meninggalkan jejak perubahan semacam itu. Opsi yang paling tepat adalah membetulkan skor sesuai bukti serta mencatat setiap perubahan dan alasannya dalam arsip panitia, karena langkah itu menolak koreksi diam-diam dan membuat hasil seleksi dapat dipertanggungjawabkan bila kelak dipersoalkan.",
+      "tip": "Bedakan hasil akhir yang benar dari proses koreksi yang dapat dipertanggungjawabkan, lalu periksa apakah setiap pilihan memenuhi keduanya untuk semua peserta."
+    },
+    "tryout-ref-05-16": {
+      "status": "MAYOR",
+      "options": [
+        "Mendaftar sebagai relawan pendataan di posko setelah seluruh rangkaian kompetisi selesai.",
+        "Membagi waktu antara jadwal kompetisi dan tugas relawan pendataan di posko secara bergantian.",
+        "Mengembangkan sistem pendataan pengungsi dan menyerahkannya kepada relawan yang bertugas di posko.",
+        "Mundur dari kompetisi dengan memberi tahu panitia, lalu menangani pendataan langsung di posko.",
+        "Melepaskan sebagian waktu persiapan kompetisi dan menggalang donasi daring bagi korban banjir."
+      ],
+      "answer": 3,
+      "reasons": [
+        "Menjadi relawan setelah kompetisi selesai tidak menjawab kebutuhan posko yang mendesak saat banjir terjadi, dan tidak ada kepentingan pribadi yang dikorbankan.",
+        "Membagi waktu tampak bertanggung jawab, tetapi kompetisi tetap diikuti sesuai jadwalnya, sementara posko membutuhkan tenaga pendataan yang siap setiap saat.",
+        "Sistem pendataan berguna, tetapi yang kurang di posko adalah orang yang mengelola data di lokasi, bukan perangkatnya, dan pembuatnya tidak melepaskan kesempatan kompetisi.",
+        "Benar. Mahasiswa mengisi kekurangan tenaga pendataan di posko sesuai kemampuannya dan menanggung pengorbanan pribadi berupa hilangnya kesempatan kompetisi, disertai pemberitahuan yang bertanggung jawab kepada panitia.",
+        "Melepaskan sebagian waktu persiapan hanya pengorbanan kecil, donasi daring tidak mengisi kekurangan tenaga pendataan di posko, dan kompetisi tetap diikuti."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan rela berkorban untuk bangsa dan negara, salah satu nilai dasar bela negara, dalam penanggulangan bencana sebagai bentuk bela negara nonmiliter. Para mahasiswa menghadapi dua kepentingan yang sama-sama bernilai: kompetisi nasional yang membuka peluang karier, dan posko banjir yang kekurangan tenaga pengelola data, padahal kemampuan itulah yang mereka miliki. Rela berkorban berarti bersedia mendahulukan kebutuhan masyarakat yang mendesak meskipun harus melepaskan kepentingan pribadi yang berharga. Membantu setelah kompetisi, membagi waktu, membuat sistem, atau menyisihkan sebagian waktu untuk kegiatan lain belum memenuhi kebutuhan posko dan belum mengorbankan kepentingan pribadi itu. Opsi yang paling tepat adalah mundur dari kompetisi dengan memberi tahu panitia, lalu menangani pendataan langsung di posko, karena tindakan itu mengisi kebutuhan nyata posko, benar-benar menanggung pengorbanan pribadi, dan tetap dilakukan secara bertanggung jawab.",
+      "tip": "Tentukan dahulu kebutuhan paling mendesak dalam kasus dan kepentingan pribadi yang dipertaruhkan, lalu periksa pilihan mana yang memenuhi kebutuhan itu dan apa yang dikorbankan pelakunya."
+    },
+    "tryout-ref-05-19": {
+      "status": "MINOR",
+      "options": [
+        "Membagi anggaran bantuan dengan jumlah yang sama besar kepada kedua wilayah tersebut.",
+        "Menetapkan besaran bantuan setiap wilayah berdasarkan jumlah sekolah yang ada di wilayah itu.",
+        "Memprioritaskan bantuan bagi sekolah dengan pencapaian akademik tinggi di kedua wilayah.",
+        "Mengalokasikan bantuan berdasarkan usulan pimpinan tiap wilayah sesuai prioritas pembangunan masing-masing.",
+        "Mengalokasikan bantuan berdasarkan tingkat kebutuhan dan hambatan siswa yang terverifikasi."
+      ],
+      "answer": 4,
+      "reasons": [
+        "Pembagian sama besar mencerminkan kesamaan nominal, tetapi mengabaikan perbedaan kondisi kedua wilayah sehingga siswa yang paling terhambat tidak mendapat dukungan memadai.",
+        "Jumlah sekolah tidak menggambarkan hambatan jarak dan biaya transportasi yang dialami siswa.",
+        "Prestasi akademik adalah ukuran hasil belajar, bukan dasar yang tepat ketika tujuan bantuan adalah mengatasi kesenjangan akses.",
+        "Usulan tiap wilayah berguna untuk perencanaan, tetapi tanpa data kebutuhan yang terverifikasi, alokasinya belum tentu menyasar siswa yang paling membutuhkan.",
+        "Benar. Keadilan sosial menuntut alokasi sesuai kebutuhan nyata. Data menunjukkan siswa wilayah A lebih terhambat, dan verifikasi menjamin bantuan tepat sasaran."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan sila kelima Pancasila, “Keadilan sosial bagi seluruh rakyat Indonesia”, yang tidak selalu berarti membagi sama rata. Anggaran pemerintah daerah terbatas. Data menunjukkan wilayah A memiliki lebih banyak siswa yang terhambat jarak dan biaya transportasi, sementara akses pendidikan di wilayah B relatif memadai. Adil dalam keadaan ini berarti memberi dukungan sesuai kebutuhan agar setiap siswa memperoleh kesempatan pendidikan yang layak. Pilihan yang paling tepat adalah mengalokasikan bantuan berdasarkan tingkat kebutuhan dan hambatan siswa yang terverifikasi, karena dasar alokasi itu sejalan dengan tujuan bantuan dan data yang tersedia, sekaligus dapat dipertanggungjawabkan.",
+      "tip": "Bandingkan dahulu kondisi kedua wilayah dalam data, lalu uji setiap pilihan: dasar pembagian apa yang dipakai dan apakah dasar itu sesuai dengan tujuan bantuan."
+    },
+    "tryout-ref-05-22": {
+      "status": "MINOR",
+      "options": [
+        "DPR menetapkan substansi akhir rancangan setelah pembahasan di tingkat komisi selesai.",
+        "Presiden menetapkan naskah akhir sesuai rancangan awal setelah pembahasan dengan DPR berakhir.",
+        "DPR dan Presiden memberi persetujuan bersama atas pasal yang disepakati, sedangkan sisanya diputuskan Presiden.",
+        "DPR dan Presiden terus membahas rancangan itu sampai keduanya menyetujui naskah yang sama.",
+        "DPR dan Presiden meminta Mahkamah Konstitusi menilai pasal yang diperselisihkan sebelum persetujuan bersama diambil."
+      ],
+      "answer": 3,
+      "reasons": [
+        "DPR memegang kekuasaan membentuk undang-undang (Pasal 20 ayat (1)), tetapi setiap rancangan harus dibahas bersama Presiden untuk mendapat persetujuan bersama, jadi DPR tidak dapat menetapkan substansi akhirnya sendiri.",
+        "Presiden berhak mengajukan rancangan undang-undang (Pasal 5 ayat (1)), tetapi tidak dapat menetapkan naskah akhir secara sepihak setelah pembahasan; naskah harus disetujui bersama oleh DPR dan Presiden.",
+        "Persetujuan bersama diberikan atas rancangan undang-undang yang akan disahkan (Pasal 20 ayat (2) dan (4)), jadi pasal yang masih diperselisihkan tidak boleh diputuskan sendiri oleh Presiden.",
+        "Benar. Pasal 20 ayat (2) mengatur bahwa setiap rancangan undang-undang dibahas oleh DPR dan Presiden untuk mendapat persetujuan bersama, jadi perbedaan pendapat diselesaikan dalam pembahasan itu.",
+        "Mahkamah Konstitusi berwenang menguji undang-undang terhadap UUD (Pasal 24C ayat (1)), bukan menilai rancangan yang masih dibahas; persetujuan atas rancangan tetap menjadi urusan DPR dan Presiden."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan mekanisme pembentukan undang-undang menurut UUD NRI Tahun 1945. Presiden berhak mengajukan rancangan undang-undang (Pasal 5 ayat (1)) dan DPR memegang kekuasaan membentuk undang-undang (Pasal 20 ayat (1)), tetapi Pasal 20 ayat (2) menegaskan bahwa setiap rancangan dibahas oleh DPR dan Presiden untuk mendapat persetujuan bersama. Hanya rancangan yang telah disetujui bersama yang disahkan Presiden (Pasal 20 ayat (4)). Perbedaan isi rancangan tidak dapat diputus sepihak oleh salah satu lembaga, dipecah menjadi pasal yang disetujui dan pasal yang diputus sendiri, atau diserahkan kepada Mahkamah Konstitusi, yang hanya menguji undang-undang. Bila persetujuan bersama tidak tercapai, rancangan itu tidak boleh diajukan lagi dalam persidangan DPR masa itu (Pasal 20 ayat (3)). Opsi yang paling tepat adalah DPR dan Presiden terus membahas rancangan itu sampai keduanya menyetujui naskah yang sama, karena hanya mekanisme itu yang sesuai dengan Pasal 20 ayat (2).",
+      "tip": "Uraikan dahulu peran DPR dan Presiden dalam pembentukan undang-undang menurut Pasal 5 dan Pasal 20 UUD 1945, lalu periksa apakah setiap pilihan memberi peran yang sesuai kepada kedua lembaga itu atas seluruh isi rancangan tanpa melibatkan lembaga yang tidak berwenang."
+    },
+    "tryout-ref-05-23": {
+      "status": "MAYOR",
+      "options": [
+        "Mewajibkan penerima bantuan mengikuti pembinaan kerohanian lintas agama yang menekankan nilai moral universal.",
+        "Memisahkan hak atas bantuan dari kegiatan agama dan membuka pembinaan keagamaan bagi penerima yang berminat.",
+        "Meminta persetujuan keluarga sebelum menetapkan kegiatan keagamaan tertentu sebagai bagian program bantuan.",
+        "Menjadikan kegiatan keagamaan tertentu bersifat sukarela, tetapi mendahulukan bantuan bagi anak yang mengikutinya.",
+        "Mengganti kegiatan keagamaan tertentu dengan doa bersama menurut satu tata cara sebelum setiap sesi belajar."
+      ],
+      "answer": 1,
+      "reasons": [
+        "Pembinaan lintas agama tampak inklusif, tetapi tetap diwajibkan bagi penerima bantuan, jadi kegiatan kerohanian masih menjadi syarat memperoleh bantuan.",
+        "Benar. Hak atas bantuan tidak bergantung pada kegiatan agama, sedangkan pembinaan keagamaan tetap tersedia bagi yang ingin mengikutinya sesuai keyakinan masing-masing; ini sejalan dengan sikap tidak memaksakan agama dalam sila pertama.",
+        "Persetujuan keluarga tidak sepenuhnya bebas ketika anak bergantung pada bantuan, dan kegiatan keagamaan tertentu tetap menjadi bagian program bantuan.",
+        "Sebutan sukarela kehilangan maknanya jika anak yang ikut didahulukan menerima bantuan; keterkaitan itu tetap menekan keluarga yang berbeda keyakinan.",
+        "Doa bersama dengan satu tata cara tetap memaksakan bentuk ibadah tertentu kepada penerima yang berbeda agama, padahal sila pertama menghormati cara beribadah masing-masing."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan sila pertama Pancasila, Ketuhanan Yang Maha Esa, yang mencakup penghormatan terhadap kebebasan menjalankan ibadah sesuai agama dan kepercayaan masing-masing serta sikap tidak memaksakan suatu agama kepada orang lain. Jaminan konstitusionalnya ada dalam Pasal 29 ayat (2) UUD 1945, tetapi soal ini meminta sudut pandang nilai sila pertama. Komunitas memberi bantuan belajar kepada anak dari keluarga kurang mampu, lalu muncul usulan agar semua penerima wajib mengikuti kegiatan keagamaan tertentu. Mengaitkan bantuan dengan kegiatan agama, baik sebagai kewajiban, syarat persetujuan, prioritas, maupun tata cara ibadah yang diseragamkan, menjadikan kebutuhan ekonomi alat tekanan, meskipun tujuannya pembinaan karakter. Opsi yang paling tepat adalah memisahkan hak atas bantuan dari kegiatan agama dan membuka pembinaan keagamaan bagi penerima yang berminat, karena bantuan tetap diterima tanpa memandang keyakinan, sementara tujuan pembinaan tercapai bagi yang bersedia.",
+      "tip": "Tentukan dahulu hal yang diperselisihkan para pengurus, lalu periksa apakah setiap pilihan benar-benar menyelesaikan persoalan itu atau hanya mengubah bentuk kegiatannya."
+    },
+    "tryout-ref-05-24": {
+      "status": "MINOR",
+      "options": [
+        "Memberikan durasi tampil yang sama panjang kepada setiap komunitas dalam sesi masing-masing.",
+        "Membagi waktu pertunjukan secara proporsional berdasarkan jumlah anggota setiap komunitas.",
+        "Merangkai cuplikan kesenian semua komunitas menjadi satu pergelaran yang memperlihatkan ciri tiap budaya.",
+        "Menyusun pertunjukan bersama yang berpusat pada kesenian komunitas terbesar dengan komunitas lain sebagai pengiring.",
+        "Menggabungkan semua komunitas dalam satu pementasan bersama dengan kostum dan iringan yang diseragamkan."
+      ],
+      "answer": 2,
+      "reasons": [
+        "Durasi yang sama mencerminkan kesetaraan, tetapi setiap komunitas tampil sendiri-sendiri, jadi keberagaman hanya dipajang berdampingan tanpa membangun kebersamaan, dan waktu yang terbatas pun sulit mencukupinya.",
+        "Pembagian menurut jumlah anggota tampak proporsional, tetapi mengurangi ruang komunitas kecil, padahal Bhinneka Tunggal Ika menghargai setiap kelompok tanpa memandang besar kecilnya.",
+        "Benar. Satu pergelaran gabungan mewujudkan sisi “tunggal” (kebersamaan), cuplikan yang memperlihatkan ciri tiap budaya menjaga sisi “bhinneka” (keberagaman), semua komunitas mendapat tempat, dan cara ini muat dalam waktu yang terbatas.",
+        "Pertunjukan bersama yang berpusat pada komunitas terbesar menempatkan budaya lain sebagai pelengkap, jadi kesetaraan antarbudaya terabaikan.",
+        "Penyeragaman kostum dan iringan memang menampilkan kebersamaan, tetapi menghapus kekhasan tiap budaya; persatuan dalam Bhinneka Tunggal Ika bukan keseragaman."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan semboyan Bhinneka Tunggal Ika, “berbeda-beda tetapi tetap satu”, yang menuntut persatuan tanpa menghapus keberagaman. Festival melibatkan komunitas dari berbagai suku, tetapi waktunya tidak cukup untuk menampilkan seluruh kesenian secara lengkap. Kebijakan yang sesuai harus memenuhi dua sisi semboyan sekaligus: semua komunitas terhubung dalam kebersamaan, dan setiap budaya tetap tampil setara dengan cirinya. Pertunjukan bersama belum tentu memenuhi keduanya. Bila kostum dan iringan diseragamkan, keberagaman hilang; bila berpusat pada komunitas terbesar, kesetaraan hilang. Opsi yang paling tepat adalah merangkai cuplikan kesenian semua komunitas menjadi satu pergelaran yang memperlihatkan ciri tiap budaya, karena cara itu menyatukan komunitas dalam satu karya, memberi ruang setara bagi kelompok kecil, dan tetap muat dalam waktu yang terbatas.",
+      "tip": "Ingat dua sisi semboyan Bhinneka Tunggal Ika, lalu periksa sisi mana yang dipenuhi setiap pilihan dan sisi mana yang terabaikan."
+    },
+    "tryout-ref-04-22": {
+      "status": "MAYOR",
+      "options": [
+        "Pemindahan ritual ke aula setara esok hari atas mufakat",
+        "Pemindahan lokakarya ke aula setara esok hari atas keputusan camat",
+        "Pembagian waktu aula secara sama bagi ritual dan lokakarya atas mufakat",
+        "Pemindahan lokakarya ke aula setara esok hari atas mufakat",
+        "Undian penggunaan aula antara ritual dan lokakarya atas mufakat"
+      ],
+      "answer": 3,
+      "reasons": [
+        "Kesepakatan dan aula setara sudah ada, tetapi yang dipindahkan justru ritual yang pelaksanaannya terikat pada hari tertentu. Memindahkannya berarti mengabaikan kebutuhan khas komunitas A.",
+        "Lokakarya memang kegiatan yang dapat bergeser, tetapi keputusan camat secara sepihak mengabaikan syarat komunitas B, yang hanya bersedia pindah bila keputusan disepakati bersama.",
+        "Pembagian waktu yang sama tampak adil, tetapi waktu aula pada hari itu hanya cukup untuk satu kegiatan tiga jam, sehingga tidak ada kegiatan yang dapat terlaksana utuh.",
+        "Ritual yang terikat hari tetap berlangsung, lokakarya yang jadwalnya lentur pindah ke aula dengan fasilitas setara, dan keputusan diambil atas kesepakatan. Kedua komunitas terlayani tanpa ada yang dikorbankan.",
+        "Undian tampak netral, tetapi memperlakukan dua kebutuhan yang berbeda seolah-olah sama. Ritual bisa kehilangan harinya, padahal tersedia aula pengganti yang memungkinkan kedua kegiatan berlangsung."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan Bhinneka Tunggal Ika, semboyan pada lambang negara (Pasal 36A UUD 1945), dalam layanan publik: menghormati perbedaan kebutuhan setiap kelompok budaya sambil menjamin hak yang sama atas fasilitas negara. Ritual komunitas A terikat pada hari tertentu, sedangkan lokakarya komunitas B dapat bergeser satu hari. Waktu aula hanya cukup untuk satu kegiatan, aula pengganti dengan fasilitas setara tersedia esok hari, dan komunitas B bersedia pindah bila keputusan disepakati bersama. Perlakuan yang adil di sini bukan membagi waktu secara identik atau menyerahkannya pada undian, melainkan menyesuaikan solusi dengan sifat kebutuhan masing-masing melalui kesepakatan. Opsi yang paling tepat adalah pemindahan lokakarya ke aula setara esok hari atas mufakat, karena kedua kegiatan tetap terlaksana dengan fasilitas setara, syarat kesediaan komunitas B dipenuhi, dan tidak ada komunitas yang dikorbankan.",
+      "tip": "Catat dahulu fakta pembatas dalam kasus, yaitu kegiatan mana yang terikat waktu, mana yang dapat bergeser, fasilitas apa yang tersedia, dan syarat apa yang diajukan komunitas, lalu periksa apakah setiap pilihan sesuai dengan semua fakta itu."
+    },
+    "tryout-ref-05-06": {
+      "status": "MAYOR",
+      "options": [
+        "Memprioritaskan fasilitas bagi perusahaan besar disertai bantuan modal, teknologi, dan pasar bagi UMKM.",
+        "Mengembangkan kemitraan perusahaan besar dan UMKM melalui promosi bersama dan ruang dagang terpadu.",
+        "Menjadikan UMKM setempat inti kawasan dengan dukungan permodalan, alih teknologi, dan perluasan pasar.",
+        "Menjadikan UMKM setempat inti kawasan dengan dukungan pameran, pelatihan, dan promosi berkala.",
+        "Memberikan insentif modal, teknologi, dan pasar kepada perusahaan besar yang bermitra dengan UMKM."
+      ],
+      "answer": 2,
+      "reasons": [
+        "Bantuan modal, teknologi, dan pasar memang menyasar hambatan UMKM, tetapi fasilitas kawasan tetap diprioritaskan bagi perusahaan besar. UMKM setempat hanya menjadi pelengkap, bukan pelaku utama pertumbuhan kawasan.",
+        "Kemitraan, promosi, dan ruang dagang bersama memperluas pasar, tetapi hambatan modal dan teknologi belum tersentuh, dan UMKM tetap bergantung pada perusahaan besar.",
+        "UMKM setempat ditempatkan sebagai inti kawasan, dan dukungan permodalan, alih teknologi, serta perluasan pasar menjawab ketiga hambatan yang disebut. Potensi ekonomi lokal menjadi kekuatan utama.",
+        "UMKM memang dijadikan inti kawasan, tetapi pameran, pelatihan, dan promosi hanya menyentuh sisi pemasaran dan keterampilan, sedangkan hambatan modal dan teknologi tetap tidak teratasi.",
+        "Insentif modal, teknologi, dan pasar diberikan kepada perusahaan besar, bukan kepada UMKM. Pelaku usaha setempat hanya menerima manfaat tidak langsung dan tetap bergantung pada mitra besar."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan nasionalisme di bidang ekonomi, yaitu memperkuat kemampuan ekonomi bangsa dengan menjadikan potensi dalam negeri sebagai kekuatan utama, bukan sekadar menarik modal besar. Pusat perdagangan perbatasan akan dibangun, dan sebagian pihak ingin seluruh fasilitas diprioritaskan bagi perusahaan besar, padahal UMKM setempat memiliki produk unggulan yang terhambat modal, teknologi, dan akses pasar. Kebijakan perlu diuji dari dua sisi: siapa yang ditempatkan sebagai pelaku utama kawasan, dan apakah dukungan yang diterima pelaku itu benar-benar menjawab ketiga hambatannya. Inti nasionalisme ekonomi di sini adalah memastikan warga setempat menjadi pelaku pertumbuhan kawasan, bukan penonton. Opsi yang paling tepat adalah menjadikan UMKM setempat inti kawasan dengan dukungan permodalan, alih teknologi, dan perluasan pasar, karena hanya kebijakan ini yang sekaligus menempatkan pelaku usaha lokal sebagai inti dan menjawab seluruh hambatan yang disebut.",
+      "tip": "Uji setiap kebijakan dengan dua pertanyaan, yaitu siapa yang menjadi pelaku utama kawasan dan siapa yang benar-benar menerima dukungan, lalu cocokkan dukungan itu dengan hambatan yang disebut dalam kasus."
+    },
+    "tryout-ref-05-09": {
+      "status": "MINOR",
+      "options": [
+        "Meminta penyedia menandatangani komitmen penggantian barang sebelum menyetujui pembayaran sesuai tahapan kontrak.",
+        "Mencatat ketidaksesuaian dalam berita acara dan menunda penerimaan unit yang belum memenuhi spesifikasi kontrak.",
+        "Melakukan pemeriksaan tambahan bersama tim teknis dan memberikan waktu kepada penyedia untuk menyelesaikan penggantian barang.",
+        "Meminta penyedia menyampaikan jadwal penggantian tertulis untuk menjadi dasar evaluasi penyelesaian pekerjaan.",
+        "Menyampaikan ketidaksesuaian kepada pimpinan dan meminta arahan mengenai kelanjutan proses administrasi penerimaan."
+      ],
+      "answer": 1,
+      "reasons": [
+        "Komitmen penggantian hanyalah janji, bukan bukti. Menyetujui pembayaran atas dasar janji tetap membuat dokumen tidak sesuai dengan kondisi barang.",
+        "Benar. Berita acara mencatat kondisi barang yang sebenarnya, dan penerimaan unit yang tidak sesuai spesifikasi ditunda sampai penyedia memenuhi kontrak.",
+        "Pemeriksaan tambahan relevan, tetapi belum menegaskan bahwa penerimaan barang yang tidak sesuai tidak boleh disahkan lebih dahulu.",
+        "Jadwal penggantian membantu pengawasan, tetapi tidak menentukan isi berita acara yang harus mencerminkan kondisi nyata.",
+        "Melapor kepada pimpinan boleh dilakukan, tetapi kewajiban pejabat pengadaan mencatat kondisi sebenarnya tidak dapat dialihkan."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan kejujuran dan akuntabilitas pejabat pengadaan: dokumen resmi harus mencerminkan fakta, bukan janji. Penyedia mengirim tepat waktu, tetapi sebagian unit tidak memenuhi spesifikasi kontrak. Penyedia lalu meminta berita acara penerimaan tetap ditandatangani dengan janji penggantian agar pembayaran tidak terlambat. Menandatangani penerimaan penuh dalam kondisi itu berarti membuat catatan yang tidak sesuai kenyataan dan membuka risiko negara membayar barang yang tidak sesuai. Pilihan yang paling tepat adalah mencatat ketidaksesuaian dalam berita acara dan menunda penerimaan unit yang belum memenuhi spesifikasi, karena dokumen tetap jujur dan kewajiban penyedia tetap ditagih sesuai kontrak.",
+      "tip": "Tentukan dahulu apa yang dibuktikan oleh berita acara penerimaan, lalu nilai apakah setiap pilihan menjaga fungsi dokumen itu."
+    },
+    "tryout-ref-05-17": {
+      "status": "MINOR",
+      "options": [
+        "Memperkuat pengawasan perbatasan dan membangun koordinasi keamanan dengan aparat setempat.",
+        "Memperluas jangkauan layanan publik dasar di kabupaten tersebut secara bertahap dan berkelanjutan.",
+        "Mengembangkan program pendidikan wawasan kebangsaan tentang identitas nasional bagi masyarakat setempat.",
+        "Mendorong pengembangan usaha lokal dan perluasan peluang ekonomi bagi masyarakat perbatasan.",
+        "Menjalin kerja sama lintas batas dengan negara tetangga dalam pemanfaatan fasilitas layanan yang sudah ada."
+      ],
+      "answer": 1,
+      "reasons": [
+        "Pengawasan perbatasan penting bagi kedaulatan, tetapi tidak menjawab penyebab warga beralih ke layanan negara tetangga, yaitu terbatasnya fasilitas dasar.",
+        "Benar. Masalah utamanya adalah keterbatasan fasilitas kesehatan, pendidikan, dan komunikasi. Memperluas layanan dasar secara berkelanjutan menghadirkan negara dalam kehidupan warga sehingga keterikatan pada Indonesia menguat.",
+        "Pendidikan kebangsaan dapat memperkuat pemahaman identitas, tetapi tidak memenuhi kebutuhan layanan yang membuat warga bergantung pada negara tetangga.",
+        "Peluang ekonomi bermanfaat, tetapi tidak menyelesaikan keterbatasan fasilitas kesehatan, pendidikan, dan jaringan komunikasi.",
+        "Memanfaatkan fasilitas negara tetangga justru mempertahankan ketergantungan yang menjadi sumber kekhawatiran, bukan memperkuat layanan nasional."
+      ],
+      "explanation": "Konsep dalam soal ini menekankan bela negara nonmiliter di wilayah perbatasan, yaitu menjaga keterikatan warga pada NKRI dengan menghadirkan negara dalam kebutuhan sehari-hari mereka. Kabupaten dalam kasus kekurangan fasilitas kesehatan, pendidikan, dan jaringan komunikasi, sehingga warga memakai layanan negara tetangga dan keterikatan mereka pada Indonesia dikhawatirkan melemah. Strategi yang tepat harus menyentuh penyebab itu, bukan hanya gejalanya. Pilihan yang paling tepat adalah memperluas jangkauan layanan publik dasar secara bertahap dan berkelanjutan, karena langkah itu menghapus alasan warga bergantung pada negara tetangga dan membuat mereka merasakan langsung kehadiran negara.",
+      "tip": "Tentukan dahulu penyebab warga beralih ke layanan negara tetangga, lalu periksa apakah setiap strategi menghilangkan penyebab itu atau hanya menangani akibatnya."
+    }
+  }
+}

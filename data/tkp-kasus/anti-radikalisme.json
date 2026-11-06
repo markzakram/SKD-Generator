@@ -1,0 +1,1589 @@
+[
+  {
+    "id": "tkp-kasus-ar-01",
+    "skenario": "kritik-berdata-jam-layanan-dicap-radikal",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Konsep Dasar Anti Radikalisme",
+    "pola": "ketegangan-kesalahpahaman",
+    "peran": "anggota-tim",
+    "kewenangan": "tidak-ada",
+    "penentu": "kritik disampaikan dengan data keluhan warga, tidak menghina siapa pun, dan tidak mengajak tindakan di luar rapat, sedangkan rekan senior tampak ragu melanjutkan",
+    "tempat": "rapat",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta membedakan kritik berdata dari label radikal dan memilih cara menanggapi yang melindungi rekan di rapat yang sedang berjalan.",
+    "stem": "Dalam rapat evaluasi jam layanan, seorang rekan senior mengkritik keras kebijakan jam kerja baru dengan membawa data keluhan warga. Ia tidak menghina siapa pun dan tidak mengajak siapa pun melakukan tindakan di luar rapat. Seorang peserta berbisik bahwa rekan itu radikal karena sering menentang pimpinan, dan beberapa orang di sekitarnya mengangguk. Rekan senior itu tampak ragu melanjutkan setelah mendengar bisikan tersebut. Anda anggota tim yang duduk di dekat mereka. Sikap Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menanggapi isi data keluhan warga dalam rapat, lalu mengusulkan pimpinan menjadwalkan pembahasan lanjutan kebijakan itu.",
+        "score": 4,
+        "reason": "Menanggapi isi data keluhan warga menjaga rapat tetap pada pokok kritik rekan senior itu. Namun sebutan radikal yang dibisikkan tidak dikoreksi, sehingga rekan itu tetap ragu melanjutkan dan peserta lain tetap memandangnya sebagai penentang.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Mengangguk menyetujui bisikan itu, lalu mengusulkan rekan senior tersebut tidak diundang pada rapat lanjutan.",
+        "score": 1,
+        "reason": "Mengangguk menyetujui bisikan membenarkan label radikal terhadap kritik yang disampaikan dengan data dan tanpa mengajak tindakan di luar rapat. Mengusulkan rekan itu tidak diundang menyingkirkannya dari rapat hanya karena ia menentang kebijakan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:pelabelan"
+        }
+      },
+      {
+        "text": "Menyatakan bahwa kritik yang disertai data adalah masukan yang sah, lalu mengajak peserta membahas isi data itu.",
+        "score": 5,
+        "reason": "Kritik yang disampaikan dengan data keluhan warga, tanpa menghina dan tanpa mengajak tindakan di luar rapat, adalah perbedaan pendapat yang sah, sehingga sebutan radikal tidak memiliki dasar. Pernyataan itu melindungi rekan senior yang tampak ragu melanjutkan, dan ajakan membahas isi data mengembalikan rapat pada kebijakan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyimak kritik rekan itu sampai selesai, lalu menganggap bisikan tersebut obrolan ringan yang tidak perlu ditanggapi.",
+        "score": 2,
+        "reason": "Menyimak kritik sampai selesai menghormati rekan itu, tetapi bisikan yang menyebutnya radikal dianggap obrolan ringan. Peserta lain yang mengangguk menerima label itu, dan rekan senior tetap ragu melanjutkan kritiknya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menegur peserta yang berbisik secara pribadi di luar rapat, lalu menyarankannya membaca data keluhan warga itu.",
+        "score": 3,
+        "reason": "Teguran pribadi kepada peserta yang berbisik dapat meluruskan sebutan radikal, tetapi dilakukan di luar rapat. Selama rapat berlangsung, rekan senior tetap ragu melanjutkan dan beberapa peserta yang mengangguk tetap menganggap kritiknya sebagai sikap radikal.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: pembedaan kritik yang sah dari radikalisme. Fakta penentu: rekan senior menyampaikan kritik dengan data keluhan warga, tidak menghina siapa pun, tidak mengajak tindakan di luar rapat, dan tampak ragu melanjutkan setelah dibisiki. Respons terbaik menyatakan bahwa kritik yang disertai data adalah masukan yang sah, lalu mengajak peserta membahas isinya. Menanggapi data tanpa mengoreksi sebutan radikal membiarkan label tetap melekat dan rekan itu tetap ragu. Menegur pembisik di luar rapat tidak menolong suasana yang sedang berjalan, menyimak lalu menganggap bisikan ringan membiarkan label, dan menyetujui bisikan itu menyingkirkan rekan karena perbedaan pendapat.",
+    "tip": "Perhatikan apa yang dikatakan rekan itu dan apakah ada perilaku yang membenarkan sebutan untuknya.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "perbedaan-pendapat",
+    "kataKunci": "kritik keras, data keluhan warga, tidak menghina, bisikan radikal, rekan senior ragu"
+  },
+  {
+    "id": "tkp-kasus-ar-02",
+    "skenario": "candaan-logat-rekan-baru-di-ruang-kerja",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Konsep Dasar Anti Radikalisme",
+    "pola": "ketegangan-kesalahpahaman",
+    "peran": "pelaksana",
+    "kewenangan": "tidak-ada",
+    "penentu": "rekan sebangku menirukan logat rekan baru di depan dua rekan lain, rekan baru itu menunduk dan berhenti bicara, dan tidak ada ancaman",
+    "tempat": "administratif",
+    "keputusan": "melindungi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kejadian pertama tanpa ancaman dan Anda berada di tempat; tindakan langsung yang menghentikan perlakuan merendahkan dan menjaga pihak terdampak mudah dikenali.",
+    "stem": "Di ruang kerja bersama, rekan sebangku Anda menirukan logat bicara rekan baru yang berasal dari daerah lain, lalu tertawa bersama dua rekan lainnya. Rekan baru itu tersenyum kaku, menunduk, dan berhenti bicara. Ini pertama kalinya Anda melihat kejadian seperti itu di ruangan ini. Tidak ada ancaman atau ajakan memusuhi, dan atasan sedang tidak berada di ruangan. Anda pelaksana yang duduk tidak jauh dari mereka. Apa tindakan Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Meminta ketiga rekan itu berhenti menirukan logat tadi, lalu mengajak rekan baru berbicara tentang pekerjaannya.",
+        "score": 5,
+        "reason": "Ketiga rekan menirukan logat rekan baru sehingga ia menunduk dan berhenti bicara, maka permintaan berhenti ditujukan kepada ketiganya pada saat itu juga. Mengajak rekan baru berbicara tentang pekerjaan mengembalikan rasa diterima tanpa membuat suasana kantor memanas.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mencatat tiruan logat itu sebagai kesalahan rekan sebangku, lalu melaporkannya kepada atasan unit.",
+        "score": 3,
+        "reason": "Laporan kepada atasan membuat kejadian itu diketahui dan dapat ditindaklanjuti secara resmi. Namun tiruan logat belum ditegur langsung, sehingga rekan sebangku tidak diberi kesempatan menghentikannya dan rekan baru tetap diam saat itu.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Menegur rekan sebangku dengan suara keras di depan dua rekan lain, lalu menyuruhnya meminta maaf di depan seisi ruangan.",
+        "score": 2,
+        "reason": "Teguran keras di depan dua rekan lain menolak candaan itu, tetapi mempermalukan rekan sebangku dan menyuruhnya meminta maaf di depan seisi ruangan memperbesar ketegangan. Rekan baru yang menunduk kembali menjadi pusat perhatian.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:mempermalukan"
+        }
+      },
+      {
+        "text": "Menegur rekan sebangku secara pribadi atas tiruan logat itu, lalu mengajak rekan baru makan siang bersama.",
+        "score": 4,
+        "reason": "Menegur rekan sebangku secara pribadi menghentikan tiruan dari rekan sebangku saja, dan mengajak rekan baru makan siang menunjukkan kepedulian pada orang yang berhenti bicara. Namun dua rekan lain yang ikut tertawa tidak tersentuh, sehingga tiruan logat masih dapat muncul dari mereka.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menyarankan rekan baru memperbaiki logat bicaranya, lalu menganggap kejadian di ruangan itu selesai.",
+        "score": 1,
+        "reason": "Menyarankan rekan baru mengubah logat memindahkan tanggung jawab dari orang yang menirukan kepada orang yang ditirukan. Menganggap kejadian itu selesai membuat rekan baru menanggung rasa tidak nyaman sendirian.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "ar:menyalahkan-korban"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: menghentikan candaan yang merendahkan asal daerah seseorang dan melindungi pihak yang terdampak pada kejadian pertama. Fakta penentu: rekan sebangku menirukan logat rekan baru di depan dua rekan lain, rekan baru itu menunduk dan berhenti bicara, dan tidak ada ancaman. Respons terbaik meminta ketiga rekan berhenti menirukan logat lalu mengajak rekan baru berbicara tentang pekerjaannya. Menegur satu orang secara pribadi dan mengajak makan siang menunjukkan kepedulian, tetapi dua rekan lain tidak tersentuh. Melapor kepada atasan sebelum menegur langsung terlalu cepat, menegur keras mempermalukan, dan menyuruh rekan baru mengubah logat memindahkan beban kepada orang yang ditirukan.",
+    "tip": "Perhatikan siapa saja yang terlibat dan siapa yang paling terdampak pada kejadian pertama ini.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "intoleransi",
+    "kataKunci": "menirukan logat, rekan baru, menunduk dan berhenti bicara, pertama kali, tidak ada ancaman, atasan tidak di ruangan"
+  },
+  {
+    "id": "tkp-kasus-ar-03",
+    "skenario": "ajakan-bergabung-komunitas-larangan-bertanya",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Sikap Pencegahan dan Penolakan terhadap Radikalisme",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "pegawai-baru",
+    "kewenangan": "tidak-ada",
+    "penentu": "komunitas itu melarang anggotanya bertanya, menyebut orang di luar komunitas sebagai musuh, dan meminta kegiatan dirahasiakan",
+    "tempat": "masyarakat",
+    "keputusan": "menolak",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Ciri paparan jelas dan belum ada kekerasan; peserta memilih penolakan langsung yang tetap menjaga hubungan kerja.",
+    "stem": "Anda pegawai baru yang akrab dengan seorang rekan senior. Rekan itu mengajak Anda bergabung dengan sebuah komunitas diskusi tertutup yang katanya tempat mengenal banyak orang. Ia menjelaskan bahwa anggota dilarang bertanya soal materi, orang di luar komunitas disebut musuh, dan kegiatan harus dirahasiakan dari keluarga. Rekan itu menanyakan jawaban Anda hampir setiap hari. Anda belum pernah mengikuti kegiatan komunitas itu. Sikap Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menghadiri satu pertemuan komunitas itu untuk menilai sendiri kegiatannya, lalu memutuskan sikap Anda setelahnya.",
+        "score": 2,
+        "reason": "Menghadiri pertemuan menempatkan Anda sendirian di komunitas yang melarang anggotanya bertanya dan meminta kegiatan dirahasiakan. Pertemuan itu tertutup dan Anda belum mengenal anggotanya, sehingga penilaian sendiri berisiko dan tidak melibatkan pihak lain yang dapat menilai.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "menangani-sendiri"
+        }
+      },
+      {
+        "text": "Membalas ajakan itu dengan singkat bahwa Anda tidak bergabung, lalu kembali membicarakan pekerjaan dengan rekan senior.",
+        "score": 4,
+        "reason": "Membalas ajakan dengan singkat melindungi Anda dari komunitas yang menyebut orang di luar kelompok sebagai musuh. Namun balasan singkat tidak menjelaskan alasannya, sehingga rekan senior dapat terus mengajak dan tidak mengetahui keberatan Anda terhadap larangan bertanya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Menyebarkan bahwa rekan senior itu anggota kelompok berbahaya, lalu meminta rekan kerja menjauhinya.",
+        "score": 1,
+        "reason": "Menyebut rekan senior sebagai anggota kelompok berbahaya hanya dari ajakan bergabung adalah tuduhan tanpa bukti perilaku kekerasan. Meminta rekan kerja menjauhinya mengucilkan seseorang dan memecah komunitas kerja Anda.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:pelabelan"
+        }
+      },
+      {
+        "text": "Melaporkan rekan senior itu kepada pimpinan unit sebagai perekrut, lalu meminta pimpinan memeriksanya.",
+        "score": 3,
+        "reason": "Melaporkan ajakan itu kepada pimpinan unit menyentuh komunitas yang melarang anggotanya bertanya. Namun rekan senior belum diajak bicara dan belum ada tindakan yang berbahaya, sehingga pelaporan sebagai perekrut terlalu cepat.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Menolak ajakan itu dengan menjelaskan alasannya, lalu menawarkan diskusi terbuka yang dapat dihadiri umum.",
+        "score": 5,
+        "reason": "Penolakan yang menjelaskan alasan menghormati rekan senior sekaligus menolak komunitas yang melarang anggotanya bertanya dan meminta kegiatan dirahasiakan. Tawaran diskusi terbuka memberi jalan bergaul yang aman dan menjaga hubungan kerja.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: penolakan ajakan kelompok yang menunjukkan ciri paparan, yaitu larangan bertanya, penyebutan orang luar sebagai musuh, dan tuntutan kerahasiaan. Fakta penentu: komunitas itu melarang anggotanya bertanya, menyebut orang di luar komunitas sebagai musuh, dan meminta kegiatan dirahasiakan. Respons terbaik menolak dengan menjelaskan alasan lalu menawarkan diskusi yang terbuka. Menolak dengan singkat menghindari tetapi tidak menjelaskan alasannya. Melapor sebagai perekrut terlalu cepat, menghadiri pertemuan sendirian berisiko, dan menyebarkan tuduhan mengucilkan seseorang tanpa bukti.",
+    "tip": "Perhatikan ciri-ciri kelompok yang digambarkan dan seberapa jauh risikonya bagi Anda dan hubungan kerja.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "tekanan-kelompok",
+    "kataKunci": "rekan senior akrab, komunitas diskusi tertutup, dilarang bertanya, disebut musuh, dirahasiakan dari keluarga"
+  },
+  {
+    "id": "tkp-kasus-ar-04",
+    "skenario": "pesan-berantai-ajakan-mengusir-warga-pendatang",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Ciri-Ciri dan Bentuk Paparan Radikalisme",
+    "pola": "dugaan-ancaman",
+    "peran": "warga",
+    "kewenangan": "tidak-ada",
+    "penentu": "pesan menyebut alamat rumah warga pendatang dan mengajak warga berkumpul di sana malam ini untuk mengusir penghuninya",
+    "tempat": "layanan-digital",
+    "keputusan": "minta-bantuan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Ancaman menyebut sasaran, tempat, dan waktu; warga tanpa kewenangan memilih melapor, bukan menghadapi sendiri.",
+    "stem": "Anda warga yang menerima pesan berantai di grup percakapan lingkungan. Pesan itu menyebut alamat sebuah rumah kontrakan warga pendatang dan mengajak warga berkumpul di sana malam ini untuk mengusir penghuninya secara paksa. Belum ada yang menanggapi, padahal waktu berkumpul tinggal tiga jam lagi dan belasan anggota grup sudah membacanya. Anda tidak mengenal pengirimnya, dan ketua RT dapat dihubungi lewat telepon. Apa yang sebaiknya Anda lakukan?",
+    "options": [
+      {
+        "text": "Meneruskan pesan itu kepada beberapa tetangga dekat, lalu meminta mereka berhati-hati terhadap pengirimnya.",
+        "score": 2,
+        "reason": "Meneruskan pesan yang menyebut alamat rumah warga pendatang menambah jumlah orang yang membaca ajakan berkumpul dan mengusir penghuninya. Peringatan terhadap pengirim tidak melindungi penghuni rumah dan tidak melibatkan pihak yang dapat bertindak malam ini.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:amplifikasi"
+        }
+      },
+      {
+        "text": "Melaporkan pesan itu ke kepolisian beserta tangkapan layarnya, lalu menghubungi ketua RT.",
+        "score": 5,
+        "reason": "Pesan itu menyebut alamat dan waktu berkumpul malam ini untuk mengusir penghuninya, sehingga ancaman terhadap warga pendatang bersifat spesifik dan dekat. Laporan kepada kepolisian beserta tangkapan layar membuka penanganan resmi, sedangkan ketua RT yang dihubungi lewat telepon dapat memberi tahu warga dan penghuni rumah.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta tetangga yang bekerja di kelurahan melaporkan pesan itu, lalu menyimpan tangkapan layarnya sebagai bukti.",
+        "score": 3,
+        "reason": "Tetangga yang bekerja di kelurahan dapat meneruskan laporan, dan tangkapan layar tetap tersimpan. Namun penghuni rumah kontrakan warga pendatang bergantung pada orang lain yang belum tentu bertindak sebelum warga berkumpul malam ini, padahal Anda dapat melapor sendiri.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Datang ke alamat itu malam ini bersama beberapa warga untuk menghadang kerumunan, lalu menyuruh mereka bubar.",
+        "score": 1,
+        "reason": "Datang bersama warga lain ke alamat itu untuk menghadang kerumunan menempatkan Anda berhadapan dengan orang yang berniat mengusir penghuninya. Perintah bubar tanpa petugas dapat memicu kekerasan malam ini.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membahayakan"
+        }
+      },
+      {
+        "text": "Datang ke kepolisian setempat membawa tangkapan layar pesan itu, lalu menyimpan salinannya di tempat aman.",
+        "score": 4,
+        "reason": "Datang ke kepolisian membawa tangkapan layar membuka penanganan resmi atas ajakan mengusir penghuni rumah. Namun ketua RT yang dapat dihubungi lewat telepon tidak diberi tahu, sehingga warga dan penghuni rumah belum mendapat peringatan dari lingkungan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "kurang-perlindungan"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: respons warga terhadap ajakan kekerasan yang menyebut sasaran, tempat, dan waktu, yaitu melapor kepada pihak berwenang dan tidak menghadapinya sendiri. Fakta penentu: pesan menyebut alamat rumah warga pendatang dan mengajak warga berkumpul malam ini untuk mengusir penghuninya, waktu berkumpul tinggal tiga jam lagi, dan ketua RT dapat dihubungi lewat telepon. Respons terbaik melaporkan pesan ke kepolisian beserta tangkapan layar lalu menghubungi ketua RT. Datang ke kepolisian tanpa mengabari ketua RT meninggalkan lingkungan tanpa peringatan. Meminta tetangga melapor bergantung pada orang lain, meneruskan pesan memperluas ajakan, dan menghadang kerumunan membahayakan.",
+    "tip": "Perhatikan seberapa dekat waktu kejadian dan siapa yang dapat bertindak paling cepat dari tempat Anda.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "paparan-digital",
+    "kataKunci": "pesan berantai, alamat rumah kontrakan, warga pendatang, mengusir secara paksa, tiga jam lagi, ketua RT"
+  },
+  {
+    "id": "tkp-kasus-ar-05",
+    "skenario": "pemohon-minta-petugas-lain-karena-asal-daerah",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Respons di Lingkungan Kerja, Sosial, dan Digital",
+    "pola": "kebutuhan-individual-vs-keadilan",
+    "peran": "pelaksana",
+    "kewenangan": "penuh",
+    "penentu": "pemohon meminta petugas lain hanya karena asal daerah Anda, sedangkan loket sebelah dan Anda melayani izin yang sama dengan standar yang sama",
+    "tempat": "loket",
+    "keputusan": "menolak",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Permintaan berbasis identitas bertemu standar layanan yang sama; tindakan langsung mudah dikenali.",
+    "stem": "Anda petugas loket pengurusan izin usaha. Seorang pemohon yang sudah mengambil nomor antrean melihat nama dan mendengar logat Anda, lalu meminta dilayani petugas lain karena menurutnya orang dari daerah Anda tidak dapat dipercaya. Berkasnya lengkap, loket sebelah melayani izin yang sama dengan standar yang sama, dan permohonannya dapat Anda selesaikan di loket ini. Antrean di belakangnya mulai panjang. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Memanggil kepala seksi ke loket untuk menangani pemohon itu, lalu menyampaikan kepada pemohon bahwa keputusan ada pada kepala seksi.",
+        "score": 3,
+        "reason": "Memanggil kepala seksi membawa permintaan pemohon itu ke tingkat lebih tinggi sebelum Anda menjelaskan standar layanan yang sama. Pemohon diberi tahu bahwa keputusan ada pada kepala seksi, padahal permohonannya dapat Anda selesaikan di loket ini.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Menyuruh pemohon itu mengambil nomor antrean baru di loket sebelah, lalu melayani pemohon berikutnya di loket ini.",
+        "score": 2,
+        "reason": "Menyuruh pemohon mengambil nomor baru memindahkan permintaan karena asal daerah kepada petugas lain dan membuatnya kembali ke belakang antrean. Loket sebelah memang melayani izin yang sama, tetapi permohonannya tetap dapat Anda selesaikan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Menolak melayani pemohon itu karena ucapannya, lalu mencatat berkasnya sebagai permohonan yang telah ditolak.",
+        "score": 1,
+        "reason": "Menolak melayani pemohon karena ucapannya menutup haknya atas layanan, padahal berkasnya lengkap dan dapat Anda selesaikan di loket ini. Penolakan itu membalas ucapan dengan cara yang merugikan pemohon.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "menutup-hak"
+        }
+      },
+      {
+        "text": "Menyampaikan bahwa setiap pemohon dilayani petugas sesuai nomor antreannya, lalu memproses izinnya dengan standar yang sama.",
+        "score": 5,
+        "reason": "Pelayanan menurut nomor antrean berlaku sama bagi setiap pemohon, dan asal daerah petugas bukan alasan untuk memindahkan berkas. Karena loket sebelah menerapkan standar yang sama dan permohonannya dapat Anda selesaikan, berkas diproses tanpa mengorbankan antrean lain.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Memproses berkas pemohon itu sesuai urutan antrean, lalu mencatat ucapannya pada lembar keluhan di loket.",
+        "score": 4,
+        "reason": "Berkas pemohon diproses sesuai urutan antrean sehingga haknya terlayani. Namun ucapan tentang asal daerah Anda hanya dicatat pada lembar keluhan, dan pemohon tidak mendengar bahwa permintaannya tidak dapat dituruti.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: pelayanan tanpa diskriminasi ketika pengguna menolak petugas karena identitas. Fakta penentu: pemohon meminta petugas lain hanya karena asal daerah Anda, sedangkan loket sebelah dan Anda melayani izin yang sama dengan standar yang sama. Respons terbaik menyampaikan bahwa pemohon dilayani sesuai nomor antreannya lalu memprosesnya. Memproses berkas lalu hanya mencatat ucapan tidak menjelaskan bahwa permintaan itu tidak dapat dituruti. Memanggil kepala seksi terlalu cepat, menyuruh pemohon pindah loket memindahkan beban, dan menolak melayani menutup hak pemohon.",
+    "tip": "Perhatikan apa yang menjadi hak pengguna dan apa yang hanya menjadi alasan pribadinya.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "intoleransi",
+    "kataKunci": "nomor antrean, nama dan logat, tidak dapat dipercaya, berkas lengkap, standar yang sama"
+  },
+  {
+    "id": "tkp-kasus-ar-06",
+    "skenario": "meneruskan-pesan-hoaks-penculikan-ke-grup-rt",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Ciri-Ciri dan Bentuk Paparan Radikalisme",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "warga",
+    "kewenangan": "penuh",
+    "penentu": "pesan itu hoaks lama dari kota lain yang sudah dibantah situs pemeriksa fakta, dan Anda sudah meneruskannya ke grup RT berisi tiga puluh warga",
+    "tempat": "masyarakat",
+    "keputusan": "mengoreksi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kesalahan milik sendiri sudah diketahui dan dapat diperbaiki langsung; peserta memilih cara memperbaiki yang jujur dan menghentikan penyebaran.",
+    "stem": "Anda warga yang tadi pagi meneruskan pesan berantai ke grup RT berisi tiga puluh warga. Pesan itu menyebut sekelompok pendatang di kampung sebelah menculik anak-anak. Siang ini Anda menemukan bahwa pesan itu hoaks lama dari kota lain yang sudah dibantah situs pemeriksa fakta resmi. Beberapa warga di grup sudah menulis ingin meronda membawa kayu. Anda dapat menghapus pesan yang Anda kirim sendiri dari grup itu, sedangkan pertemuan warga RT hanya berlangsung sebulan sekali. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menghapus pesan itu setelah menyimpan salinannya, lalu mengakui kekeliruan di grup dengan tautan bantahan.",
+        "score": 5,
+        "reason": "Pesan hoaks yang sudah dibantah situs pemeriksa fakta perlu ditarik dari grup tempat Anda meneruskannya, dengan salinan disimpan lebih dahulu agar jejaknya tidak hilang. Pengakuan beserta tautan bantahan membuat warga berhenti mempercayai pesan itu dan membatalkan niat meronda membawa kayu.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mengirim klarifikasi dan tautan bantahan resmi ke grup, lalu menyematkannya di bagian atas percakapan.",
+        "score": 4,
+        "reason": "Klarifikasi dengan tautan bantahan memberi fakta kepada warga yang sudah membaca hoaks itu. Namun pesan awal yang Anda teruskan tetap terlihat di grup, sehingga warga yang membukanya kemudian masih membaca tuduhan itu lebih dahulu.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Membiarkan pesan itu karena sudah dibaca banyak warga, lalu mengingatkan warga agar tetap waspada.",
+        "score": 2,
+        "reason": "Membiarkan pesan hoaks tetap di grup membuat tuduhan terhadap pendatang terus dibaca warga. Peringatan agar waspada justru menguatkan rasa takut dan niat meronda membawa kayu.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menghubungi ketua RT lewat pesan pribadi, lalu meminta ketua RT menyampaikan bantahan pada pertemuan warga RT.",
+        "score": 3,
+        "reason": "Ketua RT dapat membantu meluruskan pesan hoaks kepada warga. Namun pertemuan warga RT hanya berlangsung sebulan sekali, padahal sebagian warga sudah menulis ingin meronda dan pesan itu tetap dibaca anggota grup lain.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menghapus pesan itu secara diam-diam dari grup, lalu menyangkal pernah meneruskannya jika ditanya warga.",
+        "score": 1,
+        "reason": "Menghapus pesan secara diam-diam tanpa salinan menghilangkan jejak, tetapi warga yang sudah membacanya tetap percaya pada hoaks itu. Menyangkal pernah meneruskan pesan membuat Anda tidak jujur dan menutup kesempatan meluruskan fakta kepada warga.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: mengakui dan memperbaiki kesalahan menyebarkan informasi yang menyudutkan sekelompok warga. Fakta penentu: pesan yang Anda teruskan ke grup RT berisi tiga puluh warga ternyata hoaks lama yang sudah dibantah situs pemeriksa fakta, dan sebagian warga sudah ingin meronda membawa kayu. Respons terbaik menghapus pesan setelah menyimpan salinannya lalu mengakui kekeliruan dengan tautan bantahan. Klarifikasi yang membiarkan pesan awal tetap terlihat masih meninggalkan tuduhan di grup. Meminta ketua RT mengumumkan pada pertemuan sebulan sekali terlalu lambat, membiarkan pesan memperkuat ketakutan, dan menghapus diam-diam lalu menyangkal tidak jujur.",
+    "tip": "Perhatikan siapa yang sudah terpapar informasi itu dan bagaimana kebenarannya dapat sampai kepada mereka.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "paparan-digital",
+    "kataKunci": "pesan berantai, grup RT tiga puluh warga, hoaks lama, situs pemeriksa fakta, meronda membawa kayu, pesan kiriman sendiri"
+  },
+  {
+    "id": "tkp-kasus-ar-07",
+    "skenario": "pelatihan-peserta-menolak-sekelompok-dengan-satu-peserta",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Sikap Pencegahan dan Penolakan terhadap Radikalisme",
+    "pola": "hak-minoritas-keputusan-mayoritas",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "sebagian besar peserta menolak sekelompok dengan satu peserta karena asal daerahnya, tugas kelompok dinilai untuk kelulusan, dan susunan kelompok boleh diatur ulang oleh koordinator",
+    "tempat": "pelatihan",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Hak peserta yang tersisih mudah dikenali dan koordinator boleh mengatur ulang; tindakan langsung berupa mengubah cara pembagian kelompok.",
+    "stem": "Anda koordinator pelatihan pegawai selama tiga hari. Pada sesi kerja kelompok, peserta membentuk kelompok sendiri dan sebagian besar menolak sekelompok dengan satu peserta karena asal daerahnya. Peserta itu berdiri sendirian di sudut ruangan, padahal tugas kelompok dinilai untuk kelulusan. Peserta lain sudah duduk dengan kelompok pilihannya masing-masing. Fasilitator menyatakan susunan kelompok boleh diatur ulang oleh koordinator selama sesi berlangsung. Bagaimana tindakan Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Menyediakan sesi pendampingan khusus bagi peserta itu, lalu mempertahankan kelompok pilihan peserta lain.",
+        "score": 3,
+        "reason": "Pendampingan khusus membantu peserta itu mengerjakan tugas kelompok yang dinilai untuk kelulusan. Namun pilihan kelompok oleh peserta lain tetap dipertahankan, sehingga penolakan karena asal daerahnya tidak berubah dan ia tetap sendirian.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Memasukkan peserta itu ke salah satu kelompok, lalu menjelaskan alasannya kepada kelompok tersebut.",
+        "score": 4,
+        "reason": "Menempatkan peserta itu pada satu kelompok mengatasi tugasnya yang dinilai untuk kelulusan, dan penjelasan membantu kelompok tersebut menerimanya. Namun cara pembagian tetap membuka peluang penolakan karena asal daerah pada sesi berikutnya, dan peserta lain tidak ikut diarahkan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Membagi ulang kelompok dengan cara acak, lalu menegaskan bahwa asal daerah bukan dasar penempatan.",
+        "score": 5,
+        "reason": "Susunan kelompok boleh diatur ulang oleh koordinator, sehingga pembagian acak tidak memilih atau menolak peserta karena asal daerahnya. Penegasan bahwa asal daerah bukan dasar penempatan menjelaskan alasannya kepada sebagian besar peserta.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta peserta itu mencari kelompok yang bersedia menerimanya, lalu menilai tugasnya seperti kelompok lain.",
+        "score": 2,
+        "reason": "Meminta peserta itu mencari kelompok sendiri membebankan akibat penolakan kepada orang yang ditolak, padahal susunan kelompok boleh diatur ulang oleh koordinator. Penilaian tugas yang sama memang adil, tetapi ia harus menghadapi penolakan itu sendirian.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Menyetujui penolakan para peserta, lalu mengeluarkan peserta itu dari sesi kerja kelompok.",
+        "score": 1,
+        "reason": "Mengeluarkan peserta itu dari sesi kerja kelompok menutup haknya mengerjakan tugas yang dinilai untuk kelulusan. Penolakan sebagian besar peserta karena asal daerahnya dibenarkan, bukan diluruskan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "menutup-hak"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: keputusan mayoritas yang menyingkirkan satu orang karena identitas, dan koreksi mekanisme oleh koordinator. Fakta penentu: sebagian besar peserta menolak sekelompok dengan satu peserta karena asal daerahnya, tugas kelompok dinilai untuk kelulusan, dan susunan kelompok boleh diatur ulang oleh koordinator. Respons terbaik membagi ulang kelompok secara acak dan menegaskan bahwa asal daerah bukan dasar penempatan. Menempatkan peserta itu di satu kelompok membantu dirinya, tetapi cara pembagian tidak berubah. Pendampingan khusus tidak menghapus penolakan, meminta peserta mencari kelompok memindahkan beban kepadanya, dan mengeluarkannya menutup haknya.",
+    "tip": "Lihat siapa yang menanggung akibat keputusan banyak orang dan apa yang dinilai pada sesi ini.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "tekanan-kelompok",
+    "kataKunci": "kerja kelompok, menolak karena asal daerah, berdiri sendirian, dinilai untuk kelulusan, susunan kelompok diatur ulang"
+  },
+  {
+    "id": "tkp-kasus-ar-08",
+    "skenario": "pedagang-keberatan-aturan-penataan-lapak-dicap-provokator",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Konsep Dasar Anti Radikalisme",
+    "pola": "penolakan-perubahan",
+    "peran": "pelaksana",
+    "kewenangan": "terbatas",
+    "penentu": "surat keberatan bernada keras tetapi tertib, berisi alasan penghasilan pedagang kecil, pedagang bertanya apakah suratnya sampai, dan tidak ada ancaman atau ajakan memaksa",
+    "tempat": "loket",
+    "keputusan": "koordinasi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Peserta membedakan keberatan yang keras tetapi tertib dari ancaman atau label provokator dan menjawab kebutuhan pengirim surat tanpa melampaui peran loket.",
+    "stem": "Anda petugas di loket kelurahan. Seorang pedagang datang membawa surat keberatan atas aturan baru penataan lapak pasar, dengan nada keras namun tertib. Ia menyebut aturan itu menurunkan penghasilan pedagang kecil dan meminta ditinjau ulang. Tidak ada ancaman atau ajakan memaksa dalam suratnya. Ia bertanya apakah suratnya akan sampai kepada pihak yang meninjau aturan. Rekan Anda berbisik bahwa pedagang itu provokator yang perlu dicatat namanya, sedangkan peninjauan aturan menjadi urusan bagian penataan. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mencatat nama pedagang itu dalam daftar provokator, lalu menyampaikannya kepada petugas keamanan pasar.",
+        "score": 1,
+        "reason": "Mencatat pedagang sebagai provokator hanya karena suratnya bernada keras mengubah keberatan yang tertib menjadi tuduhan. Menyerahkan nama itu kepada petugas keamanan pasar memperlakukan pedagang kecil sebagai ancaman padahal tidak ada ajakan memaksa.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:pelabelan"
+        }
+      },
+      {
+        "text": "Menyimpan surat itu di laci loket hari ini, lalu menjawab bila pedagang kecil menanyakan kelanjutannya.",
+        "score": 2,
+        "reason": "Surat keberatan yang disimpan di laci tidak sampai ke bagian penataan, sehingga alasan penghasilan pedagang kecil tidak pernah ditinjau. Pedagang itu baru mendengar kelanjutannya bila ia sendiri bertanya, padahal ia sudah menanyakan apakah suratnya akan sampai.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menyerahkan surat itu langsung kepada petugas bagian penataan, lalu mencatat tindak lanjutnya pada buku agenda harian loket.",
+        "score": 4,
+        "reason": "Menyerahkan surat langsung kepada petugas bagian penataan membuat keberatan itu dibaca pihak yang meninjau aturan. Namun pertanyaan pedagang apakah suratnya akan sampai tidak dijawab, sehingga ia belum mendapat kepastian tentang keberatannya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Menerima surat itu dengan tanda terima, lalu menjelaskan bahwa aturan penataan lapak tidak dapat diubah kelurahan.",
+        "score": 3,
+        "reason": "Tanda terima membuktikan surat keberatan diterima. Namun jawaban bahwa aturan tidak dapat diubah kelurahan menutup jalan, padahal bagian penataan masih dapat meninjau alasan penghasilan pedagang kecil.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kaku"
+        }
+      },
+      {
+        "text": "Meneruskan surat itu ke bagian penataan, lalu mengabari pedagang langsung bahwa suratnya sudah sampai di bagian tersebut.",
+        "score": 5,
+        "reason": "Surat keberatan yang tertib dan berisi alasan penghasilan layak sampai ke bagian penataan yang meninjau aturan. Pemberitahuan bahwa suratnya sudah sampai di bagian itu menjawab pertanyaan pedagang tanpa menjanjikan hasil, dan bisikan tentang provokator tidak dipakai.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: membedakan keberatan yang keras tetapi tertib dari ancaman, lalu menyalurkannya lewat prosedur sambil menjawab pertanyaan pengirimnya. Fakta penentu: surat keberatan bernada keras tetapi tertib, berisi alasan penghasilan pedagang kecil, pedagang bertanya apakah suratnya sampai, dan tidak ada ancaman atau ajakan memaksa. Respons terbaik meneruskan surat ke bagian penataan dan memberi tahu pedagang bahwa suratnya sudah sampai di sana. Menyerahkan surat lalu hanya mencatat tidak menjawab pertanyaan pedagang. Menjelaskan bahwa aturan tidak dapat diubah menutup jalan peninjauan, menyimpan surat membiarkan keberatan tidak sampai, dan mencatat pedagang sebagai provokator melabeli kritik.",
+    "tip": "Perhatikan nada dan isi keberatan itu, lalu apa yang ditanyakan pengirimnya kepada Anda.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "perbedaan-pendapat",
+    "kataKunci": "surat keberatan, nada keras namun tertib, penghasilan pedagang kecil, tidak ada ancaman, bisikan provokator, bagian penataan"
+  },
+  {
+    "id": "tkp-kasus-ar-09",
+    "skenario": "ditunjuk-moderator-forum-diskusi-kebijakan-internal",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Sikap Pencegahan dan Penolakan terhadap Radikalisme",
+    "pola": "peluang-pengembangan-keterbatasan",
+    "peran": "anggota-tim",
+    "kewenangan": "hanya-usul",
+    "penentu": "unit TIK membuka pelatihan moderasi forum pekan ini, pedoman forum belum ada, dan pimpinan menerima usulan pedoman dari moderator",
+    "tempat": "pelatihan",
+    "keputusan": "mengembangkan",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kebutuhan belajar jelas dan sumber pelatihan tersedia; peserta memilih langkah pengembangan yang langsung menjawab tugas.",
+    "stem": "Anda anggota tim yang baru ditunjuk memoderasi forum diskusi kebijakan internal kantor. Beberapa diskusi sebelumnya memanas dan pernah muncul komentar yang menyerang pribadi. Anda belum pernah memoderasi forum, dan pedoman forum belum ada. Unit TIK membuka pelatihan moderasi forum pekan ini bagi pegawai yang ditunjuk, sedangkan penetapan pedoman menjadi urusan pimpinan, yang menerima usulan dari moderator. Langkah Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Membaca panduan moderasi forum dari situs lain, lalu menerapkannya pada diskusi pertama yang Anda pimpin.",
+        "score": 3,
+        "reason": "Panduan dari situs lain memberi gambaran umum tentang moderasi forum. Namun materi itu tidak disesuaikan dengan pedoman dan kebiasaan kantor, dan pelatihan moderasi dari unit TIK pekan ini belum dimanfaatkan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Mengikuti pelatihan moderasi dari unit TIK, lalu mengajukan pedoman forum kepada pimpinan.",
+        "score": 5,
+        "reason": "Pelatihan moderasi dari unit TIK yang dibuka pekan ini menjawab ketidakmampuan Anda memoderasi forum yang sering memanas. Karena pimpinan menerima usulan pedoman dari moderator, materi pelatihan dapat dipakai menyusun pedoman yang membedakan kritik kebijakan dari serangan pribadi.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Mempelajari materi pelatihan unit TIK, lalu memoderasi forum berdasarkan materi itu dan pertimbangan sendiri.",
+        "score": 4,
+        "reason": "Mempelajari materi pelatihan membekali Anda menghadapi diskusi yang memanas. Namun pedoman forum belum ada dan Anda tidak mengikuti pelatihannya, sehingga penilaian komentar bergantung pada pertimbangan sendiri dan dapat berbeda dari diskusi ke diskusi.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Menempelkan imbauan menjaga bahasa di halaman forum, lalu membuka diskusi kebijakan seperti biasa.",
+        "score": 2,
+        "reason": "Imbauan menjaga bahasa di halaman forum tidak mengubah cara forum dimoderasi. Komentar yang menyerang pribadi tetap dapat muncul karena pedoman belum ada dan Anda belum mengikuti pelatihan moderasi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "kosmetik"
+        }
+      },
+      {
+        "text": "Menutup kolom komentar forum diskusi itu, lalu melarang peserta membahas kebijakan yang memicu perdebatan.",
+        "score": 1,
+        "reason": "Menutup kolom komentar dan melarang pembahasan kebijakan yang memicu perdebatan membungkam kritik yang sah di forum diskusi kebijakan. Pimpinan belum menerima usulan pedoman, sehingga larangan itu hanya keputusan moderator.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:pembungkaman"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: pengembangan kemampuan moderasi untuk membedakan kritik kebijakan dari serangan pribadi. Fakta penentu: unit TIK membuka pelatihan moderasi forum pekan ini, pedoman forum belum ada, dan pimpinan menerima usulan pedoman dari moderator. Respons terbaik mengikuti pelatihan lalu mengajukan pedoman forum kepada pimpinan. Mempelajari materi saja lalu memoderasi dengan pertimbangan sendiri membuat penilaian tidak seragam. Membaca panduan situs lain tidak menyesuaikan dengan kantor, imbauan di halaman forum tidak mengubah cara kerja moderasi, dan menutup kolom komentar membungkam kritik.",
+    "tip": "Perhatikan bekal apa yang sudah tersedia dan siapa yang dapat menetapkan aturan main diskusi itu.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "perbedaan-pendapat",
+    "kataKunci": "baru ditunjuk, diskusi memanas, komentar menyerang pribadi, pedoman belum ada, pelatihan moderasi unit TIK, usulan dari moderator"
+  },
+  {
+    "id": "tkp-kasus-ar-10",
+    "skenario": "panitia-kerja-bakti-iuran-lebih-tinggi-untuk-pendatang",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Konsep Dasar Anti Radikalisme",
+    "pola": "hak-minoritas-keputusan-mayoritas",
+    "peran": "warga",
+    "kewenangan": "tidak-ada",
+    "penentu": "mayoritas panitia memutuskan iuran dua kali lipat bagi warga pendatang, biaya kegiatan dihitung sama untuk setiap rumah, dan keputusan belum diumumkan",
+    "tempat": "masyarakat",
+    "keputusan": "mengoreksi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Dasar biaya jelas dan keputusan belum diumumkan; tindakan langsung berupa mengusulkan koreksi sebelum berdampak.",
+    "stem": "Anda warga yang menjadi anggota panitia peringatan hari kemerdekaan tingkat RW, di bawah pembinaan ketua RW. Dalam rapat, mayoritas panitia menyetujui iuran dua kali lipat bagi warga pendatang dengan alasan mereka belum lama tinggal di sana. Biaya kegiatan dihitung sama untuk setiap rumah, dan keputusan itu belum diumumkan kepada warga. Anda tidak setuju, tetapi belum bersuara dalam rapat. Ketua panitia masih menerima usulan perbaikan keputusan. Sikap Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menyampaikan keberatan kepada ketua RW di atas panitia, lalu meminta ketua RW membatalkan keputusan panitia.",
+        "score": 3,
+        "reason": "Ketua RW membina panitia dan dapat menilai keputusan yang membedakan warga pendatang. Namun keberatan langsung kepada ketua RW melompati ketua panitia yang masih menerima usulan perbaikan, sehingga panitia tidak diberi kesempatan memperbaiki keputusannya lebih dahulu.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Mencatat ketidaksetujuan Anda atas iuran warga pendatang di buku pribadi, lalu mengikuti keputusan panitia.",
+        "score": 2,
+        "reason": "Catatan pribadi tidak sampai kepada panitia, sehingga keputusan tentang iuran bagi warga pendatang berjalan tanpa keberatan. Mengikuti keputusan mayoritas yang membedakan warga membuat Anda ikut menjalankannya.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menyetujui keputusan itu pada rapat berikutnya, lalu menagih iuran lipat dua kepada warga pendatang.",
+        "score": 1,
+        "reason": "Menyetujui dan menagih iuran lipat dua menjalankan keputusan yang membedakan warga pendatang padahal biaya kegiatan sama untuk setiap rumah. Anda ikut membuat warga itu menanggung beban lebih berat hanya karena statusnya.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      },
+      {
+        "text": "Mengusulkan iuran yang sama bagi tiap rumah menurut biaya acara, lalu meminta keputusan itu ditinjau sebelum diumumkan.",
+        "score": 5,
+        "reason": "Biaya kegiatan dihitung sama untuk setiap rumah, sehingga iuran yang sama menjadi dasar yang adil bagi warga pendatang dan warga lain. Karena keputusan belum diumumkan dan ketua panitia masih menerima usulan, peninjauan dapat dilakukan sebelum merugikan warga.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyampaikan usulan iuran yang sama kepada ketua panitia lewat pesan pribadi, lalu meminta ketua membawanya ke rapat.",
+        "score": 4,
+        "reason": "Usulan iuran yang sama kepada ketua panitia sesuai dengan biaya kegiatan setiap rumah. Namun usulan lewat pesan pribadi bergantung pada ketua untuk membawanya ke rapat, sehingga mayoritas panitia tidak mendengarnya langsung dari Anda.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: perlindungan hak kelompok kecil dalam keputusan mayoritas dan pengembalian keputusan pada kriteria yang relevan. Fakta penentu: mayoritas panitia memutuskan iuran dua kali lipat bagi warga pendatang, biaya kegiatan dihitung sama untuk setiap rumah, dan keputusan belum diumumkan. Respons terbaik mengusulkan iuran yang sama berdasarkan biaya lalu meminta peninjauan sebelum diumumkan. Mengusulkan lewat pesan pribadi menyerahkan penyampaian kepada ketua. Mengadu kepada ketua RW melompati ketua panitia, mencatat pribadi lalu mengikuti keputusan membiarkan perbedaan perlakuan, dan menagih iuran lipat dua ikut menjalankannya.",
+    "tip": "Perhatikan dasar perbedaan perlakuan itu dan apakah masih ada kesempatan untuk memperbaikinya.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "tekanan-kelompok",
+    "kataKunci": "iuran dua kali lipat, warga pendatang, biaya sama tiap rumah, belum diumumkan, ketua panitia menerima usulan"
+  },
+  {
+    "id": "tkp-kasus-ar-11",
+    "skenario": "tautan-ajakan-kekerasan-muncul-lagi-di-grup-kerja",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Respons di Lingkungan Kerja, Sosial, dan Digital",
+    "pola": "masalah-berulang",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "tautan serupa muncul lagi dari anggota yang sama setelah ditegur, tiga anggota sudah membukanya, dan kanal pelaporan keamanan organisasi aktif",
+    "tempat": "layanan-digital",
+    "keputusan": "melindungi",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Risiko yang masih berlangsung harus dikendalikan sebelum pencegahan jangka panjang; alternatif sama-sama sah dan perlu ditimbang urutannya.",
+    "stem": "Anda koordinator tim dan admin grup kerja berisi empat puluh anggota. Minggu lalu seorang anggota membagikan tautan yang mengajak menyerang kelompok warga tertentu. Anda menghapus tautan itu dan menegurnya. Pagi ini tautan serupa muncul lagi dari anggota yang sama, dan tiga anggota sudah membukanya. Kanal pelaporan keamanan organisasi aktif, sedangkan Anda berwenang membatasi kiriman anggota di grup itu. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Menyembunyikan tautan itu setelah menyimpan salinannya, lalu melaporkan pengirimnya ke kanal keamanan.",
+        "score": 5,
+        "reason": "Tautan serupa muncul lagi setelah anggota itu ditegur dan tiga anggota sudah membukanya, sehingga risiko masih berlangsung dan harus dihentikan lebih dahulu. Anda berwenang membatasi kiriman, dan salinan yang disimpan membuat kanal pelaporan keamanan organisasi dapat menilai pengulangan itu.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyimpan salinan tautan itu, lalu menyembunyikannya dan membatasi kiriman anggota tersebut selama sebulan.",
+        "score": 4,
+        "reason": "Menyimpan salinan, menyembunyikan tautan, dan membatasi kiriman anggota itu berada dalam kewenangan admin dan menghentikan risiko yang sedang berlangsung. Namun pengulangan setelah teguran tidak dilaporkan ke kanal pelaporan keamanan organisasi, sehingga penanganan resmi atas anggota yang sama tidak berjalan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Mengadakan pertemuan anggota tim tentang bahaya tautan ajakan kekerasan, lalu menyusun pedoman grup kerja bersama.",
+        "score": 3,
+        "reason": "Pertemuan tentang ajakan kekerasan dan pedoman grup berguna untuk mencegah pengulangan jangka panjang. Namun tautan serupa yang sudah dibuka tiga anggota masih tersedia dan anggota yang mengirimnya belum ditangani.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Mengirim peringatan ke grup kerja yang memuat tautan itu lagi, lalu meminta anggota tidak membukanya lagi.",
+        "score": 2,
+        "reason": "Mengirim tautan itu lagi di grup memperluas jangkauan ajakan yang sudah dibuka tiga anggota. Peringatan yang menyertainya tidak menghentikan anggota yang mengirimnya dan tidak melibatkan kanal pelaporan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:amplifikasi"
+        }
+      },
+      {
+        "text": "Menghapus riwayat percakapan anggota itu dari grup kerja, lalu menyatakan kepada anggota bahwa masalah itu sudah selesai.",
+        "score": 1,
+        "reason": "Menghapus riwayat percakapan menghilangkan bukti pengulangan yang dibutuhkan kanal pelaporan keamanan organisasi. Menyatakan masalah selesai membiarkan tautan serupa yang sudah dibuka tiga anggota dan anggota yang mengirimnya tanpa penanganan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "manipulasi-data"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: pengendalian risiko yang masih berlangsung sebelum evaluasi pencegahan pada ajakan kekerasan yang berulang. Fakta penentu: tautan serupa muncul lagi dari anggota yang sama setelah ditegur, tiga anggota sudah membukanya, dan kanal pelaporan keamanan organisasi aktif. Respons terbaik menyembunyikan tautan setelah menyimpan salinan lalu melaporkan anggota ke kanal keamanan. Menyembunyikan tautan dan membatasi kiriman tanpa melapor menghentikan risiko tetapi tidak membawa pengulangan ke penanganan resmi. Pertemuan dan pedoman penting untuk pencegahan tetapi belum menghentikan risiko, mengirim ulang tautan sebagai peringatan memperluas jangkauan, dan menghapus riwayat menghilangkan bukti.",
+    "tip": "Perhatikan risiko apa yang masih berjalan sekarang dan langkah mana yang dapat Anda lakukan segera.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "paparan-digital",
+    "kataKunci": "admin grup kerja, tautan ajakan menyerang, sudah ditegur, muncul lagi, tiga anggota membuka, kanal pelaporan keamanan"
+  },
+  {
+    "id": "tkp-kasus-ar-12",
+    "skenario": "tangkapan-layar-diduga-ajakan-kekerasan-dari-rekan",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Ciri-Ciri dan Bentuk Paparan Radikalisme",
+    "pola": "informasi-belum-lengkap-bertentangan",
+    "peran": "anggota-tim",
+    "kewenangan": "tidak-ada",
+    "penentu": "tangkapan layar tidak memuat tanggal dan nama akun lengkap, rekan yang disebut menyangkal, ajakan menyerang pejabat disebut untuk kunjungan pekan ini, dan kanal pengaduan internal dapat menilai keaslian bukti dan risiko",
+    "tempat": "administratif",
+    "keputusan": "koordinasi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Keaslian bukti dan risiko bagi pejabat sama-sama belum pasti; peserta menimbang cara menjaga bukti dan keselamatan tanpa menuduh.",
+    "stem": "Seorang rekan menunjukkan kepada Anda tangkapan layar percakapan yang katanya berisi ajakan menyerang seorang pejabat saat kunjungan lapangan pekan ini, dikirim oleh rekan lain di kantor Anda. Tangkapan layar itu tidak memuat tanggal dan nama akun lengkap, dan rekan yang disebut membuatnya menyangkal pernah menulis pesan itu. Anda anggota tim biasa, bukan petugas yang memeriksa akun, sedangkan kanal pengaduan internal dapat menilai keaslian bukti dan risiko bagi pejabat. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menyimpulkan bahwa rekan itu berbahaya dari tangkapan layar tersebut, lalu meminta atasan menonaktifkannya dari tim.",
+        "score": 1,
+        "reason": "Tangkapan layar tanpa tanggal dan nama akun lengkap belum membuktikan siapa penulis pesan, apalagi rekan yang disebut menyangkal. Menyimpulkan bahwa ia berbahaya dan meminta penonaktifan memutuskan sebelum keaslian bukti dinilai.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tanpa-verifikasi"
+        }
+      },
+      {
+        "text": "Meneruskan tangkapan layar itu kepada rekan dekat Anda, lalu meminta pendapat mereka tentang kebenarannya.",
+        "score": 2,
+        "reason": "Meneruskan tangkapan layar yang belum jelas keasliannya memperluas jangkauan dugaan ajakan kekerasan. Pendapat rekan dekat tidak dapat menilai keaslian bukti dan dapat merusak nama rekan yang disebut.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:amplifikasi"
+        }
+      },
+      {
+        "text": "Menyerahkan percakapan itu ke kanal pengaduan, lalu meminta pemeriksaan kebenaran dan bahaya bagi pejabat itu.",
+        "score": 5,
+        "reason": "Tangkapan layar tanpa tanggal dan nama akun lengkap perlu dinilai pihak yang dapat menelusuri keasliannya, sedangkan Anda bukan petugas pemeriksa akun. Menyerahkannya ke kanal pengaduan dan meminta kanal menilai risiko bagi pejabat menangani dugaan ajakan menyerang tanpa menyebarkan tuduhan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menyimpan tangkapan layar itu di tempat aman, lalu menyerahkannya ke kanal pengaduan untuk dinilai keasliannya.",
+        "score": 4,
+        "reason": "Menyimpan tangkapan layar di tempat aman dan menyerahkannya ke kanal pengaduan menjaga bukti dan membuka penilaian keaslian. Namun kanal tidak diminta menilai risiko bagi pejabat yang disebut, padahal percakapan itu menyebut ajakan menyerang pada kunjungan pekan ini.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "kurang-perlindungan"
+        }
+      },
+      {
+        "text": "Menanyakan kepada rekan yang disebut apakah ia menulis pesan itu, lalu melaporkannya ke kanal pengaduan.",
+        "score": 3,
+        "reason": "Menanyakan lebih dahulu kepada rekan yang disebut memberi kesempatan klarifikasi. Namun rekan itu sudah menyangkal dan laporan ke kanal pengaduan baru dibuat sesudah jawabannya, sehingga penilaian keaslian bukti dan risiko bagi pejabat tertunda.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: membedakan dugaan ajakan kekerasan yang belum terverifikasi dari tuduhan, dengan menyerahkan bukti dan penilaian risiko kepada pihak yang berwenang menilai. Fakta penentu: tangkapan layar tidak memuat tanggal dan nama akun lengkap, rekan yang disebut menyangkal, ajakan menyerang pejabat disebut untuk kunjungan pekan ini, dan kanal pengaduan internal dapat menilai keaslian bukti dan risiko. Respons terbaik menyerahkan tangkapan layar ke kanal pengaduan dan meminta kanal menilai risiko bagi pejabat. Menyimpan lalu menyerahkan tanpa meminta penilaian risiko melewatkan keselamatan pejabat. Menanyakan rekan yang disebut lebih dahulu menunda penilaian, meneruskan tangkapan layar memperluas dugaan, dan menyimpulkan rekan berbahaya memutuskan sebelum bukti dinilai.",
+    "tip": "Perhatikan apa yang terlihat pada bahan itu, apa yang baru dugaan, dan siapa yang mungkin terancam.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "paparan-digital",
+    "kataKunci": "tangkapan layar, tanpa tanggal dan nama akun, rekan menyangkal, kunjungan lapangan pekan ini, kanal pengaduan internal, keaslian bukti"
+  },
+  {
+    "id": "tkp-kasus-ar-13",
+    "skenario": "akun-anonim-forum-internal-ajak-beri-pelajaran-penulis-artikel",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Ciri-Ciri dan Bentuk Paparan Radikalisme",
+    "pola": "dugaan-ancaman",
+    "peran": "pegawai-baru",
+    "kewenangan": "terbatas",
+    "penentu": "unggahan anonim menyebut nama penulis artikel kritik lengkap dan mengajak memberi pelajaran di parkiran pukul 17.00, dan nomor internal petugas keamanan gedung tertera",
+    "tempat": "layanan-digital",
+    "keputusan": "minta-bantuan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Ancaman menyebut sasaran, tempat, dan waktu yang dekat; pegawai baru yang terbatas wewenangnya harus melindungi sasaran lewat pihak yang tepat.",
+    "stem": "Anda pegawai baru yang membaca forum internal kantor pukul 15.00. Sebuah akun anonim menulis bahwa rekan penulis artikel kritik terhadap kebijakan kantor perlu diberi pelajaran di parkiran pukul 17.00 dan mengajak pembaca bergabung. Belum ada balasan, dan nama penulis artikel itu disebut lengkap. Anda tidak berwenang menghapus unggahan atau menelusuri akun, tetapi nomor internal petugas keamanan gedung tertera di forum. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menyimpan tangkapan layar unggahan itu sebagai bukti, lalu menelepon petugas keamanan gedung lewat nomor internal.",
+        "score": 4,
+        "reason": "Menyimpan tangkapan layar menjaga bukti unggahan anonim itu, dan menelepon petugas keamanan gedung membuka perlindungan sebelum pukul 17.00. Namun penulis artikel yang disebut namanya tidak diberi tahu, sehingga perlindungannya bergantung pada petugas keamanan saja dan ia dapat tetap menuju parkiran pada pukul 17.00.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "kurang-perlindungan"
+        }
+      },
+      {
+        "text": "Menelepon petugas keamanan gedung, lalu memberi tahu penulis artikel itu tentang ancaman tersebut.",
+        "score": 5,
+        "reason": "Unggahan anonim itu menyebut nama penulis artikel dan mengajak memberi pelajaran di parkiran pukul 17.00, sehingga ancamannya spesifik dan dekat. Petugas keamanan gedung dapat dihubungi lewat nomor internal sekarang, dan memberi tahu penulis artikel melindunginya sebelum pukul 17.00.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Melaporkan unggahan itu ke kanal pengaduan forum, lalu meminta kanal itu memperingatkan penulis artikel.",
+        "score": 3,
+        "reason": "Kanal pengaduan forum dapat menangani unggahan itu dan memperingatkan penulis artikel. Namun kanal belum tentu bertindak sebelum pukul 17.00, sehingga perlindungan bergantung pada pihak yang lebih lambat daripada petugas keamanan gedung yang dapat dihubungi langsung.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Membalas unggahan itu dengan mengutuk akun anonimnya, lalu mengajak pembaca lain ikut melaporkannya.",
+        "score": 2,
+        "reason": "Mengutuk akun anonim di forum menolak isi unggahan, tetapi menantang di depan pembaca dan dapat memancing akun itu bertindak. Penulis artikel tetap tidak dilindungi karena petugas keamanan gedung tidak diberi tahu.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:mempermalukan"
+        }
+      },
+      {
+        "text": "Menelusuri pemilik akun anonim itu lewat data pegawai, lalu menemuinya sebelum pukul 17.00.",
+        "score": 1,
+        "reason": "Menelusuri pemilik akun lewat data pegawai melampaui batas peran pegawai baru dan membuka data pegawai kepada orang yang tidak berhak. Menemui orang yang mengajak memberi pelajaran sebelum pukul 17.00 berisiko memicu konfrontasi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: respons terhadap dugaan ancaman yang menyebut sasaran, tempat, dan waktu, dengan melindungi sasaran lewat pihak yang berwenang. Fakta penentu: unggahan anonim menyebut nama penulis artikel kritik lengkap dan mengajak memberi pelajaran di parkiran pukul 17.00, dan nomor internal petugas keamanan gedung tertera. Respons terbaik menelepon petugas keamanan dan memberi tahu penulis artikel. Menghubungi petugas keamanan lalu hanya menyimpan bukti membiarkan penulis artikel tidak tahu. Melapor ke kanal forum lalu meminta kanal memperingatkan lebih lambat, mengutuk akun mempermalukan tanpa melindungi, dan menelusuri pemilik akun melampaui peran.",
+    "tip": "Perhatikan sisa waktu sampai kejadian yang disebut dan siapa yang bisa bertindak paling dekat dengan tempatnya.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "paparan-digital",
+    "kataKunci": "akun anonim, diberi pelajaran di parkiran, pukul 17.00, nama penulis disebut lengkap, nomor petugas keamanan gedung, tidak berwenang menghapus"
+  },
+  {
+    "id": "tkp-kasus-ar-14",
+    "skenario": "atasan-minta-daftar-nama-pegawai-satu-kelompok-dibagikan",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Respons di Lingkungan Kerja, Sosial, dan Digital",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "pelaksana",
+    "kewenangan": "terbatas",
+    "penentu": "permintaan daftar nama pegawai dari satu kelompok tanpa dugaan pelanggaran, data kepegawaian hanya untuk keperluan resmi, dan dugaan pelanggaran diterima kanal pengawasan unit",
+    "tempat": "administratif",
+    "keputusan": "menolak",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Tekanan atasan bertemu aturan penggunaan data dan larangan melabeli kelompok; penolakan harus tetap menyediakan jalan sah lewat kanal pengawasan.",
+    "stem": "Anda pelaksana yang mengelola data kepegawaian di sebuah unit. Kepala bagian meminta Anda menyusun daftar nama pegawai yang berasal dari satu kelompok warga tertentu dan membagikannya di grup pimpinan agar mereka diwaspadai. Tidak ada dugaan pelanggaran terhadap satu pun nama di daftar itu. Data kepegawaian hanya boleh dibagikan untuk keperluan resmi unit, sedangkan dugaan pelanggaran pegawai diterima kanal pengawasan unit. Respons Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menyusun daftar itu dari data kepegawaian unit, lalu membagikannya di grup pimpinan sesuai permintaan atasan.",
+        "score": 1,
+        "reason": "Membagikan daftar nama pegawai dari satu kelompok membuka data kepegawaian untuk keperluan yang tidak resmi. Daftar itu melabeli pegawai tanpa dugaan pelanggaran dan membuat mereka diperlakukan sebagai ancaman.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membuka-data"
+        }
+      },
+      {
+        "text": "Meneruskan permintaan itu kepada rekan di bagian lain, lalu menyatakan Anda tidak menangani data kepegawaian tersebut.",
+        "score": 2,
+        "reason": "Meneruskan permintaan kepada rekan di bagian lain memindahkan beban tanpa menolak permintaan yang tidak patut. Daftar nama pegawai dari satu kelompok dapat tetap disusun oleh orang lain.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Melaporkan permintaan itu kepada pimpinan unit di atas kepala bagian, lalu menyerahkan keputusan kepadanya.",
+        "score": 3,
+        "reason": "Melapor kepada pimpinan unit di atas kepala bagian menempuh jalur yang sah atas permintaan yang tidak patut. Namun Anda belum menyampaikan batas penggunaan data kepada kepala bagian, dan keputusan akhir diserahkan kepada orang lain.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Mengatakan kepada kepala bagian bahwa data hanya untuk keperluan resmi unit, lalu menyimpan pesan permintaan darinya.",
+        "score": 4,
+        "reason": "Pernyataan bahwa data hanya untuk keperluan resmi menjaga data kepegawaian dan pegawai dari satu kelompok itu. Namun kepala bagian tidak diarahkan ke kanal pengawasan untuk melaporkan dugaan pelanggaran, sehingga kekhawatirannya tidak mendapat jalan yang sah.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Menolak menyusun daftar dengan menjelaskan batas data, lalu menyarankan kecurigaan itu dilaporkan ke kanal pengawasan unit.",
+        "score": 5,
+        "reason": "Data kepegawaian hanya boleh dibagikan untuk keperluan resmi dan tidak ada dugaan pelanggaran terhadap pegawai di daftar itu, sehingga permintaan itu ditolak. Penjelasan batas data dan saran memakai kanal pengawasan unit memberi jalan sah bila kepala bagian memang memiliki dugaan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: menolak tekanan atasan untuk melabeli kelompok dan membuka data pegawai, sambil menawarkan jalur resmi. Fakta penentu: permintaan daftar nama pegawai dari satu kelompok tanpa dugaan pelanggaran, data kepegawaian hanya untuk keperluan resmi, dan dugaan pelanggaran diterima kanal pengawasan unit. Respons terbaik menolak dengan menjelaskan batas data lalu menyarankan dugaan pelanggaran dilaporkan ke kanal pengawasan. Menyatakan batas data lalu hanya menyimpan pesan permintaan menjaga data tetapi tidak mengarahkan kepala bagian ke kanal pengawasan. Melapor kepada pimpinan lebih dahulu terlalu cepat, meneruskan permintaan memindahkan beban, dan menyusun daftar membuka data serta melabeli pegawai.",
+    "tip": "Perhatikan apakah permintaan itu bertumpu pada perilaku yang terbukti atau hanya pada asal seseorang.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "tekanan-kelompok",
+    "kataKunci": "daftar pegawai satu kelompok, agar diwaspadai, tanpa dugaan pelanggaran, keperluan resmi unit, kanal pengawasan unit"
+  },
+  {
+    "id": "tkp-kasus-ar-15",
+    "skenario": "sahabat-minta-poster-komunitas-diteruskan-ke-grup-kantor",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Sikap Pencegahan dan Penolakan terhadap Radikalisme",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "anggota-tim",
+    "kewenangan": "tidak-ada",
+    "penentu": "poster mengajak bergabung dengan larangan bertanya dan menyebut warga di luar komunitas sebagai musuh, belum ada ajakan kekerasan, dan sahabat Anda masih mau berbicara empat mata",
+    "tempat": "administratif",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Tekanan loyalitas sahabat bertemu ciri paparan tanpa kekerasan; peserta menimbang dialog pribadi terhadap pelaporan.",
+    "stem": "Sahabat Anda sejak kuliah, seorang anggota tim lain, mengirimkan poster kegiatan sebuah komunitas dan meminta Anda meneruskannya ke grup kantor. Poster itu mengajak bergabung dengan syarat anggota dilarang bertanya dan menyebut warga di luar komunitas sebagai musuh. Tidak ada ajakan kekerasan di dalamnya. Sahabat Anda biasanya terbuka berbicara empat mata, tetapi ia mengatakan Anda tidak setia bila menolak. Di grup kantor itu Anda hanya anggota biasa. Sikap Anda adalah ...",
+    "options": [
+      {
+        "text": "Tidak meneruskan poster itu ke grup kantor, lalu membalas pesan sahabat Anda dengan ucapan terima kasih singkat.",
+        "score": 4,
+        "reason": "Tidak meneruskan poster menghindari penyebaran ajakan komunitas yang melarang anggotanya bertanya. Namun balasan singkat tidak memberi sahabat Anda alasan penolakan, sehingga ia dapat merasa ditinggalkan dan terus mengajak orang lain.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Melaporkan sahabat Anda kepada atasan sebagai penyebar ajakan komunitas, lalu menyerahkan poster itu kepadanya.",
+        "score": 3,
+        "reason": "Melapor kepada atasan menyentuh poster yang menyebut warga di luar komunitas sebagai musuh. Namun sahabat Anda yang masih mau berbicara empat mata belum diajak bicara, dan belum ada ajakan kekerasan yang menuntut pelaporan.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Meneruskan poster itu kepada dua rekan dekat di kantor, lalu meminta pendapat mereka tentang isinya.",
+        "score": 2,
+        "reason": "Meneruskan poster kepada dua rekan dekat menyebarkan ajakan bergabung ke komunitas yang melarang anggotanya bertanya, walau jangkauannya terbatas. Meminta pendapat mereka tidak mengurangi paparan dan menempatkan rekan itu pada tekanan serupa.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:amplifikasi"
+        }
+      },
+      {
+        "text": "Mengajak sahabat Anda berbicara secara pribadi tentang isi poster itu, lalu menjelaskan alasan Anda tidak meneruskannya.",
+        "score": 5,
+        "reason": "Sahabat Anda masih mau berbicara empat mata, dan poster belum memuat ajakan kekerasan, sehingga pembicaraan pribadi tentang larangan bertanya dan sebutan musuh proporsional. Penjelasan bahwa Anda tidak akan meneruskan poster menolak tekanan loyalitas tanpa memutus persahabatan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Membagikan percakapan pribadi Anda dengan sahabat itu ke grup kantor, lalu mengajak anggota grup menjauhinya.",
+        "score": 1,
+        "reason": "Membagikan percakapan pribadi ke grup kantor membuka pembicaraan sahabat Anda kepada pihak yang tidak berhak. Mengajak anggota grup menjauhinya mengucilkan sahabat Anda di depan rekan kerja dan menutup jalan bicara empat mata.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membuka-data"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: menolak tekanan loyalitas untuk menyebarkan ajakan kelompok, dengan koreksi interpersonal pada risiko rendah. Fakta penentu: poster mengajak bergabung dengan larangan bertanya dan menyebut warga di luar komunitas sebagai musuh, belum ada ajakan kekerasan, dan sahabat Anda masih mau berbicara empat mata. Respons terbaik mengajak sahabat berbicara empat mata lalu menjelaskan alasan Anda tidak meneruskan poster. Tidak meneruskan lalu membalas singkat membuat persahabatan menggantung. Melapor kepada atasan terlalu cepat, meneruskan poster memperluas ajakan, dan membagikan percakapan pribadi membuka data serta mengucilkan.",
+    "tip": "Perhatikan seberapa berat risiko dari materi itu dan apakah masih ada ruang yang aman untuk saling terbuka.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "tekanan-kelompok",
+    "kataKunci": "sahabat sejak kuliah, poster komunitas, dilarang bertanya, disebut musuh, tidak ada ajakan kekerasan, berbicara empat mata"
+  },
+  {
+    "id": "tkp-kasus-ar-16",
+    "skenario": "pedoman-grup-ditolak-senior-karena-dianggap-membungkam-kritik",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Konsep Dasar Anti Radikalisme",
+    "pola": "penolakan-perubahan",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "rancangan pedoman melarang ujaran negatif tanpa batas, pegawai senior khawatir kritik terhadap kebijakan ikut dilarang, dan Anda berwenang menyempurnakan rumusan",
+    "tempat": "rapat",
+    "keputusan": "ubah-mekanisme",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Penolakan pegawai senior memuat kekhawatiran yang sah; alternatif perlu dinilai dari cara menjaga kritik sekaligus melarang hinaan.",
+    "stem": "Anda pimpinan unit yang baru menerbitkan rancangan pedoman grup percakapan kantor setelah ada komentar yang merendahkan kelompok tertentu. Rancangan itu melarang ujaran negatif tanpa menjelaskan batasnya. Beberapa pegawai senior menolak karena khawatir kritik terhadap kebijakan ikut dilarang. Mereka tidak menolak larangan menghina kelompok atau mengajak kekerasan. Pedoman belum berlaku, dan Anda berwenang menyempurnakan rumusannya. Keputusan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Merumuskan batas kritik dan hinaan atau ajakan kekerasan, lalu membahasnya dengan pihak penolak.",
+        "score": 5,
+        "reason": "Pegawai senior khawatir kritik terhadap kebijakan ikut dilarang karena rancangan melarang ujaran negatif tanpa batas, sedangkan mereka sendiri tidak menolak larangan menghina kelompok atau mengajak kekerasan. Anda berwenang menyempurnakan rumusan, sehingga batas yang jelas melindungi kritik dan tetap melarang hinaan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menambahkan contoh ujaran yang dilarang pada rancangan pedoman, lalu memberlakukannya setelah rapat unit.",
+        "score": 4,
+        "reason": "Contoh ujaran yang dilarang memperjelas sebagian isi pedoman bagi kelompok yang direndahkan. Namun rancangan belum menyebut bahwa kritik terhadap kebijakan dibolehkan, sehingga kekhawatiran pegawai senior tidak dijawab dalam rumusan.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Memberlakukan rancangan pedoman sesuai jadwal, lalu menjelaskan kepada pegawai senior bahwa kritik dibolehkan.",
+        "score": 3,
+        "reason": "Menjelaskan secara lisan bahwa kritik tetap dibolehkan menjawab kekhawatiran pegawai senior. Namun rumusan tertulis masih melarang ujaran negatif tanpa batas, padahal Anda berwenang menyempurnakannya sebelum berlaku.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "kaku"
+        }
+      },
+      {
+        "text": "Menarik rancangan pedoman dari pembahasan kebijakan, lalu mengatur grup pegawai seperti sebelumnya.",
+        "score": 2,
+        "reason": "Menarik rancangan membuat grup kembali tanpa aturan, padahal komentar yang merendahkan kelompok tertentu sudah terjadi. Kekhawatiran pegawai senior tidak dijawab karena rumusannya tidak diperbaiki.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "menutup-sementara"
+        }
+      },
+      {
+        "text": "Memberlakukan rancangan itu hari ini, lalu memanggil pegawai senior yang menolak untuk ditegur.",
+        "score": 1,
+        "reason": "Memanggil pegawai senior untuk ditegur karena menolak rancangan membungkam kritik terhadap kebijakan yang mereka sampaikan secara tertib. Memberlakukan larangan ujaran negatif tanpa batas membuat kritik sah mudah dianggap menyimpang.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:pembungkaman"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: menimbang penolakan terhadap aturan baru dengan menjaga kritik yang sah dan tetap melarang hinaan dan ajakan kekerasan. Fakta penentu: rancangan pedoman melarang ujaran negatif tanpa batas, pegawai senior khawatir kritik terhadap kebijakan ikut dilarang, dan Anda berwenang menyempurnakan rumusan. Respons terbaik merumuskan batas kritik dan hinaan atau ajakan kekerasan lalu membahasnya dengan pihak yang menolak. Menambah contoh larangan tidak menjawab kekhawatiran tentang kritik. Menjelaskan secara lisan tidak mengubah rumusan, menarik rancangan meninggalkan grup tanpa aturan, dan menegur pegawai senior membungkam kritik.",
+    "tip": "Perhatikan bagian aturan yang membuat pendapat kritis dan celaan sulit dibedakan, lalu perbaiki rumusannya bersama orang yang khawatir.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "perbedaan-pendapat",
+    "kataKunci": "rancangan pedoman, ujaran negatif, batas tidak dijelaskan, khawatir kritik dilarang, pedoman belum berlaku, menyempurnakan rumusan"
+  },
+  {
+    "id": "tkp-kasus-ar-17",
+    "skenario": "pegawai-baru-melabeli-rekan-radikal-ternyata-kutipan-berita",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Ciri-Ciri dan Bentuk Paparan Radikalisme",
+    "pola": "kesalahan-baru-ditemukan",
+    "peran": "pegawai-baru",
+    "kewenangan": "tidak-ada",
+    "penentu": "kalimat itu ternyata kutipan berita yang rekan itu kritik, Anda sudah menyebutnya radikal di grup tim berisi dua belas anggota, dan rekan itu sudah membacanya",
+    "tempat": "layanan-digital",
+    "keputusan": "mengoreksi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Kesalahan melabeli sudah berdampak pada rekan dan anggota lain; peserta menimbang cara mengoreksi di tempat kesalahan itu dibuat.",
+    "stem": "Kemarin Anda menulis di grup tim berisi dua belas anggota bahwa seorang rekan radikal karena membagikan potongan kalimat yang membenarkan kekerasan. Hari ini Anda membaca unggahan lengkapnya dan menemukan bahwa kalimat itu kutipan dari sebuah berita yang justru ia kritik. Rekan itu sudah membaca tulisan Anda dan tampak kecewa, sedangkan beberapa anggota grup mulai menjauhinya. Anda pegawai baru di tim itu. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Meminta maaf kepada rekan itu lewat pesan pribadi, lalu menulis koreksi singkat di grup tim.",
+        "score": 4,
+        "reason": "Permintaan maaf pribadi mengakui kekeliruan kepada rekan yang kecewa, dan koreksi singkat di grup menarik sebutan radikal. Namun permintaan maaf tidak disampaikan di hadapan dua belas anggota dan tidak ada tindak lanjut, sehingga kesan anggota grup yang mulai menjauhinya belum dipulihkan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Membiarkan tulisan itu tertimbun percakapan di grup tim, lalu menyapa rekan itu seperti biasa.",
+        "score": 2,
+        "reason": "Membiarkan tulisan tertimbun membuat sebutan radikal tetap menempel pada rekan yang kalimatnya ternyata kutipan berita. Menyapa seperti biasa tidak mengakui kekeliruan dan tidak menghentikan anggota grup yang mulai menjauhinya.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menulis koreksi dan permintaan maaf di grup tim, lalu menawarkan diri meluruskan kesan anggota lain.",
+        "score": 5,
+        "reason": "Kalimat itu ternyata kutipan berita yang justru dikritik rekan tersebut, sehingga koreksi dan permintaan maaf perlu disampaikan di grup tim tempat sebutan radikal tertulis. Tawaran meluruskan kesan anggota lain membantu rekan itu dipulihkan di hadapan dua belas anggota.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menanyakan kepada rekan itu apakah ia bersedia menerima permintaan maaf, lalu menulis koreksi di grup tim.",
+        "score": 3,
+        "reason": "Menanyakan kesediaan rekan itu menghormati perasaannya, dan koreksi akhirnya ditulis di grup tim. Namun koreksi tertunda dan beban memutuskan diletakkan pada rekan yang sudah kecewa, padahal ia sudah membaca tulisan Anda dan beberapa anggota grup mulai menjauhinya.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Mempertahankan tulisan itu karena rekan itu pernah membagikan topik serupa, lalu meminta anggota mengawasinya.",
+        "score": 1,
+        "reason": "Mempertahankan tulisan itu menyamakan kutipan berita yang dikritik dengan dukungan pada kekerasan. Meminta anggota grup mengawasi rekan itu memperkuat label radikal tanpa dasar perilaku.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:pelabelan"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: mengakui dan memperbaiki kesalahan melabeli rekan sebagai radikal dari satu bukti yang ternyata keliru. Fakta penentu: kalimat itu ternyata kutipan berita yang rekan itu kritik, Anda sudah menyebutnya radikal di grup tim berisi dua belas anggota, dan rekan itu sudah membacanya. Respons terbaik menulis koreksi dan permintaan maaf di grup tim lalu menawarkan diri meluruskan kesan anggota lain. Meminta maaf secara pribadi dengan koreksi singkat belum memulihkan kesan anggota grup. Menanyakan kesediaan rekan lebih dahulu menunda koreksi dan membebani rekan yang sudah kecewa, membiarkan tulisan menjaga label, dan mempertahankan tulisan memperkuat label tanpa dasar perilaku.",
+    "tip": "Perhatikan tempat penilaian keliru itu dibuat dan siapa saja yang sudah terpengaruh olehnya.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "perbedaan-pendapat",
+    "kataKunci": "grup tim dua belas anggota, potongan kalimat, unggahan lengkap, kutipan berita, rekan kecewa, mulai menjauhi"
+  },
+  {
+    "id": "tkp-kasus-ar-18",
+    "skenario": "surat-keberatan-warga-memuat-kalimat-ancaman-penutupan-paksa",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Respons di Lingkungan Kerja, Sosial, dan Digital",
+    "pola": "dugaan-ancaman",
+    "peran": "penghubung-mitra",
+    "kewenangan": "hanya-usul",
+    "penentu": "surat keberatan memuat alasan lahan parkir yang sah dan satu kalimat ancaman menutup paksa lokasi dengan massa pada Senin pagi, pengamanan lokasi diatur bersama aparat keamanan, dan keputusan ada di tangan lurah",
+    "tempat": "kemitraan",
+    "keputusan": "koordinasi",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Satu surat memuat keberatan yang sah dan ancaman pemaksaan; keduanya harus dipisahkan dan ditangani menurut risiko serta wewenang.",
+    "stem": "Anda penghubung kelurahan dengan paguyuban warga untuk rencana pembangunan pos layanan. Paguyuban mengirim surat keberatan yang memuat alasan sah, yaitu pos akan mengurangi lahan parkir warga. Namun satu kalimat di surat itu menyatakan warga akan menutup paksa lokasi dengan massa pada Senin pagi bila rencana tidak dibatalkan. Pengamanan lokasi diatur bersama aparat keamanan setempat. Keputusan rencana ada di tangan lurah, dan Anda hanya dapat memberi usulan. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menyampaikan alasan keberatan dan kalimat ancaman itu kepada lurah, lalu mengusulkan peninjauan ulang lokasi pos.",
+        "score": 4,
+        "reason": "Alasan lahan parkir yang sah dan kalimat ancaman menutup paksa lokasi dengan massa pada Senin pagi sampai kepada lurah, dan peninjauan lokasi dapat meredakan keberatan. Namun aparat keamanan yang mengatur pengamanan lokasi tidak diberi tahu, sehingga perlindungan lokasi bergantung pada lurah.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "kurang-perlindungan"
+        }
+      },
+      {
+        "text": "Memberi tahu pengurus paguyuban bahwa rencana akan dibatalkan, lalu meminta mereka tidak menutup lokasi.",
+        "score": 2,
+        "reason": "Keputusan rencana ada di tangan lurah, sehingga memberi tahu paguyuban bahwa rencana akan dibatalkan adalah janji yang tidak dapat Anda penuhi. Kalimat ancaman menutup lokasi dengan massa juga tidak dilaporkan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "janji-tanpa-dasar"
+        }
+      },
+      {
+        "text": "Menyebut paguyuban warga itu kelompok pengacau dalam laporan kepada lurah, lalu mengusulkan suratnya diabaikan.",
+        "score": 1,
+        "reason": "Menyebut paguyuban kelompok pengacau dari satu kalimat ancaman mengabaikan alasan lahan parkir yang sah. Mengusulkan surat diabaikan menutup jalan dialog dan membuat keberatan warga tidak pernah ditinjau.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:pelabelan"
+        }
+      },
+      {
+        "text": "Mengundang pengurus paguyuban warga bertemu di kelurahan membahas keberatan, lalu melaporkan kalimat ancaman itu kepada lurah.",
+        "score": 3,
+        "reason": "Mengundang pengurus paguyuban membahas keberatan membuka dialog tentang lahan parkir. Namun kalimat ancaman menutup lokasi dengan massa pada Senin pagi baru dilaporkan kepada lurah setelah pertemuan, sehingga pelaporan ancaman tertunda dan aparat keamanan belum diberi tahu.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Melaporkan ancaman itu kepada aparat keamanan, lalu menyampaikan keberatan sah warga dan usul peninjauan ulang kepada lurah.",
+        "score": 5,
+        "reason": "Kalimat ancaman menutup paksa lokasi dengan massa pada Senin pagi memuat pemaksaan, sehingga dilaporkan langsung kepada aparat keamanan yang mengatur pengamanan lokasi. Karena Anda hanya dapat memberi usulan, alasan lahan parkir yang sah dan usul peninjauan ulang disampaikan kepada lurah yang memutuskan, sehingga keberatan warga tidak hilang di balik ancaman itu.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      }
+    ],
+    "answer": 4,
+    "explanation": "Konsep yang diuji: membedakan keberatan warga yang sah dari ancaman pemaksaan dalam satu surat, dan menangani keduanya menurut risiko dan wewenang. Fakta penentu: surat keberatan memuat alasan lahan parkir yang sah dan satu kalimat ancaman menutup paksa lokasi dengan massa pada Senin pagi, pengamanan lokasi diatur bersama aparat keamanan, dan keputusan ada di tangan lurah. Respons terbaik melaporkan ancaman langsung kepada aparat keamanan lalu menyampaikan keberatan sah dan usul peninjauan kepada lurah. Menyampaikan keberatan dan ancaman hanya kepada lurah membuat perlindungan bergantung pada lurah. Mengundang pertemuan lebih dahulu menunda pelaporan ancaman, menjanjikan pembatalan melampaui usulan, dan menyebut paguyuban pengacau melabeli warga dari satu kalimat.",
+    "tip": "Perhatikan bagian surat yang berupa pendapat dan bagian yang berupa pemaksaan, lalu waktu yang tersisa.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "perbedaan-pendapat",
+    "kataKunci": "surat keberatan, lahan parkir warga, alasan sah, menutup paksa dengan massa, Senin pagi, aparat keamanan"
+  },
+  {
+    "id": "tkp-kasus-ar-19",
+    "skenario": "narasumber-mitra-menyelipkan-lelucon-merendahkan-kelompok",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Sikap Pencegahan dan Penolakan terhadap Radikalisme",
+    "pola": "ketegangan-kesalahpahaman",
+    "peran": "penghubung-mitra",
+    "kewenangan": "hanya-usul",
+    "penentu": "narasumber dari lembaga mitra menyelipkan lelucon yang merendahkan kelompok warga, dua peserta tampak tidak nyaman, sesi masih tersisa satu jam, dan panitia pelatihan berada di dekat Anda",
+    "tempat": "pelatihan",
+    "keputusan": "koordinasi",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Kebutuhan jelas dan panitia berada di dekat Anda; tindakan langsung sesuai batas peran mudah dikenali.",
+    "stem": "Anda penghubung unit Anda dengan lembaga mitra yang mengirim narasumber untuk pelatihan yang diikuti puluhan pegawai dari beberapa unit. Di tengah sesi, narasumber menyelipkan lelucon yang merendahkan kelompok warga tertentu. Dua peserta tampak tidak nyaman, sedangkan sebagian lain tertawa. Sesi masih tersisa satu jam, dan lembaga mitra dapat dihubungi lewat telepon. Anda tidak berwenang menghentikan sesi, tetapi panitia pelatihan duduk di belakang ruangan. Tindakan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Mencatat lelucon merendahkan itu, lalu menelepon lembaga mitra agar narasumbernya segera meluruskan candaannya.",
+        "score": 4,
+        "reason": "Menelepon lembaga mitra selama sesi dapat membuat narasumber meluruskan candaannya, dan catatan menjaga jejak lelucon yang merendahkan kelompok warga. Namun jalur lewat mitra lebih panjang daripada panitia pelatihan yang duduk di belakang ruangan, padahal sesi masih tersisa satu jam.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      },
+      {
+        "text": "Menemui panitia pelatihan di belakang ruangan, lalu mengusulkan narasumber meluruskan candaannya.",
+        "score": 5,
+        "reason": "Lelucon yang merendahkan kelompok warga terjadi saat sesi masih tersisa satu jam, dan panitia pelatihan berada di dekat Anda sehingga dapat diajak bicara saat itu juga. Anda hanya mengusulkan karena tidak berwenang menghentikan sesi, sedangkan narasumber diminta meluruskan tanpa dipermalukan.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Menemui dua peserta yang tampak tidak nyaman, lalu mengabari panitia pelatihan tentang keberatan mereka.",
+        "score": 3,
+        "reason": "Menemui dua peserta yang tampak tidak nyaman memberi pengakuan atas perasaan mereka, dan panitia pelatihan diberi tahu tentang keberatan itu. Namun narasumber tidak diminta meluruskan leluconnya dan sumber masalah tidak disentuh, sehingga sesi yang masih tersisa satu jam dapat memuat lelucon serupa.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "sah-parsial"
+        }
+      },
+      {
+        "text": "Menegur narasumber atas leluconnya di depan peserta pelatihan, lalu memintanya meminta maaf kepada hadirin.",
+        "score": 2,
+        "reason": "Menegur narasumber di depan peserta menolak lelucon itu, tetapi mempermalukan tamu mitra dan menegangkan sesi yang masih tersisa satu jam. Anda tidak berwenang menegur atas nama panitia, dan peserta yang tidak nyaman menjadi pusat perhatian.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:mempermalukan"
+        }
+      },
+      {
+        "text": "Menghentikan sesi pelatihan secara langsung, lalu meminta narasumber meninggalkan ruangan pelatihan itu.",
+        "score": 1,
+        "reason": "Menghentikan sesi pelatihan melampaui batas Anda yang tidak berwenang menghentikan sesi. Meminta narasumber meninggalkan ruangan mengusir tamu lembaga mitra dan merugikan peserta yang masih membutuhkan materi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melampaui-kewenangan"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: respons terhadap ujaran merendahkan oleh tamu mitra pada saat acara berlangsung, sesuai wewenang penghubung. Fakta penentu: narasumber dari lembaga mitra menyelipkan lelucon yang merendahkan kelompok warga, dua peserta tampak tidak nyaman, sesi masih tersisa satu jam, dan panitia pelatihan berada di dekat Anda. Respons terbaik menemui panitia lalu mengusulkan narasumber meluruskan leluconnya. Mencatat lalu menelepon mitra sah tetapi jalurnya lebih panjang daripada panitia yang ada di ruangan. Menemui peserta yang tidak nyaman lalu mengabari panitia membantu peserta tetapi narasumber tidak diminta meluruskan. Menegur di depan peserta mempermalukan dan menghentikan sesi melampaui wewenang.",
+    "tip": "Perhatikan siapa yang memegang kendali atas jalannya acara dan seberapa banyak waktu yang tersisa.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "intoleransi",
+    "kataKunci": "narasumber lembaga mitra, lelucon merendahkan, dua peserta tidak nyaman, sisa satu jam, panitia pelatihan, tidak berwenang menghentikan"
+  },
+  {
+    "id": "tkp-kasus-ar-20",
+    "skenario": "posko-bantuan-warga-menghadang-penerima-dari-kampung-lain",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Respons di Lingkungan Kerja, Sosial, dan Digital",
+    "pola": "gangguan-layanan-mendadak",
+    "peran": "penghubung-mitra",
+    "kewenangan": "hanya-usul",
+    "penentu": "pembagian mengikuti daftar dinas menurut kerusakan rumah, warga setempat menghadang penerima dari kampung lain, antrean berhenti hampir setengah jam, dan komandan posko memutuskan setelah mendengar usulan",
+    "tempat": "lapangan",
+    "keputusan": "memulihkan",
+    "bloom": "C4",
+    "difficulty": "sedang",
+    "difficultyReason": "Layanan terhenti oleh penolakan berbasis asal kampung; peserta menimbang usulan yang memulihkan pembagian tanpa mengubah dasar daftar.",
+    "stem": "Anda penghubung dinas sosial dengan relawan di posko bantuan banjir. Pembagian paket dilakukan menurut daftar dinas yang disusun dari tingkat kerusakan rumah. Sekelompok warga setempat tiba-tiba menghadang penerima dari kampung lain dan menuntut paket diberikan lebih dahulu kepada warga sekampung. Antrean berhenti hampir setengah jam dan suasana mulai tegang. Anda hanya dapat mengusulkan cara pembagian, sedangkan komandan posko berada di tenda dan memutuskan setelah mendengar usulan. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Menyarankan agar pembagian dilanjutkan dengan pengawalan petugas, lalu mencatat penghadangan itu sebagai laporan.",
+        "score": 4,
+        "reason": "Saran melanjutkan pembagian dengan pengawalan petugas memulihkan layanan bagi penerima dari kampung lain, dan penghadangan tercatat. Namun warga setempat yang menghadang tidak mendengar dasar daftar menurut kerusakan rumah, sehingga penghadangan dapat terulang.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Meminta komandan posko menghubungi dinas untuk memutuskan, lalu menyarankan pembagian dilanjutkan sesuai jawaban dinas.",
+        "score": 3,
+        "reason": "Menghubungi dinas dapat menguatkan dasar daftar. Namun antrean yang sudah berhenti hampir setengah jam tertahan lebih lama, padahal komandan posko dapat memutuskan cara pembagian setelah mendengar usulan sekarang.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Mengusulkan agar pembagian paket dihentikan hari ini, lalu meminta penerima dari kampung lain kembali besok pagi.",
+        "score": 2,
+        "reason": "Menghentikan pembagian hari ini membuat penerima dari kampung lain kembali besok dengan kebutuhan yang belum terpenuhi. Kerugian itu masih dapat dipulihkan, tetapi dasar daftar menurut kerusakan rumah tidak dijelaskan kepada warga setempat.",
+        "tag": {
+          "pembeda": "waktu",
+          "pengecoh": "menutup-sementara"
+        }
+      },
+      {
+        "text": "Mengusulkan komandan posko menjelaskan dasar daftar kepada perwakilan mereka, lalu mengusulkan pembagian dilanjutkan dengan pengawalan.",
+        "score": 5,
+        "reason": "Daftar dinas disusun menurut kerusakan rumah, sehingga penjelasan dasarnya kepada perwakilan warga menjawab tuntutan tanpa mengubah daftar. Karena Anda hanya mengusulkan dan komandan posko yang memutuskan, usulan melanjutkan pembagian dengan pengawalan memulihkan antrean yang berhenti hampir setengah jam.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Memberikan paket bantuan kepada warga sekampung lebih dahulu, lalu menyusun ulang daftar penerima di tempat.",
+        "score": 1,
+        "reason": "Memberikan paket kepada warga sekampung lebih dahulu menyimpang dari daftar dinas dan merugikan penerima yang kerusakannya lebih parah. Menyusun ulang daftar di tempat tidak dapat dipertanggungjawabkan oleh Anda yang hanya mengusulkan.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "melanggar-aturan"
+        }
+      }
+    ],
+    "answer": 3,
+    "explanation": "Konsep yang diuji: memulihkan layanan bantuan yang terhenti oleh penolakan berbasis asal kampung, dengan tetap memakai dasar yang adil dan menghormati batas peran penghubung. Fakta penentu: pembagian mengikuti daftar dinas menurut kerusakan rumah, warga setempat menghadang penerima dari kampung lain, antrean berhenti hampir setengah jam, dan komandan posko memutuskan setelah mendengar usulan. Respons terbaik mengusulkan agar komandan menjelaskan dasar daftar kepada perwakilan warga dan melanjutkan pembagian dengan pengawalan. Menyarankan pelanjutan tanpa penjelasan membuat penghadangan dapat terulang. Menghubungi dinas lebih dahulu memperpanjang antrean berhenti, menghentikan pembagian menunda hak penerima, dan mengutamakan warga sekampung menyimpang dari daftar.",
+    "tip": "Perhatikan siapa yang memegang keputusan di lokasi dan apa yang membuat tuntutan itu muncul.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "intoleransi",
+    "kataKunci": "posko bantuan banjir, daftar dinas, tingkat kerusakan rumah, menghadang penerima, antrean berhenti setengah jam, komandan posko"
+  },
+  {
+    "id": "tkp-kasus-ar-21",
+    "skenario": "rapat-tim-usul-keluarkan-rekan-dari-proyek-karena-komunitas",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Sikap Pencegahan dan Penolakan terhadap Radikalisme",
+    "pola": "hak-minoritas-keputusan-mayoritas",
+    "peran": "pimpinan-unit",
+    "kewenangan": "penuh",
+    "penentu": "mayoritas anggota mengusulkan seorang rekan tidak diikutkan karena aktif di komunitas, kinerjanya tercatat baik tanpa laporan pelanggaran, dan Anda berwenang menetapkan susunan tim",
+    "tempat": "rapat",
+    "keputusan": "melindungi",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Keputusan mayoritas yang sah secara prosedur bertemu hak seorang anggota; alternatif perlu dinilai dari cara menjaga kriteria dan hubungan tim.",
+    "stem": "Anda pimpinan unit yang memimpin rapat penyusunan tim proyek tahunan. Rapat itu dihadiri dua belas anggota tim. Mayoritas anggota mengusulkan seorang rekan tidak diikutkan karena ia aktif di sebuah komunitas yang dianggap kurang cocok dengan budaya kerja tim. Penilaian kinerja rekan itu tercatat baik, dan tidak ada laporan pelanggaran tentangnya. Anda berwenang menetapkan susunan tim. Beberapa anggota mendukung usulan itu karena merasa lebih nyaman bekerja bersama. Keputusan Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Menetapkan susunan tim berdasarkan kinerja, lalu menegaskan bahwa keanggotaan komunitas bukan kriteria.",
+        "score": 5,
+        "reason": "Kinerja rekan itu tercatat baik dan tidak ada laporan pelanggaran, sehingga keanggotaan di komunitas bukan dasar yang relevan menyusun tim. Anda berwenang menetapkan susunan tim, dan penegasan di depan dua belas anggota mengembalikan keputusan pada kriteria kinerja.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Memasukkan rekan itu ke tim berdasarkan kinerjanya, lalu membahas keberatan anggota secara pribadi satu per satu.",
+        "score": 4,
+        "reason": "Memasukkan rekan itu berdasarkan kinerja menjaga haknya, dan pembicaraan pribadi dapat meredakan keberatan anggota. Namun kriteria penyusunan tim tidak dinyatakan kepada rapat yang dihadiri dua belas anggota, sehingga usulan serupa dapat muncul kembali terhadap anggota lain.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-komunikasi"
+        }
+      },
+      {
+        "text": "Meminta pimpinan di atas Anda memutuskan susunan tim, lalu menjalankan keputusan tersebut.",
+        "score": 3,
+        "reason": "Pimpinan di atas Anda dapat memutuskan berdasarkan kinerja rekan itu yang tercatat baik. Namun Anda berwenang menetapkan susunan tim, dan penyerahan itu membiarkan usulan mayoritas karena komunitas belum dijawab di rapat.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "eskalasi-dini"
+        }
+      },
+      {
+        "text": "Menyerahkan susunan tim kepada hasil pemungutan suara anggota, lalu mencatat hasilnya sebagai keputusan rapat.",
+        "score": 2,
+        "reason": "Menyerahkan susunan tim kepada pemungutan suara melepaskan wewenang Anda menetapkan susunan tim. Mayoritas anggota yang sudah mengusulkan menyingkirkan rekan itu menentukan nasibnya, padahal kinerjanya tercatat baik.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "melempar"
+        }
+      },
+      {
+        "text": "Menyetujui usulan mayoritas anggota itu, lalu meminta rekan tersebut mengundurkan diri dari proyek tahunan.",
+        "score": 1,
+        "reason": "Menyetujui usulan mayoritas dan meminta rekan itu mengundurkan diri menyingkirkannya dari proyek karena komunitasnya, padahal kinerjanya tercatat baik dan tidak ada laporan pelanggaran. Hak rekan itu atas kesempatan berkontribusi tertutup.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "menutup-hak"
+        }
+      }
+    ],
+    "answer": 0,
+    "explanation": "Konsep yang diuji: perlindungan hak seorang anggota dalam keputusan mayoritas yang berbasis identitas komunitas, dan pengembalian keputusan pada kriteria pekerjaan. Fakta penentu: mayoritas anggota mengusulkan seorang rekan tidak diikutkan karena aktif di komunitas, kinerjanya tercatat baik tanpa laporan pelanggaran, dan Anda berwenang menetapkan susunan tim. Respons terbaik menetapkan susunan berdasarkan kinerja lalu menegaskan bahwa komunitas bukan kriteria. Memasukkan rekan itu tanpa menyatakan kriteria kepada rapat membuat usulan serupa dapat muncul lagi. Meminta pimpinan memutuskan melompati wewenang Anda, menyerahkan kepada pemungutan suara melepaskan wewenang, dan meminta ia mundur menutup haknya.",
+    "tip": "Perhatikan hal apa yang berkaitan dengan pekerjaan dan hal apa yang hanya soal kenyamanan sebagian orang.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "tekanan-kelompok",
+    "kataKunci": "usulan mayoritas, aktif di komunitas, budaya kerja tim, kinerja tercatat baik, tanpa laporan pelanggaran, susunan tim"
+  },
+  {
+    "id": "tkp-kasus-ar-22",
+    "skenario": "tenggat-laporan-keuangan-dan-unggahan-ancaman-terhadap-rekan",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Respons di Lingkungan Kerja, Sosial, dan Digital",
+    "pola": "dua-tanggung-jawab",
+    "peran": "koordinator",
+    "kewenangan": "penuh",
+    "penentu": "unggahan memuat foto dan jadwal pulang rekan dengan kalimat perlu didatangi, rekan itu pulang pukul 17.00, laporan keuangan harus terkirim pukul 16.00, dan anggota tim lain dapat menyelesaikan bagian akhir laporan",
+    "tempat": "administratif",
+    "keputusan": "bertindak-sendiri",
+    "bloom": "C5",
+    "difficulty": "sedang",
+    "difficultyReason": "Tenggat laporan dan perlindungan rekan sama-sama sah; urutan dan pembagian tugas ditentukan oleh risiko yang lebih dekat dan siapa yang mengenal rekan itu.",
+    "stem": "Anda koordinator tim yang harus mengirim laporan keuangan unit pukul 16.00. Pukul 14.00, seorang anggota tim yang baru membaca sekilas melapor bahwa sebuah akun mengunggah foto rekan kantor beserta jadwal pulangnya dan kalimat bahwa orang itu perlu didatangi. Anda mengenal rekan itu, dan ia pulang pukul 17.00. Bagian akhir laporan dapat diselesaikan anggota tim lain. Kanal keamanan kantor menerima laporan lewat telepon. Apa langkah Anda yang paling tepat?",
+    "options": [
+      {
+        "text": "Menyelesaikan dan mengirim laporan keuangan unit tepat waktu, lalu melaporkan unggahan itu ke kanal keamanan.",
+        "score": 3,
+        "reason": "Laporan keuangan terkirim tepat waktu dan unggahan akhirnya dilaporkan ke kanal keamanan. Namun laporan ke kanal baru dibuat sesudah laporan keuangan selesai pada pukul 16.00, sehingga rekan yang pulang pukul 17.00 hanya punya waktu singkat sebelum diperingatkan.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Meminta anggota tim yang melapor mengabaikan unggahan itu, lalu memastikan laporan keuangan terkirim tepat waktu.",
+        "score": 2,
+        "reason": "Mengabaikan unggahan yang memuat foto dan jadwal pulang rekan membiarkan kalimat bahwa ia perlu didatangi. Laporan keuangan terjaga, tetapi rekan yang pulang pukul 17.00 tidak dilindungi.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "pembiaran"
+        }
+      },
+      {
+        "text": "Menelepon kanal keamanan sekarang, lalu menugaskan anggota tim lain merampungkan sisa laporan keuangan.",
+        "score": 5,
+        "reason": "Unggahan memuat foto dan jadwal pulang rekan dengan kalimat perlu didatangi, sedangkan rekan itu pulang pukul 17.00, sehingga ancamannya harus dilaporkan sekarang oleh Anda yang mengenal rekan itu. Sebagai koordinator Anda dapat membagi tugas, sehingga anggota tim lain menyelesaikan bagian akhir laporan keuangan agar terkirim pukul 16.00.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Meminta anggota tim yang melapor menghubungi kanal keamanan, lalu menyelesaikan laporan keuangan sendiri.",
+        "score": 4,
+        "reason": "Anggota tim yang melapor dapat menghubungi kanal keamanan, dan laporan keuangan tetap Anda selesaikan sendiri. Namun ia baru membaca sekilas dan tidak mengenal rekan itu, sehingga keterangannya kepada kanal kurang lengkap, padahal Anda yang mengenal rekan itu dapat menghubungi langsung dan membagi tugas laporan.",
+        "tag": {
+          "pembeda": "sasaran",
+          "pengecoh": "kurang-langsung"
+        }
+      },
+      {
+        "text": "Mengirim laporan keuangan yang belum diperiksa agar tepat waktu, lalu menganggap unggahan itu gertakan yang tidak perlu dilaporkan.",
+        "score": 1,
+        "reason": "Mengirim laporan keuangan yang belum diperiksa mengorbankan ketepatan data demi tenggat pukul 16.00. Menganggap unggahan itu gertakan membuat rekan yang pulang pukul 17.00 tidak dilindungi, padahal kalimat perlu didatangi belum dipastikan kebenarannya.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "tanpa-verifikasi"
+        }
+      }
+    ],
+    "answer": 2,
+    "explanation": "Konsep yang diuji: menimbang dua tanggung jawab yang sama-sama sah dengan mendahulukan risiko yang lebih dekat dan memanfaatkan pembagian tugas. Fakta penentu: unggahan memuat foto dan jadwal pulang rekan dengan kalimat perlu didatangi, rekan itu pulang pukul 17.00, laporan keuangan harus terkirim pukul 16.00, dan anggota tim lain dapat menyelesaikan bagian akhir laporan. Respons terbaik menelepon kanal keamanan sekarang lalu menugaskan anggota tim lain merampungkan laporan. Meminta anggota yang melapor menghubungi kanal membuat keterangan kurang lengkap karena ia tidak mengenal rekan itu. Melapor setelah laporan terkirim terlambat, mengabaikan unggahan membiarkan ancaman, dan mengirim laporan tanpa diperiksa sambil menganggap unggahan gertakan mengorbankan data dan perlindungan.",
+    "tip": "Perhatikan dua kewajiban itu menurut seberapa cepat dampaknya tiba dan siapa lagi yang bisa membantu.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "paparan-digital",
+    "kataKunci": "laporan keuangan pukul 16.00, foto dan jadwal pulang, perlu didatangi, pulang pukul 17.00, anggota tim lain, kanal keamanan lewat telepon"
+  },
+  {
+    "id": "tkp-kasus-ar-23",
+    "skenario": "grup-warga-mendesak-bagikan-alamat-pengunggah-dugaan-hoaks",
+    "topic": "Anti Radikalisme",
+    "subtopic": "Respons di Lingkungan Kerja, Sosial, dan Digital",
+    "pola": "tekanan-atasan-rekan-mitra",
+    "peran": "warga",
+    "kewenangan": "terbatas",
+    "penentu": "unggahan belum terbukti hoaks, anggota mendesak admin membagikan alamat rumah pengunggahnya, dan ketua RT dapat dihubungi untuk memeriksa laporan",
+    "tempat": "masyarakat",
+    "keputusan": "menolak",
+    "bloom": "C3",
+    "difficulty": "mudah",
+    "difficultyReason": "Desakan membuka alamat seseorang jelas bertentangan dengan perlindungan data dan jalur pemeriksaan tersedia; tindakan langsung mudah dikenali.",
+    "stem": "Anda admin grup percakapan warga RW berisi dua ratus anggota. Sebuah unggahan yang menuduh program kelurahan menyelewengkan dana ditandai sejumlah anggota sebagai hoaks, tetapi belum ada yang memeriksa kebenarannya. Anggota grup mendesak Anda membagikan alamat rumah pengunggahnya agar didatangi bersama. Pengunggah itu warga RW yang sama, dan ketua RT dapat dihubungi untuk menerima laporan. Anda hanya mengelola grup, bukan pihak yang memeriksa isi unggahan. Respons Anda yang paling tepat adalah ...",
+    "options": [
+      {
+        "text": "Membagikan alamat rumah pengunggah itu di grup warga, lalu mengajak anggota datang bersama ke sana.",
+        "score": 1,
+        "reason": "Membagikan alamat rumah pengunggah membuka data pribadinya kepada anggota yang berniat mendatanginya. Unggahan itu belum terbukti hoaks, sehingga mengajak datang bersama dapat memicu kekerasan terhadap orang yang mungkin benar.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "membuka-data"
+        }
+      },
+      {
+        "text": "Menolak membagikan alamat pengunggah, lalu menyerahkan unggahan itu kepada ketua RT untuk diperiksa.",
+        "score": 5,
+        "reason": "Unggahan belum terbukti hoaks, dan alamat rumah pengunggah adalah data pribadi yang tidak boleh dibagikan untuk didatangi bersama. Menyerahkan unggahan kepada ketua RT yang dapat dihubungi memberi jalan memeriksa laporan oleh pihak yang menilainya, sedangkan Anda hanya mengelola grup.",
+        "tag": {
+          "pembeda": "kunci",
+          "pengecoh": null
+        }
+      },
+      {
+        "text": "Memindahkan pembahasan unggahan itu ke kolom khusus, lalu mengingatkan anggota agar tidak membagikan data pengunggah.",
+        "score": 4,
+        "reason": "Memindahkan pembahasan ke kolom khusus dan mengingatkan agar data tidak dibagikan mengurangi desakan membagikan alamat pengunggahnya. Namun unggahan yang ditandai hoaks tidak diserahkan kepada ketua RT, sehingga kebenarannya tetap tidak diperiksa.",
+        "tag": {
+          "pembeda": "cakupan",
+          "pengecoh": "kurang-cakupan"
+        }
+      },
+      {
+        "text": "Meminta anggota yang menandai unggahan itu mengumpulkan bukti hoaks, lalu menyerahkannya kepada ketua RT.",
+        "score": 3,
+        "reason": "Meminta anggota mengumpulkan bukti dapat membantu pemeriksaan laporan oleh ketua RT. Namun unggahan baru sampai kepada ketua RT sesudah anggota selesai mengumpulkan, padahal anggota sudah mendesak membagikan alamat pengunggahnya sekarang.",
+        "tag": {
+          "pembeda": "urutan",
+          "pengecoh": "sah-terlambat"
+        }
+      },
+      {
+        "text": "Menulis di grup bahwa pengunggah itu penyebar hoaks, lalu memintanya meminta maaf di depan anggota.",
+        "score": 2,
+        "reason": "Menulis bahwa pengunggah itu penyebar hoaks menyimpulkan kesalahan sebelum diperiksa. Meminta maaf di depan anggota mempermalukannya, dan desakan membagikan alamat tetap tidak dijawab.",
+        "tag": {
+          "pembeda": "risiko",
+          "pengecoh": "ar:mempermalukan"
+        }
+      }
+    ],
+    "answer": 1,
+    "explanation": "Konsep yang diuji: menolak tekanan kelompok untuk membuka identitas seseorang yang dituduh menyebar hoaks, dan menyalurkannya pada pemeriksaan. Fakta penentu: unggahan belum terbukti hoaks, anggota mendesak admin membagikan alamat rumah pengunggahnya, dan ketua RT dapat dihubungi untuk memeriksa laporan. Respons terbaik menolak membagikan alamat lalu menyerahkan unggahan kepada ketua RT untuk diperiksa. Memindahkan pembahasan dan mengingatkan soal data mengurangi desakan tetapi kebenaran unggahan tidak diperiksa. Mengumpulkan bukti lebih dahulu menunda penyerahan, menyebut pengunggah penyebar hoaks mempermalukan sebelum diperiksa, dan membagikan alamat membuka data serta mengundang kekerasan.",
+    "tip": "Perhatikan perbedaan antara dugaan kesalahan seseorang dan hak atas datanya, serta siapa yang dapat menilai.",
+    "source": "Kasus orisinal JadiASN",
+    "konteks": "paparan-digital",
+    "kataKunci": "tuduhan penyelewengan dana, ditandai hoaks, belum diperiksa, alamat rumah pengunggah, didatangi bersama, ketua RT"
+  }
+]
