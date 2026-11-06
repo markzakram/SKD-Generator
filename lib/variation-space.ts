@@ -1,7 +1,7 @@
 import { bankFor } from './bank';
 import { LOCAL_MODELS, localRecipes, usesLocal } from './local';
 import { profilePlan } from './mapping';
-import { eligibleSources, SILO_ROWS, VARY_ROWS } from './tryout-profile';
+import { chapterHasGenerator, eligibleSources, SILO_ROWS, VARY_ROWS } from './tryout-profile';
 import { TIU_FAMILIES } from './tiu';
 import { buildBlueprint } from './blueprint';
 import type { Settings, Subtest } from './types';
@@ -31,7 +31,7 @@ export function variationSpace(settings: Settings): VariationSource[] {
     if (plan) {
       for (const row of plan.filter((row) => row.subtest === subtest)) {
         const pool = [...new Map(Array.from({ length: settings.packages }, (_, p) => eligibleSources(row, settings, p)).flat().map((q) => [q.id, q])).values()];
-        const parameter = subtest === 'TIU' && (settings.tiuSource === 'variation' && VARY_ROWS.includes(row.row) || SILO_ROWS.includes(row.row) || !pool.length); // silogisme selalu dibangkitkan (lib/tryout-profile.ts)
+        const parameter = subtest === 'TIU' && (settings.tiuSource === 'variation' && VARY_ROWS.includes(row.row) || SILO_ROWS.includes(row.row) || !pool.length || !!settings.chapterCounts && chapterHasGenerator(row, settings)); // silogisme selalu dibangkitkan (lib/tryout-profile.ts)
         if (parameter) sources.push({ id: row.id, subtest, topic: row.topic, name: row.chapter, kind: 'parameter', size: null,
           variables: row.topic === 'Figural' ? 'Bentuk, posisi, rotasi, jumlah, isian, dan aturan hubungan gambar.' : row.topic === 'Numerik' ? 'Angka, data tabel, operasi, serta pengecoh dari hasil perhitungan.' : 'Pasangan kata, premis, relasi, objek, atau batasan susunan sesuai chapter.',
           limit: 'Rentang mengikuti pembangkit chapter. Total kombinasi valid belum dihitung; gunakan uji seed untuk mengukur sampel.' });

@@ -1,5 +1,5 @@
 import { DEFAULT_SETTINGS } from './config';
-import { clashesExclusive, fingerprint, generate } from './generate';
+import { clashesExclusive, exclusiveGroupOf, fingerprint, generate } from './generate';
 import { replaceLocalQuestion, usesLocal } from './local';
 import { rng } from './rng';
 import { replaceMappedQuestion } from './tryout-profile';
@@ -19,12 +19,13 @@ export function findReplacement(q: Question, peers: Question[], siblings: Questi
   const taken = new Set(peers.map(fingerprint)), own = fingerprint(q);
   for (let i = 0; i < REPLACE_ATTEMPTS; i++) {
     let next = q.proof.kind === 'local' || usesLocal(settings, q.subtest) ? replaceLocalQuestion(q, peers, rng(seed + '-' + i))
-      : q.mappingId ? replaceMappedQuestion(q, peers, seed + '-' + i, fingerprint)
+      : q.mappingId ? replaceMappedQuestion(q, peers, seed + '-' + i, fingerprint, !!settings.chapterCounts)
         : generate({ ...DEFAULT_SETTINGS, mode: q.subtest, count: 1, difficulty: q.difficulty === 'hots' ? 'sulit' : q.difficulty, topics: [q.topic], subtopics: settings.subtopics.filter((s) => s.startsWith(q.topic + '::')), seed: seed + '-replace-' + i })[0].questions[0];
-    if (q.mappingId) { next.mappingId = q.mappingId; if (next.subtopic !== q.subtopic) continue; }
+    if (q.mappingId) { next.mappingId = q.mappingId; if (next.subtopic !== q.subtopic && !(settings.chapterCounts && q.subtest === 'TKP')) continue; } // TKP: chapter mapping = kompetensi, submaterinya boleh lain pada jumlah per chapter
     next = constrainNarrativePackage([...siblings.filter((other) => other.id !== q.id), next]).at(-1)!;
     const print = fingerprint(next);
-    if (print !== own && !taken.has(print) && !clashesExclusive(next, siblings, q.id)) return next;
+    const group = settings.chapterCounts ? exclusiveGroupOf(next) : undefined;
+    if (print !== own && !taken.has(print) && !clashesExclusive(next, siblings, q.id) && !(group && siblings.some((other) => other.id !== q.id && exclusiveGroupOf(other) === group))) return next;
   }
   throw new Error(NO_UNIQUE_REPLACEMENT);
 }

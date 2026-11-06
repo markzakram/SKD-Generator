@@ -9,14 +9,35 @@ import { auditPackages } from './validate';
 import { buildBlueprint, checkBlueprint } from './blueprint';
 import { validationBinding } from './binding';
 import { generateTryout } from './tryout-profile';
-import { MAPPING_ROWS } from './mapping';
+import { MAPPING_ROWS, chapterDuration, chapterMode, chapterTotal } from './mapping';
 import { LOCAL_RECIPES, localRecipes, usesLocal, chooseLocal, makeLocal } from './local';
 import { keepsOptionOrder } from './reasons';
 import { cellKey, planShares, type Share } from './bagi';
 import { constrainNarrativePackage } from './silo-production';
 
+// Isian jumlah per chapter: id baris mapping, bilangan bulat, dan batas total. Yang bernilai 0 dibuang; urutan mengikuti baris mapping, jadi urutan kunci masukan tidak berpengaruh.
+function checkedChapterCounts(input: unknown): Record<string, number> {
+  if (!input || typeof input !== 'object' || Array.isArray(input)) throw new Error('Jumlah per chapter harus berupa objek id chapter dan jumlah soal.');
+  const counts = input as Record<string, unknown>;
+  for (const id of Object.keys(counts)) if (!MAPPING_ROWS.some((row) => row.id === id)) throw new Error('Chapter tidak dikenal: ' + id + '.');
+  for (const row of MAPPING_ROWS) {
+    const n = counts[row.id];
+    if (n !== undefined && (!Number.isInteger(n) || (n as number) < 0 || (n as number) > 200)) throw new Error('Jumlah untuk ' + row.chapter + ' harus bilangan bulat 0–200.');
+  }
+  const clean = Object.fromEntries(MAPPING_ROWS.filter((row) => (counts[row.id] as number) > 0).map((row) => [row.id, counts[row.id] as number]));
+  const total = chapterTotal(clean);
+  if (!total) throw new Error('Isi jumlah soal pada sedikitnya satu chapter.');
+  if (total > 200) throw new Error('Total jumlah per chapter ' + total + ' soal, sedangkan satu paket maksimal 200 soal.');
+  return clean;
+}
 export function normalizeSettings(input: Partial<Settings>): Settings {
   const value = { ...DEFAULT_SETTINGS, ...input };
+  // Jumlah per chapter selalu memakai jalur standar tryout 2027. Jumlah soal dan jenis paket mengikuti isian; durasi sebanding jumlah soal bila tidak disebut.
+  if (value.chapterCounts !== undefined) {
+    if (value.profile === 'free') throw new Error('Jumlah per chapter hanya berlaku pada profil Standar tryout 2027.');
+    const counts = checkedChapterCounts(value.chapterCounts);
+    Object.assign(value, { profile: 'tryout-2027', chapterCounts: counts, count: chapterTotal(counts), mode: chapterMode(counts, value.mode), duration: input.duration === undefined ? chapterDuration(chapterTotal(counts)) : input.duration, topics: [], subtopics: [], composition: undefined, blueprint: undefined });
+  }
   if (value.profile && !['free','tryout-2027'].includes(value.profile)) throw new Error('Profil paket tidak dikenal.');
   if (value.tiuSource && !['accepted','variation'].includes(value.tiuSource)) throw new Error('Sumber TIU tidak dikenal.');
   for(const key of ['twkSource','tkpSource'] as const) if(value[key]!==undefined&&!['accepted','new'].includes(value[key]!))throw new Error('Sumber '+key.slice(0,3).toUpperCase()+' tidak dikenal.');
@@ -37,7 +58,7 @@ export function normalizeSettings(input: Partial<Settings>): Settings {
   const eligibleSubtopics = [...BANK, ...LOCAL_RECIPES, ...TIU_FAMILIES.map((family) => ({ ...family, subtopic: family.name })), ...MAPPING_ROWS.map((r)=>({ topic:r.topic,subtopic:r.chapter }))]
     .filter((item) => available.includes(item.topic)).map((item) => item.topic + '::' + item.subtopic);
   if (value.subtopics.some((topic) => !eligibleSubtopics.includes(topic))) throw new Error('Submateri tidak sesuai subtes yang dipilih.');
-  if (value.mode === 'SKD' && value.count < 3) throw new Error('Paket gabungan memerlukan minimal tiga soal.');
+  if (value.mode === 'SKD' && value.count < 3 && !value.chapterCounts) throw new Error('Paket gabungan memerlukan minimal tiga soal.');
   if (value.composition) {
     const values = ['mudah', 'sedang', 'sulit'].map((level) => value.composition![level as keyof NonNullable<Settings['composition']>]);
     if (values.some((n) => !Number.isInteger(n) || n < 0 || n > 100) || values.reduce((a, b) => a + b, 0) !== 100) throw new Error('Komposisi kesulitan harus berjumlah 100%.');
@@ -78,6 +99,8 @@ export const EXCLUSIVE_TWK: Record<string, string> = {
 // Pengganti manual (app/page.tsx) tidak boleh membawa soal eksklusif yang pasangannya sudah ada di paket yang sama.
 export const clashesExclusive = (candidate: Pick<Question, 'family'>, pack: Pick<Question, 'id' | 'family'>[], replacingId: string) =>
   Object.values(EXCLUSIVE_TWK).includes(candidate.family) && pack.some((other) => other.id !== replacingId && other.family === candidate.family);
+// Jumlah per chapter memakai sumber tryout (family = accepted-<id>), jadi kelompok eksklusif dibaca dari id sumbernya.
+export const exclusiveGroupOf = (q: Pick<Question, 'proof'>) => q.proof.kind === 'bank' ? EXCLUSIVE_TWK[q.proof.id] : undefined;
 const familyFor = (item: BankItem) => item.kasus ? item.kasus.skenario : EXCLUSIVE_TWK[item.id] ?? (item.id.startsWith('twk-case-v2-') ? item.id : item.id.includes('-case-') ? item.id.replace(/-\d+$/, '') : item.id);
 // Sebaran kasus TKP baru per paket (Tahap 3): batas tiap nilai sebagai bagian dari jumlah TKP paket. Lunak: bila persediaan sel topik × kesulitan memaksa,
 // batas boleh terlampaui; pemeriksaan di scripts/tkp-checks.ts melaporkannya.

@@ -7,7 +7,7 @@ import { solveModel } from './models';
 import { seatCount } from './posisi-model';
 import { checkBlueprint, actualBlueprint } from './blueprint';
 import { validationBinding } from './binding';
-import { profilePlan, mappingMatch } from './mapping';
+import { chapterMatch, profilePlan, mappingMatch } from './mapping';
 import { distribution, fingerprint } from './generate';
 import type { Audit, Package, Question, Settings } from './types';
 
@@ -95,7 +95,7 @@ export function auditPackages(packages: Package[], settings: Settings): Audit {
   packages.forEach((pack,packageIndex) => {
     if (settings.profile==='tryout-2027') for (const row of profilePlan(settings)) {
       const matches=pack.questions.filter((q)=>q.mappingId===row.id);
-      if (matches.length!==row.count || matches.some((q)=>!mappingMatch(q,row,packageIndex) && !(q.origin==='pola' && q.subtopic===row.chapter))) errors.push(pack.id+': chapter/kuota mapping berbeda: '+row.chapter);
+      if (matches.length!==row.count || matches.some((q)=>!(settings.chapterCounts?chapterMatch(q,row):mappingMatch(q,row,packageIndex)) && !(q.origin==='pola' && q.subtopic===row.chapter))) errors.push(pack.id+': chapter/kuota mapping berbeda: '+row.chapter);
     }
     if (settings.blueprint) errors.push(...checkBlueprint(actualBlueprint(pack.questions), { ...settings, uniqueAcross: false }).map((error) => pack.id + ': ' + error));
     if (settings.blueprint) for (const row of settings.blueprint) {

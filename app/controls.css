@@ -110,3 +110,10 @@
   .review-queue .queue-tile { min-height:40px; }
   .queue-tile .queue-no { font-size:12px; }
 }
+
+/* Jumlah per chapter (components/ChapterCounts.tsx): baris memakai grid, bukan tabel, supaya layar 375 px tidak menggulir mendatar. */
+.profile-option{display:grid;gap:2px;align-content:start;min-width:0}.profile-option .text-button{justify-self:start;padding:4px 0;font-size:12px;text-align:left}
+.chapter-tools{display:grid;gap:10px;margin-bottom:10px}.chapter-total{display:flex;flex-wrap:wrap;gap:2px 14px;align-items:center;justify-content:space-between;font-size:13px}.chapter-total strong{font:800 17px/1.15 var(--font-display);color:var(--navy)}.chapter-actions{display:flex;flex-wrap:wrap;gap:0 14px}.chapter-actions .text-button{padding:4px 0}
+.chapter-group{border-top:1px solid var(--line);padding:8px 0}.chapter-group>summary{cursor:pointer}.chapter-lesson{margin:10px 0 2px;font-size:12px;font-weight:700;color:var(--muted);overflow-wrap:anywhere}
+.chapter-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;align-items:center;padding:5px 0}.chapter-row label{min-width:0;font-size:13px;line-height:1.35;overflow-wrap:anywhere}.chapter-row small{display:block;font-size:11px;color:var(--muted)}.chapter-row .quota-input{width:64px;padding:5px 3px;text-align:center}.chapter-row .chapter-note{grid-column:1/-1;margin:0;padding:6px 8px;font-size:12px}.chapter-row .help.chapter-note{padding:0}
+@media(max-width:600px){.quota-panel .section-heading{flex-wrap:wrap}.quota-panel .section-heading>button{margin-left:0}}

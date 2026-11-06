@@ -29,6 +29,15 @@ npm run generate -- --profile tryout-2027 --twk new --tkp new --paket 3
 
 Profil **Standar tryout 2027** pada halaman generator memakai **Mapping SKD 2027.xlsx** dan 312 contoh yang dinyatakan layak oleh pengguna: 90 TWK, 87 TIU, dan 135 TKP. Pilih **Latihan bebas** untuk pengaturan kuota manual sebelumnya.
 
+### Jumlah per chapter
+
+Pada panel **Kuota per chapter**, tombol **Atur jumlah sendiri** membuka isian per chapter (dikelompokkan Subtes > Category > Lesson, dengan kolom cari dan maksimum tiap chapter). Kartu **Latihan bebas** punya pintasan ke isian yang sama. Isian dimulai dari saran mapping bila dibuka dari panel, kosong bila dibuka dari pintasan; **Kembalikan saran mapping** menutupnya kembali. Hasilnya tetap jalur standar tryout 2027: sumber per baris, pembangkit, label, format pembahasan, dan `mappingId` sama. Jumlah soal, jenis paket, dan durasi (sebanding jumlah soal) mengikuti isian, urutan soal mengikuti baris mapping. Tanpa isian, kuota dan hasilnya tetap seperti sebelumnya.
+
+Semua 57 chapter bisa dipilih, tetapi tiap chapter punya maksimum per paket. Bila soal tidak boleh sama antarpaket, stok dibagi jumlah paket. Kesulitan yang dipilih ikut membatasi. Contoh pada bawaan satu paket: Logika Pernyataan 3 (hanya contoh, belum ada pembangkit), kasus TKP orisinal 21–26 per kompetensi, dan chapter numerik berbasis contoh 1–6; pilih **Variasi TIU terhitung** untuk chapter numerik yang punya pembangkit. Deret Angka - Hijab dan Template belum punya contoh maupun pembangkit, jadi maksimumnya 0. Silogisme (baris 13–15) selalu lewat generator blueprint: contoh blueprint lebih dulu, lalu pembangkit, dengan keluarga modus berputar merata.
+
+API dan CLI: `chapterCounts` pada `POST /api/generate` (misalnya `{"chapterCounts":{"map-14":15}}`) dan `--chapter map-14=15` pada `npm run generate` (boleh diulang atau dipisah koma). Id chapter ada di `data/skd-mapping.json`.
+
+
 Pada paket penuh 110 soal, distribusi mengikuti 37 baris berkuota dari workbook: 30 TWK, 35 TIU, 45 TKP. Seluruh 57 chapter tetap tersedia dalam data mapping, termasuk chapter latihan yang tidak memiliki kuota pada tryout penuh.
 
 - TWK: Nasionalisme, Integritas, Bela Negara, dan Pilar Negara masing-masing 6 soal; Bahasa Negara 6 soal, masing-masing satu ide pokok, simpulan, kalimat efektif, kata baku, tanda baca, dan EYD.
@@ -209,6 +218,7 @@ Maksimal 50 paket, 200 soal per paket, 4.000 soal per proses. Persediaan per mat
 npm run generate -- --mode SKD --paket 1 --seed LATIHAN-01 --out output
 npm run generate -- --mode TIU --soal 35 --paket 5 --seed TIU-01
 npm run generate -- --mode TKP --paket 5 --boleh-ulang
+npm run generate -- --chapter map-14=15 --chapter map-20=5 --chapter map-54=10 --seed LATIHAN-02
 ~~~
 
 CLI menulis paket.json dan validasi.json sebagai bahan paket. PDF/Word dibuat di browser.

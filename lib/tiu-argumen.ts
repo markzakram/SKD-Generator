@@ -265,6 +265,7 @@ export const SKENARIO: Skenario[] = [
 // SKENARIO.length butir pertama tidak mengulang skenario. Pemilihan menurut tingkat dilakukan pada daftar yang sudah diurutkan.
 export type Butir = { skenario: Skenario; arah: Arah };
 export const ARGUMEN_BUTIR_COUNT = SKENARIO.length * 2;
+export const argumenButirCount = (level: 'sedang' | 'sulit') => SKENARIO.filter((x) => x.level === level).length * 2;
 export function urutanButir(seed: string): Butir[] {
   const r = rng('argumen|urutan|' + seed), first = r.shuffle(SKENARIO).map((skenario) => ({ skenario, arah: r.pick(['perkuat', 'lemahkan'] as Arah[]) }));
   const second = r.shuffle(first).map(({ skenario, arah }) => ({ skenario, arah: arah === 'perkuat' ? 'lemahkan' : 'perkuat' } as Butir));

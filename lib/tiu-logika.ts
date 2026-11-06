@@ -30,7 +30,8 @@ export const ERROR_NAME: Record<ErrorTag, string> = { 'konvers-invers': 'Konvers
 export type LogikaOption = { text: string; reason: string; status: LogikaStatus; logic?: Logic; error?: ErrorTag; ref?: number };
 export type LogikaBuild = { stem: string; options: LogikaOption[]; answer: number; explanation: string; model: Model; bloom: 'C2' | 'C3' | 'C4'; code: string; chapter: Chapter | 'Bentuk Implikasi'; reversed: number; implications: number; difficultyReason?: string; source?: string };
 // Pemanggil yang ingin contoh blueprint dipakai lebih dahulu: seed pembuatan dan banyak butir chapter itu yang sudah ada pada pembuatan yang sama (contoh ke-n dipakai bila n < jumlah contoh).
-export type ContohSlot = { seed: string; used: (chapter: Chapter) => number };
+// `merata` dan `ulang` hanya pada jumlah per chapter: `merata` meminta sebaran keluarga untuk kuota besar (lib/silo-rencana.ts); `ulang` = percobaan ulang karena kembar, jadi keluarga rencana tetap tetapi contoh tidak dipakai lagi.
+export type ContohSlot = { seed: string; used: (chapter: Chapter) => number; merata?: boolean; ulang?: boolean };
 export const TDS_TEXT = 'Tidak dapat disimpulkan.';
 
 const entailed = (P: Logic[], s: Stmt) => entails(P, [logicOf(s)])[0];
@@ -442,7 +443,7 @@ export function buildLogika(id: string, r: Rng, slot?: ContohSlot, paket?: Paket
   // Paket tryout (`paket`): keluarga modus butir ini ditetapkan perencana supaya lima butir silogisme sepaket beragam (lib/silo-rencana.ts); contoh blueprint berkeluarga itu dipakai lebih dahulu,
   // pembangkit mengisi kekurangannya dengan keluarga yang sama.
   const plan = slot && paket ? rencanaButir(slot.seed, paket, slot.used(chapter)) : undefined;
-  if (plan?.contoh) return contohBuild(plan.contoh, r);
+  if (plan?.contoh && !slot?.ulang) return contohBuild(plan.contoh, r);
   // Selain itu, Silogisme Narasi: contoh blueprint dipakai lebih dahulu (urutannya diacak menurut seed); pembangkit di bawah hanya mengisi kekurangan.
   if (slot && !plan && chapter.endsWith('Narasi')) {
     const example = contohAt(chapter as NarasiChapter, slot.seed, slot.used(chapter));

@@ -46,14 +46,22 @@ export function makeMappedTiu(row:MappingRow,level:Difficulty,r:Rng,packageIndex
   const draft=buildMappedTiu(row,level,r,packageIndex,slot);
   return [13,14,15,16].includes(row.row)?draft:{...draft,options:draft.options.map((option)=>({...option,reason:''}))};
 }
+// Jumlah per chapter: chapter harus tepat. Baris 39 ("1 Towew") memakai deret satu larik; pembangkit baris itu pada kuota workbook menghasilkan dua larik dan dipertahankan supaya rekaman seed tryout tidak berubah.
+export function makeChapterTiu(row:MappingRow,level:Difficulty,r:Rng,packageIndex=0,slot?:ContohSlot):Draft {
+  if(row.row!==39)return makeMappedTiu(row,level,r,packageIndex,slot);
+  const draft=makeTiu(TIU_FAMILIES.find((f)=>f.id==='deret')!,'mudah',r);
+  return {...draft,subtopic:row.chapter,mappingId:row.id,source:base(row,'mudah').source,options:draft.options.map((option)=>({...option,reason:''}))};
+}
 // Baris dengan pembangkit sendiri yang direvisi berjalan pada pengacak turunan dan memajukan aliran bersama sebanyak versi lama (lib/rng.ts: isolated).
 const ROW_DRAWS: Record<number,number> = { 13:6, 14:5, 15:5, 18:18, 39:8 };
 function buildMappedTiu(row:MappingRow,level:Difficulty,shared:Rng,packageIndex=0,slot?:ContohSlot):Draft {
   const r=ROW_DRAWS[row.row]===undefined?shared:isolated(shared,'tiu-row|'+row.row,ROW_DRAWS[row.row]);
   let q=base(row,level);
-  if([16,50,51,52,53].includes(row.row)){
-    const id=({16:'analogi',50:'fig-analogi',51:'fig-odd',52:'fig-serial',53:'fig-matrix'} as Record<number,string>)[row.row],family=TIU_FAMILIES.find((f)=>f.id===id)!;
-    const draft=makeTiu(family,family.levels.includes(level)?level:family.levels[0],r);
+  // Baris 19, 20, 22, 23, 40, 41, 44, 45 berkuota 0 pada workbook, jadi hanya tercapai lewat jumlah per chapter. Baris 40 = 2 towew: tingkat mudah pada keluarga `deret` berarti 1 towew, jadi tidak dipakai.
+  if([16,19,20,22,23,40,41,44,45,50,51,52,53].includes(row.row)){
+    const id=({16:'analogi',19:'peringkat',20:'jadwal',22:'kategori',23:'rute',40:'deret',41:'tiga-jalur',44:'selang-seling',45:'fibonacci',50:'fig-analogi',51:'fig-odd',52:'fig-serial',53:'fig-matrix'} as Record<number,string>)[row.row],family=TIU_FAMILIES.find((f)=>f.id===id)!;
+    const wanted=row.row===40&&level==='mudah'?'sedang':level;
+    const draft=makeTiu(family,family.levels.includes(wanted)?wanted:family.levels[0],r);
     return {...draft,subtopic:row.chapter,mappingId:row.id,source:q.source};
   }
   if([13,14,15].includes(row.row)){
@@ -62,7 +70,7 @@ function buildMappedTiu(row:MappingRow,level:Difficulty,shared:Rng,packageIndex=
     // baris 15 = "3 Premis - Narasi". Chapter "2 Premis" (Biasa) tidak ada pada mapping 2027; ia tampil lewat pola umum `silogisme` (lib/tiu.ts), bukan lewat baris tryout.
     // Seluruh keacakan memakai `r`, pengacak turunan baris ini (ROW_DRAWS), sehingga butir lain pada seed yang sama tidak bergeser.
     // Pada pembuatan paket (`slot`), keluarga modus lima butir silogisme sepaket diatur perencana supaya beragam (lib/silo-rencana.ts): MP, MT, SK, SD, NEG, atau TDS, masing-masing paling banyak sekali per paket.
-    const built=buildLogika(row.row===14?'n2':row.row===15?'n3':'b3',r,slot,slot&&row.count>0?{baris:row.row as 13|14|15,paket:packageIndex,perPaket:row.count}:undefined);
+    const built=buildLogika(row.row===14?'n2':row.row===15?'n3':'b3',r,slot,slot&&row.count>0?{baris:row.row as 13|14|15,paket:packageIndex,perPaket:row.count,...(slot.merata?{merata:true}:{})}:undefined);
     q.stem=built.stem;q.explanation=built.explanation;q.bloom=built.bloom;
     if(built.source)q.source=built.source; // contoh blueprint menyebut asalnya
     if(built.difficultyReason)q.difficultyReason=built.difficultyReason; // alasan menurut pola yang dipakai (hukum tiap langkah, TDS, ekuivalensi, narasi)

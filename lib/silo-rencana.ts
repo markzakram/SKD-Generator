@@ -14,7 +14,8 @@ import { KELUARGA, type Keluarga } from './silo-spec';
 
 export type BarisSilogisme = 13 | 14 | 15;
 // Letak butir pada satu paket: `perPaket` = jumlah butir baris itu per paket (1, 2, 2 pada profil tryout 2027), `paket` = indeks paket.
-export type PaketSlot = { baris: BarisSilogisme; paket: number; perPaket: number };
+// `merata`: jumlah per chapter (Settings.chapterCounts). Kuota melebihi lebar profil tryout tidak memakai barisan blok lima paket, melainkan putaran keluarga yang merata (urutanMerata).
+export type PaketSlot = { baris: BarisSilogisme; paket: number; perPaket: number; merata?: boolean };
 export type Rencana = { keluarga: Keluarga; contoh?: Contoh };
 const CHAPTER: Record<BarisSilogisme, NarasiChapter | undefined> = { 13: undefined, 14: '2 Premis - Narasi', 15: '3 Premis - Narasi' };
 
@@ -33,15 +34,21 @@ export function keluargaButir(seed: string, baris: BarisSilogisme, paket: number
   const allowed = baris === 13 ? [lineup[5], ...lineup.slice(1, 5)] : lineup.filter((f) => f !== 'NEG');
   return allowed[(i - width) % allowed.length];
 }
+// Kuota besar pada satu baris (jumlah per chapter): butir ke-k sejak paket pertama memakai keluarga ke-(k mod jumlah keluarga), sehingga selisih antarkeluarga paling banyak satu, dalam satu paket maupun
+// seluruh paket. Keluarga yang contohnya lebih banyak didahulukan supaya contoh blueprint terpakai lebih dahulu; seri mengikuti urutan acak seed. NEG hanya pada baris 13 (blueprint Bagian B melarangnya pada narasi).
+export function urutanMerata(seed: string, baris: BarisSilogisme): Keluarga[] {
+  const chapter = CHAPTER[baris], stok = (family: Keluarga) => chapter ? contohOf(chapter).filter((item) => keluargaOfContoh(item) === family).length : 0;
+  return rng(seed + '|silo-merata|' + baris).shuffle(KELUARGA.filter((f) => baris === 13 || f !== 'NEG')).sort((a, b) => stok(b) - stok(a));
+}
 // Contoh blueprint berkeluarga `family` yang belum terpakai, menurut urutan acak seed yang sama dengan contohAt (lib/silo-contoh.ts).
 const contohUntuk = (chapter: NarasiChapter, seed: string, family: Keluarga, used: Set<string>) =>
   rng(seed + '|contoh-narasi|' + chapter).shuffle(contohOf(chapter)).find((item) => keluargaOfContoh(item) === family && !used.has(item.code));
 // Rencana butir ke-`ordinal` baris itu (urutan sejak paket pertama; paket ke-n memegang urutan n x perPaket sampai n x perPaket + perPaket - 1). Mengulang butir sebelumnya untuk mengetahui contoh yang sudah terpakai.
 export function rencanaButir(seed: string, slot: PaketSlot, ordinal: number): Rencana | undefined {
   if (slot.perPaket < 1 || ordinal < slot.paket * slot.perPaket || ordinal >= (slot.paket + 1) * slot.perPaket) return undefined; // di luar paket ini (mis. penggantian butir): urutan contoh biasa
-  const chapter = CHAPTER[slot.baris], used = new Set<string>();
+  const chapter = CHAPTER[slot.baris], used = new Set<string>(), merata = slot.merata && slot.perPaket > (slot.baris === 13 ? 1 : 2) ? urutanMerata(seed, slot.baris) : undefined;
   for (let k = 0; k <= ordinal; k++) {
-    const family = keluargaButir(seed, slot.baris, Math.floor(k / slot.perPaket), k % slot.perPaket), item = chapter ? contohUntuk(chapter, seed, family, used) : undefined;
+    const family = merata ? merata[k % merata.length] : keluargaButir(seed, slot.baris, Math.floor(k / slot.perPaket), k % slot.perPaket), item = chapter ? contohUntuk(chapter, seed, family, used) : undefined;
     if (item) used.add(item.code);
     if (k === ordinal) return { keluarga: family, ...(item ? { contoh: item } : {}) };
   }

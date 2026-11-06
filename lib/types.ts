@@ -100,6 +100,8 @@ export type Settings = {
   tiuSource?: 'accepted' | 'variation';
   twkSource?: 'accepted' | 'new';
   tkpSource?: 'accepted' | 'new';
+  // Jumlah soal per baris mapping (id baris -> jumlah), hanya pada profil tryout-2027. Bila ada, count, mode, dan rencana mengikuti isian ini (lib/mapping.ts); tanpa kolom ini rencana memakai kuota workbook.
+  chapterCounts?: Record<string, number>;
 };
 export type BlueprintRow = { subtest: Subtest; topic: string; difficulty: Difficulty; count: number };
 export type Audit = { ok: boolean; checked: number; errors: string[]; duplicateCount: number; keyDistribution: number[] };

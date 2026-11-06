@@ -1,5 +1,6 @@
 import mapping from '@/data/skd-mapping.json';
-import type { BankItem, Question, Settings, Subtest } from './types';
+import { BASELINE } from './config';
+import type { BankItem, Mode, Question, Settings, Subtest } from './types';
 
 export type MappingRow = { id: string; row: number; subtest: Subtest; category: string; lesson: string; chapter: string; topic: string; count: number; exerciseCount: number };
 export const MAPPING_ROWS = mapping.rows as MappingRow[];
@@ -31,7 +32,27 @@ export function mappingMatch(item: Pick<BankItem, 'subtest' | 'topic' | 'subtopi
   if (row.row === 39) return chapter.startsWith('deret angka') || chapter.startsWith('deret ');
   return chapter === target;
 }
+// Jumlah per chapter: chapter yang dipilih harus tepat. Rotasi kelompok paket (baris 27, 30, 33) dan gabungan semua deret (baris 39) hanya berlaku pada kuota workbook; baris lain sama dengan mappingMatch.
+export function chapterMatch(item: Pick<BankItem, 'subtest' | 'topic' | 'subtopic'>, row: MappingRow): boolean {
+  if (![27, 30, 33, 39].includes(row.row)) return mappingMatch(item, row);
+  return item.subtest === row.subtest && item.topic === row.topic && normalize(item.subtopic) === normalize(row.chapter);
+}
+export const chapterTotal = (counts: Record<string, number>) => Object.values(counts).reduce((sum, n) => sum + (Number.isFinite(n) ? n : 0), 0);
+// Jenis paket mengikuti isian: satu subtes bila hanya satu subtes terisi, selain itu gabungan. Isian kosong mempertahankan jenis sebelumnya.
+export function chapterMode(counts: Record<string, number>, fallback: Mode): Mode {
+  const subtests = [...new Set(MAPPING_ROWS.filter((row) => counts[row.id] > 0).map((row) => row.subtest))];
+  return subtests.length === 1 ? subtests[0] : subtests.length ? 'SKD' : fallback;
+}
+// Durasi sebanding jumlah soal menurut baseline (100 menit untuk 110 soal).
+export const chapterDuration = (total: number) => Math.max(1, Math.round(total * BASELINE.duration / 110));
+// Pengaturan sesudah isian per chapter berubah: jumlah soal, jenis paket, dan durasi mengikuti isian; materi dan submateri tidak berlaku lagi.
+export function withChapterCounts(settings: Settings, counts: Record<string, number>): Settings {
+  const total = chapterTotal(counts);
+  return { ...settings, profile: 'tryout-2027', chapterCounts: counts, count: total, mode: chapterMode(counts, settings.mode), duration: chapterDuration(total), topics: [], subtopics: [], composition: undefined, blueprint: undefined };
+}
 export function profilePlan(settings: Settings): (MappingRow & { count: number })[] {
+  const custom = settings.chapterCounts;
+  if (custom) return MAPPING_ROWS.filter((row) => custom[row.id] > 0).map((row) => ({ ...row, count: custom[row.id] }));
   const allowed = MAPPING_ROWS.filter((row) => row.count && (settings.mode === 'SKD' || settings.mode === row.subtest) && (!settings.topics.length || settings.topics.includes(row.topic)) &&
     (!settings.subtopics.length || settings.subtopics.some((key) => key === row.topic+'::'+row.chapter)));
   if (!allowed.length) throw new Error('Tidak ada kuota tryout pada filter ini. Pilih profil latihan bebas untuk submateri tambahan.');

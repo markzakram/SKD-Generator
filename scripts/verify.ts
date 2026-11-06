@@ -8,6 +8,7 @@ import { TIU_FAMILIES, makeTiu } from '../lib/tiu';
 import { auditPackages, auditQuestion } from '../lib/validate';
 import { calculate, entails, implies, not, variable } from '../lib/solver';
 import type { Question, Settings, Subtest } from '../lib/types';
+import { runChapterCountsChecks } from './chapter-counts-checks';
 import { runFiguralChecks } from './figural-checks';
 import { runProxyChecks } from './proxy-checks';
 import { runReplaceChecks } from './replace-checks';
@@ -94,5 +95,6 @@ runFiguralChecks(check).then(async (figural) => {
   const take = await runTakeChecks(check);
   const replace = runReplaceChecks(check); // ganti nomor terpilih dan saklar kurasi (cakupan ekspor, judul, uji peserta)
   runProxyChecks(check); // gerbang password situs (SITE_PASSWORD)
-  console.log(JSON.stringify({ status: 'PASS', checks, auditedQuestions: questions, bank: BANK.length, families: TIU_FAMILIES.length, figural, take, replace }, null, 2));
+  const chapterCounts = await runChapterCountsChecks(check); // jumlah per chapter pada standar tryout 2027
+  console.log(JSON.stringify({ status: 'PASS', checks, auditedQuestions: questions, bank: BANK.length, families: TIU_FAMILIES.length, figural, take, replace, chapterCounts }, null, 2));
 }).catch((error) => { console.error(error); process.exit(1); });
